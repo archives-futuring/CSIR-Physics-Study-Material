@@ -1,0 +1,122 @@
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{amsfonts,amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{tasks}
+\usepackage{xcolor}
+\usepackage{xcolor}
+\usepackage{environ}
+\usepackage{array}
+\usepackage{float}
+\input{../Config/path.tex}
+\pagestyle{headandfoot}
+\firstpagefooter{MyName}{MyTitle}{ThePage}
+\runningfooter{MyName}{MyTitle}{ThePage}
+\definecolor{futuring}{RGB}{0,142,212}
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} 
+
+\noaddpoints
+\renewcommand{\questionlabel}{\bfseries\Large\thequestion.)}
+\renewcommand{\questionlabel}{\color{futuring}\thequestion.}
+\newcommand{\exyear}[1]{\newline \llap{}\hfill \color{futuring}{\textbf{[#1]}}}
+\pagestyle{headandfoot}
+\newcommand{\head}[1]{\centering {\textbf{#1}}}
+\renewcommand{\solutiontitle}{\noindent\textcolor{futuring}{\textbf{Solution:}}}
+\runningfootrule
+\runningheadrule
+\printanswers
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{amsmath}
+\usepackage{draftwatermark}
+\usepackage{pdfpages}
+\makeatletter
+\def\watermarkoff{%
+	\@sc@wm@stampfalse
+}
+\makeatother
+\SetWatermarkText{futuring}
+\SetWatermarkScale{4}
+
+
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+	\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+}
+\runningheader{\footnotesize }
+{\footnotesize }
+{\footnotesize }
+\footrule
+\footer{\footnotesize }
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+		on the next page\ldots}{\iflastpage{\footnotesize End }{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+\newcommand{\tit}[1]{\centering \textbf{#1}}
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+\definecolor{futuringtheme}{RGB}{0,142,212}
+\NewEnviron{abox}{%
+	
+	\begin{tikzpicture}
+	\node[draw,fill=cyan!30,align=center,rectangle,text width=\textwidth,line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.9,inner sep=15pt] 
+	{\textbf{ \huge \color{futuringtheme}\BODY}};
+	\end{tikzpicture}
+	
+}
+\allowdisplaybreaks
+\makeatletter
+\def\SetTotalwidth{\advance\linewidth by \@totalleftmargin
+	\@totalleftmargin=0pt}
+\makeatother
+%................SOLUTION ENVIRONMENT.....................
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\newtheoremstyle{solbox}% Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% Body font
+{}% Indent amount
+{\small\bf\sffamily\color{ocre}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{ocre}Solution:}
+\newcounter{dummy}
+\theoremstyle{solbox}
+\newtheorem{answerT}[dummy]{Solution}
+\RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=white,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=10pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt]{tBox}
+\newenvironment{answer}{\begin{tBox}\begin{answerT}}{\end{answerT}\end{tBox}}
