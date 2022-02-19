@@ -700,7 +700,37 @@ y(x)=c_{1} y_{1}(x)+c_{2} y_{2}(x)+y_{p}(x)
 \end{equation}
 The constants $c_{1}$ and $c_{2}$ will eventually be fixed by boundary conditions.\\
 This method can be illustrated by Linear classical oscillator problem
-\subsection{Classical linear oscillator}
+\subsection{Classical Linear Oscillator}
+\begin{align}
+\frac{d^{2} y}{d x^{2}}+\omega^{2} y&=0 \label{DE003}\\
+\text{with known solutions} \ y&=\sin \omega x, \cos \omega x\\
+\text{We try}\ y(x) &=x^{k}\left(a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\cdots\right) \\
+&=\sum_{\lambda=0}^{\infty} a_{\lambda} x^{k+\lambda}, \quad a_{0} \neq 0 \label{DE004}\\
+\intertext{with the exponent $k$ and all the coefficients $a_{\lambda}$ still undetermined. Note that $k$ need not be an integer. By differentiating twice, we obtain}
+\frac{d y}{d x} &=\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda) x^{k+\lambda-1} \\
+\frac{d^{2} y}{d x^{2}} &=\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda)(k+\lambda-1) x^{k+\lambda-2}
+\intertext{By substituting into equation.\ref{DE003}, we have}
+\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda)(k+\lambda-1) x^{k+\lambda-2}+\omega^{2} \sum_{\lambda=0}^{\infty} a_{\lambda} x^{k+\lambda}&=0 \label{DE005}
+\intertext{The coefficients of each power of $x$ on the left-hand side of equation.\ref{DE005} must vanish individually.The lowest power of $x$ appearing in equation.\ref{DE005} is $x^{k-2}$, for $\lambda=0$ in the first summation. The requirement that the coefficient vanish  yields,}
+a_{0} k(k-1)&=0
+\intertext{We had chosen $a_{0}$ as the coefficient of the lowest nonvanishing terms of the series \ref{DE004}, hence, by definition, $a_{0} \neq 0$. Therefore we have,}
+k(k-1)&=0 
+\end{align}
+This equation, coming from the coefficient of the lowest power of $x$, we call the \textbf{indicial equation}. The indicial equation and its roots are of critical importance to our analysis.
+\section{Power Series Solution (About an Ordinary Point)}
+Find the power series solution of $\left(1-x^{2}\right) y^{\prime \prime}-2 x y^{\prime}+2 y=0$ about $x=0$\\\\
+Since $x=0$ is an ordinary point of the given differential equation, the solution can be written as
+\begin{align*}
+y&=\sum_{k=0}^{\infty} a_{k} x^{k} \\ \frac{d y}{d x}&=\sum_{k=0}^{\infty} k a_{k} x^{k-1} \\ \frac{d^{2} y}{d x^{2}}&=\sum_{k=0}^{\infty} a_{k} k(k-1) x^{k-2}
+\intertext{Substituting these values in the given equation we get,}
+\left(1-x^{2}\right) \sum_{k} a_{k} k(k-1) x^{k-2}-2 x \sum_{k} a_{k}(k) x^{k-1}+2 \sum_{k} a_{k} x^{k}&=0 \\
+  \sum_{k=2} a_{k} k(k-1) x^{k-2}-\sum\left(k^{2}+k-2\right) a_{k} x^{k}&=0
+\intertext{now equating the coefficient of $x^{k}$ then}
+(k+2)(k+1) a_{k+2}-\left(k^{2}+k-2\right) a_{k}&=0 \\a_{k+2}&=\frac{k-1}{(k+1)} a_{k}\\
+\text{For} \ k&=0 \Rightarrow a_{2}=-a_{0} \\ k&=1 \Rightarrow a_{3}=0 \\
+k&=2 \Rightarrow a_{4}=\frac{a_{2}}{3}=\frac{-a_{0}}{3}  \\ k&=3 \Rightarrow a_{5}=\frac{2}{4} a_{3}=0\\
+\text{Therefore, solution}\ y&=a_{0}+a_{1} x+a_{2} x^{2}+\ldots \ldots\\&=a_{0}\left[1-x^{2}-\frac{x^{4}}{3} \ldots . .\right]+a_{1} x
+\end{align*}
 \newpage
 \begin{abox}
 	Problem Set -1
