@@ -1,0 +1,9 @@
+
+*.aux
+*.log
+*.xwm
+*.gz
+**/main.pdf
+**/**/main.tex
+Modern Physics/main.tex
+Electricity and Magnetism/main.tex
