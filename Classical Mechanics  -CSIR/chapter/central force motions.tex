@@ -188,6 +188,88 @@ If initially $\theta=\theta_{\theta}$, then integration of above equation yields
 \end{align}
 This equation gives $\theta$ as a function of $t$.\\
 Equation(2.17 and 2.16) are the only integration to be solved .Therefore the problems have been reduced to quadratures with four constants $E,J,r_0,\theta_0$
+\subsection{The equivalent one-dimensional problem, and classification of orbits}
+Although we have solved the one dimensional problem formally ,practically speaking the integrals (1.16) and (1.17) are usually quite unmanageable and in specific case it is often more convenient to perform the integration in some other fashion.But before obtaining the solution for any specific force laws,let us see what can be learned about the motion in the general case using only the equation of motion and conservation theorems,without requiring explicit solutions.
+\par The equation of motion in r,with $\dot{\theta}$ expressed in terms of l,quation     $m\ddot{r}-\frac{l^2}{mr^3}=f(r)$ involves only r and its derivatives.It is the same equation as would be obtained  for a fictitious one-dimensional problem in which a particle of mass $m$ is subject to a force
+$$f^{\prime}=f+\frac{l^{2}}{m r^{3}}$$
+The significance of the additional term is clear if it is written as $m r \dot{\theta}^{2}=m v_{\theta}^{2} / r$, which is the familiar centrifugal force. An equivalent statement can be obtained from the conservation theorem for energy. By Eq. $\frac{1}{2}m\dot{r}^2+\frac{1}{2}\frac{l^2}{mr^2}+V=constant$ the motion of the particle in $r$ is that of a one-dimensional problem with a fictitious potential energy:\\
+$$V^{\prime}=V+\frac{1}{2} \frac{l^{2}}{m r^{2}}$$
+As a check, note that
+$$
+f^{\prime}=-\frac{\partial V^{\prime}}{\partial r}=f(r)+\frac{l^{2}}{m r^{3}}
+$$
+ The energy conservation theorem can thus also be written as
+$$
+E=V^{\prime}+\frac{1}{2} m \dot{r}^{2}
+$$
+As an illustration of this method of examining the motion, consider a plot of $V^{\prime}$ against $r$ for the specific case of an attractive inverse-square law of force:
+$$
+f=-\frac{k}{r^{2}} .
+$$
+(For positive $k$, the minus sign ensures that the force is toward the center of force.) The potential energy for this force is
+$$
+V=-\frac{k}{r}
+$$
+and the corresponding fictitious potential is
+$$
+V^{\prime}=-\frac{k}{r}+\frac{l^{2}}{2 m r^{2}}
+$$
+Such a plot is shown in Figure the two dashed lines represent the separate components
+$$
+-\frac{k}{r} \quad \text { and } \quad \frac{l^{2}}{2 m r^{2}}
+$$
+and the solid line is the sum $V^{\prime}$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=9cm,width=9cm]{diagram-20220219(10)}
+	\caption{The equivalent one dimensional potential for attractive inverse square law of force}
+	\label{}
+\end{figure}
+Let us consider now the motion of a particle having the energy $E_{1}$, as shown in Figures. Clearly this particle can never come closer than $r_{1}$  Otherwise with $r<r_{1}, V^{\prime}$ exceeds $E_{1}$ and by conservation of energy the kinetic energy would have to be negative, corresponding to an imaginary velocity! on the other hand, there is no upper limit to the possible value of $r$, so the orbit is not bounded. A particle will come in from infinity, strike the "repulsive centrifugal barrier," be repelled, and travel back out to infinity. The distance between $E$ and $V^{\prime}$ is $\frac{1}{2} m \dot{r}^{2}$, i.e., proportional to the square of the radial velocity, and becomes zero, naturally, at the turning point $r_{1}$. At the same time. the distance between $E$ and $V$ on the plot is the kinetic energy $\frac{1}{2} m v^{2}$ at the given value of $r$. Hence, the distance between the $V$ and $V^{\prime}$ curves is $\frac{1}{2} m r^{2} \theta^{2}$. These curves therefore supply the magnitude of the particle velocity and its components for any distance r,at the given energy and angular momentum .This information is sufficient to produce an approximate picture of the form of the orbit.\\
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm,width=10cm]{diagram-20220219(11)}
+	\caption{Unbounded motion at positive energies for inverse square law of force}
+	\label{}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{diagram-20220219(6)}
+	\caption{The orbit for $E_1$ corresponding to unbounded motion}
+	\label{}
+\end{figure}
+\end{minipage}
+\par For the energy $E_{2}=0$, a roughly similar picture of the orbit behavior is obtained. But for any lower energy, such as $E_{3}$ indicated in fig (1.6) we have a different story. In addition to a lower bound $r_{1}$, there is also a max. imum value $r_{2}$ that cannot be exceeded by $r$ with positive kinetic energy. The motion is then "bounded," and there are two turning points, $r_{1}$ and $r_{2}$, also known as apsidal distances. This does not necessarily mean that the orbits are closed. All that can be said is that they are bounded, contained between two circles of radius $r_{1}$ and $r_{2}$ with turning points always lying on the circles\\
+\begin{minipage}{0.5\textwidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=8cm,width=9cm]{diagram-20220219(8)}
+		\caption{The equivalent one dimensional potential for inverse square law of force illustrating bounded motion at negative energies.}
+		\label{}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{diagram-20220219(7)}
+	\caption{The nature of the orbit for bounded motion}
+	\label{}
+\end{figure}
+\end{minipage}
+\par If the energy is $E_{4}$ at the minimum of the fictitious potential as shown in Fig. (1.8), then the two bounds coincide. In such case, motion is possible at only one radius; $\dot{r}=0$, and the orbit is a circle.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm,width=7cm]{diagram-20220219(9)}
+	\caption{The equivalent one dimensional potential of inverse square law of force,illustrating the condition for circular orbits}
+	\label{}
+\end{figure}
+ Remembering that the effective "force" is the negative of the slope of the $V^{\prime}$ curve, the requirement for circular orbits is simply that $f^{\prime}$ be zero, or
+$$
+f(r)=-\frac{l^{2}}{m r^{3}}=-m r \dot{\theta}^{2}
+$$
 \subsection{The differential equation for the orbit}
 Under central force
 \begin{align}

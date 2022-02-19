@@ -76,6 +76,208 @@ $$
 	\item write it's  constraint equation. ( In many problems the objects are constrained to move.)
 	\item Using all the force equations and constraint equations find every unknowns of the system.
 \end{enumerate}
+\section{Contact Force and Field Force}
+\subsection{Contact Force}
+Contact force is a type of force that requires contact to occur. This type of force is responsible for most of the visible interactions that happen between macroscopic collections of matter. 
+\begin{example}
+	Pushing a car up a hill , Kicking a ball, Friction, Tension on a string.
+\end{example}
+\subsection{Field Force}
+Field force or force field is a vector field that describes a non-contact force that acts on a particle at various positions in space. These forces can be defined as ways of showing a force felt over an area of space. For example, if we hold a compass near a magnetic field, its needle can move according to the magnetic field dimensions. The movement of the needle stops if we go away from the area that is affected by the magnetic field.
+\begin{example}
+	The gravity of gravitational force. Electric field, Magnetic field.
+\end{example}
+\section{Conservative and Non conservative Forces}
+\subsection{Conservative Force }
+Conservative forces are those forces for which work is done depends only on the initial and final points, while Non-Conservative forces are those forces for which the work is done or the kinetic energy did depend on the other factors such as velocity or the particular path taken by the body.
+\begin{example}
+	Gravitational forces, Magnetic force, Electrostatic force, Elastic spring force, Electric force,
+\end{example}
+\subsection{Non-Conservative Force }
+Whenever the work done by a force in moving an object from an initial point to a 
+final point depends on the path, the force is called a non-conservative force. 
+If there is no scalar function $V$ such that $\mathbf{F}=-\nabla V$ [or, equivalently, if $\nabla \times \mathbf{F} \neq 0]$, then $F$ is called a non-conservative force feld. 
+\begin{example}
+	Frictional force, Air resistance force, The force of gravity 
+\end{example}
+\subsection{External forces and it's directions}
+\subsubsection{Weight}
+The weight of body is $w=m g$. The weight of the body is always in vertically
+downward direction.
+\subsubsection{Normal force} 
+When body of mass touching any surface then surface will exert normal force $N$. The direction of normal force is perpendicular to plane of surface.
+
+
+\subsubsection{Tension}
+Force $F$ is exerted on mass $m$ through string . Then any section of string is pulled by two equal and opposite forces. Any one of these forces is called tension. Tension always gives pulling effect. In the figure, the force $F$ is acted on mass $\mathrm{m}$ through string so there is tension $T$ in the string giving pulling effect.
+\subsubsection{Friction}
+Friction force is force which is responsible to oppose the motion .
+There is two type of frictional force\\\\
+\textbf{a.\ Static Friction:} \\\\When there is not any relative motion between surface and body $m$ then friction identified as static friction which is force is equal to external force acted on mass $m$. \textbf{The direction of frictional force is tangent or parallel to surface}. If $\mu$ is coefficient of
+friction between surface and mass $m$ then maximum value of frictional force is $\mu N$.
+\\\\
+\textbf{b.\ Kinetic Friction:} \\\\If there is relative speed between surface and mass $m$ then frictional force is identifying as $f_{k}=\mu N$ where $\mu$ is coefficient of kinetic friction and $N$ is normal force. The direction of $f$ is directed opposite to the motion.
+
+\begin{exercise}
+	A block of mass ' $m$ ' is pulled with a force $\mathrm{F}$ at an angle $\theta$ with horizontal. The block does not move on the surface. Calculate force of friction on the block and value of coefficient of friction.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\intertext{The block is stationary, therefore horizontal components of F must be balanced by friction force.}
+	f_{r}&=F \cos \theta\\
+	\text{For vertical equilibrium,}\quad  N+F \sin \theta&=m g\\
+	N&=m g-F \sin \theta
+	\intertext{If $\mu$ be coefficient of static friction then,}
+	f_{r} &\leq \mu N\\
+	F \cos \theta &\leq \mu(m g-F \sin \theta)\\
+	\mu &\geq \frac{F \cos \theta}{m g-F \sin \theta}
+	\end{align*}
+\end{answer}
+\section{Connected body problems}
+\subsection{Pulley Problem (Atwood's machine)}
+\textbf{Case-1 : Both the masses are in vertical motion.}\\\\
+Consider  the  arrangement  of  pulley and  blocks as shown  in  Figure  \ref{Pulley Problem1}. The  pulley  is assumed massless and frictionless and the connecting strings are massless and inextensible. \\
+\begin{minipage}{0.30\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=4cm,width=2cm]{Laws of motion 0}
+		\caption{Pulley Problem1}
+		\label{Pulley Problem1}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{0.30\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=4cm,width=2.5cm]{Laws of motion1}
+		\caption{Free body diagram(1)}
+	\end{figure}
+\end{minipage}\hfil
+\begin{minipage}{0.30\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=3cm,width=4cm]{Laws of motion 2}
+		\caption{Free body diagram(2)}
+		\label{}
+	\end{figure}
+\end{minipage} 
+\begin{align}
+\intertext{Consider for the masses, \ $ m_{2}>m_{1} $ and they are constant.}
+\intertext{Let us write the force equations for $ m_{1}$  and  $m_{2}$ . In the case of $m_{1} $, }
+T-m_{1} g&=m_{1} a  \qquad (\text{Where $T$ is the tension on the string.})\label{classical 1}
+\intertext{In the case of $m_{2} $,}
+m_{2} g-T&=m_{2} a \label{classical 2}
+\intertext{ $a$, the acceleration will be the same for the two masses because the string is continuous. Solving equations.\ref{classical 1} and \ref{classical 2} , we get,}
+\left(m_{2}-m_{1}\right) g&=\left(m_{1}+m_{2}\right) a \\ a&=\frac{m_{2}-m_{1}}{m_{1}+m_{2}} g \\
+T&=m_{1}\left(g+\frac{m_{2}-m_{1}}{m_{1}+m_{2}} g\right)\\&=\frac{2 m_{1} m_{2}}{m_{1}+m_{2}} g
+\end{align}
+\textbf{Case-2 : One of the masses  in vertical motion and the other is in horizontal motion.}\\\\
+Consider  the  arrangement  of  pulley and  blocks as shown  in  Figure  \ref{Pulley Problem2} . The  pulley  is assumed massless and frictionless and the connecting strings are massless and inextensible and the platform is frictionless.\\
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=3cm,width=4.5cm]{Laws of motion3}
+		\caption{Pulley Problem2}
+		\label{Pulley Problem2}
+	\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=4cm,width=4cm]{Laws of motion4}
+		\caption{Free body diagram}
+	\end{figure}
+\end{minipage}
+\begin{align}
+\intertext{Consider for the masses, \ $ m_{2}>m_{1} $ and they are constant.}
+\intertext{Let us write the force equations for $ m_{1}$  and  $m_{2}$ . In the case of $m_{1} $, }
+T&=m_{1} a  \quad (\text{Since the normal force and the gravitational forces cancells out.})\label{classical 3}
+\intertext{In the case of $m_{2} $,}
+m_{2} g-T&=m_{2} a \label{classical 4}
+\intertext{ $a$, the acceleration will be the same for the two masses because the string is continuous. Solving equations.\ref{classical 3} and \ref{classical 4} , we get,}
+m_{2} g&=m_{2} a+m_{1} a\\
+a&=\frac{m_{2} }{m_{2} +m_{1}}g
+\intertext{And the tension, $T$}
+m_{2} g-2T&=(m_{2} - m_{1}) a\\
+m_{2} g-2T&=(m_{2} - m_{1})\frac{m_{2} }{m_{2} +m_{1}}g=m_{2} \frac{(m_{2} - m_{1}) }{m_{2} +m_{1}}g\\
+2T &=m_{2} \left[1- \frac{(m_{2} - m_{1}) }{m_{2} +m_{1}} \right]g\\
+2T &=\frac{2(m_{2} m_{1}) }{m_{2} +m_{1}}g\\
+T&=\frac{( m_{1} m_{2}) }{m_{2} +m_{1}}g
+\end{align}
+\textbf{Case-2 : One of the masses  in vertical motion and the other is in horizontal motion on a wedge.}\\\\
+Consider  the  arrangement  of  pulley and  blocks as shown  in  Figure  \ref{Pulley Problem3} . The  pulley  is assumed massless and frictionless and the connecting strings are massless and inextensible and the platform is frictionless.\\
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=3.5cm,width=6cm]{Laws of motion5}
+		\caption{Pulley Problem}
+		\label{Pulley Problem3}
+	\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\includegraphics[height=3.5cm,width=5cm]{Laws of motion6}
+		\caption{Free body diagram}
+	\end{figure}
+\end{minipage}
+\begin{align}
+\intertext{Consider for the masses, \ $ m_{2}>m_{1} $ and they are constant.}
+\intertext{Let us write the force equations for $ m_{1}$  and  $m_{2}$ . In the case of $m_{1} $, }
+m_{1} g -T&=m_{1} a \label{classical5}
+\intertext{In the case of $m_{2} $,}
+m_{2} g \cos \theta &=N \quad (\text{They cancells out.})\\
+T-m_{2} g \sin \theta &=m_{2}a \label{classical6}
+\intertext{  Solving equations.\ref{classical5} and \ref{classical6} , we get,}
+m_{1} g - m_{2} g \sin \theta &=(m_{1}+m_{2}) a\\
+a&=\frac{(m_{1}  - m_{2}  \sin \theta)g}{(m_{1}+m_{2})}
+\intertext{And the tension, $T$}
+-2T+(m_{1} +m_{2}\sin \theta )g&=(m_{1}  - m_{2} )a\\
+-2T+(m_{1} +m_{2}\sin \theta )g&=(m_{1}  - m_{2} )\frac{(m_{1}  - m_{2}  \sin \theta)g}{(m_{1}+m_{2})}\\
+-2T&=-\frac{2m_{1}m_{2}+2m_{1}m_{2}\sin \theta}{m_{1}+m_{2}}\\
+T&=\frac{m_{1}m_{2} (1+\sin\theta)}{m_{1}+m_{2}}
+\end{align}
+\begin{exercise}
+	A block of mass 250 gm slides down  an incline of inclination $37^{\circ}$ with a uniform speed. Find the workdone against the friction as the block slides through 1.0 m
+\end{exercise}
+
+\begin{answer}$\left. \right.  $\\
+	\begin{minipage}{0.45\textwidth}
+		\begin{align*}
+		W&= F.S\\
+		&=FS\cos \theta
+		\intertext{Since the workdone is against frictional force, The force responsible for the workdone is $mg\sin\theta$}
+		W&=mg\sin\theta \times 1 \times   \cos \theta\\
+		&=mg\sin 37 \times 1 \times   \cos 0 \quad  (\text{$\because$ F and S are parallel})\\
+		&=0.25\times \times 9.8\times \sin 37 \times 1\\
+		&=1.5 J
+		\end{align*}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\begin{figure}[H]
+			\includegraphics[height=3.5cm,width=4.5cm]{wedge}
+		\end{figure}
+	\end{minipage}
+	
+	
+\end{answer}
+\subsection{Block on a string}
+Consider a mass $m$ whirls with constant speed $v$ at the end of a string of length $R$. We have to find the force on $m$ in the absence of gravity or friction. The figure.\ref{Block on string 1} is shown below. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=8cm]{block on string 1}
+	\caption{Block on string 1}
+	\label{Block on string 1}
+\end{figure}
+\begin{align*}
+\intertext{The only force on $m$ is the string force $T$, which acts toward the center. Here we need to use polar coordinate system.}
+\intertext{ if $r$ and $\theta$ are the polar coordinates of the particle,then the acceleration is,}
+a_{(r,\theta)}&=\left(\ddot{r}-r \dot{\theta}^{2}\right) \hat{{r}}+(r \ddot{\theta}+2 \dot{r} \dot{\theta}) \hat{\boldsymbol{\theta}}
+\intertext{The radial acceleration,}
+a_{r}&=\ddot{r}-r \dot{\theta}^{2} \qquad \text{Where $\dot{\theta}$ is the angular velocity.}
+\intertext{$a_{r}$ is directed positive outward.}\\
+\intertext{The tension on the wire is directed towards the origin then,}
+T&=-T \hat{r}\\
+-T &=m a_{r} \\
+&=m\left(\ddot{r}-r \dot{\theta}^{2}\right)
+\intertext{Here $r$ is the radius which is a constant. Then,}
+\ddot{r}&=\ddot{R}=0 \text { and } \dot{\theta}=v / R . \\ \text { Hence, } a_{r}&=-R
+(\frac{v}{R})^{2}=-v^{2} / R \\\text { And ,}\
+T&=\frac{m v^{2}}{R}
+\intertext{Since, the tension is directed towards the origin there is no outward forces on the mass $m$. When we  whirl a pebble at the end of a string, we feel an outward force. However, the force we feel does not act on the pebble, it acts on us. This force is equal in magnitude and opposite in direction to the force with which we pull the pebble, assuming the string's mass to be negligible.}
+\end{align*}
 \section{Dynamical systems}
 We start with a very broad definition of a dynamical system and introduce the key theoretical concepts of phase space and fixed points (or limit cycles). While the definition may not cover all dynamical systems, it does cover a whole variety systems of interest to us. We give examples of systems with very simple dynamics to begin with and prepare ground for the treatment of more complicated systems which may not be analytically solvable.
 \section{ Dynamical systems of order n}
@@ -754,3 +956,288 @@ The phase plot clearly shows how the momentum and displacement diminish with tim
 		5&\textbf{a}&6&\textbf{c}\\\hline
 	\end{tabular}
 \end{table}
+\newpage
+\begin{abox}
+	Practice set 2
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item The Hamiltonian of particle of mass $m$ is given by $H=\frac{p^{2}}{2 m}-\frac{\alpha q^{2}}{2}$. Which one of the following figure describes the motion of the particle in phase space?
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5cm]{diagram-20210915(5)-crop}
+	\end{figure}
+	\task[\textbf{B.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5cm]{diagram-20210915(6)-crop}
+	\end{figure}
+	\task[\textbf{C.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5cm]{diagram-20210915(7)-crop}
+	\end{figure}
+	\task[\textbf{D.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5cm]{diagram-20210915(8)-crop}
+	\end{figure}
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item A particle moves in one dimension under a potential $V(x)=\alpha|x|$ with some non-zero total energy. Which one of the following best describes the particle trajectory in the phase space?
+	\exyear{GATE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(11)-crop}
+		
+	\end{figure}
+	\task[\textbf{B.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(12)-crop}
+	\end{figure}
+	\task[\textbf{C.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(13)-crop}
+	\end{figure}
+	\task[\textbf{D.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(14)-crop}
+	\end{figure}
+\end{tasks}	
+\begin{minipage}{\textwidth}
+	\item A particle moves in one dimension under a potential $V(x)=\alpha|x|$ with some non-zero total energy. Which one of the following best describes the particle trajectory in the phase space?
+	\exyear{GATE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(11)-crop}
+		
+	\end{figure}
+	\task[\textbf{B.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(12)-crop}
+	\end{figure}
+	\task[\textbf{C.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(13)-crop}
+	\end{figure}
+	\task[\textbf{D.}]\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{diagram-20210915(14)-crop}
+	\end{figure}
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{d}&2&\textbf{a}\\\hline
+		3&\textbf{b}&&\\\hline
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practise set-3
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item  A large mass $\mathrm{M}$ and a small mass ${m}$ hang at the two ends of a string that passes through a smooth tube as shown in fig. The mass $m$ moves around a circular path in a horizontal plane. The length of the string from mass $m$ to the top of the tube is $l$, and $\theta$ is the angle the string makes with the vertical. What should be the frequency $(v)$ of rotation of mass $m$ so that mass	$M$ remains stationary?
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=5cm,width=3.5cm]{pq05}
+	\end{figure}
+	\begin{answer}
+		\begin{align*}
+		\text{Tension in the string }\mathrm{T}&=\mathrm{Mg}\\
+		\text{Centripetal force on the body }&=\operatorname{mr} \omega^{2}=\operatorname{mr}(2 \pi \mathrm{v})^{2}
+		\intertext{ This is provided by the component of tension acting horizontally i.e. $T \sin \theta=M g \sin \theta $.}
+		\therefore \mathrm{mr}(2 \pi v)^{2}&=\mathrm{} \sin \theta=
+		\mathrm{Mg} \frac{r}{l} \\ v&=\frac{1}{2 \pi} \sqrt{\frac{\mathrm{Mg}}{\mathrm{m l} }}
+		\end{align*}
+	\end{answer}
+	\item A string of negligible mass going over a clamped pulley of mass $\mathrm{m}$ supports a block of mass $M$ as shown in fig. The force on the pulley by the clamp is given by\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4.5cm,width=3.2cm]{pq06}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{A.}]$\sqrt{2} \mathrm{Mg}$
+		\task[\textbf{B.}] $\sqrt{2} \mathrm{mg}$
+		\task[\textbf{C.}]  $\left[\sqrt{\left.(\mathrm{M}+\mathrm{m})^{2}+\mathrm{m}^{2}\right]} \mathrm{g}\right.$
+		\task[\textbf{D.}] $\left[\sqrt{\left.(\mathrm{M}+\mathrm{m})^{2}+\mathrm{M}^{2}\right]} \mathrm{g}\right.$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{Force on the pulley by the clamp $=$ resultant of $\mathrm{T}=(\mathrm{M}+\mathrm{m}) \mathrm{g}$ and $\mathrm{mg}$ acting along horizontal and vertical respectively}
+		\therefore \mathrm{F}&=\sqrt{[(\mathrm{M}+\mathrm{m}) \mathrm{g}]^{2}+(\mathrm{mg})^{2}}\\&=\left[\sqrt{(\mathrm{M}+\mathrm{m})^{2}+\mathrm{m}^{2}}\right] \mathrm{g}
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
+	\item Find the mass $M$ of the hanging block in figure which will prevent smaller block from slipping over the triangular block. All surfaces are frictionless and the string and the pulley are light.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.7cm,width=6cm]{pq09}
+	\end{figure}
+	\begin{answer}
+		\begin{align}
+		\intertext{Since $\mathrm{m}$ does not slip on M' (relative velocity of $\mathrm{m}$ w.r.t. M' is zero)}\notag
+		\intertext{$\therefore \mathrm{M}^{\prime}, \mathrm{m}$ will move with same acceleration as that of $\mathrm{M}$, Since surfaces are smooth}\notag
+		\text{$\therefore$ frictional force is zero}\notag\\
+		\text{Net force }&=\mathrm{Mg}=\left(\mathrm{M}+\mathrm{M}^{\prime}+\mathrm{m}\right) \mathrm{a}\notag\\
+		\therefore \mathrm{a}&=\frac{\mathrm{Mg}}{\mathrm{M}+\mathrm{M}^{\prime}+\mathrm{m}}\label{pq01}
+		\intertext{Now let us see m, w.r.t. M'}\notag
+		\end{align}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=4cm]{pq09(2)}
+		\end{figure}
+		\begin{align}
+		\intertext{Downward acceleration of $\mathrm{m}$ on slope $=0$}
+		\therefore \mathrm{N}-\mathrm{ma} \sin \theta+\mathrm{mg} \cos \theta&=0\\
+		(\text{net }&\perp\text{ force }=0)\notag\\
+		\text{and }m g \sin \theta-\operatorname{ma} \cos \theta&=0\label{pq03}\\
+		[\because&\text{ net force along slope }=0]\notag\\
+		\text{From eq }^{n} \cdot(\ref{pq03}) g \sin \theta=a \cos \theta\text{ or }a&=g \tan \theta\label{pq04}
+		\intertext{From eq $^{\mathrm{n}}$. (\ref{pq04}) and (\ref{pq01}),}\notag\\
+		\text{we have }\tan \theta&=\frac{M}{M+M^{\prime}+m} \notag\\\Rightarrow M \cot \theta&=M+M^{\prime}+m\notag\\
+		\Rightarrow \mathrm{M}&=\frac{\mathrm{M}^{\prime}+\mathrm{m}}{\cot \theta-1}\notag
+		\end{align}
+	\end{answer}
+	\item A mass of $15 kg$ and another of mass $6kg$ are attached to a pulley system as shown in the fig. A is a fixed pulley while $B$ is a movable one. Both are considered light and frictionless. Find the acceleration of $6kg$ mass.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=6.5cm,width=4cm]{pq13}
+	\end{figure}
+	\begin{answer}
+		Tension is the same throughout the string. It is clear that $\mathrm{M}_{1}$ will descend downwards while $\mathrm{M}_{2}$ rises up. If the acceleration of $\mathrm{M}_{1}$ is a downwards, $\mathrm{M}_{2}$ will have an acceleration ' $2 \mathrm{a}$ ' upward.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=6cm,width=4cm]{pq13(2)}
+		\end{figure}
+		\begin{align*}
+		\intertext{Now,}
+		\mathrm{M}_{1} \mathrm{~g}-2 \mathrm{~T}&=\mathrm{M}_{1} \mathrm{a}\\
+		\mathrm{T}-\mathrm{M}_{2} \mathrm{~g}&=\mathrm{M}_{2} \cdot 2 \mathrm{a}
+		\intertext{or}
+		\mathrm{M}_{1} \mathrm{~g}-2 \mathrm{M}_{2} \mathrm{~g}&=\mathrm{a}\left(\mathrm{M}_{1}+4 \mathrm{M}_{2}\right)\\
+		\Rightarrow a&=\frac{M_{1}-2 M_{2}}{M_{1}+4 M_{2}} g=\frac{15-12}{15-24} g=\frac{3}{39} g\\
+		\therefore \mathrm{a}&=\frac{\mathrm{g}}{13}\\
+		\therefore \text{ acceleration of }6 \mathrm{~kg}\text{ mass }&=2 \mathrm{a}=\frac{2 \mathrm{~g}}{13}
+		\end{align*}
+	\end{answer}
+	\item A mass $m$ is revolving in a vertical circle at the end of a string of length $20 \mathrm{~cm}$. By how much does the tension of the string at the lowest point exceed the tension at the topmost point?
+	\begin{answer}
+		\begin{align*}
+		\intertext{The tension $T_{1}$ at the topmost point is given by,}
+		\mathrm{T}_{1}=\frac{\mathrm{m} \mathrm{v}_{1}^{2}}{20}-\mathrm{mg}
+		\intertext{Centrifugal force acting outward while weight acting downward}
+		\text{The tension $T_{2}$ at the lowest point, }T_{2}&=\frac{m v_{2}^{2}}{20}+m g
+		\intertext{Centrifugal force and weight (both) acting downward}
+		\mathrm{T}_{2}-\mathrm{T}_{1}&=\frac{\mathrm{m} \mathrm{v}_{2}{ }^{2}-\mathrm{m} \mathrm{v}_{1}^{2}}{20}+2 \mathrm{mg} ; \\ \mathrm{v}_{1}^{2}&=\mathrm{v}_{2}^{2}-2 \mathrm{~g} \mathrm{~h}\text{ or}\\
+		\mathrm{v}_{2}^{2}-\mathrm{v}_{1}^{2}&=2 \mathrm{~g}(40)=80 \mathrm{~g}\\
+		\therefore \quad T_{2}-T_{1}&=\frac{80 \mathrm{mg}}{20}+2 \mathrm{~m} \mathrm{~g}=6 \mathrm{mg}
+		\end{align*}
+	\end{answer}
+	\item 
+	A block of mass $m$ is placed on a smooth wedge of inclination $\theta$. The whole system is accelerated horizontally so that the block does not slip on the wedge. The force exerted by the wedge on the block (g is acceleration due to gravity) will be
+	\begin{tasks}(4)
+		\task[\textbf{A.}]	$\mathrm{mg} / \cos \theta$
+		\task[\textbf{B.}] $\mathrm{mg} \sin \theta$
+		\task[\textbf{C.}] $m g \cos \theta$
+		\task[\textbf{D.}] $\mathrm{mg}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align}
+		N&=m a \sin \theta+m g \cos \theta\\
+		\text{also }\mathrm{m} \mathrm{g} \sin \theta&=\mathrm{m} \operatorname{a} \cos \theta\label{pq06}\\
+		\text{from }(\ref{pq06}) a&=g \tan \theta\notag\\
+		\therefore \mathrm{N}&=\mathrm{mg} \frac{\sin ^{2} \theta}{\cos \theta}+\mathrm{mg} \cos \theta\notag\\
+		\text{or }N&=\frac{m g}{\cos \theta}\notag
+		\end{align}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=4cm]{pq05(s)}
+		\end{figure}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item The coefficient of static friction, $\mu_{\mathrm{s}}$, between block $\mathrm{A}$ of mass $2 \mathrm{~kg}$ and the table as shown in the figure is $0.2$. What would be the maximum mass value of block $\mathrm{B}$ so that the two blocks do not move? The string and the pulley are assumed to be smooth and massless. ( $\left.\mathrm{g}=10 \mathrm{~m} / \mathrm{s}^{2}\right)$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{pq07}
+	\end{figure}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]$0.4 \mathrm{~kg}$
+		\task[\textbf{B.}] $4.0 \mathrm{~kg}$
+		\task[\textbf{C.}] $2.0 \mathrm{~kg}$
+		\task[\textbf{D.}] $0.2 \mathrm{~kg}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\mathrm{m}_{\mathrm{B}} \mathrm{g}&=\mu_{\mathrm{s}} \mathrm{m}_{\mathrm{A}} \mathrm{g} \quad\left\{\because \mathrm{m}_{\mathrm{A}} \mathrm{g}=\mu_{\mathrm{s}} \mathrm{m}_{\mathrm{A}} \mathrm{g}\right\}\\
+		\Rightarrow \mathrm{m}_{\mathrm{B}}&=\mu_{\mathrm{s}} \mathrm{m}_{\mathrm{A}}\\
+		\text{	or }m_{B}&=0.2 \times 2=0.4 \mathrm{~kg}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item A person of mass $60 \mathrm{~kg}$ is inside a lift of mass $940 \mathrm{~kg}$ and presses the button on control panel. The lift starts moving upwards with an acceleration $1.0 \mathrm{~m} / \mathrm{s}^{2}$. If $\mathrm{g}=10 \mathrm{~ms}^{-2}$, the tension in the supporting cable is
+	\begin{tasks}(4)
+		\task[\textbf{A.}]$8600 \mathrm{~N}$
+		\task[\textbf{B.}] $9680 \mathrm{~N}$
+		\task[\textbf{C.}] $11000 \mathrm{~N}$
+		\task[\textbf{D.}]  $1200 \mathrm{~N}$
+	\end{tasks}
+	\begin{answer}$\left. \right. $
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3cm,width=4cm]{pq06(s)}
+		\end{figure}
+		\begin{align*}
+		\text{	Total mass }&=(60+940) \mathrm{kg}=1000 \mathrm{~kg}
+		\intertext{Let $\mathrm{T}$ be the tension in the supporting cable, then}
+		\mathrm{T}-1000 \mathrm{~g}&=1000 \times 1\\
+		\Rightarrow \mathrm{T}&=1000 \times 11=11000 \mathrm{~N}
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
+	\item A given object takes $\mathrm{n}$ times as much time to slide down a $45^{\circ}$ rough incline as it takes to slide down a perfectly smooth $45^{\circ}$ incline. The coefficient of kinetic friction between the object and incline is given by
+	\begin{tasks}(4)
+		\task[\textbf{A.}]$\left(1-\frac{1}{n^{2}}\right)$
+		\task[\textbf{B.}] $\frac{1}{1-\mathrm{n}^{2}}$
+		\task[\textbf{C.}] $\sqrt{\left(1-\frac{1}{n^{2}}\right)}$
+		\task[\textbf{D.}] $\sqrt{\left(\frac{1}{1-\mathrm{n}^{2}}\right)}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{	We have }\sqrt{\frac{2 s}{g(\sin \theta-\mu \cos \theta)}}&=n \sqrt{\frac{2 s}{g \sin \theta}}\\
+		\frac{2 s}{g(\sin \theta-\mu \cos \theta)}&=\frac{2 s \times n^{2}}{g \sin \theta}\\
+		\text{here }\theta&=45^{\circ} \Rightarrow \frac{1}{1-\mu}=\mathrm{n}^{2}\\ \text{ or } \mu&=\left(1-1 / \mathrm{n}^{2}\right)
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item Two fixed frictionless inclined planes making an angle $30^{\circ}$ and $60^{\circ}$ with the vertical are shown in the figure. Two blocks A and $B$ are placed on the two planes. What is the relative vertical acceleration of $A$ with respect to $B$ ?
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5.5cm]{pq091}
+	\end{figure}
+	
+	\begin{answer}
+		\begin{align*}
+		m g \sin \theta&=m a\\
+		\therefore a&=g \sin \theta\\
+		&\text{where a is along the inclined plane}\\
+		\therefore&\text{vertical component of acceleration is $g \sin ^{2} \theta$}\\
+		\intertext{Then the  relative vertical acceleration of $\mathrm{A}$ with respect to $\mathrm{B}$ is}
+		g\left(\sin ^{2} 60-\sin ^{2} 30\right]&=\frac{g}{2}\\&=4.9 \mathrm{~m} / \mathrm{s}^{2}\quad
+		(\text{in vertical direction})
+		\end{align*}
+	\end{answer}
+\end{enumerate}
