@@ -266,13 +266,16 @@ Let us consider now the motion of a particle having the energy $E_{1}$, as shown
 	\caption{The equivalent one dimensional potential of inverse square law of force,illustrating the condition for circular orbits}
 	\label{}
 \end{figure}
-\begin{note}
+\subsection{Condition for circular orbit}
 Remembering that the effective "force" is the negative of the slope of the $V^{\prime}$ curve, the requirement for circular orbits is simply that $f^{\prime}$ be zero, or
 $$
 f(r)=-\frac{l^{2}}{m r^{3}}=-m r \dot{\theta}^{2}
 $$
 which can be also derived by $\left.\frac{\partial V_{\text {effective }}}{\partial r}\right|_{r=r_{0}}=0$ and $\dot{\theta}=\omega_{0}$ is identified as angular frequency circular orbit.	
-\end{note}
+where $$V_{e f f}=\frac{J^{2}}{2 m r^{2}}-\frac{k}{r^{n}}$$
+Radius $r=r_0$ of circular orbit is also identified as stable equilibrium point so $\frac{\partial^2V_{effective}}{\partial r}|_{r=r_0}\geq 0$
+Somehow particle of mass m changes its orbit without changing its angular momentum and orbit is bounded then new orbit is identified as elliptical orbit .The angular frequency in new elliptical orbit is 
+$$\omega=\sqrt{\frac{\frac{\partial^2 V_{effective}}{\partial r}|_{r-r_0}}{m}}$$
 \subsection{The differential equation for the orbit}
 Under central force
 \begin{align}
@@ -661,9 +664,16 @@ $$\left|\overrightarrow{\mathbf{V}}_{1,2, i}^{\prime}\right|=\left|\overrightarr
  	\caption{}
  	\label{}
  \end{figure}
- Let $\vec{v_1^{\prime}}$ and $\vec{v_2^{\prime}}$ be the final velocities of the particle $m_1$ and $m_2$ after collision in the center of mass frame making an angle $\theta$ with the X-axis as shown in the figure.Then\\
- $\vec{v_1^{\prime}}=\vec{v_1}-\vec{V}_{cm}$ \hspace{1cm} $\vec{v_2^{\prime}}=\vec{v_2}-\vec{V}_{cm}$\\
-As $\vec{u_2}=0 ,\quad \vec{V}_{cm}=\frac{m_1u_1}{m_1+m_2}$\\
+ Let $\vec{v_1^{\prime}}$ and $\vec{v_2^{\prime}}$ be the final velocities of the particle $m_1$ and $m_2$ after collision in the center of mass frame making an angle $\theta$ with the X-axis as shown in the figure.
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=4cm,width=9cm]{diagram-20220221(14)-crop}
+ 	\caption{}
+ 	\label{}
+ \end{figure}
+ Then\\
+ $$\vec{v_1^{\prime}}=\vec{v_1}-\vec{V}_{cm} \hspace{1cm} \vec{v_2^{\prime}}=\vec{v_2}-\vec{V}_{cm}$$
+As $$\vec{u_2}=0 ,\quad \vec{V}_{cm}=\frac{m_1u_1}{m_1+m_2}$$
 ie $\vec{V}_{cm}$ and $u_1$ have the same direction along X-axis.Therefore $\vec{V}_{cm}$ has no component along the Y-axis .The y component of the velocity of the particle of mass $m_1$ is the same in both frames.
 \begin{equation}
 v_1\sin\theta_1=v_1^{\prime}\sin\theta
@@ -892,5 +902,82 @@ v_1\cos \theta_{1}=v_1^{\prime}\cos\theta +V_{cm}
 		9&\textbf{c}&10&\textbf{d}\\\hline
 		11&\textbf{c}&12&\textbf{b}\\\hline
 		13&\textbf{c}&&\\\hline
+	\end{tabular}
+\end{table}
+
+\newpage
+\begin{abox}
+	Practice set 2
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item In a central force field, the trajectory of a particle of mass $m$ and angular momentum $L$ in plane polar coordinates is given by,\\
+	$$\frac{1}{r}=\frac{m}{l^{2}}(1+\varepsilon \cos \theta)$$
+	where, $\varepsilon$ is the eccentricity of the particle's motion. Which one of the following choice for $\varepsilon$ gives rise to a parabolic trajectory?
+	\exyear{GATE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\varepsilon=0$
+	\task[\textbf{B.}]$\varepsilon=1$
+	\task[\textbf{C.}] $0<\varepsilon<1$
+	\task[\textbf{D.}] $\varepsilon>1$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item A particle of unit mass moves along the $x$-axis under the influence of a potential, $V(x)=x(x-2)^{2}$. The particle is found to be in stable equilibrium at the point $x=2$. The time period of oscillation of the particle is
+	\exyear{GATE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{\pi}{2}$
+	\task[\textbf{B.}]$\pi$
+	\task[\textbf{C.}]$\frac{3 \pi}{2}$
+	\task[\textbf{D.}] $2 \pi$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { A particle of mass } m \text { is in a potential given by }$
+	$$V(r)=-\frac{a}{r}+\frac{a r_{0}^{2}}{3 r^{3}}$$
+	where $a$ and $r_{0}$ are positive constants. When disturbed slightly from its stable equilibrium position it undergoes a simple harmonic oscillation. The time period of oscillation is
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 \pi \sqrt{\frac{m r_{0}^{3}}{2 a}}$
+	\task[\textbf{B.}]$2 \pi \sqrt{\frac{m r_{0}{ }^{3}}{a}}$
+	\task[\textbf{C.}]$2 \pi \sqrt{\frac{2 m r_{0}^{3}}{a}}$
+	\task[\textbf{D.}]$4 \pi \sqrt{\frac{m r_{0}^{3}}{a}}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item A planet of mass $m$ moves in a circular orbit of radius $r_{0}$ in the gravitational potential $V(r)=-\frac{k}{r}$, where $k$ is a positive constant. The orbit angular momentum of the planet is
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 r_{0} \mathrm{~km}$
+	\task[\textbf{B.}]$\sqrt{2 r_{0} \mathrm{~km}}$
+	\task[\textbf{C.}]$r_{0} k m$
+	\task[\textbf{D.}]$\sqrt{r_{0} k m}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item An interstellar object has speed $v$ at the point of its shortest distance $R$ from a star of much larger mass $M$. Given $v^{2}=2 G M / R$, the trajectory of the object is
+	\exyear{GATE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] circle
+	\task[\textbf{B.}]ellipse
+	\task[\textbf{C.}]parabola
+	\task[\textbf{D.}]hyperbola
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{b}&2&\textbf{b}\\\hline
+		3&\textbf{a}&4&\textbf{d}\\\hline
+		5&\textbf{c}&&\\\hline
 	\end{tabular}
 \end{table}
