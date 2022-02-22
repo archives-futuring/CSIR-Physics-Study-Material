@@ -293,13 +293,6 @@ A person of mass $M$ stands on the ladder at a distance $D$ from its base (see f
 v&=\frac{g}{4 k} r \Rightarrow v=\frac{g}{4} t\notag
 	\end{align}
 \end{answer}
-
-
-
-
-
-
-
 	\item A particle of mass $2 \mathrm{~kg}$ is moving such that at time $t$, its position, in metre, is given by $\vec{r}(t)=5 \hat{i}-2 t^{2} \hat{j}$. The angular momentum of the particle at $t=2 \mathrm{~s}$ about the origin, in $\mathrm{kg} \mathrm{m}^{2} \mathrm{~s}^{-1}$, is
 	 \begin{tasks}(2)
 		\task[\textbf{a.}]$-40 \hat{k}$
@@ -469,4 +462,226 @@ v&=\frac{g}{4 k} r \Rightarrow v=\frac{g}{4} t\notag
 		\therefore T&=2 \pi \sqrt{\frac{8 \alpha^{3}}{\beta^{4}} \cdot m}=4 \pi \sqrt{\frac{2 \alpha^{3} m}{\beta^{4}}}
 		\end{align*}
 	\end{answer}
+\end{enumerate}
+\begin{enumerate}
+	\item The Lagrangian of a particle of charge e and mass $m$ in applied electric and magnetic fields is given by $L=\frac{1}{2} \mathrm{~m} \vec{v}^{2}+\mathrm{e} \overrightarrow{\mathrm{A}} \cdot \vec{v}-\mathrm{e} \phi$, where $\overrightarrow{\mathrm{A}}$ and $\phi$ are the vector and scalar potentials corresponding to the magnetic and electric fields, respectively. Which of the following statements is correct?
+	 \begin{tasks}(1)
+		\task[\textbf{a.}] The carionically conjugate momentum of the particle is given by $\overrightarrow{\mathrm{p}}=\mathrm{m} \overrightarrow{\mathrm{v}}$
+		\task[\textbf{b.}]The Hamiltonian of the particle is given by $\mathrm{H}=\frac{\overrightarrow{\mathrm{p}}^{2}}{2 \mathrm{~m}}+\frac{\mathrm{e}}{\mathrm{m}} \cdot \overrightarrow{\mathrm{A}} \cdot \overrightarrow{\mathrm{p}}+\mathrm{e} \phi$
+		\task[\textbf{c.}]L remains unchanged under a gauge transformation of the potentials.
+		\task[\textbf{d.}]  Under a gauge transformation of the potentials, $\mathrm{L}$ changes by the total time derivative of a function of $\overrightarrow{\mathrm{r}}$ and $\mathrm{t}$.
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\mathrm{L}&=\frac{1}{2} \mathrm{~m} \overrightarrow{\mathrm{v}}-\mathrm{e} \phi+\mathrm{e} \overrightarrow{\mathrm{A}} \cdot \overrightarrow{\mathrm{v}}
+	\intertext{	We know that $\vec{E}$ and $\vec{B}$ fields are in variant under gauge transformation.}
+		\overrightarrow{\mathrm{A}}(\overrightarrow{\mathrm{x}}, \mathrm{t}) \rightarrow \overrightarrow{\mathrm{A}}^{\prime}&=\overrightarrow{\mathrm{A}}+\vec{\nabla} \lambda(\overrightarrow{\mathrm{x}}, \mathrm{t}) ; \quad \varphi(\overrightarrow{\mathrm{x}}, \mathrm{t}) \rightarrow \varphi^{\prime}=\varphi-\frac{\partial \lambda}{\partial \mathrm{t}}(\overrightarrow{\mathrm{x}}, \mathrm{t})
+	\intertext{	where $\lambda(\vec{x}, t)$ is an arbitrary scalar function.}
+		\therefore \quad \mathrm{L} \rightarrow \mathrm{L}^{\prime}&=\mathrm{L}+\mathrm{e}\left(\frac{\partial \lambda}{\partial \mathrm{t}}(\overrightarrow{\mathrm{x}}, \mathrm{t})+\overrightarrow{\mathrm{v}} \cdot \vec{\nabla} \lambda(\overrightarrow{\mathrm{x}}, \mathrm{t})\right)
+		\end{align*}
+		The expression in bracket is just the total time derivative of $\lambda(\vec{x}, t)$.\\
+		If we add a total time derivative of a function of $\overrightarrow{\mathrm{x}}$ and $\mathrm{t}$ to the Lagrangian, the equations of motion do not change.\\
+		Correct answer is option \textbf{(d)}
+	\end{answer}
+	\item The Hamiltonian o fa system with $n$ degrees of freedom is given by \\$H\left(q_{i}, \ldots \ldots \ldots ., q_{n} ; p_{i}, \ldots \ldots \ldots \ldots, p_{n} ; t\right)$\\
+	with an explicit dependence on the time $t$. Which of the following is correct?
+	 \begin{tasks}(1)
+		\task[\textbf{a.}]Different phase trajectories cannot intersect each other
+		\task[\textbf{b.}]H always represents the total energy of the system and is a constant of the motion.
+		\task[\textbf{c.}]The equations $\dot{\mathrm{q}}_{\mathrm{i}}=\partial \mathrm{H} / \partial \mathrm{p}_{\mathrm{i}}, \dot{\mathrm{p}}_{\mathrm{i}}=-\partial \mathrm{H} / \partial \mathrm{q}_{\mathrm{i}}$ are not valid since H has explicit time dependence.
+		\task[\textbf{d.}] Any initial volume element in phase space remains unchanged in magnitude under time evolution.
+	\end{tasks}
+\begin{answer}
+	According to Liouville's theorem, the phase volume occupied by a collection of system evolve according to - Hamilton's equation of motion, and will be preserved in time.\\
+	Correct answer is option \textbf{(d)}
+\end{answer}
+	\item A double pendulum consists of two point masses $m$ attached by massless strings of length $l$ as shown in the figure:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=4.5cm]{CM-02}
+	\end{figure}
+	The kinetic energy of the pendulum is :
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} \mathrm{~m} \ell^{2}\left[\dot{\theta}_{1}^{2}+\dot{\theta}_{2}^{2}\right]$
+		\task[\textbf{b.}]$\frac{1}{2} m \ell^{2}\left[2 \dot{\theta}_{1}^{2}+\dot{\theta}_{2}^{2}+2 \dot{\theta}_{1} \dot{\theta}_{2} \cos \left(\dot{\theta}_{1}-\dot{\theta}_{2}\right)\right]$
+		\task[\textbf{c.}]$\frac{1}{2} m \ell^{2}\left[\dot{\theta}_{1}^{2}+2 \dot{\theta}_{2}^{2}+2 \dot{\theta}_{1} \dot{\theta}_{2} \cos \left(\dot{\theta}_{1}-\dot{\theta}_{2}\right)\right]$
+		\task[\textbf{d.}] $\frac{1}{2} \mathrm{~m} \ell^{2}\left[2 \dot{\theta}_{1}^{2}+\dot{\theta}_{2}^{2}+2 \dot{\theta}_{1} \dot{\theta}_{2} \cos \left(\dot{\theta}_{1}+\dot{\theta}_{2}\right)\right]$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+	\mathrm{x}_{1}&=\ell \sin \theta_{1},  \mathrm{x}_{2}=\ell \sin \theta_{1}+\ell \sin \theta_{2} \\ \mathrm{y}_{1}&=-\ell \cos \theta_{1},  \mathrm{y}_{2}=-\ell \cos \theta_{1}-\ell \cos \theta_{2} \\ \dot{\mathrm{x}}_{1}&=\ell \cos \theta_{1} \dot{\theta}_{1},  \dot{\mathrm{y}}_{1}=\ell \sin \theta_{1} \dot{\theta}_{1}
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4.5cm,width=6.5cm]{CM-03}
+		\end{figure}
+		\begin{align*}
+		\dot{x}_{2}&=\ell \cos \theta_{1} \dot{\theta}_{1}+\ell \cos \theta_{2} \dot{\theta}_{2} ; \quad \dot{y}_{2}=\ell \sin \theta_{1} \dot{\theta}_{1}+\ell \sin \theta_{2} \dot{\theta}_{2},\\
+		T&=\frac{m}{2}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}\right)+\frac{m}{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}\right)\\
+		&=\frac{\mathrm{m}}{2} \dot{\theta}_{1}^{2} \ell^{2}+\frac{\mathrm{m}}{2}\left[\dot{\theta}_{1}^{2} \ell^{2}+\dot{\theta}_{2}^{2} \ell^{2}+2 \ell^{2} \dot{\theta}_{1} \dot{\theta}_{2} \cos \left(\theta_{1}-\theta_{2}\right)\right]\\
+		&=\frac{\mathrm{m} \ell^{2}}{2}\left[2 \dot{\theta}_{1}^{2}+\dot{\theta}_{2}^{2}+2 \dot{\theta}_{1} \dot{\theta}_{2} \cos \left(\theta_{1}-\theta_{2}\right)\right]
+		\end{align*}
+		Correct answer is \textbf{(b)}
+	\end{answer}
+	\item A particle of mass ' $\mathrm{m}$ ' moves inside a bowl. If the surface of the bowl is given by the equation $\mathrm{z}=\frac{1}{2} \mathrm{a}\left(\mathrm{x}^{2}+\mathrm{y}^{2}\right)$, where $a$ is a constant, the Lagrangian of the particle is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}] $\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\phi}^{2}-g a r^{2}\right)$
+		\task[\textbf{b.}] $\frac{1}{2} m\left[\left(1+a^{2} r^{2}\right) \dot{r}^{2}+r^{2} \dot{\phi}^{2}\right]$
+		\task[\textbf{c.}]$\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+r^{2} \sin ^{2} \dot{\phi}^{2}-g a r^{2}\right)$
+		\task[\textbf{d.}]  $\frac{1}{2} m\left[\left(1+a^{2} r^{2}\right) \dot{r}^{2}+r^{2} \dot{\phi}^{2}-g a r^{2}\right]$
+	\end{tasks}
+	\begin{answer}$\left. \right. $
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=1.5cm,width=2cm]{CM-04}
+		\end{figure}
+		\begin{align*}
+		z&=\frac{1}{2} a\left(x^{2}+y^{2}\right)=\frac{1}{2} a r^{2} \quad \Rightarrow \dot{z}=a r \dot{r}\\
+	\text{	K.E. }&=T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)\\
+	&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\varphi}^{2}+\dot{z}^{2}\right)\\
+	&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\varphi}^{2}+a^{2} r^{2} \dot{r}^{2}\right) \qquad\text{ P.E.} =V=m g z=\frac{1}{2} m g a r^{2}\\
+	L&=T-V=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\varphi}^{2}+a^{2} r^{2} \dot{r}^{2}-g a r^{2}\right)=\frac{1}{2} m\left[\left(1+a^{2} r^{2}\right) r^{2}+r^{2} \dot{\varphi}^{2}-g a r^{2}\right]
+		\end{align*}
+		Correct answer is option\textbf{(d)}
+	\end{answer}
+	\item A mass point glides without friction on a cycloid, which is given by $x=a(\vartheta-\sin \vartheta)$ and $y=a(1+\cos \vartheta)$ (with $0 \leq \vartheta \leq 2 \pi$ ). Determine\\
+	(a) the Lagrangian, and\\
+	(b) the equation of motion\\
+	(c) Solve the equation of motion
+	\begin{answer}
+		The cycloid is represented by
+		\begin{align*}
+		x=a(\vartheta-\sin \vartheta), \quad y=a(1+\cos \vartheta),
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.2cm,width=9cm]{CM-05}
+		\end{figure}
+		\begin{align*}
+	\text{	where }&0 \leq \vartheta \leq 2 \pi.\text{ The kinetic energy is}\\
+		T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)&=\frac{1}{2} m a^{2}\left\{[(1-\cos \vartheta) \dot{\vartheta}]^{2}+[-(\sin \vartheta) \dot{\vartheta}]^{2}\right\},\\
+	\text{	and the potential energy is }V&=m g y=m g a(1+\cos \vartheta).\\
+		\text{The Lagrangian is given by }L&=T-V=m a^{2}(1-\cos \vartheta) \dot{\vartheta}^{2}-m g a(1+\cos \vartheta).\\
+		\text{The equation of motion then reads }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\vartheta}}\right)-\frac{\partial L}{\partial \vartheta}=0,\\
+	\text{	i.e., }\quad &\frac{d}{d t}\left[2 m a^{2}(1-\cos \vartheta) \dot{\vartheta}\right]-\left[m a^{2}(\sin \vartheta) \dot{\vartheta}^{2}+m g a \sin \vartheta\right]=0\\
+	\text{ or }\quad &\frac{d}{d t}[(1-\cos \vartheta) \dot{\vartheta}]-\frac{1}{2}(\sin \vartheta) \dot{\vartheta}^{2}-\frac{8}{2 a} \sin \vartheta=0,\\
+	\text{ i.e.,} \quad&(1-\cos \vartheta) \ddot{\vartheta}+\frac{1}{2}(\sin \vartheta) \dot{\vartheta}^{2}-\frac{g}{2 a} \sin \vartheta=0.\\
+\text{	By setting }u&=\cos \left(\frac{\vartheta}{2}\right), \text{one has }\frac{d u}{d t}=-\frac{1}{2} \sin \left(\frac{\vartheta}{2}\right) \dot{\vartheta}\text{ and } \frac{d^{2} u}{d t^{2}}\\&=-\frac{1}{2} \sin \left(\frac{\vartheta}{2}\right) \ddot{\vartheta}-\frac{1}{4} \cos \left(\frac{\vartheta}{2}\right) \dot{\vartheta}^{2} .\\ \text{Since }&\cot \left(\frac{\vartheta}{2}\right)=\sin \frac{\vartheta}{(1-\cos \vartheta)},\text{ we can write as}\\
+\ddot{\vartheta}+\frac{1}{2} \cot \left(\frac{\vartheta}{2}\right) \dot{\vartheta}^{2}-\frac{g}{2 a} \cot \left(\frac{\vartheta}{2}\right)&=0,\text{ and therefore,} \frac{d^{2} u}{d t^{2}}+\frac{g}{4 a} u=0. 
+\intertext{The solution of this differential equation is}
+u&=\cos \left(\frac{\vartheta}{2}\right)=C_{1} \cos \sqrt{\frac{g}{4 a}} t+C_{2} \sin \sqrt{\frac{g}{4 a}} t 
+\intertext{ The motion is just like the vibration of an ordinary pendulum of length $l=4 a$. The arrangement is therefore called a "cycloid pendulum".}
+		\end{align*}
+	\end{answer}
+	\item 	Three particles of equal mass ' $m$ ' are connected by two identical massless springs of stiffiness constant ' $k$ ' as shown in the figure.\\
+	If $x_{1}, x_{2}$ and $x_{3}$ denote the displacements of the masses from their respective equilibrium positions, the potential energy of the system is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} k\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}\right)$
+		\task[\textbf{b.}]$\frac{1}{2} k\left[x_{1}^{2}+x_{2}^{2}+x_{3}^{2}-x_{2}\left(x_{1}+x_{3}\right)\right]$
+		\task[\textbf{c.}]$\frac{1}{2} k\left[x_{1}^{2}+2 x_{2}^{2}+x_{3}^{2}+2 x_{2}\left(x_{1}+x_{3}\right)\right]$
+		\task[\textbf{d.}] $\frac{1}{2} k\left[x_{1}^{2}+2 x_{2}^{2}+x_{3}^{2}-2 x_{2}\left(x_{1}+x_{3}\right)\right]$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Potential energy }&=\frac{1}{2} k\left(x_{2}-x_{1}\right)^{2}\hspace{2cm}
+		\text{first spring}\\
+	\text{	Potential energy }&=\frac{1}{2} k\left(x_{3}-x_{2}\right)^{2}\hspace{2cm}
+	\text{	second spring}
+	\intertext{Potential energy of the system,}
+	&=\frac{1}{2} k\left(x_{2}-x_{1}\right)^{2}+\frac{1}{2} k\left(x_{3}-x_{2}\right)^{2}=\frac{1}{2} k\left[x_{1}^{2}+x_{2}^{2}-2 x_{1} x_{2}+x_{2}^{2}+x_{3}^{2}-2 x_{2} x_{3}\right]\\
+	&=\frac{1}{2} k\left[x_{1}^{2}+2 x_{2}^{2}+x_{3}^{2}-2 x_{2}\left(x_{1}+x_{3}\right)\right]
+		\end{align*}
+		Correct answer is option \textbf{(d)}
+	\end{answer}
+	\item The Lagrangian of a particle of mass $m$ moving in one dimensions is given by
+	$$
+	\mathrm{L}=\frac{1}{2} \mathrm{~m} \dot{\mathrm{x}}^{2}-\mathrm{bx}
+	$$
+	where $b$ is a positive constant. The coordinate of the particle $x(t)$ at time $t$ is given by: (in the following $c_{1}$ and $c_{2}$ are constants)
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$-\frac{b}{2 m} t^{2}+c_{1} t+c_{2}$
+		\task[\textbf{b.}]$c_{1} t+c_{2}$
+		\task[\textbf{c.}]$c_{1} \cos \left(\frac{b t}{m}\right)+c_{2} \sin \left(\frac{b t}{m}\right)$
+		\task[\textbf{d.}] $c_{1} \cosh \left(\frac{b t}{m}\right)+c_{2} \sin h\left(\frac{b t}{m}\right)$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		L&=\frac{1}{2} m \dot{x}^{2}-b x=\mathrm{T}-\mathrm{V}\\
+		\therefore \mathrm{V}&=b x
+		\intertext{ This is same as uniform gravitational potential. Therefore, solution must be of the form. This is same as uniform} \mathrm{S}&=\mathrm{S}_{0}+\mathrm{ut}+\frac{1}{2} \mathrm{at}^{2}
+		\end{align*}
+		Correct answer is option \textbf{(a)}
+	\end{answer}
+	\item A particle moves in a potential $V=x^{2}+y^{2}+\frac{z^{2}}{2}$. Which component (s) of the angular momentum is $/$ are constant (s) of motion?
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]none
+		\task[\textbf{b.}]$L_{x}, L_{y}$ and $L_{z}$
+		\task[\textbf{c.}]only $L_{x}$ and $L_{y}$
+		\task[\textbf{d.}] only $\mathrm{L}_{z}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Given }V(x, y, z)&=x^{2}+y^{2}+\frac{z^{2}}{2}
+	\intertext{	In polar co-ordinate (spherical polar)}
+	V&=r^{2} \sin ^{2} \theta+\frac{r^{2} \cos ^{2} \theta}{2} \quad\left[\begin{array}{l}x=r \cos \phi \sin \theta \\ y=r \sin \phi \sin \theta \\ z=r \cos \theta\end{array}\right.
+\intertext{	Therefore, Lagrangian of system is}
+	\mathrm{L}&=\mathrm{T}-\mathrm{V} \\
+	L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+r^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)-r^{2} \sin ^{2} \theta-\frac{r^{2} \cos ^{2} \theta}{2}
+		\end{align*}
+		$\phi$ is cyclic, therefore $p_{\phi}$ is constant of motion.\\
+		$p_{\phi}$ is equal to $L_{z}$. Therefore, $L_{z}$ is constant of motion.\\
+		Correct answer is option \textbf{(d)}
+	\end{answer}
+	\item	A particle of mass $m$ is projected with an initial velocity $u$ at an angle $\alpha$ with the horizontal. Use Lagran equations to describe the motion of projectile. The resistance of air is negligible.
+	\begin{answer}
+			Let $x, y$ be the coordinate of the particle at any instant. The system is holonomic because its positic confined to a plane and conservative because the only external force acting on the projectile is conse tive.
+		\begin{align*}
+		T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)\text{ and }V=m g y\\
+		\therefore L&=T-V=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)-m g v\\
+		\frac{\partial L}{\partial \dot{x}}&=m \dot{x}\text{ and } \frac{\partial L}{\partial x}=0\\
+		\text{By Lagrange's equation, }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)&=\frac{\partial L}{\partial x}\\
+		\therefore \quad \frac{d}{d t}(m \dot{x})&=0 \text { or } \ddot{x} =0 \\
+		\frac{\partial L}{\partial \dot{y}}&=m y \text { and } \frac{\partial L}{\partial y} =-m g\\
+		\text{By Lagrange's equation }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{y}}\right)&=\frac{\partial L}{\partial y}\\
+		 \therefore \quad \frac{d}{d t}(m y)&=-m g\text{ or }\ddot{y}=-g
+		 \intertext{Thus, $\ddot{x}=0, \ddot{y}=-g$ are the two equations describing the motion of a projectile. Proceeding with the first equation,}
+		 \frac{d}{d t}\left(\frac{d x}{d t}\right)&=0 \text { or } d\left(\frac{d x}{d t}\right)=0\\
+		 \text{Integrating, }\quad \frac{d x}{d t}&=c_{1}(\text{ a constant} )\\
+		\text{ At }t&=0, \quad \frac{d x}{d t}=u \cos \alpha ; \quad \therefore u \cos \alpha=c_{1}\\
+		\therefore \quad \frac{d x}{d t}&=u \cos \alpha, \quad \text { or } d x=u \cos \alpha d t\\
+	\text{	Integrating, }x&=(u \cos \alpha) t+x_{0}(\text{ a constant })\\
+\text{	At $t=0, x=0$, }&\text{therefore, }x_{0}=0 ; x=(u \cos \alpha) t
+ \intertext{Proceeding with the second equation,}
+	\frac{d}{d t}\left(\frac{d y}{d t}\right)&=-g, \text { or } d\left(\frac{d y}{d t}\right)=-g d t\\
+\text{	Integrating, }\frac{d y}{d t}&=-g t+c_{2}(\mathrm{a}\text{ constant })\\
+	\text{At }t&=0, \frac{d y}{d t}=u \sin \alpha ; \therefore u \sin \alpha=c_{2}\\
+	\therefore \quad \frac{d y}{d t}&=-g t+u \sin \alpha, o r d y=-g t d t+u \sin \alpha d t\\
+\text{	Integrating, }y&=-\frac{1}{2} g t^{2}+(u \sin \alpha) t+y_{0}\\
+\text{	At }t&=0, y=0\text{ and therefore, $y_{0}=0$}\\
+	\therefore \quad y&=(u \sin \alpha) t-\frac{1}{2} g t^{2}
+		\end{align*}
+		Thus, $x=(u \cos \alpha) t, y=(u \sin \alpha) t-\frac{1}{2} g t^{2}$ are the two solved equation describing the motion of a projectile.
+	\end{answer}
+	\item A particle of mass $m$ is moving in a plane under the influence of a force directed towards a fixed point and varying inversely as the square of the distance from that point. Set up the Lagrangian and equations of motion of the particle.
+	\begin{answer}
+		The problem is best solved in polar coordinates with respect to the fixed point as origin and any line through it as the reference line. Let $(r, \theta)$ be the polar coordinates of the particle at any time. Since there are two coordinates there will be two Lagrange's equations describing the motion of the particle. Motion is holonomic because the position of the particle is confined to a plane and conservative because the force is derivable from energy or energy is derivable from the force.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=5cm]{CM-06}
+		\end{figure}
+		\begin{align*}
+		T&=\frac{1}{2} m \dot{r}^{2} \text{(linear kinetic energy)} +\frac{1}{2} I \dot{\theta}^{2} \text{(rotational $k$. energy)}\\
+		\text{Or, }\quad T&=\frac{1}{2} m \dot{r}^{2}+\frac{1}{2}\left(m r^{2}\right) \dot{\theta}^{2} \quad\left(\because I=m r^{2}\right)
+		\intertext{Since force varies inversely as the square of the distance and it is directed towards the origin, $F=-\left(k / r^{2}\right)$ where $k$ is a constant. But}
+		F&=-\left(\frac{d V}{d r}\right)\\
+		\therefore\quad&=\frac{k}{r^{2}}=-\frac{d V}{d r}\text{, or } d V=\frac{k d r}{r^{2}}\\
+		\text{Integrating, }V&=-\frac{k}{r}+V_{0}\text{ (a constant)}\\
+		\text{At }r&=\infty, V=0\text{ and therefore, }V_{0}=0 ; \therefore V=-\left(\frac{k}{r}\right)
+		\end{align*}
+	\end{answer}
+	
+	
+	
+	
+	
 \end{enumerate}
