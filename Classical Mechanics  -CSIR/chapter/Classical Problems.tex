@@ -463,6 +463,172 @@ v&=\frac{g}{4 k} r \Rightarrow v=\frac{g}{4} t\notag
 		\end{align*}
 	\end{answer}
 \end{enumerate}
+\section{Central Force Motion}
+\begin{enumerate}
+	\item  Equation of the orbit of a particle moving under central force is $r \theta=\beta$, where $\beta$ is a constant. Find the force acting on the particle.
+	\begin{answer}
+		\begin{align*}
+		r \theta=\beta,\text{ therefore, }u&=\frac{1}{r}=\frac{\theta}{\beta} \quad \therefore \frac{\partial^{2} u}{\partial \theta^{2}}=0\\
+		\text{	Differential equation of orbit, }\frac{\partial^{2} u}{\partial \theta^{2}}+u&=\frac{-m f(r)}{L^{2} u^{2}}\\
+		\therefore 0+u=\frac{-m f(r)}{L^{2} u^{2}} \quad \therefore \quad f(r)&=\frac{-L^{2} u^{3}}{m}=\frac{-L^{2}}{m r^{3}}
+		\end{align*}
+	\end{answer}
+	\item  Equation of orbit of a particle moving under central force is $r^{n}=a \cos n \theta .$ Find the force on the particle.
+	\begin{answer}
+		\begin{align}
+		\text{	Given, }r^{n}=a \cos n \theta,\text{ therefore, }u^{n}=\frac{1}{a \cos n \theta}&=\frac{1}{a} \sec n \theta \label{25}\\
+		\text{ Taking $\ln$ both sides we get, }n \ln u&=\ln \left(\frac{1}{a}\right)+\ln \sec n \theta\notag\\
+		\text{Differentiating w.r.t. $\theta$ we get, }\frac{n}{u} \frac{\partial u}{\partial \theta}&=n \tan n \theta \quad \therefore \frac{\partial u}{\partial \theta}=u \tan n \theta\notag\\
+		\text{Differentiating again w.r.t. $\theta$ we get }\frac{\partial^{2} u}{\partial \theta^{2}}&=\frac{\partial u}{\partial \theta} \tan n \theta+u n \sec ^{2} n \theta\notag\\&=u \tan ^{2} n \theta+u n \sec ^{2} n \theta\notag\\
+		\text{ Differential equation of orbit is }\frac{\partial^{2} u}{\partial \theta^{2}}+u&=\frac{-m f(r)}{L^{2} u^{2}}\notag\\
+		u \tan ^{2} n \theta+u n \sec ^{2} n \theta+u&=\frac{-m f(r)}{L^{2} u^{2}}, u \sec ^{2} n \theta+u n \sec ^{2} n \theta=\frac{-m f(r)}{L^{2} u^{2}}\notag\\
+		\therefore f(r)&=-\frac{L^{2} u^{3}(1+n) \sec ^{2} n \theta}{m}\notag\\
+		\text{from (\ref{25}) }\sec ^{2} n \theta&=a^{2} u^{2 n}\notag\\
+		\therefore f(r)&=\frac{-L^{2}(n+1) a^{2} u^{2 n+3}}{m}\notag\\
+		\therefore \quad f(r)&=\frac{-L^{2}(n+1) a^{2}}{m} \cdot \frac{1}{r^{2 n+3}}\notag\\
+		\text{Or }
+		f(r) \propto \frac{1}{r^{2 n+3}}&
+		\text{and the force is attractive in nature.}\notag
+		\end{align}
+	\end{answer}
+	\item  A particle of mass $m$ is moving under a central force. The angular momentum of the partix $\mathrm{L}$ and its equation of orbit is $r=A e^{k 0}$. Calculate potential energy of the particle.
+	\begin{answer}
+		\begin{align}
+		\text{Potential energy is given as }V(r)&=-\int f(r) d r\label{26}
+		\intertext{	Therefore, let us first find $f(r)$.}\notag
+		\text{Given }r=A e^{k \theta},\text{ thereforc, }u&=\frac{1}{A} e^{-k \theta} \quad \therefore \frac{\partial^{2} u}{\partial \theta^{2}}=k^{2} u\notag\\
+		\text{Differential equation of orbit is }\frac{\partial^{2} u}{\partial \theta^{2}}+u&=\frac{-m f(r)}{L^{2} u^{2}} \quad \therefore\left(k^{2}+1\right) u=\frac{-m f(r)}{L^{2} u^{2}}\notag\\
+		\therefore f(r)&=\frac{-L^{2}\left(k^{2}+1\right) u^{3}}{m} \text { or } f(r)=\frac{-L^{2}\left(k^{2}+1\right)}{m r^{3}}\notag\\
+		\text{Therefore, from (\ref*{26}) }V(r)&=-\int f(r) d r=\frac{-L^{2}\left(k^{2}+1\right)}{2 m r^{2}}\notag
+		\end{align}
+	\end{answer}
+	\item  For a particle moving under gravitational force pericentre distance in parabolic orbit is $r_{p}$ while the radius of the circular orbit with same angular momentum is $r_{c}$. What is relation between $r_{p}$ and $r_c$ ?
+	\begin{answer}
+		Pericentre distance is the minimum distance $(\cos \theta=\max =1)$ and for parabolic orbit $e=1 .$
+		\begin{align*}
+		\text{Therefore, }r_{\min }&=\frac{l}{1+e \cos \theta}=\frac{l}{2}=r_{p}\\
+		\text{for circular orbit $e=0$, therefore }r_{c}&=\frac{l}{1+e \cos \theta}=l \quad \therefore r_{p}=\frac{r_{c}}{2}
+		\end{align*}
+	\end{answer}
+	\item  Ratio of maximum to minimum speed of a planet revolving around the sun in an elliptical orbit is $2: 1$, What is eccentricity of the orbit?
+	\begin{answer}
+		\begin{align*}
+		\text{	Given }\frac{v_{\max }}{v_{\min }}=\frac{2}{1} \therefore \frac{\sqrt{\frac{G M}{a}\left(\frac{1+e}{1-e}\right)}}{\sqrt{\frac{G M}{a}\left(\frac{1-e}{1+e}\right)}}=\frac{2}{1} \quad\text{ or }\quad \frac{1+e}{1-e}=\frac{2}{1} \quad \therefore e=\frac{1}{3}
+		\end{align*}
+	\end{answer}
+	\item  A planet is revolving around the sun in a circular orbit. Due to some reason the speed of the planet suddenly becomes double. What is new orbit of the planet.
+	\begin{answer}
+		\begin{align*}
+		\text{	Orbital speed of the planet is }&\sqrt{\frac{G M}{r}}\\
+		\text{New speed of the planet }&=2 \sqrt{\frac{G M}{r}}\\
+		\text{Therefore, new energy of the planet }&=\frac{1}{2} m v^{2}-\frac{G M m}{r}=\frac{1}{2} m \cdot \frac{4 G M}{r}-\frac{G M m}{r}=\frac{2 G M m}{r}>0
+		\intertext{	Total energy of the planet becomes positive on doubling its speed therefore new orbit of the planet will be hyperbolic.}
+		\end{align*}
+	\end{answer}
+\end{enumerate}
+\begin{enumerate}
+	\item  A planet of mass $m$ and angular momentum $\mathrm{L}$ moves in a circular orbit in a potential, $V(r)=-k / r$ where $k$ is a positive constant find the radius of stable circular orbit. If the planet is slightly perturbed, find angular frequency of radial oscillation.
+	\begin{answer}$\left. \right. $
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=1.5cm,width=6cm]{diagram-20220221(2)-crop}
+		\end{figure}
+		\begin{align*}
+		V_{e f f}=\frac{L^{2}}{2 m r^{2}}+V(r)&=\frac{L^{2}}{2 m r^{2}}-\frac{k}{r}\\
+		\text{For stable point (orbit) }\left.\frac{\partial V_{e f f}}{\partial r}\right|_{r=r_{0} .}&=0\\
+		\therefore-\frac{L^{2}}{m r_{0}^{3}}+\frac{k}{r_{0}^{2}}&=0 \text { or } r_{0}=\frac{L^{2}}{m k}\\
+		\text{	Therefore radius of stable circular orbit is }L^{2} / \mathrm{mk}
+		\end{align*}
+		Angular frequency of oscillation about stable point:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=0.7cm,width=6.4cm]{diagram-20220221-crop}
+		\end{figure}
+		\begin{align*}
+		\omega&=\sqrt{\frac{\left.\frac{\partial^{2} V_{e f f}}{\partial r^{2}}\right|_{r=r_{0}}}{m}}=\sqrt{\frac{\left(\frac{3 L^{2}}{m r_{0}^{4}}-\frac{2 k}{r_{0}^{3}}\right)}{m}}\\
+		&=\sqrt{\frac{\frac{1}{r_{0}^{3}}\left(\frac{3 L^{2}}{m \cdot \frac{L^{2}}{m k}}-2 k\right)}{m}}=\sqrt{\frac{k}{m r_{0}^{3}}}=\sqrt{\frac{k^{4} m^{2}}{L^{6}}}=\frac{m k^{2}}{L^{3}}
+		\end{align*}
+		actual radial oscillation is as shown in figure.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=4cm]{diagram-20220221(1)-crop}
+		\end{figure}
+	\end{answer}
+	\item  A small asteroid is approaching a massive star with a speed $v$ from very large distance, at an impact parameter ' $b$ ' as shown in figure. If the mass of the star is $M$ and its radius is $R$, then what is the minimum value of $b$ such that the asteroid will miss the star?
+	\begin{answer}
+		Angular momentum of asteroid about centre of star is $L=m v b$
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.5cm,width=5cm]{diagram-20220221(3)-crop}
+		\end{figure}
+		\begin{align*}
+		\text{Effective potential energy }V_{e f f}&=\frac{-G M m}{r}+\frac{L^{2}}{2 m r^{2}}=\frac{-G M m}{r}+\frac{m v^{2} b^{2}}{2 r^{2}}
+		\end{align*}
+		For minimum value of $b$ we will have to assume that asteroid just misses the star as shown in figure. Equivalent 1-d problem is also shown in figure
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=12cm]{diagram-20220221(7)-crop}
+		\end{figure}
+		\text{Total energy is conserved in central force motion }
+		\begin{align*}
+		\text{Therefore, }E_{1}&=E_{2}\\
+		\text{or }&\left(\frac{1}{2} m \dot{r}^{2}+V_{e f f}\right)_{\mathrm{at} r=\infty}=\left(\frac{1}{2} m \dot{r}^{2}+V_{e f f}\right)_{\mathrm{at} r=R}\\
+		\frac{1}{2} m v^{2}-\frac{G M m}{\infty}+\frac{m v^{2} b^{2}}{\infty}&=\left(\frac{1}{2} m o^{2}-\frac{G M m}{R}+\frac{m v^{2} b^{2}}{2 R^{2}}\right)\\
+		\therefore v^{2}+\frac{2 G M}{R}&=\frac{v^{2} b^{2}}{R^{2}} \quad \text { or } b=R \sqrt{1+\frac{2 G M}{R v^{2}}}
+		\end{align*}
+	\end{answer}
+	\item  A particle is thrown in radially outward direction from earth's surface with initial speed $\sqrt{\frac{3 G M}{4 R}}$ where $M$ is mass of earth $R$ is radius of earth. Find the height upto which particle goes.
+	\begin{answer}
+		Particle has been thrown radially outward 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=6.5cm]{diagram-20220221(6)-crop}
+		\end{figure}
+		\begin{align*}
+		\text{therefore }L&=0, V_{e f f}=V(r)+\frac{L^{2}}{2 m r^{2}}\\
+		\therefore V_{e f f}&=\frac{-G M m}{r}+0\\
+		\intertext{from conservation of energy we get }E_{1}&=E_{2}\\
+		\text { or }\left(\frac{1}{2} m \dot{r}^{2}+V_{e f f}\right)_{r=R}&=\left(\frac{1}{2} m \dot{r}^{2}+V_{d f}\right)_{r=r} \\
+		\frac{1}{2} m \cdot \frac{3 G M}{4 R}-\frac{G M m}{R}&=0-\frac{G M m}{r} \\
+		\frac{3}{8 R}-\frac{1}{R}&=-\frac{1}{r} \quad \therefore r=\frac{8 R}{5}
+		\end{align*}
+		Therefore, maximum height from earth's surface $=r-R=\frac{3 R}{5}$
+	\end{answer}
+	\item  A particle is thrown from the earth's surface with speed $\sqrt{\frac{G M}{R}}$ where $M=$ mass of earth
+	$R=$ radius of earth. If direction of initial velocity makes an angle $\alpha$ with the outward radial direction, find the maximum distance of the particle from centre of earth.
+	\begin{answer}
+		Angular momentum of the particle is
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=5cm,width=8cm]{diagram-20220221(5)-crop}
+		\end{figure}
+		\begin{align*}
+		L &=m v \sin \alpha R=m \sqrt{\frac{G M}{R}} \sin \alpha R \\
+		&=m \sqrt{G M R} \sin \alpha \\
+		\therefore V_{e f f} &=V(r)+\frac{L^{2}}{2 m r^{2}}=\frac{-G M m}{r}+\frac{G M m R}{2 r^{2}} \sin ^{2} \alpha
+		\end{align*}
+		From conservation of energy we get $\mathrm{E}_{1}=\mathrm{E}_{2}$
+		\begin{align*}
+		\text{	or }\left(\frac{1}{2} m \dot{r}^{2}+V_{e f f}\right)_{r=R}&=\left(\frac{1}{2} m \dot{r}^{2}+V_{e f f}\right)_{r=r}\text{ (see the figure)}\\
+		\frac{1}{2} m \frac{G M}{R} \cos ^{2} \alpha-\frac{G M m}{R}+\frac{G M m}{2 R} \sin ^{2} \alpha&=\frac{-G M m}{r}+\frac{G M m R}{2 r^{2}} \sin ^{2} \alpha\\
+		\text{Divide both sides by }\frac{G M m}{2 R}\text{ to get }&\cos ^{2} \alpha-2+\sin ^{2} \alpha=-2 \frac{R}{r}+\frac{R^{2}}{r^{2}} \sin ^{2} \alpha\\
+		\text{or }-1=-2\left(\frac{R}{r}\right)+\left(\frac{R}{r}\right)^{2} \sin ^{2} \alpha \quad &\therefore\left(\frac{R}{r}\right)^{2} \sin ^{2} \alpha-2\left(\frac{R}{r}\right)+1=0\\
+		\therefore \frac{R}{r}=\frac{+2 \pm \sqrt{4-4 \sin ^{2} \alpha}}{2 \sin ^{2} \alpha} \quad \frac{R}{r}&=\frac{+1 \pm \cos \alpha}{\sin ^{2} \alpha} \\
+		\therefore r=\frac{R \sin ^{2} \alpha}{1 \pm \cos \alpha}=\frac{R\left(1-\cos ^{2} \alpha\right)}{(1 \pm \cos \alpha)} \quad &\therefore r=R(1-\cos \alpha) \quad \text { or } \quad r=R(1+\cos \alpha)
+		\end{align*}
+		Since $r$ must be greater than $r$. Therefore, $r=R(1+\cos \alpha)$
+	\end{answer}
+	\item  A particle moves under a central potential $V(r)=\frac{-k}{r^{m}} .$ What should be value of $m$ for its orbit to be stable.
+	\begin{answer}
+		\begin{align*}
+		\text{Corresponding is }f(r)&=-\frac{\partial V}{\partial r}=\frac{-m k}{r^{m+1}}=-m k r^{-(m+1)}\\
+		\text{	We know that for }f&=-k r^{n}\text{ condition for stability is $n>-3$.} 
+		\intertext{Therefore for orbit to be stable under given potential we must have.}
+		-(m+1)>-3&\text{ or }m+1<3 \quad \therefore m<2
+		\end{align*}
+	\end{answer}
+\end{enumerate}
+\section{Lagrangian}
 \begin{enumerate}
 	\item The Lagrangian of a particle of charge e and mass $m$ in applied electric and magnetic fields is given by $L=\frac{1}{2} \mathrm{~m} \vec{v}^{2}+\mathrm{e} \overrightarrow{\mathrm{A}} \cdot \vec{v}-\mathrm{e} \phi$, where $\overrightarrow{\mathrm{A}}$ and $\phi$ are the vector and scalar potentials corresponding to the magnetic and electric fields, respectively. Which of the following statements is correct?
 	 \begin{tasks}(1)
@@ -676,12 +842,137 @@ u&=\cos \left(\frac{\vartheta}{2}\right)=C_{1} \cos \sqrt{\frac{g}{4 a}} t+C_{2}
 		F&=-\left(\frac{d V}{d r}\right)\\
 		\therefore\quad&=\frac{k}{r^{2}}=-\frac{d V}{d r}\text{, or } d V=\frac{k d r}{r^{2}}\\
 		\text{Integrating, }V&=-\frac{k}{r}+V_{0}\text{ (a constant)}\\
-		\text{At }r&=\infty, V=0\text{ and therefore, }V_{0}=0 ; \therefore V=-\left(\frac{k}{r}\right)
+		\text{At }r&=\infty, V=0\text{ and therefore, }V_{0}=0 ; \therefore V=-\left(\frac{k}{r}\right)\\
+		\therefore \quad L&=T-V=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}\right)+\frac{k}{r}\\
+		\frac{\partial L}{\partial \dot{r}}&=m \dot{r}\text{ and }\frac{\partial L}{\partial r}=m r \dot{\theta}^{2}-\frac{k}{r^{2}}\\
+		\frac{\partial L}{\partial \dot{\theta}}&=m r^{2} \dot{\theta}\text{ and} \frac{\partial L}{\partial \theta}=0\\
+		\text{By Lagrange's equations of motion, }&\left[\frac{d}{d t}\left(\frac{\partial L}{\partial q_{k}}\right)=\frac{\partial L}{\partial q_{k}}\right]\text{ we have }\\
+		\frac{d}{d t}(m \dot{r})&=m r \dot{\theta}^{2}-\frac{k}{r^{2}}\text{ and } \frac{d}{d t}\left(m r^{2} \dot{\theta}\right)=0\\
+		\text{Or, }\quad \ddot{r}&=r \dot{\theta}^{2}-\frac{k}{m r^{2}}\text{ and} r^{2} \dot{\theta}=\text{ constant}\\
+	\text{	Or, }\quad \ddot{r}-r \dot{\theta}^{2}&=-\frac{k}{m r^{2}}\text{ or }\ddot{r}-r \dot{\theta}^{2}=-\frac{\omega^{2}}{r^{2}}\\
+\text{	where, }\omega^{2}&=\frac{k}{m}\text{ and }r^{2} \dot{\theta}=h \text{(another constant).}
+\intertext{	Thus equations describing the motion of the particles are} \ddot{r}-r \dot{\theta}^{2}&=-\frac{\omega^{2}}{r^{2}}\text{ and }r^{2} \dot{\theta}=h\text{ where }\omega^{2}\text{ and $h$ are constants.}
 		\end{align*}
 	\end{answer}
-	
-	
-	
-	
-	
+	\item Obtain the Lagrangian of a linear simple harmonic oscillator and the equation of motion in one dimension.
+	\begin{answer}
+		In a simple harmonic oscillator the particle is acted on by a force which is directed towards a fixed point (position of equilibrium) and whose magnitude varies linearly with the distance from the position ofequilibrium. That is, $F=-k x$ where $\mathrm{x}$ is the distance of the particle from the equilibrium position.
+		\begin{align*}
+		\text{But}
+		F&=-\left(\frac{d V}{d x}\right) ; \quad \because d V=-F d x=h x d x\\
+		\text{Integrating, }\quad V&=\frac{1}{2} k x^{2}+V_{0}(a\text{ constant })\\
+	\text{	At }x=0, V&=0\text{ and therefore, }V_{0}=0\\
+		\therefore \quad V&=\frac{1}{2} k x^{2} ; \quad T=\frac{1}{2} m \dot{x}^{2}\\
+		\therefore \quad L&=T-V=\frac{1}{2} m x^{2}-\frac{1}{2} k x^{2}\\
+	\text{	Now, }\quad \frac{\partial L}{\partial \dot{x}}&=m \dot{x}\text{ and } \frac{\partial L}{\partial \dot{x}}=-k x\\
+		\text{By Lagrange's equation, }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)=\frac{\partial L}{\partial x}\\
+		\therefore\quad\frac{d}{d t}(m x)&=-k x, \text { or } m \ddot{x}=-k x
+		\intertext{This is the equation of a simple harmonic oscillator in one dimension.}
+		\end{align*}
+	\end{answer}
+	\item Figure below shows a solid cylinder with centre $G$ and radius $a$ rolling on the rough inside surface of a fixed cylinder with centre $O$ and radius $b>a$. Find the Lagrange equation of motion and deduce the period of small oscillations about the equilibrium position.
+	\begin{answer}
+		If the cylinder were not obliged to roll, the system would have two degrees of freedom with generalised coordinates $\theta$ (the angle between $O G$ and the downward vertical) and $\phi$ (the rotation angle of the cylinder measured from some reference position).\\
+		The roling condition imposes the kinematical constraint.
+		\begin{align*}
+		(b-a) \dot{\theta}-a \dot{\phi}&=o
+	\intertext{	This constraint is integrable and is equivalent to the geometrical constraint.}
+	(b-a) \theta-a \phi&=o
+\intertext{	on taking $\phi=0$ when $\theta=0$. Thus the rolling cylinder is a standard conservative system with one degree of freedom.}
+\intertext{Take $\theta$ as the generalised coordinate. Then the kinetic energy is given by}
+T &=\frac{1}{2} m((b-a) \dot{\theta})^{2}+\frac{1}{2}\left(\frac{1}{2} m a^{2}\right) \dot{\phi}^{2} \\
+&=\frac{1}{2} m((b-a) \dot{\theta})^{2}+\frac{1}{2}\left(\frac{1}{2} m a^{2}\right)\left(\frac{b-a}{a}\right)^{2} \dot{\theta}=\frac{3}{4} m(b-a)^{2} \dot{\theta}^{2}\\
+\text{and the potential energy by }V&=-m g(b-a) \cos \theta
+\intertext{There is only one Lagrange equation, namely}
+\frac{d}{d t}\left[\frac{3}{2} m(b-a)^{2} \dot{\theta}\right]-0*=-m g(b-a) \sin \theta
+\intertext{which simplifies to give}
+\ddot{\theta}+\frac{2 g}{3(b-a)} \sin \theta&=0
+\intertext{Interestingly, this equation is identical to the exact equation for the oscillations of a simple pendulum of length $3(b-a) / 2$ as obtaind.}
+\intertext{The linearised equation governing small oscillations of the cylinder about $\theta=0$ is is}
+\ddot{\theta}+\frac{2 g}{3(b-a)} \theta&=0
+\intertext{so that the period $\tau$ of small oscillation is given by}
+\tau&=2 \pi\left(\frac{3(b-a)}{2 g}\right)^{1 / 2}
+		\end{align*}
+\end{answer}
+\item A pendulum of mass $m$ is attached to a block of mass $M$. The block slides on a horizontal frictionless surface. Find the Lagrangian and equation of motion of the pendulum. For small amplitude oscillations, derive an expression for periodic time.
+\begin{answer}
+		Let at any time $t$ the coordinates of $M$ and $m$ be $\left(x_{1}, 0\right)$ and $\left(x_{2}, y_{2}\right)$ respectively.
+	\begin{align}
+	\text{Here, }\quad x_{2}&=x_{1}+\ell \sin \theta\text{ and }ay_{2}=-\ell \cos \theta.\text{ The suitable generalized coordinates are $x_{1}$ and $\theta$.}\notag\\
+	 T &=\frac{1}{2} M \dot{x}_{1}^{2}+\frac{1}{2} m\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}\right) \notag\\ &=\frac{1}{2} M \dot{x}_{1}^{2}+\frac{1}{2} m\left[\left(\dot{x}_{1}+\ell \dot{\theta} \cos \theta\right)^{2}+(\ell \dot{\theta} \sin \theta)^{2}\right] \notag\\ &=\frac{1}{2} M \dot{x}_{1}^{2}+\frac{1}{2} m\left(\dot{x}_{1}^{2}+\ell^{2} \dot{\theta}^{2}+2 \ell \dot{x}_{1} \dot{\theta} \cos \theta\right)\notag\\
+	 (\text{because }\dot{x}_{2}&=\dot{x}_{1}+\ell \cos \theta \dot{\theta} \text{and }\dot{y}_{2}=\ell \sin \theta \dot{\theta} )\notag\\
+	 V&=-m g \cos \theta\notag\\
+	\text{ Hence, }\quad L&=T-V=\frac{1}{2}(M+m) \dot{x}_{1}^{2}+\frac{1}{2} m \ell^{2} \dot{\theta}^{2}+m \ell \dot{x}_{1} \dot{\theta} \cos \theta+m g \ell \cos \theta\notag
+	\intertext{We see that $x_{1}$ is cyclic coordinate, so}\notag
+	\text{Here, }\frac{\partial L}{\partial x_{1}}&=0\text{ and }\frac{\partial L}{\partial \dot{x}_{1}}=(M+m) \dot{x}_{1}+m \ell \dot{\theta} \cos \theta\text{ is conserved.}\notag\\
+	\frac{\partial L}{\partial \theta}&=m \ell\left(\dot{x}_{1} \dot{\theta}+g\right)(-\sin \theta) \text { and } \frac{\partial L}{\partial \dot{\theta}}=m \ell^{2} \dot{\theta}+m \ell \dot{x}_{1} \cos \theta\notag
+\intertext{	Equation of motion in $\theta$ is}\notag
+	m \ell^{2} \ddot{\theta}&+m \ell \ddot{x}_{1} \cos \theta+m \ell(-\sin \theta) \dot{\theta} \dot{x}_{1}-m \ell(-\sin \theta) \dot{x}_{1} \dot{\theta}+m g \ell \sin \theta=0\notag\\
+\text{	Or, }\quad m \ell^{2} \ddot{\theta}&+m \ell \cos \theta \ddot{x}_{1}+m g \ell \sin \theta=0\notag\\
+	\text{If }\theta\text{ is small, }&\sin \theta \approx \theta\text{ and also }\cos \theta \approx 1\text{, then}\notag\\
+	m \ell^{2} \ddot{\theta}&+m \ell \ddot{x}_{1}+m g \ell \theta=0\notag\\
+\text{	Or,}\quad 
+	\ddot{\theta}+\frac{\ddot{x}_{1}}{\ell}&+\frac{g}{\ell} \theta=0 \label{CMP-25}
+\intertext{	Equation of motion in $x_{1}$ is}\notag
+(M+m) \ddot{x}_{1}&+m \ell\left(\ddot{\theta} \cos \theta-\dot{\theta}^{2} \sin \theta\right)=0\notag\\
+\text{For small }\theta,&\left(\cos \theta \cong 1, \sin \theta \cong \theta\right.\text{ and }\dot{\theta}^{2} \theta\text{ is negligible })\notag\\
+(M+m) \ddot{x}_{1}&+m \ell \ddot{\theta}=0\label{CMP-26}
+\intertext{Fromequations (\ref{CMP-25}) and (\ref{CMP-26}), we have}\notag
+\ddot{\theta}-\frac{m \ddot{\theta}}{M+m}&+\frac{g}{\ell} \theta=0\notag\\
+\text{Hence,}\quad
+\ddot{\theta}&=-\left[\frac{M+m}{M}\right] \frac{g}{\ell} \theta\notag
+\intertext{This is the equation of simple harmonic motion whose period is given by}\notag
+T&=2 \pi \sqrt{\frac{\ell}{g}} \sqrt{\frac{M}{M+m}}\notag
+	\end{align}
+\end{answer}
+\item Auniform disc of radius ' $\dot{a}$ ' and mass $m$, rotates about a fixed axis. A mass less rope is fixed to a points on the out side 'circumference' and leads to mass less spring which is intwin fastened to a fixed point. At a radius $a / 2$ another cord is fastenped to a spring which connects to a $m a, m$. Set up the Lagrange's eq. of the DISC and the mass.
+\begin{answer}
+	Let $b_{1}$ and $b_{2}$ be the original length of the spring 1 and 2 . Which the whole system is in eq. and the DISC is stationary.\\
+	Let $\theta$ be the angle the DISC has twined away from the eq. position. Then extension of the spring $-1$ is
+	\begin{align*}
+	x_{1}&=a \theta
+	\intertext{If the spring $-2$ is stretched by a distance $x_{2}$ the mass $m$ is low ered by a distance}
+	x_{3}&=\frac{a}{2} \theta+x_{2}\\
+	K.E.\hspace{2cm}
+	\mathrm{T}&=\mathrm{K} \cdot \mathrm{E} \cdot\text{ of }\mathrm{DISC}+\mathrm{K} \cdot \mathrm{E} \cdot\text{ of mass}\\
+	&=\frac{1}{2}(\dot{\theta})^{2}+\frac{1}{2} m \dot{x}_{3}^{2}=\frac{1}{2} m a^{2} \cdot \dot{\theta}^{2}+\frac{1}{2} m\left(\frac{a}{2} \dot{\theta}+\dot{x}_{2}\right)^{2}\\
+	P.E.
+	\hspace{2cm}V&=\frac{1}{2} k x_{1}{ }^{2}+\frac{1}{2} k x_{2}{ }^{2}-m g x_{3} .
+\intertext{	Hence the Lagrangian for the system is}
+\mathrm{L}&=\mathrm{T}-\mathrm{V} \\
+\mathrm{L}&=\frac{1}{2} m a^{2} \dot{\theta}^{2}+\frac{1}{2} m\left(\frac{a^{2}}{4} \dot{\theta}^{2}+a \dot{\theta} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{2} k x_{1}^{2}-\frac{1}{2} k x_{2}^{2}+m g\left(\frac{a}{2} \theta+x_{2}\right)\\
+\text{Lagrangian eq. of motion, }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}_{2}}\right)-\left(\frac{\partial L}{\partial x_{2}}\right)=0 \Rightarrow \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\left(\frac{\partial L}{\partial \theta}\right)\\
+\text { Or } \quad \frac{d}{d t}\left[\frac{1}{2} m a \theta+m \dot{x}_{2}\right]&-\left[-k x_{2}+m g\right]=0  \Rightarrow m \ddot{x}_{2}+k x_{2}+\frac{1}{2} m(a \ddot{\theta}-2 g)=0 \\ 
+\text { Or } \quad \ddot{x}+\left(\frac{k}{m}\right) x_{2}&+\frac{1}{2}(a \ddot{\theta}-2 g)=0 \quad  \Rightarrow \frac{d}{d t}\left[\frac{1}{2} m a^{2} \dot{\theta}+\frac{1}{2} m a^{2}+\dot{\theta} \max _{2}\right]-\left[-k a^{2} \theta+\frac{m g a}{2}\right]\\
+\text{Or }\quad \frac{3}{4} m a^{2} \ddot{\theta}&+R a^{2} \theta+\frac{1}{2} m a\left(\ddot{x}_{2}-g\right)=0\\
+\text{Or }\quad \ddot{\theta}&+\left(\frac{4}{3} \frac{k}{m}\right) \theta+\frac{2}{3 a}\left(\ddot{x}_{2}-g\right)=0
+\intertext{Which are the required equation of motion.}
+	\end{align*}
+\end{answer}
+\item Set up the lagrangian for the following system, where the pully is massless.
+\begin{answer}
+	\begin{align*}
+	\mathrm{T}&=\frac{1}{2} m_{1} \dot{x}_{1}^{2}+\frac{1}{2} m_{2} \dot{x}_{2}^{2}\\
+	\mathrm{~V}&=-m_{1} g x_{1}-m_{2} g x_{2}+\frac{1}{2} k x_{1}^{2}\\
+	\mathrm{~L}&=\frac{1}{2} m_{1} \dot{x}_{1}^{2}+\frac{1}{2} m_{2} \dot{x}_{2}^{2}+m_{1} g x_{1}+m_{2} g x_{2}-\frac{1}{2} k x_{1}^{2}\\
+	\text{Thus, equation of motion is }&=\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}_{1}}\right)-\left(\frac{\partial L}{\partial x_{1}}\right)=0\\
+	\text{And }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}_{2}}\right)-\left(\frac{\partial L}{\partial x_{2}}\right)=0\\
+	\Rightarrow \quad m_{1} \ddot{x}_{1}-m_{1} g+k x_{1}=0\\
+	\text{Say, }m_{2} \ddot{x}_{2}-m_{2} g=0
+	\end{align*}
+\end{answer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{enumerate}
