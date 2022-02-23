@@ -981,3 +981,113 @@ v_1\cos \theta_{1}=v_1^{\prime}\cos\theta +V_{cm}
 		5&\textbf{c}&&\\\hline
 	\end{tabular}
 \end{table}
+\newpage
+\begin{abox}
+	Practice set 3
+	\end{abox}
+\begin{enumerate}
+		\item  A particle moves under a central potential $V(r)=\frac{-k}{r^{m}} .$ What should be value of $m$ for its orbit to be stable.
+	\begin{answer}
+		\begin{align*}
+		\text{Corresponding is }f(r)&=-\frac{\partial V}{\partial r}=\frac{-m k}{r^{m+1}}=-m k r^{-(m+1)}\\
+		\text{	We know that for }f&=-k r^{n}\text{ condition for stability is $n>-3$.} 
+		\intertext{Therefore for orbit to be stable under given potential we must have.}
+		-(m+1)>-3&\text{ or }m+1<3 \quad \therefore m<2
+		\end{align*}
+	\end{answer}
+	\item  Equation of the orbit of a particle moving under central force is $r \theta=\beta$, where $\beta$ is a constant. Find the force acting on the particle.
+\begin{answer}
+	\begin{align*}
+	r \theta=\beta,\text{ therefore, }u&=\frac{1}{r}=\frac{\theta}{\beta} \quad \therefore \frac{\partial^{2} u}{\partial \theta^{2}}=0\\
+	\text{	Differential equation of orbit, }\frac{\partial^{2} u}{\partial \theta^{2}}+u&=\frac{-m f(r)}{L^{2} u^{2}}\\
+	\therefore 0+u=\frac{-m f(r)}{L^{2} u^{2}} \quad \therefore \quad f(r)&=\frac{-L^{2} u^{3}}{m}=\frac{-L^{2}}{m r^{3}}
+	\end{align*}
+\end{answer}
+\item  Equation of orbit of a particle moving under central force is $r^{n}=a \cos n \theta .$ Find the force on the particle.
+\begin{answer}
+	\begin{align}
+	\text{	Given, }r^{n}=a \cos n \theta,\text{ therefore, }u^{n}=\frac{1}{a \cos n \theta}&=\frac{1}{a} \sec n \theta \label{25}\\
+	\text{ Taking $\ln$ both sides we get, }n \ln u&=\ln \left(\frac{1}{a}\right)+\ln \sec n \theta\notag\\
+	\text{Differentiating w.r.t. $\theta$ we get, }\frac{n}{u} \frac{\partial u}{\partial \theta}&=n \tan n \theta \quad \therefore \frac{\partial u}{\partial \theta}=u \tan n \theta\notag\\
+	\text{Differentiating again w.r.t. $\theta$ we get }\frac{\partial^{2} u}{\partial \theta^{2}}&=\frac{\partial u}{\partial \theta} \tan n \theta+u n \sec ^{2} n \theta\notag\\&=u \tan ^{2} n \theta+u n \sec ^{2} n \theta\notag\\
+	\text{ Differential equation of orbit is }\frac{\partial^{2} u}{\partial \theta^{2}}+u&=\frac{-m f(r)}{L^{2} u^{2}}\notag\\
+	u \tan ^{2} n \theta+u n \sec ^{2} n \theta+u&=\frac{-m f(r)}{L^{2} u^{2}}, u \sec ^{2} n \theta+u n \sec ^{2} n \theta=\frac{-m f(r)}{L^{2} u^{2}}\notag\\
+	\therefore f(r)&=-\frac{L^{2} u^{3}(1+n) \sec ^{2} n \theta}{m}\notag\\
+	\text{from (\ref{25}) }\sec ^{2} n \theta&=a^{2} u^{2 n}\notag\\
+	\therefore f(r)&=\frac{-L^{2}(n+1) a^{2} u^{2 n+3}}{m}\notag\\
+	\therefore \quad f(r)&=\frac{-L^{2}(n+1) a^{2}}{m} \cdot \frac{1}{r^{2 n+3}}\notag\\
+	\text{Or }
+	f(r) \propto \frac{1}{r^{2 n+3}}&
+	\text{and the force is attractive in nature.}\notag
+	\end{align}
+\end{answer}
+	\item  For a particle moving under gravitational force pericentre distance in parabolic orbit is $r_{p}$ while the radius of the circular orbit with same angular momentum is $r_{c}$. What is relation between $r_{p}$ and $r_c$ ?
+\begin{answer}
+	Pericentre distance is the minimum distance $(\cos \theta=\max =1)$ and for parabolic orbit $e=1 .$
+	\begin{align*}
+	\text{Therefore, }r_{\min }&=\frac{l}{1+e \cos \theta}=\frac{l}{2}=r_{p}\\
+	\text{for circular orbit $e=0$, therefore }r_{c}&=\frac{l}{1+e \cos \theta}=l \quad \therefore r_{p}=\frac{r_{c}}{2}
+	\end{align*}
+\end{answer}
+\item  Ratio of maximum to minimum speed of a planet revolving around the sun in an elliptical orbit is $2: 1$, What is eccentricity of the orbit?
+\begin{answer}
+	\begin{align*}
+	\text{	Given }\frac{v_{\max }}{v_{\min }}=\frac{2}{1} \therefore \frac{\sqrt{\frac{G M}{a}\left(\frac{1+e}{1-e}\right)}}{\sqrt{\frac{G M}{a}\left(\frac{1-e}{1+e}\right)}}=\frac{2}{1} \quad\text{ or }\quad \frac{1+e}{1-e}=\frac{2}{1} \quad \therefore e=\frac{1}{3}
+	\end{align*}
+\end{answer}
+\item  A planet is revolving around the sun in a circular orbit. Due to some reason the speed of the planet suddenly becomes double. What is new orbit of the planet.
+\begin{answer}
+	\begin{align*}
+	\text{	Orbital speed of the planet is }&\sqrt{\frac{G M}{r}}\\
+	\text{New speed of the planet }&=2 \sqrt{\frac{G M}{r}}\\
+	\text{Therefore, new energy of the planet }&=\frac{1}{2} m v^{2}-\frac{G M m}{r}=\frac{1}{2} m \cdot \frac{4 G M}{r}-\frac{G M m}{r}=\frac{2 G M m}{r}>0
+	\intertext{	Total energy of the planet becomes positive on doubling its speed therefore new orbit of the planet will be hyperbolic.}
+	\end{align*}
+\end{answer}
+\item  Two masses constrained to move in a horizontal plane collide. Given initially $m_{1}=$ $85 \mathrm{gms}, m_{2}=200 \mathrm{gms} ; u_{1}=6.48 \mathrm{cms} / \mathrm{sec}$ and $u_{2}=-6.78 \mathrm{cms} / \mathrm{sec}$, find the velocity of centre of mass.
+\begin{answer}
+\begin{align*}
+ \intertext{The velocity of centre of mass is given by}
+\vec{V}_{\mathrm{cm}}&=\frac{m_{1} \overrightarrow{u_{1}}+m_{2} \overrightarrow{u_{2}}}{m_{1}+m_{2}}\\
+\vec{V}_{\mathrm{cm}}&=\frac{85 \times 6.48+200 \times(-6.78)}{85+200}=2.82 \mathrm{~cm} / \mathrm{sec} \text{in the direction of motion of $m_{2}$}
+\end{align*}	
+\end{answer}
+\item Two particles each of mass 2kg are moving with velocities $2\vec{i}+4\vec{j}$m/s and $5\vec{i}+6\vec{j}$m/s respectively.Find the kinetic energy of the system relative to the center of mass.
+\begin{answer}
+	\begin{align*}
+	\text { Given } m_{1}&=m_{2}=2 \mathrm{~kg} . ; u_{1}=3 \hat{i}+4 \hat{j} ; \quad u_{2}=5 \hat{i}+6 \hat{j}\\
+	\text{velocity of centre of mass}\quad  \vec{V}_{cm}&=\frac{m_{1} \overrightarrow{u_{1}}+m_{2} \overrightarrow{u_{2}}}{m_{1}+m_{2}}=\frac{2(3 \hat{i}+4 \hat{j})+2(5 \hat{i}+6 \hat{j})}{2+2}=4 \hat{i}+5 \hat{j}\\
+	\intertext{Velocity of $m_1$ in centre of mass frame}
+	\vec{u}_1^{\prime}&=\vec{u}_1-\vec{V}_{cm}\\
+	\vec{u}_1^{\prime}&=3\hat{i}+4\hat{j}-4\hat{i}-5\hat{j}=-\hat{i}-\hat{j}\\
+	\intertext{Velocity of $m_2$ in centre of mass frame}
+	\vec{u}_2^{\prime}&=\vec{u}_2-\vec{V}_{cm}\\
+	\vec{u}_2^{\prime}&=5\hat{i}+6\hat{j}-4\hat{i}-5\hat{j}\\
+	\intertext{Kinetic energy relative to centre of mass before collision}
+	&=\frac{1}{2}m_1u_1^{\prime 2}+\frac{1}{2}m_2u_2^{\prime 2}\\
+	&=\frac{1}{2}m_1|\sqrt{(-1)^2+(-1)^2}|^2+\frac{1}{2}m_2|\sqrt{(1)^2+(1)^2}|^2\\
+	&=2+2=4 Joule
+	\end{align*}
+\end{answer}
+\item A particle of mass $m_{1}$ moving with a velocity $\overrightarrow{u_{1}}$ is elastically scattered from another particle of mass $m_{2}$. After collision the two particles move in opposite directions with the same speed. Find the relation between the two masses.
+\begin{answer}
+	Ans. Let $\overrightarrow{v_{1}}$ and $\overrightarrow{v_{2}}$ be the velocities of the two particles after collision, then\\ $\overrightarrow{v_{1}}=-\overrightarrow{v_{2}}$ \\
+	The particle of mass $m_{2}$ is at rest\\
+	$\therefore$ Linear momentum before collision $=m_{1} \overrightarrow{u_{1}}$\\
+	Linear momentum after collision $=m_{1} \overrightarrow{v_{1}}+m_{2} \overrightarrow{v_{2}}=m_{1} \overrightarrow{v_{1}}-m_{2} \overrightarrow{v_{1}}=\left(m_{1}-m_{2}\right) \overrightarrow{v_{1}}$\\
+	According to the law of conservation of linear momentum
+	\begin{align*}
+	m_{1} \overrightarrow{u_{1}} &=\left(m_{1}-m_{2}\right) \overrightarrow{v_{1}} \\
+	\overrightarrow{v_{1}} &=\frac{m_{1}}{m_{1}-m_{2}} \overrightarrow{u_{1}}
+	\end{align*}
+	Considering magnitudes only $\left|\overrightarrow{v_{1}}\right|=\frac{m_{1}}{m_{1}-m_{2}}\left|\overrightarrow{u_{1}}\right|$\\
+	 According to the law of conservation of energy
+	\begin{align*}
+		&\frac{1}{2} m_{1}\left|\overrightarrow{u_{1}}\right|^{2}=\frac{1}{2} m_{1}\left|\overrightarrow{v_{1}}\right|^{2}+\frac{1}{2} m_{2}\left|\overrightarrow{v_{1}}\right|^{2} \\
+		&=\frac{1}{2}\left(m_{1}+m_{2}\right)\left|\overrightarrow{v_{1}}\right|^{2}=\frac{1}{2} \frac{m_{1}+m_{2}}{\left(m_{1}-m_{2}\right)^{2}} m_{1}^{2}\left|\overrightarrow{u_{1}}\right|^{2} \\
+		&\left(m_{1}-m_{2}\right)^{2}=\left(m_{1}+m_{2}\right) m_{1} \\
+		&m_{1}^{2}+m_{2}^{2}-2 m_{1} m_{2}=m_{1}^{2}+m_{1} m_{2} \\
+		&m_{2}^{2}=3 m_{1} m_{2} \quad \text { or } \quad m_{2}=3 m_{1}
+	\end{align*}
+\end{answer}
+\end{enumerate}
