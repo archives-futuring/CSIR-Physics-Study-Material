@@ -19,16 +19,15 @@ Magnetic flux is a measurement of total magnetic field which passes through a gi
 		\label{magnetic flux}
 	\end{figure}
 \end{minipage}
-
-
 \section{Electromotive Force }
 \section{Motional emf}
-\par When we consider static electric field $E$, the potential difference between any two point $a$ and $b$ is given $$v=-\int_{a}^{b} E\cdot dl$$
-\begin{flushright}
-	\begin{minipage}{0.20\textwidth}				
-		\includegraphics[width=0.85\textwidth]{diagram-20210427(3)-crop}
+\par When we consider static electric field $E$, the potential difference between any two point $a$ and $b$ is given 
+\begin{minipage}{0.5\textwidth}
+$$v=-\int_{a}^{b} E\cdot dl$$
+\end{minipage}
+	\begin{minipage}{0.50\textwidth}				
+		\includegraphics[width=0.45\textwidth]{diagram-20210427(3)-crop}
 	\end{minipage}
-\end{flushright}
 And work done by the electric field along a closed path is zero.
 \begin{align*}
 i.e., \quad \oint E\cdot dl&=0\\
@@ -36,11 +35,10 @@ i.e., \quad \oint E\cdot dl&=0\\
 \end{align*}
 \begin{minipage}{.45\textwidth}
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{diagram-20210426(1)-crop}
+		\includegraphics[width=0.7\textwidth]{flux 2}
 	\end{center}
 \end{minipage}\\
 \\Suppose the magnetic field $B$ in the shaded region is pointing in to the page, we are moving a wire having a resistor connected at the end through the field towards right with a speed $v$, the charges in the segment $a$\ $b$ experience a magnetic force (Lorentz force) whose vertical component $qvB$ drives a current around the loop in the clockwise direction, so the e.m.f generated,
-
 \begin{align*}
 \varepsilon&=\oint F_{mag} \cdot dl 
 \intertext{Here $F_{mag}$ is the magnetic Lorentz force per unit charge. We know that,}
@@ -56,11 +54,10 @@ F_{mag}&=vB\\
 \intertext{When the  loop moves, flux decreases.}
 \frac{d\phi}{dt}&=Bh\frac{dx}{dt}=-Bhv \hspace{2cm}\rightarrow\frac{dx}{dt}=-v\\
 \frac{d\phi}{dt}&=-Bhv
-\intertext{Thus precisely the emf generated in the loop is the negative rate of change of flux through the loop. } 
+\intertext{Both equation for emf are same.So precisely the emf generated in the loop is the negative rate of change of flux through the loop. } 
 \varepsilon&=\frac{-d \phi}{dt}
 \intertext{This is called \textbf{Flux rule} for motional emf.}
 \end{align*}
-
 \subsection{Fleming's Right Hand Rule}
 The Fleming's right hand rule is used to determine the direction of induced current. Accorrding to this rule, stretch the thumb, forefinger and centre finger of right hand in mutually perpendicular directions such that the forefinger points in the direction of magnetic field and thumb is along the direction of motion of the conductor, the centre finger will point in the direction of the induced current.
 \begin{exercise}
@@ -102,16 +99,17 @@ The electric fields and magnetic fields considered , produced by stationary char
 \caption{Faraday's Experiment.}
 \end{figure}
 Faraday's experiment demonstrates that an electric current is induced in the loop by changing the magnetic field. The coil behaves as if it were connected to an emf source. It is found that the induced emf depends on the rate of change of magnetic flux through the coil.\\
-An emf is generated in loop if,\\\\
-\textbf{1.}
-If you pull a loop of wire through a magnetic field. 
+An emf is generated in loop if,
+\begin{enumerate}
+\item 
+If you pull a loop of wire through a magnetic field.\\ 
+In the first case emf is induced due to change in flux exposed by flux rule.
 \begin{align*}
-\intertext{In the first case emf is induced due to change in flux exposed by flux rule.}
 \varepsilon&=\frac{-d\phi}{dt}
-\intertext{Here the emf is magnetic that is emf is induced by Lorentz force.}
 \end{align*}
-\textbf{2.}
-If you move the magnet near a loop holding the loop still.\\\\
+Here the emf is magnetic that is emf is induced by Lorentz force.
+\item 
+If you move the magnet near a loop holding the loop still.\\
 There will be no motion of charges since the loop is at rest so the force can't be magnetic. Here the reason for emf is the electric field which is induced by the changing magnetic field.
 \begin{align*}
 \varepsilon=\oint E\cdot dl&=\frac{-d\phi}{dt}\\
@@ -119,14 +117,14 @@ There will be no motion of charges since the loop is at rest so the force can't 
 \intertext{By applying Stoke's theorem}
 \nabla\times E&=\frac{-dB}{dt}\\
 \end{align*}
-\textbf{3.}
-Changing the magnetic field by keeping the loop and the magnet at rest.\\\\
+\item 
+Changing the magnetic field by keeping the loop and the magnet at rest.\\
 Magnetic and loop are moving giving rise to an emf, $ \frac{-d\phi}{dt} $
+\end{enumerate}
 \begin{align*}
 \intertext{Now the those cases summerise in to a single form}
 \varepsilon&=\frac{-d\phi}{dt}
 \end{align*}
-
 The direction of the induced current is given by Lenz's law.
 \subsection{Lenz's law }
 The direction of the induced current in electromagnetic induction is given by Lenz's law.\\
@@ -139,13 +137,13 @@ The induced current produces magnetic fields which tend to oppose the change in 
 		\includegraphics[height=2cm,width=9cm]{04-crop}
 	\end{center}
 \end{minipage}\\\\\\
-Suppose we have a coil which is moving towards a constant magnetic field pointing out of the page. When it reaches the field the flux in it is increasing. So there should be an induced current in the loop. Since the flux is increasing the induced current will flow. In such a way that the magnetic field produced by it should oppose the original field. So inside the coil the field must pointing in to the page. Therefore current must flow in clockwise direction.\\\\
+Suppose we have a coil which is moving towards a constant magnetic field pointing out of the page. When it reaches the field the flux in it is increasing. So there should be an induced current in the loop. Since the flux is increasing the induced current will flow, in such a way that the magnetic field produced by it should oppose the original field. So inside the coil the field must pointing in to the page. Therefore current must flow in clockwise direction.\\\\
 \begin{minipage}{.60\textwidth}
 	\begin{center}
 		\includegraphics[height=2.5cm,width=8cm]{05-crop}
 	\end{center}
 \end{minipage}\\\\
-Consider a loop which is initially in a magnetic field pointing into the page. Now we are moving it towards right with a velocity $V$. Now the flux in it is going to decrease. So magnetic field should be produced in such a way that it will oppose the change. So the magnetic field should be produced in the same direction as the original one. So it must be pointing into the page inside the coil. Therefore the current must flow in clockwise direction.\\\\\	Lenz's Law is not a fundamental law. It is a direct consequence that comes from both Fleming's Right and Left Hand rules . Fleming's Rules are the most fundamental principles of charge/field/motion/force interaction.
+Consider a loop which is initially in a magnetic field pointing into the page.Suppose we are moving it towards right with a velocity $V$,then the flux in it is going to decrease. So magnetic field should be produced in such a way that it will oppose the change. So the magnetic field should be produced in the same direction as the original one. So it must be pointing into the page inside the coil. Therefore the current must flow in clockwise direction.\\\\\	Lenz's Law is not a fundamental law. It is a direct consequence that comes from both Fleming's Right and Left Hand rules . Fleming's Rules are the most fundamental principles of charge/field/motion/force interaction.
 \begin{note}
 The Right Hand (generator) Rule shows the direction of the induced emf and the resulting(conventional) current. This is all you need to find the direction of induced current. (Just remember that it is conventional current and it is really the emf that is induced and that a current will flow if there is a conduction path)\\
 The Left Hand (motor) Rule shows the direction of the force that results from the above current and, therefore the opposition force to the original movement.\\

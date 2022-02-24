@@ -26,12 +26,12 @@
 	\exyear{GATE 2019}
 \end{minipage}
 \begin{answer}
-	$$\begin{aligned}
+	\begin{align*}
 	& \varepsilon=-\frac{d \phi}{d t}=-\frac{A d B}{d t}, I=\frac{\varepsilon}{R}=-\frac{d \phi}{d t} \frac{1}{R} \\
 	&\Rightarrow-\frac{d \phi}{d t}=-\pi r^{2} \frac{d}{d t}\left(B_{0} e^{-t / t_{0}}\right)=\pi r^{2} B_{0} e^{-t}\left(t_{0}=1\right) \\
 	&Q=\int_{0}^{\infty} I(t) d t=\int_{0}^{\infty} \frac{\pi r^{2}}{R} B_{0} e^{-t} d t=\frac{\pi r^{2} B_{0}}{R}\left|\frac{e^{-t}}{-1}\right|_{0}^{\infty} \\
 	&=3.14 \times\left(2 \times 10^{-2}\right)^{2} \times 0.01=6.28 \mu C
-	\end{aligned}$$	
+	\end{align*}
 \end{answer}
 \begin{minipage}{\textwidth}
 	\item A circular conducting ring of radius $R$ rotates with constant angular velocity $\omega$ about its diameter placed along the $x$-axis. A uniform magnetic field $B$ is applied along the $y$-axis. If at time $t=0$ the ring is entirely in the $x y$-plane, the emf induced in the ring at time $t>0$ is
@@ -44,10 +44,12 @@
 	\task[\textbf{D.}]$B \omega \pi R^{2} \cos (\omega t)$
 \end{tasks}
 \begin{answer}
-	$\phi_{m}=\vec{B} \cdot \vec{A}=B A \cos (90-\theta)=B A \sin \omega t$\\
 	\begin{align*}
-		&\varepsilon=-\frac{d \phi_{m}}{d t}=-\frac{d}{d t}(\vec{B} \cdot \vec{A})=-\frac{d}{d t}[B A \sin \omega t]=-B A(\cos \omega t) \omega \\
-		&\Rightarrow \varepsilon=-B \pi R^{2} \omega \cos \omega t \Rightarrow \varepsilon=B \omega \pi R^{2} \cos \omega t
+	&\phi_{m}=\vec{B} \cdot \vec{A}=B A \cos (90-\theta)=B A \sin \omega t\\
+		&\varepsilon=-\frac{d \phi_{m}}{d t}=-\frac{d}{d t}(\vec{B} \cdot \vec{A})\\
+		&=-\frac{d}{d t}[B A \sin \omega t]=-B A(\cos \omega t) \omega \\
+		&\Rightarrow \varepsilon=-B \pi R^{2} \omega \cos \omega t \\
+		& \varepsilon=B \omega \pi R^{2} \cos \omega t
 	\end{align*}
 	The correct option is \textbf{(d)}
 \end{answer}
@@ -63,13 +65,14 @@
 	\exyear{JEST 2019}
 \end{minipage}
 \begin{answer}
-	$\text { Magnetic flux through the loop is } \phi_{m}=\int_{S} \vec{B} d \vec{a}=B \times \pi a^{2} \times \cos \omega t$\\
-	Induced e.m.f $\varepsilon=-\frac{d \phi_{m}}{d t}=\omega B \times \pi a^{2} \times \sin \omega t$\\.
-	Power dissipated $p=\frac{\varepsilon^{2}}{R}=\frac{\omega^{2} B^{2} \pi^{2} a^{4} \sin ^{2} \omega t}{R}$\\
-	Power dissipated in one complete cycle $P=\langle p\rangle=\frac{\omega^{2} B^{2} \pi^{2} a^{4}}{2 R} \quad \because\left\langle\sin ^{2} \omega t\right\rangle=\frac{1}{2}$
-	$$
-	\frac{P}{\pi^{4}}=\frac{\omega^{2} B^{2} a^{4}}{2 \pi^{2} R} \Rightarrow P=\frac{(20 \pi)^{2}(3)^{2}(1)^{4}}{2(10)(10)}=18
-	$$
+	\begin{align*}
+	\text { Magnetic flux through the loop is }\\
+	\phi_{m}&=\int_{S} \vec{B} d \vec{a}=B \times \pi a^{2} \times \cos \omega t\\
+	\intertext{Induced e.m.f} \varepsilon&=-\frac{d \phi_{m}}{d t}=\omega B \times \pi a^{2} \times \sin \omega t\\.
+	\intertext{Power dissipated} p&=\frac{\varepsilon^{2}}{R}=\frac{\omega^{2} B^{2} \pi^{2} a^{4} \sin ^{2} \omega t}{R}\\
+	\intertext{Power dissipated in one complete cycle} P&=\langle p\rangle=\frac{\omega^{2} B^{2} \pi^{2} a^{4}}{2 R} \quad \because\left\langle\sin ^{2} \omega t\right\rangle=\frac{1}{2}\\
+	\frac{P}{\pi^{4}}&=\frac{\omega^{2} B^{2} a^{4}}{2 \pi^{2} R} \Rightarrow P=\frac{(20 \pi)^{2}(3)^{2}(1)^{4}}{2(10)(10)}=18
+	\end{align*}
 \end{answer}
 \end{enumerate}
 \newpage
@@ -87,13 +90,12 @@
 	\task[\textbf{C.}] $4.2 \times 10^{-4}$ coulomb
 	\task[\textbf{D.}]$5.2 \times 10^{-4}$ coulomb
 \end{tasks}
-\begin{answer}
-	$$
-	\begin{gathered}
-	\text { Solution: } \varepsilon=-\frac{d \phi}{d t} \Rightarrow I=\frac{d q}{d t}=\frac{\varepsilon}{R}=-\frac{1}{R} \frac{d \phi}{d t} \Rightarrow d q=-\frac{A}{R} d B=\frac{-\pi r^{2}}{R} d B \\
-	\Rightarrow d q=\frac{-3.14 \times\left(10^{-2}\right)^{2}}{1} \times 1=3.14 \times 10^{-4} \text { coulomb }
-	\end{gathered}
-	$$
+\begin{answer}	
+ \begin{align*}
+ \varepsilon&=-\frac{d \phi}{d t} \Rightarrow I=\frac{d q}{d t}=\frac{\varepsilon}{R}=-\frac{1}{R} \frac{d \phi}{d t} \\
+ d q&=-\frac{A}{R} d B=\frac{-\pi r^{2}}{R} d B \\
+ d q&=\frac{-3.14 \times\left(10^{-2}\right)^{2}}{1} \times 1=3.14 \times 10^{-4} \text { coulomb }
+ \end{align*}	
 	The correct option is \textbf{(a)}	
 \end{answer}
 \begin{minipage}{\textwidth}
