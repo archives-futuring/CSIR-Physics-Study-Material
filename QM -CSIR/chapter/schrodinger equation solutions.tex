@@ -1,0 +1,371 @@
+\chapter{Schrodinger equation solutions}
+\begin{abox}
+	Practice set 1 solutions
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item Let $v, p$ and $E$ denote the speed, the magnitude of the momentum, and the energy of a free particle of rest mass $m$. Then
+	\exyear{NET DEC 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $d E / d p=$ constant
+	\task[\textbf{B.}]$p=m v$
+	\task[\textbf{C.}]$v=c p / \sqrt{p^{2}+m^{2} c^{2}}$
+	\task[\textbf{D.}] $E=m c^{2}$
+\end{tasks}
+\begin{answer}
+	$$p=m^{\prime} v=\frac{m v}{\sqrt{1-\frac{v^{2}}{c^{2}}}} \Rightarrow p^{2}=\frac{m^{2} v^{2}}{1-\frac{v^{2}}{c^{2}}} \Rightarrow m^{2} v^{2}=p^{2}-\frac{p^{2} v^{2}}{c^{2}}, m \rightarrow \text { rest mass energy }$$
+	$$\Rightarrow v^{2}\left(m^{2}+\frac{p^{2}}{c^{2}}\right)=p^{2} \Rightarrow v^{2}=\frac{p^{2}}{\frac{m^{2} c^{2}+p^{2}}{c^{2}}} \Rightarrow v=\frac{p c}{\sqrt{p^{2}+m^{2} c^{2}}}$$
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+\item If a particle is represented by the normalized wave function
+$$
+\psi(x)= \begin{cases}\frac{\sqrt{15}\left(a^{2}-x^{2}\right)}{4 a^{5 / 2}}, & \text {, or }-a<x<a \\ 0 & , \text { otherwise }\end{cases}
+$$
+the uncertainty $\Delta p$ in its momentum is
+	\exyear{NET DEC 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 \hbar / 5 a$
+	\task[\textbf{B.}] $5 \hbar / 2 a$
+	\task[\textbf{C.}]$\sqrt{10} \hbar / a$
+	\task[\textbf{D.}]$\sqrt{5} \hbar / \sqrt{2} a$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	&\Delta p=\sqrt{\left\langle p^{2}\right\rangle-\langle p\rangle^{2}} \text { and }\langle p\rangle=\frac{\left\langle\psi\left|-i \hbar \frac{\partial}{\partial x}\right| \psi\right\rangle}{\langle\psi \mid \psi\rangle}\\
+		&\Rightarrow\langle p\rangle=\int_{-a}^{a} \frac{\sqrt{15}\left(a^{2}-x^{2}\right)}{4 a^{5 / 2}}(-i \hbar) \frac{\sqrt{15}}{4 a^{5 / 2}} \frac{\partial}{\partial x}\left(a^{2}-x^{2}\right) d x \\
+		&=\int_{-a}^{a} \frac{15}{16 a^{5}}(-i \hbar)\left(a^{2}-x^{2}\right)(-2 x) d x=+i h \frac{2 \times 15}{16 \times a^{5}} \int_{-a}^{a}\left(a^{2} x-x^{3}\right) d x=0, \quad(\because \text { odd function) }\\
+	\left\langle p^{2}\right\rangle &=-\hbar^{2} \times \frac{15}{16 a^{5}} \int_{-a}^{a}\left(a^{2}-x^{2}\right) \frac{\partial^{2}}{\partial x^{2}}\left(a^{2}-x^{2}\right) d x \\
+	&=-\hbar^{2} \times \frac{15}{16 a^{5}} \times(-2) \int_{-a}^{a}\left(a^{2}-x^{2}\right) d x=\hbar^{2} \times \frac{15}{16 a^{5}} \times 2\left\{a^{2} \cdot x-\frac{x^{3}}{3}\right\}_{-a}^{a} \\
+	&=\hbar^{2} \times \frac{15}{16 a^{5}} \times 2\left[2 a^{3}-\frac{2 a^{3}}{3}\right]=\hbar^{2} \times \frac{15}{16} \times \frac{2}{a^{5}} \times 2 a^{3}\left[1-\frac{1}{3}\right]=\frac{15 \hbar^{2}}{4 a^{2}} \times \frac{2}{3}=\frac{5 \hbar^{2}}{2 a^{2}}
+	\end{align*}
+	Now, $\quad \Delta p=\sqrt{\left\langle p^{2}\right\rangle-\langle p\rangle^{2}}=\sqrt{\frac{5 \hbar^{2}}{2 a^{2}}-0}=\frac{\sqrt{5} \hbar}{\sqrt{2} a}$\\
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The energies in the ground state and first excited state of a particle of mass $m=\frac{1}{2}$ in a potential $V(x)$ are $-4$ and $-1$, respectively, (in units in which $\hbar=1$ ). If the corresponding wavefunctions are related by $\psi_{1}(x)=\psi_{0}(x) \sinh x$, then the ground state eigenfunction is
+	\exyear{NET DEC 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\psi_{0}(x)=\sqrt{\sec h x}$
+	\task[\textbf{B.}]$\psi_{0}(x)=\sec h x$
+	\task[\textbf{C.}]$\psi_{0}(x)=\operatorname{sech}^{2} x$
+	\task[\textbf{D.}]$\psi_{0}(x)=\sec h^{3} x$
+\end{tasks}
+\begin{answer}
+	Given that ground state energy $E_{0}=-4$, first excited state energy $E_{1}=-1$ and $\psi_{0}, \psi_{1}$ are corresponding wave functions.\\
+	Solving Schrödinger equation (use $m=\frac{1}{2}$ and $\hbar=1$ )\\
+	Solving Schrödinger equation (use $m=\frac{1}{2}$ and $\hbar=1$ )\\
+	$\frac{-\hbar^{2}}{2 m} \frac{\partial^{2} \psi_{0}}{\partial x^{2}}+V \psi_{0}=E_{0} \psi_{0} \quad \Rightarrow-\frac{\partial^{2} \psi_{0}}{\partial x^{2}}+V \psi_{0}=-4 \psi_{0} \ldots \ldots(1)$\\\\
+	$\frac{-\hbar^{2}}{2 m} \frac{\partial^{2} \psi_{1}}{\partial x^{2}}+V \psi_{1}=E_{1} \psi_{1} \quad \Rightarrow-\frac{\partial^{2} \psi_{1}}{\partial x^{2}}+V \psi_{1}=-1 \psi_{1} \ldots \ldots \ldots(2)$\\\\
+	Put $\psi_{1}=\psi_{0} \sinh x$ in equation (2) one will get\\\\
+	$-\left[\frac{\partial^{2} \psi_{0}}{\partial x^{2}} \cdot \sinh x+2 \frac{\partial \psi_{0}}{\partial x} \cosh x+\psi_{0} \sinh x\right]+V \psi_{0} \sinh x=-\psi_{0} \sinh x$\\\\
+	$-\left[\frac{\partial^{2} \psi_{0}}{\partial x^{2}}+2 \frac{\partial \psi_{0}}{\partial x} \operatorname{coth} x+\psi_{0}\right]+V \psi_{0}=-\psi_{0}$\\\\
+	$\left[-\frac{\partial^{2} \psi_{0}}{\partial x^{2}}+V \psi_{0}\right]-2 \frac{\partial \psi_{0}}{\partial x} \operatorname{coth} x-\psi_{0}=-\psi_{0}$\\\\
+	 using relation $-\frac{\partial^{2} \psi_{0}}{\partial x^{2}}+V \psi_{0}=-4 \psi_{0}$\\\\
+	$-4 \psi_{0}-2 \frac{\partial \psi_{0}}{\partial x} \operatorname{coth} x-\psi_{0}=-\psi_{0} \quad \Rightarrow \frac{d \psi_{0}}{\psi_{0}}=-2 \tanh x d x \Rightarrow \psi_{0}=\sec h^{2} x$\\
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $\psi(x)=A \exp \left(-x^{4}\right)$ is the eigenfunction of a one dimensional Hamiltonian with eigen value $E=0$, the potential $V(x)$ (in units where $\hbar=2 m=1$ ) is
+	\exyear{NET DEC 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $12 x^{2}$
+	\task[\textbf{B.}]$16 x^{6}$
+	\task[\textbf{C.}]$16 x^{6}+12 x^{2}$
+	\task[\textbf{D.}]$16 x^{6}-12 x^{2}$
+\end{tasks}
+\begin{answer}
+	 Schrodinger equation
+	$-\nabla^{2} \psi+V \psi=0$ (where $\hbar=2 m=1$ and $E=0$ )
+	$$
+	-\frac{\partial^{2}}{\partial x^{2}}\left(A e^{-x^{4}}\right)+V A e^{-x^{4}}=0 \Rightarrow-\frac{\partial}{\partial x}\left[e^{-x^{4}} \times-4 x^{3}\right]+V e^{-x^{4}}=0
+	$$
+	\begin{align*}
+		&4\left[\left\{3 x^{2} e^{-x^{4}}+x^{3}\left(-4 x^{3} e^{-x^{4}}\right)\right\}\right]+V e^{-x^{4}}=0 \Rightarrow 12 x^{2} e^{-x^{4}}-16 x^{6} e^{-x^{4}}+V e^{-x^{4}}=0 \\
+		&\Rightarrow V=16 x^{6}-12 x^{2}
+	\end{align*}
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A particle of mass $m$ moves in one dimension under the influence of the potential $V(x)=-\alpha \delta(x)$, where $\alpha$ is a positive constant. The uncertainty in the product $(\Delta x)(\Delta p)$ in its ground state is
+	\exyear{NET JUNE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 \hbar$
+	\task[\textbf{B.}]$\frac{\hbar}{2}$
+	\task[\textbf{C.}]$\frac{\hbar}{\sqrt{2}}$
+	\task[\textbf{D.}]$\sqrt{2} \hbar$
+\end{tasks}
+\begin{answer}
+	$V(x)=-\alpha \delta(x)$\\
+	For this potential wavefunction
+	$$
+	\psi(x)= \begin{cases}\sqrt{\alpha} e^{\alpha x}, & x<0 \\ \sqrt{\alpha} e^{-\alpha x}, & x>0\end{cases}
+	$$
+	which evenfunction about $x=0$
+	so $\langle x\rangle=0,\langle p\rangle=0$\\
+	\begin{align*}
+		&\left\langle p^{2}\right\rangle=-\hbar^{2} \int_{-\infty}^{\infty} \psi^{*} \frac{d^{2}}{d x^{2}} \psi d x=-\hbar^{2} \int_{-\infty}^{0} \sqrt{\alpha} e^{\alpha x} \frac{d^{2}}{d x^{2}} \sqrt{\alpha} e^{\alpha x} d x-\hbar^{2} \int_{0}^{\infty} \sqrt{\alpha} e^{-\alpha x} \frac{d^{2}}{d x^{2}} \sqrt{\alpha} e^{-\alpha x} d x \\
+		&=-\hbar^{2} \alpha^{3} \int_{-\infty}^{0} e^{2 \alpha x} d x-\hbar^{2} \alpha^{3} \int_{0}^{\infty} e^{-2 \alpha x} d x=-\frac{\hbar^{2} \alpha^{3}}{2 \alpha}-\frac{\hbar^{2} \alpha^{3}}{2 \alpha}=-\hbar^{2} \alpha^{2} \text {, which is not possible }
+	\end{align*}
+	so, we will use the formula $\langle p\rangle^{2}=\hbar^{2} \int_{-\infty}^{\infty}\left|\frac{d \psi}{d x}\right|^{2} d x=\hbar^{2} \alpha^{2}, \Delta p=\sqrt{\left\langle p^{2}\right\rangle-\langle p\rangle^{2}}=\hbar \alpha$ now,
+	$$
+	\Delta x . \Delta p=\frac{1}{\sqrt{2} \alpha} . \hbar \alpha=\frac{\hbar}{\sqrt{2}}
+	$$
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider the two lowest normalized energy eigenfunctions $\psi_{0}(x)$ and $\psi_{1}(x)$ of a one dimensional system. They satisfy $\psi_{0}(x)=\psi_{0}^{*}(x)$ and $\psi_{1}(x)=\alpha \frac{d \psi_{0}}{d x}$, where $\alpha$ is a real constant. The expectation value of the momentum operator in the state $\psi_{1}$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{\hbar}{\alpha^{2}}$
+	\task[\textbf{B.}]0
+	\task[\textbf{C.}]$\frac{\hbar}{\alpha^{2}}$
+	\task[\textbf{D.}]$\frac{2 \hbar}{\alpha^{2}}$
+\end{tasks}
+\begin{answer}
+	$\psi_{1}(x)=\alpha \frac{d \psi_{0}}{d x}$\\
+	\begin{align*}
+		&\left\langle p_{x}\right\rangle=\int_{-\infty}^{\infty} \psi_{1}^{*} p_{x} \psi d x=\int_{-\infty}^{\infty} \psi_{1}^{*}\left(-i \hbar \frac{\partial \psi_{1}}{\partial x}\right) d x=\int_{-\infty}^{\infty} \alpha^{*} \frac{d \psi_{0}}{d x}(-i \hbar \alpha) \frac{d^{2} \psi_{0}}{d x^{2}} d x \\
+		&=-i \hbar|\alpha|^{2} \int_{-\infty}^{\infty} \frac{d \psi_{0}}{d x} \frac{d^{2} \psi_{0}}{d x^{2}} d x
+	\end{align*}
+	Integrate by parts
+	\begin{align*}
+	&I=-i \hbar|\alpha|^{2}\left(\left.\frac{d \psi_{0}}{d x} \frac{d \psi_{0}}{d x}\right|_{-\infty} ^{\infty}-\int_{-\infty}^{\infty} \frac{d^{2} \psi_{0}}{d x^{2}} \frac{d \psi_{0}}{d x} d x\right)=0-(-i \hbar)|\alpha|^{2} \int_{-\infty}^{\infty} \frac{d \psi_{0}}{d x} \frac{d^{2} \psi_{0}}{d x^{2}} d x \\
+	&I=0-(-i \hbar)|\alpha|^{2} \int_{-\infty}^{\infty} \frac{d \psi_{0}}{d x} \frac{d^{2} \psi_{0}}{d x^{2}} d x \\
+	&\frac{d \psi_{0}}{d x} \rightarrow \frac{\psi_{0}}{\alpha}, \quad \psi_{0}=0, x \rightarrow \infty \\
+	&I=0-I \Rightarrow 2 I=0 \Rightarrow I=0 \Rightarrow\left\langle p_{x}\right\rangle=0
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A particle in one dimension is in a potential $V(x)=A \delta(x-a)$. Its wavefunction $\psi(x)$ is continuous everywhere. The discontinuity in $\frac{d \psi}{d x}$ at $x=a$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{2 m}{\hbar^{2}} A \psi(a)$
+	\task[\textbf{B.}]$A(\psi(a)-\psi(-a))$
+	\task[\textbf{C.}]$\frac{\hbar^{2}}{2 m} A$
+	\task[\textbf{D.}] 0
+\end{tasks}
+\begin{answer}
+	$-\frac{\hbar^{2}}{2 m} \frac{d^{2} \psi(x)}{d x^{2}}+A \delta(x-a) \psi(x)=E \psi(x)$\\
+	Integrates both side within limit
+	\begin{align*}
+	&a-\epsilon \text { to } a+\epsilon \\
+	&-\frac{\hbar^{2}}{2 m} \int_{a-\epsilon}^{a+\epsilon} \frac{d^{2} \psi}{d x^{2}} d x+\int_{a-\epsilon}^{a+\epsilon} A \delta(x-a) \psi d x=E \int_{a-\epsilon}^{a+\epsilon} \psi(x) d x \\
+	&-\frac{\hbar^{2}}{2 m}\left(\frac{d \psi_{I I}}{d x}-\frac{d \psi_{I}}{d x}\right)+A \psi(a)=0 \\
+	&\frac{d \psi_{I I}}{d x}-\frac{d \psi_{I}}{d x}=\frac{2 m A}{\hbar^{2}} \psi(a) \\
+	&\text { so discontinues in } \frac{d \psi}{d x} \text { at } x=a \text { is } \frac{2 m A}{\hbar^{2}} \psi(a) .
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The normalized wavefunction of a particle in three dimensions is given by $\psi(r, \theta, \varphi)=\frac{1}{\sqrt{8 \pi a^{3}}} e^{-r / 2 a}$ where $a>0$ is a constant. The ratio of the most probable distance from the origin to the mean distance from the origin, is
+	[You may use $\left.\int_{0}^{\infty} d x x^{n} e^{-x}=n !\right]$
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{1}{3}$
+	\task[\textbf{B.}]$\frac{1}{2}$
+	\task[\textbf{C.}]$\frac{3}{2}$
+	\task[\textbf{D.}]$\frac{2}{3}$
+\end{tasks}
+\begin{answer}
+	$\psi(r, \theta, \varphi)=\frac{1}{\sqrt{8 \pi a^{3}}} e^{\frac{-r}{2 a}}$\\
+	$$
+	\langle r\rangle=\iiint r \psi^{*} \psi r^{2} d r \sin \theta d \theta d \phi=\frac{3}{2}(2 a)=3 a
+	$$
+	one can compare the wave function at hydrogen atom with Bohr radius $a_{0}=2 a$ most probable distance,\\
+	\begin{align*}
+		&\frac{d}{d r} r^{2} e^{-r / a}=0 \\
+		&r_{P}=2 a \\
+		&\frac{r_{p}}{\langle r\rangle}=\frac{2 a}{3 a}=\frac{2}{3}
+	\end{align*}
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The normalized wavefunction in the momentum space of a particle in one dimension is $\phi(p)=\frac{\alpha}{p^{2}+\beta^{2}}$, where $\alpha$ and $\beta$ are real constants. The uncertainty $\Delta x$ in measuring its position is
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\sqrt{\pi} \frac{\hbar \alpha}{\beta^{2}}$
+	\task[\textbf{B.}]$\sqrt{\pi} \frac{\hbar \alpha}{\beta^{3}}$
+	\task[\textbf{C.}]$\frac{\hbar}{\sqrt{2} \beta}$
+	\task[\textbf{D.}]$\sqrt{\frac{\pi}{\beta}} \frac{\hbar \alpha}{\beta}$
+\end{tasks}
+\begin{answer}
+	$\phi(p)=\frac{\alpha}{p^{2}+\beta^{2}}$\\
+	From inverse Fourier transformation
+	Normalize, $\psi(x)=\sqrt{\frac{\beta}{\hbar}} e^{-\frac{\beta|x|}{\hbar}}$
+	$\langle x\rangle=0$
+	$$
+	\left\langle x^{2}\right\rangle=\frac{\beta}{h} \int_{-\infty}^{\infty} x^{2} e^{-2 \frac{\beta|x|}{\hbar}} d x=\frac{\hbar^{2}}{2 \beta^{2}}
+	$$
+	$$
+	\Delta x=\sqrt{\left\langle x^{2}\right\rangle-\langle x\rangle^{2}}=\frac{\hbar}{\sqrt{2} \beta}
+	$$
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The product $\Delta x \Delta p$ of uncertainties in the position and momentum of a simple harmonic oscillator of mass $m$ and angular frequency $\omega$ in the ground state $|0\rangle$, is $\frac{\hbar}{2}$. The value of the product $\Delta x \Delta p$ in the state, $e^{-i \hat{p} \ell / \hbar}|0\rangle$ (where $\ell$ is a constant and $\hat{p}$ is the momentum operator) is
+	\exyear{NET DEC 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{\hbar}{2} \sqrt{\frac{m \omega \ell^{2}}{\hbar}}$
+	\task[\textbf{B.}]$\hbar$
+	\task[\textbf{C.}] $\frac{\hbar}{2}$
+	\task[\textbf{D.}] $\frac{\hbar^{2}}{m \omega \ell^{2}}$
+\end{tasks}
+\begin{answer}
+	The correct option is \textbf{(c)}
+\end{answer}
+\end{enumerate}
+\newpage
+\begin{abox}
+	Practice set 2
+\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item Which of the following is an allowed wavefunction for a particle in a bound state? $N$ is a constant and $\alpha, \beta>0$.
+		\exyear{GATE 2010}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\psi=N \frac{e^{-\alpha r}}{r^{3}}$
+		\task[\textbf{B.}]$\psi=N\left(1-e^{-\alpha r}\right)$
+		\task[\textbf{C.}]$\psi=N e^{-\alpha x} e^{-\beta\left(x^{2}+y^{2}+z^{2}\right)}$
+		\task[\textbf{D.}]$\psi=\left\{\begin{array}{l}\text { non - zero constant } \\ 0\end{array}\right.$
+		if $r<R$ if $r>R$
+	\end{tasks}
+	\begin{answer}
+		The correct option is \textbf{(c)}
+	\end{answer}
+	\textbf{Common data questions for 2 and 3}\\
+	$\text { The wavefunction of particle moving in free space is given by, } \psi=\left(e^{i k x}+2 e^{-i k x}\right)$\\
+	\begin{minipage}{\textwidth}
+		\item $\text { The energy of the particle is }$
+		\exyear{GATE 2012}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\frac{5 \hbar^{2} k^{2}}{2 m}$
+		\task[\textbf{B.}]$\frac{3 \hbar^{2} k^{2}}{4 m}$
+		\task[\textbf{C.}]$\frac{\hbar^{2} k^{2}}{2 m}$
+		\task[\textbf{D.}]$\frac{\hbar^{2} k^{2}}{m}$
+	\end{tasks}
+	\begin{answer}
+		$H \psi=E \psi, H \psi=\frac{-\hbar^{2}}{2 m} \frac{\partial^{2} \psi}{\partial x^{2}}=\frac{-\hbar^{2}}{2 m}\left[(i k)(i k) e^{i k x}+2(-i k)(-i k) e^{-i k x}\right]$\\
+		$\Rightarrow H \psi=\frac{\hbar^{2} k^{2}}{2 m}\left(e^{i k x}+2 e^{-2 i k x}\right)=\frac{\hbar^{2} k^{2}}{2 m} \psi$	\\
+		The correct option is \textbf{(c)}
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item The probability current density for the real part of the wavefunction is
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] 1
+		\task[\textbf{B.}]$\frac{\hbar k}{m}$
+		\task[\textbf{C.}]$\frac{\hbar k}{2 m}$
+		\task[\textbf{D.}]0
+	\end{tasks}
+	\begin{answer}
+		$\text { The real part of the wave function } \psi_{\text {real }}=\cos k x+2 \cos k x$\\
+		Current density for real part of wave function=0\\
+		The correct option is \textbf{(d)}	
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item Consider the wave function $A e^{i k r}\left(r_{0} / r\right)$, where $A$ is the normalization constant.
+		For $r=2 r_{0}$, the magnitude of probability current density up to two decimal places, in units of $\left(A^{2} \hbar k / m\right)$ is
+		\exyear{GATE 2013}
+	\end{minipage}
+	\begin{answer}
+		$\vec{J}=|\psi|^{2} \frac{\hbar k}{m}=|A|^{2}\left|\frac{r_{0}}{r}\right|^{2} \frac{\hbar k}{m} \Rightarrow J=|A|^{2}\left|\frac{r_{0}}{2 r_{0}}\right|^{2} \frac{\hbar k}{m} \Rightarrow J=|A|^{2} \frac{\hbar k}{4 m}=(0.25)|A|^{2} \frac{\hbar k}{m}$
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item The recoil momentum of an atom is $p_{A}$ when it emits an infrared photon of wavelength $1500 \mathrm{~nm}$, and it is $p_{B}$ when it emits a photon of visible wavelength $500 \mathrm{~nm}$. The ratio $\frac{p_{A}}{p_{B}}$ is
+		\exyear{GATE 2014}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $1: 1$
+		\task[\textbf{B.}]$1: \sqrt{3}$
+		\task[\textbf{C.}]$1: 3$
+		\task[\textbf{D.}] $3: 2$
+	\end{tasks}
+	\begin{answer}
+		$p=\frac{h}{\lambda} \quad, \frac{p_{A}}{p_{B}}=\frac{\lambda_{B}}{\lambda_{A}}, \quad \frac{\lambda_{B}}{\lambda_{A}}=\frac{500}{1500}=1: 3$\\
+		The correct option is \textbf{(c)}
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item The state of a system is given by $|\psi\rangle=\left|\phi_{1}\right\rangle+2\left|\phi_{2}\right\rangle+3\left|\phi_{3}\right\rangle$, where $\left|\phi_{1}\right\rangle,\left|\phi_{2}\right\rangle$ and $\left|\phi_{3}\right\rangle$ form an orthonormal set. The probability of finding the system in the state $\left|\phi_{2}\right\rangle$ is
+		\exyear{GATE 2016}
+	\end{minipage}
+	\begin{answer}
+		$\text { Probability that } \psi \text { in state }\left|\phi_{2}\right\rangle=\frac{2^{2}}{1^{2}+2^{2}+3^{2}}=\frac{4}{1+4+9}=\frac{4}{14}=\frac{2}{7}=0.28$
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item The Compton wavelength of a proton is fm. (up to two decimal places).
+		\exyear{GATE 2017}
+	\end{minipage}
+	\begin{answer}
+		$\left(m_{p}=1.67 \times 10^{-27} \mathrm{~kg}, h=6.626 \times 10^{-34} J_{S}, e=1.602 \times 10^{-19} C, c=3 \times 10^{8} \mathrm{~ms}^{-1}\right)$
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item Consider a one-dimensional potential well of width $3 \mathrm{~nm}$. Using the uncertainty principle $\left(\Delta x \cdot \Delta p \geq \frac{\hbar}{2}\right)$, an estimate of the minimum depth of the well such that it has at least one bound state for an electron is $\left(m_{e}=9.31 \times 10^{-31} \mathrm{~kg}, h=6.626 \times 10^{-34} J_{s}, e=1.602 \times 10^{-19} \mathrm{C}\right)$
+		\exyear{GATE 2017}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $1 \mu \mathrm{eV}$
+		\task[\textbf{B.}]$1 \mathrm{meV}$
+		\task[\textbf{C.}]$1 \mathrm{eV}$
+		\task[\textbf{D.}]$1 \mathrm{MeV}$
+	\end{tasks}
+	\begin{answer}
+		$E=\frac{p^{2}}{2 m}, \Delta p=\frac{\hbar}{2 \Delta x} \Rightarrow \Delta p=\frac{\hbar}{2 a}$\\
+		$\text { So, } E=\frac{\hbar^{2}}{8 m a^{2}}=\frac{h^{2}}{32 \pi^{2} m a^{2}}=\frac{\left(6.6 \times 10^{-34}\right)^{2}}{32 \times 10 \times 9.31 \times 10^{-31} \times 9 \times 10^{-18}}=.001 \times 10^{-19} \mathrm{~J} \approx 1 \mathrm{meV}$\\
+		The correct option is \textbf{(b)}
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item The Hamiltonian for a quantum harmonic oscillator of mass $m$ in three dimensions is
+		$$
+		H=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^{2} r^{2}
+		$$
+		where $\omega$ is the angular frequency. The expectation value of $r^{2}$ in the first excited state of the oscillator in units of $\frac{\hbar}{m \omega}$ (rounded off to one decimal place) is
+		\exyear{GATE 2018}
+	\end{minipage}
+	\begin{answer}
+		$\left\langle r^{2}\right\rangle=\left\langle x^{2}\right\rangle+\left\langle y^{2}\right\rangle+\left\langle z^{2}\right\rangle$\\
+		$$
+		=\frac{\hbar}{2 m \omega}\left[\left(2 n_{x}+1\right)+\left(2 n_{y}+1\right)+\left(2 n_{z}+1\right)\right]
+		$$
+		For first excited state $n_{x}=1, n_{y}=0, n_{z}=0$
+		Hence it is triply degenerate one can take
+		$$
+		n_{x}=0, n_{y}=1, n_{z}=0 \text { or } n_{x}=0, n_{y}=0, n_{z}=1
+		$$
+		$\text { putting any one combination, expectation value of } r^{2}=\frac{5}{2} \frac{\hbar}{m \omega}=2.5 \frac{\hbar}{m \omega}$
+	\end{answer}
+	\begin{minipage}{\textwidth}
+		\item Consider the motion of a particle along the $x$ - axis in a potential $V(x)=F|x|$. Its ground state energy $E_{0}$ is estimated using the uncertainty principle. Then $E_{0}$ is proportional to
+		\exyear{GATE 2019}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $F^{1 / 3}$
+		\task[\textbf{B.}] $F^{1 / 2}$
+		\task[\textbf{C.}]$F^{2 / 5}$
+		\task[\textbf{D.}]$F^{2 / 3}$
+	\end{tasks}
+	\begin{answer}
+		$E=\frac{p^{2}}{2 m}+F|x| \quad E=\frac{p^{2}}{2 m}+F x \text { for } x>0 \quad E=\frac{p^{2}}{2 m}-F x<0 \text { from uncertainty theory }$\\
+		\begin{align*}
+		&\Delta x . \Delta p=\hbar \Rightarrow \Delta p=\frac{\hbar}{\Delta x} \\
+		&E=\frac{(\Delta p)^{2}}{2 m}+F(\Delta x) \Rightarrow E=\frac{\hbar^{2}}{2 m(\Delta x)^{2}}+F \Delta x
+		\end{align*}
+		For minimum energy,
+		$$
+		\frac{d E}{d \Delta x}=-\frac{\hbar^{2}}{m(\Delta x)^{3}}+F=0 \Rightarrow \Delta x=\left(\frac{\hbar^{2}}{m F}\right)^{1 / 3} \frac{\hbar^{2}}{2 m}\left(\frac{m F}{\hbar^{2}}\right)^{2 / 3}+F\left(\frac{\hbar^{2}}{m F}\right)^{1 / 3} \Rightarrow E \propto F^{2 / 3}
+		$$ THe correct option is \textbf{(d)}
+	\end{answer}
+\end{enumerate}

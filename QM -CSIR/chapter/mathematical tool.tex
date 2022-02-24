@@ -1,0 +1,1147 @@
+\chapter{Mathematical tool of quantum mechanics}
+\section{The linear vector space and Hilbert space}
+\subsection{The linear vector space}
+A linear vector space consisits of two set of elements and two algebraic rules :
+\begin{itemize}
+	\item A set of vectors $\psi,\phi,\chi, \cdots $ and a set of scalars a,b,c....;
+	\item a rule of vector addition and a rule of scalar multiplication
+\end{itemize}
+\textbf{(a)Addition rule}\\
+The addition rule has the properties and the structure of an abelian group:
+\begin{itemize}
+	\item If $\psi$ and $\phi$ are vectors of a space,their sum $\psi+\phi$ is also a vector of the same space.
+	\item Commutativity :$\psi+\phi=\phi+\psi$
+	\item Associativity:$(\psi+\phi)+\chi=\psi+(\phi+\chi)$
+	\item The existance of a zero or neutral vector:for each vector $\psi$, there must be zero vector 0 such that : 0+$\psi=\psi+0=\psi$
+	\item Existance of a symmetric or inverse vector :each vector $\psi$ must have a symmetric vector (-$\psi$) such that ($\psi$)+(-$\psi$)=(-$\psi$)+$\psi$=0.
+\end{itemize}
+\textbf{(b)Multiplication rule}
+The multiplication of a vectot by scalars (scalars can be real or complex numbers) has these properties:
+\begin{itemize}
+	\item The product of a scalar with vector gives another vector.In general if $\psi$ and $\phi$ are the two vectors of the space,any linear combination $a\psi+b\phi$ is also a vector of the space. a and b being scalars.
+	\item Distributivity with respect to addition\\
+	$a(\psi+\phi)=a\psi+a\phi$\\
+	$(a+b)\psi=a\psi+b\psi$
+	\item Associativity with respect to multiplication of scalars:\\
+	$a(b\psi)=(ab)\psi$
+	\item For each element $\psi$ there must exist a unitary scalar I and a zero scalar "0" such that \\
+	$I\psi=\psi I =\psi$ and $0\psi=\psi0=0$
+\end{itemize}
+\subsection{The Hilbert space}
+A Hilbert space $\mathcal{H}$ consists of a set of vectors $\psi,\phi,\chi,\cdots$ and set of scalars a,b,c which satisfies the following four properties.\\
+\textbf{(a)} $\mathcal{H}$ \textbf{is a linear space.}\\
+\textbf{(b)} $\mathcal{H}$ \textbf{has a defind scalar product that is strictly positive}.\\
+\textbf{Scalar product}
+  \par The scalar product of an element $\psi$ with another element $\phi$ is in general a complex number,denoted by ($\psi,\phi$) \\
+  ($\psi,\phi$)=complex number
+  \begin{note}
+  	Since the scalar product is a complex number ,the quandity ($\psi,\phi$) is generally not equal to ($\phi,\psi$)\\
+  	($\psi,\phi$)=($\psi*,\phi$)
+  \end{note}
+\textbf{Properties of scalar product}
+\begin{itemize}
+	\item The scalar product of $\psi$ with $\phi$ is equal to the complex conjugate of the scalar product of $\phi$ with $\psi$\\
+	($\psi,\phi$)=($\phi,\psi$)*
+	\item The scalar product of $\phi$ with $\psi$ is linear with respect to the second factor if $\psi=$ $a \psi_{1}+b \psi_{2}$ :
+	$$
+	\left(\phi, a \psi_{1}+b \psi_{2}\right)=a\left(\phi, \psi_{1}\right)+b\left(\phi, \psi_{2}\right),
+	$$
+	and antilinear with respect to the first factor if $\phi=a \phi_{1}+b \phi_{2}:$
+	$$
+	\left(a \phi_{1}+b \phi_{2}, \psi\right)=a^{*}\left(\phi_{1}, \psi\right)+b^{*}\left(\phi_{2}, \psi\right) .
+	$$
+	\item - The scalar product of a vector $\psi$ with itself is a positive real number:
+	$$
+	(\psi, \psi)=\|\psi\|^{2} \geq 0
+	$$
+	where the equality holds only for $\psi=O$.
+\end{itemize}
+\textbf{(c)}$\mathcal{H}$ \textbf{is separable}\\
+There exists a Cauchy sequence $\psi_{n} \in \mathcal{H}(n=1,2, \ldots)$ such that for every $\psi$ of $\mathcal{H}$ and $\varepsilon>0$, there exists at least one $\psi_{n}$ of the sequence for which
+$$
+\left\|\psi-\psi_{n}\right\|<\varepsilon .
+$$
+\textbf{(d)} $\mathcal{H}$ \textbf{is complete}\\
+Every Cauchy sequence $\psi_{n} \in \mathcal{H}$ converges to an element of $\mathcal{H}$. That is, for any $\psi_{n}$, the relation
+$$
+\lim _{n, m \rightarrow \infty}\left\|\psi_{n}-\psi_{m}\right\|=0,
+$$
+defines a unique limit $\psi$ of $\mathcal{H}$ such that
+$$
+\lim _{n \rightarrow \infty}\left\|\psi-\psi_{n}\right\|=0 .
+$$
+\subsection{Linear vector space that are Hilbert spaces}
+\begin{itemize}
+	\item The first one is the three diamenensional Euclidean vector space which have finite(descrete) set of base vectors.
+	\item The second example is the space of the entire complex functions $\psi(x)$ which hace infinite(contineous) basis.
+\end{itemize}
+\section{Dimension and Basis of a vector space}
+A set of $N$ nonzero vectors $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$ is said to be linearly independent if and only if the solution of the equation
+$$
+\sum_{i=1}^{N} a_{i} \phi_{i}=0
+$$
+is $a_{1}=a_{2}=\cdots=a_{N}=0 .$ But if there exists a set of scalars, which are not all zero, so that one of the vectors (say $\phi_{n}$ ) can be expressed as a linear combination of the others,
+$$
+\phi_{n}=\sum_{i=1}^{n-1} a_{i} \phi_{i}+\sum_{i=n+1}^{N} a_{i} \phi_{i},
+$$
+$\text { the set }\left\{\phi_{i}\right\} \text { is said to be linearly dependent. }$\\
+\textbf{Dimension:} The dimension of a vector space is given by the maximum number of linearly independent vectors the space can have. For instance, if the maximum number of linearly independent vectors a space has is $N$ (i.e.. $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$ ). this space is said to be $N$-dimensional. In this $N$-dimensional vector space, any vector $\psi$ can be expanded as a linear combination:
+$$
+\psi=\sum_{i=1}^{N} a_{i} \phi_{t} .
+$$
+\textbf{Basis:} The basis of a vector space consists of a set of the maximum possible number of linearly independent vectors belonging to that space. This set of vectors, $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$, to be denoted in short by $\left\{\phi_{1}\right\}$, is called the basis of the vector space, while the vectors $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$ are called the base vectors.
+\section{Dirac notation}
+The physical state of a sysytem is represented in quantum mechanics by elements of a Hilbert space;These elments are called state vectors.We can represents the state vectors in different bases by means of function expansions.\\
+\textbf{Kets: elements of a vector space}\\
+Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he called a ket vector, or simply a ket. Kets belong to the Hilbert (vector) space $\mathcal{H}$, or, in short, to the ket-space.\\
+\textbf{Bras: elements of a dual space}\\
+ we know from linear algebra that a dual space can be associated with every vector space. Dirac denoted the elements of a dual space by the symbol $\langle 1$, which he called a bra vector, or simply a bra; for instance, the element $\langle\psi /$ represents a bra. Note: For every ket $|\psi\rangle$ there exists a unique bra $\langle\psi|$ and vice versa. Again, while kets belong to the Hilbert space $\mathcal{H}$, the corresponding bras belong to its dual (Hilbert) space $\mathcal{H}_{d}$.\\
+ \textbf{Bra-ket: Dirac notation for the scalar product}\\
+ Dirac denoted the scalar (inner) product by the symbol $\langle\mid\rangle$, which he called a a bra-ket. For instance, the scalar product $(\phi, \psi)$ is denoted by the bra-ket $\langle\phi \mid \psi\rangle$ :
+ $$
+ (\phi, \psi) \quad \longrightarrow \quad\langle\phi \mid \psi\rangle \text {. }
+ $$
+ \begin{note}
+ 	\begin{itemize}
+ 		\item When a ket (or bra) is multiplied by a complex number, we also get a ket (or bra).
+ 		\item In the coordinate representation,the scalar product $\langle\phi \mid \psi\rangle$ is given by\\
+ 		$$\langle\phi \mid \psi\rangle=\int \phi^*(r,t)\psi(r,t)d^3r$$
+ 	\end{itemize}
+ \end{note}
+\newpage
+\textbf{ Properties of kets, bras, and bra-kets}  \\
+\begin{itemize}
+	\item \textbf{ Every ket has a corresponding bra}\\
+	To every $k e t|\psi\rangle$, there corresponds a unique bra $\langle\psi|$ and vice versa:
+	$|\psi\rangle \quad \longleftrightarrow \quad\langle\psi|$.
+	There is a one-to-one correspondence between bras and kets:
+	$$
+	a|\psi\rangle+b|\phi\rangle \longleftrightarrow a^{*}\langle\psi|+b^{*}\langle\phi| \text {. }
+	$$
+	where $a$ and $b$ are complex numbers. The following is a common notation:
+	$$
+	|a \psi\rangle=a|\psi\rangle, \quad\langle a \psi|=a^{*}\langle\psi| .
+	$$
+	\item \textbf{Properties of the scalar product}\\
+	(1)$\langle\phi \mid \psi\rangle^{*}=\langle\psi \mid \phi\rangle $ .\\
+	(2)$\left\langle\psi \mid a_{1} \psi_{1}+a_{2} \psi_{2}\right\rangle= a_{1}\left\langle\psi \mid \psi_{1}\right\rangle+a_{2}\left\langle\psi \mid \psi_{2}\right\rangle $\\
+	(3)$\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid \psi\right\rangle= a_{1}^{*}\left\langle\phi_{1} \mid \psi\right\rangle+a_{2}^{*}\left\langle\phi_{2} \mid \psi\right\rangle $\\
+		(4)$\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid b_{1} \psi_{1}+b_{2} \psi_{2}\right\rangle= a_{1}^{*} b_{1}\left\langle\phi_{1} \mid \psi_{1}\right\rangle+a_{1}^{*} b_{2}\left\langle\phi_{1} \mid \psi_{2}\right\rangle 
+		+a_{2}^{*} b_{1}\left\langle\phi_{2} \mid \psi_{1}\right\rangle+a_{2}^{*} b_{2}\left\langle\phi_{2} \mid \psi_{2}\right\rangle$ .
+\item \textbf{ The norm is real and positive}\\
+For any state vector $|\psi\rangle$ of the Hilbert space $\mathcal{H}$, the norm $\langle\psi \mid \psi\rangle$ is real and positive; $\langle\psi \mid \psi\rangle$ is equal to zero only for the case where $|\psi\rangle=O$, where $O$ is the zero vector. If the state $|\psi\rangle$ is normalized then $\langle\psi \mid \psi\rangle=1$.
+\item \textbf{Schwarz inequality}
+For any two states $|\psi\rangle$ and $|\phi\rangle$ of the Hilbert space, we can show that
+$$
+|\langle\psi \mid \phi\rangle|^{2} \leq\langle\psi \mid \psi\rangle\langle\phi \mid \phi\rangle .
+$$
+If $|\psi\rangle$ and $|\phi\rangle$ are linearly dependent (i.e., proportional: $|\psi\rangle=\alpha|\phi\rangle$, where $\alpha$ is a scalar), this relation becomes an equality. The Schwarz inequality  is analogous to the following relation of the real Euclidean space
+$$
+|\vec{A} \cdot \vec{B}|^{2} \leq|\vec{A}|^{2}|\vec{B}|^{2}
+$$
+\item \textbf{Triangle inequality}\\
+$$
+\sqrt{\langle\psi+\phi \mid \psi+\phi\rangle} \leq \sqrt{\langle\psi \mid \psi\rangle}+\sqrt{\langle\phi \mid \phi\rangle} .
+$$
+If $|\psi\rangle$ and $|\phi\rangle$ are linearly dependent, $|\psi\rangle=\alpha|\phi\rangle$, and if the proportionality scalar $\alpha$ is real and positive, the triangle inequality becomes an equality. The counterpart of this inequality in Euclidean space is given by $|\vec{A}+\vec{B}| \leq|\vec{A}|+|\vec{B}|$.
+\item \textbf{Orthogonal states}\\
+Two kets, $|\psi\rangle$ and $|\phi\rangle$, are said to be orthogonal if they have a vanishing scalar product:
+$$
+\langle\psi \mid \phi\rangle=0 .
+$$
+\item \textbf{Orthonormal states}\\
+Two kets, $|\psi\rangle $ and $|\phi \rangle $ are said to be orthonormal and if each one of them has a unit norm:\\
+$$ \langle \psi \mid \phi \rangle =0$$ 
+$$ \langle \psi \mid \psi \rangle =1$$ 
+$$ \langle \phi \mid \phi \rangle =1$$ 
+\end{itemize}
+\begin{exercise}
+	Consider the following two kets\\
+	|$\psi\rangle=\left(\begin{array}{c}
+		-3 i \\
+		2+i \\
+		4
+	\end{array}\right), \quad|\phi\rangle=\left(\begin{array}{c}
+		2 \\
+		-i \\
+		2-3 i
+	\end{array}\right)$\\
+	(a) Find the bra $\langle \phi |$ \\
+	(b) Evaluate the scalar product $\langle \phi \mid \psi \rangle $
+\end{exercise}
+\begin{answer}
+(a) the bra $\langle\phi|$ can be obtained by simply taking the complex conjugate of the transpose of the ket $|\phi\rangle$ :
+	$$
+	\langle\phi|=\left(\begin{array}{lll}
+	2 & i & 2+3 i
+	\end{array}\right) .
+	$$
+	(b) The scalar product $\langle\phi \mid \psi\rangle$ can be calculated as follows:
+	$$
+	\begin{aligned}
+	\langle\phi \mid \psi\rangle &=\left(\begin{array}{lll}
+	2 & i & 2+3 i
+	\end{array}\right)\left(\begin{array}{c}
+	-3 i \\
+	2+i \\
+	4
+	\end{array}\right) \\
+	&=2(-3 i)+i(2+i)+4(2+3 i) \\
+	&=7+8 i .
+	\end{aligned}
+	$$
+\end{answer}
+\begin{exercise}
+	Consider the states $|\psi\rangle=3 i\left|\phi_{1}\right\rangle-7 i\left|\phi_{2}\right\rangle$ and $|\chi\rangle=-\left|\phi_{1}\right\rangle+2 i\left|\phi_{2}\right\rangle$, where $\left|\phi_{1}\right\rangle$ and $\left|\phi_{2}\right\rangle$ are orthonormal.\\
+	(a) Calculate $|\psi+\chi\rangle$ and $\langle\psi+\chi|$.\\
+	(b) Calculate the scalar products $\langle\psi \mid \chi\rangle$ and $\langle\chi \mid \psi\rangle$. Are they equal?
+\end{exercise}
+\begin{answer}
+	(a) The calculation of $|\psi+\chi\rangle$ is straightforward:
+	$$
+	\begin{aligned}
+	|\psi+\chi\rangle &=|\psi\rangle+|\chi\rangle=\left(3 i\left|\phi_{1}\right\rangle-7 i\left|\phi_{2}\right\rangle\right)+\left(-\left|\phi_{1}\right\rangle+2 i\left|\phi_{2}\right\rangle\right) \\
+	&=(-1+3 i)\left|\phi_{1}\right\rangle-5 i\left|\phi_{2}\right\rangle .
+	\end{aligned}
+	$$
+	This leads at once to the expression of $\langle\psi+\chi|$ :
+	$$
+	\langle\psi+\chi|=(-1+3 i)^{*}\left\langle\phi_{1}\right|+(-5 i)^{*}\left\langle\phi_{2}\right|=(-1-3 i)\left\langle\phi_{1}\right|+5 i\left\langle\phi_{2}\right| \text {. }
+	$$
+	(b) Since $\left\langle\phi_{1} \mid \phi_{1}\right\rangle=\left\langle\phi_{2} \mid \phi_{2}\right\rangle=1,\left\langle\phi_{1} \mid \phi_{2}\right\rangle=\left\langle\phi_{2} \mid \phi_{1}\right\rangle=0$, and since the bras corresponding to the kets $|\psi\rangle=3 i\left|\phi_{1}\right\rangle-7 i\left|\phi_{2}\right\rangle$ and $|\chi\rangle=-\left|\phi_{1}\right\rangle+2 i\left|\phi_{2}\right\rangle$ are given by $\langle\psi|=-3 i\left\langle\phi_{1}\right|+7 i\left\langle\phi_{2}\right|$ and $\langle\chi|=-\left\langle\phi_{1}\right|-2 i\left\langle\phi_{2}\right|$, the scalar products are\\
+	$$\begin{aligned}
+		\langle\psi \mid \chi\rangle &=\left(-3 i\left\langle\phi_{1}\left|+7 i\left\langle\phi_{2}\right|\right)\left(-\left|\phi_{1}\right\rangle+2 i\left|\phi_{2}\right\rangle\right)\right.\right.\\
+		&=(-3 i)(-1)\left\langle\phi_{1} \mid \phi_{1}\right\rangle+(7 i)(2 i)\left\langle\phi_{2} \mid \phi_{2}\right\rangle \\
+		&=-14+3 i \\
+		\langle\chi \mid \psi\rangle &=\left(-\left\langle\phi_{1}\left|-2 i\left\langle\phi_{2}\right|\right)\left(3 i\left|\phi_{1}\right\rangle-7 i\left|\phi_{2}\right\rangle\right)\right.\right.\\
+		&=(-1)(3 i)\left\langle\phi_{1} \mid \phi_{1}\right\rangle+(-2 i)(-7 i)\left\langle\phi_{2} \mid \phi_{2}\right\rangle \\
+		&=-14-3 i .
+	\end{aligned}$$
+	$\text { We see that }\langle\psi \mid \chi\rangle \text { is equal to the complex conjugate of }\langle\chi \mid \psi\rangle\rangle \text {. }$
+\end{answer}
+\section{Operators}
+\subsection{General definitions}
+ Definition of an operator: An operator $ \hat{A}$ is a mathematical rule that when applied to a ket $|\psi\rangle$ transforms it into another ket $\left|\psi^{\prime}\right\rangle$ of the same space and when it acts on a bra $\langle\phi|$ transforms it into another bra $\left\langle\phi^{\prime}\right|$ :
+ $$
+ \hat{A}|\psi\rangle=\left|\psi^{\prime}\right\rangle, \quad\langle\phi| \hat{A}=\left\langle\phi^{\prime}\right| .
+ $$
+ A similar definition applies to wave functions:
+ $$
+ \hat{A} \psi(\vec{r})=\psi^{\prime}(\vec{r}), \quad \phi(\vec{r}) \hat{A}=\phi^{\prime}(\vec{r})
+ $$
+ \textbf{Examples of operators}
+ \begin{itemize}
+ 	\item $\text { Unity operator: it leaves any ket unchanged, } \hat{I}|\psi\rangle=|\psi\rangle \text {. }$
+ 	\item $\text { The gradient operator: } \vec{\nabla} \psi(\vec{r})=(\partial \psi(\vec{r}) / \partial x) \vec{i}+(\partial \psi(\vec{r}) / \partial y) \vec{j}+(\partial \psi(\vec{r}) / \partial z) \vec{k} \text {. }$
+ 	\item The linear momentum operator:$\vec{P}\psi(r)=-i\hbar \nabla \psi(r)$ 
+ 	\item The parity operator :$\mathcal{P}\psi(r)=\psi(-r)$
+ \end{itemize}
+\textbf{Product of operators}\\
+The product of two operators is generally not commutative:\\
+$$\hat{A}\hat{B}\neq \hat{B}\hat{A}$$
+But they are associative\\
+$$\hat{A}\hat{B}\hat{C}=\hat{A}(\hat{B}\hat{C})=(\hat{A}\hat{B})\hat{C}$$
+\textbf{Linear operators}\\
+An operator $\hat{A}$ is said to be linear if it obeys the distributive law and like, all operators ,it commute with constants.That is an operator $\hat{A}$ is linear if ,for any vector $|\psi_{1}\rangle $ and $|\psi_{2}\rangle $ and any complex numbers $a_1$ and $a_2$ we have\\
+$$\hat{A}(a_1\mid \psi_{1}\rangle +a_2\mid \psi_{2}\rangle)=a_1 \hat{A} \mid \psi_{1}\rangle +a_2\hat{A}\mid \psi_{2}\rangle $$
+and
+$$\left(\left\langle\psi_{1}\right| a_{1}+\left\langle\psi_{2}\right| a_{2}\right) \hat{A}=a_{1}\left\langle\psi_{1}\right| \hat{A}+a_{2}\left\langle\psi_{2}\right| \hat{A}$$
+\textbf{Expectation value of an operator}\\
+The expectation or mean value $\langle\hat{A}\rangle$ of an operator $\hat{A}$ with respect to a state $|\psi\rangle$ is defined by
+$$
+\langle\hat{A}\rangle=\frac{\langle\psi|\hat{A}| \psi\rangle}{\langle\psi \mid \psi\rangle} .
+$$
+\subsection{Hermitian operator}
+\textbf{Hermitian adjoint}\\
+The Hermitian adjoint or conjugate$ \alpha^{\dagger}$, of a complex number $\alpha$ is the complex conjugate of this number: $\alpha^{\dagger}=\alpha^{*}$. The Hermitian adjoint, or simply the adjoint, $\hat{A}^{\dagger}$, of an operator $\hat{A}$ is defined by this relation:
+$$
+\left\langle\psi\left|\hat{A}^{\dagger}\right| \phi\right\rangle=\langle\phi|\hat{A}| \psi\rangle^{*} .
+$$
+\textbf{Properties}\\
+To obtain the Hermitian adjoint of any expression, we must cyclically reverse the order of the factors and make three replacements:
+\begin{itemize}
+	\item $\text { Replace constants by their complex conjugates: } \alpha^{\dagger}=\alpha^{*} \text {. }$
+	\item $\text { Replace kets (bras) by the corresponding bras (kets): } \left.(|\psi\rangle)^{\dagger}=\langle\psi| \text { and }(\langle\psi|)^{\dagger}=|\psi\rangle\right\rangle \text {. }$
+	\item  $\text { Replace operators by their adjoints. }$
+\end{itemize}
+Following these rules, we can write
+$$
+\begin{aligned}
+\left(\hat{A}^{\dagger}\right)^{\dagger} &=\hat{A}, \\
+(a \hat{A})^{\dagger} &=a^{*} \hat{A}^{\dagger}, \\
+\left(\hat{A}^{n}\right)^{\dagger} &=\left(\hat{A}^{\dagger}\right)^{n}, \\
+(\hat{A}+\hat{B}+\hat{C}+\hat{D})^{\dagger} &=\hat{A}^{\dagger}+\hat{B}^{\dagger}+\hat{C}^{\dagger}+\hat{D}^{\dagger}, \\
+(\hat{A} \hat{B} \hat{C} \hat{D})^{\dagger} &=\hat{D}^{\dagger} \hat{C}^{\dagger} \hat{B}^{\dagger} \hat{A}^{\dagger}, \\
+(\hat{A} \hat{B} \hat{C}|\psi\rangle)^{\dagger} &=\langle\psi| D^{\dagger} C^{\dagger} B^{\dagger} A^{\dagger} .
+\end{aligned}
+$$
+\textbf{Hermitian and skew Hermitian operators}\\
+An operator $\hat{A}$ is said to be Hermitian if it is equal to its adjoint $\hat{A}^{\dagger}$ :
+$$
+\hat{A}=\hat{A}^{\dagger} \quad \text { or } \quad\langle\psi|\hat{A}| \phi\rangle=\langle\phi|\hat{A}| \psi\rangle^{*} .
+$$
+On the other hand ,an operator $\hat{B}$ is said to be skew Hermitian or anti Hermitian if \\
+$$ \hat{B}^{\dagger}=-B $$
+or $$ \langle \psi \mid \hat{B} \mid \phi \rangle =-\langle \phi \mid \hat{B} \mid \psi\rangle ^*$$
+\textbf{Examples}\\
+Hermitian:$\hat{A}+\hat{A}^{\dagger}$ and $i(\hat{A}-\hat{A}^{\dagger})$ etc\\
+Anti Hermitian:$i(\hat{A}+\hat{A}^{\dagger})$
+\begin{exercise}
+	$\text { Prove that the operators } i(d / d x) \text { and } d^{2} / d x^{2} \text { are Hermitian. }$
+\end{exercise}
+\begin{answer}
+$$
+\int_{-\infty}^{\infty} \psi_{m}^{*}\left(i \frac{d}{d x}\right) \psi_{n} d x=i\left[\psi_{m}^{*} \psi_{n}\right]_{-\infty}^{\infty}-i \int_{-\infty}^{\infty} \psi_{n} \frac{d}{d x} \psi_{m}^{*} d x=\int_{-\infty}^{\infty}\left(i \frac{d}{d x} \psi_{m}\right)^{*} \psi_{n} d x
+$$
+Therefore, $i d / d x$ is Hermitian.\\
+$$\int_{-\infty}^{\infty} \psi_{m}^{*} \frac{d^{2} \psi_{n}}{d x^{2}} d x=\left[\psi_{m}^{*} \frac{d \psi_{n}}{d x}\right]_{-m}^{\infty}-\int_{-}^{\infty} \frac{d \psi_{n}}{d x} \frac{d \psi_{m}^{*}}{d x} d x$$
+$$
+=\left[\frac{d \psi_{m}^{*}}{d x} \psi_{n}\right]_{-\infty}^{\infty}+\int_{-\infty}^{\infty} \psi_{n} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} d x=\int_{-\infty}^{\infty} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} \psi_{n} d x
+$$
+Thus, $d^{2} / d x^{2}$ is Hermitian.	
+\end{answer}
+\begin{exercise}
+$\text { Prove that operator } P_{x}=-i \hbar \frac{d}{d x} \text { is Hermitian but } D_{x}=\frac{d}{d x} \text { is not Hermitian. }$
+\end{exercise}
+\begin{answer}
+ The given operator $-i \hbar \frac{d}{d x}$ is the same as $P_{x}$. Let $\psi_{1}(x)$ and $\psi_{2}(x)$ be two arbitrary functions.
+$$
+\begin{aligned}
+\left\langle\psi_{1} \mid P_{x} \psi_{2}\right\rangle &=\int_{-\infty}^{x} \psi_{1}^{*}(x)\left[-i \hbar \frac{d}{d x} \psi_{2}(x)\right] d x \\
+&=-i \hbar \int_{-\infty}^{\infty} \psi_{1}^{*}(x) \frac{d}{d x} \psi_{2}(x) d x
+\end{aligned}
+$$
+Integrating by parts, this is equal to
+$$
+-i \hbar\left[\left.\psi_{1}^{*}(x) \psi_{2}(x)\right|_{-\infty} ^{\infty}-\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x\right]
+$$
+For the wave function to be square integrable, it must go to zero as $x$ goes to $-\infty$ or $+\infty$.
+Thus, the first term in the square bracket is zero. So,
+$$
+\left\langle\psi_{1}\left|P_{x}\right| \psi_{2}\right\rangle=i \hbar \int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
+$$
+$$
+\text { Also, } \begin{aligned}
+\left\langle P_{x} \psi_{1} \mid \psi_{2}\right\rangle &=\int_{-\infty}^{\infty}\left[P_{x} \psi_{1}(x)\right]^{*} \psi_{2}(x) d x \\
+&=\int_{-\infty}^{\infty}\left[-i \hbar \frac{d \psi_{1}(x)}{d x}\right]^{*} \psi_{2}(x) d x=i \hbar \int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
+\end{aligned}
+$$
+From (i) and (ii), $\left\langle\psi_{1} \mid P_{x} \psi_{2}\right\rangle=\left\langle P_{x} \psi_{1} \mid \psi_{2}\right\rangle$\\
+Hence $P_{x}=-i \hbar \frac{d}{d x}$ is Hermitian. Similar calculation with $A=\frac{d}{d x}$ will give,
+$$
+\left\langle\psi_{1} \mid A \psi_{2}\right\rangle=-\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
+$$
+And, $\quad\left\langle A \psi_{1} \mid \psi_{2}\right\rangle=\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x$\\
+Hence, $\left\langle\psi_{1} \mid A \psi_{2}\right\rangle \neq\left\langle A \psi_{1} \mid \psi_{2}\right\rangle$ and so, $A=\frac{d}{d x}$ is not Hermitian.	
+\end{answer}
+\begin{exercise}
+	$\text { Show that operator } O=(1+i) A B+(1-i) B A \text { is Hermitian if } A \text { and } B \text { is Hermitian. }$
+\end{exercise}
+\begin{answer}
+$$[(1+i) A B+(1-i) B A]^{\dagger}=[(1+i) A B]^{\dagger}+[(1-i) B A]^{\dagger}$$	
+$$
+\begin{aligned}
+&=(1+i)^{*}(A B)^{\dagger}+(1-i)^{*}(B A)^{\dagger} \\
+&=(1-i) B^{\dagger} A^{\dagger}+(1+i) A^{\dagger} B^{\dagger} \quad \text { if } A \text { and } B \text { is hermitian } \\
+&=(1-i) B A+(1+i) A B \\
+&(1+i) A B+(1-i) B A
+\end{aligned}
+$$
+Thus the given operator is Hermitian
+\end{answer}
+\subsection{Projection operators}
+An operator $\hat{P}$ is said to be projection operator if it is Hermitian and equal to its own square:\\
+$$\hat{P}^{\dagger}=\hat{P} \quad \quad \hat{P}^2=\hat{P}$$
+THe unit operator $\hat{I}$ is a simple example of a projection operator Since $$\hat{I}^{\dagger}=\hat{I}, \hat{I}^2=\hat{I}$$
+\textbf{Properties}\\
+\begin{itemize}
+	\item The product of two commuting projection operators, $\hat{P}_{1}$ and $\hat{P}_{2}$, is also a projection operator, since
+	$$
+	\left(\hat{P}_{1} \hat{P}_{2}\right)^{\dagger}=\hat{P}_{2}^{\dagger} \hat{P}_{1}^{\dagger}=\hat{P}_{2} \hat{P}_{1}=\hat{P}_{1} \hat{P}_{2} \text { and }\left(\hat{P}_{1} \hat{P}_{2}\right)^{2}=\hat{P}_{1} \hat{P}_{2} \hat{P}_{1} \hat{P}_{2}=\hat{P}_{1}^{2} \hat{P}_{2}^{2}=\hat{P}_{1} \hat{P}_{2} \text {. }
+	$$
+	\item  The sum of two projection operators is generally not a projection operator.
+	\item  Two projection operators are said to be orthogonal if their product is zero.
+	\item For a sum of projection operators $\hat{P}_{1}+\hat{P}_{2}+\hat{P}_{3}+\cdots$ to be a projection operator, it is necessary and sufficient that these projection operators be mutually orthogonal (i.e., the cross-product terms must vanish).
+\end{itemize}
+\subsection{Commutator Algebra}
+The commutator of two operators $\hat{A}$ and $\hat{B}$, denoted by $[\hat{A}, \hat{B}]$, is defined by
+$$
+[\hat{A}, \hat{B}]=\hat{A} \hat{B}-\hat{B} \hat{A}
+$$
+and the anticommutator $\{\hat{A}, \hat{B}\}$ is defined by
+$$
+\{\hat{A}, \hat{B}\}=\hat{A} \hat{B}+\hat{B} \hat{A}
+$$
+Two operators are said to commute if their commutator is equal to zero and hence $\hat{A} \hat{B}=\hat{B} \cdot \hat{A}$. Any operator commutes with itself:
+$$
+[\hat{A}, \hat{A}]=0
+$$
+Note that if two operators are Hermitian and their product is also Hermitian, these operators commute:
+$$
+(\hat{A} \hat{B})^{\dagger}=\hat{B}^{\dagger} \hat{A}^{\dagger}=\hat{B} \hat{A}
+$$
+and since $(\hat{A} \hat{B})^{\dagger}=\hat{A} \hat{B}$ we have $\hat{A} \hat{B}=\hat{B} \hat{A}$.\\
+\textbf{Example}\\
+$$\left[\hat{X}, \hat{P}_{x}\right]=i \hbar \hat{I}, \quad\left[\hat{Y}, \hat{P}_{y}\right]=i \hbar \hat{I}, \quad\left[\hat{Z}, \hat{P}_{z}\right]=i \hbar \hat{I}$$
+Where $\hat{P_x}=-i\hbar \frac{\partial}{\partial x}$, $\hat{P_y}=-i\hbar \frac{\partial}{\partial y}$, $\hat{P_z}=-i\hbar \frac{\partial}{\partial z}$ and $\hat{I}$ is the unit operator.\\
+\begin{note}
+	\begin{enumerate}
+		\item $\left[\hat{X}, \hat{P}_{x}\right]=i \hbar, \quad\left[\hat{Y}, \hat{P}_{Y}\right]=i \hbar, \quad\left[\hat{Z}, \hat{P}_{Z}\right]=i \hbar$
+		\item $\left[\hat{X}, \hat{P}_{y}\right]=\left[\hat{X}, \hat{P}_{z}\right]=\left[\hat{Y}, \hat{P}_{x}\right]=\left[\hat{Y}, \hat{P}_{z}\right]=\left[\hat{Z}, \hat{P}_{x}\right]=\left[\hat{Z}, \hat{P}_{y}\right]=0$
+		\item $\left[\hat{R}_{j}, \hat{P}_{k}\right]=i \hbar \delta_{j k}, \quad\left[\hat{R}_{j}, \hat{R}_{k}\right]=0, \quad\left[\hat{P}_{j}, \hat{P}_{k}\right]=0 \quad(j, k=x, y, z)$
+		\item $\left[\hat{X}^{n}, \hat{P}_{x}\right]=i \hbar n \hat{X}^{n-1}, \quad\left[\hat{X}, \hat{P}_{x}^{n}\right]=i \hbar n \hat{P}_{x}^{n-1}$
+		\item $\left.\left[  f(\hat{X}), \hat{P}_{x}\right]=i \hbar \frac{d f(\hat{X})}{d \hat{X}} \Longrightarrow[\hat{P}, F(\hat{\vec{R}})]=-i \hbar \vec{\nabla} F(\hat{\vec{R}})\right)$\\
+		Where F is a function of the operator $\hat{R}$
+	\end{enumerate}
+\end{note}
+\textbf{Properties}\\
+\begin{itemize}
+	\item Antisymmetry:\\
+	$$[\hat{A}, \hat{B}]=-[\hat{B}, \hat{A}]$$
+	\item Linearity:\\
+	 $$[\hat{A}, \hat{B}+\hat{C}+\hat{D}+\cdots]=[\hat{A}, \hat{B}]+[\hat{A}, \hat{C}]+[\hat{A}, \hat{D}]+\cdots$$
+	 \item  Hermitian conjugate of a commutator: \\
+	 $$[\hat{A}, \hat{B}]^{\dagger}=\left[\hat{B}^{\dagger}, \hat{A}^{\dagger}\right]$$
+	 \item  Distributivity: \\
+	 $$\begin{aligned}
+	 	&{[\hat{A}, \hat{B} \hat{C}]=[\hat{A}, \hat{B}] \hat{C}+\hat{B}[\hat{A}, \hat{C}]} \\
+	 	&{[\hat{A} \hat{B}, \hat{C}]=\hat{A}[\hat{B}, \hat{C}]+[\hat{A}, \hat{C}] \hat{B}}
+	 \end{aligned}$$
+	 \item jacobi identity:\\
+	 $$[\hat{A},[\hat{B}, \hat{C}]]+[\hat{B},[\hat{C}, \hat{A}]]+[\hat{C},[\hat{A}, \hat{B}]]=0$$
+	 \item Operators commute with scalars: an operator $\hat{A}$ commutes with any scalar $b$ :
+	 $$
+	 [\hat{A}, b]=0
+	 $$
+\end{itemize}
+\begin{note}
+	Uncertainity relation between two operator A  and B is \\
+	$$\Delta A \Delta B \geq \frac{1}{2}\left| \langle \left[ \hat{A},\hat{B}\right] \rangle \right| $$
+\end{note}
+\begin{exercise}
+	(a)Show that the commutator of two Hermitian operator is anti Hermitian.\\
+	(b)Evaluate the commutator $\left[ \hat{A},\left[ \hat{B},\hat{C}\right] \hat{D}\right] $
+\end{exercise}
+\begin{answer}
+	(a) If $\hat{A}$ and $\hat{B}$ are Hermitian, we can write
+	$$
+	[\hat{A}, \hat{B}]^{\dagger}=(\hat{A} \hat{B}-\hat{B} \hat{A})^{\dagger}=\hat{B}^{\dagger} \hat{A}^{\dagger}-\hat{A}^{\dagger} \hat{B}^{\dagger}=\hat{B} \hat{A}-\hat{A} \hat{B}=-[\hat{A}, \hat{B}] ;
+	$$
+	that is, the commutator of $\hat{A}$ and $\hat{B}$ is anti-Hermitian: $[\hat{A}, \hat{B}]^{\dagger}=-[\hat{A}, \hat{B}]$.\\
+	(b) Using the distributivity relation we have
+	$$
+	\begin{aligned}
+	[\hat{A},[\hat{B}, \hat{C}] \hat{D}] &=[\hat{B}, \hat{C}][\hat{A}, \hat{D}]+[\hat{A},[\hat{B}, \hat{C}]] \hat{D} \\
+	&=(\hat{B} \hat{C}-\hat{C} \hat{B})(\hat{A} \hat{D}-\hat{D} \hat{A})+\hat{A}(\hat{B} \hat{C}-\hat{C} \hat{B}) \hat{D}-(\hat{B} \hat{C}-\hat{C} \hat{B}) \hat{A} \hat{D} \\
+	&=\hat{C} \hat{B} \hat{D} \hat{A}-\hat{B} \hat{C} \hat{D} \hat{A}+\hat{A} \hat{B} \hat{C} \hat{D}-\hat{A} \hat{C} \hat{B} \hat{D} .
+	\end{aligned}
+	$$
+\end{answer}
+\begin{exercise}
+ Find the following commutation relations:
+	(i) $\left[\frac{\partial}{\partial x}, \frac{\partial^{2}}{\partial x^{2}}\right]$
+	(ii) $\left[\frac{\partial}{\partial x}, F(x)\right]$
+\end{exercise}
+\begin{answer}
+(i) $\left[\frac{\partial}{\partial x}, \frac{\partial^{2}}{\partial x^{2}}\right] \psi=\left(\frac{\partial}{\partial x} \frac{\partial^{2}}{\partial x^{2}}-\frac{\partial^{2}}{\partial x^{2}} \frac{\partial}{\partial x}\right) \psi=\left(\frac{\partial^{3}}{\partial x^{3}}-\frac{\partial^{3}}{\partial x^{3}}\right) \psi=0$\\
+(ii) $\left[\frac{\partial}{\partial x}, F(x)\right] \psi=\frac{\partial}{\partial x}(F \psi)-F \frac{\partial}{\partial x} \psi=\frac{\partial F}{\partial x} \psi+F \frac{\partial \psi}{\partial x}-F \frac{\partial \psi}{\partial x}=\frac{\partial F}{\partial x} \psi$\\
+Thus, $\left[\frac{\partial}{\partial x}, F(x)\right]=\frac{\partial F}{\partial x}$	
+\end{answer}
+\begin{exercise}
+	If Hamiltonian of system is $H=\frac{p_{x}^{2}}{2 m}+V(x)$ then Find commutation $[H, x]$ and $[[H, x], x]$
+\end{exercise}
+\begin{answer}
+ As, $H=p^{2} / 2 m+V(x)$\\
+We have, $[H, x]=\frac{1}{2 m}\left[p^{2}, x\right]=-i \hbar p / m$ \\
+and so, $[[H, x], x]=\frac{i \hbar}{m}[p, x]=-\hbar^{2} / m$\\
+ Hence, $\langle m|[[H, x] x]| m\rangle=-\frac{\hbar^{2}}{m}$	
+\end{answer}
+\subsection{Functions of operators}
+\textbf{Commutators involving function operators}\\
+If $\hat{A}$ commutes with another operator $\hat{B}$, then $\hat{B}$ commutes with any operator function that depends on $\hat{A}$ :
+$$
+[\hat{A}, \hat{B}]=0 \quad \Longrightarrow \quad[\hat{B}, F(\hat{A})]=0 ;
+$$
+in particular, $F(\hat{A})$ commutes with $\hat{A}$ and with any other function, $G(\hat{A})$, of $\hat{A}$ :
+$$
+[\hat{A}, F(\hat{A})]=0, \quad\left[\hat{A}^{n}, F(\hat{A})\right]=0, \quad[F(\hat{A}), G(\hat{A})]=0 .
+$$
+\subsection{Inverse and unitary operators}
+\textbf{Inverse of an operator}\\
+ Assuming it exists the inverse $\hat{A}^{-1}$ of a linear operator $A$ is defined by the relation
+$$
+\hat{A}^{-1} \hat{A}=\hat{A} \hat{A}^{-1}=\hat{I},
+$$
+where $\hat{I}$ is the unit operator, the operator that leaves any state $|\psi\rangle$ unchanged.\\
+\textbf{Unitary operator}\\
+ A linear operator $\hat{U}$ is said to be unitary if its inverse $\hat{U}^{-1}$ is equal to its adjoint $\hat{U}^{\dagger}$ :
+$$
+\hat{U}^{\dagger}=\hat{U}^{-1} \quad \text { or } \quad \hat{U} \hat{U}^{\dagger}=\hat{U}^{\dagger} \hat{U}=\hat{I} .
+$$
+The product of two unitary operators is also unitary, since
+$$
+(\hat{U} \hat{V})(\hat{U} \hat{V})^{\dagger}=(\hat{U} \hat{V})\left(\hat{V}^{\dagger} \hat{U}^{\dagger}\right)=\hat{U}\left(\hat{V} \hat{V}^{\dagger}\right) \hat{U}^{\dagger}=\hat{U} \hat{U}^{\dagger}=\hat{I},
+$$
+or $(\hat{U} \hat{V})^{\dagger}=(\hat{U} \hat{V})^{-1}$. This result can be generalized to any number of operators; the product of a number of unitary operators is also unitary, since
+$$
+\begin{aligned}
+(\hat{A} \hat{B} \hat{C} \hat{D} \cdots)(\hat{A} \hat{B} \hat{C} \hat{D} \cdots)^{\dagger} &=\hat{A} \hat{B} \hat{C} \hat{D}(\cdots) \hat{D}^{\dagger} \hat{C}^{\dagger} \hat{B}^{\dagger} \hat{A}^{\dagger}=\hat{A} \hat{B} \hat{C}\left(\hat{D} \hat{D}^{\dagger}\right) \hat{C}^{\dagger} \hat{B}^{\dagger} \hat{A}^{\dagger} \\
+&=\hat{A} \hat{B}\left(\hat{C} \hat{C}^{\dagger}\right) \hat{B}^{\dagger} \hat{A}^{\dagger}=\hat{A}\left(\hat{B} \hat{B}^{\dagger}\right) \hat{A}^{\dagger} \\
+&=\hat{A} \hat{A}^{\dagger}=\hat{l}
+\end{aligned}
+$$
+\subsection{Eigen value and eigen vector of an operator}
+A state vector $|\psi\rangle$ is said to be an eigenvector (also called an eigenket or eigenstate) of an operator $\hat{A}$ if the application of $\hat{A}$ to $|\psi\rangle$ gives
+$$
+\hat{A}|\psi\rangle=a|\psi\rangle,
+$$
+where $a$ is a complex number, called an eigenvalue of $\hat{A}$. This equation is known as the eigenvalue equation, or eigenvalue problem, of the operator $\hat{A}$. Its solutions yield the eigenvalues and eigenvectors of $\hat{A}$.
+\begin{exercise}
+	$\text { Show that if } \hat{A}^{-1} \text { exists, the eigenvalues of } \hat{A}^{-1} \text { are just the inverses of those of } \hat{A} \text {. }$
+\end{exercise}
+\begin{answer}
+Since $\hat{A}^{-1} \hat{A}=\hat{I}$ we have on the one hand
+$$
+\hat{A}^{-1} \hat{A}|\psi\rangle=|\psi\rangle,
+$$
+and on the other hand
+$$
+\hat{A}^{-1} \hat{A}|\psi\rangle=\hat{A}^{-1}(\hat{A}|\psi\rangle)=a \hat{A}^{-1}|\psi\rangle .
+$$
+Combining the previous two equations, we obtain
+$$
+a \hat{A}^{-1}|\psi\rangle=|\psi\rangle,
+$$	
+hence
+$$
+\hat{A}^{-1}|\psi\rangle=\frac{1}{a}|\psi\rangle
+$$
+This means that $|\psi\rangle$ is also an eigenvector of $\hat{A}^{-1}$ with eigenvalue $1 / a$. That is, if $\hat{A}^{-1}$ exists, then
+$$
+\hat{A}|\psi\rangle=a|\psi\rangle \quad \Longrightarrow \quad \hat{A}^{-1}|\psi\rangle=\frac{1}{a}|\psi\rangle .
+$$
+\end{answer}
+\section{Theorems} 
+\begin{theorem}
+For an Hermitian operator ,all of its eigen values are real and the eigen vectors corresponding to different eigen values are orthogonal.	\\
+If $\hat{A}^{\dagger}=\hat{A}, \hat{A}|\phi_{n}\rangle =a_n |\phi_{n}\rangle \implies a_n=\text{real number }$\\
+and\\
+$\langle \phi_{m}\mid \phi_{n}\rangle=\delta_{mn}$
+\end{theorem}
+\begin{theorem}
+If two Hermitian operators, $\hat{A}$ and $\hat{B}$, commute and if $\hat{A}$ has no degenerate eigenvalue, then each eigenvector of $\hat{A}$ is also an eigenvector of $\hat{B}$. In addition, we can construct a common orthonormal basis that is made of the joint eigenvectors of $\hat{A}$ and $\hat{B}$.
+\end{theorem}
+\begin{theorem}
+ The eigenvalues of an anti-Hermitian operator are either purely imaginary or equal to zero.
+\end{theorem}
+\begin{theorem}
+	 The eigenvalues of a unitary operator are complex numbers of moduli equal to one; the eigenvectors of a unitary operator that has no degenerate eigenvalues are mutually orthogonal.
+\end{theorem}
+\section{Wavefunction in coordinate and momentum representations}
+We have $$xp-px=i\hbar$$
+So $$\langle x\mid xp-px\mid x^{\prime}\rangle=i\hbar\langle x\mid x^{\prime}\rangle$$
+$$x\langle x |p|x^{\prime}\rangle -\langle x |p|x^{\prime}\rangle x^{\prime}=i\hbar \delta(x-x^{\prime})$$
+$$\langle x|p|x^{\prime}\rangle =i\hbar \frac{\delta(x-x^{\prime})}{x-x^{\prime}}$$
+We have $-\frac{\delta(x)}{x}=\delta^{\prime}(x)$\\
+$$\langle x|p|x^{\prime}\rangle=-i\hbar \frac{\partial}{\partial x}\delta(x-x^{\prime})$$
+So similarly $$\langle x|p|\psi(t)\rangle=-i\hbar\frac{\partial}{\partial x} \langle|\psi(t)\rangle$$
+$$\langle x|p|\psi(t)\rangle=-i\hbar \frac{\partial }{\partial x}\psi(x,t)$$
+So the momentum operator in position basis \\
+$$\hat{P}=-i\hbar \frac{\partial}{\partial x}$$
+Now let us find the expression of position operator in the momentum basis \\
+$$\langle p|xp-px|p^{\prime}\rangle =i\hbar \delta (p-p^{\prime})$$
+$$p|px-xp|p^{\prime}\rangle =-i\hbar \delta(p-p^{\prime})$$\\
+$$p\langle p|x|p^{\prime}\rangle -\langle p|x|p^{\prime}\rangle p^{\prime}=-i\hbar\delta(p-p^{\prime})$$
+$$\langle p|x|p^{\prime}\rangle=+i\hbar\frac{\partial}{\partial x}\delta(p-p^{\prime})$$
+So $$\langle p|x|\psi(t)\rangle =i\hbar\frac{\partial}{\partial p} \langle p|\psi(t)\rangle=i\hbar\frac{\partial}{\partial p}\psi (p,t)$$\\
+ie $\hat{x}=i\hbar\frac{\partial}{\partial p}$ in momentum space\\
+So in three dimension \\
+position space\\
+$\hat{p}=-i\hbar \nabla_{r}$\\
+$\hat{x}=x$
+Momentum space\\
+$\hat{p}=p$\\
+$\hat{x}=i\hbar \nabla_{p}$\\
+Now let us check whether momentum is self adjoint\\
+$\int_{-\infty}^{+\infty} f^*(x)\left( -i\hbar \frac{\partial}{\partial x}g(x)\right)dx=-i\hbar\left\lbrace  \left[ f^{*}(x)g(x) \right]_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} g(x)\frac{\partial}{\partial x}f^*(x)dx\right\rbrace $\\
+$=i\hbar \int \frac{\partial}{\partial x} f^*(x) g(x)dx$
+$=\int\left( -i\hbar \frac{\partial}{\partial x}f(x)\right) ^{\dagger}g(x)dx$
+$=\int(pf)^{\dagger}g dx$
+So momentum is hermitian .\\
+Since -i$\hbar\implies i\hbar;\frac{\partial}{\partial x} \implies -\frac{\partial}{\partial x}$ to keep momentum operator hermitian,so $ \frac{\partial}{\partial x}$ is anti hermitian.\\
+So $\left( \frac{d^n}{dx^n}\right) ^{\dagger}=(-1)^n \left( \frac{d^n}{dx^n}\right)$\\
+Its a good position to discuss the time evolution of a state vector .The time evolution of the state vector is prescribed by the rule called schrodinger equation which is given as \\
+$$i\hbar \frac{d}{dt}|\psi(t)\rangle =\hat{H}|\psi(t)\rangle $$
+This is not an eigen value equation since $\hat{H}$ is an operator.\\
+Since we are only dealing with autonomous system $\hat{H}$ is explicitly time independant.So we can write the formal solution \\
+$$|\psi(t) \rangle =e^{-\frac{i}{\hbar}\hat{H(t)}} |\psi(o)\rangle $$
+or $$|\psi(t) \rangle =e^{\frac{-i}{\hbar}\hat{H}(t-t_0)} |\psi(t_0)\rangle$$
+Let's denote $e^{\frac{-i}{\hbar}\hat{H}(t-t_0)}$ as U.
+Now $$(U^{\dagger})=e^{\frac{i}{\hbar}\hat{H}(t-t_0)}=U^{-1}$$
+ie $$U^{\dagger}U^{-1}=U^{-1}U=I\implies \text{ unitary operator }$$
+It is interesting thing is that even in non-automonous system time evolution operator is unitary operator.,but formal solution went be this \\
+If the system changes from $t_O t0 t_2$\\
+Then $$U(t_2,t_0)=U(t_2,t_1)U(t_1,t_0)$$
+Product of unitary operator is unitary \\
+If we normalized $|\psi(0)\rangle$ would it be preserved in time evolution.\\
+$$|\psi(t) \rangle =e^{-\frac{i}{\hbar}\hat{H(t)}} |\psi(o)\rangle $$
+So $$\langle \psi(t)|=\langle \psi(0)|e^{\frac{i}{\hbar}
+H^{\dagger}t}$$
+So $$\langle \psi(t)\mid \psi(t)\rangle=\langle \psi(o)|e^{\frac{i}{\hbar}H^{\dagger}t}e^{\frac{-i}{\hbar}H^{\dagger}t}\mid \psi(o)\rangle$$ 
+Remember $$e^{\hat{A}}e^{\hat{B}}=e^{\hat{A}+\hat{B}}$$
+ Iff $$\left[ A,B\right] =0$$
+$ \left[ H^{\dagger},H\right] =0$ Since H is hermitian.\\
+So $$\langle \psi(t)\mid \psi(t)\rangle=\langle \psi_{0}|\psi_{0}\rangle$$
+Ie probability is conserved in time evolution as in classical mechanics.(liouville's thoerem).The preservation of probality follows from the unitary of the time evolution operator.\\
+Now we have studied the schrodinger equation in the abstract basis .Then how does it look like in position basis.\\
+we have \\
+\begin{align*}
+i\hbar \frac{d}{dt}|\psi(t)\rangle &=\hat{H}|\psi(t)\rangle \\
+\intertext{with} \hat{H}&=\frac{p^2}{2m}+V(r)\\
+\intertext{in position basis (3-D)}\\
+\langle r|i\hbar \frac{d}{dt}|\psi(t)\rangle&=\langle r|\hat{H}|\psi(t)\rangle\\
+i\hbar \frac{d}{dt}\langle |\psi(t)\rangle&=\langle r|\frac{p^2}{2m}+V(r)|\psi(t)\rangle\\
+i\hbar\frac{\partial}{\partial t}\psi(r,t)&=-\frac{\hbar^2}{2m} \nabla^2\langle r|\psi(t)\rangle+\langle r|v(r)|\psi(t)\rangle\\
+&=-\frac{\hbar^2}{2m}\nabla^2\psi(r,t)+v(r)\psi(r,t)\\
+i\hbar \frac{\partial}{\partial t}\psi(r,t)&=-\frac{\hbar^2}{2m} \nabla^2 \psi(r,t)+v(r)\psi(r,t)\\
+\intertext{This is partial differential equation,first order in time.}
+\end{align*}
+Let's calculate
+\begin{align*}
+\langle x|\hat{P}|x^{\prime}&=\langle x|-i\hbar \frac{\partial}{\partial x}|x^{\prime}\\
+&=-i\hbar \frac{\partial}{\partial x} \langle x|x^{\prime} \rangle\\
+\intertext{similarly}\\
+\langle x|\hat{P}|\hat{P}\rangle&=-i\hbar \frac{\partial}{\partial x}\langle x|p\rangle\\
+p\langle x|\hat{P}\rangle&=-i\hbar\frac{\partial}{\partial x} \langle x|p\rangle\\
+\frac{\partial \langle x|p\rangle}{\langle x|\hat{p}\rangle}&=\frac{p}{-i\hbar}\partial x\\
+\langle x|p\rangle &\propto e^{\frac{ipx}{\hbar}}\\
+\langle p|x\rangle &\propto e^{\frac{-ipx}{\hbar}}\\
+\intertext{so we get}
+\psi(x,t)&=\int_{-\infty}^{+\infty} dp\langle x|p\rangle \hat{\psi}(p,t)\\
+\psi(x,t)&=\frac{1}{\sqrt{2\pi \hbar}}\int_{-\infty}^{+\infty} dp e^{ipx} \vec{\psi}(p,t)\\
+\vec{\psi}(p,t)&=\frac{1}{\sqrt{2\pi \hbar}} \int_{-\infty}^{+\infty}dxe^{-ipx} \psi(x,t)\\
+\end{align*}
+In 3-D\\
+$$\psi(r,t)=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3r e^{\frac{i\vec{p}\cdot \vec{r}}{\hbar}} \vec{\psi}(p,t)$$
+$$\vec{\psi}(p,t)=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3p e^{\frac{-i\vec{p}\cdot \vec{r}}{\hbar}} \psi(x,t)$$
+Turns out that momentum space wave function is the fourier transform of the position space wave function.\\
+Parsevals theorem guarantee that\\
+$$\int_{-\infty}^{+\infty} d^3p |\psi(p,t)|^2=\int_{-\infty}^{+\infty} d^3r |\psi(r,t)|^2$$
+ie if wavefunction is normalized in position space it will be normalized in momentum space.
+\section{Parity operator}
+The space reflection about the origin of the coordinate system is called inversion or a parity operation.This transformation is descrete.The parity operator $\hat{P}$ is defined by its action on the ket $|\vec{r}\rangle$ of the position space:
+$$\hat{P}|\vec{r}\rangle =|\vec{-r}\rangle$$
+such that 
+ $$\hat{P}\psi(\vec{r})=\psi(-\vec{r})$$
+ \begin{note}
+ 	\begin{itemize}
+ 		\item Parity operator is Hermitian $\vec{P}^{\dagger}=\vec{P}$
+ 		\item From the definition we have\\
+ 		$$\vec{P}^2 \psi(\vec{r})=\vec{P}\psi(-\vec{r})=\psi(\vec{r})$$
+ 		Hence $\vec{P}^2$ is equal to the unity operator
+ 		$$\vec{P}^2=I or \vec{P}=\vec{P}^{-1}$$
+ 		\item The parity operator is therefore unitary, since its Hermitian adjoint is equal to its inverse.\\
+ 		$$\vec{P}^{\dagger}=\vec{P}^{-1}$$ 
+ 		\item Now, since $\hat{P}^{2}=\hat{I}$, the eigenvalues of $\hat{P}$ are $+1$ or $-I$ with the corresponding eigenstates
+ 		$$
+ 		\hat{P} \psi_{+}(\vec{r})=\psi_{+}(-\vec{r})=\psi_{+}(\vec{r}), \quad \hat{P} \psi_{-}(\vec{r})=\psi_{-}(-\vec{r})=-\psi_{-}(\vec{r}) .
+ 		$$
+ 		The eigenstate $\left|\psi_{+}\right\rangle$is said to be even and $\left|\psi_{-}\right\rangle$is odd. Therefore, the eigenfunctions of the parity operator have definite parity: they are either even or odd.
+ 		\item \textbf{Even and odd operators}\\
+ 		An operator $\hat{A}$ is said to be $e v e n$ if it obeys the condition
+ 		$$
+ 		\hat{P} \hat{A} \hat{P}=\hat{A}
+ 		$$
+ 		and an operator $\hat{B}$ is odd if
+ 		$$
+ 		\hat{P} \hat{B} \hat{P}=-\hat{B}
+ 		$$
+ 		We can easily verify that even operators commute with the parity operator $\hat{P}$ and that odd operators anticommute with $\hat{P}$ :
+ 		$$
+ 		\begin{aligned}
+ 		\hat{A} \hat{P} &=(\hat{P} \hat{A} \hat{P}) \hat{P}=\hat{P} \hat{A} \hat{P}^{2}=\hat{P}\hat{A} \\
+ 		\hat{B} \hat{P} &=-(\hat{P} \hat{B} \hat{P}) \hat{P}=-\hat{P} \hat{B} \hat{P}^{2}=-\hat{P} \hat{B}
+ 		\end{aligned}
+ 		$$
+ 	\end{itemize}
+ \end{note}
+
+\newpage 
+\begin{abox}
+	Practice set 1
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+	\item Consider a particle in a one dimensional potential that satisfies $V(x)=V(-x)$. Let $\left|\psi_{0}\right\rangle$ and $\left|\psi_{1}\right\rangle$ denote the ground and the first excited states, respectively, and let $|\psi\rangle=\alpha_{0}\left|\psi_{0}\right\rangle+\alpha_{1}\left|\psi_{1}\right\rangle$ be a normalized state with $\alpha_{0}$ and $\alpha_{1}$ being real constants. The expectation value $\langle x\rangle$ of the position operator $x$ in the state $|\psi\rangle$ is given by
+	\exyear{NET DEC 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\alpha_{0}^{2}\left\langle\psi_{0}|x| \psi_{0}\right\rangle+\alpha_{1}^{2}\left\langle\psi_{1}|x| \psi_{1}\right\rangle$
+	\task[\textbf{B.}]$\alpha_{0} \alpha_{1}\left[\left\langle\psi_{0}|x| \psi_{1}\right\rangle+\left\langle\psi_{1}|x| \psi_{0}\right\rangle\right]$
+	\task[\textbf{C.}]$\alpha_{0}^{2}+\alpha_{1}^{2}$
+	\task[\textbf{D.}]$2 \alpha_{0} \alpha_{1}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item The wave function of a particle at time $t=0$ is given by $|\psi(0)\rangle=\frac{1}{\sqrt{2}}\left(\left|u_{1}\right\rangle+\left|u_{2}\right\rangle\right)$, where
+	$\left|u_{1}\right\rangle$ and $\left|u_{2}\right\rangle$ are the normalized eigenstates with eigenvalues $E_{1}$ and $E_{2}$ respectively, $\left(E_{2}>E_{1}\right)$. The shortest time after which $|\psi(t)\rangle$ will become orthogonal to $|\psi(0)\rangle$ is
+	\exyear{NET DEC 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{-\hbar \pi}{2\left(E_{2}-E_{1}\right)}$
+	\task[\textbf{B.}]$\frac{\hbar \pi}{E_{2}-E_{1}}$
+	\task[\textbf{C.}]$\frac{\sqrt{2} \hbar \pi}{E_{2}-E_{1}}$
+	\task[\textbf{D.}]$\frac{2 \hbar \pi}{E_{2}-E_{1}}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { The commutator }\left[x^{2}, p^{2}\right] \text { is }$
+	\exyear{NET JUNE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 i \hbar x p$
+	\task[\textbf{B.}]$2 i \hbar(x p+p x)$
+	\task[\textbf{C.}]$2 i \hbar p x$
+	\task[\textbf{D.}]$2 i \hbar(x p-p x)$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Which of the following is a self-adjoint operator in the spherical polar coordinate system $(r, \theta, \phi)$ ?
+	\exyear{NET JUNE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{i \hbar}{\sin ^{2} \theta} \frac{\partial}{\partial \theta}$
+	\task[\textbf{B.}]$-i \hbar \frac{\partial}{\partial \theta}$
+	\task[\textbf{C.}] $-\frac{i \hbar}{\sin \theta} \frac{\partial}{\partial \theta}$
+	\task[\textbf{D.}] $-i \hbar \sin \theta \frac{\partial}{\partial \theta}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Given the usual canonical commutation relations, the commutator $[A, B]$ of $A=i\left(x p_{y}-y p_{x}\right)$ and $B=\left(y p_{z}+z p_{y}\right)$ is
+	\exyear{NET DEC 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\hbar\left(x p_{z}-p_{x} z\right)$
+	\task[\textbf{B.}]$-\hbar\left(x p_{z}-p_{x} z\right)$
+	\task[\textbf{C.}]$\hbar\left(x p_{z}+p_{x} z\right)$
+	\task[\textbf{D.}]$-\hbar\left(x p_{z}+p_{x} z\right)$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item If the operators $A$ and $B$ satisfy the commutation relation $[A, B]=I$, where $I$ is the identity operator, then
+	\exyear{NET JUNE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left[e^{A}, B\right]=e^{A}$
+	\task[\textbf{B.}]$\left[e^{A}, B\right]=\left[e^{B}, A\right]$
+	\task[\textbf{C.}]$\left[e^{A}, B\right]=\left[e^{-B}, A\right]$
+	\task[\textbf{D.}]$\left[e^{A}, B\right]=I$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Suppose Hamiltonian of a conservative system in classical mechanics is $H=\omega x p$, where $\omega$ is a constant and $x$ and $p$ are the position and momentum respectively. The corresponding Hamiltonian in quantum mechanics, in the coordinate representation, is
+	\exyear{NET DEC 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar \omega\left(x \frac{\partial}{\partial x}-\frac{1}{2}\right)$
+	\task[\textbf{B.}]$-i \hbar \omega\left(x \frac{\partial}{\partial x}+\frac{1}{2}\right)$
+	\task[\textbf{C.}] $-i \hbar \omega x \frac{\partial}{\partial x}$
+	\task[\textbf{D.}]$-\frac{i \hbar \omega}{2} \times \frac{\partial}{\partial x}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Let $x$ and $p$ denote, respectively, the coordinate and momentum operators satisfying the canonical commutation relation $[x, p]=i$ in natural units $(\hbar=1)$. Then the commutator $\left[x, p e^{-p}\right]$ is
+	\exyear{NET DEC 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i(1-p) e^{-p}$
+	\task[\textbf{B.}]$i\left(1-p^{2}\right) e^{-p}$
+	\task[\textbf{C.}]$i\left(1-e^{-p}\right)$
+	\task[\textbf{D.}]ipe $^{-p}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item The wavefunction of a particle in one-dimension is denoted by $\psi(x)$ in the coordinate representation and by $\phi(p)=\int \psi(x) e^{\frac{-i p x}{\hbar}} d x$ in the momentum representation. If the action of an operator $\hat{T}$ on $\psi(x)$ is given by $\hat{T} \psi(x)=\psi(x+a)$, where $a$ is a constant then $\hat{T} \phi(p)$ is given by
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{i}{\hbar} \operatorname{ap} \phi(p)$
+	\task[\textbf{B.}]$e^{\frac{-i a p}{\hbar}} \phi(p)$
+	\task[\textbf{C.}]$e^{\frac{+i a p}{\hbar}} \phi(p)$
+	\task[\textbf{D.}]$\left(1+\frac{i}{\hbar} a p\right) \phi(p)$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Two different sets of orthogonal basis vectors $\left\{\left(\begin{array}{l}1 \\ 0\end{array}\right),\left(\begin{array}{l}0 \\ 1\end{array}\right)\right\}$ and $\left\{\frac{1}{\sqrt{2}}\left(\begin{array}{l}1 \\ 1\end{array}\right), \frac{1}{\sqrt{2}}\left(\begin{array}{c}1 \\ -1\end{array}\right)\right\}$ are given for a two dimensional real vector space. The matrix representation of a linear operator $\hat{A}$ in these basis are related by a unitary transformation. The unitary matrix may be chosen to be
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left(\begin{array}{cc}0 & -1 \\ 1 & 0\end{array}\right)$
+	\task[\textbf{B.}]$\left(\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right)$
+	\task[\textbf{C.}]$\frac{1}{\sqrt{2}}\left(\begin{array}{cc}1 & 1 \\ 1 & -1\end{array}\right)$
+	\task[\textbf{D.}] $\frac{1}{\sqrt{2}}\left(\begin{array}{ll}1 & 0 \\ 1 & 1\end{array}\right)$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item A Hermitian operator $\hat{O}$ has two normalized eigenstates $|1\rangle$ and $|2\rangle$ with eigenvalues 1 and 2 , respectively. The two states $|u\rangle=\cos \theta|1\rangle+\sin \theta|2\rangle$ and $|v\rangle=\cos \phi|1\rangle+\sin \phi|2\rangle$ are such that $\langle v|\hat{O}| v\rangle=7 / 4$ and $\langle u \mid v\rangle=0$. Which of the following are possible values of $\theta$ and $\phi$ ?
+	\exyear{NET DEC 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\theta=-\frac{\pi}{6}$ and $\phi=\frac{\pi}{3}$
+	\task[\textbf{B.}]$\theta=\frac{\pi}{6}$ and $\phi=\frac{\pi}{3}$
+	\task[\textbf{C.}]$\theta=-\frac{\pi}{4}$ and $\phi=\frac{\pi}{4}$
+	\task[\textbf{D.}]$\theta=\frac{\pi}{3}$ and $\phi=-\frac{\pi}{6}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item If $\hat{L}_{x}, \hat{L}_{y}, \hat{L}_{z}$ are the components of the angular momentum operator in three dimensions the commutator $\left[\hat{L}_{x}, \hat{L}_{x} \hat{L}_{y} \hat{L}_{z}\right]$ may be simplified to
+	\exyear{NET JUNE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar L_{x}\left(\hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{B.}]$i \hbar \hat{L}_{z} \hat{L}_{y} \hat{L}_{x}$
+	\task[\textbf{C.}]$i \hbar L_{x}\left(2 \hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Consider the operator, $a=x+\frac{d}{d x}$ acting on smooth function of $x$. Then commutator $[\alpha, \cos x]$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\sin x$
+	\task[\textbf{B.}]$\cos x$
+	\task[\textbf{C.}]$-\cos x$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Consider the operator $\vec{\pi}=\vec{p}-q \vec{A}$, where $\vec{p}$ is the momentum operator, $\vec{A}=\left(A_{x}, A_{y}, A_{z}\right)$ is the vector potential and $q$ denotes the electric charge. If $\vec{B}=\left(B_{x}, B_{y}, B_{z}\right)$ denotes the magnetic field, the $z$-component of the vector operator $\vec{\pi} \times \vec{\pi}$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i q \hbar B_{z}+q\left(A_{x} p_{y}-A_{y} p_{x}\right)$
+	\task[\textbf{B.}]$-i q \hbar B_{z}-q\left(A_{x} p_{y}-A_{y} p_{x}\right)$
+	\task[\textbf{C.}]$-i q \hbar B_{2}$
+	\task[\textbf{D.}] $i q \hbar B_{z}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { The two vectors }\left(\begin{array}{l}
+	a \\
+	0
+	\end{array}\right) \text { and }\left(\begin{array}{l}
+	b \\
+	c
+	\end{array}\right) \text { are orthonormal if }$
+	\exyear{NET JUNE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $a=\pm 1, b=\pm 1 / \sqrt{2}, c=\pm 1 / \sqrt{2}$
+	\task[\textbf{B.}] $a=\pm 1, b=\pm 1, c=0$
+	\task[\textbf{C.}]$a=\pm 1, b=0, c=\pm 1$
+	\task[\textbf{D.}] $a=\pm 1, b=\pm 1 / 2, c=1 / 2$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Let $x$ denote the position operator and $p$ the canonically conjugate momentum operator of a particle. The commutator
+	$$
+	\left[\frac{1}{2 m} p^{2}+\beta x^{2}, \frac{1}{m} p^{2}+\gamma x^{2}\right]
+	$$
+	where $\beta$ and $\gamma$ are constants, is zero if
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\gamma=\beta$
+	\task[\textbf{B.}]$\gamma=2 \beta$
+	\task[\textbf{C.}]$\gamma=\sqrt{2} \beta$
+	\task[\textbf{D.}]$2 \gamma=\beta$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Consider the operator $A_{x}=L_{y} p_{z}-L_{z} p_{y}$, where $L_{i}$ and $p_{i}$ denote, respectively, the components of the angular momentum and momentum operators. The commutator $\left[A_{x}, x\right]$ where $x$ is the $x$ - component of the position operator, is
+	\exyear{NET DEC 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar\left(z p_{z}+y p_{y}\right)$
+	\task[\textbf{B.}]$-i \hbar\left(z p_{z}-y p_{y}\right)$
+	\task[\textbf{C.}]$i \hbar\left(z p_{z}+y p_{y}\right)$
+	\task[\textbf{D.}]$i \hbar\left(z p_{z}-y p_{y}\right)$
+\end{tasks}
+\end{enumerate}
+
+
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{b}&2&\textbf{b}\\\hline
+		3&\textbf{b}&4&\textbf{c}\\\hline
+		5&\textbf{c}&6&\textbf{a}\\\hline
+		7&\textbf{b}&8&\textbf{a}\\\hline
+		9&\textbf{c}&10&\textbf{c}\\\hline
+		11&\textbf{a}&12&\textbf{a}\\\hline
+		13&\textbf{a}&14&\textbf{d}\\\hline
+		15&\textbf{c}&16&\textbf{b}\\\hline
+		17&\textbf{a}&&\\\hline
+	\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\begin{abox}
+	Practice set 2
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item The quantum mechanical operator for the momentum of a particle moving in one dimension is given by
+		\exyear{GATE 2011}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $i \hbar \frac{d}{d x}$
+		\task[\textbf{B.}]$-i \hbar \frac{d}{d x}$
+		\task[\textbf{C.}]$i \hbar \frac{\partial}{\partial t}$
+		\task[\textbf{D.}]$-\frac{\hbar^{2}}{2 m} \frac{d^{2}}{d x^{2}}$
+	\end{tasks}
+\begin{minipage}{\textwidth}
+	\item If $L_{x}, L_{y}$ and $L_{z}$ are respectively the $x, y$ and $z$ components of angular momentum operator $L$. The commutator $\left[L_{x} L_{y}, L_{z}\right]$ is equal to
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar\left(L_{x}^{2}+L_{y}^{2}\right)$
+	\task[\textbf{B.}]$2 i \hbar L_{z}$
+	\task[\textbf{C.}]$i \hbar\left(L_{x}^{2}-L_{y}^{2}\right)$
+	\task[\textbf{D.}] 0
+\end{tasks}
+\textbf{common data questions 3 and 4 }\\
+In a one-dimensional harmonic oscillator, $\varphi_{0}, \varphi_{1}$ and $\varphi_{2}$ are respectively the ground, first and the second excited states. These three states are normalized and are orthogonal to one another $\psi_{1}$ and $\psi_{2}$ are two states defined by
+$$
+\psi_{1}=\varphi_{0}-2 \varphi_{1}+3 \varphi_{2}, \psi_{2}=\varphi_{0}-\varphi_{1}+\alpha \varphi_{2}, \psi_{2}=\varphi_{0}-\varphi_{1}+\alpha \varphi_{2}
+$$
+where $\alpha$ is a constant\\
+\begin{minipage}{\textwidth}
+	\item $\text { The value of } \alpha \text { which } \psi_{2} \text { is orthogonal to } \psi_{1} \text { is }$
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]2
+	\task[\textbf{B.}]1
+	\task[\textbf{C.}]-1
+	\task[\textbf{D.}]-2
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item For the value of $\alpha$ determined in $\mathrm{Q} 3$, the expectation value of energy of the oscillator in the state $\psi_{2}$ is
+\end{minipage}
+\begin{tasks}(1)
+	\task[\textbf{A.}] $\hbar \omega$
+	\task[\textbf{B.}]$3 \hbar \omega / 2$ 
+	\task[\textbf{C.}]$3 \hbar \omega$
+	\task[\textbf{D.}]$9 \hbar \omega / 2$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Which one of the following commutation relations is NOT CORRECT? Here, symbols have their usual meanings.
+	\exyear{GATE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left[L^{2}, L_{z}\right]=0$
+	\task[\textbf{B.}]$\left\lfloor L_{x}, L_{y}\right\rfloor=i \hbar L_{z}$
+	\task[\textbf{C.}]$\left[L_{z}, L_{+}\right]=\hbar L_{+}$
+	\task[\textbf{D.}] $\left[L_{z}, L_{-}\right]=\hbar L_{-}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item Let $\vec{L}$ and $\vec{p}$ be the angular and linear momentum operators, respectively, for a a particle. The commutator $\left\lfloor L_{x}, p_{y}\right\rfloor$ gives
+	\exyear{GATE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar p_{z}$
+	\task[\textbf{B.}]0
+	\task[\textbf{C.}]$i \hbar p_{x}$
+	\task[\textbf{D.}]$i \hbar p_{z}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { Which of the following operators is Hermitian? }$
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{d}{d x}$
+	\task[\textbf{B.}]$\frac{d^{2}}{d x^{2}}$
+	\task[\textbf{C.}]$i \frac{d^{2}}{d x^{2}}$
+	\task[\textbf{D.}]$\frac{d^{3}}{d x^{3}}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item If $x$ and $p$ are the $x$ components of the position and the momentum operators of a particle respectively, the commutator $\left[x^{2}, p^{2}\right]$ is
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar(x p-p x)$
+	\task[\textbf{B.}]$2 i \hbar(x p-p x)$
+	\task[\textbf{C.}]$i \hbar(x p+p x)$
+	\task[\textbf{D.}]$2 i \hbar(x p+p x)$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { For the parity operator } P, \text { which of the following statements is NOT true? }$
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $P^{\dagger}=P$
+	\task[\textbf{B.}] $P^{2}=-P$
+	\task[\textbf{C.}] $P^{2}=I$
+	\task[\textbf{D.}]$P^{\dagger}=P^{-1}$
+\end{tasks}
+\begin{minipage}{\textwidth}
+	\item $\text { Which one of the following operators is Hermitian? }$
+	\exyear{GATE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \frac{\left(p_{x} x^{2}-x^{2} p_{x}\right)}{2}$
+	\task[\textbf{B.}]$i \frac{\left(p_{x} x^{2}+x^{2} p_{x}\right)}{2}$
+	\task[\textbf{C.}]$e^{i p_{x} a}$
+	\task[\textbf{D.}]$e^{-i p_{x} a}$
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{b}&2&\textbf{c}\\\hline
+		3&\textbf{c}&4&\textbf{b}\\\hline
+		5&\textbf{d}&6&\textbf{d}\\\hline
+		7&\textbf{b}&8&\textbf{d}\\\hline
+		9&\textbf{b}&10&\textbf{a}\\\hline
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practice set 3
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+	\item If $\left|\phi_{1}\right\rangle$ and $\left|\phi_{2}\right\rangle$ be two orthonormal state vectors such that $A=\left|\phi_{1}\right\rangle\left(\phi_{2}|+| \phi_{2}\right\rangle\langle\phi|$, then If $\left|\phi_{1}\right\rangle$ and $\left|\phi_{2}\right\rangle$ be two orthonormal state vectors such that $A=\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|$, then\\
+	(a) Prove that $A$ is Hermitian\\
+	(b) Find the value of $A^{2}$.
+\end{minipage}
+\begin{answer}
+(a) For $A$ to be a projection operator, $A$ should be Hermitian and $A^{2}$ should be equal to $A$. The Hermitian adjoint of $\left|\phi_{1}\right\rangle\left\langle\phi_{2}\right|$ is $\left|\phi_{2}\right\rangle\left\langle\phi_{1}\right|$ and that of $\left|\phi_{2}\right\rangle\left\langle\phi_{1}\right|$ is $\left|\phi_{1}\right\rangle\left\langle\phi_{2}\right|$. So
+	\begin{align*}
+	&A^{\dagger}=\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right]^{\dagger}=\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}\right|\right]^{\dagger}+\left[\left|\phi_{2}\right\rangle\left\langle\phi_{1}\right|\right]^{\dagger} \\
+	&=\left|\phi_{2}\right\rangle\left\langle\phi_{1}|+| \phi_{1}\right\rangle\left\langle\phi_{2}\right|=A
+	\end{align*}
+	Hence $A$ is Hermitian.\\
+\begin{align*}
+	&\text { Now, } \quad A^{2}=\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right]\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right] \\
+	&=\left|\phi_{1}\right\rangle\left\langle\phi_{2}\left|\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right]+\right| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right] \\
+	&=\left[\left|\phi_{1}\right\rangle\left\langle\phi_{2} \mid \phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{1}\right\rangle\left\langle\phi_{2} \mid \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right]+\left[\left|\phi_{2}\right\rangle\left\langle\phi_{1} \mid \phi_{1}\right\rangle\left\langle\phi_{2}|+| \phi_{2}\right\rangle\left\langle\phi_{1} \mid \phi_{2}\right\rangle\left\langle\phi_{1}\right|\right] \\
+	&\text { Since }\left|\phi_{1}\right\rangle \text { and }\left|\phi_{2}\right\rangle \text { are orthonormal, } \\
+	&\qquad A^{2}==\left|\phi_{1}\right\rangle\left\langle\phi_{1}|+| \phi_{2}\right\rangle\left\langle\phi_{2}\right|
+\end{align*}	
+\end{answer}
+	\begin{minipage}{\textwidth}
+	\item (a) Find the Eigen State of momentum operator $P_{x}=-i \hbar \frac{d}{d x}$. If eigen value is $\lambda$ by relation $P_{x} \phi=\lambda \phi$ where $\frac{\lambda}{\hbar}=k$.\\
+	(b) Expand the wave function $\psi(x)=A \sin k x \sin 2 k x$ in basis of Eigen functions of momentum operator $P_{x}$
+\end{minipage}
+\begin{answer}
+	$P_{x} \phi=\lambda \phi \text { where } \frac{\lambda}{\hbar}=k$\\\\
+	Case 1: If $\lambda$ is positive $P_{x} \phi=\hbar k \phi \Rightarrow-i \frac{d \phi}{d x}=k \phi \Rightarrow \frac{d \phi}{\phi}=i k d x \Rightarrow \ln \phi=i k x+C \Rightarrow \phi=e^{i k x}$\\
+	Case 2 : If $\lambda$ is negative\\
+	$P_{x} \phi=\hbar k \phi \Rightarrow-i \frac{d \phi}{d x}=-k \phi \Rightarrow \frac{d \phi}{\phi}=-i k d x \Rightarrow \ln \phi=-i k x+C \Rightarrow \phi=e^{-i k x}$\\\\
+	(b) Expand the function $\psi(x)=A \sin k x \sin 2 k x$ as a linear combination of eigenfunctions of the momentum operator $P_{x}$.
+	\begin{align*}
+	&\psi(x)=A \sin k x \sin 2 k x=A\left(\frac{e^{i k x}-e^{-i k x}}{2 i}\right)\left(\frac{e^{2 i k x}-e^{-2 i k x}}{2 i}\right) \\
+	&\frac{A}{4}\left(-e^{-3 i k x}+e^{-i k x}+e^{i k x}-e^{3 i k x}\right)
+	\end{align*}
+\end{answer}
+	\begin{minipage}{\textwidth}
+	\item If $\left|\phi_{1}\right\rangle=A\left(\begin{array}{l}1 \\ 0 \\ 0\end{array}\right)\left|\phi_{2}\right\rangle=B\left(\begin{array}{l}0 \\ i \\ i\end{array}\right)\left|\phi_{3}\right\rangle=C\left(\begin{array}{c}0 \\ i \\ -i\end{array}\right)$\\
+	(a) Find normalization constant $A, B, C$ for ket $\left|\phi_{1}\right\rangle\left|\phi_{2}\right\rangle\left|\phi_{3}\right\rangle$\\
+	(b) Prove that $\left|\phi_{1}\right\rangle,\left|\phi_{2}\right\rangle$ and $\left|\phi_{3}\right\rangle$ are orthogonal\\
+	(c) Check whether $\left|\phi_{1}\right\rangle,\left|\phi_{2}\right\rangle$ and $\left|\phi_{3}\right\rangle$ are linearly independent or not.
+\end{minipage}
+\begin{answer}
+	(a) $\left\langle\phi_{1} \mid \phi_{1}\right\rangle=1 \Rightarrow A^{*}\left(\begin{array}{lll}1 & 0 & 0\end{array}\right) A\left(\begin{array}{l}1 \\ 0 \\ 0\end{array}\right)=1 \Rightarrow A=1$
+	$$
+	\left\langle\phi_{2} \mid \phi_{2}\right\rangle=1 \Rightarrow B^{*}\left(\begin{array}{lll}
+	0 & -i & -i
+	\end{array}\right) B\left(\begin{array}{l}
+	0 \\
+	i \\
+	i
+	\end{array}\right)=1 \Rightarrow B=\frac{1}{\sqrt{2}}
+	$$
+	$$
+	\left\langle\phi_{3} \mid \phi_{3}\right\rangle=1 \Rightarrow C^{*}\left(\begin{array}{lll}
+	0 & -i & i
+	\end{array}\right) C\left(\begin{array}{c}
+	0 \\
+	i \\
+	-i
+	\end{array}\right)=1 \Rightarrow C=\frac{1}{\sqrt{2}}
+	$$
+	(b) $\left\langle\phi_{1} \mid \phi_{2}\right\rangle=A^{*}\left(\begin{array}{lll}1 & 0 & 0\end{array}\right) B\left(\begin{array}{l}0 \\ i \\ i\end{array}\right)=0$
+	$$
+	\left\langle\phi_{1} \mid \phi_{3}\right\rangle=A^{*}\left(\begin{array}{lll}
+	1 & 0 & 0
+	\end{array}\right) C\left(\begin{array}{c}
+	0 \\
+	i \\
+	-i
+	\end{array}\right)=0
+	$$
+	$$
+	\left\langle\phi_{2} \mid \phi_{3}\right\rangle=A^{*}\left(\begin{array}{lll}
+	0 & -i & -i
+	\end{array}\right) C\left(\begin{array}{c}
+	0 \\
+	i \\
+	-i
+	\end{array}\right)=A^{*} C(0+1-1)=0
+	$$
+(c)	$c_{1}\left|\phi_{1}\right\rangle+c_{2}\left|\phi_{2}\right\rangle+c_{3}\left|\phi_{3}\right\rangle=0 \Rightarrow c_{1}\left(\begin{array}{c}
+		1 \\
+		0 \\
+		0
+	\end{array}\right)+c_{2}\left(\begin{array}{c}
+		0 \\
+		i \\
+		i
+	\end{array}\right)+c_{3}\left(\begin{array}{c}
+		0 \\
+		i \\
+		-i
+	\end{array}\right)=0$\\
+	$$
+	c_{1}=0 \quad c_{2}+c_{3}=0 \text { and } c_{2}-c_{3}=0 \Rightarrow c_{1}=0, c_{2}=0, c_{3}=0
+	$$
+	So $\left|\phi_{1}\right\rangle,\left|\phi_{2}\right\rangle$ and $\left|\phi_{3}\right\rangle$ are linearly independent
+\end{answer}
+	\begin{minipage}{\textwidth}
+	\item If Hamiltonian of system is $H=\frac{p_{x}^{2}}{2 m}+V(x)$ then Find commutation $[H, x]$ and $[[H, x], x]$
+\end{minipage}
+\begin{answer}
+	$\text { As, } H=p^{2} / 2 m+V(x)$\\\\
+	We have, $[H, x]=\frac{1}{2 m}\left[p^{2}, x\right]=-i \hbar p / m$\\\\
+	 and so, $[[H, x], x]=\frac{i \hbar}{m}[p, x]=-\hbar^{2} / m$\\\\
+	  Hence, $\langle m|[[H, x] x]| m\rangle=-\frac{\hbar^{2}}{m}$.
+\end{answer}
+\end{enumerate}
+

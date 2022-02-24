@@ -1,0 +1,135 @@
+\chapter{identical particle solution}
+\begin{abox}
+	Practice set solutions
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item Consider a particle in a one dimensional potential that satisfies $V(x)=V(-x) .$ Let $\left|\psi_{0}\right\rangle$ and $\left|\psi_{1}\right\rangle$ denote the ground and the first excited states, respectively, and let $|\psi\rangle=\alpha_{0}\left|\psi_{0}\right\rangle+\alpha_{1}\left|\psi_{1}\right\rangle$ be a normalized state with $\alpha_{0}$ and $\alpha_{1}$ being real constants. The expectation value $\langle x\rangle$ of the position operator $x$ in the state $|\psi\rangle$ is given by
+	\exyear{NET DEC 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\alpha_{0}^{2}\left\langle\psi_{0}|x| \psi_{0}\right\rangle+\alpha_{1}^{2}\left\langle\psi_{1}|x| \psi_{1}\right\rangle$
+	\task[\textbf{B.}]$\alpha_{0} \alpha_{1}\left[\left\langle\psi_{0}|x| \psi_{1}\right\rangle+\left\langle\psi_{1}|x| \psi_{0}\right\rangle\right]$
+	\task[\textbf{C.}]$\alpha_{0}^{2}+\alpha_{1}^{2}$
+	\task[\textbf{D.}]$2 \alpha_{0} \alpha_{1}$
+\end{tasks}
+\begin{answer}
+	$\text { Since } V(x)=V(-x) \text { so potential is symmetric. }$\\
+	\begin{align*}
+		&\left\langle\psi_{0}|x| \psi_{0}\right\rangle=0,\left\langle\psi_{1}|x| \psi_{1}\right\rangle=0 \\
+		&\langle\psi|x| \psi\rangle=\left(\alpha _ { 0 } \left\langle\psi_{0}\left|+\alpha_{1}\left\langle\psi_{1}\right|\right) \times\left(\alpha_{0}\left|\psi_{0}\right\rangle+\alpha_{1}\left|\psi_{1}\right\rangle\right)=\alpha_{0} \alpha_{1}\left[\left\langle\psi_{0}|x| \psi_{1}\right\rangle+\left\langle\psi_{1}|x| \psi_{0}\right\rangle\right]\right.\right.
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider a system of two non-interacting identical fermions, each of mass $m$ in an infinite square well potential of width $a$. (Take the potential inside the well to be zero and ignore spin). The composite wavefunction for the system with total energy $E=\frac{5 \pi^{2} \hbar^{2}}{2 m a^{2}}$ is
+	\exyear{NET JUNE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{2}{a}\left[\sin \left(\frac{\pi x_{1}}{a}\right) \sin \left(\frac{2 \pi x_{2}}{a}\right)-\sin \left(\frac{2 \pi x_{1}}{a}\right) \sin \left(\frac{\pi x_{2}}{a}\right)\right]$
+	\task[\textbf{B.}]$\frac{2}{a}\left[\sin \left(\frac{\pi x_{1}}{a}\right) \sin \left(\frac{2 \pi x_{2}}{a}\right)+\sin \left(\frac{2 \pi x_{1}}{a}\right) \sin \left(\frac{\pi x_{2}}{a}\right)\right]$
+	\task[\textbf{C.}]$\frac{2}{a}\left[\sin \left(\frac{\pi x_{1}}{a}\right) \sin \left(\frac{3 \pi x_{2}}{2 a}\right)-\sin \left(\frac{3 \pi x_{1}}{2 a}\right) \sin \left(\frac{\pi x_{2}}{a}\right)\right]$
+	\task[\textbf{D.}]$\frac{2}{a}\left[\sin \left(\frac{\pi x_{1}}{a}\right) \cos \left(\frac{\pi x_{2}}{a}\right)-\sin \left(\frac{\pi x_{2}}{a}\right) \cos \left(\frac{\pi x_{2}}{a}\right)\right]$
+\end{tasks}
+\begin{answer}
+	 Fermions have antisymmetric wave function\\
+	 \begin{align*}
+	 	&\psi\left(x_{1} x_{2}\right)=\frac{2}{a}\left[\sin \left(\frac{\pi x_{1}}{a}\right) \sin \left(\frac{2 \pi x_{2}}{a}\right)-\sin \left(\frac{2 \pi x_{1}}{a}\right) \cdot \sin \left(\frac{\pi x_{2}}{a}\right)\right] \\
+	 	&\because E_{n}=\frac{5 \pi^{2} \hbar^{2}}{2 m a^{2}} \Rightarrow n_{x_{1}}=1, n_{x_{2}}=2
+	 \end{align*}
+	 The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The state vector of a one-dimensional simple harmonic oscillator of angular frequency $\omega$, at time $t=0$, is given by $|\psi(0)\rangle=\frac{1}{\sqrt{2}}[|0\rangle+|2\rangle]$, where $|0\rangle$ and $|2\rangle$ are the normalized ground state and the second excited state, respectively. The minimum time $t$ after which the state vector $|\psi(t)\rangle$ is orthogonal to $|\psi(0)\rangle$, is
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{\pi}{2 \omega}$
+	\task[\textbf{B.}]$\frac{2 \pi}{\omega}$
+	\task[\textbf{C.}]$\frac{\pi}{\omega}$
+	\task[\textbf{D.}]$\frac{4 \pi}{\omega}$
+\end{tasks}
+\begin{answer}
+	$\left\langle\psi ( 0 ) \left|=\frac{1}{\sqrt{2}}[|0\rangle+|2\rangle]\right.\right.$\\
+	\begin{align*}
+		&E_{2}=\frac{5}{2} \hbar \omega \quad|\psi(t)\rangle=\frac{1}{\sqrt{2}}\left[|0\rangle e^{\frac{-\hbar \omega t}{2 \hbar}}+|2\rangle e^{\frac{-5 \hbar \omega t}{2} \hbar}\right] \\
+		&E_{0}=\frac{\hbar \omega}{2} \cdot\langle\psi(0) \psi \mid \psi(t)\rangle=0 \Rightarrow t=\frac{\hbar}{E_{2}-E_{0}} \cos ^{-1}(-1) \\
+		&t=\frac{\hbar}{\left(\frac{5 \hbar \omega}{2}-\frac{1}{2} \hbar \omega\right)} \cos ^{-1}(-1)=\frac{\hbar}{2 \hbar \omega / 2} \pi=\frac{\pi}{2 \omega}
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\end{enumerate}
+\newpage
+\begin{abox}
+	Practice set 2 solutions
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item Consider the wavefunction $\psi=\psi\left(\vec{r}_{1}, \vec{r}_{2}\right) \chi_{s}$ for a fermionic system consisting of two spinhalf particles. The spatial part of the wavefunction is given by
+	$$
+	\psi\left(\vec{r}_{1}, \vec{r}_{2}\right)=\frac{1}{\sqrt{2}}\left[\phi_{1}\left(\vec{r}_{1}\right) \phi_{2}\left(\vec{r}_{2}\right)+\phi_{2}\left(\vec{r}_{1}\right) \phi_{1}\left(\vec{r}_{2}\right)\right]
+	$$
+	where $\phi_{1}$ and $\phi_{2}$ are single particle states. The spin part $\chi_{s}$ of the wavefunction with spin states $\alpha(+1 / 2)$ and $\beta(-1 / 2)$ should be
+	\exyear{GATE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]$\frac{1}{\sqrt{2}}(\alpha \beta+\beta \alpha)$
+	\task[\textbf{B.}]$\frac{1}{\sqrt{2}}(\alpha \beta-\beta \alpha)$
+	\task[\textbf{C.}]$\alpha \alpha$
+	\task[\textbf{D.}] $\beta \beta$
+\end{tasks}
+\begin{answer}
+	Since $\psi\left(r_{1}, r_{2}\right)$ is symmetric the total wavefunction must be antisymmetric for fermions so spin part must be antisymmetric.\\
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The ground state and first excited state wave function of a one dimensional infinite potential well are $\psi_{1}$ and $\psi_{2}$ respectively. When two spin-up electrons are placed in this potential which one of the following with $x_{1}$ and $x_{2}$ denoting the position of the two electrons correctly represents the space part of the ground state wave function of the system?
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{1}{\sqrt{2}}\left[\psi_{1}\left(x_{1}\right) \psi_{2}\left(x_{1}\right)-\psi_{1}\left(x_{2}\right) \psi_{2}\left(x_{2}\right)\right]$
+	\task[\textbf{B.}]$\frac{1}{\sqrt{2}}\left[\psi_{1}\left(x_{1}\right) \psi_{2}\left(x_{2}\right)+\psi_{1}\left(x_{2}\right) \psi_{2}\left(x_{1}\right)\right]$
+	\task[\textbf{C.}]$\frac{1}{\sqrt{2}}\left[\psi_{1}\left(x_{1}\right) \psi_{2}\left(x_{1}\right)+\psi_{1}\left(x_{2}\right) \psi_{2}\left(x_{2}\right)\right]$
+	\task[\textbf{D.}]$ \frac{1}{\sqrt{2}}\left[\psi_{1}\left(x_{1}\right) \psi_{2}\left(x_{2}\right)-\psi_{1}\left(x_{2}\right) \psi_{2}\left(x_{1}\right)\right]$
+\end{tasks}
+\begin{answer}
+	 From the given information only possible spin configuration is symmetric in nature so space part will anti symmetric
+	$$
+	\frac{1}{\sqrt{2}}\left[\psi_{1}\left(x_{1}\right) \psi_{2}\left(x_{2}\right)-\psi_{1}\left(x_{2}\right) \psi_{2}\left(x_{1}\right)\right]
+	$$
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\psi_{1}$ and $\psi_{2}$ are two orthogonal states of a spin $\frac{1}{2}$ system. It is given that
+	$\psi_{1}=\frac{1}{\sqrt{3}}\left(\begin{array}{l}1 \\ 0\end{array}\right)+\sqrt{\frac{2}{3}}\left(\begin{array}{l}0 \\ 1\end{array}\right)$, where $\left(\begin{array}{l}1 \\ 0\end{array}\right)$ and $\left(\begin{array}{l}0 \\ 1\end{array}\right)$ represent the spin-up and spin-down states, respectively. When the system is in the state $\psi_{2}$ its probability to be in the spin-up state is
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{answer}
+	If is $\psi_{1}=\frac{1}{\sqrt{3}}\left(\begin{array}{l}1 \\ 0\end{array}\right)+\sqrt{\frac{2}{3}}\left(\begin{array}{l}0 \\ 1\end{array}\right)$, then $\psi_{2}=\sqrt{\frac{2}{3}}\left(\begin{array}{l}1 \\ 0\end{array}\right)+\sqrt{\frac{1}{3}}\left(\begin{array}{l}0 \\ 1\end{array}\right)$,\\
+	 so probability that $\psi_{2}$ is in up state is $\frac{2}{3}$
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item For a spin $\frac{1}{2}$ particle, let $|\uparrow\rangle$ and $|\downarrow\rangle$ denote its spin up and spin down states respectively. If $|a\rangle=\frac{1}{\sqrt{2}}(|\uparrow\rangle|\downarrow\rangle+|\downarrow\rangle|\uparrow\rangle)$ and $|b\rangle=\frac{1}{\sqrt{2}}(|\uparrow\rangle|\downarrow\rangle-|\downarrow\rangle|\uparrow\rangle)$ are composite states of two such particles, which of the following statements is true for their total spin $S ?$
+	\exyear{GATE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $S=1$ for $|a\rangle$ and $|b\rangle$ is not an eigenstate of the operator $\hat{S}^{2}$
+	\task[\textbf{B.}]$|a\rangle$ is not an eigenstate of the operator $\hat{S}^{2}$ and $S=0$ for $|b\rangle$
+	\task[\textbf{C.}]$S=0$ for $|a\rangle$, and $S=1$ for $|b\rangle$
+	\task[\textbf{D.}]$S=1$ for $|a\rangle$, and $S=0$ for $|b\rangle$
+\end{tasks}
+\begin{answer}
+	$S=1 \text { is triplet }|a\rangle \text {, and } S=0 \text { for singlet for }|b\rangle$\\
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Let $\left|\psi_{2}\right\rangle=\left(\begin{array}{c}1 \\ 0\end{array}\right),\left|\psi_{2}\right\rangle=\left(\begin{array}{c}0 \\ 1\end{array}\right)$ represent two possible states of a two-level quantum system. The state obtained by the incoherent superposition of $\left|\psi_{1}\right\rangle$ and $\left|\psi_{2}\right\rangle$ is given by a density matrix that is defined as $\rho \equiv c_{1}\left|\psi_{1}\right\rangle\left\langle\psi_{1}\left|+c_{2}\right| \psi_{2}\right\rangle\left\langle\psi_{2}\right| .$ If $c_{1}=0.4$ and $c_{2}=0.6$, the matrix element $\rho_{22}$ (rounded off to one decimal place) is
+	\exyear{GATE 2018}
+\end{minipage}
+\begin{answer}
+	\begin{align*}
+		& \rho_{2,2}=\left\langle\psi_{2}|\rho| \psi_{2}\right\rangle=\rho \equiv c_{1}\left\langle\psi_{2} \mid \psi_{1}\right\rangle\left\langle\psi_{1} \mid \psi_{2}\right\rangle+c_{2}\left\langle\psi_{2} \mid \psi_{2}\right\rangle\left\langle\psi_{2} \mid \psi_{2}\right\rangle \\
+		&\Rightarrow c_{2}=0.6
+	\end{align*}
+\end{answer}
+\end{enumerate}
