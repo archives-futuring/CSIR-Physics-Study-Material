@@ -1,0 +1,109 @@
+\chapter{Relativistic quantum mechanism}
+\section{Klein Gordon equation}
+In this chapter we consider two types of wave equations which have been proposed for the description of particles traveliing at speeds-close to that of light.At these speeds, the Iamiltonian of the (free) particle is no longer given by $\left(\mathbf{p}^{2} / 2 m\right)$; hence Schrödinger's equation, obtained from such a Hamiltonian by the prescription of Sec. $2.1$, is not applicable to relativistic particles. One could try to generalize the equation by using, instead of $\left(\mathbf{p}^{2} / 2 m\right)$, the relativistic expression for the energy, namely $E=\left(c^{2} \mathbf{p}^{2}+m^{2} c^{4}\right)^{1 / 2}$. The operator replacement $E \rightarrow i \hbar \partial_{i} t, \mathbf{p} \rightarrow-i \hbar \nabla$ would then lead to $i \hbar \partial \psi / \partial t=\left(-\hbar^{2} i^{2} \nabla^{2}+m^{2} c^{4}\right)^{1 / 2} \psi$ This equation has some obviously unattractive features. The space and time differential operators enter in it in very different ways. This is in contrast with the quite symmetric role of the space and time coordinates (as different components of a single four-vector) in relativity theory. The meaning of the operator$\left(-\hbar^{2} c^{2} \nabla^{2}+m^{2} c^{4}\right)^{1 / 2}$ is itself unclear. One could get around this by passing to the momentum representation. But even this possibility would disappear if the quantity under the square root were to be modified to include functions of $\mathbf{x}:$ for example, through the replacement $\mathbf{p} \rightarrow(\mathbf{p}-e \mathbf{A} / c)$ which becomes necessary when electromagnetic fields are present (assuming that the particle has charge $e$ ). Schrodinger suggested (immediately after his formulation of nonrelativistic quantum mechanics) that in order to avoid the difficulties arising from the square root, the operator replacement of $\mathbf{p}$ and $E$ be made in the relativistic expression for $E^{2}$ :
+$$
+E^{2}=c^{2} p^{2}+m^{2} c^{4}
+$$
+The resulting equation is
+$$
+-\hbar^{2} \frac{\partial^{2} \psi}{\partial t^{2}}=-\hbar^{2} c^{2} \nabla^{2} \psi+m^{2} c^{4} \psi
+$$
+or
+$$
+\frac{1}{c^{2}} \frac{\partial^{2} \psi}{\partial t^{2}}-\nabla^{2} \psi+\left(\begin{array}{c}
+m c \\
+\hbar
+\end{array}\right)^{2} \psi=0
+$$
+This equation is konwn is as Klein Gordon equation .\\
+ Meanwhile Dirac succeeded in constructing another equation which is of the first order in $(\partial / \partial t)$ and $\nabla$, unlike Eq. 10.2, and yet involves these operators in a fully symmetric way. The Dirac equation constrains the spin of the particle to be $\frac{1}{2}$. Its application to the electron was phenomenally successful, not only in helping to understand its propertics in a natural way, but more spectacularly, in the prediction of its anti-particle, the positron (which was later discovered in cosmic rays). The Klein-Gordon equation has nothing to say about the spin of the particle; it is ribe ane to be used for particles of spin 0 , like the $\pi$-and $K$-mesons.\\
+ \subsubsection{plane wave Solution}
+ $$
+ \frac{1}{c^{2}} \frac{\partial^{2} \psi}{\partial t^{2}}-\nabla^{2} \psi+\left(\begin{array}{c}
+ m c \\
+ \hbar
+ \end{array}\right)^{2} \psi=0
+ $$
+ Solutions to this equation corresponding to particles of definite momentum $\mathbf{p}=\hbar \mathbf{k}$ may be obtained by substituting $\psi(\mathbf{x}, t)=f(t) e^{i \mathbf{k} \cdot \mathbf{x}} .$ This leads to $d^{2} f \mid d t^{2}=\left[c^{2} \mathbf{k}^{2}+\left(m c^{2} / \hbar\right)^{2}\right] f$. Solving this we obtain (apart from a constant normalization factor), the plane wave solutions:
+ $$
+ \begin{aligned}
+ \psi(\mathbf{x}, t) &=e^{i\left(\mathbf{k}_{\mathbf{x}} \mathbf{x} \mp \omega t\right)}=e^{i(\mathbf{p} \cdot \mathbf{x}-E t) / \hbar} \\
+ E &=\pm \hbar \omega=\pm\left(c^{2} \mathbf{p}^{2}+m^{2} c^{4}\right)^{1 / 2}
+ \end{aligned}
+ $$
+ In contrast to the nonrelativistic case where the coefficient $(E / \hbar)$ of $(-i t)$ in the exponent is the positive quantity $\left(\mathbf{p}^{2} / 2 m \hbar\right)$, here we have solutions with - $\omega$ as well as with $+\omega$. The appearance of the 'negative energy' solutions (characterized by $+\omega t$ in the exponent) is typical of relativistic wave equations;
+ \subsubsection{Charge and current densities}
+ Another difference from the nonrelativistic case is that $\psi^{*} \psi$ cannot be interpreted as the probability density $P(\mathbf{x}, t) .$ We expect $P(\mathbf{x}, \bar{t})$ to satisfy a continuity equation of the form  namely $\partial P \mid \partial t+\operatorname{div} \mathbf{S}=0$, which would ensure that $\int P(\mathbf{x}, t) d^{2} x$ is time-independent. To obtain such an equation we multiply klein gordon equation on the left by $\psi^{*}$, its complex conjugate equation by $\psi$, and subtract.
+ The resulting equation can be written as
+ $$
+ \frac{1}{c^{2}} \frac{\partial}{\partial t}\left(\psi^{*} \frac{\partial \psi}{\partial t}-\psi \frac{\partial \psi^{*}}{\partial t}\right)-\nabla \cdot\left(\psi^{*} \nabla \psi-\psi \nabla \psi^{*}\right)=0
+ $$
+ This is a continuity cquation, with
+ $$
+ \begin{aligned}
+ &P(\mathbf{x}, t)=\frac{i \hbar}{2 m c^{2}}\left(\psi^{*} \frac{\partial \psi}{\partial t}-\psi \frac{\partial \psi^{*}}{\partial t}\right) \\
+ &{\mathbf{S}(\mathbf{x}, t)=-\frac{i \hbar}{2 m}\left(\psi^{*} \nabla \psi-\psi \nabla \psi^{*}\right)}
+ \end{aligned}
+ $$
+ A convenient choice of a common constant factor in $P$ and $S$ has been made here. With this choice, S coincides exactly with the corresponding nonrelativistic expression. However, $P$ is quite different. It vanishes identically if $\psi$ is real, and in the case of complex wave functions, $P$ can even be made negative by choosing $\partial \psi / \partial t$ appropriately. Clearly, $P$ cannot be a probability density. One could multiply $P$ by a charge $e$ and then interpret it as a charge density (which can be positive or negative) and $S$ as the corresponding electric current density.
+ \section{Dirac equation}
+ The occurance of negative probability density is due to the presence of time derivatives in the expression for $P(r, t)$. This can be avoided by not allowing any time derivative other than the first order to appear in the wave equation. When the wave equation is of first order in time, it must be first order in space coordinates too. Dirac was probably influenced by the Maxwell's equations as they are first order equations in both space and time coordinates.\\
+ As in Klein-Gordon equation, we can start from the basic energy equation, equation 
+ Replacing $E$ by $i \hbar \partial / \partial t$ and $p$ by $-i \hbar \nabla$ and allowing the $$E=\pm\left(c^{2} p^{2}+m^{2} c^{4}\right)^{1 / 2}$$
+ Replacing $E$ by $i \hbar \partial / \partial t$ and $p$ by $-i \hbar \nabla$ and allowing the resulting operator equation to operate on the wavefunction $\Psi(r, t)$, we get\\
+ $$i \hbar \frac{\partial \Psi(r, t)}{\partial t}=\pm\left(-c^{2} \hbar^{2} \nabla^{2}+m^{2} c^{4}\right)^{1 / 2} \Psi(r, t)$$
+ To proceed further, we have to define the square root of an operator which is not yet defined. However, Dirac boldly wrote
+ $$c^{2} p^{2}+m^{2} c^{4}=\left[c\left(\alpha_{x} p_{x}+\alpha_{y} p_{y}+\alpha_{z} p_{z}+\beta m c\right)\right]^{2}$$
+ and then searched for conditions to be placed on the $\alpha$ 's and $\beta$ so that the equation is valid. For equation above to hold true, we must have
+$$\left.\begin{array}{r}
+	\alpha_{x}^{2}=\alpha_{y}^{2}=\alpha_{z}^{2}=\beta^{2}=1 \\
+	\alpha_{x} \alpha_{y}+\alpha_{y} \alpha_{x}=\alpha_{y} \alpha_{z}+\alpha_{z} \alpha_{y}=\alpha_{z} \alpha_{x}+\alpha_{x} \alpha_{z}=0 \\
+	\alpha_{x} \beta+\beta \alpha_{x}=\alpha_{y} \beta+\beta \alpha_{y}=\alpha_{z} \beta+\beta \alpha_{2}=0
+\end{array}\right\}$$
+That is, the $\alpha$ 's and $\beta$ anticommute in pairs and their squares are unity. These properties immediately suggest that they cannot be numbers. Already, we have a set of anticommuniting matrices, the Pauli's spin matrices. Hence, it is convenient to express them in terms of matrices. The energy can now be written as
+$$E=\pm c\left(\alpha_{x} p_{x}+\alpha_{y} p_{y}+\alpha_{z} p_{z}+\beta_{m c}\right)$$
+The positive or negative sign can be taken since replacement of $\alpha$ by $-\alpha$ and $\beta$ by $-\beta$ does not change the relationships between $\alpha$ 's and $\beta$. Hence the relativistic Hamiltonian of a particle can be taken as $$E=H=c \alpha \cdot p+\beta m c^{2}$$
+Replacing $E$ and $p$ by their operators and allowing the resulting operator equation to operate on $\Psi(r, t)$, we
+$$i \hbar \frac{\partial \Psi(r, t)}{\partial t}=-i c \hbar\left(\alpha_{x} \frac{\partial}{\partial x}+\alpha_{y} \frac{\partial}{\partial y}+\alpha_{z} \frac{\partial}{\partial z}\right) \Psi(r, t)+\beta m c^{2} \Psi(r, t)$$
+which is Dirac's relativistic equation for a free particle.
+\newpage
+\begin{abox}
+	Practice set 1
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item The Dirac Hamiltonian $H=c \vec{\alpha} \cdot \vec{p}+\beta m c^{2}$ for a free electron corresponds to the classical relation $E^{2}=p^{2} c^{2}+m^{2} c^{4}$. The classical energy-momentum relation of a piratical of charge $q$ in a electromagnetic potential $(\phi, \vec{A})$ is $(E-q \phi)^{2}=c^{2}\left(\vec{p}-\frac{q}{c} \vec{A}\right)^{2}+m^{2} c^{4}$.
+		Therefore, the Dirac Hamiltonian for an electron in an electromagnetic field is
+		\exyear{NET JUNE 2015}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $c \vec{\alpha} \cdot p+\frac{e}{C} \vec{A} \cdot \vec{A}+\beta m c^{2}-e \phi$
+		\task[\textbf{B.}]$c \vec{\alpha} \cdot\left(\vec{p}+\frac{e}{c} \vec{A}\right)+\beta m c^{2}+e \phi$
+		\task[\textbf{C.}]$c\left(\vec{\alpha} \cdot \vec{p}+e \phi+\frac{e}{c}|\vec{A}|\right)+\beta m c^{2}$
+		\task[\textbf{D.}]$c \vec{\alpha} \cdot\left(\vec{p}+\frac{e}{c} \vec{A}\right)+\beta m c^{2}-e \phi$
+	\end{tasks}
+\begin{minipage}{\textwidth}
+	\item The dynamics of a free relativistic particle of mass $m$ is governed by the Dirac Hamiltonian $H=c \vec{\alpha} \cdot \vec{p}+\beta m c^{2}$, where $\vec{p}$ is the momentum operator and $\vec{\alpha}=\left(\alpha_{x}, \alpha_{y}, \alpha_{z}\right)$ and $\beta$ are four $4 \times 4$ Dirac matrices. The acceleration operator can be expressed as
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{2 i c}{\hbar}(c \vec{p}-\vec{\alpha} H)$
+	\task[\textbf{B.}]$2 \mathrm{ic}^{2} \vec{\alpha} \beta$
+	\task[\textbf{C.}]$\frac{i c}{\hbar} H \vec{\alpha}$
+	\task[\textbf{D.}]$-\frac{2 i c}{\hbar}(c \vec{p}+\vec{\alpha} H)$
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{d}&2&\textbf{a}\\\hline
+	\end{tabular}
+\end{table}

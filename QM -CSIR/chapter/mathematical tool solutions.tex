@@ -1,0 +1,518 @@
+\chapter{mathematical tool solutions}
+\begin{abox}
+	Practice set 1 solutions
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item Consider a particle in a one dimensional potential that satisfies $V(x)=V(-x)$. Let $\left|\psi_{0}\right\rangle$ and $\left|\psi_{1}\right\rangle$ denote the ground and the first excited states, respectively, and let $|\psi\rangle=\alpha_{0}\left|\psi_{0}\right\rangle+\alpha_{1}\left|\psi_{1}\right\rangle$ be a normalized state with $\alpha_{0}$ and $\alpha_{1}$ being real constants. The expectation value $\langle x\rangle$ of the position operator $x$ in the state $|\psi\rangle$ is given by
+		\exyear{NET DEC 2011}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\alpha_{0}^{2}\left\langle\psi_{0}|x| \psi_{0}\right\rangle+\alpha_{1}^{2}\left\langle\psi_{1}|x| \psi_{1}\right\rangle$
+		\task[\textbf{B.}]$\alpha_{0} \alpha_{1}\left[\left\langle\psi_{0}|x| \psi_{1}\right\rangle+\left\langle\psi_{1}|x| \psi_{0}\right\rangle\right]$
+		\task[\textbf{C.}]$\alpha_{0}^{2}+\alpha_{1}^{2}$
+		\task[\textbf{D.}]$2 \alpha_{0} \alpha_{1}$
+	\end{tasks}
+\begin{answer}
+ Since $V(x)=V(-x)$ so potential is symmetric.
+	$$
+	\begin{aligned}
+	&\left\langle\psi_{0}|x| \psi_{0}\right\rangle=0,\left\langle\psi_{1}|x| \psi_{1}\right\rangle=0 \\
+	&\langle\psi|x| \psi\rangle=\left(\alpha _ { 0 } \left\langle\psi_{0}\left|+\alpha_{1}\left\langle\psi_{1}\right|\right) \times\left(\alpha_{0}\left|\psi_{0}\right\rangle+\alpha_{1}\left|\psi_{1}\right\rangle\right)=\alpha_{0} \alpha_{1}\left[\left\langle\psi_{0}|x| \psi_{1}\right\rangle+\left\langle\psi_{1}|x| \psi_{0}\right\rangle\right]\right.\right.
+	\end{aligned}
+	$$
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The wave function of a particle at time $t=0$ is given by $|\psi(0)\rangle=\frac{1}{\sqrt{2}}\left(\left|u_{1}\right\rangle+\left|u_{2}\right\rangle\right)$, where
+	$\left|u_{1}\right\rangle$ and $\left|u_{2}\right\rangle$ are the normalized eigenstates with eigenvalues $E_{1}$ and $E_{2}$ respectively, $\left(E_{2}>E_{1}\right)$. The shortest time after which $|\psi(t)\rangle$ will become orthogonal to $|\psi(0)\rangle$ is
+	\exyear{NET DEC 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{-\hbar \pi}{2\left(E_{2}-E_{1}\right)}$
+	\task[\textbf{B.}]$\frac{\hbar \pi}{E_{2}-E_{1}}$
+	\task[\textbf{C.}]$\frac{\sqrt{2} \hbar \pi}{E_{2}-E_{1}}$
+	\task[\textbf{D.}]$\frac{2 \hbar \pi}{E_{2}-E_{1}}$
+\end{tasks}
+\begin{answer}
+	$|\psi(0)\rangle=\frac{1}{\sqrt{2}}\left(\left|u_{1}\right\rangle+\left|u_{2}\right\rangle\right) \Rightarrow|\psi(t)\rangle=\frac{1}{\sqrt{2}}\left(\left|u_{1}\right\rangle e^{\frac{-i E_{1} t}{\hbar}}+\left|u_{2}\right\rangle e^{\frac{-i E_{2} t}{\hbar}}\right)$\\
+	$|\psi(t)\rangle$ is orthogonal to $|\psi(0)\rangle \Rightarrow\langle\psi(0) \mid \psi(t)\rangle=0 \Rightarrow \frac{1}{2} e^{\frac{-i E_{1} t}{\hbar}}+\frac{1}{2} e^{\frac{-i E_{2} t}{\hbar}}=0$
+	\begin{align*}
+	&\Rightarrow e^{\frac{-i E_{1} t}{\hbar}}+e^{\frac{-i E_{2} t}{\hbar}}=0 \Rightarrow e^{\frac{-i E_{1} t}{\hbar}}=-e^{\frac{-i E_{2} t}{\hbar}} \Rightarrow e^{i \frac{\left(E_{2}-E_{1}\right)}{\hbar}}=-1 \\
+	&\Rightarrow \cos \frac{\left(E_{2}-E_{1}\right) t}{\hbar}=\cos \pi \Rightarrow t=\frac{\pi \hbar}{E_{2}-E_{1}}
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { The commutator }\left[x^{2}, p^{2}\right] \text { is }$
+	\exyear{NET JUNE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $2 i \hbar x p$
+	\task[\textbf{B.}]$2 i \hbar(x p+p x)$
+	\task[\textbf{C.}]$2 i \hbar p x$
+	\task[\textbf{D.}]$2 i \hbar(x p-p x)$
+\end{tasks}
+\begin{answer}
+$\left[x^{2}, p^{2}\right]=x\left[x, p^{2}\right]+\left[x, p^{2}\right] x=x p[x, p]+x[x, p] p+p[x, p] x+[x, p] p x$\\
+$$\left[x^{2}, p^{2}\right]=x p(i \hbar)+x(i \hbar) p+p(i \hbar) x+(i \hbar) p x=2 i \hbar(x p+p x)$$
+The correct option is \textbf{(b)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Which of the following is a self-adjoint operator in the spherical polar coordinate system $(r, \theta, \phi)$ ?
+	\exyear{NET JUNE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{i \hbar}{\sin ^{2} \theta} \frac{\partial}{\partial \theta}$
+	\task[\textbf{B.}]$-i \hbar \frac{\partial}{\partial \theta}$
+	\task[\textbf{C.}] $-\frac{i \hbar}{\sin \theta} \frac{\partial}{\partial \theta}$
+	\task[\textbf{D.}] $-i \hbar \sin \theta \frac{\partial}{\partial \theta}$
+\end{tasks}
+\begin{answer}
+	$\frac{-i \hbar}{\sin \theta} \frac{\partial}{\partial \theta} \text { is Hermitian. }$\\
+	The correct option is \textbf{c}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Given the usual canonical commutation relations, the commutator $[A, B]$ of $A=i\left(x p_{y}-y p_{x}\right)$ and $B=\left(y p_{z}+z p_{y}\right)$ is
+	\exyear{NET DEC 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\hbar\left(x p_{z}-p_{x} z\right)$
+	\task[\textbf{B.}]$-\hbar\left(x p_{z}-p_{x} z\right)$
+	\task[\textbf{C.}]$\hbar\left(x p_{z}+p_{x} z\right)$
+	\task[\textbf{D.}]$-\hbar\left(x p_{z}+p_{x} z\right)$
+\end{tasks}
+\begin{answer}
+
+	\begin{align*}
+		&[A, B]=\left\lfloor\left(i x p_{y}-i y p_{x}\right),\left(y p_{z}+z p_{y}\right)\right]\\
+		&{[A, B]=i\left[x p_{y}, y p_{z}\right]-i\left[y p_{x}, y p_{z}\right]+i\left\lfloor x p_{y}, z p_{y}\right\rfloor-i\left\lfloor y p_{x}, z p_{y}\right\rfloor} \\
+		&\left.\left.[A, B]=i\left[x p_{y}, y p_{z}\right]-0+0-i \mid y p_{x}, z p_{y}\right\rfloor=i\left[x p_{y}, y p_{z}\right\rfloor-i \mid y p_{x}, z p_{y}\right\rfloor \\
+		&\left.[A, B]=i x\left[p_{y}, y p_{z}\right\rfloor+i\left[x, y p_{z}\right] p_{y}-i y \mid p_{x}, z p_{y}\right\rfloor-i\left|y, z p_{y}\right| p_{x} \\
+		&\left.[A, B]=i x\left[p_{y}, y p_{z}\right\rfloor+0-0-i\left\lfloor y, z p_{y}\right\rfloor p_{x}=i x \mid p_{y}, y p_{z}\right\rfloor-i\left\lfloor y, z p_{y}\right\rfloor p_{x} \\
+		&{[A, B]=i x \times(-i \hbar) p_{z}-i z i \hbar \times p_{x}=\hbar\left[x p_{z}+z p_{x}\right]} \\
+		&{[A, B]=\hbar\left(x p_{z}+p_{x} z\right)}
+	\end{align*}
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If the operators $A$ and $B$ satisfy the commutation relation $[A, B]=I$, where $I$ is the identity operator, then
+	\exyear{NET JUNE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left[e^{A}, B\right]=e^{A}$
+	\task[\textbf{B.}]$\left[e^{A}, B\right]=\left[e^{B}, A\right]$
+	\task[\textbf{C.}]$\left[e^{A}, B\right]=\left[e^{-B}, A\right]$
+	\task[\textbf{D.}]$\left[e^{A}, B\right]=I$
+\end{tasks}
+
+\begin{answer}
+	\begin{align*}
+	&[A, B]=I \text { and } e^{A}=\left[1+\frac{A}{1}+\frac{A^{2}}{\lfloor 2}+\ldots \ldots . .\right]\\
+	&{\left[e^{A}, B\right]=\left[1+\frac{A}{1}+\frac{A^{2}}{L 2}+\ldots \ldots . B\right]=[1, B]+[A, B]+\frac{\left[A^{2}, B\right]}{\lfloor 2}+\frac{\left[A^{3}, B\right]}{\lfloor 3} \ldots .} \\
+	&{\left[e^{A}, B\right]=0+I+\frac{A[A, B]+[A, B] A}{2 !}+\frac{A\left[A^{2}, B\right]+\left[A^{2}, B\right] A}{3 !}+\ldots .} \\
+	&{\left[e^{A}, B\right]=1+A+\frac{A^{2}}{2 !}+\ldots .=e^{A} \text { where }[A, B]=I,\left[A^{2}, B\right]=2 A \text { and }\left[A^{3}, B\right]=3 A^{2} .}
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Suppose Hamiltonian of a conservative system in classical mechanics is $H=\omega x p$, where $\omega$ is a constant and $x$ and $p$ are the position and momentum respectively. The corresponding Hamiltonian in quantum mechanics, in the coordinate representation, is
+	\exyear{NET DEC 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar \omega\left(x \frac{\partial}{\partial x}-\frac{1}{2}\right)$
+	\task[\textbf{B.}]$-i \hbar \omega\left(x \frac{\partial}{\partial x}+\frac{1}{2}\right)$
+	\task[\textbf{C.}] $-i \hbar \omega x \frac{\partial}{\partial x}$
+	\task[\textbf{D.}]$-\frac{i \hbar \omega}{2} \times \frac{\partial}{\partial x}$
+\end{tasks}
+\begin{answer}
+	$\text { Classically } H=\omega x p \text {, quantum mechanically } H \text { must be Hermitian, }$\\
+	So, $H=\frac{\omega}{2}(x p+p x)$ and $H \psi=\frac{\omega}{2}(x p \psi+p x \psi)$
+	\begin{align*}
+	&\Rightarrow H \psi=\frac{\omega}{2}\left(x(-i \hbar) \frac{\partial \psi}{\partial x}+\frac{-i \hbar \partial(x \psi)}{\partial x}\right)=\frac{\omega}{2}(-i \hbar)\left(x \frac{\partial \psi}{\partial x}+x \frac{\partial \psi}{\partial x}+\psi\right) \\
+	&\Rightarrow H \psi=\frac{-i \hbar \omega}{2}\left(2 x \frac{\partial \psi}{\partial x}+\psi\right)=-i \hbar \omega\left(x \frac{\partial}{\partial x}+\frac{1}{2}\right) \psi
+	\end{align*}
+The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Let $x$ and $p$ denote, respectively, the coordinate and momentum operators satisfying the canonical commutation relation $[x, p]=i$ in natural units $(\hbar=1)$. Then the commutator $\left[x, p e^{-p}\right]$ is
+	\exyear{NET DEC 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i(1-p) e^{-p}$
+	\task[\textbf{B.}]$i\left(1-p^{2}\right) e^{-p}$
+	\task[\textbf{C.}]$i\left(1-e^{-p}\right)$
+	\task[\textbf{D.}]ipe $^{-p}$
+\end{tasks}
+\begin{answer}
+	$\because[x, p]=i$\\
+	\begin{align*}
+		\left[x, p e^{-p}\right] &=[x, p] e^{-p}+p\left[x, e^{-p}\right]=i e^{-p}+p\left[x, 1-p+\frac{p^{2}}{\lfloor 2}-\frac{p^{3}}{\lfloor 3} \ldots . .\right] \\
+		&=i e^{-p}+p\left[[x, 1]-[x, p]+\left[x, \frac{p^{2}}{L 2}\right] \ldots\right]=i e^{-p}+p\left[0-i+\frac{2 i p}{\lfloor 2}-\frac{3 i p^{2}}{\lfloor 3} \ldots \ldots\right] \\
+		\Rightarrow\left[x, p e^{-p}\right] &=i e^{-p}-i\left[p-p^{2}+\frac{p^{3}}{\lfloor 2} \ldots . .\right]=i e^{-p}-i p e^{-p}=i(1-p) e^{-p}
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The wavefunction of a particle in one-dimension is denoted by $\psi(x)$ in the coordinate representation and by $\phi(p)=\int \psi(x) e^{\frac{-i p x}{\hbar}} d x$ in the momentum representation. If the action of an operator $\hat{T}$ on $\psi(x)$ is given by $\hat{T} \psi(x)=\psi(x+a)$, where $a$ is a constant then $\hat{T} \phi(p)$ is given by
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{i}{\hbar} \operatorname{ap} \phi(p)$
+	\task[\textbf{B.}]$e^{\frac{-i a p}{\hbar}} \phi(p)$
+	\task[\textbf{C.}]$e^{\frac{+i a p}{\hbar}} \phi(p)$
+	\task[\textbf{D.}]$\left(1+\frac{i}{\hbar} a p\right) \phi(p)$
+\end{tasks}
+\begin{answer}
+	$\phi(p)=\int \psi(x) e^{\frac{-i p x}{\hbar}} d x$\\
+	\begin{align*}
+		&T \psi(x)=\psi(x+a) \\
+		&T \phi(p)=\int T \psi(x) e^{\frac{-i p x}{\hbar}} d x=\int \psi(x+a) e^{\frac{-i p x}{\hbar}} d x=e^{\frac{i p a}{\hbar}} \int \psi(x+a) e^{\frac{-i p(x+a)}{\hbar}} d x \\
+		&\Rightarrow T \phi(p)=e^{\frac{i p a}{\hbar}} \phi(p)
+	\end{align*}
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Two different sets of orthogonal basis vectors $\left\{\left(\begin{array}{l}1 \\ 0\end{array}\right),\left(\begin{array}{l}0 \\ 1\end{array}\right)\right\}$ and $\left\{\frac{1}{\sqrt{2}}\left(\begin{array}{l}1 \\ 1\end{array}\right), \frac{1}{\sqrt{2}}\left(\begin{array}{c}1 \\ -1\end{array}\right)\right\}$ are given for a two dimensional real vector space. The matrix representation of a linear operator $\hat{A}$ in these basis are related by a unitary transformation. The unitary matrix may be chosen to be
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left(\begin{array}{cc}0 & -1 \\ 1 & 0\end{array}\right)$
+	\task[\textbf{B.}]$\left(\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right)$
+	\task[\textbf{C.}]$\frac{1}{\sqrt{2}}\left(\begin{array}{cc}1 & 1 \\ 1 & -1\end{array}\right)$
+	\task[\textbf{D.}] $\frac{1}{\sqrt{2}}\left(\begin{array}{ll}1 & 0 \\ 1 & 1\end{array}\right)$
+\end{tasks}
+\begin{answer}
+$u_{1}=\left(\begin{array}{ll}
+	1 & 0 \\
+	0 & 1
+\end{array}\right), u_{2}=\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+	1 & 1 \\
+	1 & -1
+\end{array}\right) \Rightarrow u=u_{1} \otimes u_{2}=\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+	1 & 1 \\
+	1 & -1
+\end{array}\right)$\\
+The correct option is \textbf{(c)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+\item A Hermitian operator $\hat{O}$ has two normalized eigenstates $|1\rangle$ and $|2\rangle$ with eigenvalues 1 and 2 , respectively. The two states $|u\rangle=\cos \theta|1\rangle+\sin \theta|2\rangle$ and $|v\rangle=\cos \phi|1\rangle+\sin \phi|2\rangle$ are such that $\langle v|\hat{O}| v\rangle=7 / 4$ and $\langle u \mid v\rangle=0$. Which of the following are possible values of $\theta$ and $\phi$ ?
+	\exyear{NET DEC 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\theta=-\frac{\pi}{6}$ and $\phi=\frac{\pi}{3}$
+	\task[\textbf{B.}]$\theta=\frac{\pi}{6}$ and $\phi=\frac{\pi}{3}$
+	\task[\textbf{C.}]$\theta=-\frac{\pi}{4}$ and $\phi=\frac{\pi}{4}$
+	\task[\textbf{D.}]$\theta=\frac{\pi}{3}$ and $\phi=-\frac{\pi}{6}$
+\end{tasks}
+\begin{answer}
+	$|u\rangle=\cos \theta|1\rangle+\sin \theta|2\rangle, \quad|v\rangle=\cos \phi|1\rangle+\sin \phi|2\rangle$\\\\
+	it is given
+	$\hat{O}|1\rangle=|1\rangle, \quad \hat{O}|2\rangle=2|2\rangle \Rightarrow\langle v|\hat{O}| v\rangle=\frac{7}{4}$\\
+	\begin{align*}
+		&\cos ^{2} \phi+2 \sin ^{2} \phi=\frac{7}{4} \Rightarrow \cos ^{2} \phi+\sin ^{2} \phi=1 \Rightarrow \sin ^{2} \phi=\frac{7}{4}-1 \\
+		&\sin \phi=\frac{\sqrt{3}}{2} \Rightarrow \phi=\frac{\pi}{3} \\
+		&\langle u \mid v\rangle=0 \Rightarrow \cos \theta \cos \phi+\sin \theta \sin \phi=0 \Rightarrow \cos (\theta-\phi)=0 \\
+		&\Rightarrow \theta-\phi=\frac{\pi}{2} \text { or } \phi-\theta=\frac{\pi}{2} \Rightarrow \theta=\frac{\pi}{2}+\frac{\pi}{3} \text { or } \theta=\frac{\pi}{3}-\frac{\pi}{2} \Rightarrow \theta=\frac{5 \pi}{6} \text { or } \theta=-\frac{\pi}{6}
+	\end{align*}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $\hat{L}_{x}, \hat{L}_{y}, \hat{L}_{z}$ are the components of the angular momentum operator in three dimensions the commutator $\left[\hat{L}_{x}, \hat{L}_{x} \hat{L}_{y} \hat{L}_{z}\right]$ may be simplified to
+	\exyear{NET JUNE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar L_{x}\left(\hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{B.}]$i \hbar \hat{L}_{z} \hat{L}_{y} \hat{L}_{x}$
+	\task[\textbf{C.}]$i \hbar L_{x}\left(2 \hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		&:\left[L_{x}, L_{x} L_{y} L_{z}\right]=L_{x}\left[L_{x}, L_{y} L_{z}\right]+\left[L_{x}, L_{x}\right] L_{y} L_{z} \\
+		=& L_{x}\left[L_{x}, L_{y}\right] L_{z}+L_{x} L_{y}\left[L_{x}, L_{z}\right]+0=L_{x}\left[i \hbar L_{z}\right] L_{z}+L_{x} L_{y}\left(-i \hbar L_{y}\right) \\
+		=& i \hbar L_{x} L_{z}^{2}-i \hbar L_{x} L_{y}^{2}=i \hbar L_{x}\left(L_{z}^{2}-L_{y}^{2}\right)
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider the operator, $a=x+\frac{d}{d x}$ acting on smooth function of $x$. Then commutator $[\alpha, \cos x]$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\sin x$
+	\task[\textbf{B.}]$\cos x$
+	\task[\textbf{C.}]$-\cos x$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{answer}
+	
+	\begin{align*}
+	&a=x+\frac{d}{d x}\\
+		&{[a, \cos x]=\left[x+\frac{d}{d x}, \cos x\right]=[x, \cos x]+\left[\frac{d}{d x}, \cos x\right]=0+\left[\frac{d}{d x}, \cos x\right]} \\
+		&{\left[\frac{d}{d x}, \cos x\right] \psi(x)=\frac{d}{d x} \cos x \psi(x)-\cos x \frac{d \psi}{d x}} \\
+		&=\cos x \frac{d \psi}{d x}+(-\sin x) \psi-\frac{\cos x d \psi}{d x}=-\sin x \psi \\
+		&{[a, \cos x] \psi(x)=-\sin x \psi} \\
+		&{[a, \cos x]=-\sin x}
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider the operator $\vec{\pi}=\vec{p}-q \vec{A}$, where $\vec{p}$ is the momentum operator, $\vec{A}=\left(A_{x}, A_{y}, A_{z}\right)$ is the vector potential and $q$ denotes the electric charge. If $\vec{B}=\left(B_{x}, B_{y}, B_{z}\right)$ denotes the magnetic field, the $z$-component of the vector operator $\vec{\pi} \times \vec{\pi}$ is
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i q \hbar B_{z}+q\left(A_{x} p_{y}-A_{y} p_{x}\right)$
+	\task[\textbf{B.}]$-i q \hbar B_{z}-q\left(A_{x} p_{y}-A_{y} p_{x}\right)$
+	\task[\textbf{C.}]$-i q \hbar B_{2}$
+	\task[\textbf{D.}] $i q \hbar B_{z}$
+\end{tasks}
+\begin{answer}
+	$\vec{\pi}=\vec{p}-q \vec{A}$\\
+	\begin{align*}
+	&(\vec{\pi} \times \vec{\pi}) \psi=(\vec{p}-q \vec{A}) \times(\vec{p}-q \vec{A}) \psi=\vec{p} \times \vec{p} \psi-q \vec{p} \times \vec{A} \psi-q \vec{A} \times \vec{p} \psi+q^{2} \vec{A} \times \vec{A} \psi \\
+	&\vec{p} \times \vec{p} \psi=0 \\
+	&-q \vec{p} \times \vec{A} \psi=-q(-i \hbar \vec{\nabla} \times \vec{A}) \psi=q i \hbar \vec{B} \psi \\
+	&q \vec{A} \times \vec{p} \psi=q(\vec{A}(-i \hbar \vec{\nabla})) \psi=0 \\
+	&q^{2} \vec{A} \times \vec{A} \psi=0 \\
+	&\vec{\pi} \times \vec{\pi}=q i \hbar \vec{B}
+	\end{align*}
+	So, $z$ component is given by $q i \hbar B_{z}$\\
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { The two vectors }\left(\begin{array}{l}
+		a \\
+		0
+	\end{array}\right) \text { and }\left(\begin{array}{l}
+		b \\
+		c
+	\end{array}\right) \text { are orthonormal if }$
+	\exyear{NET JUNE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $a=\pm 1, b=\pm 1 / \sqrt{2}, c=\pm 1 / \sqrt{2}$
+	\task[\textbf{B.}] $a=\pm 1, b=\pm 1, c=0$
+	\task[\textbf{C.}]$a=\pm 1, b=0, c=\pm 1$
+	\task[\textbf{D.}] $a=\pm 1, b=\pm 1 / 2, c=1 / 2$
+\end{tasks}
+\begin{answer}
+	$\left|\phi_{1}\right\rangle=\left(\begin{array}{l}
+		a \\
+		0
+	\end{array}\right),\left|\phi_{2}\right\rangle=\left(\begin{array}{l}
+		b \\
+		c
+	\end{array}\right)$\\
+	$\begin{array}{ll}
+		\left\langle\phi_{1} \mid \phi_{1}\right\rangle=1 & \Rightarrow a=\pm 1 \\
+		\left\langle\phi_{2} \mid \phi_{2}\right\rangle=1 & \Rightarrow|b|^{2}+|c|^{2}=1 \\
+		\left\langle\phi_{1} \mid \phi_{2}\right\rangle=0 & \Rightarrow\left(\begin{array}{ll}
+			a & 0
+		\end{array}\right)\left(\begin{array}{l}
+			b \\
+			c
+		\end{array}\right)=0 \\
+		& a . b+0 \cdot c=0 \Rightarrow a \cdot b=0 \\
+		|c|^{2}=1, \quad & \quad c=\pm 1 \quad \text { so } b=0 \\
+		a=\pm 1, \quad & b=0, \quad c=\pm 1
+	\end{array}$\\
+	The correct option  is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Let $x$ denote the position operator and $p$ the canonically conjugate momentum operator of a particle. The commutator
+	$$
+	\left[\frac{1}{2 m} p^{2}+\beta x^{2}, \frac{1}{m} p^{2}+\gamma x^{2}\right]
+	$$
+	where $\beta$ and $\gamma$ are constants, is zero if
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\gamma=\beta$
+	\task[\textbf{B.}]$\gamma=2 \beta$
+	\task[\textbf{C.}]$\gamma=\sqrt{2} \beta$
+	\task[\textbf{D.}]$2 \gamma=\beta$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		&{\left[\frac{1}{2 m} p^{2}+\beta x^{2}, \frac{1}{m} p^{2}+\gamma x^{2}\right]=0 \Rightarrow \frac{1}{2 m} \gamma\left[p^{2}, x^{2}\right]+\frac{\beta}{m}\left[x^{2}, p^{2}\right]=0} \\
+		&-\frac{\gamma}{2 m}\left[x^{2}, p^{2}\right]+\frac{\beta}{m}\left[x^{2}, p^{2}\right]=0 \Rightarrow \frac{1}{m}\left[x^{2}, p^{2}\right]\left[\frac{-\gamma}{2}+\beta\right]=0 \Rightarrow \gamma=2 \beta
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider the operator $A_{x}=L_{y} p_{z}-L_{z} p_{y}$, where $L_{i}$ and $p_{i}$ denote, respectively, the components of the angular momentum and momentum operators. The commutator $\left[A_{x}, x\right]$ where $x$ is the $x$ - component of the position operator, is
+	\exyear{NET DEC 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar\left(z p_{z}+y p_{y}\right)$
+	\task[\textbf{B.}]$-i \hbar\left(z p_{z}-y p_{y}\right)$
+	\task[\textbf{C.}]$i \hbar\left(z p_{z}+y p_{y}\right)$
+	\task[\textbf{D.}]$i \hbar\left(z p_{z}-y p_{y}\right)$
+\end{tasks}
+\begin{answer}
+	 $A_{x}=L_{y} p_{z}-L_{z} p_{y}, L_{y}=z p_{x}-x p_{z}, L_{z}=x p_{y}-y p_{x}$
+	\begin{align*}
+	&{\left[A_{x}, x\right]=\left[L_{y} p_{z}, x\right]-\left[L_{z} p_{y}, x\right]=\left[L_{y}, x\right] p_{z}-\left[L_{z}, x\right] p_{y}} \\
+	&=\left[z p_{x}, x\right] p_{z}+\left[y p_{x}, x\right] p_{y}=z\left[p_{x}, x\right] p_{z}+y\left[p_{x}, x\right] p_{y} \\
+	&=\left(-i \hbar z p_{z}\right)+\left(-i \hbar y p_{y}\right)=-i \hbar\left(z p_{z}+y p_{y}\right)
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\end{enumerate}
+
+
+
+
+
+
+
+
+\newpage
+\begin{abox}
+	Practice set 2 solutions
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item The quantum mechanical operator for the momentum of a particle moving in one dimension is given by
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar \frac{d}{d x}$
+	\task[\textbf{B.}]$-i \hbar \frac{d}{d x}$
+	\task[\textbf{C.}]$i \hbar \frac{\partial}{\partial t}$
+	\task[\textbf{D.}]$-\frac{\hbar^{2}}{2 m} \frac{d^{2}}{d x^{2}}$
+\end{tasks}
+\begin{answer}
+	The correct option \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $L_{x}, L_{y}$ and $L_{z}$ are respectively the $x, y$ and $z$ components of angular momentum operator $L$. The commutator $\left[L_{x} L_{y}, L_{z}\right]$ is equal to
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar\left(L_{x}^{2}+L_{y}^{2}\right)$
+	\task[\textbf{B.}]$2 i \hbar L_{z}$
+	\task[\textbf{C.}]$i \hbar\left(L_{x}^{2}-L_{y}^{2}\right)$
+	\task[\textbf{D.}] 0
+\end{tasks}
+\begin{answer}
+$\left\lfloor L_{x} L_{y}, L_{z}\right]=L_{x}\left[L_{y} L_{z}\right]+\left[L_{x}, L_{z}\right] L_{y}=i \hbar\left(L_{x}^{2}-L_{y}^{2}\right)$\\
+The correct option is \textbf{(c)}	
+\end{answer}
+\textbf{common data questions 3 and 4 }\\
+In a one-dimensional harmonic oscillator, $\varphi_{0}, \varphi_{1}$ and $\varphi_{2}$ are respectively the ground, first and the second excited states. These three states are normalized and are orthogonal to one another $\psi_{1}$ and $\psi_{2}$ are two states defined by
+$$
+\psi_{1}=\varphi_{0}-2 \varphi_{1}+3 \varphi_{2}, \psi_{2}=\varphi_{0}-\varphi_{1}+\alpha \varphi_{2}, \psi_{2}=\varphi_{0}-\varphi_{1}+\alpha \varphi_{2}
+$$
+where $\alpha$ is a constant\\
+\begin{minipage}{\textwidth}
+	\item $\text { The value of } \alpha \text { which } \psi_{2} \text { is orthogonal to } \psi_{1} \text { is }$
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]2
+	\task[\textbf{B.}]1
+	\task[\textbf{C.}]-1
+	\task[\textbf{D.}]-2
+\end{tasks}
+\begin{answer}
+	$\text { For orthogonal condition scalar product }\left(\psi_{2}, \psi_{1}\right)=0, \text { so } 1+2+3 \alpha=0 \Rightarrow \alpha=-1$\\
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item For the value of $\alpha$ determined in $\mathrm{Q} 3$, the expectation value of energy of the oscillator in the state $\psi_{2}$ is
+\end{minipage}
+\begin{tasks}(1)
+	\task[\textbf{A.}] $\hbar \omega$
+	\task[\textbf{B.}]$3 \hbar \omega / 2$ 
+	\task[\textbf{C.}]$3 \hbar \omega$
+	\task[\textbf{D.}]$9 \hbar \omega / 2$
+\end{tasks}
+\begin{answer}
+	$\psi_{2}=\phi_{0}-\phi_{1}+\alpha \phi_{2} \text { put } \alpha=-1,\langle H\rangle=\frac{\left\langle\psi_{2}|H| \psi_{2}\right\rangle}{\left\langle\psi_{2} \mid \psi_{2}\right\rangle}=\frac{\frac{\hbar \omega}{2}+\frac{3 \hbar \omega}{2}+\frac{5 \hbar \omega}{2}}{3}=\frac{3}{2} \hbar \omega$\\
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Which one of the following commutation relations is NOT CORRECT? Here, symbols have their usual meanings.
+	\exyear{GATE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left[L^{2}, L_{z}\right]=0$
+	\task[\textbf{B.}]$\left\lfloor L_{x}, L_{y}\right\rfloor=i \hbar L_{z}$
+	\task[\textbf{C.}]$\left[L_{z}, L_{+}\right]=\hbar L_{+}$
+	\task[\textbf{D.}] $\left[L_{z}, L_{-}\right]=\hbar L_{-}$
+\end{tasks}
+\begin{answer}
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Let $\vec{L}$ and $\vec{p}$ be the angular and linear momentum operators, respectively, for a a particle. The commutator $\left\lfloor L_{x}, p_{y}\right\rfloor$ gives
+	\exyear{GATE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-i \hbar p_{z}$
+	\task[\textbf{B.}]0
+	\task[\textbf{C.}]$i \hbar p_{x}$
+	\task[\textbf{D.}]$i \hbar p_{z}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+	&:\left[L_{x}, p_{y}\right]=\left[y p_{z}-z p_{y}, p_{y}\right]=\left[y p_{z}, p_{y}\right]-\left[z p_{y}, p_{y}\right]=\left[y, p_{y}\right] p_{z} \\
+	&\cdot\left[p_{y}, p_{y}\right]=0 \text { and }\left[z, p_{y}\right]=0 \Rightarrow\left[L_{x}, p_{y}\right]=i \hbar p_{z} \quad \because\left[y, p_{y}\right]=i \hbar
+\end{align*}
+The correct option is \textbf{(d)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { Which of the following operators is Hermitian? }$
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{d}{d x}$
+	\task[\textbf{B.}]$\frac{d^{2}}{d x^{2}}$
+	\task[\textbf{C.}]$i \frac{d^{2}}{d x^{2}}$
+	\task[\textbf{D.}]$\frac{d^{3}}{d x^{3}}$
+\end{tasks}
+\begin{answer}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $x$ and $p$ are the $x$ components of the position and the momentum operators of a particle respectively, the commutator $\left[x^{2}, p^{2}\right]$ is
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar(x p-p x)$
+	\task[\textbf{B.}]$2 i \hbar(x p-p x)$
+	\task[\textbf{C.}]$i \hbar(x p+p x)$
+	\task[\textbf{D.}]$2 i \hbar(x p+p x)$
+\end{tasks}\begin{answer}
+$\left[x^{2}, p^{2}\right]=p\left[x^{2}, p\right]+\left[x^{2} p\right] p=2 i \hbar p x+2 i \hbar x p \Rightarrow 2 i \hbar(x p+p x)$\\
+The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { For the parity operator } P, \text { which of the following statements is NOT true? }$
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $P^{\dagger}=P$
+	\task[\textbf{B.}] $P^{2}=-P$
+	\task[\textbf{C.}] $P^{2}=I$
+	\task[\textbf{D.}]$P^{\dagger}=P^{-1}$
+\end{tasks}
+\begin{answer}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { Which one of the following operators is Hermitian? }$
+	\exyear{GATE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \frac{\left(p_{x} x^{2}-x^{2} p_{x}\right)}{2}$
+	\task[\textbf{B.}]$i \frac{\left(p_{x} x^{2}+x^{2} p_{x}\right)}{2}$
+	\task[\textbf{C.}]$e^{i p_{x} a}$
+	\task[\textbf{D.}]$e^{-i p_{x} a}$
+\end{tasks}
+\begin{answer}
+	$A=i \frac{\left(p_{x} x^{2}-x^{2} p_{x}\right)}{2}, A^{\dagger}=-i \frac{\left(\left(p_{x} x^{2}\right)^{\dagger}-\left(x^{2} p_{x}\right)^{\dagger}\right)}{2}=i \frac{\left(p_{x} x^{2}-x^{2} p_{x}\right)}{2}$\\
+	The correct option is \textbf{(a)}
+\end{answer}
+\end{enumerate}

@@ -1,0 +1,503 @@
+\chapter{angular momentum solutions}
+\begin{abox}
+	Practice set 1 solutions
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item The Hamiltonian of an electron in a constant magnetic field $\vec{B}$ is given by $H=\mu \vec{\sigma} \cdot \vec{B}$. where $\mu$ is a positive constant and $\vec{\sigma}=\left(\sigma_{1}, \sigma_{2}, \sigma_{3}\right)$ denotes the Pauli matrices. Let $\omega=\mu B / \hbar$ and $I$ be the $2 \times 2$ unit matrix. Then the operator $e^{i H t / \hbar}$ simplifies to
+		\exyear{NET JUNE 2011}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $I \cos \frac{\omega t}{2}+\frac{i \vec{\sigma} \cdot \vec{B}}{B} \sin \frac{\omega t}{2}$
+		\task[\textbf{B.}]$I \cos \omega t+\frac{i \vec{\sigma} \cdot \vec{B}}{B} \sin \omega t$
+		\task[\textbf{C.}]$I \sin \omega t+\frac{i \vec{\sigma} \cdot \vec{B}}{B} \cos \omega t$
+		\task[\textbf{D.}]$I \sin 2 \omega t+\frac{i \vec{\sigma} \cdot \vec{B}}{B} \cos 2 \omega t$
+	\end{tasks}
+\begin{answer}
+	$H=\mu \vec{\sigma} \vec{B}$ where $\vec{\sigma}=\left(\sigma_{1}, \sigma_{2}, \sigma_{3}\right)$ are pauli spin matrices and $\vec{B}$ are constant magnetic field. $\vec{\sigma}=\left(\sigma_{1} \hat{i}, \sigma_{2} \hat{j}, \sigma_{3} \hat{k}\right), \vec{B}=\left(B_{x} \hat{i}+B_{y} \hat{j}+B_{z} \hat{k}\right)$ and Hamiltonion $H=\mu \vec{\sigma} \cdot \vec{B}$ in matrices form is given by
+	$$
+	H=\mu\left(\begin{array}{cc}
+	B_{z} & B_{x}-i B_{y} \\
+	B_{x}+i B_{y} & -B_{z}
+	\end{array}\right) .
+	$$
+	Eigenvalue of given matrices are given by $+\mu \mathrm{B}$ and $-\mu \mathrm{B} . H$ matrices are not diagonals so $e^{i H t / \hbar}$ is equivalent to
+	$$
+	S^{-1}\left(\begin{array}{cc}
+	e^{\frac{i \mu B t}{\hbar}} & 0 \\
+	0 & e^{\frac{-i \mu B t}{\hbar}}
+	\end{array}\right) S
+	$$
+	where $S$ is unitary matrices\\
+	and $\quad S^{-1}=S=\left(\begin{array}{cc}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}\end{array}\right)$.\\
+	$S^{-1}\left(\begin{array}{cc}e^{\frac{i \mu B t}{\hbar}} & 0 \\ 0 & e^{\frac{-i \mu B t}{\hbar}}\end{array}\right) S=\left(\begin{array}{cc}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}\end{array}\right)\left(\begin{array}{cc}e^{\frac{i \mu B t}{\hbar}} & 0 \\ 0 & e^{\frac{-i \mu B t}{\hbar}}\end{array}\right)\left(\begin{array}{cc}\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}\end{array}\right)$,\\ where $\omega=\mu \mathrm{B} / \hbar$.\\
+	$e^{i H t / \hbar}=\left(\begin{array}{cc}\cos \omega t & i \sin \omega t \\ i \sin \omega t & \cos \omega t\end{array}\right)$,\\
+	 which is equivalent to $I \cos \omega t+i \sigma_{x} \sin \omega t$ can be written
+	as $I \cos \omega t+\frac{i \vec{\sigma} \cdot \vec{B}}{B} \sin \omega t$, where $\sigma_{x}=\frac{i \vec{\sigma} \cdot B}{B}$\\
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item  In a system consisting of two spin $\frac{1}{2}$ particles labeled 1 and 2, let $\vec{S}^{(1)}=\frac{\hbar}{2} \vec{\sigma}^{(1)}$ and $\vec{S}^{(2)}=\frac{\hbar}{2} \vec{\sigma}^{(2)}$ denote the corresponding spin operators. Here $\vec{\sigma} \equiv\left(\sigma_{x}, \sigma_{y}, \sigma_{z}\right)$ and $\sigma_{x}, \sigma_{y}, \sigma_{z}$ are the three Pauli matrices.\\
+	$\text { In the standard basis the matrices for the operators } S_{x}^{(1)} S_{y}^{(2)} \text { and } S_{y}^{(1)} S_{x}^{(2)} \text { are respectively, }$
+	\exyear{NET JUNE 2011}
+\end{minipage}
+\begin{tasks}(1)
+	\task[\textbf{A.}]$\frac{\hbar^{2}}{4}\left(\begin{array}{cc}
+		1 & 0 \\
+		0 & -1
+	\end{array}\right), \frac{\hbar^{2}}{4}\left(\begin{array}{rr}
+		-1 & 0 \\
+		0 & 1
+	\end{array}\right)$
+	\task[\textbf{B.}]$\frac{\hbar^{2}}{4}\left(\begin{array}{cc}
+		i & 0 \\
+		0 & -i
+	\end{array}\right), \frac{\hbar^{2}}{4}\left(\begin{array}{rr}
+		-i & 0 \\
+		0 & i
+	\end{array}\right)$
+	\task[\textbf{C.}]$\frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+		0 & 0 & 0 & -i \\
+		0 & 0 & i & 0 \\
+		0 & -i & 0 & 0 \\
+		i & 0 & 0 & 0
+	\end{array}\right), \frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+		0 & 0 & 0 & -i \\
+		0 & 0 & -i & 0 \\
+		0 & i & 0 & 0 \\
+		i & 0 & 0 & 0
+	\end{array}\right)$
+	\task[\textbf{D.}]$\frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+		0 & 1 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		0 & 0 & 0 & -i \\
+		0 & 0 & i & 0
+	\end{array}\right), \frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+		0 & -i & 0 & 0 \\
+		i & 0 & 0 & 0 \\
+		0 & 0 & 0 & 1 \\
+		0 & 0 & 1 & 0
+	\end{array}\right)$
+\end{tasks}
+\begin{answer}
+$\mathrm{S}_{\mathrm{x}}^{(1)} \mathrm{S}_{\mathrm{y}}^{(2)}=\frac{\hbar^{2}}{4}\left(\begin{array}{ll}
+	0 & 1 \\
+	1 & 0
+\end{array}\right) \otimes\left(\begin{array}{cc}
+	0 & -\mathrm{i} \\
+	\mathrm{i} & 0
+\end{array}\right) \Rightarrow \frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+	0 & 0 & 0 & -\mathrm{i} \\
+	0 & 0 & \mathrm{i} & 0 \\
+	0 & -\mathrm{i} & 0 & 0 \\
+	\mathrm{i} & 0 & 0 & 0
+\end{array}\right)$\\
+$S_{y}^{(1)} S_{x}^{(2)}=\frac{\hbar^{2}}{4}\left(\begin{array}{cc}
+	0 & -i \\
+	i & 0
+\end{array}\right) \otimes\left(\begin{array}{cc}
+	0 & 1 \\
+	1 & 0
+\end{array}\right) \Rightarrow \frac{\hbar^{2}}{4}\left(\begin{array}{cccc}
+	0 & 0 & 0 & -i \\
+	0 & 0 & -i & 0 \\
+	0 & i & 0 & 0 \\
+	i & 0 & 0 & 0
+\end{array}\right)$	\\
+The correct option is \textbf{c}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\text { These two operators of above QUESTION satisfy the relation }$
+	\exyear{NET JUNE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left\{S_{x}^{(1)} S_{y}^{(2)}, S_{y}^{(1)} S_{x}^{(2)}\right\}=S_{z}^{(1)} S_{z}^{(2)}$
+	\task[\textbf{B.}]$\left\{S_{x}^{(1)} S_{y}^{(2)}, S_{y}^{(1)} S_{x}^{(2)}\right\}=0$
+	\task[\textbf{C.}]$\left[S_{x}^{(1)} S_{y}^{(2)}, S_{y}^{(1)} S_{x}^{(2)}\right]=i S_{z}^{(1)} S_{z}^{(2)}$
+	\task[\textbf{D.}] $\left[S_{x}^{(1)} S_{y}^{(2)}, S_{y}^{(1)} S_{x}^{(2)}\right]=0$
+\end{tasks}
+\begin{answer}
+ We have matrix $S_{x}^{(1)} S_{y}^{(2)}$ and $S_{y}^{(1)} S_{x}^{(2)}$ from question 6(A) so commutation is given by $\left[S_{x}^{(1)} S_{y}^{(2)}, S_{y}^{(1)} S_{x}^{(2)}\right]=0 .$\\
+ The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The component along an arbitrary direction $\hat{n}$, with direction $\operatorname{cosines}\left(n_{x}, n_{y}, n_{z}\right)$, of the spin of a spin $-\frac{1}{2}$ particle is measured. The result is
+	\exyear{NET JUNE 2012}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] 0
+	\task[\textbf{B.}]$\pm \frac{\hbar}{2} n_{z}$
+	\task[\textbf{C.}]$\pm \frac{\hbar}{2}\left(n_{x}+n_{y}+n_{z}\right)$
+	\task[\textbf{D.}]$\pm \frac{\hbar}{2}$
+\end{tasks}
+\begin{answer}
+	$S_{x}=\frac{\hbar}{2}\left(\begin{array}{ll}
+		0 & 1 \\
+		1 & 0
+	\end{array}\right), S_{y}=\frac{\hbar}{2}\left(\begin{array}{ll}
+		0 & -i \\
+		i & 0
+	\end{array}\right), S_{z}=\frac{\hbar}{2}\left(\begin{array}{ll}
+		1 & 0 \\
+		0 & -1
+	\end{array}\right)$\\
+	$\overrightarrow{\mathrm{n}}=\mathrm{n}_{\mathrm{x}} \hat{\mathrm{i}}+\mathrm{n}_{\mathrm{y}} \hat{\mathrm{j}}+\mathrm{n}_{\mathrm{z}} \hat{\mathrm{k}} \text { and } n_{x}^{2}+n_{y}^{2}+n_{z}^{2}=1, \vec{S}=S_{x} \hat{i}+S_{y} \hat{j}+S_{z} \hat{k}$\\
+	$\vec{n} \cdot \vec{S}=n_{x}\left(\begin{array}{cc}
+		0 & \frac{\hbar}{2} \\
+		\frac{\hbar}{2}
+	\end{array}\right)+n_{y}\left(\begin{array}{cc}
+		0 & -\frac{i \hbar}{2} \\
+		\frac{i \hbar}{2} & 0
+	\end{array}\right)+n_{z}\left(\begin{array}{cc}
+		\frac{\hbar}{2} & 0 \\
+		0 & \frac{-\hbar}{2}
+	\end{array}\right)$\\
+	$\vec{n} \cdot \vec{S}=\left(\begin{array}{ll}
+		n_{z} \frac{\hbar}{2} & \frac{\hbar}{2}\left(n_{x}-i n_{y}\right) \\
+		\frac{\hbar}{2}\left(n_{x}+i n_{y}\right) & -n_{z} \frac{\hbar}{2}
+	\end{array}\right)$\\
+	Let $\lambda$ is eigen value of $\vec{n} \cdot \vec{S}$
+	$$
+	\left|\begin{array}{ll}
+	n_{z} \frac{\hbar}{2}-\lambda & \frac{\hbar}{2}\left(n_{x}-i n_{y}\right. \\
+	\frac{\hbar}{2}\left(n_{x}+i n_{y}\right) & -n_{z} \frac{\hbar}{2}-\lambda
+	\end{array}\right|=0
+	$$
+	$\Rightarrow-\left(\frac{\mathrm{n}_{\mathrm{z}} \hbar}{2}-\lambda\right)\left(\frac{\mathrm{n}_{\mathrm{z}} \hbar}{2}+\lambda\right)-\frac{\hbar^{2}}{4}\left(\mathrm{n}_{\mathrm{x}}^{2}+\mathrm{n}_{\mathrm{y}}^{2}\right)=0 \Rightarrow-\left(\frac{n_{z}^{2} \hbar^{2}}{4}-\lambda^{2}\right)-\frac{\hbar^{2}}{4}\left(n_{x}^{2}+n_{y}^{2}\right)=0$\\
+	$\Rightarrow-\frac{\hbar^{2}}{4}\left(n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\right)+\lambda^{2}=0 \Rightarrow \lambda=\pm \frac{\hbar}{2}$\\
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item In a basis in which the $z$ - component $S_{z}$ of the spin is diagonal, an electron is in a spin state $\psi=\left(\begin{array}{c}(1+i) / \sqrt{6} \\ \sqrt{2 / 3}\end{array}\right) .$ The probabilities that a measurement of $S_{2}$ will yield the values $\hbar / 2$ and $-\hbar / 2$ are, respectively,
+	\exyear{NET JUNE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $1 / 2$ and $1 / 2$
+	\task[\textbf{B.}]$2 / 3$ and $1 / 3$
+	\task[\textbf{C.}]$1 / 4$ and $3 / 4$
+	\task[\textbf{D.}]$1 / 3$ and $2 / 3$
+\end{tasks}
+\begin{answer}
+Eigen state of $S_{z}$ is $\left|\phi_{1}\right\rangle=\left(\begin{array}{l}1 \\ 0\end{array}\right)$ and $\left|\phi_{2}\right\rangle=\left(\begin{array}{l}0 \\ 1\end{array}\right)$ corresponds to Eigen value $\frac{\hbar}{2}$ and $-\frac{\hbar}{2}$ respectively.
+$$
+P\left(\frac{\hbar}{2}\right)=\frac{\left|\left\langle\phi_{1} \mid \psi\right\rangle\right|^{2}}{\langle\psi \mid \psi\rangle}=\left|\frac{1+i}{\sqrt{6}}\right|^{2}=\frac{2}{6}=\frac{1}{3}, \quad P\left(-\frac{\hbar}{2}\right)=\frac{\left|\left\langle\phi_{2} \mid \psi\right\rangle\right|^{2}}{\langle\psi \mid \psi\rangle}=\frac{2}{3}
+$$
+The correct option is \textbf{(d)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A spin $-\frac{1}{2}$ particle is in the state $\chi=\frac{1}{\sqrt{11}}\left(\begin{array}{c}1+i \\ 3\end{array}\right)$ in the eigenbasis of $S^{2}$ and $S_{2}$. If we measure $S_{z}$, the probabilities of getting $+\frac{h}{2}$ and $-\frac{h}{2}$, respectively are
+	\exyear{NET DEC 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{1}{2}$ and $\frac{1}{2}$
+	\task[\textbf{B.}]$\frac{2}{11}$ and $\frac{9}{11}$
+	\task[\textbf{C.}] 0 and 1
+	\task[\textbf{D.}]$\frac{1}{11}$ and $\frac{3}{11}$
+\end{tasks}
+\begin{answer}
+	$P\left(\frac{\hbar}{2}\right)=\left|\frac{1}{\sqrt{11}}(10)\left(\begin{array}{c}1+i \\ 3\end{array}\right)\right|^{2}=\frac{1}{11} \times 2=\frac{2}{11} \quad \because\langle\psi \mid \psi\rangle=1$\\ $P\left(-\frac{\hbar}{2}\right)=\left|\frac{1}{\sqrt{11}}(01)\left(\begin{array}{c}1+i \\ 3\end{array}\right)\right|^{2}=\frac{9}{11}$\\
+	i.e. probability of $S_{z}$ getting $\left(\frac{\hbar}{2}\right)$ and $\left(-\frac{\hbar}{2}\right)$\\
+	The correct option is \textbf{b}
+\end{answer}
+\begin{minipage}{\textwidth}
+\item Let $\vec{\sigma}=\left(\sigma_{1}, \sigma_{2}, \sigma_{3}\right)$, where $\sigma_{1}, \sigma_{2}, \sigma_{3}$ are the Pauli matrices. If $\vec{a}$ and $\vec{b}$ are two arbitrary constant vectors in three dimensions, the commutator $[\vec{a} \cdot \vec{\sigma}, \vec{b} \cdot \vec{\sigma}]$ is equal to (in the following $I$ is the identity matrix)
+	\exyear{NET DEC 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $(\vec{a} \cdot \vec{b})\left(\sigma_{1}+\sigma_{2}+\sigma_{3}\right)$
+	\task[\textbf{B.}]$2 i(\vec{a} \times \vec{b}) \cdot \vec{\sigma}$
+	\task[\textbf{C.}]$(\vec{a} \cdot \vec{b}) I$
+	\task[\textbf{D.}]$|\vec{a}||\vec{b}| I$
+\end{tasks}
+\begin{answer}
+	$\vec{a}=a_{1} \hat{i}+a_{2} \hat{j}+a_{3} \hat{k}, \vec{b}=b_{1} \hat{i}+b_{2} \hat{j}+b_{3} \hat{k}, \sigma=\sigma_{x} \hat{i}+\sigma_{y} \hat{j}+\sigma_{z} \hat{k}$
+	
+	\begin{align*}
+	&{[\vec{a} \cdot \vec{\sigma}, \vec{b} \cdot \vec{\sigma}]=\left[a_{1} \sigma_{x}+a_{2} \sigma_{y}+a_{3} \sigma_{z}, b_{1} \sigma_{x}+b_{2} \sigma_{y}+b_{3} \sigma_{z}\right]} \\
+	&{[\vec{a} \cdot \vec{\sigma}, \vec{b} \cdot \vec{\sigma}]=a_{1} b_{1}\left[\sigma_{x}, \sigma_{x}\right]+a_{1} b_{2}\left[\sigma_{x}, \sigma_{y}\right]+a_{1} b_{3}\left[\sigma_{x}, \sigma_{z}\right]+a_{2} b_{1}\left[\sigma_{y}, \sigma_{x}\right]+a_{2} b_{2}\left[\sigma_{y}, \sigma_{y}\right]} \\
+	&+a_{2} b_{3}\left[\sigma_{y}, \sigma_{z}\right]+a_{3} b_{1}\left[\sigma_{z}, \sigma_{x}\right]+a_{3} b_{2}\left[\sigma_{z}, \sigma_{y}\right]+a_{3} b_{3}\left[\sigma_{z}, \sigma_{z}\right] \\
+	&=a_{1} b_{1} \cdot 0+a_{1} b_{2} \cdot 2 i \sigma_{z}-2 i a_{1} b_{3} \sigma_{y}-a_{2} b_{1} \cdot 2 i \sigma_{z}+0+a_{2} b_{3} \cdot 2 i \sigma_{x}+a_{3} b_{1} \cdot 2 i \sigma_{y}-a_{3} b_{2} \cdot 2 i \sigma_{x}+0 \\
+	&\Rightarrow[\vec{a} \cdot \vec{\sigma}, \vec{b} \cdot \vec{\sigma}]==2 i(\vec{a} \times \vec{b}) \cdot \vec{\sigma}
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $L_{i}$ are the components of the angular momentum operator $\vec{L}$, then the operator $\sum_{i=1,2,3}\left[\vec{L}, L_{i}\right]$ equals
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\vec{L}$
+	\task[\textbf{B.}]$2 \vec{L}$
+	\task[\textbf{C.}]$3 \vec{L}$
+	\task[\textbf{D.}]$-\vec{L}$
+\end{tasks}
+\begin{answer}
+	 Let $\vec{L}=L_{x} \hat{i}+L_{y} \hat{j}+L_{z} \hat{k}$
+	\begin{align*}
+	&x=1, y=2, z=3 \\
+	&{\left[\vec{L}, L_{x}\right]=\left[L_{y}, L_{x}\right] j+\left[L_{z}, L_{x}\right] \hat{k}=-i \hbar L_{z} \hat{j}+L_{y} \hat{k} i \hbar} \\
+	&{\left[\left[\vec{L}, L_{x}\right], L_{x}\right]=i \hbar\left[-L_{z}, L_{x}\right] \hat{j}+\left[L_{y}, L_{x}\right] i \hbar-i \hbar . i \hbar L_{y} \hat{j}-(i \hbar) L_{z}(i \hbar) L_{z}(i \hbar) \cdot \hat{k}=\hbar^{2}\left[L_{y} \hat{j}+L_{z} \hat{k}\right]} \\
+	&\text { similarly, }\left[\left[\vec{L}, L_{y}\right] L_{y}\right]=\hbar^{2}\left[L_{x} \hat{i}+L_{z} \hat{k}\right] \\
+	&{\left[\left[\vec{L}, L_{z}\right] L_{z}\right]=\hbar^{2}\left[L_{x} \hat{i}+L_{y} \hat{j}\right]} \\
+	&\sum_{i=1,2,3}[[L, L i] L i]=2 \hbar^{2}\left[L_{x} \hat{i}+L_{y} \hat{j}+L_{z} \hat{k}\right]=2 \vec{L} \quad \text { put } \hbar=1
+	\end{align*}
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The Hamiltonian for a spin- $\frac{1}{2}$ particle at rest is given by $H=E_{0}\left(\sigma_{z}+\alpha \sigma_{x}\right)$, where $\sigma_{x}$ and $\sigma_{z}$ are Pauli spin matrices and $E_{0}$ and $\alpha$ are constants. The eigenvalues of this Hamiltonian are
+	\exyear{NET DEC 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\pm E_{0} \sqrt{1+\alpha^{2}}$
+	\task[\textbf{B.}]$\pm E_{0} \sqrt{1-\alpha^{2}}$
+	\task[\textbf{C.}]$E_{0}$ (doubly degenerate)
+	\task[\textbf{D.}]$E_{0}\left(1 \pm \frac{1}{2} \alpha^{2}\right)$
+\end{tasks}
+\begin{answer}
+	$ H=E_{0}\left(\dot{\sigma}_{z}+\alpha \sigma_{x}\right)=E_{0}\left[\left(\begin{array}{cc}1 & 0 \\ 0 & -1\end{array}\right)+\alpha\left(\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right)\right] \Rightarrow H=E_{0}\left(\begin{array}{cc}1 & \alpha \\ \alpha & -1\end{array}\right)$
+	if $\lambda$ is eigen value, then
+	$$
+	H-\lambda I=0 \Rightarrow E_{0}\left(\begin{array}{cc}
+	(1-\lambda) & \alpha \\
+	\alpha & -(1+\lambda)
+	\end{array}\right)=0, \quad \lambda=\pm E_{0} \sqrt{1+\alpha^{2}}
+	$$
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $\hat{L}_{x}, \hat{L}_{y}, \hat{L}_{z}$ are the components of the angular momentum operator in three dimensions the commutator $\left[\hat{L}_{x}, \hat{L}_{x} \hat{L}_{y} \hat{L}_{z}\right]$ may be simplified to
+	\exyear{NET JUNE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar L_{x}\left(\hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{B.}]$i \hbar \hat{L}_{z} \hat{L}_{y} \hat{L}_{x}$
+	\task[\textbf{C.}] $i \hbar L_{x}\left(2 \hat{L}_{z}^{2}-\hat{L}_{y}^{2}\right)$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		&:\left[L_{x}, L_{x} L_{y} L_{z}\right]=L_{x}\left[L_{x}, L_{y} L_{z}\right]+\left[L_{x}, L_{x}\right] L_{y} L_{z} \\
+		&=L_{x}\left[L_{x}, L_{y}\right] L_{z}+L_{x} L_{y}\left[L_{x}, L_{z}\right]+0=L_{x}\left[i \hbar L_{z}\right] L_{z}+L_{x} L_{y}\left(-i \hbar L_{y}\right) \\
+		&=i \hbar L_{x} L_{z}^{2}-i \hbar L_{x} L_{y}^{2}=i \hbar L_{x}\left(L_{z}^{2}-L_{y}^{2}\right)
+	\end{align*}
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The Hamiltonian of a spin $\frac{1}{2}$ particle in a magnetic field $\vec{B}$ is given by $H=-\mu \cdot \vec{B} \cdot \vec{\sigma}$, where $\mu$ is a real constant and $\vec{\sigma}=\left(\sigma_{x}, \sigma_{y}, \sigma_{z}\right)$ are the Pauli spin matrices. If $\vec{B}=\left(B_{0}, B_{0}, 0\right)$ and the spin state at time $t=0$ is an eigenstate of $\sigma_{x}$, then of the expectation values $\left\langle\sigma_{x}\right\rangle,\left\langle\sigma_{y}\right\rangle$ and $\left\langle\sigma_{z}\right\rangle$
+	\exyear{NET JUNE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] only $\left\langle\sigma_{x}\right\rangle$ changes with time
+	\task[\textbf{B.}] only $\left\langle\sigma_{y}\right\rangle$ changes with time
+	\task[\textbf{C.}]only $\left\langle\sigma_{z}\right\rangle$ changes with time
+	\task[\textbf{D.}]all three change with time
+\end{tasks}
+\begin{answer}
+ $\left\langle\sigma_{x}\right\rangle,\left\langle\sigma_{y}\right\rangle$ and $\left\langle\sigma_{z}\right\rangle$ will changes with time because Eigen state of $\sigma_{x}$ ie $\frac{1}{\sqrt{2}}\left(\begin{array}{l}1 \\ 1\end{array}\right)$ and $\frac{1}{\sqrt{2}}\left(\begin{array}{c}1 \\ -1\end{array}\right)$ and can be written in basis of eigen state of $H=-\mu \cdot \vec{B} \cdot \vec{\sigma}=-B_{0}\left(\begin{array}{cc}0 & 1-i \\ 1+i & 0\end{array}\right)$\\
+ THe correct option is \textbf{(d)}
+\end{answer}
+\end{enumerate}
+
+
+
+
+
+
+\newpage
+\begin{abox}
+	Practice set 2 solutions
+	\end{abox}
+\begin{enumerate}
+\begin{minipage}{\textwidth}
+	\item $\text { For a spin-s particle, in the eigen basis of } \vec{S}^{2}, S_{x} \text { the expectation value }\left\langle s m\left|S_{x}^{2}\right| s m\right\rangle \text { is }$
+	\exyear{GATE 2010}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{\hbar^{2}\left\{s(s+1)-m^{2}\right\}}{2}$
+	\task[\textbf{B.}] $\hbar^{2}\left\{s(s+1)-2 m^{2}\right\}$
+	\task[\textbf{C.}]$\hbar^{2}\left\{s(s+1)-m^{2}\right\}$
+	\task[\textbf{D.}]$\hbar^{2} m^{2}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+	&\left\langle s m\left|S_{x}^{2}\right| s m\right\rangle=\frac{1}{4}\left\langle s m\left|\left(S_{+}+S_{-}\right)^{2}\right| s m\right\rangle=\frac{1}{4}\left\langle s m\left|S_{+}^{2}+S_{-}^{2}+S_{+} S_{-}+S_{-} S_{+}\right| s m\right\rangle \\
+	&=\frac{1}{4}\left\langle s m\left|S_{+} S_{-}+S_{-} S_{+}\right| s m\right\rangle=\frac{\hbar^{2}}{2}\left[s(s+1)-m^{2}\right] \quad\left[\because S_{+} S_{-}+S_{-} S_{+}=2\left(S^{2}-S_{z}^{2}\right)\right]
+\end{align*}
+The correct option is \textbf{(a)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $L_{x}, L_{y}$ and $L_{z}$ are respectively the $x, y$ and $z$ components of angular momentum operator $L$. The commutator $\left[L_{x} L_{y}, L_{z}\right]$ is equal to
+	\exyear{GATE 2011}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $i \hbar\left(L_{x}^{2}+L_{y}^{2}\right)$
+	\task[\textbf{B.}]$2 i \hbar L_{z}$
+	\task[\textbf{C.}]$i \hbar\left(L_{x}^{2}-L_{y}^{2}\right)$
+	\task[\textbf{D.}]0
+\end{tasks}
+\begin{answer}
+	$\left\lfloor L_{x} L_{y}, L_{z}\right\rfloor=L_{x}\left[L_{y} L_{z}\right]+\left[L_{x}, L_{z}\right] L_{y}=i \hbar\left(L_{x}^{2}-L_{y}^{2}\right)$\\
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Which one of the following commutation relations is NOT CORRECT? Here, symbols have their usual meanings.
+	\exyear{GATE 2013}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left[L^{2}, L_{z}\right]=0$
+	\task[\textbf{B.}]$\left\lfloor L_{x}, L_{y}\right\rfloor=i \hbar L_{z}$
+	\task[\textbf{C.}]$\left[L_{z}, L_{+}\right]=\hbar L_{+}$
+	\task[\textbf{D.}]$\left[L_{z}, L_{-}\right]=\hbar L_{-}$
+\end{tasks}
+\begin{answer}
+The correct option is \textbf{(d)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A spin-half particle is in a linear superposition $0.8|\uparrow\rangle+0.6|\downarrow\rangle$ of its spin-up and spindown states. If $|\uparrow\rangle$ and $|\downarrow\rangle$ are the eigenstates of $\sigma_{z}$, then what is the expectation value up to one decimal place, of the operator $10 \sigma_{z}+5 \sigma_{x}$ ? Here, symbols have their usual meanings.
+	\exyear{GATE 2013}
+\end{minipage}
+\begin{answer}
+\begin{align*}
+	&\psi\rangle=.8|\uparrow\rangle+.6|\downarrow\rangle=0.8\left(\begin{array}{l}
+		1 \\
+		0
+	\end{array}\right)+0.6\left(\begin{array}{l}
+		0 \\
+		1
+	\end{array}\right)=\left(\begin{array}{l}
+		0.8 \\
+		0.6
+	\end{array}\right) \\
+	&\text { Operator } A=10 \sigma_{z}+5 \sigma_{x}=10\left(\begin{array}{cc}
+		1 & 0 \\
+		0 & -1
+	\end{array}\right)+5\left(\begin{array}{ll}
+		0 & 1 \\
+		1 & 0
+	\end{array}\right) \Rightarrow A=\left(\begin{array}{cc}
+		10 & 5 \\
+		5 & -10
+	\end{array}\right) \\
+	&\qquad\langle A\rangle=\langle\psi|A| \psi\rangle=\left(\begin{array}{ll}
+		0.8 & 0.6
+	\end{array}\right)\left(\begin{array}{cc}
+		10 & 5 \\
+		5 & -10
+	\end{array}\right)\left(\begin{array}{l}
+		0.8 \\
+		0.6
+	\end{array}\right)=(8.8-1.2)=7.6
+\end{align*}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $\vec{L}$ is the orbital angular momentum and $\bar{S}$ is the spin angular momentum, then $\vec{L} \cdot \vec{S}$ does not commute with
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $S_{z}$ 
+	\task[\textbf{B.}]$L^{2}$
+	\task[\textbf{C.}]$S^{2}$
+	\task[\textbf{D.}]$(\vec{L}+\vec{S})^{2}$
+\end{tasks}
+\begin{answer}
+The correct option is \textbf{(d)}	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $L_{+}$and $L_{-}$are the angular momentum ladder operators then the expectation value of $\left(L_{+} L_{-}+L_{-} L_{+}\right)$in the state $|l=1, m=1\rangle$ of an atom is $\hbar^{2}$
+	\exyear{GATE 2014}
+\end{minipage}
+\begin{answer}
+	$\left(L_{+} L_{-}+L_{-} L_{+}\right)=2\left(L^{2}-L_{z}^{2}\right)=2\left(l .(l+1)-m^{2}\right) \hbar^{2}=2 \hbar^{2}$	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The Pauli matrices for three spin $-\frac{1}{2}$ particles are $\vec{\sigma}_{1}, \vec{\sigma}_{2}$ and $\vec{\sigma}_{3}$, respectively. The dimension of the Hilbert space required to define an operator $\hat{O}=\vec{\sigma}_{1} \cdot \vec{\sigma}_{2} \times \vec{\sigma}_{3}$ is
+	\exyear{GATE 2015}
+\end{minipage}
+\begin{answer}
+	$\sigma_{2} \times \sigma_{3} \text { has dimension of } 4 \text { and } \sigma_{1} . \sigma_{2} \times \sigma_{3} \text { has dimension of } 2 \times 4=8$
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Let the Hamiltonian for two spin-1/2 particles of equal masses $m$, momenta $\vec{p}_{1}$ and $\vec{p}_{2}$ and positions $\vec{r}_{1}$ and $\vec{r}_{2}$ be $H=\frac{1}{2 m} p_{1}^{2}+\frac{1}{2 m} p_{2}^{2}+\frac{1}{2} m \omega^{2}\left(r_{1}^{2}+r_{2}^{2}\right)+k \vec{\sigma}_{1} \cdot \vec{\sigma}_{2}$, where $\vec{\sigma}_{1}$ and $\vec{\sigma}_{2}$ denote the corresponding Pauli matrices, $\hbar \omega=0.1 \mathrm{eV}$ and $k=0.2 \mathrm{eV}$. If the ground state has net spin zero, then the energy (in $\mathrm{eV}$ ) is
+	\exyear{GATE 2015}
+\end{minipage}
+\begin{answer}
+$H=\frac{1}{2 m} p_{1}^{2}+\frac{1}{2 m} p_{2}^{2}+\frac{1}{2} m \omega^{2}\left(r_{1}^{2}+r_{2}^{2}\right)+k \vec{\sigma}_{1} \cdot \vec{\sigma}_{2}$
+\begin{align*}
+&\vec{\sigma}=\overrightarrow{\sigma_{1}}+\vec{\sigma}_{2} \Rightarrow \vec{\sigma}^{2}=\sigma_{1}^{2}+\sigma_{2}^{2}+2 \vec{\sigma}_{1} \cdot \vec{\sigma}_{2} \Rightarrow 2 \vec{\sigma}_{1} \cdot \vec{\sigma}_{2}=\vec{\sigma}^{2}-\sigma_{1}^{2}-\sigma_{2}^{2} \\
+&\Rightarrow 2 \vec{\sigma}_{1} \cdot \vec{\sigma}_{2}=0-3 I-3 I=-6 I \Rightarrow \vec{\sigma}_{1} \cdot \vec{\sigma}_{2}=-3
+\end{align*}
+Now energy $E=2 \times \frac{3}{2} \hbar \omega+k(-3)=3 \times(0.1)+(0.2)(-3)=-0.3 \mathrm{eV}$	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If $\vec{s}_{1}$ and $\vec{s}_{2}$ are the spin operators of the two electrons of a He atom, the value o $\left\langle\vec{s}_{1} \cdot \vec{s}_{2}\right\rangle$ for the ground state is
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-\frac{3}{2} \hbar^{2}$
+	\task[\textbf{B.}]$-\frac{3}{4} \hbar^{2}$
+	\task[\textbf{C.}] 0
+	\task[\textbf{D.}] $\frac{1}{4} \hbar^{2}$
+\end{tasks}
+\begin{answer}
+	$\vec{s}=\vec{s}_{1}+\vec{s}_{2}, s_{1}=\frac{1}{2}, s_{1}=\frac{1}{2}, s=0,1$\\ $$\left\langle\vec{s}_{1} \cdot \vec{s}_{2}\right\rangle=\frac{s(s+1) \hbar^{2}-s_{1}\left(s_{1}+1\right) \hbar^{2}-s_{2}\left(s_{2}+1\right) \hbar^{2}}{2}$$
+	For $$s=1,\left\langle\vec{s}_{1} \cdot \vec{s}_{2}\right\rangle=\frac{2 \hbar^{2}-\frac{3}{4} \hbar^{2}-\frac{3}{4} \hbar^{2}}{2}=\frac{3}{4} \hbar^{2}$$
+	$$
+	s=0,\left\langle\vec{s}_{1} \cdot \vec{s}_{2}\right\rangle=\frac{0 \hbar^{2}-\frac{3}{4} \hbar^{2}-\frac{3}{4} \hbar^{2}}{2}=-\frac{3}{4} \hbar^{2}
+	$$
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item $\sigma_{x}, \sigma_{y} \text { and } \sigma_{z} \text { are the Pauli matrices. The expression } 2 \sigma_{x} \sigma_{y}+\sigma_{y} \sigma_{x} \text { is equal to }$
+	\exyear{GATE 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $-3 i \sigma_{z}$
+	\task[\textbf{B.}]$-i \sigma_{z}$
+	\task[\textbf{C.}]$i \sigma_{z}$
+	\task[\textbf{D.}]$3 i \sigma_{z}$
+\end{tasks}
+\begin{answer}
+	$2 \sigma_{x} \sigma_{y}+\sigma_{y} \sigma_{x} \Rightarrow \sigma_{x} \sigma_{y}+\sigma_{x} \sigma_{y}+\sigma_{y} \sigma_{x} \Rightarrow \sigma_{x} \sigma_{y}=i \sigma_{z}$\\
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item For the Hamiltonian $H=a_{0} I+\vec{b} \cdot \vec{\sigma}$ where $a_{0} \in R, \vec{b}$ is a real vector, $I$ is the $2 \times 2$ identity matrix, and $\vec{\sigma}$ are the Pauli matrices, the ground state energy is
+	\exyear{GATE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $|b|$
+	\task[\textbf{B.}]$2 a_{0}-|b|$
+	\task[\textbf{C.}]$a_{0}-|b|$
+	\task[\textbf{D.}]$a_{0}$
+\end{tasks}
+\begin{answer}
+$a_{0} I+\vec{b} \cdot \vec{\sigma}=a_{0}\left(\begin{array}{cc}
+	1 & 0 \\
+	0 & 1
+\end{array}\right)+b_{x}\left(\begin{array}{cc}
+	0 & 1 \\
+	1 & 0
+\end{array}\right)+b_{y}\left(\begin{array}{cc}
+	0 & -i \\
+	i & 0
+\end{array}\right)+b_{z}\left(\begin{array}{cc}
+	1 & 0 \\
+	0 & -1
+\end{array}\right)=\left(\begin{array}{cc}
+	a_{0}+b_{z} & b_{x}-i b_{y} \\
+	b_{x}+i b_{y} & a_{0}-b_{z}
+\end{array}\right)$\\
+$H=a_{0} I+\vec{b} \cdot \vec{\sigma}=\left(\begin{array}{cc}
+	a_{0}+b_{z} & b_{x}-i b_{y} \\
+	b_{x}+i b_{y} & a_{0}-b_{z}
+\end{array}\right)$\\
+For eigen value $\left(\begin{array}{cc}a_{0}+b_{z}-\lambda & b_{x}-i b_{y} \\ b_{x}+i b_{y} & a_{0}-b_{z}-\lambda\end{array}\right)=0$
+$$
+\begin{aligned}
+&\left(a_{0}+b_{z}-\lambda\right)\left(a_{0}-b_{z}-\lambda\right)-\left(b_{x}^{2}+b_{y}^{2}\right)=0 \\
+&\lambda_{1}=a_{0}-|b|, \lambda_{1}=a_{0}+|b|
+\end{aligned}
+$$
+The correct option is \textbf{(c)}
+\end{answer}
+\end{enumerate}

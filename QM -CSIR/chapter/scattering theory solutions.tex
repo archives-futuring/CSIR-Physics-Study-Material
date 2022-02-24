@@ -1,0 +1,173 @@
+\chapter{scattering theory solutions}
+\begin{abox}
+	Practice set 1 solutions
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item A free particle described by a plane wave and moving in the positive $z$-direction undergoes scattering by a potential
+		$$
+		V(r)= \begin{cases}V_{0}, & \text { if } r \leq R \\ 0, & \text { if } r>R\end{cases}
+		$$
+		If $V_{0}$ is changed to $2 V_{0}$, keeping $R$ fixed, then the differential scattering cross-section, in the Born approximation.
+		\exyear{NET JUNE 2012}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}]increases to four times the original value
+		\task[\textbf{B.}]increases to twice the original value
+		\task[\textbf{C.}]decreases to half the original value
+		\task[\textbf{D.}]decreases to one fourth the original value
+	\end{tasks}
+\begin{answer}
+	$V(r)= \begin{cases}V_{0}, & r \leq R \\ 0, & r>R\end{cases}$\\
+	$$\text { Low energy scattering amplitude } f(\theta, \phi)=-\frac{m}{2 \pi \hbar^{2}} V_{0} \frac{4}{3} \pi R^{3}$$
+	$$\text { And differential scattering is given by } \frac{d \sigma_{1}}{d \Omega}=|f|^{2}=\left(\frac{2 m V_{0} R^{3}}{3 \hbar^{2}}\right)^{2}$$
+	$$\text { Now } V(r)=2 V_{0} \text { for } r<R \Rightarrow \frac{d \sigma_{2}}{d \Omega}=\left(\frac{2 m\left(2 V_{0}\right) R^{3}}{3 \hbar^{2}}\right)^{2}=4\left(\frac{2 m V_{0} R^{3}}{3 \hbar^{2}}\right)^{2}=4 \frac{d \sigma_{1}}{d \Omega}$$
+	The correct optopn is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The differential cross-section for scattering by a target is given by
+	$$
+	\frac{d \sigma}{d \Omega}(\theta, \phi)=a^{2}+b^{2} \cos ^{2} \theta
+	$$
+	If $N$ is the flux of the incoming particles, the number of particles scattered per unit time is
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{4 \pi}{3} N\left(a^{2}+b^{2}\right)$
+	\task[\textbf{B.}]$4 \pi N\left(a^{2}+\frac{1}{6} b^{2}\right)$
+	\task[\textbf{C.}]$4 \pi N\left(\frac{1}{2} a^{2}+\frac{1}{3} b^{2}\right)$
+	\task[\textbf{D.}]$4 \pi N\left(a^{2}+\frac{1}{3} b^{2}\right)$
+\end{tasks}
+\begin{answer}
+	$$\frac{d \sigma}{d \Omega}=a^{2}+b^{2} \cos ^{2} \theta$$
+	$$\sigma=a^{2} \int_{0}^{\pi} \int_{0}^{2 \pi} \sin \theta d \theta d \phi+b^{2} \int_{0}^{\pi} \cos ^{2} \theta \sin \theta d \theta \int_{0}^{2 \pi} d \phi=a^{2} .4 \pi+b^{2} .2 \pi \times \frac{2}{3}=4 \pi\left[a^{2}+\frac{b^{2}}{3}\right]$$
+	$$\text { Number of particle scattered per unit time, } \sigma \cdot N=4 \pi N\left(a^{2}+\frac{b^{2}}{3}\right)$$
+	The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A particle of energy $E$ scatters off a repulsive spherical potential
+	$$
+	V(r)=\left\{\begin{array}{ccc}
+	V_{0} & \text { for } & r<a \\
+	0 & \text { for } & r \leq a
+	\end{array}\right.
+	$$
+	where $V_{0}$ and $a$ are positive constants. In the low energy limit, the total scattering crosssection is $\sigma=4 \pi a^{2}\left(\frac{1}{k a} \tanh k a-1\right)^{2}$, where $k^{2}=\frac{2 m}{h^{2}}\left(V_{0}-E\right)>0$. In the limit $V_{0} \rightarrow \infty$ the ratio of $\sigma$ to the classical scattering cross-section off a sphere of radius $a$ is
+	\exyear{NET JUNE 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] 4
+	\task[\textbf{B.}]3
+	\task[\textbf{C.}]1
+	\task[\textbf{D.}]$\frac{1}{2}$
+\end{tasks}
+\begin{answer}
+	 $\sigma=4 \pi a^{2}\left[\frac{1}{k a} \tanh k a-1\right]^{2}$\\\\
+	$k a \rightarrow \infty, \tanh k a \rightarrow 1 \Rightarrow \sigma=4 \pi a^{2}\left(\frac{1}{k a}-1\right)^{2}$\\\\
+	 and $k a \rightarrow \infty, \lim _{k a \rightarrow \infty} \sigma_{H}=4 \pi a^{2}$\\\\
+	classically $\sigma_{c}=\pi a^{2} \quad \therefore \frac{\sigma_{H}}{\sigma_{c}}=4$\\
+	The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A particle is scattered by a central potential $V(r)=V_{0} r e^{-\mu r}$, where $V_{0}$ and $\mu$ are positive constants. If the momentum transfer $\vec{q}$ is such that $q=|\vec{q}| \gg \mu$, the scattering crosssection in the Born approximation, as $q \rightarrow \infty$, depends on $q$ as
+	[You may use $\left.\int x^{n} e^{a x} d x=\frac{d^{n}}{d a^{n}} \int e^{a x} d x\right]$
+	\exyear{NET DEC 2016}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}]$q^{-8}$
+	\task[\textbf{B.}]$q^{-2}$
+	\task[\textbf{C.}]$q^{2}$
+	\task[\textbf{D.}]$q^{6}$
+\end{tasks}
+\begin{answer}
+ The form factor is given for high energy as $q \rightarrow \infty$ \\
+ \begin{align*}
+ &f(\theta, \phi)=\frac{-2 m}{\hbar^{2} q} \int_{0}^{\infty} r V(r) \sin q r d r=\frac{-2 m}{\hbar^{2} q} \int_{0}^{\infty} r^{2} V_{0} e^{-\mu v} \sin q r d r\\
+ 	&=\frac{-2 m}{\hbar^{2} q} V_{0} \int_{0}^{\infty} r^{2} e^{-\mu r} \frac{e^{i q r}-e^{-i q r}}{2 i} d r=\frac{m V_{0}}{\hbar^{2} q} i\left[\int_{0}^{\infty} r^{2} e^{-r(\mu-i q)} d r-\int_{0}^{\infty} r^{2} e^{-r(\mu+i q)} d r\right] \\
+ 	&=\frac{m V_{0} i}{\hbar^{2} q}\left[\frac{\lfloor 2}{(\mu-i q)^{3}}-\frac{\lfloor 2}{(\mu+i q)^{3}}\right]=\frac{2 m V_{0} i}{\hbar^{2} q}\left[\frac{\left((\mu+i q)^{3}-(\mu-i q)^{3}\right)}{(\mu+i q)^{3}(\mu-i q)^{3}}\right] \\
+ 	&=\frac{2 m V_{0}}{\hbar^{2} q} \frac{i\left[\left(\mu^{3}-i q^{3}+3 \mu^{2} i q-3 \mu q^{2}\right)-\left(\mu^{3}+i q^{3}-3 \mu^{2} i q-3 \mu q^{2}\right)\right]}{\left(\mu^{2}+q^{2}\right)^{3}}\\
+ 	&=\frac{2 m V_{0} i}{\hbar^{2} q}\left[\frac{6 \mu^{2} i q-2 i q^{3}}{\left(\mu^{2}+q^{2}\right)^{3}}\right]=\frac{2 m V_{0}}{\hbar^{2} q}\left[\frac{2 q^{3}-6 \mu^{2} q}{\left(\mu^{2}+q^{2}\right)^{3}}\right] \\
+ 	&\propto \frac{q^{3}}{q}\left(2-\frac{6 \mu^{2}}{q^{2}}\right) \times \frac{1}{q^{6}\left(\frac{\mu^{2}}{q^{2}}+1\right)^{3}} \propto q^{2} \times \frac{1}{q^{6}} \propto \frac{1}{q^{4}} \quad\left(\because \frac{\mu^{2}}{q^{2}}<<1\right) \\
+ 	&\sigma(\theta) \propto|f(\theta)|^{2} \propto\left(q^{-4}\right)^{2}=q^{-8}
+ \end{align*}
+ The correct option is \textbf{(a)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider the potential
+	$$
+	V(\vec{r})=\sum_{i} V_{0} a^{3} \delta^{(3)}\left(\vec{r}-\vec{r}_{i}\right)
+	$$
+	where $\vec{r}_{i}$ are the position vectors of the vertices of a cube of length $a$ centered at the origin and $V_{0}$ is a constant. If $V_{0} a^{2}<<\frac{\hbar^{2}}{m}$, the total scattering cross-section, in the lowenergy limit, is
+	\exyear{NET JUNE 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $16 a^{2}\left(\frac{m V_{0} a^{2}}{\hbar^{2}}\right)$
+	\task[\textbf{B.}]$\frac{16 a^{2}}{\pi^{2}}\left(\frac{m V_{0} a^{2}}{\hbar^{2}}\right)^{2}$
+	\task[\textbf{C.}]$\frac{64 a^{2}}{\pi}\left(\frac{m V_{0} a^{2}}{\hbar^{2}}\right)^{2}$
+	\task[\textbf{D.}]$\frac{64 a^{2}}{\pi^{2}}\left(\frac{m V_{0} a^{2}}{\hbar^{2}}\right)$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		V(r) &=\sum_{i} V_{0} a^{3} \delta^{3}\left(\vec{r}-\vec{r}_{i}\right) \\
+		&=\sum_{i} V_{0} a^{3} \delta\left(x-x_{i}\right) \delta\left(y-y_{i}\right) \delta\left(z-z_{i}\right)
+	\end{align*}
+	where $x_{i}, y_{i}, z_{i}$ are co-ordinate at 8 corner cube whose center is at origin.\\\\
+	$
+	f(\theta)=-\frac{m}{2 \pi \hbar^{2}} \int V(r) d^{3} r
+	$
+	\begin{align*}
+		&=\frac{-m}{2 \pi \hbar^{2}} V_{0} a^{3} \int_{-\infty}^{\infty} \int \sum_{i=1}^{8} \delta\left(x-x_{i}\right) \delta\left(y-y_{i}\right) \delta\left(z-z_{i}\right) d x d y d z \\
+		&=\frac{-m}{2 \pi \hbar^{2}} V_{0} a^{3}[1+1+1+1+1+1+1+1] \\
+		&=\frac{-8 m V_{0} a^{3}}{2 \pi \hbar^{2}}=\frac{-4 m V_{0} a^{3}}{\pi \hbar^{2}}
+	\end{align*}
+	$\text { total scattering cross section } \sigma=\int|f(\theta)|^{2} \sin \theta d \theta d \phi$\\
+	$\text { Differential scattering cross section } D(\theta)=|f(\theta)|^{2}=\frac{16 m^{2} V_{0}^{2} a^{6}}{\pi^{2} \hbar^{4}}$\\
+	\begin{align*}
+		&=\frac{16 m^{2} V_{0}^{2} a^{6}}{\pi^{2} \hbar^{4}} 4 \pi=\frac{64 a^{2}}{\pi}\left(\frac{m^{2} V_{0}^{2} a^{4}}{h^{4}}\right) \\
+		&\sigma=\frac{64 a^{2}}{\pi}\left(\frac{m V_{0} a^{2}}{\hbar^{2}}\right)^{2}
+	\end{align*}
+	The correct option is \textbf{(c)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item A phase shift of $30^{\circ}$ is observed when a beam of particles of energy $0.1 \mathrm{MeV}$ is scattered by a target. When the beam energy is changed, the observed phase shift is $60^{\circ}$. Assuming that only $s$-wave scattering is relevant and that the cross-section does not change with energy, the beam energy is
+	\exyear{NET DEC 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $0.4 \mathrm{MeV}$
+	\task[\textbf{B.}]$0.3 \mathrm{MeV}$
+	\task[\textbf{C.}]$0.2 \mathrm{MeV}$
+	\task[\textbf{D.}]$0.15 \mathrm{MeV}$
+\end{tasks}
+\begin{answer}
+	$\sigma=\frac{4 \pi}{k^{2}} \sum_{l=0}^{\infty}(2 l+1) \sin ^{2}\left(\delta_{l}\right)$\\
+	only $s$-wave scattering is relevant $l=0$
+	$$
+	k=\sqrt{\frac{2 m E}{\hbar^{2}}}
+	$$
+	$$\sigma=\frac{4 \pi}{k^{2}} \sin ^{2} \delta_{0}=\frac{4 \pi \hbar^{2}}{2 m E} \sin ^{2} \delta_{0}$$
+	$\text { According to problem } \frac{\sin ^{2} 30}{0.1 \mathrm{MeV}}=\frac{\sin ^{2} 60}{E} \Rightarrow E=\frac{\sin ^{2} 60}{\sin ^{2} 30} \times 0.1 \mathrm{MeV}=0.3 \mathrm{MeV}$\\
+	The correct option is \textbf{(b)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item The differential scattering cross-section $\frac{d \sigma}{d \Omega}$ for the central potential $V(r)=\frac{\beta}{r} e^{-\mu r}$, where $\beta$ and $\mu$ are positive constants, is calculated in thee first Born approximation. Its dependence on the scattering angle $\theta$ is proportional to ( $A$ is a constant below)
+	\exyear{NET JUNE 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\left(A^{2}+\sin ^{2} \frac{\theta}{2}\right)$
+	\task[\textbf{B.}]$\left(A^{2}+\sin ^{2} \frac{\theta}{2}\right)^{-1}$
+	\task[\textbf{C.}]$\left(A^{2}+\sin ^{2} \frac{\theta}{2}\right)^{-2}$
+	\task[\textbf{D.}]$\left(A^{2}+\sin ^{2} \frac{\theta}{2}\right)^{2}$
+\end{tasks}
+\begin{answer}
+	$f(\theta) \propto \int_{0}^{\infty} V(r) \sin k r d r \Rightarrow D(\theta) \propto|f(\theta)|^{2}$
+	\begin{align*}
+		&f(\theta) \propto \frac{1}{k} \int_{0}^{\infty} \beta \frac{e^{-\mu r}}{r} r \sin k r d r \\
+		&f(\theta) \propto \frac{1}{k} \int_{0}^{\infty} \frac{e^{-\mu r}}{r} r\left(\frac{e^{i k r}-e^{-i k r}}{2 i}\right) d r \Rightarrow \frac{1}{2 i k} \int_{0}^{\infty} e^{-\mu r} e^{i k r} d r-\int_{0}^{\infty} e^{-\mu r} e^{-i k r} d r \\
+		&\Rightarrow \frac{1}{2 i k}\left(\int_{0}^{\infty} e^{-r(\mu-i k)} d r-\int e^{-r(\mu+i k r)} d r\right) \Rightarrow \frac{1}{2 i k}\left[\frac{\mu+i k-\mu+i k}{\mu^{2}+k^{2}}\right]=\frac{2 i k}{2 i k}\left(\mu^{2}+k^{2}\right)^{-1} \\
+		&f(\theta) \propto \frac{1}{\left(\mu^{2}+k^{2}\right)}, \quad D(\theta)=\left(\frac{1}{\mu^{2}+k^{2}}\right)^{2}
+	\end{align*}
+	$D(\theta)=\left(\mu^{2}+k^{2}\right)^{-2}$, where $k \propto \sin \frac{\theta}{2}$\\
+	$D(\theta) \propto\left(\mu^{2}+\sin ^{2} \frac{\theta}{2}\right)^{-2}$ or $D(\theta)=\left(A^{2}+\sin ^{2} \frac{\theta}{2}\right)^{-2}$\\
+	The correct option is \textbf{(c)}
+\end{answer}
+\end{enumerate}
