@@ -1004,18 +1004,385 @@ T&=2 \pi \sqrt{\frac{\ell}{g}} \sqrt{\frac{M}{M+m}}\notag
 	\text{Say, }m_{2} \ddot{x}_{2}-m_{2} g=0
 	\end{align*}
 \end{answer}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\item Set up the lagrangian for the following system, the disk also have mass ' $m$ '.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=6cm,width=2.7cm]{Lagrangian 11}
+\end{figure}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=6cm,width=4cm]{Lagrangian 04}
+	\end{figure}
+		Let $\theta$ be the angle one disc has turned away from one equilibrium position. Then extension of the spring $x_{1}=a \theta$\\
+	Mass $m$ is lowered by a distance $x_{2}=\mathrm{a} \theta$
+	\begin{align*}
+\therefore \quad \mathrm{T} &=\frac{1}{2} m(a \dot{\theta})^{2}+\frac{1}{2} \mathrm{I} \dot{\theta}^{2} \\ \mathrm{~V} &=-\mathrm{mga} \theta+\frac{1}{2} k \theta^{2} a^{2} \\ \mathrm{~L} &=\frac{1}{2} m a^{2} \dot{\theta}^{2}+\frac{1}{4} m a^{2} \dot{\theta}^{2}+m g a \theta-\frac{1}{2} k a^{2} \theta^{2} \\
+\text{Eq. of motion is}&
+\frac{d}{d t}\left(\frac{\partial L}{\partial \theta}\right)-\frac{\partial L}{\partial \theta}=0\\
+\Rightarrow \quad &m a^{2} \ddot{\theta}+\frac{1}{2} m a^{2} \ddot{\theta}-m g a+k a^{2} \theta=0\\
+\Rightarrow \quad &\frac{3}{2} m a \ddot{\theta}-m g+k a \theta=0\\
+\Rightarrow \quad &\ddot{\theta}-\frac{2}{3} g / a+\frac{2}{3}\left(\frac{k}{m}\right) \theta=0
+	\end{align*}
+\end{answer}
+\item Two blocks connected by a spring of spring constant $k$ are free to slide frictionlessly along a horizontal surface, as shown in figure. The unstretched length of the spring is $a$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=1cm,width=6cm]{Lagrangian 06}
+\end{figure}
+Two masses connected by a spring sliding horizontally along a frictionless surface.\\
+(a) Identify a set of generalized coordinates and write the Lagrangian.
+\begin{answer}
+	As generalized coordinates I choose $X$ and $u$, where $X$ is the position of the right edge of the block of mass $M$, and $X+u+a$ is the position of the left edge of the block of mass $m$, where $a$ is the unstretched length of the spring. Thus, the extension of the spring is $u$. The Lagrangian is then
+	\begin{align*}
+	L&=\frac{1}{2} M \dot{X}^{2}+\frac{1}{2} m(\dot{X}+\dot{u})^{2}-\frac{1}{2} k u^{2}=\frac{1}{2}(M+m) \dot{X}^{2}+\frac{1}{2} m \dot{u}^{2}+m \dot{X} \dot{u}-\frac{1}{2} k u^{2}\\
+	&\text{(b) Find the equation of motion.}\\
+	&\text{The canonical momenta are}\\
+	p_{X} &\equiv \frac{\partial L}{\partial \dot{X}}=(M+m) \dot{X}+m \dot{u}, p_{u} \equiv \frac{\partial L}{\partial \dot{u}}=m(\dot{X}+\dot{u})\\
+	&\text{The corresponding equations of motion are then}\\
+	&\dot{p}_{X}=F_{X}=\frac{\partial L}{\partial X} \quad \Rightarrow \quad(M+m) \ddot{X}+m \ddot{u}=0 \\
+	&\dot{p}_{u}=F_{u}=\frac{\partial L}{\partial u} \quad \Rightarrow \quad m(\ddot{X}+\ddot{u})=-k u .
+	\end{align*}
+	(c) Find all conserved quantities.\\
+	There are two conserved quantities. One is $p_{X}$ itself, as is evident from the fact that $L$ is cyclic in $X$. This is the conserved 'charge' $\Lambda$ associated with the continuous symmetry $X \rightarrow X+\zeta$. i.e. $\Lambda=p_{X}$. The other conserved quantity is the Hamiltonian $H$, since $L$ is cyclic in $t$. Furthermore, because the kinetic energy is homogeneous of degree two in the generalized velocities, we have that $H=E$, with
+	\begin{align*}
+	E&=T+U=\frac{1}{2}(M+m) \dot{X}^{2}+\frac{1}{2} m \dot{u}^{2}+m \dot{X} \dot{u}+\frac{1}{2} k u^{2} .\\
+	\intertext{It is possible to eliminate $\dot{X}$, using the conservation of $\Lambda$ :}
+	\dot{X}&=\frac{\Lambda-m \dot{u}}{M+m} .
+	\intertext{This allows us to write}
+	E&=\frac{\Lambda^{2}}{2(M+m)}+\frac{M m \dot{u}^{2}}{2(M+m)}+\frac{1}{2} k u^{2}
+	\end{align*}
+	(d) Find a complete solution to the equations of motion. As there are two degrees of freedom, your solution should involve 4 constants integration. You need not match initial conditions and you need not choose the quantities in part (c) to be among the constants.\\
+	Using conservation of $\Lambda$, we may write $\ddot{X}$ in terms of $\ddot{x}$, in which case
+	\begin{align*}
+	\frac{M m}{M+m} \ddot{u}&=-k u \Rightarrow u(t)=A \cos (\Omega t)+B \sin (\Omega t)\\
+\text{}\Omega&=\sqrt{\frac{(M+m) k}{M m}} .
+\intertext{	For the $X$ motion, we integrate equation above, obtaining}
+X(t)&=X_{0}+\frac{\Lambda t}{M+m}-\frac{m}{M+m}(A \cos (\Omega t)-A+B \sin (\Omega t))
+\intertext{There are thus four constant: $X_{0}, \Lambda, A$ and $B$. Note that conservation of energy says}
+E&=\frac{\Lambda^{2}}{2(M+m)}+\frac{1}{2} k\left(A^{2}+B^{2}\right)
+	\end{align*}
+	\textbf{Alternate solution :} We could choose $X$ as the position of the left block and $x$ as the position of the right block. In this case,
+	\begin{align*}
+	L&=\frac{1}{2} M \dot{X}^{2}+\frac{1}{2} m \dot{x}^{2}-\frac{1}{2} k(x-X-b)^{2} .
+\intertext{	Here, $b$ includes the unstretched length $a$ of the spring, but may also include the size of the blocks if say, $X$ and $x$ are measured relative to the blocks midpoint. The canonical momenta are}
+p_{X}&=\frac{\partial L}{\partial \dot{X}}=M \dot{X}, \quad p_{x}=\frac{\partial L}{\partial \dot{x}}=m \dot{x}
+\intertext{The equation of motion are then}
+\dot{p}_{X}&=F_{X}=\frac{\partial L}{\partial X} \quad \Rightarrow \quad M \ddot{X}=k(x-X-b) \\
+\dot{p}_{x}&=F_{x}=\frac{\partial L}{\partial x} \quad \Rightarrow \quad m \ddot{x}=-k(x-X-b) .
+\intertext{The one parameter family which leaves $L$ invariant is $X \rightarrow X+\zeta$ and $x \rightarrow x+\zeta$, i.e. simultaneous and identical displacement of both of the generalized coordinates. Then}
+\Lambda&=M \dot{X}+m \dot{x}
+\intertext{which is simply the $x$-components of the total momentum. Again, the energy is conserved.}
+E&=\frac{1}{2} M \dot{X}^{2}+\frac{1}{2} m \dot{x}^{2}+\frac{1}{2} k(x-X-b)^{2} .
+\intertext{We can combine the equations of motion to yield}
+M m \frac{d^{2}}{d t^{2}}(x-X-b)&=-k(M+m)(x-X-b),
+\intertext{which yields}
+x(t)-X(t)&=b+A \cos (\Omega t)+B \sin (\Omega t)
+\intertext{From the conservation of $\Lambda$, we have}
+M X(t)+m x(t)&=\Lambda t+C
+\intertext{where $C$ is another constant. Thus, we have the motion of the system in terms of four constant: $A, B, \Lambda$ and $C$ }
+X(t)&=-\frac{m}{M+m}(b+A \cos (\Omega t)+B \sin (\Omega t))+\frac{\Lambda t+C}{M+m}\\
+x(t)&=-\frac{M}{M+m}(b+A \cos (\Omega t)+B \sin (\Omega t))+\frac{\Lambda t+C}{M+m}
+	\end{align*}
+\end{answer}
+\item A particle of charge $e$ moves in three dimensions in the presence of a uniform magnetic field $B=B_{0} \hat{z}$ and a uniform electric field $E=E_{0} \hat{x}$. The potential energy is
+$$
+U(r, \dot{r})=-e E_{0} x-\frac{e}{c} B_{0} x \dot{y},
+$$
+where we have chosen the gauge $A=B_{0} x \hat{y}$.\\
+(a) Find the canonical momenta $p_{x}, p_{y}$ and $p_{z}$\\
+(b) Identify all conserved quantities\\
+(c) Find a complete, general solution for the motion of the system $\{x(t), y(t), x(t)\}$.
+\begin{answer}
+	\begin{align*}
+	\text{( The Lagrangian is )}L&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)+\frac{e}{c} B_{0} x \dot{y}+e E_{0} x. 
+	\intertext{The canonical momenta are}
+	p_{x}=\frac{\partial L}{\partial \dot{x}}&=m \dot{x} ; \quad p_{y}=\frac{\partial L}{\partial \dot{y}}=m \dot{y}+\frac{e}{c} B_{0} x ; \quad p_{x}=\frac{\partial L}{\partial \dot{z}}=m \dot{z}
+\intertext{	(b) There are three conserved quantities. First is the momentum $p_{y}$, since $F_{y}=\frac{\partial L}{\partial y}=0 .$ Second is the momentum $p_{z}$, since $F_{y}=\frac{\partial L}{\partial z}=0$. The third conserved quantity is the Hamiltonian, since $\frac{\partial L}{\partial t}=0$. We have }
+H&=p_{x} \dot{x}+p_{y} \dot{y}+p_{z} \dot{z}-L\\
+\Rightarrow \quad H&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-e E_{0} x\\
+\text{(c) The equations of motion are }\ddot{x}-\omega_{c} \dot{y}&=\frac{e}{m} E_{0} ; \ddot{y}+\omega_{c} \dot{x}=0 ; \ddot{z}=0.
+\intertext{The second equation can be integrated once to yield $\dot{y}=\omega_{c}\left(x_{0}-x\right)$, where $x_{0}$ is a constant. Substituting this into the first equation gives}
+\ddot{x}+\omega_{c}^{2} x&=\omega_{c}^{2} x_{0}+\frac{e}{m} E_{0} .
+\intertext{This is the equation of a constantly forced harmonic oscillator. We can therefore write the generalsolution as}
+x(t)&=x_{0}+\frac{e E_{0}}{m \omega_{c}^{2}}+A \cos \left(\omega_{c} t+\delta\right) \\
+y(t)&=y_{0}-\frac{e E_{0}}{m \omega_{c}} t-A \sin \left(\omega_{c} t+\delta\right) \\
+z(t)&=z_{0}+\dot{z}_{0} t
+\intertext{Note that there are six constants, $\left\{A, \delta, x_{0}, y_{0}, z_{0}, \dot{z}_{0}\right\}$, are required for the general solution of three coupled second order ODEs.}
+	\end{align*}
+\end{answer}
+\item A point mass $m$ slides frictionlessly, under the influence of gravity, along a massive ring of radius $a$ and mass $M$. The ring is affixed by horizontal springs to two fixed vertical surfaces, as depicted in figure. Allmotion is within the plane of the figure.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2cm,width=6cm]{Lagrangian 07}
+\end{figure}
+A point mass $m$ slides frictionlessly along a massive ring of radius $a$ and mass $M$, which is affixed by horizontal springs to two fixed vertical surfaces.
+\begin{answer}
+	(a) Choose as generalized coordinates the horizontal displacement $X$ of the center of the ring with respect to equilibrium, and the angle $\theta$ a radius to the mass $m$ makes with respect to the vertical (see figure). You may assume that at $X=0$ the spring are both unstretched. Find the Lagrangian $L(X, \theta, \dot{X}, \dot{\theta}, t)$.\\
+	The coordinates of the mass point are $x=X+a \sin \theta, y=-a \cos \theta$.\\
+	The kinetic energy is
+	\begin{align*}
+T &=\frac{1}{2} M \dot{X}^{2}+\frac{1}{2} m(\dot{X}+a \cos \theta \dot{\theta})^{2}+\frac{1}{2} m a^{2} \sin ^{2} \theta \dot{\theta}^{2} \\ &=\frac{1}{2}(M+m) \dot{X}^{2}+\frac{1}{2} m a^{2} \dot{\theta}^{2}+m a \cos \theta \dot{X} \dot{\theta} .\\
+\text{The potential energy is }U&=k X^{2}-m g a \cos \theta.\\
+\text{Thus, the Lagrangian is}&=\frac{1}{2}(M+m) \dot{X}^{2}+\frac{1}{2} m a^{2} \dot{\theta}^{2}+m a \cos \theta \dot{X}-k X^{2}+m g a \cos \theta.
+\intertext{(b) Find the generalized momenta $p_{X}$ and $p_{\theta}$, and the generalized forces $F_{X}$ and $F_{\theta}$}
+\text{We have }p_{X}&=\frac{\partial L}{\partial \dot{X}}=(M+m) \dot{X}+m a \cos \theta \dot{\theta}, p_{\theta}=\frac{\partial L}{\partial \dot{\theta}}=m a^{2} \dot{\theta}+m a \cos \theta \dot{X}.\\
+\text{For the forces, }F_{X}&=\frac{\partial L}{\partial X}=-2 k X, \quad F_{\theta}=\frac{\partial L}{\partial \theta}=-m a \sin \theta \dot{X} \dot{\theta}-m g a \sin \theta.
+\intertext{(c) Derive the equations o motion.}
+\text{The equations of motion arc }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}_{\sigma}}\right)=\frac{\partial L}{\partial q_{\sigma}}, \text{for each generalized coordinate }q_{\sigma} .\text{ For $X$ we have }\\
+(M+m) \ddot{X}+m a \cos \theta \ddot{\theta}-m a \sin \theta \dot{\theta}^{2}&=-2 k X .\\
+\text{For }\theta, m a^{2} \ddot{\theta}+m a \cos \theta \ddot{X}&=-m g a \sin \theta.
+\intertext{(d) Find expression for all conserved $_{1}$ uantities.}
+\intertext{Horizontal and vertical translationa $^{1}$ symmetries are broken by the springs and by gravity, respectively. The remaining symmetry is that of time translation. From $\frac{d H}{d t}=-\frac{\partial L}{\partial t}$, we have that $H=\sum_{\sigma} p_{\sigma} \dot{q}_{\sigma}-L$ is conserved. For this problem, the kinetic energy is a homogeneous function of degree 2 in the generalized velocities, and the potential is velocity-independent. Thus,}
+H=T+U&=\frac{1}{2}(M+m) \dot{X}^{2}+\frac{1}{2} m a^{2} \dot{\theta}^{2}+m a \cos \theta \dot{X} \dot{\theta}+k X^{2}-m g a \cos \theta
+	\end{align*}
+\end{answer}
+\item A point particle of mass $m$ moves in three dimensions in a helical potential
+$$
+U(\rho, \phi, z)=U_{0} \rho \cos \left(\phi-\frac{2 \pi z}{b}\right)
+$$
+We call $b$ the pitch of the helix.
+\begin{answer}
+	\begin{align*}
+	\intertext{(a) Write down the Lagrangian, choosing $(\rho, \phi, z)$ as generalized coordinates.}
+\text{	The Lagrangian is }L&=\frac{1}{2} m\left(\dot{\rho}^{2}+\rho^{2} \dot{\phi}^{2}+\dot{z}^{2}\right)-U_{0} \rho \cos \left(\phi-\frac{2 \pi z}{b}\right)
+\intertext{	(b) Find the equation of motion.}
+	\text{Clearly }p_{\rho}&=m \dot{\rho} ; p_{\phi}=m \rho^{2} \dot{\phi} ; p_{z}=m \dot{z},\text{ and}\\
+	F_{\rho}=m \rho \dot{\phi}^{2}-U_{0} \cos \left(\phi-\frac{2 \pi z}{b}\right), F_{\phi}&=U_{0} \rho \sin \left(\phi-\frac{2 \pi z}{b}\right), F_{z}=-\frac{2 \pi U_{0}}{b} \rho \sin \left(\phi-\frac{2 \pi z}{b}\right) \text {. }
+\intertext{	Thus, the equation of motion are}
+	m \ddot{\rho}&=m \rho \dot{\phi}^{2}-U_{0} \cos \left(\phi-\frac{2 \pi z}{b}\right) \\
+	m \rho^{2} \ddot{\phi}+2 m \rho \dot{\rho} \dot{\phi}&=U_{0} \rho \sin \left(\phi-\frac{2 \pi z}{b}\right)\\
+	m \ddot{z}&=-\frac{2 \pi U_{0}}{b} \rho \sin \left(\phi-\frac{2 \pi z}{b}\right)
+	\intertext{(c) Show that there exists a continuous one-parameter family of coordinate transformations which leaves $L$ invariant. Find the associated conserved quantity, $\Lambda$. Is anything else conserved?}
+	\intertext{Due to the helical symmetry, we have that $\phi \rightarrow \phi+\zeta, z \rightarrow z+\frac{b}{2 \pi} \zeta$ is such a continuous one-parameter}
+	\intertext{family of coordinate transformations. Since it leaves the combination $\phi-\frac{2 \pi z}{\dot{b}}$ unchanged, we have that $\frac{d L}{d \zeta}=0$, and}
+\Lambda &=\left.p_{\rho} \frac{\partial \rho}{\partial \zeta}\right|_{\zeta=0}+\left.p_{\phi} \frac{\partial \phi}{\partial \zeta}\right|_{\zeta=0}+\left.p_{z} \frac{\partial z}{\partial \zeta}\right|_{\zeta=0} \\ &=p_{\phi}+\frac{b}{2 \pi} p_{z} \\ &=m \rho^{2} \dot{\phi}+\frac{m b}{2 \pi} \dot{z}
+\intertext{is the conserved Noether 'charge'. The other conserved quantity is the Hamiltonian,}
+H&=\frac{1}{2} m\left(\dot{\rho}^{2}+\rho^{2} \dot{\phi}^{2}+\dot{z}^{2}\right)+U_{0} \rho \cos \left(\phi-\frac{2 \pi z}{b}\right)
+\intertext{Note that $H=T+U$ because $T$ is homogeneous of degree 2 and $U$ is homogeneous of degree 0 in the generalized velocities.} 
+	\end{align*}
+\end{answer}
+\textbf{Statement for Linked Answer Q.12 and Q.13 :}\\
+A particle of mass $m$ is constrained to move in a vertical plane along a trajectory given by $x=\mathrm{A} \cos \theta$, $y=\mathrm{A} \sin \theta$, where $\mathrm{A}$ is a constant.
+\item The Lagrangian of the particle is
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{1}{2} m \mathrm{~A}^{2} \dot{\theta}^{2}-m g \mathrm{~A} \cos \theta$
+	\task[\textbf{b.}]$\frac{1}{2} m \mathrm{~A}^{2} \dot{\theta}^{2}-m g \mathrm{~A} \sin \theta$
+	\task[\textbf{c.}] $\frac{1}{2} m \mathrm{~A}^{2} \dot{\theta}^{2}$
+	\task[\textbf{d.}] $\frac{1}{2} m \mathrm{~A}^{2} \dot{\theta}^{2}+m g \mathrm{~A} \cos \theta$
+\end{tasks}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4.2cm,width=4.5cm]{Lagrangian 08}
+	\end{figure}
+	\begin{align*}
+	L&=T-V\\
+	L&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)-m g y^{x}\\
+	x&=A \cos \theta, \quad y=A \sin \theta\\
+	\dot{x}&=-A \sin \theta \dot{\theta}, \quad \dot{y}=A \cos \theta \dot{\theta}\\
+	 \therefore \quad L &=\frac{1}{2} m\left(A^{2} \sin ^{2} \theta \dot{\theta}^{2}+A^{2} \cos ^{2} \theta \dot{\theta}^{2}\right)-m g A \cos \theta \\ L &=\frac{1}{2} m A^{2} \dot{\theta}^{2}-m g A \cos \theta 
+	\end{align*}
+	 Correct answer is option \textbf{(a)}
+\end{answer}
+\item The equation of motion of the particle is
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\ddot{\theta}-\frac{g}{\mathrm{~A}} \cos \theta=0$
+	\task[\textbf{b.}]$\ddot{\theta}+\frac{g}{\mathrm{~A}} \sin \theta=0$
+	\task[\textbf{c.}] $\ddot{\theta}=0$
+	\task[\textbf{d.}]  $\ddot{\theta}-\frac{g}{\mathrm{~A}} \sin \theta=0$
+\end{tasks}
+\begin{answer}
+	Equation of motion
+	\begin{align*}
+	\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\frac{\partial L}{\partial \theta}&=0\\
+	\frac{d}{d t}\left(m A^{2} \dot{\theta}\right)-m g A \sin \theta&=0\\
+	m A^{2} \ddot{\theta}-m g A \sin \theta&=0\\
+	\ddot{\theta}-\frac{g}{A} \sin \theta&=0
+	\end{align*}
+	Correct answer is option \textbf{(d)}
+\end{answer}
+\item A particle of mass $M$ is attached to two identical springs of unstretched length $L_{0}$ and spring constant $k$. The entire system is placed on a horizontal frictionless table as shown in the figure. The mass is slightly puled along the surface of the table and perpendicular to the lengths of the springs and then let go. Using the Lagrangian equation (s) of motion, show whether the mass will execute simple harmonic motion. If so, find the time period.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=7cm]{Lagrangian 09}
+\end{figure}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.5cm,width=6cm]{Lagrangian 10}
+	\end{figure}
+	\begin{align*}
+\text{	Kinetic energy }T&=\frac{1}{2} m \dot{x}^{2}\\
+\text{	potential energy }V&=\frac{1}{2} k\left(\sqrt{\ell_{0}^{2}+x^{2}}-\ell_{0}\right)^{2}
+\intertext{Number gravitational potential energy term because motion is taking place in horizontal plane.}
+\text{Lagrangian }L&=T-V=\frac{1}{2} m \dot{x}^{2}-\frac{1}{2} k\left(\sqrt{\ell_{0}^{2}+x^{2}}-\ell_{0}\right)^{2}
+\intertext{Lagrange's equation}
+&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\frac{\partial L}{\partial x}=0 \\
+&m \ddot{x}+2 k\left(\sqrt{\ell_{0}^{2}+x^{2}}-\ell_{0}\right) \frac{x}{\sqrt{\ell_{0}^{2}+x^{2}}}=0 \\
+&m \ddot{x}+2 k x\left(1-\frac{\ell_{0}}{\sqrt{\ell_{0}^{2}+x^{2}}}\right)=0\\
+\text{for }&x<<\ell_{0} \quad m \ddot{x}+2 k x\left(1-\left(1+\frac{x^{2}}{\ell_{0}^{2}}\right)^{-1 / 2}\right)=0\\
+m \ddot{x}+2 k x\left(1-1+\frac{x^{2}}{2 \ell_{0}^{2}}\right)&=0 \Rightarrow m \ddot{x}+\frac{k x^{3}}{\ell_{0}^{2}}=0 \ddot{x} \alpha-x^{3}
+\intertext{Motion is not simple harmonic.}
+	\end{align*}
+\end{answer}
+\end{enumerate}
+\section{Hamiltonian Mechanics}
+\begin{enumerate}
+	\item Show that $\frac{d H}{d t}=\frac{\partial H}{\partial t}$
+	\begin{answer}
+		\begin{align*}
+		\text{Since }H&=H\left(q_{j}, p_{j}, t\right)\\
+		\therefore \quad \frac{d H}{d t} & =\frac{\partial H}{\partial t}+\sum_{j} \frac{\partial H}{\partial q_{j}}+\sum_{j} \frac{\partial H}{\partial p_{j}} \dot{p}_{j} \Rightarrow \frac{d H}{d t}=\frac{\partial H}{\partial t}+\sum_{j}\left(-\dot{p}_{j} \dot{q}_{j}\right)+\sum_{k}\left(\dot{q}_{j} \dot{p}_{j}\right) \\
+		\therefore \quad \frac{d H}{d t} & =\frac{\partial H}{\partial t}
+		\end{align*}
+	\end{answer}
+	\item Obtain the Hamiltonian function of a compound pendulum and hence obtain the equation describing its motion.
+	\begin{answer}
+		The pendulum is a harmonic conservative system. It is holonomic because the constraint is on the position of the pendulum in the sense that it must vibrate in its own plane and conservative because the gravitational force acting on it is conservative. With reference to a frame fixed at the point of suspension with downward vertical as the reference line, we have
+		\begin{align*}
+		T&=\frac{1}{2} I \dot{\theta}^{2}
+	\intertext{	where $I$ is the moment of inertia of the pendulum about the axis passing through the point suspension and perpendicular to its plane.}
+		V&=-m g \ell \cos \theta
+	\intertext{	where $\ell$ is the distance of the centre of gravity from the centre of suspension.}
+\therefore & H=T+V=\frac{1}{2} I \dot{\theta}^{2}-m g \ell \cos \theta \\ \text { Now, } & p_{\theta}=\frac{\partial T}{\partial \dot{\theta}}=I \dot{\theta} \\ \therefore & H=\frac{1}{2} I \frac{p_{\theta}^{2}}{I^{2}}-m g \ell \cos \theta \\ \text { Or, } & H=\frac{p_{\theta}^{2}}{I^{2}}-m g \ell \cos \theta \\ & \frac{\partial H}{\partial p_{\theta}}=\frac{p_{\theta}}{I} \text { and } \frac{\partial H}{\partial p_{\theta}}=-m g \ell(-\sin \theta)=m g \ell \sin \theta\\
+\text{By Hamilton's general equations }&\left(\dot{p}_{k}=-\frac{\partial H}{\partial q_{k}}\right.\text{ and }
+\left.\dot{q}_{k}=\frac{\partial H}{\partial p_{k}}\right)\\
+\text{We have here }\dot{p}_{\theta}&=-\frac{\partial H}{\partial \theta}=-m g \ell \sin \theta\text{ and }\dot{\theta}=\frac{\partial H}{\partial p_{\theta}}=\frac{p_{\theta}}{I}
+\intertext{These are the two equations describing the motion of a compound pendulum. However, these two equaions can be combined into a signle equation. Differentiating the second equation and eliminating $\dot{p}_{\theta}$,}
+\intertext{we have}
+\ddot{\theta}&=\frac{\dot{p}_{\theta}}{I} \sin \theta ; \text { or } \ddot{\theta}+\frac{m g I}{I} \sin \theta=0
+\intertext{This is the required single equation that describes the motion of a compound pendulum.}
+		\end{align*}
+	\end{answer}
+	\item A particle moves in the $x y$ plane under the influence of a central force depending on its distance from the origin.\\
+	(a) Set up the Hamiltonian for the system\\
+	(b) Obtain Hamilton's equations of motion
+	\begin{answer}
+	\begin{align}
+	\text{(a) }T \text{(kinetic energy of of the particle) }&=\frac{1}{2 m \dot{r}^{2}}+\frac{1}{2} I \dot{\theta}^{2}=\frac{1}{2} m \dot{r}^{2}+\frac{1}{2} m r^{2} \dot{\theta}^{2}\quad
+	\left(\because I=m r^{2}\right)\notag\\
+\therefore & H=T+V=\frac{1}{2} m \dot{r}^{2}+\frac{1}{2} m r^{2} \dot{\theta}^{2}+V(r)\notag \\ \text { Now, } & p_{r}=\frac{\partial T}{\partial \dot{r}}=m \dot{r} \text { and } p_{\theta}=\frac{\partial T}{\partial \dot{\theta}}=I \dot{\theta}=m r^{2} \dot{\theta} \notag\\ \therefore & H=\frac{1}{2} m \cdot \frac{p_{r}^{2}}{m^{2}}+\frac{1}{2} m r^{2} \frac{p_{\theta}^{2}}{m^{2} r^{4}}+V(r) \notag\\ \text { Or, } & H=\frac{p_{r}^{2}}{2 m}+\frac{p_{\theta}^{2}}{2 m r^{2}}+V(r)\notag
+\intertext{(b) We have from Hamilton's equation,}
+&\left(\dot{p}_{k}=-\frac{\partial H}{\partial q_{k}} \text { and } \dot{q}_{k}=\frac{\partial H}{\partial p_{k}}\right) \notag\\
+&\dot{p}_{r}=-\frac{\partial H}{\partial r}=-\left(-\frac{p_{\theta}^{2}}{m r^{3}}+\frac{\partial V}{\partial r}\right)=\frac{p_{\theta}^{2}}{m r^{3}}-\frac{\partial V}{\partial r} \label{HM-29}\\
+&\dot{r}=\frac{\partial H}{\partial p_{r}}=\frac{p_{r}}{m} \label{HM-30}\\
+&\dot{p}_{\theta}=-\frac{\partial H}{\partial \theta}=0 \label{HM-31}\\
+&\dot{\theta}=\frac{\partial H}{\partial p_{\theta}}=\frac{p_{\theta}}{m r^{2}}\label{HM-32}
+\intertext{Equations (\ref{HM-29}), (\ref{HM-30}), (\ref{HM-31}) and (\ref{HM-32}) are the required Hamilton's equations. However they can be combined to reduce the number of equations describing the motion. Equations (\ref{HM-29}) and (\ref{HM-30}) combine into (after elimination of $\dot{p}_{r}$ )}\notag
+\ddot{r}&=\frac{p_{\theta}^{2}}{m^{2} r^{3}}-\frac{1}{m} \frac{\partial V}{\partial r}=\frac{m^{2} r^{4} \dot{\theta}^{2}}{m^{2} r^{2}}-\frac{1}{m} \frac{\partial V}{\partial r}\notag
+\intertext{and (\ref{HM-31}) and (\ref{HM-32}) combine into (after elimination of $\dot{p}_{\theta}$ ) $\ddot{\theta}=0$ Thus the equations describing motion of the particle are}
+\ddot{r}-r \dot{\theta}^{2}&=-\frac{1}{m} \frac{\partial V}{\partial r} \text { and } \ddot{\theta}=0\notag\\
+\text{Or, }\quad \ddot{r}-r \dot{\theta}^{2}&=-\frac{1}{m} \frac{\partial V}{\partial r}\text{ and }\dot{\theta}=\frac{p_{\theta}}{m r^{2}}=\frac{a \text { constant }}{m r^{2}}\notag\\
+\quad\left(\because p_{\theta}=a\right.&\text{ constant from }\left.(i i i)\right)\text{
+	Or, }\quad m r^{2} \dot{\theta}=a\text{ constant}\notag
+	\end{align}
+	\end{answer}
+	\item The Hamiltonian of a simple pendulum consisting of a mass ' $\mathrm{m}$ ' attached to a massless string of length $l$ is $\mathrm{H}=\frac{\mathrm{p}_{\theta}^{2}}{2 \mathrm{~m} \ell^{2}}+\mathrm{mg} \ell(1-\cos \theta)$. If L denotes the Lagrangian, the value of $\frac{\mathrm{dL}}{\mathrm{dt}}$ is :
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$-\frac{2 g}{\ell} p_{\theta} \sin \theta$
+		\task[\textbf{b.}]$-\frac{\mathrm{g}}{\ell} \mathrm{p}_{\theta} \sin 2 \theta$
+		\task[\textbf{c.}] $\frac{\mathrm{g}}{\ell} \mathrm{p}_{\theta} \cos \theta$
+		\task[\textbf{d.}] $\ell \mathrm{p}_{\theta}^{2} \cos \theta$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\mathrm{H}&=\frac{\mathrm{p}_{\theta}^{2}}{2 \mathrm{~m} \ell^{2}}+\mathrm{mg} \ell(1-\cos \theta) \Rightarrow \mathrm{L}=\sum_{\mathrm{i}} \mathrm{p}_{\mathrm{i}} \dot{\mathrm{q}}_{\mathrm{i}}-\mathrm{H}=\mathrm{p}_{\theta} \dot{\theta}-\mathrm{H}\\
+		\dot{\theta}&=\frac{\partial \mathrm{H}}{\partial \mathrm{p}_{\theta}}=\frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}}\text{ and }\dot{\mathrm{p}}_{\theta}=-\frac{\partial \mathrm{H}}{\partial \theta}=-\mathrm{mg} \ell \sin \theta\\
+		\text{Therefore, }\mathrm{L}&=\mathrm{p}_{\theta} \frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}}-\left[\frac{\mathrm{p}_{\theta}^{2}}{2 \mathrm{~m} \ell^{2}}+\mathrm{mg} \ell(1-\cos \theta)\right] \Rightarrow \mathrm{L}=\frac{\mathrm{p}_{\theta}^{2}}{2 \mathrm{~m} \ell^{2}}-\mathrm{mg} \ell(1-\cos \theta)\\
+		\text{Since, }L&=L\left(\theta, p_{\theta}\right)\text{Since, }
+		 -\frac{L}{1}=\frac{\partial L}{\partial p_{\theta}} \dot{p}_{\theta}+\frac{\partial L}{\partial \theta} \dot{\theta}\\
+		 \text{Now, }\frac{\partial \mathrm{L}}{\partial \mathrm{p}_{\theta}}&=\frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}}, \quad \dot{\mathrm{p}}_{\theta}=-1.1 \mathrm{~g} \ell \sin \theta, \quad \frac{\partial \mathrm{L}}{\partial \theta}=-\mathrm{mg} \ell \sin \theta, \quad \dot{\theta}=\frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}} \\
+		 \text{Then} \frac{\mathrm{dL}}{\mathrm{dt}}&=\frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}}(-\mathrm{mg} \ell \sin \theta)-\mathrm{mg} \ell \quad \mathrm{n} \theta \frac{\mathrm{p}_{\theta}}{\mathrm{m} \ell^{2}}=-\frac{2 \mathrm{~g}}{\ell} \mathrm{p}_{\theta} \sin \theta
+		\end{align*}
+		Correct option is \textbf{(a)}
+	\end{answer}
+	\item The particel of mass $m$ is constrained to move on the surface of a cylinder of radius $a$ under an attractive central force $F$, given by
+	$$
+	F=-k r
+	$$
+	where $k$ is the force constant. This force is proportional to the distance of the particle from the origin
+\begin{answer}
+		The motion of the particle can be described in terms of the cartesian coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ or cylindrical $\rho, \theta, z$ (See figure). The equation of constraint is
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=7cm,width=4.5cm]{Lagrangian 12}
+		\end{figure}
+	\begin{align}
+	\rho^{2}&=x^{2}+y^{2}=a^{2}\label{HM-33-}
+\intertext{	To find velocity in cylinderical coordinates, we can proceed as follows}\notag
+\text{The change in position along }\rho&=d \rho\notag\\
+\text{The change in position along }\theta&=\rho d \theta\notag\\
+\text{The change in position along }z&=d z
+\text{So, }v_{\rho}=\dot{\rho}, v_{\theta}=\rho \dot{\theta}\text{and} v_{z}=\dot{z}\notag\\
+\text{So, we have }v^{2}&=v_{\rho}^{2}+v_{\theta}^{2}+v_{z}^{2}.\notag\\
+\text{The kinetic energy, }T&=\frac{1}{2} m v^{2}=\frac{1}{2}\left(\dot{\rho}^{2}+\rho^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)\notag\\
+\text{Here, }\rho&=a\notag\\
+\text{Therefore, }\dot{\rho}&=0,\text{ and hence,}\notag\\
+T &=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+\dot{z}^{2}\right) \notag\\ \text{and}\quad V &=\frac{1}{2} k r^{2}=\frac{1}{2} k\left(x^{2}+y^{2}+z^{2}\right)=\frac{1}{2} k\left(a^{2}+z^{2}\right)\notag\\
+\therefore \quad L=T-V&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)-\frac{1}{2} k\left(a^{2}+z^{2}\right)\label{HM-34-}\\
+\text{Hence,}
+p_{\theta}&=\frac{\partial L}{\partial \dot{\theta}}=m a^{2} \dot{\theta}\text{ or} \dot{\theta}=\frac{p_{\theta}}{m a^{2}}\notag\\
+\text{and }\quad p_{z}&=\frac{\partial L}{\partial \dot{z}}=m \dot{z}\text{ or} \dot{z}=\frac{p_{z}}{m}\notag\\
+\text{Therefore, }\quad H&=T+V=\frac{1}{2} m\left(a^{2} \dot{\theta}+\dot{z}^{2}\right)+\frac{1}{2} k\left(a^{2}+z^{2}\right)\notag\\
+\text { Or, } \quad H&=\frac{p_{\theta}^{2}}{2 m a^{2}}+\frac{p_{z}^{2}}{m}+\frac{1}{2} k\left(a^{2}+z^{2}\right)\label{HM-35-}
+\intertext{Hence, the Hamilton's equation are}\notag\\
+\dot{z}&=\frac{\partial H}{\partial p_{z}}=\frac{p_{z}}{m}\text{ or }p_{z}=m \dot{z}\label{HM-36-}\\
+\dot{\theta}&=\frac{\partial H}{\partial p_{\theta}}=\frac{p_{\theta}}{m a^{2}}\text{ or }p_{\theta}=m a^{2} \dot{\theta}\label{HM-37-}\\
+-\dot{p}_{z}&=\frac{\partial H}{\partial z}=k z \quad\text{ or }\quad \dot{\mathrm{p}}_{z}=-k z\label{HM-38-}\\
+-\dot{p}_{\theta}&=\frac{\partial H}{\partial \theta}=0 \quad\text{ or }
+p_{\theta}= \text{constant}\label{HM-39-}
+\intertext{From equation (\ref{HM-36-}) and (\ref{HM-38-}), we get}
+m \ddot{z}+k z&=0\notag
+\intertext{which shows that the motion of the particle in z direction is simple harmonic with period $T$, given by}\notag
+T&=2 \pi \sqrt{\frac{m}{k}}\notag
+\intertext{From equation (\ref{HM-37-}) and (\ref{HM-39-}), we get}\notag
+p_{\theta}&=m a^{2} \dot{\theta}=\text { constant }\notag
+\intertext{Thus the angular momentum about Z-axis is a constant of motion.}\notag
+	\end{align}
+\end{answer}
+	\item Find equations of motion of particle moving near the surface of earth.
+	\begin{answer}
+		\begin{align*}
+		\intertext{Let us consider z-axis along upward vertical direction, the kinetic energy is}
+		T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)
+	\intertext{	Further the applied force on the body is its weight acting in negative z-direction, i.e.,}
+		F&=F_{z}-m g=-\frac{\partial V}{\partial Z}
+		\intertext{This gives $V=m g Z$, on setting additive constant to zero Now} 
+	\intertext{	Lagrangian is}
+		L&=T-V=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-m g Z\\
+		\text{So that }\frac{\partial L}{\partial \dot{x}}&=\frac{\partial T}{\partial \dot{x}}=p_{x}=m \dot{x}\text{ giving }\dot{x}=\frac{p_{x}}{m}\\
+	\text{	Also, }p_{y}&=m \dot{y}, p_{z}=m \dot{z}\\
+		\therefore \quad \dot{y}&=\frac{p_{y}}{m}, \dot{z}=\frac{p_{z}}{m}\\
+	\intertext{	Hamiltonian for such a system is conserved, i.e.,}
+		H&=T+V=\frac{1}{2}\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)+m g Z=\frac{1}{2 m}\left(p_{x}^{2}+p_{y}^{2}+p_{z}^{2}\right)+m g Z \\
+		\intertext { giving equations of motion }
+		\dot{p}_{x}&=-\frac{\partial H}{\partial x}=0, \quad \dot{p}_{y}=-\frac{\partial H}{\partial y}=0\\
+		\dot{p}_{z}&=-\frac{\partial H}{\partial Z}=-m g\\
+		\therefore \quad \dot{x}&=\frac{\partial H}{\partial p_{x}}=\frac{p_{x}}{m}, \quad \dot{y}=\frac{\partial H}{\partial p_{y}}=\frac{p_{y}}{m}, \dot{z}=\frac{\partial H}{\partial Z}=\frac{p_{z}}{m}
+	\intertext{ so we finally get,}
+		\ddot{x}&=\frac{\dot{p}_{y}}{m}=0, \quad \ddot{y}=\frac{\dot{p}_{y}}{m}=0, \quad \ddot{z}=\frac{\dot{p}_{z}}{m}=-g
+		\end{align*}
+	\end{answer}
+	\item A mechanical system is described by the Hamiltonian $H(q, p)=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^{2} q^{2}$. As a result of the canonical transformation generated by $F(q, Q)=-\frac{Q}{q}$, the Hamiltonian in the new coordinate $Q$ and momentum $P$ becomes
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2 m} Q^{2} P^{2}+\frac{m \omega^{2}}{2} Q^{2}$
+		\task[\textbf{b.}]$\frac{1}{2 m} Q^{2} P^{2}+\frac{m \omega^{2}}{2} P^{2}$
+		\task[\textbf{c.}]$\frac{1}{2 m} P^{2}+\frac{m \omega^{2}}{2} Q^{2}$
+		\task[\textbf{d.}] $\frac{1}{2 m} Q^{2} P^{4}+\frac{m \omega^{2}}{2} P^{-2}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		F(q, Q)&=-\frac{Q}{q}
+	\intertext{	Differential relation for $F(q, Q)$}
+		p&=\frac{\partial F}{\partial q}, \quad P=-\frac{\partial F}{\partial Q}\\
+		\text{So, }\quad p&=\frac{Q}{q^{2}}, P=\frac{1}{q} \quad \Rightarrow p=Q P^{2}
+	\intertext{	New Hamiltonian,}
+		H^{\prime}&=H+\frac{\partial F}{\partial t}=H+0\\
+		H^{\prime}(Q, P)&=H(q, p)=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^{2} q^{2}=\frac{1}{2 m} Q^{2} P^{4}+\frac{1}{2} m \omega^{2} P^{-2}
+		\end{align*}
+		Correct answer is option \textbf{(d)}
+	\end{answer}
+	
+	
 \end{enumerate}
