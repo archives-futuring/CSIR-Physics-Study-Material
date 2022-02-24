@@ -160,6 +160,51 @@ $P$ is the closed loop enclosing the surface $S$
  (iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$\\
  (ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
  (iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=0$.
+ \section{Poynting Theorem}
+ We know that the electric energy stored in electromagnetic field,the  work required to assemble a static charge distribution is
+ \begin{align}
+ \mathrm{W}_{\mathrm{e}}&=\frac{\epsilon_{0}}{2} \int \mathrm{E}^{2} \mathrm{~d} \tau
+ \intertext{And the magnetic energy,the work required to get current going against back $emf$.}
+ \mathrm{W}_{\mathrm{m}}&=\frac{1}{2 \mu_{0}} \int \mathrm{B}^{2} \mathrm{~d} \tau
+ \intertext{Total Energy stored in electromagnetic field is given by,}
+ u_{em}&= \frac{1}{2}\int(\varepsilon_0 E^2 +\frac{1}{\mu_{0}}B^2)d\tau
+ \intertext{Now consider we have a current and charge distribution at time  $t$ produces electric and magnetic fields, $E$ and $B$. If the charge moves a bit at $dt$. Then, work done by electromagnetic force is given by,}
+ F\cdot dl &=q(t+V\times B)\cdot Vdt=qE\cdot Vdt\\
+ dw&=qE\cdot vdt\hspace{3.8cm}q=\rho dt\\
+ &=(E\cdot J)d\tau\cdot dt\hspace{3cm}\rho \mathrm{v}=\mathrm{J}
+ \intertext{If we consider the work done on the charges in a given volume $V$} 
+ dw&=\int(E\cdot J)d\tau\cdot dt\\
+ \therefore \frac{dw}{dt}&=\int(E\cdot J)d\tau \label{poynting 1}
+ \intertext{ $ E\cdot J $ is the power delivered per unit volume. And We know}
+ \nabla\times B &=\mu_0J+\mu_0\varepsilon_0\frac{\partial E}{\partial t}\\
+ E\cdot J&=\frac{1}{\mu_{0}}E\cdot(\nabla\times B)-\varepsilon_0E\cdot\frac{\partial E}{\partial t}
+ \intertext{We know that,}
+ \notag \vec{\nabla} \cdot(\vec{E} \times \vec{B})&=\vec{B} \cdot(\vec{\nabla} \times \vec{E})-\vec{E} \cdot(\vec{\nabla} \times \vec{B}) \quad \text { and } \quad \vec{\nabla} \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}
+ \intertext { It follows that }  \vec{E} \cdot(\vec{\nabla} \times \vec{B})&=-\vec{B} \cdot \frac{\partial \vec{B}}{\partial t}-\vec{\nabla} \cdot(\vec{E} \times \vec{B})\\
+ \vec{E} \cdot \vec{J}&=-\frac{1}{2} \frac{\partial}{\partial t}\left(\varepsilon_{0} E^{2}+\frac{1}{\mu_{0}} B^{2}\right)-\frac{1}{\mu_{0}} \vec{\nabla} \cdot(\vec{E} \times \vec{B}) 
+ \intertext{Putting $\vec{E}.\vec{J}$ in equation. \ref{poynting 1} and applying divergence theorem to the sewcond term  we get,}
+ \frac{d W}{d t}&=-\frac{d}{d t} \int_{V} \frac{1}{2}\left(\varepsilon_{0} E^{2}+\frac{1}{\mu_{0}} B^{2}\right) d \tau-\frac{1}{\mu_{0}} \oint_{S}(\vec{E} \times \vec{B}) \cdot d \vec{a},
+ \end{align}
+ $S$ is the surface enclosing volume $V$. This is called \textbf{poynting theorem(work energy theorem in Electrodynamics).} First term represents total energy stored in em field and second represents the rate at which energy is carried out of $V$ across the surface.\\\\
+ \subsubsection{Poynting theorem}
+ \begin{definition}
+ 	Work done on the charge by electromagnetic force is equal to the decrease in energy stored in the field, less the energy that flow out through the surface.
+ \end{definition}
+ The energy per unit time, per unit area, transported by the fields is called the \textbf{Poynting vector} ($S$=Energy flux density).
+ 
+ \begin{align*}
+ S&=\frac{1}{\mu_{0}}(E\times B)\\
+ \therefore\frac{dw}{dt}&=\frac{-d}{dt}u_{em}-\oint_{s}S\cdot da\\
+ U_{em}&=\frac{1}{2}\int(\varepsilon_0E^2+\frac{1}{\mu_{0}}B^2)d\tau\\
+ \text{But}\quad\frac{dw}{dt}&=\frac{d}{dt}\int U_{mech}d\tau\quad\text{work done by $em$ field is stored as mechanical energy.}\\
+ \text{Then,}\
+ \frac{d}{dt}\int(u_{mech}+u_{em})d\tau&=-\oint_{s}S\cdot da=-\int_{V}(\nabla\cdot S)d\tau\\
+ \therefore\frac{\partial}{\partial t}(u_{mech}+u_{em})&=-\nabla\cdot S\\
+ \frac{\partial}{\partial t}u&=-\nabla\cdot S \quad\text{(Differential form of poynting theorem)}
+ \intertext{Similer to continuity equation in $\rho$ and $J$.} 
+ \end{align*}
+ 
+ 
 \section{Electromagnetic Wave}
 \textbf{Waves}\\
 Classical wave equation can be represents as

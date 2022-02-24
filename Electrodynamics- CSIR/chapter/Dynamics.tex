@@ -104,6 +104,126 @@ $$\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}\equiv \mathcal{D
 Then both equation become\\
 $$\mathcal{D}^2V=\frac{-\rho}{\epsilon_{0}}$$
 $$\mathcal{D}^2A=-\mu_{0} J$$
+\section{Lorentz invarience of Maxwell's equations}
+The MFE's in frame $S$ may be expressed as
+\begin{align}
+\nabla \cdot \mathbf{E}&=\rho / \varepsilon_{0}\\
+\nabla \times \mathbf{B}&=\partial \mathbf{E} / c^{2} \partial t+\mu_{0} \mathbf{J}\\
+\nabla \cdot \mathbf{B}&=0\\
+\nabla \times \mathbf{E}&=-\partial \mathbf{B} / \partial t
+\end{align}
+  Now by applying the relativity principle to Equations, they will preserve their form in frame $S^{\prime}$ moving with velocity $\mathbf{u}$ parallel to their common $x$ axis, and are expressed as follows:
+\begin{align}
+\nabla^{\prime} \cdot \mathbf{E}^{\prime}&=\rho^{\prime} / \varepsilon_{0}\\
+\nabla^{\prime} \times \mathbf{B}^{\prime}&=\partial \mathbf{E}^{\prime} / c^{2} \partial t^{\prime}+\mu_{0} \mathbf{J}^{\prime}\\
+\nabla^{\prime} \cdot \mathbf{B}^{\prime}&=0\\
+\nabla^{\prime} \times \mathbf{E}^{\prime}&=-\partial \mathbf{B}^{\prime} / \partial t^{\prime}
+\end{align}
+where $\rho, \mathbf{J}, \rho^{\prime}, \mathbf{J}^{\prime}$ are the relativistic charge and current density in frames $S$ and $S^{\prime}$, respectively. It is obvious that in frame $S^{\prime}$ the field vectors $\mathbf{E}^{\prime}$ and $\mathbf{B}^{\prime}$ are propagated in free-space with the speed $c^{\prime}=1 / \sqrt{\mu_{0}^{\prime} \varepsilon_{0}^{\prime}}$. But we know that $\varepsilon_{0}$ and $\mu_{0}$ have the
+same value in all frames, i.e. $\varepsilon_{0}$ and $\mu_{0}$ are universal constants, so $c^{\prime}$ must equal $c$.\\ 
+ Taking the $x$-component of Eq. (2.2) and writing Eq. (2.1) in terms of Cartesian components, we have
+\begin{align}
+&\partial B_{z} / \partial y-\partial B_{y} / \partial z=\partial E_{x} / c^{2} \partial t+\mu_{0} J_{x} \\
+&\partial E_{x} / \partial x+\partial E_{y} / \partial y+\partial E_{z} / \partial z=\rho / \varepsilon_{0}
+\end{align}
+Multiplying Eq. (2.9) by an arbitrary scalar factor $\gamma$ and (2.10) by $u \gamma / c^{2}$, and then subtracting, we get.
+\begin{align*}
+\frac{\partial}{\partial y} \gamma\left(B_{z}-u E_{y} / c^{2}\right)- \frac{\partial}{\partial z} \gamma\left(B_{y}+u E_{z} / c^{2}\right)
+=\gamma\left(\frac{\partial}{\partial t}+u \frac{\partial}{\partial x}\right) E_{x} / c^{2}+\mu_{0} \gamma\left[J_{x}-u \rho\right]
+\end{align*}
+Comparing the last relation with the $x$-component of Eq. (2.6), we have
+\begin{align}
+&E_{x}^{\prime}=E_{x} \quad B_{y}^{\prime}=\gamma\left(B_{y}+u E_{z} / c^{2}\right) \quad B_{z}^{\prime}=\gamma\left(B_{z}-u E_{y} / c^{2}\right)\\
+&\partial / \partial t^{\prime}=\gamma[\partial / \partial t+u \partial / \partial x] \quad \partial / \partial y^{\prime}=\partial / \partial y, \quad \partial / \partial z^{\prime}=\partial / \partial z\\
+&J_{x}^{\prime}=\gamma\left(J_{x}-u \rho\right)
+\end{align}
+Now multiplying Eq. (2.9) by $u \gamma$ and Eq. (2.10) by $\gamma$, and then subtracting, we have
+\begin{align*}
+\gamma\left(\frac{\partial}{\partial x}+\frac{u}{c^{2}} \frac{\partial}{\partial t}\right) E_{x}+\frac{\partial}{\partial y} \gamma\left(E_{y}-u B_{z}\right)+\frac{\partial}{\partial z}  \gamma\left(E_{z}+u B_{y}\right) 
+=\frac{\gamma}{\varepsilon_{0}}\left(\rho-u J_{x} / c^{2}\right)
+\end{align*}
+ Comparing the last relation with Eq. (2.5), we have 
+ \begin{align}
+ &E_{y}^{\prime}=\gamma\left(E_{y}-u B_{z}\right) \quad  E_{z}^{\prime}=\gamma\left(E_{z}+u B_{y}\right)\\
+ &\partial / \partial x^{\prime}=\gamma\left(\partial / \partial x+u \partial / c^{2}\right)\\
+ &\rho^{\prime}=\gamma\left(\rho-u J_{x} / c^{2}\right)
+ \end{align}
+The Eqs. (2.12) and (2.15) are the differential LT.\\
+ The scalar factor $\gamma$ can be fixed by applying the relativity principle on Eq. (2.11). So Eq. (2.11) could be written in frame $S^{\prime}$ as
+\begin{equation}
+B_{z}=\gamma\left(B_{z}^{\prime}+u E_{y}^{\prime} / c^{2}\right)
+\end{equation}
+Hence we can substitute from Eqs. (2.11) and (2.14) into Eq. (2.17) and obtain
+\begin{align*}
+B_{z}=\gamma\left[\gamma\left(B_{z}-u E_{y} / c^{2}\right)+u \gamma\left(E_{y}-u B_{z}\right) / c^{2}\right]=\gamma^{2}\left(1-u^{2} / c^{2}\right) B_{z}
+\end{align*}
+ This equation is an algebraic identity; i.e., 
+\begin{align}
+\gamma^{2}\left(1-u^{2} / c^{2}\right)=1\\
+\gamma=1 / \sqrt{1-u^{2} / c^{2}}
+\end{align}
+Starting now from the $y$-component of Eq. (2.2) and using Eq. (2.18), we get
+\begin{align*}
+\frac{\partial B_{x}}{\partial z}-\gamma^{2}\left(1-u^{2} / c^{2}\right) \frac{\partial B_{z}}{\partial x}=\gamma^{2}\left(1-u^{2} / c^{2}\right) \frac{\partial E_{y}}{c^{2} \partial t}+\mu_{0} J_{y}
+\end{align*}
+Adding and subtracting the two terms
+$$
+u \gamma^{2} \partial E_{y} / c^{2} \partial x, \quad u \gamma^{2} \partial B_{z} / c^{2} \partial t
+$$
+We obtain
+\begin{align*}
+\frac{\partial B_{x}}{\partial z}-\gamma\left(\frac{\partial}{\partial x}+\frac{u}{c^{2}} \frac{\partial}{\partial t}\right) \gamma \left(B_{z}-u E_{y} / c^{2}\right) 
+=\frac{\gamma}{c^{2}}\left(\frac{\partial}{\partial t}+u \frac{\partial}{\partial x}\right) \gamma\left(E_{y}-u B_{z}\right)+\mu_{0} J_{y}
+\end{align*}
+Comparing the last relation with the $y$-component of Eq. (2.6), we deduce
+\begin{align}
+B_{x}^{\prime}=B_{x}\\
+J_{y}^{\prime}=J_{y}
+\end{align}
+In a similar way, starting from the z-component of Eq. (2.2), we obtain
+\begin{equation}
+J_{z}^{\prime}=J_{z}
+\end{equation}
+The electromagnetic charge density $\rho$ for a particle of charge $q$ is $\rho=q \delta^{3}\left(x-x^{\prime}\right)$. It implies the conventional definition of current density $\mathbf{J}=q \mathbf{v} \delta^{3}\left(x-x^{\prime}\right)=\rho \mathbf{v}$. Starting from the definition of $\mathbf{J}$ in frames $S$ and $S^{\prime}$ as $\mathbf{J}=\rho \mathbf{v}, \mathbf{J}^{\prime}=\rho^{\prime} \mathbf{v}^{\prime}$, and using Eqs. (2.13)(2.16)(2.21)(2.22), one gets the relativistic velocity transformations, i.e.
+\begin{equation}
+v_{x}^{\prime}=\frac{v_{x}-u}{1-u v_{x} / c^{2}} \quad  v_{y}^{\prime}=\frac{v_{y} / \gamma}{\left(1-u v_{x} / c^{2}\right)} \quad v_{z}^{\prime}=\frac{v_{z} / \gamma}{\left(1-u v_{x} / c^{2}\right)}
+\end{equation}
+ Depending on Eqs. (2.23) and Eqs. (2.13)(2.16)(2.21)(2.22), one can derive the relativistic charge density in frame $S$ and $S^{\prime}$ respectively:
+\begin{equation}
+\rho=\rho_{0} / \sqrt{1-v^{2} / c^{2}} \quad \quad \rho^{\prime}=\rho_{0} / \sqrt{1-v^{\prime 2} / c^{2}}
+\end{equation}
+where $\rho_{0}$ is the electrostatic charge density measured when the charge is at rest relative to the observer.\\
+ Here, then, is the complete set of transformation rules:
+ \begin{center}
+ 	\framebox{
+ 		\parbox[t][2cm]{3.5cm}{
+ 			
+ 			\addvspace{0.2cm} \centering
+ 			
+ 			\begin{align*}
+ 			\begin{array}{lll}
+ 		  $$\begin{array}{lll}
+ 		  {E}_{x}^{\prime}=E_{x}, & {E}_{y}^{\prime}=\gamma\left(E_{y}-v B_{z}\right), & {E}_{z}^{\prime}=\gamma\left(E_{z}+v B_{y}\right) \\
+ 		  {B}_{x}^{\prime}=B_{x}, & {B}_{y}^{\prime}=\gamma\left(B_{y}+\frac{v}{c^{2}} E_{z}\right), & {B}_{z}^{\prime}=\gamma\left(B_{z}-\frac{v}{c^{2}} E_{y}\right)
+ 		  \end{array}$$
+ 			\end{array}
+ 			\end{align*}} }
+ \end{center}
+ we begin with the Maxwell equations, and by applying the relativity principle we get the Lorentz contracted charge density containing $\rho$, defined as Eqs. (2.24), without using the hypothesis proposed by Lorantz-Fitzgerlad as well as without using length contraction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \begin{abox}
