@@ -21,7 +21,13 @@ Where, $\varepsilon(x)$ is the signum function.
 -1 & \text { for } x<0 \\
 0 & \text { for } x=0
 \end{array}\right.
-\end{equation} The function $\varepsilon(x)$ looks like the limit of a tanh (or hyperbolic tangent) function as the 'kink' in the function becomes more and more steep, i.e., as the slope at the origin tends to infinity, as shown in Figure. In fact, we could define $\varepsilon(x)$ as the limit of a continous sequence of functions $\tanh(\frac{x}{\varepsilon(x)})$.
+\end{equation} The function $\varepsilon(x)$ looks like the limit of a tanh (or hyperbolic tangent) function as the 'kink' in the function becomes more and more steep, i.e., as the slope at the origin tends to infinity, as shown in Figure.\ref{Dirac delta} In fact, we could define $\varepsilon(x)$ as the limit of a continous sequence of functions $\tanh(\frac{x}{\varepsilon(x)})$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=5cm]{unit step function}
+	\caption{The function of $ \tanh{(x/\epsilon)} $}
+	\label{Dirac delta}
+\end{figure}
 \section{Dirac Delta Function}
 \subsection{Kronecker delta $\delta$}
 let us consider a sequence $\left(a_{1}, a_{2}, \ldots\right)=\left\{a_{j} \mid j=1,2, \ldots\right\} .$ How do we select a particular member $a_{i}$ from the sequence? We do so by summing over all members of the sequence with a selector called the \textbf{Kronecker delta}, denoted by $\delta_{i j}$ and defined as
@@ -32,5 +38,22 @@ It follows immediately that
 \sum_{j} \delta_{i j}&=a_{i}\qquad \text{For each value of } \ i\\
 \delta_{i j}&=\delta_{j i} \qquad \text{Symmetry property. }
 \end{align*}
-Now if  we have a continuos function, we must replace the summation over$j$ by an integration over $x$
+Now if  we have a continuos function, we must replace the summation over  $j$ by an integration over $x$. The role of the specified index $i$ is played by the specified point $a$. The analog of the Kronecker delta is written like a function, retaining the same symbol $\delta$ for it. So we seek a `function' $\delta\left(x-a\right)$ such that
+\begin{equation}
+\int_{-\infty}^{\infty}  \delta\left(x-a\right) f(x) d x=f\left(a\right)
+\end{equation}
+Exactly as in the discrete case of the Kronecker delta, we impose the normalization and symmetry properties,
+\begin{equation}
+\int_{-\infty}^{\infty} \delta\left(x-a\right) d x=1 \quad \text { and } \quad \delta\left(x-a\right)=\delta\left(a-x\right)
+\end{equation}
+ $\delta\left(x-a\right)$ is more like the kernel of an integral
+ \begin{equation}
+ \int_{-\infty}^{\infty} \delta\left(x-a\right) d x=0 \quad \text { if } \quad x \neq a \quad \text{Or the limit of integration excludes the point `$a$'} 
+ \end{equation}
+ \section{Various representations of Delta function}
+ Let us consider a rectangular fuunction defined as,
+ \begin{equation}
+R_{\varepsilon} =\left\{\begin{array}{ll} \frac{1}{2\varepsilon} & x-\varepsilon < x< x+2\varepsilon \\ 0 & \text{Otherwise }\end{array}\right. 
+ \end{equation} 
+ We can consider  this as a rectangular window of width $2\varepsilon$ and height $\frac{1}{2\varepsilon}$
 
