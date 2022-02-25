@@ -51,9 +51,69 @@ Exactly as in the discrete case of the Kronecker delta, we impose the normalizat
  \int_{-\infty}^{\infty} \delta\left(x-a\right) d x=0 \quad \text { if } \quad x \neq a \quad \text{Or the limit of integration excludes the point `$a$'} 
  \end{equation}
  \section{Various representations of Delta function}
+ The delta function may be approximated by the sequences of functions, 
+ $$
+ \begin{array}{l}
+ \delta_{n}(x)=\left\{\begin{array}{ll}
+ 0, & x<-\frac{1}{2 n} \\
+ n, & -\frac{1}{2 n}<x<\frac{1}{2 n} \\
+ 0, & x>\frac{1}{2 n}
+ \end{array}\right. \\
+ \delta_{n}(x)=\frac{n}{\sqrt{\pi}} \exp \left(-n^{2} x^{2}\right) \\
+ \delta_{n}(x)=\frac{n}{\pi} \cdot \frac{1}{1+n^{2} x^{2}} \\
+ \delta_{n}(x)=\frac{\sin n x}{\pi x}=\frac{1}{2 \pi} \int_{-n}^{n} e^{i x t} d t
+ \end{array}
+ $$
+ These approximations have varying degrees of usefulness.
+ \subsection{Rectangular Function}
  Let us consider a rectangular fuunction defined as,
  \begin{equation}
-R_{\varepsilon} =\left\{\begin{array}{ll} \frac{1}{2\varepsilon} & x-\varepsilon < x< x+2\varepsilon \\ 0 & \text{Otherwise }\end{array}\right. 
+R_{\varepsilon} =\left\{\begin{array}{ll} \frac{1}{2\varepsilon} & a-\varepsilon < x< a+\varepsilon \\ 0 & \text{Otherwise }\end{array}\right. 
  \end{equation} 
- We can consider  this as a rectangular window of width $2\varepsilon$ and height $\frac{1}{2\varepsilon}$
+ We can consider  this as a rectangular window of width $2\varepsilon$ and height $\frac{1}{2\varepsilon}$ so that the area is unity. Let us plot the function as shown in the figure below,
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=4cm,width=6cm]{Rectangular}
+ 	\caption{Rectangular function}
+ 	\label{Rectangular function}
+ \end{figure}
+When the window is centred at the choosen point $x_{0}$, the integral of $f(x)$ multiplied by this window function is,
+\begin{align*}
+\frac{1}{2 \varepsilon} \int_{a-\varepsilon}^{a+\varepsilon} dx f(x)
+\intertext{if we take the limit,$\varepsilon \rightarrow 0$ The window becomes vanishingly small and it's height become arbitrarily large such that the area under the curve remains the same.} 
+\intertext{Then in the limit, $\varepsilon \rightarrow 0 $}
+\lim_{\varepsilon \to 0} R_{\varepsilon} = \delta(x-a)
+\end{align*}
+An explicit form of the dirac delta function make sense only when it occures in an integral like, 
+\begin{equation}
+\int_{-\infty}^{\infty} \delta(x-a)f(x)dx \label{Dirac delta 001 }
+\end{equation}
+when it acts on ordinary function like $f(x)$ and an integration over $x$ is carried out . Then the value of \ref{Dirac delta 001 } 
+\begin{align}
+\int_{-\infty}^{\infty} \delta(x-a)f(x)dx &=\int_{a-\varepsilon}^{a+\varepsilon} \delta(x-a)f(x)dx
+\intertext{in the range ${a-\varepsilon} , {a+\varepsilon}$ as $\varepsilon \rightarrow 0$ the function is almost constant }
+\int_{-\infty}^{\infty} \delta(x-a)f(x)dx &=f(a) \lim_{\varepsilon \to 0} \int_{a-\varepsilon}^{a+\varepsilon} R_{\varepsilon} dx\\
+&=f(a)
+\end{align}
+\section{Integral Representations for the Delta Function}
+                 
+Integral transforms, such as the Fourier integral
+\begin{equation}
+F(\omega)=\int_{-\infty}^{\infty} f(t) \exp (i \omega t) d t
+\end{equation}
 
+Lead to the corresponding integral representations of Dirac's delta function. For example, take
+\begin{equation}
+\delta_{n}(t-x)=\frac{\sin n(t-x)}{\pi(t-x)}=\frac{1}{2 \pi} \int_{-n}^{n} \exp (i \omega(t-x)) d \omega \label{Dirac delta 007}
+\end{equation}
+Using Equation \ref{Dirac delta 007}. We have
+$$
+f(x)=\lim _{n \rightarrow \infty} \int_{-\infty}^{\infty} f(t) \delta_{n}(t-x) d t,
+$$
+where $\delta_{n}(t-x)$ is the sequence in Eq. (1.192) defining the distribution $\delta(t-x)$. Note that Eq. (1.193a) assumes that $f(t)$ is continuous at $t=x$. If we substitute Eq. (1.192) into Eq. (1.193a) we obtain
+$$
+f(x)=\lim _{n \rightarrow \infty} \frac{1}{2 \pi} \int_{-\infty}^{\infty} f(t) \int_{-n}^{n} \exp (i \omega(t-x)) d \omega d t .
+$$
+Interchanging the order of integration and then taking the limit as $n \rightarrow \infty$, we have the Fourier integral theorem, Eq. (15.20).
+
+With the understanding that it belongs under an integral sign, as in Eq. (1.193a), the identification
