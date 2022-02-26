@@ -1540,6 +1540,92 @@ p_{\theta}&=m a^{2} \dot{\theta}=\text { constant }\notag
 		\end{align*}
 		 Correct answer is option \textbf{(a)}
 	\end{answer}
+\end{enumerate}
+\section{Canonical Transformations}
+\begin{enumerate}
+	\item Show that for a transformation to be canonical function 
+	$\Sigma\left(p_{i} d q_{i}-P_{i} d Q_{i}\right)$ must be a perfect differential if the generating function does not contain time. 
+	\begin{answer}
+		\begin{align*}
+	\intertext{	We have by the property of generating function in terms of $q, Q$ that is, $G=G\left(q_{i}, Q_{i}, t\right)$}
+	p_{i}&=\frac{\partial G}{\partial q_{i}}, P=-\frac{\partial G}{\partial Q_{i}}\text{ and }\bar{H}-H=\frac{\partial G}{\partial t}\\
+\text{	Now,}\qquad
+	d G&=\Sigma\left(\frac{\partial G}{\partial q_{i}} d q_{i}+\frac{\partial G}{\partial Q_{i}} d Q_{i}\right)+\frac{\partial G}{\partial t} d t=\Sigma\left(p_{i} d q_{i}-P_{i} d Q_{i}\right)+0 \qquad\left(\because \frac{\partial G}{\partial t}=0\right)\\
+	\text{Hence, }&\Sigma\left(p_{i} d q_{i}-P_{i} d Q_{i}\right)\text{ is a perfect differential.}
+		\end{align*}
+	\end{answer}
+	\item Show that $P=\frac{1}{2}\left(p^{2}+q^{2}\right), Q=\tan ^{-1} \frac{q}{p}$ is canonical.
+	\begin{answer}
+		 Since the transformation equations do not contain time, the generating function also does not contain time. Hence, the condition for transformation to be canonical is that $(p d q-P d Q)$ be a perfect differential. Here we consider only one term in the summation because the system for which transformation equations are given is of one degree of freedom.
+		\begin{align*}
+		\text{Now, }\quad p d q-P d Q&=p d q-\frac{p^{2}+q^{2}}{2} d\left(\tan ^{-1} \frac{q}{p}\right)\\
+		&=p d q-\frac{p^{2}+q^{2}}{2} \frac{p d-q d p}{p^{2}+q^{2}} \quad\left(\because d\left(\tan ^{-1} x\right)=\frac{d x}{1+x^{2}}\right)\\
+		&=p d q-\frac{1}{2} p d q+\frac{1}{2} q d p=\frac{1}{2} p d q+\frac{1}{2} q d p=d\left(\frac{1}{2} p q\right)
+		\end{align*}
+	\end{answer}
+	\item Find the values of $\alpha$ and $\beta$ so that $Q=q^{\alpha} \cos p \beta$ and $P=q^{\alpha} \sin p \beta$ may be canonical. Also find the generating function, $G=G(p, Q)$ is perfect differential.
+	\begin{answer}
+		Here the transformation equations do not contain time. Hence the condition for canonical transformation is that $p d q-P d Q$.
+		\begin{align*}
+	\text{	Here,}\quad
+		p d q-P d Q&=p d q-q^{\alpha} \sin p d\left(q^{\alpha} \cos p \beta\right)\\
+		&=p d q-q^{\alpha} \sin p \beta\left(\alpha q^{\alpha-1} \cos p \beta-\beta q^{\alpha} \sin p \beta d p\right)\\
+		&=\left(p-\alpha q^{2 \alpha-1} \sin p \beta \cos p \beta\right) d q+\beta q^{2 \alpha} \sin ^{2} p \beta d p
+		\intertext{Now, $M(x, y) d x+N(x, y) d y$ is an exact differential when $\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}$. By this principle $p d q-P d Q$ is a perfect differential if}
+		\frac{\partial}{\partial p}\left(p-\alpha q^{2 \alpha-1} \sin p \beta \cos p \beta\right)&=\frac{\partial}{\partial q}\left(\beta q^{2 \alpha} \sin ^{2} p \beta\right)\\
+		\text{or}\quad1-\alpha \beta q^{2 \alpha-1}\left(1-2 \sin ^{2} p \beta\right)&=2 \alpha \beta q^{2 \alpha-1} \sin ^{2} p \beta\\
+		\text{or}\quad1-\alpha \beta q^{2 \alpha-1}+2 \alpha \beta q^{2 \alpha-1} \sin ^{2} p&=2 \alpha \beta q^{2 \alpha-1} \sin ^{2} p \beta\\
+		\text{or}\quad\alpha \beta q^{2 \alpha-1}&=1
+		\intertext{Since, RHS is a constant, this equation is satisfied only when the power of $q$ is zero. Hence, $2 \alpha-1=0$ or $\alpha=\frac{1}{2}$ and $\beta=2$. Thus, $\alpha=\frac{1}{2}$ and $\beta=2$ are the required values of $\alpha$ and $\beta$}
+		\end{align*}
+		\textbf{Generating function :} When the generating function is assumed to be $G=G(p, Q)$, we have
+		\begin{align*}
+		q&=-\frac{\partial G}{\partial p}\text{ and }P=-\frac{\partial G}{\partial Q}\\
+		\text{Here,}\quad
+		Q&=q^{1 / 2} \cos 2 p \text { or } q=\left(\frac{Q}{\cos 2 p}\right)^{2}\\
+		\text{ And }\quad P&=q^{1 / 2} \sin 2 p=\left(\frac{Q}{\cos 2 p}\right) \sin 2 p=Q \tan 2 p\\
+		\therefore \quad \frac{\partial G}{\partial p}&=-q=-\left(\frac{Q Q}{\cos 2 p}\right)^{2}\text{ or }G=-Q^{2} \int \frac{\partial p}{\cos ^{2} 2 p}\\
+		\text{or}\quad G&=-Q^{2} \int \sec ^{2} 2 p \partial p=-\frac{1}{2} Q^{2} \tan 2 p\\
+	\text{	Thus, }G&=-\frac{1}{2} Q^{2} \tan 2 p\text{ is the required generating function.}
+		\end{align*}
+	\end{answer}
+	\item Show that the generating function for the transformation $p=\frac{1}{Q}$ and $q=P Q^{2}$ is $G=\frac{q}{Q}$
+	\begin{answer}
+		 Since we have to show that $G=\frac{q}{Q}$ we assume that the generating function needed is a function of $q, Q$ that is, $G=G(q, Q)$. When $q$ and $Q$ are independent variables, the other two variables $p$ and $P$ are given by $p=\frac{\partial G}{\partial q}$ and $P=-\frac{\partial G}{\partial Q}$.
+		\begin{align*}
+		\text{Here, }\quad p&=\frac{1}{Q}\text{ and hence here }\frac{1}{Q}=\frac{\partial G}{\partial q}\text{ or }G=\int \frac{\partial q}{Q}.\\
+		\text{Or }G&=\frac{q}{Q}
+	\intertext{	From the second relation also we can show that}
+		G&=\frac{q}{Q}
+		\end{align*}
+	\end{answer}
+	\item Show that if there exists a generating function $\mathrm{G}$ such that $\frac{d G}{d t}=L-\bar{L}$ where $\mathrm{L}$ and $\bar{L}$ are the Lagrangians in old and new set of coordinates, then the transformation is canonical.
+	\begin{answer}
+		\begin{align*}
+		\text{By Hamilton's principle, }\frac{d G}{d t}&=L-\delta \int_{t_{1}}^{t_{2}} L d t=0\text{ and }\delta \int_{t_{1}}^{t_{2}} \bar{L} d t=0\\
+		\text{Subtracting we have, }\delta \int_{t_{1}}^{t_{2}}(L-\bar{L}) d t&=0\\
+		\text{By virtue of the given relation i.e. }\frac{d G}{d t}&=L-\bar{L}\\
+		\text{We have, }\delta \int_{t_{1}}^{t_{2}} \frac{d G}{d t} d t=0\text{, or} \delta\left[G\left(t_{2}\right)-G\left(t_{1}\right)\right]&=0\text{ which is the condition for canonical transformation.}
+		\intertext{Hence under the given condition the transformation is canonical.}
+		\end{align*}
+	\end{answer}
+	\item Show that $G=-\Sigma Q_{i} p_{i}$ generating on identity transformation.
+	\begin{answer}
+		 Let us define an identity transformation. When the coordinates of old set are equal to the coordinates of the new set, it is called an identity transformation.\\
+		 \text { It is given here that the generating function is a function of } p, Q \text { i.e. } G=G(p, Q)
+		\begin{align*}
+		\text{In this case we have, }q_{i}&=-\frac{\partial G}{\partial p_{i}}\text{ and }P_{i}=-\frac{\partial G}{\partial Q_{i}}
+		\intertext{Here it is given that $G=-\Sigma p_{i} Q_{i}$. As we have to take derivative of $G$ with respect to $p_{i}$, we change the suffix in the summation to $j$ i.e. we take $G=-\Sigma p_{j} Q_{j}$.}
+		\therefore \quad \frac{\partial G}{\partial p_{i}}&=-\Sigma\left(p_{j} \frac{\partial Q_{j}}{\partial p_{i}}+Q_{j} \frac{\partial p_{j}}{\partial p_{i}}\right)\\
+	\text{	Now, }\quad \frac{\partial Q_{j}}{\partial p_{i}}&=0\text{ because, $p, Q$ are selected as independent variables}\\
+	\text{here and }\quad \frac{\partial p_{j}}{\partial p_{i}}&=0\text{ if $i \neq j=1$ if $i=j$}\\
+	\text{Here, }\quad \frac{\partial G}{\partial p_{i}}&=-Q_{i} .\text{ But }\frac{\partial G}{\partial p_{i}}=-q_{i} (\text{in general}).\\
+	\therefore \quad q_{i}&=Q_{i}\\
+	\frac{\partial G}{\partial Q_{i}}&=-\Sigma\left(Q_{j} \frac{\partial p_{j}}{\partial Q_{i}}+p_{j} \frac{\partial Q_{j}}{\partial Q_{i}}\right)=-p_{i}\\
+	(\text{Because }\frac{\partial p_{j}}{\partial Q_{i}}&=0\text{ and }\frac{\partial Q_{j}}{\partial Q_{i}}=1\text{ where }\mathrm{i}=\mathrm{j}\text{, otherwise zero}).\\
+	\therefore \quad p_{i}&=P_{i}
+		\end{align*}
+	\end{answer}
 	
 	
 	
