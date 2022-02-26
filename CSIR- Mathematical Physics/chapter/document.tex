@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\usepackage{xfp}
+
+\NewDocumentCommand{\showcalculation}{o m}{$
+  \IfValueTF{#1}
+    {#1}{#2} = \fpeval{#2}
+  $}
+
+\begin{document}
+
+\showcalculation{7+3}
+
+\showcalculation{1+2-3+4}
+
+\showcalculation[22 \div 7]{22 / 7}
+
+\showcalculation[10 \times 3^{7 - 7}]{10 * 3 ^ (7 - 7)}
+
+$\inteval{1 + 2 + 3}$\\
+$ \frac{\sin (3.5)}{2} + 2\cdot 10^{-3}
+= \fpeval{{{sin(3.5)}/2} + {2 * 10^-3}} $\\
+$\fpeval{fact {4}}$\\
+$\fpeval{{25+ 3.6 e-3}/2 + 2e-3}$\\
+$\fpeval{sind 90 }$\\
+$\fpeval{ randint(4,5)}$\\
+$ \frac{\sin (3.5)}{2} + 2\cdot 10^{-3}
+= \fpeval{sin(3.5)/2 + 2e-3} $
+
+\end{document}
