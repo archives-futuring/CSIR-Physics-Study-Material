@@ -1383,6 +1383,178 @@ p_{\theta}&=m a^{2} \dot{\theta}=\text { constant }\notag
 		\end{align*}
 		Correct answer is option \textbf{(d)}
 	\end{answer}
+\end{enumerate}
+\section{Small Oscillations}
+\begin{enumerate}
+	\item  A particle of mass $m$ moves in one dimension under the influence of a potential energy
+	$$
+	V(x)=-a\left(\frac{x}{\ell}\right)^{2}+b\left(\frac{x}{\ell}\right)^{4}
+	$$
+	where $a$ and $b$ are positive constants and $\ell$ is a characteristic length. The frequency of small oscillations about a point of stable equilibrium is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}] $\frac{1}{2 \pi \ell} \sqrt{\frac{b}{m}}$
+		\task[\textbf{b.}]$\frac{2 b}{\pi \ell} \sqrt{\frac{1}{m a}}$
+		\task[\textbf{c.}]$\frac{1}{\pi \ell} \sqrt{\frac{a^{2}}{m b}}$
+		\task[\textbf{d.}] $\frac{1}{\pi \ell} \sqrt{\frac{a}{m}}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+	\text{	We have,}
+		V(x)&=-a\left(\frac{x}{\ell}\right)^{2}+b\left(\frac{x}{\ell}\right)^{4}
+		\intertext{Here first we need to find the stable equilibrium. At equilibrium}
+		\frac{\partial V(x)}{\partial x}&=0 \quad \Rightarrow \frac{-2 a x}{\ell^{2}}+\frac{4 b x^{3}}{\ell^{4}}=0 \quad \Rightarrow x\left(\frac{2 b x^{2}}{\ell^{2}}-a\right)=0\\
+		\Rightarrow \quad x&=0, x=\pm \ell \sqrt{\frac{a}{2 b}}\\
+		\text{Now, }\quad \frac{\partial^{2} V}{\partial x^{2}}&=\frac{-2 a}{\ell^{2}}+\frac{12 b x^{2}}{\ell^{4}}\\
+		\text{We see that for }x&=0, \frac{\partial^{2} V}{\partial x^{2}}<0
+		\text{hence, here there is unstable equilibrium}\\
+		\text{For}\qquad x&=\pm \ell \sqrt{\frac{a}{2 b}},\left(\frac{\partial^{2} V}{\partial x^{2}}\right)_{x=\pm \ell \sqrt{\frac{a}{2 b}}}=-\frac{2 a}{\ell^{2}}+\frac{12 b}{\ell^{4}} \ell^{2} \times \frac{a}{2 b}=\frac{4 a}{\ell^{2}}>0
+		\intertext{hence, $x=\pm \ell \sqrt{\frac{a}{2 b}}$ corresponds to stable equilibrium.. Now to find the frequeny, we see that the problemis one dimensional, so matrices $\mathbf{V}$ and $\mathbf{T}$ both have one element each, i.e. $V_{11}$ and $T_{11}$ respectively.}
+		V_{11}&=\left(\frac{\partial^{2} V}{\partial x^{2}}\right)_{x=\pm f \sqrt{\frac{a}{2 b}}}=\frac{4 a}{\ell^{2}}\\
+		\text{Now, the kinetic energy }&=\frac{1}{2} m \dot{x}^{2},\text{ so }T_{11}=m\\
+	\text{	Now, we have, }V_{11}-\omega^{2} T_{11}&=0 \qquad\Rightarrow \omega^{2}=\frac{V_{11}}{T_{11}}=\frac{4 a}{m \ell^{2}} \qquad\Rightarrow \omega=\frac{2}{\ell} \sqrt{\frac{a}{m}}\\
+	\text{So, the frequency }v&=\frac{\omega}{2 \pi}=\frac{1}{\pi \ell} \sqrt{\frac{a}{m}}
+	\intertext{Note: As we have seen in this problem, first we should find the equilibrium configuration of the system then expand potential energy about this configuration in Taylor series.}
+		\end{align*}
+	\end{answer}
+	\item  A particle of mass $m$ is moving in a potential of the form $V(x, y, z)=\frac{1}{2} m \omega^{2}\left(3 x^{2}+3 y^{2}+2 z^{2}+2 x\right)$. The oscillation frequencies of the three normal modes of the particles are given by
+	\begin{answer}
+		\begin{align*}
+		\text{The potential is, }V(x, y, z)&=\frac{1}{2} m \omega^{2}\left(3 x^{2}+3 y^{2}+2 z^{2}+2 x y\right)\\
+	\text{	Now, }\quad \frac{\partial V}{\partial x}&=0 \quad \Rightarrow 6 x+2 y=0 \quad \Rightarrow y=-3 x\\
+	\frac{\partial V}{\partial y}&=0 \quad \Rightarrow 6 y+2 x=0 \quad \Rightarrow y=\frac{-x}{3}\\
+	\frac{\partial V}{\partial z}&=0 \quad \Rightarrow z=0\\
+	\text{Now, }\quad \frac{\partial^{2} V}{\partial x^{2}}&=3 m \omega^{2}>0 \text{for all $x$}\\
+	\frac{\partial^{2} V}{\partial y^{2}}&=3 m \omega^{2}>0\text{ for all $y$}\\
+		\text{and }\frac{\partial^{2} V}{\partial z^{2}}&=4>0\text{ for all $z$}
+		\intertext{All these conditions tell us that equilibrium point is $(0,0,0)$, because $y=-3 x=-\frac{x}{3}$ satisfies only $x=y=0$ So, the given potential is in the form of expansion about $(0,0,0)$ and the matrix $V_{i j}$ can be written just by inspection.}
+		V &=\frac{1}{2} m \omega^{2}\left(3 x^{2}+3 y^{2}+2 z^{2}+2 x y\right) \\ &=\frac{1}{2} m \omega^{2}\left[\begin{array}{lll}x & y & z\end{array}\right]\left[\begin{array}{lll}3 & 1 & 0 \\ 1 & 3 & 0 \\ 0 & 0 & 2\end{array}\right]\left[\begin{array}{l}x \\ y \\ z\end{array}\right]\\
+\text{		because}\quad
+		&V=\frac{1}{2}\left(3 m \omega^{2} x^{2}+3 m \omega^{2} y^{2}+2 m \omega^{2} z^{2}+m \omega^{2} x y+m \omega^{2} y x\right) \\
+		\text{or,}\quad&V=\frac{1}{2}\left(V_{11} x^{2}+V_{22} y^{2}+V_{33} z^{2}+V_{12} x y+V_{21} y x\right)\\
+	\text{	Kinetic energy }T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)=\frac{1}{2}\left[\begin{array}{lll}\dot{x} & \dot{y} & \dot{z}\end{array}\right]\left[\begin{array}{lll}m & 0 & 0 \\ 0 & m & 0 \\ 0 & 0 & m\end{array}\right]\left[\begin{array}{l}\dot{x} \\ \dot{y} \\ \dot{z}\end{array}\right]\\
+	\text{Now,}
+	\left|\mathbf{V}-\Omega^{2} \mathbf{T}\right|&=0\quad \text{where $\Omega$ is normal mode freuency.}\\
+	\Rightarrow \quad&\left|\begin{array}{ccc}3 m \omega^{2}-\Omega^{2} m & m \omega^{2} & 0 \\ m \omega^{2} & 3 m \omega^{2}-\Omega^{2} m & 0 \\ 0 & 0 & 2 m \omega^{2}-\Omega^{2} m\end{array}\right|=0\\
+	\Rightarrow \quad\left(2 \omega^{2}-\Omega^{2}\right)&\left[\left(3 \omega^{2}-\Omega^{2}\right)^{2}-\omega^{4}\right]=0 \quad \Rightarrow \Omega_{1}^{2}=2 \omega^{2}\\
+\text{	and }\quad \Omega^{2}&=3 \omega^{2} \pm \omega^{2} \quad \Rightarrow \Omega_{2}^{2}=2 \omega^{2}\text{ and }\Omega_{3}^{2}=4 \omega^{2}
+\intertext{So, the frequencies are $\omega \sqrt{2}, \omega \sqrt{2}$ and $2 \omega$}
+\intertext{	Note that frequencies are always positive, hence we shouldn't write $\Omega_{1}=\pm \omega \sqrt{2}$ etc.}
+		\end{align*}
+	\end{answer}
+	\item \textbf{Coupled mass point on a circle:}\\
+	Four mass points of mass $m$ move on a circle of radius $R$. Each mass point is coupled to its two neighboring points by a spring with spring constant $k$ (see figure below). Find the Lagrangian of the system and derive the equations of motion of the system. Calculate the eigenfrequencies of the system, and discuss the related eigenvibrations.
+	\begin{answer}
+		\begin{align*}
+	\intertext{	The kinetic energy of the system is given by}
+		T&=\frac{1}{2} m \sum_{v=1}^{4} \dot{s}_{v}^{2}
+	\intertext{	For small displacement from the equilibrium position, the potential reads}
+		V&=\frac{1}{2} k \sum_{v=1}^{4}\left(s_{v+1}-s_{v}\right)^{2}, \quad s_{4+1}=s_{1}
+	\intertext{	We set $s_{v}=R \varphi_{v}$, and take the angles $\varphi_{v}$ as generalized coordinates. Then the Lagrangian is}
+		L&=T-V=\frac{1}{2} m R^{2} \sum_{v=1}^{4} \dot{\varphi}_{v}^{2}-\frac{1}{2} k R^{2} \sum_{v=1}^{4}\left(\varphi_{v+1}-\varphi_{v}\right)^{2}
+	\intertext{	From the Lagrange equations}
+		\frac{d}{d t} \frac{\partial L}{\partial \dot{\varphi}_{v}}&=\frac{\partial L}{\partial \varphi_{v}}
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4.8cm,width=5cm]{small oscillations-01}
+		\end{figure}
+		\begin{align*}
+		\intertext{we find the equations of motion:}
+		\frac{d}{d t} \frac{\partial L}{\partial \dot{\varphi}_{v}}=m R \ddot{\varphi}_{v}=-\frac{1}{2} k R^{2}\left[2\left(\varphi_{v}-\varphi_{v+1}\right)+2\left(\varphi_{v}-\varphi_{v+1}\right)\right]&=\frac{\partial L}{\partial \varphi_{v}} .
+	\intertext{	For the case of four mass points, we then obtain}
+	\ddot{\varphi}_{1}=\frac{k}{m}\left(\varphi_{2}-2 \varphi_{1}+\varphi_{4}\right), \quad \ddot{\varphi}_{2}&=\frac{k}{m}\left(\varphi_{3}-2 \varphi_{2}+\varphi_{1}\right)\\
+	\ddot{\varphi}_{3}=\frac{k}{m}\left(\varphi_{4}-2 \varphi_{3}+\varphi_{2}\right), \ddot{\varphi}_{4}&=\frac{k}{m}\left(\varphi_{1}-2 \varphi_{4}+\varphi_{3}\right)
+	\intertext{With the ansatz $\varphi_{v}=A_{v} \cos \omega t, \ddot{\varphi}_{v}=-A_{v} \omega^{2} \cos \omega t$, we are led to the following linear system of equations:}
+	\left(\begin{array}{cccc}2 \frac{k}{m}-\omega^{2} & -\frac{k}{m} & 0 & -\frac{k}{m} \\ -\frac{k}{m} & 2 \frac{k}{m}-\omega^{2} & -\frac{k}{m} & 0 \\ 0 & -\frac{k}{m} & 2 \frac{k}{m}-\omega^{2} & -\frac{k}{m} \\ -\frac{k}{m} & 0 & -\frac{k}{m} & 2 \frac{k}{m}-\omega^{2}\end{array}\right)\left(\begin{array}{l}A_{1} \\ A_{2} \\ A_{3}\end{array}\right)&=0
+	\intertext{For the nontrivial solutions, the determinant of the coefficient matrix must vanish. This condition leads to the determining equation for the eigenfrequencies:}
+	\left(2 \frac{k}{m}-\omega^{2}\right)^{2}\left(4 \frac{k}{m}-\omega^{2}\right)\left(-\omega^{2}\right)=0
+	\intertext{The frequencies are}
+	\omega_{1}^{2}=0, \quad \omega_{2}^{2}&=4 \frac{k}{m}, \quad \omega_{3}^{2}=\omega_{4}^{2}=2 \frac{k}{m}
+\intertext{	To calculate the related eigenvibrations, we insert these frequencies into the system of equations:}
+	\end{align*}
+\begin{align*}
+	&\text{(1) }\omega_{1}^{2}=0: A_{1}=A_{2}=A_{3}=A_{4} : \text{The system does not vibrate but performs a uniform rotation}\\
+	&\text{(2) }\omega_{2}^{2}=4 \frac{k}{m}: A_{1}=A_{3}=-A_{2}=-A_{4}:\text{ Two neighboring mass points perform an out-of-phase vibration}\\
+	&\text{(3) }\omega_{3}^{2}=\omega_{4}^{2}=2 \frac{k}{m}: A_{1}=A_{2}=-A_{3}=-A_{4}\text{ or }A_{1}=A_{4}=-A_{2}=-A_{3} :\text{ Two neighboring mass points }\\&\text{vibrate in phase}
+	\end{align*}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=8cm,width=11cm]{small oscillations-02}
+	\end{figure}
+	\end{answer}
+	\item Two equal masses coupled by two equal springs
+	Two equal masses move without friction on a plate. They are connected to each other and to the wall by two springs, as is indicated by Figure $7.3$. The two spring constants are equal, and the motion shall berestricted to a straight line (one-dimensional motion).
+	Find\\
+	(a) the equations of motion,\\
+	(b) the normal frequencies, and\\
+	(c) the anplitude ratios of the normal vibrations and the general solution.
+	\begin{answer}
+		\begin{align*}
+		\intertext{(a) Let $x_{1}$ and $x_{2}$ be the displacements from the rest positions. The cquations of motion then read}
+		m \ddot{x}_{1}&=-k x_{2}+k\left(x_{2}-x_{1}\right) \\
+		m \dot{x}_{2}&=-k\left(x_{2}-x_{1}\right)
+		\intertext{(b) For determining the normal frequencies, we use the ansatz}
+		x_{1}&=A_{1} \cos \omega t, \quad x_{2}=A_{2} \cos \omega t
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2cm,width=6.5cm]{small oscillations-03}
+		\end{figure}
+		\begin{align}
+	\intertext{	and thereby get from $\color{red}{(7.9)}$ and $(\color{red}{7.10})$ the equations}\notag\\
+		&\left(2 k-m \omega^{2}\right) A_{1}-k A_{2}=0 \label{so-05}\\
+		&-k A_{1}+\left(k-m \omega^{2}\right) A_{2}=0\notag
+		\intertext{From therequirement for nontrivial solutions of the system of equations, it follows that the determinant of coefficient vanishes:}\notag
+		D&=\left|\begin{array}{cc}
+		2 k-m \omega^{2} & -k \notag\\
+		-k & k-m \omega^{2}
+		\end{array}\right|=0
+	\intertext{	From this follows the determining equation for the eigenfrequencies,}\notag
+		\omega^{4}-3 \frac{k}{m} \omega^{2}+\frac{k^{2}}{m^{2}}&=0\notag
+		\intertext{with the positive solutions}\notag
+		\omega_{1}=\frac{\sqrt{5}+1}{2} \sqrt{\frac{k}{m}} \text { and } \omega_{2}&=\frac{\sqrt{5}-1}{2} \sqrt{\frac{k}{m}}, \omega_{1}>\omega_{2} .\notag
+		\intertext{By inserting the eigenfrequencies in (\ref*{so-05}) one sees that the higher frequency $\omega_{1}$ corresponds to the oppositephase mode, and the lower frequency $\omega_{2}$ to the equal-phase normal vibration:}\notag
+		\text{with }\omega_{1}^{2}&=\frac{1}{2}(3+\sqrt{5}) \frac{k}{m}, \quad\text{ it follows from (\ref{so-05}) that }A_{2}=-\frac{\sqrt{5}-1}{2} A_{1}\notag\\ \text{with }\omega_{2}^{2}&=\frac{1}{2}(3-\sqrt{5}) \frac{k}{m},\text{ it follows from (\ref{so-05}) that }A_{2}=\frac{\sqrt{5}+1}{2} A_{1} .\notag
+		\intertext{Since the two mass points are fixed in different ways, we find amplitudes of different magnitudes. The general solution is obtained as a superposition of the normal vibrations, using the calculated amplitudes ratios:}\notag
+		x_{1}(t)&=C_{1} \cos \left(\omega_{1} t+\varphi_{1}\right)+C_{2} \cos \left(\omega_{2} t+\varphi_{2}\right)\notag\\
+		x_{2}(t)&=-\frac{\sqrt{5}-1}{2} C_{1} \cos \left(\omega_{1} t+\varphi_{1}\right)+\frac{\sqrt{5}+1}{2} C_{2} \cos \left(\omega_{2} t+\varphi_{2}\right)\notag
+		\end{align}
+	\end{answer}
+	\item  The Lagrangian of a system is given by $L=\frac{1}{2} m \dot{q}_{1}^{2}+2 m \dot{q}_{2}^{2}-k\left(\frac{5}{4} q_{1}^{2}+2 q_{2}^{2}-2 q_{1} q_{2}\right)$ where $m$ and $k$ are positive constants. The frequencies of its normal modes are
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\sqrt{\frac{k}{2 m}}, \sqrt{\frac{3 k}{m}}$
+	\task[\textbf{b.}]$\sqrt{\frac{k}{2 m}}(13 \pm \sqrt{73})$
+	\task[\textbf{c.}]$\sqrt{\frac{5 k}{2 m}}, \sqrt{\frac{k}{m}}$
+	\task[\textbf{d.}]  $\sqrt{\frac{k}{2 m}}, \sqrt{\frac{6 k}{m}}$
+\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		 L &=\frac{1}{2} m \dot{q}_{1}^{2}+2 m \dot{q}_{2}^{2}-k\left(\frac{5}{4} q_{1}^{2}+2 q_{2}^{2}-2 q_{1} q_{2}\right) \\ &=\frac{1}{2} m \dot{q}_{1}^{2}+\frac{1}{2} 4 m \dot{q}_{2}^{2}-\frac{1}{2} k\left(\frac{5}{2} q_{1}^{2}+4 q_{2}^{2}-4 q_{1} q_{2}\right) \\ \hat{T} &=\left(\begin{array}{cc}m & 0 \\ 0 & 4 m\end{array}\right), \hat{V}=\left(\begin{array}{cc}\frac{5}{2} k & -2 k \\ -2 k & 4 k\end{array}\right) 
+		 \intertext{For frequencies of normal modes:}
+		 \operatorname{det}\left|\omega^{2} \hat{T}-\hat{V}\right|&=0\\
+		 \left|\begin{array}{cc}\left(m \omega^{2}-\frac{5}{2} k\right) & 2 k \\ 2 k & \left(4 m \omega^{2}-4 k\right)\end{array}\right|&=0 \Rightarrow 4\left(m \omega^{2}-k\right) \frac{\left(2 m \omega^{2}-5 k\right)}{2}-4 k^{2}=0\\
+		 \Rightarrow 2 m^{2} \omega^{4}+5 k^{2}-7 k m \omega^{2}-2 k^{2}&=0\\
+		 \Rightarrow 2\left(m \omega^{2}\right)^{2}-7 k\left(m \omega^{2}\right)+3 k^{2}&=0\\
+		 \Rightarrow m \omega^{2}&=\frac{7 k \pm \sqrt{49 k^{2}-24 k^{2}}}{4}=\frac{7 k \pm \sqrt{49 k^{2}-24 k^{2}}}{4}\\&=\frac{7 k \pm 5 k}{4}=3 k, \frac{k}{2}\\
+		 \therefore \omega&=\sqrt{\frac{3 k}{m}}, \sqrt{\frac{k}{2 m}}
+		\end{align*}
+		 Correct answer is option \textbf{(a)}
+	\end{answer}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 \end{enumerate}
