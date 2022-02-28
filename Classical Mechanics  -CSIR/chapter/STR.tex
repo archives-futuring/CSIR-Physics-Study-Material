@@ -192,14 +192,122 @@ The mass of a body moving at the speed v relative to an observer is larger than 
 $$
 p=m v=\frac{m_{0} v}{\sqrt{1-\frac{v^{2}}{c^{2}}}}
 $$
-\subsection{Relativistic energy}
-Einstein suggested if m is relativistic mass of body then relativistic energy E is given
-by,
+\subsection{Mass and energy}
+As we recall from elementary physics, the work $W$ done on an object by a constant force of magnitude F that acts through the distance $s$, where $F$ is in the same direction as $s$, is given by $W=$ Fs. If no other forces act on the object and the object starts from rest, all the work done on it becomes kinetic energy $\mathrm{KE}$, so $\mathrm{KE}=$ Fs. In the general case where F need not be constant, the formula for kinetic energy is the integral
 $$
-E=m c^{2} \quad \text { and } \quad E=\frac{m_{0} c^{2}}{\sqrt{1-\frac{v^{2}}{c^{2}}}}
+\mathrm{KE}=\int_{0}^{s} F d s
 $$
+In nonrelativistic physics, the kinetic energy of an object of mass $m$ and speed $v$ is $\mathrm{KE}=\frac{1}{2} \mathrm{~m} v^{2}$. To find the correct relativistic formula for $\mathrm{KE}$ we start from the relativistic form of the second law of motion, which gives
+$$\mathrm{KE}=\int_{0}^{s} \frac{d(\gamma m v)}{d t} d s=\int_{0}^{m v} v d(\gamma m v)=\int_{0}^{v} v d\left(\frac{m v}{\sqrt{1-v^{2} / c^{2}}}\right)$$
+$\text { Integrating by parts }\left(\int x d y=x y-\int y d x\right) \text {, }$
+\begin{align}
+	\mathrm{KE} &=\frac{m v^{2}}{\sqrt{1-v^{2} / c^{2}}}-m \int_{0}^{v} \frac{v d v}{\sqrt{1-v^{2} / c^{2}}} \notag \\
+	&=\frac{m v^{2}}{\sqrt{1-v^{2} / c^{2}}}+\left[m c^{2} \sqrt{1-v^{2} / c^{2}}\right]_{0}^{v} \notag \\
+	&=\frac{m c^{2}}{\sqrt{1-v^{2} / c^{2}}}-m c^{2}\notag\\
+	\mathrm{KE}&=\gamma m c^{2}-m c^{2}=(\gamma-1) m c^{2} \label{3.1}
+\end{align}
+This result states that the kinetic energy of an object is equal to the difference between $\gamma m c^{2}$ and $m c^{2}$. Equation (\ref{3.1}) may be written\\
+Total energy
+$$
+E=\gamma m c^{2}=m c^{2}+\mathrm{KE}
+$$
+If we interpret $\gamma m c^{2}$ as the total energy $E$ of the object, we see that when it is at rest and $\mathrm{KE}=0$, it nevertheless possesses the energy $m c^{2}$. Accordingly $m c^{2}$ is called the rest energy $E_{0}$ of something whose mass is $m$. We therefore have
+$$
+E=E_{0}+\mathrm{KE}
+$$
+ where   
+ \begin{equation}
+ \text{Rest energy} \quad
+ E_{0}=m c^{2} \label{ref3.2}
+ \end{equation}
+ If the object is moving, its total energy is 
+ \begin{equation}
+\text{ Total energy} \quad
+ E=\gamma m c^{2}=\frac{m c^{2}}{\sqrt{1-v^{2} / c^{2}}}
+ \end{equation}
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=5cm,width=5cm]{str-crop}
+ 	\caption{ A comparison between the classical and relativistic formulas for the ratio between kinetic energy $\mathrm{KE}$ of a moving body and its rest energy $\mathrm{mc}^{2}$. At low speeds the two formulas give the same result, but they diverge at speeds approaching that of light.}
+ 	\label{}
+ \end{figure}
+\begin{exercise}
+	A stationary body explodes into two fragments each of mass $1.0 \mathrm{~kg}$ that move apart at speeds of $0.6 c$ relative to the original body. Find the mass of the original body.
+\end{exercise}
+\begin{answer}
+	The rest energy of the original body must equal the sum of the total energies of the fragments. Hence
+	$$
+	E_{0}=m c^{2}=\gamma m_{1} c^{2}+\gamma m_{2} c^{2}=\frac{m_{1} c^{2}}{\sqrt{1-v_{1}^{2} / c^{2}}}+\frac{m_{2} c^{2}}{\sqrt{1-v_{2}^{2} / c^{2}}}
+	$$
+	and
+	$$
+	m=\frac{E_{0}}{c^{2}}=\frac{(2)(1.0 \mathrm{~kg})}{\sqrt{1-(0.60)^{2}}}=2.5 \mathrm{~kg}
+	$$
+\end{answer}
+ \subsection{Energy and Momentum}
+ Total energy and momentum are conserved in an isolated system, and the rest energy of a particle is invariant. Hence these quantities are in some sense more fundamental than velocity or kinetic energy, which are neither. Let us look into how the total energy, rest energy, and momentum of a particle are related.
+ \begin{align}
+  \text { Total energy } \quad
+ E&=\frac{m c^{2}}{\sqrt{1-v^{2} / c^{2}}} \label{ref3.4}\\
+ \text{ and square it to give} \quad
+ E^{2}&=\frac{m^{2} c^{4}}{1-v^{2} / c^{2}}\notag\\
+\text{Momentum} \quad p&=\frac{m v}{\sqrt{1-v^{2} / c^{2}}} \label{ref3.5}\\
+\text{we find that} \quad p^{2} c^{2}&=\frac{m^{2} v^{2} c^{2}}{1-v^{2} / c^{2}} \notag\\
+\text{Now we subtract} \quad p^{2} c^{2}\quad  \text{from} \quad E^{2} \notag \\
+E^{2}-p^{2} c^{2} &=\frac{m^{2} c^{4}-m^{2} v^{2} c^{2}}{1-v^{2} / c^{2}}=\frac{m^{2} c^{4}\left(1-v^{2} / c^{2}\right)}{1-v^{2} / c^{2}} \notag \\
+&=\left(m c^{2}\right)^{2}\notag\\
+\text{Energy and momentum} \quad
+E^{2}&=\left(m c^{2}\right)^{2}+p^{2} c^{2} \label{ref3.6}
+ \end{align}
+  Because $m c^{2}$ is invariant, so is $E^{2}-p^{2} c^{2}$ : this quantity for a particle has the same value in all frames of reference.
+\textbf{massless particles}\\
+ A particle must have rest mass in order to have energy and momentum, but in relativistic mechanics this requirement does not hold.\\
+ From Eqs. (\ref{ref3.4}) and (\ref{ref3.5}), when $m=0$ and $v<< c$, it is clear that $E=p=0$. A massless particle with a speed less than that of light can have neither energy nor momentum. However, when $m=0$ and $v=c, E=0 / 0$ and $p=0 / 0$, which are indeterminate: $E$ and $p$ can have any values. Thus Eqs. (\ref{ref3.4}) and (\ref{ref3.5}) are consistent with the existence of massless particles that possess energy and momentum provided that they travel with the speed of light.
+ 
+ Equation (\ref{ref3.6}) gives us the relationship between $E$ and $p$ for a particle with $m=0$ :\\
+ 
+ Massless particle
+ $$E=p c$$
+ \begin{exercise}
+ 	An electron $\left(m=0.511 \mathrm{MeV} / \mathrm{c}^{2}\right)$ and a photon $(m=0)$ both have momenta of $2.000 \mathrm{MeV} / \mathrm{c}$. Find the total energy of each.
+ \end{exercise}
+\begin{answer}
+ (a) the electron's total energy is\\
+ \begin{align*}
+ 	E &=\sqrt{m^{2} c^{4}+p^{2} c^{2}}=\sqrt{\left(0.511 \mathrm{MeV} / c^{2}\right)^{2} c^{4}+(2.000 \mathrm{MeV} / c)^{2} c^{2}} \\
+ 	&=\sqrt{(0.511 \mathrm{MeV})^{2}+(2.000 \mathrm{MeV})^{2}}=2.064 \mathrm{MeV}
+ \end{align*}
+ (b) The photon's total energy is\\\\
+ $E=p c=(2.000 \mathrm{MeV} / c) c=2.000 \mathrm{MeV}$	
+\end{answer}
 
-		
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \begin{abox}
