@@ -1,0 +1,112 @@
+\chapter{Statistical Mechanics Problems}
+\begin{enumerate}
+	\item A system of $\mathrm{N}$ particles has only two allowed state $\mathrm{A}$ and $\mathrm{B}$. The probability for $\mathrm{A}$ is $\mathrm{P}$ and for $\mathrm{B}$ is 1-P? What is the probability for the system to be in macrostate defined by the distribution of $(r, N-r) ?$
+	\begin{answer}
+		 \begin{align*}
+		 	\text{The probability of finding }&\mathrm{r}\text{ particle in state } \mathrm{A}=\mathrm{P}^{r}\\
+		 	\text{ The probability of finding }&N-r\text{ particle in state } B=(1-P)^{N-r}\\
+		 \text{	The Total no. of-ways in which}&\text{ r particle can be choosen from }N \text{- particle is }{ }^{N} C_{r}=N ! / r !(N-r) !\\
+		 \text{ The probability in which r particle }&\text{are in state $A$ and $N-r$ particle in state $B$ is }=\frac{N !}{r !(N-r) !} P^{r}(1-P)^{N-r}
+		 \end{align*}
+	\end{answer}
+	\item A one dimensiional random walker takes step to left or right with equal probability. The probability that the random walker starting from orign is back to orign after $N$ even number of step,is 
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}\left(\frac{1}{2}\right)^{N}$
+		\task[\textbf{b.}]$\frac{N!}{(\frac{N}{2})!(\frac{N}{2})!}$
+		\task[\textbf{c.}]$2N!(\frac{1}{2})^{2N}$
+		\task[\textbf{d.}] $N!(\frac{1}{2})^{N}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Probability} \quad P&=\frac{N!}{r~(N-r)}P(1-P)^{N-r}\\
+		&=\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}\left(\frac{1}{2}\right)^{\frac{N}{2}}\left(1-\frac{1}{2}\right)^{N-\frac{N}{2}}=\frac{N!}{(\frac{N}{2})!(\frac{N}{2})!}\left( \frac{1}{2}\right) ^N
+		\end{align*}
+		Option \textbf{(a)} is correct
+	\end{answer}
+	\item Calculate the no. of microstates for a configuration of a system of $N$ distinguishable particles in which there are $n_1$ particles in a particle state $1 \& n_2$ particle in state $2,n_3$ particle .....$n_1$ particle in the $i$ th state.
+	\begin{answer}
+		\begin{align*}
+		\text{Total No. of particle }&=N\\
+		\text{No: of microstate for state}-1&={{N_C}_{n1}}\\
+	\text{	No. of microstate for state }-2&=\mathrm{N}-\mathrm{n}_{1}{ }_{\mathrm{C}_{\mathrm{n}} 2}\\
+\text{	No. of microstate for state }i^{\text {th }}&=N-n_{1}-n_{2} \ldots . n_{i}-1_{c_{n_{i}}}
+\intertext{So\quad total number of microstate is}
+\mathrm{N}_{\mathrm{C}_{\mathrm{n}_{1}}} \times \mathrm{N}-\mathrm{n}_{1} \mathrm{C}_{\mathrm{n}_{2}} &\times \mathrm{N}-\mathrm{n}_{1}-\mathrm{n}_{2} \mathrm{C}_{\mathrm{n}_{3}} \times \ldots \ldots \ldots \mathrm{N}-\mathrm{n}_{1}-\mathrm{n}_{2}-\mathrm{n}_{3}-\mathrm{ni}-1_{\mathrm{n}_{\mathrm{i}}}\\
+=\frac{N !}{n_{1} !\left(N-n_{1}\right) !} &\times \frac{(N-n) !}{n_{2} !\left(N-n_{1}-n_{2}\right) !} \times \ldots \ldots \cdot \frac{\left(N-n_{1}-n_{2} \ldots n_{i}\right) !}{n_{i} !\left(N-n_{1}-n_{2} \ldots n_{i}\right) !}\\
+=\frac{N !}{n_{i} !\left(N-n_{1}-n_{2} \ldots . n_{i}\right) !}&
+-\text{ For distinguishable particle}\\
+=\frac{1}{n_{i} !\left(N-n_{1}-n_{2} \ldots n_{i} !\right) !}& \rightarrow
+\text{For indistinguishable particle}
+		\end{align*}
+	\end{answer}
+	\item Four distinguishable coins are tossed a large no. of time write down the different microstate which may be observed \& the macrostate into which they would fall. Give the probability of the most probable macrostate.\\
+	\begin{center}
+	\begin{tabular}{|p{2.5cm}|p{2.7cm}|p{2.5cm}|p{2.7cm}|p{2.5cm}|}
+		\hline Macrostate & Microstate coins having head up & Microstate coins having tail up & No.of microstate & Probability \\
+		\hline $\mathrm{n}_{1}=4, \mathrm{n}_{2}=0$ & $\mathrm{a} \mathrm{b} \mathrm{c} \mathrm{d}$ & $-$ & 1 & $\frac{1}{16}$ \\
+		\hline & $\mathrm{abc}$ & $\mathrm{d}$ & & \\
+		$\mathrm{n}_{1}=3, \mathrm{n}_{2}=1$ & $\mathrm{bcd}$ & $\mathrm{a}$ & 4 & $\frac{4}{16}$ \\
+		& $\mathrm{cda}$ & $\mathrm{b}$ & & \\
+		& $\mathrm{dab}$ & $\mathrm{c}$ & & \\
+		\hline
+		 &$\mathrm{ab}$&$\mathrm{cd}$ & &\\
+		 &$\mathrm{ac}$&$\mathrm{bd}$ & &\\
+		 $n_1=2,n_2=3$&$\mathrm{ad}$&$\mathrm{bc}$ &6&$\frac{6}{16}$\\
+		 &$\mathrm{bc}$&$\mathrm{ad}$ & &\\
+		 &$\mathrm{bd}$&$\mathrm{ac}$ & &\\
+		 &$\mathrm{cd}$&$\mathrm{ab}$ & &\\
+		 \hline
+		  &$\mathrm{a}$&$\mathrm{bcd}$ & &\\
+		$n_1=1,n_2=3$&$\mathrm{b}$&$\mathrm{acd}$ &4 &$\frac{4}{16}$\\
+		  &$\mathrm{c}$&$\mathrm{abd}$ & &\\
+		 &$\mathrm{d}$&$\mathrm{abc}$ & &\\
+		  \hline
+		  	$n_1=0,n_2=1$&$-$&$\mathrm{abcd}$ &1 &$\frac{1}{16}$\\
+		  	 \hline
+	\end{tabular}
+\end{center}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{enumerate}
