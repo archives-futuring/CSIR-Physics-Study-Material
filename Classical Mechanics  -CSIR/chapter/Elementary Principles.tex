@@ -114,4 +114,37 @@ Total angular momentum about a point $O$ is the angular momentum of motion conce
 	$L$ depends on origin $O$ through the vector $\vec{R}$ 
 	only if the centre of mass is at rest with respect to $O$ will the angular momentum be independent of point of reference.
 \end{note}
-
+\textbf{Energy Equation}\\
+Work done by all forces in moving a system from an initial configuration $1$ to a final configuration $2$
+\begin{align*}
+W_{12}&=\sum\limits_{i}\int\limits_{1}^{2}\vec{F}_i\cdot d\vec{s}_i=\sum\limits_{i}\int\limits_{1}^{2}F_i^{(e)}\cdot d s_i+\sum\limits_{i,j ,i+j}\ \int\limits_{1}^{2}
+F_{ji}\cdot ds_i
+\intertext{by equation of motion}
+\sum\limits_{i}\int\limits_{1}^{2}\vec{F}_i\cdot d\vec{s}_i&=\sum\limits_{i}\int\limits_{1}^{2}m_i \vec{\dot{v}_i}\cdot\vec{v}_i dt=\sum\limits_{i}\int\limits_{1}^{2}r(\frac{1}{2}m_iv_i^2)\\
+\therefore W_{12}&=T_2-T_1
+\intertext{	Where $T$, the total kinetic energy of system}
+T=\frac{1}{2} \sum\limits_{i}m v_i^2
+\intertext{Transformation to centre of mass coordinates}
+T=\frac{1}{2} Mv^2+\frac{1}{2}\sum m_i {v^\prime}_i^2
+\end{align*}
+ie. kinetic energy obtained if all mass were concentrated at the centre of mass $+$
+ kinetic energy of motion about the centre of mass. When external forces are derivable in terms of the gradient of a potential the first term can be written as
+  \begin{align*}
+ \sum\limits_{i}\int\limits_{1}^{2}\vec{F}_i^{(e)}\cdot d {s}_i&=-\sum\limits_{i}\int\limits_{1}^{2}\nabla _i v_i\cdot d \vec{s}=-\sum\limits_{i}-v_i \Bigr |_{1}^{2}
+ \intertext{If the internal forces are also conservative.}
+ v_{ij}&=v_{ij}(|r_i-r_j|)
+ \intertext{When forces are all conservative}
+ \sum\limits_{i,j ,i+j}\ \int\limits_{1}^{2}
+ F_{ji}\cdot ds_i&=-\sum\limits_{i}\int\limits_{1}^{2}(\nabla _i v_{i j}\cdot d s_i+\nabla_j v_{ij}\cdot ds_i)\\
+ \vec{r}_{ij}&=(r_i-r_j), \nabla_{i j}\text{ gradient with respect to }r_{i j}\\
+  \text{ Then}{ \nabla_i} v_{ij}&={\nabla_{i j}} v_{ij} =-\nabla_j v_{ij}\\
+ ds_i-ds_i&=dr_i-dr_i=dr_{ij}
+\intertext{$\therefore $ total work arising from internal force}
+&=\frac{-1}{2}\sum\limits_{i,j ,i+j}\ \int\limits_{1}^{2}\nabla_{i j} \nabla_{i j}\cdot d\vec{r}_{ij}=\frac{-1}{2}\sum\limits_{i,j ,i+j} v_{ij}\Bigr |_{1}^{2}
+ \end{align*}
+ $\therefore$ The external and internal force are both derivable from potentials so it is possible to define a total potential energy $v$ of the system.
+ $$v=\sum\limits_{i}v_i+\frac{1}{2}\sum\limits_{i,j ,i+j}v_{ij}$$
+\begin{itemize}
+	\item For rigid body internal potential is constant
+	\item  In rigid body internal forces do no work.
+\end{itemize}
