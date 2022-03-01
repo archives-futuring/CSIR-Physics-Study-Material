@@ -58,13 +58,34 @@ Exactly as in the discrete case of the Kronecker delta, we impose the normalizat
  0, & x<-\frac{1}{2 n} \\
  n, & -\frac{1}{2 n}<x<\frac{1}{2 n} \\
  0, & x>\frac{1}{2 n}
- \end{array}\right. \\
- \delta_{n}(x)=\frac{n}{\sqrt{\pi}} \exp \left(-n^{2} x^{2}\right) \\
- \delta_{n}(x)=\frac{n}{\pi} \cdot \frac{1}{1+n^{2} x^{2}} \\
+ \end{array}\right. \\\\
+ \delta_{n}(x)=\frac{n}{\sqrt{\pi}} \exp \left(-n^{2} x^{2}\right) \\\\
+ \delta_{n}(x)=\frac{n}{\pi} \cdot \frac{1}{1+n^{2} x^{2}} \\\\
  \delta_{n}(x)=\frac{\sin n x}{\pi x}=\frac{1}{2 \pi} \int_{-n}^{n} e^{i x t} d t
  \end{array}
  $$
- These approximations have varying degrees of usefulness.
+ These approximations have varying degrees of usefulness.\\
+ \begin{minipage}{0.45\textwidth}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[height=3cm,width=3cm]{Dirac delta 1}
+ 	\end{figure}
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=3cm,width=3cm]{Dirac delta 2}
+ \end{figure}
+ \end{minipage}
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=3cm]{Dirac delta 3}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=3cm]{Dirac delta 4}
+	\end{figure}
+\end{minipage}
+ 
  \subsection{Rectangular Function}
  Let us consider a rectangular fuunction defined as,
  \begin{equation}
@@ -96,12 +117,10 @@ when it acts on ordinary function like $f(x)$ and an integration over $x$ is car
 &=f(a)
 \end{align}
 \section{Integral Representations for the Delta Function}
-                 
 Integral transforms, such as the Fourier integral
 \begin{equation}
 F(\omega)=\int_{-\infty}^{\infty} f(t) \exp (i \omega t) d t
 \end{equation}
-
 Lead to the corresponding integral representations of Dirac's delta function. For example, take
 \begin{equation}
 \delta_{n}(t-x)=\frac{\sin n(t-x)}{\pi(t-x)}=\frac{1}{2 \pi} \int_{-n}^{n} \exp (i \omega(t-x)) d \omega \label{Dirac delta 007}
@@ -115,5 +134,5 @@ $$
 f(x)=\lim _{n \rightarrow \infty} \frac{1}{2 \pi} \int_{-\infty}^{\infty} f(t) \int_{-n}^{n} \exp (i \omega(t-x)) d \omega d t .
 $$
 Interchanging the order of integration and then taking the limit as $n \rightarrow \infty$, we have the Fourier integral theorem, Eq. (15.20).
-
 With the understanding that it belongs under an integral sign, as in Eq. (1.193a), the identification
+
