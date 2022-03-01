@@ -148,3 +148,51 @@ ie. kinetic energy obtained if all mass were concentrated at the centre of mass 
 	\item For rigid body internal potential is constant
 	\item  In rigid body internal forces do no work.
 \end{itemize}
+\section{Constraints}
+We have
+$$ m_i\ddot{\mathbf{r}}_1=\textbf{F}_1^{(e)}+\sum\limits_{j}\textbf{F}_{ji}$$
+All problems in mechanics be reduced to solving a set of differential equation. But this view is over simplified even from a purely physicals standpoint \\
+eg:it is necessary to take constraints\\\\
+While solving a problem along with this we have to take consideration of constraints that limits the motion of the system.\\
+Constraints are classified in various ways.\\\\
+\begin{itemize}
+\item \textit{Holonomic Constraints}: Constraint equations are integrable if the conditions of constraint can be expressed aas equarions connecting the coordinates of the particles (and possible the time) having the form
+	$$ f(\textbf{r}_1,\textbf{r}_2, \textbf{r}_3,.....t)=0$$
+	Then constraints are holonomic
+	eg:rigid body $(\textbf{r}_i-\textbf{r}_j)^2-c_{ij}^2=0$
+	a particle constrained to move along any curve or on a given surface equation\\
+\item \textit{Non Holonomic }:
+Constraint which are not expressible as above are non holonomic constraint.
+Non-holonomic constraints include nonintegrable differential constraints,constraint conditions involve higher order derivatives, or may in the form of inequality.\\
+eg:Aparticle placed on the surface of a sphere, walls of a gas container\\
+\item \textit{Rheonomous Constraints}:
+Rheonomous constraints are which the constraint equation contain time as an explicit variable.\\
+\item \textit{Scleronomous}: 
+Constraints which the constraint equations are not ecplicity dependent on time.\\
+\end{itemize}
+\textbf{Because of Constraints}:\\
+1) The coordinates $r_i$ are no longer all independent since they are connected by the equation of constraint hence equation of motion are not all independent.\\
+2)The forces of constraint are unknown and must be obtained from solution.\\
+In case of holonomic constraints the first difficulty is solved by introduction of generalized coordinates.\\\\
+\section{Generalized Coordinates}
+\begin{itemize}
+	\item A system of N-particles, free from constraints has $3N$ independent coordinates or degree of freedom. 
+	\item If the exist holonomic constraints expressed in $k$ equations in the form:\\
+	$f(r_1,r_2.....t)=0$\\
+	we use these equations to eliminate $k$ of the $3N$ coordinates
+	\item We left with $3N-k$ independent coordinates and system said to have $3N-k$ degrees of freedom.
+	\item Elimination of dependend variable is done by introduction of new $3N-k$ , independent variables $q_1,q_2.....q_{3N-k}$ in terms of which the old cordinates ate expressed by equation of form
+\begin{align*}
+	\textbf{r}_1=\textbf{r}_1(q_1,q_2&.......q_{3N-k}, t)\\
+	&....\\
+	&....\\
+	\textbf{r}_N=\textbf{r}_N(q_1,q_2&.......q_{3N-k}, t)
+\end{align*}
+	These contain constrainst implicitly\\
+	Generalized coordinates ate different from conventional orthogonal position coordinates. All sorts of quantities  may be involved to serve as generalized coordinates
+	\begin{note}
+		If the constraint is non-holonomic the equations expressing the constraint cannot be used to eliminate the dependent coordinates.
+	\end{note}
+	eg: Object rolling on a rough surface without slipping.
+\end{itemize}
+
