@@ -135,4 +135,28 @@ f(x)=\lim _{n \rightarrow \infty} \frac{1}{2 \pi} \int_{-\infty}^{\infty} f(t) \
 $$
 Interchanging the order of integration and then taking the limit as $n \rightarrow \infty$, we have the Fourier integral theorem, Eq. (15.20).
 With the understanding that it belongs under an integral sign, as in Eq. (1.193a), the identification
-
+\section{The derivative of the $\delta$ function}
+Consider a bell shaped symmetric function peaked around $x=x_0$ and parametrized by $\varepsilon$ as $\varepsilon\rightarrow0$ the function resembles a dirac delta and the derivative starts to oscillate between positive and negative values around $x=x_0$. So the derivative $\delta^\prime(n-n_0)$ is more singular than $8(x-x_0)$
+\begin{align*}
+\text{Finally }\quad&\frac{d^n}{dx^n}\delta(n)\text{ is odd $=n$ odd}\\
+\delta^\prime(-x)&=-\delta^0(x)\text{ even $=n$ even}\\
+\text{and}\quad \delta^\prime (x) &=\frac{-\delta(x)}{x}\\
+\text{with} &\int\limits_{-\propto}^{+\propto}\delta^\prime (x)f(x)dx=-f^\prime(a)
+\end{align*}
+Proof: $\int\limits_{-\propto}^{+\propto}\delta^\prime (x-a)f(x)dx=f(x)\int\limits_{-\propto}^{+\propto}\delta^\prime (x-a)-\int\limits_{-\propto}^{+\propto}(f^\prime (x)\delta^\prime(x-a)dx)dx$\\\\
+$=0-\int f^\prime(x)\delta(x-a)=-f^\prime(a),$proved
+\section{The occurance of $\delta$-function in physical problems}
+\begin{enumerate}
+	\item The dirac delta function models the density of a point source. Could be change density mass density etc.\\
+	eg:3$\delta(x-x_0)$$\rightarrow$ a charge $3c$ placed at $x=x_0$
+	\item Suppose $P(x)dx$ represent the probability distribution for age group of students than if we have a part probability say $N$ student has exactly age $x_g$ then $P(x)dx+N\delta(x-x_g)$
+	\item An impulse function in 3-D\\
+	\begin{align*}
+	\delta^3(r)&=\delta(x-x_0)\delta(y-y_0)\delta(z-z_0)\\
+	&=\frac{1}{(2\pi)^3}\int\limits_{+\propto}^{-\propto}dk_1\int\limits_{+\propto}^{-\propto}dk_2\int\limits_{+\propto}^{-\propto}dk_3 e^{ikx_1+k_2y+k_3z}\\
+	\delta^3(r)&=\frac{1}{(2\pi)^3}\int d^3ke^{ik\cdot r}
+	\end{align*}
+\end{enumerate}
+The dimension of $\delta(x)$will be the inverse $x$ \\
+if $x$ has a dimenssion $L$\\
+Then $ \left[ \delta(x)\right]\left[ L^{-1}\right]  $
