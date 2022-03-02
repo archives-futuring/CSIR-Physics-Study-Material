@@ -71,30 +71,98 @@
 	\text{The probability of most probable state }&=6/16
 	\end{align*}
 \end{answer}
-	\item An isolated system consist of two non-interacting spin $-1/2$ particles a \& b fixed in space \& kept in magnetic field B. Find out the total number of microstates allowed in the system.\\
-	\begin{center}
-			\begin{tabular}{p{2.4cm}p{2.4cm}p{2.5cm}p{2.7cm}p{2.7cm}}
-			Systemstate or macrostate & Particlestate or Microstate & Magnetic moment & Energy & No.of microstate\\\\
-			1&U \quad U&$2\mu_0$&$-2\mu_0 B$&1\\
-			2&U \quad D&0&0&
-		\end{tabular}
-	\end{center}
-	
-	
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{1cm}|}
+	\item An isolated system consist of two non-interacting spin $-1/2$ particles a \& b fixed in space \& kept in magnetic field B. Find out the total number of microstates allowed in the system.
+
+	\begin{answer}
+		$\left. \right. $\\
+		\begin{table}[H]
+	\begin{tabular}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
 		\hline
-		Systemstate or macrostate  &Particlestate or Microstate & Magnetic moment &Energy  &No.of microstate&{F}  \\ \hline
-		1& U \quad U&$2\mu_0$ & $-2\mu_0 B$& 1 & 50  \\ \hline
-	
-		 2 & U \quad D & 0 & 0 & \multirow{ 2}{*}{1} 2\\ \hline
+		Systemstate or macrostate  &Particlestate or Microstate & Magnetic moment &Energy  &No.of microstate  \\ \hline
+		1& U \quad U&$2\mu_0$ & $-2\mu_0 B$& 1   \\ \hline
+	 \multirow{ 2}{*}{1} & U \quad D & 0 & 0 & \multirow{ 2}{*}{2}\\ 
+		 & U \quad D & 0 & 0 &  \\ \hline
+		 3&D\quad D&$-2\mu_0$& $+-2\mu_0B$&1\\
+		 \hline
 	\end{tabular}
-	
 \end{table}
-	
-	
-	
+\begin{align*}
+\intertext{Total no. of microstate $=4$ for $\operatorname{Spin}-\frac{1}{2}$ two particle system no. of accessible microstate corresponding to energy.}
+E=0\text{ is }2&
+\intertext{The no. of microstate for $\mathrm{N}$ no. of Spin S particle}
+(2 S+1)^{N}&
+\intertext{The probability of getting a macrostate in which there are r particle out of N Spin $1 / 2$ particle in spin up state}
+\mathrm{N}_{\mathrm{C}_{\mathrm{r}}} \times \frac{1}{2^{\mathrm{N}}}
+\end{align*}
+	\end{answer}
+\item We have equal amount of two identical ideal gases at the same temperature $T$ but at different pressure $P_1$ and $P_2$ in two containers of volume $V_1$ and $V_2$ respectively. The containers are connected. Find the change in entropy (The temperature after mixing also ramains same)
+\begin{answer}
+	\begin{align*}
+	S&=Nk_B \ \ell n\left( \frac{V}{N}\right)+\frac{3}{2}Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right] \\
+	\sum\limits_{i=1}^{2}Si&=N_1k_B\ \ell n\frac{V_i}{N}+\frac{3}{2}N_1k_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right] \\
+	&=Nk_B\ \ell n\frac{V_1}{N}+\frac{3}{2}Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right]+\\
+		&=Nk_B\ \ell n\frac{V_2}{N}+\frac{3}{2}Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right]+\\
+		&\left\{\begin{array}{l}P_{1} V_{1}=N k_{B} T \Rightarrow \frac{V_1}{N}=\frac{k_B T}{P_1}\\ P_{2} V_{2}=N k_{B} T \Rightarrow \frac{V_2}{N}=\frac{k_B T}{P_2} \end{array}\right.\\
+		\sum\limits_{i=1}^{2}Si&=Nk_B\ \ell n\frac{k_B T}{P_1}+\frac{3}{2}Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right] +\\
+		&=Nk_B\ \ell n\frac{k_B T}{P_2}+\frac{3}{2}Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right]
+		\intertext{\textbf{Total entropy:}}
+		S_T&=2Nk_B\ \ell n\frac{V_1+V_2}{2N}+\frac{3}{2}\times 2Nk_B \left[\frac{5}{3}+\ell n \left(\frac{2\pi mk_BT}{h^2} \right) \right]
+		\intertext{Change in entropy}
+		\Delta S&=S_T-\sum\limits_{i=1}^{2}Si=2Nk_B\ \ell n\frac{V_1+V_2}{2N}-Nk_B \ \ell n\frac{k_B T}{P_1}-NK \ \ell n\frac{k_B T}{P_2}
+		\intertext{Let after mixing pressure $=P$ and after mixing total No of particle $=N+N=2 N$}
+		\end{align*}
+		\begin{align*}
+		&\mathrm{P}\left(\mathrm{V}_{1}+\mathrm{V}_{2}\right)=2 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}\hspace{6cm}\mathrm{P}\left(\mathrm{V}_{1}+\mathrm{V}_{2}\right)=2 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}\\
+		&\frac{\left(\mathrm{V}_{1}+\mathrm{V}_{2}\right)}{2 \mathrm{~N}}=\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}}\hspace{6.5cm}\frac{1}{\mathrm{P}}=\frac{\mathrm{V}_{1}+\mathrm{V}_{2}}{2 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}}=\frac{\mathrm{V}_{1}}{2 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}}+\frac{\mathrm{V}_{2}}{2 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}}\\
+		&\Delta \mathrm{S}=2 \mathrm{Nk}_{\mathrm{B}} \ \ell n \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}}-\mathrm{Nk}_{\mathrm{B}} \ell \mathrm{n} \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}_{1}}-\mathrm{Nk}_{\mathrm{B}}  \ \ell n \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}_{2}}\hspace{2cm}\frac{1}{\mathrm{P}}=\frac{1}{2}\left(\frac{1}{\mathrm{P}_{1}}+\frac{1}{\mathrm{P}_{2}}\right)\\
+		&=N k_{\mathrm{B}}  \ \ell n \left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}}\right)^{2}-\mathrm{Nk}_{\mathrm{B}}  \ \ell n \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}_{1}}-\mathrm{Nk}_{\mathrm{B}}  \ \ell n \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{P}_{2}}\hspace{2cm}P=\frac{2 P_{1} P_{2}}{P_{1}+P_{2}}\\
+		&=N k_{B}  \ \ell n \frac{\left(\frac{k_{B} T}{P}\right)^{2}}{\left(\frac{k_{B} T}{P_{1}}\right)\left(\frac{k_{B} T}{P_{2}}\right)}\\
+		&=N k_{B}  \ \ell n \left[\frac{\left(k_{B} T\right)^{2}\left(P_{1}+P_{2}\right)^{2}}{\left(2 P_{1} P_{2}\right)^{2}} \times \frac{P_{1} P_{2}}{\left(k_{B} T\right)^{2}}\right]\\
+		\Delta \mathrm{S}&=\mathrm{Nk}_{\mathrm{B}} \ell \mathrm{n} \frac{\left(\mathrm{P}_{1}+\mathrm{P}_{2}\right)^{2}}{4 \mathrm{P}_{1} \mathrm{P}_{2}}\\
+		\Delta \mathrm{S}&=\mathrm{Nk}_{\mathrm{B}}  \ \ell n \frac{\left(\mathrm{P}_{1}+\mathrm{P}_{2}\right)^{2}}{4 \mathrm{P}_{1} \mathrm{P}_{2}}\quad\text{ Here we get }\Delta S>0\\
+		\intertext{(We are considering identical particle. So it is a reversible case only when the particle density is same otherwise for identical gas also we will get $\Delta S>0$)}
+	\end{align*}
+\end{answer}
+	\item Calculate the number of microstate for a free particle in 3-dimension that have momentum $p$.
+	\begin{answer}
+		\begin{align*}
+		\mathrm{d} \tau&=\mathrm{dx} d y d z d p_{x} d p_{y} d p_{z}\\
+	\textbf{	Allowed Phase Space Volume}=&\int \mathrm{d} \tau=\int \mathrm{dxdydz} \int \mathrm{dp}_{\mathrm{x}} \mathrm{dp}_{\mathrm{y}} \mathrm{dp}_{\mathrm{z}}\\
+	&=V \int p^{2} d p \int_{0}^{\pi} \sin \theta d q \int_{0}^{2 \pi} d \phi=V \frac{4}{3} \pi p^{3}\\
+\text{	No. of microstate }&=\frac{\mathrm{V}}{\mathrm{h}^{3}} \times \frac{4}{3} \pi \mathrm{p}^{3}
+\intertext{Note : for 2. dimension.}
+\int \mathrm{dx}&=\int \mathrm{dx} \int \mathrm{dy} \int \mathrm{dp}_{\mathrm{x}} \int \mathrm{dp}_{\mathrm{x}}\\
+&=\int \mathrm{d}^{2} \mathrm{q} \cdot \mathrm{d}^{2} \mathrm{p} \quad=\mathrm{A} \cdot \pi \mathrm{p}^{2} \quad\{\text{ where }\mathrm{A}= \text{area} \}
+\intertext{Since wave polarize in 2 dimension}
+\int \mathrm{dr}&=2 \mathrm{~A} \pi \mathrm{p}^{2}
+\intertext{If momentum lies between $p$ and $p+d p$}
+\therefore\text{ No. of microstate }&=\frac{2 \mathrm{~A}}{\mathrm{~h}^{2}} 2 \pi \mathrm{pdp}=\frac{4 \mathrm{~A} \pi}{\mathrm{h}^{2}} \mathrm{pdp}
+\intertext{If momentum lies between $\mathrm{p}$ and $\mathrm{p}+\mathrm{dp}$ then no. of microstate $=\frac{\mathrm{V}}{\mathrm{h}^{3}} 4 \pi \mathrm{p}^{2} \mathrm{dp}$}
+\text{Density of state }&=\frac{\text { no. of state }}{\text { Volume }}\text{ or} \frac{\text { no. of state }}{\text { energy int erval }}
+		\end{align*}
+	\end{answer}
+	\item Calculate the number of microstates accessible to the photon having frequency between $\nu$ and $\nu+d\nu$ confined to a 3 dimentional cavity of volume $V$
+	 \begin{answer}
+	 	\begin{align*}
+	 	\intertext{No. of microstate in frequency range 0 to $\nu$}
+	 	\Omega&=\frac{V}{h^{3}} \frac{4}{3} \pi(2 m E)^{3 / 2} \hspace{3cm}
+	 	E=\frac{P^{2}}{2 m} \Rightarrow P=\sqrt{2 m} E\\
+	 	&=\frac{\mathrm{V}}{\mathrm{h}^{3}} \frac{4}{3} \pi\left(\mathrm{P}^{2}\right)^{3 / 2}\hspace{3cm} \mathrm{P}=\frac{\mathrm{E}}{\mathrm{C}}=\frac{\mathrm{h\nu}}{\mathrm{C}}\\
+	 	\Omega&=\frac{\mathrm{V}}{\mathrm{h}^{3}} \frac{4}{3} \pi \mathrm{P}^{3}=\frac{\mathrm{V}}{\mathrm{h}^{3}} \frac{4}{3} \pi\left(\frac{\mathrm{h\nu}}{\mathrm{c}}\right)^{3}=\frac{4}{3} \frac{\pi \mathrm{V\nu}^{3}}{\mathrm{c}^{3}}
+	 	\intertext{No. of microstates in the frequency range $\nu$ and $v+d \nu$ is}
+	 	\mathrm{d} \Omega&=\frac{4}{3}\  \frac{\pi \mathrm{V}}{\mathrm{c}^{3}} 3 \mathrm{\nu}^{2} \mathrm{~d} \mathrm{v}=\frac{4 \pi \mathrm{V}}{\mathrm{c}^{3}} \mathrm{\nu}^{2} \mathrm{~d} \mathrm{\nu}
+	 	\intertext{Density of state}
+	 	g(E)&=\text{ no. of states per unit energy range}\\
+	 \text{	we have }\quad
+	 	\Omega&=\frac{V}{h^{3}} \ \frac{4}{3} \ \pi(2 m E)^{3 / 2}\\
+	 	\mathrm{d} \Omega&=\frac{\mathrm{V}}{\mathrm{h}^{3}} \ \frac{4}{3}\  \cdot \frac{3}{2} \pi(2 \mathrm{mE})^{1 / 2} 2 \mathrm{~m} \mathrm{dE}\\
+	 	&=\frac{V}{h^{3}} \cdot 2 \pi(2 m)^{3 / 2} E^{1 / 2} d E\\
+	 	&\left[\mathrm{E}=\frac{\mathrm{P}^{2}}{2 \mathrm{~m}} \Rightarrow 2 \mathrm{~m}\frac{P^2}{E}-\frac{E^2}{c^2 E}=\frac{E}{c^2}\right]\\
+	 	&=\frac{V}{h^{3}} 2 \pi \left(\frac{E}{c^2} \right) ^{\frac{3}{2}}E^{\frac{1}{2}}dE\\
+	 	&=\frac{V}{h^3}\ \frac{2\pi}{c^3}E^2dE\\
+	 	g(E)&=\frac{d\Omega}{dE}=\frac{2\pi VE^2}{h^3 c^3}
+	 	\end{align*}
+	 \end{answer}
 	
 	
 	
