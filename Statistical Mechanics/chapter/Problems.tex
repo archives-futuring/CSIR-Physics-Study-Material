@@ -163,21 +163,93 @@ E=0\text{ is }2&
 	 	g(E)&=\frac{d\Omega}{dE}=\frac{2\pi VE^2}{h^3 c^3}
 	 	\end{align*}
 	 \end{answer}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+ \section{Canonical Ensemble}
+	\item Show that the partition fuction of two independent (non-interacting)
+	system $i$ and $j$ is given by 
+	$$Z_{ij}=Z_i\times Z_j$$
+	\begin{answer}
+		\begin{align*}
+		\intertext{We know that}
+		P_{i}&=\frac{e^{-\beta E_{i}}}{Z_{i}}, P_{j}=\frac{e^{-\beta E_{j}}}{Z_{j}}\\
+		E&=E_{i}+E_{j}, P_{i j}=\frac{e^{-\beta\left(E_{i}+E_{j}\right)}}{Z_{i j}}\\
+		P_{i j}&=\frac{e^{-\beta E}}{Z_{i i}}=\frac{e^{-\beta\left(E_{i}+E_{j}\right)}}{Z_{i i}}=\frac{e^{-\beta E_{i}} \times e^{-\beta E_{j}}}{\dot{Z}_{i i}}\\
+		\mathbf{P}_{\mathrm{ij}}&=\mathrm{P}_{\mathrm{i}} \times \mathrm{P}_{\mathrm{j}}\\
+		\frac{e^{-\beta E_{i}} \times e^{-\beta E_{j}}}{Z_{i j}}&=\frac{e^{-\beta E_{i}}}{Z_{i}} \times \frac{e^{-\beta E_{j}}}{Z_{i}}\\
+		\text{So  }\quad Z_{\mathrm{ij}}&=Z_{\mathrm{i}} \times Z_{\mathrm{j}}\\
+	\text{	In general }Z_{i j k} \cdots \cdots&=Z_{i} \times Z_{j} \times Z_{k} \times \cdots \\
+	\text{Total partition function }Z&=Z_{\text {Rotational motion }} \times Z_{\text {Translational motion }} \times Z_{\text {Vibrational motion }} \times \ldots \ldots \ldots \ldots \ldots
+		\end{align*}
+	\end{answer}
+	\item A system consist of three independent particles localised in space. Each particle have two states of energy $O$ and $E$. When the system is in thermal equilibrium with a heat bath at temperature $T$. Calculate its partition function? 
+ 	\begin{answer}
+ 		Method :-1
+ 		\begin{align*}
+ 		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\sum_{\mathrm{r}} \mathrm{g}_{\mathrm{r}} \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{r}}}\\
+ 		Q_1 (V,T)=\sum e^{\beta E_r}=1+e^{\beta E}
+ 		\end{align*}
+ 	\end{answer}
+	\item The partition function for two Bose particle each of which can occupy any of the enetgy level $0$ and $E$ 
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$1+e^{-2 E / K T}+2 e^{-E / K T}$
+		\task[\textbf{b.}] $1+e^{-2 E / K T}+e^{-E / K T}$
+		\task[\textbf{c.}]$2 \mathrm{e}^{-2 \mathrm{E} / \mathrm{KT}}+\mathrm{e}^{-\mathrm{E} / \mathrm{KT}}$
+		\task[\textbf{d.}] $e^{-2 E / K T}+e^{-E / K T}$
+	\end{tasks}
+	\begin{answer}$\left. \right. $\\
+		\renewcommand*{\arraystretch}{2}
+		\begin{tabular}{llllll} 
+			& $\mathbf{0}$ & $\mathbf{E}$ & Total energy & \multicolumn{2}{c}{ degeneracy } \\
+			1 & aa & 0 & 0 & 1 & $\left(g_{1}\right)$ \\
+			2 & a & a & E & 1 & $\left(g_{2}\right)$ \\
+			3 & 0 & a & 2 E & 1 & $\left(g_{3}\right)$
+		\end{tabular}
+	\begin{align*}
+	\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\sum_{\mathrm{r}} \mathrm{g}_{\mathrm{r}} \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{r}}}=\mathrm{g}_{1} \mathrm{e}^{-\beta \mathrm{E}_{1}}+\mathrm{g}_{2} \mathrm{e}^{-\beta \mathrm{E}_{2}}+\mathrm{g}_{3} \mathrm{e}^{-\beta \mathrm{E}_{3}}\\
+	&=1+\mathrm{e}^{-\beta E}+\mathrm{e}^{-2 \beta E}
+	\end{align*}
+	Correct answer is option \textbf{(b)}
+	\end{answer}
+	\item The partition function of single gas molecule is $Z\alpha$. The partition fuction of $N$ such non-interacting gas molecule is given by
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{(Z \alpha)^{N}}{N !}$
+		\task[\textbf{b.}]$(Z \alpha)^{N}$
+		\task[\textbf{c.}] $\mathrm{NZ} \alpha$
+		\task[\textbf{d.}] $(Z \alpha)^{N} / N$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{For indistinguishable particle }&\frac{(Z \alpha)^{N}}{N !}\\
+		\text{for distinguishable particle }&(Z \alpha)^{N}
+		\end{align*}
+	\end{answer}
+	\item A system has energy level $E_0,2E_0,3E_0....$ where the excited state are triply degenerate. Four non-interacting Bosons are placed in this system. If the total energy of these Bosons is $5E_0$. The number of microstate is 
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]2
+		\task[\textbf{b.}]3
+		\task[\textbf{c.}]4
+		\task[\textbf{d.}]5
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Total energy }&=5 \mathrm{E}_{0}
+		\intertext{For this 3 bosons must be in $E_0$ state and $1$ in $2E_0$ state.}
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=4cm]{SM-problem-01}
+		\end{figure}
+		Correct answer is option \textbf{(b)}
+	\end{answer}
+	\item An ensemble of quantum harmonic oscillator is kept at a finite temperature $T$ 
+	$$\mathrm{T}=\frac{1}{\mathrm{k}_{\mathrm{B}} \beta} \quad
+ k_B	\text{-Boltzmann constant}$$
+ The partition function of a single oscillator with energy $\left( n+1/2\right) \hbar\omega$ is given by
+  \begin{tasks}(2)
+ 	\task[\textbf{a.}] $Z=\frac{e^{-\beta \hbar \omega / 2}}{1-e^{-\beta \hbar \omega}}$
+ 	\task[\textbf{b.}]$Z=\frac{e^{-\beta \hbar \omega / 2}}{1+e^{-\beta \hbar \omega}}$
+ 	\task[\textbf{c.}]$Z=\frac{1}{1-e^{-\beta \hbar \omega}}$
+ 	\task[\textbf{d.}] $Z=\frac{1}{1+e^{-\beta \hbar \omega}}$
+ \end{tasks}
 	
 	
 	
