@@ -1,111 +1,4 @@
-\chapter{Power series Solution and Special functions}
-\section{Series Solution Method}
-Series expansion is a  method of obtaining one solution of the linear, second-order, homogeneous ODE. The method, will always work, provided the point of expansion is no worse than a regular singular point.In physics this very gentle condition is almost always satisfied. 
-A linear, second-order, homogeneous ODE can be written in the form
-\begin{equation}
-\frac{d^{2} y}{d x^{2}}+P(x) \frac{d y}{d x}+Q(x) y=0 \label{DE002}
-\end{equation}
-The most general solution of the equation \ref{DE002} may be written as,
-\begin{equation}
-y(x)=c_{1} y_{1}(x)+c_{2} y_{2}(x)
-\end{equation}
-But a physical problem may lead to a nonhomogeneous, linear, second-order ODE
-\begin{equation}
-\frac{d^{2} y}{d x^{2}}+P(x) \frac{d y}{d x}+Q(x) y=F(x)\label{DE003}
-\end{equation}
-Hence the most general solution to the equation \label{DE003} will be of the form,
-\begin{equation}
-y(x)=c_{1} y_{1}(x)+c_{2} y_{2}(x)+y_{p}(x)
-\end{equation}
-The constants $c_{1}$ and $c_{2}$ will eventually be fixed by boundary conditions.\\\\
-There are two series solution method  for differential equation,
-\begin{enumerate}
-	\item \textbf{Simple series expansion method}
-	\item \textbf{Frobenious Method}
-\end{enumerate}
-\subsection{Simple Power Series Expansion Method}
-The simple series expansion method works for differential equations whose solutions are well-behaved at the expansion point $x = 0$.
-This method can be illustrated by Linear classical oscillator problem
-\subsection{Classical Linear Oscillator}
-\begin{align}
-\frac{d^{2} y}{d x^{2}}+\omega^{2} y&=0 \label{DE003}\\
-\text{with known solutions} \ y&=\sin \omega x, \cos \omega x\\
-\text{We try}\ y(x) &=x^{k}\left(a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\cdots\right) \\
-&=\sum_{\lambda=0}^{\infty} a_{\lambda} x^{k+\lambda}, \quad a_{0} \neq 0 \label{DE004}\\
-\intertext{with the exponent $k$ and all the coefficients $a_{\lambda}$ still undetermined. Note that $k$ need not be an integer. By differentiating twice, we obtain}
-\frac{d y}{d x} &=\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda) x^{k+\lambda-1} \\
-\frac{d^{2} y}{d x^{2}} &=\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda)(k+\lambda-1) x^{k+\lambda-2}
-\intertext{By substituting into equation.\ref{DE003}, we have}
-\sum_{\lambda=0}^{\infty} a_{\lambda}(k+\lambda)(k+\lambda-1) x^{k+\lambda-2}+\omega^{2} \sum_{\lambda=0}^{\infty} a_{\lambda} x^{k+\lambda}&=0 \label{DE005}
-\intertext{The coefficients of each power of $x$ on the left-hand side of equation.\ref{DE005} must vanish individually.The lowest power of $x$ appearing in equation.\ref{DE005} is $x^{k-2}$, for $\lambda=0$ in the first summation. The requirement that the coefficient vanish  yields,}
-a_{0} k(k-1)&=0
-\intertext{We had chosen $a_{0}$ as the coefficient of the lowest nonvanishing terms of the series \ref{DE004}, hence, by definition, $a_{0} \neq 0$. Therefore we have,}
-k(k-1)&=0 \label{DE006}
-\end{align}
-\textbf{This equation, coming from the coefficient of the lowest power of $x$, we call the {indicial equation}.} The indicial equation and its roots are of critical importance to our analysis.
-\\From equation.\ref{DE006}, \qquad $k=0 $ or $k=1$\\
-The only way a power series can be zero is, it's coefficients must be equal to zero. But here the power of $x$ in the equation do not match up. The Coefficent of $x$ in the first term is,${k+\lambda-2} $ and for the second term it is,$k+\lambda$, to make them equal, we can replace $\lambda$ by $\lambda+2$ in the first term. Then we get,
-\begin{align}
-\sum_{\lambda=2}^{\infty} a_{\lambda+2}(k+\lambda+2)(k+\lambda+1) x^{k+\lambda}+\omega^{2} \sum_{\lambda=0}^{\infty} a_{\lambda} x^{k+\lambda}&=0\\
-\sum_{\lambda=2}^{\infty} a_{\lambda+2}(k+\lambda+2)(k+\lambda+1) +\omega^{2} \sum_{\lambda=0}^{\infty} a_{\lambda} &=0
-\intertext{Here the coefficients  are independent summations and $\lambda $ is a dummy index. Then we get,}
-a_{\lambda+2}(k+\lambda+2)(k+\lambda+1) +\omega^{2} a_{\lambda} &=0\\
-a_{\lambda+2}&=-a_{\lambda} \frac{\omega^{2}}{(k+\lambda+2)(k+\lambda+1)}\label{DE007}
-\end{align}
-For this example, if we start with $a_{0}$, Equation.\ref{DE007} leads to the even coefficients $a_{2}, a_{4}$, and so on, and ignores $a_{1}, a_{3}, a_{5}$, and so on. Since $a_{1}$ is arbitrary if $k=0$ and necessarily zero if $k=1$, 
-$$
-a_{3}=a_{5}=a_{7}=\cdots=0
-$$
-and all the odd-numbered coefficients vanish. The odd powers of $x$ will actually reappear when the second root of the indicial equation is used.
-\begin{align}
-a_{\lambda+2}&=-a_{\lambda} \frac{\omega^{2}}{(\lambda+2)(\lambda+1)}
-\intertext{which leads to}
-a_{2}&=-a_{0} \frac{\omega^{2}}{1 \cdot 2}=-\frac{\omega^{2}}{2 !} a_{0} \\
-a_{4}&=-a_{2} \frac{\omega^{2}}{3 \cdot 4}=+\frac{\omega^{4}}{4 !} a_{0} \\
-a_{6}&=-a_{4} \frac{\omega^{2}}{5 \cdot 6}=-\frac{\omega^{6}}{6 !} a_{0}, \quad \text { and so on. }
-\intertext{By inspection (and mathematical induction),}
-a_{2 n}&=(-1)^{n} \frac{\omega^{2 n}}{(2 n) !} a_{0}
-\intertext{and our solution is}
-y(x)_{k=0}&=a_{0}\left[1-\frac{(\omega x)^{2}}{2 !}+\frac{(\omega x)^{4}}{4 !}-\frac{(\omega x)^{6}}{6 !}+\cdots\right]\\&=a_{0} \cos \omega x\\
-\intertext{If we choose the indicial equation root $k=1$ Equation.\ref{DE007}, the recurrence relation becomes}
-a_{j+2}&=-a_{j} \frac{\omega^{2}}{(j+3)(j+2)}\\
-\intertext{Substituting in $j=0,2,4$, successively, we obtain}
-a_{2}=-a_{0} \frac{\omega^{2}}{2 \cdot 3}&=-\frac{\omega^{2}}{3 !} a_{0} \\
-a_{4}=-a_{2} \frac{\omega^{2}}{4 \cdot 5}&=+\frac{\omega^{4}}{5 !} a_{0} \\
-a_{6}=-a_{4} \frac{\omega^{2}}{6 \cdot 7}&=-\frac{\omega^{6}}{7 !} a_{0}, \quad \text { and so on. }
-\intertext{Again, by inspection and mathematical induction,}
-a_{2 n}&=(-1)^{n} \frac{\omega^{2 n}}{(2 n+1) !} a_{0}\\
-\intertext{For this choice, $k=1$, we obtain}
-y(x)_{k=1} &=a_{0} x\left[1-\frac{(\omega x)^{2}}{3 !}+\frac{(\omega x)^{4}}{5 !}-\frac{(\omega x)^{6}}{7 !}+\cdots\right] \\
-&=\frac{a_{0}}{\omega}\left[(\omega x)-\frac{(\omega x)^{3}}{3 !}+\frac{(\omega x)^{5}}{5 !}-\frac{(\omega x)^{7}}{7 !}+\cdots\right] \\
-&=\frac{a_{0}}{\omega} \sin \omega x
-\end{align}
-\subsubsection{Power Series Solution (About an Ordinary Point)}
-Find the power series solution of $\left(1-x^{2}\right) y^{\prime \prime}-2 x y^{\prime}+2 y=0$ about $x=0$\\\\
-Since $x=0$ is an ordinary point of the given differential equation, the solution can be written as
-\begin{align*}
-y&=\sum_{k=0}^{\infty} a_{k} x^{k} \\ \frac{d y}{d x}&=\sum_{k=0}^{\infty} k a_{k} x^{k-1} \\ \frac{d^{2} y}{d x^{2}}&=\sum_{k=0}^{\infty} a_{k} k(k-1) x^{k-2}
-\intertext{Substituting these values in the given equation we get,}
-\left(1-x^{2}\right) \sum_{k} a_{k} k(k-1) x^{k-2}&-2 x \sum_{k} a_{k}(k) x^{k-1}+2 \sum_{k} a_{k} x^{k}=0 \\
-\sum_{k=2} a_{k} k(k-1) x^{k-2}&-\sum\left(k^{2}+k-2\right) a_{k} x^{k}=0
-\intertext{now equating the coefficient of $x^{k}$ then}
-(k+2)(k+1) a_{k+2}-\left(k^{2}+k-2\right) a_{k}&=0 \\a_{k+2}&=\frac{k-1}{(k+1)} a_{k}\\
-\text{For} \ k&=0 \Rightarrow a_{2}=-a_{0} \\ k&=1 \Rightarrow a_{3}=0 \\
-k&=2 \Rightarrow a_{4}=\frac{a_{2}}{3}=\frac{-a_{0}}{3}  \\ k&=3 \Rightarrow a_{5}=\frac{2}{4} a_{3}=0\\
-\text{Therefore, solution}\ y&=a_{0}+a_{1} x+a_{2} x^{2}+\ldots \ldots\\&=a_{0}\left[1-x^{2}-\frac{x^{4}}{3} \ldots . .\right]+a_{1} x
-\end{align*}
-\subsection{Frobenious Method}
-Even though the simple power series expansion method works for many functions there are some whose behaviour  precludes the simple series method like the Bessel's function. The need of Frobenious method  lies under the fact that, \textbf{any functions involving negative or fractional powers would not be amenable to power series solution method}. The Frobenious method extends the simple power series solution method to include negative and fractional powers, and it also allows a natural extension involving logarithm terms.\\
-The basic idea of the Frobenius method is to look for solutions of the form
-\begin{align*}
-y(x) &=a_{0} x^{\lambda}+a_{1} x^{\lambda+1}+a_{2} x^{\lambda+2}+a_{3} x^{\lambda+3}+\ldots \\
-&=x^{\lambda}\left(a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\ldots\right) \\
-&=x^{\lambda} \sum_{k=0}^{\infty} a_{k} x^{k} \\
-&= \sum_{k=0}^{\infty} a_{k} x^{k+\lambda}
-\end{align*}
-The extension of the simple power series method is all in the factor $x^{\lambda}$. The power $c$ must now be determined, as well as the coefficients $a_{k}$. Since $\lambda$ may be negative, positive, and possibly non-integral, this extends considerably the range of functions which may be treated. Note that $a_{0}$ is the lowest non-zero coefficient, so by definition it cannot be zero.
-\subsection{Bessel Function}
-\newpage
+\chapter{Practice set solutions}
 \begin{abox}
 	Problem Set -3
 \end{abox}
@@ -118,6 +11,10 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $p_{0}(x)=\frac{1}{2}$ and $p_{1}(x)=\sqrt{\frac{3}{2}}(3-x)$
 		\task[\textbf{D.}] $p_{0}(x)=\frac{1}{\sqrt{2}}$ and $p_{1}(x)=\sqrt{\frac{3}{2}}(3-x)$
 	\end{tasks}
+	\begin{answer}
+		For $n$ not equal to $m$ kroneker delta become zero. One positive and one negative term can make integral zero. So answer may be (C) or (D). Now take $n=m=0$ so $p_{0}(x)=\frac{1}{\sqrt{2}}$ and then integrate. (D) is correct option because it satisfies the equation Check by integration and by orthogonal property of Legendre polynomial also.\\\\
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
 	\item  The generating function $F(x, t)=\sum_{n=0}^{\infty} P_{n}(x) t^{n}$ for the Legendre polynomials $P_{n}(x)$ is $F(x, t)=\left(1-2 x t+t^{2}\right)^{-1 / 2}$. The value of $P_{3}(-1)$ is
 	{\exyear{NET/JRF(DEC-2011)}}
 	\begin{tasks}(4)
@@ -126,6 +23,12 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $+1$
 		\task[\textbf{D.}] $-1$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		P_{3}&=\frac{1}{2}\left(5 x^{3}-3 x\right) \Rightarrow P_{3}(-1)\\&=\frac{1}{2}\left(5(-1)^{3}-3(-1)\right)=\frac{1}{2}[-5+3]=-1
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
 	\item  The graph of the function $f(x)$ shown below is best described by
 	{\exyear{NET/JRF(DEC-2012)}}
 	\begin{figure}[H]
@@ -138,6 +41,9 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $e^{-x} \cos x$
 		\task[\textbf{D.}] $\frac{1}{x} \cos x$
 	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
 	\item Given that $\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}=e^{-t^{2}+2 t x}$ the value of $H_{4}(0)$ is
 	{\exyear{NET/JRF(JUNE-2013)}}
 	\begin{tasks}(4)
@@ -146,6 +52,13 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] 24
 		\task[\textbf{D.}] $-6$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}&=e^{-t^{2}+2 x} \Rightarrow \sum_{n=0}^{\infty} H_{n}(0) \frac{t^{n}}{n !}\\&=e^{-t^{2}}=1-t^{2}+\frac{t^{4}}{2 !}-\frac{t^{6}}{3 !}\\
+		\Rightarrow \frac{H_{4}(0)}{4 !} t^{4}&=\frac{t^{4}}{2 !} \Rightarrow H_{4}(0)=\frac{4 !}{2 !}=12
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
 	\item   Given $\sum_{n=0}^{\infty} P_{n}(x) t^{n}=\left(1-2 x t+t^{2}\right)^{-1 / 2}$, for $|t|<1$, the value of $P_{5}(-1)$ is
 	{\exyear{NET/JRF(JUNE-2014)}}
 	\begin{tasks}(4)
@@ -154,6 +67,12 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $0.5$
 		\task[\textbf{D.}] $-1$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		P_{n}(-1)&=-1\text{ if }n\text{ is odd }\Rightarrow P_{5}(-1)=-1
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
 	\item The function $f(x)=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n !(n+1) !}\left(\frac{x}{2}\right)^{2 n+1}$, satisfies the differential equation
 	{\exyear{NET/JRF(DEC-2014)}}
 	\begin{tasks}(2)
@@ -162,8 +81,14 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $x^{2} \frac{d^{2} f}{d x^{2}}+x \frac{d f}{d x}+\left(x^{2}-1\right) f=0$
 		\task[\textbf{D.}] $x^{2} \frac{d^{2} f}{d x^{2}}-x \frac{d f}{d x}+\left(x^{2}-1\right) f=0$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{ $f(x)=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n !(n+1) !}\left(\frac{x}{2}\right)^{2 n+1}$ is generating function (Bessel Function of first kind) which satisfies the differential equation $x^{2} \frac{d^{2} f}{d x^{2}}+x \frac{d f}{d x}+\left(x^{2}-n^{2}\right) f=0$, put $n=1$.}
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
 	\item
-	 The Hermite polynomial $H_{n}(x)$, satisfies the differential equation
+	The Hermite polynomial $H_{n}(x)$, satisfies the differential equation
 	$$
 	\frac{d^{2} H_{n}}{d x^{2}}-2 x \frac{d H_{n}}{d x}+2 n H_{n}(x)=0
 	$$
@@ -175,6 +100,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $\frac{\partial^{2} G}{\partial x^{2}}-2 x \frac{\partial G}{\partial x}+2 \frac{\partial G}{\partial t}=0$
 		\task[\textbf{D.}]  $\frac{\partial^{2} G}{\partial x^{2}}-2 x \frac{\partial G}{\partial x}+2 \frac{\partial^{2} G}{\partial x \partial t}=0$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		G&=\frac{1}{n !} H_{n}(x) t^{n}, G^{\prime}=\frac{1}{n !} H_{n}^{\prime}(x) t^{n}, G^{\prime \prime}=\frac{1}{n !} H_{n}^{\prime \prime}(x) t^{n}\\
+		\frac{\partial G}{\partial t}&=\frac{1}{n !} H_{n}(x) n t^{n-1}
+		\intertext{Let's check the options one by one}
+		\frac{\partial G}{\partial x^{2}}&-2 x \frac{\partial G}{\partial x}+2 t \frac{\partial G}{\partial t}=0\\
+		\frac{1}{n !} H_{n}^{\prime \prime}(x) t^{n}&-2 x \frac{1}{n !} H_{n}^{\prime}(x) t^{n}+2 t \frac{1}{n !} H_{n}(x) n t^{n-1}\\
+		H_{n}^{\prime \prime}(x)-2 x H_{n}^{\prime}(x)+2 x H_{n}(x)&=0,\text{ which is Hermite Differential Equation.}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
 	\item A stable asymptotic solution of the equation $x_{n+1}=1+\frac{3}{1+x_{n}}$ is $x=2$. If we take $x_{n}=2+\epsilon_{n}$ and $x_{n+1}=2+\epsilon_{n+1}$, where $\epsilon_{n}$ and $\epsilon_{n+1}$ are both small, the ratio $\frac{\epsilon_{n+1}}{\epsilon_{n}}$ is approximately
 	{\exyear{NET/JRF(DEC-2016)}}
 	\begin{tasks}(4)
@@ -183,6 +119,9 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}]  $-\frac{1}{3}$
 		\task[\textbf{D.}] $-\frac{2}{3}$
 	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
 	\item  The Green's function satisfying
 	$$
 	\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)=\delta\left(x-x_{0}\right)
@@ -195,6 +134,32 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $\left\{\begin{array}{ll}\frac{1}{2 L}\left(L-x_{0}\right)(x+L), & -L \leq x<x_{0} \\ \frac{1}{2 L}\left(x_{0}+L\right)(L-x), & x_{0} \leq x \leq L\end{array}\right.$
 		\task[\textbf{D.}] $\frac{1}{2 L}(x-L)(x+L), \quad-L \leq x \leq L$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)&=\delta\left(x-x_{0}\right)
+		\intertext{word or phrase}
+		g\left(-L, x_{0}\right)&=0=g\left(L, x_{0}\right)
+		\intertext{The homogeneous equation for Green's function is}
+		\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)&=0
+		\intertext{Solution of above equation is}
+		g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}A x+B, & x<x_{0} \\ C x+D, & x>x_{0}\end{array}\right.
+		\intertext{Applying boundary condition}
+		g\left(-L, x_{0}\right)&=0 \Rightarrow-A L+B=0 \Rightarrow A L=B\\
+		g\left(L, x_{0}\right)&=0 \Rightarrow C L+D=0 \Rightarrow-C L=D\\
+		\text{Hence, }g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}A(x+L), & x<x_{0} \\ C(x-L), & x>x_{0}\end{array}\right.
+		\intertext{From continuity of Green's function at $x=x_{0}$ we have}
+		A\left(x_{0}+L\right)&=C\left(x_{0}-L\right)\\
+		A&=C\left(\frac{x_{0}-L}{x_{0}+L}\right)
+		\intertext{From discontinuity of derivative of Green's function $\frac{\partial g}{\partial x}$ at $x=x_{0}$}
+		\intertext{We have}
+		\left|\frac{\partial g}{\partial x}\right|_{x=x_{0}^{+}}-\left.\frac{\partial g}{\partial x}\right|_{x=x_{0}^{-}}&=1\\
+		\left|\frac{\partial g}{\partial x}\right|_{x=x_{0}^{+}}=C,\left.\frac{\partial g}{\partial x}\right|_{x=x_{0}^{-}}&=A\\
+		\therefore C-A&=1 \Rightarrow C=A+1
+		\intertext{Thus, the required solution of Green's function is given by}
+		g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}\frac{\left(x_{0}-L\right)(x+L)}{2 L}, & x<x_{0} \\ \frac{\left(x_{0}+L\right)(x-L)}{2 L}, & x>x_{0}\end{array}\right.
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
 	\item  The generating function $G(t, x)$ for the Legendre polynomials $P_{n}(t)$ is
 	$$
 	G(t, x)=\frac{1}{\sqrt{1-2 x t+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(t), \text { for }|x|<1
@@ -207,6 +172,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $\sum_{n, m=0}^{\infty} x^{n-m} P_{n}(1) P_{m}(1)$
 		\task[\textbf{D.}] $\sum_{n, m=0}^{\infty} x^{n-m} P_{n}(0) P_{m}(1)$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		G(t, x)&=\frac{1}{\sqrt{1-2 x t+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(t)\text{ for }|x|<1\\
+		G(1, x)&=\frac{1}{\sqrt{1-2 x+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(1)\\
+		&=\frac{1}{\sqrt{(1-x)^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(1)\\&=\frac{1}{1-x}\text{ Since } |x|<1\\
+		\text{Now, }x \cdot \frac{1}{1-x}&=\int_{0}^{x} f\left(x^{\prime}\right) d x^{\prime}
+		\intertext{Differentiating both sides,}
+		f(x)&=\frac{d}{d x} \frac{x}{1-x}=\frac{1}{(1-x)^{2}}
+		\end{align*}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
 	\item In the function $P_{n}(x) e^{-x^{2}}$ of a real variable $x, P_{n}(x)$ is polynomial of degree $n$. The maximum number of extrema that this function can have is
 	{\exyear{NET/JRF(JUNE-2018)}}
 	\begin{tasks}(4)
@@ -215,6 +191,18 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $n+1$
 		\task[\textbf{D.}] $n$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		y&=P_{n}(x) e^{-x^{2}} \Rightarrow P_{n}^{\prime}(x) e^{-x^{2}}+P_{n}(x) e^{-x^{2}}(-2 x)\\
+		&=0 \Rightarrow P_{n}^{\prime}(x)-2 x P_{n}(x)=0\\
+		P_{0}(x)=1, P_{1}(x)&=2 \Rightarrow P_{0}^{\prime}(x)-2 x P_{0}(x)\\&=0 \Rightarrow 0-2 x .1=0\\
+		x&=0,1\text{ extrema}\\
+		P_{1}^{\prime}(x)-2 x P_{1}(x)&=0\\
+		1-2 x \cdot x&=0 \Rightarrow x=\pm \frac{1}{\sqrt{2}}\text{ i.e., 2 extrema.}\\
+		\text{Thus in general there are }&(n+1)\text{ extrema.}
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
 	\item  The Green's function $G\left(x, x^{\prime}\right)$ for the equation $\frac{d^{2} y(x)}{d x^{2}}+y(x)=f(x)$, with the boundary values $y(0)=y\left(\frac{\pi}{2}\right)=0$, is
 	{\exyear{NET/JRF(JUNE-2018)}}
 	\begin{tasks}(1)
@@ -223,6 +211,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}\cos x^{\prime} \sin x, & 0<x<x^{\prime}<\frac{\pi}{2} \\ \sin x^{\prime} \cos x, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
 		\task[\textbf{D.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(\frac{\pi}{2}-x^{\prime}\right), & 0<x<x^{\prime}<\frac{\pi}{2} \\ x^{\prime}\left(\frac{\pi}{2}-x\right), & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d^{2} y}{d x^{2}}+y&=0 \Rightarrow m^{2}+1=0 \Rightarrow m=0 \pm i\\
+		y_{1}(x)&=\sin x(a t), y_{1}^{\prime}(x)=\cos x\\
+		y_{2}(x)&=\cos x \quad\left(a t \frac{\pi}{2}\right), y_{2}^{\prime}(x)=-\sin x\\
+		A&=\left\{P\left(x^{\prime}\right)\left[y_{2}^{\prime}\left(x^{\prime}\right) y_{1}\left(x_{1}^{\prime}\right)-y_{1}^{\prime}\left(x^{\prime}\right)\right] y_{2}\left(x^{\prime}\right)\right\}\\
+		\Rightarrow A&=\left\{-\sin x^{\prime} \sin x^{\prime}-\cos ^{\prime} \cos x^{\prime}\right\} \\ \because P(x)&=1 \Rightarrow A=-1\\
+		\text{Thus }G\left(x, x^{\prime}\right)&=\left\{\begin{array}{ll}A y_{1}(x) y_{2}\left(x^{\prime}\right), & x<x^{\prime} \\ A y_{2}(x) y_{1}(x), & x>x^{\prime}\end{array}=\left\{\begin{array}{ll}-\sin x \cos x^{\prime}, & 0<x<x^{\prime}<\frac{\pi}{2} \\ -\cos x \sin x^{\prime}, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.\right.
+		\end{align*}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
 	\item The polynomial $f(x)=1+5 x+3 x^{2}$ is written as linear combination of the Legendre polynomials
 	$\left(P_{0}(x)=1, P_{1}(x), P_{2}(x)=\frac{1}{2}\left(3 x^{2}-1\right)\right)$ as $f(x)=\sum_{n} c_{n} P_{n}(x)$. The value of $c_{0}$ is
 	{\exyear{NET/JRF(DEC-2018)}}
@@ -232,6 +231,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}]  2
 		\task[\textbf{D.}]  4
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		f(x)&=1+5 x+3 x^{2}\\
+		1&=P_{0}(x) \quad x=P_{1}(x)\\
+		x^{2}&=\frac{1}{3}\left(2 P_{2}(x)+1\right)\\
+		f(x)&=P_{0}(x)+5 P_{1}(x)+2 P_{2}(x)+P_{0}(x)\\
+		&=2 P_{0}(x)+5 P_{1}(x)+2 P_{2}(x)\\
+		&=c_{0} P_{0}(x)+c_{1} P_{1}(x)+c_{2} P_{2}(x) c_{0}=2
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
 	\item The Green's function $G\left(x, x^{\prime}\right)$ for the equation $\frac{d^{2} y(x)}{d x^{2}}=f(x)$, with the boundary values $y(0)=0$ and $y(1)=0$, is
 	{\exyear{NET/JRF(DEC-2018)}}
 	\begin{tasks}(1)
@@ -240,6 +250,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{C.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}-\frac{1}{2} x\left(1-x^{\prime}\right), & 0<x<x^{\prime}<1 \\ \frac{1}{2} x^{\prime}(1-x) & 0<x^{\prime}<x<1\end{array}\right.$
 		\task[\textbf{D.}]  $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(x^{\prime}-1\right), & 0<x<x^{\prime}<1 \\ x^{\prime}(x-1) & 0<x^{\prime}<x<1\end{array}\right.$
 	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d^{2} y}{d x^{2}}&=f(x)\\
+		p\left(x^{\prime}\right)&=1\\
+		x_{1}&=1, y_{2}=x\\
+		y_{1}&=x, y_{2}=1-x \quad w=\left|\begin{array}{cc}x & 1-x \\ 1 & -1\end{array}\right|=-1\\
+		A&=-1\\
+		G\left(x, x^{\prime}\right)&=\left\{\begin{array}{lll}A & y_{1} & y_{2}^{\prime} \\ A & y_{1}^{\prime} & y_{2}\end{array}=\left\{\begin{array}{lll}x & \left(x^{\prime}-1\right) & 0<x<x^{\prime}<1 \\ x^{\prime} & (x-1) & 0<x^{\prime}<x<1\end{array}\right.\right.
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
 	\item  The Green's function for the differential equation $\frac{d^{2} x}{d t^{2}}+x=f(t)$, satisfying the initial conditions $x(0)=\frac{d x}{d t}(0)=0$ is\\
 	$$G(t, \tau)=\left\{\begin{array}{ll}0 & \text { for } \quad 0<t<\tau \\ \sin (t-\tau) & \text { for } \quad t>\tau\end{array}\right.$$\\
 	The solution of the differential equation when the source $f(t)=\theta(t)$ (the Heaviside step function) is
@@ -249,9 +270,17 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		\task[\textbf{B.}] $1-\sin t$
 		\task[\textbf{C.}] $1-\cos t$
 		\task[\textbf{D.}] $\cos ^{2} t-1$
-	\end{tasks}
+	\end{tasks}\begin{answer}
+		\begin{align*}
+		\frac{d^{2} x}{d t^{2}}+x&=f(t)\text{ and }\quad x(0)=\dot{x}(0)=0\\
+		G(t, \tau)&=\left\{\begin{array}{lr}0, & 0<t<\tau \\ \sin (t-\tau), & t>\tau\end{array}\right.\\
+		x(t)&=\int_{0}^{\infty} G(t, \tau) f(\tau) d \tau\\
+		\Rightarrow x(t)&=\int_{0}^{t} \sin (t-\tau) f(\tau) d \tau\\&=\int_{0}^{t} \sin (t-\tau) d \tau=+\left.\cos (t-\tau)\right|_{0} ^{t}=1-\cos t
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
 \end{enumerate}
- \colorlet{ocre1}{ocre!70!}
+\colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
 \setlength\arrayrulewidth{1pt}
 \begin{table}[H]

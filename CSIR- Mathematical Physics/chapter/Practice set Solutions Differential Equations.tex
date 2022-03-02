@@ -1,0 +1,505 @@
+\chapter{Practice set Solutions Differential Equations}
+\begin{abox}
+	Problem Set -1
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]	
+	\item Let $x_{1}(t)$ and $x_{2}(t)$ be two linearly independent solutions of the differential equation $\frac{d^{2} x}{d t^{2}}+2 \frac{d x}{d t}+f(t) x=0$ and let $w(t)=x_{1}(t) \frac{d x_{2}(t)}{d t}-x_{2}(t) \frac{d x_{1}(t)}{d t} .$ If $w(0)=1$, then $w(1)$ is given by
+	{\exyear{ NET/JRF(DEC-2011)}}
+			\begin{tasks}(4)
+			\task[\textbf{A.}] 1
+			\task[\textbf{B.}] $e^{2}$
+			\task[\textbf{C.}]  $1 / e$
+			\task[\textbf{D.}] $1 / e^{2}$
+		\end{tasks}
+			\begin{answer}
+			\begin{align*}
+			\intertext{$W(t)$ is Wronskian of D.E.}
+			W&=e^{-\int \mathrm{Pdt}}=e^{-2 t} \Rightarrow W(1)\\&=e^{-2}\text{ since }P=2
+			\end{align*}
+			So the correct answer is \textbf{Option (D)}
+		\end{answer}
+\item Let $y(x)$ be a continuous real function in the range 0 and $2 \pi$, satisfying the inhomogeneous differential equation: $\sin x \frac{d^{2} y}{d x^{2}}+\cos x \frac{d y}{d x}=\delta\left(x-\frac{\pi}{2}\right)$ The value of $d y l d x$ at the point $x=\pi / 2$
+{\exyear{NET/JRF (JUNE-2012)}}
+\begin{tasks}(2)
+	\task[\textbf{A.}] Is continuous
+	\task[\textbf{B.}] Has a discontinuity of 3
+	\task[\textbf{C.}] Has a discontinuity of $1 / 3$
+	\task[\textbf{D.}] Has a discontinuity of 1
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{After dividing by }\sin x, \frac{d^{2} y}{d x^{2}}+\cot x \frac{d y}{d x}&=\operatorname{cosec} x \cdot \delta\left(x-\frac{\pi}{2}\right)\\
+	\text{Integrating both sides, }\frac{d y}{d x}+\int \cot x\left(\frac{d y}{d x}\right) d x&=\int \operatorname{cosec} x \delta\left(x-\frac{\pi}{2}\right) d x\\
+	\frac{d y}{d x}+\cot x \cdot y-\int \operatorname{cosec}^{2} x \cdot y d x&=1\\
+	\text{Using Dirac delta property: }\int f(x) \delta\left(x-x_{0}\right)&=f\left(x_{0}\right)\text{ (it lies with the limit).}\\
+	\frac{d y}{d x}+y \cdot \frac{\cos x}{\sin x}-\int y \operatorname{cosec}^{2} x d x&=1,\text{ at }x=\pi ; \sin x=0 .\text{ So this is point of discontinuity.}
+	\end{align*}
+	So the correct answer is \textbf{Option (D)}
+\end{answer}
+\item The solution of the partial differential equation
+$$
+\frac{\partial^{2}}{\partial t^{2}} u(x, t)-\frac{\partial^{2}}{\partial x^{2}} u(x, t)=0
+$$
+satisfying the boundary conditions $u(0, t)=0=u(L, t)$ and initial conditions $u(x, 0)=\sin (\pi x / L)$ and $\left.\frac{\partial}{\partial t} u(x, t)\right|_{t=0}=\sin (2 \pi x / L)$ is
+{\exyear{NET/JRF(JUNE-2013)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] $\sin (\pi x / L) \cos (\pi t / L)+\frac{L}{2 \pi} \sin (2 \pi x / L) \cos (2 \pi t / L)$
+		\task[\textbf{B.}] $2 \sin (\pi x / L) \cos (\pi t / L)-\sin (\pi x / L) \cos (2 \pi t / L)$
+		\task[\textbf{C.}] $\sin (\pi x / L) \cos (2 \pi t / L)+\frac{L}{\pi} \sin (2 \pi x / L) \sin (\pi t / L)$
+		\task[\textbf{D.}] $\sin (\pi x / L) \cos (\pi t / L)+\frac{L}{2 \pi} \sin (2 \pi x / L) \sin (2 \pi t / L)$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial^{2} u}{\partial t^{2}}-\frac{\partial^{2} u}{\partial x^{2}}&=0, u(x, 0)=\sin \frac{\pi x}{L}\text{ and }\left.\frac{\partial u}{\partial t}\right|_{t=0}=\sin \frac{2 \pi x}{L}\\
+		\text{This is a wave equation}\\
+		\text{So solution is given by }u(x, t)&=\sum_{n}\left(A_{n} \cos \frac{a n \pi t}{L}+B_{n} \sin \frac{a n \pi t}{L}\right) \sin \left(\frac{n \pi x}{L}\right)\\
+		\text{with }A_{n}&=\frac{2}{L} \int_{0}^{L} f(x) \sin \frac{n \pi x}{L} d x, \\ B_{n}&=\frac{2}{a n \pi} \int_{0}^{L} g(x) \sin \frac{n \pi x}{L} d x\\
+		\text{Comparing }a^{2} \frac{\partial^{2} u}{\partial t^{2}}&=\frac{\partial^{2} u}{\partial x^{2}},\text{ We have }a=1\text{ and }f(x)\\&=\sin \frac{\pi x}{L}, g(x)=\sin \frac{2 \pi x}{L}\\
+		A_{n}&=\frac{2}{L} \int_{0}^{L} \sin \frac{\pi x}{L} \sin \frac{n \pi x}{L} d x \Rightarrow \frac{2}{L} \int_{0}^{L} \sin ^{2} \frac{\pi x}{L} d x\\&=\frac{2}{L} \int_{0}^{L}\left(\frac{1-\cos \frac{2 \pi x}{L}}{2}\right) d x=\frac{2}{L} \cdot \frac{L}{2}=1 (\text{let }\left.n=1\right)\\
+		\text{Putting }n&=2, B_{n}=\frac{2}{a n \pi} \int_{0}^{L} \sin \frac{2 \pi x}{L} \cdot \sin \frac{n \pi x}{L} d x\\
+		\Rightarrow \frac{2}{2 \pi} \int_{0}^{L} \sin ^{2} \frac{2 \pi x}{L} d x&=\frac{2}{2 \pi} \int_{0}^{L}\left(\frac{1-\cos \frac{4 \pi x}{L}}{2}\right) d x=\frac{2}{2 \pi} \cdot \frac{L}{2}=\frac{L}{2 \pi}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item The solution of the differential equation
+	$$
+	\frac{d x}{d t}=x^{2}
+	$$
+	with the initial condition $x(0)=1$ will blow up as $t$ tends to
+	{\exyear{NET/JRF(JUNE-2013)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 1
+		\task[\textbf{B.}] 2
+		\task[\textbf{C.}] $\frac{1}{2}$
+		\task[\textbf{D.}] $\infty$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d x}{d t}&=x^{2} \Rightarrow \int \frac{d x}{x^{2}}=\int d t \Rightarrow \frac{x^{-2+1}}{-2+1}\\&=t+C \Rightarrow \frac{-1}{x}=t+C\\
+		\Rightarrow x(0)&=1 \Rightarrow \frac{-1}{1}=0+C \Rightarrow C=-1 \Rightarrow \frac{-1}{x}\\&=t-1 \Rightarrow x=\frac{1}{1-t}\text{ as }t \rightarrow 1, x\text{ blows up}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item Consider the differential equation
+	$$
+	\frac{d^{2} x}{d t^{2}}+2 \frac{d x}{d t}+x=0
+	$$
+	with the initial conditions $x(0)=0$ and $\dot{x}(0)=1$. The solution $x(t)$ attains its maximum value when $t$ is
+	{\exyear{NET/JRF(JUNE-2014)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $1 / 2$
+		\task[\textbf{B.}] 1
+		\task[\textbf{C.}] 2
+		\task[\textbf{D.}] $\infty$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d^{2} x}{d t^{2}}+2 \frac{d x}{d t}+x&=0 \Rightarrow m^{2}+2 m+1\\&=0 \Rightarrow(m+1)^{2}=0 \Rightarrow m=-1,-1\\
+		\Rightarrow x&=\left(c_{1}+c_{2} t\right) e^{-t},\text{ since }x(0)\\&=0 \Rightarrow 0=c_{1} \Rightarrow x=c_{2} t e^{-t}\\
+		\Rightarrow \dot{x}&=c_{2}\left[-t e^{-t}+e^{-t}\right]\\
+		\text{Since }\dot{x}(0)&=1 \Rightarrow 1=c_{2} \Rightarrow x=t e^{-t}\\
+		\text{For maxima or minima }\dot{x}&=0 \Rightarrow \dot{x}=-t e^{-t}+e^{-t}=0 \Rightarrow \dot{x}=e^{-t}(1-t)\\
+		\Rightarrow e^{-t}&=0,1-t=0 \Rightarrow t=\infty, t=1\\
+		\ddot{x}&=e^{-t}(-1)+(1-t) e^{-t}(-1)\\&=-e^{-t}+(t-1) e^{-t} \Rightarrow \ddot{x}(1)\\&=-e^{-1}+0 e^{-t}<0
+		\end{align*}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
+	\item Consider the differential equation $\frac{d^{2} x}{d t^{2}}-3 \frac{d x}{d t}+2 x=0$. If $x=0$ at $t=0$ and $x=1$ at $t=1$, the value of $x$ at $t=2$ is
+	{\exyear{NET/JRF(JUNE-2015)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $e^{2}+1$
+		\task[\textbf{B.}] $e^{2}+e$
+		\task[\textbf{C.}] $e+2$
+		\task[\textbf{D.}] $2 e$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		D^{2}-3 D+2&=0\\
+		(D-1)(D-2)&=0 \Rightarrow D=1,2 \Rightarrow x=c_{1} e^{2 t}+c_{2} e^{t}\\
+		\text{using boundary condition }x&=0, t=0 \Rightarrow c_{1}=-C_{2}\\
+		\text{again using boundary condition }x&=1, t=1\\
+		c_{2}&=\frac{1}{e-e^{2}}, c_{1}=\frac{1}{e^{2}-e} \Rightarrow x\\&=\frac{e^{2 t}}{e^{2}-e}+\frac{1}{e-e^{2}} e^{t}\\
+		\text{again using }t&=2\text{ then }x=e^{2}+e
+		\end{align*}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
+	\item  If $y=\frac{1}{\tanh (x)}$, then $x$ is
+	{\exyear{NET/JRF(DEC-2015)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\ln \left(\frac{y+1}{y-1}\right)$
+		\task[\textbf{B.}] $\ln \left(\frac{y-1}{y+1}\right)$
+		\task[\textbf{C.}]  $\ln \sqrt{\frac{y-1}{y+1}}$
+		\task[\textbf{D.}]  $\ln \sqrt{\frac{y+1}{y-1}}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		y&=\frac{1}{\tanh x}\\
+		y&=\frac{e^{x}+e^{-x}}{e^{x}-e^{-x}}=\frac{e^{2 x}+1}{e^{2 x}-1}\\
+		y e^{2 x}-y&=e^{2 x}+1 \Rightarrow y e^{2 x}-e^{2 x}\\&=1+y \Rightarrow e^{2 x}(y-1)=(1+y)\\
+		2 x&=\ln \left(\frac{y+1}{y-1}\right) \Rightarrow x=\frac{1}{2} \ln \left(\frac{y+1}{y-1}\right)\\&=\ln \left(\frac{y+1}{y-1}\right)^{\frac{1}{2}}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item The solution of the differential equation $\frac{d x}{d t}=2 \sqrt{1-x^{2}}$, with initial condition $x=0$ at $t=0$ is
+	{\exyear{NET/JRF(DEC-2015)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $x=\left\{\begin{array}{ll}\sin 2 t, & 0 \leq t<\frac{\pi}{4} \\ \sinh 2 t, & t \geq \frac{\pi}{4}\end{array}\right.$
+		\task[\textbf{B.}] $x=\left\{\begin{array}{cc}\sin 2 t, & 0 \leq t<\frac{\pi}{2} \\ 1, & t \geq \frac{\pi}{2}\end{array}\right.$
+		\task[\textbf{C.}] $x=\left\{\begin{array}{cc}\sin 2 t, & 0 \leq t<\frac{\pi}{4} \\ 1, & t \geq \frac{\pi}{4}\end{array}\right.$
+		\task[\textbf{D.}] $x=1-\cos 2 t, \quad t \geq 0$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d x}{d t}&=2 \sqrt{1-x^{2}}, \frac{d x}{\sqrt{1-x^{2}}}\\&=2 d t, \sin ^{-1} x=2 t+c, x=0, t=0 \\\text{ so, }c&=0 \Rightarrow x=\sin 2 t\\
+		&\text{	$x$ should not be greater than 1 at $x=1$}\\
+		1&=\sin 2 t, \quad \sin \frac{\pi}{2}=\sin 2 t, t=\frac{\pi}{4}\\
+		\text{	So, }\quad x&=\left\{\begin{array}{ll}\sin 2 t, & 0 \leq t<\frac{\pi}{4} \\ 1, & t \geq \frac{\pi}{4}\end{array}\right.
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
+	\item   The function $y(x)$ satisfies the differential equation $x \frac{d y}{d x}+2 y=\frac{\cos \pi x}{x}$. If $y(1)=1$, the value of $y(2)$ is
+	{\exyear{NET/JRF(JUNE-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\pi$
+		\task[\textbf{B.}] 1
+		\task[\textbf{C.}] $1 / 2$
+		\task[\textbf{D.}] $1 / 4$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{The given differential equation can be written as}
+		\frac{d y}{d x}+\frac{2}{x} y&=\frac{\cos \pi x}{x^{2}}
+		\intertext{This is a linear differential equation with Integrating factor $=e^{\int_{x}^{2} d x}=x^{2}$}
+		\text{Hence }y . x^{2}&=\int x^{2} \cdot \frac{\cos \pi x}{x^{2}} d x+c \Rightarrow y\\&=\frac{\sin \pi x}{\pi x^{2}}+\frac{c}{x^{2}}\\
+		\text{when }x&=1, y=1\text{ hence }c=1 \Rightarrow y\\&=\frac{\sin \pi x}{\pi x^{2}}+\frac{1}{x^{2}}\\
+		\text{hence, when }x&=2, y=\frac{1}{4}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item   Consider the differential equation $\frac{d y}{d t}+a y=e^{-b t}$ with the initial condition $y(0)=0$. Then the Laplace transform $Y(s)$ of the solution $y(t)$ is
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{1}{(s+a)(s+b)}$
+		\task[\textbf{B.}] $\frac{1}{b(s+a)}$
+		\task[\textbf{C.}] $\frac{1}{a(s+b)}$
+		\task[\textbf{D.}] $\frac{e^{-a}-e^{-b}}{b-a}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Given }\frac{d y}{d t}+a y&=e^{-b t}
+		\intertext{Taking Laplace transform of both sides}
+		\text{	We obtain}\\
+		L\left\{\frac{d y}{d t}\right\}+a L\{y(t)\}&=L\left\{e^{-b t}\right\} \Rightarrow s Y(s)-y(0)+a Y(s)=\frac{1}{s+b}\\
+		\text{Since, }	y(0)&=0,\text{ we obtain}\\
+		(s+a) Y(s)&=\frac{1}{s+b} \Rightarrow Y(s)=\frac{1}{(s+a)(s+b)}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item The number of linearly independent power series solutions, around $x=0$, of the second order linear differential equation $x \frac{d^{2} y}{d x^{2}}+\frac{d y}{d x}+x y=0$, is
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] 0 (this equation does not have a power series solution)
+		\task[\textbf{B.}] 1
+		\task[\textbf{C.}] 2
+		\task[\textbf{D.}] 3
+	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
+	\item The differential equation $\frac{d y(x)}{d x}=\alpha x^{2}$, with the initial condition $y(0)=0$, is solved using Euler's method. If $y_{E}(x)$ is the exact solution and $y_{N}(x)$ the numerical solution obtained using $n$ steps of equal length, then the relative error $\left|\frac{\left(y_{N}(x)-y_{E}(x)\right)}{y_{E}(x)}\right|$ is proportional to
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{1}{n^{2}}$
+		\task[\textbf{B.}] $\frac{1}{n^{3}}$
+		\task[\textbf{C.}] $\frac{1}{n^{4}}$
+		\task[\textbf{D.}] $\frac{1}{n}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d y}{d x}&=\alpha x^{2}, y(0)=0\\
+		y_{E}&=\frac{\alpha x^{3}}{3},\text{ but }x=n \hbar\\
+		\text{Exact solution, }y_{E}&=\frac{\alpha n^{3} h^{3}}{3}\\
+		\text{Numerically, }f(x, y)&=\alpha x^{2}\\
+		\text{Euler's method, }y_{i}&=y_{i-1}+h f\left(x_{i-1}, y_{i-1}\right)\\
+		y_{1}&=0, y_{2}=\alpha h^{3} \quad y_{3}=5 \alpha h^{3}\\
+		y_{n}&=\frac{(n-1) n(2 n-1)}{6} \alpha h^{3}
+		\intertext{Since, $0,5,14,30, \ldots$ different from square terms}
+		\intertext{At, $x_{0}=0 \quad x_{1}=x_{0}+h=h \quad x_{2}=x_{0}+2 h=2 h \quad x_{3}=x_{0}+3 h=3 h$}
+		x_{n-1}&=x_{0}+(n-1) h=(n-1) h .\text{ Now, }x_{n}=n h\\
+		f\left(x_{0}, y_{0}\right)
+		&=0, f\left(x_{1}, y_{1}\right)=\alpha h^{2}, f\left(x_{2}, y_{2}\right)=4 \alpha h^{2}\\
+		f\left(x_{n-1}, y_{n-1}\right)&=\alpha(n-1)^{2} h^{2}\\
+		\left|\frac{\left(y_{N}-y_{E}\right)}{y_{E}}\right|&=\left|\frac{\frac{(n-1) n(2 n-1) \alpha h^{3}}{6}-\frac{\alpha n^{3} h^{3}}{3}}{\frac{\alpha n^{3} h^{3}}{3}}\right|\\
+		\text{By solving, }&\left|\frac{y_{N}-y_{E}}{y_{E}}\right| \propto \frac{1}{n}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item  Consider the following ordinary differential equation
+	$$
+	\frac{d^{2} x}{d t^{2}}+\frac{1}{x}\left(\frac{d x}{d t}\right)^{2}-\frac{d x}{d t}=0
+	$$
+	with the boundary conditions $x(t=0)=0$ and $x(t=1)=1 .$ The value of $x(t)$ at $t=2$ is
+	{\exyear{NET/JRF(JUNE-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\sqrt{e-1}$
+		\task[\textbf{B.}] $\sqrt{e^{2}+1}$
+		\task[\textbf{C.}]  $\sqrt{e+1}$
+		\task[\textbf{D.}] $\sqrt{e^{2}-1}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{The given equation can be written as}
+		\frac{1}{x} \frac{d}{d t}\left(x \frac{d x}{d t}\right)-\frac{d x}{d t}&=0 \Rightarrow \frac{d}{d t}\left(x \frac{d x}{d t}\right)-x \frac{d x}{d t}=0\\
+		\text{putting }y&=x \frac{d x}{d t}\text{ gives}\\
+		\frac{d y}{d t}-y&=0 \Rightarrow \ln y=t+\ln c_{1} \Rightarrow y=c_{1} e^{t}\\
+		\intertext{Since $x \frac{d x}{d t}=c_{1} e^{t}$ hence by integrating}
+		\frac{x^{2}}{2}&=c_{1} e^{t}+c_{2}\hspace{2cm}\text{(i)}
+		\intertext{Using boundary conditions we obtain}
+		c_{1}+c_{2}&=0\text{ and }c_{1} e+c_{2}=\frac{1}{2}
+		\intertext{Solving these equations we obtain $c_{1}=\frac{1}{2(e-1)}$ and $c_{2}=-\frac{1}{2(e-1)}$}
+		\text{Thus, }\frac{x^{2}}{2}&=\frac{1}{2(e-1)} e^{t}-\frac{1}{2(e-1)}\\
+		\text{When }t&=2,\text{ we obtain, }\quad x^{2}=\frac{e^{2}}{(e-1)}-\frac{1}{(e-1)}\\&=\frac{\left(e^{2}-1\right)}{(e-1)}=e+1\\
+		\text{Therefore}x(2)&=\sqrt{e+1}
+		\end{align*}
+		So the correct answer is \textbf{Option (C)}
+	\end{answer}
+	\item  In terms of arbitrary constants $A$ and $B$, the general solution to the differential equation $x^{2} \frac{d^{2} y}{d x^{2}}+5 x \frac{d y}{d x}+3 y=0$ is
+	{\exyear{NET/JRF(DEC-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]  $y=\frac{A}{x}+B x^{3}$
+		\task[\textbf{B.}] $y=A x+\frac{B}{x^{3}}$
+		\task[\textbf{C.}] $y=A x+B x^{3}$
+		\task[\textbf{D.}] $y=\frac{A}{x}+\frac{B}{x^{3}}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{
+			The given equation is Euler-Cauchy differential equation. The characteristic equation of}
+		x^{2} \frac{d^{2} y}{d x^{2}}+5 x \frac{d y}{d x}+6 y&=0\\
+		\text{is ,}m^{2}+4 m+6&=0 \Rightarrow m=-3 or m=-1\\
+		\text{Thus, }y_{1}&=x^{-1}=\frac{1}{x}\text{ and }y_{2}=x^{2}=\frac{1}{x^{3}}
+		\intertext{Therefore the general solution is}
+		y&=\frac{A}{x}+\frac{B}{x^{3}}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item The solution of the differential equation $x \frac{d y}{d x}+(1+x) y=e^{-x}$ with the boundary condition $y(x=1)=0$, is
+	{\exyear{NET/JRF(JUNE-2019)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{(x-1)}{x} e^{-x}$
+		\task[\textbf{B.}] $\frac{(x-1)}{x^{2}} e^{-x}$
+		\task[\textbf{C.}] $\frac{(1-x)}{x^{2}} e^{-x}$
+		\task[\textbf{D.}] $(x-1)^{2} e^{-x}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		x \frac{d y}{d x}+(1+x) y&=e^{-x} \Rightarrow \frac{d y}{d x}+\frac{(1+x)}{x} y=\frac{e^{-x}}{x}\\
+		\text{Let }p&=\frac{1+x}{x}\\
+		I.F &=e^{\int p d x}=e^{\int\left(1+\frac{1}{x}\right) d x}=e^{x} \cdot e^{\ln x}=x e^{x}\\
+		y \cdot x \cdot e^{x}&=\int \frac{e^{-x}}{x} \cdot x e^{x} d x+C \Rightarrow y \cdot x \cdot e^{x}=x+C\\
+		y&=0\text{ at }x=1 \quad \Rightarrow C=-1 \quad \Rightarrow y \cdot x \cdot e^{x}\\&=x-1 \Rightarrow y=\left[\frac{x-1}{x}\right] e^{-x}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item The solution of the differential equation $\left(\frac{d y}{d x}\right)^{2}-\frac{d^{2} y}{d x^{2}}=e^{y}$, with the boundary conditions $y(0)=0$ and $y^{\prime}(0)=-1$, is
+	{\exyear{NET/JRF(JUNE-2020)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $-\ln \left(\frac{x^{2}}{2}+x+1\right)$
+		\task[\textbf{B.}] $-x \ln (e+x)$
+		\task[\textbf{C.}] $-x e^{-x^{2}}$
+		\task[\textbf{D.}]  $-x(x+1) e^{-x}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\left(\frac{d y}{d x}\right)^{2}-\frac{d^{2} y}{d x^{2}}&=e^{y}\text{ put }y=\ln p\\
+		\frac{d y}{d x}&=\frac{1}{p} \frac{d p}{d x} \Rightarrow \frac{d^{2} y}{d x^{2}}=\frac{d}{d x}\left(\frac{1}{p} \frac{d p}{d x}\right)\\&=\frac{1}{p} \frac{d^{2} p}{d x^{2}}-\frac{1}{p^{2}}\left(\frac{d p}{d x}\right)^{2}\\
+		\text{Thus }&\left(\frac{1}{p} \frac{d p}{d x}\right)^{2}-\frac{1}{p} \frac{d^{2} p}{d x^{2}}+\frac{1}{p^{2}}\left(\frac{d p}{d x}\right)^{2}=p\\
+		\frac{2}{p^{2}}\left(\frac{d p}{d x}\right)^{2}-\frac{1}{p} \frac{d^{2} p}{d x^{2}}&=p \Rightarrow \frac{2}{p^{3}}\left(\frac{d p}{d x}\right)^{2}-\frac{1}{p^{2}} \frac{d^{2} p}{d x^{2}}\\&=1 \Rightarrow \frac{1}{p^{2}} \frac{d^{2} p}{d x^{2}}-\frac{2}{p^{3}}\left(\frac{d p}{d x}\right)^{2}=-1\\
+		&\Rightarrow \frac{d}{d x}\left(\frac{1}{p^{2}} \frac{d p}{d x}\right)=-1\\
+		\text{Let }\frac{1}{p^{2}} \frac{d p}{d x}&=z \Rightarrow \frac{d z}{d x}=-1 \Rightarrow z=-x+c\\
+		\text{Thus }\frac{1}{p^{2}} \frac{d p}{d x}&=-x+c \Rightarrow \int \frac{d p}{p^{2}}=\int(-x+c) d x\\
+		-\frac{1}{p}&=-\frac{x^{2}}{2}+c x+d \Rightarrow p=\frac{1}{\frac{x^{2}}{2}-c x-d}\\
+		y&=\ln p=\ln \left(\frac{1}{\frac{x^{2}}{2}-c x-d}\right)=\ln \left(\frac{x^{2}}{2}-c x-d\right)\\
+		y(0)&=0 \Rightarrow y(0)=-\ln (-d) \Rightarrow d=-1\\
+		y&=-\ln \left(\frac{x^{2}}{2}-c x+1\right)\\
+		y^{\prime}(x)&=-\frac{1}{\left(\frac{x^{2}}{2}-c x+1\right)}(x-c), \quad y^{\prime}(0)\\&=-1 \Rightarrow-\frac{(-c)}{1}=c=-1, \quad y=-\ln \left(\frac{x^{2}}{2}+x+1\right)
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{D} &2&\textbf{D}\\\hline 
+		3&\textbf{D} &4&\textbf{A} \\\hline
+		5&\textbf{B} &6&\textbf{B} \\\hline
+		7&\textbf{D}&8&\textbf{C}\\\hline
+		9&\textbf{D}&10&\textbf{A}\\\hline
+		11&\textbf{B} &12&\textbf{D}\\\hline
+		13&\textbf{C}&14&\textbf{D}\\\hline
+		15&\textbf{A}&16&\textbf{A} \\\hline
+		
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Problem Set -2
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item  The solution of the differential equation for $y(t): \frac{d^{2} y}{d t^{2}}-y=2 \cosh (t)$, subject to the initial conditions $y(0)=0$ and $\left.\frac{d y}{d t}\right|_{t=0}=0$, is
+	{\exyear{GATE 2010}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\frac{1}{2} \cosh (t)+t \sinh (t)$
+		\task[\textbf{B.}] $-\sinh (t)+t \cosh (t)$
+		\task[\textbf{C.}] $t \cosh (t)$
+		\task[\textbf{D.}] $t \sinh (t)$
+	\end{tasks}
+	\begin{answer}
+		\begin{align}
+		\text{	For C.F } \left(D^{2}-1\right) y&=0 \Rightarrow m=\pm 1 \Rightarrow C . F .\notag\\&=C_{1} e^{t}+C_{2} e^{-t}\notag\\
+		P.I. &=\frac{1}{D^{2}-1}(2 \cosh t)=\frac{1}{D^{2}-1} 2\left(\frac{e^{t}+e^{-t}}{2}\right)\notag\\&=\frac{1}{D^{2}-1}\left(e^{t}\right)+\frac{1}{D^{2}-1}\left(e^{-t}\right)\notag\\&=\frac{t}{2} e^{t}+\frac{t}{2}\left(-e^{-t}\right)\notag\\
+		\Rightarrow y&=C_{1} e^{t}+C_{2} e^{-t}+\frac{t}{2} e^{t}-\frac{t}{2} e^{-t}\notag\\
+		\text{As, }y(0)&=0 \Rightarrow C_{1}+C_{2}=0\label{math01}\\
+		\frac{d y}{d t}&=C_{1} e^{t}-C_{2} e^{-t}+\frac{t}{2} e^{t}+\frac{1}{2} e^{t}+\frac{t}{2} e^{-t}-\frac{1}{2} e^{-t}\notag\\
+		\text{Also, }\left.\frac{d y}{d t}\right|_{t=0}&=0 \Rightarrow C_{1}-C_{2}+0+\frac{1}{2}+0-\frac{1}{2}=0 \Rightarrow C_{1}-C_{2}=0\label{math02}\\
+		\text{From equation (\ref{math01}) and (\ref{math02}),}\notag\\
+		C_{1}&=0, C_{2}=0\notag\\
+		\text{Thus }y&=\frac{t}{2} e^{t}-\frac{t}{2} e^{-t} \Rightarrow y=t \sinh t\notag
+		\end{align}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item The solutions to the differential equation $\frac{d y}{d x}=-\frac{x}{y+1}$ are a family of
+	{\exyear{GATE 2011}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] Circles with different radii
+		\task[\textbf{B.}] Circles with different centres
+		\task[\textbf{C.}]  Straight lines with different slopes
+		\task[\textbf{D.}]  Straight lines with different intercepts on the $y$-axis
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d y}{d x}&=-\frac{x}{y+1} \Rightarrow x d x+y d y+d y\\&=0 \Rightarrow \frac{x^{2}}{2}+\frac{y^{2}}{2}+y\\&=C_{1} \Rightarrow x^{2}+y^{2}+2 y\\&=2 C_{1}
+		\Rightarrow(x-0)^{2}+(y+1)^{2}\\&=2 C_{1}+1=C
+		\intertext{which is a family of circles with different radii.}
+		\end{align*}
+		So the correct answer is \textbf{Option (A)}
+	\end{answer}
+	\item The solution of the differential equation $\frac{d^{2} y}{d t^{2}}-y=0$, subject to the boundary conditions $y(0)=1$ and $y(\infty)=0$ is
+	{\exyear{GATE 2014}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\cos t+\sin t$
+		\task[\textbf{B.}] $\cosh t+\sinh t$
+		\task[\textbf{C.}] $\cos t-\sin t$
+		\task[\textbf{D.}]  $\cosh t-\sinh t$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		D^{2}-1&=0 \Rightarrow D=\pm 1 \Rightarrow y(t)\\&=c_{1} e^{t}+c_{2} e^{-t}
+		\intertext{Applying boundary condition,}
+		y(0)&=1 \Rightarrow 1=c_{1}+c_{2}\text{ and }y(\infty)\\&=0 \Rightarrow 0=c_{1} e^{\infty}+c_{2} e^{-\infty} \Rightarrow c_{1}\\&=0, c_{2}=1\\
+		\Rightarrow y(t)&=e^{-t} \Rightarrow y(t)=\cosh t-\sinh \ t
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item  A function $y(z)$ satisfies the ordinary differential equation $y^{\prime \prime}+\frac{1}{z} y^{\prime}-\frac{m^{2}}{z^{2}} y=0$, where\\
+	$m=0,1,2,3, \ldots . .$ Consider the four statements P, Q, R, S as given below.\\
+	$\mathrm{P}: z^{m}$ and $z^{-m}$ are linearly independent solutions for all values of $m$\\
+	Q: $z^{m}$ and $z^{-m}$ are linearly independent solutions for all values of $m>0$\\
+	$\mathrm{R}$ : $\ln z$ and 1 are linearly independent solutions for $m=0$\\
+	S: $z^{m}$ and $\ln z$ are linearly independent solutions for all values of $m$\\
+	The correct option for the combination of valid statements is
+	{\exyear{GATE 2015}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] P, R and S only
+		\task[\textbf{B.}]  P and R only
+		\task[\textbf{C.}] $\mathrm{Q}$ and $\mathrm{R}$ only
+		\task[\textbf{D.}] $\mathrm{R}$ and $\mathrm{S}$ only
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		y^{\prime \prime}+\frac{1}{z} y^{\prime}-\frac{m^{2}}{z^{2}} y&=0 \Rightarrow z^{2} y^{\prime \prime}+z y^{\prime}-m^{2} y\\&=0, m=0,1,2,3, \ldots, \quad z=e^{x}, D=\frac{d}{d x}\\
+		\text{	If }m&=0 ; \quad z^{2} y^{\prime \prime}+z y^{\prime}=0,[D(D-1)+D] y\\&=0 \Rightarrow\left[D^{2}-D+D\right] y=0\\
+		D^{2} y&=0 \Rightarrow y=c_{1}+c_{2} x \Rightarrow y\\&=c_{1}+c_{2} \ln z \quad \text{( $R$ is correct)}\\
+		\text{And if }m &\neq 0, m>0,\text{ then }m \neq 0,\text{ then }\left(D^{2}-m^{2}\right) y\\&=0 \Rightarrow D=\pm m\\
+		y&=c_{1} e^{m x}+c_{2} e^{-m x}=c_{1} e^{m \log z}+c_{2} e^{-m \log z}\\&=c_{1} z^{m}+c_{2} z^{-m}\\
+		\text{or if }m &\neq 0, m>0,\text{ then}\\
+		y&=c_{1} \cosh (m \log (z))+i c_{2} \sinh (m \log (x)), \quad m>0
+		\end{align*}
+		So the correct answer is \textbf{Option (C)} 
+	\end{answer}
+	\item Consider the linear differential equation $\frac{d y}{d x}=x y$. If $y=2$ at $x=0$, then the value of $y$ at $x=2$ is given by
+	{\exyear{GATE 2016}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]  $e^{-2}$
+		\task[\textbf{B.}] $2 e^{-2}$
+		\task[\textbf{C.}] $e^{2}$
+		\task[\textbf{D.}]  $2 e^{2}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\frac{d y}{d x}&=x y \Rightarrow \frac{1}{y} d y=x d x \Rightarrow \ln y\\&=\frac{x^{2}}{2}+\ln c \Rightarrow y=c e^{x^{2} / 2}\\
+		\text{If }y&=2\text{ at }x=0 \Rightarrow c=2 \Rightarrow y=2 e^{x^{2} / 2}\\
+		\text{	The value of $y$ at }x&=2\text{ is given by }y=2 e^{2}
+		\end{align*}
+		So the correct answer is \textbf{Option (D)}
+	\end{answer}
+	\item Consider the differential equation $\frac{d y}{d x}+y \tan (x)=\cos (x)$. If $y(0)=0, y\left(\frac{\pi}{3}\right)$ is ............... (up to two decimal places)
+	{\exyear{GATE 2017}}
+	\begin{answer}
+		\begin{align*}
+		\intertext{The given differential equation is a linear differential equation of the form}
+		\frac{d y}{d x}+p(x) y&=\cos x\\
+		\text{	Integrating factor }&=e^{\int p(x) d x}\\
+		\text{Thus integrating factor }&=e^{\int \tan x d x}\\
+		\Rightarrow I \cdot F&=e^{\ln \sec x}=\sec x
+		\intertext{Thus the general solution of the given differential equation is}
+		y \cdot \sec x&=\int \sec x \cdot \cos x d x+c\\
+		\Rightarrow y \sec x&=x+c\\
+		\text{It is given that }y(0)&=0 \Rightarrow 0 \cdot \sec 0=0+c \Rightarrow c=0
+		\intertext{Thus the solution satisfying the given condition is}
+		y \sec x&=x \Rightarrow y=\frac{x}{\sec x}\\
+		\text{Thus the value of }&y\left(\frac{\pi}{3}\right)\text{ is}\\
+		y&=\frac{\pi / 3}{\sec \pi / 3}=\frac{\pi / 3}{2}=\frac{\pi}{6}=0 \cdot 52
+		\end{align*}
+	\end{answer}
+	\item Given
+	$$
+	\frac{d^{2} f(x)}{d x^{2}}-2 \frac{d f(x)}{d x}+f(x)=0
+	$$
+	and boundary conditions $f(0)=1$ and $f(1)=0$, the value of $f(0.5)$ is --------(up
+	to two decimal places).
+	{\exyear{GATE 2018}}
+	\begin{answer}
+		\begin{align}
+		\frac{d^{2} f(x)}{d x^{2}}-2 \frac{d f(x)}{d x}+f(x)&=0\notag\\
+		\text{Auxiliary equation is,}\notag\\
+		\left(m^{2}-2 m+1\right)&=0 \Rightarrow(m-1)^{2}\notag\\&=0 \Rightarrow m=1,1\notag\\
+		\text{Hence, the solution is}\notag\\
+		f(x)&=\left(c_{1}+c_{2} x\right) e^{x}\notag\\
+		\text{using boundary condition,}\notag\\
+		f(0)&=c_{1} e^{0} \Rightarrow c_{1}=1 \label{ma 03}\\
+		f(1)&=\left(c_{1}+c_{2}\right) e=0 \label{ma 04}\\
+		\text{	From (\ref{ma 03}) and (\ref{ma 04}), }c_{2}&=-1 \label{ma 05}\notag\\
+		\text{Hence, }f(x)&=(1-x) e^{x} \Rightarrow f(0.5)\notag\\&=(1-0.5) e^{0.5}=0.81\notag
+		\end{align}
+	\end{answer}
+	\item  For the differential equation $\frac{d^{2} y}{d x^{2}}-n(n+1) \frac{y}{x^{2}}=0$, where $n$ is a constant, the product of
+	its two independent solutions is
+	{\exyear{GATE 2019}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{1}{x}$
+		\task[\textbf{B.}] $x$
+		\task[\textbf{C.}] $x^{n}$
+		\task[\textbf{D.}] $\frac{1}{x^{n+1}}$
+	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (B)}
+	\end{answer}
+\end{enumerate}
