@@ -185,7 +185,7 @@ E=0\text{ is }2&
  		Method :-1
  		\begin{align*}
  		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\sum_{\mathrm{r}} \mathrm{g}_{\mathrm{r}} \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{r}}}\\
- 		Q_1 (V,T)=\sum e^{\beta E_r}=1+e^{\beta E}
+ 		Q_1 (V,T)=\sum e^{\beta E_r}=1+e^{\beta E}\colorbox{red}{Not completed}
  		\end{align*}
  	\end{answer}
 	\item The partition function for two Bose particle each of which can occupy any of the enetgy level $0$ and $E$ 
@@ -250,16 +250,55 @@ E=0\text{ is }2&
  	\task[\textbf{c.}]$Z=\frac{1}{1-e^{-\beta \hbar \omega}}$
  	\task[\textbf{d.}] $Z=\frac{1}{1+e^{-\beta \hbar \omega}}$
  \end{tasks}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	\begin{answer}
+		\begin{align*}
+		\text{(i) }Q_{N}\left(V_{1} T\right)&=\sum_{r} e^{-\beta E}=\sum_{n} e^{-\beta(n+1 / 2) \hbar w}\\
+		&=e^{-\beta \hbar \omega / 2}+e^{-3 / 2 \beta \hbar \omega}+e^{-5 / 2^{\beta \hbar \omega}}+\ldots \ldots\\
+		&=\mathrm{e}^{-\beta \hbar \omega / 2}\left(1+\mathrm{e}^{-\beta \hbar \omega}+\mathrm{e}^{-\beta \hbar \omega}+\ldots \ldots\right.\\
+		&=\mathrm{e}^{-\beta \hbar \omega / 2}\left(\frac{1}{1-\mathrm{e}^{-\beta \hbar \omega}}\right)\text{ use G.P, formula}\hspace{0.5cm}\left\{\begin{array}{lll}R=1+r+\pi^{2} \ldots \ldots \ldots \ldots \ldots \infty & \text { G.P. } \\ \sum_{0}^{\infty} R=\frac{1}{1-r} & r<1 &  \end{array}\right\}
+		\end{align*}
+	\end{answer}
+	\item The average number of energy quanta of the oscillator is given by 
+	 \begin{tasks}(2)
+		\task[\textbf{a.}] $\langle\mathrm{n}\rangle=\frac{1}{\mathrm{e}^{\beta \hbar \omega}-1}$
+		\task[\textbf{b.}]$\langle\mathrm{n}\rangle=\frac{\mathrm{e}^{-\beta \hbar \omega}}{\mathrm{e}^{\beta \hbar \omega}-1}$
+		\task[\textbf{c.}]$\langle\mathrm{n}\rangle=\frac{1}{\mathrm{e}^{\beta \hbar \omega}+1}$
+		\task[\textbf{d.}] $\langle n\rangle=\frac{e^{-\beta \hbar \omega}}{e^{\beta \hbar \omega}+1}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\intertext{(i) The average energy of a quantum oscillator is given by}
+		\mathrm{U}&=\mathrm{N}\left[1 / 2 \hbar \omega+\frac{\hbar \omega}{\mathrm{e}^{\beta \hbar \omega-1}}\right]
+		\intertext{If we neglect the zero point energy the average energy bocome}
+	\mathrm{U}&=\frac{\mathrm{N} \hbar \omega}{\mathrm{e}^{\beta \hbar \omega}-1}\\
+	\text{Avarege number of energy quanta}&=\frac{U}{N\hbar \omega}\\\colorbox{red}{Not completed}
+		\end{align*}
+	\end{answer}
+	\item In a particular salt among $n$ atoms each atom has a spin $1/2$ and is associated with a magnetic dipolemoment $\mu_B$. The distance between the magnetic atoms is large enough to make the interaction between them negligible. In otherwords our system is an idealised spin system. The salt is placed in an external magnetic field $B$. Find the partition function of the individual atom and that for the salt 
+	\begin{answer}
+		\begin{align*}
+		\mathrm{Q}_{1}(\mathrm{~V}, \mathrm{~T})&=\sum_{\mathrm{r}} \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{r}}}\qquad E=\mu_B\ B =\text{for} S=-\frac{1}{2}\qquad \left\lbrace\text{ where }\mu_B=\text{ Bohr magneton }\right\rbrace \\
+		&=e^{-\beta\mu_B\ B}+e^{\beta\mu_B\ B}
+		\intertext{Since the salt consist of $N$ number of particles}
+		Q_N(V,T)&=[Q_1(V,T)]^N=[e^{-\beta\mu_B\ B}+e^{\beta\mu_B\ B}]^N \rightarrow \text{distinguishable}\\
+		\colorbox{red}{Not completed}
+		\end{align*}
+	\end{answer}
+	\item Consider a system of two identical particles which may occupy any of the three levels. The lowest energy state $\varepsilon_0=0$ is double degenerates. The system is in thermal equilibrium at temperature T. Determine the partition function and everage energy of the system if particles obey
+	(i) M-B statistics\\
+	(ii) B-E statistics\\
+	(iii) F-D statistics.
+	\begin{answer}
+		\begin{align*}
+		\text{(i) For $M-B$ }&\text{statistics, $g_{i}=16$}\\
+		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\Sigma g_{r} e^{-\beta E_{r}}=4+4 e^{-\beta \epsilon}+5 e^{-2 \beta \epsilon}+2 e^{-3 \beta \epsilon}+e^{-4 \beta \epsilon}\\
+		\langle\mathrm{E}\rangle&=-\frac{\partial}{\partial \beta} \ln \mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\frac{\in\left[4 e^{-\beta \epsilon}+10 e^{-2 \beta \epsilon}+6 e^{-3 \beta \epsilon}+4 e^{-4 \beta \epsilon}\right]}{Q_{N}(V, T)}\\
+		\langle E\rangle&=\frac{\in\left[2 e^{-\beta \epsilon}+6 e^{-2 \beta \epsilon}+3 e^{-3 \beta \epsilon}+4 e^{-4 \beta \epsilon}\right]}{Q_{N}(V, T)}
+		\intertext{(iii) For F-D statistics:}
+		Q_{N}(V, T)&=1+2 e^{-\beta \epsilon}+2 e^{-\beta \epsilon}+e^{-3 \beta \epsilon}\\
+		\langle E\rangle&=\frac{\in\left(2 e^{-\beta \epsilon}+4 e^{-2 \beta \epsilon}+3 e^{-3 \beta \epsilon}\right)}{Q_{N}(V, T)}
+		\end{align*}
+	\end{answer}
 	
 	
 	
