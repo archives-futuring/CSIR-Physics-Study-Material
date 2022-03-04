@@ -1,0 +1,1942 @@
+% !TeX spellcheck = en_GB
+\chapter{Matrices}
+We  come  across  matrices often while  we  deal  with various physical systems. When we need to solve  a  set  of  linear  equations  ,  when  we  need  to  rotate  vectors, in quantum mechanics etc. Let us find what a matrix is.
+\begin{definition}
+A matrix can be defned as a collection of numbers arranged in a rectangular way, in rows and columns and bounded by brackets , $[\hspace{0.2cm} ]$  or  $(\hspace{0.2cm})$. Individual numbers or functions inside a matrix  are known as elements of the matrix.\\ A matrix can also be viewed as an operator (a linear transformation) from $\mathbb{R}^{n}$ to $\mathbb{R}^{n}$.	
+\end{definition}
+\begin{example}
+$\left[\begin{array}{ll}2 & 3 \\ 4 & 7\end{array}\right]$,$\left[\begin{array}{lll}-7 & 5 &3i\\ 4 & -7i&8\\4 & 5-i &3i \end{array}\right]$,$\left[\begin{array}{llll}x & y &z&w\\ p & q&r&s\\a & b &c&d \end{array}\right]$		
+\end{example}
+\textbf{Order of a matrix}
+\newline A matrix of order $m\times n$ has $m$ number of rows and  $n$  number of columns.Every elment of the matrix is charecterized by a row index $i$ and a column index $j$.Then an element of $i^{th}$ row and $j^{th}$ column of a matrix can be represented as, $a_{ij}$.
+\\A matrix $A$ of $m$ rows and $n$ columns is written as,
+$A=[a_{ij}]_{m\times n}$
+
+\section{Types of matrices}
+\begin{itemize}
+	\item \textbf{Row Matrix}\\
+	If a matrix has only one row and any number of columns, it is called a Row matrix, \begin{example}
+		$\left[\begin{array}{llll}
+		2 & 7 & 3 & 9
+	\end{array}\right]$
+	\end{example}
+
+	\item \textbf{Column Matrix}\\
+	 A matrix, having one column and any number of rows, is called a Column  matrix .
+	\begin{example}
+		$
+	\text {}\left[\begin{array}{l}
+		1 \\
+		2 \\
+		3
+	\end{array}\right]
+	$
+	\end{example}
+	\item \textbf{Null Matrix or Zero Matrix}\\
+	 Any matrix, in which all the elements are zeros, is called a Zero matrix or Null matrix .
+	\begin{example}
+		$
+	\left[\begin{array}{llll}
+		0 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 0
+	\end{array}\right]
+	$
+	\end{example}
+	\item \textbf{Square Matrix }\\
+	A matrix, in which the number of rows is equal to the number of columns, is called a square matrix 
+\begin{example}
+		$\left[\begin{array}{ll}
+		2 & 5 \\
+		1 & 4
+	\end{array}\right]$
+\end{example}
+
+	 \item \textbf{Diagonal matrix}\\
+	 Matrix having elements other than the principal diagonal elements are zero
+	 i.e $a_{i j}=0$ for $i \neq j$.
+	\begin{example}
+		 $\left[\begin{array}{ll}a & 0 \\ 0 & b\end{array}\right]$
+	\end{example}
+	 \item \textbf{Scalar matrix}
+	 \\ A diagonal matrix in which all the diagonal elements are equal to a scalar, say $(k)$ is called a scalar matrix. i.e., $\mathrm{A}=\left[a_{i j}\right]_{n \times n}$ is a scalar matrix if $a_{i j}=\left\{\begin{array}{ll}0, & \text { when } i \neq j \\ k, & \text { when } i=j\end{array}\right.$ 
+	 \begin{example}
+	 	$
+	 \left[\begin{array}{lll}
+	 	2 & 0 & 0 \\
+	 	0 & 2 & 0 \\
+	 	0 & 0 & 2
+	 \end{array}\right],\left[\begin{array}{rrrr}
+	 	-6 & 0 & 0 & 0 \\
+	 	0 & -6 & 0 & 0 \\
+	 	0 & 0 & -6 & 0 \\
+	 	0 & 0 & 0 & -6
+	 \end{array}\right]
+	 $
+	
+	 \end{example}
+	 \item  \textbf{ldentity/unit matrix}\\
+	 Diagonal matrix having all principal diagonal elements equal to one.
+	 i.e. $a_{i j}=0$ for $i \neq j$ and $a_{i i}$ is equal to 1 for all $i$.
+	\begin{example}
+		  $\left[\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right]$
+	\end{example}
+	 \item\textbf{ Triangular Matrix}\\  A square matrix, all of whose elements below the leading diagonal are zero, is called an upper triangular matrix. A square matrix, all of whose elements above the leading diagonal are zero, is called a lower triangular matrix
+	
+	\begin{example}
+		 $\text{Upper triangular matrix}\rightarrow
+	 \left[\begin{array}{lll}
+	 	1 & 3 & 2 \\
+	 	0 & 4 & 1 \\
+	 	0 & 0 & 6
+	 \end{array}\right]\\ \rightarrow\text{Lower triangular matrix}\left[\begin{array}{lll}
+	 	2 & 0 & 0 \\
+	 	4 & 1 & 0 \\
+	 	5 & 6 & 7
+	 \end{array}\right]
+	 $
+	\end{example}
+	 \item \textbf{ Periodic matrix}\\
+	  A square matrix ' $A$ ' for which $A^{k+1}=A,$ is called periodic matrix of period $k$.
+	 \begin{example}
+	 	 $A=\left[\begin{array}{cc}0 & -1 \\ 1 & 0\end{array}\right] \Rightarrow A^{5}=A$ i.e $A$ is periodic matrix of period 4
+	 \end{example}
+	 \item \textbf{ Idempotent matrix}\\
+	 A square matrix ' $A$ ' for which $A^{2}=A,$ is called idempotent matrix. It is a periodic matrix of period 1 . Any idempotent matrix will be either singular matrix or non-singular unit matrix.
+	\begin{example}
+		 $\left[\begin{array}{ll}1 & 1 \\ 0 & 0\end{array}\right],\left[\begin{array}{ccc}2 & -2 & -4 \\ -1 & 3 & 4 \\ 1 & -2 & -3\end{array}\right]$
+	\end{example}
+	 \item \textbf{Nilpotent matrix}\\
+	  A square matrix for which $A^{p}=0,$ is called nilpotent matrix of index ' $p$ '. The trace and determinant of the nilpotent matrix is always zero.
+	\begin{example}
+		 $A=\left[\begin{array}{ll}0 & 0 \\ 1 & 0\end{array}\right]$ is a nilpotent matrix of index '2'.
+	\end{example}
+	 \item  \textbf{Involutory Matrix}\\ A square matrix for which $A^{2}=I$, is called involutory matrix. It is a self-inverse matrix.
+	 \begin{example}
+	 	$\left[\begin{array}{lll}1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0\end{array}\right]$
+	 \end{example}
+	 \item \textbf{Symmetric Matrix}\\
+	 A square matrix will be called symmetric, if for all values of $i$ and $j,$ $a_{i j}=a_{j i}$ i.e., $A^{\prime}=A$
+	\begin{example}
+		 $
+	 \left[\begin{array}{lll}
+	 	a & h & g \\
+	 	h & b & f \\
+	 	g & f & c
+	 \end{array}\right]
+	 $
+	\end{example}
+	 \item \textbf{Skew Symmetric Matrix}\\A square matrix is called skew symmetric matrix, if
+	 (1) $a_{i j}=-a_{j i}$ for all values of $i$ and $j,$ or $A^{\prime}=-A$
+	 (2) All diagonal elements are zero.
+	\begin{example}
+		 $
+	 \left[\begin{array}{ccc}
+	 	0 & -h & -g \\
+	 	h & 0 & -f \\
+	 	g & f & 0
+	 \end{array}\right]
+	 $
+	\end{example}
+	 \end{itemize}
+	 \section{Elementary matrix arithmetic}
+	 \subsection{Matrix addition}
+	 The operation of addition of two matrices is only defined when both matrices have the same dimensions. If ${A}$ and ${B}$ are both $(m \times n)$, then the sum,
+	 \\$
+	 {C}={A}+{B}
+	 $\\
+	 the order of the sum is also $(m \times n)$ and is defined to have each element the sum of the corresponding elements of ${A}$ and ${B},$ thus
+	 \\$
+	 c_{i j}=a_{i j}+b_{i j}
+	 $
+	 \subsubsection{Properties of vector addition}
+	 Only matrices of the same order can be added or subtracted.
+	 \begin{itemize}
+	 	\item  Commutative Law \quad  $A+B=B+A$.
+	 	\item Associative law \quad $A+(B+C)=(A+B)+C$.
+	 \end{itemize}
+	
+	 \begin{exercise}
+	 	If $\begin{aligned} A &=\left[\begin{array}{rrr}4 & 2 & 5 \\ 1 & 3 & -6\end{array}\right] \text{and} & B=\left[\begin{array}{lll}1 & 0 & 2 \\ 3 & 1 & 4\end{array}\right] \end{aligned}$ find (A+B).\end{exercise}
+ 	\begin{answer}
+ 			$$\begin{aligned}
+ 			A+B &=\left[\begin{array}{lrl}4+1 & 2+0 & 5+2 \\ 1+3 & 3+1 & -6+4\end{array}\right]=\left[\begin{array}{lll}5 & 2 & 7 \\ 4 & 4 & -2\end{array}\right] \end{aligned}$$
+ 	\end{answer}
+	 
+	 
+	 %........................................................
+	 \subsection{Matrix multiplication}
+	 \subsubsection{$\bullet$Scalar multiple of a matrix}
+	 If a matrix is multiplied by a scalar quantity $k$, then each element o fthe matrix is multiplied by $k$.
+	 \subsubsection{$\bullet$Multiplication between matrices}
+	The product of two matrices $A$ and $\mathrm{B}$ is only possible if the number of columns in $A$ is equal to the number of rows in $B$.
+	 
+	 Let $A=\left[a_{i j}\right]$ be an $m \times n$ matrix and $B=\left[b_{i j}\right]$ be an $n \times p$ matrix. Then the product $A B$ of these matrices is an $m \times p$ matrix $C=\left[c_{i j}\right]$ where
+	 $$
+	 c_{i j}=a_{i 1} b_{1 j}+a_{i 2} b_{2 j}+a_{i 3} b_{3 j}+\ldots .+a_{i n} b_{n j}
+	 $$
+	 $$\left[\begin{array}{ll}a_{1 1} & a_{1 2} \\ a_{2 1} & a_{2 2 }\end{array}\right] \cdot\left[\begin{array}{ll} b_{1 1} &  b_{1 2} \\b_{2 1} & b_{22 }\end{array}\right]=\left[\begin{array}{ll}{a_{1}} \cdot {b_{1}} & {a_{1}} \cdot b_{2} \\ {a_{2}} \cdot {b_{1}} & {a_{2}} \cdot {b_{2}}\end{array}\right]$$\\\\
+	 \textbf{Properties of matrix multiplication}
+	 \begin{itemize}
+	 	\item Multiplication of matrices is not commutative.
+	 	$$
+	 	A B \neq B A
+	 	$$
+	 	\item Matrix multiplication is associative, if conformability is assured.
+	 	$$
+	 	A(B C)=(A B) C
+	 	$$
+	 	\item  Matrix multiplication is distributive with respect to addition.
+	 	$$
+	 	A(B+C)=A B+A C
+	 	$$
+	 	\item Multiplication of matrix $A$ by unit matrix.
+	 	$$
+	 	A I=I A=A
+	 	$$
+	 	\item Multiplicative inverse of a matrix exists if $|\mathrm{A}| \neq 0$.
+	 	$$
+	 	A \cdot A^{-1}=A^{-1} \cdot A=I
+	 	$$
+	 	\item  If $\mathrm{A}$ is a square then $A \times A=A^{2}, A \times A \times A=\mathrm{A}^{3}$.
+	 	\item  $\quad A^{0}=I$
+	 	\item  $\quad I^{n}=I,$ where $n$ is positive integer.
+	 \end{itemize}
+ \begin{exercise}
+ 	$$
+ 	\text {  If } A=\left[\begin{array}{rrr}
+ 		1 & -2 & 3 \\
+ 		2 & 3 & -1 \\
+ 		-3 & 1 & 2
+ 	\end{array}\right] \text { and } B=\left[\begin{array}{lll}
+ 		1 & 0 & 2 \\
+ 		0 & 1 & 2 \\
+ 		1 & 2 & 0
+ 	\end{array}\right]
+ 	$$ \end{exercise}
+ \begin{answer}
+ 	from the products $A B$ and $B A,$ and show that $A B \neq B A$.\\
+ \\Here,
+ $$
+ A B=\left[\begin{array}{rrr}
+ 	1 & -2 & 3 \\
+ 	2 & 3 & -1 \\
+ 	-3 & 1 & 2
+ \end{array}\right]\left[\begin{array}{lll}
+ 	1 & 0 & 2 \\
+ 	0 & 1 & 2 \\
+ 	1 & 2 & 0
+ \end{array}\right]
+ $$
+ $$
+ =\left[\begin{array}{ccc}
+ 	1-0+3 & 0-2+6 & 2-4+0 \\
+ 	2+0-1 & 0+3-2 & 4+6-0 \\
+ 	-3+0+2 & 0+1+4 & -6+2+0
+ \end{array}\right]=\left[\begin{array}{rrr}
+ 	4 & 4 & -2 \\
+ 	1 & 1 & 10 \\
+ 	-1 & 5 & -4
+ \end{array}\right]
+ $$$$
+ \begin{array}{l}
+ 	B A=\left[\begin{array}{lll}
+ 		1 & 0 & 2 \\
+ 		0 & 1 & 2 \\
+ 		1 & 2 & 0
+ 	\end{array}\right]\left[\begin{array}{rrr}
+ 		1 & -2 & 3 \\
+ 		2 & 3 & -1 \\
+ 		-3 & 1 & 2
+ 	\end{array}\right]\\=\left[\begin{array}{ccc}
+ 		1+0-6 & -2+0+2 & 3-0+4 \\
+ 		0+2-6 & 0+3+2 & 0-1+4 \\
+ 		1+4+0 & -2+6+0 & 3-2+0
+ 	\end{array}\right]=\left[\begin{array}{rrr}
+ 		-5 & 0 & 7 \\
+ 		-4 & 5 & 3 \\
+ 		5 & 4 & 1
+ 	\end{array}\right] 
+ 	
+ \end{array}
+ $$
+ 
+ \end{answer}
+ 
+
+
+\subsection{Trace of a matrix}
+In linear algebra, tthe trace of a matrix is defined as the sum of the principal diagonal elements of the matrix i.e.
+$$
+\operatorname{Tr}({A})=a_{11}+a_{22}+a_{33}+\ldots \ldots \ldots \ldots+a_{n n}=\sum_{i=1}^{n} a_{i i}
+$$
+\textbf{Properties of trace}
+\begin{itemize}
+	\item  $\operatorname{Tr}(A+B)=\operatorname{Tr}(A)+\operatorname{Tr}(B)$
+	\item $\operatorname{Tr}(c A)=c \operatorname{Tr}(A)[$ where $c$ is constant $]$
+	\item $\operatorname{Tr}(A B)=\operatorname{Tr}(B A)$
+	\item $\operatorname{Tr}(A B C D)=\operatorname{Tr}(B C D A)=\operatorname{Tr}(C D A B)=\operatorname{Tr}(D A B C)$
+\end{itemize}
+\begin{example}
+	\leavevmode
+	\newline
+	$
+	\begin{array}{l}
+		A=\left[\begin{array}{rrr}
+			3 & 5 & 6 \\
+			7 & 8 & 9 \\
+			12 & 15 & 12
+		\end{array}\right] \\\\
+		\operatorname{Tr}(\mathrm{A})=\mathrm{a}_{11}+\mathrm{a}_{22}+\mathrm{a}_{33}=8+3+12=23
+	\end{array}
+	$
+\end{example}
+\subsection{Transpose of a matrix}
+The transpose of an arbitrary matrix $A$ is written as $A^{T}$ is obtained by interchanging corresponding rows into column of $A$ i.e. if element of $A$ is $a_{i j}$ then element of $A^{T}$ is $a_{j i}$.\\
+\textbf{Properties:}
+\begin{itemize}
+	\item $\left(A^{T}\right)^{T}=A$
+	\item $(A B)^{T}=B^{T} A^{T}$
+\end{itemize}
+ 
+\begin{example}
+$
+A=\left[\begin{array}{lll}
+	2 & 3 & 4 \\
+	1 & 0 & 5 \\
+	6 & 7 & 8
+\end{array}\right], A^{T}=\left[\begin{array}{lll}
+	2 & 1 & 6 \\
+	3 & 0 & 7 \\
+	4 & 5 & 8
+\end{array}\right]
+$	
+\end{example}
+\subsection{Conjugate of a Matrix}
+Conjugate of a matrix obtained by taking the complex conjugate of each element  i.e
+\begin{example}
+	$
+	A=\left[\begin{array}{ccc}
+		2+i & 2-3 i & 0 \\
+		1-2 i & -i & 3-2 i
+	\end{array}\right]
+	 \Rightarrow{A^{\ast}}=\left[\begin{array}{ccc}
+		2-i & 2+3 i & 0 \\
+		1+2 i & i & 3+2 i
+	\end{array}\right]
+	$
+\end{example}
+
+\subsection{Transpose Conjugate of a Matrix:}
+Transpose conjugate of a matrix obtained by taking the transpose of the matrix and then taking the complex conjugate of each element or vice versa i.e
+$$
+A^{\dagger}=\left(A^{T}\right)^{*}=\left(A^{*}\right)^{T}
+$$
+\begin{example}
+	$
+	 \quad A=\left[\begin{array}{ccc}
+		2 & 4+i & 1 \\
+		-i & 5 & 4-i \\
+		3i & 0 & 3i
+	\end{array}\right] \Rightarrow A^{\dagger}=\left[\begin{array}{ccc}
+		2 & i & -3i \\
+		4-i & 5 & 0 \\
+		1 & 4+ i & -3i
+	\end{array}\right]
+	$
+\end{example}
+\subsection{Unitary Matrix}
+ A square matrix $A$ is said to be unitary if,
+ \begin{equation*}
+ A^{\dagger}A=I
+ \end{equation*}
+Where $A^{\dagger}$ is the conjugate transpose of the matrix, $ A$ and $I$ is a unit matrix. And 
+ \begin{equation*}
+ A^{\dagger}=A^{-1}
+ \end{equation*} 
+\subsection{Symmetric matrix}
+A square matrix is called symmetric if for all values of i and j, $a_{i j}=a_{j i}$, then $A^{T}=A$ 
+\begin{example} $\left[\begin{array}{lll}a & b & f \\ b & c & d \\ f & d & e\end{array}\right]$	 
+	\end{example}
+\subsubsection{Skew-Symmetric matrix}
+A square matrix is called skew-symmetric if for all values of i and j, $a_{i j}=-a_{j i}$, then $A^{T}=-A$ 
+\begin{example} $\left[\begin{array}{ccc}a & -b & -f\\ b & c & -d \\ f & d & e\end{array}\right]$	 
+\end{example}
+\begin{note}
+Every square matrix can be uniquely expressed as the sum of symmetric and a skew symmetric matrix.$$  A=\frac{1}{2}(A+A^{T})+\frac{1}{2}(A-A^{T})$$	
+\end{note}
+\subsection{Orthogonal matrix}
+ A square matrix $A$ is called an orthogonal matrix if the product of the matrix $A$ and the transpose matrix $A^{T}$ , is an identity matrix 
+\\$
+\text { A. } A^{T}=I
+$\hspace{1cm}if $|A|=1,$ matrix $A$ is proper.
+\begin{example}
+	$$\begin{aligned}
+		\text{If  }A&=\left[\begin{array}{ccc}1 / 3 & 2 / 3 & -2 / 3 \\ -2 / 3 & 2 / 3 & 1 / 3 \\ 2 / 3 & 1 / 3 & 2 / 3\end{array}\right]\\
+	A^{T} A&=\left[\begin{array}{ccc}1 / 3 & 2 / 3 & -2 / 3 \\ -2 / 3 & 2 / 3 & 1 / 3 \\ 2 / 3 & 1 / 3 & 2 / 3\end{array}\right]\left[\begin{array}{ccc}1 / 3 & -2 / 3 & 2 / 3 \\ 2 / 3 & 2 / 3 & 1 / 3 \\ -2 / 3 & 1 / 3 & 2 / 3\end{array}\right]&=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{array}\right]
+	\end{aligned}$$
+	
+
+	\end{example}
+\subsection{Hermitian Matrix}
+A square matrix $A=\left(a_{i j}\right)$ is called Hermitian matrix, if every $i$ -jth element of $A$ is equal to conjugate complex $j-i$ th element of $A$. Then, $A^{\dagger}=A$
+\begin{example}
+	$\text{A=}\left[\begin{array}{lll}
+			1 & 2+3 i & 3+i \\
+			2-3 i & 2 & 1-2 i \\
+			3-i & 1+2 i & 5
+	\end{array}\right]$
+\end{example}
+\subsubsection{Skew Hermitian Matrix}
+ A square matrix $A=\left(a_{i j}\right)$ will be called a Skew Hermitian matrix if every $i$ -$j^{th}$ element of $A$ is equal to negative conjugate complex of $j$ -$i^{th}$ element of $A$.
+\\In other words, $\quad a_{i j}=-{a}_{j i}^{\ast}$.\\All the diagonal elements of a Skew Hermitian matrix are either zeros or pure imaginary.
+\begin{example}
+	$\left[\begin{array}{ccc}i & 1-3 i & 4+7 i \\ -(1+3 i) & 0 &  i \\ -(4-7i) &  i & -5 i\end{array}\right]$
+\end{example}
+\subsection{Singular Matrix} If the determinant of the matrix is zero, then the matrix is known as singular matrix \begin{example}
+	 $A=\left[\begin{array}{ll}1 & 2 \\ 3 & 6\end{array}\right]$ is singular matrix, because $|A|=6-6=0$..
+\end{example}
+%............................................................................................
+\subsection{Adjoint of a square matrix}
+\textbf{Minor}:\\In a square matrix, each element possesses its own minor. The minor is defined as a value obtained from the determinant of a square matrix by deleting out a row and a column corresponding to the element of a matrix.
+\\\\\textbf{Cofactor}:\\ The cofactor is defined the signed minor. An (i,j) cofactor is computed by multiplying
+(i, j) minor by $(-1)^{i+j}$ and is denoted by $C_{i j}$. The formula to find cofactor $=C_{i j}=(-1)^{i+j} . M_{i j}$ where $M_{i j}$ denotes the minor of $i^{t h}$ row and $j^{\text {th }}$ column of a matrix.
+\\\\\textbf{Adjoint:}\\
+Let $A=\left[a_{i j}\right]$ be a square matrix of order $n$ and let $C_{i j}$ be the cofactor of $a_{i j}$ in $A .$ Then the transpose of the matrix of cofactors of ellements of $A$ is called the adjoint of $A$ and is denoted by adj $A$.
+\\Thus, adj $A=\left[C_{i j}\right]^{T} \Rightarrow(\operatorname{adj} A)_{i j}=C_{j i}=$ cofactor of
+$a_{j i}$ in
+$A .$
+$$
+\begin{array}{l}
+	\text { If } A=\left[\begin{array}{lll}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}\right] \\
+	\text { Then } \operatorname{adj}(A)=\left[\begin{array}{lll}
+		c_{11} & c_{12} & c_{13} \\
+		c_{21} & c_{22} & c_{23} \\
+		c_{31} & c_{32} & c_{33}
+	\end{array}\right]=\left[\begin{array}{lll}
+		c_{11} & c_{21} & c_{31} \\
+		c_{12} & c_{22} & c_{32} \\
+		c_{13} & c_{23} & c_{33}
+	\end{array}\right]
+\end{array}
+$$
+\subsection{Inverse of a matrix}
+A square matrix of order $n$ is invertible if there exists a square matrix $B$ of the same order such that
+$$
+A B=I_{n}=B A
+$$
+In the above case, $B$ is called the inverse of $A$ and is denoted by $A^{-1}$ where,
+$$
+A^{-1}=\frac{(\operatorname{adj} A)}{|A|}
+$$
+\subsubsection{Properties}
+\begin{itemize}
+	\item  $A^{-1}$ exists only when $A$ is non-singular, i.e. $|A| \neq 0$.
+	\item The inverse of a matrix is unique.
+	\item Reversal laws: If $A$ and $B$ are invertible matrices of the same order, then,
+	$$
+	(A B)^{-1}=B^{-1} A^{-1}
+	$$
+	\item If $A$ is an invertible square matrix, then, $$\left(A^{T}\right)^{-1}= \left(A^{-1}\right)^{T}$$
+   \item The inverse of an invertible symmetric matrix is a symmetric matrix.
+	\item Let $A$ be a non-singular square matrix of order $n$. Then,
+	$$
+	|\operatorname{adj} A|=|A|^{n-1}
+	$$
+	\item If $A$ is an invertible square matrix, then, $$\operatorname{adj} A^{T}=(\operatorname{adj} A)^{T}$$
+	\item If $A$ and $B$ are non-singular square matrices of the same order. then, $$\operatorname{adj}(A B)=(\operatorname{adj} B)(\operatorname{adj} A)$$
+	\item If $A$ is a non-singular matrix, then,
+	$$
+	\left|A^{-1}\right|=|A|^{-1}, \text {i.e. }\left|A^{-1}\right|=\frac{1}{|A|}
+	$$
+\end{itemize}
+\begin{exercise}
+	If $A=\left[\begin{array}{rrr}3 & -3 & 4 \\ 2 & -3 & 4 \\ 0 & -1 & 1\end{array}\right],$ find $A^{-1}$\end{exercise}
+\begin{answer}
+$$
+\begin{aligned}
+	A&=\left[\begin{array}{rrr}3 & -3 & 4 \\ 2 & -3 & 4 \\ 0 & -1 & 1\end{array}\right]\\
+	|A|&=3(-3+4)+3(2-0)+4(-2-0)=3+6-8=1\\
+	\text{cofactor of A}&=\left[\begin{array}{lll}
+		(-3+4) & (-2-0) & (-2-0) \\
+		(3-4) & (3-0) & (3-0) \\
+		(-12+12) & (-12+8) & (-9+6)
+	\end{array}\right]\\&= \left[\begin{array}{rrr}1 & -2 & -2 \\ -1 & 3 & 3 \\ 0 & -4 & -3\end{array}\right]\\\text { Adj. } A&=\left[\begin{array}{rrr}1 & -1 & 0 \\ -2 & 3 & -4 \\ -2 & 3 & -3\end{array}\right]\\ A^{-1}&=\frac{1}{|A|} \text { Adj.A }\\ &=\frac{1}{1}\left[\begin{array}{rrr}1 & -1 & 0 \\ -2 & 3 & -4 \\ -2 & 3 & -3\end{array}\right]=\left[\begin{array}{rrr}1 & -1 & 0 \\ -2 & 3 & -4 \\ -2 & 3 & -3\end{array}\right]
+\end{aligned}$$
+\end{answer}
+	
+
+\subsubsection{Rank of a matrix}
+
+The rank of a matrix is said to be $r$ if,
+\begin{itemize}
+	\item It has at least one non-zero minor of order $r$.
+	\item Every minor of $A$ of order higher than $r$ is zero. 
+\end{itemize}
+ 
+ \begin{note}
+ 	\begin{itemize}
+ 		\item Non-zero row is that row in which all the elements are not zero.\\
+ 		\item  $\text{Rank(AB)}< \text{Rank(A) or} \text{ Rank(B)}$
+ 		The rank of the product matrix $A B$ of two matrices $A$ and $B$ is less than the rank of either of the matrices $A$ and $B$.\\
+ 		\item  Corresponding to every matrix $A$ of rank $r,$ there exist non-singular matrices $P$ and $Q$ such
+ 		that $P A Q=\left[\begin{array}{cc}I_{r} & 0 \\ 0 & 0\end{array}\right]$
+ 	\end{itemize}
+ \end{note}
+\section{Determinants}
+The concept of determinant and the notation were introduced by the renowned German mathematician and philosopher Gottfried Wilhelm von Leibniz. A determinant can be defined as  a number associated with any \textbf{square} matrix. We'll write it as,  $\operatorname{det}A$ or $|A|$. The determinant encodes a lot of information about the matrix. 
+\subsection{Properties}
+\begin{enumerate}
+	\item The matrix is invertible exactly when the determinant is non-zero.
+	\item Determinant of identity Matrix is unity $\operatorname{det} I=1$
+	\item If you exchange two rows of a matrix, you reverse the sign of its determinant from positive to negative or from negative to positive.
+	i.e., If $\left|\begin{array}{ll}
+	1 & 0 \\
+	0 & 1
+	\end{array}\right|=1$ ,\ then, $\left|\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right|=-1$
+	\item 
+	\begin{itemize}
+		\item If we multiply one row of a matrix by $p$, the determinant is multiplied by $p:$\\\\ $\left|\begin{array}{rr}p a & p b \\ c & d\end{array}\right|=p\left|\begin{array}{cc}a & b \\ c & d\end{array}\right|$
+		\item The determinant behaves like a linear function on the rows of the
+		matrix:\\\\
+		$
+		\left|\begin{array}{cc}
+		a+a^{\prime} & b+b^{\prime} \\
+		c & d
+		\end{array}\right|=\left|\begin{array}{ll}
+		a & b \\
+		c & d
+		\end{array}\right|+\left|\begin{array}{cc}
+		a^{\prime} & b^{\prime} \\
+		c & d
+		\end{array}\right|
+		$
+	\end{itemize}
+	\item If any two rows or columns of a determinant are identical, then the value of the
+	determinant is zero.
+	\item The determinant of a triangular matrix is the product of the diagonal elemets. This propery holds true for diagonal matrix also.
+	\item $\operatorname{det} A=0$\\  Exactly when $A$ is singular.
+	\item $\operatorname{det} A B=(\operatorname{det} A)(\operatorname{det} B)$\\
+	Although the determinant of a sum does not equal the sum of the determinants, it is true that the determinant of a product equals the product of the determinants. For example:
+	$$
+	\operatorname{det} A^{-1}=\frac{1}{\operatorname{det} A}\quad 	(\text{Because,}\ A^{-1} A=1)
+	$$
+	(Note that if $A$ is singular then,\  $A^{-1}$ does not exist and $\operatorname{det} A^{-1}$ is undefined.) Also, $\operatorname{det} A^{2}=(\operatorname{det} A)^{2}$ and $\operatorname{det} 2 A=2^{n} \operatorname{det} A$
+	(applying property 3 to each row of the matrix). 
+	\item Determinant of Matrix and its Transpose are equal. $$\operatorname{det} A^{T}=\operatorname{det} A$$
+\end{enumerate}
+\section{Eigen values and eigen vectors}
+
+ If $A=\left[a_{i j}\right]_{n \times n}$ is a square matrix of order $n,$ then the vector equation $$A X=\lambda X$$ Where $X$ is an unknown column vector and $\lambda$ is an unknown scalar value, is called an eigenvalue problem. To solve this, we need to determine the value of $X$ 's and $\lambda$ 's to satisfy the above mentioned vector.
+ Take all unknowns to one side:$$(A-\lambda I) X=0$$
+ Where $I$ is a unit matrix with the same dimensions as $A$.
+ (Note that $A X-\lambda X=0$ does not simplify to $(A-\lambda) X=0$ as you cannot subtract a scalar $\lambda$ from a matrix $A$ ).
+ For this system non-trivial solutions will only exist if the determinant of the coefficient matrix is zero.
+ $$
+ \operatorname{det}(A-\lambda I)=0
+ $$
+ \begin{itemize}
+ 	\item \textbf{Characteristic Polynomial}:\\ The determinant $|A-\lambda I|$ when expanded will give a polynomial, which we call as characteristic polynomial of matrix $A$.With degree being the same order of $A$.
+ 	\item \textbf{Characteristic Equation:}\\ The equation $|A-\lambda I|=0$ is called the characteristic equation of the matrix $A$.
+ 	\item \textbf{Characteristic Roots or Eigen Values:}\\ The roots of characteristic equation $|A-\lambda I|=0$ are called characteristic roots of matrix .
+ \end{itemize}
+For every $\lambda$ there corresponds $X\neq 0$ which satisfies the equation $A X=\lambda X$
+Then $X$ is said to be Eigen vector corresponding to Eigen value $\lambda$ of matrix $A$.
+
+
+\section{Eigenvalues}
+The eigenvalues of a square matrix A are the roots of the characteristic equation
+ of A.\\
+Hence an n $\times$ n matrix has at least one eigenvalue and at most 'n' numerically
+different eigenvalues.
+\begin{note}
+	\begin{itemize}
+		\item 	 The trace of a matrix is equal to the sum of the
+		eigenvalues of a matrix.
+		\[
+		\sum_{\substack{i }} a_{ii}=\sum_{\substack{i }} \lambda_{i}
+		\]
+		\item The product of the eigenvalues of a matrix is equal
+		to the determinant of that matrix.
+		\[
+		Det(A)=\prod_{\substack{i }} \lambda_{i}
+		\]
+		
+	\end{itemize}
+	
+\end{note}
+\begin{exercise}
+	Obtain eigen values of the following matrices.\\$1.\left[\begin{array}{ccc}2 & 1 & 1\\ 1 & 2 & 1\\ 0 & 0& 1\end{array}\right]$\\$2.\left[\begin{array}{cc}4 & 1 \\ 2 & 3\end{array}\right]$
+\end{exercise}
+\begin{answer}
+	$$
+	\begin{aligned}
+		1.\text{Trace}&=5, \text{Determinant}=3\Longrightarrow \lambda=1,1,3(\because 1+1+3=5,1\times1\times3=3)\\
+		2.\text{Trace}&=7, \text{Determinant}=10\Longrightarrow \lambda=5,2(\because 5+2=7,5\times2=10)	
+	\end{aligned}$$
+ 
+\end{answer}
+
+
+
+\subsection{Properties of eigen values}
+\begin{itemize}
+	\item  Any square matrix $A$ and its transpose $A^{T}$ have the same eigen values.
+    \item If $\lambda_{1}, \lambda_{2}, \ldots \lambda_{n}$ are the eigen values of $A,$ then the eigen values of,
+	\begin{itemize}
+		\item  $k A$ are $k \lambda_{1}, \quad k \lambda_{2}, \ldots \ldots, k \lambda_{n}$\\
+		\item  $A^{m}$ are $\lambda_{1}^{m}, \lambda_{2}^{m}, \ldots \ldots ., \lambda_{n}^{m}$\\
+		\item $A^{-1}$ are $\frac{1}{\lambda_{1}}, \frac{1}{\lambda_{2}}, \ldots, \frac{1}{\lambda_{n}}$.
+	\end{itemize}
+	\item  If $A$ and $B$ are similar matrices, i.e. $A=I B,$ then $A$ and $B$ have the same eigenvalues.
+\item  If $A$ and $B$ are two matrices of same order, then the matrices $A B$ and $B A$ have the same eigenvalues.
+\item  The eigenvalues of a triangular matrix are equal to the diagonal elements of the matrix.
+\begin{example}
+		$\left[\begin{array}{ccc}a & d & e \\ 0 & b & f \\ 0 & 0 & c\end{array}\right]$, $ \lambda=a,b,c$
+\end{example}
+\item The eigen values of diagonal matrix are equal to the diagonal elements of the matrix.
+\begin{example}
+	$\left[\begin{array}{ccc}a & 0 & 0 \\ 0 & b & 0 \\ 0 & 0 & c\end{array}\right]$, $ \lambda=a,b,c$
+\end{example}
+\item For matrix whose rows or columns are identical, then $ \lambda=\text{Trace},0,0,0,..(n-1)$
+\begin{example}
+		$\left[\begin{array}{ccc}a & a & a \\ a & a & a \\ a & a & a\end{array}\right]$, $ \lambda=3a,0,0$,$\left[\begin{array}{ccc}2 & 1 & 3 \\ 2 & 1 & 3 \\ 2 & 1 & 3\end{array}\right]$, $ \lambda=6,0,0$
+\end{example}
+\item For a skew symmetric matrix eigen value is , $\lambda= 0,\pm i\sqrt {\text{sum of squares of non diagonal elements}}$
+\begin{example}
+$\left[\begin{array}{ccc}0 & -a & -b \\ a & 0 & -c \\ b & c & 0\end{array}\right]$ $ \lambda=0,\pm i\sqrt{a^{2}+b^{2}+c^{2}}$	
+\end{example}
+
+\end{itemize}
+\begin{exercise}
+	 Find the characteristic roots of the matrix $\left[\begin{array}{rrr}6 & -2 & 2 \\ -2 & 3 & -1 \\ 2 & -1 & 3\end{array}\right]$ \end{exercise}
+ \begin{answer}
+ 	 The characteristic equation of the given matrix is $\left|\begin{array}{rrr}6-\lambda & -2 & 2 \\ -2 & 3-\lambda & -1 \\ 2 & -1 & 3-\lambda\end{array}\right|=0$
+ 	\\\\$\Rightarrow \quad(6-\lambda)\left(9-6 \lambda+\lambda^{2}-1\right)+2(-6+2 \lambda+2)+2(2-6+2 \lambda)=0$
+ 	\\\\	$\Rightarrow$
+ 	$-\lambda^{3}+12 \lambda^{2}-36 \lambda+32=0$
+ 	\\\\By trial, $\lambda=2$ is a root of this equation. \\\\$\Rightarrow \quad(\lambda-2)\left(\lambda^{2}-10 \lambda+16\right)=0 \\\\\Rightarrow(\lambda-2)(\lambda-2)(\lambda-8)=0$
+ 	\\\\$\Rightarrow \quad \lambda=2,2,8$ are the characteristic roots or Eigen values.
+ 	
+ \end{answer}
+ 
+\begin{exercise}
+	 The matrix $A$ is defined as $A=\left[\begin{array}{rrr}1 & 2 & -3 \\ 0 & 3 & 2 \\ 0 & 0 & -2\end{array}\right]$Find the eigen values of $3 A^{3}+5 A^{2}-6 A+2 I$
+	\end{exercise}
+\begin{answer}
+	 
+	\begin{align*}
+		|A-\lambda I|&=0\\
+		\Rightarrow \quad(1-\lambda)(3-\lambda)(-2-\lambda)&=0\\ \text { or } \lambda&=1,3,-2\\
+		\text{ie,Eigen values of } A&=1,3,-2\\
+		\text{Eigen values of } A^{3}&=1,27,-8\\
+		\text{Eigen values of }A^{2}&=1,9,4\\
+		\text{Eigen values of }I&=1,1,1\\
+		\text{Eigen values of }3 A^{3}+5 A^{2}-6 A+2 I,\\
+		\text{First eigen value}&=3(1)^{3}+5(1)^{3}-6(1)+2(1)=4\\	
+		\text{Second eigen value}&=3(27)+5(9)-6(3)+2(1)=110\\
+		\text{Third eigen value}&=3(-8)+5(4)-6(-2)+2(1)=10\\\text{Then Required eigen values are } 4,110,10
+	\end{align*}
+	
+\end{answer}
+	
+\subsection{Eigen vectors}
+\subsubsection{Properties of eigen vectors}
+\begin{itemize}
+	\item The eigen vector $X$ of a matrix $A$ is not unique.
+	\item  If $\lambda_{1}, \lambda_{2}, \ldots, \lambda_{n}$ be distinct eigen values of an $n \times n$ matrix then corresponding eigen vectors $X_{1}, X_{2}, \ldots \ldots ., X_{n}$ form a linearly independent set.
+	\item If two or more eigen values are equal it may or may not be possible to get linearly independent eigen vectors corresponding to the equal roots.
+	\item  Two eigen vectors $X_{1}$ and $X_{2}$ are called orthogonal vectors if $X_{1}^{T} X_{2}=0$.
+	\item Eigen vectors of a symmetric matrix corresponding to different eigen values are orthogonal.
+	
+\end{itemize}
+\begin{note}
+	  To find normalised form of $\left[\begin{array}{l}a \\ b \\ c\end{array}\right],$ we divide each element by $\sqrt{a^{2}+b^{2}+c^{2}}$
+	  \begin{exampleT}
+	  	normalised form of $\left[\begin{array}{l}1 \\ 2 \\ 3\end{array}\right]$ is $\left[\begin{array}{l}1 / \sqrt{14} \\ 2 / \sqrt{14} \\ 2 / \sqrt{14}\end{array}\right]$\\$ \left[ \because \sqrt {1^{2}+2^{2}+3^{2}}=\sqrt{14}\right]$
+	  \end{exampleT}
+\end{note} 
+
+\begin{exercise}
+	 Find the eigen values and eigen vectors of matrix $A=\left[\begin{array}{lll}3 & 1 & 4 \\ 0 & 2 & 6 \\ 0 & 0 & 5\end{array}\right]$\end{exercise}
+ \begin{answer}
+ 	\begin{align*}
+ 		|A-\lambda I|&=\left|\begin{array}{ccc}
+ 			3-\lambda & 1 & 4 \\
+ 			0 & 2-\lambda & 6 \\
+ 			0 & 0 & 5-\lambda
+ 		\end{array}\right|\\&=(3-\lambda)(2-\lambda)(5-\lambda)\\
+ 	\end{align*}
+ 	\begin{align*}
+ 		\text{Hence the characteristic equation of matrix $A$ is given by},\\
+ 		|A-\lambda I| &=0 \\\Rightarrow (3-\lambda)(2-\lambda)(5-\lambda)&=0 \\
+ 		\therefore  \lambda &=2,3,5\\
+ 		\text{Thus the eigen values of matrix A are 2,3,5 .}
+ 		\\\text{The eigen vectors of the matrix A corresponding to the eigen value}\\\text{$\lambda$ is given by the nonzero solution of the equation (A-$\lambda I)$ X=0}\\
+ 		\left[\begin{array}{lll}
+ 			3-\lambda & 1 & 4 \\
+ 			0 & 2-\lambda & 6 \\
+ 			0 & 0 & 5-\lambda
+ 		\end{array}\right]\left[\begin{array}{l}
+ 			x_{1} \\
+ 			x_{2} \\
+ 			x_{3}
+ 		\end{array}\right]=\left[\begin{array}{l}
+ 			0 \\
+ 			0 \\
+ 			0
+ 		\end{array}\right]\\
+ 		\text{When $\lambda=2,$ the corresponding eigen vector is given by}\\
+ 		\left[\begin{array}{lll}
+ 			3-2 & 1 & 4 \\
+ 			0 & 2-2 & 6 \\
+ 			0 & 0 & 5-2
+ 		\end{array}\right]\left[\begin{array}{l}
+ 			x_{1} \\
+ 			x_{2} \\
+ 			x_{3}
+ 		\end{array}\right]=\left[\begin{array}{l}
+ 			0 \\
+ 			0 \\
+ 			0
+ 		\end{array}\right]\\
+ 		\Rightarrow\left[\begin{array}{lll}
+ 			1 & 1 & 4 \\
+ 			0 & 0 & 6 \\
+ 			0 & 0 & 3
+ 		\end{array}\right]\left[\begin{array}{l}
+ 			x_{1} \\
+ 			x_{2} \\
+ 			x_{3}
+ 		\end{array}\right]=\left[\begin{array}{l}
+ 			0 \\
+ 			0 \\
+ 			0
+ 		\end{array}\right]\\
+ 		\begin{array}{r}
+ 			x_{1}+x_{2}+4 x_{3}=0 \\
+ 			0 x_{1}+0 x_{2}+6 x_{3}=0 \\
+ 			\frac{x_{1}}{6-0}=\frac{x_{2}}{0-6}=\frac{x_{3}}{0-0}=k
+ 		\end{array}\\
+ 		\Rightarrow \quad \frac{x_{1}}{1}=\frac{x_{2}}{-1}=\frac{x_{3}}{0}=k \quad \Rightarrow \quad x_{1}=k, x_{2}=-k, x_{3}=0\\
+ 		\text { Hence } X_{1}=\left[\begin{array}{r}
+ 			k \\
+ 			-k \\
+ 			0
+ 		\end{array}\right]=k\left[\begin{array}{r}
+ 			1 \\
+ 			-1 \\
+ 			0
+ 		\end{array}\right] \\
+ 		\text { can be taken as an eigen vector of A corresponding to the eigen } \\
+ 		\text { value } \lambda=2
+ 	\end{align*}
+ \end{answer}
+	
+
+
+\subsection{Cayley-Hamilton theorem}
+According to the Cayley-Hamilton theorem, every square matrix satisfies its own characteristic equations. 
+\begin{equation}
+|A-\lambda I|=(-1)^{n}\left(\lambda^{n}+a_{1} \lambda^{n-1}+a_{2} \lambda^{n-2}+\cdots+a_{n}\right)
+\label{cayley hamilton}
+\end{equation}
+
+Hence, if  equation \ref{cayley hamilton}  is the characteristic polynomial of a matrix $A$ of order $n$, then the matrix equation,
+\begin{equation}
+X^{n}+a_{1} X^{n-1}+a_{2} X^{n-2}+\cdots+a_{n} I=0
+\end{equation}
+
+Is satisfied by $X=A$.ie,
+\begin{equation}
+A^{n}+a_{1} A^{n-1}+a_{2} A^{n-2}+\ldots+a_{n} I=0
+\end{equation} 
+\begin{exercise}
+	 Verify Cayley-Hamilton theorem for the matrix $A=\left(\begin{array}{cc}1 & 2 \\ 2 & -1\end{array}\right)$ and hence find $A^{-1}$.\end{exercise}
+
+
+\begin{answer}
+ The characteristic equation of the matrix is 
+
+\begin{align*}
+	| A-\lambda I|&=0\\
+	\begin{array}{cc}|1-\lambda & 2 \\ 2 & -1-\lambda\end{array}|=0\\
+	(1-\lambda)(-1-\lambda)-4&=0\\ \Rightarrow-1+\lambda^{2}-4&=0 \\\Rightarrow \lambda^{2}-5&=0\\
+	\newline\text{By Cayley-Hamilton Theorem,} A^{2}-5 I&=0\\
+	A^{2}=A . A &=\left[\begin{array}{rr}1 & 2 \\ 2 & -1\end{array}\right]\left[\begin{array}{rr}1 & 2 \\ 2 & -1\end{array}\right]=\left[\begin{array}{cc}5 & 0 \\ 0 & 5\end{array}\right] \\A^{2}-5 I&=\left[\begin{array}{ll}5 & 0 \\ 0 & 5\end{array}\right]-5\left[\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right]\\&=\left[\begin{array}{ll}5 & 0 \\ 0 & 5\end{array}\right]+\left[\begin{array}{rr}-5 & 0 \\ 0 & -5\end{array}\right]\\&=\left[\begin{array}{ll}0 & 0 \\ 0 & 0\end{array}\right]=0 \\
+	\text{ Thus Cayley hamilton theorem is verified.}\\
+	A^{2}-5 I&=0\\\text{Multiplying by}\ A^{-1} \ \text{we get},\\
+	A-5 A^{-1}&=0 \\\Rightarrow A^{-1}=\frac{1}{5} A \\\Rightarrow A^{-1}=\frac{1}{5}\left[\begin{array}{cc}
+		1 & 2 \\
+		2 & -1
+	\end{array}\right]=\left[\begin{array}{cc}
+		\frac{1}{5} & \frac{2}{5} \\
+		\frac{2}{5} & -\frac{1}{5}
+	\end{array}\right]
+\end{align*}
+
+\end{answer}
+
+\subsection{Similiarity transformation}
+Let $A$ and $B$ be two square matrices of order $n$. Then $B$ is said to be similar to $A$ if there exists a non-singular matrix $P$ such that
+\begin{equation}
+B=P^{-1} A P
+\end{equation}
+
+This transformation that gives B from A is called a similarity transformation.
+\begin{note}
+	If A and B are similiar matrices then both of them have same eigen values.Furthermore, if $\mathbf{x}$ is an eigenvector of $\mathbf{A},$ then $\mathbf{y}=\mathbf{P}^{-1} \mathbf{x}$ is an eigenvector of $\mathbf{B}$ corresponding to the same eigenvalue.\end{note}
+\subsection{Diagonalisation}
+Diagonalisation of a matrix A is the process of reduction of A to a diagonal form D.
+
+If an $n \times n$ matrix $\mathbf{A}$ has a basis of eigenvectors, then
+\begin{equation}
+\mathbf{D}=\mathbf{P}^{-1} \mathbf{A} \mathbf{P}
+\end{equation}
+is diagonal, with the eigenvalues of $\mathbf{A}$ as the entries on the main diagonal. Here $\mathbf{X}$ is the matrix with these eigenvectors as column vectors. Also,
+\begin{equation}
+\mathbf{D}^{m}=\mathbf{P}^{-1} \mathbf{A}^{m} \mathbf{P} \quad(m=2,3, \cdots)
+\end{equation}
+\subsubsection{Theorem on diagonalisation of matrix}
+\begin{theorem}
+	If a square matrix $A$ of order $n$ has $n$ linearly independent eigen vectors, then a matrix $P$ can be found such that $P^{-1} A P$ is a diagonal matrix.
+\end{theorem}
+
+	$\bullet$ The square matrix $P$, which diagonalises $A$, is found by grouping the eigen vectors of $A$ into square-matrix and the resulting diagonal matrix has the eigen values of $A$ as its diagonal elements.
+	 
+\begin{exercise}
+	Let $A=\left[\begin{array}{rrr}6 & -2 & 2 \\ -2 & 3 & -1 \\ 2 & -1 & 3\end{array}\right]$ Find matrix $P$ such that $P^{-1} A P$ is diagonal matrix.\end{exercise}
+\begin{answer}
+The characteristic equation of the  matrix $A$\\
+$$\left|\begin{array}{rrr}6-\lambda & -2 & 2 \\ -2 & 3-\lambda & -1 \\ 2 & -1 & 3-\lambda\end{array}\right|=0$$
+\begin{align*}
+	(6-\lambda)\left[9+\lambda^{2}-6 \lambda-1\right]+2[-6+2 \lambda+2]+2[2-6+2 \lambda]&=0 \\(6-\lambda)\left(\lambda^{2}-6 \lambda+8\right)-8+4 \lambda-8+4 \lambda&=0 \\
+	6 \lambda^{2}-36 \lambda+48-\lambda^{3}+6 \lambda^{2}-8 \lambda-16+8 \lambda&=0 \\-\lambda^{3}+12 \lambda^{2}-36 \lambda+32=0 \quad \Rightarrow \quad \lambda^{3}-12 \lambda^{2}+36 \lambda-32&=0 \\
+	(\lambda-2)^{2}(\lambda-8)=0 \quad \Rightarrow \quad \lambda=2,2,8
+\end{align*}
+Eigen vector for $\lambda=2$\\
+\begin{align*}
+	\left[\begin{array}{ccc}
+		4 & -2 & 2 \\
+		-2 & 1 & -1 \\
+		2 & -1 & 1
+	\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+	\end{array}\right]&=\left[\begin{array}{l}
+		0 \\
+		0 \\
+		0
+	\end{array}\right]\\\left[\begin{array}{rrr}
+		2 & -1 & 1 \\
+		-2 & 1 & -1 \\
+		2 & -1 & 1
+	\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+	\end{array}\right]&=\left[\begin{array}{l}
+		0 \\
+		0 \\
+		0
+	\end{array}\right] \begin{array}{l}
+		R_{2} \rightarrow R_{1}+R_{2} \\
+		R_{3} \rightarrow R_{2}+R_{3}
+	\end{array}\\
+	\left[\begin{array}{ccc}
+		2 & -1 & 1 \\
+		0 & 0 & 0 \\
+		0 & 0 & 0
+	\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+	\end{array}\right]&=\left[\begin{array}{l}
+		0 \\
+		0 \\
+		0
+	\end{array}\right] \text { or } 2 x_{1}-x_{2}+x_{3}=0\\
+	\intertext{This equation is satisfied by $ x_{1}=0, x_{2}=1, x_{3}=1$}
+X_{1}&=\left[\begin{array}{l}
+		0 \\
+		1 \\
+		1
+	\end{array}\right]
+	\text{and again }
+	x_{1}=1, x_{2}=3, x_{3}=1
+	\\X_{2}&=\left[\begin{array}{l}
+		1 \\
+		3 \\
+		1
+	\end{array}\right]
+	\intertext{Eigen vector for $ \lambda=8$}\begin{array}{r}
+		{\left[\begin{array}{rrr}
+				-2 & -2 & 2 \\
+				-2 & -5 & -1 \\
+				2 & -1 & -5
+			\end{array}\right]\left[\begin{array}{l}
+				x_{1} \\
+				x_{2} \\
+				x_{3}
+			\end{array}\right]=\left[\begin{array}{l}
+				0 \\
+				0 \\
+				0
+			\end{array}\right]} \\
+		-2 x_{1}-2 x_{2}+2 x_{3}=0 \\
+		-2 x_{1}-5 x_{2}-x_{3}=0
+	\end{array}
+\end{align*}
+\begin{align*}
+	\frac{x_{1}}{2+10}&=\frac{x_{2}}{-4-2}=\frac{x_{3}}{10-4}\\ \Rightarrow \frac{x_{1}}{12}&=\frac{x_{2}}{-6}=\frac{x_{3}}{6}\\ \Rightarrow \frac{x_{1}}{2}&=\frac{x_{2}}{-1}=\frac{x_{3}}{1}\\X_{3}&=\left[\begin{array}{r}
+		2 \\
+		-1 \\
+		1
+	\end{array}\right]
+\end{align*}
+\begin{align*}
+	\therefore \quad P&=\left[\begin{array}{rrr}
+		0 & 1 & 2 \\
+		1 & 3 & -1 \\
+		1 & 1 & 1
+	\end{array}\right], \quad P^{-1}=-\frac{1}{6}\left[\begin{array}{rrr}
+		4 & 1 & -7 \\
+		-2 & -2 & 2 \\
+		-2 & 1 & -1
+	\end{array}\right]\intertext { Now }\\ \quad P^{-1} A P&=-\frac{1}{6}\left[\begin{array}{rrr}
+		4 & 1 & -7 \\
+		-2 & -2 & 2 \\
+		-2 & 1 & -1
+	\end{array}\right]\left[\begin{array}{rrr}
+		6 & -2 & 2 \\
+		-2 & 3 & -1 \\
+		2 & -1 & 3
+	\end{array}\right]\left[\begin{array}{rrr}
+		0 & 1 & 2 \\
+		1 & 3 & -1 \\
+		1 & 1 & 1
+	\end{array}\right]|\\&=\left[\begin{array}{lll}
+		2 & 0 & 0 \\
+		0 & 2 & 0 \\
+		0 & 0 & 8
+	\end{array}\right]
+\end{align*}
+
+\end{answer}
+
+
+
+\subsubsection{Power of a matrix}
+We can obtain powers of a matrix by using diagonalisation.
+We know that
+$$
+D=P^{-1} A P
+$$
+\\We have ,\ $${D}^{m}={P}^{-1} {A}^{m} {P} \quad(m=2,3, \cdots)$$
+\\Pre-multiply by $P$ and post-multiply by $P^{-1}$ we get\\
+$$
+\begin{aligned}
+	P D^{m} P^{-1} &=P\left(P^{-1} A^{m} P\right) P^{-1} \\
+	&=\left(P P^{-1}\right) A^{m}\left(P P^{-1}\right) \\
+	&=A^{m}
+\end{aligned}
+$$
+\begin{itemize}
+	\item  Find eigen values for a square matrix $A$.
+	\item  Find eigen vectors to get the matrix $P$.
+	\item  Find the diagonal matrix $D,$ by the formula $D=P^{-1} \mathrm{AP}$
+	\item  Obtain $A^{m}$ by the formula $A^{m}=P D^{m} P^{-1}$.
+\end{itemize}
+\begin{exercise}
+	Evaluate $A^{50}$ for the matrix $A=\left[ \begin{array}{cc}
+	\frac{4}{3}& \frac{\sqrt{2}}{3}\\
+	\frac{\sqrt{2}}{3}& \frac{5}{3} 
+	\end{array}\right]$\\Their eigen values and eigen vectors are given as,$1\Longrightarrow \left\lbrace \sqrt{2},1\right\rbrace $ and for $2\Longrightarrow \left\lbrace  1,\sqrt{2}\right\rbrace $\end{exercise}
+\begin{answer}
+	$P=\left[ \begin{array}{cc}
+		\sqrt{2}& 1\\
+		1& \sqrt{2} 
+	\end{array}\right]\Longrightarrow p^{-1}AP=\left[ \begin{array}{cc}
+		1& 0\\
+		0& 2 
+	\end{array}\right]=D$\\
+	$|A|\neq 0\Longrightarrow\text{matrix A is non singular}$\\
+	hence, $$
+	\begin{aligned}
+		A^{50}=PD^{50}P^{-1}&=\left[ \begin{array}{cc}
+			\sqrt{2}& 1\\
+			1& \sqrt{2} 
+		\end{array}\right] \left[ \begin{array}{cc}
+			1& 0\\
+			0& 2^{50} 
+		\end{array}\right] \left[ \begin{array}{cc}
+			\frac{\sqrt{2}}{3}& \frac{-1}{3}\\
+			\frac{{1}}{3}& \frac{\sqrt{2}}{3} 
+		\end{array}\right]
+		\\&=\frac{1}{3} \left[ \begin{array}{cc}
+			2^{50}+2& 2^{50}-{\sqrt{2}}\\
+			(2^{50}-1)\sqrt{2}& 2^{51}+1 
+		\end{array}\right]
+	\end{aligned}$$
+	
+	
+\end{answer}
+
+\subsubsection{Exponential of matrix}
+According to similarity tranformation, $$D=P^{-I} A P \quad \Rightarrow A=P D P^{-1}$$Then,
+$$(\exp A)=P(e x p D) P^{-1}$$
+\begin{exercise}
+	Evaluate $ e^{A}$ where matrix A is given by, $\left[ \begin{array}{cc}
+		1& 0\\
+		0& 2 
+	\end{array}\right] $
+The eigen values of the given diagonal matrix are,$ \lambda_{1}=1  \text{and}  \lambda_{2}=2$
+\end{exercise}
+\begin{answer}
+It is given that,
+$$ \begin{aligned}
+	(\exp A)&=P(e x p D) P^{-1} \\
+	&\text{then,}\\
+	e^{A}=\left[ \begin{array}{cc}
+		e^{\lambda_{1}}& 0\\
+		0& e^{\lambda_{2}}
+	\end{array}\right]&=\left[ \begin{array}{cc}
+	e^{1}& 0\\
+	0& e^{2}
+\end{array}\right]
+\end{aligned}$$
+\end{answer}
+\subsubsection{Logarithm of a matrix}
+According to similarity tranformation, $$D=P^{-I} A P \quad \Rightarrow A=P D P^{-1}$$
+$$
+\Rightarrow(\ln A)=P(\ln D) P^{-1}
+$$
+\section{Applications}
+\subsection{Matrix representation of vector}
+We can use matrix formalism to represent vectors.a vector can be representsed as a one-column matrix.\\
+$\vec{A}=a\hat{i}+b\hat{j}+c\hat{k}$
+$\Longrightarrow \left[ \begin{array}{c}
+	a\\b\\c\end{array}\right] $
+\\We can also use the matrix formalism to generate scalar products, but in
+order to do so we must convert one of the column vectors into a row vector. The operation
+of transposition provides a way to do this. Thus, letting $a$ and $b$ stand for vectors in $R^{3}$,\\\\
+if $\vec{A}=a_{1}\hat{i}+a_{2}\hat{j}+a_{3}\hat{k}$ and $\vec{B}=b_{1}\hat{i}+b_{2}\hat{j}+b_{3}\hat{k}$ then their scalar product,
+$${A} \cdot {B} \quad \longrightarrow \quad\left(\begin{array}{lll}a_{1} & a_{2} & a_{3}\end{array}\right)\left(\begin{array}{l}b_{1} \\ b_{2} \\ b_{3}\end{array}\right)=a_{1} b_{1}+a_{2} b_{2}+a_{3} b_{3}$$
+If in a matrix context we regard a and ${b}$ as column vectors, the above equation assumes the form
+$$
+{A} \cdot {B} \quad \longrightarrow  {A}^{T} {B}
+$$
+\subsection{Cooordinate transformation}
+Matrices are linear operators or maps such as rotations. In many problems we will need to use different coordinate systems inorder to describe different vector quantities .Components of a vector are transformed when we change the reference frame.
+\newline Let $(x, y, z)$ be a cartesian coordinate system in a three dimension space. \\\\Let $\vec{r}=x \hat{i}+y \hat{j}$ be a vector in $x-y$ plane. \\\\If we consider a rotation of coordinate system about $z$ -axis through an angle $\theta$ in anticlockwise sense
+and indicate the new axis by then the components of the same vector \ $\vec{r}=x^{\prime} \hat{i}+y^{\prime} \hat{j}^{\prime}$\  relative to the new system may be expressed as,
+\\\\$x^{\prime}=x \cos \theta+y \sin \theta$\\
+$y^{\prime}=-x \sin \theta+y \cos \theta$\\\\
+Then equations in matrix form can be represented as ,\\\\
+$\left[\begin{array}{l}x \\ y\end{array}\right]=\left[\begin{array}{cc}\cos \theta & \sin \theta \\ -\sin \theta & \cos \theta\end{array}\right]\left[\begin{array}{l}x \\ y\end{array}\right]=R_{z}(\theta)\left[\begin{array}{l}x \\ y\end{array}\right]$
+\\\\
+Where $R_{z}(\theta)$ is the transformation matrix corresponding to the rotation in $x-y$ plane about $z$ -axis.\\\\\textbf{Properties of Transformation matrix matrix}
+\begin{itemize}
+	\item $R_{z}(\theta)$ is orthogonal matrix.
+	\item Determinant of $R_{=}(\theta)$ is 1.
+	\item  Eigenvalues of $R_{z}(\theta)$ are $e^{i \theta}$ and $e^{-i \theta}$.
+\end{itemize}
+Let us consider a vector in space i.e. $\vec{r}=x \hat{i}+y \hat{j}+z \hat{k} .$ Here, three types of rotation is possible:
+\\\\\textbf{Type I: Rotation about z-axis:}
+Rotation matrix. $$R_{z}(\theta)=\left[\begin{array}{ccc}\cos \theta & \sin \theta & 0 \\ -\sin \theta & \cos \theta & 0 \\ 0 & 0 & 1\end{array}\right]$$
+\\\textbf{Type  II: Rotation about x-axis:}
+Rotation matrix. $$R_{x}(\theta)=\left[\begin{array}{ccc}1 & 0 & 0 \\ 0 & \cos \theta & \sin \theta \\ 0 & -\sin \theta & \cos \theta\end{array}\right]$$
+\textbf{Type III: Rotation about y-axis:}
+Rotation matrix. $$R_{y}(\theta)=\left[\begin{array}{ccc}\cos \theta & 0 & -\sin \theta \\ 0 & 1 & 0 \\ \sin \theta & 0 & \cos \theta\end{array}\right]$$
+%.................................net..............................................
+
+\section{Linear system of equations and  their solutions}
+One of the major applications of determinants is in the establishment of a condition for the existence of a nontrivial solution for a set of linear homogeneous algebraic equations.\\
+Let $\mathrm{a}_{1}, \ldots \mathrm{a}_{\mathrm{n}}$ be elements of a vector  field , and let $\mathrm{x}_{1}, \ldots \mathrm{x}_{\mathrm{n}}$ be unknowns
+(also called variables or indeterminates). Then an equation of the form
+$$
+\mathrm{a}_{1} \mathrm{x}_{1}+\cdots+\mathrm{a}_{\mathrm{n}} \mathrm{x}_{\mathrm{n}}=\mathrm{y}
+$$
+is called a linear equation in $n$ unknowns (over the vector field.)
+in which case we say that $\left(c_{1}, \ldots, c_{n}\right)$ satisfies the equation. The set of all such solutions is called the solution set (or the general solution).
+Now consider the following system of ${m}$ linear equations in '${n}$' unknowns:
+$$
+\begin{array}{c}
+	a_{11} x_{1}+\cdots+a_{1 n} x_{n}=y_{1} \\
+	a_{21} x_{1}+\cdots+a_{2 n} x_{n}=y_{2} \\
+	\vdots \\
+	a_{m 1} x_{1}+\cdots+a_{m n} x_{n}=y_{m}
+\end{array}
+$$
+We abbreviate this system as,
+$$
+\sum_{j=1}^{n} a_{i j} x_{j}=y_{i}, \quad i=1, \ldots m
+$$
+Suppose we have a system of '$ i $' linear equation in '$ j $' unknowns, such as,
+$$
+\begin{array}{c}
+	a_{11} x_{1}+a_{12} x_{2}+\cdots+a_{i j} x_{j}=b_{1} \\
+	a_{221} x_{1}+a_{22} x_{2}+\cdots+a_{2 j} x_{j}=b_{2} \\
+	: \quad: \quad: \quad: \quad:
+\end{array}
+$$
+The above system of equations can be written in the matrix form as follows:
+$$
+\left[\begin{array}{cccc}
+	a_{11} & a_{12} & \cdots & a_{i j} \\
+	a_{21} & a_{22} & \cdots & a_{2 j} \\
+	\vdots & \vdots & \vdots & \vdots \\
+	a_{i 1} & a_{i 2} & \cdots & a_{i j}
+\end{array}\right]\left[\begin{array}{c}
+	x_{1} \\
+	x_{2} \\
+	\vdots \\
+	x_{j}
+\end{array}\right]=\left[\begin{array}{c}
+	b_{1} \\
+	b_{2} \\
+	\vdots \\
+	b_{j}
+\end{array}\right]
+$$
+The equation can be represented by the form $A X=B$.\\
+$x=\left[\begin{array}{c}x_{1} \\ x_{2} \\ \vdots \\ x_{j}\end{array}\right]$ is of the order of $j \times 1$ and\\
+$B=\left[\begin{array}{c}b_{1} \\ b_{2} \\ \vdots \\ b_{i}\end{array}\right]$ is of the order of $i \times 1 .$\\ $[A]_{i \times j}$ is called the coefficient matrix of system of linear equations.
+\subsection{Solution of Homogeneous System of Linear Equations}
+As already discussed, for a homogeneous system of linear equation with ' $j$ unknowns,
+$$
+\begin{array}{c}
+	A X=B \text { becomes } \\
+	A X=0(\because B=0)
+\end{array}
+$$
+There are two cases that arise for homogeneous systems:
+\begin{enumerate}
+	\item  \textbf{Matrix $A$ is non-singular or $|A| \neq 0$.}\\
+	The solution of the homogeneous system in the above equation has a unique solution, $X=0,$ i.e. $x_{1}=x_{2}=\cdots=x_{j}=0$
+		\item \textbf{Matrix $A$ is singular or $|A|=0.$}\\ Then it has infinite many solutions. To find the solution when $|A|=0$, put $z=k$ (where $k$ is any real number) and solve any two equations for $x$ and $y$ using the matrix method. The values obtained for $x$ and $y$ with $z=$ $k$ is the solution of the system.
+\end{enumerate}
+
+\subsection{Solution of Non-Homogeneous System of Simultaneous Linear Equations}
+To solve a non-homogeneous system of simultaneous linear equations. We have to find the number of unknowns and the number of equations.
+\begin{enumerate}
+	\item  Given that $A$ is a non-singular matrix, then a system of equations represented by $A X=B$ has the unique solution which can be calculated by $X=A^{-1} B$
+	\item  If $A X=B$ is a system with linear equations equal to the number of unknowns, then three cases arise:
+\end{enumerate}
+
+\begin{itemize}
+	\item  If $|A| \neq 0$, system is consistent and has a unique solution given by $X=A^{-1} B$.
+	\item If $|A|=0$ and $(\operatorname{adj} A) B=0,$ system is consistent and has infinite solutions.
+	\item If $|A|=0$ and $(\operatorname{adj} A) B \neq 0,$ system is inconsistent.
+	
+\end{itemize}
+\subsection{Cramer's rule}
+Our real problem in solving a linear equation is to determine under what conditions there is any solution, apart from the trivial one $x_{1}=0, x_{2}=0, x_{3}=0$. 
+Suppose we have the following system of linear equations:
+\begin{equation}
+\begin{array}{l}
+a_{1} x+b_{1} y+c_{1} z=k_{1} \\
+a_{2} x+b_{2} y+c_{2} z=k_{2} \\
+a_{3} x+b_{3} y+c_{3} z=k_{3}
+\end{array}\label{Matrices linear 001}
+\end{equation}
+If we use vector notation $\mathbf{x}=\left(x_{1}, x_{2}, x_{3}\right)$ for the solution and three rows $\mathbf{a}=\left(a_{1}, a_{2}, a_{3}\right), \mathbf{b}=\left(b_{1}, b_{2}, b_{3}\right), \mathbf{c}=\left(c_{1}, c_{2}, c_{3}\right)$ of coefficients, then the three equations, Equation.\label{Matrices linear 001}, become
+Now, if
+$$
+\begin{array}{l}
+	\Delta=\left[\begin{array}{lll}
+		a_{1} & b_{1} & c_{1} \\
+		a_{2} & b_{2} & c_{2} \\
+		a_{3} & b_{3} & c_{3}
+	\end{array}\right] \neq 0 \\
+	\Delta_{1}=\left[\begin{array}{lll}
+		k_{1} & b_{1} & c_{1} \\
+		k_{2} & b_{2} & c_{2} \\
+		k_{3} & b_{3} & c_{3}
+	\end{array}\right] \neq 0 \\
+	\Delta_{2}=\left[\begin{array}{lll}
+		a_{1} & k_{1} & c_{1} \\
+		a_{2} & k_{2} & c_{2} \\
+		a_{3} & k_{3} & c_{3}
+	\end{array}\right] \neq 0 \\
+	\Delta_{3}=\left[\begin{array}{lll}
+		a_{1} & b_{1} & k_{1} \\
+		a_{2} & b_{2} & k_{2} \\
+		a_{3} & b_{3} & k_{3}
+	\end{array}\right] \neq 0
+\end{array}
+$$
+Thus, the solution of the system of equations is given by
+$$
+\begin{array}{l}
+	x=\frac{\Delta_{1}}{\Delta} \\
+	y=\frac{\Delta_{2}}{\Delta} \\
+	z=\frac{\Delta_{3}}{\Delta}
+\end{array}
+$$\subsection{Augmented matrix}
+Consider the following system of equations:
+$$
+\begin{array}{c}
+	a_{11} x_{1}+a_{12} x_{2}+\cdots+a_{1 n} x_{n}=b_{1} \\
+	a_{21} x_{1}+a_{22} x_{2}+\cdots+a_{2 n} x_{n}=b_{2} \\
+	\vdots \quad \vdots \\
+	a_{m 1} x_{1}+a_{m 2} x_{2}+\cdots+a_{m n} x_{n}=b_{m}
+\end{array}
+$$
+This system can be represented as $A X=B$.
+$$
+\begin{aligned}
+	\text { where } A &=\left[\begin{array}{cccc}
+		a_{11} & a_{12} & \cdots & a_{1 n} \\
+		a_{21} & a_{22} & \cdots & a_{2 n} \\
+		\vdots & \vdots & \vdots & \vdots \\
+		a_{m 1} & a_{m 2} & \cdots & a_{m n}
+	\end{array}\right], X=\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		\vdots \\
+		x_{n}
+	\end{array}\right] \text { and } \\
+	& B=\left[\begin{array}{c}
+		b_{1} \\
+		b_{2} \\
+		\vdots \\
+		b_{n}
+	\end{array}\right] .
+\end{aligned}
+$$
+The matrix $[A \mid B]=\left[\begin{array}{cccc|c}a_{11} & a_{12} & \cdots & a_{1 n} & b_{1} \\ a_{21} & a_{22} & \cdots & a_{2 n} & b_{2} \\ \vdots & \vdots & \vdots & \vdots & \vdots \\ a_{m 1} & a_{m 2} & \cdots & a_{m n} & b_{m}\end{array}\right]$ is called
+augmented matrix
+\begin{exercise}
+	Show that the homogeneous system of equations has a non-trivial solution and find the solution.
+	$$
+	\begin{array}{r}
+		x-2 y+z=0 \\
+		x+y-z=0 \\
+		3 x+6 y-5 z=0
+	\end{array}
+	$$
+\end{exercise}
+\begin{answer}[H]
+	The given system of equations can be written in the matrix form as follows:
+	\begin{align*}
+		\left[\begin{array}{ccc}
+			1 & -2 & 1 \\
+			1 & 1 & -1 \\
+			3 & 6 & -5
+		\end{array}\right]\left[\begin{array}{l}
+			x \\
+			y \\
+			z
+		\end{array}\right]&=\left[\begin{array}{l}
+			0 \\
+			0 \\
+			0
+		\end{array}\right]\\
+\text{	Which is similar to }\ A X=O, \\\text{Where}\ A&=\left[\begin{array}{ccc}3 & 6 & -5\end{array}\right]\left[\begin{array}{ccc}1 & -2 & 1 \\ 1 & 1 & -1 \\ 3 & 6 & -5\end{array}\right],\\
+	X&=\left[\begin{array}{l}x \\ y \\ z\end{array}\right]\text{ and } O=\left[\begin{array}{l}0 \\ 0 \\ 0\end{array}\right]\\\text{Now,}\
+|A|&=\left|\begin{array}{ccc}
+			1 & -2 & 1 \\
+			1 & 1 & -1 \\
+			3 & 6 & -5
+		\end{array}\right|\\&=1(-5+6)-1(10-6)+3(2-1)=0 
+	\end{align*}
+Thus, $|A|=0$ and hence the given system of equations has a non-trivial solution.
+Now, to find the solution, we put $z=k$ in the first two equations.
+\begin{align*}
+	\begin{array}{c}
+		x-2 y=-k \\
+		x+y=k \\
+		{\left[\begin{array}{cc}
+				1 & -2 \\
+				1 & 1
+			\end{array}\right]\left[\begin{array}{l}
+				x \\
+				y
+			\end{array}\right]=\left[\begin{array}{l}
+				-k \\
+				k
+			\end{array}\right]}
+	\end{array}\\
+\text{which is similar to}\ A X=B, \text{where}\ A=\left[\begin{array}{cc}1 & -2 \\ 1 & 1\end{array}\right],\\ X=\left[\begin{array}{l}x \\ y\end{array}\right] \text{and}\ B=\left[\begin{array}{l}-k \\ k\end{array}\right]\\
+\text{Now,}
+|A|=\left|\begin{array}{cc}
+	1 & -2 \\
+	1 & 1
+\end{array}\right|=3 \neq 0\\\text{Hence,}\  A^{-1} exists.
+\\
+\begin{array}{r}
+\text { Now, adj } A=\left[\begin{array}{cc}
+	1 & 2 \\
+	-1 & 1
+\end{array}\right] \\
+A^{-1}=\frac{1}{3}\left[\begin{array}{cc}
+	1 & 2 \\
+	-1 & 1
+\end{array}\right]
+\end{array}
+\\
+\text { Now, } X=A^{-1} B \\ \Rightarrow\left[\begin{array}{l}
+		x \\
+		y
+	\end{array}\right]=\frac{1}{3}\left[\begin{array}{cc}
+		1 & 2 \\
+		-1 & 1
+	\end{array}\right]\left[\begin{array}{l}
+		-k \\
+		k
+	\end{array}\right]=\left[\begin{array}{l}
+		k / 3 \\
+		2 k / 3
+	\end{array}\right]
+	\\ \Rightarrow x=\frac{k }{3}, y=\frac{2 k}{3}\\
+\text{Hence,}\ x=\frac{k }{3}, y=\frac{2 k}{3}\ \text{and}\ z=k
+\end{align*}
+Where k is any real number that satisfies the given set of equations.
+\end{answer}
+
+\newpage
+\pagestyle{plain}
+
+
+\begin{abox}
+	Problem set-1
+	\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item Consider the matrix $M=\left(\begin{array}{lll}1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1\end{array}\right)$\\
+	\textbf{A.} The eigenvalues of $M$ are
+	{\exyear{NET/JRF(JUNE-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $0,1,2$
+		\task[\textbf{B.}] $0,0,3$
+		\task[\textbf{C.}] $1,1,1$
+		\task[\textbf{D.}] $-1,1,3$
+	\end{tasks}
+	\textbf{B.} The exponential of $M$ simplifies to ( $I$ is the $3 \times 3$ identity matrix)
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $e^{M}=I+\left(\frac{e^{3}-1}{3}\right) M$
+		\task[\textbf{B.}] $e^{M}=I+M+\frac{M^{2}}{2 !}$
+		\task[\textbf{C.}] $e^{M}=I+3^{3} M$
+		\task[\textbf{D.}] $e^{M}=(e-1) M$
+	\end{tasks}
+	\item A $3 \times 3$ matrix $M$ has $\operatorname{Tr}[M]=6, \operatorname{Tr}\left[M^{2}\right]=26$ and $\operatorname{Tr}\left[M^{3}\right]=90$. Which of the following can be a possible set of eigenvalues of $M ?$
+	{\exyear{NET/JRF(DEC-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\{1,1,4\}$
+		\task[\textbf{B.}] $\{-1,0,7\}$
+		\task[\textbf{C.}] $\{-1,3,4\}$
+		\task[\textbf{D.}] $\{2,2,2\}$
+	\end{tasks}
+	\item The eigen values of the matrix $A=\left(\begin{array}{lll}1 & 2 & 3 \\ 2 & 4 & 6 \\ 3 & 6 & 9\end{array}\right)$ are
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $(1,4,9)$
+		\task[\textbf{B.}] $(0,7,7)$
+		\task[\textbf{C.}] $(0,1,13)$
+		\task[\textbf{D.}] $(0,0,14)$
+	\end{tasks}
+	\item The eigenvalues of the antisymmetric matrix,
+	$$
+	A=\left(\begin{array}{ccc}
+	0 & -n_{3} & n_{2} \\
+	n_{3} & 0 & -n_{1} \\
+	-n_{2} & n_{1} & 0
+	\end{array}\right)
+	$$
+	where $n_{1}, n_{2}$ and $n_{3}$ are the components of a unit vector, are
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $0, i,-i$
+		\task[\textbf{B.}] $0,1,-1$
+		\task[\textbf{C.}] $0,1+i,-1,-i$
+		\task[\textbf{D.}]  $0,0,0$
+	\end{tasks}
+	\item Consider an $n \times n(n>1)$ matrix $A$, in which $A_{i j}$ is the product of the indices $i$ and $j$ $\left(\right.$ namely $\left.A_{i j}=i j\right)$. The matrix $A$
+	{\exyear{NET/JRF(DEC-2013)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}]  Has one degenerate eigevalue with degeneracy $(n-1)$
+		\task[\textbf{B.}] Has two degenerate eigenvalues with degeneracies 2 and $(n-2)$
+		\task[\textbf{C.}] Has one degenerate eigenvalue with degeneracy $n$
+		\task[\textbf{D.}] Does not have any degenerate eigenvalue
+	\end{tasks}
+	\item Consider the matrix
+	$$
+	M=\left(\begin{array}{ccc}
+	0 & 2 i & 3 i \\
+	-2 i & 0 & 6 i \\
+	-3 i & -6 i & 0
+	\end{array}\right)
+	$$
+	The eigenvalues of $M$ are
+	{\exyear{NET/JRF(JUNE-2014)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $-5,-2,7$
+		\task[\textbf{B.}] $-7,0,7$
+		\task[\textbf{C.}] $-4 i, 2 i, 2 i$
+		\task[\textbf{D.}] $2,3,6$
+	\end{tasks}
+	\item The column vector $\left(\begin{array}{l}a \\ b \\ a\end{array}\right)$ is a simultaneous eigenvector of $A=\left(\begin{array}{ccc}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right)$ and $B=\left(\begin{array}{lll}0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0\end{array}\right)$ if
+	{\exyear{NET/JRF(DEC-2014)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $b=0$ or $a=0$
+		\task[\textbf{B.}] $b=a$ or $b=-2 a$
+		\task[\textbf{C.}] $b=2 a$ or $b=-a$
+		\task[\textbf{D.}] $b=a / 2$ or $b=-a / 2$
+	\end{tasks}
+	\item The matrix $M=\left(\begin{array}{ccc}1 & 3 & 2 \\ 3 & -1 & 0 \\ 0 & 0 & 1\end{array}\right)$ satisfies the equation
+	{\exyear{NET/JRF(DEC-2016)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $M^{3}-M^{2}-10 M+12 I=0$
+		\task[\textbf{B.}] $M^{3}+M^{2}-12 M+10 I=0$
+		\task[\textbf{C.}] $M^{3}-M^{2}-10 M+10 I=0$
+		\task[\textbf{D.}] $M^{3}+M^{2}-10 M+10 I=0$
+	\end{tasks}
+	\item   Which of the following can not be the eigen values of a real $3 \times 3$ matrix
+	{\exyear{NET/JRF(JUNE-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]  $2 i, 0,-2 i$
+		\task[\textbf{B.}] $1,1,1$
+		\task[\textbf{C.}] $e^{i \theta}, e^{-i \theta}, 1$
+		\task[\textbf{D.}] $i, 1,0$
+	\end{tasks}
+	\item  Let $\sigma_{x}, \sigma_{y}, \sigma_{z}$ be the Pauli matrices and $x^{\prime} \sigma_{x}+y^{\prime} \sigma_{y}+z^{\prime} \sigma_{z}=\exp \left(\frac{i \theta \sigma_{z}}{2}\right) \times$
+	$$
+	\left[x \sigma_{x}+y \sigma_{y}+z \sigma_{z}\right] \exp \left(-\frac{i \theta \sigma_{z}}{2}\right)
+	$$
+	Then the coordinates are related as follows
+	{\exyear{NET/JRF(JUNE-2017)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] $\left(\begin{array}{l}x^{\prime} \\ y^{\prime} \\ z^{\prime}\end{array}\right)=\left(\begin{array}{ccc}\cos \theta & -\sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1\end{array}\right)\left(\begin{array}{l}x \\ y \\ z\end{array}\right)$
+		\task[\textbf{B.}] $\left(\begin{array}{l}x^{\prime} \\ y^{\prime} \\ z^{\prime}\end{array}\right)=\left(\begin{array}{ccc}\cos \theta & \sin \theta & 0 \\ -\sin \theta & \cos \theta & 0 \\ 0 & 0 & 1\end{array}\right)\left(\begin{array}{l}x \\ y \\ z\end{array}\right)$
+		\task[\textbf{C.}] $\left(\begin{array}{l}x^{\prime} \\ y^{\prime} \\ z^{\prime}\end{array}\right)=\left(\begin{array}{ccc}\cos \frac{\theta}{2} & \sin \frac{\theta}{2} & 0 \\ -\sin \frac{\theta}{2} & \cos \frac{\theta}{2} & 0 \\ 0 & 0 & 1\end{array}\right)\left(\begin{array}{l}x \\ y \\ z\end{array}\right)$
+		\task[\textbf{D.}] $\left(\begin{array}{l}x^{\prime} \\ y^{\prime} \\ z^{\prime}\end{array}\right)=\left(\begin{array}{ccc}\cos \frac{\theta}{2} & -\sin \frac{\theta}{2} & 0 \\ \sin \frac{\theta}{2} & \cos \frac{\theta}{2} & 0 \\ 0 & 0 & 1\end{array}\right)\left(\begin{array}{l}x \\ y \\ z\end{array}\right)$
+	\end{tasks}
+	\item  Let $A$ be a non-singular $3 \times 3$ matrix, the columns of which are denoted by the vectors $\vec{a}, \vec{b}$ and $\vec{c}$, respectively. Similarly, $\vec{u}, \vec{v}$ and $\vec{w}$ denote the vectors that form the corresponding columns of $\left(A^{T}\right)^{-1}$. Which of the following is true?
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\vec{u} \cdot \vec{a}=0, \vec{u} \cdot \vec{b}=0, \vec{u} \cdot \vec{c}=1$
+		\task[\textbf{B.}]  $\vec{u} \cdot \vec{a}=0, \vec{u} \cdot \vec{b}=1, \vec{u} \cdot \vec{c}=0$
+		\task[\textbf{C.}] $\vec{u} \cdot \vec{a}=1, \vec{u} \cdot \vec{b}=0, \vec{u} \cdot \vec{c}=0$
+		\task[\textbf{D.}]  $\vec{u} \cdot \vec{a}=0, \vec{u} \cdot \vec{b}=0, \vec{u} \cdot \vec{c}=0$
+	\end{tasks}
+	\item Consider the matrix equation
+	$$
+	\left(\begin{array}{llc}
+	1 & 1 & 1 \\
+	1 & 2 & 3 \\
+	2 & b & 2 c
+	\end{array}\right)\left(\begin{array}{l}
+	x \\
+	y \\
+	z
+	\end{array}\right)=\left(\begin{array}{l}
+	0 \\
+	0 \\
+	0
+	\end{array}\right)
+	$$
+	The condition for existence of a non-trivial solution and the corresponding normalised solution (upto a sign) is
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $b=2 c$ and $(x, y, z)=\frac{1}{\sqrt{6}}(1,-2,1)$
+		\task[\textbf{B.}] $c=2 b$ and $(x, y, z)=\frac{1}{\sqrt{6}}(1,1,-2)$
+		\task[\textbf{C.}] $c=b+1$ and $(x, y, z)=\frac{1}{\sqrt{6}}(2,-1,-1)$
+		\task[\textbf{D.}] $b=c+1$ and $(x, y, z)=\frac{1}{\sqrt{6}}(1,-2,1)$
+	\end{tasks}
+	\item  Which of the following statements is true for a $3 \times 3$ real orthogonal matrix with determinant $+1 ?$
+	{\exyear{NET/JRF(JUNE-2018)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] The modulus of each of its eigenvalues need not be 1, but their product must be 1
+		\task[\textbf{B.}] At least one of its eigenvalues is $+1$
+		\task[\textbf{C.}] All of its eigenvalues must be real
+		\task[\textbf{D.}]  None of its eigenvalues must be real
+	\end{tasks}
+	\item One of the eigenvalues of the matrix $e^{A}$ is $e^{a}$, where $A=\left(\begin{array}{ccc}a & 0 & 0 \\ 0 & 0 & a \\ 0 & a & 0\end{array}\right)$. The product of the other two eigenvalues of $e^{A}$ is
+	{\exyear{NET/JRF(DEC-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $e^{2 a}$
+		\task[\textbf{B.}] $e^{-a}$
+		\task[\textbf{C.}]  $e^{-2 a}$
+		\task[\textbf{D.}] 1
+	\end{tasks}
+	\item A $4 \times 4$ complex matrix $A$ satisfies the relation $A^{\dagger} A=4 I$, where $I$ is the $4 \times 4$ identity matrix. The number of independent real parameters of $A$ is
+	{\exyear{NET/JRF(DEC-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 32
+		\task[\textbf{B.}] 10
+		\task[\textbf{C.}] 12
+		\task[\textbf{D.}] 16
+	\end{tasks}
+	\item  The element of a $3 \times 3$ matrix $A$ are the products if its row and column indices $A_{i j}=i j$ (where $i, j=1,2,3)$. The eigenvalues of $A$ are
+	{\exyear{NET/JRF(JUNE-2019)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $(7,7,0)$
+		\task[\textbf{B.}]  $(7,4,3)$
+		\task[\textbf{C.}] $(14,0,0)$
+		\task[\textbf{D.}] $\left(\frac{14}{3}, \frac{14}{3}, \frac{14}{3}\right)$
+	\end{tasks}
+	\item  The operator $A$ has a matrix representation $\left(\begin{array}{ll}2 & 1 \\ 1 & 2\end{array}\right)$ in the basis spanned by $\left(\begin{array}{l}1 \\ 0\end{array}\right)$ and $\left(\begin{array}{l}0 \\ 1\end{array}\right) .$ In another basis spanned by $\frac{1}{\sqrt{2}}\left(\begin{array}{l}1 \\ 1\end{array}\right)$ and $\frac{1}{\sqrt{2}}\left(\begin{array}{c}1 \\ -1\end{array}\right)$, the matrix representation of $A$ is
+	{\exyear{NET/JRF(JUNE-2019)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\left(\begin{array}{ll}2 & 0 \\ 0 & 2\end{array}\right)$
+		\task[\textbf{B.}] $\left(\begin{array}{ll}3 & 0 \\ 0 & 1\end{array}\right)$
+		\task[\textbf{C.}] $\left(\begin{array}{ll}3 & 1 \\ 0 & 1\end{array}\right)$
+		\task[\textbf{D.}] $\left(\begin{array}{ll}3 & 0 \\ 1 & 1\end{array}\right)$
+	\end{tasks}
+	\item  If the rank of an $n \times n$ matrix $A$ is $m$, where $m$ and $n$ are positive integers with $1 \leq m \leq n$, then the rank of the matrix $A^{2}$ is
+	{\exyear{NET/JRF(DEC-2019)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]  $m$
+		\task[\textbf{B.}] $m-1$
+		\task[\textbf{C.}] $2 \mathrm{~m}$
+		\task[\textbf{D.}] $m-2$
+	\end{tasks}
+	\item   The eigenvalues of the $3 \times 3$ matrix $M=\left(\begin{array}{lll}a^{2} & a b & a c \\ a b & b^{2} & b c \\ a c & b c & c^{2}\end{array}\right)$ are
+	{\exyear{NET/JRF(JUNE-2020)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $a^{2}+b^{2}+c^{2}, 0,0$
+		\task[\textbf{B.}] $b^{2}+c^{2}, a^{2}, 0$
+		\task[\textbf{C.}] $a^{2}+b^{2}, c^{2}, 0$
+		\task[\textbf{D.}] $a^{2}+c^{2}, b^{2}, 0$
+	\end{tasks}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{B} &2&\textbf{C}\\\hline 
+		3&\textbf{D} &4&\textbf{A} \\\hline
+		5&\textbf{A} &6&\textbf{B} \\\hline
+		7&\textbf{B}&8&\textbf{C}\\\hline
+		9&\textbf{D}&10&\textbf{B}\\\hline
+		11&\textbf{C} &12&\textbf{D}\\\hline
+		13&\textbf{B}&14&\textbf{D}\\\hline
+		15&\textbf{D}&16&\textbf{C}\\\hline
+		17&\textbf{B} &18&\textbf{A}\\\hline
+		19&\textbf{A}& & \\\hline
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Problem set-2
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item The eigenvalues of the matrix $\left(\begin{array}{lll}2 & 3 & 0 \\ 3 & 2 & 0 \\ 0 & 0 & 1\end{array}\right)$ are
+	{\exyear{GATE 2010}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $5,2,-2$
+		\task[\textbf{B.}] $-5,-1,-1$
+		\task[\textbf{C.}]  $5,1,-1$
+		\task[\textbf{D.}] $-5,1,1$
+	\end{tasks}
+	\item Two matrices $A$ and $B$ are said to be similar if $B=P^{-1} A P$ for some invertible matrix $P$.Which of the following statements is NOT TRUE?
+	{\exyear{GATE 2011}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] Det $A=\operatorname{Det} B$
+		\task[\textbf{B.}]  Trace of $A=$ Trace of $B$
+		\task[\textbf{C.}] $A$ and $B$ have the same eigenvectors
+		\task[\textbf{D.}] $A$ and $B$ have the same eigenvalues
+	\end{tasks}
+	\item A $3 \times 3$ matrix has elements such that its trace is 11 and its determinant is 36 . The eigenvalues of the matrix are all known to be positive integers. The largest eigenvalues of the matrix is
+	{\exyear{GATE 2011}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 18
+		\task[\textbf{B.}]  12
+		\task[\textbf{C.}] 9
+		\task[\textbf{D.}] 6
+	\end{tasks}
+	\item  The number of independent components of the symmetric tensor $A_{i j}$ with indices $i, j=1,2,3$ is
+	{\exyear{GATE 2012}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 1
+		\task[\textbf{B.}] 3
+		\task[\textbf{C.}] 6
+		\task[\textbf{D.}] 9
+	\end{tasks}
+	\item  The eigenvalues of the matrix $\left(\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right)$ are
+	{\exyear{GATE 2012}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $0,1,1$
+		\task[\textbf{B.}] $0,-\sqrt{2}, \sqrt{2}$
+		\task[\textbf{C.}]  $\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0$
+		\task[\textbf{D.}] $\sqrt{2}, \sqrt{2}, 0$
+	\end{tasks}
+	\item    The degenerate eigenvalue of the matrix $\left[\begin{array}{ccc}4 & -1 & -1 \\ -1 & 4 & -1 \\ -1 & -1 & 4\end{array}\right]$ is (your answer should be an
+	integer)---
+	{\exyear{GATE 2013}}
+	\item  The matrix
+	$$
+	A=\frac{1}{\sqrt{3}}\left[\begin{array}{cc}
+	1 & 1+i \\
+	1-i & -1
+	\end{array}\right] \text { is }
+	$$
+	{\exyear{GATE 2014}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] Orthogonal
+		\task[\textbf{B.}] Symmetric
+		\task[\textbf{C.}]  Anti-symmetric
+		\task[\textbf{D.}]  Unitary
+	\end{tasks}
+	\item  Let $X$ be a column vector of dimension $n>1$ with at least one non-zero entry. The number of non-zero eigenvalues of the matrix $M=X X^{T}$ is
+	{\exyear{GATE 2017}}
+	 \begin{tasks}(4)
+	 	\task[\textbf{A.}] 0
+	 	\task[\textbf{B.}] $n$
+	 	\task[\textbf{C.}] 1
+	 	\task[\textbf{D.}] $n-1$
+	 \end{tasks}
+	 \item The eigenvalues of a Hermitian matrix are all
+	 {\exyear{GATE 2018}}
+	 \begin{tasks}(4)
+	 	\task[\textbf{A.}]  Real
+	 	\task[\textbf{B.}] Imaginary
+	 	\task[\textbf{C.}] Of modulus one
+	 	\task[\textbf{D.}] Real and positive
+	 \end{tasks}
+	 \item During a rotation, vectors along the axis of rotation remain unchanged. For the rotation matrix $\left(\begin{array}{ccc}0 & 1 & 0 \\ 0 & 0 & -1 \\ -1 & 0 & 0\end{array}\right)$, the vector along the axis of rotation is
+	 {\exyear{GATE 2019}}
+	 \begin{tasks}(2)
+	 	\task[\textbf{A.}] $\frac{1}{3}(2 \hat{i}-\hat{j}+2 \hat{k})$
+	 	\task[\textbf{B.}]  $\frac{1}{\sqrt{3}}(\hat{i}+\hat{j}-\hat{k})$
+	 	\task[\textbf{C.}] $\frac{1}{\sqrt{3}}(\hat{i}-\hat{j}-\hat{k})$
+	 	\task[\textbf{D.}] $\frac{1}{3}(2 \hat{i}+2 \hat{j}-\hat{k})$
+	 \end{tasks}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{C} &2&\textbf{C}\\\hline 
+		3&\textbf{D} &4&\textbf{C} \\\hline
+		5&\textbf{B} &6&\textbf{-} \\\hline
+		7&\textbf{D}&8&\textbf{C}\\\hline
+		9&\textbf{A}&10&\textbf{B}\\\hline
+		
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Problem set-3
+	\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item Consider the matrices $X_{(4 \times 3)}, Y_{(4 \times 3)}$ and $P_{(2 \times 3)}$ The order of $\left[P\left(X^{T} Y\right)^{-1} P^{T}\right]^{T}$ will be
+	
+	\begin{tasks}(2)
+		\task[\textbf{a.}] $(2 \times 2)$  
+		\task[\textbf{b.}]$(3 \times 3)$
+		\task[\textbf{c.}]$(4 \times 3)$ 
+		\task[\textbf{d.}]$(3 \times 4)$ 
+	\end{tasks}
+	
+	\begin{answer}
+	We know that the order of
+	\begin{align*}
+	X \rightarrow 4 \times 3, Y &\rightarrow 4 \times 3 \text { and } P \rightarrow 2 \times 3\\
+	\text{Hence, we can calculate the following orders:}\\
+	X^{T} \rightarrow 3 \times 4, X^{T} Y &\rightarrow 3 \times 3 \quad\text{and}
+	\\
+	\left(X^{T} Y\right)^{-1} &\rightarrow 3 \times 3 \quad\text{also}\\
+	P^{T} &\rightarrow 3 \times 2\\\therefore \left(P\left(X^{T} Y\right)^{-1} P^{T}\right)^{T} &\rightarrow 2 \times 2\\
+	\text{and}\\P\left(X^{T} Y\right)^{-1}\\
+	P^{T} \rightarrow(2 \times 3)(3 \times 3)(3 \times 2) &\rightarrow 2 \times 2\\
+	\text{ Thus the order of the matrix is $2 \times 2$}
+	\end{align*}
+\end{answer}
+\item What are the eigenvalues of the following $2 \times 2$ matrix?
+$
+\left[\begin{array}{rr}
+2 & -1 \\
+-4 & 5
+\end{array}\right]
+$
+\begin{tasks}(2)
+	\task[\textbf{a.}]-1 and 1  
+	\task[\textbf{b.}]1 and 6
+	\task[\textbf{c.}]2 and 5 
+	\task[\textbf{d.}]4 and -1 
+\end{tasks}	
+\begin{answer}
+	We have
+	$$
+	A=\left[\begin{array}{rr}
+	2 & -1 \\
+	-4 & 5
+	\end{array}\right]
+	$$
+	The characteristic equation of this matrix is given by
+	$$
+	\begin{aligned}
+	|A-\lambda I| &=0 \\
+	\left|\begin{array}{rr}
+	2-\lambda & -1 \\
+	-4 & 5-\lambda
+	\end{array}\right| &=0 \\
+	(2-\lambda)(5-\lambda)-4 &=0 \\
+	\lambda &=1,6
+	\end{aligned}
+	$$
+	Therefore, the eigenvalues of $A$ are 1 and 6 .\\Hence, option(b)is correct.
+\end{answer}
+\item Given a $2 \times 2$ unitary matrix $U$ satisfying $U^{\dagger} U=U U^{\dagger}=1$ with $\operatorname{det} U=e^{i \varphi}$, one can construct a
+unitary matrix $V\left(V^{\dagger} V=V V^{\dagger}=1\right)$ with $\operatorname{det} V=1$ from it by
+\begin{tasks}(1)
+	\task[\textbf{a.}]multiplying $U$ by $e^{-i \varphi / 2}$  
+	\task[\textbf{b.}] multiplying any single element of $U$ by $e^{-i \varphi}$
+	\task[\textbf{c.}]multiplying any row or column of $U$ by $e^{-i \varphi / 2}$ 
+	\task[\textbf{d.}]multiplying $U$ by $e^{-i \varphi}$ 
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{Let}\quad U=\left(\begin{array}{ll}a & b \\ c & d\end{array}\right)&\\\text{and}\quad \operatorname{det} U=a d-b c=e^{i \phi}( \text{Given })\\\text{Let,}\quad V=e^{-i \phi / 2} U \quad \Rightarrow \quad V=\left(\begin{array}{ll}e^{-i \phi / 2} a & e^{-i \phi / 2} b \\ e^{-i \phi / 2} c & e^{-i \phi / 2} d\end{array}\right)\\
+	\operatorname{det} V=e^{-i \phi} a d-e^{-i \phi} b c=e^{-i \phi}(a d-b c)=e^{-i \phi} e^{i \phi}=1\\
+	\text{We have to multiply U with}\quad {e}^{-\mathrm{i} \phi / 2}
+	\text{to get,}\mathrm{V}\text{with determinant =1}
+	\end{align*}
+	Correct answer is (a)
+	
+\end{answer} 
+\item Determine the values of $\alpha, \beta, \gamma$ when
+$$
+\left[\begin{array}{rrr}
+0 & 2 \beta & \gamma \\
+\alpha & \beta & -\gamma \\
+\alpha & -\beta & \gamma
+\end{array}\right] \text { is orthogonal. }
+$$
+\begin{answer}
+	$$
+	\text { Let } A=\left[\begin{array}{rrr}
+	0 & 2 \beta & \gamma \\
+	\alpha & \beta & -\gamma \\
+	\alpha & -\beta & \gamma
+	\end{array}\right]
+	$$
+	On transposing $A,$ we have
+	$$
+	A^{T}=\left[\begin{array}{rrr}
+	0 & \alpha & \alpha \\
+	2 \beta & \beta & -\beta \\
+	\gamma & -\gamma & \gamma
+	\end{array}\right]
+	$$
+	If $A$ is orthogonal, then $A A^{T}=I$
+	Equating the corresponding elements, we have
+	But
+	$$
+	\left.\begin{array}{r}
+	4 \beta^{2}+\gamma^{2}=1 \\
+	2 \beta^{2}-\gamma^{2}=0
+	\end{array}\right\} \Rightarrow \beta=\pm \frac{1}{\sqrt{6}}, \gamma=\pm \frac{1}{\sqrt{3}}
+	$$
+	But $\quad \alpha^{2}+\beta^{2}+\gamma^{2}=1$ as $\beta=\pm \frac{1}{\sqrt{6}}, \gamma=\pm \frac{1}{\sqrt{3}}, \alpha=\pm \frac{1}{\sqrt{2}}$
+\end{answer}
+\item Find for what values of $\lambda$ and $\mu$ the system of linear equations.
+$$
+\begin{aligned}
+x+y+z &=6 \\
+x+2 y+5 z &=10 \\
+2 x+3 y+\lambda z &=\mu
+\end{aligned}
+$$
+\begin{tasks}(2)
+	\task[\textbf{a.}] a unique solution  
+	\task[\textbf{b.}]no solution
+	\task[\textbf{c.}]infinite solutions 
+\\Also find the solution for $\lambda=2$ and $\mu=8$.
+\end{tasks}
+\begin{answer}
+$\begin{aligned}\left[\begin{array}{lll}1 & 1 & 1 \\ 1 & 2 & 5 \\ 2 & 3 & \lambda\end{array}\right]\left[\begin{array}{l}x \\ y \\ z\end{array}\right]=\left[\begin{array}{c}6 \\ 10 \\ \mu\end{array}\right] \\ A X &=B \end{aligned}$.\\\\
+$\begin{aligned} C=(A, B) &=\left[\begin{array}{lllll}1 & 1 & 1 & : & 6 \\ 1 & 2 & 5 & : & 10 \\ 2 & 3 & \lambda & : & \mu\end{array}\right] \sim\left[\begin{array}{ccccc}1 & 1 & 1 & : & 6 \\ 0 & 1 & 4 & : & 4 \\ 0 & 1 & \lambda-2 & : & \mu-12\end{array}\right] \begin{array}{l}R_{2} \rightarrow R_{2}-R_{1} \\ R_{3} \rightarrow R_{3}-2 R_{1}\end{array} \\ & \sim\left[\begin{array}{ccccc}1 & 1 & 1 & : & 6 \\ 0 & 1 & 4 & : & 4 \\ 0 & 0 & \lambda-6 & : & \mu-16\end{array}\right] R_{3} \rightarrow R_{3}-R_{2} \end{aligned}$......(1)\\
+\\\textbf{(i)} $\quad$ A unique solution If $R(A)=R(C)=3$
+\\then $\lambda-6 \neq 0 \Rightarrow \lambda \neq 6$ and $\mu-16 \neq 0 \Rightarrow \mu \neq 16$
+\\\\\textbf{(ii)} No solutions If $R(A) \neq R(C),$ \\then $R(A)=2$ and $R(C)=3$ $\lambda-6=0 \Rightarrow \lambda=6$ and $\mu-16 \neq 0 \Rightarrow \mu \neq 16$
+\\\\\textbf{(iii)} Infinite solutions If $R(A)=R(C)=2$
+\\then $\lambda-6=0$ and $\mu-16=0$
+$\Rightarrow \quad \lambda=6$ and $\mu=16$\\
+\\\\\textbf{(iv)} Putting $\lambda=2$ and $\mu=8$ in (1), we get
+$$
+\begin{aligned}
+\left[\begin{array}{rrrrr}
+1 & 1 & 1 & : & 6 \\
+0 & 1 & 4 & : & 4 \\
+0 & 0 & -4 & : & -8
+\end{array}\right] & \Rightarrow\left[\begin{array}{rrr}
+1 & 1 & 1 \\
+0 & 1 & 4 \\
+0 & 0 & -4
+\end{array}\right]\left[\begin{array}{l}
+x \\
+y \\
+z
+\end{array}\right]=\left[\begin{array}{r}
+6 \\
+4 \\
+-8
+\end{array}\right] \\
+& x+y+z=6 \\
+& y+4 z=4 \\
+&-4 z=-8 & \Rightarrow \quad z=2
+\end{aligned}
+$$
+Putting $z=2$ in (3), we get
+$$
+y+8=4 \quad \Rightarrow \quad y=-4
+$$
+Putting $y=-4, z=2$ in (1), we get\\
+
+$$
+x-4+2=6 \quad \Rightarrow \quad x=8
+$$
+Hence, $\quad x=8, \quad y=-4, \quad z=2$
+\end{answer}
+\item Consider the following system of linear equations:
+$$
+\left[\begin{array}{rrr}
+2 & 1 & -4 \\
+4 & 3 & -12 \\
+1 & 2 & -8
+\end{array}\right]\left[\begin{array}{l}
+x \\
+y \\
+z
+\end{array}\right]=\left[\begin{array}{l}
+\alpha \\
+5 \\
+7
+\end{array}\right]
+$$
+Notice that the second and third columns of the
+coefficient matrix are linearly dependent.For how many values of $\alpha,$ does this system of equations have infinitely many solutions?
+\begin{tasks}(2)
+	\task[\textbf{a.}]0  
+	\task[\textbf{b.}]1
+	\task[\textbf{c.}]2 
+	\task[\textbf{d.}]Infinitely many 
+\end{tasks}
+\begin{answer}
+ The given system of equations is
+$$
+\left[\begin{array}{rrr}
+2 & 1 & -4 \\
+4 & 3 & -12 \\
+1 & 2 & -8
+\end{array}\right]\left[\begin{array}{l}
+x \\
+y \\
+z
+\end{array}\right]=\left[\begin{array}{l}
+\alpha \\
+5 \\
+7
+\end{array}\right]
+$$
+The augmented matrix for the given system is
+$$
+\left[\begin{array}{rrr|r}
+2 & 1 & -4 & \alpha \\
+4 & 3 & -12 & 5 \\
+1 & 2 & -8 & 7
+\end{array}\right]
+$$
+For infinite solutions to exist, the rank of the augmented matrix should be less than the total unknown variables, i.e. 3 . Therefore,
+$$
+\begin{array}{l}
+\left|\begin{array}{lll}
+2 & 1 & \alpha \\
+4 & 3 & 5 \\
+1 & 2 & 7
+\end{array}\right|=0 \\
+\Rightarrow \alpha(8-3)-5(4-1)+7(6-4)=0 \\
+\Rightarrow \alpha=\frac{1}{5}
+\end{array}
+$$
+Therefore, there is only one value of $\alpha$ for which infinite solutions exist.	
+\end{answer}
+\item The eigen value of matrix $A=\left(\begin{array}{lll}1 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 1\end{array}\right)$ is
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\lambda=1,0,2$  
+	\task[\textbf{b.}]$\lambda=-1, \quad 2,2$
+	\task[\textbf{c.}]$\lambda=0,0,3$ 
+	\task[\textbf{d.}]$\lambda=1,1,1$ 
+\end{tasks}
+\begin{answer}
+ For eigen value $|A-\lambda I|=0$
+$$
+\begin{array}{l}
+\left|\begin{array}{ccc}
+1-\lambda & 0 & 1-\lambda \\
+0 & 1-\lambda & 0 \\
+1 & 0 & 1-\lambda
+\end{array}\right|=(1-\lambda)\left[(1-\lambda)^{2}-0\right]+0+1[-(1-\lambda)]=0 \\
+\Rightarrow-\lambda^{3}+3 \lambda^{2}-2 \lambda=0 \Rightarrow \lambda=0,1,2
+\end{array}
+$$	
+\end{answer}
+\item  Which one of the following is the inverse of the matrix $\left(\begin{array}{cc}1 & -1 \\ 0 & 1\end{array}\right)?$
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\left(\begin{array}{cc}1 & 1 \\ -1 & 1\end{array}\right)$  
+	\task[\textbf{b.}]$\left(\begin{array}{ll}1 & 0 \\ 1 & 1\end{array}\right)$
+	\task[\textbf{c.}] $\left(\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right)$
+	\task[\textbf{d.}]$\left(\begin{array}{cc}-1 & 1 \\ 0 & -1\end{array}\right)$ 
+\end{tasks}
+\begin{answer}
+$A^{-1}=\frac{a d j A}{|A|}=\frac{1}{1}\left[\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right]=\left[\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right]$
+\\Correct option is (c)	
+\end{answer}
+\item The eigenvalues and eigenvectors of the matrix $\left[\begin{array}{ll}5 & 4 \\ 1 & 2\end{array}\right]$ are
+\begin{tasks}(2)
+	\task[\textbf{a.}]6,1 and $\left[\begin{array}{c}4 \\ 1\end{array}\right],\left[\begin{array}{c}1 \\ -1\end{array}\right]$  
+	\task[\textbf{b.}]2,5 and $\left[\begin{array}{c}4 \\ 1\end{array}\right],\left[\begin{array}{c}1 \\ -1\end{array}\right]$
+	\task[\textbf{c.}] 6,1 and $\left[\begin{array}{c}4 \\ 1\end{array}\right],\left[\begin{array}{c}1 \\ -1\end{array}\right]$
+	\task[\textbf{d.}]$(\mathrm{d}) 2,5$ $\left[\begin{array}{c}4 \\ 1\end{array}\right],\left[\begin{array}{c}1 \\ -1\end{array}\right]$ 
+\end{tasks}
+\begin{answer}
+\begin{align*}
+A&=\left[\begin{array}{ll}
+5 & 4 \\
+1 & 2
+\end{array}\right] ;\\ \text { eigenvalue equation: }|A-\lambda I|&=0\\
+\Rightarrow\left|\begin{array}{cc}
+5-\lambda & 4 \\
+1 & 2-\lambda
+\end{array}\right|&=0 \quad\\ \Rightarrow(\lambda-2)(\lambda-5)-4&=0 \Rightarrow \lambda^{2}-7 \lambda+6=0 \Rightarrow \lambda=6,1\\
+\begin{array}{l}
+\text { Now, }(A-\lambda I) X=0 \\
+\Rightarrow \quad\left(\begin{array}{cc}
+5-\lambda & 4 \\
+1 & 2-\lambda
+\end{array}\right)\left(\begin{array}{c}4 \\ 1\end{array}\right),\left(\begin{array}{c}1 \\ -1\end{array}\right)=0
+\end{array}
+\end{align*}	
+\end{answer}
+\item $ \mathrm{A}\  3 \times 3$ matrix $M$ has $\operatorname{Tr}[M]=6, \operatorname{Tr}\left[M^{2}\right]=26, \operatorname{Tr}\left[M^{3}\right]=90 .$ Which of the following can be possible set of eigenvalues of M?
+\begin{tasks}(2)
+	\task[\textbf{a.}]\{1,1,4\}  
+	\task[\textbf{b.}]\{-1,0,7\}
+	\task[\textbf{c.}] \{-1,3,4\} 
+	\task[\textbf{d.}]\{2,2,2\} 
+\end{tasks}
+\begin{answer}
+$$\lambda_{1}+\lambda_{2}+\lambda_{3}=6 ; \quad \lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}=26 ; \lambda_{1}^{3}+\lambda_{2}^{3}+\lambda_{3}=90$$
+\\It is trivial to check that only \{-1,3,4\} satisfies there three equation.	
+\end{answer}
+
+\end{enumerate}
+
