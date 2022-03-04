@@ -700,6 +700,186 @@
 		\end{align*}
 		So the correct answer is \textbf{Option (A)}
 	\end{answer}
+\item The value of the integral $\int_{0}^{\infty} \frac{\ln x}{\left(x^{2}+1\right)^{2}} d x$ is
+{\exyear{ JEST 2012}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]0
+	\task[\textbf{b.}]$\frac{-\pi}{4}$
+	\task[\textbf{c.}] $\frac{-\pi}{2}$
+	\task[\textbf{d.}] $\frac{\pi}{2}$
+\end{tasks}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=4.6cm]{JEST 01 2012}
+	\end{figure}
+	\begin{align*}
+	\int_{0}^{\infty} \frac{\ln x}{\left(x^{2}+1\right)^{2}} d x&=\int_{0}^{\infty} \frac{\ln z}{\left(z^{2}+1\right)^{2}} d z\\
+	\text{Let us consider new function }f(z)&=\left(\frac{\ln z}{z^{2}+1}\right)^{2},\text{ then }I=\int_{0}^{\infty}\left(\frac{\ln z}{z^{2}+1}\right)^{2} d z\\
+\text{	Pole at }z&=\pm i\text{ is simple pole of second order.}\\
+\text{	Residue at }z&=i\text{ is}\\
+&=\frac{d}{d z}(z-i)^{2} \frac{(\ln z)^{2}}{(z-i)^{2}(z+i)^{2}}=\frac{d}{d z} \frac{(\ln z)^{2}}{(z+i)^{2}}\\
+&=\frac{(z+i)^{2} 2(\ln z) \cdot \frac{1}{z}-(\ln z)^{2} \cdot 2(z+i)}{(z+i)^{4}}=\frac{(z+i) 2 \ln (z) \frac{1}{z}-(\ln z)^{2} \cdot 2}{(z+i)^{3}}\\
+&=\frac{(2 i) 2 \times \frac{1}{i} \ln i-(\ln i)^{2} \cdot 2}{(2 i)^{3}}=\frac{4 \frac{i \pi}{2}-\left(\frac{i \pi}{2}\right)^{2} \times 2}{-8 i}=\frac{2 \pi i+\frac{\pi^{2}}{2}}{-8 i}\\
+\left.\Rightarrow \operatorname{Res}\right|_{z=i}&=\frac{-\pi}{4}+\frac{\pi^{2}}{16} i\\
+\text{Similarly, at }z&=-i ;\left.\operatorname{Res}\right|_{z=-i}=\frac{-\pi}{4}-\frac{\pi^{2}}{16} i\\
+I&=\int_{0}^{\infty}\left(\frac{\ln z}{z^{2}+1}\right)^{2} d z=2 \pi i\left(\frac{-\pi}{4}+\frac{\pi^{2}}{16} i-\frac{\pi}{4}-\frac{\pi^{2}}{16} i\right)=-\pi^{2} i\\
+-\pi^{2} i&=\left(\int_{R} \int_{A} \int_{B}\right) f(z) d z=\left(\iint_{A B}\right) f(z) d z ;\qquad \left[\because \int_{A B}\right.\text{ vanish }]\\
+\text{Along path }A ;& \quad z=-x+i \varepsilon\text{ and along path }B ; \quad z=-x-i \varepsilon\\
+\text{Thus }-\pi^{2} i&=\left(\iint_{A B}\right) f(z) d z=-\int_{-\infty}^{0}\left[\frac{\ln (-x+i \varepsilon)}{(-x+i \varepsilon)^{2}+1}\right] d x-\int_{0}^{\infty}\left[\frac{\ln (-x-i \varepsilon)}{(-x-i \varepsilon)^{2}+1}\right] d x\\
+\Rightarrow-\pi^{2} i&=\int_{0}^{\infty}\left[\frac{\ln (-x+i \varepsilon)}{(-x+i \varepsilon)^{2}+1}\right]^{2} d x-\int_{0}^{\infty}\left[\frac{\ln (-x-i \varepsilon)}{(-x-i \varepsilon)^{2}+1}\right]^{2} d x\\
+\Rightarrow-\pi^{2} i&=\int_{0}^{\infty}\left[\frac{\ln (x)+i \pi}{1+x^{2}}\right]^{2} d x-\int_{0}^{\infty}\left[\frac{\ln (x)-i \pi}{1+x^{2}}\right]^{2} d x ; \quad \varepsilon \rightarrow 0\\
+\Rightarrow-\pi^{2} i&=\int_{0}^{\infty} \frac{(\ln (x)+i \pi)^{2}-(\ln (x)-i \pi)^{2}}{\left(1+x^{2}\right)^{2}} d x\\&=4 \pi i \int_{0}^{\infty} \frac{\ln x}{\left(x^{2}+1\right)^{2}} \Rightarrow \int_{0}^{\infty} \frac{\ln x}{\left(x^{2}+1\right)^{2}}=\frac{-i \pi^{2}}{4 \pi i}=\frac{-\pi}{4}
+	\end{align*}
+		So the correct answer is \textbf{Option (B)}
+\end{answer}
+\item Compute $\lim _{z \rightarrow 0} \frac{\operatorname{Re}\left(z^{2}\right)+\operatorname{Im}\left(z^{2}\right)}{z^{2}}$
+{\exyear{ JEST 2013}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}] The limit does not exist
+	\task[\textbf{b.}]1
+	\task[\textbf{c.}]$-i$
+	\task[\textbf{d.}] $-1$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\lim _{z \rightarrow 0} \frac{\operatorname{Re}\left(z^{2}\right)+\operatorname{Im}\left(z^{2}\right)}{z^{2}}&=\lim _{z \rightarrow 0} \frac{x^{2}-y^{2}+2 x y}{x^{2}-y^{2}+2 i x y}=\lim _{y=0 \atop x \rightarrow 0} \frac{x^{2}-y^{2}+2 x y}{x^{2}-y^{2}+2 i x y}=1\\
+	\lim _{x=0 \atop y \rightarrow 0} \frac{x^{2}-y^{2}+2 x y}{x^{2}-y^{2}+2 i x y}&=1\text{ and }\lim _{y=x \atop x \rightarrow 0} \frac{x^{2}-y^{2}+2 x y}{x^{2}-y^{2}+2 i x y}=-i
+	\end{align*}
+		So the correct answer is \textbf{Option (A)}
+\end{answer}
+\item The value of limit
+$$
+\lim _{z \rightarrow i} \frac{z^{10}+1}{z^{6}+1}
+$$
+is equal to
+{\exyear{ JEST 2014}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]1
+	\task[\textbf{b.}]0
+	\task[\textbf{c.}] $\frac{-10}{3}$
+	\task[\textbf{d.}] $\frac{5}{3}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\lim _{z \rightarrow i} \frac{z^{10}+1}{z^{6}+1}=\lim _{z \rightarrow i} \frac{10 z^{9}}{6 z^{5}}=\lim _{z \rightarrow i} \frac{10 z^{4}}{6}=\frac{10}{6}=\frac{5}{3}
+	\end{align*}
+		So the correct answer is \textbf{Option (D)}
+\end{answer}
+\item The value of integral
+$$
+I=\oint \frac{\sin z}{2 z-\pi} d z
+$$
+with $c$ a circle $|z|=2$, is
+{\exyear{ JEST 2014}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}] 0
+	\task[\textbf{b.}]$2 \pi i$
+	\task[\textbf{c.}] $\pi i$
+	\task[\textbf{d.}]  $-\pi i$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	I&=\oint_{C} \frac{\sin z}{2 z-\pi},\text{ for pole }2 z-\pi=0 \Rightarrow z=\frac{\pi}{2}\\
+\text{	Residue at }z&=\frac{\pi}{2}
+	\because|z|=2\text{, so pole will lie within the contour}\\
+	I&=\oint_{C} \frac{e^{i z}}{2\left(z-\frac{\pi}{2}\right)}=\sum R \times 2 \pi i\\
+	\left.\operatorname{Res}\right|_{z=\frac{\pi}{2}}&=\frac{\left(z-\frac{\pi}{2}\right) e^{i z}}{2\left(z-\frac{\pi}{2}\right)}=\frac{e^{i \pi / 2}}{2}=\frac{i}{2}\text{ (taking imaginary part); Residue }=\frac{1}{2}\\
+	\text{Now, }I&=\frac{1}{2} \times 2 \pi i=\pi i
+	\end{align*}
+		So the correct answer is \textbf{Option (C)}
+\end{answer}
+\item Given an analytic function $f(z)=\phi(x, y)+i \psi(x, y)$, where $\phi(x, y)=x^{2}+4 x-y^{2}+2 y$
+If $C$ is a constant, which of the following relations is true?
+{\exyear{ JEST 2015}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\psi(x, y)=x^{2} y+4 y+C$
+	\task[\textbf{b.}]$\psi(x, y)=2 x y-2 x+C$
+	\task[\textbf{c.}]$\psi(x, y)=2 x y+4 y-2 x+C$
+	\task[\textbf{d.}] $\psi(x, y)=x^{2} y-2 x+C$
+\end{tasks}
+\begin{answer}
+	\begin{align}
+	u&=\phi(x, y)=x^{2}+4 x-y^{2}+2 y, v=\psi\notag\\
+	\text{From C.R. equation, }\frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y}, \Rightarrow \frac{\partial \phi}{\partial x}=\frac{\partial \psi}{\partial y}, \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x} \Rightarrow \frac{\partial \phi}{\partial y}=-\frac{\partial \psi}{\partial x}\notag\\
+	\text{Now, }\frac{\partial \phi}{\partial x}&=2 x+4=\frac{\partial \psi}{\partial y}\notag\\
+	\Rightarrow \psi&=2 x y+4 y+f(x)\label{CN 01}\\
+	\text{and }\frac{\partial \phi}{\partial y}&=-2 y+2 \Rightarrow \frac{\partial \psi}{\partial x}=+2 y-2\notag\\
+	\psi&=2 x y+2 x+f(y)\label{CN 02}\\
+	\text{From (\ref{CN 01}) and (\ref{CN 02}), }&2 x y+4 y+f(x)=2 x y-2 x+f(y)\notag\\
+	f(x)&=-2 x, \quad f(y)=4 y \notag\\
+	\psi&=2 x y+4 y-2 x+c\notag
+	\end{align}
+		So the correct answer is \textbf{Option (C)}
+\end{answer}
+\item Which one is the image of the complex domain $\{z \mid x y \geq 1, x+y>0\}$ under the mapping $f(z)=z^{2}$, if $z=x+i y ?$
+{\exyear{ JEST 2017}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $\{z \mid x y \geq 1, x+y>0\}$
+	\task[\textbf{b.}]$\{z \mid x \geq 2, x+y>0\}$
+	\task[\textbf{c.}]$\{z \mid y \geq 2 \forall x\}$
+	\task[\textbf{d.}] $\{z \mid y \geq 1 \forall x\}$
+\end{tasks}
+\item The integral $I=\int_{1}^{\infty} \frac{\sqrt{x-1}}{(1+x)^{2}} d x$ is
+{\exyear{ JEST 2017}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{\pi}{\sqrt{2}}$
+	\task[\textbf{b.}]$\frac{\pi}{2 \sqrt{2}}$
+	\task[\textbf{c.}]$\frac{\sqrt{\pi}}{2}$
+	\task[\textbf{d.}]$\sqrt{\frac{\pi}{2}}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	I&=\int_{1}^{\infty} \frac{\sqrt{x-1}}{(1+x)^{2}} d x\\
+\text{	Put,} x&=\left(1+z^{2}\right), d x=2 z d z\\
+	\text{Hence, }I&=\int_{0}^{\infty} \frac{2 z^{2} d z}{\left(2+z^{2}\right)^{2}}\\
+	\text{Here poles, }\left(2+z^{2}\right)&=0 \Rightarrow(z+i \sqrt{2})(z-i \sqrt{2})=0\\
+\text{	Only }&(z=i \sqrt{2})\text{ poles is allowed}\\
+\text{Then }R(i \sqrt{2})&=\lim _{z \rightarrow i \sqrt{2}} \frac{1}{\sqrt{2-1}} \frac{d}{d z}\left[\frac{2 z^{2}(z-i \sqrt{2})^{2}}{(z-i \sqrt{2})^{2}(z+i \sqrt{2})^{2}}\right]\\
+&=\lim _{z \rightarrow i \sqrt{2}}\left[\frac{(z+i \sqrt{2})^{2} \cdot 4 z-2 z^{2} \cdot 2(z+i \sqrt{2})}{(z+i \sqrt{2})^{4}}\right]\\
+&=\frac{(2 i \sqrt{2})^{2} \times 4(i \sqrt{2})-2(i \sqrt{2})^{2} \cdot 2(2 i \sqrt{2})}{(2 i \sqrt{2})^{4}}\\&=-\frac{32 \sqrt{2} i+16 \sqrt{2} i}{64}=-\frac{16 \sqrt{2} i}{64}=-\frac{i}{2 \sqrt{2}}\\
+\text{Hence, }\int_{-\infty}^{\infty} \frac{2 z^{2}}{\left(2+z^{2}\right)^{2}} d z&=2 \pi i\left(-\frac{i}{2 \sqrt{2}}\right)=\frac{\pi}{\sqrt{2}}\\
+\Rightarrow \int_{0}^{\infty} \frac{2 z^{2}}{\left(2+z^{2}\right)^{2}} d z&=\frac{\pi}{2 \sqrt{2}} \Rightarrow \int_{i}^{\infty} \frac{\sqrt{x-1}}{(1+x)^{2}} d x=\frac{\pi}{2 \sqrt{2}}
+	\end{align*}
+	So the correct answer is \textbf{Option (B)}
+\end{answer}
+\item The integral
+$$
+\int_{-\infty}^{\infty} \frac{\cos x}{x^{2}+1} d x \text { is }
+$$
+{\exyear{ JEST 2018}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{\pi}{e}$
+	\task[\textbf{b.}] $\pi e^{-2}$
+	\task[\textbf{c.}]$\pi$
+	\task[\textbf{d.}] zero
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f(z)&=\frac{e^{i z}}{z^{2}+1}=\frac{e^{i z}}{(z+i)(z-i)}\\
+	\int_{-\infty}^{\infty} \frac{\cos x}{x^{2}+1} d x&=\operatorname{Re} 2 \pi i \times \frac{e^{i \cdot i}}{z i}=\frac{\pi}{e}
+	\end{align*}
+		So the correct answer is \textbf{Option (A)}
+\end{answer}
+\item Consider the function $f(x, y)=|x|-i|y| .$ In which domain of the complex plane is this function analytic?
+{\exyear{ JEST 2019}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]First and second quadrants
+	\task[\textbf{b.}]Second and third quadrants
+	\task[\textbf{c.}]Second and fourth quadrants
+	\task[\textbf{d.}]  Nowhere
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	 f(x, y)&=|x|-i|y|\\
+	f(x, y)&=x-i y=\bar{z}\\
+	f(x, y)&=-x-i y=-z\\
+	f(x, y)&=-x+i y=-\bar{z}\\
+	f(x, y)&=x+i y=z
+	\intertext{We know $\bar{z}$ is not analytic and $z$ and $-z$ are analytic. }
+	\end{align*}
+	So the correct answer is \textbf{Option (C)}
+\end{answer}
 \end{enumerate}
  \colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
@@ -717,7 +897,10 @@
 		7&\textbf{C}&8&\textbf{A}\\\hline
 		9&\textbf{$\pi$(NAT)}&10&\textbf{3(NAT)}\\\hline
 		11&\textbf{81.64(NAT)} &12&\textbf{C}\\\hline
-		13&\textbf{A}& &\textbf{}\\\hline
-		
+		13&\textbf{A}& 14&\textbf{B}\\\hline
+		15&\textbf{A}&16 &\textbf{D}\\\hline
+		17&\textbf{C}&18&\textbf{C}\\\hline
+		19&\textbf{-} &20&\textbf{B}\\\hline
+		21&\textbf{A}&22&\textbf{C}\\\hline
 	\end{tabular}
 \end{table}
