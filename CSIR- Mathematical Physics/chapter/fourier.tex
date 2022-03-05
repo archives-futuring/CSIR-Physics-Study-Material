@@ -1,0 +1,521 @@
+\chapter{Fourier Series}
+\section{Series Expansion of Periodic Functions}
+The basic fact about Fourier series is as follows.\\
+If $f(x)$ is a periodic function of $x$,with a period $L$ . The \textbf{Fundamental interval} is taken to be $(a,b)$, so that $L=(b-a)$\\
+Then, $f(x)=f(x+L)=f(x+nL)$ Where $n$ is any integer.\\If the function $f(x)$ also satisfies a set of conditions known as \textbf{Drichlet's  Conditions} given as below\\
+
+\begin{enumerate}
+	\item It is single-valued in the interval $(a, b)$
+	\item It is bounded in the interval $(a, b)$
+	\item It has at most a finite number of maxima and minima in the interval $(a, b)$
+	\item It has only a finite number of discontinuity in the interval $(a, b)$
+\end{enumerate}
+\begin{theorem}\label{geneq}
+	Then such a function can be expressed by a sum of a set  sine and cosine functions (or complex exponentials). This series is known as \textbf{Fourier Series Expansion}\index{Fourier Series}.\\
+	\begin{equation}
+	\begin{array}{c}
+	f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cos \frac{2n \pi x}{L}+\sum_{n=1}^{\infty} b_{n} \sin \frac{2n \pi x}{L}
+	\end{array}
+	\end{equation}
+	
+	$a_{0}, a_{n}, b_{n}$ are constants, known as Fourier co-efficients.
+	\begin{equation}
+	a_{0}=\frac{2}{b-a} \int_{a}^{b} f(x) d x
+	\end{equation}
+	\begin{equation}
+	a_{n}=\frac{2}{b-a} \int_{a}^{b} f(x) \cdot \cos \left(\frac{2 n \pi x}{b-a}\right) d x
+	\end{equation}
+	\begin{equation}
+	b_{n}=\frac{2}{b-a} \int_{a}^{b} f(x) \cdot \sin \left(\frac{2 n \pi x}{b-a}\right) d x
+	\end{equation}
+\end{theorem}
+The Fourier expansion of a periodic function $f(x)$ consists of the following term
+\begin{enumerate}
+	\item $a_{0}: a$ constant term or $D .$ C. term
+	\item $a_{1} \cos \frac{\pi x}{L}$ and $b_{1} \sin \frac{\pi x}{L}:$ Fundamental frequency term i.e term having lowest frequency
+	\item $a_{2} \cos \frac{2 \pi x}{L}, a_{3} \cos \frac{3 \pi x}{L} \ldots \ldots ., b_{2} \sin \frac{2 \pi x}{L}, b_{3} \sin \frac{3 \pi x}{L} \ldots \ldots .$ Overtones i.e terms having
+	frequencies integer multiple of fundamental frequency term.
+\end{enumerate}
+
+\subsection{Simplified formulas when $b-a=2\pi$}
+
+We have established the Euler formulas for a function having period $L$ and principal interval $(a,b)$.The formulas connected with fourier series expansion look a bit simpler if one choose the fundamental interval to be $(-\pi,\pi)$ or $(0,2\pi)$, ie Period $L=2\pi$.\\For the case $b-a=2\pi$, the Euler formulas become
+
+	
+\begin{theorem}\label{pareq}
+
+
+\begin{equation}
+a_{0}=\frac{1}{\pi} \int_{a}^{b} f(x) d x
+\end{equation}
+\begin{equation}
+a_{0n}=\frac{1}{\pi} \int_{a}^{b} f(x) \cdot \cos n x d x
+\end{equation}
+\begin{equation}
+b_{n}=\frac{1}{\pi} \int_{a}^{b} f(x) \cdot \sin n x d x
+\end{equation}
+So that the Fourier expansion becomes 
+\begin{equation}
+f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cdot \cos n x+\sum_{n=1}^{\infty} b_{n} \sin n x
+\end{equation}
+\end{theorem}
+
+
+\begin{exercise}
+	 Find the Fourier series representing $$f(x)=x, \quad 0<x<2 \pi$$
+\end{exercise}
+\begin{answer}
+Here the interval is $(0,2\pi)$ So L=$2\pi$.From theorem \ref{pareq} we have
+\begin{equation}
+\label{eq1}
+f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cdot \cos n x+\sum_{n=1}^{\infty} b_{n} \sin n x
+\end{equation}
+$$h
+\text { Hence } \begin{aligned}
+a_{0} &=\frac{1}{\pi} \int_{0}^{2 \pi} f(x) d x=\frac{1}{\pi} \int_{0}^{2 \pi} x d x=\frac{1}{\pi}\left[\frac{x^{2}}{2}\right]_{0}^{2 \pi}=2 \pi \\
+a_{n} &=\frac{1}{\pi} \int_{0}^{2 \pi} f(x) \cos n x d x=\frac{1}{\pi} \int_{0}^{2 \pi} x \cos n x d x \\
+&=\frac{1}{\pi}\left[x \frac{\sin n x}{n}-1 \cdot\left(-\frac{\cos n x}{n^{2}}\right)\right]_{0}^{2 \pi}=\frac{1}{\pi}\left[\frac{\cos 2 n \pi}{n^{2}}-\frac{1}{n^{2}}\right]=\frac{1}{n^{2} \pi}(1-1)=0 \\
+b_{n} &=\frac{1}{\pi} \int_{0}^{2 \pi} f(x) \sin n x d x=\frac{1}{\pi} \int_{0}^{2 \pi} x \sin n x d x \\
+&=\frac{1}{\pi}\left[x\left(-\frac{\cos n x}{n}\right)-1 \cdot\left(\frac{-\sin n x}{n^{2}}\right)\right]_{0}^{2 \pi}=\frac{1}{\pi}\left[\frac{-2 \pi \cos 2 n \pi}{n}\right]=-\frac{2}{n}
+\end{aligned}
+$$
+Substituting the values of $a_{0}, a_{1}, a_{2} \ldots, b_{1}, b_{2} \ldots$ in Equation \ref{eq1}, we get
+$$
+x=\pi-2\left[\sin x+\frac{1}{2} \sin 2 x+\frac{1}{3} \sin 3 x+\ldots\right]
+$$
+\end{answer}
+\begin{exercise}
+Given that $f(x)=x+x^{2}$ for $-\pi<x<\pi,$ find the Fourier expression of $f(x)$
+\end{exercise}
+
+\begin{answer}
+	\begin{equation}
+\label{eq2}
+	\text { Let } x+x^{2}=\frac{a_{0}}{2}+a_{1} \cos x+a_{2} \cos 2 x+\ldots+b_{1} \sin x+b_{2} \sin 2 x+\ldots
+	\end{equation}
+	$\begin{aligned} a_{0} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) d x=\frac{1}{\pi} \int_{-\pi}^{\pi}\left(x+x^{2}\right) d x \\ &=\frac{1}{\pi}\left[\frac{x^{2}}{2}+\frac{x^{3}}{3}\right]_{-\pi}^{\pi}=\frac{1}{\pi}\left[\frac{\pi^{2}}{2}+\frac{\pi^{3}}{3}-\frac{\pi^{2}}{2}+\frac{\pi^{3}}{3}\right]=\frac{2 \pi^{2}}{3} \\ a_{n} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x d x=\int_{-\pi}^{\pi}\left(x+x^{2}\right) \cos n x d x \end{aligned}$\\
+	$\begin{aligned} &=\frac{1}{\pi}\left[\left(x+x^{2}\right) \frac{\sin n x}{n}-(2 x+1) \frac{(-\cos n x)}{n^{2}}+(2)\left(-\frac{\sin n x}{n^{3}}\right)\right]_{-\pi}^{\pi} \\ &=\frac{1}{\pi}\left[(2 \pi+1) \frac{\cos n \pi}{n^{2}}-(-2 \pi+1) \frac{\cos (-n \pi)}{n^{2}}\right]=\frac{1}{\pi}\left[4 \pi \frac{\cos n \pi}{n^{2}}\right]=\frac{4(-1)^{n}}{n^{2}} \\ b_{n} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x d x=\frac{1}{\pi} \int_{-\pi}^{\pi}\left(x+x^{2}\right) \sin n x d x \\ &=\frac{1}{\pi}\left[\left(x+x^{2}\right)\left(-\frac{\cos n x}{n}\right)-(2 x+1)\left(\frac{-\sin n x}{n^{2}}\right)+2 \frac{\cos n x}{n^{3}}\right]_{-\pi}^{\pi} \\ &=\frac{1}{\pi}\left[-\left(\pi+\pi^{2}\right) \frac{\cos n \pi}{n}+2 \frac{\cos n \pi}{n^{3}}+\left(-\pi+\pi^{2}\right) \frac{\cos n \pi}{n}-2 \frac{\cos n \pi}{n^{3}}\right] \\ &=\frac{1}{\pi}\left[-\frac{2 \pi}{n} \cos n \pi\right]=-\frac{2}{n}(-1)^{n} \end{aligned}$\\
+	Substituting the values of $a_{0}, a_{n}, b_{n},$ in Equation \ref{eq2}, we get
+	\begin{equation}
+	\begin{array}{r}
+	x+x^{2}=\frac{\pi^{2}}{3}+4\left[-\cos x+\frac{1}{2^{2}} \cos 2 x-\frac{1}{3^{2}} \cos 3 x+\ldots\right] 
+	-2\left[-\sin x+\frac{1}{2} \sin 2 x-\frac{1}{3} \sin 3 x+\ldots\right]
+	\end{array}
+	\end{equation}
+\end{answer}
+\section{Even and Odd Functions}
+\subsection{Even Function}
+A function $f(x)$ is said to be \textbf{even} (or \textbf{symmetric}) function if, $f(-x)=f(x)$ The graph of such a function is symmetrical with respect to $y$ -axis . Here $y$ -axis is a mirror for the reflection of the curve.
+\begin{example}
+	$\cos x,\sec x ,x^2$ etc
+
+\end{example}
+The area under such a curve from $-\pi$ to $\pi$ is double the area from 0 to $\pi$, ie\\
+$$\quad \int_{-\pi}^{\pi} f(x) d x=2 \int_{0}^{\pi} f(x) d x$$
+\subsection{Odd Function}
+A function $f(x)$ is called \textbf{odd} (or \textbf{skew symmetric}) function if
+$$
+f(-x)=-f(x)
+$$ Odd functions will be symmetric about origin.\\
+Here the area under the curve from $-\pi$ to $\pi$ is zero.
+$$
+\int_{-\pi}^{\pi} f(x) d x=0
+$$
+
+\begin{note}
+	\[
+	\boxed{
+		\!\begin{aligned}
+		&Even \times Even= Odd \times Odd = Even\\
+		&Odd \times Even= Even \times Odd = Odd
+		\end{aligned}
+	}
+	\]
+\end{note}
+\section{Fourier Expansion of Even and Odd Functions}
+\subsection{Even Function}
+$$
+a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) d x=\frac{2}{\pi} \int_{0}^{\pi} f(x) d x
+$$
+$$
+a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x d x=\frac{2}{\pi} \int_{0}^{\pi} f(x) \cos n x d x
+$$
+As $f(x)$ and $\cos n x$ are both even functions, therefore, the product of $f(x) . \cos n x$ is also an even function.
+$$
+b_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x d x=0
+$$
+\textbf{So if $f(x)$ is an even function then Fourier coefficient $b_n$ will be zero in the expansion. }\\
+The series of the even function will contain only cosine and DC terms.
+\begin{exercise}
+	Find the Fourier series expansion of the periodic function of period $2 \pi$
+	$$
+	f(x)=x^{2},-\pi \leq x \leq \pi
+	$$
+\end{exercise}
+\begin{answer}
+	This is an even function. $\therefore b_{n}=0$
+	$$
+	\begin{aligned}
+	b_{n} &=0 \quad[f(-x)=f(x)] \\
+	a_{0} &=\frac{2}{\pi} \int_{0}^{\pi} f(x) d x=\frac{2}{\pi} \int_{0}^{\pi} x^{2} d x=\frac{2}{\pi}\left[\frac{x^{3}}{3}\right]_{0}^{\pi}=\frac{2 \pi^{2}}{3} \\
+	a_{n} &=\frac{2}{\pi} \int_{0}^{\pi} f(x) \cos n x d x=\frac{2}{\pi} \int_{0}^{\pi} x^{2} \cos n x d x \\
+	&=\frac{2}{\pi}\left[x^{2}\left(\frac{\sin n x}{n}\right)-(2 x)\left(-\frac{\cos n x}{n^{2}}\right)+(2)\left(-\frac{\sin n x}{n^{3}}\right)\right]_{0}^{\pi} \\
+	=& \frac{2}{\pi}\left[\frac{\pi^{2} \sin n \pi}{n}+\frac{2 \pi \cos n \pi}{n^{2}}-\frac{2 \sin n \pi}{n^{3}}\right]=\frac{4(-1)^{n}}{n^{2}}
+	\end{aligned}
+	$$
+	$\begin{aligned} \text { Fourier series is } & f(x)=\frac{a_{0}}{2}+a_{1} \cos x+a_{2} \cos 2 x+a_{3} \cos 3 x+\ldots+a_{n} \cos n x+\ldots \\ x^{2} &=\frac{\pi^{2}}{3}-4\left[\frac{\cos x}{1^{2}}-\frac{\cos 2 x}{2^{2}}+\frac{\cos 3 x}{3^{2}}-\frac{\cos 4 x}{4^{2}}+\ldots\right] \end{aligned}$
+\end{answer}
+\subsection{Odd Function}
+$$\begin{aligned}
+	&a_{0}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) d x=0\\
+	&a_{n}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x d x=0 
+\end{aligned}$$
+(Since $f(x)$ is an odd function and $cos(x)$ is an even function their product will be odd and the integral vanishes)
+$$\begin{aligned}
+b_{n}&=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x d x\\
+\therefore b_{n}&=\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x d x
+\end{aligned}$$
+\textbf{So if $f(x)$ is an odd function then Fourier coefficient $a_0$ and $a_n$ will be zero in the expansion. }\\
+The series of the odd function will contain only sine  terms.
+
+\begin{exercise}
+	Obtain a Fourier expression for
+	$$
+	f(x)=x^{3} \quad \text { for }-\pi<x<\pi
+	$$
+\end{exercise}
+\begin{answer}
+	$f(x)=x^{3}$ is an odd function. 
+	$$
+	\begin{aligned}
+	\therefore \quad a_{0} & =0 \text { and } a_{n}=0 \\
+	\text{ Use tabular integration }\\
+	b_{n} & =\frac{2}{\pi} \int_{0}^{\pi} f(x) \sin n x d x=\frac{2}{\pi} \int_{0}^{\pi} x^{3} \sin n x d x \\
+	& =\frac{2}{\pi}\left[x^{3}\left(-\frac{\cos n x}{n}\right)-3 x^{2}\left(-\frac{\sin n x}{n^{2}}\right)+6 x\left(\frac{\cos n x}{n^{3}}\right)-6\left(\frac{\sin n x}{n^{4}}\right)\right]_{0}^{\pi} \\
+	& =\frac{2}{\pi}\left[-\frac{\pi^{3} \cos n \pi}{n}+\frac{6 \pi \cos n \pi}{n^{3}}\right]=2 \cdot(-1)^{n}\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right] \\
+ \text{ We have }f(x)&=b_{1} \sin x+b_{2} \sin 2 x+b_{3} \sin 3 x+\ldots \ldots \\
+	 x^{3}&=2\left[-\left(-\frac{\pi^{2}}{1}+\frac{6}{1^{3}}\right) \sin x+\left(-\frac{\pi^{2}}{2}+\frac{6}{2^{3}}\right) \sin 2 x-\left(-\frac{\pi^{2}}{3}+\frac{6}{3^{3}}\right) \sin 3 x+\ldots\right] 
+	\end{aligned}
+	$$
+\end{answer}
+
+\newpage
+\begin{abox}
+	Practise Set-1
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item   The first few terms in the Laurent series for $\frac{1}{(z-1)(z-2)}$ in the region $1 \leq|z| \leq 2$ and around $z=1$ is
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(1)
+		\task[\textbf{A.}] $\frac{1}{2}\left[1+z+z^{2}+\ldots\right]\left[1+\frac{z}{2}+\frac{z^{2}}{4}+\frac{z^{3}}{8}+\ldots .\right]$
+		\task[\textbf{B.}] $\frac{1}{1-z}-z-(1-z)^{2}+(1-z)^{3}+\ldots .$
+		\task[\textbf{C.}] $\frac{1}{\mathrm{z}^{2}}\left[1+\frac{1}{\mathrm{z}}+\frac{1}{\mathrm{z}^{2}}+\ldots .\right]\left[1+\frac{2}{\mathrm{z}}+\frac{4}{\mathrm{z}^{2}}+\ldots . .\right]$
+		\task[\textbf{D.}]  $2(z-1)+5(z-1)^{2}+7(z-1)^{3}+\ldots$
+	\end{tasks}
+	\item Consider a sinusoidal waveform of amplitude $1 V$ and frequency $f_{0}$. Starting from an arbitrary initial time, the waveform is sampled at intervals of $\frac{1}{2 f_{0}}$. If the corresponding Fourier spectrum peaks at a frequency $\bar{f}$ and an amplitude $\bar{A}$, them
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\bar{f}=2 f_{0}$ and $\bar{A}=1 V$
+		\task[\textbf{B.}] $\bar{f}=2 f_{0}$ and $0 \leq \bar{A} \leq 1 V$
+		\task[\textbf{C.}] $\bar{f}=0$ and $\bar{A}=1 V$
+		\task[\textbf{D.}] $\bar{f}=\frac{f_{0}}{2}$ and $\bar{A}=\frac{1}{\sqrt{2}} V$
+	\end{tasks}
+	\item The Fourier transform of the derivative of the Dirac $\delta-$ function, namely $\delta^{\prime}(x)$, is proportional to
+	{\exyear{NET/JRF(DEC-2013)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 0
+		\task[\textbf{B.}] 1
+		\task[\textbf{C.}] $\sin k$
+		\task[\textbf{D.}] $i k$
+	\end{tasks}
+	\item The Laplace transform of $6 t^{3}+3 \sin 4 t$ is
+	{\exyear{NET/JRF(JUNE-2015)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{36}{s^{4}}+\frac{12}{s^{2}+16}$
+		\task[\textbf{B.}] $\frac{36}{s^{4}}+\frac{12}{s^{2}-16}$
+		\task[\textbf{C.}] $\frac{18}{s^{4}}+\frac{12}{s^{2}-16}$
+		\task[\textbf{D.}] $\frac{36}{s^{3}}+\frac{12}{s^{2}+16}$
+	\end{tasks}
+	\item  The Fourier transform of $f(x)$ is $\tilde{f}(k)=\int_{-\infty}^{+\infty} d x e^{i k x} f(x)$.
+	If $f(x)=\alpha \delta(x)+\beta \delta^{\prime}(x)+\gamma \delta^{\prime \prime}(x)$, where $\delta(x)$ is the Dirac delta-function (and prime denotes derivative), what is $\tilde{f}(k) ?$
+	{\exyear{NET/JRF(DEC-2015)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\alpha+i \beta k+i \gamma k^{2}$
+		\task[\textbf{B.}] $\alpha+\beta k-\gamma k^{2}$
+		\task[\textbf{C.}]  $\alpha-i \beta k-\gamma k^{2}$
+		\task[\textbf{D.}] $i \alpha+\beta k-i \gamma k^{2}$
+	\end{tasks}
+	\item  What is the Fourier transform $\int d x e^{i l x} f(x)$ of
+	$$
+	f(x)=\delta(x)+\sum_{n=1}^{\infty} \frac{d^{n}}{d x^{n}} \delta(x)
+	$$
+	where $\delta(x)$ is the Dirac delta-function?
+	{\exyear{NET/JRF(JUNE-2016)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}]  $\frac{1}{1-i k}$
+		\task[\textbf{B.}] $\frac{1}{1+i k}$
+		\task[\textbf{C.}] $\frac{1}{k+i}$
+		\task[\textbf{D.}] $\frac{1}{k-i}$
+	\end{tasks}
+	\item The Laplace transform of
+	$$
+	f(t)=\left\{\begin{array}{cc}
+	\frac{t}{T}, & 0<t<T \\
+	1 & t>T
+	\end{array}\right.
+	$$
+	is
+	{\exyear{NET/JRF(DEC-2016)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{-\left(1-e^{-s T}\right)}{s^{2} T}$
+		\task[\textbf{B.}] $\frac{\left(1-e^{-s T}\right)}{s^{2} T}$
+		\task[\textbf{C.}] $\frac{\left(1+e^{-s T}\right)}{s^{2} T}$
+		\task[\textbf{D.}] $\frac{\left(1-e^{s T}\right)}{s^{2} T}$
+	\end{tasks}
+	\item The Fourier transform $\int_{-\infty}^{\infty} d x f(x) e^{i k x}$ of the function $f(x)=\frac{1}{x^{2}+2}$ is
+	{\exyear{NET/JRF(DEC-2016)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\sqrt{2} \pi e^{-\sqrt{2}|| \mid}$
+		\task[\textbf{B.}] $\sqrt{2} \pi e^{-\sqrt{2 k}}$
+		\task[\textbf{C.}] $\frac{\pi}{\sqrt{2}} e^{-\sqrt{2 k}}$
+		\task[\textbf{D.}] $\frac{\pi}{\sqrt{2}} e^{-\sqrt{2}|k|}$
+	\end{tasks}
+	\item Consider the differential equation $\frac{d y}{d t}+a y=e^{-b t}$ with the initial condition $y(0)=0$. Then the Laplace transform $Y(s)$ of the solution $y(t)$ is
+	{\exyear{NET/JRF(DEC-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{1}{(s+a)(s+b)}$
+		\task[\textbf{B.}] $\frac{1}{b(s+a)}$
+		\task[\textbf{C.}] $\frac{1}{a(s+b)}$
+		\task[\textbf{D.}] $\frac{e^{-a}-e^{-b}}{b-a}$
+	\end{tasks}
+	\item  The Fourier transform $\int_{-\infty}^{\infty} d x f(x) e^{i k x}$ of the function $f(x)=e^{-|x|}$
+	{\exyear{NET/JRF(JUNE-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $-\frac{2}{1+k^{2}}$
+		\task[\textbf{B.}] $-\frac{1}{2\left(1+k^{2}\right)}$
+		\task[\textbf{C.}] $\frac{2}{1+k^{2}}$
+		\task[\textbf{D.}] $\frac{2}{\left(2+k^{2}\right)}$
+	\end{tasks}
+	\item The function $f(t)$ is a periodic function of period $2 \pi$. In the range $(-\pi, \pi)$, it equals $e^{-t}$. If $f(t)=\sum_{-\infty}^{\infty} c_{n} e^{\text {int }}$ denotes its Fourier series expansion, the sum $\sum_{-\infty}^{\infty}\left|c_{n}\right|^{2}$ is
+	{\exyear{NET/JRF(DEC-2019)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 1
+		\task[\textbf{B.}] $\frac{1}{2 \pi}$
+		\task[\textbf{C.}] $\frac{1}{2 \pi} \cosh (2 \pi)$
+		\task[\textbf{D.}]  $\frac{1}{2 \pi} \sinh (2 \pi)$
+	\end{tasks}
+	\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{B} &2&\textbf{B}\\\hline 
+		3&\textbf{D} &4&\textbf{A} \\\hline
+		5&\textbf{C} &6&\textbf{B} \\\hline
+		7&\textbf{B}&8&\textbf{D}\\\hline
+		9&\textbf{A}&10&\textbf{C}\\\hline
+		11&\textbf{D} &&\textbf{}\\\hline
+		
+	\end{tabular}
+\end{table}
+
+\newpage
+\begin{abox}
+	Practise Set-2
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+\item If $f(x)=\left\{\begin{array}{ll}0 & \text { for } x<3, \\ x-3 & \text { for } x \geq 3\end{array}\right.$ then the Laplace transform of $f(x)$ is
+{\exyear{GATE 2010}}
+\begin{tasks}(4)
+	\task[\textbf{A.}] $s^{-2} e^{3 s}$
+	\task[\textbf{B.}] $s^{2} e^{3 s}$
+	\task[\textbf{C.}] $s^{-2}$
+	\task[\textbf{D.}] $s^{-2} e^{-3 s}$
+\end{tasks}
+\item The coefficient of $e^{i k x}$ in the Fourier expansion of $u(x)=A \sin ^{2}(\alpha x)$ for $k=-2 \alpha$ is
+{\exyear{GATE 2017}}
+\begin{tasks}(4)
+	\task[\textbf{A.}] $\frac{A}{4}$
+	\task[\textbf{B.}] $\frac{-A}{4}$
+	\task[\textbf{C.}] $\frac{A}{2}$
+	\task[\textbf{D.}] $\frac{-A}{2}$
+\end{tasks}
+\item Given the fundamental constants $\hbar$ (Planck's constant), $G$ (universal gravitation constant) and $c$ (speed of light), which of the following has dimension of length?
+{\exyear{JEST 2014}}
+ \begin{tasks}(2)
+	\task[\textbf{A.}]$\sqrt{\frac{\hbar G}{c^{3}}}$
+	\task[\textbf{B.}] $\sqrt{\frac{\hbar G}{c^{5}}}$
+	\task[\textbf{C.}]$\frac{\hbar G}{c^{3}}$
+	\task[\textbf{D.}] $\sqrt{\frac{\hbar c}{8 \pi G}}$
+\end{tasks}
+\item The Fourier transform of the function $\frac{1}{x^{4}+3 x^{2}+2}$ up to proportionality constant is
+{\exyear{JEST 2017}}
+ \begin{tasks}(2)
+	\task[\textbf{A.}]$\sqrt{2} \exp \left(-k^{2}\right)-\exp \left(-2 k^{2}\right)$
+	\task[\textbf{B.}]$\sqrt{2} \exp (-|k|)-\exp (-\sqrt{2}|k|)$
+	\task[\textbf{C.}]$\sqrt{2} \exp (-\sqrt{|k|})-\exp (-\sqrt{2|k|})$
+	\task[\textbf{D.}]  $\sqrt{2} \exp \left(-\sqrt{2} k^{2}\right)-\exp \left(-2 k^{2}\right)$
+\end{tasks}
+\item The function $f(x)=\cosh x$ which exists in the range $-\pi \leq x \leq \pi$ is periodically repeated between $x=(2 m-1) \pi$ and $(2 m+1) \pi$, where $m=-\infty$ to $\infty$. Using Fourier series, indicate the correct relation at $x=0$
+{\exyear{JEST 2017}}
+ \begin{tasks}(2)
+	\task[\textbf{A.}] $\sum_{n=-\infty}^{\infty} \frac{(-1)^{n}}{1-n^{2}}=\frac{1}{2}\left(\frac{\pi}{\cosh \pi}-1\right)$
+	\task[\textbf{B.}]$\sum_{n=-\infty}^{\infty} \frac{(-1)^{n}}{1-n^{2}}=2 \frac{\pi}{\cosh \pi}$
+	\task[\textbf{C.}]$\sum_{n=-\infty}^{\infty} \frac{(-1)^{-n}}{1+n^{2}}=2 \frac{\pi}{\sinh \pi}$
+	\task[\textbf{D.}] $\sum_{n=1}^{\infty} \frac{(-1)^{n}}{1+n^{2}}=\frac{1}{2}\left(\frac{\pi}{\sinh \pi}-1\right)$
+\end{tasks}
+\item The Laplace transform of $\frac{(\sin (a t)-a t \cos (a t))}{\left(2 a^{3}\right)}$ is
+{\exyear{JEST 2018}}
+ \begin{tasks}(2)
+	\task[\textbf{A.}]$\frac{2 a s}{\left(s^{2}+a^{2}\right)^{2}}$
+	\task[\textbf{B.}]$\frac{s^{2}-a^{2}}{\left(s^{2}+a^{2}\right)^{2}}$
+	\task[\textbf{C.}]$\frac{1}{(s+a)^{2}}$
+	\task[\textbf{D.}] $\frac{1}{\left(s^{2}+a^{2}\right)^{2}}$
+\end{tasks}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{D} &2&\textbf{B}\\\hline 
+		3&\textbf{A} &4&\textbf{B} \\\hline
+		5&\textbf{D} &6&\textbf{D} \\\hline
+		
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practise Set-3
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item  Find the fourier series to represent the function $f(x)$ given by
+	$$
+	f(x)=\left[\begin{array}{ll}
+	-k & \text { for }-\pi<x<0 \\
+	k & \text { for } 0<x<\pi
+	\end{array}\right.
+	$$
+	hence show that $1-\frac{1}{3}+\frac{1}{5}+\frac{1}{7}+\ldots \ldots=\frac{\pi}{4}$
+	\begin{answer}
+		Given function is odd in nature, so $a_{0}=0$ and $a_{n}=0$
+		
+		\begin{align*}
+		b_{n} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x d x=\frac{1}{\pi}\left[\int_{-\pi}^{0}-k \sin n x d x+\int_{0}^{\pi} k \sin n x d x\right] \\
+		&=\frac{1}{\pi} k\left\lbrace \left[ \frac{\cos n x}{n}\right] _{-\pi}^{0}-\left[ \frac{\cos n x}{n}\right] _{0}^{\pi}\right\rbrace  \\
+		&=\frac{1}{\pi} k\left\lbrace \frac{1}{n}-\frac{(-1)^{n}}{n}-\frac{(-1)^{n}}{n}+\frac{1}{n}\right\rbrace =\frac{1}{\pi} k\left[\frac{2}{n}-\frac{2(-1)^{n}}{n}\right\rbrace \\
+		\text{If $n$ is even}\ b_{n}&=0\\
+	\text{	If $\mathrm{n}$ is odd }\ b_{n}&=\frac{4 k}{n \pi}\\
+	f(x)&=\frac{4 k}{\pi} \sin x+\frac{4 k}{3 \pi} \sin 3 x+\frac{4 k}{5 \pi} \sin 5 x+\cdots\\
+	f(x)&=\frac{4 k}{\pi}\left[\sin x+\frac{1}{3} \sin 3 x+\frac{1}{5} \sin 5 x+\ldots\right]\\
+	\text { At}\ x&=\frac{\pi}{2} \\
+	k&=\frac{4 k}{\pi} \left[  \sin \frac{\pi}{2}+\frac{1}{3} \sin \frac{3 \pi}{2} +\frac{1}{5} \sin \frac{5 \pi}{2}\right]   \\
+	1&=\frac{4}{\pi}\left[1+\frac{1}{3}(-1)+\frac{1}{5}(1)+\frac{1}{7}(-1)+\ldots \cdots\right]\\&=\frac{4}{\pi}\left[1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\ldots . .\right] \\ \frac{\pi}{4}&=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\ldots \ldots
+		\end{align*}
+	
+		
+	\end{answer} 
+
+\item Find the fourier series of the function defined as
+$$
+f(x)=\left\{\begin{array}{ll}
+ \left.  \right. \ x+\pi, & \text { for } 0 \leq x \leq \pi \\
+-x-\pi, & \text { for }-\pi \leq x<0
+\end{array} \text { and } f(x+2 \pi)=f(x)\right.
+$$	
+\begin{answer}
+	\begin{align*}
+		a_{0} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) d x=\frac{1}{\pi} \int_{-\pi}^{0} f(x) d x+\frac{1}{\pi} \int_{0}^{\pi} f(x) d x \\
+		&=\frac{1}{\pi} \int_{-\pi}^{0}(-x-\pi) d x+\frac{1}{\pi} \int_{0}^{\pi}(x+\pi) d x\\&=\frac{1}{\pi}\left(-\frac{x^{2}}{2}-\pi x\right)_{-\pi}^{0}+\frac{1}{\pi}\left(\frac{x^{2}}{2}+\pi x\right)_{0}^{\pi} \\
+		&=\frac{1}{\pi}\left(\frac{\pi^{2}}{2}-\pi^{2}\right)+\frac{1}{\pi}\left(\frac{\pi^{2}}{2}+\pi^{2}\right)\\&=\pi\left(\frac{1}{2}-1\right)+\pi\left(\frac{1}{2}+1\right)\\&=\pi
+	\end{align*}
+	\begin{align*}
+		a_{n} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos n x d x\\&=\frac{1}{\pi} \int_{-\pi}^{0} f(x) \cos n x d x+\frac{1}{\pi} \int_{0}^{\pi} f(x) \cos n x d x \\
+		&=\frac{1}{\pi} \int_{-\pi}^{0}(-x-\pi) \cos n x d x+\frac{1}{\pi} \int_{0}^{\pi}(x+\pi) \cos n x d x \\
+		&=\frac{1}{\pi}\left[(-x-\pi) \frac{\sin n x}{n}-(-1)\left\{-\frac{\cos n x}{n^{2}}\right\}\right]_{-\pi}^{0}+\frac{1}{\pi}\left[(x+\pi) \frac{\sin n x}{n}-(1)\left\{-\frac{\cos n x}{n^{2}}\right\}\right]_{0}^{\pi}\\
+		&=\frac{1}{\pi}\left[-\frac{1}{n^{2}}+\frac{(-1)^{n}}{n^{2}}\right]+\frac{1}{\pi}\left[\frac{(-1)^{n}}{n^{2}}-\frac{1}{n^{2}}\right]=\frac{2}{n^{2} \pi}\left[(-1)^{n}-1\right]\\
+		&=\frac{-4}{n^{2} \pi}\quad \text{if $n$ is odd}\\
+		&=0 \quad \text{if $n$ is even}
+	\end{align*}
+	\begin{align*}
+		b_{n} &=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin n x d x=\frac{1}{\pi} \int_{-\pi}^{0} f^{\prime}(x) \sin n x d x+\frac{1}{\pi} \int_{0}^{\pi} f(x) \sin n x d x \\
+		&=\frac{1}{\pi} \int_{-\pi}^{0}(-x-\pi) \sin n x d x+\frac{1}{\pi} \int_{0}^{\pi}(x+\pi) \sin n x d x \\
+		&=\frac{1}{\pi}\left[(-x-\pi)\left(\frac{-\cos n x}{n}\right)-(-1)\left(-\frac{\sin n x}{n^{2}}\right)\right]_{-\pi}^{0}+\frac{1}{\pi}\left[(x+\pi)\left(-\frac{\cos n x}{n}\right)-(1)\left(-\frac{\sin n x}{n^{2}}\right)\right]_{0}^{\pi} \\
+		&=\frac{1}{\pi}\left[\frac{\pi}{n}\right]+\frac{1}{\pi}\left[-\frac{2 \pi}{n}(-1)^{n}+\frac{\pi}{n}\right]=\frac{1}{n}\left[(1)-2(-1)^{n}\right]=\frac{2}{n}\left[1-(-1)^{n}\right]\\
+		&=\frac{4}{n}\quad \text{if $n$ is odd}\\
+		&=0 \quad \text{if $n$ is even}
+	\end{align*}
+	The fourier series expansion of the function is
+	\begin{align*}
+	f(x)&=\frac{a_{0}}{2}+a_{1} \cos x+a_{2} \cos 2 x+\ldots+b_{1} \sin x+b_{2} \sin 2 x+\ldots \\
+	f(x)&=\frac{\pi}{2}-\frac{4}{\pi}\left(\frac{\cos x}{1^{2}}+\frac{\cos 3 x}{3^{2}}+\ldots . .\right)+4\left(\frac{\sin x}{1}+\frac{\sin 3 x}{3}+\ldots\right)
+	\end{align*}
+	
+\end{answer}
+\item  Find the Fourier sine series for the function
+$$
+f(x)=e^{a x} \quad \text { for }-\pi \leq x \leq \pi
+$$
+where $a$ is constant.
+\begin{answer}
+	\begin{align*}
+		\int e^{a x} \sin b x d x&=\frac{e^{a x}}{a^{2}+b^{2}}[a \sin b x-b \cos b x] \\
+		b_{n}&=\frac{2}{\pi} \int e^{a x} \sin n x d x \\
+		&=\frac{2}{\pi}\left[\frac{e^{a x}}{a^{2}+n^{2}}(a \sin n x-n \cos n x)\right]_{0}^{\pi} \\
+		&=\frac{2}{\pi}\left[\frac{e^{a \pi}}{a^{2}+n^{2}}(a \sin n \pi-n \cos n \pi)+\frac{n}{a^{2}+n^{2}}\right] \\
+		&=\frac{2}{\pi}\left(\frac{n}{a^{2}+n^{2}}\right)\left[-(-1)^{n} e^{a \pi}+1\right]\\&=\frac{2 n}{\left(a^{2}+n^{2}\right) \pi}\left[1-(-1)^{n} e^{a \pi}\right] \\\\
+		b_{1}&=\frac{2\left(1+e^{a \pi}\right)}{\left(a^{2}+1^{2}\right) \pi} \quad ; \quad b_{2}=\frac{2 \cdot 2 \cdot\left(1-e^{a \pi}\right)}{\left(a^{2}+2^{2}\right) \pi} \\\\
+		e^{a x}&=\frac{2}{\pi}\left[\frac{1+e^{a \pi}}{a^{2}+1^{2}} \sin x+\frac{2\left(1-e^{a \pi}\right)}{a^{2}+2^{2}} \sin 2 x+\ldots .\right]
+	\end{align*}
+\end{answer}
+\item Obtain the half range cosine series for $\mathrm{f}(\mathrm{x})=(\mathrm{x}-2)^{2}$ in the interval $(0,2)$.
+\begin{answer}
+	$f(x)=(x-2)^{2}$
+	We know that the Fourier half range cosine series is
+	$$
+	f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty} a_{n} \cos \frac{n x \pi}{l}
+	$$
+
+	
+	\begin{align*}
+	\text { Where } \\
+	a_{0}&=\frac{2}{l} \int_{0}^{l} f(x) d x \\
+	a_{n}&=\frac{2}{l} \int_{0}^{l} f(x) \cos \frac{n \pi x}{l} d x
+	\end{align*}
+
+	Here $l=2$
+	\begin{align*}
+	a_{0}&=\frac{2}{2} \int_{0}^{2}(x-2)^{2} d x=\left[\frac{(x-2)^{3}}{3}\right]_{0}^{2}\\
+	&=\left[0-\frac{(-2)^{3}}{3}\right]=\frac{8}{3} \\
+	a_{0}&=\frac{8}{3}\\
+	a_{n}&=\frac{2}{2} \int_{0}^{2}(x-2)^{2} \cos \frac{n \pi x}{2} d x \\
+	a_{n}&=\left[(x-2)^{2}\left(\frac{\sin \frac{n \pi x}{2}}{\frac{n \pi}{2}}\right)-2(x-2)\left(\frac{-\cos \frac{n \pi x}{2}}{\frac{n^{2} \pi^{2}}{2^{2}}}\right)+2\left(\frac{-\sin \frac{n \pi x}{2}}{\frac{n^{3} \pi^{3}}{2^{3}}}\right)\right]_{0}^{2} \\
+	a_{n}&=\left[0+0-2 \frac{8}{n^{3} \pi^{3}} \sin n \pi-0-2(-2) \frac{4}{n^{2} \pi^{2}}+0\right] \\
+	a_{n}&=\frac{8}{n^{2} \pi^{2}}
+	\end{align*}
+
+
+	$$
+	\begin{array}{l}
+	f(x)=\frac{8}{2 x^3}+\sum_{n=1}^{\infty} \frac{8}{n^{2} \pi^{2}} \cos \frac{n x \pi}{2} \\\\
+	f(x)=\frac{4}{3}+\frac{8}{\pi^{2}} \sum_{n=1}^{\infty} \frac{1}{n^{2}} \cos \frac{n x \pi}{2}
+	\end{array}
+	$$
+\end{answer}
+\end{enumerate}
+
+
+
+
+
