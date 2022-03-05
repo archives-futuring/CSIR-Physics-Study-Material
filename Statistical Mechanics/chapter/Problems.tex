@@ -299,12 +299,105 @@ E=0\text{ is }2&
 		\langle E\rangle&=\frac{\in\left(2 e^{-\beta \epsilon}+4 e^{-2 \beta \epsilon}+3 e^{-3 \beta \epsilon}\right)}{Q_{N}(V, T)}
 		\end{align*}
 	\end{answer}
-	
-	
-	
-	
-	
-	
+\end{enumerate}
+\section{Thermodynamics of Ensemble}
+\begin{enumerate}
+	\item Consider a system of an extreme relativistic gas consisting of $3 \mathrm{~N}$ particles moving in 1 dimension, Show that the partition function in this case is given by $\frac{1}{3 \mathrm{~N} !}\left[2 \mathrm{~L}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{hc}}\right)\right]^{3 \mathrm{~N}} . \mathbf{L}$ being the length of the space available. Study the thermodynamics and check that weather $\mathrm{PV}=\frac{1}{3} \mathrm{U} \cdot \frac{\mathrm{U}}{\mathrm{N}}=3 \mathrm{k}_{\mathrm{B}} \mathrm{T}, \gamma=\frac{4}{3}$ or not.
+	\begin{answer}
+		\begin{align*}
+		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\left[\mathrm{Q}_{1}(\mathrm{~V}, \mathrm{~T})\right]^{\mathrm{N}}=\frac{1}{\mathrm{~N} !}\left[\frac{1}{\mathrm{~h}^{3}} \int \mathrm{e}^{-\beta \mathrm{H}} \mathrm{d} \omega\right]^{\mathrm{N}}\\
+		&=\frac{1}{N ! h^{3 N}} \int e^{-\beta P c} d^{3 N} p d^{3 N} q\\
+		\text{For extreme relativistic case }\mathrm{H}&=\mathrm{pc}\text{ and } \mathrm{d} \omega=\mathrm{d}^{3 \mathrm{~N}} \mathrm{p} \mathrm{d}^{3 \mathrm{~N}} \mathrm{q}\\
+		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\frac{\mathrm{V}^{\mathrm{N}}}{\mathrm{N} ! \mathrm{h}^{3 \mathrm{~N}}}\left[\int \mathrm{e}^{\frac{-\mathrm{pc}}{\mathrm{kT}}} \mathrm{d}^{3 \mathrm{~N}} \mathrm{p}\right]^{\mathrm{N}}\left(\int d^{3 \mathrm{~N}} \mathrm{q}=\int \mathrm{d}^{3} \mathrm{q}_{1} \mathrm{~d}^{3} \mathrm{q}_{\mathrm{2}} .....\mathrm{d}^{3} \mathrm{q}_{N}\right)\\
+		&=\frac{\mathrm{V}^{\mathrm{N}}}{\mathrm{N} ! \mathrm{h}^{3 \mathrm{~N}}}\left[\int\limits_{0}^{\infty} \mathrm{e}^{\frac{-\mathrm{pc}}{\mathrm{kT}}}{ 4\pi p }^2\ pd \right]^N\\
+		&=\frac{(4 \pi V)^{N}}{N ! h^{3 N}}\left[\int\limits_{0}^{\infty} \mathrm{e}^{\frac{-\mathrm{pc}}{\mathrm{kT}}}{  p }^2\ pd \right]^N\\
+		\text{Let }\frac{\mathrm{pc}}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}&=\mathrm{x} \Rightarrow \frac{c}{k_B T} dp=dx\\
+		&\frac{(4 \pi \mathrm{V})^{\mathrm{N}}}{\mathrm{N} ! \mathrm{h}^{3 \mathrm{~N}}}\left[\int_{0}^{\infty} \mathrm{e}^{-\mathrm{x}}\left(\frac{k_B Tx}{c}\right)\ \frac{k_B T}{c}dx    \right]=\frac{(4\pi V)}{N!h^{3N}}\left[ \left(\frac{k_B T}{c} \right) \int e^{-x}x^2\ dx\right] ^N\\
+		&\frac{(4 \pi \mathrm{V})^{\mathrm{N}}}{\mathrm{N} ! \mathrm{h}^{3 \mathrm{~N}}}\left[ \left( \frac{k_B T}{c}\right)^3 2!\right] ^N\\
+		\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\frac{1}{\mathrm{~N} !}\left[8 \pi \mathrm{V}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{hc}}\right)^{3}\right]^{\mathrm{N}}\\
+		\ell n \ \mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\mathrm{N} \ell n 8 \pi \mathrm{V}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{hc}}\right)^{3}-\log N !=N \ell n 8 \pi V\left(\frac{k_{B} T}{h c}\right)^{3}-N \ell n N+N\\
+		&=\mathrm{N} \ell \mathrm{n} \frac{8 \pi \mathrm{V}}{\mathrm{N}}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{hc}}\right)^{3}+\mathrm{N}\\
+		A&=-k_{B} T \ell n Q_{N}(V, T)=-N k_{B} T \ell n \frac{8 \pi V}{N}\left(\frac{k_{B} T}{h c}\right)^{3}-N k_{B} T\\
+		P&=-\left(\frac{\partial A}{\partial V}\right)=N k_{B} T \frac{\frac{8 \pi}{N}\left(\frac{k_{B} T}{h c}\right)^{3}}{\frac{8 \pi V}{N}\left(\frac{k_{B} T}{h c}\right)^{3}}=\frac{N k_{B} T}{V}\\
+		\Rightarrow \quad U&=-T^{2} \frac{\partial}{\partial T}\left(\frac{A}{T}\right)\\
+	\text{	Now, }U&=T^{2} \frac{\partial}{\partial T}\left[N k_{B} \ln \frac{8 \pi V}{N}\left(\frac{k_{B} T}{h c}\right)^{3}+N k_{B}\right]\\
+	&=\mathrm{T}^{2} \mathrm{Nk} \times \frac{\frac{8 \pi \mathrm{V}}{\mathrm{N}}\left(\frac{\mathrm{k}_{\mathrm{B}}}{\mathrm{hc}}\right)^{3}, 3 \mathrm{~T}^{2}}{\frac{8 \pi \mathrm{V}}{\mathrm{N}}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{hc}}\right)^{3}}=\frac{3 \mathrm{k}_{\mathrm{B}} \mathrm{NT}^{4}}{\mathrm{~T}^{3}}=3 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}\\
+	\mathrm{U}&=3 \mathrm{Nk}_{\mathrm{B}} \mathrm{T}\\
+\text{	Now, }\quad \mathrm{P}&=\left(\frac{\partial \mathrm{A}}{\partial \mathrm{V}}\right)_{\mathrm{T}, \mathrm{M}}=\mathrm{PV}=\frac{Nk_B T}{V}\times V=N k_B T\\
+\text{and }\frac{1}{3} U&=\frac{3 U k_{B} T}{3}=N k_{B} T\\
+\text{So we get }\mathrm{PV}&=\frac{1}{3} \mathrm{U} \quad \text{or}\quad P=\frac{1}{3}\ \frac{U}{V}\\
+\text{Now }\mathrm{dQ}&=\mathrm{dU}+\mathrm{PdV}\\
+\text{For adiabic process }&\mathrm{dQ}=0\\
+\mathrm{dU}+\mathrm{PdV}&=0 \Rightarrow \mathrm{d}(3PV)+PdV=0\\
+3 \mathrm{PdV}&+3 \mathrm{VdP}+\mathrm{PdV}=0 \quad \text{or} \quad 4PdV=3VdP\\
+\frac{\mathrm{dP}}{\mathrm{P}}&=-\frac{4}{3} \frac{\mathrm{dV}}{\mathrm{V}}\\
+\text{Integrating }\ell nP&=-\frac{4}{3} \ell n V+c-\ell n V^{4 / 3}+c\\
+\ell n\mathrm{P}+\ell n \mathrm{V}^{4 / 3}&=\text{ constant,}\quad \mathrm{PV}^{4 / 3}= \text{ constant}\\
+\text{For this we know }\gamma&=\frac{4}{3}
+		\end{align*}
+		\begin{align*}
+		\text{(2) }\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\left[\mathrm{Q}_{1}(\mathrm{~V}, \mathrm{~T})\right]^{3 \mathrm{~N}}=\frac{1}{3 \mathrm{~N} !}\left[\frac{1}{\mathrm{~h}} \int_{\infty}^{\infty} \mathrm{e}^{-\beta \mathrm{Pc}} \mathrm{dp} \mathrm{dq}\right]^{3 \mathrm{~N}}\\
+		&=\frac{1}{3 N ! h^{3 N}} L^{3 N}\left|\int^{\infty} e^{-\frac{P_{c}}{k T}} d p\right|^{3 N} \quad\{L \rightarrow\text{ Length }\}\\
+		\text{Let }\frac{\mathrm{pc}}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}&=\mathrm{x} \Rightarrow \mathrm{dp}=\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{c}} \mathrm{dx}\\
+		 \mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T}) &=\frac{1}{3 \mathrm{~N} ! \mathrm{h}^{3 \mathrm{~N}}} \mathrm{~L}^{3 \mathrm{~N}}\left[2 \int_{0}^{\infty} \mathrm{e}^{-\mathrm{x}} \frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{c}} \mathrm{dx}\right]^{3 \mathrm{~N}} \\
+		  &=\frac{1}{3 \mathrm{~N} ! \mathrm{h}^{3 \mathrm{~N}}} \mathrm{~L}^{3 \mathrm{~N}}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{c}}\right)^{3 \mathrm{~N}}\left[2 \int_{0}^{\infty} \mathrm{e}^{-\mathrm{x}} \mathrm{dx}\right]^{3 \mathrm{~N}} \\
+		  &=\frac{1}{3 \mathrm{~N} ! \mathrm{h}^{3 \mathrm{~N}}} \mathrm{~L}^{3 \mathrm{~N}}\left(\frac{\mathrm{k}_{\mathrm{B}} \mathrm{T}}{\mathrm{c}}\right)^{3 \mathrm{~N}}\left[\left[-2 \mathrm{e}^{-\mathrm{x}}\right]_{0}^{\infty}\right]^{3 \mathrm{~N}}\\
+		  &=\frac{1}{3 N ! h^{3 N}} \mathrm{~L}^{3 N}\left(\frac{\mathrm{k}_{B} T}{c}\right)^{3 N}2^{3 N}\\
+		  \mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})&=\frac{1}{3N!}\left[ 2L \left( \frac{k_B T}{hc}\right) \right] ^{3N}
+		\end{align*}
+	\end{answer}
+\end{enumerate}
+\section{Grand canonical emsemble}
+\begin{enumerate}
+	\item Consider a system may be either unoccupied or occoupied by one particle with energy $0$ and $E$. Find out \\
+	1) partition function of the system \\
+	2) Thermal average energy of the system. Thermal average occupancy of the system
+	\begin{answer}
+		\begin{align*}
+			\begin{array}{llll}\mathbf{0} & \mathbf{E} & \mathbf{N_{r}} &E_s\\ 0 & 0 & 0 &0\\ 1 & 0 & 1 &0\\ 0 & 1 & 1&E\end{array}\\
+			\mathrm{Z}(\mu, \mathrm{V}, \mathrm{T})&=\sum_{\mathrm{rs}}e^{-\alpha N_1-\beta E_s}\\
+			&=e^{-\alpha\times0-\beta\times0}+e^{-\alpha\times1-\beta\times0}+e^{-\alpha\times1-\beta\times1}\\
+			1+\mathrm{e}^{-\alpha}+\mathrm{e}^{-\alpha-\beta \epsilon}=&=1+e^{+\frac{\mu}{k_{B} T}}+e^{\left(\frac{\mu}{k_{B} T}-\frac{E}{k_{B} T}\right)}\\
+			U&=\left\langle E_{S}\right\rangle=\frac{\sum_{r s} \in_{S} e^{-\alpha N_{r}-\beta E_{S}}}{\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}}}=\sum_{r s} E_{S} P_{r s}\\
+			\bar{N}&=\left\langle N_{r}\right\rangle=\frac{\sum_{r s} N_{r} e^{-\alpha N_{r}-\beta E S}}{\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}}}=\sum_{r s} N_{r} P_{r S}\\
+			\overline{\mathrm{N}}&=-\frac{\partial}{\partial N} \ln \mathrm{Z}(\mu, \mathrm{V}, \mathrm{T})_{\beta, \mathrm{V}}=\mathrm{e}^{-\alpha}-\mathrm{e}^{-\alpha-\beta \epsilon} / 1+\mathrm{e}^{-\alpha}+\mathrm{e}^{-\alpha-\beta \epsilon}\\
+			\mathrm{E}&=-\frac{\partial}{\partial \beta} \ln \mathrm{Z}(\mu, \mathrm{V}, \mathrm{T})_{\alpha, \mathrm{N}}=\frac{\epsilon \mathrm{e}^{(\mu-\epsilon) \beta}}{1+\mathrm{e}^{\mu \beta}+\mathrm{e}^{(\mu-\epsilon) \beta}}
+		\end{align*}
+	\end{answer}
+ \item Repeat the above problem if each state may be occupied by one particle of the same time 
+ \begin{answer}
+ 	\begin{align*}
+ 	\begin{array}{llll} & \mathbf{E} & \mathbf{N}_{\mathrm{r}} & \mathbf{E}_{\mathrm{s}} \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 1 & 0 \\ 0 & 1 & 1 & \mathrm{E} \\ 0 & 1 & 2 & \mathrm{E}\end{array}\\
+ 	\mathrm{Z}_{\mathrm{N}}(\mu, \mathrm{V}, \mathrm{T})&=1+\mathrm{e}^{-\alpha}+\mathrm{e}^{-\alpha-\beta \epsilon}+\mathrm{e}^{-2 \alpha-\beta \epsilon}
+ 	\end{align*}
+ \end{answer}
+	\item In a system in thermal equilibrium at absolute temperature T, two states with energy difference $4.83 \times 10^{-21} \mathrm{~J}$ occour with relative probability $\mathrm{e}^{2}$. Deduce the temperature $\left(\mathrm{k}_{\mathrm{B}}=1.38 \times 10^{-23} \mathrm{~J} / \mathrm{K}\right)$
+	\begin{answer}
+		\begin{align*}
+		\Delta \mathrm{E}&=4.83 \times 10^{-23}\\
+		\frac{\mathrm{P}_{1}}{\mathrm{P}_{2}}&=\mathrm{e}^{2}\\
+		\mathrm{P}_{\mathrm{i}}&=\mathrm{Ce}^{-\beta \mathrm{E}_{\mathrm{i}}}\\
+		\mathrm{P}_{1}&=\mathrm{Ce}^{-\beta \mathrm{E}_{1}}\qquad \mathrm{P}_{2}=\mathrm{Ce}^{-\beta \mathrm{E}_{2}}\\
+		\frac{\mathrm{P}_{1}}{\mathrm{P}_{2}}&=\frac{\mathrm{Ce}^{-\beta \mathrm{E}_{1}}}{\mathrm{Ce}^{-\beta \mathrm{E}_{2}}}=\mathrm{e}^{-\beta\left(\mathrm{E}_{1}-\mathrm{E}_{2}\right)}=e^{-\beta (E_2-E_1)}\\
+		e^{2}&=e^{\left(E_{2}-E_{1}\right)}\\
+		2&=\beta\left(\mathrm{E}_{2}-\mathrm{E}_{1}\right)\\
+		2&=\frac{1}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\left(\mathrm{E}_{2}-\mathrm{E}_{1}\right)\\
+		2 \mathrm{k}_{\mathrm{B}} \mathrm{T}&=\mathrm{E}_{2}-\mathrm{E}_{1}\Rightarrow T=\frac{E_2-E_1}{2k_B}\\
+		&=\frac{4.83 \times 10^{-23J}}{2 \times 1.38 \times 10^{-23}J/K}=1.75 K
+		\end{align*}
+	\end{answer}
+	\item A diatomic gas in thermal equilibrium have temperature $500K$. Its rotational constant $2.0 cm^{-1}$. Calculate the relative populations in the rotational states.
+	\begin{answer}
+		\begin{align*}
+		\text{Population}\quad E&=\frac{h^2}{8\pi^2 I}J(J+I)\qquad B=\frac{h}{8\pi^2IC}\\
+		\color{red}{???}\\
+		\mathrm{N}_{\mathrm{J}}&=\frac{\mathrm{N}(2 \mathrm{~J}+1) \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{J}}}}{\sum_{\mathrm{J}} \mathrm{e}^{-\beta \mathrm{E}_{\mathrm{J}}}}\\
+	\text{	But }
+		\mathrm{BhC}&=3.96 \times 10^{-16} \mathrm{erg}\\
+		\frac{\mathrm{N}_{10}}{\mathrm{~N}_{0}}&=91.28 \text{Ans.}\\
+		\frac{\mathrm{N}_{20}}{\mathrm{~N}_{0}}&=3.371\text{ Ans}
+		\end{align*}
+	\end{answer}
 	
 	
 	
