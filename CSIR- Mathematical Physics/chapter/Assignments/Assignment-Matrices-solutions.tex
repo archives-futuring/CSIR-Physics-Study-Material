@@ -103,11 +103,112 @@
 		\end{align*}
 		So the correct answer is \textbf{Option (b)}
 	\end{answer}
-	
-	
-	
-	
-	
+	\item $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+	\text{ For eigen value }|A-\lambda I|&=0\\
+		\left|\begin{array}{ccc}
+		1-\lambda & \sqrt{8} & 0 \\
+		\sqrt{8} & (1-\lambda) & \sqrt{8} \\
+		0 & \sqrt{8} & (1-\lambda)
+		\end{array}\right|&=(1-\lambda)\left[(1-\lambda)^{2}-8\right]+\sqrt{8}[\sqrt{8}(1-\lambda)] \\
+		-\lambda^{3}+3 \lambda^{2}-3 \lambda+1&=0 \Rightarrow \lambda=-3,1,5\\
+		\text{eigen vector can be determine by }A X_{1}&=\lambda_{1} X_{1}
+	\text{	For }\lambda=5,\\
+	{\left[\begin{array}{ccc}1 & \sqrt{8} & 0 \\ \sqrt{8} & 1 & \sqrt{8} \\ 0 & \sqrt{8} & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=5\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] }&\\
+	x_{1}+\sqrt{8} x_{2}=5 x_{1}, \sqrt{8} x_{1}+x_{2}+\sqrt{8} x_{3}&=5 x_{2}, \sqrt{8} x_{2}+x_{3}=5 x_{3}\\
+	\Rightarrow x_{1}=x_{3}, x_{2}=\sqrt{2} x_{1} \quad X_{1}=\left[\begin{array}{c}x_{1} \\ \sqrt{2} x_{1} \\ x_{1}\end{array}\right] \Rightarrow X_{1}&=x_{1}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1\end{array}\right]\\
+	\text{Form orthogonality condition }x_{1}=\frac{1}{2}, X_{1}&=\frac{1}{2}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1\end{array}\right]
+		\end{align*}
+			So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		 \text{For eigen value }|A-\lambda I|&=0\\
+		\left|\begin{array}{ccc}
+		-\lambda & 1 & 0 \\
+		1 & -\lambda & 1 \\
+		0 & 1 & -\lambda
+		\end{array}\right|=0 \Rightarrow-&\lambda\left(\lambda^{2}-1\right)+1[(\lambda)]=0 \Rightarrow-\lambda^{3}+2 \lambda=0\\
+	\text{	eigenvalue }\lambda=0, \sqrt{2},-\sqrt{2}\\
+		\text{eigen vector can be determine by }A X_{1}&=\lambda_{1} X_{1}
+	\text{	For }\lambda=-\sqrt{2}\\
+		\left[\begin{array}{lll}
+		0 & 1 & 0 \\
+		1 & 0 & 1 \\
+		0 & 1 & 0
+		\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right]=-\sqrt{2}\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right] \Rightarrow x_{2}&=-\sqrt{2} x_{1}, x_{1}+x_{3}=-\sqrt{2} x_{2}, x_{2}=-\sqrt{2} x_{3}\\
+		\Rightarrow x_{1}&=x_{3}, x_{2}=-\sqrt{2} x_{1}\\
+		X_{1}=\left[\begin{array}{c}x_{1} \\ -\sqrt{2} x_{1} \\ x_{1}\end{array}\right] \text{. From orthogonality condition, }X_{1}^{T} X_{1}&=1 \Rightarrow x_{1}=\frac{1}{2} \Rightarrow X_{1}=\frac{1}{2}\left[\begin{array}{c}1 \\ -\sqrt{2} \\ 1\end{array}\right]\\
+	\text{	For }\lambda&=0\\
+		\left[\begin{array}{lll}
+		0 & 1 & 0 \\
+		1 & 0 & 1 \\
+		0 & 1 & 0
+		\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right]=0\left[\begin{array}{c}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right] \Rightarrow x_{2}=0, x_{1}+x_{3}&=0, \Rightarrow x_{1}=-x_{3} \Rightarrow X_{2}=\left[\begin{array}{c}
+		x_{1} \\
+		0 \\
+		-x_{1}
+		\end{array}\right]\\
+		\text{From orthogonality condition }X_{2}^{T} X_{2}&=1 \Rightarrow x_{1}=\frac{1}{\sqrt{2}} \Rightarrow X_{2}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right]\\
+		\text{For }\lambda&=\sqrt{2},\\
+		\left[\begin{array}{lll}
+		0 & 1 & 0 \\
+		1 & 0 & 1 \\
+		0 & 1 & 0
+		\end{array}\right]\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right]=\sqrt{2}\left[\begin{array}{l}
+		x_{1} \\
+		x_{2} \\
+		x_{3}
+		\end{array}\right] \Rightarrow x_{2}=\sqrt{2} x_{1}, x_{1}+x_{3}&=\sqrt{2} x_{2}, x_{2}=\sqrt{2} x_{3} \Rightarrow x_{1}=x_{3}\\
+		\Rightarrow X_{3}=\left[\begin{array}{c}x_{1} \\ \sqrt{2} x_{1} \\ x_{1}\end{array}\right] .\text{ From orthogonality condition }X_{3}{ }^{T} X_{3}=1 \Rightarrow x_{1}&=\frac{1}{2} \Rightarrow X_{3}=\frac{1}{2}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1\end{array}\right]
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\text{For eigen value }|A-\lambda I|&=0
+		X_{1}=\frac{1}{2}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]\\
+		\left|\begin{array}{ccc}-\lambda & 1 & 1 \\ 1 & -\lambda & 1 \\ 1 & 1 & -\lambda\end{array}\right|&=0 \Rightarrow-\lambda\left[\left(\lambda^{2}-1\right)\right]+1(1+\lambda)+1(1+\lambda)=0\\
+		\Rightarrow-\lambda^{3}+3 \lambda+2&=0 \Rightarrow \lambda=-1,-1,2\\
+		\text{Eigen vector can be determine by }A X_{1}&=\lambda_{1} X_{1}\\
+	\text{	For }\lambda&=-1\\
+	\left[\begin{array}{lll}0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=-1\left[\begin{array}{c}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{2}+x_{3}&=-x_{1}, \quad x_{1}+x_{3}=-x_{2}, x_{1}+x_{2}=-x_{3} \Rightarrow x_{1}+x_{2}+x_{3}=0\\
+	\text{if }X_{1}&=\left[\begin{array}{c}-\left(x_{2}+x_{3}\right) \\ x_{2} \\ x_{3}\end{array}\right]\text{ if }\Rightarrow x_{2}=k_{1} x_{3}=k_{2}\\
+	X_{1}&=\left[\begin{array}{c}
+	-\left(k_{1}+k_{2}\right) \\
+	k_{1} \\
+	k_{2}
+	\end{array}\right] \text { if } k_{1}=k_{2}\\
+	X_{1}&=k_{1}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]\text{ from orthogonality condition }X_{1}^{T} X_{1}=1 \Rightarrow k_{1}=\frac{1}{2}\\
+	X_{1}&=\frac{1}{2}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]\\
+	\text{For }\lambda&=-1\text{ similarly if }k_{1}=1, k_{2}=-1\\
+	\text{Then }X_{2}=\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right] \quad X_{2}&=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right]
+		\end{align*}
+	So the correct answer is \textbf{Option (a)}
+	\end{answer}
 	
 	
 	
