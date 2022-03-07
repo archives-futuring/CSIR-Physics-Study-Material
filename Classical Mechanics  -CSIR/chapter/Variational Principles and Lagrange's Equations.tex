@@ -1,0 +1,81 @@
+\chapter{Variational Principles and Lagrange's Equations}
+\section{Hamilton's Principle}
+\subsection{Configuration Space}
+\begin{itemize}
+	\item The Instantaneous configuration of a system is described by the values of $n$ generalized coordinates $q_1,    q_n$ and corresponds to a particular point in a cartesian hyperspace where the q's from the $n$  diamensional space is known as configuration space.
+	\item As time goes by, the state of the system changes and the system point moves in configuration space tracing out a curve, described as "the path of motion of the system".
+	\item The motion of the system then refered to the motion of the system point along this path in configuration space
+	\item Time can be considered formally as a parameter of the curve to each point on the path there is associated one or more values of the time. Each point on the path represent the entire system  configuration at some given instant of time.\\\\
+	\textbf{Monogenic System}: The mechanical systems whose motion for which all forces  (except the forces of constraint) are derivable from a generalized scalar potential that may be a function of the coordinates, velocities and time.
+\end{itemize}
+	\subsection{Hamilton's Principle}
+	The motion of the system from time $t_1 $ to time $t_2$ is such that the line integral called the avtion or the action integral.
+	\begin{equation}
+	I=\int\limits_{t_1}^{t_2}Ldt
+	\end{equation}
+	where $L$ is $T-V$ has stationary value for the actual path of the motion.\\\\
+	ie. out of all possible path by which the system point could travel from it's position at time $t_1$ to its position at time $t_2$. It will travel along that path for which the value of integral is stationary.\\\\
+	$\therefore$ Hamilton's principle can summarize by saying that the motion is such that the variation of the line integral $I$ for fixed $t_1$ and $t_2$ is zero.
+	\begin{equation}
+		\delta I=\delta\int\limits_{t_1}^{t_2}L(q_1,.....q_n,\dot{q}_1.....\dot{q}_n,t)dt=0
+	\end{equation}
+	Where the system constraints are holonomic, Hamilton's principle is both a necessary and suffitient condition for lagrange's equations.
+	\section{Calculus of Variation}
+	Consider a one diamensional problem, we have a function $f(y,\dot{y},x)$ defined on a path $y-y(x)$  between two value $x_1$ and $x_2$ where $\dot{y}$ is the derivative of $y$ with respect to $x$.\\\\
+	To find a particular path y(x) such that the line integral $y$ of the function $f$ between $x_1$ and $x_2$\\
+	$ \dot{y}\equiv \frac{dy}{dx}$
+	\begin{equation}
+	J=\int\limits_{x_1}^{x_2}f(y,\dot{y},x)dx
+	\end{equation}
+ 	has stationary value relative to paths differing infinitesimally from the correct function $y(x)$.\\\\
+ 	Since $J$ must have a stationary value for the correct path relative to any neighboring path, the variation must be zero relative to some particular set of neighboring paths labeled by an infinitesimal parameter $\alpha$.\\
+ 	such a set of varied path given by 
+ 	\begin{equation}
+ 	y(x,\alpha)=y(x,0)+\alpha \eta(x)\label{VP-eq04}
+ 	\end{equation}
+	$y(x,0)$- Correct path\\
+	$\eta(x)$-any function vanishes at $x=x_1$ and $x=x_2$\\\\
+	Assume both the correct path $y(x)$ and the auxillary function $\eta(x)$ are well behaved functions between $x_1$ and $x_2$. For such any parametric family of curves, $J$ is also a function of $\alpha$
+	\begin{equation}
+	J(\alpha)=\int\limits_{x_1}^{x_2}f(y(x,\alpha),\dot{y}(x,\alpha),x)dx
+	\end{equation}
+	 Condition for obtaining stationary points is 
+	 \begin{equation}
+	 \left( \frac{dJ}{d\alpha}\right) _{\alpha=0}=0
+	 \end{equation}
+	differentiating under integral sign 
+	\begin{equation}
+	\frac{d J}{d \alpha}=\int_{x_{1}}^{x_{2}}\left(\frac{\partial f}{\partial y} \frac{\partial y}{\partial \alpha}+\frac{\partial f}{\partial \dot{y}} \frac{\partial \dot{y}}{\partial \alpha}\right) d x
+	\end{equation}
+	For the second term, integrating by parts\\
+	\begin{align*}
+		\int_{x_{1}}^{x_{2}} \frac{\partial f}{\partial \dot{y}} \frac{\partial \dot{y}}{\partial \alpha} d x&=\int_{x_{1}}^{x_{2}} \frac{\partial f}{\partial \dot{y}} \frac{\partial^{2} y}{\partial x \partial \alpha} d x\\
+		&=\left.\frac{\partial f}{\partial \dot{y}} \frac{\partial y}{\partial \alpha}\right|_{x_{1}} ^{x_{2}}-\int_{x_{1}}^{x_{2}} \frac{d}{d x}\left(\frac{\partial f}{\partial \dot{y}}\right) \frac{\partial y}{\partial \alpha} d x
+	\end{align*}
+All the varied curves pass through $(x_1,y_1),(x_1,y_1)$ and hence the partial derivative of $y$ with respect to  $\alpha$ $x_1$ and $x_2$ must vanish.
+\begin{equation}
+\therefore \frac{d J}{d \alpha}=\int_{x_{1}}^{x_{2}}\left(\frac{\partial f}{\partial y}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}}\right) \frac{\partial y}{\partial \alpha} d x
+\end{equation}
+Therefore, the condition for stationary value
+\begin{equation}
+\left(\frac{dJ}{d\alpha} \right)_{\alpha=0} =\int_{x_{1}}^{x_{2}}\left(\frac{\partial f}{\partial y}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}}\right) \frac{\partial y}{\partial \alpha} d x=0\label{VP-eq09}
+\end{equation}
+Where $\left( \frac{\partial y}{\partial \alpha}\right) $ is a function of $x$ that is arbitrary except for continuity and end point conditions.\\\\
+\textbf{Fundemental lemma} of calculus of variation
+	\begin{equation}
+	\text{if} \int\limits_{x_1}^{x_2}M(x)\eta(x)dx=0
+	\end{equation}
+	\textit{For all arbitrary functions $\eta (x)$ continuous through the second derivative, then $M(x)$ must identically vanish in the interval $(x_1,x_2)$}\\\\
+	For a particular parametric family of varied paths given by \ref{VP-eq04}
+	$$\left(\frac{\partial y}{\partial\alpha} \right)_0 =\eta(x)\text{the arbitrary function}$$
+	$\therefore$ from \ref{VP-eq09} using fundamental lemma, we get 
+	\begin{equation}
+	\frac{\partial f}{dy}-\frac{d}{dx}\left( \frac{\partial f}{\partial\dot{y}}\right) =0
+	\end{equation}
+	\begin{itemize}
+		\item The infinitesimal departure of the varied path from the correct path $y(x)$ at the point $x$ and thus corresponds to virtual displacement $\delta y$ is
+		$$\left( \frac{\partial y}{\partial\alpha}\right)_0 d\alpha=\delta y$$
+\item Similarly, infinitesimal variation of $y$ above the correct path is given as		
+		$$\left( \frac{\partial y}{\partial\alpha}\right)_0 d\alpha=\delta J$$
+		$$\delta J=\int_{x_{1}}^{12}\left(\frac{\partial f}{\partial y}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}}\right)\delta y\ dx=0$$
+	\end{itemize}
