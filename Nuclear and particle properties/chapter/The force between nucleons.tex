@@ -1,0 +1,68 @@
+\chapter{The force betwen nucleons}
+Even before describing any further experiments to study the force between two nucleons, we can already guess at a few of the properties of the nucleon-nucleon force:\\
+\begin{enumerate}
+	\item At short distances it is stronger than the Coulomb force: the nuclear force can overcome the Coulomb repulsion of protons in the nucleus.
+	\item At long distances, of the order of atomic sizes, the nuclear force is negligibly feeble: the interactions among nuclei in a molecule can be understood based only on the Coulomb force.
+	\item Some particles are immune from the nuclear force: there is no evidence from atomic structure, for example. that electrons feel the nuclear force at all.
+	\item The nucleon-nucleon force seems to be nearly independent of whether the nucleons are neutrons or protons. This property is called charge independence.
+	\item The nucleon-nucleon force depends on whether the spins of the nucleons are parallel or antiparallel.
+	\item The nucleon-nucleon force includes a repulsive term. which keeps the nucleons at a certain average separation.
+	\item The nucleon-nucleon force has a noncentral or tensor component. This part of the force does not conserve orbital angular momentum. which is a constant of the motion under central forces.
+\end{enumerate}
+\section{Properties of nuclear force(in detail)}
+\subsection{ The Nucleon - Nucleon Interaction is Strongly Spin Dependent}
+Until now we neglected the fact that both neutron and proton possess a spin. The question remains how the spin influences the interaction between the two particles. The total angular momentum for the deuteron (or in general for a nucleus) is usually denoted by $I$. Here it is given by
+$$
+\hat{\vec{I}}=\hat{\vec{L}}+\hat{\vec{S}}_{p}+\hat{\vec{S}}_{n}
+$$
+For the bound deuteron state $l=0$ and $\hat{\vec{I}}=\hat{\vec{S}}_{p}+\hat{\vec{S}}_{n}=\hat{\vec{S}}$. A priori we can have $\hat{\vec{S}}=0$ or 1 (recall the rules for addition of angular momentum, here $\hat{\vec{S}}_{p, n}=\frac{1}{2}$ ).
+There are experimental signatures that the nuclear force depends on the spin. In fact the deuteron is only found with $\hat{\vec{S}}=1$ (meaning that this configuration has a lower energy).\\
+\par The simplest form that a spin-dependent potential could assume is $V_{\text {spin }} \propto \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}$ (since we want the potential to be a scalar). The coefficient of proportionality $V_{1}(r) / \hbar^{2}$ can have a spatial dependence. Then, we guess the form for the spin-dependent potential to be $V_{\text {spin }}=V_{1}(r) / \hbar^{2} \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}$. What is the potential for the two possible configurations of the neutron and proton spins?
+The configuration are either $\hat{\vec{S}}=1$ or $\hat{\vec{S}}=0$. Let us write $\hat{\vec{S}}^{2}=\hbar S(S+1)$ in terms of the two spins:
+$$
+\hat{\vec{S}}^{2}=\hat{\vec{S}}_{p}^{2}+\hat{\vec{S}}_{n}^{2}+2 \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}
+$$
+The last term is the one we are looking for:
+$$
+\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}=\frac{1}{2}\left(\hat{\vec{S}}^{2}-\hat{\vec{S}}_{p}^{2}-\hat{\vec{S}}_{n}^{2}\right)
+$$
+Because $\hat{S}^{2}$ and $\hat{\vec{S}}_{p}^{2}, \hat{\vec{S}}_{n}^{2}$ commute, we can write an equation for the expectation values wrt eigenfunctions of these operators 10 :
+$$
+\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle=\left\langle S, S_{p}, S_{n}, S_{z}\left|\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right| S, S_{p}, S_{n}, S_{z}\right\rangle=\frac{\hbar^{2}}{2}\left(S(S+1)-S_{p}\left(S_{p}+1\right)-S_{n}\left(S_{n}+1\right)\right)
+$$
+since $S_{p, n}=\frac{1}{2}$, we obtain
+$$
+\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle=\frac{\hbar^{2}}{2}\left(S(S+1)-\frac{3}{2}\right)=\begin{array}{ll}
++\frac{\hbar^{2}}{4} & \text { Triplet State, }\left|S=1, \frac{1}{2} \frac{1}{2}, m_{z}\right\rangle \\
+-\frac{3 \hbar^{2}}{4} & \text { Singlet State, }\left|S=0, \frac{1}{2}, \frac{1}{2}, 0\right\rangle
+\end{array}
+$$
+If $V_{1}(r)$ is an attractive potential $(<0)$, the total potential is $\left.V_{n u c}\right|_{S=1}=V_{T}=V_{0}+\frac{1}{4} V_{1}$ for a triplet state, while its strength is reduced to $\left.V_{n u c}\right|_{S=0}=V_{S}=V_{0}-\frac{3}{4} V_{1}$ for a singlet state. How large is $V_{1}$ ?
+We can compute $V_{0}$ and $V_{1}$ from knowing the binding energy of the triplet state and the energy of the unbound virtual state of the singlet (since this is very close to zero, it can still be obtained experimentally). We have $E_{T}=-2.2 \mathrm{MeV}$ (as before, since this is the experimental data) and $E_{S}=77 \mathrm{keV}$. Solving the eigenvalue problem for a square well, knowing the binding energy $E_{T}$ and setting $E_{S} \approx 0$, we obtain $V_{T}=-35 \mathrm{MeV}$ and $V_{S}=-25 \mathrm{MeV}(\mathrm{Notice}$ that of course $V_{T}$ is equal to the value we had previously set for the deuteron potential in order to find the correct binding energy of $2.2 \mathrm{MeV}$, we just -wrongly- neglected the spin earlier on). From these values by solving a system of two equations in two variables:
+$$
+\left\{\begin{array}{l}
+V_{0}+\frac{1}{4} V_{1}=V_{T} \\
+V_{0}-\frac{3}{4} V_{1}=V_{S}
+\end{array}\right.
+$$
+we obtain $V_{0}=-32.5 \mathrm{MeV} V_{1}=-10 \mathrm{MeV}$. Thus the spin-dependent part of the potential is weaker, but not negligible.
+\subsection{The Internucleon Potential Includes a Noncentral Term, Known as a Tensor Potential}
+Evidence for the tensor force comes primarily from the observed quadrupole moment of the ground state of the deuteron. An s-state $(\ell=0)$ wave function is spherically symmetric; the electric quadrupole moment vanishes. Wave functions with mixed $\ell$ states must result from noncentral potentials. For a single nucleon, the choice of a certain direction in space is obviously arbitrary; nucleons do not distinguish north from south or east from west. The only reference direction for a nucleon is its spin, and thus only terms of the form $s \cdot r$ or $s \times \boldsymbol{r}$, which relate $r$ to the direction of $s$, can contribute. To satisfy the requirements of parity invariance, there must be an even number of factors of $r$, and so for two nucleons the potential must depend on terms such as $\left(s_{1} \cdot \boldsymbol{r}\right)\left(s_{2} \cdot \boldsymbol{r}\right)$ or $\left(s_{1} \times \boldsymbol{r}\right) \cdot\left(s_{2} \times \boldsymbol{r}\right)$.
+Using vector identities we can show that the second form can be written in terms of the first and the additional term $s_{1} \cdot s_{2}$, which we already included in $V(r)$. Thus without loss of generality we can choose the tensor contribution to the internucleon potential to be of the form $V_{\mathrm{T}}(r) S_{12}$, where $V_{\mathrm{T}}(r)$ gives the force the proper radial dependence and magnitude, and
+$$S_{12}=3\left(s_{1} \cdot r\right)\left(s_{2} \cdot r\right) / r^{2}-s_{1} \cdot s_{2}$$
+which gives the force its proper tensor character and also averages to zero over all angles.
+\subsection{ The Nucleon - Nucleon Force Is Charge Symmetric}
+This means that the proton-proton interaction is identical to the neutron-neutron interaction, after we correct for the Coulomb force in the proton-proton system. Here "charge" refers to the character of the nucleon (proton or neutron) and not to electric charge. Evidence in support of this assertion comes from the equality of the pp and nn scattering lengths and effective ranges. Of course. the pp parameters must first be corrected for the Coulomb interaction. When this is done, the resulting singlet pp parameters are
+ \begin{align*}
+	&a=-17.1 \pm 0.2 \mathrm{fm} \\
+	&r_{0}=2.84 \pm 0.03 \mathrm{fm}
+\end{align*}
+These are in very good agreement with the measured nn parameters ( $a=-16.6$ $\pm 0.5 \mathrm{fm}, r_{0}=2.66 \pm 0.15 \mathrm{fm}$ ). which strongly supports the notion of charge symmetry.
+\subsection{The Nucleon - Nucleon Force Is Nearly Charge Independent}
+After correcting for the electromagnetic interaction, the forces between nucleons (pp, nn, or np) in the same state are almost the same.
+The force between a pair of protons, a pair of neutrons, and a pair of neutrons and protons are equal.
+$$
+F(n-n)=F(p-p)=F(n-p)
+$$
+The net force between pair of neutrons and a pair of neutron and proton is equal. This is slightly greater than the force between pair of protons because force between protons is reduced due to electrostatic repulsion
+Net force $F(n-n)=$ Net force $F(n-p)>$ Net force $F(p-p)$
