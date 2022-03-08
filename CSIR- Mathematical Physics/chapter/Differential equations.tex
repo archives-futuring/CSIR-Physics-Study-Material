@@ -20,7 +20,24 @@ partial differential equations (PDEs) in two or more variables. Simply we can sa
 There are mainly two types of differential equations,
 	\begin{itemize}
 	\item \textbf{Ordinary differential equations.}\par A differentnial equation involving derivatives with respect to a single variable is called an ordinary differential equation. 
+	\\\\
+	\textbf{General form:} $\frac{d y}{d x}=f(x, y)=-\frac{P(x, y)}{Q(x, y)}$
+	\begin{example}
+		\begin{align*}
+		F&=m\frac{d v}{dt}\\
+		\frac{dy}{dx}+x&= 1
+		\end{align*}
+	\end{example}
 	\item \textbf{Partial differential equations.}\par A differential equation involving partial derivatives with respect to more than one independent variable is called a partial differential equation.
+	\begin{example}
+		\begin{align*}
+		\intertext{\textbf{Poisson's equation:}}
+		\nabla^{2}\psi&= \frac{\rho}{\epsilon_{0}}\\
+		\left( \frac{\partial ^{2}}{\partial x^{2}}+\frac{\partial ^{2}}{\partial y^{2}}+\frac{\partial ^{2}}{\partial z^{2}}\right)\psi &= \frac{\rho}{\epsilon_{0}}\qquad (\text{In cartesian coordinate system.})
+		\intertext{\textbf{Schrodinger Equation:}}
+		\left(-\frac{h^{2}}{2 m} \nabla^{2}+V\right) \psi&=i \hbar \frac{\partial \psi}{\partial t}
+		\end{align*} 
+	\end{example}
 	\end{itemize}
 \section{Order and Degree of a differential equation}
 \textbf{Order:}\\The order of a differential equation is the highest differential in the equation.\\\\
@@ -28,7 +45,7 @@ There are mainly two types of differential equations,
 \begin{example}
 	\hspace{0.5cm}
 	\begin{itemize}
-		\item $\left(\frac{\partial^{2} y}{\partial x^{2}}\right)^{2}+\left(\frac{\partial y}{\partial x}\right)-\left(\frac{\partial^{3} y}{\partial x^{3}}\right)=x y$\hspace{0.5cm}Order=3 ,Degree=2
+		\item $\left(\frac{\partial^{2} y}{\partial x^{2}}\right)^{2}+\left(\frac{\partial y}{\partial x}\right)-\left(\frac{\partial^{3} y}{\partial x^{3}}\right)=x y$\hspace{0.5cm}Order=2 ,Degree=2
 		\item   $ L \frac{d^{2} q}{d t^{2}}+R \frac{d q}{d t}+\frac{q}{c}=E \sin \omega t$\hspace{1cm}Order=2 ,Degree=1
 		\item $\frac{dy}{dx}+xy=x^{3}y^{3}$ \hspace{2.7cm}Order=1 ,Degree=1
 		\item $\left(\frac{\mathrm{d}^{2} \mathrm{y}}{\mathrm{d} \mathrm{x}^{2}}\right)^{3}=\left[1+\left(\frac{\mathrm{dy}}{\mathrm{dx}}\right)^{4}\right]^{5}$
@@ -384,11 +401,11 @@ Where $C$ is a constant. For the given family of curves, we can draw the orthogo
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	Find the family of curves of the given trajectory,	$\frac{dy}{dx}=\frac{y}{x}$
+	Find the family of curves of the given trajectory,	$\frac{dy}{dx}=\frac{x}{y}$
 \end{exercise}
 \begin{answer}
 \begin{align*}
-\text{given},\frac{dy}{dx}&=\frac{y}{x}\\
+\text{given},\frac{dy}{dx}&=\frac{x}{y}\\
 \text{using variable seperable method, we get}\\
 \int xdx&=\int ydy\\
 \frac{x^{2}}{2}&=\frac{y^{2}}{2}+C\\
@@ -417,7 +434,7 @@ If the degree of the dependent variable and / or its derivatives are of greater 
 \end{example}
 \subsection{Homogeneous differential equation}
 A differential equation of the form
-$y^{\prime \prime}+P(x) y^{\prime}+Q(x) y=F(x)$, is said to be  non-homogeneous if $F(x)= 0$
+$y^{\prime \prime}+P(x) y^{\prime}+Q(x) y=F(x)$, is said to be  homogeneous if $F(x)= 0$
 \begin{example}
 	\hspace{0.5cm}
 	\begin{enumerate}

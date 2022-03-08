@@ -195,4 +195,125 @@ In case of holonomic constraints the first difficulty is solved by introduction 
 	\end{note}
 	eg: Object rolling on a rough surface without slipping.
 \end{itemize}
-
+\section{D'Alemnert's Principle and Lagrange's Equations}
+\textit{Virtual Displacement}:A change in the configuration of the system as the result of any arbitrary infinitesimal chabge of the coordinates $\delta \textbf{r}_i$ consistent with the forces and constraints imposed on the system at the given instant $t$.\\\\
+\textbf{Principle of Virtual Work}\\\\
+For a system in rquilibrium\\
+total fore on each particle $\textbf{F}_i=0$\\
+Then virtual work of $\textbf{F}_i$ in desplacement $\delta \textbf{F}_i$
+\begin{equation}
+\sum\limits_{i}\textbf{F}_i\cdot\delta \textbf{r}_i=0\label{EP-01}
+\end{equation}
+\begin{align*}
+\intertext{Let}
+\textbf{F}_i=\textbf{F}_i^{(a)}+\textbf{f}_i\hspace{3cm}\textbf{F}_i^{(a)}\rightarrow \text{applied force}\\
+\textbf{f}_i\rightarrow \text{force of constraint}\\
+\end{align*}
+$\therefore (\ref{EP-01}) $ \quad becomes \quad $\sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}+\sum_{i} \mathbf{f}_{i} \cdot \delta \mathbf{r}_{i}=0$ \\\\
+We now restrict ourselves to systems for which the net virtual work of constraints is zero.We therefore have as the condition for equilibrium of a system that the virtual work of the applied forces vanishes.
+\begin{equation}
+\sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}=0\label{EP-02}
+\end{equation}
+This is often called \textit{principle of virtual work}\\\\
+\textbf{D'Alemnert's Principle}\\
+Equation (\ref{EP-02})  only deals with statics. We want a condition involving general motion of the system\\
+The equation of motion 
+$$\textbf{F}_i=\dot{\textbf{P}_i}$$
+$$\implies \textbf{F}_i-\dot{\textbf{P}_i}=0$$
+\textit{The particle in the system will be in equilibrium under a force equal to actual force plus a "reversed effective force"} $-\dot{\textbf{P}_i}$\\
+$\therefore$ equation (\ref{EP-01}) becomes
+\begin{equation}
+\sum\limits_{i}(\textbf{F}_i-\dot{\textbf{P}_i})\cdot\delta \textbf{r}_i=0 \label{EP-05}
+\end{equation}
+resolving it
+$$\sum\limits_{i}(\textbf{F}_i^{(a)}-\dot{\textbf{P}_i})\cdot\delta \textbf{r}_i+\sum\limits_{i}\textbf{f}_i\cdot\delta \textbf{r}_i=0$$
+for systems for which virtual work of the forces of constraint vanishes
+\begin{equation}
+\sum\limits_{i}(\textbf{F}_i^{(a)}-\dot{\textbf{P}_i})\cdot\delta\label{EP-06} \textbf{r}_i=0
+\end{equation}
+Which is called \textit{D'Alembert's principle}\\\\
+\textbf{Generalized Force}\\
+The translation from $r_i$ to $q_j$ language starts from the transformation equations
+\begin{equation}
+\textbf{r}_i=\textbf{r}_i(q_1,q_2,...q_n,t)\label{EP-07}
+\end{equation}
+velocity $V_i$ in terms of $\dot{q}_k$
+\begin{equation}
+\mathbf{v}_{i} \equiv \frac{d \mathbf{r}_{i}}{d t}=\sum_{k} \frac{\partial \mathbf{r}_{i}}{\partial q_{k}} \dot{q}_{k}+\frac{\partial \mathbf{r}_{i}}{\partial t}\label{EP-08}
+\end{equation}
+similarly, the arbitrary virtual displacement $\delta r_i$ can be connected with the virtual displacement $\delta q_1$ by
+\begin{equation}
+\delta \mathbf{r}_{i}=\sum_{j} \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}
+\end{equation}
+In terms of generalized coordinates the virtual work of $\textbf{F}_i$ becomes
+\begin{equation}
+\sum_{i} \mathbf{F}_{i} \cdot \delta \mathbf{r}_{i}=\sum_{i, j} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}=\sum_{j} Q_{j} \delta q_{j}\label{EP-10}
+\end{equation}
+Where $Q_j$ are called the component of the \textit{generalized force} 
+\begin{equation}
+Q_{j}=\sum_{i} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\label{EP-11}
+\end{equation}
+\textit{Just as $q$'s need not have the diamensions of length, so the $Q$'s do not necessarily have the diamensions of force, but $Q_j\delta q_j$ must always have the diamensions of work.}
+\begin{note}
+	No variation of time, $\delta t$ is involved here since a virtual displacement by definition considers only displacements of the coordinates.
+\end{note}
+\textbf{D'Alembert's Principle in generalized Coordinates}
+\begin{align*}
+\sum\limits_{i}(r_i^{(a)}-\dot{P_1}_i)\cdot\delta r_i&=0\text{ \quad is the D'Alembert's Principle}\\
+\sum_{i} \dot{\mathbf{p}}_{i} \cdot \delta \mathbf{r}_{i}&=\sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \delta \mathbf{r}_{i}\\
+&=\sum_{i, j} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}
+\end{align*}
+Now consider the relation
+\begin{equation}
+\sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}=\sum_{i}\left[\frac{d}{d t}\left(m_{i} \dot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right)-m_{i} \dot{\mathbf{r}}_{i} \cdot \frac{d}{d t}\left(\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right)\right]\label{EP-12}
+\end{equation}
+interchanging differentiation with respect to $t$ and $q_j$
+\begin{align*}
+ \frac{d}{d t}\left(\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) &=\frac{\partial \dot{\mathbf{r}}_{i}}{\partial q_{j}}=\sum_{k} \frac{\partial^{2} \mathbf{r}_{i}}{\partial q_{j} \partial q_{k}} \dot{q}_{k}+\frac{\partial^{2} \mathbf{r}_{i}}{\partial q_{j} \partial t}, \\
+  &=\frac{\partial \mathbf{v}_{i}}{\partial q_{j}}
+ \end{align*}
+  we have from equation (\ref{EP-08})
+\begin{equation}
+\frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}=\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\label{EP-13}
+\end{equation}
+substitution of these in equation (\ref{EP-12})
+\begin{align*}
+&\sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}=\sum_{i}\left[\frac{d}{d t}\left(m_{i} \mathbf{v}_{i} \cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}\right)-m_{i} \mathbf{v}_{i} \cdot \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}\right]
+\intertext{second term on the LHS of equation (\ref{EP-06}) can be explanded into}
+&\sum_{j}\left\{\frac{d}{d t}\left[\frac{\partial}{\partial \dot{q} j}\left(\sum_{i} \frac{1}{2} m_{i} v_{i}^{2}\right)\right]-\frac{\partial}{\partial q_{j}}\left(\sum_{i} \frac{1}{2} m_{i} v_{i}^{2}\right)-Q_{j}\right\} \delta q_{j}\\
+&\sum_{i} \frac{1}{2} m_{i} v_{i}^{2}=T\quad \text{ie. system kinetic energy}
+\end{align*}
+$\therefore$ D'Alembert's principle becomes
+\begin{equation}
+\sum_{j}\left\{\left[\frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial T}{\partial q_{j}}\right]-Q_{j}\right\} \delta q_{j}=0\label{EP-14}
+\end{equation}\\\\
+\textbf{Lagrange's Equation}\\
+Any virtual displacement $\delta q_j$ is independent of $\delta q_k.$\\
+$\therefore$ only way to hold equation \ref{EP-14} is for the individual coeffitients to vanish.
+\begin{equation}
+\frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial T}{\partial q_{j}}=Q_{j}\label{EP-15}
+\end{equation}
+There are $n$ such equations in all, When forces are derivable from scalar potential $V$
+$$\mathbf{F}_{i}=-\nabla_{i} V$$
+Then the generalized forces can be written as
+$$Q_{j}=\sum_{i} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}=-\sum_{i} \nabla_{i} V \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}$$
+Which is partial derivative of $-V(r_1,r_2...r_3,t)$ with respect to $q_j$
+\begin{equation}
+Q_{j}=-\frac{\partial V}{\partial q_{j}} .\label{EP-16}
+\end{equation}
+$\therefore$ equation \ref{EP-15} can be rewritten as
+\begin{equation}
+\frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial (T-V)}{\partial q_{j}}=0
+\end{equation}
+Potential $V$ does not depend on the generalized velocities \\
+$\therefore$ we can write 
+$$\frac{d}{d t}\left( \frac{\partial (T-V)}{\partial \dot{q}_{j}} \right)  -\frac{\partial (T-V)}{\partial q_{j}}=0$$
+defining the Lagrangian $L$,as $L=T-V$\\
+$\therefore$ equation \ref{EP-15} becomes
+$$\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}_{j}}\right)-\frac{\partial L}{\partial q_{j}}=0$$
+expression refered to as \textit{"Lagrange's equations"}
+\begin{note}
+	If $L(q,\dot{q},t)$ is an approximate Lagrangian and $F(q,t)$ is any differentiable function of the generalized coordinates and time, then
+	$$L^{\prime}(q, \dot{q}, t)=L(q, \dot{q}, t)+\frac{d F}{d t}$$
+\end{note}
+is a Lagrangian also resulting in the same equation of motion.

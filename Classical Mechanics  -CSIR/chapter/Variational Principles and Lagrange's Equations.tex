@@ -70,7 +70,7 @@ Where $\left( \frac{\partial y}{\partial \alpha}\right) $ is a function of $x$ t
 	$$\left(\frac{\partial y}{\partial\alpha} \right)_0 =\eta(x)\text{the arbitrary function}$$
 	$\therefore$ from \ref{VP-eq09} using fundamental lemma, we get 
 	\begin{equation}
-	\frac{\partial f}{dy}-\frac{d}{dx}\left( \frac{\partial f}{\partial\dot{y}}\right) =0
+	\frac{\partial f}{dy}-\frac{d}{dx}\left( \frac{\partial f}{\partial\dot{y}}\right) =0\label{VP-11}
 	\end{equation}
 	\begin{itemize}
 		\item The infinitesimal departure of the varied path from the correct path $y(x)$ at the point $x$ and thus corresponds to virtual displacement $\delta y$ is
@@ -79,3 +79,43 @@ Where $\left( \frac{\partial y}{\partial \alpha}\right) $ is a function of $x$ t
 		$$\left( \frac{\partial y}{\partial\alpha}\right)_0 d\alpha=\delta J$$
 		$$\delta J=\int_{x_{1}}^{12}\left(\frac{\partial f}{\partial y}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}}\right)\delta y\ dx=0$$
 	\end{itemize}
+\textbf{Euler-Lagrange Differential Equation}\\
+Let $f$ is a function of many independent variables $y_i$, and their relatives $\dot{y}_i$. Where $y_i$ and $\dot{y}_i$ are functions of parametric variable $x$.
+\begin{equation}
+\delta J=\delta \int_{1}^{2} f\left(y_{1}(x) ; y_{2}(x), \ldots, \dot{y}_{1}(x) ; \dot{y}_{2}(x), \cdots, x\right)_{d_{x}}\label{VP-12}
+\end{equation}
+\begin{align*}
+y_{1}(x, \alpha)&=y_{1}(x, 0)+\alpha \eta_{1}(x),\\
+y_{2}(x, \alpha)&=y_{2}(x, 0)+\alpha \eta_{2}(x)\\
+\vdots\quad&\hspace{1cm}\vdots\hspace{1.2cm}\vdots
+\end{align*}
+By using fundamental lemma, the condition that $\delta J$ is zero requires coeffitient of $\delta y_i$ seperately vanish
+\begin{equation}
+\frac{\partial f}{\partial y_{i}}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}_{i}}=0\label{VP-13}
+\end{equation}
+This is the appropriate generalization of equation \ref{VP-11} to several variables and known as the Euler-Lagrange differential equation.\\
+\textbf{Langrange's Equation}\\
+For the integral in Hamilton principle
+$$I=\int_{1}^{2} L\left(q_{i}, \dot{q}_{i}, t\right) d t$$
+have same form as equation \ref{VP-12}, with transformation 
+$$x\rightarrow t$$
+$$y_i\rightarrow q_i$$
+$$f(y_i,\dot{y}_i,x)\rightarrow L(q_i,\dot{q}_i,t)$$
+as we assumed $y_i$ variables are independent the corresponding $q_i$ generalized coordinates are independent which requires that the constraints be holonomic.\\
+The Euler-Lagrange equation corresponding to the integral $I$ then become the Lagrange equations of motion 
+$$\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{\partial q_{i}}=0$$
+Lagrange's equations follow Hamilton's principle for monogenic systems with holonomic constraints \\
+\textbf{Lagrange Undetermined Multipliers}\\
+used to solve systems with holonomic constraints as well as certain types of non-holonomic systems. \\
+If there are $n$ variables and $m$ constraint equations $f\alpha$ of the form
+$$f(r_1,r_2,r_3....t)=0$$
+the extra virtual displacements are eliminated by the method of Lagrange undetermined multipliers.
+$$I=\int_{1}^{2}\left(L+\sum_{\alpha=1}^{m} \lambda_{\alpha} f_{a}\right) d t$$
+allow the $q_2$ and the $\lambda_\alpha$ to be vary independently to obtain $n+m$ equations.\\
+variations of $\lambda_\alpha$ gives the $m$ constraint equations the variations of the $q-i$'s give
+$$\delta I=\int_{1}^{2} d t\left(\sum_{i=1}^{n}\left(\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{\partial q_{i}}+\sum_{\alpha=1}^{m} \lambda_{a} \frac{\partial f_{a}}{\partial q_{i}}\right) \delta q_{i}\right)=0$$
+The $\delta q_i$'s are not independent we choose the $\lambda_{\alpha}$'s so that $m$ of the $n$ equations are satisfied for arbitrary $\delta q_i$, and then choose variations of the $\delta q_i$ in the remaining $n-m$ equations independently.\\
+Thus we obtain $m$ equations of the form
+$$\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{k}}-\frac{\partial L}{\partial q_{k}}+\sum_{\alpha=1}^{m} \lambda_{a} \frac{\partial f_{a}}{\partial q_{k}}=0$$
+$Q_k$ are generalized forces\\
+$Q_k$ have the magnitute of the forces needed to produce the individual constraints.
