@@ -121,6 +121,47 @@ Thus we obtain $m$ equations of the form
 $$\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{k}}-\frac{\partial L}{\partial q_{k}}+\sum_{\alpha=1}^{m} \lambda_{a} \frac{\partial f_{a}}{\partial q_{k}}=0$$
 $Q_k$ are generalized forces\\
 $Q_k$ have the magnitute of the forces needed to produce the individual constraints.\\\\
+\section{Generalized Momentum}
+If $L$ is the Lagrangian of a system then the generalized momentum associated with the coordinate $q_j$ shall be defined as
+$$P_j=\frac{\partial L}{\partial \dot{q}_j}$$
+The terms canonical momentum and conjugate momentum are often also used for $P_j$\\
+If $q_j$ is not cartisian coordinate $P_j$ does not necessarilu have the diamensios of a linear momentum. If there is a velocity dependent potential then even with a cartesian coordinate $q_j$ the associated generalized momentum will not be indentical with mechanical momentum.
+\section{Cyclic coordinate and Generalized Momentum Conjugate }
+If the Lagrangian of a system does not contain a given generalized coordinate $q_j$ explicitly (although it may contain the corresponding velocity $\dot{q}_j$ ) then the coordinate is said to be cyclic or ignorable.
+\begin{align*}
+\intertext{The Lagrange equation of motion}
+\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_j}\right)-\frac{\partial L}{\partial q_j} &=0
+\intertext{reduces for cyclic coordinate, to}
+\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j} \right) &=0
+\intertext{or}
+\frac{dP_j}{dt}&=0
+\intertext{Which means}
+P_j&=\text{constant}
+\therefore& \text{The generalized momentum conjugate to a cyclic coordinate is conserved}
+\end{align*}
+\begin{itemize}
+	\item This general rule for cyclic coordinates contain all the conservation theorems discussed before 
+	\item With proper restriction it should reduces to the conservation theorems. 
+	\item The consevation theorems ate closely related to the symmetry properties of the system.
+\end{itemize}
+\begin{note}
+	If any system or any function representing a property of the system does not change under some operation carried on the system, the system is said to possess symmetry with respect to that operation 
+\end{note}
+\section{Conservation of Linear Momentum}
+Consider a generalized coordinate $q_j$ for which $dq_j$ represents a translation of the system as a swhole in some given direction.
+\begin{align*}
+\intertext{Then $q_j$ cannot appear in $T$ for velocities are not affected by a shift in the origin}
+\therefore \frac{\partial T}{\partial q_j}=0
+\intertext{assume a consevative system for which $V$ is not function of the velocities}
+\therefore \text{Lagrange's equation of motion}\\
+\frac{d}{dt}\left(\frac{\partial  T}{\partial \dot{q}_j} \right) \equiv\dot{P}_j=\frac{-\partial V}{\partial q_j}=Q_j
+\intertext{Where $Q_j$ is the component of the total force along the direction of translation of $q_j$ and $P_j$ is the component of total linear momentum.}
+\text{if}q_j\text{ is cyclic, then}\\
+\frac{-\partial V}{\partial q_j}\equiv Q_j=0
+\end{align*}
+ie. conservation theorem if a geven component of the total applied force vanishes, the corresponding component of the linear momentum is conserved\\
+\textit{If the system is invarient under translation along a given direction (homogeneily of space) the corresponding linear momentum is conserved}\\
+Then the physical properties of a closed system are not affected by an arbitrary displacement\\\\
 \begin{exercise}
 	 A particle of mass $m$ moves inside a bowl under gravity. If the surface of the bowl is given by the equation $z=\frac{1}{2} a\left(x^{2}+y^{2}\right)$, where $a$ is a constant.\\
 	(a) Write down Lagrangian of the system in cylindrical coordinate.\\
