@@ -60,12 +60,14 @@ Therefore, the condition for stationary value
 \begin{equation}
 \left(\frac{dJ}{d\alpha} \right)_{\alpha=0} =\int_{x_{1}}^{x_{2}}\left(\frac{\partial f}{\partial y}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}}\right) \frac{\partial y}{\partial \alpha} d x=0\label{VP-eq09}
 \end{equation}
-Where $\left( \frac{\partial y}{\partial \alpha}\right) $ is a function of $x$ that is arbitrary except for continuity and end point conditions.\\\\
-\textbf{Fundemental lemma} of calculus of variation
+Where $\left( \frac{\partial y}{\partial \alpha}\right) $ is a function of $x$ that is arbitrary except for continuity and end point conditions.
+\begin{itemize}
+	\item \textit{Fundemental lemma} of calculus of variation
 	\begin{equation}
 	\text{if} \int\limits_{x_1}^{x_2}M(x)\eta(x)dx=0
 	\end{equation}
-	\textit{For all arbitrary functions $\eta (x)$ continuous through the second derivative, then $M(x)$ must identically vanish in the interval $(x_1,x_2)$}\\\\
+	\textit{For all arbitrary functions $\eta (x)$ continuous through the second derivative, then $M(x)$ must identically vanish in the interval $(x_1,x_2)$}
+\end{itemize}
 	For a particular parametric family of varied paths given by \ref{VP-eq04}
 	$$\left(\frac{\partial y}{\partial\alpha} \right)_0 =\eta(x)\text{the arbitrary function}$$
 	$\therefore$ from \ref{VP-eq09} using fundamental lemma, we get 
@@ -93,7 +95,7 @@ By using fundamental lemma, the condition that $\delta J$ is zero requires coeff
 \begin{equation}
 \frac{\partial f}{\partial y_{i}}-\frac{d}{d x} \frac{\partial f}{\partial \dot{y}_{i}}=0\label{VP-13}
 \end{equation}
-This is the appropriate generalization of equation \ref{VP-11} to several variables and known as the Euler-Lagrange differential equation.\\
+This is the appropriate generalization of equation \ref{VP-11} to several variables and known as the Euler-Lagrange differential equation.\\\\
 \textbf{Langrange's Equation}\\
 For the integral in Hamilton principle
 $$I=\int_{1}^{2} L\left(q_{i}, \dot{q}_{i}, t\right) d t$$
@@ -104,7 +106,7 @@ $$f(y_i,\dot{y}_i,x)\rightarrow L(q_i,\dot{q}_i,t)$$
 as we assumed $y_i$ variables are independent the corresponding $q_i$ generalized coordinates are independent which requires that the constraints be holonomic.\\
 The Euler-Lagrange equation corresponding to the integral $I$ then become the Lagrange equations of motion 
 $$\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{\partial q_{i}}=0$$
-Lagrange's equations follow Hamilton's principle for monogenic systems with holonomic constraints \\
+Lagrange's equations follow Hamilton's principle for monogenic systems with holonomic constraints \\\\
 \textbf{Lagrange Undetermined Multipliers}\\
 used to solve systems with holonomic constraints as well as certain types of non-holonomic systems. \\
 If there are $n$ variables and $m$ constraint equations $f\alpha$ of the form
@@ -119,71 +121,232 @@ Thus we obtain $m$ equations of the form
 $$\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_{k}}-\frac{\partial L}{\partial q_{k}}+\sum_{\alpha=1}^{m} \lambda_{a} \frac{\partial f_{a}}{\partial q_{k}}=0$$
 $Q_k$ are generalized forces\\
 $Q_k$ have the magnitute of the forces needed to produce the individual constraints.\\\\
+\section{Generalized Momentum}
+If $L$ is the Lagrangian of a system then the generalized momentum associated with the coordinate $q_j$ shall be defined as
+$$P_j=\frac{\partial L}{\partial \dot{q}_j}$$
+The terms canonical momentum and conjugate momentum are often also used for $P_j$\\
+If $q_j$ is not cartisian coordinate $P_j$ does not necessarilu have the diamensios of a linear momentum. If there is a velocity dependent potential then even with a cartesian coordinate $q_j$ the associated generalized momentum will not be indentical with mechanical momentum.
+\section{Cyclic coordinate and Generalized Momentum Conjugate }
+If the Lagrangian of a system does not contain a given generalized coordinate $q_j$ explicitly (although it may contain the corresponding velocity $\dot{q}_j$ ) then the coordinate is said to be cyclic or ignorable.
+\begin{align*}
+\intertext{The Lagrange equation of motion}
+\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_j}\right)-\frac{\partial L}{\partial q_j} &=0
+\intertext{reduces for cyclic coordinate, to}
+\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j} \right) &=0
+\intertext{or}
+\frac{dP_j}{dt}&=0
+\intertext{Which means}
+P_j&=\text{constant}
+\therefore& \text{The generalized momentum conjugate to a cyclic coordinate is conserved}
+\end{align*}
+\begin{itemize}
+	\item This general rule for cyclic coordinates contain all the conservation theorems discussed before 
+	\item With proper restriction it should reduces to the conservation theorems. 
+	\item The consevation theorems ate closely related to the symmetry properties of the system.
+\end{itemize}
+\begin{note}
+	If any system or any function representing a property of the system does not change under some operation carried on the system, the system is said to possess symmetry with respect to that operation 
+\end{note}
+\section{Conservation of Linear Momentum}
+Consider a generalized coordinate $q_j$ for which $dq_j$ represents a translation of the system as a swhole in some given direction.
+\begin{align*}
+\intertext{Then $q_j$ cannot appear in $T$ for velocities are not affected by a shift in the origin}
+\therefore \frac{\partial T}{\partial q_j}=0
+\intertext{assume a consevative system for which $V$ is not function of the velocities}
+\therefore \text{Lagrange's equation of motion}\\
+\frac{d}{dt}\left(\frac{\partial  T}{\partial \dot{q}_j} \right) \equiv\dot{P}_j=\frac{-\partial V}{\partial q_j}=Q_j
+\intertext{Where $Q_j$ is the component of the total force along the direction of translation of $q_j$ and $P_j$ is the component of total linear momentum.}
+\text{if}q_j\text{ is cyclic, then}\\
+\frac{-\partial V}{\partial q_j}\equiv Q_j=0
+\end{align*}
+ie. conservation theorem if a geven component of the total applied force vanishes, the corresponding component of the linear momentum is conserved\\
+\textit{If the system is invarient under translation along a given direction (homogeneily of space) the corresponding linear momentum is conserved}\\
+Then the physical properties of a closed system are not affected by an arbitrary displacement\\\\
 \begin{exercise}
-1. Apply Lagrange's equation to find the equation of motion of a particle in space using \\
-(a). Cartesian coordinates. \\
-(b). plane polar coordinates.
-\end{exercise}
+	 A particle of mass $m$ moves inside a bowl under gravity. If the surface of the bowl is given by the equation $z=\frac{1}{2} a\left(x^{2}+y^{2}\right)$, where $a$ is a constant.\\
+	(a) Write down Lagrangian of the system in cylindrical coordinate.\\
+	(b) Identify the cyclic coordinate and law of conservation of momentum.\\
+	(c) Write down the equation of motion
+\end{exercise}	
 \begin{answer}
 	\begin{align*}
-	\intertext{ (a).\quad The generalized forces needed are $F_{x}, F_{y}$, and $F_{z}$. Then}
-	 T &=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right), \\ \frac{\partial T}{\partial x} &=\frac{\partial T}{\partial y}=\frac{\partial T}{\partial z}=0, \\ \frac{\partial T}{\partial \dot{x}}=m \dot{x}, & \frac{\partial T}{\partial \dot{y}}=m \dot{y}, \quad \frac{\partial T}{\partial \dot{z}}=m \dot{z}, 
-	 \intertext{ \quad and the equations of motion are}
-	 \frac{d}{d t}(m \dot{x})&=F_{x}, \quad \frac{d}{d t}(m \dot{y})=F_{y}, \quad \frac{d}{d t}(m \dot{z})=F_{z}
-	\end{align*}
-	\begin{align*}
-\intertext{(b).\quad Here we must express $T$ in terms of $\dot{r}$ and $\dot{\theta}$. The transformation equations are}
-x&=r \cos \theta\\
-y&=r \sin \theta
-\intertext{the velocities are given by}
-\dot{x}&=\dot{r} \cos \theta-r \dot{\theta} \sin \theta,\\
-\dot{y}&=\dot{r} \sin \theta+r \dot{\theta} \cos \theta\\
-\text{The kinetic energy }T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)\text{ then reduces formally to}\\
-T&=\frac{1}{2} m\left[\dot{r}^{2}+(r \dot{\theta})^{2}\right]
-\intertext{ the plane polar components of the velocity are $\dot{r}$ along $\mathbf{r}$, and $r \dot{\theta}$ along the direction perpendicular to $r$, denoted by the unit vector $\hat{\theta}$. Hence, the square of the velocity expressed in polar coordinates is simply $\dot{r}^{2}+(r \dot{\theta})^{2}$.}
-\intertext{the components of the gencralized force are}
-Q_{r}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial r}=\mathbf{F} \cdot \hat{\mathbf{r}}=F_{r}\\
-Q_{\theta}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial \theta}=\mathbf{F} \cdot r \hat{\mathbf{\theta}}=r {F}_{\theta} .
-\intertext{ There are two generalized coordinates, and therefore two Lagrange equations. The derivatives occurring in the $r$ equation are}
-\frac{\partial T}{\partial r}&=m r \dot{\theta}^{2}, \quad \frac{\partial T}{\partial \dot{r}}=m \dot{r}, \quad \frac{d}{d t}\left(\frac{\partial T}{\partial \dot{r}}\right)=m \ddot{r},\\
-m \ddot{r}-m r \dot{\theta}^{2}&=F_{r},\\
-\frac{\partial T}{\partial \theta}=0, \quad \frac{\partial T}{\partial \dot{\theta}}=m r^{2} \dot{\theta},& \quad \frac{d}{d t}\left(m r^{2} \dot{\theta}\right)=m r^{2} \ddot{\theta}+2 m r \dot{r} \dot{\theta}.\\
-\frac{d}{d t}\left(m r^{2} \dot{\theta}\right)&=m r^{2} \ddot{\theta}+2 m r \dot{\theta} \dot{\theta}=r F_{\theta} .\\
-\text{where angular momentum }L&=m r^{2} \theta\text{ and torque }N^{(e)}=r F_{\theta}.
+	\text{There is only one particle, so }N&=1\\
+	\text{Cartesian coordinate kinetic energy is }T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)\text{ and potential energy is} V=m g z
+	\intertext{Equation of Constraint is -}
+	\intertext{1. Particle is constrained to move on surface of a bowl, so the equation of constraint is}
+	z&=\frac{1}{2} a\left(x^{2}+y^{2}\right) \text {, so } k=1\\
+	\text{Degree of freedom }( DOF) &=3 N-k=3 \times 1-1=2
+	\intertext{Hence, there are two degree of freedom, so we need two generalized coordinates.}
+	\intertext{Now transforming the Cartesian coordinate to cylindrical coordinate, $x=r \cos \theta, y=r \sin \theta$, z=z}
+	\intertext{So, the kinetic energy is $T=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)$. And the equation of constraint in cylindrical coordinate $\left(z=\frac{1}{2} a r^{2}\right)$ is written as $\dot{z}=a r \dot{r}$}
+	\intertext{So, kinetic energy for two degree of freedom with suitable coordinate is given by, $T=\frac{m}{2}\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+a^{2} r^{2} \dot{r}^{2}\right)$ and potential energy $V=\frac{m g a r^{2}}{2}$}
+	T=\frac{m}{2}\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+a^{2} r^{2} \dot{r}^{2}\right)&\text{ and potential energy }V=\frac{m g a r^{2}}{2}\\
+	\text{So, Lagrangian is }L&=\frac{m}{2}\left[\dot{r}^{2}\left(1+a^{2} r^{2}\right)+r^{2} \dot{\theta}^{2}-a g r^{2}\right]
+	\intertext{(b) Hence, $\frac{\partial L}{\partial \theta}=0$ so, $\theta$ is cyclic coordinate hence $p_{\theta}=\frac{\partial L}{\partial \dot{\theta}}=m r^{2} \dot{\theta}$ is a constant of motion, which is identified as angular momentum of the system. So angular momentum of the system is conserved.}
+\text{	(c) If Lagrangian of the system is } L&=\frac{m}{2}\left[\dot{r}^{2}\left(1+a^{2} r^{2}\right)+r^{2} \dot{\theta}^{2}-a g r^{2}\right]\text{ then}\\
+\text{Equation of Motion is }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}=0\\
+\left(\frac{\partial L}{\partial r}\right)&=m \dot{r}^{2} a^{2} r+m r \dot{\theta}^{2}-m a g r\text{ and }\left(\frac{\partial L}{\partial \dot{r}}\right)=m \dot{r}\left(1+a^{2} r^{2}\right)\\
+\Rightarrow \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)&=m \ddot{r}\left(1+a^{2} r^{2}\right)+m \dot{r} a^{2} 2 r \dot{r}=m \ddot{r}\left(1+a^{2} r^{2}\right)+2 m a^{2} r \dot{r}^{2}\\
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}&=0 \Rightarrow m \ddot{r}\left(1+a^{2} r^{2}\right)+2 m a^{2} r \dot{r}^{2}-m a^{2} r \dot{r}^{2}-m r \dot{\theta}^{2}+m a g r=0\\
+\Rightarrow m \ddot{r}\left(1+a^{2} r^{2}\right)&+m a^{2} r^{2}-m r \dot{\theta}^{2}+m a g r=0
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	Atwood's machine 
+ A mass $m$ is attached to one end of spring with spring constant $k$ and natural length $l$. The other end is pivoted at point $O$ as shown in figure. If the particle is constrained to move in $x-y$ plane under gravity (in $y$ direction)\\
+ (a) Write down the expression for kinetic energy and potential energy.\\
+ (b) Write down Lagarngian in Cartesian coordinate system.\\
+ (c) Transform the Lagrangian in suitable coordinate system.\\
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=3.8cm,width=5.5cm]{VP-01}
+ \end{figure}
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\intertext{A conservative system with holonomic, scleronomous constraint  (the pulley is assumed frictionless and massless). There is only one independent coordinate $x$, the position of the other weight being determined by the constraint that the length of the rope between them is $l$. The potential energy is}
-	V&=-M_{1} g x-M_{2} g(l-x)
-	\intertext{while the kinetic energy is}
- T&=\frac{1}{2}\left(M_{1}+M_{2}\right) \dot{x}^{2}
- \intertext{Lagrangian has the form}
- L&=T-V=\frac{1}{2}\left(M_{1}+M_{2}\right) \dot{x}^{2}+M_{1} g x+M_{2} g(l-x)
-\intertext{equation of motion}
-\frac{\partial L}{\partial  x}&=\left(M_{1}-M_{2}\right) g\\
-\frac{\partial  L}{\partial  x}&=\left(M_{1}+M_{2}\right) \dot{x}
-\intertext{$\mathrm{so}$}
-\left(M_{1}+M_{2}\right) \ddot{x}&=\left(M_{1}-M_{2}\right) g,\\
-\ddot{x}&=\frac{M_{1}-M_{2}}{M_{1}+M_{2}} g,\\
+	\intertext{ (a) Number of particle $N=1$, kinetic energy is given by $T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)$, potential energy is given by $V=-m g y .$}
+	\intertext{Equation of Constraint is -}
+	\text{The particle is constrained to move in }&x-y\text{ plane so equation of constraint }z=0 \Rightarrow k=1\\
+	\text{So, degree of freedom }( \text{ DOF } )&=3 N-K=3 \times 1-1=2
+	\intertext{If degree of freedom is two then there must be two independent motion.}
+	z&=0 \Rightarrow \dot{z}=0
+	\intertext{So, $T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)$ and $V=-m g y+\frac{1}{2} k\left[\sqrt{\left(x^{2}+y^{2}\right)}-l\right]^{2}$ (potential energy due to gravity and stored energy due to spring).}
+	\intertext{Lagrangian in the Cartesian coordinate is $L=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)-\left(-m g y+\frac{1}{2} k\left[\sqrt{\left(x^{2}+y^{2}\right)}-l\right]^{2}\right)$,
+		$$
+		L=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)+m g y-\frac{1}{2} k\left[\sqrt{\left(x^{2}+y^{2}\right)}-l\right]^{2}
+		$$}
+	\end{align*}
+	(b) These two independent motions are in (i) radial direction and (ii) angular direction in plane so best coordinate system to define the system is circular polar coordinate.\\
+	But one should express the Lagrangian into suitable coordinate which must be independent of radial and angular variable.
+	\begin{align*}
+	\text{Put }x&=r \sin \theta, y=r \cos \theta,\text{ so, Lagrangian is given by -}\\
+	L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}\right)+m g r \cos \theta-\frac{1}{2} k(r-l)^{2}\\
+	\text{The equation of }&\text{motion in terms of variable $r$ is }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}=0\\
+	&\left(\frac{\partial L}{\partial \dot{r}}\right)=m \dot{r} \Rightarrow \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)=m \ddot{r} \text { and }\left(\frac{\partial L}{\partial r}\right)=m r \dot{\theta}^{2}+m g \cos \theta-k(r-l) \\
+	&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}=0 \Rightarrow m \ddot{r}-m r \dot{\theta}^{2}-m g \cos \theta+k(r-l)=0
+	\intertext{The equation of motion in terms of variable $\theta$}
+	\left(\frac{\partial L}{\partial \dot{\theta}}\right)&=m r^{2} \dot{\theta}\left(\frac{\partial L}{\partial \theta}\right)=-m g r \sin \theta\\
+	\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)&=m r^{2} \ddot{\theta}+2 m r \dot{r} \dot{\theta}\\
+	\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\frac{\partial L}{\partial \theta}&=0 \Rightarrow m r^{2} \ddot{\theta}+2 m r \dot{r} \dot{\theta}+m g r \sin \theta=0
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	A bead (or ring ) sliding on a uniformly rotating wire in a force-free space. The wire is straight, and is rotated uniformly about some fixed axis perpendicular to the wire.
+	 A spherical pendulum of length $a$ moves in a space about fixed point $O$.\\
+	(a) Write down Lagrangian of the system.\\
+	(b) Identify cyclic Coordinate\\
+	(c) Solve Lagrangian equation of motion.\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=5cm,width=6cm]{VP-02}
+	\end{figure}
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\intertext{This is an example of constraint being time dependent, with the rotationaxis along $z$ and the wire in the $xy$ plane.} 
-	x&=r \cos \omega t \hspace{3cm}(\omega=\text { angular velocity of rotation }) \\
-	y&=r \sin \omega t \hspace{3cm}(r=\text{distance along wire from rotation axis} )
-	\intertext{constraint can be expressed as $\dot{\theta}=\omega$, so}
-	T&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \omega^{2}\right)
-	\intertext{The equation of motion is then}
-	m \ddot{r}&-m r^{2}=0\\
-	\ddot{r}&=r \omega^{2}  
-	\intertext{which is the familiar simple harmonic oscillator equation with a change of sign. The solution $r=e^{\omega t}$ for a bead initially at rest on the wire shows that the bead moves exponentially outwards.The angular momentum, $L=m r^{2} \omega=m \omega r_{0}^{2} e^{2 \omega t}$, provides the force $F=N / r$, which produces the constraint force, $F=2 m r_{0} \omega^{2} e^{\omega t}$, acting perpendicular to the wire and the axis of rotation.}
+	\text{Number of particle }N&=1\text{ so }T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)\text{ and potential}\\
+	\text{energy of system is }V&=-m g z
+	\intertext{Equation of Constraint is -}
+	\text{(1) The length of pendulum is fixed }&\sqrt{x^{2}+y^{2}+z^{2}}=a\text{ so }K=1\\
+	\text{So, degree of freedom }&(\mathrm{DOF})=3 . N-K=3.1-1=2
+	\intertext{So there is a need of two generalized coordinates to solve the equation of motion. There are two independent motion (i) angular motion of particle from $z$-axis (ii) angular motion in $x-y$ plane about $z$ axis.}
+	\intertext{So, suitable coordinate is spherical coordinate.}
+	x&=r \sin \theta \cos \phi, y=r \sin \theta \sin \phi, z=r \cos \theta\\
+\text{	From equation }&\text{of constraint, }r=a \Rightarrow \dot{r}=0\\
+\text{Kinetic energy }T&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right), \text{potential energy }V=-m g a \cos \theta\\
+L=T-V&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)+m g a \cos \theta\\
+\text{(b) }\frac{\partial L}{\partial \phi}=0\text{ so }\phi\text{ is cyclic coordinate }\frac{\partial L}{\partial \dot{\phi}}&=p_{\phi}=m a^{2} \sin ^{2} \theta \dot{\phi}\text{ is constant of motion.}\\
+\text{(c) }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\left(\frac{\partial L}{\partial \theta}\right)&=0\\
+\left(\frac{\partial L}{\partial \dot{\theta}}\right)=m a^{2} \dot{\theta} \Rightarrow \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)&=m a^{2} \ddot{\theta} \Rightarrow\left(\frac{\partial L}{\partial \theta}\right)=m a^{2} \sin \theta \cos \theta \dot{\phi}^{2}-m g a \sin \theta\\
+\text{So, }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\left(\frac{\partial L}{\partial \theta}\right)&=0 \Rightarrow m a^{2} \ddot{\theta}-m a^{2} \sin \theta \cos \theta \dot{\phi}^{2}+m g a \sin \theta=0
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	 A particle of mass $m$ is constrained to move under gravity in inner surface of cone of half angle $\alpha$ as shown in figure.\\
+	(a) Write down Lagrangian in suitable coordinate system\\
+	(b) Identify cyclic coordinate and discuss conservation of momentum\\
+	(c) Write down Lagrange's equation of motion\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3.5cm,width=5cm]{VP-03}
+	\end{figure}
+\end{exercise}
+\begin{answer}$\left. \right. $\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5cm]{VP-04}
+	\end{figure}
+	\begin{align*}
+	\intertext{ A particle of mass $m$ is constrained to move in inner surface of cone of half angle $\alpha$ and $x, y, z$ are the coordinates of particle at any time $t$.}
+	\text{(a) Number of particle $N=1$ so kinetic energy of the system is } T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)
+\intertext{	Assuming that the origin is at the vertex of the cone, the potential energy is given by $V=m g z$}
+	\intertext{ Equation of Constraint is -}
+\text{	Particle is constraint to move on surface of cone where }&\tan \alpha=\frac{\sqrt{x^{2}+y^{2}}}{z},\text{ so }K=1.\\
+\text{So, degree of freedom (DOF) }&=3 N-K=3 \times 1-1=2
+\intertext{So, there is a need of two generalized Coordinates to write the Lagrangian.}
+\intertext{The two independent motion is (i) Linear motion along the slope and (ii) angular motion about $z$ axis. So, spherical symmetry is suitable coordinate.}
+\text{Put the value of }x=r \sin \theta \cos \phi, y&=r \sin \theta \sin \phi, z=r \cos \theta\\
+\text{Which gives }T=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+r^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)\text{ and }V&=m g r \cos \theta\\
+\text{As }\tan \alpha=\frac{\sqrt{x^{2}+y^{2}}}{z} \Rightarrow \tan \alpha=\tan \theta \Rightarrow \theta&=\alpha \Rightarrow \dot{\theta}=0
+\intertext{If Lagrangian of the system is given by $L=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \sin ^{2} \alpha \dot{\phi}^{2}\right)-m g r \cos \alpha$ there is two generalized coordinates i.e., $r, \phi$}
+\text{(b) }L=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \sin ^{2} \alpha \dot{\phi}^{2}\right)-m g r \cos \alpha&
+\intertext{One can see Lagrangian is not explicitly dependent on $\phi$, which gives $\frac{\partial L}{\partial \phi}=0$. So, $\phi$ is cyclic coordinate.}
+\intertext{$\left(\frac{\partial L}{\partial \dot{\phi}}\right)=p_{\phi} \Rightarrow m r^{2} \sin ^{2} \alpha \dot{\phi}=c$ and $p_{\phi}=c$ so angular momentum of the system is constant during the motion.}
+\intertext{(c) The Lagrangian equation of motion in $r$ variable is given by $\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}=0$, which gives
+$\left(\frac{\partial L}{\partial \dot{r}}\right)=m \dot{r},\left(\frac{\partial L}{\partial r}\right)=m r \sin ^{2} \alpha \dot{\phi}^{2}-m g \cos \alpha$}
+\intertext{$\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}=0 \Rightarrow m \ddot{r}-m r \sin ^{2} \alpha \dot{\phi}^{2}+m g \cos \alpha=0$, which is equivalent to Newton's law of motion}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+ The system is shown in the figure. The particle $m_{2}$ moves on a vertical axis and the whole system rotates about this axis with a constant angular velocity $\omega$.\\
+ (a) Write down Lagrangian of the system in spherical polar co-ordinate.\\
+ (b) Discuss conservation of momentum\\
+ (c) Write down equation of motion.\\
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[height=4.5cm,width=4.3cm]{VP-05}
+ \end{figure}
+\end{exercise}
+\begin{answer}$\left. \right. $\\
+	 \begin{figure}[H]
+		\centering
+		\includegraphics[height=4.5cm,width=6.5cm]{VP-06}
+	\end{figure}
+	\begin{align*}
+\intertext{	(a) Number of Particle,$ N=3$}
+	\intertext{The kinetic energy is given by}
+	T&=\frac{1}{2} m_{1}\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{z}_{1}^{2}\right)+\frac{1}{2} m_{2}\left(\dot{x}_{2}^{2}+\dot{y}_{2}^{2}+\dot{z}_{2}^{2}\right)+\frac{1}{2} m_{3}\left(\dot{x}_{3}^{2}+\dot{y}_{3}^{2}+\dot{z}_{3}^{2}\right)
+	\intertext{Potential energy assuming $O$ as origin}
+	V&=-m_{1} g z_{1}-m_{1} g z_{2}-m_{2} g z_{3}\\
+	x_{1}&=r_{1} \sin \theta_{1} \cos \phi_{1}, y_{1}=r_{1} \sin \theta_{1} \sin \phi_{1}, z_{1}=r_{1} \cos \theta_{1}\\
+	x_{2}&=r_{2} \sin \theta_{2} \cos \phi_{2}, y_{2}=r_{2} \sin \theta_{2} \sin \phi_{2}, z_{2}=r_{2} \cos \theta_{2}\\
+	x_{3}&=r_{3} \sin \theta_{3} \cos \phi_{3}, y_{3}=r_{3} \sin \theta_{3} \sin \phi_{3}, z_{3}=r_{3} \cos \theta_{3}
+	\intertext{The kinetic energy in spherical coordinate is given by}
+	T&=\frac{1}{2} m_{1}\left(\dot{r}_{1}^{2}+r_{1}^{2} \dot{\theta}_{1}^{2}+r_{1}^{2} \sin ^{2} \theta_{1}^{2} \dot{\phi}_{1}^{2}\right)+\frac{1}{2} m_{2}\left(\dot{r}_{2}^{2}+r_{2}^{2} \dot{\theta}_{2}^{2}+r_{2}^{2} \sin ^{2} \theta_{2}^{2} \dot{\phi}_{2}^{2}\right)\\
+	&+\frac{1}{2} m_{3}\left(\dot{r}_{3}^{2}+r_{3}^{2} \dot{\theta}_{3}^{2}+r_{3}^{2} \sin ^{2} \theta_{3}^{2} \dot{\phi}_{3}^{2}\right)\\
+	\text{And potential }&\text{energy is given by }V=-m_{1} g r_{1} \cos \theta_{1}-m_{2} g r_{2} \cos \theta_{2}-m_{3} g r_{3} \cos \theta_{3}
+	\intertext{Equations of Constraint are -}
+	\end{align*}
+	(1) Length of mass $m_{1}$ from origin $O$ is fixed, $r_{1}=l$\\
+	(2) Length of another mass $m_{2}$ from origin $O$ is fixed, $r_{2}=l$\\
+	(3) Both masses $m_{1}$ and $m_{2}$ make same angle with $z$ - axis, $\theta_{1}=\theta_{2}=\theta$\\
+	(4) Both masses $m_{1}$ make angle in the $x-y$ plane with $x$ axis as $\phi_{1}=\phi_{2}+c$,\\
+	(5) Particle $m_{2}$ makes angle zero with $z$ - axis i.e., $\theta_{3}=0$\\
+	(6) Particle $m_{2}$ makes angle zero in $x-y$ plane with $x$ axis i.e., $\phi_{3}=0$,\\
+	(7) Particle $m_{2}$ have distance $r_{3}=2 l \cos \theta$ from origin $O$.\\
+	So, $K=7$. So degree of freedom (DOF) $=3 N-K=3.3-7=2$
+	There is two independent motion (i) linear motion of $m_{2}$ on $z$ axis and (ii) both mass $m_{1}$ rotating about $z$ axis.\\
+	So there is a need of two generalized coordinates.\\
+	Using equation of constraint one will transform Lagrangian as $L=T-V$
+	\begin{align*}
+	L&=m_{1} l^{2}\left(\dot{\theta}^{2}+\dot{\phi}^{2} \sin ^{2} \theta\right)+2 m_{2} l^{2} \dot{\theta}^{2} \sin ^{2} \theta+2\left(m_{1}+m_{2}\right) g l \cos \theta\\
+\text{	Put the value of }\dot{\phi}&=\omega,\text{ then Lagrangian is given by}\\
+	L&=m_{1} l^{2}\left(\dot{\theta}^{2}+\omega^{2} \sin ^{2} \theta\right)+2 m_{2} l^{2} \dot{\theta}^{2} \sin ^{2} \theta+2\left(m_{1}+m_{2}\right) g l \cos \theta\\
+	\text{(b) }\left(\frac{\partial L}{\partial \phi}\right)&=0\text{ so $\phi$ is cyclic coordinate hence conjugate momentum}\\ \left(\frac{\partial L}{\partial \dot{\phi}}\right)&=\left(\frac{\partial L}{\partial \omega}\right)=p_{\phi}=2 m_{1} l^{2} \omega \sin ^{2} \theta
+	\intertext{is constant during the motion. So, $z$ - component of angular momentum is conserved.}
+	\text{(c) }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\frac{\partial L}{\partial \theta}=0\\
+	&\left(\frac{\partial L}{\partial \dot{\theta}}\right)=\left(2 m_{1} l^{2} \dot{\theta}+4 m_{2} l^{2} \dot{\theta} \sin ^{2} \theta\right) \\
+	&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)=\left(2 m_{1} l^{2}+4 m_{2} l^{2} \sin ^{2} \theta\right) \ddot{\theta}+4 m_{2} l^{2} \sin 2 \theta \dot{\theta}^{2} \\
+	&\left(\frac{\partial L}{\partial \theta}\right)=m_{1} l^{2} \omega^{2} 2 \sin \theta \cos \theta+2 m_{2} l^{2} \dot{\theta}^{2} 2 \sin \theta \cos \theta-2\left(m_{1}+m_{2}\right) g l \sin \theta
+	\intertext{The equation of motion is given as -}
+	\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)&-\frac{\partial L}{\partial \theta}=0\\
+	\left(2 m_{1} l^{2}+4 m_{2} l^{2} \sin ^{2} \theta\right) \ddot{\theta}&+2 m_{2} l^{2} \sin 2 \theta \dot{\theta}^{2}-m_{1} l^{2} \omega^{2} \sin 2 \theta+2\left(m_{1}+m_{2}\right) g l \sin \theta=0
 	\end{align*}
 \end{answer}

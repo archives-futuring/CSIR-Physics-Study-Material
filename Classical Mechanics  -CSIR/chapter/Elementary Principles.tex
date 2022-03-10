@@ -316,4 +316,112 @@ expression refered to as \textit{"Lagrange's equations"}
 	If $L(q,\dot{q},t)$ is an approximate Lagrangian and $F(q,t)$ is any differentiable function of the generalized coordinates and time, then
 	$$L^{\prime}(q, \dot{q}, t)=L(q, \dot{q}, t)+\frac{d F}{d t}$$
 \end{note}
-is a Lagrangian also resulting in the same equation of motion.
+is a Lagrangian also resulting in the same equation of motion.\\
+\section{Formulation of Lagrangian}
+Lagrangian in different coordinate system:
+Lagrangian of a system is defined as $L=T\left(q_{i}, \dot{q}_{i}, t\right)-V\left(q_{i}, \dot{q}_{i}, t\right)$, where $T$ and $V$ are functions of generalized coordinates, generalized velocities and time $t$.\\
+\textbf{How to write a Lagrangian}\\\\
+\textbf{Step 1:}\\
+(a) Draw a Cartesian coordinate system with a suitable origin.
+(b) Then disturb the system arbitrarily and fix the coordinates of individual particle with respect to origin.
+(c) Write down kinetic energy and potential energy as discussed below.
+If a system constitutes $p$ number of particle and position vector of the $p^{\text {th }}$ particle is given by $\vec{r}_{p}=x_{p} \hat{i}+y_{p} \hat{j}+z_{p} \hat{k}$, then kinetic energy of the system is given by
+$$
+T=\frac{1}{2} \sum_{P} m_{p}\left[\left(\dot{x}_{p}\right)^{2}+\left(\dot{y}_{p}\right)^{2}+\left(\dot{z}_{p}\right)^{2}\right] \text { and }
+$$
+potential energy is given by
+$$
+V=\sum_{p} V_{p}\left(x_{p}, y_{p}, z_{p}, \dot{x}_{p}, \dot{y}_{p}, \dot{z}_{p}\right)
+$$
+Lagrangian of the system is given by $L=T-V$\\\\
+\textbf{Step 2:}\\
+(a) Find the degree of freedom with the formula $\mathrm{DOF}=3 N-k$ as discussed in previous chapter.\\
+(b) Number of degree of freedom is equivalent to minimum number of independent motion.\\
+(c) Identify the independent motion with the help of symmetry of problem.\\
+(d) Transform the Lagrangian of the system in suitable symmetry.\\
+\begin{exercise}
+If kinetic energy and potential energy is given by $T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)$ and $V=-m g y$ respectively.
+	 \begin{tasks}(1)
+		\task[\textbf{a.}] Write down Lagrangian of the system.
+		\task[\textbf{b.}] Identify generalized coordinate and generalized velocity.
+		\task[\textbf{c.}] Identify cyclic coordinate and discuss conservation of momentum.
+		\task[\textbf{d.}]  Discuss equation of motion.
+	\end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+\text{(a)}\quad L=T-V \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)&-(-m g y) \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)+m g y\\
+\text{(b)}\quad \text{ Generalized coordinate }q_{1}&=x, q_{2}=y\text{ generalized velocity} \dot{q}_{1}=\dot{x}, \dot{q}_{2}=\dot{y}
+\intertext{(c) $\left(\frac{\partial L}{\partial q_{1}}\right)=\left(\frac{\partial L}{\partial x}\right)=0$, so it is a cyclic coordinate. Then $\left(\frac{\partial L}{\partial \dot{x}}\right)=p_{x}=m \dot{x}$, identified as linear momentum in $x$ direction is constant of motion.}
+\left(\frac{\partial L}{\partial y}\right)&=m g \neq 0,\text{ so it is not cyclic coordinate}
+\intertext{(d) $\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\left(\frac{\partial L}{\partial x}\right)=0 \Rightarrow \frac{d}{d t} m \dot{x}-0=0 \Rightarrow m \dot{x}=c$, which is exactly explained in section (b) $\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{y}}\right)-\left(\frac{\partial L}{\partial y}\right)=0 \Rightarrow \frac{d}{d t} m \dot{y}-m g=0 \Rightarrow m \ddot{y}-m g=0$}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	1. Apply Lagrange's equation to find the equation of motion of a particle in space using \\
+	(a). Cartesian coordinates. \\
+	(b). plane polar coordinates.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\intertext{ (a).\quad The generalized forces needed are $F_{x}, F_{y}$, and $F_{z}$. Then}
+	T &=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right), \\ \frac{\partial T}{\partial x} &=\frac{\partial T}{\partial y}=\frac{\partial T}{\partial z}=0, \\ \frac{\partial T}{\partial \dot{x}}=m \dot{x}, & \frac{\partial T}{\partial \dot{y}}=m \dot{y}, \quad \frac{\partial T}{\partial \dot{z}}=m \dot{z}, 
+	\intertext{ \quad and the equations of motion are}
+	\frac{d}{d t}(m \dot{x})&=F_{x}, \quad \frac{d}{d t}(m \dot{y})=F_{y}, \quad \frac{d}{d t}(m \dot{z})=F_{z}
+	\end{align*}
+	\begin{align*}
+	\intertext{(b).\quad Here we must express $T$ in terms of $\dot{r}$ and $\dot{\theta}$. The transformation equations are}
+	x&=r \cos \theta\\
+	y&=r \sin \theta
+	\intertext{the velocities are given by}
+	\dot{x}&=\dot{r} \cos \theta-r \dot{\theta} \sin \theta,\\
+	\dot{y}&=\dot{r} \sin \theta+r \dot{\theta} \cos \theta\\
+	\text{The kinetic energy }T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)\text{ then reduces formally to}\\
+	T&=\frac{1}{2} m\left[\dot{r}^{2}+(r \dot{\theta})^{2}\right]
+	\intertext{ the plane polar components of the velocity are $\dot{r}$ along $\mathbf{r}$, and $r \dot{\theta}$ along the direction perpendicular to $r$, denoted by the unit vector $\hat{\theta}$. Hence, the square of the velocity expressed in polar coordinates is simply $\dot{r}^{2}+(r \dot{\theta})^{2}$.}
+	\intertext{the components of the gencralized force are}
+	Q_{r}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial r}=\mathbf{F} \cdot \hat{\mathbf{r}}=F_{r}\\
+	Q_{\theta}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial \theta}=\mathbf{F} \cdot r \hat{\mathbf{\theta}}=r {F}_{\theta} .
+	\intertext{ There are two generalized coordinates, and therefore two Lagrange equations. The derivatives occurring in the $r$ equation are}
+	\frac{\partial T}{\partial r}&=m r \dot{\theta}^{2}, \quad \frac{\partial T}{\partial \dot{r}}=m \dot{r}, \quad \frac{d}{d t}\left(\frac{\partial T}{\partial \dot{r}}\right)=m \ddot{r},\\
+	m \ddot{r}-m r \dot{\theta}^{2}&=F_{r},\\
+	\frac{\partial T}{\partial \theta}=0, \quad \frac{\partial T}{\partial \dot{\theta}}=m r^{2} \dot{\theta},& \quad \frac{d}{d t}\left(m r^{2} \dot{\theta}\right)=m r^{2} \ddot{\theta}+2 m r \dot{r} \dot{\theta}.\\
+	\frac{d}{d t}\left(m r^{2} \dot{\theta}\right)&=m r^{2} \ddot{\theta}+2 m r \dot{\theta} \dot{\theta}=r F_{\theta} .\\
+	\text{where angular momentum }L&=m r^{2} \theta\text{ and torque }N^{(e)}=r F_{\theta}.
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Atwood's machine 
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\intertext{A conservative system with holonomic, scleronomous constraint  (the pulley is assumed frictionless and massless). There is only one independent coordinate $x$, the position of the other weight being determined by the constraint that the length of the rope between them is $l$. The potential energy is}
+	V&=-M_{1} g x-M_{2} g(l-x)
+	\intertext{while the kinetic energy is}
+	T&=\frac{1}{2}\left(M_{1}+M_{2}\right) \dot{x}^{2}
+	\intertext{Lagrangian has the form}
+	L&=T-V=\frac{1}{2}\left(M_{1}+M_{2}\right) \dot{x}^{2}+M_{1} g x+M_{2} g(l-x)
+	\intertext{equation of motion}
+	\frac{\partial L}{\partial  x}&=\left(M_{1}-M_{2}\right) g\\
+	\frac{\partial  L}{\partial  x}&=\left(M_{1}+M_{2}\right) \dot{x}
+	\intertext{$\mathrm{so}$}
+	\left(M_{1}+M_{2}\right) \ddot{x}&=\left(M_{1}-M_{2}\right) g,\\
+	\ddot{x}&=\frac{M_{1}-M_{2}}{M_{1}+M_{2}} g,\\
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	A bead (or ring ) sliding on a uniformly rotating wire in a force-free space. The wire is straight, and is rotated uniformly about some fixed axis perpendicular to the wire.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\intertext{This is an example of constraint being time dependent, with the rotationaxis along $z$ and the wire in the $xy$ plane.} 
+	x&=r \cos \omega t \hspace{3cm}(\omega=\text { angular velocity of rotation }) \\
+	y&=r \sin \omega t \hspace{3cm}(r=\text{distance along wire from rotation axis} )
+	\intertext{constraint can be expressed as $\dot{\theta}=\omega$, so}
+	T&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \omega^{2}\right)
+	\intertext{The equation of motion is then}
+	m \ddot{r}&-m r^{2}=0\\
+	\ddot{r}&=r \omega^{2}  
+	\intertext{which is the familiar simple harmonic oscillator equation with a change of sign. The solution $r=e^{\omega t}$ for a bead initially at rest on the wire shows that the bead moves exponentially outwards.The angular momentum, $L=m r^{2} \omega=m \omega r_{0}^{2} e^{2 \omega t}$, provides the force $F=N / r$, which produces the constraint force, $F=2 m r_{0} \omega^{2} e^{\omega t}$, acting perpendicular to the wire and the axis of rotation.}
+	\end{align*}
+\end{answer}
