@@ -487,6 +487,13 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}]$i \frac{e^{i x}}{x}$
 	\task[\textbf{d.}] $-i \frac{e^{i x}}{x}$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	h_{n}^{2}&=J_{n}-i N_{n}\\
+	J_{0}(x)&=\frac{\sin x}{x},N_{0}(x)=-\frac{\cos x}{x} \Rightarrow h_{0}^{1}=J_{0}+i N_{0} \Rightarrow \frac{\sin x+i \cos x}{x}=i \frac{e^{-i x}}{x}
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
 \item 61If $J_{n}(x)$ is spherical Bessel function of order $n$ then $j_{0}^{\prime}(x)$ is equivalent to
  \begin{tasks}(4)
 	\task[\textbf{a.}]$j_{1}(x)$
@@ -494,6 +501,13 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}]$\frac{j_{1}(x)}{2}$
 	\task[\textbf{d.}]$-\frac{j_{1}(x)}{2}$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{d}{d x}\left(j_{0}(x)\right)&=\frac{d}{d x}\left(\frac{\sin x}{x}\right)=\frac{\cos x}{x}-\frac{\sin x}{x^{2}}=-J_{1}(x)\\
+	\text{Where }j_{1}(x)&=-\frac{\cos x}{x}+\frac{\sin x}{x^{2}}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
 \item62 The solution of the differential equation $x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+x^{2} y(x)=0$ subjected to the condition is given by $y(0)=1$.
  \begin{tasks}(4)
 	\task[\textbf{a.}] $\frac{\sin x}{x}$
@@ -501,6 +515,15 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}]$\frac{\exp (-i x)}{x}$
 	\task[\textbf{d.}] $\frac{\exp i x}{x}$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+ \text{Spherical Bessel's differential equation }&x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+\left[x^{2}-n(n+1)\right] y(x)=0\\
+ \text{ then }x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+x^{2} y(x)=0 &\text{ is spherical Bessel's differential equation for order}\\
+ n&=0\\
+	\text{then solution is }J_{0}(x)&=\frac{\sin x}{x}\text{ with boundary condition }y(0)=1.
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
 \item63 $H_{n}(x)$ is Hermite polynomials of order $n$ then $H_{n}(x)=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}$, then $f(x)$ and $W(x)$ are respectively
  \begin{tasks}(1)
 	\task[\textbf{a.}]$f(x)=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)$
@@ -508,6 +531,14 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}] $f(x)=W(x)=\exp \left(x^{2}\right)$
 	\task[\textbf{d.}] $f(x)=W(x)=\exp \left(-x^{2}\right)$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	H_{n}(x)&=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}\left(\exp \left(-x^{2}\right)\right)}{d x^{n}}\\
+	\text{So after comparing }H_{n}(x)&=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}\\
+	f(x)&=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
 \item 64The solution of differential equation $\frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\lambda y(x)=0$ is Hermilte polynomial of order $n$ then value of $\lambda$ is
  \begin{tasks}(4)
 	\task[\textbf{a.}]$n$
@@ -515,6 +546,12 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}]$2 n$
 	\task[\textbf{d.}] $-2 n$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+2 n y(x)=0\text{ is Hermite differential equation}
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
 \item 65The Rodrigues formula for Laguerre polunomial is given by
  \begin{tasks}(2)
 	\task[\textbf{a.}]$L_n(x)=\frac{e^{-x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)$
@@ -522,6 +559,12 @@ J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\
 	\task[\textbf{c.}]$L_n(x)=\frac{e^{-x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{x}\right)$
 	\task[\textbf{d.}] $L_{n}(x)=\frac{e^{x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	L_{n}(x)=\frac{e^{x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
 \item 66It is given that operator $x-\frac{d}{d x}=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right)$
 If then the normalized wave function for harmonic oscillation is $\psi(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2} \exp \left(-\frac{x^{2}}{2}\right) H_{n}(x)\right.$, then $\psi_n(x)$ is equivalent to 
  \begin{tasks}(1)
@@ -530,6 +573,18 @@ If then the normalized wave function for harmonic oscillation is $\psi(x)=\left(
 	\task[\textbf{c.}] $\psi_{n}(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{n} \exp \left(-x^{2}\right)\right.$
 	\task[\textbf{d.}] $\psi_{n}(x)=\left(\pi^{k / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{2 n} \operatorname{cxp}\left(-x^{2}\right)\right.$
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	H_{n}(x)&=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}\left(\exp \left(-x^{2}\right)\right)}{d x^{n}}\\
+	x-\frac{d}{d x} &=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right) \Rightarrow\left(x-\frac{d}{d x}\right) \exp \left(-\frac{x^{2}}{2}\right) \\ &\left.=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right)\right) \exp \left(-\frac{x^{2}}{2}\right)\\
+	x \exp \left(-\frac{x^{2}}{2}\right)-\frac{d \exp \left(-\frac{x^{2}}{2}\right)}{d x}&=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-x^{2}\right)\\
+	\Rightarrow\left(x-\frac{d}{d x}\right) \exp \left(-\frac{x^{2}}{2}\right)&=\exp \left(\frac{x^{2}}{2}\right)\left(-2 x \exp \left(-x^{2}\right)\right)=2 x \exp -\frac{x^{2}}{2}=H_{1}\left(\exp -\frac{x^{2}}{2}\right)\\
+	\text{where }2 x&=H_{1}(x)\\
+	\text{Similarly }\left(x-\frac{d}{d x}\right)^{n} \exp \left(-\frac{x^{2}}{2}\right)&=H_{n} \exp \left(-\frac{x^{2}}{2}\right)\\
+	\psi_{n}(x)&=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{n} \exp \left(-\frac{x^{2}}{-2}\right)\right.
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
 \item 67The solution of differential equation $x \frac{d^{2} y}{d x^{2}}+(1-x) \frac{d y}{d x}+\lambda y(x)=0$ is Laguerre polynomials of order $n$ then value of $\lambda$ is
  \begin{tasks}(4)
 	\task[\textbf{a.}]$n$
