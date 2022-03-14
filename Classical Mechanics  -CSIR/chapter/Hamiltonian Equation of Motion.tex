@@ -74,8 +74,76 @@ Hamiltonian for each problem must be constructed via the Lagrangian formulation.
 	$$H=T+V=
 	E$$
 \end{note}
-
-
-
-
-
+\begin{exercise}
+	A particle of inass $m$ moves inside a bowl under gravity. If the surface of the bowl is given by the equation $z=\frac{1}{2} a\left(x^{2}+y^{2}\right)$, where $a$ is a constant.\\
+	(A) Write down Lagrangian of the system in cylindrical co-ordinate.\\
+	(a) Identified the cyclic coordinate and law of conservation of momentum.\\
+	(b) Write down hamiltonion of the system in cylindrical coordinate system.
+\end{exercise}
+	\begin{answer}
+	\begin{align*}
+	\text{(A) }T&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)=\frac{m}{2}\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+a^{2} r^{2} \dot{r}^{2}\right) \quad \because z=\frac{1}{2} a r^{2} \Rightarrow \quad \dot{z}=a r \dot{r}\\
+	V&=m g z=\frac{1}{2} m g a r^{2} \\
+	L&=\frac{m}{2}\left[\dot{r}^{2}\left(1+a^{2} r^{2}\right)+r^{2} \dot{\theta}^{2}-a g r^{2}\right]
+	\intertext{	(a) $\theta$ is cyclic coordinate}
+	\because \frac{\partial L}{\partial \theta}&=0, \Rightarrow \dot{p}_{\theta}=0 \Rightarrow P_{\theta}=\text{ constant}
+	\intertext{(b) Hamiltonian}
+	H&=\frac{p_{r}^{2}}{2 m\left(1+a^{2} r^{2}\right)}+\frac{p_{\theta}^{2}}{2 m r^{2}}+\frac{1}{2} m a g r^{2} \quad \\&\because \frac{\partial L}{\partial \dot{r}}=p_{r}=m\left(1+a^{2} r^{2}\right) \dot{r}\text{ and }\frac{\partial L}{\partial \dot{\theta}}=p_{\theta}=m r^{2} \dot{\theta}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	A particle of mass $m$ is attached to fixed point $O$ by a weightless inextensible string of length $a$. It is rotating under the gravity as shown in the figure.\\
+	(a) Write down The Lagrangian of the system in spherical co-ordinate.\\
+	(b) write down Hamiltonian of the system.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4.5cm,width=3.5cm]{Assignment-HE-02}
+	\end{figure}
+\end{exercise}
+	\begin{answer}
+	\begin{align*}
+	L&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-[m g(-z)]\\
+	L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)+m g a \cos (\pi-\theta)\\
+	L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)-m g a \cos (\theta)\\
+	H&=\sum \dot{q}_{1} p_{1}-L\\
+	H&=\frac{p_{\theta}^{2}}{2 m a^{2}}+\frac{p_{\phi}^{2}}{2 m a^{2} \sin ^{2} \theta}+m a g \cos \theta \because \frac{\partial L}{\partial \dot{\theta}}=p_{\theta}=m a^{2} \dot{\theta}\text{ and } \frac{\partial L}{\partial \dot{\phi}}=p_{\phi}=m a^{2} \sin ^{2} \theta \dot{\phi}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Particle of mass $m$ slides under the gravity without friction along the parabotic path
+	$y=a x^{2}$ axis shown in the figure. Here $a$ is a constant\\
+	(a) Write down Lagrangian of the system .\\
+	(b) Write down Lagranges equation of motion.\\
+	(c) write down Hamiltonian of the system.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3.5cm,width=4cm]{Assignment-HE-03}
+	\end{figure}
+\end{exercise}
+	\begin{answer}
+	\begin{align*}
+	y&=a x^{2}\\
+	\text{(a) }\dot{y}&=2 a x \dot{x}\\
+	L&=\frac{m}{2}\left(\dot{x}^{2}+\dot{y}^{2}\right)-m g y=\frac{m}{2}\left(\dot{x}^{2}+4 a^{2} x^{2} \dot{x}^{2}\right)-m g a x^{2}\\
+	L&=\frac{m}{2}\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}-m g a x^{2}\\
+	\text{	(b) }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\frac{\partial L}{\partial x}=0\\
+	\frac{d}{d t}&\left[m\left(1+4 a^{2} x^{2}\right) \dot{x}\right]-\left[4 m a^{2} \dot{x}^{2} x-2 \mathrm{~m} g\right.\text{ a }\left.x\right]=0\\
+	m \ddot{x}&+4 m a^{2} \ddot{x} x^{2}+8 m a^{2} \dot{x} x \dot{x}-4 m a^{2} \dot{x}^{2} x+2 m g a x=0\\
+	m \ddot{x}&+4 m a^{2} x^{2} \ddot{x}+4 m a^{2} x \dot{x}^{2}+2 m g a x=0\\
+	\text{(c) }H&=\sum \dot{x} p_{x}-L\\
+	H&=\frac{p_{x}^{2}}{2 m\left(1+4 a^{2} x^{2}\right)}+m g a x^{2} \quad \because \frac{\partial L}{\partial \dot{x}}=p_{x}=m\left(1+4 a^{2} x^{2}\right) \dot{x}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	The Lagrangian of a particle of mass $m$ moving in one dimension is $L=\exp (\alpha t)\left[\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right]$, where $\alpha$ and $k$ are positive constants.\\
+	(a) Find the Lagranges equation of motion of the particle.\\
+	(b) Write down Hamiltonian of the system.
+\end{exercise}
+	\begin{answer}
+	\begin{align*}
+	L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
+	\text{(a) }\frac{d}{d t}\left(e^{\alpha t} m \dot{x}\right)-e^{\alpha t} k x&=0 \Rightarrow e^{\alpha t} m \ddot{x}+m \dot{x} e^{\alpha t} \cdot \alpha-e^{\alpha t} k x=0 \Rightarrow e^{\alpha t}[m \ddot{x}+\alpha m \dot{x}-k x]=0\\
+	\text{(b) }H&=e^{-\alpha t} \frac{p_{x}^{2}}{2 m}+e^{\alpha t} \frac{k x^{2}}{2}
+	\because \frac{\partial L}{\partial \dot{x}}=p_{x}=e^{\alpha t} m \dot{x}
+	\end{align*}
+\end{answer}
