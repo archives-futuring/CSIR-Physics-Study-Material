@@ -74,6 +74,26 @@ Hamiltonian for each problem must be constructed via the Lagrangian formulation.
 	$$H=T+V=
 	E$$
 \end{note}
+\section{Cyclic Coordinate and Conservation Theorem}
+If $q_j$ a cyclic coordinate then, its conjugate momentum $p_j$ is constant.\\
+From Lagrangian and Hamiltonian equations of motions:
+$$\dot{p}_{j}=\frac{\partial L}{\partial q_{j}}=-\frac{\partial H}{\partial q j}$$
+$\therefore$ coordinate that is cyclic will thus also be absent from the Hamiltonian. Conversely if a generalized coordinate does not occur in $H$ the conjugate momentum is conserved.
+\begin{itemize}
+	\item If $L$ is not explicit function of $t$ then it is a constant of motion 
+	\begin{align*}
+	\frac{d H}{d t}&=\frac{\partial H}{\partial q_{i}} \dot{q}_{i}+\frac{\partial H}{\partial p_{i}} \dot{p}_{i}+\frac{\partial H}{\partial t}\\\text{substituting }\quad\frac{\partial H}{\partial q_{i}} &=-\dot{p}_{i}\quad\text{ and }\quad\frac{\partial H}{\partial p_{i}} =\dot{q}_{i}\quad\text{we get}\\
+	\frac{d H}{d t}&=\frac{\partial H}{\partial t}=\frac{-\partial L}{\partial t}
+ \end{align*}
+Therefore if $t$ doesn't appear explicity in $L$, it will also not be present in $H$ and $H$ will be constant in time
+	\item If the equations of transformations that define the generalized coordinates
+	\begin{equation}
+	r_m=r_m(q_1,....q_n,t)\label{HE-02}
+	\end{equation}
+	do not depend explicity upon the time, and if potantial is velocity independent then $H$ is the total energy $H=T+V$
+	\item The identification of $H$ as a constant of motion and as the total energy are two seperate matters. If equation \ref{HE-02} involve time explicity but $H$ doesnot, then $H$ is constant of motion but it is not the total energy.
+	\item Unlike $L$, using different set of generalized coordinates in the definition of $H$ may leads to an entirely different quantity for Hamiltonian. It may be that for one set of generalized coordinates $H$ is conserved, but that for another it varies in time.
+\end{itemize}
 \begin{exercise}
 	A particle of inass $m$ moves inside a bowl under gravity. If the surface of the bowl is given by the equation $z=\frac{1}{2} a\left(x^{2}+y^{2}\right)$, where $a$ is a constant.\\
 	(A) Write down Lagrangian of the system in cylindrical co-ordinate.\\
@@ -147,23 +167,3 @@ Hamiltonian for each problem must be constructed via the Lagrangian formulation.
 	\because \frac{\partial L}{\partial \dot{x}}=p_{x}=e^{\alpha t} m \dot{x}
 	\end{align*}
 \end{answer}
-\section{Cyclic Coordinate and Conservation Theorem}
-If $q_j$ a cyclic coordinate then, its conjugate momentum $p_j$ is constant\\
-from Lagrangian and Hamiltonian equations of motions
-$$\dot{p}_{j}=\frac{\partial L}{\partial q_{j}}=-\frac{\partial H}{\partial q j}$$
- $\therefore$ coordinate that is cyclic will thus also be absent from the Hamiltonian. Conversely if a generalized coordinate does not occur in $H$ the conjugate momentum is conserved.
- \begin{itemize}
- 	\item If $L$ is not explicit function of $t$ then it is a constant of motion 
- 	\begin{align*}
- 	\frac{d H}{d t}&=\frac{\partial H}{\partial q_{i}} \dot{q}_{i}+\frac{\partial H}{\partial p_{i}} \dot{p}_{i}+\frac{\partial H}{\partial t}\\\text{substituting }\quad\frac{\partial H}{\partial q_{i}} &=-\dot{p}_{i}\quad\text{ and }\quad\frac{\partial H}{\partial p_{i}} \dot{q}_{i}\quad\text{we get}\\
- 		\frac{d H}{d t}&=\frac{\partial H}{t}=\frac{-\partial L}{dt}
- 		\intertext{Therefore if $t$ doesn't appear explicity in $L$, it will also not be present in $H$ and $H$ will be constant in time}
- 	\end{align*}
- 	\item If the equations of transformations that define the generalized coordinates
- \begin{equation}
- 	v_m=v_m(q_1,....q_n,t)\label{HE-02}
- \end{equation}
- do not depend explicity upon the time, and if potantial is velocity independent $H$ is the total energy $H=T+v$
- \item The identification of $H$ as a constant of motion and as the total energy are two seperate matters. If equation \ref{HE-02} involve time explicity but $H$ doesnot then $H$ is constant of motion but it is not the total energy.
- \item Unlike $L$ using different set of generalized coordinates in the definition of $H$ may leads to an entirely different quantity for Hamiltonian. It may be that for one set of generalized coordinates $H$ is conserved, but that for another it varies in time.
- \end{itemize}
