@@ -1,0 +1,104 @@
+\chapter{Fourier Transform}
+\begin{enumerate}
+	\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		F(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x) e^{i k x} d x\\
+		\because g(x)&=f(x+a)\\
+		\therefore G(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x+a) e^{i k x} d x\\
+		\text{Let }x+a&=y, d x=d y\\
+		\therefore G(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(y) e^{i k(y-a)} d y=e^{-i k a} \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x) e^{i k x} d x=e^{-i a k} F(k)
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		 f_{c}(\omega) &=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f(x) \cos \omega x d x \\ &=\sqrt{\frac{2}{\pi}} \int_{0}^{1} \cos \omega x d x+\sqrt{\frac{2}{\pi}} \int_{1}^{2}-\cos \omega x d x \\ &=\sqrt{\frac{2}{\pi}}\left[\left(\frac{\sin \omega x}{\omega}\right)_{0}^{1}-\left(\frac{\sin \omega x}{\omega}\right)_{1}^{2}\right] \\ &=\sqrt{\frac{2}{\pi}}\left(\frac{2 \sin \omega-\sin 2 \omega}{\omega}\right) 
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+	\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\mathrm{n}: g(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \frac{n}{\sqrt{\pi}} e^{-n^{2} x^{2}} e^{i k x} d x=\frac{n}{\sqrt{2} \cdot \pi} \int_{-\infty}^{+\infty} e^{-n^{2} x^{2}+i i x} d x=\frac{n}{\sqrt{2} \cdot \pi} e^{-k^{2} / 4 n^{2}} \int_{-\infty}^{+\infty} e^{-n^{2}\left(x-\frac{i k}{2 n^{2}}\right)^{2}} d x\\
+		&=\frac{n}{\sqrt{2} \cdot \pi} e^{-k^{2} / 4 n^{2}} \times 2 \times \frac{1}{2} \cdot \frac{\sqrt{\pi}}{n}=\frac{1}{\sqrt{2 \pi}} e^{-k^{2} / 4 n^{2}}
+		\intertext{ Now inverse fourier transform of $g(k)$ is}
+		\delta_{n}(x)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \frac{e^{-k^{2} / 4 n^{2}}}{\sqrt{2 \pi}} \cdot e^{-i k x} d k\\
+		\delta(x)&=\lim _{n \rightarrow \infty} \delta_{n}(x)=\lim _{n \rightarrow \infty} \frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-k^{2} / 4 n^{2}} \cdot e^{-i k x} d k=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-i k x} d k\\
+		\therefore \delta(x)&=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-i k x} d k
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item  $\left. \right. $	
+	\begin{answer}
+		\begin{align*}
+		\text{(i) }g_{c}(\omega)=\sqrt{\frac{2}{\pi}} \int_{0}^{\omega} \delta(t-x) \cos \omega t d t=\sqrt{\frac{2}{\pi}} \cos \omega x
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+		\item  $\left. \right. $	
+	\begin{answer}
+		\begin{align*}
+		f(t)&=\delta(t-x)=\sqrt{\frac{2}{\pi}} \int_{0}^{+\infty} \sqrt{\frac{2}{\pi}} \cos \omega x \cos \omega t d \omega\\
+		\Rightarrow \delta(t-x)&=\frac{2}{\pi} \int_{0}^{\infty} \cos \omega t \cos \omega x d \omega
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\intertext{Fourier Transform of $f(t)$ is}
+		g(\omega)&=\frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} e^{-\Gamma t / 2 \hbar} \cdot e^{-i E_{0} / / \hbar} \cdot e^{i a t} d t=\frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} \exp \left\{\frac{-i t}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)\right\} d t\\
+		&=\frac{1}{\sqrt{2 \pi}}\left[\frac{e^{\left\{\frac{-i t}{\hbar}\left(E_{0}-i / / 2-\hbar \omega\right)\right\}}}{\frac{-i}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\right]_{0}^{\infty}=\frac{1}{\sqrt{2 \pi}}\left[\frac{0-1}{\frac{-i}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\right]\\
+		&=\frac{1}{\sqrt{2 \pi} i(E o-i \Gamma / 2-h \omega)}
+		\intertext{Inverse transform of $g(\omega)$ is}
+		f(t)&=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} \frac{\hbar e^{-i \omega x}}{i\left(E_{0}-i \Gamma / 2-\hbar \omega\right)} d \omega=\frac{\hbar}{2 \pi i} \int_{-\infty}^{+\infty} \frac{e^{-i \omega t} d \omega}{\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\\
+		\therefore &\frac{\hbar}{2 \pi i} \int_{-\infty}^{+\infty} \frac{e^{-i \omega t} d \omega}{\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}=f(t)= \begin{cases}\exp (-\Gamma t / 2 \hbar) \exp \left(\frac{-i E_{0} t}{\hbar}\right), & t>0 \\ 0 & t<0\end{cases}
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		F\left\{t e^{-r^{2}}\right\}&=-\frac{1}{2} F\left\{\frac{d\left(e^{-r^{2}}\right)}{d t}\right\}=-\frac{1}{2}(j 2 \pi f) F\left\{e^{-t^{2}}\right\}=-j \pi f e^{-\pi^{2} f^{2}}
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\intertext{This is sine function}
+		f(x)&=A \sin x \Rightarrow F(k)=j \frac{A}{2}\left[\delta\left(k-k_{0}\right)-\delta\left(k+k_{0}\right)\right]
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		H(f)&=\int_{-\infty}^{+\infty} h(t) e^{-j 2 \pi f t} d t=\int_{0}^{+\infty} \beta e^{-\alpha t} e^{-j 2 \pi f t} d t=\beta \int_{0}^{+\infty} e^{-(\alpha+j 2 \pi f) t} d t\\
+		\Rightarrow H(f)&=\left.\frac{-\beta}{\alpha+j 2 \pi f} e^{-(\alpha+j 2 \pi f) t}\right|_{0} ^{\infty}=\frac{\beta}{\alpha+j 2 \pi f}=\frac{\beta \alpha}{\alpha^{2}+(2 \pi f)^{2}}-j \frac{2 \pi f \beta}{\alpha^{2}+(2 \pi f)^{2}}\\
+		\Rightarrow H(f)&=\frac{\beta}{\sqrt{\alpha^{2}+(2 \pi f)^{2}}} e^{j \tan ^{-1}[-2 \pi f / \alpha]}
+		\end{align*}
+		So the correct answer is \textbf{Option (d)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		f(x)&=\left\{\begin{array}{rl}-1 & -1<x<0 \\ 1 & 0<x<1 \\ 0 & \text { otherwise }\end{array}\right.\\
+		F[f(x)]&=\frac{1}{\sqrt{2 \pi}}\left[\int_{-1}^{0}-e^{-i \omega x} d x+\int_{0}^{1} e^{-i \omega x} d x\right]\\
+		&=\frac{1}{\sqrt{2 \pi}}\left[-\left(\frac{e^{-i \omega x}}{-i \omega}\right)_{-1}^{0}+\left(\frac{e^{-i \omega x}}{-i \omega}\right)_{0}^{1}\right]=\frac{1}{\sqrt{2 \pi}}\left[\frac{-1+e^{i \omega}}{-i \omega}+\frac{e^{-i \omega}-1}{-i \omega}\right]\\
+		&=\frac{1}{\sqrt{2 \pi}}\left[\frac{2 \cos \omega-2}{-i \omega}\right]=\frac{i}{\omega} \sqrt{\frac{2}{\pi}}(\cos \omega-1)
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+		\item  $\left. \right. $
+		\begin{answer}
+			\begin{align*}
+			f(x)&= \begin{cases}x, & 0<x<a \\ 0, & \text { otherwise }\end{cases}\\
+			F[f(x)]&=\frac{1}{\sqrt{2 \pi}} \int_{0}^{a} x e^{-i \omega x} d x=\frac{1}{\sqrt{2 \pi}}\left[\left(\frac{x e^{-i e x}}{-i \omega}\right)_{0}^{a}-\left(\frac{e^{-i \omega x}}{(-i \omega)^{2}}\right)_{0}^{a}\right]\\&=\frac{1}{\sqrt{2 \pi}}\left[\frac{a e^{-i \omega a}}{-i \omega}-\frac{e^{-i \omega a}-1}{(-i \omega)^{2}}\right]=\frac{1}{\sqrt{2 \pi}}\left[\frac{i a \omega e^{-i e a}}{\omega^{2}}+\frac{e^{-i e a}-1}{\omega^{2}}\right]\\
+			&=\frac{1}{\sqrt{2 \pi} \cdot \omega^{2}}\left[e^{-i \omega x}(1+i a \omega)-1\right]
+			\end{align*}
+			So the correct answer is \textbf{Option (a)}
+		\end{answer}
+\end{enumerate}
