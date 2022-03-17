@@ -455,18 +455,42 @@ $y^{\prime \prime}+P(x) y^{\prime}+Q(x) y=F(x)$, is said to be  non-homogeneous 
 \section{Linear independance and dependance of solutions}
 Two solutions of a differential equation, $ y_{1}(x)$ and $ y_{2}(x)$ are said to be linearly independant if \\$$Ay_{1}(x)+By_{2}(x)\neq 0 $$ given, $ A\neq0 \quad\text{and}\quad B\neq0$
 \subsection{Wronskian}
-The Wronskian of two functions $y_{1}(x)$ and $y_{2}(x)$ is given by,
-$$
+A first-order homogeneous ODE has only one linearly independent solution. This is meant in the following sense. "If two solutions are linearly dependent, by definition they satisfy $a y_{1}(x)+b y_{2}(x)=0$ with nonzero constants $a, b$ for all values of $x$". If the only solution of this linear relation is $a=0=b$, then our solutions $y_{1}$ and $y_{2}$ are said to be linearly independent.
+\\To prove this theorem, suppose $y_{1}, y_{2}$ both solve the homogeneous ODE. Then,
+\begin{equation*}
+\frac{y_{1}^{\prime}}{y_{1}}=-p(x)=\frac{y_{2}^{\prime}}{y_{2}} \quad \Rightarrow \quad W(x) \equiv y_{1}^{\prime} y_{2}-y_{1} y_{2}^{\prime} \equiv 0
+\end{equation*}
+The functional determinant $W$ is called the \textbf{Wronskian of the pair $y_{1}$, $y_{2}$}. We now show that $W \equiv 0$ is the condition for them to be linearly dependent. Assuming linear dependence, that is.
+\begin{equation*}
+a y_{1}(x)+b y_{2}(x)=0
+\end{equation*}
+In matrix form, the Wronskian of two functions $y_{1}(x)$ and $y_{2}(x)$ is given by,
+\begin{equation}
 W\left(y_{1}, y_{2}, x\right)=\left|\begin{array}{ll}
 y_{1}(x) & y_{2}(x) \\
 y_{1}^{\prime}(x) & y_{2}^{\prime}(x)
 \end{array}\right|=y_{1}(x) y_{2}^{\prime}(x)-y_{1}^{\prime}(x) y_{2}(x)
-$$
+\end{equation}
 \begin{enumerate}
 	\item If $W\left(y_{1}, y_{2}, x\right)=0,$ then $y_{1}(x)$ and $y_{2}(x)$ are linearly dependent.
 	\item If $W\left(y_{1}, y_{2}, x\right) \neq 0,$ then $y_{1}(x), y_{2}(x)$ are linearly independent.
 \end{enumerate}
-
+\begin{note}
+	The wronskian of a differential equation can also be written as,
+	$$ W(t)=e^{-\int p(x)dx}$$
+	\end{note}
+\begin{exercise}
+Consider two solutions $\mathrm{x}_{1}(\mathrm{t})$ and $\mathrm{x}_{2}(\mathrm{t})$ of the differential equation $\frac{d^{2} x(t)}{d t^{2}}+x(t)=0, t>0$, such that $x_{1}(0)=1,\left.\frac{d x_{1}(t)}{d t}\right|_{t=0}=0, x_{2}(0)=0,\left.\frac{d x_{2}(t)}{d t}\right|_{t=0}=1$. The Wronskian $W(t)=\left|\begin{array}{ll}x_{1}(t) & x_{2}(t) \\ \frac{d x_{1}(t)}{d t} & \frac{d x_{2}(t)}{d t}\end{array}\right|$ at $t=\frac{\pi}{2}$ is,	
+\end{exercise}
+\begin{answer}
+	The wronskian of a differential equation can also be written as,
+	\begin{align*}
+	W(t)&=e^{-\int p(x)dx}\\
+	\text{But here,}\quad  p(x)&=0\\
+	\text{Then,} \quad W(t)&=e^{0 \ dx}=1\\
+	\text{So,}\quad W(\frac{\pi}{2})&=1
+	\end{align*}
+\end{answer}
 \section{Linear Second Order Differential Equations With Constant Coefficients}
 The general form of the linear differential equation of second order is
 $$
@@ -568,8 +592,7 @@ We have
 	\text{The characteristic equation is,}\\
 	m^{3}-1&=0 \Rightarrow m=1, \frac{-1 \pm \sqrt{3 i}}{2}\\\text { y }&=A e^{x}+e^{-x / 2} \cdot\left[B \cos \frac{\sqrt{3}}{2} x+C \sin \frac{\sqrt{3}}{2} x\right]
 	\end{align*}
-\end{answer}\newpage
-
+\end{answer}
 \section{Solution of Second order nonhomogeneous differential equation.}
 The solution of a differential equation of the form,$$\frac{d^{2} y}{d x^{2}}+P \frac{d y}{d x}+Q y=R$$ consists of two parts,a complementary function and a particular integral.
 \\Complete Solution = Complementary Function + Particular Integral
@@ -656,6 +679,26 @@ The following cases arise for particular integrals:
  y&=\left(c_{1}+c_{2} x\right) e^{-3 x}+\frac{5 e^{3 x}}{36}
 	\end{align*}
 \end{answer}
+\begin{exercise}
+	Find the particular integral of the differential equation, $(D^{3}+8)=x^{4}-2x+1$
+\end{exercise}
+\begin{answer}
+	We have,
+	\begin{align*}
+	(D^{3}+8)&=x^{4}-2x+1\\
+	\text{P.I}&=\frac{1}{(D^{3}+8)}(x^{4}-2x+1)\\
+	&=\frac{1}{8(1+\frac{D^{3}}{8})}(x^{4}-2x+1)\\
+	&=\frac{[1+\frac{D^{3}}{8}]^{-1} }{8}(x^{4}-2x+1)
+	\intertext{Using Binomial expansion on $[1+\frac{D^{3}}{8}]^{-1}$ we get,}
+	[1+\frac{D^{3}}{8}]^{-1}&=[1-\frac{D^{3}}{8}+\cdots]
+	\intertext{Higher terms in the expansion can be ommitted since , here the  highest power of $x$ is $4$ ($R(x)=x^{4}-2x+1$).}
+	\text{Then,}\ \text{P.I}&=\frac{1}{8}[1-\frac{D^{3}}{8}](x^{4}-2x+1)\\
+	&=\frac{1}{8}\left[ (x^{4}-2x+1)-\frac{D^{3} (x^{4}-2x+1)}{8}\right] \\
+	&=\frac{1}{8}\left[ (x^{4}-2x+1)-\frac{24x}{8}\right] \\
+	&=\frac{1}{8}\left[ (x^{4}-2x+1)-3x\right] \\
+	&=\frac{1}{8}\left[ (x^{4}-x+1)\right]
+	\end{align*}
+\end{answer}
 \section{Euler - Cauchy Differential equation}
  A homogeneous differential equation of the form,
  \begin{equation}
@@ -685,20 +728,18 @@ The following cases arise for particular integrals:
 	\end{align*}
 \end{answer}
 
-\section{Singular Points}
-The concept of singular point or singularity (as applied to a differential equation) stems from the ts usefulness in  classifying Ordinary Differential Equations  and  investigating the feasibility of a series solution (Series Solution method will be explained in the next section)
-If we write our second-order homogeneous differential equation (in $y$ ) as,
-\begin{equation}
-y^{\prime \prime}+P(x) y^{\prime}+Q(x) y=0 \label{DE001}
-\end{equation}
-We are ready to define ordinary and singular points. If the functions $P(x)$ and $Q(x)$ remain finite at $x=x_{0}$, point $x=x_{0}$ is an ordinary point. However, if either $P(x)$ or $Q(x)$ (or both) diverges as $x \rightarrow x_{0}$, point $x_{0}$ is a singular point. Using equation \ref{DE001} we may distinguish between two kinds of singular points.
-\begin{enumerate}
-	\item If either $P(x)$ or $Q(x)$ diverges as $x \rightarrow x_{0}$ but $\left(x-x_{0}\right) P(x)$ and $\left(x-x_{0}\right)^{2} Q(x)$ remain finite as $x \rightarrow x_{0}$, then $x=x_{0}$ is called a \textbf{regular}, or \textbf{nonessential, singular point.}
-	\item If $P(x)$ diverges faster than $\frac{1}{\left(x-x_{0}\right)} $ so that $\left(x-x_{0}\right) P(x)$ goes to infinity as $x \rightarrow x_{0}$, or $Q(x)$ diverges faster than $\frac{1}{\left(x-x_{0}\right)} ^{2}$ so that $\left(x-x_{0}\right)^{2} Q(x)$ goes to infinity as $x \rightarrow x_{0}$, then point $x=x_{0}$ is labeled an \textbf{irregular}, or \textbf{essential, singularity}.
-\end{enumerate}
-\newpage
-\newpage
-
+%\section{Singular Points}
+%The concept of singular point or singularity (as applied to a differential equation) stems from the ts usefulness in  classifying Ordinary Differential Equations  and  investigating the feasibility of a series solution (Series Solution method will be explained in the next section)
+%If we write our second-order homogeneous differential equation (in $y$ ) as,
+%\begin{equation}
+%y^{\prime \prime}+P(x) y^{\prime}+Q(x) y=0 \label{DE001}
+%\end{equation}
+%We are ready to define ordinary and singular points. If the functions $P(x)$ and $Q(x)$ remain finite at $x=x_{0}$, point $x=x_{0}$ is an ordinary point. However, if either $P(x)$ or $Q(x)$ (or both) diverges as $x \rightarrow x_{0}$, point $x_{0}$ is a singular point. Using equation \ref{DE001} we may distinguish between two kinds of singular points.
+%\begin{enumerate}
+%	\item If either $P(x)$ or $Q(x)$ diverges as $x \rightarrow x_{0}$ but $\left(x-x_{0}\right) P(x)$ and $\left(x-x_{0}\right)^{2} Q(x)$ remain finite as $x \rightarrow x_{0}$, then $x=x_{0}$ is called a \textbf{regular}, or \textbf{nonessential, singular point.}
+%	\item If $P(x)$ diverges faster than $\frac{1}{\left(x-x_{0}\right)} $ so that $\left(x-x_{0}\right) P(x)$ goes to infinity as $x \rightarrow x_{0}$, or $Q(x)$ diverges faster than $\frac{1}{\left(x-x_{0}\right)} ^{2}$ so that $\left(x-x_{0}\right)^{2} Q(x)$ goes to infinity as $x \rightarrow x_{0}$, then point $x=x_{0}$ is labeled an \textbf{irregular}, or \textbf{essential, singularity}.
+%\end{enumerate}
+ 
 \newpage
 \begin{abox}
 	Problem Set -1
@@ -1119,7 +1160,54 @@ satisfying the boundary conditions $u(0, t)=0=u(L, t)$ and initial conditions $u
 		$$
 		Multiplying above equation by integrating factor $e^{\int p(x) d x}$ makes the equation exact.\\The correct answer is option \textbf{d} .
 	\end{answer}
-	
+	\item 	 The particular integral of the differential equation $\left(D^{2}+D+1\right) y=\cos 2 x$ is $\frac{1}{\alpha}(2 \sin 2 x-3 \cos 2 x) .$ Then the value of $\alpha$ is.....
+
+\begin{answer}
+	\begin{align*}
+	P.I. &=\frac{1}{D^{2}+D+1} \cdot \cos 2 x\\&=\frac{1}{-2^{2}+D+1} \cdot \cos 2 x\\&=\frac{1}{D-3} \cdot \cos 2 x\\
+	\Rightarrow P . I .&=\frac{D+3}{D^{2}-9} \cdot \cos 2 x\\&=\frac{D+3}{-2^{2}-9} \cdot \cos 2 x\\&=\frac{1}{13}(2 \sin 2 x-3 \cos 2 x)
+	\end{align*}
+	So the correct answer is 13
+\end{answer}
+\item The particular integral of the differential equation $\frac{d^{2} y}{d x^{2}}+2 \frac{d y}{d x}+2 y=\sin x$ is $\frac{1}{5}(\sin x-\alpha \cos x) .$ Then the value of $\alpha$ is........
+\begin{answer}
+	\begin{align*}
+	P \cdot I .&=\frac{1}{D^{2}+2 D+2} \sin x\\&=\frac{1}{-1+2 D+2} \sin x\\&=\frac{2 D-1}{4 D^{2}-1} \sin x\\&=-\frac{1}{5}(2 D-1) \sin x\\
+	\Rightarrow P \cdot I .&=-\frac{1}{5}(2 \cos x-\sin x)\\&=\frac{1}{5}(\sin x-2 \cos x)
+	\end{align*}
+	So the correct answer is 2
+\end{answer}
+	\item The particular integral of the differential equation $\left(D^{2}+5 D+4\right) y=3-2 x$ is $\frac{1}{8}[\alpha-4 x]$.
+\begin{answer}
+	\begin{align*}
+	P.I. &=\left[D^{2}+5 D+4\right]^{-1}(3-2 x)\\&=\frac{1}{4}\left[1+\frac{5}{4} D+\frac{5}{4} D^{2}\right]^{-1}(3-2 x)\\
+	\Rightarrow P.I. &=\frac{1}{4}\left[1-\frac{5}{4} D-\frac{5}{4} D^{2}\right](3-2 x)\\&=\frac{1}{4}\left[3-2 x-\frac{5}{4} \times-2\right]\\&=\frac{1}{8}[11-4 x]
+	\end{align*}
+	So the correct answer is 11
+\end{answer}
+\item  Find the Wronskian $W(t)$ of the given differential equation without solving the equation. $\left(1-x^{2}\right) y ^{\prime \prime}-2 x y^{\prime} +\alpha(\alpha+1) y=0$.
+\begin{answer}
+	\begin{align*}
+	\intertext{ Writing the equation in standard form, we find that,}
+	p(x)&=-2 x /\left(1-x^{2}\right)\\
+	 \text{The Wronskian is }\ W(t)&=c \cdot \exp \left(-\int \frac{-2 x}{1-x^{2}} d x\right)\\&=c \cdot \exp \left(-\ln \left|1-x^{2}\right|\right)\\&=c\left|1-x^{2}\right|^{-1}
+	 \intertext{where $c$ is some constant.}
+	\end{align*}
+\end{answer}
+\item Find whether the functions $1, x, \sin x$ are linearly independent.
+\begin{answer}
+	 We write and evaluate the Wronskian,
+	 $$
+	 W=\left|\begin{array}{rrr}
+	 1 & x & \sin x \\
+	 0 & 1 & \cos x \\
+	 0 & 0 & -\sin x
+	 \end{array}\right|=-\sin x
+	 $$
+	 Since $-\sin x$ is not identically equal to zero, the functions are linearly independent.
+	 
+\end{answer}
+
 	
 \end{enumerate}
 
