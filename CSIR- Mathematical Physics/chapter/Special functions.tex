@@ -107,7 +107,7 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 \subsection{Bessel Function}
 \newpage
 \begin{abox}
-	Problem Set -3
+	Problem Set -1
 \end{abox}
 \begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
 	\item  Let $p_{n}(x)$ (where $n=0,1,2, \ldots \ldots$ ) be a polynomial of degree $n$ with real coefficients, defined in the interval $2 \leq n \leq 4$. If $\int_{2}^{4} p_{n}(x) p_{m}(x) d x=\delta_{n m}$, then
@@ -272,3 +272,529 @@ The extension of the simple power series method is all in the factor $x^{\lambda
 		
 	\end{tabular}
 \end{table}
+\begin{abox}
+	Problem Set -3
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item Green function for time dependent Schrödinger wave equation is defined as $G\left(\vec{r}, t: r^{\prime}, t^{\prime}\right)$. If $H$ is Hamiltonion of system then $G\left(\vec{r}, t: r^{\prime}, t^{\prime}\right)$ will satisfied the equation
+	 \begin{tasks}(1)
+		\task[\textbf{a.}]$\left(i \hbar \frac{\partial}{\partial t}-H\right) G\left(\vec{r}, t ; \vec{r}^{\prime}, t^{\prime}\right)=0$
+		\task[\textbf{b.}]$\left(i \hbar \frac{\partial}{\partial t}-H\right) G\left(\vec{r}, t ; \vec{r}^{\prime}, t^{\prime}\right)=\delta\left(\vec{r}-\vec{r}^{\prime}\right)$
+		\task[\textbf{c.}] $\left(i \hbar \frac{\partial}{\partial t}-H\right) G\left(\vec{r}, t ; \vec{r}^{\prime}, t^{\prime}\right)=\delta\left(t-t^{\prime}\right)$
+		\task[\textbf{d.}]  $\left(i \hbar \frac{\partial}{\partial t}-H\right) G\left(\vec{r}, t ; \vec{r}^{\prime}, t^{\prime}\right)=\delta\left(\vec{r}-\vec{r}^{\prime}\right) \delta\left(t-t^{\prime}\right)$
+	\end{tasks}
+\begin{answer}
+So the correct answer is \textbf{Option (d)}
+\end{answer}
+	\item $G\left(x, x_{0}\right)$ is the Green's function associated with the boundary value problem consisting of ordinary differential equation.
+	$$
+	\frac{d}{d x}\left(p(x) \frac{d u}{d x}\right)=f(x) \text { with } u(0)=0, u(L)=0
+	$$
+	The discontinuity condition on the derivative $\frac{d G\left(x, x_{0}\right)}{d x}$ at $x=x_{0}$ is
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]0
+		\task[\textbf{b.}]$p\left(x_{0}\right)$
+		\task[\textbf{c.}]1
+		\task[\textbf{d.}] $\frac{1}{p\left(x_{0}\right)}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\left.\frac{d G}{d x}\right|_{x=x_{0}^{+}}-\left.\frac{d G}{d x}\right|_{x=x_{i 1}^{-}}=\frac{1}{p\left(x_{0}\right)}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item Consider the steady state heat equation $\frac{d^{2} u}{d x^{2}}=f(x)$ with boundary condition,
+$$
+u(0)=0, u(L)=0
+$$
+The Green's function associated with the above equation
+ \begin{tasks}(2)
+	\task[\textbf{a.}]Constant
+	\task[\textbf{b.}] Linear function
+	\task[\textbf{c.}] Parabolic function
+	\task[\textbf{d.}] Hyperbolic function
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{The Green's function satisfies}
+	\frac{d^{2} G\left(x, x_{0}\right)}{d x^{2}}&=\delta\left(x-x_{0}\right)\\
+\text{	with }G\left(0, x_{0}\right)&=0\text{ and }G\left(L, x_{0}\right)=0
+\intertext{Corresponding homogeneous equation is:}
+\frac{d^{2} G}{d x^{2}}&=0\\
+\text{Solution for }x \neq x_{0}&\text{ are, }G\left(x, x_{0}\right)= \begin{cases}a+b x_{2} & x<x_{1+} \\ c+d x, & x>x_{0}\end{cases}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item Consider the steady state heat equation $\frac{d^{2} u}{d x^{2}}=f(x)$ with boundary condition. $u(0)=0, u(L)=0$
+The Green's function associated with the above equation is
+ \begin{tasks}(1)
+	\task[\textbf{a.}] $G\left(x, x_{0}\right)= \begin{cases}\frac{x}{L}\left(x_{0}-L\right), & 0 \leq x \leq x_{0} \\ \frac{x_{0}}{L}(x-L), & x_{0} \leq x \leq L\end{cases}$
+	\task[\textbf{b.}] $G\left(x, x_{0}\right)= \begin{cases}\frac{x}{L}\left(L-x_{0}\right), & 0 \leq x \leq x_{0} \\ \frac{x_{0}}{L}(L-x), & x_{0} \leq x \leq L\end{cases}$
+	\task[\textbf{c.}] $G\left(x, x_{0}\right)= \begin{cases}\sqrt{\frac{x}{L},} &\quad 0 \leq x \leq x_{0} \\ \sqrt{\frac{(x-L)}{L}}, & \quad x_{0} \leq x \leq L\end{cases}$
+	\task[\textbf{d.}] $G\left(x, x_{0}\right)= \begin{cases}\sqrt{\frac{L-x}{L},}, & 0 \leq x \leq x_{0} \\ \sqrt{\frac{(x)}{L}}, & x_{0} \leq x \leq L\end{cases}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{The Green's function satisfies}
+	\frac{d^{2} G\left(x, x_{0}\right)}{d x^{2}}&=\delta\left(x-x_{0}\right)\\
+	\text{with }G\left(0, x_{0}\right)&=0\text{ and }G\left(L, x_{0}\right)=0
+	\intertext{Corresponding homogeneous equation is:}
+	\frac{d^{2} G}{d x^{2}}&=0\\
+	\text{Solution for }&x \neq x_{0}\text{ are}\\
+	G\left(x, x_{0}\right)&= \begin{cases}a+b x, & x<x_{0} \\ c+d x, & x>x_{0}\end{cases}
+	\intertext{From boundary conditions:}
+	G\left(0, x_{0}\right)&=0 \Rightarrow a=0\\
+	G\left(L, x_{0}\right)&=0 \Rightarrow c=-d L\\
+	\therefore G\left(x, x_{0}\right)&= \begin{cases}b x, & x<x_{0} \\ d(x-L), & x>x_{0}\end{cases}\\
+	\text{From continuity of }&\text{Green's function at }x=x_{0},\text{ we have}\\
+	b x_{0}&=d\left(x_{0}-L\right)\\
+	b&=\frac{d\left(x_{0}-L\right)}{x_{0}}\\
+	\text{From discontinuity of }&\frac{\partial G}{\partial x}\text{ at }x=x_{0}\text{, we have}\\
+	\left.\frac{\partial G}{\partial x}\right|&_{x=x_{0}^{+}}-\left.\frac{\partial G}{\partial x}\right|_{x=x_{0}^{-}}=1\\
+	d-b&=1\\
+	\Rightarrow d&=b+1 \Rightarrow d=\frac{d\left(x_{0}-L\right)}{x_{0}}+1 \Rightarrow d x_{0}=d x_{0}-d L+x_{0}\\
+	\Rightarrow d&=\frac{x_{0}}{L}, b=d-1=\left(\frac{x_{0}}{L}-1\right)\\
+	\therefore G\left(x, x_{0}\right)&= \begin{cases}\frac{x}{L}\left(x_{0}-L\right), & 0 \leq x \leq x_{0} \\ \frac{x_{0}}{L}(x-L), & x_{0} \leq x \leq L\end{cases}
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The differential equation defined as $\frac{d^{2} y}{d x^{2}}=f(x)$ With boundary conditions $\quad y(0)=0$ and $y^{\prime}(1)=0$
+The green function $G\left(x, x_{0}\right)$ satisfy the
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$G\left(x, x_{0}\right)= \begin{cases}x & \text { if } x<x_{0} \\ x_{0} & \text { if } x>x_{0}\end{cases}$
+	\task[\textbf{b.}]$G\left(x, x_{0}\right)= \begin{cases}-x & \text { if } x<x_{0} \\ -x_{0} & \text { if } x>x_{0}\end{cases}$
+	\task[\textbf{c.}]$G\left(x, x_{0}\right)= \begin{cases}x^{2} & \text { if } x<x_{0} \\ -x_{0} & \text { if } x>x_{0}\end{cases}$
+	\task[\textbf{d.}] $G\left(x, x_{0}\right)= \begin{cases}-x^{2} & \text { if } x<x_{0} \\ -x_{0} & \text { if } x>x_{0}\end{cases}$
+\end{tasks}
+\begin{answer}
+	\begin{align}
+	\intertext{The corresponding non-homogenous differential equation for Green's function is}\notag\\
+	\frac{\partial^{2}}{\partial x^{2}} G\left(x, x_{0}\right)&=\delta\left(x-x_{0}\right)\\
+	\text{With }G\left(0, x_{0}\right)&=0\text{ and }G^{\prime}\left(1, x_{0}\right)=0\notag\notag\\
+\text{	Let }&\frac{\partial^{2}}{\partial x^{2}} G\left(x, x_{0}\right)=0\notag\\
+\Rightarrow G\left(x, x_{0}\right)&= \begin{cases}A x+B, & x<x_{0} \\ C x+D, & x>x_{0}\end{cases}\label{SF-01}
+\intertext{Using booundary condition, we have}\notag\\
+B&=0\text{ and }C=0\notag\\
+\therefore&\text{ equation (\ref{SF-01}) becomes}\notag\\
+G\left(x, x_{b}\right)&= \begin{cases}A x, & x<x_{0} \\ D, & x>x_{i 1}\end{cases}\notag\\
+\text{From continuity of }&\left(f\left(x, x_{0}\right)\right.\text{ at }x=x_{0}\text{, we have}\notag\\
+A x_{0}&=D
+\intertext{From discontinuity of first derivative of Green's function i.c. $\frac{\partial G}{\partial x}$ at $x=x_{0}$ we have}
+\left.\frac{\partial G}{\partial x}\right|_{x=x_{0}^{+}}-\left.\frac{\partial G}{\partial x}\right|&_{x=x_{0}^{-}}=1\notag\\
+\Rightarrow 0-A&=1 \Rightarrow A=-1\notag\\
+\text{and }D&=-x_{0}\notag\\
+\therefore G\left(x, x_{0}\right)&= \begin{cases}-x & \text { if } x<x_{0} \notag\\ -x_{0} & \text { if } x>x_{0}\end{cases}
+	\end{align}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item For real $n$ the cylindrical Bessel function of order $n$ is $J_{n}(x)$ then $J_{1 / 2}$ will converge to
+ \begin{tasks}(4)
+	\task[\textbf{a.}]0
+	\task[\textbf{b.}]1
+	\task[\textbf{c.}] $-1$
+	\task[\textbf{d.}] $\frac{1}{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	{{\color{red}{Not completed}}}\\
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item For real $n$ the cylindrical Bessel function is $J_{n}(x)$ of order $n$ then behavior $J_{1 / 2}$ will behave $x \approx 0$ as
+ \begin{tasks}(4)
+	\task[\textbf{a.}] 0
+	\task[\textbf{b.}]$\sqrt{\frac{2 x}{\pi}}$
+	\task[\textbf{c.}]$\sqrt{\frac{x}{\pi}}$
+	\task[\textbf{d.}]  $\sqrt{\frac{x}{2 \pi}}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	{{\color{red}{Not completed}}}\\
+	J_{n}(x)&=\sum_{0}^{\infty} \frac{(-1)^{r}}{[r \mid n+r}\left(\frac{x}{2}\right)^{n+2 r} \Rightarrow J_{1 / 2}(x)=\sum_{0}^{\infty} \frac{(-1)^{r}}{\left\lfloor\frac{1}{2}+r\right.}\left(\frac{x}{2}\right)^{\frac{1}{2}+2 r}\\
+	\text{Put }r&=0 \frac{\sqrt{x / 2}}{\frac{1}{2}}=\sqrt{\frac{2 x}{\pi}} \text{where }\frac{1}{2}=\frac{\sqrt{\pi}}{2}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item For real $n$ the cylindrical Bessel function is $J_{n}(x)$ of order $n$ then behavior $J_{1 / 2}$ will equivalent to (it is given that $\underline{r} \cdot\left\lfloor r-\frac{1}{2}=\left[(2 r) 2^{-r} \sqrt{\pi}\right)\right.$
+ \begin{tasks}(4)
+	\task[\textbf{a.}] $\sqrt{\frac{2}{\pi}} \frac{\sin x}{\sqrt{x}}$
+	\task[\textbf{b.}]$\sqrt{\frac{2}{\pi}} \frac{\sin x}{x}$
+	\task[\textbf{c.}]$\sqrt{\frac{2}{\pi}} \frac{\cos x}{\sqrt{x}}$
+	\task[\textbf{d.}] $\sqrt{\frac{2}{\pi}} \frac{\cos }{x}$
+\end{tasks} 
+\begin{answer}
+	\begin{align*}
+	{{\color{red}{Not completed}}}\\
+	\end{align*}
+\end{answer}
+\item For real $n$ the cylindrical Bessel function is $J_{n}(x)$ of order $n$ then $J_{n}(x)$ will satisfied differential equation
+ \begin{tasks}(1)
+	\task[\textbf{a.}]$\frac{d^{2} J_{n}}{d x^{2}}+\frac{1}{x}\left(\frac{d J_{n}}{d x}\right)+\left(1+\frac{n^{2}}{x^{2}}\right) J_{n}=0$
+	\task[\textbf{b.}] $\frac{d^{2} J_{n}}{d x^{2}}+\frac{1}{x}\left(\frac{d J_{n}}{d x}\right)+\left(1-\frac{n^{2}}{x^{2}}\right) J_{n}=0$
+	\task[\textbf{c.}] $\frac{d^{2} J_{n}}{d x^{2}}+x\left(\frac{d J_{n}}{d x}\right)+\left(1+\frac{n^{2}}{x^{2}}\right) J_{n}=0$
+	\task[\textbf{d.}] $\frac{d^{2} J_{n}}{d x^{2}}+x\left(\frac{d J_{n}}{d x}\right)+\left(1-\frac{n^{2}}{x^{2}}\right) J_{n}=0$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+\text{The Bessel function is given by }\frac{d^{2} J_{n}}{d x^{2}}+\frac{1}{x}\left(\frac{d J_{n}}{d x}\right)+\left(1-\frac{n^{2}}{x^{2}}\right) J_{n}=0
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item For real $n$ the cylindrical Bessel function is $J_{n}(x)$ of order $n$ then value of $\frac{d J_{0}}{d x}$ is equivalent to 
+ \begin{tasks}(4)
+	\task[\textbf{a.}] $J_{1}$
+	\task[\textbf{b.}]$-J_{1}$
+	\task[\textbf{c.}]$2 J_{1}$
+	\task[\textbf{d.}]$-2 J_{1}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+J_{n+1}(x)=-J_{n}^{\prime}(x)+\frac{n}{x} J_{n}\text{. for }n=0, J_{1}=-J_{0}^{\prime}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item  The differential equation $x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+\left[x^{2}-\lambda\right] y(x)=0$ is spherical Bessel's differential equation of order $n$ then value of $\lambda$ is given by
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$n$
+	\task[\textbf{b.}]$n(n+1)$
+	\task[\textbf{c.}] $n(n-1)$
+	\task[\textbf{d.}]  $n^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+\text{Spherical Bessel's differential equation }x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+\left[x^{2}-n(n+1)\right] y(x)=0
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item If $J_{n}(x)$ is spherical Bessel function of order $n$ if $N_{n}(x)$ is spherical Neumann function of order $n$ and $h_{n}^{\prime}$ is spherical Hankel function of type one of order $n$. Then $h_{0}^{1}$ is given by
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$i \frac{e^{-i x}}{x}$
+	\task[\textbf{b.}]$-i \frac{e^{-i x}}{x}$
+	\task[\textbf{c.}] $i \frac{e^{i x}}{x}$
+	\task[\textbf{d.}] $-i \frac{e^{i x}}{x}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		h_{n}^{1}&=J_{n}+i N_{n}\\
+	J_{0}(x)&=\frac{\sin x}{x}, N_{0}(x)=-\frac{\cos x}{x} \Rightarrow h_{0}^{\prime^{\prime}}=J_{0}+i N_{0}=\frac{\sin x-i \cos x}{\because x}=-i \frac{e^{i x}}{x}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item If $J_{n}(x)$ is spherical Bessel function of order $n$ if $N_{n}(x)$ is spherical Neumann function of order $n$ and $h_{n}^{2}$ is spherical Hankel function of type two of order $n$. Then $h_{0}^{2}$ is given by
+ \begin{tasks}(4)
+	\task[\textbf{a.}] $i \frac{e^{-i x}}{x}$
+	\task[\textbf{b.}] $-i \frac{e^{-i x}}{x}$
+	\task[\textbf{c.}]$i \frac{e^{i x}}{x}$
+	\task[\textbf{d.}] $-i \frac{e^{i x}}{x}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	h_{n}^{2}&=J_{n}-i N_{n}\\
+	J_{0}(x)&=\frac{\sin x}{x},N_{0}(x)=-\frac{\cos x}{x} \Rightarrow h_{0}^{1}=J_{0}+i N_{0} \Rightarrow \frac{\sin x+i \cos x}{x}=i \frac{e^{-i x}}{x}
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item If $J_{n}(x)$ is spherical Bessel function of order $n$ then $j_{0}^{\prime}(x)$ is equivalent to
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$j_{1}(x)$
+	\task[\textbf{b.}]$-j_{1}(x)$
+	\task[\textbf{c.}]$\frac{j_{1}(x)}{2}$
+	\task[\textbf{d.}]$-\frac{j_{1}(x)}{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{d}{d x}\left(j_{0}(x)\right)&=\frac{d}{d x}\left(\frac{\sin x}{x}\right)=\frac{\cos x}{x}-\frac{\sin x}{x^{2}}=-J_{1}(x)\\
+	\text{Where }j_{1}(x)&=-\frac{\cos x}{x}+\frac{\sin x}{x^{2}}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item The solution of the differential equation $x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+x^{2} y(x)=0$ subjected to the condition is given by $y(0)=1$.
+ \begin{tasks}(4)
+	\task[\textbf{a.}] $\frac{\sin x}{x}$
+	\task[\textbf{b.}] $\frac{\cos x}{x}$
+	\task[\textbf{c.}]$\frac{\exp (-i x)}{x}$
+	\task[\textbf{d.}] $\frac{\exp i x}{x}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+ \text{Spherical Bessel's differential equation }&x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+\left[x^{2}-n(n+1)\right] y(x)=0\\
+ \text{ then }x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}+x^{2} y(x)=0 &\text{ is spherical Bessel's differential equation for order}\\
+ n&=0\\
+	\text{then solution is }J_{0}(x)&=\frac{\sin x}{x}\text{ with boundary condition }y(0)=1.
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $H_{n}(x)$ is Hermite polynomials of order $n$ then $H_{n}(x)=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}$, then $f(x)$ and $W(x)$ are respectively
+ \begin{tasks}(1)
+	\task[\textbf{a.}]$f(x)=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)$
+	\task[\textbf{b.}]$f(x)=\exp \left(-x^{2}\right), W=\exp \left(x^{2}\right)$
+	\task[\textbf{c.}] $f(x)=W(x)=\exp \left(x^{2}\right)$
+	\task[\textbf{d.}] $f(x)=W(x)=\exp \left(-x^{2}\right)$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H_{n}(x)&=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}\left(\exp \left(-x^{2}\right)\right)}{d x^{n}}\\
+	\text{So after comparing }H_{n}(x)&=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}\\
+	f(x)&=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The solution of differential equation $\frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+\lambda y(x)=0$ is Hermilte polynomial of order $n$ then value of $\lambda$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$n$
+	\task[\textbf{b.}] $-n$
+	\task[\textbf{c.}]$2 n$
+	\task[\textbf{d.}] $-2 n$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+2 n y(x)=0\text{ is Hermite differential equation}
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item The Rodrigues formula for Laguerre polunomial is given by
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$L_n(x)=\frac{e^{-x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)$
+	\task[\textbf{b.}]$L_{n}(x)=\frac{e^{x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{x}\right)$
+	\task[\textbf{c.}]$L_n(x)=\frac{e^{-x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{x}\right)$
+	\task[\textbf{d.}] $L_{n}(x)=\frac{e^{x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	L_{n}(x)=\frac{e^{x}}{n !}\left(\frac{d}{d x}\right)^{n}\left(x^{n} e^{-x}\right)
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item It is given that operator $x-\frac{d}{d x}=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right)$
+If then the normalized wave function for harmonic oscillation is $\psi(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2} \exp \left(-\frac{x^{2}}{2}\right) H_{n}(x)\right.$, then $\psi_n(x)$ is equivalent to 
+ \begin{tasks}(1)
+	\task[\textbf{a.}]$\psi_{n}(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{n} \exp \left(-\frac{x^{2}}{2}\right)\right.$
+	\task[\textbf{b.}] $\psi_{n}(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{2 n} \exp \left(\frac{x^{2}}{2}\right)\right.$
+	\task[\textbf{c.}] $\psi_{n}(x)=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{n} \exp \left(-x^{2}\right)\right.$
+	\task[\textbf{d.}] $\psi_{n}(x)=\left(\pi^{k / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{2 n} \operatorname{cxp}\left(-x^{2}\right)\right.$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H_{n}(x)&=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}\left(\exp \left(-x^{2}\right)\right)}{d x^{n}}\\
+	x-\frac{d}{d x} &=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right) \Rightarrow\left(x-\frac{d}{d x}\right) \exp \left(-\frac{x^{2}}{2}\right) \\ &\left.=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-\frac{x^{2}}{2}\right)\right) \exp \left(-\frac{x^{2}}{2}\right)\\
+	x \exp \left(-\frac{x^{2}}{2}\right)-\frac{d \exp \left(-\frac{x^{2}}{2}\right)}{d x}&=-\exp \left(\frac{x^{2}}{2}\right) \frac{d}{d x} \exp \left(-x^{2}\right)\\
+	\Rightarrow\left(x-\frac{d}{d x}\right) \exp \left(-\frac{x^{2}}{2}\right)&=\exp \left(\frac{x^{2}}{2}\right)\left(-2 x \exp \left(-x^{2}\right)\right)=2 x \exp -\frac{x^{2}}{2}=H_{1}\left(\exp -\frac{x^{2}}{2}\right)\\
+	\text{where }2 x&=H_{1}(x)\\
+	\text{Similarly }\left(x-\frac{d}{d x}\right)^{n} \exp \left(-\frac{x^{2}}{2}\right)&=H_{n} \exp \left(-\frac{x^{2}}{2}\right)\\
+	\psi_{n}(x)&=\left(\pi^{1 / 2} 2^{n}\lfloor n)^{-1 / 2}\left(x-\frac{d}{d x}\right)^{n} \exp \left(-\frac{x^{2}}{-2}\right)\right.
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The solution of differential equation $x \frac{d^{2} y}{d x^{2}}+(1-x) \frac{d y}{d x}+\lambda y(x)=0$ is Laguerre polynomials of order $n$ then value of $\lambda$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$n$
+	\task[\textbf{b.}]$-n$
+	\task[\textbf{c.}] $2 n$
+	\task[\textbf{d.}] $-2 n$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	x \frac{d^{2} y}{d x^{2}}+(1-x) \frac{d y}{d x}+n y(x)=0\text{ is Laguerre differential equation.}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The generating function $F(x, t)=\sum_{n=0}^{\infty} P_{n}(x) t^{n}$ for the Legendre polynomials $P_{n}(x)$ is $F(x, t)=\left(1-2 x t+t^{2}\right)^{-1 / 2}$. The value of $P_{2}(-1)$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$5 / 2$
+	\task[\textbf{b.}]$3 / 2$
+	\task[\textbf{c.}] $+1$
+	\task[\textbf{d.}] $-1$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{The generating function for Legendre polynomial is }F(x, t)&=\left(1-2 x t+t^{2}\right)^{-1 / 2}.\text{ Thus}\\P_{2}(x)=\frac{1}{2}\left(3 x^{2}-1\right) \Rightarrow P_{2}(-1)=\frac{1}{2}(3-1)=1
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item If we observe plot of Bessel functions $J_{0}(x), J_{1}(x)$, and $J_{2}(x)$ we find their maxima at $x_{0}, x_{1}$ and $x_{2}$ respectively. Then which of the following is true
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$x_{0}<x_{1}<x_{2}$
+	\task[\textbf{b.}]$x_{0}>x_{1}>x_{2}$
+	\task[\textbf{c.}]$x_{0}<x_{1}=x_{2}$
+	\task[\textbf{d.}] $x_{0}=x_{1}<x_{2}$
+\end{tasks}
+\begin{answer}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item Which one of the following is correctly matched?\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm,width=6.5cm]{SF-01}
+\end{figure}
+ \begin{tasks}(2)
+	\task[\textbf{a.}](1) $J_{0}$,
+	(2) $J_{2}$, (3) $J_{1}$
+	\task[\textbf{b.}]$(1) J_{0}$,
+	(2) $J_{1}, \quad(3) J_{2}$
+	\task[\textbf{c.}](1) $J_{2}$,
+	(2) $J_{1}$,
+	(3) $J_{0}$
+	\task[\textbf{d.}] None of the above
+\end{tasks}
+\begin{answer}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item If the generating function of Legendre polynomial is $\frac{1}{\sqrt{1-6 t+t^{2}}}$, then coefficient of $t^{2}$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}] 11
+	\task[\textbf{b.}]$-11$
+	\task[\textbf{c.}]13
+	\task[\textbf{d.}] $-13$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{The generating function for the polynomial solutions of the Legendre ODE is given by}
+	g(x, t)&=\frac{1}{\sqrt{1-2 x t+t^{2}}}=\sum_{n=0}^{\infty} P_{n}(x) t^{n}\\
+	\text{Thus }x&=3\text{ and }n=2.\\
+	P_{2}(x)&=\frac{1}{2}\left(3 x^{2}-1\right) \Rightarrow P_{2}(3)=\frac{1}{2}\left(3 \times 3^{2}-1\right)=13
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item Which of the following relation is true for Bessel's differential equation?
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$J_{0}^{\prime}(x)=J_{1}(x)$
+	\task[\textbf{b.}]$J_{0}^{\prime}(x)=-J_{2}(x)$
+	\task[\textbf{c.}]$J_{0}^{\prime}(x)=J_{2}(x)$
+	\task[\textbf{d.}] $J_{0}^{\prime}(x)=-J_{1}(x)$
+\end{tasks}
+\begin{answer}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item Given that $\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}=e^{-t^{2}+2 x x}$ the value of $H_{6}(0)$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]$-120$
+	\task[\textbf{b.}]$+120$
+	\task[\textbf{c.}]12
+	\task[\textbf{d.}]  $-12$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\sum_{n=0}^{\infty} I_{n}(x) \frac{t^{\prime \prime}}{n !}&=e^{-t^{2}+2 t x} \Rightarrow \sum_{n=0}^{\infty} H_{n}(0) \frac{t^{n}}{n !}=e^{-t^{2}}=1-t^{2}+\frac{t^{4}}{2 !}-\frac{t^{6}}{3 !}\\
+	\Rightarrow \frac{H_{6}(0)}{6 !} t^{6}&=-\frac{1}{3 !} t^{6} \Rightarrow H_{6}(0)=-\frac{6 !}{3 !}=-120
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item Given that $\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}=e^{-t^{2}+2 e x}$ the value of $H_{4}(0)$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]12
+	\task[\textbf{b.}] 6
+	\task[\textbf{c.}]24
+	\task[\textbf{d.}] $-6$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}&=e^{-t^{2}+2 t x} \Rightarrow \sum_{n=0}^{\infty} H_{n}(0) \frac{t^{n}}{n !}=e^{-t^{2}}=1-t^{2}+\frac{t^{4}}{2 !}-\frac{t^{6}}{3 !}\\
+	\Rightarrow \frac{H_{4}(0)}{4 !} t^{4}&=\frac{t^{4}}{2 !} \Rightarrow H_{4}(0)=\frac{4 !}{2 !}=12
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item If Hermite polynomial of order 2 is given by $H_{2}(x)=a x^{2}-2 ; a>0$, then the value of $a$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]3
+	\task[\textbf{b.}]4
+	\task[\textbf{c.}]5
+	\task[\textbf{d.}] 6
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{Orthonormality condition,}
+	\int_{-\infty}^{+\infty}\left[H_{n}(x)\right]^{2} e^{-x^{2}} d x&=2^{\prime \prime} n ! \sqrt{\pi}\\
+	\text{For, }n&=2, \int_{-\infty}^{+\infty}\left(a x^{2}-2\right)^{2} e^{-x^{2}} d x=8 \sqrt{\pi}\\
+\text{	Now}
+	\int_{-\infty}^{+\infty}\left[H_{2}(x)\right]^{2} e^{-x^{2}} d x&=\int_{-\infty}^{+\infty}\left(a x^{2}-2\right)^{2} e^{-x^{2}} d x=\left\{a^{2} \times \frac{3}{4}+4-2 a\right\} \sqrt{\pi}
+	\intertext{Thus, we have}
+	\frac{3 a^{2}}{4}+4-2 a&=8 \Rightarrow 3 a^{2}-8 a-16=0 \Rightarrow 3 a^{2}-12 a+4 a-16=0\\
+	\Rightarrow 3 a(a-4)+4(a-4)&=0 \Rightarrow(3 a+4)(a-4)=0\\
+	\text{Thus, }a&=4
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item The value of Legendre polynomial $p_{n}(x)$ for odd $n$ and $x=0$. i.e., $p_{n}(0)$ is
+ \begin{tasks}(4)
+	\task[\textbf{a.}]1
+	\task[\textbf{b.}]0
+	\task[\textbf{c.}]$-1$
+	\task[\textbf{d.}]  $0.5$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{The generating function for Legendre polynomial is}
+	\left(1-2 x t+t^{2}\right)^{-1 / 2}&=\sum_{n=0}^{\infty} p_{n}(x) t^{n}\\
+	\text{Put, $x=0$, we get, }&\left(1+t^{2}\right)^{-1 / 2}=\sum p_{n}(\theta) t^{n}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item For the Legendre's polynomial $P_{n}(x)$, given below are two statements. Study these carefully and pick out the correct option.\\
+Statement I: $\quad \int_{-1}^{1} x\left[P_{n}(x)\right]^{2} d x=0$\\
+Statement I: $\lim _{n \rightarrow \infty}\left[\int_{-1}^{1} x P_{n}(x) P_{n+1}(x) d x\right]=0$
+ \begin{tasks}(1)
+	\task[\textbf{a.}]Only statement (I) is correct
+	\task[\textbf{b.}]Only statement (II) is correct
+	\task[\textbf{c.}]Both (I) and (II) are correct
+	\task[\textbf{d.}]Neither (I) nor (II) is correet
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{From recurrence relation we have}
+	(n+1) P_{n+1}(x)&=(2 n+1) x p_{n}(x)-n p_{n-1}(x)\\
+	x p_{n}(x)&=\frac{1}{(2 n+1)}\left\{(n+1) p_{n+1}(x)+n p_{n-1}(x)\right\}\\
+	x\left[p_{n}(x)\right]^{2}&=\frac{1}{(2 n+1)}\left\{(n+1) p_{n}(x) p_{n+1}(x)+n p_{n}(x) p_{n-1}(x)\right\}\\
+	\therefore \int_{-1}^{+1} x\left[p_{n}(x)\right]^{2} d x&=0\left\{\because \int_{-1}^{+1} p_{m}(x) p_{n}(x)=0\right.\text{ if }\left.m \neq n\right\}\\
+	\therefore &\int_{-1}^{+1} x\left[p_{n}(x)\right]^{2} d x=0
+	\intertext{From recurrence relation, we have}
+	(n+1) p_{n+1}(x)&=(2 n+1) x p_{n}(x)-n p_{n-1}(x)\\
+	(2 n+1) x p_{n}(x)&=(n+1) p_{n+1}(x)+n p_{n-1}(x)\\
+	\int_{-1}^{+1}(2 n+1) x p_{n}(x) p_{n+1}(x) d x&=\int_{-1}^{+1}\left[(n+1)\left\{p_{n+1}(x)\right\}^{2}+n p_{n-1}(x) p_{n+1}(x)\right] d x\\
+	=\int_{-1}^{+1}(n+1)\left\{p_{n+1}(x)\right\}^{2} d x+n \int_{-1}^{+1}& p_{n-1}(x) p_{n+1}(x) d x=(n+1) \frac{2}{2(n+1)+1}+0=\frac{2 n+2}{2 n+3}\\
+	\therefore \int_{-1}^{+1} x p_{n}(x) p_{n+1}(x) d x&=\frac{2 n+2}{(2 n+1)(2 n+3)}\\
+	\lim _{n \rightarrow \infty} \frac{n\left(2+\frac{2}{n}\right)}{n^{2}\left(2+\frac{1}{n}\right)\left(2+\frac{3}{n}\right)}&=\lim _{n \rightarrow \infty} \frac{\left(2+\frac{2}{n}\right)}{n\left(2+\frac{1}{n}\right)\left(2+\frac{3}{n}\right)}=0
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item Which of the following statements is Incorrect about the Hermite polynomials $H_{n}(x)$ ?
+ \begin{tasks}(1)
+	\task[\textbf{a.}] The value of integral $\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x$ is 384
+	\task[\textbf{b.}] Hermite polynomial of order $3, H_{3}(x)$, satisfies the differential equation $y^{\prime \prime}-2 x y^{\prime}+6 y=0$
+	\task[\textbf{c.}] The value of $\mathrm{H}_{4}(\mathrm{l})$ is $-20$
+	\task[\textbf{d.}] $H_{n}(x)=\frac{H_{n+1}(x)+2 n H_{n-1}(x)}{x}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{When integrated with respect to weight function $e^{-x^{2}}$, the Hermite polynomials satisfy}
+	\int_{-\infty}^{\infty} e^{-x^{2}} H_{n}(x) H_{m}(x) d x&= \begin{cases}0, & n \neq m \\ \sqrt{\pi} 2^{n} n !, & n=m\end{cases}
+	\intertext{In our case $n=m=4$, hence}
+	\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x&=\frac{\sqrt{\pi} 2^{4}(4 !)}{\sqrt{\pi}}=384
+	\intertext{Hermite polynomial of order $n$, satisfies the differential equation}
+	y^{\prime \prime}-2 x y^{\prime}+2 n y=0\\
+\text{	when }n=3, y^{\prime \prime}-2 x y^{\prime}+6 y=0\\
+	\text{We have }H_{4}(x)&=16 x^{4}-48 x^{2}+12\\
+	\text{Therefore, }H_{4}(1)&=-48+28=-20
+	\intertext{The recursion relation for Hermite polynomials is}
+	H_{n+1}(x)&=2 x H_{n}(x)-2 n H_{n-1}(x) \Rightarrow H_{n}(x)=\frac{H_{n+1}(x)+2 n H_{n-1}(x)}{2 x}
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item If $P_{n}(x)$ denotes the Legendre polynomials of order $n$, then which of the following statements is incorrect?
+ \begin{tasks}(1)
+	\task[\textbf{a.}]$P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left[\left(x^{2}-1\right)^{n}\right]$ where $n=0,1,2 \ldots$
+	\task[\textbf{b.}]The Legendre polynomials satisfy the differential equation\\$
+	\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+n(n+1) y=0
+	$
+	\task[\textbf{c.}] For each value of $n$ the Legendre polynomials satisfy the relation $P_{n}(1)=1$.
+	\task[\textbf{d.}] The value of integral $\int_{-1}^{1}\left[P_{4}(x)\right]^{2} d x$ is $\frac{2}{7}$.
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{Option (a) is the correct definition of Legendre polynomial. Legendre polynoimials satisfy the differential equation given in option (b). For each value of $n$ Legendre polynomials satisfy $P_{n}(1)=1$.}
+	\text{Since, }\int_{-1}^{1}\left[P_{n}(x)\right]^{2} d x&=\frac{2}{2 n+1}\\
+	\text{Hence, }\int_{-1}^{1}\left[P_{4}(x)\right]^{2} d x&=\frac{2}{2 \cdot 4+1}=\frac{2}{9}\\
+	\text{Hence option }&(d)\text{ is incorrect.}
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
+\end{enumerate}
