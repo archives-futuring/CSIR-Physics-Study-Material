@@ -170,27 +170,72 @@ x&p&$10^7\ y$&$10^7\ \Delta y$&$10^7\ \Delta^2 y$&$10^7\ \Delta^3 y$&$10^7\ \Del
 		\end{align*}
 			So the correct answer is \textbf{Option (a)}
 	\end{answer}
+\end{enumerate}
+\section{Jacobian}
+\begin{enumerate}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		f=y^{x}, \frac{\partial f}{\partial y}&=x y^{x-1}, \frac{\partial^{2} f}{\partial x \partial y}=\frac{\partial}{\partial x}\left(y^{x-1} x\right)=y^{x-1}+x y^{x-1} \ln y\\
+		\left.\frac{\partial^{2} f}{\partial x \partial y}\right|_{x=2, y=1}&=1
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}	
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial z}{\partial x}&=y \ln (x y)+\frac{x y}{x y} y \Rightarrow y(\ln x y+1) \Rightarrow x \frac{\partial z}{\partial x}=x y(\ln (x y+1)\\
+		\frac{\partial z}{\partial y}&=x \ln (x y)+\frac{x y}{x y} x \Rightarrow x(\ln x y+1) \Rightarrow y \frac{\partial z}{\partial y}=x y(\ln (x y+1)\\
+		x \frac{\partial z}{\partial x}-y \frac{\partial z}{\partial y}&=0
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align}
+		f(x, y)&=\sum_{K=1}^{10}\left(x^{2}-y^{2}\right)^{K} \Rightarrow \frac{\partial f}{\partial x}(x, y)=\sum_{K=1}^{10} K\left(x^{2}-y^{2}\right)^{K-1}(2 x)\\
+		\text{and }\frac{\partial f}{\partial y}(x, y)&=\sum_{K=1}^{10} K\left(x^{2}-y^{2}\right)^{K-1}(-2 y)\\
+		\Rightarrow y \frac{\partial f}{\partial x}(x, y)&+x \frac{\partial f}{\partial y}(x, y)=0\notag
+		\end{align}
+			So the correct answer is \textbf{Option (d)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\int_{z=0}^{1} \int_{y=0}^{z} \int_{x=0}^{y} x y^{2} z^{3} d x d y d z=\int_{z=0}^{1} \int_{y=0}^{z} \frac{y^{2}}{2} y^{2} z^{3} d y d z=\int_{z=0}^{1} \frac{z^{8}}{10} d z=\frac{1}{90}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial x}{\partial r}&=\cos \theta, \frac{\partial y}{\partial r}=\sin \theta, \frac{\partial x}{\partial \theta}=-r \sin \theta, \frac{\partial y}{\partial \theta}=r \cos \theta\text{ and}\\
+		\frac{\partial z}{\partial r}&=0, \frac{\partial z}{\partial \theta}=0, \frac{\partial z}{\partial z}=1\\
+		J&=\left|\begin{array}{lll}\frac{\partial x}{\partial r} & \frac{\partial x}{\partial \theta} & \frac{\partial x}{\partial z} \\ \frac{\partial y}{\partial r} & \frac{\partial y}{\partial \theta} & \frac{\partial y}{\partial z} \\ \frac{\partial z}{\partial r} & \frac{\partial z}{\partial \theta} & \frac{\partial z}{\partial \theta}\end{array}\right|=\left|\begin{array}{ccc}\cos \theta & -r \sin \theta & 0 \\ \sin \theta & \cos \theta & 0 \\ 0 & 0 & 1\end{array}\right|=r
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		J\left(\frac{\partial(x, y)}{\partial(u, v)}\right)&=\left(\begin{array}{ll}\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\end{array}\right)=\left|\begin{array}{cc}1-v & -u \\ v & u\end{array}\right|=(u-u v)-(-u v)=u
+		\end{align*}
+			So the correct answer is \textbf{Option (a)}
+	\end{answer}
+		\item  $\left. \right. $
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial(u, v)}{\partial(r, \theta)}&=\frac{\partial(u, v)}{\partial(x, y)} \times \frac{\partial(x, y)}{\partial(r, \theta)}\\
+		\frac{\partial(u, v)}{\partial(x, y)}&=\left|\begin{array}{ll}\frac{\partial u}{\partial x} & \frac{\partial u}{\partial v} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}\end{array}\right|=\left|\begin{array}{cc}2 x & -4 y \\ 4 x & -2 y\end{array}\right|=-4 x y+16 x y=12 x y \quad\text{ put }x=r \cos \theta, y=r \sin \theta\\
+		J&=\frac{\partial(x, y)}{\partial(r, \theta)}=\left|\begin{array}{ll}\frac{\partial x}{\partial r} & \frac{\partial x}{\partial \theta} \\ \frac{\partial y}{\partial r} & \frac{\partial y}{\partial \theta}\end{array}\right| \Rightarrow\left|\begin{array}{cc}\cos \theta & -r \sin \theta \\ \sin \theta & r \cos \theta\end{array}\right|=r\\
+		\frac{\partial(u, v)}{\partial(r, \theta)}&=\frac{\partial(u, v)}{\partial(x, y)} \times \frac{\partial(x, y)}{\partial(r, \theta)}=12 x y \cdot r=6 r^{3} \sin 2 \theta
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	
+	
+	
 
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

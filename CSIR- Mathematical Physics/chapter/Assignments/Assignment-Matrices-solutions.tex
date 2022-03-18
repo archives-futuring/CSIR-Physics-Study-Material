@@ -520,7 +520,7 @@
 	\text{	For eigen value }|A-\lambda I|&=0\\
 	\left|\begin{array}{ccc}5-\lambda & 0 & \sqrt{3} \\ 0 & 3-\lambda & 0 \\ \sqrt{3} & 0 & 3-\lambda\end{array}\right|&=0 \Rightarrow(5-\lambda)\left[(3-\lambda)^{2}-0\right]+\sqrt{3}[-\sqrt{3}(3-\lambda)]=0\\
 	\Rightarrow-\lambda^{3}+11 \lambda^{2}-36 \lambda+36&=0 \Rightarrow \lambda=2,3,6\\
-	\text{eigen vector can be determine by }A X_{1}&=\lambda_{1} X_{1}\\
+	\text{eigen vector can  }&\text{ be determine by}A X_{1}=\lambda_{1} X_{1}\\
 	\text{	For }\lambda&=2,\\
 	\left[\begin{array}{ccc}5 & 0 & \sqrt{3} \\ 0 & 3 & 0 \\ \sqrt{3} & 0 & 3\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]&=2\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]\\
 	5 x_{1}+\sqrt{3} x_{3}&=2 x_{1}, \quad 3 x_{2}=2 x_{2}, \sqrt{3} x_{1}+3 x_{3}=2 x_{3} \Rightarrow x_{2}=0, x_{3}=-\sqrt{3} x_{1}\\
@@ -580,8 +580,242 @@ X_{3}=\left[\begin{array}{c}\sqrt{3} x_{3} \\ 0 \\ x_{3}\end{array}\right] .&\te
 		\end{align*}
 		So the correct answer is \textbf{1}
 	\end{answer}
-	
-	
-	
-	
+		\item $\left. \right. $	
+	\begin{answer}
+		\begin{align*}
+		|A|&=-1, \operatorname{adj}(A)=\left(A^{c}\right)^{T}=\left[\begin{array}{ccc}0 & 0 & -1 \\ 0 & -1 & 0 \\ -1 & 0 & 0\end{array}\right]\\
+		\Rightarrow A^{-1}&=\frac{\operatorname{adj} A}{|A|}=-1 \times\left[\begin{array}{ccc}0 & 0 & -1 \\ 0 & -1 & 0 \\ -1 & 0 & 0\end{array}\right]=\left[\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right] .\\
+		\text{One can check }&A^{-1} A=\left[\begin{array}{lll}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{array}\right]
+		\end{align*}
+			So the correct answer is \textbf{Option (d)}
+	\end{answer}
+		\item $\left. \right. $	
+	\begin{answer}
+		\begin{align*}
+		\intertext{For eigenvalue}
+		&|A-\lambda I|=0 \Rightarrow\left|\begin{array}{ccc}1-\lambda & 0 & 1 \\ 0 & 1-\lambda & 0 \\ 1 & 0 & 1-\lambda\end{array}\right|=(1-\lambda)\left[(1-\lambda)^{2}-0\right]+0+1[-(1-\lambda)]=0\\
+		&\Rightarrow-\lambda^{3}+3 \lambda^{2}-2 \lambda=0 \Rightarrow \lambda=0,1,2
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item $\left. \right. $	
+\begin{answer}
+	\begin{align*}
+	\intertext{For eigenvalue}
+	|A-\lambda I|&=0 \Rightarrow\left|\begin{array}{ccc}1-\lambda & \sqrt{8} & 0 \\ \sqrt{8} & (1-\lambda) & \sqrt{8} \\ 0 & \sqrt{8} & (1-\lambda)\end{array}\right|=(1-\lambda)\left[(1-\lambda)^{2}-8\right]+\sqrt{8}[\sqrt{8}(1-\lambda)]=0\\
+	&\Rightarrow-\lambda^{3}+3 \lambda^{2}-3 \lambda+1=0 \Rightarrow \lambda=-3,1,5
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item $\left. \right. $	
+\begin{answer}
+	\begin{align*}
+	\text{For eigenvalue }|A-\lambda I|&=0\\
+	\Rightarrow\left|\begin{array}{ccc}-\lambda & 1 & 0 \\ 1 & -\lambda & 1 \\ 0 & 1 & -\lambda\end{array}\right|&=0 \Rightarrow-\lambda\left(\lambda^{2}-1\right)+1[(\lambda)]=0 \Rightarrow-\lambda^{3}+2 \lambda=0 \Rightarrow \lambda=0, \sqrt{2},-\sqrt{2}
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{For eigenvalue }|A-\lambda I|&=0 \Rightarrow\left|\begin{array}{ccc}-\lambda & 1 & 1 \\ 1 & -\lambda & 1 \\ 1 & 1 & -\lambda\end{array}\right|=0 \Rightarrow-\lambda\left[\left(\lambda^{2}-1\right)\right]+1(1+\lambda)+1(1+\lambda)=0\\
+	\Rightarrow-\lambda^{3}+3 \lambda+2&=0 \Rightarrow \lambda=-1,-1,2
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+\text{	For eigenvalue } |A-\lambda I|&=0\\
+\left|\begin{array}{ccc}1-\lambda & 0 & 1 \\ 0 & 1-\lambda & 0 \\ 1 & 0 & 1-\lambda\end{array}\right|&=(1-\lambda)\left[(1-\lambda)^{2}-0\right]+0+1[-(1-\lambda)]=0\\
+\Rightarrow-\lambda^{3}+3 \lambda^{2}-2 \lambda&=0 \Rightarrow \lambda=0,1,2\\
+\text{Eigen vector can be determine by }A X_{1}&=\lambda X_{1} \Rightarrow\left[\begin{array}{lll}1 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\lambda\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]\\
+\text{For }\lambda&=0,\\
+\left[\begin{array}{lll}1 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=0\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{1}+x_{3}&=0, x_{2}=x_{2}, x_{1}+x_{3}=0 \Rightarrow x_{1}=-x_{3}\text{ and }x_{2}=0\\
+X_{1}&=\left[\begin{array}{c}x_{1} \\ 0 \\ -x_{1}\end{array}\right]=x_{1}\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right]\\
+\text{From orthogonal relation }X_{1}^{T} X_{1}&=1 \Rightarrow x_{1}=\frac{1}{\sqrt{2}} \Rightarrow X_{1}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right]
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{For eigenvalue }|A-\lambda I|&=0\\
+	\left|\begin{array}{ccc}1-\lambda & \sqrt{8} & 0 \\ \sqrt{8} & (1-\lambda) & \sqrt{8} \\ 0 & \sqrt{8} & (1-\lambda)\end{array}\right|&=(1-\lambda)\left[(1-\lambda)^{2}-8\right]+\sqrt{8}[\sqrt{8}(1-\lambda)]\\
+	-\lambda^{3}+3 \lambda^{2}-3 \lambda+1&=0 \Rightarrow \lambda=-3,1,5
+	\intertext{Eigenvector can be determine by $A X_{1}=\lambda_{1} X_{1}$}
+	\text{For }\lambda&=5,\left[\begin{array}{ccc}1 & \sqrt{8} & 0 \\ \sqrt{8} & 1 & \sqrt{8} \\ 0 & \sqrt{8} & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=5\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]\\
+	x_{1}+\sqrt{8} x_{2}&=5 x_{1}, \sqrt{8} x_{1}+x_{2}+\sqrt{8} x_{3}=5 x_{2}, \sqrt{8} x_{2}+x_{3}=5 x_{3}\\
+	\Rightarrow x_{1}&=x_{3}, x_{2}=\sqrt{2} x_{1} \quad X_{1}=\left[\begin{array}{c}x_{1} \\ \sqrt{2} x_{1} \\ x_{1}\end{array}\right] \Rightarrow X_{1}=x_{1}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1\end{array}\right]\\
+	\text{From orthogonality condition }x_{1}&=\frac{1}{2}, X_{1}=\frac{1}{2}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1:\end{array}\right]
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{For eigen value }|A-\lambda I|&=0\\
+	\left|\begin{array}{ccc}-\lambda & 1 & 0 \\ 1 & -\lambda & 1 \\ 0 & 1 & -\lambda\end{array}\right|&=0 \Rightarrow-\lambda\left(\lambda^{2}-1\right)+1[(\lambda)]\\&=0 \Rightarrow-\lambda^{3}+2 \lambda=0 \Rightarrow \lambda=0, \sqrt{2},-\sqrt{2}\\
+	\text{Eigen vector }&\text{ can be determine by }A X_{1}=\lambda_{1} X_{1}\\
+	\text{For }\lambda&=-\sqrt{2} ;\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=-\sqrt{2}\left[\begin{array}{c}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{2}\\&=-\sqrt{2} x_{1}, x_{1}+x_{3}=-\sqrt{2} x_{2}, x_{2}=-\sqrt{2} x_{3}\\
+	\Rightarrow x_{1}&=x_{3}, x_{2}=-\sqrt{2} x_{1}\\
+	X_{1}&=\left[\begin{array}{c}x_{1} \\ -\sqrt{2} x_{1} \\ x_{1}\end{array}\right].\text{ From orthogonality condition, }\\
+	X_{1}^{T} X_{1}&=1 \Rightarrow x_{1}=\frac{1}{2} \Rightarrow X_{1}=\frac{1}{2}\left[\begin{array}{c}1 \\ -\sqrt{2} \\ 1\end{array}\right]\\
+	\text{For }\lambda&=0\\
+	\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]&=0\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{2}=0, x_{1}+x_{3}=0, \Rightarrow x_{1}=-x_{3} \Rightarrow X_{2}=\left[\begin{array}{c}x_{1} \\ 0 \\ -x_{1}\end{array}\right]\\
+\text{	From orthogonality }&\text{ condition}X_{2}^{T} X_{2}=1 \Rightarrow x_{1}=\frac{1}{\sqrt{2}} \Rightarrow X_{2}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}1 \\ 0 \\ -1\end{array}\right]\\
+\text{For }\lambda&=\sqrt{2},\\
+\left[\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]&=\sqrt{2}\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{2}=\sqrt{2} x_{1}, x_{1}+x_{3}=\sqrt{2} x_{2}, x_{2}=\sqrt{2} x_{3} \Rightarrow x_{1}=x_{3}\\
+\Rightarrow X_{3}=\left[\begin{array}{c}x_{1} \\ \sqrt{2} x_{1} \\ x_{1}\end{array}\right].&\text{ From orthogonality condition }X_{3}{ }^{T} X_{3}=1 \Rightarrow x_{1}=\frac{1}{2} \Rightarrow X_{3}=\frac{1}{2}\left[\begin{array}{c}1 \\ \sqrt{2} \\ 1\end{array}\right]
+	\end{align*}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{For eigen value }|A-\lambda I|&=0,\\
+	\Rightarrow\left|\begin{array}{ccc}-\lambda & 1 & 1 \\ 1 & -\lambda & 1 \\ 1 & 1 & -\lambda\end{array}\right|&=0 \Rightarrow-\lambda\left[\left(\lambda^{2}-1\right)\right]+1(1+\lambda)+1(1+\lambda)=0\\
+	\Rightarrow-\lambda^{3}+3 \lambda+2&=0 \Rightarrow \lambda=-1,-1,2
+	\intertext{Eigen vector can be determine by $A X_{1}=\lambda_{1} X_{1}$}\\
+	\text{For }\lambda&=-1,\\
+	\left[\begin{array}{lll}0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]&=-1\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{2}+x_{3}=-x_{1}, x_{1}+x_{3}\\&=-x_{2}, x_{1}+x_{2}=-x_{3} \Rightarrow x_{1}+x_{2}+x_{3}=0\\
+	\text{If }X_{1}&=\left[\begin{array}{c}-\left(x_{2}+x_{3}\right) \\ x_{2} \\ x_{3}\end{array}\right]\text{ if }\Rightarrow x_{2}=k_{1} x_{3}=k_{2}\\
+	X_{1}&=\left[\begin{array}{c}-\left(k_{1}+k_{2}\right) \\ k_{1} \\ k_{2}\end{array}\right]\text{ if }k_{1}=k_{2}\\
+	X_{1}=k_{1}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]&\text{ from orthogonality condition }X_{1}^{T} X_{1}=1 \Rightarrow k_{1}=\frac{1}{2} \Rightarrow X_{1}=\frac{1}{2}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]\\
+\text{	For }\lambda&=-1\text{ similarly if }k_{1}=1, k_{2}=-1\\
+\text{Then }X_{2}&=\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right] \quad X_{2}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right]
+	\end{align*}	
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{For eigen value }|A-\lambda I|&=0\\
+	\left|\begin{array}{ccc}1-\lambda & 1 & 1 \\ 1 & 1-\lambda & 1 \\ 1 & 1 & 1-\lambda\end{array}\right|&=0 \Rightarrow(1-\lambda)\left[\left(1-\lambda^{2}\right)-1\right]+1[1-(1-\lambda)]+1[1-(1-\lambda)]=0\\
+	\Rightarrow-\lambda^{3}+3 \lambda^{2}&=0 \Rightarrow \lambda=0,0,3
+\intertext{	Eigen vector can be determine by $A X_{1}=\lambda_{1} X_{1}$}
+\text{For }\lambda=0,\left[\begin{array}{lll}1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]&=0\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow x_{1}+x_{2}+x_{3}=0, x_{1}+x_{2}+x_{3}=0, x_{1}+x_{2}+x_{3}=0\\
+\text{Now }
+x_{1}&=-x_{2} \cdots x_{3},\text{ if }x_{2}=\cdots 1, x_{3}=1 \Rightarrow x_{1}=0\\
+X_{1}&=\left[\begin{array}{c}-x_{2}-x_{3} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow X_{1}=\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right]=X_{1}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right].\\
+\text{For }\lambda&=0, X_{2}=\left[\begin{array}{c}-x_{2}-x_{3} \\ x_{2} \\ x_{3}\end{array}\right]\text{ is orthogonal to }X_{1}.\\
+\frac{1}{\sqrt{2}}\left(\begin{array}{lll}0 & 1 & -1\end{array}\right)\left[\begin{array}{c}-x_{2}-x_{3} \\ x_{2} \\ x_{3}\end{array}\right]&=0 \Rightarrow x_{2}=x_{3} \Rightarrow X_{2}=\left[\begin{array}{c}-2 x_{2} \\ x_{2} \\ x_{2}\end{array}\right]\\
+\text{From orthogonality condition, }&X_{2}^{T} X_{2}=1 \Rightarrow x_{2}=\frac{1}{\sqrt{6}} \Rightarrow X_{2}=\frac{1}{\sqrt{6}}\left[\begin{array}{c}-2 \\ 1 \\ 1\end{array}\right]
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\operatorname{Tr}\left[M^{2}\right]&=(-1)^{2}+(3)^{2}+(4)^{2}\text{ also } \operatorname{Tr}\left[M^{3}\right]=(-1)^{3}+(3)^{3}+(4)^{3}=90
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{If matrix is }&2 \times 2\text{ let }\left(\begin{array}{ll}1 & 2 \\ 2 & 4\end{array}\right)\text{ then eigen value is given by }\\ \left(\begin{array}{cc}1-\lambda & 2 \\ 2 & 4-\lambda\end{array}\right)&=0 \Rightarrow(1-\lambda)(4-\lambda)-4=0 \Rightarrow \lambda=0,5\\
+	\text{If matrix is }&3 \times 3,\text{ let }\left(\begin{array}{lll}1 & 2 & 3 \\ 2 & 4 & 6 \\ 3 & 6 & 9\end{array}\right)\text{ then eigen vahue is given by }\\
+	\left(\begin{array}{ccc}1-\lambda & 2 & 3 \\ 2 & 4-\lambda & 6 \\ 3 & 6 & 9-\lambda\end{array}\right)&=0\\
+	(1-\lambda)[(4-\lambda)(9-\lambda)-36]&+2[18-2(9-\lambda)]+3[12-3(4-\lambda)]\\
+	(1-\lambda)\left[\lambda^{2}-13 \lambda+36-36\right]&+2[18-18+2 \lambda]+3[12-12+3 \lambda]=0\\
+	\lambda^{2}-13 \lambda-\lambda^{3}+13 \lambda^{2}+13 \lambda&=0 \Rightarrow \lambda^{3}-14 \lambda^{2}=0 \Rightarrow \lambda=0,0, \lambda=14
+	\end{align*}
+	i.e. has one degenerate eigenvalue with degeneracy 2 .\\
+	Thus one can generalized that for $\mathrm{n}$ dimensional matrix has one degenerate eigevalue with degeneracy $(n-1)$.\\\\
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	We know that for any matrix\\
+	1. The product of eigenvalues is equal to determinant of that matrix.\\
+	2. $\lambda_{1}+\lambda_{2}+\lambda_{3}+\ldots \ldots=$ Trace of matrix\\
+	$\lambda_{1}+\lambda_{2}+\lambda_{3}=11$ and $\lambda_{1} \lambda_{2} \lambda_{3}=36$. Hence the largest eigen value of the matrix is 9 :\\\\
+	So the correct answer is \textbf{Option (c)}	
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{The characteristic equation is given by }\left(\begin{array}{ccc}0-\lambda & 1 & 1 \\ 0 & 0-\lambda & 1 \\ 1 & 0 & 0-\lambda\end{array}\right)&=0\\
+	\Rightarrow-\lambda\left((-\lambda)^{2}-0\right)-1(-1)+1(0+\lambda)=0 \Rightarrow \lambda^{3}-\lambda-1&=0\\
+	\text{So from Calley's Hemilton's theorem }M^{3}-M-I&=0\\
+	\text{Multiply both side by }M^{-1} \Rightarrow M^{2}-I-M^{-1}=0\text{ so } M^{-1}=M^{2}-I.
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	M&=\left(\begin{array}{ccc}0 & 2 i & 3 i \\ -2 i & 0 & 6 i \\ -3 i & -6 i & 0\end{array}\right), \bar{M}^{r}=\left(\begin{array}{ccc}0 & 2 i & 3 i \\ -2 i & 0 & 6 i \\ -3 i & -6 i & 0\end{array}\right) \Rightarrow \bar{M}^{T}=M
+	\intertext{Matrix is Hermitian so roots are real and trace $=0$.}
+	\lambda_{1}+\lambda_{2}+\lambda_{3}&=0,|A|=\lambda_{1} \cdot \lambda_{2} \cdot \lambda_{3}=0 \Rightarrow \lambda=-7,0,7
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{Unitary }A^{\dagger} A&=I
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	A^{\dagger}=\exp (-i H)=(\exp i H)^{-1}=A^{-1}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{(a) }&\quad(A B+B A)^{\dagger}=B^{\dagger} A^{\dagger}+A^{\dagger} B^{\dagger} \Rightarrow-B A-A B=-(A B+B A)\\
+	\text{(c) }&[-i(A B+B A)]^{\dagger}-i\left(B^{\dagger} A^{\dagger}+A^{\dagger} B^{\dagger}\right)=i(-B A-A B)=-i(A B+B A)\\
+\text{(d) }&[i(A B+B A)]^{\dagger}=-i\left(B^{\dagger} A^{\dagger}+A^{\dagger} B^{\dot{\dagger}}\right) \Rightarrow-i(-B A-A B)=i(A B+B A)
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+\text{	Eigenvalue of matrix is }\left|\begin{array}{ccc}2-\lambda & 0 & 0 \\ 0 & 1-\lambda & 1 \\ 0 & 1 & 1-\lambda\end{array}\right|&=0 \Rightarrow \lambda=2,2,0\\
+\text{Eigen vector can be determine by }A X_{1}&=\lambda X_{1} \Rightarrow\left[\begin{array}{lll}2 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=\lambda\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]
+\intertext{For $\lambda_{1}=0$}
+\Rightarrow\left[\begin{array}{lll}2 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & 1\end{array}\right]\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right]=0\left[\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right] \Rightarrow 2 x_{1}&=0, x_{2}+x_{3}=0\text{ and } x_{2}+x_{3}=0 \Rightarrow X_{1}=\left[\begin{array}{c}0 \\ x_{2} \\ -x_{2}\end{array}\right]\\
+\text{Normalized eigenvector can be }&\text{determined by relation }X_{1}^{r} X_{1}=1 \Rightarrow X_{1}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right]\\
+\text{From given option }X_{1}=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0 \\ 1 \\ -1\end{array}\right] &\text{ corresponds to $\lambda_{1}=0$ in second column of $S$.}\\
+\text{$A$ diagonalized }&=\left[\begin{array}{lll}2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 2\end{array}\right]
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	&\text{Let }b=a\\
+	&\left(\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right)\left(\begin{array}{l}a \\ a \\ a\end{array}\right)=\left(\begin{array}{l}a \\ a \\ a\end{array}\right) \text{and} \left(\begin{array}{lll}0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0\end{array}\right)\left(\begin{array}{l}a \\ a \\ a\end{array}\right)=\left(\begin{array}{l}a \\ a \\ a\end{array}\right)=\left(\begin{array}{l}a \\ a \\ a\end{array}\right)\\
+	&\text{Let }b=-2 a\\
+	&\left(\begin{array}{lll}0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{array}\right)\left(\begin{array}{c}a \\ -2 a \\ a\end{array}\right)=\left(\begin{array}{c}a \\ -2 a \\ a\end{array}\right)\text{and} \left(\begin{array}{lll}0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0\end{array}\right)\left(\begin{array}{c}a \\ -2 a \\ a\end{array}\right)=\left(\begin{array}{c}-a \\ 2 a \\ -a\end{array}\right)=-1\left(\begin{array}{c}a \\ -2 a \\ a\end{array}\right)
+	\intertext{For other combination above relation is not possible.}
+	\end{align*}
+		So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	If $A$ and $P$ be square matrices of the same type and if $P$ be invertible then matrices $A$ and $B=P^{-1} A P$ have the same characteristic roots\\
+	Then $B-\lambda I=P^{-1} A P-P^{-1} \lambda I P=P^{-1}(A-\lambda I) P$ where $/$ is identity matrix.
+	$$
+	|B-\lambda I|=\left|P^{-1}(A-\lambda I) P\right|=\left|P^{-1}\|A-\lambda I\| P\right|=|A-\lambda I|\left|P^{-1}\|P|=| A-\lambda I\| P P^{-1}\right|=|A-\lambda I|
+	$$
+	Thus the matrices $A$ and $B\left(=P^{-1} A P\right)$ have the same characteristic equation and hence characteristic roots of eigen values. Since the sum of the eigen values of a matrix and product of eigen values of a matrix is equal to the determinant of matrix hence third alternative is incorrect.
+\end{answer}
+\item $\left. \right. $
+\begin{answer}
+	\begin{align*}
+	\text{Eigen value of matrix }A&=\left(\begin{array}{ccc}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 2\end{array}\right)\text{ is }\lambda=2,1,-1\\
+	\text{Corresponding eigen vectors are }&\left(\begin{array}{l}0 \\ 0 \\ 1\end{array}\right),\left(\begin{array}{c}\frac{1}{\sqrt{2}} \\ 1 \\ \sqrt{2} \\ 0\end{array}\right),\left(\begin{array}{c}\frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} \\ 0\end{array}\right)\\
+	\text{diagonalise matrix }&\left(\begin{array}{ccc}2 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1\end{array}\right)\text{ so $U$ is }\left(\begin{array}{ccc}0 & \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ 0 & \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\ 1 & 0 & 0\end{array}\right)
+	\end{align*}
+		So the correct answer is \textbf{Option (c)}
+\end{answer}
+
+
 \end{enumerate}
