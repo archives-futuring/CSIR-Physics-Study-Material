@@ -699,19 +699,26 @@ The following cases arise for particular integrals:
 	&=\frac{1}{8}\left[ (x^{4}-x+1)\right]
 	\end{align*}
 \end{answer}
+
 \section{Euler - Cauchy Differential equation}
- A homogeneous differential equation of the form,
+Although second-order linear equations with constant coefficients are the ones used most frequently in applications, there are a few other kinds of second-order equations and methods of solving them which are also important. one of them is the Euler-Cauchy equation. An equation of the form,
  \begin{equation}
- a_{n} x^{n} \frac{d^{n} y}{d x^{n}}+a_{(n-1)} x^{(n-1)} \frac{d^{(n-1)} y}{d x^{(n-1)}}+\cdots \cdots+a_{2} x^{2} \frac{d^{2} y}{d x^{2}}+a_{1} x \frac{d y}{d x}+a_{0} y=\mathrm{Q(x)}
- \end{equation}
- Where, $a_{0},a_{1},a_{2}\cdots a_{n} $ are constants is called a Euler - Cauchy differential equation.
+a_{n} x^{n} \frac{d^{n} y}{d x^{n}}+a_{(n-1)} x^{(n-1)} \frac{d^{(n-1)} y}{d x^{(n-1)}}+\cdots \cdots+a_{2} x^{2} \frac{d^{2} y}{d x^{2}}+a_{1} x \frac{d y}{d x}+a_{0} y=\mathrm{Q(x)}
+\end{equation}
+Where, $a_{0},a_{1},a_{2}\cdots a_{n} $ are constants is called an Euler or Cauchy equation. It can be reduced to a linear equation with constant coefficients by changing the independent variable from $x$ to $z$ where,
+$$
+x=e^{z} .
+$$
+
+$x \frac{d y}{d x}=\frac{d y}{d z}$
+and $x^{2} \frac{d^{2} y}{d x^{2}}=\frac{d^{2} y}{d z^{2}}-\frac{d y}{d z}$.
+
  \begin{align*}
  \text{Put,} \ \mathrm{x}&=\mathrm{e}^{z} \Rightarrow \log \mathrm{x}=\mathrm{z} \Rightarrow \frac{1}{x}=\frac{d z}{d x}\\
  \frac{d y}{d x}&=\frac{d y}{d x} \cdot \frac{d z}{d x}\\&=\frac{1}{x} \frac{d y}{d z} \\ \mathrm{x} \frac{d y}{d x}&=\frac{d y}{d z}\\
  \frac{d^{2} y}{d x^{2}}&=\frac{d}{d x}\left(\frac{d y}{d x}\right)\\&=-\frac{1}{x^{2}} \frac{d y}{d z}+\frac{1}{x} \frac{d^{2} y}{d z^{2}}\left(\frac{d z}{d x}\right)\\&=-\frac{1}{x^{2}} \frac{d y}{d z}+\frac{1}{x^{2}} \frac{d^{2} y}{d z^{2}} \\ x^{2} \frac{d y}{d x^{2}}&=-\frac{d y}{d z}+\frac{d^{2} y}{d z^{2}}
 \intertext{ Then neglecting the higher orders , the given equation becomes,}
-  a_{2} \frac{d^{2} y}{d z^{2}}+\left(a_{1}-a_{2}\right) \frac{d y}{d z}+a_{0} y&=\mathrm{Q} \\
-  \intertext{Linear second order non-homogeneous differential equation}
+  a_{2} \frac{d^{2} y}{d z^{2}}+\left(a_{1}-a_{2}\right) \frac{d y}{d z}+a_{0} y&=\mathrm{Q} 
  \end{align*}
  \begin{exercise}
  	$x^{2} \frac{d^{2} y}{d x^{2}}+2 x \frac{d y}{d x}-20 y=(x+1)^{2}$
