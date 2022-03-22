@@ -26,6 +26,24 @@ There are two series solution method  for differential equation,
 \subsection{Simple Power Series Expansion Method}
 The simple series expansion method works for differential equations whose solutions are well-behaved at the expansion point $x = 0$.
 This method can be illustrated by Linear classical oscillator problem
+\subsubsection{title}
+ We illustrate the method of series solution by solving the following simple equation (which you can easily solve by elementary methods also!):
+\begin{align}
+y^{\prime}&=2 x y\label{SP-05}
+\intertext{We assume a solution of this differential equation in the form of a power series, namely}
+y&=a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\cdots+a_{n} x^{n}+\cdots\notag\\
+&=\sum_{n=0}^{\infty} a_{n} x^{n}\label{SP-06}
+\intertext{where the $a$ 's are to be found. Differentiating $(1.2)$ term by term, we get}
+ y^{\prime} &=a_{1}+2 a_{2} x+3 a_{3} x^{2}+\cdots+n a_{n} x^{n-1}+\cdots \notag\\ &=\sum_{n=1}^{\infty} n a_{n} x^{n-1} \label{SP-07}
+ \intertext{We substitute (\ref{SP-06}) and (\ref{DE007}) into the differential equation (\ref{SP-05}); we then have two power series equal to each other. Now the original differential equation is to be satisfied for all values of $x$, that is, $y^{\prime}$ and $2 x y$ are to be the same function of $x$. Since a given function has only one series expansion in powers of $x$ (see Chapter 1 , Section 11), the two series must be identical, that is, the coefficients of corresponding powers of $x$ must be equal. We get the following set of equations for the $a$ 's:}
+ a_{1}&=0, \quad a_{2}=a_{0}, \quad a_{3}=\frac{2}{3} a_{1}=0, \quad a_{4}=\frac{1}{2} a_{0}
+ \intertext{or in general:}
+ n a_{n}&=2 a_{n-2}, \quad a_{n}= \begin{cases}0, & \text { odd } n, \\ \frac{2}{n} a_{n-2}, & \text { even } n .\end{cases}\\
+\text{ Putting }n&=2 m\text{ (since only even terms appear in this series), we get}\notag\\
+a_{2 m}&=\frac{2}{2 m} a_{2 m-2}=\frac{1}{m} a_{2 m-2}=\frac{1}{m} \frac{1}{m-1} a_{2 m-4}=\cdots=\frac{1}{m !} a_{0}
+\intertext{Substituting these values of the coefficients into the assumed solution (\ref{SP-06}) gives the solution}
+y&=a_{0}+a_{0} x^{2}+\frac{1}{2 !} a_{0} x^{4}+\cdots+\frac{1}{m !} a_{0} x^{2 m}+\cdots=a_{0} \sum_{m=0}^{\infty} \frac{x^{2 m}}{m !}
+\end{align}
 \subsection{Classical Linear Oscillator}
 \begin{align}
 \frac{d^{2} y}{d x^{2}}+\omega^{2} y&=0 \label{DE003}\\
