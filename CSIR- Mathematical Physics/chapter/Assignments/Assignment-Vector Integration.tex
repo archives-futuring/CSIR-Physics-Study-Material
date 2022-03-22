@@ -587,15 +587,136 @@ d x &=-5 \sin \theta d \theta \\ d y &=4 \cos \theta d \theta \\ d z &=0 \\ \vec
 			\includegraphics[height=4.2cm,width=4.5cm]{GT-Assignment-05}
 		\end{figure}
 	\end{answer}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+\end{enumerate}
+\section{Conservative vector Field}
+\begin{enumerate}
+	\item Evaluate $\int_{C} \vec{F} \cdot d \vec{r}$ where $\vec{F}=y z \hat{i}+z x \hat{j}+x y \hat{k}$ and $C$ is the portion of the curve $\vec{r}=a \cos t \hat{i}+b \sin t \hat{j}+c t \hat{k}$ from $t=0$ to $t=\pi / 2$.
+	\begin{answer}
+		\begin{align*}
+		 \vec{F} \cdot d \vec{r} &=y z d x+z x d y+x y d z \\ &=d(x y z) 
+		 \intertext{$\vec{F} \cdot d \vec{r}$ is an exact differential. So, $\vec{F}$ is conservative.}
+		  \int_{C} \vec{F} \cdot d \vec{r} &=\int_{C} d(x y z) \\ &=[x y z]_{t=0}^{t=\pi / 2}=[x y z]_{(a, 0,0)}^{(0, b, c r / 2)}=0 
+		  \intertext{Since, $t=0$ corresponds to point $(0,0,0)$ and $t=\pi / 2$ corresponds to point $(a, b, \pi / 2)$.}
+		\end{align*}
+	\end{answer}
+	\item Evaluate $\int_{C}\left(2 x y^{3}-y^{2} \cos x\right) d x+\left(1-2 y \sin x+3 x^{2} y^{2}\right) d y$ where $C$ is the arc of the parabola $2 x=\pi y^{2}$ from $(0,0)$ to $(\pi / 2,1)$.
+	\begin{answer}
+		First let us check whether $\left(2 x y^{3}-y^{2} \cos x\right) d x+\left(1-2 y \sin x+3 x^{2} y^{2}\right) d y$ is an exact differential.
+		\begin{align*}
+		\text{We know that }M d x&+N d y\text{ is an exact differential if }\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}.\\
+		\text{Here}\qquad M &=2 x y^{3}-y^{2} \cos x \\ \frac{\partial M}{\partial y} &=6 x y^{2}-2 y \cos x \\ N &=1-2 y \sin x+3 x^{2} y^{2} \\ \frac{\partial N}{\partial x} &=-2 y \cos x+6 x y^{2} \\
+	\text{	Thus,}\qquad
+		\frac{\partial M}{\partial y}&=\frac{\partial N}{\partial x}\\
+		\text{So, }M d x&+N d y\text{ is exact.}
+		\end{align*}
+		Let $M d x+N d y$ can be expressed as total differential of a scalar function $\phi$
+		\begin{align}
+		\text{So}\qquad d \phi&=\left(2 x y^{3}-y^{2} \cos x\right) d x+\left(1-2 y \sin x+3 x^{2} y^{2}\right) d y\notag\\
+		\Rightarrow \quad \frac{\partial \phi}{\partial x} d x+\frac{\partial \phi}{\partial y} d y&=\left(2 x y^{3}-y^{2} \cos x\right) d x+\left(1-2 y \sin x+3 x^{2} y^{2}\right) d y\notag\\
+		\frac{\partial \phi}{\partial x}&=2 x y^{3}-y^{2} \cos x\notag\\
+		\Rightarrow
+		\phi&=\int_{y=\text { constant }}\left(2 x y^{3}-y^{2} \cos x\right) d x=x^{2} y^{3}-y^{2} \sin x\label{VI-01}\\
+		\frac{\partial \phi}{\partial y}&=1-2 y \sin x+3 x^{2} y^{2}\notag\\
+		\Rightarrow
+		\phi&=\int_{x=\text { constant }}\left(1-2 y \sin x+3 x^{2} y^{2}\right) d y=y-y^{2} \sin x+x^{2} y^{3}\label{VI-02}
+		\intertext{Adding (\ref{VI-01}) \& (\ref{VI-02}) while writing the common term once}
+		\phi&=y-y^{2} \sin x-x^{2} y^{3}\notag
+		\intertext{So, given integral}
+		 \int_{C} M d x+N d y &=\int d \phi=\phi \notag\\ &=\left[y-y^{2} \sin x-x^{2} y^{3}\right]_{(0,0)}^{(\pi / 2,1)}=\frac{\pi^{2}}{4} \notag
+		\end{align}
+	\end{answer}
+	\item Evaluate $\int_{C} 2 x y z^{2} d x+\left(x^{2} z^{2}+z \cos y z\right) d y+\left(2 x^{2} y z+y \cos y z\right) d z$ where $C$ is any path from $(0,0,1)$ to $(1, \pi / 4,2)$.
+	\begin{answer}
+		\begin{align*}
+		2 x y z^{2} d x&+\left(x^{2} z^{2}+z \cos y z\right) d y+\left(2 x^{2} y z+y \cos y z\right) d z\\
+		 &=\left[2 x y z^{2} \hat{i}+\left(x^{2} z^{2}+z \cos y z\right) \hat{j}+\left(2 x^{2} y z+y \cos y z\right) \hat{k}\right] \cdot d \vec{r} \\ \text{Here}\qquad \vec{F} &=2 x y z^{2} \hat{i}+\left(x^{2} z^{2}+z \cos y z\right) \hat{j}+\left(2 x^{2} y z+y \cos y z\right) \hat{k} \\
+		 \nabla \times \vec{F}&=\left|\begin{array}{ccc}\hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 2 x y z^{2} & x^{2} z^{2}+z \cos y z & 2 x^{2} y z+y \cos y z\end{array}\right|\\
+		 &=\left(2 x^{2} z+\cos y z-y z \sin y z-2 x^{2} z-\right.\cos y z+y z \sin y z) \hat{i} \\ \qquad&+(4 x y z-4 x y z) \hat{j}+\left(2 x z^{2}-2 x z^{2}\right) \hat{k}=0 
+		\end{align*}
+		Since, curl $\vec{F}=0$. So, $\vec{F}$ is conservative vector field.\\ So, the given line integral is independent of path.\\ Let us find the potential $\phi$ corresponding to $\vec{F}$.
+		\begin{align}
+		\vec{F}&=\nabla \phi\notag\\
+		\frac{\partial \phi}{\partial x} \hat{i}+\frac{\partial \phi}{\partial y} \hat{j}+\frac{\partial \phi}{\partial z} \hat{k}&=2 x y z^{2} \hat{i}+\left(x^{2} z^{2}+z \cos y z\right) \hat{j}+\left(2 x^{2} y z+y \cos y z\right) \hat{k}\notag\\
+		\text{So}\qquad\frac{\partial \phi}{\partial x}&=2 x y z^{2}  \Rightarrow  \phi=x^{2} y z^{2}+\text { constant }\label{VI-03} \\ \frac{\partial \phi}{\partial y}&=x^{2} z^{2}+z \cos y z  \Rightarrow  \phi=x^{2} y z^{2}+\sin y z+\text { constant } \ldots . \label{VI-04}\\ \frac{\partial \phi}{\partial z}&=2 x^{2} y z+y \cos y z  \Rightarrow  \phi=x^{2} y z^{2}+\sin y z+\text { constant } \ldots .\label{VI-05}
+		\intertext{Adding $(\ref{VI-03}),(\ref{VI-04}),(\ref{VI-05})$ and adding the common terms once}
+		\phi&=x^{2} y z^{2}+\sin y z+\text{ constant}\notag
+		\intertext{So, the given line integral}
+		 \int 2 x y z^{2} d x&+\left(x^{2} z^{2}+z \cos y z\right) d y+\left(2 x^{2} y z+y \cos y z\right) d z \notag\\ &=\int d\left(x^{2} y z^{2}+\sin y z\right)=\left[x^{2} y z^{2}+\sin y z\right]_{(0,0,0)}^{(1, \pi / 4,2)} \notag\\ &=\pi+1 \notag
+		\end{align}
+	\end{answer}
+	\item Evaluate
+	$$
+	\int_{C} y z d x+(x z+1) d y+x y d z
+	$$
+	where $C$ is any path from $(1,0,0)$ to $(2,1,4)$.
+	\begin{answer}
+		\begin{align*}
+		\text{Here, }\quad y z d x+(x z+1) d y+x y d z&=(y z \hat{i}+(x z+1) \hat{j}+x y \hat{k}) \cdot d \vec{r}\\
+		\text{So}\qquad \vec{F}&=y z \hat{i}+(x z+1) \hat{j}+x y \hat{k}\\
+		\operatorname{curl} \vec{F}&=\left|\begin{array}{ccc}\hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ y z & x z+1 & x y\end{array}\right|=0
+		\end{align*}
+		Since, $\operatorname{curl} \vec{F}=0$, So, $\vec{F}$ is a conservative vector field and hence, given line integral is independent of path.\\
+		Let us find the potential $\phi$ corresponding to $\vec{F}$.
+			\begin{align}
+			\vec{F}&=\nabla \phi\notag\\
+			\frac{\partial \phi}{\partial x} \hat{i}+\frac{\partial \phi}{\partial y} \hat{j}+\frac{\partial \phi}{\partial z} \hat{k}&=y z \hat{i}+(x z+1) \hat{j}+x y \hat{k}\notag\\
+			\frac{\partial \phi}{\partial x}&=y z \quad \Rightarrow \quad \phi=x y z+\text{ constant}\label{VI-06}\\
+			\frac{\partial \phi}{\partial y}&=x z+1 \Rightarrow \phi=x y z+y+ \text{constant}\label{VI-07}\\
+			\frac{\partial \phi}{\partial z}&=x y \quad \Rightarrow \quad \phi=x y z+\text{ constant}\label{VI-08}
+			\intertext{Adding (\ref{VI-06}), (\ref{VI-07}) \& (\ref{VI-08}) and writing the common term once}
+			\phi&=x y z+y\notag
+			\intertext{The given line integral is therefore}
+			 \int_{C} y z d x+(x z+1) d y+x y d z &=\int_{(1,0,0)}^{(2,1,4)} d(x y z+y)\notag \\ &=[x y z+y]_{(1,0,0)}^{(2,1,4)}\notag \\ &=9\notag 
+			\end{align}
+	\end{answer}
+	\item Show that the vector field
+	$$
+	\vec{F}=\left(2 x y-y^{4}+3\right) \hat{i}+\left(x^{2}-4 x y^{3}\right) \hat{j}
+	$$
+	is conservative. Find its potential and also the work done in moving a particle from $(1,0)$ to $(2,1)$ along some curve.
+	\begin{answer}
+		$
+		\text { Vector field } \vec{F} \text { is conservative if } \oint \vec{F} \cdot d \vec{r} \text { around any closed curve is always zero }$\\
+		By stokes theorem,
+		\begin{align*}
+		\oint \vec{F} \cdot d \vec{r}&=\int \nabla \times \vec{F} \cdot \hat{n} d S=0
+		\intertext{So, for conservative field}
+		 \nabla \times \vec{F} &=0 \\ \vec{F} &=\left(2 x y-y^{4}+3\right) \hat{i}+\left(x^{2}-4 x y^{3}\right) \hat{j} \\
+		 \nabla \times \vec{F}&=\left|\begin{array}{lll}\hat{i} & \hat{j} & \hat{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ 2 x y-y^{4}+3 & x^{2}-4 x y^{3} & 0\end{array}\right|\\
+		  &=\left[\left(2 x-4 y^{3}\right)-\left(2 x-4 y^{3}\right)\right] \hat{k}=0 \\ \vec{F} &=\nabla \phi \\ \frac{\partial \phi}{\partial x} \hat{i}+\frac{\partial \phi}{\partial y} \hat{j} &=\left(2 x y-y^{4}+3\right) \hat{i}+\left(x^{2}-4 x y^{3}\right) \hat{j} \\ \frac{\partial \phi}{\partial x} &=2 x y-y^{4}+3 \\
+		   \Rightarrow\quad \phi &=\int_{y=\text { const }}\left(2 x y-y^{4}+3\right) d x \\ &=x^{2} y-x y^{4}+3 x \\ \frac{\partial \phi}{\partial y} &=x^{2}-4 x y^{3} \\
+		   \Rightarrow \quad \phi&=\int_{x=c o n s t}\left(x^{2}-4 x y^{3}\right) d y=x^{2} y-x y^{4}
+		   \intertext{So, the potential $\phi$ is given by}
+		    \phi &=x^{2} y-x y^{4}+3 x \\ \vec{F} \cdot d \vec{r} &=\nabla \phi \cdot d \vec{r}=d \phi \\ \int \vec{F} \cdot d \vec{r} &=\int d \phi=[\phi]_{(1,0)}^{(2,1)} \\ &=\left[x^{2} y-x y^{4}+3 x\right]_{(1,0)}^{(2,1)}=5 
+		    \intertext{So, work done in moving a particle from $(1,0)$ to $(2,1)$ is equal to 5 .}
+		\end{align*}
+	\end{answer}
+	\item If $\vec{F}=\cos y \hat{i}-x \sin y \hat{j}$. Evaluate $\int_{C} \vec{F} \cdot d \vec{r}$ where $C$ is the curve in the xy plane from $(2,0)$ to $(0,2)$.
+	\begin{answer}
+		\begin{align*}
+		 \vec{F} &=\cos y \hat{i}-x \sin y \hat{j} \\ \vec{F} \cdot d \vec{r} &=\cos y d x-x \sin y d y 
+		 \intertext{Let us check whether $\vec{F} \cdot d \vec{r}$ is exact.}
+		 M&=\cos y \quad \Rightarrow \quad \frac{\partial M}{\partial y} 11=-\sin y\\
+		 N&=-x \sin y \quad \Rightarrow \quad \frac{\partial N}{\partial x}=-\sin y\\
+		 \text{Since, }&\quad \frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}
+		 \intertext{$\vec{F} \cdot d \vec{r}$ is an exact and hence, $\vec{F}$ is a conservative vector field. So, the given line integral is independent of path. Let us find the potential corresponding to $\vec{F}$.}
+		 \vec{F} &=\nabla \phi \\ \Rightarrow \quad \frac{\partial \phi}{\partial x} \hat{i}+\frac{\partial \phi}{\partial y} \hat{j} &=\cos y \hat{i}-x \sin y \hat{j} \\ \frac{\partial \phi}{\partial x} &=\cos y \quad \Rightarrow \quad \phi=x \cos y+\text { constant } \\ \frac{\partial \phi}{\partial y} &=-x \sin y \Rightarrow \quad \Rightarrow=x \cos y+\text { constant } \\
+		 \text{So}\hspace{2cm}  \phi &=x \cos y \\ \text{So}\hspace{1.2cm} \int \vec{F} \cdot d \vec{r} &=\int \cos y d x-x \sin y d y \\ &=\int d(x \cos y) \\ &=[x \cos y]_{(2,0)}^{(0,2)} \\ &=-2 
+		\end{align*}
+	\end{answer}
+	\item Evaluate
+	$$
+	\int_{C}\left(3 y^{2}+2 z^{2}\right) d x+(6 x-10 z) y d y+\left(4 x z-5 y^{2}\right) d z
+	$$
+	along the portion from $(1,0,1)$ to $(3,4,5)$ of the curve $C$, which is the intersection of the surfaces $z^{2}=x^{2}+y^{2}$ and $z=y+1$
+	\begin{answer}
+		\begin{align*}
+	 \vec{F} \cdot d \vec{r} &=d \phi=\frac{\partial \phi}{\partial x} d x+\frac{\partial \phi}{\partial y} d y+\frac{\partial \phi}{\partial z} d z \\ \frac{\partial \phi}{\partial x} &=3 y^{2}+2 z^{2} \quad \Rightarrow \quad \phi=3 x y^{2}+2 x z^{2}+\text { constant } \\ \frac{\partial \phi}{\partial y} &=6 x y-10 y z \quad \Rightarrow \quad \phi=3 x y^{2}-5 y^{2} z+\text { constant } \\ \frac{\partial \phi}{\partial z} &=4 x z-5 y^{2} \quad \Rightarrow \quad \phi=2 x z^{2}-5 y^{2} z+\text { constant } \\ \text{So}\hspace{2cm}\phi &=3 x y^{2}+2 x z^{2}-5 y^{2} z \\
+	 \text{The line integral }\int_{C} \vec{F} \cdot d \vec{r}&\text{ along the portion }(1,0,1)\text{ to }(3,4,5)\\
+	 &=\left[3 x y^{2}+2 x z^{2}-5 y^{2} z\right]_{(1,0,1)}^{(3,4,5)} \\
+	 &=-108
+		\end{align*}
+	\end{answer}
 	
 	
 	
