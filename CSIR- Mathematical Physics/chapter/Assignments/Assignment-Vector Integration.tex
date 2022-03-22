@@ -529,7 +529,7 @@ d x &=-5 \sin \theta d \theta \\ d y &=4 \cos \theta d \theta \\ d z &=0 \\ \vec
 		The region bounded by $C$ is shown in figure $9.5$.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=3cm,width=5cm]{GT-Assignment-02}
+			\includegraphics[height=4cm,width=5.5cm]{GT-Assignment-03}
 		\end{figure}
 		\begin{align*}
 		\oint \vec{F} \cdot d \vec{r}&=\oint\left(x^{2}-y^{2}\right) d x+2 x y d y=\oint M d x+N d y\\
@@ -539,12 +539,54 @@ d x &=-5 \sin \theta d \theta \\ d y &=4 \cos \theta d \theta \\ d z &=0 \\ \vec
 		 \oint M d x+N d y &=\iint\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right) d x d y \\ &=4 \int_{0}^{b} \int_{0}^{a} y d x d y=4 a \int_{0}^{b} y d y \\ &=2 a b^{2} 
 		\end{align*}
 	\end{answer}
-	
-	
-	
-	
-	
-	
+	\item  Evaluate $\oint e^{-x} \sin y d x+e^{-x} \cos y d y$ by Green's theorem in plane where $C$ is the rectangle with vertices $(0,0),(\pi, 0),(\pi, \pi / 2),(0, \pi / 2)$.
+	\begin{answer}
+		The curve $C$ is a piecewise smooth curve consisting of $C_{1}(y=0), C_{2}(x=\pi), C_{3}(y=\pi / 2) \& C_{4}(x=0)$. The region $R$ bounded by $C$ is as shown in figure.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.5cm,width=5.5cm]{GT-Assignment-02}
+		\end{figure}
+		\begin{align*}
+		\oint_{C} M d x+N d y&=\oint_{C} e^{-x} \sin y d x+e^{-x} \cos y d y\\
+		\text{Here }M&=e^{-x} \sin y \Rightarrow \frac{\partial M}{\partial y}=e^{-x} \cos y\\
+		N&=e^{-x} \cos y \Rightarrow \frac{\partial N}{\partial x}=-e^{-x} \cos y
+		\intertext{Applying Green's theorem}
+		 \oint M d x+N d y &=\iint\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right) d y d x \\ &=-2 \int_{0}^{\pi / 2} \int_{0}^{\pi / 2} e^{-x} \cos y d y d x \\ &=-2 \int_{0}^{\pi} e^{-x}[\sin y]_{0}^{\pi / 2} d x \\ &=-2 \int_{0}^{\pi} e^{-x} d x=\left.2 e^{-x}\right|_{0} ^{\pi} \\ &=2\left(e^{-\pi}-1\right) 
+		\end{align*}
+	\end{answer}
+	\item Let $\vec{F}=\left(x^{2}-x y^{2}\right) \hat{i}+y^{2} \hat{j}$. Using Green's theorem, evaluate the line integral $\int_{C} \vec{F} \cdot d \vec{r}$, where $C$ is the positively oriented closed curve which is the boundary of the region enclosed by the $x$-axis and the semi-circle $y=\sqrt{1-x^{2}}$ in the upper half plane.
+	\begin{answer}$\left. \right. $
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3cm,width=5cm]{GT-Assignment-04}
+		\end{figure}
+		\begin{align*}
+		\vec{F}&=\left(x^{2}-x y^{2}\right) \hat{i}+y^{2} \hat{j}\\
+		\text{So}\quad\vec{F} \cdot d \vec{r}&=\left(x^{2}-x y^{2}\right) d x+y^{2} d y
+		\intertext{According to Green's theorem}
+		\oint_{C} \vec{F} \cdot d \vec{r}&=\iint_{R}\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right) d x d y
+		\intertext{( $R$ is the region of integration shown in Figure )}
+		&=\int_{-1}^{\sqrt{1-x^{2}}} \int_{0}^{1} 2 x y d y d x\\
+		&=\int_{-1}^{1} x\left[y^{2}\right]_{0}^{\sqrt{1-x^{2}}} d x\\
+		&=\int_{-1}^{1} x\left(1-x^{2}\right) d x=0 \quad\left(\int_{-a}^{a} f(x)=0\right.\text{ if }f(x)\text{ is odd function})
+		\end{align*}
+	\end{answer}
+	\item Evaluate by Green's theorem $\oint(\cos x \sin y-x y) d x+\sin x \cos y d y$ where $C$ is the circle $x^{2}+y^{2}=a^{2}$
+	\begin{answer}
+		The given integral is
+		\begin{align*}
+		\oint_{C}(\cos x \sin y-x y) d x&+\sin x \cos y d y
+		\intertext{Where curve $C$ is a circle of radius $a$ and centred at origin enclosing region $R$ as shown in Figure }
+		\text{Here }M=\cos x \sin y-x y \Rightarrow \frac{\partial M}{\partial y}&=\cos x \cos y-x\\
+		 N=\sin x \cos y \quad \Rightarrow \frac{\partial N}{\partial x}&=\cos x \cos y
+		 \intertext{Using Green's theorem}
+		 \oint M d x+N d y&=\iint_{R}\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right) d x d y
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=4.2cm,width=4.5cm]{GT-Assignment-05}
+		\end{figure}
+	\end{answer}
 	
 	
 	
