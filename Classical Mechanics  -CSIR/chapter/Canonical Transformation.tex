@@ -16,3 +16,42 @@ not normally be cyclic, we must have a specific proceedure for transforming from
 $$Q_i=Q_i (q,p,t)$$
 $$P_i=P_i (q,p,t)$$
 Which define a point transformation in phase space.
+\section{Canonical Transformation}
+	 In Hamiltonian mechanics the transformation should be such that $Q$ and $P$ are canonical coordinates
+	We would like to change variables from the set $(a,p)$ to a new set $(Q,P )$ such that:
+	\begin{enumerate}
+		\item  Determinent of Jacobian matrix of transformation, $\left| \frac{\partial(Q,P)}{\partial(q,p)}\right|=+1 $
+		(This ensures that it is volume and orientation are preserved during transformation)
+		\item  Ensures structure of Hamilton's equation is not changed, so the exist a function $K=K(Q,P,t)$ 
+		such that the equation of motion of new set are	
+		$$\dot{Q_i}-\frac{\partial K}{\partial P_i}\quad,\quad\dot{P_i}=\frac{\partial K}{\partial Q_i}$$
+		$K$ plays role of Hamiltonian in new coordinate set and known as 'kamiltonian'	
+	\end{enumerate}
+\begin{note}
+	The transformation considered be problem independent that is to say $(Q,P)$ must be canonical coordinates not onlu for some specific mechanical systems, but for all systems of the same number of degrees of freedom.	
+\end{note}
+\textbf{Hamilton's Priciple of Transformed Coordinates}\vspace{0.1cm}\\
+ As $Q_i$ and $P_i$ are canonical variable they must satisfy Hamiltonians principle
+\begin{equation}
+\delta\int\limits_{t_1}^{t_2}(P_i\dot{Q_i}-K(Q,P,t))dt=0
+\end{equation}
+as of old canonical variables
+\begin{equation}
+\delta\int\limits_{t_1}^{t_2}(p_i\dot{q_i}-H(Q,P,t))dt=0
+\end{equation}
+$\therefore$ we can say
+$$\lambda (p_i\dot{q_i}-H)=P_i\dot{Q_i}-K+\frac{\partial F}{\partial t}$$
+$F$ is a function of phase space coordinates with continuous second derivatives \\
+$\lambda$ is a constant independent of canonical coordinates and the time and it is related to scale transformation. \\\\
+For $\lambda=1$ we have
+$$p_i\dot{q_i}-H=P_i\dot{Q_i}-K+\frac{dF}{dt}$$
+Which is simply called canonical transformation 
+\begin{note}
+	A transformation of canonical coordinates for which is called extended canonical transformation
+\end{note}
+\section{Generating Function}
+\begin{itemize}
+	\item The term $\frac{df}{dt}$ in canonical transformation contributes to the variation of action integral only at the end points, and will vanish if $F$ is a function of $(q,p t)$ or $(Q,P,t)$or any mixture of the phase space coordinates since these have zero variation at the end points.
+	\item Through equations of transformation and their inverses $F$ can be expressed partly in terms of the old set of variables and partly of the new.
+	\item $F$ acts as a bridge between the two sets of canonical variables and is called the generating function of transformation.
+\end{itemize}
