@@ -16,6 +16,24 @@ not normally be cyclic, we must have a specific proceedure for transforming from
 $$Q_i=Q_i (q,p,t)$$
 $$P_i=P_i (q,p,t)$$
 Which define a point transformation in phase space.
+\section{Jacobian}
+If $u$ and $v$ are two function of two independent variables $x$ and $y$ then the determinant $J=\left|\begin{array}{ll}\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}\end{array}\right|$ is called the Jacobian of $u$ and $v$ with respect to of $x$ and $y$ which is written as $\frac{\partial(u, v)}{\partial(x, y)}$ or $J\left(\frac{u, v}{x, y}\right)$\\
+If $u, v$ and $w$ are three functions of three independent variables $x, y$ and $z$ then the determinant\\
+$J=\left|\begin{array}{lll}\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} & \frac{\partial u}{\partial z} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y} & \frac{\partial v}{\partial z} \\ \frac{\partial w}{\partial x} & \frac{\partial w}{\partial y} & \frac{\partial w}{\partial z}\end{array}\right|$
+is called the Jacobian of $u, v$ and $w$ with respect to of $x, y$ and $z$
+which is written as $\frac{\partial(u, v, w)}{\partial(x, y, z)}$ or $J\left(\frac{u, v, w}{x, y, z}\right)$
+\subsection{Properties of Jacobian}
+\begin{itemize}
+	\item  If $J=\frac{\partial(u, v, w)}{\partial(x, y, z)}$ and $J^{\prime}=\frac{\partial(x, y, z)}{\partial(u, v, w)}$ then $J J^{\prime}=1$
+	\item Chain rule for Jacobian if $u, v$ are functions of $r, s$ and $r, s$ functions of $x, y$ then $\frac{\partial(u, v)}{\partial(x, y)}=\frac{\partial(u, v)}{\partial(r, s)} \cdot \frac{\partial(r, s)}{\partial(x, y)}$
+	\item If $u_{1}, u_{2}, u_{3}$ instead of being given explicitly in terms $x_{1}, x_{2}, x_{3}$ be connected with them with equations such as
+	$$
+	f_{1}\left(u_{1}, u_{2}, u_{3}, x_{1}, x_{2}, x_{3}\right)=0 f_{2}\left(u_{1}, u_{2}, u_{3}, x_{1}, x_{2}, x_{3}\right)=0 f_{3}\left(u_{1}, u_{2}, u_{3}, x_{1}, x_{2}, x_{3}\right)=0
+	$$
+	then $\frac{\partial\left(u_{1}, u_{2}, u_{3}\right)}{\partial\left(x_{1}, x_{2}, x_{3}\right)}=(-1)^{3} \frac{\partial\left(f_{1}, f_{2}, f_{3}\right)}{\partial\left(x_{1}, x_{2}, x_{3}\right)} / \frac{\partial\left(f_{1}, f_{2}, f_{3}\right)}{\partial\left(u_{1}, u_{2}, u_{3}\right)}$
+	\\\\$\left((-1)^{3}\right.$ is for three variable system $)$
+	\item  If $u_{1}, u_{2}, u_{3}$ be functions of $x_{1}, x_{2}, x_{3}$ then the necessary and sufficient condition for existence of a functional relationship of the form $f_{1}\left(u_{1}, u_{2}, u_{3}\right)=0$ is $J\left[\frac{\partial\left(u_{1}, u_{2}, u_{3}\right)}{\partial\left(x_{1}, x_{2}, x_{3}\right)}\right]=0$
+\end{itemize}
 \section{Canonical Transformation}
 	 In Hamiltonian mechanics the transformation should be such that $Q$ and $P$ are canonical coordinates
 	We would like to change variables from the set $(a,p)$ to a new set $(Q,P )$ such that:
@@ -49,9 +67,69 @@ Which is simply called canonical transformation
 \begin{note}
 	A transformation of canonical coordinates for which is called extended canonical transformation
 \end{note}
+Canonical Transformation have following four properties
+\begin{enumerate}
+	\item The identity transformation is canonical.
+	\item If a transformation is canonical, so is its inverse.
+	\item Two successive canonical transformations (the group "product" operation) define a transformation that is also canonical.
+	\item The product operation is associative.
+\end{enumerate}
 \section{Generating Function}
 \begin{itemize}
 	\item The term $\frac{df}{dt}$ in canonical transformation contributes to the variation of action integral only at the end points, and will vanish if $F$ is a function of $(q,p t)$ or $(Q,P,t)$or any mixture of the phase space coordinates since these have zero variation at the end points.
 	\item Through equations of transformation and their inverses $F$ can be expressed partly in terms of the old set of variables and partly of the new.
 	\item $F$ acts as a bridge between the two sets of canonical variables and is called the generating function of transformation.
 \end{itemize}
+There are four types of generating function:
+\begin{enumerate}
+	\item  $F=F_{1}\left(q_{i}, Q_{i}, t\right)$ known as $F_{1}\left(q_{i}, Q_{i}, t\right)$ is $F_{1}$ type Generating function.
+	$$
+	\begin{aligned}
+	\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F}{d t} \Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F_{1}}{d t} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\sum_{i} \frac{\partial F_{1}}{\partial q_{i}} \dot{q}_{i}+\sum_{i} \frac{\partial F_{1}}{\partial Q_{i}} \dot{Q}_{i}+\frac{\partial F}{\partial t}\\
+	\text{	Comparing both the }&\text{coefficient of $\dot{q}_{i}$ and $\dot{Q}_{i}$}\\
+	\frac{\partial F_{1}}{\partial q_{i}}=p_{i} \quad \frac{\partial F_{1}}{\partial Q_{i}}&=-P_{i}\text{ and }K=H+\frac{\partial F_{1}}{\partial t}
+	\end{aligned}
+	$$
+	\item $F=F_{2}\left(q_{i}, P_{i}, t\right)-Q_{i} P_{i}$ known as $F_{2}\left(q_{i}, P_{i}, t\right)$ is $F_{2}$ type Generating function.\\
+	$$
+	\begin{aligned}
+	\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F}{d t} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)-\sum_{i} \dot{Q}_{i} P_{i}-\sum_{i} Q_{i} \dot{P}_{i}-\frac{d F_{2}}{d t} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\sum_{i} \frac{\partial F_{2}}{\partial q_{i}} \dot{q}_{i}+\sum_{i} \frac{\partial F_{2}}{\partial P_{i}} \dot{P}_{i}+\frac{\partial F_{2}}{\partial t}-\sum_{i} \dot{Q}_{i} P_{i}-\sum_{i} Q_{i} \dot{P}_{i}\\
+	\text{Comparing both the }&\text{coefficient of $\dot{q}_{i}$ and $\dot{P}_{i}$}\\
+	\frac{\partial F_{2}}{\partial q_{i}}=p_{i}, \ \frac{\partial F_{2}}{\partial P_{i}}&=Q_{i}\text{ and }K=H+\frac{\partial F_{2}}{\partial t}
+	\end{aligned}
+	$$
+	\item  $F=F_{3}\left(Q_{i}, p_{i}, t\right)+q_{i} p_{i}$ known as $F_{3}\left(Q_{i}, p_{i}, t\right)$ is $F_{3}$ type Generating function.
+	$$
+	\begin{aligned}
+	\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F}{d t} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F_{3}}{d t}+\sum_{i} \dot{q}_{i} p_{i}+\sum_{i} q_{i} \dot{p}_{i} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\sum_{i} \frac{\partial F_{3}}{\partial Q_{i}} \dot{Q}_{i}+\sum_{i} \frac{\partial F_{3}}{\partial p_{i}} \dot{p}_{i}+\frac{\partial F_{3}}{\partial t}+\sum_{i} \dot{q}_{i} p_{i}+\sum_{i} q_{i} \dot{p}_{i}\\
+	\text{	Comparing both the }&\text{coefficient of $\dot{q}_{i}$ and $\dot{P}_{i}$}\\
+	\frac{\partial F_{3}}{\partial Q_{i}}=-P_{i},\  \frac{\partial F_{3}}{\partial p_{i}}&=-q_{i}\text{ and }K=H+\frac{\partial F_{3}}{\partial t}
+	\end{aligned}
+	$$
+	\item  $F=F_{4}\left(p_{i}, P_{i}, t\right)+q_{i} p_{i}-Q_{i} P_{i}$ known as $F_{3}\left(P_{i}, p_{i}, t\right)$ is $F_{3}$ type Generating function.
+	$$
+	\begin{aligned}
+	\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F}{d t} \\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\frac{d F_{4}}{d t}+\sum_{i} \dot{q}_{i} p_{i}+\sum_{i} q_{i} \dot{p}_{i}-\sum_{i} \dot{Q}_{i} P_{i}-\sum_{i} Q_{i} \dot{P}_{i}\\
+	\Rightarrow\left(\sum_{i} p_{i} \dot{q}_{i}-H\right)&=\left(\sum_{i} P_{i} \dot{Q}_{i}-K\right)+\sum_{i} \frac{\partial F_{4}}{\partial P_{i}} \dot{P}_{i}+\sum_{i} \frac{\partial F_{4}}{\partial p_{i}} \dot{p}_{i}+\frac{\partial F_{4}}{\partial t}+\sum_{i} \dot{q}_ip_i+q_i\dot{p}_i-\sum_{i} \dot{Q}_iP_i-\sum_{i} Q_i\dot{P}_i\\
+	\text{Comparing both }&\text{the coefficient of $\dot{p}_{i}$ and $\dot{P}_{i}$}\\
+	\frac{\partial F_{4}}{\partial p_{i}}=-q_{i},\  \frac{\partial F_{4}}{\partial P_{i}}&=Q_{i} \text { and } K=H+\frac{\partial F_{4}}{\partial t}
+	\end{aligned}
+	$$
+\end{enumerate}
+	\begin{table}[H]
+	\centering
+	\renewcommand*{\arraystretch}{1.8}
+	\begin{tabular}{|p{4.5cm}|p{5cm}|p{5.5cm}|}	
+	\hline Generating Function&Generating Function Derivatives&Trivial Special Case\\
+	\hline $F=F_{1}(q, Q, t)$&$p_{i}=\frac{\partial F_{1}}{\partial q_{i}} \quad P_{i}=-\frac{\partial F_{1}}{\partial Q_{i}}$&$F_{1}=q_{i} Q_{i}, \quad Q_{i}=p_{i}, \quad P_{i}=-q_{i}$\\
+	\hline $F=F_{2}(q, P, t)-Q_{i} P_{i}$&$p_{i}=\frac{\partial F_{2}}{\partial q_{i}} \quad Q_{i}=\frac{\partial F_{2}}{\partial P_{i}}$&$F_{2}=q_{i} P_{i}, \quad Q_{i}=q_{i}, \quad P_{i}=p_{i}$\\
+	\hline $F=F_{3}(p, Q, t)+q_{i} p_{i}$&$q_{i}=-\frac{\partial F_{3}}{\partial p_{i}} \quad P_{i}=-\frac{\partial F_{3}}{\partial Q_{i}}$&$F_{3}=p_{i} Q_{i}, \quad Q_{i}=-q_{i}, \quad P_{i}=-p_{i}$\\
+	\hline $F=F_{4}(p, P, t)+q_{i} p_{i}-Q_{i} P_{i}$&$q_{i}=-\frac{\partial F_{4}}{\partial p_{i}} \quad Q_{i}=\frac{\partial F_{4}}{\partial P_{i}}$&$F_{4}=p_{i} P_{i}, \quad Q_{i}=p_{i}, \quad P_{i}=-q_{i}$\\\hline
+	\end{tabular}
+\end{table}
