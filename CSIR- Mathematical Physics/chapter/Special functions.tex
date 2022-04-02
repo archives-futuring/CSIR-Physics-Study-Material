@@ -122,7 +122,106 @@ y(x) &=a_{0} x^{\lambda}+a_{1} x^{\lambda+1}+a_{2} x^{\lambda+2}+a_{3} x^{\lambd
 &= \sum_{k=0}^{\infty} a_{k} x^{k+\lambda}
 \end{align*}
 The extension of the simple power series method is all in the factor $x^{\lambda}$. The power $c$ must now be determined, as well as the coefficients $a_{k}$. Since $\lambda$ may be negative, positive, and possibly non-integral, this extends considerably the range of functions which may be treated. Note that $a_{0}$ is the lowest non-zero coefficient, so by definition it cannot be zero.
-\subsection{Bessel Function}
+\section{Singularity}
+Consider d.e\\
+$\frac{d^2y}{dx^2} +P(x)\frac{dy}{dx}+Q(x)y=0$
+\begin{enumerate}
+	\item If $P(x)$ and $Q(x)$ remain finite at $x=x_0$ then it is O.P
+	\item If either $P(x)/Q(x)$ or both tends to $\infty$ at $x=x_0$
+	then it is singular point.
+\end{enumerate}
+\textbf{Kinds of singular points}
+\begin{enumerate}
+	\item Regular singularity\\
+	IF $P(x), Q(x)\text{ diverges but } (x-x_0) P(x) \text{ and }(x-x_0)^2Q(x)$ remain finite at $x\rightarrow x_0$ then $x=x_0$ is called regular or non essencial singular points
+	\item Irregular singularity\\
+	$P(x), Q(x)$ diverge either $(x-x_0)P(x)$ or $(x-x_0)^2Q(x)$ or both  remain infinite at $x\rightarrow x_0$ then $x=x_0$ is called irregular or essential singular points
+\end{enumerate}
+Little bit review of ODES\\
+$\frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=r(x)$\\
+remember, Tailor series of $y$ about $x_0$. If a $f_n$ was continues and differentable you could express it as an infinite series of polynomial terms being added
+\begin{align*}
+y(x)&=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n\\
+y^\prime(x)&=\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}\\
+y^{\prime\prime}(x)&=\sum\limits_{n=0}^{\infty}\\
+\sum\limits_{n=0}^{\infty}n(a-1)a_n(x-x_0)^{n-2}&+\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}P(x)+Q(x)\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=r(x)
+\intertext{$P(x),Q(x)$ and $r(x)$ are sitting there a far of $x$. It's also possible to express there as power series} 
+p(x)&=\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n\quad Q(x)=\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n,r(x)=\sum\limits_{n=0}^{\infty}d_n(x-x_0)^n\\
+\intertext{$\left(\sum\limits_{n=0}^{\infty}n(n-1)a_n(x-x_0)^{n-2}+\left[\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n \right]\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}+\left[\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n \right] \sum\limits_{n=0}^{\infty}a_n(x-x_0)^n   \right) $}
+&=\sum\limits_{n=0}^{\infty}d_n(x-x_0)^n
+\end{align*}
+We can find these since $P,Q$ and $r$ given what we want to find is $a_n$\\
+We can only do this if we properly expand $P(x),Q(x)$ and $R(x)$ abt $x=x_0$ if one of function is undefined at $x_0$ then we would be able to do it. Properly expand and simplify the left or series solution methode will not work to combat this we have to go back and express $y(x)$ as power series abt some other value of $x$ where $p,q$ and $r$ we defined but there are other methodes we will discuss in later\\
+Let go with this simple examble\\
+$\frac{d^2y}{dx^2}-4y=0, \ y(x)==\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n$\\
+Using series solution method lets make $y$ a power series. The only $Q_n$
+what point power series expand about earliest point $x_0=0$\\
+It will always continuos and differentiable about $x_0=0$.Therefore $-4$ is a constant its always continues and differentiable for then any value of $x$\\
+$y(x)=\sum\limits_{n=0}^{\infty}a_nx^n,\ y^\prime(x)=\sum\limits_{n=0}^{\infty}na_n x^{n-1}$\\
+$y^{\prime\prime}(x)=\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)$\\
+substitute this into ODE only way to combine them is make power of $x$ same\\
+$\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)-4\sum\limits_{n=0}^{\infty}a_n x^n=0$\\
+Let $n=m-2$ when $n=0 \ n=2$ so in terms of $m$ change into $n-2$\\
+$\sum\limits_{n=0}^{\infty}n(n-1)a_n x^(n-2)-4\sum\limits_{n=2}^{\infty}a_(n-2)x^{n-2}=0$ still there is problem expand $n=0,n=1$
+\begin{align*}
+&0(0-1)a-0x^{-2}+1(1-1)a_1x^{-1}+\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=0}^{\infty}a_{n-2}x^{n-2}=0\\
+&\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=2}^{\infty}a_{n-2}x^{n-2}=0\\
+&\text{	combining }\sum\limits_{n=2}^{\infty}\left[n(n-1)a_n-4a_{n-2} \right] x^{n-2}=0\\
+&\text{	since r.h.s }=0 \text{ all coefficient of l.h.s must be zero}\\
+&\implies n(n-1)a_n-4a_{n-2}=0
+\intertext{If relates the $n^{th}$ term in the sequence of coefficient to terms that occured  previously in that sequence}
+&a_n=\frac{4a_n-2}{n(n-1)}
+\intertext{$n^{th}$ coefficient is related to two terms back in the sequence}
+\end{align*} 
+we have solutions for D.E even coefficients related to even previous ans similarly. 'n' can be odd and even.
+\begin{align*}
+\intertext{n=Even}
+a_2&=\frac{4a_0}{2.1}\\
+a_4&=\frac{4a_2}{4.3}\\
+&=\frac{4.4 \ a_0}{4.3\  2.1}\\
+&\text{A pattern is developing}\\
+a_4&=\frac{2^4\ a_0}{4!}\quad \text{it follows that}\\
+a_n&=\frac{2^2 a_0}{n!}\\
+&\text{Since a is even}\\
+a_{2k}&=\frac{2^{2k\ a_0}}{(2k)!}\\
+&\text{any even number can represent as multiple of $2$}\\
+\text{here}&n=0,1,2,3 \\\\
+&\intertext{n=Odd}\\
+a_3&=\frac{4\ a_1}{3.2},\ a_5=\frac{4\ a_3}{5.4}=\frac{4.4.a_1}{5.4.3.2}\\
+a_5&=\frac{2^4\ a_1}{5!}\quad \therefore a_n=\frac{2^{n-1}\ a_1}{n!}\\
+&\text{ any odd number can}\\
+a_{2k+1}&=\frac{2^{2k}\ a_1}{(2k+1)!}\\
+\intertext{can substitute this in the very beginning $y(x)=\sum\limits_{n=0}^{\infty}a_nx^n$ we know all the formulas for $a_n$}
+&=a_0+a_1x+a_2x^2+a_3x^3+\dots a_{2k}x^{2k}+a_{2k+1}x^{2k+1}+\dots\\
+&=a_0+a_1x+\frac{2^2\ a_0}{2!}x^2+\frac{2^2\ a_1}{3!}x^3+\dots+\frac{2^{2k}\ a_0}{(2k)!}+\frac{2^{2k}\ a_1}{(2k+1)!}+\dots\\
+&\text{ can seperate even and odd}\\
+y(x)&=\sum\limits_{k=0}^{\infty}\frac{2^{2k}\ a_0}{(2k)!}x^{2k}+\sum\limits_{k=0}^{\infty}\frac{2^{2k}\ a_1}{(2k+1)!}x^{2k+1}
+\intertext{this tylor expanssion can leave this here or go one step further }
+y(x)&=a_0\cosh(2x)+a_1\sinh(2x)
+\end{align*}
+Here we discuss series solution and how to use power series to solve differential equations. How to use this to solve one of the important problems in maths and physics.\\
+Legendre ODR problem\\
+It is a l.d.e
+\begin{align*}
+(1-x^2)\frac{d^2y}{dx^2}&-2x\frac{dy}{dx}+k(k+1)y=0\\
+&\text{to expand it in}\\
+x_0&=0\\
+\frac{d^2y}{dx^2}&+\frac{P(x)dy}{dx}+Q(x)y=r(x)\\
+\frac{d^2y}{dx^2}&-\frac{2x}{(1-x^2)}\frac{dy}{dx}+\frac{k(k+1)}{1-x^2}y=0\text{$r$ is constant}\\
+&\text{let check $p(x),q(x)$ and $r(x)$ are all defined at $x=0$, they are}\\
+&\text{$r(x)=0$ so it can be defined for all $x$ $p$ and $q$ are only  undefined}\\
+&\text{at $x=-1$ and $x=1$ at $x=0$ then both ok. So it is possible for regular series solutionabout $x_0=0$}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
 \newpage
 \begin{abox}
 	Problem Set -1
