@@ -261,9 +261,48 @@ When $k=3$  highest power will be an $x^3$ term $P_1, P_2, P_3$ they result from
 $P_1, P_2, P_3$ tends to these polynomials are called legendre polynomials, they are solutions to legendre ODES they come up in electromagnetism and quantum mechanics. Bunch of techniques already developed to calculate legendre polynomials more easily one of these techniques is rodrigues formula
 $P_{k}(x)=\frac{1}{2^{k} k !} \frac{d^{k}}{d x^{k}}\left[\left(x^{2}-1\right)^{k}\right]$\\
 Here one series terminates giving a polynomial solution. Other series divergent
-
-
-
+\textbf{Theree Possibilities}\\
+1.\quad $r_1\text{ and }R_2$ distinct not differ by integer\\
+$y(x)=k_1y_1+k_2y_2=k_1(x-x_0)^{r_1}\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n+k_2(x-x_0)^{r_2}$\\
+2.\quad $r_1=r_2=r,y_1=(x-x_0)^r\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$\\
+3.\quad $r_1\text{ and }R_2$ distinct and differ by integer\\
+$y_1=(x-x_0)^{r_1}\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$ is similar using recursion relation 
+\section{Bessel Function}
+Special D.E when we solving P.D.E especially when solving problems in cylindrical coordinates.
+\begin{align*}
+x^{2} y^{\prime }+x y^\prime+\left(x^{2}-p^{2}\right) y&=0
+\intertext{We want a solution that can be expanded about $x_0=0$}
+\intertext{Before starting we can check $x_0=0$ is singular point or not}
+y^{\prime \prime}+\frac{1}{x} y^{\prime}+\left(1-\frac{p^{2}}{x^{2}}\right) y&=0\hspace{4cm}P(x)=\frac{1}{x},\quad Q(x)=1-\frac{p^{2}}{x^{2}}\\
+x p(x)&=1\\
+X^{2} Q(x)&=x^{2}-P^{2}\\
+X_{0}=0 &\text{is regular singular point}\\
+y=\sum_{n=0}^{\infty} a_{n} x^{n+r}\quad y^{\prime}&=\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-1}\quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n}x^{n+r-2}\\
+\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\frac{1}{x} \sum_{n=0}^{\infty}(n+r) a_{n}x^{n+r-1}+\left(1-\frac{p^{2}}{x^{2}}\right) \sum_{n=0}^{\infty} a_{n} x^{n+r}=0\\
+\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2)} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=0}^{\infty} a_{n} x^{n+r}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
+\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2)} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+ \sum_{n=2}^{\infty} a_{n-2} x^{n+r-2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
++r(r-1) a_{0} x^{r-2}+r(r+1) a_{1} x^{r-1}&+r a_{0} x^{r-2}+(r+1) a_{1} x^{r-1}-P^2{a_{0}} x^{r-2}-p^{2} a_1 x^{r-1}=0
+\intertext{$\therefore$ every value of r.h.s=0, coefficient of every power of l.h.s coefficients must be zero}
+\text{for} x^{r-2}:r(r-1) a_{0}+r a_{0}-p^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{so we can write as,}\\
+\gamma(r-1)+r-p^{2}=0\quad \gamma^{2}-p^{2}&=0 \quad r=\pm p\\
+\intertext{this is our indicial equations}
+\text{For} x^{8-1}:[r(\partial+1)+(r+1)-P^2] a_{1}&=0\quad \text { So } a_{1}=0\\
+\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}=0
+\intertext{gather everything}
+\sum_{n=2}^{\infty}[(n+r)(n+\gamma-1)&+(n+r) P^2] a_{n}+\left.a_{n-2}\right\} x^{n+r-2}=0\\
+\left[(n+r)(n+r-1)+(n+r)-p^{2}\right] a_{n}+a_{n-2}&=0\\
+a_{n}&=\frac{-a_{n-2}}{\left[(n+r)^{2}-p^{2}\right]}\\
+\text{substitute }r_1&=P\\
+a_{n}=\frac{-a_{n-2}}{n(n+2 P)}\implies \text{recursion}\\
+\therefore a_1=0 &\text{and indices are added with two terms behind}\\
+a_{3}, a_{5}, .&=0
+\intertext{For this we only carried about even indice coefficients $n=2k$ where $k$ is another integer}
+a_{2 k}&=-\frac{a_{2 k-2}}{4 k(k+P)}\\
+a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+P)}a_{4}=-\frac{-a_{2}}{4 \cdot 2(2+P)}=\frac{(-1)^{2} a_{0}}{4^{2}(2 \cdot 1)(2+P)(1+P)}\\
+\therefore a_{2 k}&=\frac{(-1)^{k}}{4{k}}\frac{a_{0}}{k !(P+k) \cdots(P+1)}\\
+y_{1}&=x^{p}\sum_{k=0}^{\infty} \frac{(-1)^{k}}{4 k}\frac{a_{0}}{k !(p+k) . .(P+1)} x^{2 k}
+\intertext{For perticular value of $a_0$ this solution is given a special name $~\quad J_P(x)$ Bessel function of $I$ kind $P$ is order of Bessel function.}  
+\end{align*}
 
 
 \newpage
