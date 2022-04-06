@@ -1,0 +1,249 @@
+\begin{abox}
+	EXAM-PHY001\\ \vspace{0.6cm}
+VECTOR CALCULUS
+\end{abox}
+
+\section*{\centering{\color{futuringtheme} \underline{SECTION A (MCQ)}}}
+$\left. \right.$ {\exyear{Q. No. 1-10 (3.5 Marks)}}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+
+\item Let $\vec{a}$ and $\vec{b}$ be two distinct three dimensional vectors. Then the component of $\vec{b}$ that is
+perpendicular to $\vec{a}$ is given by,
+\begin{tasks}(4)
+	\task[\textbf{a.}]$\frac{\vec{a} \times(\vec{b} \times \vec{a})}{a^{2}}$  
+	\task[\textbf{b.}]$\frac{\vec{b} \times(\vec{a} \times \vec{b})}{b^{2}}$
+	\task[\textbf{c.}]$\frac{(\vec{a} \cdot \vec{b}) b}{b^{2}}$ 
+	\task[\textbf{d.}]  $\frac{(\vec{b} \cdot \vec{a}) \vec{a}}{a^{2}}$
+\end{tasks}
+\begin{answer}
+	
+	$\vec{a} \times \vec{b}=a b \sin \theta \hat{n}$ \\Where $\hat{n}$ is perpendicular to plane containing
+	$\vec{a}$ and $\vec{b}$ and pointing upwards.
+	$$
+	\begin{array}{l}
+	\vec{a} \times(\vec{a} \times \vec{b})=a b \sin \theta(\vec{a} \times \hat{n})=-a^{2} b \sin \theta \hat{k} \\\\
+	b \sin \theta \hat{k}=\frac{-\vec{a} \times(\vec{a} \times \vec{b})}{a^{2}} \\\\ b \sin \theta \hat{k}=\frac{\vec{a} \times(\vec{b} \times \vec{a})}{a^{2}} .
+	\end{array}
+	$$
+	Corrct answer is \textbf{option(a)}
+\end{answer}
+	
+\item A curve is given by $\vec{r}(t)=t \hat{i}+t^{2} \hat{j}+t^{3} \hat{k}$. The unit vector of the tangent to the curve at\\$t=1$ is
+\begin{tasks}(4)
+	\task[\textbf{A.}] $\frac{\hat{i}+\hat{j}+\hat{k}}{\sqrt{3}}$
+	\task[\textbf{B.}] $\frac{\hat{i}+\hat{j}+\hat{k}}{\sqrt{6}}$
+	\task[\textbf{C.}] $\frac{\hat{i}+2 \hat{j}+2 \hat{k}}{3}$
+	\task[\textbf{D.}] $\frac{\hat{i}+2 \hat{j}+3 \hat{k}}{\sqrt{14}}$
+\end{tasks}
+\begin{answer}
+	Let $\hat{n}$ be a unit vector tangent to the curve at t.\\
+	By definition  
+	\begin{align*}
+	\hat{n}&=\frac{d \vec{r} / d t}{|d \vec{r} / d t|}\\
+	\text{ So } \hat{n}&=\frac{d \vec{r} / d t}{|d \vec{r} / d t|}=\frac{\hat{i}+2t \hat{j}+3 t^{2} \hat{k}}{\sqrt{1+4 t^{2}+9 t^{4}}}\\
+	\text{ At } t&=1, \hat{n}=\frac{\hat{i}+2 j+3 \hat{k}}{\sqrt{14}}
+	\end{align*}
+	So the correct answer is \textbf{Option d}
+\end{answer}
+	\item The divergence of $\vec{c} \times(\vec{r} \times \vec{c})$ where $\vec{c}$ is a numerical vector is given by 
+
+\begin{tasks}(4)
+	\task[\textbf{A.}] zero
+	\task[\textbf{B.}]  $|\vec{c}|^{2}$
+	\task[\textbf{C.}] $2|\vec{c}|^{2}$
+	\task[\textbf{D.}] $-2|\vec{c}|^{2}$
+\end{tasks}
+\begin{answer}
+	According to vector triple product,
+	\begin{align*} \vec{c} \times(\vec{r} \times \vec{c})&= \vec{r}(\vec{c} \cdot \vec{c})-\vec{c}(\vec{c} \cdot \vec{r}) \\ \therefore \quad \vec{\nabla} \cdot[\vec{c} \times(\vec{r} \times \vec{c})] &=c^{2} \vec{\nabla} \cdot \vec{r}-\vec{\nabla} \cdot[\vec{c}(\vec{c} \cdot \vec{r})] \\ &=3 c^{2}-[\vec{\nabla}(\vec{c} \cdot \vec{r}) \cdot \vec{c}+(\vec{c} \cdot \vec{r})(\vec{\nabla} \cdot \vec{c})] \\ &=3 c^{2}-[\vec{c} \cdot \vec{c}+0]=2 c^{2} \end{align*}
+	Correct option is (c)
+\end{answer}
+
+
+\item  Find the equation to the tangent plane to the surface , $x^{2}+y^{2}-z^{2}=7 $ { at the point } \ $ (2,2,1)$.
+\begin{tasks}(2)
+	\task[\textbf{a.}] $ 4(x-1)-4(y-1)+2(z-1)=0.  $
+	\task[\textbf{b.}]$ 2(x-4)+2(y-4)-(z-2)=0. $
+	\task[\textbf{c.}] $ 2(x-2)+2(y-2)-(z-1)=0. $
+	\task[\textbf{d.}] $ 4(x-2)+4(y-2)-2(z-1)=0. $
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\left(x-x_{0}\right) \frac{\partial \phi}{\partial x}+\left(y-y_{0}\right) \frac{\partial \phi}{\partial y}+\left(z-z_{0}\right) \frac{\partial \phi}{\partial z}&=0\\
+	\text{Here,}\ \phi\Rightarrow x^{2}+y^{2}-z^{2}&=7\\
+	\frac{\partial \phi}{\partial x}|_{(x=2)}&=2x=4\\
+	\frac{\partial \phi}{\partial y}|_{(y=2)}&=2y=4\\
+	\frac{\partial \phi}{\partial z}|_{(z=1)}&=-2z=-2
+	\intertext{Thus the equation of tangent plane is, } 4(x-2)+4(y-2)-2(z-1)&=0.
+	\end{align*}
+	Correct answer is \textbf{option (d)}.
+\end{answer}
+
+
+\item 
+{ Let the position vector be given by,}$  r=x i+y j+z k $. {With,}  $ r=|r|=\sqrt{x^{2}+y^{2}+z^{2}} $. {Compute the gradient of the  scalar field } $ \phi(x, y, z)=\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}} $ {in terms of} \ $  \vec{r}  $\ {and } $ r $.
+\begin{tasks}(4)
+	\task[\textbf{a.}] $ -\frac{\vec{r}}{r^{3}}$
+	\task[\textbf{b.}]$-\frac{\vec{r}}{r^{2}}$
+	\task[\textbf{c.}] $\frac{\vec{r}}{r^{3/2}}$
+	\task[\textbf{d.}]$\frac{\vec{r}}{r}$ 
+\end{tasks}
+\begin{answer}
+   \begin{align*}
+	\text{Let,}\ \phi(x, y, z)&=\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}.\intertext{ The \ gradient \ is \ given\ by,}\\
+	\nabla \phi &=\nabla\left(\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right) \\
+	&=-\frac{x}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} i-\frac{y}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} j-\frac{z}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} k\\
+	&=-\frac{x\hat{i}+y\hat{j}+z\hat{k}}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}}
+	\intertext{In \ terms\ of\ position \ vector,}
+	\nabla\left(\frac{1}{r}\right)&=-\frac{\vec{r}}{r^{3}}
+\end{align*}
+Correct answer is \textbf{option (a)}.
+\end{answer}
+
+
+
+
+
+
+
+
+\item The directional derivative of the scalar function $f(x, y, z)=x^{2}+2 y^{2}+z$ at point $P=(1,1,2)$ in the direction of the vector $\vec{a}=3 \hat{i}-4 \hat{j}$ is, 
+\begin{answer}
+	\begin{align*}
+	\text{We know that,}
+	\nabla f&=\frac{\partial f}{\partial x} i+\frac{\partial f}{\partial y} j+\frac{\partial f}{\partial z} k=2 x \hat{i}+4 y \hat{j}+\hat{k}\\
+	\text{	At point $P(1,1,2)$}\ \nabla f&=2 \hat{i}+4 \hat{j}+\hat{k}
+	\intertext{Now directional derivative of $f$ at $P(1,1,2)$ in the direction of vector $a=3 \hat{i}-4 \hat{j}$ is given by,}
+	\frac{a}{|a|} \text { grad } f &=\left(\frac{3 \hat{i}-4 \hat{j}}{\sqrt{25}}\right) \cdot(2 \hat{i}+4 \hat{j}+\hat{k}) \\
+	&=\frac{1}{5}(6-16+0)\\&=-2
+	\end{align*}
+\end{answer}
+\item  Let  $ u=y \hat{i}+x \hat{j} $.\ The value of \ $ \oint_{C} {u} \cdot d {r} $,\ where  $ C $ is the unit circle centered at the origin, is given by,
+\begin{answer}
+	\begin{align*}
+	\nabla \times {u}&={\nabla} \times(y {i}+x {j})\\&=0\Rightarrow   \text{u is  a conservative field.}
+	\intertext{ Then\  the\ line\ integral   around\ any\ closed\ curve\ is\ zero.} 
+	\oint_{C} {u} \cdot d {r}&=0
+	\end{align*}
+\end{answer}
+\item {Find the line integral of the vector field} $ \vec{F}=\left(x^{2}+y^{2}\right) \hat{i}-2 x y \hat{j} $ \ {along a path } \ $ y=\sqrt{x} $ {from}$  (0,0) $ \ {to}  \ $ (1,1) $.
+\begin{answer}
+	\begin{align*}
+	\int_{0}^{1} F.dr&=\int_{0}^{1}\left(x^{2}+y^{2}\right) \hat{i}-2 x y \hat{j}\cdot \left(dx\hat{i}+dy \hat{j} \right)\\
+	&= \int_{0}^{1}\left(x^{2}+y^{2}\right)dx-2 x y  dy\\
+	\intertext{ Substituting $  y=\sqrt{x}, x=y^{2} $ the line integral can be expressed as, }
+	\int_{0}^{1} F.dr&= \int_{0}^{1}\left(x^{2}+x\right) d x-2 \int_{0}^{1} y^{3} d y\\&=\frac{1}{3}\\&=0.33.
+	\end{align*}
+\end{answer}
+\item  {The volume of the surface , } \ $  z=x y  ${above the} x-y \  {plane with base given by a unit square with vertices} $ (0,0),(1,0),(1,1) $, {and} $ (0,1) $ {is equal to}	
+\begin{answer}
+	\begin{align*}
+	\intertext{To find the volume, we integrate $z=x y$ over its base. We have,}
+	\int_{0}^{1} \int_{0}^{1} x y d x d y&=\int_{0}^{1} x d x \int_{0}^{1} y d y\\&=\left(\int_{0}^{1} x d x\right)^{2}=\left(\frac{1}{2}\right)^{2}\\&=\frac{1}{4} \\&=0.25.
+	\end{align*}
+\end{answer}
+$\left. \right.$ \section*{\centering{\color{futuringtheme} \underline{SECTION B (MCQ)}}}
+$\left. \right.$ {\exyear{Q. No. 10-15 (5 Marks)}}
+\item {Let }$ u=-x^{2} y i+x y^{2} j $ {Compute} $ \oint_{C} {u} \cdot d r $ {for a unit square in the first quadrant with vertex at the origin. Here, it is simpler to compute an area integral. The answer is}	
+\begin{answer}
+	\begin{align*}
+	u&=-x^{2} y \hat{i}+x y^{2} \hat{j}\\ \text{We have ,}\nabla \times u&=\left(x^{2}+y^{2}\right) \hat{k}.\intertext{According\ to\  Stokes\ theorem},
+	\oint_{C} {u} \cdot d {r}&=\int_{S}({\nabla} \times {u}) \cdot d {S}\Rightarrow d {S}= d x d y\hat{k}\\&=\int_{0}^{1} \int_{0}^{1}\left(x^{2}+y^{2}\right) d x d y\\&=\int_{0}^{1} x^{2} d x \int_{0}^{1} d y+\int_{0}^{1} d x \int_{0}^{1} y^{2} d y\\&=\frac{2}{3}=0.666\\
+	\end{align*}
+\end{answer}
+	\item What is the angle (in degrees) between the surfaces $y^{2}+z^{2}=2$ and $y^{2}-x^{2}=0$ at the
+point $(1,-1,1)$ 
+
+
+\begin{answer}
+	\begin{align*}
+	\intertext{The equations of two surfaces are,}
+	f(x, y, z)&=2 \text { and } g(x, y, z)=0\\
+	\text{where} f(x . y, z)&=y^{2}+z^{2} \ \text{and}\quad g(x, y, z)=y^{2}-x^{2}
+	\intertext{The normal to the first surfaces is}
+	\overrightarrow{\nabla f}&=\frac{\partial f}{\partial x} \hat{i}+\frac{\partial f}{\partial y} \hat{j}+\frac{\partial f}{\partial z} \hat{k} \Rightarrow \overrightarrow{\nabla f}=2 y \hat{j}+2 z \hat{k} \\
+	\overrightarrow{\nabla g}&=\frac{\partial g}{\partial x} \hat{i}+\frac{\partial g}{\partial y}+\hat{j}+\frac{\partial g}{\partial z} \hat{k} \Rightarrow \overrightarrow{\nabla g}=-2 x \hat{i}+2 y \hat{j}\\
+	\text{At point} (1,-1,1), \overrightarrow{\nabla f}&=-2 \hat{j}+2 \hat{k} \ \text{and}\quad \overrightarrow{\nabla g}=-2 \hat{i}-2\hat{j}
+	\intertext{Hence the angle between the two surfaces is}
+	\theta&=\cos ^{-1} \frac{\vec{\nabla} \vec{f} \cdot \overrightarrow{\nabla g}}{|\overrightarrow{\nabla f}||\overrightarrow{\nabla g}|}\\&=\cos ^{-1} \frac{(-2 \hat{j}+2 \hat{k}) \cdot(-2 \hat{i}-2 \hat{j})}{\sqrt{8} \sqrt{8}}\\
+	\text{Or}\quad  \theta&=\cos ^{-1} \frac{4}{8}\\&=\cos ^{-1 }\frac{1}{2} \\&=60^{\circ}
+	\end{align*}
+	Correct option is (C)
+\end{answer}
+\item Find the directional derivative of the function $ f(x, y)=3 x^{2} y $ at a point $ (-2,1) $ along the direction $ 4 \hat{i}+3 \hat{j} $.
+\begin{answer}
+	\begin{align*}
+	\intertext{The\ unit\ vector\ along $ 4 \hat{i}+3 \hat{j} \ is $,}
+	\hat{u}&=\frac{4 i+3 \hat{j}}{5} 
+	\intertext{Gradient\ of\ the\ given\ function\ is} 
+	\nabla f&=6 x y \hat{i}+3 x^{2} \hat{j}
+	\intertext{ Thus\ the\ directional\ derivative\ at\ $ (x, y) $ is}
+	\nabla f\cdot \hat{u}&=\left(\frac{24}{5}\right) x y+\left(\frac{9}{5}\right) x^{2}\\
+	{At\ (-2,1)\ \text{it's \ value\ is}\ \frac{-12 }{5}=-2.4.}
+	\end{align*}
+\end{answer}
+\item If $\vec{r}$ is position vector of a point, for what value of $n$, the vector $r^{n} \vec{r}$ is solenoidal?  
+
+
+\begin{answer}
+\begin{align*}
+\text{We know that,}\\
+\nabla \cdot f(r) \hat{r}&=\frac{1}{r^{2}} \frac{\partial}{\partial r} r^{2} f(r)\quad- \text{(radial component of divergence)}\\
+\text{Here,}\ f(r) \hat{r}&=r^{n} \vec{r}\\
+&=r^{n} r \hat{r}\\
+&=r^{n+1} \hat{r}\\
+\text{Then,}\ \nabla \cdot f(r) \hat{r}&=\frac{1}{r^{2}} \frac{\partial}{\partial r} r^{2} r^{n+1}\\
+&=\frac{1}{r^{2}} \frac{\partial}{\partial r} r^{n+3}=\frac{n+3}{r^{2}} r^{n+2}\\
+&=(n+3) r^{n}\\
+\text{To be solenoidal,}\ \nabla f(r) \hat{r}&=0\\
+\Rightarrow(n+3) r^{n}&=0\\
+\Rightarrow \quad n&=-3
+\end{align*}
+Correct option is (B)
+\end{answer}
+
+\item The directional derivative of $f(x, y, z)=2 x^{2}+3 y^{2}$ $+z^{2}$ at point $P(2,1,3)$ in the direction of the vector $a=i-2 k$ is $\cdots$
+
+\begin{answer}
+\begin{align*}
+		\text{We have} \ f &=2 x^{2}+3 y^{2}+z^{2}, P(2,1,3) \\
+	a &=i-2 k \\
+	\nabla f &=i \frac{\partial f}{\partial x}+j \frac{\partial f}{\partial y}+k \frac{\partial f}{\partial z} \\
+	&=4 x i+6 y j+2 z k\\
+	\text { at } P(2,1,3) \quad \nabla f &=4 \times 2 \times i+6 \times 1 \times j+2 \times 3 \times k \\
+	&=8 i+6 j+6 k
+	\intertext{The directional derivative of $f$ in direction of vector $a=i-2 k$ is the component of grad $f$ in the direction of vector $a$ and is given by $\frac{a}{|a|} \cdot$ grad $f$}
+	&=\left[\frac{i-2 k}{\sqrt{1^{2}+(-2)^{2}}}\right] \cdot(8 i+6 j+6 k) \\
+	&=\frac{1}{\sqrt{5}}[1.8+0.6+(-2) 6]=\frac{-4}{\sqrt{5}} \\
+	&=-1.789
+	\end{align*}
+	\end{answer}
+\item If a vector field is given by $F=\sin y \hat{i}+x(1+\cos y) \hat{j}$,
+then evaluate the line integral over a circular path given by $x^{2}+y^{2}=a^{2}, z=0$.
+\begin{tasks}(4)
+	\task[\textbf{a.}] $\frac{\pi}{2} a$ 
+	\task[\textbf{b.}] $2 \pi$
+	\task[\textbf{c.}] $2 \pi^{2} a^{2}$
+	\task[\textbf{d.}] $\pi a^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{The particle moves in $x y$ plane,} z&=0\\
+	\text{Now, let}\ R&=x \hat{i}+y \hat{j}\\
+	\text{Then,}\ d R&=d x \hat{i}+d y \hat{j}\\
+	\text{Also, path given is}\  x^{2}+y^{2}&=a^{2}\\
+	\text{So, let}\ x&=a \cos t \ \text{and}\ y=a \sin t,  \intertext{$t$ varies from 0 to $2 \pi$}
+	\text{Therefore,}
+	\oint_{C} F \cdot d R&=\oint_{C}(\sin y \hat{i}+x(1+\cos y) \hat{j}) \cdot(d x \hat{i}+d y \hat{j})\\&=\oint_{C}[\sin y \cdot d x+x(1+\cos y) d y] \\
+	&=\oint_{C}[[\sin y \cdot d x+x \cos y d y]+x d y] \\
+	&=\oint_{C}[d(x \sin y)+x d y]
+	\intertext{Now, substituting the values of $x$ and $y$, we get,}
+	\int_{0}^{2 \pi}\left[d(a \cos t \sin (a \sin t))+a^{2} \cos ^{2} t d t\right]
+	&=|a \cos t \sin (a \sin t)|_{0}^{2 \pi}+\frac{a^{2}}{2}\left|t+\frac{\sin 2 t}{2}\right|_{0}^{2 \pi} \\
+	\quad\left[\because \cos ^{2} t=1+\cos 2t\right] \\
+	&=0+\frac{a^{2}}{2}[2 \pi+0-(0+0)] \\
+	&=\pi a^{2}
+	\end{align*}
+	Correct answer is \textbf{option (d)}
+\end{answer}
+\end{enumerate}
