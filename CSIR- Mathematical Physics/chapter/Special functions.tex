@@ -303,8 +303,92 @@ a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+P)}a_{4}=-\frac{-a_{2}}{4 \cdot 2(2+P)}=\frac{
 y_{1}&=x^{p}\sum_{k=0}^{\infty} \frac{(-1)^{k}}{4 k}\frac{a_{0}}{k !(p+k) . .(P+1)} x^{2 k}
 \intertext{For perticular value of $a_0$ this solution is given a special name $~\quad J_P(x)$ Bessel function of $I$ kind $P$ is order of Bessel function.}  
 \end{align*}
-
-
+\section{Legendre Differential Equation}
+\subsection{Rodrigue's Formula for Legendre's Polynomial $P_{n}(x)$ :}
+\begin{align*}
+\text { Legendre polynomial of order ' } n \text { ' : } P_{n}(x)&=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}\\
+P_{0}(x)=1 ; \quad P_{1}(x)=x ; \quad P_{2}(x)&=\frac{1}{2}\left(3 x^{2}-1\right) ; \quad P_{3}(x)=\frac{1}{2}\left(5 x^{3}-3 x\right)
+\end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.8cm,width=6cm]{SF-02}
+\end{figure}
+\subsection{Properties of Legendre's Polynomial}
+\begin{align*}
+\text{(1) }P_{n}(1)&=1\qquad
+\text{(2) }P_{n}(-1)=(-1)^{n}\\
+\text { (3) } P_{n}(x&)=\text { even function, if } \mathrm{n}=\text { even }\\
+&=\text { odd function if } \mathrm{n}=\text { odd }\\
+\text { (4) } P_{n}(-x)&=(-1)^{n} P_{n}(x)
+\end{align*}
+\subsection{Generating function of Legendre's polynomial:}
+$\left(1-2 x z+z^{2}\right)^{-1 / 2}$ is the generating function for legendre's polynomials i.e. $\left(1-2 x z+z^{2}\right)^{-1 / 2}=\sum_{n=0}^{\infty} z^{n} P_{n}(x)$\\
+The co-efficient of $z^{n}$ in the exapansion of the generating function is the Legendre's polynomial of order $n$.
+\subsection{Orthogonal properties of Legendre's polynomial:}
+\begin{align*}
+\int_{-1}^{+1} P_{m}(x) P_{n}(x) d x=\frac{2}{2 n+1} \delta_{m n} \text { where } \delta_{m n}=\text { Kronecker delta }&=1 \quad \text { if } \mathrm{m}=\mathrm{n}\\
+&=0 \quad \text { if } m \neq n
+\end{align*}
+\subsection{Recurrence relations for $P_{n}(x)$ :}
+\begin{align*}
+\text{(i) }&n P_{n}=(2 n-1) x P_{n-1}-(n-1) P_{n-2}\hspace{1cm}
+\text{(ii) }n P_{n}=x P_{n}^{\prime}-P_{n-1}^{\prime}\\
+\text{(iii) }&(2 n+1) P_{n}=P_{n+1}^{\prime}-P_{n-1}^{\prime}\hspace{2.5cm}
+\text{(iv) }(n+1) P_{n}=P_{n+1}^{\prime}-x P_{n}^{\prime}\\
+\text{(v) }&\left(1-x^{2}\right) P_{n}^{\prime}=n\left(P_{n-1}-x P_{n}\right)\hspace{2.1cm}
+\text{(vi) }\left(1-x^{2}\right) P_{n}^{\prime}=(n+1)\left(x P_{n}-P_{n+1}\right).
+\end{align*}
+\begin{exercise}
+	Express $4 x^{3}+6 x^{2}+7 x+2$ in terms ofLegendre Polynpmials.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text { Let, } 4 x^{3}+6 x^{2}+7 x+2&=a_{3} P_{3}(x)+a_{2} P_{2}(x)+a_{1} P_{1}(x)+a_{0} P_{0}(x)\\
+	&=\frac{a_{3}}{2}\left(5 x^{3}-3 x\right)+\frac{a_{2}}{2}\left(3 x^{2}-1\right)+a_{1} x+a_{0}\\
+	\text { Comparing the co-efficient of } &\mathrm{x}^{3}: \frac{5 a_{3}}{2}=4 \Rightarrow a_{3}=\frac{8}{5}\\
+	\text { Comparing the co-efficient of }& x^{2}: \frac{3 a_{2}}{2}=6 \Rightarrow a_{2}=4\\
+	\text { Comparing the co-efficient of }& x^{1}:-\frac{3 a_{3}}{2}+a_{1}=7 \Rightarrow a_{1}=\frac{47}{5}\\
+	\text { Comparing the co-efficient of }& \mathrm{x}^{0}:-\frac{a_{2}}{2}+a_{0}=2 \Rightarrow a_{0}=4\\
+	\text { Therefore, } 4 x^{3}+6 x^{2}+7 x+2&=\frac{8}{5} P_{3}(x)+4 P_{2}(x)+\frac{47}{5} P_{1}(x)+4 P_{0}(x)
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Show that, $\int_{-1}^{1} x^{2} P_{n+1} P_{n-1} d x=\frac{2 n(n+1)}{(2 n-1)(2 n+1)(2 n+3)}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text{Using the relation: }&(2 n+1) x P_{n}=(n+1) P_{n+1}+n P_{n-1}\\
+	\text{Putting $(\mathrm{n}+1)$ in place of }&\mathrm{n} \Rightarrow(2 n+3) x P_{n+1}=(n+2) P_{n+2}+(n+1) P_{\mathrm{n}}\\
+	\text{Putting $(\mathrm{n}-1)$ in place of }&\mathrm{n} \Rightarrow(2 n-1) x P_{n-1}=n P_{n}+(n-1) P_{n-2}\\
+	\int_{-1}^{1}(2 n+3)(2 n-1) x^{2} P_{n+1} P_{n-1} d x&=n(n+2) \int_{-1}^{1} P_{n+2} P_{n} d x+n(n+1) \int_{-1}^{1} P_{n} P_{n} d x+\\
+	&(n-1)(n+2) \int_{-1}^{1} P_{n-2} P_{n+2} d x+\int_{-1}^{1} P_{n} P_{n-2} d x\\
+	\Rightarrow \int_{-1}^{1} x^{2} P_{n-1} P_{n+1} d x&=\frac{2 n(n+1)}{(2 n-1)(2 n+1)(2 n+3)}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Show that $\sum_{n} P_{n}(x)=\frac{1}{\sqrt{2-2 x}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\left(1-2 x z+z^{2}\right)^{-1 / 2}&=\sum_{n} z^{n} P_{n}(x)\\
+	\text { Putting } z&=1 \text { in equation, }(1-2 x+1)^{-1 / 2}=\sum_{n} P_{n}(x) \quad \Rightarrow \sum_{n} P_{n}(x)=\frac{1}{\sqrt{2-2 x}}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Prove that $P_{n+1}^{\prime}(x)+P_{n}^{\prime}(x)=P_{0}+3 P_{1}+5 P_{2}+\ldots . .+(2 n+1) P_{n}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text { Using the relation }&(2 n+1) P_{n}(x)=P_{n+1}^{\prime}(x)-P_{n-1}^{\prime}(\dot{x})\\
+	\text { putting } \mathrm{n}&=1 \quad \Rightarrow 3 P_{1}(x)=P_{2}^{\prime}(x)-P_{0}^{\prime}(x)\\
+	\text { putting } \mathrm{n}&=2 \quad \Rightarrow 5 P_{2}(x)=P_{3}^{\prime}(x)-P_{1}^{\prime}(x)\\
+	\text { putting } \mathrm{n}&=3 \quad \Rightarrow 7 P_{3}(x)=P_{4}^{\prime}(x)-P_{2}^{\prime}(x) \text { and so on. }\\
+	\text{Adding all}&\text{ the equations we get,}\\
+	3 P_{1}(x)+5 P_{2}(x)+7 P_{3}(x)&+\ldots \ldots(2 n+1) P_{n}(x)\\
+	=-P_{0}^{\prime}(x)-P_{1}^{\prime}(x)+P_{n}^{\prime}(x)&+P_{n+1}^{\prime}(x)=0-P_{0}(x)+P_{n}^{\prime}(x)+P_{n+1}^{\prime}{ }^{\cdot}(x)\\
+	\Rightarrow P_{n+1}^{\prime}(x)+P_{n}^{\prime}(x)&=P_{0}+3 P_{1}+5 P_{2}+\ldots . .+(2 n+1) P_{n}
+	\end{align*}
+\end{answer}
 \newpage
 \begin{abox}
 	Problem Set -1
