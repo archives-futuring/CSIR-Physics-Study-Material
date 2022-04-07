@@ -112,19 +112,21 @@ y&=\sum_{k=0}^{\infty} a_{k} x^{k} \\ \frac{d y}{d x}&=\sum_{k=0}^{\infty} k a_{
 k&=2 \Rightarrow a_{4}=\frac{a_{2}}{3}=\frac{-a_{0}}{3}  \\ k&=3 \Rightarrow a_{5}=\frac{2}{4} a_{3}=0\\
 \text{Therefore, solution}\ y&=a_{0}+a_{1} x+a_{2} x^{2}+\ldots \ldots\\&=a_{0}\left[1-x^{2}-\frac{x^{4}}{3} \ldots . .\right]+a_{1} x
 \end{align*}
-\subsection{Frobenious Method}
-Even though the simple power series expansion method works for many functions there are some whose behaviour  precludes the simple series method like the Bessel's function. The need of Frobenious method  lies under the fact that, \textbf{any functions involving negative or fractional powers would not be amenable to power series solution method}. The Frobenious method extends the simple power series solution method to include negative and fractional powers, and it also allows a natural extension involving logarithm terms.\\
-The basic idea of the Frobenius method is to look for solutions of the form
-\begin{align*}
-y(x) &=a_{0} x^{\lambda}+a_{1} x^{\lambda+1}+a_{2} x^{\lambda+2}+a_{3} x^{\lambda+3}+\ldots \\
-&=x^{\lambda}\left(a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\ldots\right) \\
-&=x^{\lambda} \sum_{k=0}^{\infty} a_{k} x^{k} \\
-&= \sum_{k=0}^{\infty} a_{k} x^{k+\lambda}
-\end{align*}
-The extension of the simple power series method is all in the factor $x^{\lambda}$. The power $c$ must now be determined, as well as the coefficients $a_{k}$. Since $\lambda$ may be negative, positive, and possibly non-integral, this extends considerably the range of functions which may be treated. Note that $a_{0}$ is the lowest non-zero coefficient, so by definition it cannot be zero.
+%\subsection{Frobenious Method}
+%Even though the simple power series expansion method works for many functions there are some whose behaviour  precludes the simple series method like the Bessel's function. The need of Frobenious method  lies under the fact that, \textbf{any functions involving negative or fractional powers would not be amenable to power series solution method}. The Frobenious method extends the simple power series solution method to include negative and fractional powers, and it also allows a natural extension involving logarithm terms.\\
+%The basic idea of the Frobenius method is to look for solutions of the form
+%\begin{align*}
+%y(x) &=a_{0} x^{\lambda}+a_{1} x^{\lambda+1}+a_{2} x^{\lambda+2}+a_{3} x^{\lambda+3}+\ldots \\
+%&=x^{\lambda}\left(a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\ldots\right) \\
+%&=x^{\lambda} \sum_{k=0}^{\infty} a_{k} x^{k} \\
+%&= \sum_{k=0}^{\infty} a_{k} x^{k+\lambda}
+%\end{align*}
+%The extension of the simple power series method is all in the factor $x^{\lambda}$. The power $c$ must now be determined, as well as the coefficients $a_{k}$. Since $\lambda$ may be negative, positive, and possibly non-integral, this extends considerably the range of functions which may be treated. Note that $a_{0}$ is the lowest non-zero coefficient, so by definition it cannot be zero.
 \section{Singularity}
-Consider d.e\\
-$\frac{d^2y}{dx^2} +P(x)\frac{dy}{dx}+Q(x)y=0$
+Consider differential equation,
+\begin{equation}
+\frac{d^2y}{dx^2} +P(x)\frac{dy}{dx}+Q(x)y=0
+\end{equation}
 \begin{enumerate}
 	\item If $P(x)$ and $Q(x)$ remain finite at $x=x_0$ then it is O.P
 	\item If either $P(x)/Q(x)$ or both tends to $\infty$ at $x=x_0$
@@ -137,8 +139,10 @@ $\frac{d^2y}{dx^2} +P(x)\frac{dy}{dx}+Q(x)y=0$
 	\item Irregular singularity\\
 	$P(x), Q(x)$ diverge either $(x-x_0)P(x)$ or $(x-x_0)^2Q(x)$ or both  remain infinite at $x\rightarrow x_0$ then $x=x_0$ is called irregular or essential singular points
 \end{enumerate}
-Little bit review of ODES\\
-$\frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=r(x)$\\
+Little bit review of ODES
+\begin{equation*}
+\frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=r(x)
+\end{equation*}
 remember, Tailor series of $y$ about $x_0$. If a $f_n$ was continues and differentable you could express it as an infinite series of polynomial terms being added
 \begin{align*}
 y(x)&=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n\\
@@ -152,17 +156,23 @@ p(x)&=\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n\quad Q(x)=\sum\limits_{n=0}^{\infty
 \end{align*}
 We can find these since $P,Q$ and $r$ given what we want to find is $a_n$\\
 We can only do this if we properly expand $P(x),Q(x)$ and $R(x)$ abt $x=x_0$ if one of function is undefined at $x_0$ then we would be able to do it. Properly expand and simplify the left or series solution methode will not work to combat this we have to go back and express $y(x)$ as power series abt some other value of $x$ where $p,q$ and $r$ we defined but there are other methodes we will discuss in later\\
-Let go with this simple examble\\
-$\frac{d^2y}{dx^2}-4y=0, \ y(x)==\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n$\\
+Let go with this simple examble
+\begin{equation*}
+\frac{d^2y}{dx^2}-4y=0, \ y(x)=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n
+\end{equation*}
 Using series solution method lets make $y$ a power series. The only $Q_n$
 what point power series expand about earliest point $x_0=0$\\
-It will always continuos and differentiable about $x_0=0$.Therefore $-4$ is a constant its always continues and differentiable for then any value of $x$\\
-$y(x)=\sum\limits_{n=0}^{\infty}a_nx^n,\ y^\prime(x)=\sum\limits_{n=0}^{\infty}na_n x^{n-1}$\\
-$y^{\prime\prime}(x)=\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)$\\
-substitute this into ODE only way to combine them is make power of $x$ same\\
-$\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)-4\sum\limits_{n=0}^{\infty}a_n x^n=0$\\
-Let $n=m-2$ when $n=0 \ n=2$ so in terms of $m$ change into $n-2$\\
-$\sum\limits_{n=0}^{\infty}n(n-1)a_n x^(n-2)-4\sum\limits_{n=2}^{\infty}a_(n-2)x^{n-2}=0$ still there is problem expand $n=0,n=1$
+It will always continuos and differentiable about $x_0=0$.Therefore $-4$ is a constant its always continues and differentiable for then any value of $x$
+\begin{align*}
+y(x)&=\sum\limits_{n=0}^{\infty}a_nx^n,\ y^\prime(x)=\sum\limits_{n=0}^{\infty}na_n x^{n-1}\\
+y^{\prime\prime}(x)&=\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)
+\end{align*}
+substitute this into ODE only way to combine them is make power of $x$ same
+\begin{align*}
+\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)-4\sum\limits_{n=0}^{\infty}a_n x^n&=0\\
+\text{Let }n=m-2\text{ when }n=0 \ n=2&\text{ so in terms of $m$ change into $n-2$}\\
+\sum\limits_{n=0}^{\infty}n(n-1)a_n x^(n-2)-4\sum\limits_{n=2}^{\infty}a_(n-2)x^{n-2}=0&\text{ still there is problem expand $n=0,n=1$}
+\end{align*}
 \begin{align*}
 &0(0-1)a-0x^{-2}+1(1-1)a_1x^{-1}+\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=0}^{\infty}a_{n-2}x^{n-2}=0\\
 &\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=2}^{\infty}a_{n-2}x^{n-2}=0\\
@@ -171,8 +181,8 @@ $\sum\limits_{n=0}^{\infty}n(n-1)a_n x^(n-2)-4\sum\limits_{n=2}^{\infty}a_(n-2)x
 &\implies n(n-1)a_n-4a_{n-2}=0
 \intertext{If relates the $n^{th}$ term in the sequence of coefficient to terms that occured  previously in that sequence}
 &a_n=\frac{4a_n-2}{n(n-1)}
-\intertext{$n^{th}$ coefficient is related to two terms back in the sequence}
 \end{align*} 
+$n^{th}$ coefficient is related to two terms back in the sequence\\
 we have solutions for D.E even coefficients related to even previous ans similarly. 'n' can be odd and even.
 \begin{align*}
 \intertext{n=Even}
@@ -236,23 +246,23 @@ a_5&=\frac{9_{3}(3-k)(4+k)}{5.4}=\frac{a_{1}(k-3)(k-1)(k+2)(k+4)}{5!}
 \end{align*}
 1.\quad What if $k=1$ \quad $a_3=0$
 \begin{align*}
-&\text{all coefficients come later on }a_3=0\\
-\therefore &\text{ they dipend on }a_3\\
+\text{all coefficients come later on }a_3&=0\\
+\therefore \text{ they dipend on }&a_3\\
 \text{so solution}\\
-y_{odd}&=a_px=a_1P_1(x)\\
-P_1(x)\text{ is just a function of $x$ will explain later}
-\intertext{even series doesnot terminate}
+y_{odd}=a_px&=a_1P_1(x)\\
+P_1(x)\text{ is just a function of $x$ will explain later}\\
+\text{even series }&\text{doesnot terminate}
 \end{align*}
 2.\quad What if $k=2$
 \begin{align*}
 a_2&=a_{0} \frac{(-2)(3)}{2}=-3 a_{0}, a_{4}=0\\
 y_{\text {even }}&=a_{0}-3 a_{0} x^{2}=a_{0}\left(1-3 x^{2}\right)\\
 &=\cdot 5\left(3 x^{2}-1\right)=P_{2}(x) \text{ for }a_0=\frac{-1}{2}\\
-\text{for }k=2,\text{ odd series doesnot terminate}\\
+\text{for }k&=2,\text{ odd series doesnot terminate}\\
 k&=3\\
 y_ {odd} &=-\frac{5}{3} a_1 x^{3}+a_{1} x\\
-&=\frac{1}{2}\left(5 x^{3}-3 x\right)=P_{3}(x)\text{ for }a_{1}=-3 / 2
-\intertext{even series doesnot terminate for odd value of $k$}
+&=\frac{1}{2}\left(5 x^{3}-3 x\right)=P_{3}(x)\text{ for }a_{1}=-3 / 2\\
+\text{even series }&\text{doesnot terminate for odd value of $k$}
 \end{align*}
 we can repeat this for different value of $k$. \\for even $k$ tends to even series terminates.\\
 for odd $k$ tends to odd series terminates\\
@@ -260,7 +270,7 @@ when even series terminate we end up with a polynomial of $k$ is the highest pow
 When $k=3$  highest power will be an $x^3$ term $P_1, P_2, P_3$ they result from series terminating are not like just other polynomial they are special polynomial.\\
 $P_1, P_2, P_3$ tends to these polynomials are called legendre polynomials, they are solutions to legendre ODES they come up in electromagnetism and quantum mechanics. Bunch of techniques already developed to calculate legendre polynomials more easily one of these techniques is rodrigues formula
 $P_{k}(x)=\frac{1}{2^{k} k !} \frac{d^{k}}{d x^{k}}\left[\left(x^{2}-1\right)^{k}\right]$\\
-Here one series terminates giving a polynomial solution. Other series divergent
+Here one series terminates giving a polynomial solution. Other series divergent\\
 \textbf{Theree Possibilities}\\
 1.\quad $r_1\text{ and }R_2$ distinct not differ by integer\\
 $y(x)=k_1y_1+k_2y_2=k_1(x-x_0)^{r_1}\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n+k_2(x-x_0)^{r_2}$\\
@@ -273,7 +283,7 @@ Special D.E when we solving P.D.E especially when solving problems in cylindrica
 x^{2} y^{\prime }+x y^\prime+\left(x^{2}-p^{2}\right) y&=0
 \intertext{We want a solution that can be expanded about $x_0=0$}
 \intertext{Before starting we can check $x_0=0$ is singular point or not}
-y^{\prime \prime}+\frac{1}{x} y^{\prime}+\left(1-\frac{p^{2}}{x^{2}}\right) y&=0\hspace{4cm}P(x)=\frac{1}{x},\quad Q(x)=1-\frac{p^{2}}{x^{2}}\\
+y^{\prime \prime}+\frac{1}{x} y^{\prime}+\left(1-\frac{p^{2}}{x^{2}}\right) y&=0\hspace{3cm}P(x)=\frac{1}{x},\quad Q(x)=1-\frac{p^{2}}{x^{2}}\\
 x p(x)&=1\\
 X^{2} Q(x)&=x^{2}-P^{2}\\
 X_{0}=0 &\text{is regular singular point}\\
@@ -390,7 +400,9 @@ The co-efficient of $z^{n}$ in the exapansion of the generating function is the 
 	\end{align*}
 \end{answer}
 \section{Bessel Differential Equation}
-$x^{2} \frac{d^{2} y}{d x^{2}}+x \frac{d y}{d x}+\left(x^{2}-n^{2}\right) y=0$\\
+\begin{equation*}
+x^{2} \frac{d^{2} y}{d x^{2}}+x \frac{d y}{d x}+\left(x^{2}-n^{2}\right) y=0
+\end{equation*}
 $x=0$ is a regular singular point of the Bessel differential equation.\\\\
 \begin{align*}
 \text{Bessel Functions }&\mathrm{J}_{\mathrm{n}}(\mathrm{x})\\
