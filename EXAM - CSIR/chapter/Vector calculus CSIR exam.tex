@@ -7,26 +7,6 @@ VECTOR CALCULUS
 $\left. \right.$ {\exyear{Q. No. 1-10 (3.5 Marks)}}
 \begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
 
-\item Let $\vec{a}$ and $\vec{b}$ be two distinct three dimensional vectors. Then the component of $\vec{b}$ that is
-perpendicular to $\vec{a}$ is given by,
-\begin{tasks}(4)
-	\task[\textbf{a.}]$\frac{\vec{a} \times(\vec{b} \times \vec{a})}{a^{2}}$  
-	\task[\textbf{b.}]$\frac{\vec{b} \times(\vec{a} \times \vec{b})}{b^{2}}$
-	\task[\textbf{c.}]$\frac{(\vec{a} \cdot \vec{b}) b}{b^{2}}$ 
-	\task[\textbf{d.}]  $\frac{(\vec{b} \cdot \vec{a}) \vec{a}}{a^{2}}$
-\end{tasks}
-\begin{answer}
-	
-	$\vec{a} \times \vec{b}=a b \sin \theta \hat{n}$ \\Where $\hat{n}$ is perpendicular to plane containing
-	$\vec{a}$ and $\vec{b}$ and pointing upwards.
-	$$
-	\begin{array}{l}
-	\vec{a} \times(\vec{a} \times \vec{b})=a b \sin \theta(\vec{a} \times \hat{n})=-a^{2} b \sin \theta \hat{k} \\\\
-	b \sin \theta \hat{k}=\frac{-\vec{a} \times(\vec{a} \times \vec{b})}{a^{2}} \\\\ b \sin \theta \hat{k}=\frac{\vec{a} \times(\vec{b} \times \vec{a})}{a^{2}} .
-	\end{array}
-	$$
-	Corrct answer is \textbf{option(a)}
-\end{answer}
 	
 \item A curve is given by $\vec{r}(t)=t \hat{i}+t^{2} \hat{j}+t^{3} \hat{k}$. The unit vector of the tangent to the curve at\\$t=1$ is
 \begin{tasks}(4)
@@ -135,15 +115,6 @@ Correct answer is \textbf{option (a)}.
 	\int_{0}^{1} F.dr&= \int_{0}^{1}\left(x^{2}+x\right) d x-2 \int_{0}^{1} y^{3} d y\\&=\frac{1}{3}\\&=0.33.
 	\end{align*}
 \end{answer}
-\item  {The volume of the surface , } \ $  z=x y  ${above the} x-y \  {plane with base given by a unit square with vertices} $ (0,0),(1,0),(1,1) $, {and} $ (0,1) $ {is equal to}	
-\begin{answer}
-	\begin{align*}
-	\intertext{To find the volume, we integrate $z=x y$ over its base. We have,}
-	\int_{0}^{1} \int_{0}^{1} x y d x d y&=\int_{0}^{1} x d x \int_{0}^{1} y d y\\&=\left(\int_{0}^{1} x d x\right)^{2}=\left(\frac{1}{2}\right)^{2}\\&=\frac{1}{4} \\&=0.25.
-	\end{align*}
-\end{answer}
-$\left. \right.$ \section*{\centering{\color{futuringtheme} \underline{SECTION B (MCQ)}}}
-$\left. \right.$ {\exyear{Q. No. 10-15 (5 Marks)}}
 \item {Let }$ u=-x^{2} y i+x y^{2} j $ {Compute} $ \oint_{C} {u} \cdot d r $ {for a unit square in the first quadrant with vertex at the origin. Here, it is simpler to compute an area integral. The answer is}	
 \begin{answer}
 	\begin{align*}
@@ -151,6 +122,36 @@ $\left. \right.$ {\exyear{Q. No. 10-15 (5 Marks)}}
 	\oint_{C} {u} \cdot d {r}&=\int_{S}({\nabla} \times {u}) \cdot d {S}\Rightarrow d {S}= d x d y\hat{k}\\&=\int_{0}^{1} \int_{0}^{1}\left(x^{2}+y^{2}\right) d x d y\\&=\int_{0}^{1} x^{2} d x \int_{0}^{1} d y+\int_{0}^{1} d x \int_{0}^{1} y^{2} d y\\&=\frac{2}{3}=0.666\\
 	\end{align*}
 \end{answer}
+\item Find the directional derivative of the function $ f(x, y)=3 x^{2} y $ at a point $ (-2,1) $ along the direction $ 4 \hat{i}+3 \hat{j} $.
+\begin{answer}
+	\begin{align*}
+	\intertext{The\ unit\ vector\ along $ 4 \hat{i}+3 \hat{j} \ is $,}
+	\hat{u}&=\frac{4 i+3 \hat{j}}{5} 
+	\intertext{Gradient\ of\ the\ given\ function\ is} 
+	\nabla f&=6 x y \hat{i}+3 x^{2} \hat{j}
+	\intertext{ Thus\ the\ directional\ derivative\ at\ $ (x, y) $ is}
+	\nabla f\cdot \hat{u}&=\left(\frac{24}{5}\right) x y+\left(\frac{9}{5}\right) x^{2}\\
+	{At\ (-2,1)\ \text{it's \ value\ is}\ \frac{-12 }{5}=-2.4.}
+	\end{align*}
+\end{answer}
+\item The directional derivative of $f(x, y, z)=2 x^{2}+3 y^{2}$ $+z^{2}$ at point $P(2,1,3)$ in the direction of the vector $a=i-2 k$ is $\cdots$
+
+\begin{answer}
+	\begin{align*}
+	\text{We have} \ f &=2 x^{2}+3 y^{2}+z^{2}, P(2,1,3) \\
+	a &=i-2 k \\
+	\nabla f &=i \frac{\partial f}{\partial x}+j \frac{\partial f}{\partial y}+k \frac{\partial f}{\partial z} \\
+	&=4 x i+6 y j+2 z k\\
+	\text { at } P(2,1,3) \quad \nabla f &=4 \times 2 \times i+6 \times 1 \times j+2 \times 3 \times k \\
+	&=8 i+6 j+6 k
+	\intertext{The directional derivative of $f$ in direction of vector $a=i-2 k$ is the component of grad $f$ in the direction of vector $a$ and is given by $\frac{a}{|a|} \cdot$ grad $f$}
+	&=\left[\frac{i-2 k}{\sqrt{1^{2}+(-2)^{2}}}\right] \cdot(8 i+6 j+6 k) \\
+	&=\frac{1}{\sqrt{5}}[1.8+0.6+(-2) 6]=\frac{-4}{\sqrt{5}} 
+	\end{align*}
+\end{answer}
+$\left. \right.$ \section*{\centering{\color{futuringtheme} \underline{SECTION B (MCQ)}}}
+$\left. \right.$ {\exyear{Q. No. 10-15 (5 Marks)}}
+
 	\item What is the angle (in degrees) between the surfaces $y^{2}+z^{2}=2$ and $y^{2}-x^{2}=0$ at the
 point $(1,-1,1)$ 
 
@@ -170,18 +171,7 @@ point $(1,-1,1)$
 	\end{align*}
 	Correct option is (C)
 \end{answer}
-\item Find the directional derivative of the function $ f(x, y)=3 x^{2} y $ at a point $ (-2,1) $ along the direction $ 4 \hat{i}+3 \hat{j} $.
-\begin{answer}
-	\begin{align*}
-	\intertext{The\ unit\ vector\ along $ 4 \hat{i}+3 \hat{j} \ is $,}
-	\hat{u}&=\frac{4 i+3 \hat{j}}{5} 
-	\intertext{Gradient\ of\ the\ given\ function\ is} 
-	\nabla f&=6 x y \hat{i}+3 x^{2} \hat{j}
-	\intertext{ Thus\ the\ directional\ derivative\ at\ $ (x, y) $ is}
-	\nabla f\cdot \hat{u}&=\left(\frac{24}{5}\right) x y+\left(\frac{9}{5}\right) x^{2}\\
-	{At\ (-2,1)\ \text{it's \ value\ is}\ \frac{-12 }{5}=-2.4.}
-	\end{align*}
-\end{answer}
+
 \item If $\vec{r}$ is position vector of a point, for what value of $n$, the vector $r^{n} \vec{r}$ is solenoidal?  
 
 
@@ -202,22 +192,7 @@ point $(1,-1,1)$
 Correct option is (B)
 \end{answer}
 
-\item The directional derivative of $f(x, y, z)=2 x^{2}+3 y^{2}$ $+z^{2}$ at point $P(2,1,3)$ in the direction of the vector $a=i-2 k$ is $\cdots$
 
-\begin{answer}
-\begin{align*}
-		\text{We have} \ f &=2 x^{2}+3 y^{2}+z^{2}, P(2,1,3) \\
-	a &=i-2 k \\
-	\nabla f &=i \frac{\partial f}{\partial x}+j \frac{\partial f}{\partial y}+k \frac{\partial f}{\partial z} \\
-	&=4 x i+6 y j+2 z k\\
-	\text { at } P(2,1,3) \quad \nabla f &=4 \times 2 \times i+6 \times 1 \times j+2 \times 3 \times k \\
-	&=8 i+6 j+6 k
-	\intertext{The directional derivative of $f$ in direction of vector $a=i-2 k$ is the component of grad $f$ in the direction of vector $a$ and is given by $\frac{a}{|a|} \cdot$ grad $f$}
-	&=\left[\frac{i-2 k}{\sqrt{1^{2}+(-2)^{2}}}\right] \cdot(8 i+6 j+6 k) \\
-	&=\frac{1}{\sqrt{5}}[1.8+0.6+(-2) 6]=\frac{-4}{\sqrt{5}} \\
-	&=-1.789
-	\end{align*}
-	\end{answer}
 \item If a vector field is given by $F=\sin y \hat{i}+x(1+\cos y) \hat{j}$,
 then evaluate the line integral over a circular path given by $x^{2}+y^{2}=a^{2}, z=0$.
 \begin{tasks}(4)
@@ -246,4 +221,54 @@ then evaluate the line integral over a circular path given by $x^{2}+y^{2}=a^{2}
 	\end{align*}
 	Correct answer is \textbf{option (d)}
 \end{answer}
+\item  Which one of the following vectors lie along the line of intersection of the two planes $x+3 y-z=5$ and $2 x-2 y+4 z=3 ?$
+
+\begin{tasks}(2)
+\task[\textbf{A.}] $10 \hat{i}-2 \hat{j}+5 \hat{k}$
+\task[\textbf{B.}] $10 \hat{i}-6 \hat{j}-8 \hat{k}$
+\task[\textbf{C.}]$10 \hat{i}+2 \hat{j}+5 \hat{k}$
+\task[\textbf{D.}]$10 \hat{i}-2 \hat{j}-5 \hat{k}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\text{Unit vector normal to } x+3 y-z=5 :\ \hat{n}_{1}&=\frac{\vec{\nabla} \phi}{|\vec{\nabla} \phi|}=\frac{\hat{i}+3 \hat{j}-\hat{k}}{\sqrt{1+9+1}}\\&=\frac{\hat{i}+3 \hat{j}-\hat{k}}{\sqrt{11}}\\
+\text{Unit vector normal to } 2 x-2 y+4 z=3 :\ \hat{n}_{2}&=\frac{\vec{\nabla} \phi}{|\vec{\nabla} \phi|}=\frac{2 \hat{i}-2 \hat{j}+4 \hat{k}}{\sqrt{4+4+16}}\\&=\frac{2 \hat{i}-2 \hat{j}+4 \hat{k}}{\sqrt{24}}
+\intertext{Let's check for option (B) }
+\  \hat{n}&=10 \hat{i}-6 \hat{j}-8 \hat{k}\\
+\hat{n}_{1} \cdot \hat{n}&=\frac{10-18+8}{\sqrt{11}}=0 \quad \\\hat{n}_{2} \cdot \hat{n}&=\frac{20+12-32}{\sqrt{24}}=0
+\end{align*}
+Correct option is (B)
+\end{answer}
+\item Four forces are given below in Cartesian and spherical polar coordinates
+\begin{tasks}(2)
+	\task[\textbf{i.}] $\vec{F}_{1}=K \exp \left(\frac{-r^{2}}{R^{2}}\right) \hat{r}$
+	\task[\textbf{ii.}] $\vec{F}_{2}=K\left(x^{3} \hat{y}-y^{3} \hat{z}\right)$
+	\task[\textbf{iii.}]$\vec{F}_{3}=K\left(x^{3} \hat{x}+y^{3} \hat{y}\right)$
+	\task[\textbf{iv.}]$\vec{F}_{4}=K\left(\frac{\hat{\phi}}{r}\right)$.
+\end{tasks}
+ where $K$ is a constant Identify the correct option
+\begin{tasks}(1)
+	\task[\textbf{A.}] (iii) and (iv) are conservative but (i) and (ii)are not.
+	\task[\textbf{B.}] (i) and (ii) are conservative but (iii) and (iv) are not.
+	\task[\textbf{C.}](ii) and (iii) are conservative but (i) and (iv) are not.
+	\task[\textbf{D.}](i) and (iii) are conservative but (ii) and (iv)-are not. 
+\end{tasks} 
+\begin{answer}
+	\begin{align*}
+	\vec{\nabla} \times \vec{F}_{1}&=\frac{1}{r^{2} \sin \theta}\left|\begin{array}{ccc}
+	\hat{r}&r \hat{\theta} & r \sin \theta \hat{\phi} \\
+	\frac{{\partial}}{\partial r} & \frac{{\partial}}{{\theta} \theta} & \frac{{\partial}}{\partial \hat{\theta}} \\
+	k \exp \left(-\frac{r^{2}}{R^{2}}\right)& 0&0
+	\end{array}\right|=0\\
+	\vec{\nabla} \times \vec{F}_{2}&=\left|\begin{array}{ccc}\hat{i} & \hat{j} & \hat{k} \\\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\0 & k x^{3} & -k y^{3}\end{array}\right|=\hat{i}\left(-3 k y^{2}-0\right)=-3 k y^{2} \hat{i}\\
+	\vec{\nabla} \times \vec{F}_{3}&=\left|\begin{array}{ccc}x & y & \hat{z} \\\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\k x^{3} & k y^{3} & 0\end{array}\right|=0\\
+	\vec{\nabla} \times \vec{F}_{4}&=\frac{1}{r^{2} \sin \theta}\left|\begin{array}{ccc}
+	\hat{r}&r \hat{\theta} & r \sin \theta \hat{\phi} \\
+	\frac{{\partial}}{\partial r} & \frac{{\partial}}{{\theta} \theta} & \frac{{\partial}}{\partial \hat{\theta}} \\
+	0& 0&{r sin \theta K}/{r}
+	\end{array}\right|=Kr\cos\theta
+	\end{align*}
+	Correct answer is option(D)
+\end{answer}
+ 
 \end{enumerate}
