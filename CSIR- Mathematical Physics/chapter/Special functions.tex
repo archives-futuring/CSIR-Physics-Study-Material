@@ -389,6 +389,119 @@ The co-efficient of $z^{n}$ in the exapansion of the generating function is the 
 	\Rightarrow P_{n+1}^{\prime}(x)+P_{n}^{\prime}(x)&=P_{0}+3 P_{1}+5 P_{2}+\ldots . .+(2 n+1) P_{n}
 	\end{align*}
 \end{answer}
+\section{Bessel Differential Equation}
+$x^{2} \frac{d^{2} y}{d x^{2}}+x \frac{d y}{d x}+\left(x^{2}-n^{2}\right) y=0$\\
+$x=0$ is a regular singular point of the Bessel differential equation.\\\\
+\begin{align*}
+\text{Bessel Functions }&\mathrm{J}_{\mathrm{n}}(\mathrm{x})\\
+\mathrm{J}_{\mathrm{n}}(\mathrm{x})&=y=a_{0} \sum_{r=0}^{\infty} \frac{(-1)^{r}}{r !(n+r) !}\left(\frac{x}{2}\right)^{n+2 r} \quad \text { where } \mathrm{a}_{0}=\frac{1}{2^{n} \mid n+1}\\
+\mathrm{n}=0 \quad \Rightarrow \quad \mathrm{J}_{0}(\mathrm{x})&=\sum_{r=0}^{\infty} \frac{(-1)^{r}}{(r !)^{2}}\left(\frac{x}{2}\right)^{2 r}=1-\frac{x^{2}}{2^{2}}+\frac{x^{4}}{2^{2} \cdot 4^{2}}-\frac{x^{6}}{2^{2} \cdot 4^{2} \cdot 6^{2}}+\ldots . .\\
+\mathrm{n}=1 \quad \Rightarrow \mathrm{J}_{1}(x)&=\frac{x}{2}-\frac{x^{3}}{2^{2} 4}+\frac{x^{5}}{2^{2} \cdot 4^{2} \cdot 6}-\ldots .
+\end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm,width=5cm]{SF-03}
+\end{figure}
+(i) Bessel functions are oscillatory function with varying period and decreasing amplitude.\\
+(ii) $J_{n}(x)$ is an even function when $n$ is even and $J_{n}(x)$ is an odd function when $n$ is odd.\\
+(iii) $\mathrm{J}_{0}(\mathrm{x})$ has nodes at $x=2.40 \% 8,5.5201$......and $J_{1}(x)$ has nodes at $x=3.8317,7.015$.......
+\begin{align*}
+J_{1 / 2}(x)=\sqrt{\frac{2}{\pi x}} \sin x \quad \& \quad J_{-1 / 2}(x)=\sqrt{\frac{2}{\pi x}} \cos x
+\end{align*}
+\subsection{Generating function of Bessel's function:}
+\begin{align*}
+e^{\frac{x}{2}\left(z-\frac{1}{2}\right)}=\sum_{n=-\infty}^{\infty} z^{n} J_{n}(x)
+\intertext{The coefficient of $z^{n}$ in the expansion of the generating tünction is the Bessel function of order $1 .$}
+\end{align*}
+\subsection{Orthogonal condition of Bessel Fucntion:}
+\begin{align*}
+\int_{0}^{1} x_{n} \cdot(\alpha x) J_{n}(\beta x) d x=\frac{\delta_{\alpha \beta}}{2} \cdot\left[J_{n+1}(\alpha)\right]^{2}
+\end{align*}
+\subsection{Recurrencé relations for $J_{n}(x)$ :}
+\begin{align*}
+(i)\ & x J_{n}^{\prime}(x)=n J_{n}-x J_{n+1}\hspace{1cm}(ii)\  x J_{n}^{\prime}=-n J_{n} \times J_{n-1}.\\
+(iii)\ & 2 J_{n}^{\prime}=J_{n-1}-J_{n+1}\hspace{1.5cm}(iv)\  2 n J_{n}=x\left[J_{n-1}+J_{n+1}\right]\\
+(v)\ & \frac{d}{d x}\left[x^{-n} J_{n}\right]=-x^{-n} J_{n+1} \hspace{.5cm} (vi)\  \frac{d}{d x}\left[x^{n} J_{n}\right]=x^{n} J_{n-1}
+\end{align*}
+\begin{exercise}
+	Show that $\sqrt{\frac{\pi x}{2}} J_{3 / 2}(x)=\frac{\sin x}{x}-\cos x$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text{Using recurrence relation, }2 n J_{n}&=x\left[J_{n+1}+J_{n-1}\right]\\
+	\text{putting}\mathrm{n}&=1 / 2,\text{ we get, }J_{1 / 2}=x\left[J_{3 / 2}+J_{-1 / 2}\right]\\
+	\Rightarrow x J_{3 / 2}=J_{1 / 2}-x J_{-1 / 2} \quad \Rightarrow \sqrt{\frac{\pi x}{2}} J_{3 / 2}&=\frac{\sin x}{x}-\cos x \text { (using the expressions of } J_{1 / 2} \& J_{-1 / 2} \text { ) }
+	\end{align*}
+\end{answer}
+\section{Hermite Differentiation Equation}
+\begin{align*}
+\frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+2 n y&=0,(\mathrm{n}=0,1 \ldots . .)\\
+\text{$x=0$ is an ordinary point of the }&\text{Hermite differential equation}\\
+\intertext{The solution of the Hermite differential equation is a terminating series, so it is called Hermite polynomial of}
+\intertext{order ni.e. $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$}
+H_{n}(x)=\sum_{r=0}^{P} \frac{(-1)^{r} n !(2 x)^{n-2 r}}{r !(n-2 r) !} \quad \Rightarrow\left[\begin{array}{ll}
+P=\frac{n}{2} & \text { if } n=\text { even } \\
+=\frac{n-1}{2} & \text { if } \mathrm{n} \text { is odd }
+\end{array}\right]
+\end{align*}
+\subsection{Rodrigue formula for $H_{n}(x)$ :}
+\begin{align*}
+\begin{array}{ll}
+H_{n}(x)=(-1)^{n} e^{x^{2}} \frac{d^{n}}{d x^{n}}\left(e^{-x^{2}}\right) \\
+H_{0}(x)=1 & H_{3}(x)=8 x^{3}-12 x \\
+H_{1}(x)=2 x & H_{4}(x)=16 x^{4}-48 x^{2}+12 \\
+H_{2}(x)=4 x^{2}-2 &
+\end{array}
+\end{align*}
+These are Hermitite polynomial of order zero, one, two, three, four .... respectively. \\
+$H_{\mathrm{n}}(x)$ will be even function if $n$ is even and will be odd function if $n$ is odd.\\
+The Hermite polynomial of different order differ from the legendre polynomials with respect to the ceefficient.\\
+ So, the nature of the graphs of $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$ will be same as.Legendre polynomial $P_{\mathrm{n}}(x)$.
+\subsection{Generating function for hermite polynomial:}
+\begin{align*}
+\intertext{$\mathrm{e}^{2 \mathrm{zx}-\mathrm{z}^{2}}$ is the generating function of hemite polynomial i.e.}
+e^{2 z x-z^{2}}&=\sum_{n=0}^{\infty} \frac{H_{n}(x)}{n !} z^{n}\\
+\text{The coefficient of $z^{n}$ in the expansion of }e^{2 z x-z^{2}}&\text{ is } \frac{H_{n}(x)}{n !}
+\end{align*}
+\subsection{Orthogonal property of $H_{n}(x)$ :}
+\begin{align*}
+\int_{-\infty}^{\infty} e^{-x^{2}} H_{n}(x) H_{m}(x) d x=2^{n} n ! \sqrt{\pi} \delta_{m n}
+\end{align*}
+\subsection{Recurrence relation for $\mathrm{H}_{\mathrm{n}}(\mathbf{x})$ :}
+\begin{align*}
+(i)&\  H_{n}^{\prime}(x)=2 n H_{n-1}(x)\\
+(ii)& \ 2 x H_{n}(x)=2 n H_{n-1}(x)+H_{n+1}(x)\\
+(iii)& \ H_{n}^{\prime}(x)=2 x H_{n}(x)-H_{n+1}(x)\\
+(iv)&\  H_{n}^{\prime \prime}(x)-2 x H_{n}^{\prime}(x)+2 n H_{n}(x)=0\\
+(v)&\  H_{n}(-x)=(-1)^{n} H_{n}(x)\\
+\end{align*}
+\section{Lagauerre Differential Equation}
+\begin{align*}
+x \frac{d^{2} y}{d x^{2}}+(1-x) \frac{d y}{d x}+n y&=0\\
+\text{$x=0$ is a regular singular point of the Laguerre differential }& \text{equation.}\\\\
+\intertext{The solution ofLaguerre differentialequation is known as Laguerre polynomial of order ni.e. $L_{n}(x)$}
+L_{n}(x)=\sum \frac{(-1)^{r} n ! x^{r}}{(r !)^{2}(n-r) !}&
+\end{align*}
+\subsection{Rodrigue formula for $L_{n}(x)$ :}
+\begin{align*}
+\begin{aligned}
+&L_{n}(x)=\frac{e^{x}}{n !} \frac{d^{n}}{d x^{n}}\left(x^{n} e^{-x}\right) \\
+&L_{0}(x)=1 \quad L_{1}(x)=1-x \quad L_{2}(x)=\frac{1}{2}\left(x^{2}-4 x+2\right) \\
+&L_{3}(x)=\frac{1}{6}\left(-x^{3}+9 x^{2}-18 x+6\right)
+\intertext{Laguerre polynomials are neither even nor odd.}
+\end{aligned}
+\end{align*}
+\subsection{Generating function for Laguerre polynomial:}
+\begin{align*}
+\frac{e^{-x z /(1-z)}}{(1-z)}=\sum_{n=0}^{\infty} z^{n} L_{n}(x)
+\end{align*}
+\subsection{Orthogonal property of Laguerre's polynomial:}
+\begin{align*}
+\int_{0}^{\infty} e^{-x} L_{n}(x) L_{m}(x) d x=\delta_{m n}
+\end{align*}
+
+
+
 \newpage
 \begin{abox}
 	Problem Set -1
