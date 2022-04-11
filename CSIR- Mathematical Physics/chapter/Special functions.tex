@@ -128,7 +128,7 @@ Consider differential equation,
 \frac{d^2y}{dx^2} +P(x)\frac{dy}{dx}+Q(x)y=0
 \end{equation}
 \begin{enumerate}
-	\item If $P(x)$ and $Q(x)$ remain finite at $x=x_0$ then it is O.P
+	\item If $P(x)$ and $Q(x)$ remain finite at $x=x_0$ then it is ordinary point
 	\item If either $P(x)/Q(x)$ or both tends to $\infty$ at $x=x_0$
 	then it is singular point.
 \end{enumerate}
@@ -137,57 +137,54 @@ Consider differential equation,
 	\item Regular singularity\\
 	IF $P(x), Q(x)\text{ diverges but } (x-x_0) P(x) \text{ and }(x-x_0)^2Q(x)$ remain finite at $x\rightarrow x_0$ then $x=x_0$ is called regular or non essencial singular points
 	\item Irregular singularity\\
-	$P(x), Q(x)$ diverge either $(x-x_0)P(x)$ or $(x-x_0)^2Q(x)$ or both  remain infinite at $x\rightarrow x_0$ then $x=x_0$ is called irregular or essential singular points
+	$P(x), Q(x)$ diverges and either $(x-x_0)P(x)$ or $(x-x_0)^2Q(x)$ or both  remain infinite at $x\rightarrow x_0$ then $x=x_0$ is called irregular or essential singular points
 \end{enumerate}
-Little bit review of ODES
+Little bit review of Ordinary Differential Equations
 \begin{equation*}
-\frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=r(x)
+\frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=R(x)
 \end{equation*}
-remember, Tailor series of $y$ about $x_0$. If a $f_n$ was continues and differentable you could express it as an infinite series of polynomial terms being added
+Using Tailor series expansion method. If a function was continues and differentable you could express it as an infinite series of polynomial terms being added.
 \begin{align*}
 y(x)&=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n\\
 y^\prime(x)&=\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}\\
-y^{\prime\prime}(x)&=\sum\limits_{n=0}^{\infty}\\
-\sum\limits_{n=0}^{\infty}n(a-1)a_n(x-x_0)^{n-2}&+\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}P(x)+Q(x)\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=r(x)
-\intertext{$P(x),Q(x)$ and $r(x)$ are sitting there a far of $x$. It's also possible to express there as power series} 
-p(x)&=\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n\quad Q(x)=\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n,r(x)=\sum\limits_{n=0}^{\infty}d_n(x-x_0)^n\\
-\intertext{$\left(\sum\limits_{n=0}^{\infty}n(n-1)a_n(x-x_0)^{n-2}+\left[\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n \right]\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}+\left[\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n \right] \sum\limits_{n=0}^{\infty}a_n(x-x_0)^n   \right) $}
+y^{\prime\prime}(x)&=\sum\limits_{n=0}^{\infty}n(n-1)a_n(x-x_0)^{n-2}      \intertext{Plugging this value into the differential equation we can express as}
+\sum\limits_{n=0}^{\infty}n(a-1)a_n(x-x_0)^{n-2}&+\sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}P(x)+Q(x)\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n=R(x)
+\intertext{$P(x),Q(x)$ and $R(x)$ are also functions of $x$. It's also possible to express them as power series} 
+P(x)=\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n\quad Q(x)&=\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n,R(x)=\sum\limits_{n=0}^{\infty}d_n(x-x_0)^n\\
+\intertext{$\sum\limits_{n=0}^{\infty}n(n-1)a_n(x-x_0)^{n-2}+\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n \sum\limits_{n=0}^{\infty}na_n(x-x_0)^{n-1}+\sum\limits_{n=0}^{\infty}c_n(x-x_0)^n  \sum\limits_{n=0}^{\infty}a_n(x-x_0)^n    $}
 &=\sum\limits_{n=0}^{\infty}d_n(x-x_0)^n
 \end{align*}
-We can find these since $P,Q$ and $r$ given what we want to find is $a_n$\\
-We can only do this if we properly expand $P(x),Q(x)$ and $R(x)$ abt $x=x_0$ if one of function is undefined at $x_0$ then we would be able to do it. Properly expand and simplify the left or series solution methode will not work to combat this we have to go back and express $y(x)$ as power series abt some other value of $x$ where $p,q$ and $r$ we defined but there are other methodes we will discuss in later\\
-Let go with this simple examble
+ To find $a_n$,
+ we should properly expand $P(x),Q(x)$ and $R(x)$ abt $x=x_0$ If any one of function is undefined at $x_0$ then we would not be able to do it.\\\\
+\textbf{Examble}\\
 \begin{equation*}
 \frac{d^2y}{dx^2}-4y=0, \ y(x)=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n
 \end{equation*}
-Using series solution method lets make $y$ a power series. The only $Q_n$
-what point power series expand about earliest point $x_0=0$\\
-It will always continuos and differentiable about $x_0=0$.Therefore $-4$ is a constant its always continues and differentiable for then any value of $x$
+
+It will always continuos and differentiable about $x_0=0$, So we will have a valid tylor series expansion about this point and we can proceed with a power series expansion method.
 \begin{align*}
-y(x)&=\sum\limits_{n=0}^{\infty}a_nx^n,\ y^\prime(x)=\sum\limits_{n=0}^{\infty}na_n x^{n-1}\\
-y^{\prime\prime}(x)&=\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)
+y(x)&=\sum\limits_{n=0}^{\infty}a_nx^n\qquad\ y^\prime(x)=\sum\limits_{n=0}^{\infty}na_n x^{n-1}\qquad
+y^{\prime\prime}(x)=\sum\limits_{n=0}^{\infty}n(n-1)a_nx^{n-2}
 \end{align*}
-substitute this into ODE only way to combine them is make power of $x$ same
+substituting into differential equation
 \begin{align*}
-\sum\limits_{n=0}^{\infty}n(n-1)a_nx^(n-2)-4\sum\limits_{n=0}^{\infty}a_n x^n&=0\\
-\text{Let }n=m-2\text{ when }n=0 \ n=2&\text{ so in terms of $m$ change into $n-2$}\\
-\sum\limits_{n=0}^{\infty}n(n-1)a_n x^(n-2)-4\sum\limits_{n=2}^{\infty}a_(n-2)x^{n-2}=0&\text{ still there is problem expand $n=0,n=1$}
-\end{align*}
-\begin{align*}
-&0(0-1)a-0x^{-2}+1(1-1)a_1x^{-1}+\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=0}^{\infty}a_{n-2}x^{n-2}=0\\
-&\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=2}^{\infty}a_{n-2}x^{n-2}=0\\
-&\text{	combining }\sum\limits_{n=2}^{\infty}\left[n(n-1)a_n-4a_{n-2} \right] x^{n-2}=0\\
-&\text{	since r.h.s }=0 \text{ all coefficient of l.h.s must be zero}\\
-&\implies n(n-1)a_n-4a_{n-2}=0
+\sum\limits_{n=0}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=0}^{\infty}a_n x^n&=0\\
+\sum\limits_{n=0}^{\infty}n(n-1)a_n x^{n-2}-4 \sum\limits_{n=2}^{\infty}a_{n-2}x^{n-2}=0&\\\text{ expanding  first two terms of the }
+\sum\limits_{n=0}^{\infty}n(n-1)a_n x^{n-2} &\text{we can express as }\\
+\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=0}^{\infty}a_{n-2}x^{n-2}&=0\\
+\sum\limits_{n=2}^{\infty}n(n-1)a_nx^{n-2}-4\sum\limits_{n=2}^{\infty}a_{n-2}x^{n-2}&=0\\
+\text{	combining }\sum\limits_{n=2}^{\infty}\left[n(n-1)a_n-4a_{n-2} \right] x^{n-2}&=0\\
+\text{	since  RHS }=0 \text{}\\
+\implies n(n-1)a_n-4a_{n-2}&=0
 \intertext{If relates the $n^{th}$ term in the sequence of coefficient to terms that occured  previously in that sequence}
-&a_n=\frac{4a_n-2}{n(n-1)}
+a_n=\frac{4a_n-2}{n(n-1)}&
 \end{align*} 
 $n^{th}$ coefficient is related to two terms back in the sequence\\
-we have solutions for D.E even coefficients related to even previous ans similarly. 'n' can be odd and even.
+we have two solutions for differential equations, even part and odd part
 \begin{align*}
-\intertext{n=Even}
-a_2&=\frac{4a_0}{2.1}\\
-a_4&=\frac{4a_2}{4.3}\\
+\intertext{\textbf{Case$\ 1$}\quad $\rightarrow n=$\text{Even}}
+a_2&=\frac{4a_0}{2.1}\quad
+a_4=\frac{4a_2}{4.3}\\
 &=\frac{4.4 \ a_0}{4.3\  2.1}\\
 &\text{A pattern is developing}\\
 a_4&=\frac{2^4\ a_0}{4!}\quad \text{it follows that}\\
@@ -195,8 +192,8 @@ a_n&=\frac{2^2 a_0}{n!}\\
 &\text{Since a is even}\\
 a_{2k}&=\frac{2^{2k\ a_0}}{(2k)!}\\
 &\text{any even number can represent as multiple of $2$}\\
-\text{here}&n=0,1,2,3 \\\\
-&\intertext{n=Odd}\\
+\text{here }&n=0,1,2,3 
+&\intertext{n=Odd}
 a_3&=\frac{4\ a_1}{3.2},\ a_5=\frac{4\ a_3}{5.4}=\frac{4.4.a_1}{5.4.3.2}\\
 a_5&=\frac{2^4\ a_1}{5!}\quad \therefore a_n=\frac{2^{n-1}\ a_1}{n!}\\
 &\text{ any odd number can}\\
@@ -276,7 +273,25 @@ Here one series terminates giving a polynomial solution. Other series divergent\
 $y(x)=k_1y_1+k_2y_2=k_1(x-x_0)^{r_1}\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n+k_2(x-x_0)^{r_2}$\\
 2.\quad $r_1=r_2=r,y_1=(x-x_0)^r\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$\\
 3.\quad $r_1\text{ and }R_2$ distinct and differ by integer\\
-$y_1=(x-x_0)^{r_1}\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$ is similar using recursion relation 
+$y_1=(x-x_0)^{r_1}\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$ is similar using recursion relation \\
+\section{Frobenius Method}
+For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have valid series solution about $x=x_0$ if $P_1,Q_1$ and $R$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P,Q,R$ didnot have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$. $r$ is a real number. This is called Frobenius method to the regular series solution. \\
+\begin{align*}
+&2(x-1)^2y^{\prime\prime}-(x-1)y^\prime+y=0\\
+&2 y^{\prime \prime}-\frac{1}{(x-1)} y^{\prime}+\frac{1}{(x-1)^{2}} y=0\\
+y&=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}\\
+y^{\prime}&=\sum_{n=0}^{\infty}(h+r) a_{n}(x-1)^{n+r-1}
+\quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}\\
+2 \sum_{n=0}^{\infty}&(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-\frac{1}{x-1}
+\sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-1}+\frac{1}{(x-1)^{2}}\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=0\\
+2 \sum_{n=0}^{\infty}&(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-
+\sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-2}+\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r-2}=0\\
+\sum_{n=0}^{\infty}&\left[2(n+r)(n+r-1) a_{n}\right.\left.-(n+r) a_{n}+a_{n}\right](x-1)^{n+r-2}=0\\
+&\left[ 2 r(r-1)-r+1\right] a_0(x-1)^{r-2}+[2 r(r+1)-(r+1)+1]a_1(x-1)^{r-1}+...+=0\\
+&2 r^{2}-3 r+1=0\quad\gamma_{1}=1 \quad r_{2}=0.5
+\end{align*}
+$\therefore$ For equality to noid $a_1,a_2.....a_n,..=0$ what does this mean for final answer?\\
+$y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=a_{0}(x-1)^{r}$only first term correspond to $n=0$ is there $y(x)$ is just $a_0(x-1)^{r}$ because two vaues of $r$. There is $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{-5}$ so general solution is :$y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
 \section{Bessel Function}
 Special D.E when we solving P.D.E especially when solving problems in cylindrical coordinates.
 \begin{align*}
