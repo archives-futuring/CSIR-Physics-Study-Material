@@ -1,4 +1,165 @@
-\chapter{Potential formulation}
+\chapter{Maxwell's equations and Conservation laws}
+section{Electrodynamics Before Maxwell}
+Till now in electromagnetic theory we found out four equations which contribute to the foundation of Electromagnetic theory, and they are,
+\begin{align*}{2}
+\vec{\nabla} \cdot \vec{E}&=\frac{\rho}{\epsilon_{0}} \quad && \Rightarrow \text { Gauss' Law }  \\
+\vec{\nabla} \cdot \vec{B}&=0 \quad && \Rightarrow \text { Gauss' Law for magnetism } \\
+\vec{\nabla} \times \vec{E}&=-\frac{\partial \vec{B}}{\partial t} && \Rightarrow \text { Faraday's Law } \\
+\vec{\nabla} \times \vec{B}&=\mu_{0}\left(\vec{J}\right) && \Rightarrow \text { Ampere's Law }
+\end{align*}
+There is a fatal inconsistency in these formulas. It has something to do with the old rule that divergence of curl is always zero $ (\nabla .(\nabla \times E)=0)$. If you apply the divergence to Faraday's law, everything works out: 
+$$\nabla \cdot(\nabla \times \mathbf{E})=\nabla \cdot\left(-\frac{\partial \mathbf{B}}{\partial t}\right)=-\frac{\partial}{\partial t}(\nabla \cdot \mathbf{B})$$
+The left side is zero because divergence of curl is zero; the right side is zero by virtue of Gauss law for magnetism. But when you do the same thing to Ampere's law, you get into trouble:$$\boldsymbol{\nabla} \cdot(\boldsymbol{\nabla} \times \mathbf{B})=\mu_{0}(\boldsymbol{\nabla} \cdot \mathbf{J})$$ The left side must be zero, but the right side, in general, is not. For steady currents, the divergence of $\mathbf{J}$ is zero, but evidently when we go beyond magnetostatics Ampère's law cannot be right.
+\subsection{How Maxwell Fixed Ampère's Law}
+Applying the continuity equation  and Gauss's law, in  Ampere's law the offending term can be rewritten as:
+\begin{align*}
+\nabla \cdot \mathbf{J}&=-\frac{\partial \rho}{\partial t}\\
+&=-\frac{\partial}{\partial t}\left(\epsilon_{0} \nabla \cdot \mathbf{E}\right)\\&=-\nabla \cdot\left(\epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}\right)
+\end{align*}
+If we were to combine $\epsilon_{0}(\partial \mathbf{E} / \partial t)$ with $\mathbf{J}$, in Ampère's law, it would be just right to kill off the extra divergence:$$\nabla \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$$ Such a modification changes nothing, as far as magnetostatics is concerned: when $\mathbf{E}$ isconstant, we still have $\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}$.\\
+Just as a changing magnetic field induces an electric field (Faraday's law), so \textbf{A changing electric field induces a magnetic field}.  Maxwell called his extra term the displacement current:
+
+\hspace{5.10cm}\framebox{
+	
+	\parbox[t][1.5cm]{4cm}{
+		
+		\addvspace{0.2cm} \centering 
+		Displacement Current\\\vspace{0.2cm}
+		$\mathbf{J}_{d} \equiv \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$} 
+}
+\\\\ It's a misleading name, since $\epsilon_{0}(\partial \mathbf{E} / \partial t)$ has nothing to do with current, except that it adds to $\mathbf{J}$ in Ampère's law.
+\subsection{Maxwell's Equations}
+\begin{center}
+	\framebox{
+		\parbox[t][4.2cm]{3.5cm}{
+			
+			\addvspace{0.2cm} \centering
+			
+			\begin{align*}
+			\begin{array}{lll}
+			\textbf{(i)} & \nabla \cdot \mathbf{E}=\frac{1}{\epsilon_{0}} \rho&\text{(Gauss's law)} \\\\ \textbf{(ii)} & \nabla \cdot \mathbf{B}=0&\text{(No name.)}\\\\ \textbf{(iii)}& \boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}&\text{(Faraday's law)}\\\\\textbf{(iv)}&\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}&\text{(Ampère's law with
+				Maxwell's correction)}
+			\end{array}
+			\end{align*}} }
+\end{center}
+Every phenomenon in electricity and magnetism can be derived from these equations. Many of our most important tools for various analyses come from the integral version of these equations, which are.
+\begin{center}
+	\framebox{
+		\parbox[t][4.2cm]{3.5cm}{
+			
+			\addvspace{0.2cm} \centering
+			
+			\begin{align*}
+			\begin{array}{lll}
+			\textbf{(i)} & \iint_{S} \overrightarrow{\mathbf{E}} \cdot d \overrightarrow{\mathbf{A}}=\frac{Q}{\varepsilon_{0}} &\text{(Gauss's law)} \\\\ \textbf{(ii)} & \iint_{S} \overrightarrow{\mathbf{B}} \cdot d \overrightarrow{\mathbf{A}}=0&\text{(No name.)}\\\\ \textbf{(iii)}& \oint \overrightarrow{\mathbf{E}} \cdot d \overrightarrow{\mathbf{s}}=-\frac{d \mathbf{\phi_B}}{d t}&\text{(Faraday's law)}\\\\\textbf{(iv)}&\oint \overrightarrow{\mathbf{B}} \cdot d \overrightarrow{\mathbf{s}}=\mu_{0} I+\mu_{0} \varepsilon_{0} \frac{d \Phi_{E}}{d t}&\text{(Ampère's law with
+				Maxwell's correction)}
+			\end{array}
+			\end{align*}} }
+\end{center} 
+Together with the force law,\ $\mathbf{F}=q(\mathbf{E}+\mathbf{v} \times \mathbf{B})$,\ they summarize the entire theoretical content of classical electrodynamics. Even the continuity equation,\ $\boldsymbol{\nabla} \cdot \mathbf{J}=-\frac{\partial \rho}{\partial t}$ \ which is the mathematical expression of conservation of charge, can be derived from Maxwell's equations by applying the divergence to Ampere's law.
+\subsection{Maxwell's Equations In Free Space}
+An extremely important limit of Maxwell's equations is found when there are no sources: $\rho=0, \vec{J}=0 .$ The equations become,
+\begin{center}
+	\framebox{
+		\parbox[t][4.2cm]{3.5cm}{
+			
+			\addvspace{0.2cm} \centering
+			
+			\begin{align*}
+			\begin{array}{lll}
+			\textbf{(i)} & \nabla \cdot \mathbf{E}=0&\text{(Gauss's law)} \\\\ \textbf{(ii)} & \nabla \cdot \mathbf{B}=0&\text{(No name.)}\\\\ \textbf{(iii)}& \boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}&\text{(Faraday's law)}\\\\\textbf{(iv)}&\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}&\text{(Ampère's law with
+				Maxwell's correction)}
+			\end{array}
+			\end{align*}} }
+\end{center}
+\subsection{Maxwell's Equations in Matter}
+For inside polarized matter there will be accumulations of "bound" charge and current over which you exert no direct control. It would be nice to reformulate Maxwell's equations in such a way as to make explicit reference only to those sources we control directly: the "free" charges and currents. \\
+We have already learned, from the static case, that an electric polarization $\mathbf{P}$ produces a bound charge density $$\rho_{b}=-\nabla \cdot \mathbf{P}$$ Likewise, a magnetic polarization (or "magnetization") $\mathbf{M}$ results in a bound current $$\mathbf{J}_{b}=\nabla \times \mathbf{\mathbf { M }}$$ There's just one new feature to consider in the nonstatic case: Any change in the electric polarization involves a flow of (bound) charge (call it $\mathbf{J}_{p}$), which must be included in the total current. For suppose we examine a tiny chunk of polarized material The polarization introduces a charge density $\sigma_{b}=P$ at one end and $-\sigma_{b}$ at the other. If $P$ now increases a bit, the charge on each end increases accordingly. \\giving a net current $$d I=\frac{\partial \sigma_{b}}{\partial t} d a_{\perp}=\frac{\partial P}{\partial t} d a_{\perp}$$
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=4cm,height=2cm]{02-crop}
+	\end{center}
+\end{figure}
+The current density, therefore, is $$\mathbf{J}_{p}=\frac{\partial \mathbf{P}}{\partial t}$$
+This polarization current has nothing whatever to do with the bound current $\mathbf{J}_{b}$. The latter is associated with magnetization of the material and involves the spin and orbital motion of electrons; $\mathbf{J}_{p}$, by contrast, is the result of the linear motion of charge when the electric polarization changes. If $\mathbf{P}$ points to the right and is increasing, then each plus charge moves a bit to the right and each minus charge to the left; the cumulative effect is the polarization current $\mathbf{J}_{p}$\\\\
+In fact, $\mathbf{J}_{p}$ is essential to account for the conservation of bound charge.\\
+In view of all this, the total charge density can be separated into two parts: $$\rho=\rho_{f}+\rho_{b}=\rho_{f}-\boldsymbol{\nabla} \cdot \mathbf{P}$$ and the current density into three parts:
+$$\mathbf{J}=\mathbf{J}_{f}+\mathbf{J}_{b}+\mathbf{J}_{p}=\mathbf{J}_{f}+\mathbf{\nabla} \times \mathbf{M}+\frac{\partial \mathbf{P}}{\partial t}$$ Gauss's law can now be written as $$\nabla \cdot \mathbf{E}=\frac{1}{\epsilon_{0}}\left(\rho_{f}-\nabla \cdot \mathbf{P}\right)$$ \text{or}$$\boldsymbol{\nabla} \cdot \mathbf{D}=\rho_{f}$$ where $\mathbf{D}$, as in the static case, is given by $$\mathbf{D} \equiv \epsilon_{0} \mathbf{E}+\mathbf{P}$$ Meanwhile, Ampère's law (with Maxwell's term) becomes $$\nabla \times \mathbf{B}=\mu_{0}\left(\mathbf{J}_{f}+\nabla \times \mathbf{M}+\frac{\partial \mathbf{P}}{\partial t}\right)+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$$\text{or}$$\boldsymbol{\nabla} \times \mathbf{H}=\mathbf{J}_{f}+\frac{\partial \mathbf{D}}{\partial t}$$ where, as before,$$\mathbf{H} \equiv \frac{1}{\mu_{0}} \mathbf{B}-\mathbf{M}$$ Faraday's law and $\nabla \cdot \mathbf{B}=0$ are not affected by our separation of charge and current into free and bound parts, since they do not involve $\rho$ or $\mathbf{J}$. \\
+In terms of free charges and currents, then, Maxwell's equations read\
+\begin{center}
+	\framebox{
+		\parbox[t][2.5cm]{4cm}{
+			
+			\addvspace{0cm} \centering
+			
+			\begin{align*}
+			\begin{array}{llll}
+			\textbf{(i)} & \nabla \cdot \mathbf{D}=\rho_{f} &\textbf{(iii)} & \boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t},\\\\
+			\textbf{(ii)}&\boldsymbol{\nabla} \cdot \mathbf{B}=0&\textbf{(iv)}& \boldsymbol{\nabla} \times \mathbf{H}=\mathbf{J}_{f}+\frac{\partial \mathbf{D}}{\partial t}
+			\end{array}
+			\end{align*}} }
+\end{center}
+for linear media
+\begin{align*}
+\begin{array}{lll}
+\mathbf{P}=\epsilon_{0} \chi_{e} \mathbf{E} & and& \mathbf{M}=\chi_{m} \mathbf{H}\\\\
+\mathbf{D}=\epsilon \mathbf{E}&and&\mathbf{H}=\frac{1}{\mu} \mathbf{B}
+\end{array}
+\end{align*}
+where $\epsilon \equiv \epsilon_{0}\left(1+\chi_{e}\right)$ and $\mu \equiv \mu_{0}\left(1+\chi_{m}\right)$ D is called the electric "displacement"; that's why the second term in the Ampère/Maxwelf equation (iv) is called the displacement current,\\
+In integral form Maxwell's equations in matter can be written as\\
+\begin{align*}
+\text{(i)}\hspace{0.5cm}\oint_{s}D\cdot da&=\theta_{fenc}\\
+\text{(ii)}\hspace{0.5cm}\oint_{s}B\cdot da&=0\\
+\text{(iii)}\hspace{0.5cm}\oint_{p}E\cdot dl&=\frac{-d}{dt}\int_{s} B\cdot da\\
+\text{(iv)}\hspace{0.5cm}\oint_{p}H\cdot dl&=I_{end}+\frac{d}{dt}\int_{s} D\cdot da\\
+\end{align*}
+$P$ is the closed loop enclosing the surface $S$
+\section{Boundary conditions}
+In general the fields \textbf{E,B,D,} and \textbf{H} will be discontineous at a boundary between two different media or at surface that carries charge density $\sigma$ or current density \textbf{K}. The explicit form of the discontinities can be deduced from Maxwell's equations,in their integral form\\\\
+(i) $\oint_s \mathbf{D} \cdot d \mathbf{a}=Q_{f_{\mathrm{enc}}}$\\
+(ii) $\oint_s \mathbf{B} \cdot d \mathbf{a}=0$\\
+$\left.\begin{array}{l|l}\text { (iii) } \oint_l \mathbf{E} \cdot d \mathbf{l} & =-\frac{d}{d t} \int_s \mathbf{B} \cdot d \mathbf{a} \\ 
+\text { (iv) } \oint_l \mathbf{H} \cdot d \mathbf{l} & =I_{f_{\text {enc }}}+\frac{d}{d t} \int_s \mathbf{D} \cdot d \mathbf{a}\end{array}\right\} \begin{aligned}&\text { for any surface } s \\&\text { bounded by the } \\&\text { closed loop } l .\end{aligned}$\\
+Applying (i) to a tiny, wafer-thin Gaussian pillbox extending just slightly into the material on either side of the boundary, we obtain \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=7cm]{diagram-20220103(8)-crop}
+	\caption{}
+	\label{}
+\end{figure}
+$$\mathbf{D}_{1} \cdot \mathbf{a}-\mathbf{D}_{2} \cdot \mathbf{a}=\sigma_{f} a$$
+Thus ,the component of D that is perperdicular to the interface is discontineous in the amount \\
+$$D_{1}^{\perp}-D_{2}^{\perp}=\sigma_{f}$$
+Identical reasoning,applied to equation(ii) yields\\
+$$B_1^{\perp}-B_2^{\perp}=0$$
+consider equation(iii) a very thin Amperian loop straddling the surface gives\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=7cm]{diagram-20220103(9)-crop}
+	\caption{}
+	\label{}
+\end{figure}
+$$E_1\cdot L-E_2\cdot L=-\frac{d}{dt} \int_{s} B\cdot da$$
+But in the limit as the width of the loop goes to zero ,the flux vanishes.Therefore\\
+$$E_1^{\parallel}-E_2^{\parallel}=0$$
+That is the comonents of E parallel to the interface are contineous across the boundary.\\
+equation (iv)  implies \\
+$$H_1 \cdot L-H_2\cdot L=I_{f_{enc}}$$
+Where $I_{f_{enc}}$ is the free current passing through the Amperian loop.No volume current density will contribute but a surface current can . In fact if $\hat{n}$ is a unit vector perpendicular to the interface so that $(\hat{n}\times L)$ is normal to the Amperian loop then,
+$$I_{f_{enc}}=K_f \cdot (\hat{n}\times L)=(K_f\times \hat{n})\cdot L$$
+And hence $$H_1^{\parallel}-H_2^{\parallel}=K_f\times \hat{n}$$
+So the parallel components  H are discontinuous by an amount proportional to the free surface charge density.\\
+In the case of linear media they can be expressed in terms of E and B alone \\\\
+(i) $\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=\sigma_{f}$,\\
+(iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$,\\
+(ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
+(iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=\mathbf{K}_{f} \times \hat{\mathbf{n}}$.\\\\
+In particular, if there is no free charge or free current at the interface, then \\\\
+(i) $\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=0$,\\
+(iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$\\
+(ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
+(iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=0$.
 \section{Scalar and vector potentaial}
 Maxwell's equations are\\
 (i) $\boldsymbol{\nabla} \cdot \mathbf{E}=\frac{1}{\epsilon_{0}} \rho$,\\
@@ -178,77 +339,4 @@ The correct option is \textbf{(a)}
 
 
 
-\newpage
-\section{Lagrangian and hamiltonian of a charged particle in a Electromagnetic field}
-The force experienced by a particle of charge q at rest in an electric field of intensity E is given by
-$$F_1=qE$$
-The force experienced by a moving charge q in a magnetic field B is given by\\
-$$F_2=q(v\times B)$$
-Where V  is the velocity of the particle.The direction of $F_2$ is perpendicular to both v and B.\\
-Total force on a uniformly moving charged particle of charge q is the sum of $F_1$ and $F_2$\\
-$$F=F_1+F_2=qE+q(v\times B)$$
-The above equation is known as lorentz formula.\\
-Maxwell's equation in empty space is given by\\
-$\nabla \cdot E=\frac{\rho}{\epsilon_0}$\\
-$\nabla \cdot B=0$\\
-$\nabla \times E=-\frac{\partial B}{\partial t}$\\
-$\nabla \times B=\mu_0(J+\epsilon_0\frac{\partial E}{\partial t})$\\
-We know that if $\nabla \cdot B=0$ ,B can be expressed as a curl of some vector A\\
-$$B=\nabla \times A$$
-Substitute this equation in $\nabla \times E=-\frac{\partial B}{\partial t}$\\
-$\nabla \times E=-\frac{\partial B}{\partial t}=-\frac{\partial}{\partial t}(\nabla \times A)=-\nabla \times \frac{\partial A}{\partial t}$\\
-$\therefore E=-\frac{\partial A}{\partial t}-\nabla s$ ,since curl of gradient is always zero and s is  scalar function\\
-The lorentz force in terms of scalar potential s and vector potential A is given by\\
-$$F=q\left[ E+v\times B\right] $$
-$$F=q\left[ -\frac{\partial A}{\partial t}-\nabla s+(v\times \nabla \times A)\right] $$
-Let us consider the last part $v\times(\nabla \times A)$\\
-$$v\times(\nabla \times A)=\nabla (A\cdot v)-(\nabla \cdot v)A$$
-Also $A=A(x,y,z,t)$\\
-Therfore total time derivative of A is given by\\
-$\frac{dA}{dt}=\frac{\partial A}{\partial x} \dot{x}+\frac{\partial A}{\partial y} \dot{y}+\frac{\partial A}{\partial z} \dot{z}+\frac{\partial A}{\partial t}=\frac{\partial A}{\partial x} v_x+\frac{\partial A}{\partial y} v_y+\frac{\partial A}{\partial z} v_z+\frac{\partial A}{\partial t}$\\
-$=(\hat{i}v_x+\hat{j}v_y+\hat{k}v_z)\cdot \left( \hat{i}\frac{\partial A}{\partial x}+\hat{j}\frac{\partial A}{\partial y}+\hat{k}\frac{\partial A}{\partial z}\right) +\frac{\partial A}{\partial t}=v \cdot \nabla \mathbf{A}+\frac{\partial \mathbf{A}}{d t}$ \\
-	$$v \cdot\nabla \mathbf{A}=\frac{d \mathbf{A}}{d t}-\frac{\partial \mathbf{A}}{\partial t}$$
-	Substituting this value in 
-$$v\times(\nabla \times A)=\nabla (A\cdot v)-(\nabla \cdot v)A$$
-we will get \\
-$$\mathrm{v} \times(\nabla \times \mathbf{A})=\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}+\frac{\partial \mathbf{A}}{\partial t}$$
-Then F becomes\\
-$$F=q\left[ -\frac{\partial A}{\partial t}-\nabla s+(v\times \nabla \times A)\right] $$
-$$\begin{aligned}
-	\mathbf{F} &=q\left[-\frac{\partial \mathbf{A}}{d t}-\nabla s+\left\{\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}+\frac{\partial \mathbf{A}}{\partial t}\right\}\right] \\
-	&=q\left[-\nabla s+\left\{\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}\right\}\right] \\
-	&=q\left[-\nabla(s-\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}\right]
-\end{aligned}$$
-The $x$-component of the force is given by
-$$
-\begin{aligned}
-F_{x} &=q\left[\{-\nabla(s-\mathbf{A} \cdot \mathrm{v})\}_{x}-\frac{d \mathbf{A}_{x}}{d t}\right] \\
-&=q\left[-\frac{\partial}{\partial x}(s-\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}_{x}}{d t}\right] \\
-\text { or } \quad F_{x} &=q\left[-\frac{\partial}{\partial x}(s-\mathbf{A} \cdot \mathrm{v})-\frac{d}{d t}\left\{\frac{\partial}{\partial \mathrm{v}_{x}}(\mathbf{A} \cdot \mathrm{v}\}\right]\right.
-\end{aligned}
-$$
-$q s \text { is independent of velocity } \mathrm{v}_{x} \text { i.e. } \frac{\partial(q s)}{\partial \mathrm{v}_{x}}=0$
-So we can add that term to the above equation, it will not make any change.\\
-After rewritting\\
-$$\begin{aligned}
-	&F_{x}=-\frac{\partial U}{\partial x}-\frac{d}{d t} \frac{\partial U}{\partial \mathrm{v}_{\mathrm{x}}} \\
-	&U=q s-q(\mathbf{A} \cdot \mathbf{v})
-\end{aligned}$$
-FRom these it is clear that  U is a function of x and v ie $q_k$ and $\dot{q_k}$
-U is called generalized potential or velocity dependent potential.\\
-\paragraph{Lagrangian }
-$L=T-U=T-\{q s-q(\mathbf{A} \cdot \mathbf{v}) .\}=T-q s+q(\mathbf{A} \cdot \mathbf{v})$\\
-T=kinetic energy.$T=\frac{1}{2}mv^2$
-$$L=\frac{1}{2}mv^2-q s+q(\mathbf{A} \cdot \mathbf{v})$$
-\textbf{Momentum} $P_K=\frac{\partial L}{\partial \dot{q_k}}=\frac{\partial L}{\partial v_k}=mv_k+qA=mv+qA$\\
-\paragraph{Hamiltonian}
-$$\begin{aligned}
-	H &=\sum_{k} p_{k} \dot{q}_{k}-L \\
-	&=\sum_{k} p_{k} \dot{r}_{k}-L \\
-	&=\sum_{k} p_{k} v_{k}-L \\
-	&=\sum_{k}\left(m v_{k}+q A_{k}\right) v_{k}-\left[\frac{1}{2} m v^{2}-q s+q(\mathbf{v} \cdot \mathbf{A})\right] \\
-	&=\sum_{k}\left(m v_{k}^{2}+q A_{k} v_{k}\right)-\frac{1}{2} m v^{2}+q s-q(\mathbf{v} \cdot \mathbf{A}) \\
-	&=m v^{2}+q(\mathbf{A} \cdot \mathbf{v})-\frac{1}{2} m v^{2}+q s-q(\mathbf{v} \cdot \mathbf{A}) \\
-	&=\frac{1}{2} m v^{2}+q s
-\end{aligned}$$
 
