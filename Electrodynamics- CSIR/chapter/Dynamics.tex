@@ -1,0 +1,254 @@
+\chapter{Potential formulation}
+\section{Scalar and vector potentaial}
+Maxwell's equations are\\
+(i) $\boldsymbol{\nabla} \cdot \mathbf{E}=\frac{1}{\epsilon_{0}} \rho$,\\
+(iii) $\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$,\\
+(ii) $\boldsymbol{\nabla} \cdot \mathbf{B}=0$,\\
+(iv) $\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$.\\
+If $\rho(r,t)$ and $J(r,t)$ are bnown electric and magnetic field can be find out using Gauss's law and Bio-savart law.It is difficult to find E ans B if they are time dependant.To solve this problem first we are going to represents the fields in terms of potentials electric potential V and magnetic potential B.\\
+In the static case $\nabla \times E=0$ So electric field cane written as a negative gradient of some scalar quandity called electric potential V\\
+$$E=-\nabla V$$(not possible in elctrodynamics)\\
+But $\nabla \cdot B=0$ always.Which gives \\
+$$B=\nabla\times A$$
+ Where A is the magnetic vector potential.Putting this value in 
+$$\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$$
+We will get \\
+$$\nabla \times E=\frac{-\partial }{\partial t}(\nabla \times A)$$
+$$\nabla \times \left( E+\frac{\partial A}{\partial t}\right) =0$$
+Again the curl of something become zero. so it can be written as negative gradient of potential
+$$E+\frac{\partial A}{\partial t}=-\nabla V$$
+$$E=-\nabla V-\frac{\partial A}{\partial t}$$
+\begin{center}
+	\framebox{
+		\parbox[t][3cm]{3cm}{
+			
+			\addvspace{0.2cm} \centering
+			
+			\begin{align*}
+			\begin{array}{lll}
+			$$B=\nabla\times A$$\\
+			$$E=-\nabla V-\frac{\partial A}{\partial t}$$
+			\end{array}
+			\end{align*}} }
+\end{center}
+If A and V are known we can find electric and magnetic field with these two equations.
+
+Putting this equation $$E=-\nabla V-\frac{\partial A}{\partial t}$$  in Gauss's law
+we will get,\\
+$$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$$
+Putting $B=\nabla\times A$  equation in Ampere/Maxwell's law and rearranging we will get,\\
+$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$ 
+
+These two equations contain all information in the Maxwell's equations.\\
+However we have succeeded in reducing six problems to find E and B ,down to four(V one component,A three component.),these equations are lengthy and difficult to find solution we have to abandon this potential formulation altogether.\\
+\paragraph{Gauge transformation}
+To avoid this problem we are transforming the potential equations by adding one extra term to A and V.This is called gauge tranformation.Consider the transformation occuring in the same fields E and B.Then\\
+$$A^{\prime}=A+\alpha$$ and
+$$V^{\prime}=V+\beta$$
+Taking curl on each side of $A^{\prime}=A+\alpha$
+we will get 
+$$\nabla \times A^{\prime}=\nabla \times A+\nabla \times \alpha$$
+Since B's are same we can written as($\nabla \times B=0,A^{\prime}=A$) \\
+$$\nabla \times \alpha =0$$
+Again curl of $\alpha$ is zero.then\\
+$$\alpha=\nabla \lambda$$\\
+The two potentials also gives the same E.so,\\
+$$\nabla \beta +\frac{\partial \alpha }{\partial t}=0$$
+$$\nabla\left( \beta+\frac{\partial \lambda}{\partial t}\right) =0$$
+$$\beta= -\frac{\partial \lambda}{\partial t}$$
+Now transformations become,\\
+
+\begin{center}
+	\framebox{
+		\parbox[t][3cm]{3cm}{
+			
+			\addvspace{0.2cm} \centering
+			
+			\begin{align*}
+			\begin{array}{lll}
+			 $$A^{\prime}=A+\nabla \lambda$$\\
+			 $$V^{\prime}=V-\frac{\partial \lambda}{\partial t}$$
+			\end{array}
+			\end{align*}} }
+\end{center}
+\subsection{Coulomb Gauge and Lorentz gauge}
+\paragraph{Coluomb gauge}
+$$\nabla \cdot A=0$$ is called Coulomb gauge.\\
+\paragraph{importance}
+$$\nabla \cdot A=0$$ Then the equation 
+$$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$$ become,\\
+$$\nabla^2 V=\frac{-\rho}{\epsilon_{0}}$$
+This is poisson's equation.From this equation V can be findout by using the formula\\
+$$V(r,t)=\frac{1}{4 \pi \epsilon_0}\int \frac{\rho(r^{\prime},t)}{r}d\tau^{\prime}$$
+V is easy to get but to find E we need  A also($E=-\nabla V-\frac{\partial A}{\partial t}$) which is difficult.
+\paragraph{Advantage of the coulomb gauge is that the scalar potential is simply to calculate .The disadvatage is that  A is particularly difficult to calculate. }
+After applying coulomb gauge to the equation 
+$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$ 
+we get\\
+$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right)=-\mu_{0}J+\mu_{0} \epsilon_{0}\nabla \left( \frac{\partial V}{\partial t}\right) $$
+\paragraph{Lorentz gauge}
+$$\nabla \cdot A =-\mu_{0} \epsilon_{0} \frac{\partial}{\partial t}V$$
+
+ is called the lorentz gauge.\\
+ This designes to eliminate the middle term of the equation
+$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$
+With lorentz gauge this equation become
+$$\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}=-\mu_{0} J$$
+With lorentz gauge this equation 
+$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$
+becomes
+$$\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}=\frac{-\rho}{\epsilon_{0}}$$
+The virtue of the lorentz gauge is that it treats V and A on the same differential operator
+$$\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}\equiv \mathcal{D}^2  $$
+ is called d'Alembertian\\
+Then both equation become\\
+$$\mathcal{D}^2V=\frac{-\rho}{\epsilon_{0}}$$
+$$\mathcal{D}^2A=-\mu_{0} J$$
+
+\newpage
+\begin{abox}
+	Previous year solutions
+	\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item  The electric and the magnetic field $\vec{E}(z, t)$ and $\vec{B}(z, t)$, respectively corresponding to the scalar potential $\phi(z, t)=0$ and vector potential $\vec{A}(z, t)=\hat{i} t z$ are
+		\exyear{GATE 2012}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\vec{E}=\hat{i} z$ and $\vec{B}=-\hat{j} t$
+		\task[\textbf{B.}]$\vec{E}=\hat{i} z$ and $\vec{B}=\hat{j t}$
+		\task[\textbf{C.}]$\vec{E}=-\hat{i} z$ and $\vec{B}=-\hat{j t}$
+		\task[\textbf{D.}]$\vec{E}=-\hat{i} z$ and $\vec{B}=-\hat{j} \mathrm{t}$
+	\end{tasks}
+\begin{answer}
+	$\vec{E}=-\vec{\nabla} \phi-\frac{\partial \vec{A}}{\partial t}=-\frac{\partial \vec{A}}{\partial t}=-\hat{i} z, \vec{B}=\vec{\nabla} \times \vec{A}=+\hat{j} t$\\
+The correct option is \textbf{(d)}
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item If the vector potential $\vec{A}=\alpha x \hat{x}+2 y \hat{y}-3 z \hat{z}$, satisfies the Coulomb gauge, the value of the constant $\alpha$ is
+	\exyear{GATE 2015}
+\end{minipage}
+\begin{answer}
+$$\text { Coulomb gauge condition } \vec{\nabla} \cdot \vec{A}=0 \Rightarrow \alpha+2-3=0 \Rightarrow \alpha=1$$	
+\end{answer}
+\begin{minipage}{\textwidth}
+	\item Consider magnetic vector potential $\tilde{A}$ and scalar potential $\Phi$ which define the magnetic field $\vec{B}$ and electric field $\vec{E}$. If one adds $\vec{\nabla} \lambda$ to $\vec{A}$ for a well-defined $\lambda$, then what should be added to $\Phi$ so that $\vec{E}$ remains unchanged up to an arbitrary function of time, $f(t)$ ?
+	\exyear{JEST 2017}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{\partial \lambda}{\partial t}$
+	\task[\textbf{B.}]$-\frac{\partial \lambda}{\partial t}$
+	\task[\textbf{C.}]$\frac{1}{2} \frac{\partial \lambda}{\partial t}$
+	\task[\textbf{D.}]$-\frac{1}{2} \frac{\partial \lambda}{\partial t}$
+\end{tasks}
+\begin{answer}
+Consider Gauge Transformation
+$$
+\vec{A}^{\prime}=\vec{A}-\vec{\nabla} \lambda=\vec{A}+\vec{V}(-\lambda) \quad \text { and } \quad \Phi^{\prime}=\Phi-\frac{\partial(-\lambda)}{\partial t}=\Phi+\frac{\partial \lambda}{\partial t}
+$$
+The correct option is \textbf{(a)}	
+\end{answer}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Lagrangian and hamiltonian of a charged particle in a Electromagnetic field}
+The force experienced by a particle of charge q at rest in an electric field of intensity E is given by
+$$F_1=qE$$
+The force experienced by a moving charge q in a magnetic field B is given by\\
+$$F_2=q(v\times B)$$
+Where V  is the velocity of the particle.The direction of $F_2$ is perpendicular to both v and B.\\
+Total force on a uniformly moving charged particle of charge q is the sum of $F_1$ and $F_2$\\
+$$F=F_1+F_2=qE+q(v\times B)$$
+The above equation is known as lorentz formula.\\
+Maxwell's equation in empty space is given by\\
+$\nabla \cdot E=\frac{\rho}{\epsilon_0}$\\
+$\nabla \cdot B=0$\\
+$\nabla \times E=-\frac{\partial B}{\partial t}$\\
+$\nabla \times B=\mu_0(J+\epsilon_0\frac{\partial E}{\partial t})$\\
+We know that if $\nabla \cdot B=0$ ,B can be expressed as a curl of some vector A\\
+$$B=\nabla \times A$$
+Substitute this equation in $\nabla \times E=-\frac{\partial B}{\partial t}$\\
+$\nabla \times E=-\frac{\partial B}{\partial t}=-\frac{\partial}{\partial t}(\nabla \times A)=-\nabla \times \frac{\partial A}{\partial t}$\\
+$\therefore E=-\frac{\partial A}{\partial t}-\nabla s$ ,since curl of gradient is always zero and s is  scalar function\\
+The lorentz force in terms of scalar potential s and vector potential A is given by\\
+$$F=q\left[ E+v\times B\right] $$
+$$F=q\left[ -\frac{\partial A}{\partial t}-\nabla s+(v\times \nabla \times A)\right] $$
+Let us consider the last part $v\times(\nabla \times A)$\\
+$$v\times(\nabla \times A)=\nabla (A\cdot v)-(\nabla \cdot v)A$$
+Also $A=A(x,y,z,t)$\\
+Therfore total time derivative of A is given by\\
+$\frac{dA}{dt}=\frac{\partial A}{\partial x} \dot{x}+\frac{\partial A}{\partial y} \dot{y}+\frac{\partial A}{\partial z} \dot{z}+\frac{\partial A}{\partial t}=\frac{\partial A}{\partial x} v_x+\frac{\partial A}{\partial y} v_y+\frac{\partial A}{\partial z} v_z+\frac{\partial A}{\partial t}$\\
+$=(\hat{i}v_x+\hat{j}v_y+\hat{k}v_z)\cdot \left( \hat{i}\frac{\partial A}{\partial x}+\hat{j}\frac{\partial A}{\partial y}+\hat{k}\frac{\partial A}{\partial z}\right) +\frac{\partial A}{\partial t}=v \cdot \nabla \mathbf{A}+\frac{\partial \mathbf{A}}{d t}$ \\
+	$$v \cdot\nabla \mathbf{A}=\frac{d \mathbf{A}}{d t}-\frac{\partial \mathbf{A}}{\partial t}$$
+	Substituting this value in 
+$$v\times(\nabla \times A)=\nabla (A\cdot v)-(\nabla \cdot v)A$$
+we will get \\
+$$\mathrm{v} \times(\nabla \times \mathbf{A})=\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}+\frac{\partial \mathbf{A}}{\partial t}$$
+Then F becomes\\
+$$F=q\left[ -\frac{\partial A}{\partial t}-\nabla s+(v\times \nabla \times A)\right] $$
+$$\begin{aligned}
+	\mathbf{F} &=q\left[-\frac{\partial \mathbf{A}}{d t}-\nabla s+\left\{\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}+\frac{\partial \mathbf{A}}{\partial t}\right\}\right] \\
+	&=q\left[-\nabla s+\left\{\nabla(\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}\right\}\right] \\
+	&=q\left[-\nabla(s-\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}}{d t}\right]
+\end{aligned}$$
+The $x$-component of the force is given by
+$$
+\begin{aligned}
+F_{x} &=q\left[\{-\nabla(s-\mathbf{A} \cdot \mathrm{v})\}_{x}-\frac{d \mathbf{A}_{x}}{d t}\right] \\
+&=q\left[-\frac{\partial}{\partial x}(s-\mathbf{A} \cdot \mathrm{v})-\frac{d \mathbf{A}_{x}}{d t}\right] \\
+\text { or } \quad F_{x} &=q\left[-\frac{\partial}{\partial x}(s-\mathbf{A} \cdot \mathrm{v})-\frac{d}{d t}\left\{\frac{\partial}{\partial \mathrm{v}_{x}}(\mathbf{A} \cdot \mathrm{v}\}\right]\right.
+\end{aligned}
+$$
+$q s \text { is independent of velocity } \mathrm{v}_{x} \text { i.e. } \frac{\partial(q s)}{\partial \mathrm{v}_{x}}=0$
+So we can add that term to the above equation, it will not make any change.\\
+After rewritting\\
+$$\begin{aligned}
+	&F_{x}=-\frac{\partial U}{\partial x}-\frac{d}{d t} \frac{\partial U}{\partial \mathrm{v}_{\mathrm{x}}} \\
+	&U=q s-q(\mathbf{A} \cdot \mathbf{v})
+\end{aligned}$$
+FRom these it is clear that  U is a function of x and v ie $q_k$ and $\dot{q_k}$
+U is called generalized potential or velocity dependent potential.\\
+\paragraph{Lagrangian }
+$L=T-U=T-\{q s-q(\mathbf{A} \cdot \mathbf{v}) .\}=T-q s+q(\mathbf{A} \cdot \mathbf{v})$\\
+T=kinetic energy.$T=\frac{1}{2}mv^2$
+$$L=\frac{1}{2}mv^2-q s+q(\mathbf{A} \cdot \mathbf{v})$$
+\textbf{Momentum} $P_K=\frac{\partial L}{\partial \dot{q_k}}=\frac{\partial L}{\partial v_k}=mv_k+qA=mv+qA$\\
+\paragraph{Hamiltonian}
+$$\begin{aligned}
+	H &=\sum_{k} p_{k} \dot{q}_{k}-L \\
+	&=\sum_{k} p_{k} \dot{r}_{k}-L \\
+	&=\sum_{k} p_{k} v_{k}-L \\
+	&=\sum_{k}\left(m v_{k}+q A_{k}\right) v_{k}-\left[\frac{1}{2} m v^{2}-q s+q(\mathbf{v} \cdot \mathbf{A})\right] \\
+	&=\sum_{k}\left(m v_{k}^{2}+q A_{k} v_{k}\right)-\frac{1}{2} m v^{2}+q s-q(\mathbf{v} \cdot \mathbf{A}) \\
+	&=m v^{2}+q(\mathbf{A} \cdot \mathbf{v})-\frac{1}{2} m v^{2}+q s-q(\mathbf{v} \cdot \mathbf{A}) \\
+	&=\frac{1}{2} m v^{2}+q s
+\end{aligned}$$
+

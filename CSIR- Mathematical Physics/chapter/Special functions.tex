@@ -192,23 +192,20 @@ a_n&=\frac{2^2 a_0}{n!}\\
 &\text{Since a is even}\\
 a_{2k}&=\frac{2^{2k\ a_0}}{(2k)!}\\
 &\text{any even number can represent as multiple of $2$}\\
-\text{here }&n=0,1,2,3 
-&\intertext{n=Odd}
-a_3&=\frac{4\ a_1}{3.2},\ a_5=\frac{4\ a_3}{5.4}=\frac{4.4.a_1}{5.4.3.2}\\
+\text{here }&k=0,1,2,3 
+\intertext{\textbf{Case$\ 2$}\quad $\rightarrow n=$\text{Odd}}
+a_3&=\frac{4\ a_1}{3.2.1},\ a_5=\frac{4\ a_3}{5.4}=\frac{4.4.a_1}{5.4.3.2.1}\\
 a_5&=\frac{2^4\ a_1}{5!}\quad \therefore a_n=\frac{2^{n-1}\ a_1}{n!}\\
-&\text{ any odd number can}\\
+&\text{It can be expressed as}\\
 a_{2k+1}&=\frac{2^{2k}\ a_1}{(2k+1)!}\\
-\intertext{can substitute this in the very beginning $y(x)=\sum\limits_{n=0}^{\infty}a_nx^n$ we know all the formulas for $a_n$}
+\intertext{ substituting in $y(x)=\sum\limits_{n=0}^{\infty}a_nx^n$ and expanding,}
 &=a_0+a_1x+a_2x^2+a_3x^3+\dots a_{2k}x^{2k}+a_{2k+1}x^{2k+1}+\dots\\
 &=a_0+a_1x+\frac{2^2\ a_0}{2!}x^2+\frac{2^2\ a_1}{3!}x^3+\dots+\frac{2^{2k}\ a_0}{(2k)!}+\frac{2^{2k}\ a_1}{(2k+1)!}+\dots\\
-&\text{ can seperate even and odd}\\
+&\text{ By seperating even and odd solutions we can express as}\\
 y(x)&=\sum\limits_{k=0}^{\infty}\frac{2^{2k}\ a_0}{(2k)!}x^{2k}+\sum\limits_{k=0}^{\infty}\frac{2^{2k}\ a_1}{(2k+1)!}x^{2k+1}
-\intertext{this tylor expanssion can leave this here or go one step further }
-y(x)&=a_0\cosh(2x)+a_1\sinh(2x)
 \end{align*}
-Here we discuss series solution and how to use power series to solve differential equations. How to use this to solve one of the important problems in maths and physics.\\
-Legendre ODR problem\\
-It is a l.d.e
+Here we discuss series solution and how to use power series to solve differential equations.Now we can check how to use this methode to solve one of the important problems in maths and physics, The legendre diffrential equation problem.
+\section{Legendre Function}
 \begin{align*}
 (1-x^2)\frac{d^2y}{dx^2}&-2x\frac{dy}{dx}+k(k+1)y=0\\
 &\text{to expand it in}\\
@@ -275,23 +272,28 @@ $y(x)=k_1y_1+k_2y_2=k_1(x-x_0)^{r_1}\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n+k_2(x
 3.\quad $r_1\text{ and }R_2$ distinct and differ by integer\\
 $y_1=(x-x_0)^{r_1}\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$ is similar using recursion relation \\
 \section{Frobenius Method}
-For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have valid series solution about $x=x_0$ if $P_1,Q_1$ and $R$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P,Q,R$ didnot have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$. $r$ is a real number. This is called Frobenius method to the regular series solution. \\
+For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have valid series solution about $x=x_0$ if $P(x),Q(x)$ and $R(x)$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P(x),Q(x),R(x)$ did not have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$ to the regular series solution. $r$ is a real number. This is called Frobenius method. Using Frobenius method still can have  solution to be power series solution at singular point. But point has to be regular singular point. \\
 \begin{align*}
 &2(x-1)^2y^{\prime\prime}-(x-1)y^\prime+y=0\\
-&2 y^{\prime \prime}-\frac{1}{(x-1)} y^{\prime}+\frac{1}{(x-1)^{2}} y=0\\
-y&=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}\\
-y^{\prime}&=\sum_{n=0}^{\infty}(h+r) a_{n}(x-1)^{n+r-1}
+&2 y^{\prime \prime}-\frac{1}{(x-1)} y^{\prime}+\frac{1}{(x-1)^{2}} y=0
+\intertext{x=1 makes this undefined, but point 1 is a regular singular point. So we can express using frobenius method as}
+&y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}\\
+&y^{\prime}=\sum_{n=0}^{\infty}(h+r) a_{n}(x-1)^{n+r-1}
 \quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}\\
-2 \sum_{n=0}^{\infty}&(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-\frac{1}{x-1}
+&2 \sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-\frac{1}{x-1}
 \sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-1}+\frac{1}{(x-1)^{2}}\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=0\\
-2 \sum_{n=0}^{\infty}&(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-
+&2 \sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-
 \sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-2}+\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r-2}=0\\
-\sum_{n=0}^{\infty}&\left[2(n+r)(n+r-1) a_{n}\right.\left.-(n+r) a_{n}+a_{n}\right](x-1)^{n+r-2}=0\\
+&\sum_{n=0}^{\infty}\left[2(n+r)(n+r-1) a_{n}\right.\left.-(n+r) a_{n}+a_{n}\right](x-1)^{n+r-2}=0
+\intertext{expanding few terms}
 &\left[ 2 r(r-1)-r+1\right] a_0(x-1)^{r-2}+[2 r(r+1)-(r+1)+1]a_1(x-1)^{r-1}+...+=0\\
-&2 r^{2}-3 r+1=0\quad\gamma_{1}=1 \quad r_{2}=0.5
+\intertext{equating coefficients of $(x-1)^{r-2}$}
+&2 r^{2}-3 r+1=0\\
+\intertext{This is a quadratic equation and we call it as indicial equation.}
+&r_{1}=1 \quad r_{2}=0.5
 \end{align*}
-$\therefore$ For equality to noid $a_1,a_2.....a_n,..=0$ what does this mean for final answer?\\
-$y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=a_{0}(x-1)^{r}$only first term correspond to $n=0$ is there $y(x)$ is just $a_0(x-1)^{r}$ because two vaues of $r$. There is $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{-5}$ so general solution is :$y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
+$\therefore$ For equality to hold $a_1,a_2.....a_n,..=0$, what does this mean for final answer?\\
+$y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=a_{0}(x-1)^{r}$only first term correspond to $n=0$ is in the final expression, because of two vaues of $r$. \\ $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{.5}$.\\ General solution is :$y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
 \section{Bessel Function}
 Special D.E when we solving P.D.E especially when solving problems in cylindrical coordinates.
 \begin{align*}
