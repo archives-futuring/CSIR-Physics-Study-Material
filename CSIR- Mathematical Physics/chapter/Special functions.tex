@@ -233,18 +233,18 @@ a_4&=\frac{a_{2}(2-k)(3+k)}{4\cdot 3}=\frac{(k-2) k(k+1)(k+3) a_{0}}{4!}
 a_3&=\frac{a_{1}(1-k)(2+k)}{3\cdot2}\\
 a_5&=\frac{9_{3}(3-k)(4+k)}{5.4}=\frac{a_{1}(k-3)(k-1)(k+2)(k+4)}{5!}
 \end{align*}
-1.\quad What if $k=1$ \quad $a_3=0$
+1.\quad What if $k=1$ 
 \begin{align*}
-\text{all coefficients come later on }a_3&=0\\
-\therefore \text{ they dipend on }&a_3\\
-\text{so solution}\\
-y_{odd}=a_px&=a_1P_1(x)\\
-P_1(x)\text{ is just a function of $x$ will explain later}\\
-\text{even series }&\text{doesnot terminate}
-\end{align*}
+ a_3&=0\\
+\text{all coefficients come later on }a_3&=0 
+\text{ since they depend on }a_3\\
+\text{so solution},\ 
+&y_{odd}=a_1x=a_1P_1(x)\\
+P_1(x)\text{ is just a function of $x$}
+\text{, even series }&\text{doesnot terminate}\end{align*}
 2.\quad What if $k=2$
 \begin{align*}
-a_2&=a_{0} \frac{(-2)(3)}{2}=-3 a_{0}, a_{4}=0\\
+a_2&=a_{0} \frac{(-2)(3)}{2}=-3 a_{0}, \ a_{4}=0\\
 y_{\text {even }}&=a_{0}-3 a_{0} x^{2}=a_{0}\left(1-3 x^{2}\right)\\
 &=\cdot 5\left(3 x^{2}-1\right)=P_{2}(x) \text{ for }a_0=\frac{-1}{2}\\
 \text{for }k&=2,\text{ odd series doesnot terminate}\\
@@ -253,19 +253,11 @@ y_ {odd} &=-\frac{5}{3} a_1 x^{3}+a_{1} x\\
 &=\frac{1}{2}\left(5 x^{3}-3 x\right)=P_{3}(x)\text{ for }a_{1}=-3 / 2\\
 \text{even series }&\text{doesnot terminate for odd value of $k$}
 \end{align*}
-we can repeat this for different value of $k$. \\for even $k$ tends to even series terminates.\\
-for odd $k$ tends to odd series terminates\\
-when even series terminate we end up with a polynomial of $k$ is the highest power in the series \\
-When $k=3$  highest power will be an $x^3$ term $P_1, P_2, P_3$ they result from series terminating are not like just other polynomial they are special polynomial.\\
-$P_1, P_2, P_3$ tends to these polynomials are called legendre polynomials, they are solutions to legendre ODES they come up in electromagnetism and quantum mechanics. Bunch of techniques already developed to calculate legendre polynomials more easily one of these techniques is rodrigues formula
+we can repeat this for different value of $k$, for even $k$, even series terminates and 
+for odd $k$, odd series terminates\\
+$P_1, P_2, P_3$ they result from series terminating are not like just other polynomial they are special polynomial.\\
+$P_1, P_2, P_3$ are called legendre polynomials, they are solutions to legendre diffrential equations they come up in electromagnetism and quantum mechanics. Bunch of techniques already developed to calculate legendre polynomials more easily and one of these techniques is rodrigues formula
 $P_{k}(x)=\frac{1}{2^{k} k !} \frac{d^{k}}{d x^{k}}\left[\left(x^{2}-1\right)^{k}\right]$\\
-Here one series terminates giving a polynomial solution. Other series divergent\\
-\textbf{Theree Possibilities}\\
-1.\quad $r_1\text{ and }R_2$ distinct not differ by integer\\
-$y(x)=k_1y_1+k_2y_2=k_1(x-x_0)^{r_1}\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n+k_2(x-x_0)^{r_2}$\\
-2.\quad $r_1=r_2=r,y_1=(x-x_0)^r\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$\\
-3.\quad $r_1\text{ and }R_2$ distinct and differ by integer\\
-$y_1=(x-x_0)^{r_1}\sum_{n=0}^{\infty} a_{n}\left(x-x_{0}\right)^{n}$ is similar using recursion relation \\
 \section{Frobenius Method}
 For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have valid series solution about $x=x_0$ if $P(x),Q(x)$ and $R(x)$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P(x),Q(x),R(x)$ did not have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$ to the regular series solution. $r$ is a real number. This is called Frobenius method. Using Frobenius method still can have  solution to be power series solution at singular point. But point has to be regular singular point. \\
 \begin{align*}
@@ -290,32 +282,26 @@ For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have
 $\therefore$ For equality to hold $a_1,a_2.....a_n,..=0$, what does this mean for final answer?\\
 $y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=a_{0}(x-1)^{r}$only first term correspond to $n=0$ is in the final expression, because of two vaues of $r$. \\ $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{.5}$.\\ General solution is :$y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
 \section{Bessel Function}
-Special D.E when we solving P.D.E especially when solving problems in cylindrical coordinates.
 \begin{align*}
-x^{2} y^{\prime }+x y^\prime+\left(x^{2}-p^{2}\right) y&=0
-\intertext{We want a solution that can be expanded about $x_0=0$}
-\intertext{Before starting we can check $x_0=0$ is singular point or not}
-y^{\prime \prime}+\frac{1}{x} y^{\prime}+\left(1-\frac{p^{2}}{x^{2}}\right) y&=0\hspace{3cm}P(x)=\frac{1}{x},\quad Q(x)=1-\frac{p^{2}}{x^{2}}\\
-x p(x)&=1\\
-X^{2} Q(x)&=x^{2}-P^{2}\\
-X_{0}=0 &\text{is regular singular point}\\
+x^{2} y^{\prime\prime }+x y^\prime+\left(x^{2}-p^{2}\right) y&=0
+\intertext{ $x_0=0$ is a regular singular point, so we can expand about $x_0=0$ using Frobenius method}
 y=\sum_{n=0}^{\infty} a_{n} x^{n+r}\quad y^{\prime}&=\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-1}\quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n}x^{n+r-2}\\
 \sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\frac{1}{x} \sum_{n=0}^{\infty}(n+r) a_{n}x^{n+r-1}+\left(1-\frac{p^{2}}{x^{2}}\right) \sum_{n=0}^{\infty} a_{n} x^{n+r}=0\\
-\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2)} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=0}^{\infty} a_{n} x^{n+r}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
-\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2)} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+ \sum_{n=2}^{\infty} a_{n-2} x^{n+r-2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
+\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=0}^{\infty} a_{n} x^{n+r}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
+\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+ \sum_{n=2}^{\infty} a_{n-2} x^{n+r-2}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
+\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}\\
 +r(r-1) a_{0} x^{r-2}+r(r+1) a_{1} x^{r-1}&+r a_{0} x^{r-2}+(r+1) a_{1} x^{r-1}-P^2{a_{0}} x^{r-2}-p^{2} a_1 x^{r-1}=0
-\intertext{$\therefore$ every value of r.h.s=0, coefficient of every power of l.h.s coefficients must be zero}
-\text{for} x^{r-2}:r(r-1) a_{0}+r a_{0}-p^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{so we can write as,}\\
-\gamma(r-1)+r-p^{2}=0\quad \gamma^{2}-p^{2}&=0 \quad r=\pm p\\
-\intertext{this is our indicial equations}
-\text{For} x^{8-1}:[r(\partial+1)+(r+1)-P^2] a_{1}&=0\quad \text { So } a_{1}=0\\
-\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}=0
-\intertext{gather everything}
-\sum_{n=2}^{\infty}[(n+r)(n+\gamma-1)&+(n+r) P^2] a_{n}+\left.a_{n-2}\right\} x^{n+r-2}=0\\
-\left[(n+r)(n+r-1)+(n+r)-p^{2}\right] a_{n}+a_{n-2}&=0\\
+\intertext{ right hand side is 0, so each term of left hand side should be equal to 0 and we can express like this}
+\text{for} x^{r-2}, r(r-1) a_{0}+r a_{0}-p^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{, so we can write as,}\\
+r(r-1)+r-p^{2}=0\quad r^{2}-p^{2}&=0 \quad r=\pm p
+\text{,this is our indicial equations}
+\intertext{Plugging the values of r in   $ x^{r-1}$We can show  $a_{1}=0$ , and what left with the LHS of equation is} \\
+\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}=0\\
+\sum_{n=2}^{\infty}(((n+r)(n+\ r-1)&+(n+r) P^2) a_{n}+\left.a_{n-2}\right) x^{n+r-2}=0\\
+\left[(n+r)(n+r-1)+(n+r)-p^{2}\right] &a_{n}+a_{n-2}=0\\
 a_{n}&=\frac{-a_{n-2}}{\left[(n+r)^{2}-p^{2}\right]}\\
 \text{substitute }r_1&=P\\
-a_{n}=\frac{-a_{n-2}}{n(n+2 P)}\implies \text{recursion}\\
+a_{n}=\frac{-a_{n-2}}{n(n+2 P)}\implies &\text{recursion}\\
 \therefore a_1=0 &\text{and indices are added with two terms behind}\\
 a_{3}, a_{5}, .&=0
 \intertext{For this we only carried about even indice coefficients $n=2k$ where $k$ is another integer}
