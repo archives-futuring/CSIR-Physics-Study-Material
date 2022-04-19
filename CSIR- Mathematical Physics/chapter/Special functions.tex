@@ -295,22 +295,22 @@ y=\sum_{n=0}^{\infty} a_{n} x^{n+r}\quad y^{\prime}&=\sum_{n=0}^{\infty}(n+r) a_
 \text{for} x^{r-2}, r(r-1) a_{0}+r a_{0}-p^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{, so we can write as,}\\
 r(r-1)+r-p^{2}=0\quad r^{2}-p^{2}&=0 \quad r=\pm p
 \text{,this is our indicial equations}
-\intertext{Plugging the values of r in   $ x^{r-1}$We can show  $a_{1}=0$ , and what left with the LHS of equation is} \\
+\intertext{Plugging the values of r in   $ x^{r-1}$We can show  $a_{1}=0$ , and what left with the equation is} \\
 \sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}=0\\
 \sum_{n=2}^{\infty}(((n+r)(n+\ r-1)&+(n+r) P^2) a_{n}+\left.a_{n-2}\right) x^{n+r-2}=0\\
 \left[(n+r)(n+r-1)+(n+r)-p^{2}\right] &a_{n}+a_{n-2}=0\\
 a_{n}&=\frac{-a_{n-2}}{\left[(n+r)^{2}-p^{2}\right]}\\
 \text{substitute }r_1&=P\\
 a_{n}=\frac{-a_{n-2}}{n(n+2 P)}\implies &\text{recursion}\\
-\therefore a_1=0 &\text{and indices are added with two terms behind}\\
-a_{3}, a_{5}, .&=0
-\intertext{For this we only carried about even indice coefficients $n=2k$ where $k$ is another integer}
+\text{since }a_1 =0, \ &
+a_{3},\  a_{5}, \ a_{7},....=0
+\intertext{For even indice coefficients, $n=2k$}
 a_{2 k}&=-\frac{a_{2 k-2}}{4 k(k+P)}\\
-a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+P)}a_{4}=-\frac{-a_{2}}{4 \cdot 2(2+P)}=\frac{(-1)^{2} a_{0}}{4^{2}(2 \cdot 1)(2+P)(1+P)}\\
+a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+P)}\\a_{4}&=-\frac{-a_{2}}{4 \cdot 2(2+P)}=\frac{(-1)^{2} a_{0}}{4^{2}(2 \cdot 1)(2+P)(1+P)}\\
 \therefore a_{2 k}&=\frac{(-1)^{k}}{4{k}}\frac{a_{0}}{k !(P+k) \cdots(P+1)}\\
 y_{1}&=x^{p}\sum_{k=0}^{\infty} \frac{(-1)^{k}}{4 k}\frac{a_{0}}{k !(p+k) . .(P+1)} x^{2 k}
 \end{align*}
-For perticular value of $a_0$ this solution is given a special name $ J_P(x)$ Bessel function of $I$ kind $P$ is order of Bessel function.
+For perticular value of $a_0$ this solution is given a special name, $ J_P(x)$, Bessel function of $I$ kind and $P$ is order of Bessel function.
 \section{Legendre Differential Equation}
 \subsection{Rodrigue's Formula for Legendre's Polynomial $P_{n}(x)$ :}
 \begin{align*}
@@ -1205,3 +1205,10 @@ Statement I: $\lim _{n \rightarrow \infty}\left[\int_{-1}^{1} x P_{n}(x) P_{n+1}
 		So the correct answer is \textbf{Option (d)}
 \end{answer}
 \end{enumerate}
+
+\begin{align*}
+	\intertext{In our case $n=m=4$, hence}
+\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x&=\frac{\sqrt{\pi} 2^{4}(4 !)}{\sqrt{\pi}}=384
+\intertext{Hermite polynomial of order $n$, satisfies the differential equation}
+y^{\prime \prime}-2 x y^{\prime}+2 n y=0\\
+\end{align*}
