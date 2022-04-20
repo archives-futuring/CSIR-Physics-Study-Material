@@ -181,25 +181,25 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 	Find the sine transform of $\frac{x}{1+x^{2}}$
 \end{exercise}
 \begin{answer}
-	\begin{align*}
-	\text { Firstly we shall determine}&\text{ cosine transform of } \frac{1}{1+x^{2}}\\
-	F_{c}\left\{\frac{1}{1+x^{2}}\right\}&=\int_{0}^{\infty} \frac{\cos s x}{1+x^{2}} d x=I(\text { say })\\
-	\text{then }I&=\int_{0}^{\infty} \frac{\cos s x}{1+x^{2}} d x\\
-	\text{Dufferentiating w.r.t.s,}\\
-	\frac{d I}{d s} &=\int_{0}^{\infty} \frac{-x \sin s x}{1+x^{2}} d x=F_{s}\left\{\frac{-x}{1+x^{2}}\right\} \\
-	&=-\int_{0}^{\infty} \frac{x^{2} \sin s x d x}{x\left(1+x^{2}\right)}=-\int_{0}^{\infty} \frac{\left(1+x^{2}-1\right) \sin s x \cdot d x}{x\left(1+x^{2}\right)}\\
-	&=-\int_{0}^{\infty} \frac{\sin s x}{x} d x+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}=-\frac{\pi}{2}+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}\\
-	&=-\int_{0}^{\infty} \frac{\sin s x}{x} d x+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}=-\frac{\pi}{2}+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}\\
-	\text{Differentiating again w.r.t. s,}\\
-	\frac{d^{2} I}{d s^{2}}&=\int_{0}^{\infty} \frac{x \cos (s x) d x}{x\left(1+x^{2}\right)}=I\\
-	\text { Or, } &\quad \frac{d^{2} I}{d s^{2}}-I=0\\
-	\text{The solution of it is }I&=A e^{-s}+B e^{s}\\
-	\text{ Putting }\mathrm{s}&=0 \text{in (i),}\\
-	I &=\int_{0}^{\infty} \frac{1}{1+x^{2}} d x=\left(\tan ^{-1} x\right)_{0}^{\infty}=\frac{\pi}{2} \\
-	\therefore \quad I &=\frac{\pi}{2} \text { when } s=0\\
-	\text{Subjecting (iv) to this condition}\\
-	\frac{\pi}{2}&=A+B
-	\end{align*}
+	\begin{align}
+	\text { Firstly we shall determine}&\text{ cosine transform of } \frac{1}{1+x^{2}}\notag\\
+	F_{c}\left\{\frac{1}{1+x^{2}}\right\}&=\int_{0}^{\infty} \frac{\cos s x}{1+x^{2}} d x=I(\text { say })\notag\\
+	\text{then }I&=\int_{0}^{\infty} \frac{\cos s x}{1+x^{2}} d x\label{FT-03}\\
+	\text{Dufferentiating w.r.t.s,}\notag\\
+	\frac{d I}{d s} &=\int_{0}^{\infty} \frac{-x \sin s x}{1+x^{2}} d x=F_{s}\left\{\frac{-x}{1+x^{2}}\right\}\label{FT-04} \\
+	&=-\int_{0}^{\infty} \frac{x^{2} \sin s x d x}{x\left(1+x^{2}\right)}=-\int_{0}^{\infty} \frac{\left(1+x^{2}-1\right) \sin s x \cdot d x}{x\left(1+x^{2}\right)}\notag\\
+	&=-\int_{0}^{\infty} \frac{\sin s x}{x} d x+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}=-\frac{\pi}{2}+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}\notag\\
+	&=-\int_{0}^{\infty} \frac{\sin s x}{x} d x+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}=-\frac{\pi}{2}+\int_{0}^{\infty} \frac{\sin s x d x}{x\left(1+x^{2}\right)}\label{FT-05}\\
+	\text{Differentiating again w.r.t. s,}\notag\\
+	\frac{d^{2} I}{d s^{2}}&=\int_{0}^{\infty} \frac{x \cos (s x) d x}{x\left(1+x^{2}\right)}=I\notag\\
+	\text { Or, } &\quad \frac{d^{2} I}{d s^{2}}-I=0\notag\\
+	\text{The solution of it is }I&=A e^{-s}+B e^{s}\label{FT-06}\\
+	\text{ Putting }\mathrm{s}&=0 \text{in (\ref{FT-03}),}\notag\\
+	I &=\int_{0}^{\infty} \frac{1}{1+x^{2}} d x=\left(\tan ^{-1} x\right)_{0}^{\infty}=\frac{\pi}{2} \notag\\
+	\therefore \quad I &=\frac{\pi}{2} \text { when } s=0\notag\\
+	\text{Subjecting (\ref{FT-06}) to this condition}\notag\\
+	\frac{\pi}{2}&=A+B\label{FT-07}
+	\end{align}
 \end{answer}
 \begin{exercise}
 	Find cosine transform of $f(x)$ if $f(x)= \begin{cases}\cos x, & 0<x<a \\ 0, & x>a\end{cases}$
