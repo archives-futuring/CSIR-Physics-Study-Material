@@ -213,3 +213,45 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 	&=\sqrt{\frac{2}{\pi}} \frac{1}{2}\left[\frac{\sin (p+1) a}{p+1}+\frac{\sin (p-1) a}{p-1}\right]
 	\end{align*}
 \end{answer}
+\begin{exercise}
+	Fourier transform of the derivative of the Dirac $\delta$-function, namely, $\delta^{\prime}(x)$, is proportional to
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]0
+		\task[\textbf{b.}]1
+		\task[\textbf{c.}] $\sin k$
+		\task[\textbf{d.}] $\mathrm{i} k$
+	\end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text { Fourier transform of } \delta^{\prime}(x)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} \delta^{\prime}(x) e^{i k x} d x\\
+	\text { Using the property of Dirac delta function }& \int_{-\infty}^{\infty} f(x) \delta^{\prime}(x-a) d x=-f^{\prime}(a)\\
+	\text { So, } \quad F\left[\delta^{\prime}(x)\right]&=-\frac{1}{\sqrt{2 \pi}}(i k) \quad \Rightarrow F\left[\delta^{\prime}(x)\right] \propto i k
+	\end{align*}
+	So the correct answer is \textbf{option (b)}
+\end{answer}
+\begin{exercise}
+	The graph of a real periodic function $f(x)$ for the range $[-\infty, \infty]$ is shown below
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{}
+		\caption{}
+		\label{}
+	\end{figure}
+	Which of the following graphs represents the real part of its Fourier transform?
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]
+		\task[\textbf{b.}]
+		\task[\textbf{c.}]
+		\task[\textbf{d.}] 
+	\end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text { The given graph in the question is of } f(x)&=\cos \omega x\\
+	F(\cos \omega x)=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \cos \omega x e^{i k x} d x&=\frac{1}{\sqrt{2 \pi}}\left(\int_{-\infty}^{+\infty} \frac{e^{i(k+\omega) x}}{2} d x+\int_{-\infty}^{+\infty} \frac{e^{i(k-\omega) x}}{2} d x\right)\\
+	&\Rightarrow F(\cos \omega x) \frac{1}{\sqrt{2 \pi}}\left(\frac{1}{2} \delta(k+\omega)+\frac{1}{2} \delta(k-\omega)\right)
+	\intertext{Therefore, the fourier transform of $f(x)=\cos x \omega x$ consist of two delta functions of same height at $k=\omega$ and $k=-\omega$.}
+	\end{align*}
+		So the correct answer is \textbf{option (b)}
+\end{answer}
