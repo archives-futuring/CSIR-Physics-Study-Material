@@ -116,15 +116,25 @@ f(x)&=F_{c}^{-1}\left\{f_{c}(s)\right\}=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f
 	\end{align*}
 \end{answer}
 \section{Properties of Fourier Transform}
-(i) Linearity theorem: If $F(x)=a_{1} f_{1}(x)+a_{2} f_{2}(x)+\ldots$ then, $f(s)=F[f(x)]=a_{1} f_{1}(s)+a_{2} f_{2}(s)+\ldots$\\
-(ii) Change of scale property: If $F[f(x)]=f(s)$, then $F\{f(a x)\}=\frac{1}{a} f(\mathrm{~s} / a)$\\
-(iii) If $F\{f(x)\}=f(s)$, then $F\left\{f^{*}(x)\right\}=f^{*}(-s)$\\
-(iv) Shifting property: If $f(s)$ is the Fourier transform of $\mathrm{f}(\mathrm{x})$, then $F\{f(x \pm a)\}=e^{\mp i s a} f(s)$\\
-(v) Modulation theorem: If $F\{f(x)\}=f(s)$, then $F\{f(x) \cos a x\}=\frac{1}{2} f(s-a)+\frac{1}{2} f(s+a)$
+(i) Linearity theorem: 
+\begin{align*}
+\text{If }F(x)&=a_{1} f_{1}(x)+a_{2} f_{2}(x)+\ldots\text{ then, }\\f(s)&=F[f(x)]=a_{1} f_{1}(s)+a_{2} f_{2}(s)+\ldots
+\end{align*}
+(ii) Change of scale property: 
+\begin{align*}
+\text{If }F[f(x)]&=f(s),\text{ then }F\{f(a x)\}\\&=\frac{1}{a} f(\mathrm{~s} / a)
+\end{align*}
+(iii) $\text{If }F\{f(x)\}=f(s),\text{ then }F\left\{f^{*}(x)\right\}=f^{*}(-s)$\\\\
+(iv) Shifting property:
+ \begin{align*}
+\text{ If $f(s)$ is the Fourier transform of }\mathrm{f}(\mathrm{x}), \text{ then }F\{f(x \pm a)\}=e^{\mp i s a} f(s)
+ \end{align*}
+(v) Modulation theorem: \\\\
+If $F\{f(x)\}=f(s)$, then $F\{f(x) \cos a x\}=\frac{1}{2} f(s-a)+\frac{1}{2} f(s+a)$
 \section{Parseval Identity for Fourier Transform}
-If the Fourier transform of $f(x)$ and $g(x)$ be $f(s) \& g(s)$ respectively, then\\
-(i) $\int_{-\infty}^{\infty} f(s) g^{*}(s) d s=\int_{-\infty}^{\infty} f(x) g^{*}(x) d x$\\
-where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex conjugate of $g(x)$.\\
+If the Fourier transform of $f(x)$ and $g(x)$ be $f(s) \& g(s)$ respectively, then\\\\
+(i) $\int_{-\infty}^{\infty} f(s) g^{*}(s) d s=\int_{-\infty}^{\infty} f(x) g^{*}(x) d x$\\\\
+where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex conjugate of $g(x)$.\\\\
 (ii) $\left.\int_{-\infty}^{\infty}|f(s)|\right|^{2} d s=\int_{-\infty}^{\infty}|f(x)|^{2} d x$
 \begin{exercise}
 	(a) Find fourier transform of $f(x)= \begin{cases}1 & \text { for }|x|<a \\ 0 & \text { for }|x|>a\end{cases}$\\
@@ -190,7 +200,7 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 	\text{ Putting }\mathrm{s}&=0 \text{in (\ref{FT-03}),}\notag\\
 	I &=\int_{0}^{\infty} \frac{1}{1+x^{2}} d x=\left(\tan ^{-1} x\right)_{0}^{\infty}=\frac{\pi}{2} \notag\\
 	\therefore \quad I &=\frac{\pi}{2} \text { when } s=0\notag\\
-	\text{Subjecting (\ref{FT-06}) to this condition}\notag\\
+	\text{Subjecting (\ref{FT-06}) to this}&\text{ condition}\notag\\
 	\frac{\pi}{2}&=A+B\label{FT-07}
 	\end{align}
 \end{answer}
@@ -208,7 +218,7 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 \end{answer}
 \begin{exercise}
 	Fourier transform of the derivative of the Dirac $\delta$-function, namely, $\delta^{\prime}(x)$, is proportional to
-	 \begin{tasks}(2)
+	 \begin{tasks}(4)
 		\task[\textbf{a.}]0
 		\task[\textbf{b.}]1
 		\task[\textbf{c.}] $\sin k$
