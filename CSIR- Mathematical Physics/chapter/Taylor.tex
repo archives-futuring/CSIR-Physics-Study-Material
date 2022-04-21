@@ -1,0 +1,34 @@
+
+
+	\colorlet{ocre1}{ocre!70!}
+	\colorlet{ocrel}{ocre!30!}
+	\begin{table}[H]
+		\centering
+		\arrayrulecolor{ocre}
+		\renewcommand{\arraystretch}{2.5}
+		\begin{tabularx}{0.9\textwidth} { 
+				| >{\centering\arraybackslash}X 
+				|   }
+			\hline
+			\rowcolor{ocrel} \large \textbf{Commonly used Taylor Series} \\
+			\hline
+			\hline \\
+			$\begin{aligned}
+			\sin x \quad&=\quad x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\frac{x^{9}}{9 !}-\ldots\\
+			&=\quad  \sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n+1}}{(2 n+1) !}\\\\ \hline \\
+	       \cos x  \quad&=\quad1-\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}-\frac{x^{6}}{6 !}+\frac{x^{8}}{8 !}-\ldots \\
+			&=\sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n}}{(2 n) !}	\\\\ \hline \\
+		    e^{x} &=1+x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !}+\frac{x^{4}}{4 !}+\ldots \\
+			&=\sum_{n=0}^{\infty} \frac{x^{n}}{n !}	\\\\ \hline \\
+			\ln (1+x) \quad&=\quad x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\frac{x^{5}}{5}-\ldots\\
+			&=\quad \sum_{n=1}^{\infty}(-1)^{(n-1)} \frac{x^{n}}{n} \stackrel{\text { or }}{=} \sum_{n=1}^{\infty}(-1)^{n+1} \frac{x^{n}}{n}\\\\ \hline \\
+			\tan ^{-1} x \quad&=\quad x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+\frac{x^{9}}{9}-\ldots\\
+			&=\quad  \sum_{n=0}^{\infty}(-1)^{n} \frac{x^{2 n+1}}{2 n+1}\\\\ \hline \\
+			\frac{1}{1-x}  \quad&=\quad1+x+x^{2}+x^{3}+x^{4}+\ldots \\
+			&=\sum_{n=0}^{\infty} x^{n}\\
+			{\cosh}(x) \quad&=\quad1+\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}+\frac{x^{6}}{6 !}+\frac{x^{8}}{8 !}+\ldots \\
+			\sinh (x) \quad&=\quad x+\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}+\frac{x^{7}}{7 !}+\frac{x^{9}}{9 !}+\ldots
+			\end{aligned}$\\\\ \hline
+			\end{tabularx}
+		
+	\end{table}
