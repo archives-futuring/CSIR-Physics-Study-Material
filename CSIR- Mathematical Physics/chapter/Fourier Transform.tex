@@ -19,8 +19,8 @@ In order for transforms to be useful, we will shortly see that we need to be abl
 \end{equation}
 for an acceptably broad range of $g(x)$. The procedure for inverting a transform takes a wide variety of forms that depend on the specific properties of $K(x, t)$, so we cannot write a formula that is as general as that for $\mathcal{L}$ in Eq. (\ref{FT-01}).\\
 Not all superficially reasonable choices for the kernel $K(x, t)$ will lead to operators $\mathcal{L}$ that have inverses, and even for strategically chosen kernels it may be the case that $\mathcal{L}$ and $\mathcal{L}^{-1}$ will only exist for substantially restricted classes of functions. Thus, the entire development of the present chapter is restricted (for any given integral transform) to functions for which the indicated operations can be carried out.\\
-Before embarking on a study of integral transforms, we may well ask, "Why are integral transforms useful?" Their most common applications are in situations illustrated schematically in Fig. 20.1, where we have a problem that can be solved only with difficulty, if at all, in its original formulation (usually in ordinary space, sometimes called \textbf{direct }or \textbf{physical space}). However, it may happen that the transform of the problem can be solved relatively easily. Our strategy, then, will be to formulate and solve our problem in the transform space, after which we transform the solution back to direct space. This strategy often works because the most popular integral transforms are changed in simple ways by differentiation and integration operators, with the result that differential and integral equations assume relatively simple forms. This feature will be discussed and illustrated at length later in this chapter.\\
-Another frequent use of integral transforms is to use one, together with its inverse, to form an \textbf{integral representation} of a function that we originally had in an explicit form. This move (which appears to be in the direction of generating greater complexity) has value that arises from the relatively simple behavior of the transforms of differentiation and integration operators. Procedures involving integral representations are also presented in later sections of this chapter.
+.\\
+One of the frequent uses of integral transforms is to use one, together with its inverse, to form an \textbf{integral representation} of a function that we originally had in an explicit form. This move (which appears to be in the direction of generating greater complexity) has value that arises from the relatively simple behavior of the transforms of differentiation and integration operators. Procedures involving integral representations are also presented in later sections of this chapter.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=5cm,width=9cm]{FT-01}
@@ -31,12 +31,6 @@ The integral transform that has seen the widest use is the Fourier transform, de
 g(\omega)=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} f(t) e^{i \omega t} d t
 \end{equation}
 The notation for this transform is not entirely universal; some writers omit the prefactor $1 / \sqrt{2 \pi}$; we keep it because it causes the transform and its inverse to have formulas that are more symmetrical. In applications involving periodic systems, one occasionally encounters a definition with kernel $\exp \left(2 \pi i \omega t / a_{0}\right)$, where $a_{0}$ is a lattice constant. These differences in notation do not change the mathematics, but cause formulas to differ by powers of $2 \pi$ or $a_{0}$. Caution is therefore advised when combining material from different sources.\\
-We have defined the Fourier transform in a notation that assigns the symbol $\omega$ to the transform variable. We did so because, in studying signal processing (an important use of Fourier transforms), the function $f(t)$ usually represents the time behavior of a signal (typically a wave distribution of some kind). Its Fourier transform, $g(\omega)$, can then be identified as the corresponding frequency distribution. However, it is worth pointing out that Fourier transforms turn up in contexts far removed from signal-processing problems; they can be used to advantage in evaluating integrals, in alternative formulations of quantum mechanics, and in a wide range of other mathematical procedures.\\
-A second transform that has historically been of great importance is the \textbf{Laplace transform,}
-\begin{equation}
-F(s)=\int_{0}^{\infty} e^{-t s} f(t) d t .
-\end{equation}
-One of its useful features is the fact that under transformation, differential equations become algebraic equations. Since algebraic equations are usually easier to solve than differential equations, this feature lends itself to the strategy illustrated. A disadvantage of the Laplace transform is that the formula for its inverse is relatively difficult to use. Historically, this difficulty was dealt with by developing tables of Laplace transforms.
 \section{Infinite Fourier Transform}
 \begin{align*}
 \text{The fourier transform of }f(x)[-\infty<x<\infty] &:\\
@@ -160,11 +154,10 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\begin{aligned}
 	F\{f(x)\} &=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} e^{i s x} f(x) d x=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} e^{i s x} x^{2} d x \\
 	&=\frac{1}{\sqrt{2 \pi}}\left[\left(\frac{e^{i s x}}{i s} \cdot x^{2}\right)_{x=-a}^{a}-\frac{2}{i s} \int_{-a}^{a} x e^{i s x} d x\right] \\
-	&=\frac{1}{\sqrt{2 \pi}}\left[\frac{a^{2}}{i s}\left(e^{i s a}-e^{-i s a}\right)-\frac{2}{i s}\left[\left(\frac{x e^{i s x}}{i s}\right)_{x=-a}^{a}-\frac{1}{i s} \int_{-a}^{a} e^{i s x} d x\right]\right]
-	\end{aligned}
+	&=\frac{1}{\sqrt{2 \pi}}\left[\frac{a^{2}}{i s}\left(e^{i s a}-e^{-i s a}\right)-\frac{2}{i s}\left[\left(\frac{x e^{i s x}}{i s}\right)_{x=-a}^{a}-\frac{1}{i s} \int_{-a}^{a} e^{i s x} d x\right]\right]\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[\frac{2 a^{2}}{s} \sin (s a)+\frac{2 a}{s^{2}} \cos (s a)-\frac{4}{s^{3}} \sin (s a)\right]
 	\end{align*}
 \end{answer}
 \begin{exercise}
@@ -234,16 +227,27 @@ where $g^{*}(s)$ is complex conjugate of $g(s)$ and $g^{*}(x)$ is the complex co
 	The graph of a real periodic function $f(x)$ for the range $[-\infty, \infty]$ is shown below
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{}
-		\caption{}
-		\label{}
+		\includegraphics[height=3cm,width=5cm]{FT01}
 	\end{figure}
 	Which of the following graphs represents the real part of its Fourier transform?
 	 \begin{tasks}(2)
 		\task[\textbf{a.}]
-		\task[\textbf{b.}]
-		\task[\textbf{c.}]
-		\task[\textbf{d.}] 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2cm,width=2.5cm]{FT-06}
+		\end{figure}
+		\task[\textbf{b.}]	\begin{figure}[H]
+			\centering
+			\includegraphics[height=2cm,width=2.5cm]{FT-05}
+		\end{figure}
+		\task[\textbf{c.}]	\begin{figure}[H]
+			\centering
+			\includegraphics[height=2cm,width=2.5cm]{FT-03}
+		\end{figure}
+		\task[\textbf{d.}] 	\begin{figure}[H]
+			\centering
+			\includegraphics[height=2cm,width=2.5cm]{FT02}
+		\end{figure}
 	\end{tasks}
 \end{exercise}
 \begin{answer}
