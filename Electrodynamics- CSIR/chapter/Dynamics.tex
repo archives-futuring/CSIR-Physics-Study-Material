@@ -260,11 +260,203 @@ $\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{
 becomes
 $$\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}=\frac{-\rho}{\epsilon_{0}}$$
 The virtue of the lorentz gauge is that it treats V and A on the same differential operator
-$$\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}\equiv \mathcal{D}^2  $$
+$$\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}\equiv \square^2  $$
  is called d'Alembertian\\
 Then both equation become\\
-$$\mathcal{D}^2V=\frac{-\rho}{\epsilon_{0}}$$
-$$\mathcal{D}^2A=-\mu_{0} J$$
+$$\square^2V=\frac{-\rho}{\epsilon_{0}}$$
+$$\square^2A=-\mu_{0} J$$
+\section{Retarded Potentials}
+$$\square^{2} V=-\frac{1}{\epsilon_{0}} \rho, \quad \square^{2} \mathbf{A}=-\mu_{0} \mathbf{J}$$
+In static case these equation reduces to poisson's equations
+$$\nabla^{2} V=-\frac{1}{\epsilon_{0}} \rho, \quad \nabla^{2} \mathbf{A}=-\mu_{0} \mathbf{J}$$
+with solutions
+$$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}$$
+$r \rightarrow$ distance from source point $\vec{r}$ to the field point $r$.\\
+Imagine a electromagnetic news travels at the speed of light. In non-static case therefore, it's not the status of source right now that matters but rather its condition at some earlier time $t_r$ (retarded time) when the message left.\\
+Since the message must travel a distance $r$ the delay is $r/c$
+$$t_{r}=t-r / c$$
+$\therefore$ Potentials become
+$$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}$$
+$P(r^\prime,t_r)$: charge density prevailed at point $r^\prime$ at the retarded time $t_r$. Because the integrants are evaluated at the retarded time these are called retarded potentials.\\
+The more distant parts of the charge distribution have earlier retarded times than nearby ones.\\
+In calculating the Laplacian of $V(r,t)$\\
+The integrand depends on $\vec{r}$ in two places explicitly, in the denomenator $(r=|r-r^\prime|)$ and implicitly through $t_r-t-r/c$ in neumerator 
+\begin{align*}
+\nabla V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[(\nabla \rho) \frac{1}{r}+\rho \nabla\left(\frac{1}{2}\right)\right] d \tau^{\prime}\\
+\nabla \rho&=\dot{\rho} \nabla t_{r}=-\frac{1}{c} \dot{\rho} \nabla r\\
+\nabla r&=\hat{r} \text{ and } \nabla \left( \frac{1}{r}\right) =\frac{-\hat{r}}{r^2}\\
+\nabla V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[-\frac{\rho}{c} \frac{\hat{r}}{r}-\rho \frac{\hat{\varepsilon}}{r^{2}}\right] d \tau^{\prime}
+\intertext{Taking the divergence}
+\nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left\{-\frac{1}{c}\left[\frac{\hat{\imath}}{r} \cdot(\nabla \dot{\rho})+\dot{\rho} \nabla \cdot\left(\frac{\hat{r}}{r}\right)\right]\right.
+-\left.-\left[\frac{\hat{z}}{r^{2}} \cdot(\nabla \rho)+\rho \nabla \cdot\left(\frac{\hat{\varepsilon}}{r^{2}}\right)\right]\right\} d \tau^{\prime} .\\
+\nabla \dot{\rho}&=-\frac{1}{c} \ddot{\rho} \nabla r=-\frac{1}{c} \ddot{\rho} \hat{r},\quad 
+\nabla \cdot\left(\frac{\hat{r}}{r}\right)=\frac{1}{r^{2}} 
+\intertext{whereas}
+&\nabla \cdot\left(\frac{\hat{r}}{r^{2}}\right)=4 \pi \delta^{3}(r)
+\intertext{So}
+\nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[\frac{1}{c^{2}} \frac{\ddot{\rho}}{r}-4 \pi \rho \delta^{3}(r)\right] d \tau^{\prime}=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)\\
+\nabla^{2} V&=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)
+\intertext{retarded potential satisfies the inhomogeneous wave equation}
+\end{align*}
+\section{Jefimentro's Equations}
+\begin{align*}
+V(r, t)&=\frac{1}{4 \pi \varepsilon_{0}} \int \frac{f\left(r^{\prime}, t_{1}\right)}{r} d z^{\prime},\quad A(r, t)=\frac{\mu_{0}}{4 \pi} \int \frac{J\left(r^{\prime}, t_{r}\right)}{r} d r !
+\intertext{It is in principle, a straight forward matter to determine the fields}
+E&=-\nabla V-\frac{\partial A}{\partial t}, B=\nabla \times A \\\\
+E(r, t)&=\frac{1}{4 \pi \varepsilon_{0}} \int\left[\frac{\rho\left(r^{\prime}, t_{1}\right)}{x^{2}} \hat{x}+\right.\left.\frac{\dot{p}\left(r^{\prime}, t_{1}\right)}{c r} \hat{x}-\frac{\ddot{j}\left(r^{\prime}, t_{1}\right)}{c^{2} r}\right] d \tau^{\prime}
+\intertext{This is the time dependent generalization of couloumb's law. In static case the second term and third term drops out and the first term losed its dependence on $t_r$}
+B(r, t)&=\frac{\mu_{0}}{4 \pi}\int\left[\frac{J\left(r^{\prime}, f_{r}\right)}{\lambda^{2}}+\frac{J\left(r^{\prime}, t_{r}\right)}{c \lambda}\right]x r^2d z
+\intertext{This is the time-denpendent generalzation of the Biot-savart law, to which it reduces in the static case.}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\begin{abox}
+Practise Set-1
+\end{abox}
+\begin{enumerate}
+	\item  For constant uniform electric and magnetic field $\vec{E}=\vec{E}_{0}$ and $\vec{B}=\vec{B}_{0}$, it is possible to choose a gauge such that the scalar potential $\phi$ and vector potential $\vec{A}$ are given by
+		{\exyear{NET/JRF(JUNE-2011)}}
+		\begin{tasks}(1)
+			\task[\textbf{A.}] $\phi=0$ and $\vec{A}=\frac{1}{2}\left(\vec{B}_{0} \times \vec{r}\right)$
+			\task[\textbf{B.}] $\phi=-\vec{E}_{0} \cdot \vec{r}$ and $\vec{A}=\frac{1}{2}\left(\vec{B}_{0} \times \vec{r}\right)$
+			\task[\textbf{C.}]  $\phi=-\vec{E}_{0} \cdot \vec{r}$ and $\vec{A}=0$
+			\task[\textbf{D.}] $\phi=0$ and $\vec{A}=-\vec{E}_{0} t$
+		\end{tasks}
+	\item	Consider a solenoid of radius $R$ with $n$ turns per unit length, in which a time dependent current $I=I_{0} \sin \omega t$ (where $\left.\omega R / c<<1\right)$ flows. The magnitude of the electric field at a perpendicular distance $r<R$ from the axis of symmetry of the solenoid, is
+		{\exyear{NET/JRF(DEC-2011)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}]  0
+			\task[\textbf{B.}] $\frac{1}{2 r} \omega \mu_{0} n I_{0} R^{2} \cos \omega t$
+			\task[\textbf{C.}] $\frac{1}{2} \omega \mu_{0} n I_{0} r \sin \omega t$
+			\task[\textbf{D.}]  $\frac{1}{2} \omega \mu_{0} n I_{0} r \cos \omega t$
+		\end{tasks}
+\item	A constant electric current $I$ in an infinitely long straight wire is suddenly switched on at $t=0$. The vector potential at a perpendicular distance $r$ from the wire is given by $\vec{A}=\frac{\hat{k} \mu_{0} I}{2 \pi} \ln \left[\frac{1}{r}\left(c t+\sqrt{c^{2} t^{2}-r^{2}}\right)\right]$. The electric field at a distance $r(<c t)$ is
+		{\exyear{NET/JRF(DEC-2011)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}] 0
+			\task[\textbf{B.}] $\frac{\mu_{0} I}{2 \pi t} \frac{1}{\sqrt{2}}(\hat{i}-\hat{j})$
+			\task[\textbf{C.}] $\frac{c \mu_{0} I}{2 \pi \sqrt{c^{2} t^{2}-r^{2}}} \frac{1}{\sqrt{2}}(\hat{i}+\hat{j})$
+			\task[\textbf{D.}] $-\frac{c \mu_{0} I}{2 \pi \sqrt{c^{2} t^{2}-r^{2}}} \hat{k}$
+		\end{tasks}
+\item Consider an infinite conducting sheet in the $x y$-plane with a time dependent current density $K t \hat{i}$, where $K$ is a constant. The vector potential at $(x, y, z)$ is given by $\vec{A}=\frac{\mu_{0} K}{4 c}(c t-z)^{2} \hat{i}$. The magnetic field $\vec{B}$ is
+	{	\exyear{NET/JRF(DEC-2012)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}] $\frac{\mu_{0} K t}{2} \hat{j}$
+			\task[\textbf{B.}] $-\frac{\mu_{0} K z}{2 c} \hat{j}$
+			\task[\textbf{C.}] $-\frac{\mu_{0} K}{2 c}(c t-z) \hat{i}$
+			\task[\textbf{D.}] $-\frac{\mu_{0} K}{2 c}(c t-z) \hat{j}$
+		\end{tasks}
+\item A current $I$ is created by a narrow beam of protons moving in vacuum with constant velocity $\vec{u}$. The direction and magnitude, respectively of the Poynting vector $\vec{S}$ outside the beam at a radial distance $r$ (much larger than the width of the beam) from the axis, are
+	{	\exyear{NET/JRF(JUNE-2013)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}] $\vec{S} \perp \vec{u}$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{2}}$
+			\task[\textbf{B.}] $\vec{S} \|(-\vec{u})$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{4}}$
+			\task[\textbf{C.}] $\vec{S} \| \vec{u}$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{2}}$
+			\task[\textbf{D.}] $\vec{S} \| \vec{u}$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{4}}$
+		\end{tasks}
+	\item
+		If the electric and magnetic fields are unchanged when the potential $\vec{A}$ changes (in suitable units) according to $\vec{A} \rightarrow \vec{A}+\hat{r}$, where $\vec{r}=r(t) \hat{r}$, then the scalar potential $\Phi$ must simultaneously change to
+	{	\exyear{NET/JRF(JUNE-2013)}}
+		\begin{tasks}(4)
+			\task[\textbf{A.}] $\Phi-r$
+			\task[\textbf{B.}] $\Phi+r$
+			\task[\textbf{C.}] $\Phi-\partial \mathrm{r} / \partial t$
+			\task[\textbf{D.}] $\Phi+\partial \mathrm{r} / \partial t$
+		\end{tasks}
+	\item
+		Let $(V, \vec{A})$ and $\left(V^{\prime}, \overrightarrow{A^{\prime}}\right)$ denote two sets of scalar and vector potentials, and $\psi$ is a scalar function. Which of the following transformations leave the electric and magnetic fields (and hence Maxwell's equations) unchanged?
+		{\exyear{NET/JRF(DEC-2013)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}] $\overrightarrow{A^{\prime}}=\vec{A}+\nabla \psi$ and $V^{\prime}=V-\frac{\partial \psi}{\partial t}$
+			\task[\textbf{B.}] $\overrightarrow{A^{\prime}}=\vec{A}-\nabla \psi$ and $V^{\prime}=V+2 \frac{\partial \psi}{\partial t}$
+			\task[\textbf{C.}] $\overrightarrow{A^{\prime}}=\vec{A}+\nabla \psi$ and $V^{\prime}=V+\frac{\partial \psi}{\partial t}$
+			\task[\textbf{D.}] $\overrightarrow{A^{\prime}}=\vec{A}-\nabla \psi$ and $V^{\prime}=V-\frac{\partial \psi}{\partial t}$
+		\end{tasks}
+\item
+		A time-dependent current $\vec{I}(t)=K t \hat{z}$ (where $K$ is a constant) is switched on at $t=0$ in an infinite current-carrying wire. The magnetic vector potential at a perpendicular distance $a$ from the wire is given (for time $t>a / c$ ) by
+	{	\exyear{NET/JRF(JUNE-2014)}}
+		\begin{tasks}(2)
+			\task[\textbf{A.}]  $\hat{z} \frac{\mu_{0} K}{4 \pi c} \int_{-\sqrt{c^{2} t^{2}-a^{2}}}^{\sqrt{c^{2} t^{2}-a^{2}}} d z \frac{c t-\sqrt{a^{2}+z^{2}}}{\left(a^{2}+z^{2}\right)^{1 / 2}}$
+			\task[\textbf{B.}]  $\hat{z} \frac{\mu_{0} K}{4 \pi} \int_{-c t}^{c t} d z \frac{t}{\left(a^{2}+z^{2}\right)^{1 / 2}}$
+			\task[\textbf{C.}] $\hat{z} \frac{\mu_{0} K}{4 \pi c} \int_{-c t}^{c t} d z \frac{c t-\sqrt{a^{2}+z^{2}}}{\left(a^{2}+z^{2}\right)^{1 / 2}}$
+			\task[\textbf{D.}] $\hat{z} \frac{\mu_{0} K}{4 \pi} \int_{-\sqrt{c^{2} t^{2}-a^{2}}}^{\sqrt{c^{2} t^{2}-a^{2}}} d z \frac{t}{\left(a^{2}+z^{2}\right)^{1 / 2}}$
+		\end{tasks}
+	\end{enumerate}
+\newpage
+\begin{abox}
+	Practise Set-2
+\end{abox}
+\begin{enumerate}
+		\item  The electric and the magnetic field $\vec{E}(z, t)$ and $\vec{B}(z, t)$, respectively corresponding to the scalar potential $\phi(z, t)=0$ and vector potential $\vec{A}(z, t)=\hat{i} t z$ are
+	{\exyear{GATE 2012}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\vec{E}=\hat{i} z$ and $\vec{B}=-\hat{j} t$
+		\task[\textbf{B.}]$\vec{E}=\hat{i} z$ and $\vec{B}=\hat{j t}$
+		\task[\textbf{C.}]$\vec{E}=-\hat{i} z$ and $\vec{B}=-\hat{j t}$
+		\task[\textbf{D.}]$\vec{E}=-\hat{i} z$ and $\vec{B}=-\hat{j} \mathrm{t}$
+	\end{tasks}
+		\item If the vector potential $\vec{A}=\alpha x \hat{x}+2 y \hat{y}-3 z \hat{z}$, satisfies the Coulomb gauge, the value of the constant $\alpha$ is
+	{\exyear{GATE 2015}}
+		\item Consider magnetic vector potential $\tilde{A}$ and scalar potential $\Phi$ which define the magnetic field $\vec{B}$ and electric field $\vec{E}$. If one adds $\vec{\nabla} \lambda$ to $\vec{A}$ for a well-defined $\lambda$, then what should be added to $\Phi$ so that $\vec{E}$ remains unchanged up to an arbitrary function of time, $f(t)$ ?
+		{\exyear{JEST 2017}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\frac{\partial \lambda}{\partial t}$
+		\task[\textbf{B.}]$-\frac{\partial \lambda}{\partial t}$
+		\task[\textbf{C.}]$\frac{1}{2} \frac{\partial \lambda}{\partial t}$
+		\task[\textbf{D.}]$-\frac{1}{2} \frac{\partial \lambda}{\partial t}$
+	\end{tasks}
+\end{enumerate}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
 
 \newpage
 \begin{abox}
