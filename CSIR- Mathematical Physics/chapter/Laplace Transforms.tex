@@ -1,4 +1,7 @@
-\chapter{Laplace Transforms}
+\begin{abox}
+	Laplace Transforms
+	\end{abox}
+
 The Laplace transform $f(s)$ of a function $F(t)$ is defined by 
 \begin{equation}
 f(s)=\mathcal{L}\{F(t)\}=\int_{0}^{\infty} e^{-s t} F(t) d t .
@@ -11,8 +14,7 @@ need not exist. For instance, $F(t)$ may diverge exponentially for large $t$. Ho
 \begin{equation}
 \left|e^{-s_{0} t} F(t)\right| \leq M,\label{LT-01}
 \end{equation}
-the Laplace transform will exist for $s>s_{0} ; F(t)$ is then said to be of exponential order. As a counterexample, $F(t)=e^{t^{2}}$ does not satisfy the condition given by Eq. (\ref{LT-01}) and is not of exponential order. Thus, $\mathcal{L}\left\{e^{t^{2}}\right\}$ does not exist.
-
+the Laplace transform will exist for $s>s_{0} $. $F(t)$ is then said to be of exponential order. As a counter example, $F(t)=e^{t^{2}}$ does not satisfy the condition given by Eq. (\ref{LT-01}) and is not of exponential order. Thus, $\mathcal{L}\left\{e^{t^{2}}\right\}$ does not exist.
 The Laplace transform may also fail to exist because of a sufficiently strong singularity in the function $F(t)$ as $t \rightarrow 0$. For example,
 \begin{equation*}
 \int_{0}^{\infty} e^{-s t} t^{n} d t
@@ -22,19 +24,19 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \mathcal{L}\{a F(t)+b G(t)\}=a \mathcal{L}\{F(t)\}+b \mathcal{L}\{G(t)\}
 \end{equation}
 the operation denoted by $\mathcal{L}$ is linear.\\
-$\textbf{Important Laplace Transforms:}$\\
-\renewcommand*{\arraystretch}{2}
-\begin{tabular}{p{6cm}p{6cm}}
-	(1) $L(1)=\frac{1}{s}$&
-(2) $L\left(x^{n}\right)=\frac{n !}{s^{n+1}}(n=0,1,2, \ldots \ldots . .)$\\
-(3) $L\left(e^{a x}\right)=\frac{1}{s-a}(s>a)$&
-(4) $L(\cos a x)=\frac{s}{s^{2}+a^{2}}$
-$(s>0)$\\
-(5) $L(\sin a x)=\frac{a}{s^{2}+a^{2}} \quad(s>0)$&
-(6) $L(\cosh a x)=\frac{s}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$\\
-(7) $L(\sinh a x)=\frac{a}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$.& 
-\end{tabular}
-\textbf{Important properties:}\\
+\subsection{Important Laplace Transforms:}
+\begin{enumerate}
+	\item $L(1)=\frac{1}{s}$
+	\item $L\left(x^{n}\right)=\frac{n !}{s^{n+1}}(n=0,1,2, \ldots \ldots . .)$
+	\item $L\left(e^{a x}\right)=\frac{1}{s-a}(s>a)$
+	\item $L(\cos a x)=\frac{s}{s^{2}+a^{2}}$
+	$(s>0)$
+	\item $L(\sin a x)=\frac{a}{s^{2}+a^{2}} \quad(s>0)$
+	\item $L(\cosh a x)=\frac{s}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
+	\item $L(\sinh a x)=\frac{a}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
+\end{enumerate}
+
+\subsubsection{Important properties:}
 \begin{enumerate}
 	\item Linear Property: $L\left[a_{1} f_{1}(x)+a_{2} f_{2}(x)\right]=a_{1} L\left[f_{1}(x)\right]+a_{2} L\left[f_{2}(x)\right]$
 	\item Shifting Property: $L\left[e^{a x} f(x)\right]=f(s-a)$
@@ -44,7 +46,7 @@ $(s>0)$\\
 	\item $L\left[\int_{0}^{t} f(x) d x\right]=\frac{1}{s} f(s)$
 	\item $L\left[f^{\prime}(x)\right]=s L[f(x)]-f(0)$
 	\item  $L\left[f^{\prime \prime}(x)\right]=s^{2} L[f(x)]-f^{\prime}(0)-s f(0)$
-	\item Laplace transform of a periodic function $f(x)$ having period ' $T$ ' is\\$L[f(\dot{x})]=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f(\dot{x}) d \dot{x}$
+	\item Laplace transform of a periodic function $f(x)$ having period ' $T$ ' is $$L[f({x})]=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f({x}) d {x}$$
 	\item Laplace transform of the unit step function $u(x-a)=u_{a}(x)=\left\{\begin{array}{lll}0 & \text { for } & x<a \\ 1 & \text { for } & x \geq a\end{array}\right.$ is $\frac{e^{-a s}}{s}$.
 	\item Laplace transform of the dirac delta function $\delta(x-a)$ is $e^{-a s}$.
 \end{enumerate}
