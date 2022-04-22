@@ -1,6 +1,6 @@
-\chapter{Power Series Solution and Special functions}
+\chapter{Power Series Solution and Special Functions}
 \section{Series Solution Method}
-Series expansion is a  method of obtaining one solution of the linear, second-order, homogeneous ODE. The method, will always work, provided the point of expansion is no worse than a regular singular point.In physics this very gentle condition is almost always satisfied. 
+Series expansion is a  method of obtaining one solution of the linear, second-order, homogeneous ODE. The method, will always work, provided the point of expansion is no worse than a regular singular point. In physics this very gentle condition is almost always satisfied. 
 A linear, second-order, homogeneous ODE can be written in the form
 \begin{equation}
 \frac{d^{2} y}{d x^{2}}+P(x) \frac{d y}{d x}+Q(x) y=0 \label{DE002}
@@ -25,9 +25,7 @@ There are two series solution method  for differential equation,
 \end{enumerate}
 \subsection{Simple Power Series Expansion Method}
 The simple series expansion method works for differential equations whose solutions are well-behaved at the expansion point $x = 0$.
-This method can be illustrated by Linear classical oscillator problem
-\subsubsection{title}
- We illustrate the method of series solution by solving the following simple equation (which you can easily solve by elementary methods also!):
+We illustrate the method of series solution by solving the following simple equation (which you can easily solve by elementary methods also!).
 \begin{align}
 y^{\prime}&=2 x y\label{SP-05}
 \intertext{We assume a solution of this differential equation in the form of a power series, namely}
@@ -132,14 +130,14 @@ Consider differential equation,
 	\item If either $P(x)/Q(x)$ or both tends to $\infty$ at $x=x_0$
 	then it is singular point.
 \end{enumerate}
-\textbf{Kinds of singular points}
+\subsection{Kinds of singular points}
 \begin{enumerate}
-	\item Regular singularity\\
+	\item \textbf{Regular singularity}\\\\
 	IF $P(x), Q(x)\text{ diverges but } (x-x_0) P(x) \text{ and }(x-x_0)^2Q(x)$ remain finite at $x\rightarrow x_0$ then $x=x_0$ is called regular or non essencial singular points
-	\item Irregular singularity\\
+	\item \textbf{Irregular singularity}\\\\
 	$P(x), Q(x)$ diverges and either $(x-x_0)P(x)$ or $(x-x_0)^2Q(x)$ or both  remain infinite at $x\rightarrow x_0$ then $x=x_0$ is called irregular or essential singular points
 \end{enumerate}
-Little bit review of Ordinary Differential Equations
+\textbf{Little bit review of Ordinary Differential Equations}
 \begin{equation*}
 \frac{d^2y }{dx^2}+P(x)\frac{dy}{dx}+Q(x)y=R(x)
 \end{equation*}
@@ -156,7 +154,7 @@ P(x)=\sum\limits_{n=0}^{\infty}b_n(x-x_0)^n\quad Q(x)&=\sum\limits_{n=0}^{\infty
 \end{align*}
  To find $a_n$,
  we should properly expand $P(x),Q(x)$ and $R(x)$ abt $x=x_0$ If any one of function is undefined at $x_0$ then we would not be able to do it.\\\\
-\textbf{Examble}\\
+\textbf{Example:}\\
 \begin{equation*}
 \frac{d^2y}{dx^2}-4y=0, \ y(x)=\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n
 \end{equation*}
@@ -258,58 +256,127 @@ $P_1, P_2, P_3$ they result from series terminating are not like just other poly
 $P_1, P_2, P_3$ are called legendre polynomials, they are solutions to legendre diffrential equations they come up in electromagnetism and quantum mechanics. Bunch of techniques already developed to calculate legendre polynomials more easily and one of these techniques is rodrigues formula
 $P_{k}(x)=\frac{1}{2^{k} k !} \frac{d^{k}}{d x^{k}}\left[\left(x^{2}-1\right)^{k}\right]$\\
 \section{Frobenius Method}
-For power series solurion, $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$ only have valid series solution about $x=x_0$ if $P(x),Q(x)$ and $R(x)$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P(x),Q(x),R(x)$ did not have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$ to the regular series solution. $r$ is a real number. This is called Frobenius method. Using Frobenius method still can have  solution to be power series solution at singular point. But point has to be regular singular point. \\
+For power series solution, \  $y^{\prime\prime}+P(x)y^\prime +Q(x)y=R(x)$\ only have valid series solution about $x=x_0$ if $P(x),Q(x)$ and $R(x)$ have valid tylor series at $x_0$. We want them to be continues and differentiable at that point. What if $P(x),Q(x),R(x)$ did not have valid tylor expansions about $x_0$ but still wanted series solution about $x_0$? We could do it by using a slightly modified version. All is to do include $r$ to the regular series solution. $r$ is a real number. This is called Frobenius method. Using Frobenius method still can have  solution to be power series solution at singular point. But point has to be regular singular point. 
 \begin{align*}
 &2(x-1)^2y^{\prime\prime}-(x-1)y^\prime+y=0\\
 &2 y^{\prime \prime}-\frac{1}{(x-1)} y^{\prime}+\frac{1}{(x-1)^{2}} y=0
 \intertext{x=1 makes this undefined, but point 1 is a regular singular point. So we can express using frobenius method as}
-&y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}\\
-&y^{\prime}=\sum_{n=0}^{\infty}(h+r) a_{n}(x-1)^{n+r-1}
-\quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}\\
-&2 \sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-\frac{1}{x-1}
-\sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-1}+\frac{1}{(x-1)^{2}}\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=0\\
-&2 \sum_{n=0}^{\infty}(n+r-1)(n+r) a_{n}(x-1)^{n+r-2}-
-\sum_{n=0}^{\infty}(n+r) a_{n}(x-1)^{n+r-2}+\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r-2}=0\\
-&\sum_{n=0}^{\infty}\left[2(n+r)(n+r-1) a_{n}\right.\left.-(n+r) a_{n}+a_{n}\right](x-1)^{n+r-2}=0
+&y=\sum_{k=0}^{\infty} a_{k}(x-1)^{k+\lambda}\\
+&y^{\prime}=\sum_{k=0}^{\infty}(n+\lambda) a_{k}(x-1)^{k+\lambda-1}
+\quad y^{\prime \prime}=\sum_{k=0}^{\infty}(k+\lambda-1)(k+\lambda) a_{k}(x-1)^{k+\lambda-2}\\
+&2 \sum_{k=0}^{\infty}(k+\lambda-1)(k+\lambda) a_{k}(x-1)^{k+\lambda-2}-\frac{1}{x-1}
+\sum_{k=0}^{\infty}(k+\lambda) a_{k}(x-1)^{k+\lambda-1}+\frac{1}{(x-1)^{2}}\sum_{k=0}^{\infty} a_{k}(x-1)^{k+\lambda}=0\\
+&2 \sum_{k=0}^{\infty}(k+\lambda-1)(k+\lambda) a_{k}(x-1)^{k+\lambda-2}-
+\sum_{k=0}^{\infty}(k+\lambda) a_{k}(x-1)^{k+\lambda-2}+\sum_{k=0}^{\infty} a_{k}(x-1)^{k+\lambda-2}=0\\
+&\sum_{k=0}^{\infty}\left[2(k+\lambda)(k+\lambda-1) a_{k}\right.\left.-(k+\lambda) a_{k}+a_{k}\right](x-1)^{k+\lambda-2}=0
 \intertext{expanding few terms}
-&\left[ 2 r(r-1)-r+1\right] a_0(x-1)^{r-2}+[2 r(r+1)-(r+1)+1]a_1(x-1)^{r-1}+...+=0\\
-\intertext{equating coefficients of $(x-1)^{r-2}$}
-&2 r^{2}-3 r+1=0\\
+&\left[ 2 \lambda(\lambda-1)-\lambda+1\right] a_0(x-1)^{\lambda-2}+[2 \lambda(\lambda+1)-(\lambda+1)+1]a_1(x-1)^{\lambda-1}+...+=0\\
+\intertext{equating coefficients of $(x-1)^{\lambda-2}$}
+&2 \lambda^{2}-3 \lambda+1=0\\
 \intertext{This is a quadratic equation and we call it as indicial equation.}
-&r_{1}=1 \quad r_{2}=0.5
+&\lambda_{1}=1 \quad \lambda_{2}=0.5
 \end{align*}
-$\therefore$ For equality to hold $a_1,a_2.....a_n,..=0$, what does this mean for final answer?\\
-$y=\sum_{n=0}^{\infty} a_{n}(x-1)^{n+r}=a_{0}(x-1)^{r}$only first term correspond to $n=0$ is in the final expression, because of two vaues of $r$. \\ $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{.5}$.\\ General solution is :$y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
+
+$\therefore$ For equality to hold $a_1,a_2.....a_k,..=0$, what does this mean for final answer?\\
+$y=\sum_{k=0}^{\infty} a_{k}(x-1)^{k+\lambda}=a_{0}(x-1)^{\lambda}$only first term correspond to $k=0$ is in the final expression, because of two vaues of $r$. \\ $y_1=a_{0}(x-1), y_{2}=a_{0}(x-1)^{.5}$.\\ General solution is : $y=c_{1}(x-1)+c_{2} \sqrt{x-1}$
 \section{Bessel Function}
+Bessel’s equation in the usual standard form is,
+\begin{equation}
+x^{2} \frac{d^{2} y}{d x^{2}}+x \frac{d y}{d x}+\left(x^{2}-n^{2}\right) y=0 \label{Bessel 1}
+\end{equation}
+Where $n$ is a constant (not necessarily an integer) called the order of the Bessel function $'y'$ which is the solution of equation.\ref{Bessel 1}. $x=0$ is a regular singular point of the Bessel differential equation.
+
+\subsection{The solution of Bessel's function}
 \begin{align*}
-x^{2} y^{\prime\prime }+x y^\prime+\left(x^{2}-p^{2}\right) y&=0
+x^{2} y^{\prime\prime }+x y^\prime+\left(x^{2}-n^{2}\right) y&=0
 \intertext{ $x_0=0$ is a regular singular point, so we can expand about $x_0=0$ using Frobenius method}
-y=\sum_{n=0}^{\infty} a_{n} x^{n+r}\quad y^{\prime}&=\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-1}\quad y^{\prime \prime}=\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n}x^{n+r-2}\\
-\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\frac{1}{x} \sum_{n=0}^{\infty}(n+r) a_{n}x^{n+r-1}+\left(1-\frac{p^{2}}{x^{2}}\right) \sum_{n=0}^{\infty} a_{n} x^{n+r}=0\\
-\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=0}^{\infty} a_{n} x^{n+r}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
-\sum_{n=0}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2} &+\sum_{n=0}^{\infty}(n+r) a_{n} x^{n+r-2}+ \sum_{n=2}^{\infty} a_{n-2} x^{n+r-2}-p^{2}\sum_{n=0}^{\infty} a_{n}x^{n+r-2} =0\\
-\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}\\
-+r(r-1) a_{0} x^{r-2}+r(r+1) a_{1} x^{r-1}&+r a_{0} x^{r-2}+(r+1) a_{1} x^{r-1}-P^2{a_{0}} x^{r-2}-p^{2} a_1 x^{r-1}=0
+y=\sum_{k=0}^{\infty} a_{k} x^{k=\lambda}\quad y^{\prime}&=\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-1}\quad y^{\prime \prime}=\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k}x^{k=\lambda-2}\\
+\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\frac{1}{x} \sum_{k=0}^{\infty}(k=\lambda) a_{k}x^{k=\lambda-1}+\left(1-\frac{n^{2}}{x^{2}}\right) \sum_{k=0}^{\infty} a_{k} x^{k=\lambda}=0\\
+\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{n=0}^{\infty} a_{k} x^{k=\lambda}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k=\lambda-2} =0\\
+\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+ \sum_{k=2}^{\infty} a_{k-2} x^{k=\lambda-2}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k=\lambda-2} =0\\
+\sum_{k=2}^{\infty}(k=\lambda)(k=\lambda-1) a_{n} x^{k=\lambda-2}&+\sum_{k=2}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k=\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k=\lambda-2}\\
++\lambda(\lambda-1) a_{0} x^{\lambda-2}+\lambda(\lambda+1) a_{1} x^{\lambda-1}&+\lambda a_{0} x^{\lambda-2}+(\lambda+1) a_{1} x^{\lambda-1}-n^2{a_{0}} x^{\lambda-2}-n^{2} a_1 x^{\lambda-1}=0
 \intertext{ right hand side is 0, so each term of left hand side should be equal to 0 and we can express like this}
-\text{for} x^{r-2}, r(r-1) a_{0}+r a_{0}-p^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{, so we can write as,}\\
-r(r-1)+r-p^{2}=0\quad r^{2}-p^{2}&=0 \quad r=\pm p
+\text{for} x^{\lambda-2}, \lambda(\lambda-1) a_{0}+\lambda a_{0}-n^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{, so we can write as,}\\
+\lambda(\lambda-1)+\lambda-n^{2}=0\quad \lambda^{2}-n^{2}&=0 \quad \lambda=\pm n
 \text{,this is our indicial equations}
-\intertext{Plugging the values of r in   $ x^{r-1}$We can show  $a_{1}=0$ , and what left with the equation is} \\
-\sum_{n=2}^{\infty}(n+r)(n+r-1) a_{n} x^{n+r-2}&+\sum_{n=2}^{\infty}(n+r) a_{n} x^{n+r-2}+\sum_{n=2}^{\infty}a_{n-2}x^{n+r-2}-p^{2} \sum_{n=2}^{\infty} a_{n}  x^{n+r-2}=0\\
-\sum_{n=2}^{\infty}(((n+r)(n+\ r-1)&+(n+r) P^2) a_{n}+\left.a_{n-2}\right) x^{n+r-2}=0\\
-\left[(n+r)(n+r-1)+(n+r)-p^{2}\right] &a_{n}+a_{n-2}=0\\
-a_{n}&=\frac{-a_{n-2}}{\left[(n+r)^{2}-p^{2}\right]}\\
-\text{substitute }r_1&=P\\
-a_{n}=\frac{-a_{n-2}}{n(n+2 P)}\implies &\text{recursion}\\
+\intertext{Plugging the values of $\lambda$ in   $ x^{\lambda-1}$We can show  $a_{1}=0$ , and what left with the equation is} \\
+\sum_{k=2}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2}&+\sum_{n=2}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k=\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k=\lambda-2}=0\\
+\sum_{k=2}^{\infty}(((k=\lambda)(k+ \lambda-1)&+(k=\lambda) n^2) a_{k}+\left.a_{k-2}\right) x^{k=\lambda-2}=0\\
+\left[(k=\lambda)(k=\lambda-1)+(k=\lambda)-n^{2}\right] &a_{k}+a_{k-2}=0\\
+a_{k}&=\frac{-a_{k-2}}{\left[(k=\lambda)^{2}-n^{2}\right]}\\
+\text{substitute }\lambda_1&=n\\
+a_{k}=\frac{-a_{k-2}}{k(k+2 n)}\implies &\text{recursion}\\
 \text{since }a_1 =0, \ &
 a_{3},\  a_{5}, \ a_{7},....=0
-\intertext{For even indice coefficients, $n=2k$}
-a_{2 k}&=-\frac{a_{2 k-2}}{4 k(k+P)}\\
-a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+P)}\\a_{4}&=-\frac{-a_{2}}{4 \cdot 2(2+P)}=\frac{(-1)^{2} a_{0}}{4^{2}(2 \cdot 1)(2+P)(1+P)}\\
-\therefore a_{2 k}&=\frac{(-1)^{k}}{4{k}}\frac{a_{0}}{k !(P+k) \cdots(P+1)}\\
-y_{1}&=x^{p}\sum_{k=0}^{\infty} \frac{(-1)^{k}}{4 k}\frac{a_{0}}{k !(p+k) . .(P+1)} x^{2 k}
+\intertext{For even intiger coefficients, $k=2r$}
+a_{2 r}&=-\frac{a_{2 r-2}}{4 r(r+n)}\\
+a_{2}&=\frac{-a_{0}}{4 \cdot 1 (1+n)}\\a_{4}&=-\frac{-a_{2}}{4 \cdot 2(2+n)}=\frac{(-1)^{2} a_{0}}{4^{2}(2 \cdot 1)(2+n)(1+n)}\\
+\therefore a_{2 r}&=\frac{(-1)^{r}}{4{r}}\frac{a_{0}}{r !(n+r) \cdots(n+1)}\\
+y_{1}&=x^{n}\sum_{r=0}^{\infty} \frac{(-1)^{r}}{4 r}\frac{a_{0}}{r !(n+r) . .(n+1)} x^{2 r}
 \end{align*}
-For perticular value of $a_0$ this solution is given a special name, $ J_P(x)$, Bessel function of $I$ kind and $P$ is order of Bessel function.
+For particular value of $a_0$ this solution is given a special name, $ J_n(x)$, Bessel function of $I$ kind and $n$ is order of Bessel function.
+The solution of Bessel's function, $J_{n}(x)$ is defined to be a Bessel function of the first kind, of integral order $r$.
+\begin{align}
+\mathrm{J}_{\mathrm{n}}(\mathrm{x})&=y=a_{0} \sum_{r=0}^{\infty} \frac{(-1)^{r}}{r !(n+r) !}\left(\frac{x}{2}\right)^{n+2 r}\label{Bessel 2} \\ \text { Where } \mathrm{a}_{0}&=\frac{1}{2^{n} \Gamma (n+1)} \notag\\
+\mathrm{n}=0 \quad \Rightarrow \quad \mathrm{J}_{0}(\mathrm{x})&=\sum_{r=0}^{\infty} \frac{(-1)^{r}}{(r !)^{2}}\left(\frac{x}{2}\right)^{2 r}=1-\frac{x^{2}}{2^{2}}+\frac{x^{4}}{2^{2} \cdot 4^{2}}-\frac{x^{6}}{2^{2} \cdot 4^{2} \cdot 6^{2}}+\ldots . .\\
+\mathrm{n}=1 \quad \Rightarrow \quad \mathrm{J}_{1}(x)&=\frac{x}{2}-\frac{x^{3}}{2^{2} 4}+\frac{x^{5}}{2^{2} \cdot 4^{2} \cdot 6}-\ldots .
+\end{align}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=7cm]{SF-03}
+\end{figure}
+\subsubsection{The second solution of Bessel's function}
+We have found just one of the two solutions of Bessel’s equation, that is, the one
+when $n>0$; we must next ﬁnd the solution when $n<0$.  We can just replace $n$ by $-n$ in equation.\ref{Bessel 2}. 
+The solution in $-n$ is usually written as $J_{-n}(x)$
+\begin{equation}
+J_{-n}(x)=\sum_{r=0}^{\infty} \frac{(-1)^{r}}{r !(r-n) !}\left(\frac{x}{2}\right)^{2 r-n} .
+\end{equation}
+And, 
+\begin{equation}
+J_{-n}(x)=(-1)^{n} J_{n}(x) \quad \text { for integral } n
+\end{equation}
+\subsubsection{Properties of Bessel's function.}
+\begin{enumerate}
+	\item Bessel functions are oscillatory function with varying period and decreasing amplitude.
+	\item $J_{n}(x)$ is an even function when $n$ is even and $J_{n}(x)$ is an odd function when $n$ is odd.
+	\item $\mathrm{J}_{0}(\mathrm{x})$ has nodes at $x=2.408,5.5201$......and $J_{1}(x)$ has nodes at $x=3.8317,7.015$.......
+\end{enumerate}
+\begin{note}$\left. \right. $\ The Bessel's functions for $n=\pm \frac{1}{2}$,
+	\begin{align*}
+	J_{1 / 2}(x)&=\sqrt{\frac{2}{\pi x}} \sin x \\ J_{-1 / 2}(x)&=\sqrt{\frac{2}{\pi x}} \cos x
+	\end{align*}
+\end{note}
+
+\subsection{Generating function of Bessel's function:}
+\begin{align*}
+e^{\frac{x}{2}\left(z-\frac{1}{z}\right)}=\sum_{n=-\infty}^{\infty} z^{n} J_{n}(x)
+\intertext{The coefficient of $z^{n}$ in the expansion of the generating tünction is the Bessel function of order $1 .$}
+\end{align*}
+\subsection{Orthogonal condition of Bessel Function:}
+\begin{align*}
+\int_{0}^{1} x_{n} \cdot(\alpha x) J_{n}(\beta x) d x=\frac{\delta_{\alpha \beta}}{2} \cdot\left[J_{n+1}(\alpha)\right]^{2}
+\end{align*}
+\subsection{Recurrencé relations for $J_{n}(x)$ :}
+\begin{enumerate}
+	\item $\frac{d}{d x}\left[x^{n} J_{n}(x)\right]=x^{n} J_{n-1}(x)$
+	\item $\frac{d}{d x}\left[x^{-n} J_{n}(x)\right]=-x^{-n} J_{n+1}(x)$
+	\item $J_{n-1}(x)+J_{n+1}(x)=\frac{2 n}{x} J_{n}(x)$
+	\item $J_{n-1}(x)-J_{n+1}(x)=2 J_{n}^{\prime}(x)$
+	\item $J_{n}^{\prime}(x)=-\frac{n}{x} J_{n}(x)+J_{n-1}(x)=\frac{n}{x} J_{n}(x)-J_{n+1}(x)$
+\end{enumerate}
+
+\begin{exercise}
+	Show that $\sqrt{\frac{\pi x}{2}} J_{3 / 2}(x)=\frac{\sin x}{x}-\cos x$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text{Using recurrence relation, }2 n J_{n}&=x\left[J_{n+1}+J_{n-1}\right]\\
+	\text{putting}\mathrm{n}&=1 / 2,\text{ we get, }J_{1 / 2}=x\left[J_{3 / 2}+J_{-1 / 2}\right]\\
+	x J_{3 / 2}&=J_{1 / 2}-x J_{-1 / 2} \\ \sqrt{\frac{\pi x}{2}} J_{3 / 2}&=\frac{\sin x}{x}-\cos x \text { (using the expressions of } J_{1 / 2} \& J_{-1 / 2} \text { ) }
+	\end{align*}
+\end{answer}
 \section{Legendre Differential Equation}
 \subsection{Rodrigue's Formula for Legendre's Polynomial $P_{n}(x)$ :}
 \begin{align*}
@@ -321,30 +388,34 @@ P_{0}(x)=1 ; \quad P_{1}(x)=x ; \quad P_{2}(x)&=\frac{1}{2}\left(3 x^{2}-1\right
 	\includegraphics[height=3.8cm,width=6cm]{SF-02}
 \end{figure}
 \subsection{Properties of Legendre's Polynomial}
-\begin{align*}
-\text{(1) }P_{n}(1)&=1\qquad
-\text{(2) }P_{n}(-1)=(-1)^{n}\\
-\text { (3) } P_{n}(x&)=\text { even function, if } \mathrm{n}=\text { even }\\
-&=\text { odd function if } \mathrm{n}=\text { odd }\\
-\text { (4) } P_{n}(-x)&=(-1)^{n} P_{n}(x)
-\end{align*}
+\begin{enumerate}
+	\item $P_{n}(1)=1$
+	\item $P_{n}(-1)=(-1)^{n}$
+	\item $\left. \right.$\ $\begin{aligned}
+	P_{n}(x)&=\text { even function, if } \mathrm{n}=\text { even }\\
+	        &=\text { odd function, if } \mathrm{n}=\text { odd }
+	\end{aligned}$
+	\item $P_{n}(-x)=(-1)^{n} P_{n}(x)$
+\end{enumerate}
+
 \subsection{Generating function of Legendre's polynomial:}
-$\left(1-2 x z+z^{2}\right)^{-1 / 2}$ is the generating function for legendre's polynomials i.e. $\left(1-2 x z+z^{2}\right)^{-1 / 2}=\sum_{n=0}^{\infty} z^{n} P_{n}(x)$\\
+$\left(1-2 x z+z^{2}\right)^{-1 / 2}$ is the generating function for legendre's polynomials i.e. $$\left(1-2 x z+z^{2}\right)^{-1 / 2}=\sum_{n=0}^{\infty} z^{n} P_{n}(x)$$
 The co-efficient of $z^{n}$ in the exapansion of the generating function is the Legendre's polynomial of order $n$.
 \subsection{Orthogonal properties of Legendre's polynomial:}
 \begin{align*}
 \int_{-1}^{+1} P_{m}(x) P_{n}(x) d x=\frac{2}{2 n+1} \delta_{m n} \text { where } \delta_{m n}=\text { Kronecker delta }&=1 \quad \text { if } \mathrm{m}=\mathrm{n}\\
 &=0 \quad \text { if } m \neq n
 \end{align*}
-\subsection{Recurrence relations for $P_{n}(x)$ :}
-\begin{align*}
-\text{(i) }&n P_{n}=(2 n-1) x P_{n-1}-(n-1) P_{n-2}\hspace{1cm}
-\text{(ii) }n P_{n}=x P_{n}^{\prime}-P_{n-1}^{\prime}\\
-\text{(iii) }&(2 n+1) P_{n}=P_{n+1}^{\prime}-P_{n-1}^{\prime}\hspace{2.5cm}
-\text{(iv) }(n+1) P_{n}=P_{n+1}^{\prime}-x P_{n}^{\prime}\\
-\text{(v) }&\left(1-x^{2}\right) P_{n}^{\prime}=n\left(P_{n-1}-x P_{n}\right)\hspace{2.1cm}
-\text{(vi) }\left(1-x^{2}\right) P_{n}^{\prime}=(n+1)\left(x P_{n}-P_{n+1}\right).
-\end{align*}
+\subsection{Recurrence relations for $P_{n}(x)$ }
+\begin{enumerate}
+	\item $n P_{n}=(2 n-1) x P_{n-1}-(n-1) P_{n-2}$
+	\item $n P_{n}=x P_{n}^{\prime}-P_{n-1}^{\prime}$
+	\item $(2 n+1) P_{n}=P_{n+1}^{\prime}-P_{n-1}^{\prime}$
+	\item $(n+1) P_{n}=P_{n+1}^{\prime}-x P_{n}^{\prime}$
+	\item $\left(1-x^{2}\right) P_{n}^{\prime}=n\left(P_{n-1}-x P_{n}\right)$
+	\item $\left(1-x^{2}\right) P_{n}^{\prime}=(n+1)\left(x P_{n}-P_{n+1}\right)$
+\end{enumerate}
+
 \begin{exercise}
 	Express $4 x^{3}+6 x^{2}+7 x+2$ in terms of Legendre Polynomials.
 \end{exercise}
@@ -369,7 +440,7 @@ The co-efficient of $z^{n}$ in the exapansion of the generating function is the 
 	\text{Putting $(\mathrm{n}-1)$ in place of }&\mathrm{n} \Rightarrow(2 n-1) x P_{n-1}=n P_{n}+(n-1) P_{n-2}\\
 	\int_{-1}^{1}(2 n+3)(2 n-1) x^{2} P_{n+1} P_{n-1} d x&=n(n+2) \int_{-1}^{1} P_{n+2} P_{n} d x+n(n+1) \int_{-1}^{1} P_{n} P_{n} d x+\\
 	&(n-1)(n+2) \int_{-1}^{1} P_{n-2} P_{n+2} d x+\int_{-1}^{1} P_{n} P_{n-2} d x\\
-	\Rightarrow \int_{-1}^{1} x^{2} P_{n-1} P_{n+1} d x&=\frac{2 n(n+1)}{(2 n-1)(2 n+1)(2 n+3)}
+	 \int_{-1}^{1} x^{2} P_{n-1} P_{n+1} d x&=\frac{2 n(n+1)}{(2 n-1)(2 n+1)(2 n+3)}
 	\end{align*}
 \end{answer}
 \begin{exercise}
@@ -378,7 +449,7 @@ The co-efficient of $z^{n}$ in the exapansion of the generating function is the 
 \begin{answer}
 	\begin{align*}
 	\left(1-2 x z+z^{2}\right)^{-1 / 2}&=\sum_{n} z^{n} P_{n}(x)\\
-	\text { Putting } z&=1 \text { in equation, }(1-2 x+1)^{-1 / 2}=\sum_{n} P_{n}(x) \quad \Rightarrow \sum_{n} P_{n}(x)=\frac{1}{\sqrt{2-2 x}}
+	\text { Putting } z&=1 \text { in equation, }(1-2 x+1)^{-1 / 2}=\sum_{n} P_{n}(x) \\ \sum_{n} P_{n}(x)&=\frac{1}{\sqrt{2-2 x}}
 	\end{align*}
 \end{answer}
 \begin{exercise}
@@ -391,84 +462,39 @@ The co-efficient of $z^{n}$ in the exapansion of the generating function is the 
 	\text { putting } \mathrm{n}&=2 \quad \Rightarrow 5 P_{2}(x)=P_{3}^{\prime}(x)-P_{1}^{\prime}(x)\\
 	\text { putting } \mathrm{n}&=3 \quad \Rightarrow 7 P_{3}(x)=P_{4}^{\prime}(x)-P_{2}^{\prime}(x) \text { and so on. }\\
 	\text{Adding all}&\text{ the equations we get,}\\
-	3 P_{1}(x)+5 P_{2}(x)+7 P_{3}(x)&+\ldots \ldots(2 n+1) P_{n}(x)\\
-	=-P_{0}^{\prime}(x)-P_{1}^{\prime}(x)+P_{n}^{\prime}(x)&+P_{n+1}^{\prime}(x)=0-P_{0}(x)+P_{n}^{\prime}(x)+P_{n+1}^{\prime}{ }^{\cdot}(x)\\
-	\Rightarrow P_{n+1}^{\prime}(x)+P_{n}^{\prime}(x)&=P_{0}+3 P_{1}+5 P_{2}+\ldots . .+(2 n+1) P_{n}
+	3 P_{1}(x)+5 P_{2}(x)+7 P_{3}(x)+\ldots \ldots(2 n+1) P_{n}(x)
+	&=-P_{0}^{\prime}(x)-P_{1}^{\prime}(x)+P_{n}^{\prime}(x)+P_{n+1}^{\prime}(x)\\&=0-P_{0}(x)+P_{n}^{\prime}(x)+P_{n+1}^{\prime}(x)\\
+	 P_{n+1}^{\prime}(x)+P_{n}^{\prime}(x)&=P_{0}+3 P_{1}+5 P_{2}+\ldots . .+(2 n+1) P_{n}
 	\end{align*}
 \end{answer}
-\section{Bessel Differential Equation}
-\begin{equation*}
-x^{2} \frac{d^{2} y}{d x^{2}}+x \frac{d y}{d x}+\left(x^{2}-n^{2}\right) y=0
-\end{equation*}
-$x=0$ is a regular singular point of the Bessel differential equation.\\\\
-\begin{align*}
-\text{Bessel Functions }&\mathrm{J}_{\mathrm{n}}(\mathrm{x})\\
-\mathrm{J}_{\mathrm{n}}(\mathrm{x})&=y=a_{0} \sum_{r=0}^{\infty} \frac{(-1)^{r}}{r !(n+r) !}\left(\frac{x}{2}\right)^{n+2 r} \quad \text { where } \mathrm{a}_{0}=\frac{1}{2^{n} \mid n+1}\\
-\mathrm{n}=0 \quad \Rightarrow \quad \mathrm{J}_{0}(\mathrm{x})&=\sum_{r=0}^{\infty} \frac{(-1)^{r}}{(r !)^{2}}\left(\frac{x}{2}\right)^{2 r}=1-\frac{x^{2}}{2^{2}}+\frac{x^{4}}{2^{2} \cdot 4^{2}}-\frac{x^{6}}{2^{2} \cdot 4^{2} \cdot 6^{2}}+\ldots . .\\
-\mathrm{n}=1 \quad \Rightarrow \mathrm{J}_{1}(x)&=\frac{x}{2}-\frac{x^{3}}{2^{2} 4}+\frac{x^{5}}{2^{2} \cdot 4^{2} \cdot 6}-\ldots .
-\end{align*}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.5cm,width=5cm]{SF-03}
-\end{figure}
-(i) Bessel functions are oscillatory function with varying period and decreasing amplitude.\\
-(ii) $J_{n}(x)$ is an even function when $n$ is even and $J_{n}(x)$ is an odd function when $n$ is odd.\\
-(iii) $\mathrm{J}_{0}(\mathrm{x})$ has nodes at $x=2.408,5.5201$......and $J_{1}(x)$ has nodes at $x=3.8317,7.015$.......
-\begin{align*}
-J_{1 / 2}(x)=\sqrt{\frac{2}{\pi x}} \sin x \quad \& \quad J_{-1 / 2}(x)=\sqrt{\frac{2}{\pi x}} \cos x
-\end{align*}
-\subsection{Generating function of Bessel's function:}
-\begin{align*}
-e^{\frac{x}{2}\left(z-\frac{1}{2}\right)}=\sum_{n=-\infty}^{\infty} z^{n} J_{n}(x)
-\intertext{The coefficient of $z^{n}$ in the expansion of the generating tünction is the Bessel function of order $1 .$}
-\end{align*}
-\subsection{Orthogonal condition of Bessel Function:}
-\begin{align*}
-\int_{0}^{1} x_{n} \cdot(\alpha x) J_{n}(\beta x) d x=\frac{\delta_{\alpha \beta}}{2} \cdot\left[J_{n+1}(\alpha)\right]^{2}
-\end{align*}
-\subsection{Recurrencé relations for $J_{n}(x)$ :}
-\begin{align*}
-(i)\ & x J_{n}^{\prime}(x)=n J_{n}-x J_{n+1}\hspace{1cm}(ii)\  x J_{n}^{\prime}=-n J_{n} \times J_{n-1}.\\
-(iii)\ & 2 J_{n}^{\prime}=J_{n-1}-J_{n+1}\hspace{1.5cm}(iv)\  2 n J_{n}=x\left[J_{n-1}+J_{n+1}\right]\\
-(v)\ & \frac{d}{d x}\left[x^{-n} J_{n}\right]=-x^{-n} J_{n+1} \hspace{.5cm} (vi)\  \frac{d}{d x}\left[x^{n} J_{n}\right]=x^{n} J_{n-1}
-\end{align*}
-\begin{exercise}
-	Show that $\sqrt{\frac{\pi x}{2}} J_{3 / 2}(x)=\frac{\sin x}{x}-\cos x$
-\end{exercise}
-\begin{answer}
-	\begin{align*}
-	\text{Using recurrence relation, }2 n J_{n}&=x\left[J_{n+1}+J_{n-1}\right]\\
-	\text{putting}\mathrm{n}&=1 / 2,\text{ we get, }J_{1 / 2}=x\left[J_{3 / 2}+J_{-1 / 2}\right]\\
-	\Rightarrow x J_{3 / 2}=J_{1 / 2}-x J_{-1 / 2} \quad \Rightarrow \sqrt{\frac{\pi x}{2}} J_{3 / 2}&=\frac{\sin x}{x}-\cos x \text { (using the expressions of } J_{1 / 2} \& J_{-1 / 2} \text { ) }
-	\end{align*}
-\end{answer}
+
 \section{Hermite Differentiation Equation}
+The diﬀerential equation for Hermite functions is,
 \begin{align*}
 \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+2 n y&=0,(\mathrm{n}=0,1 \ldots . .)\\
 \text{$x=0$ is an ordinary point of the }&\text{Hermite differential equation}\\
 \intertext{The solution of the Hermite differential equation is a terminating series, so it is called Hermite polynomial of}
-\intertext{order ni.e. $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$}
-H_{n}(x)=\sum_{r=0}^{P} \frac{(-1)^{r} n !(2 x)^{n-2 r}}{r !(n-2 r) !} \quad \Rightarrow\left[\begin{array}{ll}
-P=\frac{n}{2} & \text { if } n=\text { even } \\
-=\frac{n-1}{2} & \text { if } \mathrm{n} \text { is odd }
+\intertext{order $n$, i.e. $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$}
+H_{n}(x)&=\sum_{r=0}^{P} \frac{(-1)^{r} n !(2 x)^{n-2 r}}{r !(n-2 r) !} \quad \Rightarrow\left[\begin{array}{ll}
+P&=\frac{n}{2}\quad \text { if } n=\text { even } \\
+&=\frac{n-1}{2}  \text { if } \mathrm{n}= \text {  odd }
 \end{array}\right]
 \end{align*}
 \subsection{Rodrigue formula for $H_{n}(x)$ :}
+\begin{enumerate}
+	\item $H_{n}(x)=(-1)^{n} e^{x^{2}} \frac{d^{n}}{d x^{n}}\left(e^{-x^{2}}\right) $
+	\item $ H_{0}(x)=1  $
+	\item $ H_{1}(x)=2 x  $
+	\item $ H_{2}(x)=4 x^{2}-2 $
+	\item $ H_{3}(x)=8 x^{3}-12 x$
+	\item $ H_{4}(x)=16 x^{4}-48 x^{2}+12$
+\end{enumerate}
+$H_{\mathrm{n}}(x)$ will be even function if $n$ is even and will be odd function if $n$ is odd.
+The Hermite polynomial of different order differ from the legendre polynomials with respect to the coefficient.
+ So, the nature of the graphs of $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$ will be same as Legendre polynomial $P_{\mathrm{n}}(x)$.
+\subsection{Generating function for Hermite polynomial:}
 \begin{align*}
-\begin{array}{ll}
-H_{n}(x)=(-1)^{n} e^{x^{2}} \frac{d^{n}}{d x^{n}}\left(e^{-x^{2}}\right) \\
-H_{0}(x)=1 & H_{3}(x)=8 x^{3}-12 x \\
-H_{1}(x)=2 x & H_{4}(x)=16 x^{4}-48 x^{2}+12 \\
-H_{2}(x)=4 x^{2}-2 &
-\end{array}
-\end{align*}
-These are Hermitite polynomial of order zero, one, two, three, four .... respectively. \\
-$H_{\mathrm{n}}(x)$ will be even function if $n$ is even and will be odd function if $n$ is odd.\\
-The Hermite polynomial of different order differ from the legendre polynomials with respect to the ceefficient.\\
- So, the nature of the graphs of $\mathrm{H}_{\mathrm{n}}(\mathrm{x})$ will be same as.Legendre polynomial $P_{\mathrm{n}}(x)$.
-\subsection{Generating function for hermite polynomial:}
-\begin{align*}
-\intertext{$\mathrm{e}^{2 \mathrm{zx}-\mathrm{z}^{2}}$ is the generating function of hemite polynomial i.e.}
+\intertext{$\mathrm{e}^{2 {zx}-{z}^{2}}$ is the generating function of hemite polynomial i.e.}
 e^{2 z x-z^{2}}&=\sum_{n=0}^{\infty} \frac{H_{n}(x)}{n !} z^{n}\\
 \text{The coefficient of $z^{n}$ in the expansion of }e^{2 z x-z^{2}}&\text{ is } \frac{H_{n}(x)}{n !}
 \end{align*}
@@ -477,29 +503,32 @@ e^{2 z x-z^{2}}&=\sum_{n=0}^{\infty} \frac{H_{n}(x)}{n !} z^{n}\\
 \int_{-\infty}^{\infty} e^{-x^{2}} H_{n}(x) H_{m}(x) d x=2^{n} n ! \sqrt{\pi} \delta_{m n}
 \end{align*}
 \subsection{Recurrence relation for $\mathrm{H}_{\mathrm{n}}(\mathbf{x})$ :}
-\begin{align*}
-(i)&\  H_{n}^{\prime}(x)=2 n H_{n-1}(x)\\
-(ii)& \ 2 x H_{n}(x)=2 n H_{n-1}(x)+H_{n+1}(x)\\
-(iii)& \ H_{n}^{\prime}(x)=2 x H_{n}(x)-H_{n+1}(x)\\
-(iv)&\  H_{n}^{\prime \prime}(x)-2 x H_{n}^{\prime}(x)+2 n H_{n}(x)=0\\
-(v)&\  H_{n}(-x)=(-1)^{n} H_{n}(x)\\
-\end{align*}
-\section{Lagauerre Differential Equation}
+\begin{enumerate}
+	\item $ H_{n}^{\prime}(x)=2 n H_{n-1}(x)$
+	\item $ 2 x H_{n}(x)=2 n H_{n-1}(x)+H_{n+1}(x)$
+	\item $H_{n}^{\prime}(x)=2 x H_{n}(x)-H_{n+1}(x)$
+	\item $ H_{n}^{\prime \prime}(x)-2 x H_{n}^{\prime}(x)+2 n H_{n}(x)=0$
+	\item $  H_{n}(-x)=(-1)^{n} H_{n}(x)$
+\end{enumerate}
+
+\section{Laguerre Differential Equation}
 \begin{align*}
 x \frac{d^{2} y}{d x^{2}}+(1-x) \frac{d y}{d x}+n y&=0\\
 \text{$x=0$ is a regular singular point of the Laguerre differential }& \text{equation.}\\\\
-\intertext{The solution ofLaguerre differentialequation is known as Laguerre polynomial of order ni.e. $L_{n}(x)$}
+\intertext{The solution of Laguerre differentialequation is known as Laguerre polynomial of order n ,i.e. $L_{n}(x)$}
 L_{n}(x)=\sum \frac{(-1)^{r} n ! x^{r}}{(r !)^{2}(n-r) !}&
 \end{align*}
 \subsection{Rodrigue formula for $L_{n}(x)$ :}
-\begin{align*}
-\begin{aligned}
-&L_{n}(x)=\frac{e^{x}}{n !} \frac{d^{n}}{d x^{n}}\left(x^{n} e^{-x}\right) \\
-&L_{0}(x)=1 \quad L_{1}(x)=1-x \quad L_{2}(x)=\frac{1}{2}\left(x^{2}-4 x+2\right) \\
-&L_{3}(x)=\frac{1}{6}\left(-x^{3}+9 x^{2}-18 x+6\right)
-\intertext{Laguerre polynomials are neither even nor odd.}
-\end{aligned}
-\end{align*}
+\begin{enumerate}
+	\item $L_{n}(x)=\frac{e^{x}}{n !} \frac{d^{n}}{d x^{n}}\left(x^{n} e^{-x}\right)$ 
+	\item $ L_{0}(x)=1 $ 
+	\item $L_{1}(x)=1-x$
+	\item $L_{2}(x)=\frac{1}{2}\left(x^{2}-4 x+2\right)$
+    \item $L_{3}(x)=\frac{1}{6}\left(-x^{3}+9 x^{2}-18 x+6\right)$
+\end{enumerate}
+{Laguerre polynomials are neither even nor odd.}
+
+
 \subsection{Generating function for Laguerre polynomial:}
 \begin{align*}
 \frac{e^{-x z /(1-z)}}{(1-z)}=\sum_{n=0}^{\infty} z^{n} L_{n}(x)
@@ -627,7 +656,78 @@ L_{n}(x)=\sum \frac{(-1)^{r} n ! x^{r}}{(r !)^{2}(n-r) !}&
 		15&\textbf{C}& &\\\hline
 		
 	\end{tabular}
+\end{table}\newpage 
+\begin{abox}
+	Problem Set -2
+\end{abox}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+	\item What is the maximum number of extrema of the function $f(x)=P_{k}(x) e^{-\left(\frac{x^{4}}{4}+\frac{x^{2}}{2}\right)}$, where\\
+	$x \in(-\infty, \infty)$ and $P_{k}(x)$ is an arbitrary polynomial of degree $k$ ?
+{	\exyear{JEST 2015}}
+
+\begin{tasks}(4)
+\task[\textbf{A.}]  $k+2$
+\task[\textbf{B.}]$k+6$
+\task[\textbf{C.}] $k+3$
+\task[\textbf{D.}]$k$
+\end{tasks}
+\item The Bernoulli polynominals $B_{n}(s)$ are defined by, $\frac{x e^{x s}}{e^{x}-1}=\sum B_{n}(s) \frac{x^{n}}{n !} .$ Which one of the following relations is true?
+{\exyear{JEST 2015}}
+
+\begin{tasks}(2)
+\task[\textbf{A.}] $\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s) \frac{x^{n}}{(n+1) !}$
+\task[\textbf{B.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s)(-1)^{n} \frac{x^{n}}{(n+1) !}$
+\task[\textbf{C.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(-s)(-1)^{n} \frac{x^{n}}{n !}$
+\task[\textbf{D.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s)(-1)^{n} \frac{x^{n}}{n !}$
+\end{tasks}
+\item For which of the following conditions does the integral $\int_{0}^{1} P_{m}(x) P_{n}(x) d x$ vanish for $m \neq n$, where $P_{m}(x)$ and $P_{n}(x)$ are the Legendre polynomials of order $m$ and $n$ respectively?
+{\exyear{JEST 2018}}
+
+\begin{tasks}(2)
+\task[\textbf{A.}] all $m, m \neq n$
+\task[\textbf{B.}]$m-n$ is an odd integer
+\task[\textbf{C.}]$m-n$ is a nonzero even integer
+\task[\textbf{D.}]$n=m \pm 1$
+\end{tasks}
+\item The Euler polynomials are defined by $\frac{2 e^{x s}}{e^{x}+1}=\sum_{n=0}^{\infty} E_{n}(s) \frac{x^{n}}{n !}$What is the value of $E_{5}(2)+E_{5}(3) ?$
+{\exyear{JEST 2019}}
+\item If $F(x, y)=x^{2}+y^{2}+x y$, its Legendre transformed function $G(u, v)$, upto a multiplicative constant, is
+{\exyear{JEST 2018}}
+
+\begin{tasks}(4)
+\task[\textbf{A.}] $u^{2}+v^{2}+u v$
+\task[\textbf{B.}] $u^{2}+v^{2}-u v$
+\task[\textbf{C.}]$u^{2}+v^{2}$
+\task[\textbf{D.}]$(u+v)^{2}$
+\end{tasks}
+\item  Consider a function $f(x)=P_{k}(x) e^{-\left(x^{4}+2 x^{2}\right)}$ in the domain $x \in(-\infty, \infty)$, where $P_{k}$ is any polynomial of degree $k$. What is the maximum possible number of extrema of the function?
+{\exyear{JEST 2019}}
+
+\begin{tasks}(4)
+\task[\textbf{A.}] $k+3$
+\task[\textbf{B.}] $k-3$
+\task[\textbf{C.}]$k+2$
+\task[\textbf{D.}]$k+1$
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{C} &2&\textbf{D}\\\hline 
+		3&\textbf{A} &4&\textbf{64} \\\hline
+		5&\textbf{B} &6&\textbf{D} \\\hline
+	
+		
+	\end{tabular}
 \end{table}
+\newpage 
 \begin{abox}
 	Problem Set -3
 \end{abox}
@@ -842,143 +942,4 @@ If then the normalized wave function for harmonic oscillation is $\psi(x)=\left(
 \begin{answer}
 	So the correct answer is \textbf{Option (d)}
 \end{answer}
-\item Given that $\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}=e^{-t^{2}+2 x x}$ the value of $H_{6}(0)$ is
- \begin{tasks}(4)
-	\task[\textbf{a.}]$-120$
-	\task[\textbf{b.}]$+120$
-	\task[\textbf{c.}]12
-	\task[\textbf{d.}]  $-12$
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\sum_{n=0}^{\infty} I_{n}(x) \frac{t^{\prime \prime}}{n !}&=e^{-t^{2}+2 t x} \Rightarrow \sum_{n=0}^{\infty} H_{n}(0) \frac{t^{n}}{n !}=e^{-t^{2}}=1-t^{2}+\frac{t^{4}}{2 !}-\frac{t^{6}}{3 !}\\
-	\Rightarrow \frac{H_{6}(0)}{6 !} t^{6}&=-\frac{1}{3 !} t^{6} \Rightarrow H_{6}(0)=-\frac{6 !}{3 !}=-120
-	\end{align*}
-	So the correct answer is \textbf{Option (a)}
-\end{answer}
-\item Given that $\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}=e^{-t^{2}+2 e x}$ the value of $H_{4}(0)$ is
- \begin{tasks}(4)
-	\task[\textbf{a.}]12
-	\task[\textbf{b.}] 6
-	\task[\textbf{c.}]24
-	\task[\textbf{d.}] $-6$
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\sum_{n=0}^{\infty} H_{n}(x) \frac{t^{n}}{n !}&=e^{-t^{2}+2 t x} \Rightarrow \sum_{n=0}^{\infty} H_{n}(0) \frac{t^{n}}{n !}=e^{-t^{2}}=1-t^{2}+\frac{t^{4}}{2 !}-\frac{t^{6}}{3 !}\\
-	\Rightarrow \frac{H_{4}(0)}{4 !} t^{4}&=\frac{t^{4}}{2 !} \Rightarrow H_{4}(0)=\frac{4 !}{2 !}=12
-	\end{align*}
-	So the correct answer is \textbf{Option (a)}
-\end{answer}
-\item If Hermite polynomial of order 2 is given by $H_{2}(x)=a x^{2}-2 ; a>0$, then the value of $a$ is
- \begin{tasks}(4)
-	\task[\textbf{a.}]3
-	\task[\textbf{b.}]4
-	\task[\textbf{c.}]5
-	\task[\textbf{d.}] 6
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\intertext{Orthonormality condition,}
-	\int_{-\infty}^{+\infty}\left[H_{n}(x)\right]^{2} e^{-x^{2}} d x&=2^{\prime \prime} n ! \sqrt{\pi}\\
-	\text{For, }n&=2, \int_{-\infty}^{+\infty}\left(a x^{2}-2\right)^{2} e^{-x^{2}} d x=8 \sqrt{\pi}\\
-\text{	Now}
-	\int_{-\infty}^{+\infty}\left[H_{2}(x)\right]^{2} e^{-x^{2}} d x&=\int_{-\infty}^{+\infty}\left(a x^{2}-2\right)^{2} e^{-x^{2}} d x=\left\{a^{2} \times \frac{3}{4}+4-2 a\right\} \sqrt{\pi}
-	\intertext{Thus, we have}
-	\frac{3 a^{2}}{4}+4-2 a&=8 \Rightarrow 3 a^{2}-8 a-16=0 \Rightarrow 3 a^{2}-12 a+4 a-16=0\\
-	\Rightarrow 3 a(a-4)+4(a-4)&=0 \Rightarrow(3 a+4)(a-4)=0\\
-	\text{Thus, }a&=4
-	\end{align*}
-		So the correct answer is \textbf{Option (b)}
-\end{answer}
-\item The value of Legendre polynomial $p_{n}(x)$ for odd $n$ and $x=0$. i.e., $p_{n}(0)$ is
- \begin{tasks}(4)
-	\task[\textbf{a.}]1
-	\task[\textbf{b.}]0
-	\task[\textbf{c.}]$-1$
-	\task[\textbf{d.}]  $0.5$
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\intertext{The generating function for Legendre polynomial is}
-	\left(1-2 x t+t^{2}\right)^{-1 / 2}&=\sum_{n=0}^{\infty} p_{n}(x) t^{n}\\
-	\text{Put, $x=0$, we get, }&\left(1+t^{2}\right)^{-1 / 2}=\sum p_{n}(\theta) t^{n}
-	\end{align*}
-		So the correct answer is \textbf{Option (b)}
-\end{answer}
-\item For the Legendre's polynomial $P_{n}(x)$, given below are two statements. Study these carefully and pick out the correct option.\\
-Statement I: $\quad \int_{-1}^{1} x\left[P_{n}(x)\right]^{2} d x=0$\\
-Statement I: $\lim _{n \rightarrow \infty}\left[\int_{-1}^{1} x P_{n}(x) P_{n+1}(x) d x\right]=0$
- \begin{tasks}(1)
-	\task[\textbf{a.}]Only statement (I) is correct
-	\task[\textbf{b.}]Only statement (II) is correct
-	\task[\textbf{c.}]Both (I) and (II) are correct
-	\task[\textbf{d.}]Neither (I) nor (II) is correet
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\intertext{From recurrence relation we have}
-	(n+1) P_{n+1}(x)&=(2 n+1) x p_{n}(x)-n p_{n-1}(x)\\
-	x p_{n}(x)&=\frac{1}{(2 n+1)}\left\{(n+1) p_{n+1}(x)+n p_{n-1}(x)\right\}\\
-	x\left[p_{n}(x)\right]^{2}&=\frac{1}{(2 n+1)}\left\{(n+1) p_{n}(x) p_{n+1}(x)+n p_{n}(x) p_{n-1}(x)\right\}\\
-	\therefore \int_{-1}^{+1} x\left[p_{n}(x)\right]^{2} d x&=0\left\{\because \int_{-1}^{+1} p_{m}(x) p_{n}(x)=0\right.\text{ if }\left.m \neq n\right\}\\
-	\therefore &\int_{-1}^{+1} x\left[p_{n}(x)\right]^{2} d x=0
-	\intertext{From recurrence relation, we have}
-	(n+1) p_{n+1}(x)&=(2 n+1) x p_{n}(x)-n p_{n-1}(x)\\
-	(2 n+1) x p_{n}(x)&=(n+1) p_{n+1}(x)+n p_{n-1}(x)\\
-	\int_{-1}^{+1}(2 n+1) x p_{n}(x) p_{n+1}(x) d x&=\int_{-1}^{+1}\left[(n+1)\left\{p_{n+1}(x)\right\}^{2}+n p_{n-1}(x) p_{n+1}(x)\right] d x\\
-	=\int_{-1}^{+1}(n+1)\left\{p_{n+1}(x)\right\}^{2} d x+n \int_{-1}^{+1}& p_{n-1}(x) p_{n+1}(x) d x=(n+1) \frac{2}{2(n+1)+1}+0=\frac{2 n+2}{2 n+3}\\
-	\therefore \int_{-1}^{+1} x p_{n}(x) p_{n+1}(x) d x&=\frac{2 n+2}{(2 n+1)(2 n+3)}\\
-	\lim _{n \rightarrow \infty} \frac{n\left(2+\frac{2}{n}\right)}{n^{2}\left(2+\frac{1}{n}\right)\left(2+\frac{3}{n}\right)}&=\lim _{n \rightarrow \infty} \frac{\left(2+\frac{2}{n}\right)}{n\left(2+\frac{1}{n}\right)\left(2+\frac{3}{n}\right)}=0
-	\end{align*}
-		So the correct answer is \textbf{Option (c)}
-\end{answer}
-\item Which of the following statements is Incorrect about the Hermite polynomials $H_{n}(x)$ ?
- \begin{tasks}(1)
-	\task[\textbf{a.}] The value of integral $\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x$ is 384
-	\task[\textbf{b.}] Hermite polynomial of order $3, H_{3}(x)$, satisfies the differential equation $y^{\prime \prime}-2 x y^{\prime}+6 y=0$
-	\task[\textbf{c.}] The value of $\mathrm{H}_{4}(\mathrm{l})$ is $-20$
-	\task[\textbf{d.}] $H_{n}(x)=\frac{H_{n+1}(x)+2 n H_{n-1}(x)}{x}$
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\intertext{When integrated with respect to weight function $e^{-x^{2}}$, the Hermite polynomials satisfy}
-	\int_{-\infty}^{\infty} e^{-x^{2}} H_{n}(x) H_{m}(x) d x&= \begin{cases}0, & n \neq m \\ \sqrt{\pi} 2^{n} n !, & n=m\end{cases}
-	\intertext{In our case $n=m=4$, hence}
-	\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x&=\frac{\sqrt{\pi} 2^{4}(4 !)}{\sqrt{\pi}}=384
-	\intertext{Hermite polynomial of order $n$, satisfies the differential equation}
-	y^{\prime \prime}-2 x y^{\prime}+2 n y=0\\
-\text{	when }n=3, y^{\prime \prime}-2 x y^{\prime}+6 y=0\\
-	\text{We have }H_{4}(x)&=16 x^{4}-48 x^{2}+12\\
-	\text{Therefore, }H_{4}(1)&=-48+28=-20
-	\intertext{The recursion relation for Hermite polynomials is}
-	H_{n+1}(x)&=2 x H_{n}(x)-2 n H_{n-1}(x) \Rightarrow H_{n}(x)=\frac{H_{n+1}(x)+2 n H_{n-1}(x)}{2 x}
-	\end{align*}
-		So the correct answer is \textbf{Option (d)}
-\end{answer}
-\item If $P_{n}(x)$ denotes the Legendre polynomials of order $n$, then which of the following statements is incorrect?
- \begin{tasks}(1)
-	\task[\textbf{a.}]$P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left[\left(x^{2}-1\right)^{n}\right]$ where $n=0,1,2 \ldots$
-	\task[\textbf{b.}]The Legendre polynomials satisfy the differential equation\\$
-	\left(1-x^{2}\right) \frac{d^{2} y}{d x^{2}}-2 x \frac{d y}{d x}+n(n+1) y=0
-	$
-	\task[\textbf{c.}] For each value of $n$ the Legendre polynomials satisfy the relation $P_{n}(1)=1$.
-	\task[\textbf{d.}] The value of integral $\int_{-1}^{1}\left[P_{4}(x)\right]^{2} d x$ is $\frac{2}{7}$.
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\intertext{Option (a) is the correct definition of Legendre polynomial. Legendre polynoimials satisfy the differential equation given in option (b). For each value of $n$ Legendre polynomials satisfy $P_{n}(1)=1$.}
-	\text{Since, }\int_{-1}^{1}\left[P_{n}(x)\right]^{2} d x&=\frac{2}{2 n+1}\\
-	\text{Hence, }\int_{-1}^{1}\left[P_{4}(x)\right]^{2} d x&=\frac{2}{2 \cdot 4+1}=\frac{2}{9}\\
-	\text{Hence option }&(d)\text{ is incorrect.}
-	\end{align*}
-		So the correct answer is \textbf{Option (d)}
-\end{answer}
 \end{enumerate}
-
-\begin{align*}
-	\intertext{In our case $n=m=4$, hence}
-\frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} e^{-x^{2}}\left[H_{4}(x)\right]^{2} d x&=\frac{\sqrt{\pi} 2^{4}(4 !)}{\sqrt{\pi}}=384
-\intertext{Hermite polynomial of order $n$, satisfies the differential equation}
-y^{\prime \prime}-2 x y^{\prime}+2 n y=0\\
-\end{align*}
