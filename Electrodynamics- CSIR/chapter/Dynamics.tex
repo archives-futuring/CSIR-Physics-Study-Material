@@ -308,13 +308,31 @@ E(r, t)&=\frac{1}{4 \pi \varepsilon_{0}} \int\left[\frac{\rho\left(r^{\prime}, t
 B(r, t)&=\frac{\mu_{0}}{4 \pi}\int\left[\frac{J\left(r^{\prime}, f_{r}\right)}{\lambda^{2}}+\frac{J\left(r^{\prime}, t_{r}\right)}{c \lambda}\right]x r^2d z
 \intertext{This is the time-denpendent generalzation of the Biot-savart law, to which it reduces in the static case.}
 \end{align*}
-
-
-
-
-
-
-
+\section{Poynting Theorem}
+If there exist a continuous distribution of charge and current, the total rate of doing work by the fields in a finite volume $v$ is
+$$\frac{d w}{d t}=\int_{v} \vec{\j} \cdot \vec{E} d^{3} x$$
+This power represent a convertion of electromagnetic energy to mechanical or thermal energy. It must be balanced by corresponding rate  of decrease of energy in the electromagnetic field within the volume $V$. We can use maxwell equations to express the above equation in other terms.
+\begin{align*}
+\int_{V} J \cdot E d ^3 x&=\int_{V}\left[E \cdot(\nabla x H)-E \cdot \frac{\partial D}{\partial F}\right] d{ }^{3} x\\
+\text{using the vector identity}&\\
+\nabla \cdot(E \times H)&=H \cdot(\nabla \times E)-E \cdot(\nabla \times H)\\
+\because \quad \int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V} \bar{V} \cdot(E \times M)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t} \\
+\int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V}\left[\nabla \cdot(E \times H)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t}\right] d^{3} x
+\end{align*}
+\textbf{Assumptions}\\
+\begin{enumerate}
+	\item The mactoscopic medium is lenear in its electric and magnetic properties, with negligible dispersion or losses.
+	\item The sum of work necessary to assemble  a static charge distribution and work required to get currents going represent the total deelectromagnetic energy density.
+\end{enumerate}
+\begin{align*}
+u&=\frac{1}{2}(E \cdot D+B \cdot H)\\
+-\int_{v} \vec{J} \cdot t^{2} d^{3} x&=\int_{v}\left[\frac{\partial u}{\partial t}+\nabla \cdot(E \times H)\right] d^{3} x
+\intertext{since the volume $V$ is arbitrary, this can be cast into the form of a differential contunuity equation or conservation law,}
+\frac{\partial u}{\partial t}+\nabla \cdot s&=-j \cdot E\\
+\text{The vector $S$ representing }&\text{energy flow is called the poynting vector}\\
+S&=E \times H\\
+\text{It has diamensions of }&\frac{\text{energy}}{\text{area}\times\text{time}}
+\end{align*}
 
 
 
