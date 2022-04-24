@@ -717,4 +717,68 @@ where $\delta(x)$ is the Dirac delta-function?
 	\end{align*}
 	So the correct answer is \textbf{option (d)}
 \end{answer}
+\item Find the fourier transform of 
+$f(x)=\left\{\begin{array}{lll}1 & \text { for } & |x|<a \\ 0 & \text { for } & |x|>a\end{array}\right.$
+\begin{answer}
+	\begin{align}
+	\intertext{The fourier transform of a function $f(x)$ is given by}
+	F[f(x)]&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} f(x) \cdot e^{i s x} d x\label{FT15}
+	\intertext{Substituting the value of $f(x)$ in (\ref{FT15}), we get}
+	F[f(x)] &=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} 1 \cdot e^{i s x} d x=\left[\frac{e^{i s x}}{i s}\right]_{-a}^{a}=\frac{1}{\sqrt{2 \pi}} \frac{1}{(i s)}\left[e^{i a s}-e^{-i a s}\right] \notag\\
+	&=\frac{1}{\sqrt{2 \pi}} \frac{2}{s} \cdot \frac{e^{i a s}-e^{-i a s}}{2 i}=\frac{1}{\sqrt{2 \pi}} \frac{2 \sin s a}{s}=\sqrt{\frac{2}{\pi}} \frac{\sin s a}{s}\notag
+	\end{align}
+\end{answer}
+\item Find the Fourier transform of $e^{-a x^{2}}$, where $a>0$.
+\begin{answer}
+	\begin{align}
+\intertext{	The Fourier transform of $f(x)$ :}
+	F\{f(x)\}&=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{x} f(x) e^{i s x} d x\label{FT16}
+\intertext{	Putting the value of $f(x)$ in $(\ref{FT16})$, we get}
+	F\left\{e^{-a x^{2}}\right\}=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{\infty} e^{-a x^{2}} e^{i s x} d x&=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{\infty} e^{-x^{2} a-\frac{s^{2}}{4 a}+i s x+\frac{s^{2}}{4 a}} d x=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{x} e^{-\left(x \sqrt{a}-\frac{i s}{2 \sqrt{a}}\right)^{t}} e^{-\frac{s^{2}}{4 a}} d x\notag\\
+	\text{Putting }x \sqrt{a}-\frac{\text { is }}{2 \sqrt{a}}&=y, \quad d x=\frac{d y}{\sqrt{a}},\text{ we get}\notag\\
+	F\left\{e^{-a x^{2}}\right\}&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} e^{-y^{2}} \frac{d y}{\sqrt{a}}\notag\\
+	&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 \pi}} \times \frac{\sqrt{\pi}}{\sqrt{a}}\hspace{2cm}
+\left(\text{ Since }\int_{-x}^{x} e^{-y^{2}} d y=\sqrt{\pi}\right)\notag\\
+F\left\{e^{-a x^{2}}\right\}&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 a}}\notag
+	\end{align}
+\end{answer}
+\item Find the fourier transform of function
+$$f(t)= \begin{cases}t, & \text { for }|t|<a \\ 0, & \text { for }|t|>a\end{cases}$$
+\begin{answer}
+	\begin{align}
+	\intertext{We have}
+	f(t)&= \begin{cases}t, & \text { for }|t|<a \\ 0, & \text { for }|t|>a\end{cases}\notag
+\intertext{	The Fourier Transform of the function $f(t)$ is given by}
+	F[f(t)]&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} f(t) e^{i s t} d t\label{FT17}
+\intertext{	Substituting the value of $f(t)$ in (\ref{FT17}), we get}
+	F[f(t)]&=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} t e^{i s t} d t=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} t(\cos s t+i \sin s t) d t\notag\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[0+2 \int_{0}^{a} i t \sin s t d t\right] \quad\quad \text { [First is odd and second is even] } \notag\\
+	&=\frac{2 i}{\sqrt{2 \pi}}\left[\left\{t\left(\frac{-\cos s t}{s}\right)\right\}_{0}^{a}-\int_{0}^{a} 1\left(\frac{-\cos s t}{s}\right) d t\right]=\frac{2 i}{\sqrt{2 \pi}}\left[-\frac{a}{s} \cos a s+\frac{1}{s}\left[\frac{\sin s t}{s}\right]_{0}^{a}\right]\notag\\
+	&=\frac{2 i}{\sqrt{2 \pi}}\left[-\frac{a}{s} \cos a s+\frac{1}{s^{2}} \sin a s\right]=\frac{2 i}{\sqrt{2 \pi}} \frac{1}{s^{2}}[\sin s a-a s \cos a s]\notag
+	\end{align}
+\end{answer}
+\item Find Fourier Sine transform of $\frac{1}{x}$
+\begin{answer}
+	\begin{align}
+	\text{Here, }f(x)&=\frac{1}{x}\notag\\
+	F_{s}[f(x)]&=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f(x) \sin s x d x\label{FT18}\\
+	\text { Putting the value of } &f(x) \text { in }(\ref{FT18}) \text {, we get }\notag\\
+	F_{s}\left(\frac{1}{x}\right) &=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} \frac{\sin s x}{x} d x=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} \frac{\sin \theta}{\frac{\theta}{s}} \frac{d \theta}{s} \quad \text { Putting } s x=\theta \text { so that } s d x=d \theta \notag\\
+	&=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} \frac{\sin \theta}{\theta} d \theta=\sqrt{\frac{2}{\pi}}\left(\frac{\pi}{2}\right) \quad \text { [Some useful result I on page 1208] Ans. } \notag\\
+	&=\sqrt{\frac{\pi}{2}}\notag
+	\end{align}
+\end{answer}
+\item Find the Fourier Sine Transform of $e^{-a x}$
+\begin{answer}
+	\begin{align}
+	\text{Here, }f(x)&=e^{-a x}\notag
+\intertext{	The Fourier sine transform of $f(x)$ :}
+	F_{s}[f(x)]&=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f(x) \sin s x d x\label{FT19}
+\intertext{	On putting the value of $f(x)$ in (\ref{FT19}), we get}
+	F_{s}\left[e^{-a x}\right]&=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} e^{-a x} \sin s x d x\notag
+	\intertext{On integrating by parts, we get}
+	F_{s}\left[e^{-a x}\right] &=\sqrt{\frac{2}{\pi}}\left[\frac{e^{-a x}}{a^{2}+s^{2}}[-a \sin s x-s \cos s x]\right]_{0}^{\infty}\left[\int e^{a x} \sin b x d x=\frac{e^{a x}}{a^{2}+b^{2}}(a \sin b x-b \cos b x)\right] \notag\\
+	&=\sqrt{\frac{2}{\pi}}\left[0-\frac{1}{a^{2}+s^{2}}(-s)\right]=\sqrt{\frac{2}{\pi}}\left(\frac{s}{a^{2}+s^{2}}\right)\notag
+\end{align}
+\end{answer}
 \end{enumerate}
