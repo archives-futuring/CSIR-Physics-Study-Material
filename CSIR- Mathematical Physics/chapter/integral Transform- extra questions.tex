@@ -1,0 +1,145 @@
+\begin{enumerate}
+
+
+	\item Let $F(k)$ is the Fourier exponential transform of $f(x)$ and $G(k)$ be the Fourier Transform of $g(x)=f(x+a)$. Then $G(k)$ is given by
+(Use the Fourier integral $F(k)=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x) e^{i k x} d x$ )
+\begin{tasks}(2)
+	\task[\textbf{a.}]$e^{i a k} f(k)$
+	\task[\textbf{b.}]$e^{-i a k} F(-k)$
+	\task[\textbf{c.}] $e^{-i a k} F(k)$
+	\task[\textbf{d.}] $e^{-i a k} f(k)$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	F(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x) e^{i k x} d x\\
+	\because g(x)&=f(x+a)\\
+	\therefore G(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x+a) e^{i k x} d x\\
+	\text{Let }x+a&=y, d x=d y\\
+	\therefore G(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(y) e^{i k(y-a)} d y=e^{-i k a} \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} f(x) e^{i k x} d x=e^{-i a k} F(k)
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item The value of a function is given by $f(x)=\left\{\begin{array}{cc}1 & 0<x<1 \\ -1 & 1<x<2 \\ 0 & x>2\end{array}\right.$, the Fourier cosine transform of $f(x)$ is
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\sqrt{\frac{2}{\pi}}\left(\frac{2 \sin \omega+\sin 2 \omega}{\omega}\right)$
+	\task[\textbf{b.}]$\sqrt{\frac{2}{\pi}}\left(\frac{2 \sin \omega-\sin 2 \omega}{\omega}\right)$
+	\task[\textbf{c.}]$\sqrt{\frac{2}{\pi}}\left(\frac{\sin \omega-\sin 2 \omega}{\omega}\right)$
+	\task[\textbf{d.}] $\sqrt{\frac{2}{\pi}}\left(\frac{2 \sin \omega}{\omega}\right)$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f_{c}(\omega) &=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f(x) \cos \omega x d x \\ &=\sqrt{\frac{2}{\pi}} \int_{0}^{1} \cos \omega x d x+\sqrt{\frac{2}{\pi}} \int_{1}^{2}-\cos \omega x d x \\ &=\sqrt{\frac{2}{\pi}}\left[\left(\frac{\sin \omega x}{\omega}\right)_{0}^{1}-\left(\frac{\sin \omega x}{\omega}\right)_{1}^{2}\right] \\ &=\sqrt{\frac{2}{\pi}}\left(\frac{2 \sin \omega-\sin 2 \omega}{\omega}\right) 
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item Consider the function $\delta_{n}(x)=\frac{n}{\sqrt{\pi}} \exp \left(-n^{2} x^{2}\right)$. For $n \rightarrow \infty$ The Fourier transform of the function is given by
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\delta(x)=\int_{-\infty}^{+\infty} e^{-i k x} d k$
+	\task[\textbf{b.}]$\delta(x)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{i k x} d k$
+	\task[\textbf{c.}]$\delta(x)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-i k x} d k$
+	\task[\textbf{d.}] 0
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\mathrm{n}: g(k)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \frac{n}{\sqrt{\pi}} e^{-n^{2} x^{2}} e^{i k x} d x=\frac{n}{\sqrt{2} \cdot \pi} \int_{-\infty}^{+\infty} e^{-n^{2} x^{2}+i i x} d x=\frac{n}{\sqrt{2} \cdot \pi} e^{-k^{2} / 4 n^{2}} \int_{-\infty}^{+\infty} e^{-n^{2}\left(x-\frac{i k}{2 n^{2}}\right)^{2}} d x\\
+	&=\frac{n}{\sqrt{2} \cdot \pi} e^{-k^{2} / 4 n^{2}} \times 2 \times \frac{1}{2} \cdot \frac{\sqrt{\pi}}{n}=\frac{1}{\sqrt{2 \pi}} e^{-k^{2} / 4 n^{2}}
+	\intertext{ Now inverse fourier transform of $g(k)$ is}
+	\delta_{n}(x)&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{+\infty} \frac{e^{-k^{2} / 4 n^{2}}}{\sqrt{2 \pi}} \cdot e^{-i k x} d k\\
+	\delta(x)&=\lim _{n \rightarrow \infty} \delta_{n}(x)=\lim _{n \rightarrow \infty} \frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-k^{2} / 4 n^{2}} \cdot e^{-i k x} d k=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-i k x} d k\\
+	\therefore \delta(x)&=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} e^{-i k x} d k
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item For the function $f(t)=\delta(t-x)$, the Fourier cosine integral is defined as $g_{c}(\omega)=\sqrt{\frac{2}{\pi}} \int_{0}^{\infty} f(t) \cos \omega t d t$. Its Fourier transform is:
+\begin{tasks}(2)
+	\task[\textbf{a.}] $\sqrt{\frac{2}{\pi}} \cos \omega x$
+	\task[\textbf{b.}]$\sqrt{\frac{2}{\pi}}$
+	\task[\textbf{c.}]$\sqrt{\frac{2}{\pi}} \sin \omega x$
+	\task[\textbf{d.}] $i \sqrt{\frac{2}{\pi}}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{(i) }g_{c}(\omega)=\sqrt{\frac{2}{\pi}} \int_{0}^{\omega} \delta(t-x) \cos \omega t d t=\sqrt{\frac{2}{\pi}} \cos \omega x
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item $f(t)=\frac{\hbar}{2 \pi i} \int_{-\infty}^{+\infty} \frac{e^{-i \omega t} d \omega}{\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}$ The value of $f(t)$ is given by
+\begin{tasks}(2)
+	\task[\textbf{a.}](a) $f(t)= \begin{cases}e^{-\Gamma t / 2 \hbar} e^{-i E_{0} t / \hbar} & , t>0 \\ 0 & , t<0\end{cases}$
+	\task[\textbf{b.}]$f(t)= \begin{cases}e^{\sqrt{1 / 2 \hbar}} e^{-1 E_{0} t / \hbar} & , t>0 \\ 0 & , t<0\end{cases}$
+	\task[\textbf{c.}]$f(t)= \begin{cases}e^{-\Gamma t / 2 \hbar} e^{-i E_{0} t / \hbar} & , t>0 \\ 0 & , t<0\end{cases}$
+	\task[\textbf{d.}] $f(t)= \begin{cases}e^{-\Gamma t / 2 h} e^{-i E_{0} t / h} & , t>0 \\ e^{-i E_{0} t / \hbar} & , t<0\end{cases}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{Fourier Transform of $f(t)$ is}
+	g(\omega)&=\frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} e^{-\Gamma t / 2 \hbar} \cdot e^{-i E_{0} / / \hbar} \cdot e^{i a t} d t=\frac{1}{\sqrt{2 \pi}} \int_{0}^{\infty} \exp \left\{\frac{-i t}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)\right\} d t\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[\frac{e^{\left\{\frac{-i t}{\hbar}\left(E_{0}-i / / 2-\hbar \omega\right)\right\}}}{\frac{-i}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\right]_{0}^{\infty}=\frac{1}{\sqrt{2 \pi}}\left[\frac{0-1}{\frac{-i}{\hbar}\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\right]\\
+	&=\frac{1}{\sqrt{2 \pi} i(E o-i \Gamma / 2-h \omega)}
+	\intertext{Inverse transform of $g(\omega)$ is}
+	f(t)&=\frac{1}{2 \pi} \int_{-\infty}^{+\infty} \frac{\hbar e^{-i \omega x}}{i\left(E_{0}-i \Gamma / 2-\hbar \omega\right)} d \omega=\frac{\hbar}{2 \pi i} \int_{-\infty}^{+\infty} \frac{e^{-i \omega t} d \omega}{\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}\\
+	\therefore &\frac{\hbar}{2 \pi i} \int_{-\infty}^{+\infty} \frac{e^{-i \omega t} d \omega}{\left(E_{0}-i \Gamma / 2-\hbar \omega\right)}=f(t)= \begin{cases}\exp (-\Gamma t / 2 \hbar) \exp \left(\frac{-i E_{0} t}{\hbar}\right), & t>0 \\ 0 & t<0\end{cases}
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item The Fourier transform of function $h(t)=t e^{-t^{2}}$ is 
+\begin{tasks}(2)
+	\task[\textbf{a.}] $j \pi f e^{-\pi^{2} f^{2}}$
+	\task[\textbf{b.}]$-j \pi f e^{-\pi^{2} f^{2}}$
+	\task[\textbf{c.}]$j \pi f e^{-\pi^{2} f^{2} / 4}$
+	\task[\textbf{d.}] $-j \pi f e^{-\pi^{2} f^{2} / 4}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	F\left\{t e^{-r^{2}}\right\}&=-\frac{1}{2} F\left\{\frac{d\left(e^{-r^{2}}\right)}{d t}\right\}=-\frac{1}{2}(j 2 \pi f) F\left\{e^{-t^{2}}\right\}=-j \pi f e^{-\pi^{2} f^{2}}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item The Fourier transform of the function $h(t)=\left\{\begin{array}{cc}\beta e^{-a t}, & t>0 \\ 0, & t<0\end{array}\right.$, is given by
+\begin{tasks}(2)
+	\task[\textbf{a.}]$H(f)=\frac{\alpha}{\sqrt{\alpha^{2}+(2 \pi f)^{2}}} e^{j \tan ^{-1}\left[-2 \pi f^{\prime \alpha]}\right.}$
+	\task[\textbf{b.}]$H(f)=\frac{\beta}{\sqrt{\alpha^{2}+(2 \pi f)^{2}}} e^{j \tan ^{-1}[-2 \pi f / \beta]}$
+	\task[\textbf{c.}]$H(f)=\frac{\beta}{\sqrt{\alpha^{2}+(2 \pi f)^{2}}} e^{\tan ^{-1}[2 \pi f / \alpha]}$
+	\task[\textbf{d.}] $H(f)=\frac{\beta}{\sqrt{\alpha^{2}+(2 \pi f)^{2}}} e^{j \tan ^{-1}[-2 \pi f / \alpha]}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f(x)&=\left\{\begin{array}{rl}-1 & -1<x<0 \\ 1 & 0<x<1 \\ 0 & \text { otherwise }\end{array}\right.\\
+	F[f(x)]&=\frac{1}{\sqrt{2 \pi}}\left[\int_{-1}^{0}-e^{-i \omega x} d x+\int_{0}^{1} e^{-i \omega x} d x\right]\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[-\left(\frac{e^{-i \omega x}}{-i \omega}\right)_{-1}^{0}+\left(\frac{e^{-i \omega x}}{-i \omega}\right)_{0}^{1}\right]=\frac{1}{\sqrt{2 \pi}}\left[\frac{-1+e^{i \omega}}{-i \omega}+\frac{e^{-i \omega}-1}{-i \omega}\right]\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[\frac{2 \cos \omega-2}{-i \omega}\right]=\frac{i}{\omega} \sqrt{\frac{2}{\pi}}(\cos \omega-1)
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item Find the Fourier transform of $e^{-a x^{2}}$, where $a>0$.
+\begin{answer}
+	\begin{align}
+	\intertext{	The Fourier transform of $f(x)$ :}
+	F\{f(x)\}&=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{x} f(x) e^{i s x} d x\label{FT16}
+	\intertext{	Putting the value of $f(x)$ in $(\ref{FT16})$, we get}
+	F\left\{e^{-a x^{2}}\right\}=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{\infty} e^{-a x^{2}} e^{i s x} d x&=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{\infty} e^{-x^{2} a-\frac{s^{2}}{4 a}+i s x+\frac{s^{2}}{4 a}} d x=\frac{1}{\sqrt{2 \pi}} \int_{-x}^{x} e^{-\left(x \sqrt{a}-\frac{i s}{2 \sqrt{a}}\right)^{t}} e^{-\frac{s^{2}}{4 a}} d x\notag\\
+	\text{Putting }x \sqrt{a}-\frac{\text { is }}{2 \sqrt{a}}&=y, \quad d x=\frac{d y}{\sqrt{a}},\text{ we get}\notag\\
+	F\left\{e^{-a x^{2}}\right\}&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} e^{-y^{2}} \frac{d y}{\sqrt{a}}\notag\\
+	&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 \pi}} \times \frac{\sqrt{\pi}}{\sqrt{a}}\hspace{2cm}
+	\left(\text{ Since }\int_{-x}^{x} e^{-y^{2}} d y=\sqrt{\pi}\right)\notag\\
+	F\left\{e^{-a x^{2}}\right\}&=\frac{e^{-s^{2} / 4 a}}{\sqrt{2 a}}\notag
+	\end{align}
+\end{answer}
+\item Find the fourier transform of function
+$$f(t)= \begin{cases}t, & \text { for }|t|<a \\ 0, & \text { for }|t|>a\end{cases}$$
+\begin{answer}
+	\begin{align}
+	\intertext{We have}
+	f(t)&= \begin{cases}t, & \text { for }|t|<a \\ 0, & \text { for }|t|>a\end{cases}\notag
+	\intertext{	The Fourier Transform of the function $f(t)$ is given by}
+	F[f(t)]&=\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} f(t) e^{i s t} d t\label{FT17}
+	\intertext{	Substituting the value of $f(t)$ in (\ref{FT17}), we get}
+	F[f(t)]&=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} t e^{i s t} d t=\frac{1}{\sqrt{2 \pi}} \int_{-a}^{a} t(\cos s t+i \sin s t) d t\notag\\
+	&=\frac{1}{\sqrt{2 \pi}}\left[0+2 \int_{0}^{a} i t \sin s t d t\right] \quad\quad \text { [First is odd and second is even] } \notag\\
+	&=\frac{2 i}{\sqrt{2 \pi}}\left[\left\{t\left(\frac{-\cos s t}{s}\right)\right\}_{0}^{a}-\int_{0}^{a} 1\left(\frac{-\cos s t}{s}\right) d t\right]=\frac{2 i}{\sqrt{2 \pi}}\left[-\frac{a}{s} \cos a s+\frac{1}{s}\left[\frac{\sin s t}{s}\right]_{0}^{a}\right]\notag\\
+	&=\frac{2 i}{\sqrt{2 \pi}}\left[-\frac{a}{s} \cos a s+\frac{1}{s^{2}} \sin a s\right]=\frac{2 i}{\sqrt{2 \pi}} \frac{1}{s^{2}}[\sin s a-a s \cos a s]\notag
+	\end{align}
+\end{answer}
+\end{enumerate}
+
+
