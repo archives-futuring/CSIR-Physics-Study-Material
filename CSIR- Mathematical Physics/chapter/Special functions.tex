@@ -290,21 +290,21 @@ Where $n$ is a constant (not necessarily an integer) called the order of the Bes
 \begin{align*}
 x^{2} y^{\prime\prime }+x y^\prime+\left(x^{2}-n^{2}\right) y&=0
 \intertext{ $x_0=0$ is a regular singular point, so we can expand about $x_0=0$ using Frobenius method}
-y=\sum_{k=0}^{\infty} a_{k} x^{k=\lambda}\quad y^{\prime}&=\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-1}\quad y^{\prime \prime}=\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k}x^{k=\lambda-2}\\
-\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\frac{1}{x} \sum_{k=0}^{\infty}(k=\lambda) a_{k}x^{k=\lambda-1}+\left(1-\frac{n^{2}}{x^{2}}\right) \sum_{k=0}^{\infty} a_{k} x^{k=\lambda}=0\\
-\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{n=0}^{\infty} a_{k} x^{k=\lambda}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k=\lambda-2} =0\\
-\sum_{k=0}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2} &+\sum_{k=0}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+ \sum_{k=2}^{\infty} a_{k-2} x^{k=\lambda-2}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k=\lambda-2} =0\\
-\sum_{k=2}^{\infty}(k=\lambda)(k=\lambda-1) a_{n} x^{k=\lambda-2}&+\sum_{k=2}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k=\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k=\lambda-2}\\
+y=\sum_{k=0}^{\infty} a_{k} x^{k+\lambda}\quad y^{\prime}&=\sum_{k=0}^{\infty}(k+\lambda) a_{k} x^{k+\lambda-1}\quad y^{\prime \prime}=\sum_{k=0}^{\infty}(k+\lambda)(k+\lambda-1) a_{k}x^{k+\lambda-2}\\
+\sum_{k=0}^{\infty}(k+\lambda)(k+\lambda-1) a_{k} x^{k+\lambda-2} &+\frac{1}{x} \sum_{k=0}^{\infty}(k+\lambda) a_{k}x^{k+\lambda-1}+\left(1-\frac{n^{2}}{x^{2}}\right) \sum_{k=0}^{\infty} a_{k} x^{k+\lambda}=0\\
+\sum_{k=0}^{\infty}(k+\lambda)(k+\lambda-1) a_{k} x^{k+\lambda-2} &+\sum_{k=0}^{\infty}(k+\lambda) a_{k} x^{k+\lambda-2}+\sum_{n=0}^{\infty} a_{k} x^{k+\lambda}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k+\lambda-2} =0\\
+\sum_{k=0}^{\infty}(k+\lambda)(k+\lambda-1) a_{k} x^{k+\lambda-2} &+\sum_{k=0}^{\infty}(k+\lambda) a_{k} x^{k+\lambda-2}+ \sum_{k=2}^{\infty} a_{k-2} x^{k+\lambda-2}-n^{2}\sum_{k=0}^{\infty} a_{k}x^{k+\lambda-2} =0\\
+\sum_{k=2}^{\infty}(k+\lambda)(k+\lambda-1) a_{n} x^{k+\lambda-2}&+\sum_{k=2}^{\infty}(k+\lambda) a_{k} x^{k+\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k+\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k+\lambda-2}\\
 +\lambda(\lambda-1) a_{0} x^{\lambda-2}+\lambda(\lambda+1) a_{1} x^{\lambda-1}&+\lambda a_{0} x^{\lambda-2}+(\lambda+1) a_{1} x^{\lambda-1}-n^2{a_{0}} x^{\lambda-2}-n^{2} a_1 x^{\lambda-1}=0
 \intertext{ right hand side is 0, so each term of left hand side should be equal to 0 and we can express like this}
 \text{for} x^{\lambda-2}, \lambda(\lambda-1) a_{0}+\lambda a_{0}-n^{2} a_{0}&=0, \text{we want }a_{0} \neq 0 \text{, so we can write as,}\\
 \lambda(\lambda-1)+\lambda-n^{2}=0\quad \lambda^{2}-n^{2}&=0 \quad \lambda=\pm n
 \text{,this is our indicial equations}
 \intertext{Plugging the values of $\lambda$ in   $ x^{\lambda-1}$We can show  $a_{1}=0$ , and what left with the equation is} \\
-\sum_{k=2}^{\infty}(k=\lambda)(k=\lambda-1) a_{k} x^{k=\lambda-2}&+\sum_{n=2}^{\infty}(k=\lambda) a_{k} x^{k=\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k=\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k=\lambda-2}=0\\
-\sum_{k=2}^{\infty}(((k=\lambda)(k+ \lambda-1)&+(k=\lambda) n^2) a_{k}+\left.a_{k-2}\right) x^{k=\lambda-2}=0\\
-\left[(k=\lambda)(k=\lambda-1)+(k=\lambda)-n^{2}\right] &a_{k}+a_{k-2}=0\\
-a_{k}&=\frac{-a_{k-2}}{\left[(k=\lambda)^{2}-n^{2}\right]}\\
+\sum_{k=2}^{\infty}(k+\lambda)(k+\lambda-1) a_{k} x^{k+\lambda-2}&+\sum_{n=2}^{\infty}(k+\lambda) a_{k} x^{k+\lambda-2}+\sum_{k=2}^{\infty}a_{k-2}x^{k+\lambda-2}-n^{2} \sum_{k=2}^{\infty} a_{k}  x^{k+\lambda-2}=0\\
+\sum_{k=2}^{\infty}(((k+\lambda)(k+ \lambda-1)&+(k+\lambda) n^2) a_{k}+\left.a_{k-2}\right) x^{k+\lambda-2}=0\\
+\left[(k+\lambda)(k+\lambda-1)+(k+\lambda)-n^{2}\right] &a_{k}+a_{k-2}=0\\
+a_{k}&=\frac{-a_{k-2}}{\left[(k+\lambda)^{2}-n^{2}\right]}\\
 \text{substitute }\lambda_1&=n\\
 a_{k}=\frac{-a_{k-2}}{k(k+2 n)}\implies &\text{recursion}\\
 \text{since }a_1 =0, \ &
