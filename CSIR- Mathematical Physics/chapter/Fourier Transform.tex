@@ -216,27 +216,27 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 
 \subsection{Important Laplace Transforms:}
 \begin{enumerate}
-	\item $L(1)=\frac{1}{s}$
-	\item $L\left(x^{n}\right)=\frac{n !}{s^{n+1}}(n=0,1,2, \ldots \ldots . .)$
-	\item $L\left(e^{a x}\right)=\frac{1}{s-a}(s>a)$
-	\item $L(\cos a x)=\frac{s}{s^{2}+a^{2}}$
+	\item $\mathcal{L}(1)=\frac{1}{s}$
+	\item $\mathcal{L}\left(x^{n}\right)=\frac{n !}{s^{n+1}}(n=0,1,2, \ldots \ldots . .)$
+	\item $\mathcal{L}\left(e^{a x}\right)=\frac{1}{s-a}(s>a)$
+	\item $\mathcal{L}(\cos a x)=\frac{s}{s^{2}+a^{2}}$
 	$(s>0)$
-	\item $L(\sin a x)=\frac{a}{s^{2}+a^{2}} \quad(s>0)$
-	\item $L(\cosh a x)=\frac{s}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
-	\item $L(\sinh a x)=\frac{a}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
+	\item $\mathcal{L}(\sin a x)=\frac{a}{s^{2}+a^{2}} \quad(s>0)$
+	\item $\mathcal{L}(\cosh a x)=\frac{s}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
+	\item $\mathcal{L}(\sinh a x)=\frac{a}{s^{2}-a^{2}}\left(s^{2}>a^{2}\right)$
 \end{enumerate}
 
 \subsubsection{Important properties:}
 \begin{enumerate}
-	\item Linear Property: $L\left[a_{1} f_{1}(x)+a_{2} f_{2}(x)\right]=a_{1} L\left[f_{1}(x)\right]+a_{2} L\left[f_{2}(x)\right]$
-	\item Shifting Property: $L\left[e^{a x} f(x)\right]=f(s-a)$
-	\item Scaling Property: $L[f(a x)]=\frac{1}{a} f\left(\frac{s}{a}\right)$
-	\item $L\left[x^{n} f(x)\right]=(-1)^{n} \frac{d^{n}}{d s^{n}}(f(s))$
-	\item $L\left[\frac{f(x)}{x}\right]=\int_{-\infty}^{\infty} f(s) d s$
-	\item $L\left[\int_{0}^{t} f(x) d x\right]=\frac{1}{s} f(s)$
-	\item $L\left[f^{\prime}(x)\right]=s L[f(x)]-f(0)$
-	\item  $L\left[f^{\prime \prime}(x)\right]=s^{2} L[f(x)]-f^{\prime}(0)-s f(0)$
-	\item Laplace transform of a periodic function $f(x)$ having period ' $T$ ' is $$L[f({x})]=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f({x}) d {x}$$
+	\item Linear Property: $\mathcal{L}\left[a_{1} f_{1}(x)+a_{2} f_{2}(x)\right]=a_{1} \mathcal{L}\left[f_{1}(x)\right]+a_{2} \mathcal{L}\left[f_{2}(x)\right]$
+	\item Shifting Property: $\mathcal{L}\left[e^{a x} f(x)\right]=f(s-a)$
+	\item Scaling Property: $\mathcal{L}[f(a x)]=\frac{1}{a} f\left(\frac{s}{a}\right)$
+	\item $\mathcal{L}\left[x^{n} f(x)\right]=(-1)^{n} \frac{d^{n}}{d s^{n}}(f(s))$
+	\item $\mathcal{L}\left[\frac{f(x)}{x}\right]=\int_{-\infty}^{\infty} f(s) d s$
+	\item $\mathcal{L}\left[\int_{0}^{t} f(x) d x\right]=\frac{1}{s} f(s)$
+	\item $\mathcal{L}\left[f^{\prime}(x)\right]=s L[f(x)]-f(0)$
+	\item  $\mathcal{L}\left[f^{\prime \prime}(x)\right]=s^{2} L[f(x)]-f^{\prime}(0)-s f(0)$
+	\item Laplace transform of a periodic function $f(x)$ having period ' $T$ ' is $$\mathcal{L}[f({x})]=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f({x}) d {x}$$
 	\item Laplace transform of the unit step function $u(x-a)=u_{a}(x)=\left\{\begin{array}{lll}0 & \text { for } & x<a \\ 1 & \text { for } & x \geq a\end{array}\right.$ is $\frac{e^{-a s}}{s}$.
 	\item Laplace transform of the dirac delta function $\delta(x-a)$ is $e^{-a s}$.
 \end{enumerate}
@@ -246,7 +246,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \begin{answer}
 	\begin{align*}
 	\begin{aligned}
-	L[f(x)] &=\int_{0}^{\infty} e^{-s x}\left(1+\cos 2 x \cdot d x=\left(\frac{e^{-s x}}{-s}\right)_{0}^{\infty}+\int_{0}^{\infty} e^{-s x} \cos 2 x d x\right.\\
+	\mathcal{L}[f(x)] &=\int_{0}^{\infty} e^{-s x}\left(1+\cos 2 x \cdot d x=\left(\frac{e^{-s x}}{-s}\right)_{0}^{\infty}+\int_{0}^{\infty} e^{-s x} \cos 2 x d x\right.\\
 	&=\frac{1}{s}+\frac{s}{4+s}=\frac{2 s^{2}+4}{s\left(s^{2}+4\right)}
 	\end{aligned}
 	\end{align*}
@@ -256,7 +256,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L[f(x)]=L[2 \sin 2 x \cdot \cos 4 x]=L[\sin 6 x-\sin 2 x]=\left(\frac{6}{s^{2}+36}-\frac{2}{s^{2}+4}\right)
+	\mathcal{L}[f(x)]=\mathcal{L}[2 \sin 2 x \cdot \cos 4 x]=\mathcal{L}[\sin 6 x-\sin 2 x]=\left(\frac{6}{s^{2}+36}-\frac{2}{s^{2}+4}\right)
 	\end{align*}
 \end{answer}
 \begin{exercise}
@@ -265,7 +265,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \begin{answer}
 	\begin{align*}
 	\begin{aligned}
-	L[f(x)] &=L\left(3 e^{-x} \sinh 2 x\right)-L\left(5 e^{-x} \cosh 2 x\right) \\
+	\mathcal{L}[f(x)] &=\mathcal{L}\left(3 e^{-x} \sinh 2 x\right)-\mathcal{L}\left(5 e^{-x} \cosh 2 x\right) \\
 	&=3 \frac{2}{(s+1)^{2}-4}-5 \cdot \frac{(s+1)}{(s+1)^{2}-4}=\frac{(1-5 \mathrm{~s})}{\left(\mathrm{s}^{2}+2 \mathrm{~s}-3\right)} \quad \text { (Using 2nd property) }
 	\end{aligned}
 	\end{align*}
@@ -277,7 +277,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L[f(x)] &=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f(x) d x=\frac{1}{1-e^{-2 s}} \int_{0}^{2} e^{-s x} d x \\
+	\mathcal{L}[f(x)] &=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f(x) d x=\frac{1}{1-e^{-2 s}} \int_{0}^{2} e^{-s x} d x \\
 	&=\frac{1}{1-e^{-2 s}}\left[\int_{0}^{1} e^{-s x} d x\right]=\frac{1}{1-e^{-2 s}}\left(\frac{1-e^{-s}}{s}\right)\\
 	&=\frac{\left(1-e^{-s}\right)}{s\left(1+e^{-s}\right)\left(1-e^{-s}\right)}=\frac{1}{s\left(1+e^{-s}\right)}
 	\end{align*}
@@ -288,7 +288,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \begin{answer}
 	\begin{align*}
 	f(x)&=\left(1+x e^{-x}\right)^{3}=1+x^{3} e^{-3 x}+3 x e^{-x}+3 x^{2} e^{-2 x} \\
-	L[f(x)]&=L(1)+L\left(x^{3} e^{-3 x}\right)+L\left(3 x e^{-x}\right)+L\left(3 x^{2} e^{-2 x}\right)\\
+\mathcal{L}[f(x)]&=\mathcal{L}(1)+\mathcal{L}\left(x^{3} e^{-3 x}\right)+\mathcal{L}\left(3 x e^{-x}\right)+\mathcal{L}\left(3 x^{2} e^{-2 x}\right)\\
 	&=\frac{1}{s}+(-1)^{3} \frac{d^{3}}{d s^{3}}\left(\frac{1}{s+3}\right)+3(-1)^{1} \frac{d}{d s}\left(\frac{1}{s+1}\right)+3(-1)^{2} \frac{d^{2}}{d s^{2}}\left(\frac{1}{s+2}\right)\text{ (Using 4th property)}\\
 	&=\frac{1}{s}+\frac{6}{(s+3)^{4}}+\frac{3}{(s+1)^{2}}+\frac{6}{(s+2)^{3}} \text {. }
 	\end{align*}
@@ -298,7 +298,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L\left(\frac{1-e^{x}}{x}\right)&=\int_{s}^{\infty}\left(\frac{1}{s}-\frac{1}{s-1}\right) d s=[\ln s-\ln (s-1)]_{s}^{\infty}=\left[\ln \frac{s}{s-1}\right]_{s}^{\infty}:\text{ (Using 5th property)}\\
+	\mathcal{L}\left(\frac{1-e^{x}}{x}\right)&=\int_{s}^{\infty}\left(\frac{1}{s}-\frac{1}{s-1}\right) d s=[\ln s-\ln (s-1)]_{s}^{\infty}=\left[\ln \frac{s}{s-1}\right]_{s}^{\infty}:\text{ (Using 5th property)}\\
 	&=[\ln s-\ln (s-1)]_{s}^{\infty}=\left[\ln \frac{s}{s-1}\right]_{s}^{\infty}=\ln \left(\frac{1}{\left.1-\frac{1}{s}\right)_{s}}\right)^{\infty} \\
 	&=0-\ln \frac{s}{s-1}=\ln \frac{(s-1)}{s}
 	\end{align*}
@@ -309,7 +309,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\mathrm{~L}^{-1}[\mathrm{f}(\mathrm{s})] &=\mathrm{L}^{-1}\left[\frac{\mathrm{s}-2}{(\mathrm{~s}-2)^{2}+25}\right]+\mathrm{L}^{-1}\left[\frac{\mathrm{s}+4}{(\mathrm{~s}+4)^{2}+81}\right]+\mathrm{L}^{-1}\left[\frac{1}{(\mathrm{~s}+2)^{2}+9}\right] \\
+	\mathcal{L}^{-1}[\mathrm{f}(\mathrm{s})] &=\mathcal{L}^{-1}\left[\frac{\mathrm{s}-2}{(\mathrm{~s}-2)^{2}+25}\right]+\mathrm{L}^{-1}\left[\frac{\mathrm{s}+4}{(\mathrm{~s}+4)^{2}+81}\right]+\mathrm{L}^{-1}\left[\frac{1}{(\mathrm{~s}+2)^{2}+9}\right] \\
 	&=\mathrm{e}^{2 \mathrm{x}} \cos 5 \mathrm{x}+\mathrm{e}^{-4 \mathrm{x}} \cos 9 \mathrm{x}+\frac{\mathrm{e}^{-2 \mathrm{x}}}{3} \sin 3 \mathrm{x}
 	\end{align*}
 \end{answer}
@@ -332,7 +332,7 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \begin{answer}
 	Given function is a periodic function of period $T=2$
 	\begin{align*}
-	L[f(x)] &=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f(x) d x=\frac{1}{1-e^{-2 s}} \int_{0}^{2} e^{-s x} d x \\
+	\mathcal{L}[f(x)] &=\frac{1}{1-e^{-s T}} \int_{0}^{T} e^{-s x} f(x) d x=\frac{1}{1-e^{-2 s}} \int_{0}^{2} e^{-s x} d x \\
 	&=\frac{1}{1-e^{-2 s}}\left[\int_{0}^{1} e^{-s x} d x\right]=\frac{1}{1-e^{-2 s}}\left(\frac{1-e^{-s}}{s}\right) \\
 	&=\frac{\left(1-e^{-s}\right)}{s\left(1+e^{-s}\right)\left(1-e^{-s}\right)}=\frac{1}{s\left(1+e^{-s}\right)}
 	\end{align*}
@@ -350,52 +350,52 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \begin{answer}
 	\begin{align*}
 	&f(s)=\frac{1}{s^{2}(s+1)}=\frac{(s+1)-s(s+1)+s^{2}}{s^{2}(s+1)}=\frac{1}{s^{2}}-\frac{1}{s}+\frac{1}{s+1} \\
-	&\Rightarrow L^{-1}[f(s)]=t-1+e^{-t}
+	&\Rightarrow \mathcal{L}^{-1}[f(s)]=t-1+e^{-t}
 	\end{align*}
 	So the correct answer is \textbf{option (c)}
 \end{answer}
 \begin{exercise}
 	$$
-	L(1)=\frac{1}{s}
+	\mathcal{L}(1)=\frac{1}{s}
 	$$
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-		L(1)&=\int_{0}^{\infty} 1 \cdot e^{-s t} d t=\left[\frac{e^{-s t}}{-s}\right]_{0}^{\infty}=-\frac{1}{s}\left[\frac{1}{e^{s t}}\right]_{0}^{\infty}=-\frac{1}{s}[0-1]=\frac{1}{s}\\
-		\text{ Hence }L(1)&=\frac{1}{s}
+		\mathcal{L}(1)&=\int_{0}^{\infty} 1 \cdot e^{-s t} d t=\left[\frac{e^{-s t}}{-s}\right]_{0}^{\infty}=-\frac{1}{s}\left[\frac{1}{e^{s t}}\right]_{0}^{\infty}=-\frac{1}{s}[0-1]=\frac{1}{s}\\
+		\text{ Hence }\mathcal{L}(1)&=\frac{1}{s}
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	$L\left(t^{n}\right)=\frac{n !}{s^{n+1}}$ where $n$ and $s$ are positive.
+	$\mathcal{L}\left(t^{n}\right)=\frac{n !}{s^{n+1}}$ where $n$ and $s$ are positive.
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L\left(t^{n}\right)&=\int_{0}^{\infty} e^{-s t} t^{n} d t\\
+	\mathcal{L}\left(t^{n}\right)&=\int_{0}^{\infty} e^{-s t} t^{n} d t\\
 	\text{Putting }s t=&x \quad\text{ or }\quad t=\frac{x}{s} \quad\text{ or } \quad d t=\frac{d x}{s}\\
-	\text{Thus we have}\mathrm{L}\left(t^{n}\right)&=\int_{0}^{\infty} e^{-x}\left(\frac{x}{s}\right)^{n} \frac{d x}{s_{r}} \quad \Rightarrow \quad \mathrm{L}\left(t^{n}\right)=\frac{1}{s^{n+1}} \int_{0}^{\infty} e^{-x} \cdot x^{n} d x\\
-	\Rightarrow L\left(t^{n}\right)&=\frac{\sqrt{n+1}}{s^{n+1}} \Rightarrow L\left(t^{n}\right)=\frac{n !}{s^{n+1}}\hspace{2cm}\left[\begin{array}{c}
+	\text{Thus we have}\mathcal{L}\left(t^{n}\right)&=\int_{0}^{\infty} e^{-x}\left(\frac{x}{s}\right)^{n} \frac{d x}{s_{r}} \quad \Rightarrow \quad \mathcal{L}\left(t^{n}\right)=\frac{1}{s^{n+1}} \int_{0}^{\infty} e^{-x} \cdot x^{n} d x\\
+	\Rightarrow \mathcal{L}\left(t^{n}\right)&=\frac{\sqrt{n+1}}{s^{n+1}} \Rightarrow \mathcal{L}\left(t^{n}\right)=\frac{n !}{s^{n+1}}\hspace{2cm}\left[\begin{array}{c}
 	{\left[n+1=\int_{0}^{\infty} e^{-x} \cdot x^{n} d x\right] } \\
 	\text { and } \quad \mid \overline{n+1}=n !
 	\end{array}\right]
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	$\mathbf{L}\left(e^{a t}\right)=\frac{1}{s-a}, \quad$ where $s>a$
+	$\mathcal{L}\left(e^{a t}\right)=\frac{1}{s-a}, \quad$ where $s>a$
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L\left(e^{a t}\right) &=\int_{0}^{\infty} e^{-s t} \cdot e^{a t} d t=\int_{0}^{\infty} e^{-s t+a t} \cdot d t \\
+	\mathcal{L}\left(e^{a t}\right) &=\int_{0}^{\infty} e^{-s t} \cdot e^{a t} d t=\int_{0}^{\infty} e^{-s t+a t} \cdot d t \\
 	&=\int_{0}^{\infty} e^{(-s+a) t} \cdot d t=\int_{0}^{\infty} e^{-(s-a) t} \cdot d t=\left[\frac{e^{-(s-a) t}}{-(s-a)}\right]_{0}^{\infty}=-\frac{1}{s-a}\left[\frac{1}{e^{(s-a) t}}\right]_{0}^{\infty}\\
 	&=\frac{-1}{(s-a)}(0-1)=\frac{1}{s-a}
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	$\mathbf{L}(\cosh a t)=\frac{s}{s^{2}-a^{2}}$
+	$\mathcal{L}(\cosh a t)=\frac{s}{s^{2}-a^{2}}$
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L(\cosh a t) &=L\left[\frac{e^{a t}+e^{-a t}}{2}\right] \hspace{4cm}\left(\therefore \cosh a t=\frac{e^{a t}+e^{-a t}}{2}\right)\\
-	&=\frac{1}{2} L\left(e^{a t}\right)+\frac{1}{2} L\left(e^{-a t}\right)=\frac{1}{2}\left[\frac{1}{s-a}+\frac{1}{s+a}\right] \hspace{2cm}\left[\mathrm{L}\left(e^{a t}\right)=\frac{1}{s-a}\right]\\
+	\mathcal{L}(\cosh a t) &=L\left[\frac{e^{a t}+e^{-a t}}{2}\right] \hspace{4cm}\left(\therefore \cosh a t=\frac{e^{a t}+e^{-a t}}{2}\right)\\
+	&=\frac{1}{2} \mathcal{L}\left(e^{a t}\right)+\frac{1}{2} L\left(e^{-a t}\right)=\frac{1}{2}\left[\frac{1}{s-a}+\frac{1}{s+a}\right] \hspace{2cm}\left[\mathcal{L}\left(e^{a t}\right)=\frac{1}{s-a}\right]\\
 	&=\frac{1}{2}\left[\frac{s+a+s-a}{s^{2}-a^{2}}\right]=\frac{s}{s^{2}-a^{2}}
 	\end{align*}
 \end{answer}
@@ -404,18 +404,18 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\mathrm{L}(\sinh a t) &=\mathrm{L}\left[\frac{1}{2}\left(e^{a t}-e^{-a t}\right)\right] \\
-	&=\frac{1}{2}\left[L\left(e^{a t}\right)-L\left(e^{-a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-a}-\frac{1}{s+a}\right]=\frac{1}{2}\left[\frac{s+a-s+a}{s^{2}-a^{2}}\right] \\
+	\mathcal{L}(\sinh a t) &=\mathcal{L}\left[\frac{1}{2}\left(e^{a t}-e^{-a t}\right)\right] \\
+	&=\frac{1}{2}\left[\mathcal{L}\left(e^{a t}\right)-L\left(e^{-a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-a}-\frac{1}{s+a}\right]=\frac{1}{2}\left[\frac{s+a-s+a}{s^{2}-a^{2}}\right] \\
 	&=\frac{a}{s^{2}-a^{2}}
 	\end{align*}
 \end{answer}
 \begin{exercise}
-	$L(\sin a t)=\frac{a}{s^{2}+a^{2}}$
+	$\mathcal{L}(\sin a t)=\frac{a}{s^{2}+a^{2}}$
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L(\sin a t)&=L\left[\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\hspace{3cm} \left[\because \sin a t=\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\\
-	&=\frac{1}{2 i}\left[L\left(e^{i a t}-e^{-i a t}\right)\right]=\frac{1}{2 i}\left[L\left(e^{i a t}\right)-L\left(e^{-i a t}\right)\right] \\
+\mathcal{L}(\sin a t)&=\mathcal{L}\left[\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\hspace{3cm} \left[\because \sin a t=\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\\
+	&=\frac{1}{2 i}\left[L\left(e^{i a t}-e^{-i a t}\right)\right]=\frac{1}{2 i}\left[L\left(e^{i a t}\right)-\mathcal{L}\left(e^{-i a t}\right)\right] \\
 	&=\frac{1}{2 i}\left[\frac{1}{s-i a}-\frac{1}{s+i a}\right]=\frac{1}{2 i} \frac{s+i a-s+i a}{s^{2}+a^{2}}=\frac{1}{2 i} \frac{2 i a}{s^{2}+a^{2}}=\frac{a}{s^{2}+2^{2}}
 	\end{align*}
 \end{answer}
@@ -433,8 +433,8 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	L(\cos a t)&=L\left(\frac{e^{t a t}+e^{-i a t}}{2}\right) \quad\left[\because \cos a t=\frac{e^{i a t}+e^{-i a t}}{2}\right]\\
-	&=\frac{1}{2}\left[\mathrm{~L}\left(e^{i a t}+e^{-i a t}\right)\right]=\frac{1}{2}\left[\mathrm{~L}\left(e^{i a t}\right)+\mathrm{L}\left(e^{i a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-i a}+\frac{1}{s+i a}\right]=\frac{1}{2} \frac{s+i a+s-i a}{s^{2}+a^{2}}\\
+	\mathcal{L}(\cos a t)&=\mathcal{L}\left(\frac{e^{t a t}+e^{-i a t}}{2}\right) \quad\left[\because \cos a t=\frac{e^{i a t}+e^{-i a t}}{2}\right]\\
+	&=\frac{1}{2}\left[\mathcal{L}\left(e^{i a t}+e^{-i a t}\right)\right]=\frac{1}{2}\left[\mathcal{L}\left(e^{i a t}\right)+\mathcal{L}\left(e^{i a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-i a}+\frac{1}{s+i a}\right]=\frac{1}{2} \frac{s+i a+s-i a}{s^{2}+a^{2}}\\
 	&=\frac{s}{s^{2}+a^{2}}
 	\end{align*}
 \end{answer}
