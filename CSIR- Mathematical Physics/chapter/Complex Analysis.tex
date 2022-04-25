@@ -69,17 +69,16 @@ represents the complex number, {${z=x+i y}$} on the complex plane $z$. The diagr
 	\tan ^{-1} \frac{0}{1}&=\tan ^{-1} 0\\&=0^{\circ}
 	\end{align*}
 \end{answer}
-
      \subsection{Conjugate of a Complex number}
 	The conjugate of a complex number $z$ is represented by, $${\bar{z}=x-i y}$$
 	\begin{note}\newline 
-	$ \left. \right. $ \hspace{1.5cm}	$\begin{aligned}
+	$ \left. \right. $ \hspace{1.5cm}	
+	$\begin{aligned}
 		\frac{z + \bar{z}}{2}&=Re\left\lbrace z\right\rbrace \\
 		\frac{z - \bar{z}}{2i}&=Im\left\lbrace z\right\rbrace\\
 		z \cdot \bar{z}&=|z|^{2}
 		\end{aligned}$
 	\end{note}
-
 \section{Algebra of Complex numbers}
 For two Complex numbers, $a+i b$ and $c+i d $
 \subsubsection{Equality:}
@@ -159,8 +158,183 @@ $\begin{array}{ll}\bullet\quad\sin i x=i \sinh x & \bullet\quad \sinh i x=i \sin
 	\ln (1+x)&=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\ldots \\
     \tan ^{-1}(x)&=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+\ldots
 	\end{align*}
-	
-\end{note}
+	\section{Function of a Complex Variable}
+	\subsection{Basic Representation}
+	\begin{align*}
+	W&=f(z)=v(x, y)+i v(x, y)\hspace{4cm}\text{Real part (u)},\left(x^{2}-y^{2}\right)^{2}\\
+	f(z)&=z^{2}=(x+i y)^{2}=\left(x^{2}-y^{2}\right)^{2}+i 2 x y\hspace{3cm}\text{Imaginary part (v)}, 2 x y
+	\end{align*}
+\subsection{Existance of $\lim _{z \rightarrow z_{0}} f(z)$ :}
+		The limit will exists only if the limiting value is independent of the path along which $z$ approaches $z_0$
+	\begin{exercise}
+		Find whether the limit $\lim _{z \rightarrow 0} \frac{z}{|z|}$ exist or not.
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		z \rightarrow 0\text{ means }&x \rightarrow 0 \& y \rightarrow 0\\
+		\text{	For }\mathrm{z}&=0,\text{ we have to choose a path passing through a origin.}
+	\intertext{	Therefore, we have choosen a straight line passing through the origin i.e. $y=m x$}
+		\lim _{z \rightarrow 0} \frac{z}{|z|}&=\lim _{\substack{z \rightarrow 0 \\ y \rightarrow 0}} \frac{x+i y}{\sqrt{x^{2}+y^{2}}}=\lim _{x \rightarrow 0} \frac{x+i m x}{\sqrt{x^{2}+m^{2} x^{2}}}=\frac{1+i m}{\sqrt{1+m^{2}}}
+		\intertext{Therefore, the limit depends on m i.e. slope of the straight line. Thus, the limiting values is dependent on the path and the limit does not exists.}
+		\end{align*}
+	\end{answer}
+	\begin{exercise}
+		Calculate the vahue $\lim _{z \rightarrow \infty} \frac{i z^{3}+i z-1}{(2 z+3 i)(z-i)^{2}}$
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		\lim _{z \rightarrow \infty} \frac{i z^{3}+i z-1}{(2 z+3 i)(z-i)^{2}}=\lim _{z \rightarrow \infty} \frac{z^{3}\left(i+\frac{i}{z^{2}}-\frac{1}{z^{3}}\right)}{z\left(2+\frac{3 i}{z}\right) z^{2}\left(1-\frac{i}{z}\right)^{2}}=\frac{i}{2}
+		\end{align*}
+	\end{answer}
+	\subsection{Differentiability of Complex Function}
+	\begin{align*}
+	\mathrm{f}^{\prime}(\mathrm{z})&=\underset{\delta \mathrm{z} \rightarrow 0}{\mathrm{Lt}} \frac{[\mathrm{f}(\mathrm{z}+\delta \mathrm{z})-\mathrm{f}(\mathrm{z})]}{\delta \mathrm{z}}
+\intertext{	The function will be differentiable if limit should exists and it is independent of path along with $\delta z \rightarrow 0$.}
+\text{	Ex: }\quad \mathrm{f}(z)&=(4 x+y)+i(4 y-x) \Rightarrow u=(4 x+y)\text{ and }v=(4 y-x)\\
+	&\Rightarrow f(z+\delta z)=4(x+\delta x)+(y+\delta y)+i[4(y+\delta y)-(x+\delta x)] \\
+	&\Rightarrow f(z+\delta z)-f(z)=4 \delta x+\delta y+i(4 \delta y-\delta x)\\
+	&\Rightarrow \frac{f(z+\delta z)-f(z)}{\delta z}=\frac{4 \delta x+\delta y+i(4 \delta y-\delta x)}{\delta z} \Rightarrow \frac{\delta f}{\delta z}=\frac{4 \delta x+\delta y-i \delta x+4 i \delta y}{\delta x+i \delta y}\\
+	&\text{Along real axis : }\delta x=\delta z, \delta y=0, \Rightarrow \frac{\delta f}{\delta z}=4-i\\
+	&\text{Along imaginary axis : }i \delta y=\delta z, \delta x=0, \Rightarrow \frac{\delta f}{\delta z}=4-i\\
+	&\text{Along a line }: y=x, \delta y=\delta x, \delta z=(1+i) \delta x, \Rightarrow \frac{\delta f}{\delta z}=\frac{5 \delta x+3 i \delta x}{(1+i) \delta \dot{x}}=\frac{5+3 i}{1+i}=4-i
+		\end{align*}
+	\section{Complex Analysis Function}
+	A function $f(z)$ is said to be analytic at a point $z=z_{0}$ if it is single valued and has the derivative at every point in some neighhourhood of $z_{0}$. The function $f(z)$ is said to be analytic in a domain $D$ if it is single valued and is differentiable at every point of domain D.
+	\subsection{Cauchy Reamann Equations}
+	\begin{align*}
+	\intertext{	For a function $f(z)=u+i v$ to be analytic at all points in some region ' $\mathrm{R}$ ', the necessary conditions are:}
+		\frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y} \text { and } \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\\
+		\text{Sufficient Condition: }&\frac{\partial u}{\partial x}, \frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}, \frac{\partial v}{\partial y}\text{ are continuous functions of $x$ and $y$.}\\
+		\text{	Derivative of }\mathrm{f}(\mathrm{z}): f^{\prime}(\mathrm{z})&=\frac{\partial u}{\partial x}+i \frac{\partial v}{\partial x}=\frac{\partial v}{\partial y}-i \frac{\partial u}{\partial y}
+	\end{align*}
+	\begin{exercise}
+		Check whether $f(z)=\sin z$ is analytic or not.
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		&f(z)=\sin z=\sin (x+i y)=\sin x \cdot \cos (i y)+\cos x \cdot \sin (i y)=\sin x \cdot \cosh y+i \cos x \cdot \sinh y\\
+		&\text{Therefore, }u=\sin x \cdot \cosh y\text{ and }v=\cos x.sinhy \\
+		&\frac{\partial u}{\partial x}=\cos x \cdot \cosh y ; \frac{\partial u}{\partial y}=\sin x \cdot \sinh y ; \frac{\partial v}{\partial x}=-\sin x \cdot \sinh y ; \frac{\partial v}{\partial y}=\cos x \cdot \cosh y\\
+		&\text { So, C-R equation is satisfied, given } \mathrm{f}(\mathrm{z}) \text { is analytic. }
+		\end{align*}
+	\end{answer}
+	\begin{exercise}
+		If the real part of a complex analytic function is $u(x, y)=x+\frac{1}{2}\left(x^{2}-y^{2}\right)$, find the corresponding imaginary part.
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial u}{\partial x}=x+1=\frac{\partial v}{\partial y} & \Rightarrow v(x, y)=y+x y+f(x) \\
+		\frac{\partial u}{\partial y}=-y=-\frac{\partial v}{\partial x} & \Rightarrow v(x, y)=x y+g(y)\\
+	\text{	Therefore, the imaginary }&\text{part will be }v(x, y)=y+x y+C
+	\text{	( $C=$ numerical constant )}
+		\end{align*}
+	\end{answer}
+	\begin{exercise}
+		Example-7: If $f(x, y)=(1+x+y)(1+x-y)+a\left(x^{2}-y^{2}\right)-1+2 i y(1-x-a x)$ is a complex analytic function then find the value of ' $a$ '.
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		u(\mathrm{x}, \mathrm{y})&=(1+x+y)(1+x-y)+a\left(x^{2}-y^{2}\right)-1 \quad \Rightarrow \frac{\partial u}{\partial x}=2 x+2+2 a x \\
+		v(x, y)&=2 y(1-x-a x) \quad \Rightarrow \frac{\partial v}{\partial y}=2(1-x-a x)\\
+		\text{According to Cauchy  }&\text{ Reamann equation,}\frac{\partial \mathrm{u}}{\partial \mathrm{x}}=\frac{\partial \mathrm{v}}{\partial \mathrm{y}} \Rightarrow 4 \mathrm{x}=-4 \mathrm{ax} \Rightarrow \mathrm{a}=-1
+		\end{align*}
+	\end{answer}
+	\begin{exercise}
+		The harmonic conjugate function of $u(x, y)=2 x(1-y)$ corresponding to a complex analytic function $\omega=u(x, y)+i v(x, y)$ is given $v(x, y)=\alpha x^{2}+\beta y+\gamma y^{2}$ (Taking the integration constant to be zero).
+		Which of the following statement is true ?
+		 \begin{tasks}(2)
+			\task[\textbf{a.}]$\alpha-\gamma=\beta$
+			\task[\textbf{b.}]$\alpha+\gamma+\beta=0$
+			\task[\textbf{c.}]$\alpha+\gamma=\beta$
+			\task[\textbf{d.}] $\alpha \gamma \beta=1$.
+		\end{tasks}
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		u(x, y)&=2 x(1-y) \\
+		\Rightarrow \frac{\partial u}{\partial x}&=2(1-y)=\frac{\partial v}{\partial y} \Rightarrow v=2 y-y^{2}+f_{1}(x) \\
+		\Rightarrow \frac{\partial u}{\partial y}&=-2 x=-\frac{\partial v}{\partial x} \Rightarrow v=x^{2}+f_{2}(y)
+		\end{align*}
+			Therefore, the imaginary part of the complex function $v=x^{2}-y^{2}+2 y$ \\Comparing with the question, $\alpha=1, \beta=2, \gamma=-1 \quad \Rightarrow \alpha-\gamma=\beta$
+	\end{answer}
+	So the correct answer is \textbf{option (a)}
+	\subsection{Cauchy Reamann equations in Polar co-ordiantes:}
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial u}{\partial r}&=\frac{1}{r} \frac{\partial v}{\partial \theta} \text { and } \frac{\partial u}{\partial \theta}=-r \frac{\partial v}{\partial r}\\
+		\text{Derivative of }f(z): f^{\prime}(\mathrm{z})&=(\cos \theta-i \sin \theta) \frac{\partial f}{\partial r}=-\frac{i}{r}(\cos \theta-i \sin \theta) \frac{\partial f}{\partial \theta}
+		\end{align*}
+	\end{answer}
+	\subsection{Harmonic Function}
+	Any function which satisfies the Laplace's equation, is known as harmonic function. If $u+i v$ is an analytic function, then $u, v$ are conjugate harmonic functions i.e.
+	$$
+	\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}=0 \text { and } \frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}=0
+	$$
+	\begin{exercise}
+		Find the values of $\mathrm{m}, \mathrm{n}$ such that $f(x, y)=x^{2}+m x y+n y^{2}$ is harmonic in nature.
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		\text { Since, } \frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{d y^{2}}=0 \Rightarrow 2 n+2=0 \Rightarrow n=-1 ;^{\prime} m^{\prime} \text { can take any value. }
+		\end{align*}
+	\end{answer}
+	\subsection{Method for Finding Conjugate Function }
+		\begin{align*}
+		\textbf{Case 1: }f(z)&=u+i v,\text{ and $u$ is known.}\\
+		d v&=\frac{\partial v}{\partial x} d x+\frac{\partial v}{\partial y} d y=-\frac{\partial u}{\partial y} d x+\frac{\partial u}{\partial x} d y \Rightarrow v=-\int \frac{\partial u}{\partial y} d x+\int \frac{\partial u}{\partial x} d y\\
+		\textbf{Case 2: }f(z)&=u+i v,\text{ and $v$ is known}\\
+		d u&=\frac{\partial u}{\partial x} d x+\frac{\partial u}{\partial y} d y=\frac{\partial v}{\partial y} d x-\frac{\partial v}{\partial x} d y \Rightarrow u=\int \frac{\partial v}{\partial y} d x-\int \frac{\partial v}{\partial x} d y
+		\end{align*}
+	\begin{exercise}
+		 Find the imaginary part of the complex analytic function whose real part is $u(x, y)=x^{3}-3 x y^{2}+3 x^{2}-3 y^{2}+1$
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		&\frac{\partial u}{\partial x}=3 x^{2}-3 y^{2}+6 x=\frac{\partial v}{\partial y} \Rightarrow v=3 x^{2} y-y^{3}+6 x y+f_{1}(x) \\
+		&\frac{\partial u}{\partial y}=-6 x y-6 y=-\frac{\partial v}{\partial x} \Rightarrow v=3 x^{2} y+6 x y+f_{2}(y) \\
+		&v(x, y)=3 x^{2} y-y^{3}+6 x y+C
+		\end{align*}
+	\end{answer}
+	\subsection{Milne-Thomson Method : (To find Analytic function if either ' $u$ ' or ' $v$ ' is given)}
+	\begin{align*}
+\textbf{	Case 1:}&\text{ When 'u' is given,}\\
+	&\text{(1) Find }\frac{\partial u}{\partial x}=\phi_{1}(x, y) \text{and }\frac{\partial u}{\partial y}=\phi_{2}(x, y)\\
+	&\text{(2) Replace }\text{$x$ by $z$ and $y$ by 0 in $\phi_{1}(x, y)$ and $\phi_{2}(x, y)$ to get $\phi_{1}(z, 0)$ and $\phi_{2}(z, 0)$.}\\
+	&\text{(3) Find }f(z)=\int\left\{\phi_{1}(z, 0)-i \phi_{2}(z, 0)\right\} d z+c\\
+\textbf{	Case 2: }&\text{When ' $v$ ' is given,}\\
+&\text{	(1) Find }\frac{\partial v}{\partial x}=\psi_{2}(x, y)\text{ and }\frac{\partial v}{\partial y}=\psi_{1}(x, y)\\
+&\text{(2) Replace }\text{$x$ by $z$ and $y$ by 0 in $\psi_{1}(x, y)$ and $\psi_{2}(x, y)$ to get $\psi_{1}(z, 0)$ and $\psi_{1}(z, 0)$.}\\
+&\text{(3) Find }f(z)=\int\left\{\psi_{1}(z, 0)+i \psi_{2}(z, 0)\right\} d z+c
+	\end{align*}
+	\begin{exercise}
+		Find the analytical function whose imaginary part is $v(x, y)=e^{x}(x \cos y-y \sin y)$
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		\frac{\partial v}{\partial x}=e^{x}(x \cos y-y \sin y)+e^{x} \cos y=\Psi_{2}(x, y) \quad& \Rightarrow \frac{\partial v}{\partial y}=-e^{x} x \sin y-e^{x}(\sin y+y \cos y)=\Psi_{1}(x, y) \\
+		\Psi_{1}(z, 0)=0 \text { and } \Psi_{1}(z, 0)=e^{z} z+e^{z} \quad& \Rightarrow f(z)=\int 0+i\left[e^{z} z+e^{z}\right] d z=i z e^{z}+C
+		\end{align*}
+	\end{answer}
+	\begin{exercise}
+		 If the real part of a complex analytic function $\mathrm{f}(\mathrm{z})$ is given as, $u(x, y)=e^{-2 x y} \sin \left(x^{2}-y^{2}\right)$, then $\mathrm{f}(\mathrm{z})$ can be written as
+		 \begin{tasks}(2)
+			\task[\textbf{a.}]$i e^{i^{2}}+C$
+			\task[\textbf{b.}] $-i e^{i x^{2}}+C$
+			\task[\textbf{c.}] $-i e^{-i z^{2}}+C$
+			\task[\textbf{d.}] $i e^{-i i^{2}}+C$
+		\end{tasks}
+	\end{exercise}
+	\begin{answer}
+		\begin{align*}
+		u(x, y)&=e^{-2 x y} \sin \left(x^{-2}-y^{2}\right) \\
+		\Rightarrow \frac{\partial u}{\partial x}&=e^{-2 x y}(-2 y) \sin \left(x^{2}-y^{2}\right)+e^{-2 x y} \cos \left(x^{2}-y^{2}\right) 2 x=\phi_{1}(x, y) \\
+		\Rightarrow \frac{\partial u}{\partial y}&=e^{-2 x y}(-2 x) \sin \left(x^{2}-y^{2}\right)+e^{-2 x y} \cos \left(x^{2}-y^{2}\right)(-2 y)=\phi_{2}(x, y)\\
+		\therefore \quad \phi_{1}(z, 0) &=\cos z^{2} \cdot 2 z, \phi_{2}(z, 0)=\sin z^{2}(-2 z) \\
+		\therefore \quad f(z) &=\int\left(\cos z^{2} \cdot 2 z-i \sin z^{2} \cdot(-2 z)\right) d z+c=2 \int\left(\cos z^{2}+i \sin z^{2}\right) \cdot z d z+c \\
+		&=2 \int e^{i z^{2}} \cdot z d z+c=-i e^{i z^{2}}+c
+		\end{align*}
+		So the correct answer is \textbf{option (b)}
+	\end{answer}
 \newpage
 \begin{abox}
 	Practise Set-1
