@@ -1,5 +1,5 @@
 \chapter{Maxwell's equations and Conservation laws}
-section{Electrodynamics Before Maxwell}
+\section{Electrodynamics Before Maxwell}
 Till now in electromagnetic theory we found out four equations which contribute to the foundation of Electromagnetic theory, and they are,
 \begin{align*}{2}
 \vec{\nabla} \cdot \vec{E}&=\frac{\rho}{\epsilon_{0}} \quad && \Rightarrow \text { Gauss' Law }  \\
@@ -7,10 +7,10 @@ Till now in electromagnetic theory we found out four equations which contribute 
 \vec{\nabla} \times \vec{E}&=-\frac{\partial \vec{B}}{\partial t} && \Rightarrow \text { Faraday's Law } \\
 \vec{\nabla} \times \vec{B}&=\mu_{0}\left(\vec{J}\right) && \Rightarrow \text { Ampere's Law }
 \end{align*}
-There is a fatal inconsistency in these formulas. It has something to do with the old rule that divergence of curl is always zero $ (\nabla .(\nabla \times E)=0)$. If you apply the divergence to Faraday's law, everything works out: 
+There is a fatal inconsistency in these formulas. It has something to do with the old rule that divergence of curl is always zero $ (\nabla .(\nabla \times \mathbf{E})=0)$. If you apply the divergence to Faraday's law, everything works out: 
 $$\nabla \cdot(\nabla \times \mathbf{E})=\nabla \cdot\left(-\frac{\partial \mathbf{B}}{\partial t}\right)=-\frac{\partial}{\partial t}(\nabla \cdot \mathbf{B})$$
 The left side is zero because divergence of curl is zero; the right side is zero by virtue of Gauss law for magnetism. But when you do the same thing to Ampere's law, you get into trouble:$$\boldsymbol{\nabla} \cdot(\boldsymbol{\nabla} \times \mathbf{B})=\mu_{0}(\boldsymbol{\nabla} \cdot \mathbf{J})$$ The left side must be zero, but the right side, in general, is not. For steady currents, the divergence of $\mathbf{J}$ is zero, but evidently when we go beyond magnetostatics Ampère's law cannot be right.
-\subsection{How Maxwell Fixed Ampère's Law}
+\subsection{How Maxwell Fixed Ampere's Law}
 Applying the continuity equation  and Gauss's law, in  Ampere's law the offending term can be rewritten as:
 \begin{align*}
 \nabla \cdot \mathbf{J}&=-\frac{\partial \rho}{\partial t}\\
@@ -21,11 +21,11 @@ Just as a changing magnetic field induces an electric field (Faraday's law), so 
 
 \hspace{5.10cm}\framebox{
 	
-	\parbox[t][1.5cm]{4cm}{
+	\parbox[t][2cm]{4cm}{
 		
 		\addvspace{0.2cm} \centering 
-		Displacement Current\\\vspace{0.2cm}
-		$\mathbf{J}_{d} \equiv \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$} 
+		Displacement Current
+		$$\mathbf{J}_{d} \equiv \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$$} 
 }
 \\\\ It's a misleading name, since $\epsilon_{0}(\partial \mathbf{E} / \partial t)$ has nothing to do with current, except that it adds to $\mathbf{J}$ in Ampère's law.
 \subsection{Maxwell's Equations}
@@ -117,10 +117,10 @@ In integral form Maxwell's equations in matter can be written as\\
 $P$ is the closed loop enclosing the surface $S$
 \section{Boundary conditions}
 In general the fields \textbf{E,B,D,} and \textbf{H} will be discontineous at a boundary between two different media or at surface that carries charge density $\sigma$ or current density \textbf{K}. The explicit form of the discontinities can be deduced from Maxwell's equations,in their integral form\\\\
-(i) $\oint_s \mathbf{D} \cdot d \mathbf{a}=Q_{f_{\mathrm{enc}}}$\\
-(ii) $\oint_s \mathbf{B} \cdot d \mathbf{a}=0$\\
-$\left.\begin{array}{l|l}\text { (iii) } \oint_l \mathbf{E} \cdot d \mathbf{l} & =-\frac{d}{d t} \int_s \mathbf{B} \cdot d \mathbf{a} \\ 
-\text { (iv) } \oint_l \mathbf{H} \cdot d \mathbf{l} & =I_{f_{\text {enc }}}+\frac{d}{d t} \int_s \mathbf{D} \cdot d \mathbf{a}\end{array}\right\} \begin{aligned}&\text { for any surface } s \\&\text { bounded by the } \\&\text { closed loop } l .\end{aligned}$\\
+$\left. \right. $\hspace{0.28cm} (i) $\oint_s \mathbf{D} \cdot d \mathbf{a}=Q_{f_{\mathrm{enc}}}$\\\\
+$\left. \right. $\hspace{0.3cm}(ii) $\oint_s \mathbf{B} \cdot d \mathbf{a}=0$\\\\
+$\left.\begin{array}{ll}\text { (iii) } \oint_l \mathbf{E} \cdot d \mathbf{l} & =-\frac{d}{d t} \int_s \mathbf{B} \cdot d \mathbf{a} \\ \\
+\text { (iv) } \oint_l \mathbf{H} \cdot d \mathbf{l} & =I_{f_{\text {enc }}}+\frac{d}{d t} \int_s \mathbf{D} \cdot d \mathbf{a}\end{array}\right\} \begin{aligned}&\text { for any surface } s \\&\text { bounded by the } \\&\text { closed loop } l .\end{aligned}$\\\\
 Applying (i) to a tiny, wafer-thin Gaussian pillbox extending just slightly into the material on either side of the boundary, we obtain \\
 \begin{figure}[H]
 	\centering
@@ -150,35 +150,44 @@ Where $I_{f_{enc}}$ is the free current passing through the Amperian loop.No vol
 $$I_{f_{enc}}=K_f \cdot (\hat{n}\times L)=(K_f\times \hat{n})\cdot L$$
 And hence $$H_1^{\parallel}-H_2^{\parallel}=K_f\times \hat{n}$$
 So the parallel components  H are discontinuous by an amount proportional to the free surface charge density.\\
-In the case of linear media they can be expressed in terms of E and B alone \\\\
-(i) $\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=\sigma_{f}$,\\
-(iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$,\\
-(ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
-(iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=\mathbf{K}_{f} \times \hat{\mathbf{n}}$.\\\\
-In particular, if there is no free charge or free current at the interface, then \\\\
-(i) $\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=0$,\\
-(iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$\\
-(ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
-(iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=0$.
+In the case of linear media they can be expressed in terms of E and B alone 
+
+\begin{enumerate}[label=(\roman*)]
+	\item $\epsilon_{1} \mathbf{E}_{1}^{\perp}-\epsilon_{2} \mathbf{E}_{2}^{\perp}=\sigma_{f}$
+	\item  $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$
+	\item $\mathbf{B}_{1}^{\perp}-\mathbf{B}_{2}^{\perp}=0$
+	\item $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=\mathbf{K}_{f} \times \hat{\mathbf{n}}$
+\end{enumerate}
+
+In particular, if there is no free charge or free current at the interface, then 
+\begin{enumerate}[label=(\roman*)]
+	\item $\epsilon_{1} \mathbf{E}_{1}^{\perp}-\epsilon_{2} \mathbf{E}_{2}^{\perp}=0$
+	\item $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$
+	\item $\mathbf{B}_{1}^{\perp}-\mathbf{B}_{2}^{\perp}=0$
+	\item $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=0$
+\end{enumerate}
+
 \section{Scalar and vector potentaial}
-Maxwell's equations are\\
-(i) $\boldsymbol{\nabla} \cdot \mathbf{E}=\frac{1}{\epsilon_{0}} \rho$,\\
-(iii) $\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$,\\
-(ii) $\boldsymbol{\nabla} \cdot \mathbf{B}=0$,\\
-(iv) $\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$.\\
+Maxwell's equations are
+\begin{enumerate}[label=(\roman*)]
+	\item $\boldsymbol{\nabla} \cdot \mathbf{E}=\frac{1}{\epsilon_{0}} \rho$
+	\item $\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$
+	\item $\boldsymbol{\nabla} \cdot \mathbf{B}=0$
+	\item $\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$
+\end{enumerate}
 If $\rho(r,t)$ and $J(r,t)$ are bnown electric and magnetic field can be find out using Gauss's law and Bio-savart law.It is difficult to find E ans B if they are time dependant.To solve this problem first we are going to represents the fields in terms of potentials electric potential V and magnetic potential B.\\
-In the static case $\nabla \times E=0$ So electric field cane written as a negative gradient of some scalar quandity called electric potential V\\
+In the static case $\nabla \times \mathbf{E}=0$ So electric field cane written as a negative gradient of some scalar quandity called electric potential V\\
 $$E=-\nabla V$$(not possible in elctrodynamics)\\
 But $\nabla \cdot B=0$ always.Which gives \\
 $$B=\nabla\times A$$
  Where A is the magnetic vector potential.Putting this value in 
 $$\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$$
 We will get \\
-$$\nabla \times E=\frac{-\partial }{\partial t}(\nabla \times A)$$
-$$\nabla \times \left( E+\frac{\partial A}{\partial t}\right) =0$$
+$$\nabla \times \mathbf{E}=\frac{-\partial }{\partial t}(\nabla \times A)$$
+$$\nabla \times \left( \mathbf{E}+\frac{\partial A}{\partial t}\right) =0$$
 Again the curl of something become zero. so it can be written as negative gradient of potential
-$$E+\frac{\partial A}{\partial t}=-\nabla V$$
-$$E=-\nabla V-\frac{\partial A}{\partial t}$$
+$$\mathbf{E}+\frac{\partial A}{\partial t}=-\nabla V$$
+$$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$
 \begin{center}
 	\framebox{
 		\parbox[t][3cm]{3cm}{
@@ -187,17 +196,17 @@ $$E=-\nabla V-\frac{\partial A}{\partial t}$$
 			
 			\begin{align*}
 			\begin{array}{lll}
-			$$B=\nabla\times A$$\\
-			$$E=-\nabla V-\frac{\partial A}{\partial t}$$
+			$$\mathbf{B}=\nabla\times A$$\\
+			$$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$
 			\end{array}
 			\end{align*}} }
 \end{center}
 If A and V are known we can find electric and magnetic field with these two equations.
 
-Putting this equation $$E=-\nabla V-\frac{\partial A}{\partial t}$$  in Gauss's law
+Putting this equation $$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$  in Gauss's law
 we will get,\\
 $$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$$
-Putting $B=\nabla\times A$  equation in Ampere/Maxwell's law and rearranging we will get,\\
+Putting $\mathbf{B}=\nabla\times A$  equation in Ampere/Maxwell's law and rearranging we will get,\\
 $$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$ 
 
 These two equations contain all information in the Maxwell's equations.\\
@@ -315,7 +324,7 @@ This power represent a convertion of electromagnetic energy to mechanical or the
 \begin{align*}
 \int_{V} J \cdot E d ^3 x&=\int_{V}\left[E \cdot(\nabla x H)-E \cdot \frac{\partial D}{\partial F}\right] d{ }^{3} x\\
 \text{using the vector identity}&\\
-\nabla \cdot(E \times H)&=H \cdot(\nabla \times E)-E \cdot(\nabla \times H)\\
+\nabla \cdot(E \times H)&=H \cdot(\nabla \times \mathbf{E})-E \cdot(\nabla \times H)\\
 \because \quad \int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V} \bar{V} \cdot(E \times M)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t} \\
 \int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V}\left[\nabla \cdot(E \times H)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t}\right] d^{3} x
 \end{align*}
@@ -382,7 +391,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 	\begin{tasks}(1)
 		\task[\textbf{a.}]Find the amplitude of the displacement current density between the plates.
 		\task[\textbf{b.}]
-		(b) Find the r.m.s value of the displacement current density between the plates.
+		 Find the r.m.s value of the displacement current density between the plates.
 		\task[\textbf{c.}]Find the average value of the displacement current density (in $\mathrm{mA} / \mathrm{m}^{2}$ ) between the plates.
 	\end{tasks}
 	\begin{figure}[H]
@@ -396,7 +405,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 
 \newpage
 \begin{abox}
-Practise Set-2
+Practise Set-1
 \end{abox}
 \begin{enumerate}
 	\item  For constant uniform electric and magnetic field $\vec{E}=\vec{E}_{0}$ and $\vec{B}=\vec{B}_{0}$, it is possible to choose a gauge such that the scalar potential $\phi$ and vector potential $\vec{A}$ are given by
@@ -474,26 +483,26 @@ Practise Set-2
 	\item A current $i_{p}$ flows through the primary coil of a transformer. The graph of $i_{p}(t)$ as a function of time $t$ is shown in the figure below.\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20211011(27)-crop}
+		\includegraphics[height=3cm,width=4cm]{diagram-20211011(27)-crop}
 	\end{figure}
 	Which of the following graphs represents the current $i_{S}$ in the secondary coil?
 	{\exyear{NET/JRF(JUNE-2014)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] \begin{figure}[H]
 			\centering
-			\includegraphics[height=3cm,width=5cm]{diagram-20211011(28)-crop}
+			\includegraphics[height=3cm,width=4cm]{diagram-20211011(28)-crop}
 		\end{figure}
 		\task[\textbf{B.}] \begin{figure}[H]
 			\centering
-			\includegraphics[height=3cm,width=5cm]{diagram-20211011(29)-crop}
+			\includegraphics[height=3cm,width=4cm]{diagram-20211011(29)-crop}
 		\end{figure}
 		\task[\textbf{C.}] \begin{figure}[H]
 			\centering
-			\includegraphics[height=3cm,width=5cm]{diagram-20211011(30)-crop}
+			\includegraphics[height=3cm,width=4cm]{diagram-20211011(30)-crop}
 		\end{figure}
 		\task[\textbf{D.}] \begin{figure}[H]
 			\centering
-			\includegraphics[height=3cm,width=5cm]{diagram-20211011(31)-crop}
+			\includegraphics[height=3cm,width=4cm]{diagram-20211011(31)-crop}
 		\end{figure}
 	\end{tasks}
 	\item Suppose the $y z$-plane forms a chargeless boundary between two media of permittivities $\epsilon_{\text {left }}$ and $\epsilon_{\text {right }}$ where $\epsilon_{\text {left }}: \epsilon_{\text {right }}=1: 2$, if the uniform electric field on the left is $\vec{E}_{\text {left }}=c(\hat{i}+\hat{j}+\hat{k})$ (where $c$ is a constant), then the electric field on the right $\vec{E}_{\text {right }}$ is
