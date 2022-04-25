@@ -354,6 +354,90 @@ diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{
 	\end{align*}
 	So the correct answer is \textbf{option (c)}
 \end{answer}
+\begin{exercise}
+	$$
+	L(1)=\frac{1}{s}
+	$$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+		L(1)&=\int_{0}^{\infty} 1 \cdot e^{-s t} d t=\left[\frac{e^{-s t}}{-s}\right]_{0}^{\infty}=-\frac{1}{s}\left[\frac{1}{e^{s t}}\right]_{0}^{\infty}=-\frac{1}{s}[0-1]=\frac{1}{s}\\
+		\text{ Hence }L(1)&=\frac{1}{s}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$L\left(t^{n}\right)=\frac{n !}{s^{n+1}}$ where $n$ and $s$ are positive.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	L\left(t^{n}\right)&=\int_{0}^{\infty} e^{-s t} t^{n} d t\\
+	\text{Putting }s t=&x \quad\text{ or }\quad t=\frac{x}{s} \quad\text{ or } \quad d t=\frac{d x}{s}\\
+	\text{Thus we have}\mathrm{L}\left(t^{n}\right)&=\int_{0}^{\infty} e^{-x}\left(\frac{x}{s}\right)^{n} \frac{d x}{s_{r}} \quad \Rightarrow \quad \mathrm{L}\left(t^{n}\right)=\frac{1}{s^{n+1}} \int_{0}^{\infty} e^{-x} \cdot x^{n} d x\\
+	\Rightarrow L\left(t^{n}\right)&=\frac{\sqrt{n+1}}{s^{n+1}} \Rightarrow L\left(t^{n}\right)=\frac{n !}{s^{n+1}}\hspace{2cm}\left[\begin{array}{c}
+	{\left[n+1=\int_{0}^{\infty} e^{-x} \cdot x^{n} d x\right] } \\
+	\text { and } \quad \mid \overline{n+1}=n !
+	\end{array}\right]
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$\mathbf{L}\left(e^{a t}\right)=\frac{1}{s-a}, \quad$ where $s>a$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	L\left(e^{a t}\right) &=\int_{0}^{\infty} e^{-s t} \cdot e^{a t} d t=\int_{0}^{\infty} e^{-s t+a t} \cdot d t \\
+	&=\int_{0}^{\infty} e^{(-s+a) t} \cdot d t=\int_{0}^{\infty} e^{-(s-a) t} \cdot d t=\left[\frac{e^{-(s-a) t}}{-(s-a)}\right]_{0}^{\infty}=-\frac{1}{s-a}\left[\frac{1}{e^{(s-a) t}}\right]_{0}^{\infty}\\
+	&=\frac{-1}{(s-a)}(0-1)=\frac{1}{s-a}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$\mathbf{L}(\cosh a t)=\frac{s}{s^{2}-a^{2}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	L(\cosh a t) &=L\left[\frac{e^{a t}+e^{-a t}}{2}\right] \hspace{4cm}\left(\therefore \cosh a t=\frac{e^{a t}+e^{-a t}}{2}\right)\\
+	&=\frac{1}{2} L\left(e^{a t}\right)+\frac{1}{2} L\left(e^{-a t}\right)=\frac{1}{2}\left[\frac{1}{s-a}+\frac{1}{s+a}\right] \hspace{2cm}\left[\mathrm{L}\left(e^{a t}\right)=\frac{1}{s-a}\right]\\
+	&=\frac{1}{2}\left[\frac{s+a+s-a}{s^{2}-a^{2}}\right]=\frac{s}{s^{2}-a^{2}}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$L(\sinh a t)=\frac{a}{s^{2}-a^{2}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\mathrm{L}(\sinh a t) &=\mathrm{L}\left[\frac{1}{2}\left(e^{a t}-e^{-a t}\right)\right] \\
+	&=\frac{1}{2}\left[L\left(e^{a t}\right)-L\left(e^{-a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-a}-\frac{1}{s+a}\right]=\frac{1}{2}\left[\frac{s+a-s+a}{s^{2}-a^{2}}\right] \\
+	&=\frac{a}{s^{2}-a^{2}}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$L(\sin a t)=\frac{a}{s^{2}+a^{2}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	L(\sin a t)&=L\left[\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\hspace{3cm} \left[\because \sin a t=\frac{e^{i a t}-e^{-i a t}}{2 i}\right]\\
+	&=\frac{1}{2 i}\left[L\left(e^{i a t}-e^{-i a t}\right)\right]=\frac{1}{2 i}\left[L\left(e^{i a t}\right)-L\left(e^{-i a t}\right)\right] \\
+	&=\frac{1}{2 i}\left[\frac{1}{s-i a}-\frac{1}{s+i a}\right]=\frac{1}{2 i} \frac{s+i a-s+i a}{s^{2}+a^{2}}=\frac{1}{2 i} \frac{2 i a}{s^{2}+a^{2}}=\frac{a}{s^{2}+2^{2}}
+	\end{align*}
+\end{answer}
+
+
+
+
+
+
+
+
+
+\begin{exercise}
+	$L(\cos a t)=\frac{s}{s^{2}+a^{2}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	L(\cos a t)&=L\left(\frac{e^{t a t}+e^{-i a t}}{2}\right) \quad\left[\because \cos a t=\frac{e^{i a t}+e^{-i a t}}{2}\right]\\
+	&=\frac{1}{2}\left[\mathrm{~L}\left(e^{i a t}+e^{-i a t}\right)\right]=\frac{1}{2}\left[\mathrm{~L}\left(e^{i a t}\right)+\mathrm{L}\left(e^{i a t}\right)\right]=\frac{1}{2}\left[\frac{1}{s-i a}+\frac{1}{s+i a}\right]=\frac{1}{2} \frac{s+i a+s-i a}{s^{2}+a^{2}}\\
+	&=\frac{s}{s^{2}+a^{2}}
+	\end{align*}
+\end{answer}
 \newpage
 \begin{abox}
 	Practise Set-1
