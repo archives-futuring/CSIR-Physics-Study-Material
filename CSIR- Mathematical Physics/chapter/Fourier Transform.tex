@@ -6,7 +6,7 @@ g(x)=\int_{a}^{b} f(t) K(x, t) d t\label{FT-01}
 \end{equation}
 where it is understood that $a, b$, and $K(x, t)$ (called the kernel) will be the same for all function pairs $f$ and $g$. We can write the relationship expressed in Eq. (\ref{FT-01}) in the more symbolic form
 \begin{equation}
-g(x)=\mathcal{L} f(t)
+g(x)=\mathcal{L}{ f(t)}
 \end{equation}
 thereby emphasizing the fact that Eq. $(\ref{FT-01})$ can be interpreted as an operator equation. The function $g(x)$ is called the integral transform of $f(t)$ by the operator $\mathcal{L}$, with the specific transform determined by the choice of $a, b$, and $K(x, t)$. The operator defined by Eq. (\ref{FT-01}) will be linear:
 \begin{align}
@@ -213,11 +213,8 @@ The Laplace transform may also fail to exist because of a sufficiently strong si
 \begin{equation*}
 \int_{0}^{\infty} e^{-s t} t^{n} d t
 \end{equation*}
-diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{t^{n}\right\}$ does not exist for $n \leq-1$. Since, for two functions $F(t)$ and $G(t)$ for which the integrals exist,
-\begin{equation}
-\mathcal{L}\{a F(t)+b G(t)\}=a \mathcal{L}\{F(t)\}+b \mathcal{L}\{G(t)\}
-\end{equation}
-the operation denoted by $\mathcal{L}$ is linear.\\
+diverges at the origin for $n \leq-1$. The Laplace transform $\mathcal{L}\left\{t^{n}\right\}$ does not exist for $n \leq-1$. 
+
 \subsection{Important Laplace Transforms:}
 \begin{enumerate}
 	\item $L(1)=\frac{1}{s}$
