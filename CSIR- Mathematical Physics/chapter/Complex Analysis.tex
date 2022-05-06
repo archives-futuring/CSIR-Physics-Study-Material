@@ -508,6 +508,49 @@ If a function $\mathrm{f}(\mathrm{z})$ is analytic at all points inside and on a
 	\end{aligned}
 	\end{align*}
 \end{answer}
+\textbf{Laurent Series}\\
+If $\mathrm{f}(\mathrm{z})$ is single valued and analytic on two concentric circles $C_{1}$ and $\mathrm{C}_{2}$ of radii $\mathrm{r}_{1}$ and $\mathrm{r}_{2}\left(\mathrm{r}_{1}>\mathrm{r}_{2}\right)$ with their centers at ' $a$ 'and in the annular region $R$ between them and , then for all $z$ in region ' $R$ ', the function $f(z)$ can expanded as
+\begin{answer}
+	\begin{align*}
+	f(z)&=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}+\sum_{n=1}^{\infty} b_{n}\left(z-z_{0}\right)^{-n} \quad \text { Principal part. }\\
+	\Rightarrow f(z)&=\left[a_{0}+a_{1}(\dot{z}-a)+a_{2}(z-a)^{2}+\ldots\right]+\left[\frac{b_{1}}{z-a}+\frac{b_{2}}{(z-a)^{2}}+\ldots\right]\\
+	\text { where, } \quad a_{\mathrm{n}}&=\frac{1}{2 \pi i} \int_{\mathrm{C}_{1}} \frac{f(z)}{(z-a)^{n+1}} d z \text { and } b_{\mathrm{n}}=\frac{1}{2 \pi i} \int_{\mathrm{C}_{2}} \frac{f(z)}{(z-a)^{-n+1}} d z
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Exapand the function $f(z)=\frac{1}{(z-1)(z-2)}$ in the annulus $z=1$ and $z=2$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	f(z)&=\frac{1}{(z-1)(z-2)}=\frac{1}{(z-2)}-\frac{1}{(z-1)} \text { when } 1<|z|<2, \text { then } \frac{1}{|z|}<1 \quad \& \quad \frac{|z|}{2}<1 \\
+	\therefore \quad f(z)&=\frac{1}{-2\left(1-\frac{z}{2}\right)}-\frac{1}{z\left(1-\frac{1}{z}\right)}=-\frac{1}{2}\left(1-\frac{z}{2}\right)^{-1}-\frac{1}{z}\left(1-\frac{1}{z}\right)^{-1} . \\
+	&=-\frac{1}{2}\left[1+\frac{z}{2}+\left(\frac{z}{2}\right)^{2}+\dots .\right]-\frac{1}{z}\left[1+\frac{1}{z}+\left(\frac{1}{z}\right)^{2}+\ldots . .\right]=-\sum_{n=0}^{\infty} \frac{z^{n}}{2^{n+1}}-\sum_{n=0}^{\infty} \frac{1}{z^{n+1}}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Find the Laurent series of the function $f(z)=\frac{1}{z^{2}(1-z)}$ about $z=0$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	f(z)=\frac{1}{z^{2}(1-z)}=\frac{1}{z^{2}}(1-z)^{-1}=\frac{1}{z^{2}}\left(1+z+z^{2}+\ldots . .\right)=\frac{1}{z^{2}}+\frac{1}{z}+1+z+z^{2}+\ldots \ldots . .
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Expand $\frac{1}{z^{2}-3 z+z}$ for (i) $0<|z|<1$
+	(ii) $1<12<2$
+	(iii) $|\mathrm{z}|>2$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\frac{1}{z^{2}-3 z+2}&=\frac{1}{(z-1)(z-2)}=\frac{1}{(z-2)}-\frac{1}{(z-1)}\\
+	(i) 0<|\mathrm{z}|<1: f(z)
+	&=\frac{1}{-2\left(1-\frac{z}{2}\right)^{-1}}-\frac{1}{-1(1-z)}=-\frac{1}{2}\left(1-\frac{z}{2}\right)^{-1}+(1-z)^{-1}=\frac{-1}{2} \sum_{n=0}^{\infty}\left(\frac{z}{2}\right)^{n}+\sum_{n=0}^{\infty} z^{n}\\
+	(ii) 1<\mathrm{z}<2 \quad\text{ then }&\frac{1}{|z|}<1, \frac{|z|}{2}<1\\
+	\therefore \quad f(z)&=-\frac{1}{2}\left(1-\frac{z}{2}\right)^{-1}-\frac{1}{z}\left(1-\frac{1}{z}\right)^{-1}=-\frac{1}{2}\left(1+\frac{z}{2}+\frac{z^{2}}{4}+\ldots . .\right)-\frac{1}{z}\left(1+\frac{1}{z}+\frac{1}{z^{2}}+\ldots . .\right)\\
+\text{	(iii) $|z|>2$  then}&\text{ $\frac{2}{|z|}<1$, so that $\frac{1}{|z|}<1$}\\
+	\therefore \quad f(z)&=\frac{1}{z}\left(1-\frac{2}{z}\right)^{-1}-\frac{1}{z}\left(1-\frac{1}{z}\right)^{-1}=\frac{1}{z}\left(1+\frac{2}{z}+\frac{4}{z^{2}}+\ldots \ldots \ldots\right)-\frac{1}{z}\left(1+\frac{1}{z}+\frac{1}{z^{2}}+\ldots \ldots \ldots .\right)
+	\end{align*}
+\end{answer}
 
 
 
