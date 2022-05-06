@@ -157,6 +157,7 @@ $\begin{array}{ll}\bullet\quad\sin i x=i \sinh x & \bullet\quad \sinh i x=i \sin
 	\ln (1+x)&=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\ldots \\
     \tan ^{-1}(x)&=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\frac{x^{7}}{7}+\ldots
 	\end{align*}
+	\end{note}
 	\section{Function of a Complex Variable}
 	\subsection{Basic Representation}
 	\begin{align*}
@@ -334,6 +335,183 @@ $\begin{array}{ll}\bullet\quad\sin i x=i \sinh x & \bullet\quad \sinh i x=i \sin
 		\end{align*}
 		So the correct answer is \textbf{option (b)}
 	\end{answer}
+\textbf{Cauchy's Integral Theorem}\\
+If a funciion $f(z)$ is analytic and its derivative $f^{\prime}(z)$ is continuous at all points inside and on a simple closed curve ' $C$ ', then $\oint_{C} f(z) d z=0$\\
+\textbf{Cauchy's Integral Formula}\\
+\begin{answer}
+	If $f(z)$ is analytic within or on a closed curve $\mathrm{C}$ and if ' $\mathrm{a}$ ' is any point within ${\mathrm{C}}$, where $\frac{f(z)}{z-a}$ is not analytic at $z=a$ then
+	\begin{align*}
+	f(a)&=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{z-a} d z \quad \text { and } f^{\prime}(a)=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{2}} d z\\
+	\text{Similarly, }\qquad f^{\prime \prime}(\mathrm{a})&=\frac{2 !}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{3}} d z \quad\text{ and } \mathrm{f}^{\mathrm{n}}(\mathrm{a})=\frac{n !}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{n+1}} d z
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Evaluate the integral $\frac{1}{2 \pi i} \oint \frac{z e^{z}}{(z-a)^{3}}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\frac{1}{2 \pi i} \oint \frac{z e^{z}}{(z-a)^{3}}=\left.\frac{1}{2 \pi i} 2 \pi i \frac{1}{2 !} \frac{d^{2}}{d z^{2}}\left(z e^{z}\right)\right|_{z=a}=\frac{a e^{a}+2 e^{a}}{2}=\frac{1}{2}(a+\dot{2}) e^{a}
+	\end{align*}
+\end{answer}
+\textbf{Power Series Expansion of Complex Function}\\
+\textbf{Power Series}\\
+\begin{answer}
+	\begin{align*}
+	\intertext{Every analytic function which is analytic at $z=z_{0}$ can be expanded into power series about $z=z_{0}$.}
+	f(z)&=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\ldots \ldots\\
+	\text{where, $z_{0}$ is }&\text{the centre of power series.}
+\intertext{	For every power series there are three possibilities regarding the region of convergence of power series.} \\
+\text{(i) The series converges}&\text{ within a disc}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Example:
+	$\sum_{n=0}^{\infty} z^{n}=1+z+z^{2}+\ldots \ldots$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\sum_{n=0}^{\infty} z^{n}&=1+z+z^{2}+\ldots \ldots\\
+	\text{This series converges}&\text{ within the circle $|z|=1$}\\
+	\text{(ii) The power series }&\text{converges in the whole complex plane.}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Example : $\sum_{n=0}^{\infty} \frac{z^{n}}{n !}=1+z+\frac{z^{2}}{2 !}+\frac{z^{3}}{3 !}+\ldots \ldots$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\left|\frac{t_{n+1}}{t_{n}}\right|&=\left|\frac{z^{n+1}}{(n+1) !} \frac{n !}{z^{n}}\right|=\frac{|z|}{n+1}=0
+	\text{ when }n \rightarrow \infty\\
+	\text{This series converges for any value of }&\text{$\mathrm{z}$ as it is zero as $n \rightarrow \infty$.}\\
+	\text{(iii) The power series converges }&\text{for a particular values of $\mathrm{z}$.}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	$\sum_{n=0}^{\infty} n ! z^{n}=1+z+2 z^{2}+6 z^{3}+$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\left|\frac{t_{n+1}}{t_{n}}\right|=\left|\frac{(n+1) ! z^{n+1}}{n ! z^{n}}\right|=(n+1)|z|\\
+	\text{When }n \rightarrow \infty(n+1)|z|&=\infty\text{ series diverges but at }\mathrm{z}=0(n+1)|z|=0\\
+	 \text{Therefore, series converges only at }\mathrm{z}=0
+	\end{align*}
+\end{answer}
+\textbf{Radius of Convergence of Power Series}\\
+Consider a circle of centre $z_{0}$ and radius $r$ i.e. $\left|z-z_{0}\right|=R$
+The power series is convergent in the region $\left|z-z_{0}\right|<R$ (i.e. within the circle) and divergent $\left|z-z_{0}\right|>R$\\ (outside the circle). Therefore, $R$ is known as the radius of convergence of power series and defined as\\
+$$R=\lim _{n \rightarrow \infty}\left|\frac{a_{n}}{a_{n+1}}\right|$$
+\begin{exercise}
+	Calculate the radius of convergence and region of convergence for the following power series
+	$$
+	\sum_{n=0}^{\infty} \frac{(2 n+3)}{(2 n+5)(n+5)} z^{n}
+	$$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	R&=\lim _{n \rightarrow \infty}\left|\frac{2 n+3}{(2 n+5)(n+5)} \frac{(2(n+1)+5)(n+1+5)}{2(n+1)+3}\right|=\lim _{n \rightarrow \infty}\left|\frac{\left(2+\frac{3}{n}\right)\left(2+\frac{7}{n}\right)\left(1+\frac{6}{n}\right)}{\left(2+\frac{5}{n}\right)\left(1+\frac{5}{n}\right)\left(2+\frac{5}{n}\right)}\right|=1
+	\end{align*}
+	Region of convergence $|z|<1$\\
+	This series is convergent within a circle of radius 1 and centre $(0,0)$.
+\end{answer}
+\begin{exercise}
+	Prove that the series
+	$$
+	1+\frac{a . b}{1 . c} z+\frac{a(a+1) b(b+1)}{1.2 . c(c+1)} z^{2}+\ldots . .
+	$$
+	\text { has unit radius of convergence. }
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+\text{	Neglecting the first term,}\\
+	a_{n}&=\frac{a(a+1) . .(a+n-1) b(b+1) \ldots(b+n-1)}{1.2 \ldots n \cdot c(c+1) \ldots(c+n-1)} \\
+	a_{n+1}&=\frac{a(a+1) \ldots(a+n-1)(a+n)(b+1) \ldots(b+n-1)(b+n)}{1.2 \ldots n(n+1) c(c+1) \ldots .(c+n-1)(c+n)}\\
+\text{	Dividing,} \frac{a_{n+1}}{a_{n}}&=\frac{(n+a)(n+b)}{(n+1)(c+n)}=\frac{\left(1+\frac{a}{n}\right)\left(1+\frac{b}{n}\right)}{\left(1+\frac{1}{n}\right)\left(1+\frac{c}{n}\right)}\\
+	\frac{1}{R}&=\lim _{n \rightarrow \infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\frac{(1+0)(1+0)}{(1+0)(1+0)}=1 \text { or } R=1
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Find the radius of convergence of the series
+	$$
+	\frac{z}{2}+\frac{1.3}{2.5} z^{2}+\frac{1.3 .5}{2.5 .8} z^{3}+\ldots \ldots .
+	$$
+\end{exercise}
+\begin{answer}
+	The coefficient of $z^{n}$ of the given power series is given by
+	\begin{align*}
+	a_{n}&=\frac{1.3 .5 \ldots(2 n-1)}{2.5 .8 \ldots(3 n-1)} \\
+	a_{n+1}&=\frac{1.3 .5 \ldots(2 n-1)(2 n+1)}{25.8 \ldots(3 n-1)(3 n+2)}\\
+	\text{So }\frac{a_{n+1}}{a_{n}}&=\frac{2 n+1}{3 n+2}=\frac{2}{3} \cdot \frac{\left(1+\frac{1}{2 n}\right)}{\left(1+\frac{2}{3 n}\right)}\\
+	\text{Therefore,}\quad
+	\frac{1}{R}&=\lim _{n \rightarrow \infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\frac{2}{3} \cdot \frac{(1+0)}{(1+0)}=\frac{2}{3} \Rightarrow R=\frac{3}{2}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	 Find the domain of convergence of the following series:\\
+	$$\text{(i) } \sum_{n=1}^{\infty} \frac{1.3 .5 \ldots(2 n-1)}{n !}\left(\frac{1-z}{z}\right)^{n}\qquad
+	\text{(ii) }\sum_{n=1}^{\infty}\left(\frac{i z-1}{2+i}\right)^{n}$$
+\end{exercise}
+\begin{answer}
+	(i) We apply the transformation $\frac{1}{z}=\varsigma$. Then the given series takes the form
+	\begin{align*}
+	&\sum_{n=1}^{\infty} \frac{1.3 .5 \ldots .(2 n-1)}{n !}(\varsigma-1)^{n}\\
+	\text{Here, }\quad a_{n}&=\frac{1.3 .5 \ldots(2 n-1)}{n !}\\
+	a_{n+1}&=\frac{1.3 .5 \ldots(2 n-1) \cdot(2 n+1)}{(n+1) !}\\
+	\text { Then, } \frac{a_{n+1}}{a_{n}}&=\frac{(2 n+1) n !}{(n+1) !}=\frac{2 n+1}{n+1}=\frac{2\left(1+\frac{1}{2 n}\right)}{\left(1+\frac{1}{n}\right)} \text {. }\\
+	\frac{1}{R}&=\lim _{n \rightarrow \infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\frac{2(1+0)}{(1+0)}=2 \quad \Rightarrow R=\frac{1}{2}\\
+	&\text { The domain of convergence is given by }\\
+	|\varsigma-1|<\frac{1}{2} &\Rightarrow\left|\frac{1}{z}-1\right|<\frac{1}{2} \\
+	&\Rightarrow  2|1-z|<|z| \Rightarrow 4|1-z|^{2}=|z|^{2} \\
+	&\Rightarrow  4(1-z)(1-\bar{z})<z \bar{z} \Rightarrow 3 z \bar{z}-4(z+\bar{z})+4<0 \\
+	&\Rightarrow  z \bar{z}-\frac{4}{3}(z+\bar{z})+\frac{4}{3}<0 \Rightarrow\left(z-\frac{4}{3}\right)\left(\bar{z}-\frac{4}{3}\right)<\left(\frac{4}{3}\right)^{2}-\frac{4}{3}=\frac{4}{9}\\
+	&\Rightarrow \quad\left|z-\frac{4}{3}\right|^{2}=\left(\frac{2}{3}\right)^{2} \quad \Rightarrow\left|z-\frac{4}{3}\right|<\frac{2}{3}
+	\intertext{This shows that the series is convergent inside the circle of radius $\frac{2}{3}$ and centre at $z=\frac{4}{3}$}\\
+&\text{	(ii) We have}\\
+	&\sum_{n=1}^{\infty}\left(\frac{i z-1}{2+i}\right)^{n}=\Sigma u_{n}(z), s a y \\
+	u_{n}&=\left(\frac{i z-1}{2+i}\right)^{n}, u_{n+1}=\left(\frac{i z-1}{2+i}\right)^{n+1} .\\
+\text{	Then, }
+	\frac{u_{n}+1}{u_{n}}&=\frac{i z-1}{2+i} \text { so that }\left|\frac{u_{n+1}}{u_{n}}\right|=\left|\frac{i z-1}{2+i}\right| \\
+	\lim _{n \rightarrow \infty}\left|\frac{u_{n+1}}{u_{n}}\right|&=\frac{|i| \cdot|z+i|}{\sqrt{5}}=\frac{|z+i|}{\sqrt{5}}\\
+	\text{The series is convergent if}\\
+	& \left|\frac{u_{n+1}}{u_{n}}\right|<1 \\
+	\text { or if } \quad & \frac{|z+i|}{\sqrt{5}}<1 \text { or }|z+i|<5
+	\intertext{This proves that the given series is convergent for a set of values $z$ which lie inside the circle ofradius $\sqrt{5}$ and centre at $z=-i$.}
+	\end{align*}
+\end{answer}
+\textbf{Taylor Series Expansion}\\
+If a function $\mathrm{f}(\mathrm{z})$ is analytic at all points inside and on a circle $C$, with its center at the point ' $a$ ' and radius ' $r$ ', then at each point $z$ inside $C$, the function $f(z)$ can be expanded as
+\begin{align*}
+	f(z) &=f(a)+\frac{f^{\prime}(a)}{1 !}(z-a)+\frac{f^{\prime \prime}(a)}{2 !}(z-a)^{2}+\ldots .+\frac{f^{n}(a)}{n !}(z-a)^{n}+\ldots \\
+	& \Rightarrow f(z)=\sum_{n=0}^{\infty} \frac{f^{n}\left(z_{0}\right)}{n !}\left(z-z_{0}\right)^{n}
+\end{align*}
+\begin{exercise}
+	Expand the function $f(x)=\sin x$ about the point $x=\frac{\pi}{4}$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	f(x) &=f\left(\frac{\pi}{4}\right)+\left(x-\frac{\pi}{4}\right) f^{\prime}\left(\frac{\pi}{4}\right)+\frac{1}{2 !}\left(x-\frac{\pi}{4}\right)^{2} f^{\prime \prime}\left(\frac{\pi}{4}\right)+\ldots \ldots \\
+	&=\frac{1}{\sqrt{2}}+\left(x-\frac{\pi}{4}\right) \cos \frac{\pi}{4}+\frac{\left(x-\frac{\pi}{4}\right)^{2}}{2 !}\left(-\sin \frac{\pi}{4}\right)+\ldots \ldots .\\
+	\quad&=\frac{1}{\sqrt{2}}+\left(x-\frac{\pi}{4}\right) \frac{1}{\sqrt{2}}-\frac{1}{2}\left(x-\frac{\pi}{4}\right)^{2} \frac{1}{\sqrt{2}}-\frac{1}{6}\left(x-\frac{\pi}{4}\right)^{3} \frac{1}{\sqrt{2}}+\ldots . . \\
+	f(x)&=\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}}\left(x-\frac{\pi}{4}\right)-\frac{1}{2 \sqrt{2}}\left(x-\frac{\pi}{4}\right)^{2}-\frac{1}{6 \sqrt{2}}\left(x-\frac{\pi}{4}\right)^{3}+\ldots .
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Expand the function $\ln (\cosh x)$ about the point $x=0$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\begin{aligned}
+	f(x)&=f(0)+(x-0) f^{\prime}(0)+\frac{1}{2 !}(x-0)^{2} f^{\prime \prime}(0)+\ldots \ldots \\
+	f^{\prime}(x)&=\frac{1}{\cosh x} \cdot \sinh x=\tanh x, f^{\prime \prime}(x)=\sec h^{2} x \\
+	f^{\prime \prime \prime}(x)&=2 \operatorname{sech} x(-\operatorname{sech} x \tanh x)=-2 \sec h^{2} x \tanh x \\
+	f^{\prime \prime \prime}(x)&=4 \operatorname{sech} h^{2} x \cdot \tanh ^{2} x-2 \sec h^{4} x\\
+	\text { Therefore, } f(x)&=0+0+\frac{x^{2}}{2}+0-\frac{x^{4}}{12}+\ldots \ldots=\frac{x^{2}}{2}-\frac{x^{4}}{12}+\ldots . .
+	\end{aligned}
+	\end{align*}
+\end{answer}
+
+
+
+
 \newpage
 \begin{abox}
 	Practise Set-1
