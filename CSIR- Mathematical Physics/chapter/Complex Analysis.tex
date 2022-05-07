@@ -551,6 +551,178 @@ If $\mathrm{f}(\mathrm{z})$ is single valued and analytic on two concentric circ
 	\therefore \quad f(z)&=\frac{1}{z}\left(1-\frac{2}{z}\right)^{-1}-\frac{1}{z}\left(1-\frac{1}{z}\right)^{-1}=\frac{1}{z}\left(1+\frac{2}{z}+\frac{4}{z^{2}}+\ldots \ldots \ldots\right)-\frac{1}{z}\left(1+\frac{1}{z}+\frac{1}{z^{2}}+\ldots \ldots \ldots .\right)
 	\end{align*}
 \end{answer}
+\textbf{Singularity of Complex Function}\\
+\textbf{Singular Point of an Analytic Function}\\\\
+A point at which the function ceases to be analytic.\\
+Example: $f(z)=\frac{1}{(z-2)}$ has a singularity at $\mathrm{z}=2$.\\
+Different kinds of singularities exist. These are:\\
+\textbf{Isolated Singularity}\\
+A point $\mathrm{z}=\mathrm{z}_{0}$ is said to be isolated singularity of $f(z)$ if\\
+(a) $f(z)$ is not analytic at $\mathrm{z}=\mathrm{z}_{0}$\\
+(b) $f(z)$ is analytic in the neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$ i.e. there exists a neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$, containing no other singularity.
+\begin{exercise}
+	(i) Function $f(z)=\frac{1}{z}$ is analytic everywhere except at $\mathrm{z}=0$, therefore $\mathrm{z}=0$ is an isolated singularity.\\
+	(ii) The function $f(z)=\frac{z+2}{(z-1)(z-2)(z-3)}$ has three isolated singularities at $z=1,2$ and 3 .
+\end{exercise}
+\textbf{Non-isolated Singularity}\\
+\begin{align*}
+f(z)&=\frac{1}{\left[\sin \frac{\pi}{z}\right]} \text { is not analytic when } \sin \frac{\pi}{z}=0 \Rightarrow \frac{\pi}{\mathrm{z}}=\mathrm{n} \pi \Rightarrow z=\frac{1}{n}(n=0,1,2,3 \ldots \ldots \ldots \ldots)\\
+\text { Thus, } z&=0 \text { is an non-isolated singularity of } f(z) \text {, surrounded by a infinite number of other singularity } z=\frac{1}{n}\\
+f(z)&=\frac{1}{\sin \pi / z} \text { has non-isolated singularity at } \mathrm{z}=0
+\end{align*}
+\textbf{Types of Isolated Singularity}\\
+\begin{align*}
+\text { If } \mathrm{f}(\mathrm{z}) \text { is an isolated singular point at } \mathrm{z}=\mathrm{a} &\text {, the we can expand } f(\mathrm{z}) \text { about } \mathrm{z}=\mathrm{a} \text { into laurent series as: }\\
+\mathrm{f}(\mathrm{z})=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} \frac{b_{n}}{(z-a)^{n}}&=\left[a_{0}+a_{1}(z-a)+a_{2}(z-a)^{2}+\ldots . .\right]+\left[\frac{b_{1}}{(z-a)}+\frac{b_{2}}{(z-a)^{2}}+\ldots . .\right]
+\text{Therefore, three types of singularity are as follows.}
+\end{align*}
+\textbf{(1) Removable Singularity :} If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$ contains no term i.e. if $b_{n}=0$ for all ' $n$ ', then $\mathrm{f}(\mathrm{z})$ has a removable singularity at $\mathrm{z}=\mathrm{a}$. In this case, Laurent series expansion is $f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}$
+\begin{exercise}
+	Suppose $f(z)=\frac{\sin z}{z}$, then $\lim _{z \rightarrow 0}\left(\frac{\sin z}{z}\right)=1$, therefore, $z=0$ is a removable singularity of $f(z)$.\\
+	Again, $\frac{\sin z}{z}=\frac{1}{z}\left(z-\frac{z^{3}}{3 !}+\ldots \ldots \ldots\right)=1-\frac{z^{2}}{3 !}+\frac{z^{4}}{5 !} \ldots \ldots$\\
+	Since, there is no negative term in the laurent series expansion of $f(z)$ about $z=0$, hence $z=0$ is a removable singularity of $f(z)$.
+\end{exercise}
+\textbf{(2) Non-essential singularity or Pole:} If the principal part of the Laurrent series expansion of $f(z)$ about $z=$ a contains a finite number of terms, saym, i.e. $b_{n}=0$ for all $n>m$, then $f(z)$ has a non-essential singularity or a pole of order ' $m$ ' at $z=a$. A polc of order one is also known as simple pole.\\
+Thus if $\mathrm{z}=\mathrm{a}$ is pole of order mof function $\mathrm{f}(\mathrm{z})$, then $\mathrm{f}(\mathrm{z})$ will have the Laurent series expansion of the form
+$$
+f(z)=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}+\sum_{n=1}^{m} b_{n}\left(z-z_{0}\right)^{-n}
+$$
+Example : $f(z)=\frac{z}{(z-1)(z+2)^{2}}$ has a simple pole at $z=1$ and a pole of order 2 at $z=-2$.\\
+\textbf{(3) Essential singularity: }If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$, contains infinite number of terms i.e. $b_{n} \neq 0$ for infinitely many values of $n$, then $f(z)$ has an essential singularity at $z=a$.\\
+Example : $f(z)=e^{1 / 2}$ has an essential singularity at $z=0$, since the expansion $e^{\frac{1}{z}}=1+\frac{1}{z}+\frac{1}{z^{2}} 2 !+\ldots . .$ is an infinite series of-ve powers of $\mathrm{z}$.\\
+\begin{exercise}
+	Examine the nature of singularity of the functions: (a) $\sin \left(\frac{1}{1-z}\right)$, (b) $(z-3) \sin \left(\frac{1}{z+2}\right)$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text{(a) }&\sin \left(\frac{1}{1-z}\right)=\frac{1}{1-z}-\frac{1}{(1-z)^{3} \cdot 3 !}+\frac{1}{(1-z)^{5} \cdot 5 !}-.
+\text{	so, $z=1$ is an isolated essential singular point.}\\
+\text { (b) }&(z-3) \sin \left(\frac{1}{z+2}\right)=(z-3)\left[\frac{1}{z+2}-\frac{1}{(z+2)^{3} \cdot 3 !}+\frac{1}{(z+2)^{5} .5 !}-\ldots \ldots . .\right] \text { so, } \mathrm{z}=-2 \text { is an isolated }\\
+\text{essential point}
+	\end{align*}
+\end{answer}
+\textbf{Zero of an Analytic Function}\\
+\begin{align*}
+\text{A zero of an analytic}&\text{ function $f(z)$ is a value of $z$ such that $f(z)=0$}\\
+\text{An analytic function $\mathrm{f}(\mathrm{z})$}&\text{ is said to have a zero of order ' $\mathrm{m}$ ' at $\mathrm{z}=\mathrm{z}_{0}$ if $\mathrm{f}(\mathrm{z})$ is expressible as}\\
+f(z)&\left(z-z_{0}\right)^{m} \phi(z)\\
+\text{where $\phi(z)$ is analytic and $\phi\left(z_{0}\right) \neq 0$. }&\text{For $m=1, f(z)$ is said to have a simple zero at $z=z_{0}$}
+\end{align*}
+\textbf{Residue of Complex Fuction}\\
+\textbf{Definition of residue at a pole:}\\
+Let, $\mathrm{z}=$ a be a pole of order ' $m$ ' of $\mathrm{f}(\mathrm{z})$ and $\mathrm{C}_{1}$ is a circle of radius ' $r$ ' with center at $\mathrm{z}=$ a which does not contain singularities except $\mathrm{z}=\mathrm{a}$, then $\mathrm{f}(\mathrm{z})$ is analytic within the annular region $\mathrm{r}<|\mathrm{z}-\mathrm{a}|<\mathrm{R}$ can be expanded into Laurrent series within the annulur region as:
+$$f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} b_{n}(z-a)^{-n}$$
+Co-efficient $\mathrm{b}_{1}$ is known as residue of $\mathrm{f}(\mathrm{z})$ at $\mathrm{z}=\mathrm{a}$ i.e. Res. $\mathrm{f}(\mathrm{z}=\mathrm{a})=\mathrm{b}_{1}=\frac{1}{2 \pi i} \oint f(z) d z$
+\textbf{Methods of Finding Residues}\\
+Method 1: Res. $f(z=a)=\underset{z \rightarrow a}{L t}(z-a) f(z)$\\
+Method 2: If $f(z)=\frac{\phi(z)}{\psi(z)}$ where $\psi(a)=0$ but $\phi(a) \neq 0$, then $\operatorname{Res} . f(z=a)=\frac{\phi(a)}{\psi^{\prime}(a)}$\\
+(b) Residue at a pole of order ' $n$ ':\\
+Method 1: Res. $f(z=a)=\frac{1}{(n-1) !}\left\{\frac{d^{n-1}}{d z^{n-1}}\left[(z-a)^{n} f(z)\right]\right\}_{z=a}$\\
+Method 2: First put $z+a=t$ and expand it into series, then Res. $f(z=a)=$ co-efficient of $1 / t$.\\
+(c ) Residue at $\mathrm{z}=\infty$ : Res. $f(z=\infty) \underset{z \rightarrow \infty}{L t}[-z f(z)]$
+\begin{exercise}
+	 Find the singular points of the following function and the corresponding residues:\\
+	(a) $f(z)=\frac{1-2 z}{z(z-1)(z-2)}$\quad
+	(b) $f(z)=\frac{z^{2}}{z^{2}+a^{2}}$\quad
+	(c) $f(z)=z^{2} e^{1 / z}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text{(a )}f(z)&=\frac{1-2 z}{z(z-1)(z-2)} \Rightarrow \text { Poles }: z=0, z=1, z=2\\
+	\text{Res. }f(z=0)&=\operatorname{Lt}_{z \rightarrow 0}(z-0) f(z)=\operatorname{Lt}_{z \rightarrow 0} \frac{1-2 z}{(z-1)(z-2)}=\frac{1}{2}.\\
+	\text{Res. } f(z=1)&=L_{z \rightarrow 1}(z-1) f(z)=L_{z \rightarrow 1} \frac{1-2 z}{z(z-2)}=1\\
+	\text{Res. }f(z=2)&=\underset{z \rightarrow 2}{L t}(z-2) f(z)=\underset{z \rightarrow 2}{L t} \frac{1-2 z}{z(z-1)}=-\frac{3}{2}\\\\
+\text{	(b) }f(z)&=\frac{z^{2}}{z^{2}+a^{2}} \Rightarrow\text{ Poles : }z=i a, z=-i a\\
+	\text { Res. } f(z=i a)&=\left(\frac{z^{2}}{2 z}\right)_{z=i a}=\frac{1}{2} i a ; \operatorname{Res} . f(z=-i a)=\left(\frac{z^{2}}{2 z}\right)_{z=-i a}=-\frac{1}{2} i a\\\\
+	\text{(c) }f(z)&=z^{2} e^{1 / z}=z^{2}\left[1+\frac{1}{z}+\frac{1}{z^{2} \cdot 2 !}+\frac{1}{z^{3} \cdot 3 !}+\ldots \ldots .\right] \Rightarrow\text{ Poles :} z=0\\
+	\text{Res. }f(z=0)&=\text{ Coefficient of }\frac{1}{z}=\frac{1}{3 !}=\frac{1}{6}
+	\end{align*}
+\end{answer}
+\textbf{Cauchy's Residue Theorem :}
+If $\mathrm{f}(\mathrm{z})$ in single-valued and analytic in a closed curve ' $\mathrm{C}$ ', except at a finite number of poles within ' $\mathrm{C}$, then $\oint_{C} \mathrm{f}(\mathrm{z}) \mathrm{dz}=2 \pi \mathrm{i}$ (sum of the residues at poles within ' $\mathrm{C}^{\prime}$ )
+\begin{exercise}
+	Evaluate the integral: $\oint_{C} \frac{4-3 z}{z(z-1)(z-3)} d z$ where $|z|=\frac{3}{2}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\hat{f}(z)&=\frac{4-3 z}{z(z-1)(z-3)} \Rightarrow\text{ Poles : }z=0, z=1, z=3\\
+\intertext{	But, the given contour is circle centered at the origin and radius $3 / 2$ units.} 
+\text{Therefore, only $z=0$ }&\text{and $z=1$ within the contour.}\\
+	I&=2 \pi i[\operatorname{Re} s . f(z=0)+\operatorname{Re} s . f(z=1)]=2 \pi i\left[\frac{4}{3}-\frac{1}{2}\right]=\frac{5 \pi i}{3}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Evaluate the integral: $\oint_{C} \frac{e^{2 z}+z^{2}}{(z-1)^{5}} d z$ where $|z|=2$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\begin{aligned}
+	f(z)&=\frac{e^{2 z}+z^{2}}{(z-1)^{5}} \Rightarrow \text { Poles }: z=1(\text { order } 5) \\
+	I&=2 \pi i \times \operatorname{Re} s . f(z=1)=2 \pi i \times \frac{1}{4 !} \frac{d^{4}}{d z^{4}}\left[e^{2 z}+z^{2}\right]_{z=1}=2 \pi i \times \frac{2 e^{2}}{3}=\frac{4 \pi i e^{2}}{3} .
+	\end{aligned}
+	\end{align*}
+\end{answer}
+\textbf{Definite Integrals of Trigonometric Functions of $\cos\theta$ and $\sin\theta$ : (Integration round the unit circle)} :\\
+	Method: Consider the contour to be a circle centered at the origin and having radius one unit i.e. $|\mathrm{z}|=1$
+\begin{align*}
+	\text{Assume, }z&=e^{i \theta} \Rightarrow d z=i e^{i \theta} d \theta \Rightarrow d \theta=\frac{d z}{i z}\\
+	\text{Therefore, }\cos \theta&=\frac{e^{i \theta}+e^{-i \theta}}{2}=\frac{1}{2}\left(z+\frac{1}{z}\right)
+	 \text{and }\sin \theta=\frac{e^{i \theta}-e^{-i \theta}}{2 i}=\frac{1}{2 i}\left(z-\frac{1}{z}\right)\\
+	 \text { and the limit will be changed from }& 0 \rightarrow 2 \pi \text { to } \oint_{C}
+\end{align*}
+(The replacements regarding $\cos \theta$ and $\sin \theta$ is to be done only in the denominator of the given integral) Now find the singular points and find residue at only those singular points which lies inside the unit circle. Finally use the Cauchy residue theorem.)
+\begin{exercise}
+	Evaluate the integral: $\int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta} ; \quad a>b>0$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}&=\int_{0}^{2 \pi} \frac{d z / i z}{a+b\left(\frac{z^{2}+1}{2 z}\right)}=\int_{0}^{2 \pi} \frac{2 d z}{i\left(b z^{2}+2 a z+b\right)}\\
+	\text { The singular points are at } \Rightarrow z&=\alpha=\frac{-a+\sqrt{a^{2}-b^{2}}}{b} \quad \& \quad z=\beta=\frac{-a-\sqrt{a^{2}-b^{2}}}{b}\\
+	\intertext{The singular point $z=\beta$ will lie outside the unit circle as $a>b>0$ while the singular point $z=\alpha$ will lie inside the unit circle which is a simple pole.}\\
+	\text { Res. } f(z=\alpha)=\lim _{z \rightarrow \alpha}(z-\alpha) f(z)&=\lim _{z \rightarrow \alpha} \frac{2}{i b} \frac{(z-\alpha)}{(z-\alpha)(z-\beta)}=\frac{2}{i b(\alpha-\beta)}=\frac{2}{i b} \times \frac{b}{2 \sqrt{a^{2}-b^{2}}}=\frac{1}{i \sqrt{a^{2}-b^{2}}}\\
+\text { Therefore,  }\text{by cauchy Residue theorem.}&\\
+I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{2}-b^{2}}}=\frac{2 \pi}{\sqrt{a^{2}-b^{2}}}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Evaluate the integral $\int_{0}^{2 \pi} \frac{\mathrm{d} \theta}{5+4 \cos \theta}$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	&\int_{0}^{2 \pi} \frac{d \theta}{5+4 \cos \theta}=\oint_{C} \frac{1}{5+4 \cdot \frac{1}{2}\left(z+\frac{1}{2}\right)} \cdot \frac{d z}{i z}=\frac{1}{i} \oint_{C} \frac{d z}{\left(5 z+2 z^{2}+2\right)}=\oint_{C} \frac{d z}{(2 z+1)(z+2)}\\
+	&f(z)=\frac{1}{(2 z+1)(z+2)} \quad \Rightarrow \text { poles are at } \mathrm{z}=-\frac{1}{2},-2 \quad \text { (Only } \mathrm{z}=-1 / 2 \text { is within the circle) }\\
+	&\text { Res. } f(z=-1 / 2)=\left.\left(z+\frac{1}{2}\right) \cdot \frac{1}{(2 z+1)(z+2)}\right|_{z=-\frac{1}{2}}=\left.\frac{1}{2(z+2)}\right|_{z=-\frac{1}{2}}=\frac{1}{3}\\
+	\text { Hence, the integral }&=\frac{2 \pi \mathrm{i}}{3}
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Evaluate the integral $\int_{0}^{2 \pi} \frac{d \theta}{1-2 m \cos \theta+m^{2}},\left(m^{2}<1\right)$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\int_{0}^{2 \pi} \frac{d \theta}{1-2 m \cos \theta+m^{2}},\left(m^{2}<1\right)&=\oint_{C} \frac{d z / i z}{1-2 m \times \frac{1}{2}\left[z+\frac{1}{z}\right]+m^{2}}=\oint_{C} \frac{d z}{i z\left(z-m\left(\frac{z^{2}+1}{z}\right)+m^{2} z\right)} \\
+	=\oint_{C} \frac{d z}{i\left(z-m z^{2}-m+m^{2} z\right)}&=\oint_{C} \frac{1}{i(z-m)-m z(z-m)}=\frac{1}{i} \oint_{C} \frac{d z}{(z-m)(1-m z)} \\
+	f(z)=\frac{1}{(z-m)(1-m z)}& \text { has poles of order one at } z=m, \frac{1}{m}\\
+	\text{Since, $m<1$ so $z=m$ will }&\text{be within the cilcle $|z|=1$}\\
+	\text { So, }
+	I =\frac{1}{i}[2 \pi i \times \text { res. } f(z=m)]&=\frac{1}{i}\left[2 \pi i \times \lim _{z \rightarrow m}(z-m) \frac{1}{(z-m)(1-m z)}\right] \\
+	=\frac{1}{i} \times 2 \pi i \times \frac{1}{1-m^{2}}&=\frac{2 \pi}{1-m^{2}} .
+	\end{align*}
+\end{answer}
+\begin{exercise}
+	Evaluate the integral $\int_{0}^{2 \pi} e^{\cos \theta} \cos (\sin \theta-n \theta) d \theta$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	&\int_{0}^{2 \pi} e^{\cos \theta} \cos (\sin \theta-n \theta) d \theta=\text { Real part of } \int_{0}^{2 \pi} e^{\cos \theta} e^{i(\sin \theta-n \theta)} d \theta\\
+	&=\text { Real part of } \int_{0}^{2 \pi} e^{(\cos \theta+i \sin \theta)} e^{-i n \theta} d \theta=\text { Real part of } \oint_{C} e^{z} \cdot z^{-n} \frac{d z}{i z}\\
+	&=\text { Real part of } \frac{1}{i} \oint_{C} \frac{e^{z}}{z^{n+1}} d z\\
+	f(z)=\frac{e^{z}}{z^{n+1}} \Rightarrow \text { poles are at } z&=0 \text { of order } n \Rightarrow \operatorname{Res} \cdot f(z=0)=\left.\frac{1}{n !} \cdot \frac{d^{n}}{d z^{n}}\left(z^{n+1} \cdot \frac{e^{z}}{z^{n+1}}\right)\right|_{z=0}=\frac{1}{n !}\\
+	\text { Hence the given integral }&=\text { real part of }\left(\frac{1}{\mathrm{i}} \cdot 2 \pi \mathrm{i} \cdot \frac{1}{\mathrm{n} !}\right)=\frac{2 \pi}{\mathrm{n} !}
+	\end{align*}
+\end{answer}
+\textbf{ Evaluation of improper integrals between the limit $-\infty$ to $+\infty$ : }\\
+\textbf{Theorem 1:}\\
 
 
 
