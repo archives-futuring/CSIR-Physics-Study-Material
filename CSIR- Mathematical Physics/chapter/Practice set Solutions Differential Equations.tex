@@ -1,4 +1,4 @@
-\chapter{Practice set Solutions Differential Equations}
+
 \begin{abox}
 	Problem Set -1
 \end{abox}
@@ -204,9 +204,10 @@ satisfying the boundary conditions $u(0, t)=0=u(L, t)$ and initial conditions $u
 		\task[\textbf{D.}] 3
 	\end{tasks}
 	\begin{answer}
+		The given differential equation will have one  power series solution.\\
 		So the correct answer is \textbf{Option (B)}
 	\end{answer}
-	\item The differential equation $\frac{d y(x)}{d x}=\alpha x^{2}$, with the initial condition $y(0)=0$, is solved using Euler's method. If $y_{E}(x)$ is the exact solution and $y_{N}(x)$ the numerical solution obtained using $n$ steps of equal length, then the relative error $\left|\frac{\left(y_{N}(x)-y_{E}(x)\right)}{y_{E}(x)}\right|$ is proportional to
+	\item The differential equation $\frac{d y(x)}{d x}=\alpha x^{2}$, with the initial condition $y(0)=0$, is solved using Euler's method. If $y_{E}(x)$ is the exact solution and $y_{N}(x)$ the numerical solution obtained using $n$ steps of equal length, then the relative error $\left|\frac{\left(y_{N}(x)-y_{E}(x)\right)}{y_{E}(x)}\right|$ is proportional to \textcolor{ocre}{(Question belongs to the topic numerical methods)}
 	{\exyear{NET/JRF(DEC-2017)}}
 	\begin{tasks}(4)
 		\task[\textbf{A.}] $\frac{1}{n^{2}}$
@@ -500,6 +501,25 @@ satisfying the boundary conditions $u(0, t)=0=u(L, t)$ and initial conditions $u
 		\task[\textbf{D.}] $\frac{1}{x^{n+1}}$
 	\end{tasks}
 	\begin{answer}
+		\begin{align*}
+		\frac{d^{2} y}{d x^{2}}-n(n+1) \frac{y}{x^{2}}&=0\\
+		x^{2}\frac{d^{2} y}{d x^{2}}-n(n+1) y&=0 \quad \text{This is an Euler -Cauchy equation.}\\
+		\text{Put} \ {x}&=\mathrm{e}^{z} \Rightarrow \log \mathrm{x}=\mathrm{z} \Rightarrow \frac{1}{x}=\frac{d z}{d x}\\
+		\frac{d y}{d x}&=\frac{d y}{d x} \cdot \frac{d z}{d x}=\frac{1}{x} \frac{d y}{d z} \\ 
+		{x} \frac{d y}{d x}&=\frac{d y}{d z}\\
+		\frac{d^{2} y}{d x^{2}}&=\frac{d}{d x}\left(\frac{d y}{d x}\right)\\&=-\frac{1}{x^{2}} \frac{d y}{d z}+\frac{1}{x} \frac{d^{2} y}{d z^{2}}\left(\frac{d z}{d x}\right)\\&=-\frac{1}{x^{2}} \frac{d y}{d z}+\frac{1}{x^{2}} \frac{d^{2} y}{d z^{2}} \\ x^{2} \frac{d^{2} y}{d x^{2}}&=-\frac{d y}{d z}+\frac{d^{2} y}{d z^{2}}
+		\intertext{Then the given equation becomes,}
+		\frac{d^{2} y}{d z^{2}}-\frac{d y}{d z}-n(n+1){y}&=0\\
+		D^{2}-D-n(n+1)&=0\\
+		D&= \frac{1\pm \sqrt{1+4n(n+1)}}{2}\\
+		&= \frac{1\pm \sqrt{(2n+1)^{2}}}{2}=\frac{1\pm {(2n+1)}}{2}\\
+		&=(n+1),-n\\
+		\text{Solution,}\ y_{1}&=c_{1}e^{(n+1)},\quad y_{2}=c_{2}e^{(-n)}\\
+		\text{Their product,}\ y_{1}y_{2}&=c_{1}c_{2}e^{(n+1)}e^{(-n)}=c_{1}c_{2}e^z
+		\intertext{But , $e^z=x$, then,}\\
+		y_{1}y_{2}&=c_{1}c_{2}x\qquad \text{Let, $c_{1}=c_{2}=1$ }
+		\\&=x
+		\end{align*}
 		So the correct answer is \textbf{Option (B)}
 	\end{answer}
 \end{enumerate}
