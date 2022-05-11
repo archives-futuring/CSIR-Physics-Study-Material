@@ -1,6 +1,6 @@
-\chapter{Practice set solutions}
+
 \begin{abox}
-	Problem Set -3
+	Problem Set -1
 \end{abox}
 \begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
 	\item  Let $p_{n}(x)$ (where $n=0,1,2, \ldots \ldots$ ) be a polynomial of degree $n$ with real coefficients, defined in the interval $2 \leq n \leq 4$. If $\int_{2}^{4} p_{n}(x) p_{m}(x) d x=\delta_{n m}$, then
@@ -12,7 +12,8 @@
 		\task[\textbf{D.}] $p_{0}(x)=\frac{1}{\sqrt{2}}$ and $p_{1}(x)=\sqrt{\frac{3}{2}}(3-x)$
 	\end{tasks}
 	\begin{answer}
-		For $n$ not equal to $m$ kroneker delta become zero. One positive and one negative term can make integral zero. So answer may be (C) or (D). Now take $n=m=0$ so $p_{0}(x)=\frac{1}{\sqrt{2}}$ and then integrate. (D) is correct option because it satisfies the equation Check by integration and by orthogonal property of Legendre polynomial also.\\\\
+		$$\int_{2}^{4} p_{n}(x) p_{m}(x) d x=\delta_{n m}$$
+		For $n\neq m$,  $\delta_{n m}=0$. \\ One positive and one negative term can make integral zero. So answer may be (C) or (D). Now take $n=m=0$ so $p_{0}(x)=\frac{1}{\sqrt{2}}$ and then integrate. (D) is correct option because it satisfies the equation Check by integration and by orthogonal property of Legendre polynomial also.\\\\
 		So the correct answer is \textbf{Option (D)}
 	\end{answer}
 	\item  The generating function $F(x, t)=\sum_{n=0}^{\infty} P_{n}(x) t^{n}$ for the Legendre polynomials $P_{n}(x)$ is $F(x, t)=\left(1-2 x t+t^{2}\right)^{-1 / 2}$. The value of $P_{3}(-1)$ is
@@ -122,44 +123,7 @@
 	\begin{answer}
 		So the correct answer is \textbf{Option (C)}
 	\end{answer}
-	\item  The Green's function satisfying
-	$$
-	\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)=\delta\left(x-x_{0}\right)
-	$$
-	with the boundary conditions $g\left(-L, x_{0}\right)=0=g\left(L, x_{0}\right)$, is
-	{\exyear{NET/JRF(JUNE-2017)}}
-	\begin{tasks}(1)
-		\task[\textbf{A.}] $\left\{\begin{array}{ll}\frac{1}{2 L}\left(x_{0}-L\right)(x+L), & -L \leq x<x_{0} \\ \frac{1}{2 L}\left(x_{0}+L\right)(x-L), & x_{0} \leq x \leq L\end{array}\right.$
-		\task[\textbf{B.}]  $\left\{\begin{array}{ll}\frac{1}{2 L}\left(x_{0}+L\right)(x+L), & -L \leq x<x_{0} \\ \frac{1}{2 L}\left(x_{0}-L\right)(x-L), & x_{0} \leq x \leq L\end{array}\right.$
-		\task[\textbf{C.}] $\left\{\begin{array}{ll}\frac{1}{2 L}\left(L-x_{0}\right)(x+L), & -L \leq x<x_{0} \\ \frac{1}{2 L}\left(x_{0}+L\right)(L-x), & x_{0} \leq x \leq L\end{array}\right.$
-		\task[\textbf{D.}] $\frac{1}{2 L}(x-L)(x+L), \quad-L \leq x \leq L$
-	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)&=\delta\left(x-x_{0}\right)
-		\intertext{word or phrase}
-		g\left(-L, x_{0}\right)&=0=g\left(L, x_{0}\right)
-		\intertext{The homogeneous equation for Green's function is}
-		\frac{d^{2}}{d x^{2}} g\left(x, x_{0}\right)&=0
-		\intertext{Solution of above equation is}
-		g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}A x+B, & x<x_{0} \\ C x+D, & x>x_{0}\end{array}\right.
-		\intertext{Applying boundary condition}
-		g\left(-L, x_{0}\right)&=0 \Rightarrow-A L+B=0 \Rightarrow A L=B\\
-		g\left(L, x_{0}\right)&=0 \Rightarrow C L+D=0 \Rightarrow-C L=D\\
-		\text{Hence, }g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}A(x+L), & x<x_{0} \\ C(x-L), & x>x_{0}\end{array}\right.
-		\intertext{From continuity of Green's function at $x=x_{0}$ we have}
-		A\left(x_{0}+L\right)&=C\left(x_{0}-L\right)\\
-		A&=C\left(\frac{x_{0}-L}{x_{0}+L}\right)
-		\intertext{From discontinuity of derivative of Green's function $\frac{\partial g}{\partial x}$ at $x=x_{0}$}
-		\intertext{We have}
-		\left|\frac{\partial g}{\partial x}\right|_{x=x_{0}^{+}}-\left.\frac{\partial g}{\partial x}\right|_{x=x_{0}^{-}}&=1\\
-		\left|\frac{\partial g}{\partial x}\right|_{x=x_{0}^{+}}=C,\left.\frac{\partial g}{\partial x}\right|_{x=x_{0}^{-}}&=A\\
-		\therefore C-A&=1 \Rightarrow C=A+1
-		\intertext{Thus, the required solution of Green's function is given by}
-		g\left(x, x_{0}\right)&=\left\{\begin{array}{ll}\frac{\left(x_{0}-L\right)(x+L)}{2 L}, & x<x_{0} \\ \frac{\left(x_{0}+L\right)(x-L)}{2 L}, & x>x_{0}\end{array}\right.
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+	
 	\item  The generating function $G(t, x)$ for the Legendre polynomials $P_{n}(t)$ is
 	$$
 	G(t, x)=\frac{1}{\sqrt{1-2 x t+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(t), \text { for }|x|<1
@@ -176,10 +140,12 @@
 		\begin{align*}
 		G(t, x)&=\frac{1}{\sqrt{1-2 x t+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(t)\text{ for }|x|<1\\
 		G(1, x)&=\frac{1}{\sqrt{1-2 x+x^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(1)\\
-		&=\frac{1}{\sqrt{(1-x)^{2}}}=\sum_{n=0}^{\infty} x^{n} P_{n}(1)\\&=\frac{1}{1-x}\text{ Since } |x|<1\\
+		\sum_{n=0}^{\infty} x^{n} P_{n}(1)&=\frac{1}{\sqrt{(1-x)^{2}}}\\&=\frac{1}{1-x}\text{ Since } |x|<1\\
 		\text{Now, }x \cdot \frac{1}{1-x}&=\int_{0}^{x} f\left(x^{\prime}\right) d x^{\prime}
 		\intertext{Differentiating both sides,}
 		f(x)&=\frac{d}{d x} \frac{x}{1-x}=\frac{1}{(1-x)^{2}}
+		\intertext{Which can be represented as,}
+		\sum_{n, m=0}^{\infty} x^{n+m} P_{n}(1) P_{m}(1)&=\frac{1}{(1-x)^{2}}
 		\end{align*}
 		So the correct answer is \textbf{Option (B)}
 	\end{answer}
@@ -203,25 +169,7 @@
 		\end{align*}
 		So the correct answer is \textbf{Option (C)}
 	\end{answer}
-	\item  The Green's function $G\left(x, x^{\prime}\right)$ for the equation $\frac{d^{2} y(x)}{d x^{2}}+y(x)=f(x)$, with the boundary values $y(0)=y\left(\frac{\pi}{2}\right)=0$, is
-	{\exyear{NET/JRF(JUNE-2018)}}
-	\begin{tasks}(1)
-		\task[\textbf{A.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(x^{\prime}-\frac{\pi}{2}\right), & 0<x<x^{\prime}<\frac{\pi}{2} \\ \left(x-\frac{\pi}{2}\right) x^{\prime}, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
-		\task[\textbf{B.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}-\cos x^{\prime} \sin x, & 0<x<x^{\prime}<\frac{\pi}{2} \\ -\sin x^{\prime} \cos x, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
-		\task[\textbf{C.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}\cos x^{\prime} \sin x, & 0<x<x^{\prime}<\frac{\pi}{2} \\ \sin x^{\prime} \cos x, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
-		\task[\textbf{D.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(\frac{\pi}{2}-x^{\prime}\right), & 0<x<x^{\prime}<\frac{\pi}{2} \\ x^{\prime}\left(\frac{\pi}{2}-x\right), & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.$
-	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\frac{d^{2} y}{d x^{2}}+y&=0 \Rightarrow m^{2}+1=0 \Rightarrow m=0 \pm i\\
-		y_{1}(x)&=\sin x(a t), y_{1}^{\prime}(x)=\cos x\\
-		y_{2}(x)&=\cos x \quad\left(a t \frac{\pi}{2}\right), y_{2}^{\prime}(x)=-\sin x\\
-		A&=\left\{P\left(x^{\prime}\right)\left[y_{2}^{\prime}\left(x^{\prime}\right) y_{1}\left(x_{1}^{\prime}\right)-y_{1}^{\prime}\left(x^{\prime}\right)\right] y_{2}\left(x^{\prime}\right)\right\}\\
-		\Rightarrow A&=\left\{-\sin x^{\prime} \sin x^{\prime}-\cos ^{\prime} \cos x^{\prime}\right\} \\ \because P(x)&=1 \Rightarrow A=-1\\
-		\text{Thus }G\left(x, x^{\prime}\right)&=\left\{\begin{array}{ll}A y_{1}(x) y_{2}\left(x^{\prime}\right), & x<x^{\prime} \\ A y_{2}(x) y_{1}(x), & x>x^{\prime}\end{array}=\left\{\begin{array}{ll}-\sin x \cos x^{\prime}, & 0<x<x^{\prime}<\frac{\pi}{2} \\ -\cos x \sin x^{\prime}, & 0<x^{\prime}<x<\frac{\pi}{2}\end{array}\right.\right.
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+	
 	\item The polynomial $f(x)=1+5 x+3 x^{2}$ is written as linear combination of the Legendre polynomials
 	$\left(P_{0}(x)=1, P_{1}(x), P_{2}(x)=\frac{1}{2}\left(3 x^{2}-1\right)\right)$ as $f(x)=\sum_{n} c_{n} P_{n}(x)$. The value of $c_{0}$ is
 	{\exyear{NET/JRF(DEC-2018)}}
@@ -242,43 +190,8 @@
 		\end{align*}
 		So the correct answer is \textbf{Option (C)}
 	\end{answer}
-	\item The Green's function $G\left(x, x^{\prime}\right)$ for the equation $\frac{d^{2} y(x)}{d x^{2}}=f(x)$, with the boundary values $y(0)=0$ and $y(1)=0$, is
-	{\exyear{NET/JRF(DEC-2018)}}
-	\begin{tasks}(1)
-		\task[\textbf{A.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}\frac{1}{2} x\left(1-x^{\prime}\right), & 0<x<x^{\prime}<1 \\ \frac{1}{2} x^{\prime}(1-x) & 0<x^{\prime}<x<1\end{array}\right.$
-		\task[\textbf{B.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(x^{\prime}-1\right), & 0<x<x^{\prime}<1 \\ x^{\prime}(1-x) & 0<x^{\prime}<x<1\end{array}\right.$
-		\task[\textbf{C.}] $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}-\frac{1}{2} x\left(1-x^{\prime}\right), & 0<x<x^{\prime}<1 \\ \frac{1}{2} x^{\prime}(1-x) & 0<x^{\prime}<x<1\end{array}\right.$
-		\task[\textbf{D.}]  $G\left(x, x^{\prime}\right)=\left\{\begin{array}{ll}x\left(x^{\prime}-1\right), & 0<x<x^{\prime}<1 \\ x^{\prime}(x-1) & 0<x^{\prime}<x<1\end{array}\right.$
-	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\frac{d^{2} y}{d x^{2}}&=f(x)\\
-		p\left(x^{\prime}\right)&=1\\
-		x_{1}&=1, y_{2}=x\\
-		y_{1}&=x, y_{2}=1-x \quad w=\left|\begin{array}{cc}x & 1-x \\ 1 & -1\end{array}\right|=-1\\
-		A&=-1\\
-		G\left(x, x^{\prime}\right)&=\left\{\begin{array}{lll}A & y_{1} & y_{2}^{\prime} \\ A & y_{1}^{\prime} & y_{2}\end{array}=\left\{\begin{array}{lll}x & \left(x^{\prime}-1\right) & 0<x<x^{\prime}<1 \\ x^{\prime} & (x-1) & 0<x^{\prime}<x<1\end{array}\right.\right.
-		\end{align*}
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
-	\item  The Green's function for the differential equation $\frac{d^{2} x}{d t^{2}}+x=f(t)$, satisfying the initial conditions $x(0)=\frac{d x}{d t}(0)=0$ is\\
-	$$G(t, \tau)=\left\{\begin{array}{ll}0 & \text { for } \quad 0<t<\tau \\ \sin (t-\tau) & \text { for } \quad t>\tau\end{array}\right.$$\\
-	The solution of the differential equation when the source $f(t)=\theta(t)$ (the Heaviside step function) is
-	{\exyear{NET/JRF(JUNE-2020)}}
-	\begin{tasks}(4)
-		\task[\textbf{A.}] $\sin t$
-		\task[\textbf{B.}] $1-\sin t$
-		\task[\textbf{C.}] $1-\cos t$
-		\task[\textbf{D.}] $\cos ^{2} t-1$
-	\end{tasks}\begin{answer}
-		\begin{align*}
-		\frac{d^{2} x}{d t^{2}}+x&=f(t)\text{ and }\quad x(0)=\dot{x}(0)=0\\
-		G(t, \tau)&=\left\{\begin{array}{lr}0, & 0<t<\tau \\ \sin (t-\tau), & t>\tau\end{array}\right.\\
-		x(t)&=\int_{0}^{\infty} G(t, \tau) f(\tau) d \tau\\
-		\Rightarrow x(t)&=\int_{0}^{t} \sin (t-\tau) f(\tau) d \tau\\&=\int_{0}^{t} \sin (t-\tau) d \tau=+\left.\cos (t-\tau)\right|_{0} ^{t}=1-\cos t
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
+	
 \end{enumerate}
 \colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
@@ -294,10 +207,175 @@
 		3&\textbf{A} &4&\textbf{A} \\\hline
 		5&\textbf{D} &6&\textbf{C} \\\hline
 		7&\textbf{A}&8&\textbf{C}\\\hline
-		9&\textbf{A}&10&\textbf{B}\\\hline
-		11&\textbf{C} &12&\textbf{B}\\\hline
-		13&\textbf{C}&14&\textbf{D}\\\hline
-		15&\textbf{C}& &\\\hline
+		9&\textbf{B}&10&\textbf{C}\\\hline
+		11&\textbf{C} &&\\\hline
+		
+		
+	\end{tabular}
+\end{table}
+\begin{abox}
+	Problem Set -3
+\end{abox}
+\begin{questions}
+\begin{minipage}{\textwidth}
+	\question What is the maximum number of extrema of the function $f(x)=P_{k}(x) e^{-\left(\frac{x^{4}}{4}+\frac{x^{2}}{2}\right)}$, where\\
+	$x \in(-\infty, \infty)$ and $P_{k}(x)$ is an arbitrary polynomial of degree $k$ ?
+	\exyear{JEST 2015}
+\end{minipage}
+\begin{tasks}(4)
+	\task[\textbf{A.}]  $k+2$
+	\task[\textbf{B.}]$k+6$
+	\task[\textbf{C.}] $k+3$
+	\task[\textbf{D.}]$k$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f(x)&=P_{x}(x) e^{-\left(\frac{x^{4}}{4}+\frac{x^{2}}{2}\right)}\\
+	f^{\prime}(x)&=\left[P_{x}^{\prime}(x)+P_{x}(x)(-1)\left(x^{3}+x\right)\right] e^{-\left(\frac{x^{4}}{4}+\frac{x^{2}}{2}\right)}\\
+	\intertext{For maximum number of extrema,}
+	\Rightarrow f^{\prime}(x)&=0 \Rightarrow\left[P_{x}(x)\left(x^{3}+x\right)-P^{\prime}(x)\right]=0 \intertext{ Then it is a polynomial of order  $ k+3 $}
+	\intertext{From the sign scheme maximum number of extrema $ =k+3 $ }
+	\end{align*}
+	Correct option is (C)
+\end{answer}
+\begin{minipage}{\textwidth}
+	\question The Bernoulli polynominals $B_{n}(s)$ are defined by, $\frac{x e^{x s}}{e^{x}-1}=\sum B_{n}(s) \frac{x^{n}}{n !} .$ Which one of the following relations is true?
+	\exyear{JEST 2015}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s) \frac{x^{n}}{(n+1) !}$
+	\task[\textbf{B.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s)(-1)^{n} \frac{x^{n}}{(n+1) !}$
+	\task[\textbf{C.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(-s)(-1)^{n} \frac{x^{n}}{n !}$
+	\task[\textbf{D.}]$\frac{x e^{x(1-s)}}{e^{x}-1}=\sum B_{n}(s)(-1)^{n} \frac{x^{n}}{n !}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{x e^{x s}}{e^{x}-1}&=\sum B_{n}(s) \frac{x^{n}}{ n!}
+	\intertext{Put  $ s=(s-1),$ Then,}   \frac{x e^{x(s-1)}}{e^{x}-1}&=\sum B_{n}(s-1) \frac{x^{n}}{ n!}\\
+	\text{Since, }\ B_{n}(s-1)&=(-1)^{n} B(s)\\
+	\Rightarrow \frac{x e^{x(s-1)}}{e^{x}-1}&=\sum B_{n}(s)(-1)^{n} \frac{x^{n}}{ n!}
+	\end{align*}
+	Correct option is (D)
+\end{answer}
+
+
+
+\begin{minipage}{\textwidth}
+	\question For which of the following conditions does the integral $\int_{0}^{1} P_{m}(x) P_{n}(x) d x$ vanish for $m \neq n$, where $P_{m}(x)$ and $P_{n}(x)$ are the Legendre polynomials of order $m$ and $n$ respectively?
+	\exyear{JEST 2018}
+\end{minipage}
+\begin{tasks}(2)
+	\task[\textbf{A.}] all $m, m \neq n$
+	\task[\textbf{B.}]$m-n$ is an odd integer
+	\task[\textbf{C.}]$m-n$ is a nonzero even integer
+	\task[\textbf{D.}]$n=m \pm 1$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\int_{-1}^{1} P_{m}(x) P_{n}(x) d x&=\frac{2}{2 x+1} \delta_{n m}\\
+	2 \int_{0}^{1} P_{m}(x) P_{n}(x) d x&=\frac{2}{2 x+1} \delta_{n m}\\
+	\text{Only } P_{m}(x) P_{n}(x)&= \text{even}\\
+	&m\\
+	&0 \quad \text{even}\\
+	&1 \quad \text{odd}\\
+	&2 \quad \text{even}\\
+	&3 \quad \text{odd}\\
+	&4 \quad \text{even}\\
+	m-n&= \text{non zero even integer then only}\\
+	P_{m}(x) P_{n}(x)&= \text{even}\\
+	m \neq n \ \Delta \delta_{n m}&=0
+	\end{align*}
+	Correct option is (A)
+\end{answer}
+\begin{minipage}{\textwidth}
+	\question The Euler polynomials are defined by $\frac{2 e^{x s}}{e^{x}+1}=\sum_{n=0}^{\infty} E_{n}(s) \frac{x^{n}}{n !}$What is the value of $E_{5}(2)+E_{5}(3) ?$
+	\exyear{JEST 2019}
+\end{minipage}
+\begin{answer}
+	\begin{align*}
+	\frac{2 e^{x s}}{e^{x}+1}=&\sum_{n=0}^{\infty} E_{n}(s) \frac{x^{n}}{n !}\\
+	E_{n}(x+1)+E_{n}(x)&=2 x^{n}\\
+	E_{5}(x+1)+E_{5}(x)&=2 x^{5}\\
+	c&=2=2 \times 2^{5}\\&=64\\
+	\end{align*}
+\end{answer}
+
+\begin{minipage}{\textwidth}
+	\question If $F(x, y)=x^{2}+y^{2}+x y$, its Legendre transformed function $G(u, v)$, upto a multiplicative constant, is
+	\exyear{JEST 2018}
+\end{minipage}
+\begin{tasks}(4)
+	\task[\textbf{A.}] $u^{2}+v^{2}+u v$
+	\task[\textbf{B.}] $u^{2}+v^{2}-u v$
+	\task[\textbf{C.}]$u^{2}+v^{2}$
+	\task[\textbf{D.}]$(u+v)^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	G&=F-x u-y v\\
+	d G&=d F-x d u-u d v-y d v-v d y\\
+	F&=x^{2}+y^{2}+x y\\
+	d F&=\frac{\partial F}{\partial x} d x+\frac{\partial F}{\partial y} d y\\
+	d F&=u d x+v d y\\
+	d G&=u d x+v d y-x d u-u d x-y d v-v d y\\
+	d G&=-x d u-y d v\\
+	u&=\frac{\partial F}{\partial x}, v=\frac{\partial F}{\partial x}\\
+	u&=2 x+y, 2 u=4 x+2 y\\
+	2 v&=4 y+2 x, v=2 y+x\\
+	y&=+\frac{1}{3}[2 v-u]\\
+	2 u-v&=3 x\\
+	x&=\frac{1}{3}[2 u-v]\\
+	d G&=-\frac{1}{3}[2 u-v] d u-\frac{1}{3}[2 v-u] d x\\
+	d G(u, v)&=-\frac{1}{3}(2 u-v) d u-\frac{1}{3}(2 v-u) d v=\frac{\partial G}{\partial u} d u+\frac{\partial G}{\partial v} d v\\
+	\frac{\partial G}{\partial u}&=-\frac{1}{3}(2 u-v), \frac{\partial G}{\partial v}=-\frac{1}{3}(2 v-u)\\
+	G(u, v)&=-\frac{1}{3}\left(u^{2}-u v\right)+h(v)\\
+	G(u, v)&=-\frac{1}{3}(-u)+\frac{d h(v)}{d(v)}=\frac{u}{3}+\frac{d h(v)}{d v}\\
+	\frac{-2 v}{3}+\frac{u}{3}&=\frac{u}{3}+\frac{d h(v)}{d x}\\
+	h(v)&=\frac{-v^{2}}{3}\\
+	G(u, v)&=-\frac{1}{3}\left(u^{2}-u v\right)-\frac{v^{2}}{3}=-\frac{1}{3}\left(u^{2}+v^{2}-u v\right)
+	\end{align*}
+	Correct option is (B)
+\end{answer}
+\begin{minipage}{\textwidth}
+	\question Consider a function $f(x)=P_{k}(x) e^{-\left(x^{4}+2 x^{2}\right)}$ in the domain $x \in(-\infty, \infty)$, where $P_{k}$ is any polynomial of degree $k$. What is the maximum possible number of extrema of the function?
+	\exyear{JEST 2019}
+\end{minipage}
+\begin{tasks}(4)
+	\task[\textbf{A.}] $k+3$
+	\task[\textbf{B.}] $k-3$
+	\task[\textbf{C.}]$k+2$
+	\task[\textbf{D.}]$k+1$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f(x)&=p_{k}(x) e^{-\left(x^{4}+2 x^{2}\right)}\\
+	\text{Let } k=0, f(x)&=p_{0}(x) e^{-\left(x^{4}+2 x^{2}\right)}\\
+	\text{Number of extrema}\\
+	P_{0}(x)&=1, k=0\\
+	\text{Number of extrema} &=1\\
+	k+1&=0+1=1
+	\end{align*}
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=3.5cm,height=2.5cm]{59-S-crop}
+		\end{center}
+	\end{figure}
+\end{answer}
+\end{questions}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{C} &2&\textbf{D}\\\hline 
+		3&\textbf{A} &4&\textbf{64} \\\hline
+		5&\textbf{B} &6&\textbf{D} \\\hline
+		
 		
 	\end{tabular}
 \end{table}
