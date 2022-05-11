@@ -257,27 +257,7 @@ $\begin{array}{ll}\bullet\quad\sin i x=i \sinh x & \bullet\quad \sinh i x=i \sin
 		\end{align*}
 			Therefore, the imaginary part of the complex function $v=x^{2}-y^{2}+2 y$ \\Comparing with the question, $\alpha=1, \beta=2, \gamma=-1 \quad \Rightarrow \alpha-\gamma=\beta$
 	\end{answer}
-	So the correct answer is \textbf{option (a)}
-	\subsection{Cauchy Reamann equations in Polar co-ordiantes:}
-	\begin{answer}
-		\begin{align*}
-		\frac{\partial u}{\partial r}&=\frac{1}{r} \frac{\partial v}{\partial \theta} \text { and } \frac{\partial u}{\partial \theta}=-r \frac{\partial v}{\partial r}\\
-		\text{Derivative of }f(z): f^{\prime}(\mathrm{z})&=(\cos \theta-i \sin \theta) \frac{\partial f}{\partial r}=-\frac{i}{r}(\cos \theta-i \sin \theta) \frac{\partial f}{\partial \theta}
-		\end{align*}
-	\end{answer}
-	\subsection{Harmonic Function}
-	Any function which satisfies the Laplace's equation, is known as harmonic function. If $u+i v$ is an analytic function, then $u, v$ are conjugate harmonic functions i.e.
-	$$
-	\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}=0 \text { and } \frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}=0
-	$$
-	\begin{exercise}
-		Find the values of $\mathrm{m}, \mathrm{n}$ such that $f(x, y)=x^{2}+m x y+n y^{2}$ is harmonic in nature.
-	\end{exercise}
-	\begin{answer}
-		\begin{align*}
-		\text { Since, } \frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{d y^{2}}=0 \Rightarrow 2 n+2=0 \Rightarrow n=-1 ;^{\prime} m^{\prime} \text { can take any value. }
-		\end{align*}
-	\end{answer}
+\
 	\subsection{Method for Finding Conjugate Function }
 		\begin{align*}
 		\textbf{Case 1: }f(z)&=u+i v,\text{ and $u$ is known.}\\
@@ -335,6 +315,19 @@ $\begin{array}{ll}\bullet\quad\sin i x=i \sinh x & \bullet\quad \sinh i x=i \sin
 		\end{align*}
 		So the correct answer is \textbf{option (b)}
 	\end{answer}
+\subsection{Harmonic Function}
+Any function which satisfies the Laplace's equation, is known as harmonic function. If $u+i v$ is an analytic function, then $u, v$ are conjugate harmonic functions i.e.
+$$
+\frac{\partial^{2} u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}=0 \text { and } \frac{\partial^{2} v}{\partial x^{2}}+\frac{\partial^{2} v}{\partial y^{2}}=0
+$$
+\begin{exercise}
+	Find the values of $\mathrm{m}, \mathrm{n}$ such that $f(x, y)=x^{2}+m x y+n y^{2}$ is harmonic in nature.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\text { Since, } \frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{d y^{2}}=0 \Rightarrow 2 n+2=0 \Rightarrow n=-1 ;^{\prime} m^{\prime} \text { can take any value. }
+	\end{align*}
+\end{answer}
 \textbf{Cauchy's Integral Theorem}\\
 If a funciion $f(z)$ is analytic and its derivative $f^{\prime}(z)$ is continuous at all points inside and on a simple closed curve ' $C$ ', then $\oint_{C} f(z) d z=0$\\
 \textbf{Cauchy's Integral Formula}\\
@@ -443,9 +436,9 @@ f(z)&=\frac{1}{\sin \pi / z} \text { has non-isolated singularity at } \mathrm{z
 \end{align*}
 \textbf{Types of Isolated Singularity}\\
 \begin{align*}
-\text { If } \mathrm{f}(\mathrm{z}) \text { is an isolated singular point at } \mathrm{z}=\mathrm{a} &\text {, the we can expand } f(\mathrm{z}) \text { about } \mathrm{z}=\mathrm{a} \text { into laurent series as: }\\
-\mathrm{f}(\mathrm{z})=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} \frac{b_{n}}{(z-a)^{n}}&=\left[a_{0}+a_{1}(z-a)+a_{2}(z-a)^{2}+\ldots . .\right]+\left[\frac{b_{1}}{(z-a)}+\frac{b_{2}}{(z-a)^{2}}+\ldots . .\right]
-\text{Therefore, three types of singularity are as follows.}
+&\text { If } \mathrm{f}(\mathrm{z}) \text { is an isolated singular point at } \mathrm{z}=\mathrm{a} \text {, the we can expand } f(\mathrm{z}) \text { about } \mathrm{z}=\mathrm{a} \text { into laurent series as: }\\
+&\mathrm{f}(\mathrm{z})=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} \frac{b_{n}}{(z-a)^{n}}=\left[a_{0}+a_{1}(z-a)+a_{2}(z-a)^{2}+\ldots . .\right]+\left[\frac{b_{1}}{(z-a)}+\frac{b_{2}}{(z-a)^{2}}+\ldots . .\right]\\
+&\text{Therefore, three types of singularity are as follows.}
 \end{align*}
 \textbf{(1) Removable Singularity :} If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$ contains no term i.e. if $b_{n}=0$ for all ' $n$ ', then $\mathrm{f}(\mathrm{z})$ has a removable singularity at $\mathrm{z}=\mathrm{a}$. In this case, Laurent series expansion is $f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}$
 \begin{exercise}
