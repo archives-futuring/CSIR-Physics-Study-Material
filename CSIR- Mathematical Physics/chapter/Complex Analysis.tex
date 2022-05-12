@@ -1082,7 +1082,7 @@ $$
 \end{table}
 \newpage
 \begin{abox}
-	Practise Set-2
+	Practise Set-3
 \end{abox}
 \begin{enumerate}
 	\item The amplitude of $\frac{1+i \sqrt{3}}{\sqrt{3}+i}$ is
@@ -1094,7 +1094,7 @@ $$
 	\end{tasks}
 	\begin{answer}
 	\begin{align*}
-	\frac{1+i \sqrt{3}}{\sqrt{3}+i}&=\frac{(1+i \sqrt{3})(\sqrt{3}-i)}{(\sqrt{3}+i)(\sqrt{3}-i)}=\frac{2 \sqrt{3}+2 i}{4}=\frac{\sqrt{3}}{2}+\frac{1}{2} i\\
+	\frac{1+i \sqrt{3}}{\sqrt{3}+i}&=\frac{(1+i \sqrt{3})(\sqrt{3}-i)}{(\sqrt{3}+i)(\sqrt{3}-i)}\\&=\frac{2 \sqrt{3}+2 i}{4}\\&=\frac{\sqrt{3}}{2}+\frac{1}{2} i\\
 	\intertext{	Since both the real and complex parts are greater than zero, hence the argument is the acute angle given by $\tan ^{-1}\left|\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}\right|=\tan ^{-1} \frac{1}{\sqrt{3}}=\frac{\pi}{6}$}
 	\end{align*}
 	So the correct answer is \textbf{Option (c)}
@@ -1122,7 +1122,7 @@ $$
 	\end{tasks}
 \begin{answer}
 	\begin{align*}
-	|z|=\sqrt{(1-\cos \theta)^{2}+\sin ^{2} \theta}=\sqrt{2-2 \cos \theta}=\sqrt{4 \sin ^{2} \frac{\theta}{2}}=2\left|\sin \frac{\theta}{2}\right|
+	|z|&=\sqrt{(1-\cos \theta)^{2}+\sin ^{2} \theta}\\&=\sqrt{2-2 \cos \theta}\\&=\sqrt{4 \sin ^{2} \frac{\theta}{2}}\\&=2\left|\sin \frac{\theta}{2}\right|
 	\end{align*}
 	So the correct answer is \textbf{Option (c)}
 \end{answer}
@@ -1167,16 +1167,16 @@ $$
 	\begin{align*}
 		\int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}&=\frac{1}{2} \int_{0}^{2 \pi} \frac{2 d \theta}{R-\cos \theta}=\int_{0}^{2 \pi} \frac{d \theta}{R-\cos \theta}\\
 		z&=e^{i \theta} \Rightarrow d z=i e^{i \theta} d \theta=i z d \theta \Rightarrow d \theta=\frac{d z}{i z} \\
-		\therefore \int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}&=\oint_{c} \frac{d z / i z}{R-\frac{1}{2}\left(z+z^{-1}\right)}=\oint_{C} \frac{d z / i z}{R-\frac{1}{2}\left(\frac{z^{2}+1}{z}\right)}=\oint_{C} \frac{d z / i z}{\frac{2 R z-\left(z^{2}+1\right)}{2 z}}\\
+		\therefore \int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}&=\oint_{c} \frac{d z / i z}{R-\frac{1}{2}\left(z+z^{-1}\right)}\\&=\oint_{C} \frac{d z / i z}{R-\frac{1}{2}\left(\frac{z^{2}+1}{z}\right)}\\&=\oint_{C} \frac{d z / i z}{\frac{2 R z-\left(z^{2}+1\right)}{2 z}}\\
 		&=-\frac{2}{i} \oint_{c} \frac{d z}{z^{2}-2 R z+1}\hspace{2cm}
 		\text{	where $C$; unit circle}\\
 		\text{Poles are }&: z^{2}-2 R z+1=0\\
-		\Rightarrow z&=\frac{-(-2 R) \pm \sqrt{4 R^{2}-4 \times 1 \times 1}}{2 \times 1} \quad \Rightarrow z=\frac{2 R \pm \sqrt{4 R^{2}-4}}{2} \quad \Rightarrow z=\frac{2 R \pm 2 \sqrt{R^{2}-1}}{2}\\
+		\Rightarrow z&=\frac{-(-2 R) \pm \sqrt{4 R^{2}-4 \times 1 \times 1}}{2 \times 1} \quad \\\Rightarrow z&=\frac{2 R \pm \sqrt{4 R^{2}-4}}{2} \\\Rightarrow z&=\frac{2 R \pm 2 \sqrt{R^{2}-1}}{2}\\
 		&=R \pm \sqrt{R^{2}-1}\\
 		z_{1}&=R+\sqrt{R^{2}-1} z_{2}=R-\sqrt{R^{2}-1} \quad(\text{ inside }C)\\
 		\operatorname{Res}\left(z=z_{2}\right)&=\lim _{z \rightarrow z_{2}}\left(z-z_{2}\right) \frac{1}{\left(z-z_{1}\right)\left(z-z_{2}\right)}\\
 		&=\frac{1}{z_{2}-z_{1}}=\frac{1}{R-\sqrt{R^{2}-1-R-\sqrt{R^{2}-1}}}=\frac{-1}{2 \sqrt{R^{2}-1}}\\
-		\therefore \int_{0}^{\pi} \frac{2 d \theta}{(R-\cos \theta)}&=\frac{-2}{i} \times 2 \pi i \times \frac{-1}{2 \sqrt{R^{2}-1}}=\frac{2 \pi}{\sqrt{R^{2}-1}}
+		\therefore \int_{0}^{\pi} \frac{2 d \theta}{(R-\cos \theta)}&=\frac{-2}{i} \times 2 \pi i \times \frac{-1}{2 \sqrt{R^{2}-1}}\\&=\frac{2 \pi}{\sqrt{R^{2}-1}}
 	\end{align*}
 	So the correct answer is \textbf{Option (b)}
 \end{answer}
@@ -1209,8 +1209,50 @@ $c:|z|=\pi$ is given by
 	\begin{align*}
 		\frac{\sin 3 z}{z^{2}}&=\frac{1}{z^{2}}\left[3 z-\frac{(3 z)^{3}}{\lfloor 3}+\ldots\right]=\frac{3}{z}-\frac{9}{2} z+\ldots\\
 		\text{Residue }&=3\\
-		\therefore \oint_{C} \frac{\sin 3 z}{z^{2}} d z&=2 \pi i \times 3=6 \pi i
+		\therefore \oint_{C} \frac{\sin 3 z}{z^{2}} d z&=2 \pi i \times 3\\&=6 \pi i
 	\end{align*}
 	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item Consider a complex function $f(z)=\frac{1}{z\left(z+\frac{1}{2}\right) \cos (z \pi)}$. Which one of the following
+statements is correct?
+\begin{tasks}(2)
+	\task[\textbf{a.}] $f(z)$ has simple poles at $z=0$ and $z=-\frac{1}{2}$
+	\task[\textbf{b.}]$f(z)$ has second order pole at $z=-\frac{1}{2}$
+	\task[\textbf{c.}]$f(z)$ has infinite number of second order poles
+	\task[\textbf{d.}] $f(z)$ has all simple poles
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	f(z)&=\frac{1}{z\left(z+\frac{1}{2}\right) \cos (z \pi)}\\
+	\text{For }n^{t h}&\text{ order pole $\because \lim _{z \rightarrow a}(z-a)^{n} f(z)=$ finite and $\neq 0$}\\
+	\text{At }z&=0\\
+	\lim _{z \rightarrow 0} z f(z)&=\text{ finite }\Rightarrow z=0\text{ is a simple pole.}\\
+	\text{At }z&=-\frac{1}{2}\\
+	\lim _{z \rightarrow-\frac{1}{2}} \frac{\left(z+\frac{1}{2}\right)^{2}}{z\left(z+\frac{1}{2}\right) \cos z \pi}&=\lim _{z \rightarrow-\frac{1}{2}} \frac{\left(z+\frac{1}{2}\right)}{z \cos z \pi}\\&=\lim _{z \rightarrow-\frac{1}{2}} \frac{1}{1 \cdot \cos z \pi+z \cdot \pi(-\sin z \pi)}\\
+	&=\lim _{z \rightarrow-\frac{1}{2}} \frac{1}{\cos z \pi-z \pi \sin z \pi}\\&=\frac{1}{\frac{\pi}{2}}=\frac{2}{\pi}\\&=\text{ finite}\\
+	\Rightarrow f(z)\text{ has second order pole at }z&=-\frac{1}{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+	\item The value of integral
+$$
+I=\oint_{c} \frac{\sin z}{2 z-\pi} d z
+$$
+with $c$ a circle $|z|=2$, is
+\begin{tasks}(2)
+	\task[\textbf{a.}]0
+	\task[\textbf{b.}]$2 \pi i$
+	\task[\textbf{c.}]$\pi i$
+	\task[\textbf{d.}] $-\pi i$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	I&=\oint_{C} \frac{\sin z}{2 z-\pi} \quad\text{ pole }\Rightarrow 2 z-\pi=0 \Rightarrow z=\frac{\pi}{2}\\
+	\text{	Residue at }z&=\frac{\pi}{2} \quad \because|z|=2\text{ so it will be lies within the contour}\\
+	I&=\oint_{C} \frac{e^{i z}}{2\left(z-\frac{\pi}{2}\right)}=\sum Res \times 2 \pi i\\
+	\operatorname{Res} \mid&=\frac{\left(z-\frac{\pi}{2}\right) e^{i z}}{2\left(z-\frac{\pi}{2}\right)}\\&=\frac{e^{i \pi / 2}}{2}\\&=\frac{i}{2}\text{ (taking imaginary part, Residue $=\frac{1}{2}$})\\
+	\text{Now }I&=\frac{1}{2} \times 2 \pi i\\&=\pi i
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
 \end{answer}
 \end{enumerate}
