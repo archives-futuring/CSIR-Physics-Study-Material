@@ -328,33 +328,33 @@ $$
 	\text { Since, } \frac{\partial^{2} f}{\partial x^{2}}+\frac{\partial^{2} f}{d y^{2}}=0 \Rightarrow 2 n+2=0 \Rightarrow n=-1 ;^{\prime} m^{\prime} \text { can take any value. }
 	\end{align*}
 \end{answer}
-\textbf{Cauchy's Integral Theorem}\\
+\section{Cauchy's Integral Theorem}
 If a funciion $f(z)$ is analytic and its derivative $f^{\prime}(z)$ is continuous at all points inside and on a simple closed curve ' $C$ ', then $\oint_{C} f(z) d z=0$\\
-\textbf{Cauchy's Integral Formula}\\
-\begin{answer}
+\subsection{Cauchy's Integral Formula}
+
 	If $f(z)$ is analytic within or on a closed curve $\mathrm{C}$ and if ' $\mathrm{a}$ ' is any point within ${\mathrm{C}}$, where $\frac{f(z)}{z-a}$ is not analytic at $z=a$ then
 	\begin{align*}
-	f(a)&=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{z-a} d z \quad \text { and } f^{\prime}(a)=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{2}} d z\\
+	f(a)&=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{z-a} d z \qquad \text { and } f^{\prime}(a)=\frac{1}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{2}} d z\\
 	\text{Similarly, }\qquad f^{\prime \prime}(\mathrm{a})&=\frac{2 !}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{3}} d z \quad\text{ and } \mathrm{f}^{\mathrm{n}}(\mathrm{a})=\frac{n !}{2 \pi i} \oint_{C} \frac{f(z)}{(z-a)^{n+1}} d z
 	\end{align*}
-\end{answer}
+
 \begin{exercise}
 	Evaluate the integral $\frac{1}{2 \pi i} \oint \frac{z e^{z}}{(z-a)^{3}}$
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\frac{1}{2 \pi i} \oint \frac{z e^{z}}{(z-a)^{3}}=\left.\frac{1}{2 \pi i} 2 \pi i \frac{1}{2 !} \frac{d^{2}}{d z^{2}}\left(z e^{z}\right)\right|_{z=a}=\frac{a e^{a}+2 e^{a}}{2}=\frac{1}{2}(a+\dot{2}) e^{a}
+	\frac{1}{2 \pi i} \oint \frac{z e^{z}}{(z-a)^{3}}&=\left.\frac{1}{2 \pi i} 2 \pi i \frac{1}{2 !} \frac{d^{2}}{d z^{2}}\left(z e^{z}\right)\right|_{z=a}\\&=\frac{a e^{a}+2 e^{a}}{2}\\&=\frac{1}{2}(a+{2}) e^{a}
 	\end{align*}
 \end{answer}
-\textbf{Power Series Expansion of Complex Function}
+\section{Power Series Expansion of Complex Function}
 	\begin{align*}
 	\intertext{Every analytic function which is analytic at $z=z_{0}$ can be expanded into power series about $z=z_{0}$.}
-	f(z)&=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\ldots \ldots\\
-	\text{where, $z_{0}$ is }&\text{the centre of power series.}
+	f(z)&=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\ldots \ldots
+	\intertext{where, $z_{0}$ is the centre of power series.}
 \end{align*}
-\textbf{Radius of Convergence}\\
+\subsection{Radius of Convergence}
 Imagine a circle of centre $z_{0}$ and radius $r$, then $\left|z-z_{0}\right|=R$, 
-The power series is convergent in the region $\left|z-z_{0}\right|<R$ (i.e. within the circle) and divergent $\left|z-z_{0}\right|>R$\\ (outside the circle). Therefore, $R$ is known as the radius of convergence of power series and defined as\\
+The power series is convergent in the region $\left|z-z_{0}\right|<R$ (i.e. within the circle) and divergent $\left|z-z_{0}\right|>R$ (outside the circle). Therefore, $R$ is known as the radius of convergence of power series and defined as\\
 $$R=\lim _{n \rightarrow \infty}\left|\frac{a_{n}}{a_{n+1}}\right|$$
 \begin{exercise}
 	Find the radius of convergence of the series
@@ -372,8 +372,8 @@ $$R=\lim _{n \rightarrow \infty}\left|\frac{a_{n}}{a_{n+1}}\right|$$
 	\frac{1}{R}&=\lim _{n \rightarrow \infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\frac{2}{3} \cdot \frac{(1+0)}{(1+0)}=\frac{2}{3} \Rightarrow R=\frac{3}{2}
 	\end{align*}
 \end{answer}
-\textbf{Taylor Series Expansion}\\
-If a function $\mathrm{f}(\mathrm{z})$ is analytic at all points inside and on a circle $C$, with its center at the point ' $a$ ' and radius ' $r$ ', then at each point $z$ inside $C$, the function $f(z)$ can be expanded as
+\subsubsection{Taylor Series Expansion}
+If a function $\mathrm{f}(\mathrm{z})$ is analytic at all points inside and on a circle $C$, with its center at the point ' $a$ ' and radius ' $r$ ', then at each point $z$ inside $C$, the function $f(z)$ can be expanded as,
 \begin{align*}
 	f(z) &=f(a)+\frac{f^{\prime}(a)}{1 !}(z-a)+\frac{f^{\prime \prime}(a)}{2 !}(z-a)^{2}+\ldots .+\frac{f^{n}(a)}{n !}(z-a)^{n}+\ldots \\
 	& \Rightarrow f(z)=\sum_{n=0}^{\infty} \frac{f^{n}\left(z_{0}\right)}{n !}\left(z-z_{0}\right)^{n}
@@ -393,97 +393,118 @@ If a function $\mathrm{f}(\mathrm{z})$ is analytic at all points inside and on a
 	\end{align*}
 \end{answer}
 \section{Laurent Series}
-Let $C_{1}$ and $C_{2}$ be two circles with center at $z_{0}$. Let $f(z)$ be analytic in the region $R$ between the circles. Then $f(z)$ can be expanded in a series of the form
- $$f(z)=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\cdots+\frac{b_{1}}{z-z_{0}}+\frac{b_{2}}{\left(z-z_{0}\right)^{2}}+\cdots$$
-convergent in $R$. Such a series is called a Laurent series. The "b" series in (4.1) is called the principal part of the Laurent series.\\
-Example 1. Consider the Laurent series
-$(4.2)$
-$$
-\begin{aligned}
-f(z)=1+\frac{z}{2}+\frac{z^{2}}{4}+\frac{z^{3}}{8}+\cdots+&\left(\frac{z}{2}\right)^{n}+\cdots \\
-&+\frac{2}{z}+4\left(\frac{1}{z^{2}}-\frac{1}{z^{3}}+\cdots+\frac{(-1)^{n}}{z^{n}}+\cdots\right)
-\end{aligned}
-$$
+Let $C_{1}$ and $C_{2}$ be two circles with center at $z_{0}$. Let $f(z)$ be analytic in the region $R$ between the circles. Then $f(z)$ can be expanded in a series of the form,
+\begin{equation}
+f(z)=a_{0}+a_{1}\left(z-z_{0}\right)+a_{2}\left(z-z_{0}\right)^{2}+\cdots+\frac{b_{1}}{z-z_{0}}+\frac{b_{2}}{\left(z-z_{0}\right)^{2}}+\cdots \label{complex1}
+\end{equation}
+convergent in $R$. Such a series is called a Laurent series. The "b" series in equation \ref{complex1} is called the principal part of the Laurent series.\\
+ Consider the Laurent series in equation.\label{complex1}
+\begin{align}
+f(z)=1+\frac{z}{2}+\frac{z^{2}}{4}+\frac{z^{3}}{8}+\cdots+&\left(\frac{z}{2}\right)^{n}+\cdots \notag\\
+&+\frac{2}{z}+4\left(\frac{1}{z^{2}}-\frac{1}{z^{3}}+\cdots+\frac{(-1)^{n}}{z^{n}}+\cdots\right)\label{complex2}
+\end{align}
 Let us see where this series converges. First consider the series of positive powers; by the ratio test (see Chapters 1 and 2), this series converges for $|z / 2|<1$, that is, for $|z|<2$. Similarly, the series of negative powers converges for $|1| z \mid<1$, that is, $|z|>1$. Then both series converge (and so the Laurent series converges) for $|z|$ between 1 and 2 , that is, in a ring between two circles of radii 1 and 2 .\\
-We expect this result in general. The " $a "$ series is a power series, and a power series converges inside some circle (say $C_{2}$ in Figure 4.1). The " $b "$ series is a series of inverse powers of $z$, and so converges for $|1 / z|<$ some constant; thus the " $" b "$ series converges outside some circle. Then a Laurent series converges between two circles (if it converges at all). (Note that the inner circle may be a point and the outer circle may have infinite radius).
+We expect this result in general. The ``$a$'' series is a power series, and a power series converges inside some circle (say $C_{2}$ in Figure .\ref{Laurent series}). The  ``$b$'' series is a series of inverse powers of $z$, and so converges for $|1 / z|<$ some constant. Thus the ``$b$'' series converges outside some circle. Then a Laurent series converges between two circles (if it converges at all). (Note that the inner circle may be a point and the outer circle may have infinite radius).
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.7cm,width=7cm]{CN.01}
+	\caption{Laurent series}
+	\label{Laurent series}
 \end{figure}
 The formulas for the coefficients are 
 $$
-a_{n}=\frac{1}{2 \pi i} \oint_{C} \frac{f(z) d z}{\left(z-z_{0}\right)^{n+1}}, \quad b_{n}=\frac{1}{2 \pi i} \oint_{C} \frac{f(z) d z}{\left(z-z_{0}\right)^{-n+1}},
+a_{n}=\frac{1}{2 \pi i} \oint_{C} \frac{f(z) d z}{\left(z-z_{0}\right)^{n+1}}, \quad b_{n}=\frac{1}{2 \pi i} \oint_{C} \frac{f(z) d z}{\left(z-z_{0}\right)^{-n+1}}
 $$
-where $C$ is any simple closed curve surrounding $z_{0}$ and lying in $R$. However, this is not usually the easiest way to find a Laurent series. Like power series about a point, the Laurent series (about $z_{0}$ ) for a function in a given annular ring (about $z_{0}$ ) where the function is analytic, is unique, and we can find it by any method we choose. (See examples below.) If $f(z)$ has several isolated singularities, there are several annular rings, $R_{1}, R_{2}, \cdots$, in which $f(z)$ is analytic; then there are several different Laurent series for $f(z)$, one for each ring. The Laurent series which we usually want is the one that converges near $z_{0}$. If you have any doubt about the ring of convergence of a Laurent series, you can find out by testing the " $a$ " series and the "b" series separately.\\
-\textbf{Singularity of Complex Function}\\
-\textbf{Singular Point of an Analytic Function}\\\\
-A point at which the function ceases to be analytic.\\
-Example: $f(z)=\frac{1}{(z-2)}$ has a singularity at $\mathrm{z}=2$.\\
-Different kinds of singularities exist. These are:\\
-\textbf{Isolated Singularity}\\
-A point $\mathrm{z}=\mathrm{z}_{0}$ is said to be isolated singularity of $f(z)$ if\\
-(a) $f(z)$ is not analytic at $\mathrm{z}=\mathrm{z}_{0}$\\
-(b) $f(z)$ is analytic in the neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$ i.e. there exists a neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$, containing no other singularity.
-\begin{exercise}
-	(i) Function $f(z)=\frac{1}{z}$ is analytic everywhere except at $\mathrm{z}=0$, therefore $\mathrm{z}=0$ is an isolated singularity.\\
-	(ii) The function $f(z)=\frac{z+2}{(z-1)(z-2)(z-3)}$ has three isolated singularities at $z=1,2$ and 3 .
-\end{exercise}
-\textbf{Non-isolated Singularity}\\
+Where $C$ is any simple closed curve surrounding $z_{0}$ and lying in $R$. However, this is not usually the easiest way to find a Laurent series. Like power series about a point, the Laurent series (about $z_{0}$ ) for a function in a given annular ring (about $z_{0}$ ) where the function is analytic, is unique, and we can find it by any method we choose. (See examples below.) If $f(z)$ has several isolated singularities, there are several annular rings, $R_{1}, R_{2}, \cdots$, in which $f(z)$ is analytic; then there are several different Laurent series for $f(z)$, one for each ring. The Laurent series which we usually want is the one that converges near $z_{0}$. If you have any doubt about the ring of convergence of a Laurent series, you can find out by testing the ``$a$'' series and the ``$b$'' series separately.
+\section{Singularity of Complex Function}
+\textbf{\large{Singular Point of an Analytic Function}}\\\\
+A point at which the function ceases to be analytic is called a singular point.\\
+\begin{example}
+$f(z)=\frac{1}{(z-2)}$ has a singularity at $\mathrm{z}=2$.
+\end{example} 
+Different kinds of singularities exist.they are,
+\subsection{Isolated Singularity}
+A point $\mathrm{z}=\mathrm{z}_{0}$ is said to be isolated singularity of $f(z)$ if,
+\begin{enumerate}[label=(\alph*)]
+	\item  $f(z)$ is not analytic at $\mathrm{z}=\mathrm{z}_{0}$.
+	\item  $f(z)$ is analytic in the neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$ i.e. there exists a neighbourhood of $\mathrm{z}=\mathrm{z}_{0}$, containing no other singularity.
+\end{enumerate}
+
+\begin{example}$\left. \right. $\\\\
+	\textbf{(i)} Function $f(z)=\frac{1}{z}$ is analytic everywhere except at $\mathrm{z}=0$, therefore $\mathrm{z}=0$ is an isolated singularity.\\\\
+	\textbf{(ii)} The function $f(z)=\frac{z+2}{(z-1)(z-2)(z-3)}$ has three isolated singularities at $z=1,2$ and 3 .
+\end{example}
+\subsection{Non-isolated Singularity}
+A singular point $z_{0}$ is said to be an non-isolated singularity if $z_{0}$ is not an isolated singular point.
+\begin{example}$\left. \right. $\\\\
+	$f(z)=\frac{1}{\left[\sin \frac{\pi}{z}\right]}$
+	\begin{align*}
+	f(z)&=\frac{1}{\left[\sin \frac{\pi}{z}\right]} \text { is not analytic when } \sin \frac{\pi}{z}=0 \\\frac{\pi}{\mathrm{z}}&=\mathrm{n} \pi \\ z&=\frac{1}{n}(n=0,1,2,3 \ldots \ldots \ldots \ldots)\\
+	\intertext { Thus,$z=0$  is an non-isolated singularity of $ f(z)$ surrounded by a infinite number of other singularity $z=\frac{1}{n}$}
+	f(z)&=\frac{1}{\sin \pi / z} \text { has non-isolated singularity at } \mathrm{z}=0
+	\end{align*}
+\end{example}
+
+\subsection{Types of Isolated Singularity}
+ If  $\mathrm{f}(\mathrm{z})$  is an isolated singular point at  $\mathrm{z}=\mathrm{a}$ , the we can expand $ f(\mathrm{z})$ about $ \mathrm{z}=\mathrm{a}$ into laurent series as: 
 \begin{align*}
-f(z)&=\frac{1}{\left[\sin \frac{\pi}{z}\right]} \text { is not analytic when } \sin \frac{\pi}{z}=0 \Rightarrow \frac{\pi}{\mathrm{z}}=\mathrm{n} \pi \Rightarrow z=\frac{1}{n}(n=0,1,2,3 \ldots \ldots \ldots \ldots)\\
-\text { Thus, } z&=0 \text { is an non-isolated singularity of } f(z) \text {, surrounded by a infinite number of other singularity } z=\frac{1}{n}\\
-f(z)&=\frac{1}{\sin \pi / z} \text { has non-isolated singularity at } \mathrm{z}=0
+\mathrm{f}(\mathrm{z})=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} \frac{b_{n}}{(z-a)^{n}}=\left[a_{0}+a_{1}(z-a)+a_{2}(z-a)^{2}+\ldots . .\right]+\left[\frac{b_{1}}{(z-a)}+\frac{b_{2}}{(z-a)^{2}}+\ldots . .\right]
 \end{align*}
-\textbf{Types of Isolated Singularity}\\
-\begin{align*}
-&\text { If } \mathrm{f}(\mathrm{z}) \text { is an isolated singular point at } \mathrm{z}=\mathrm{a} \text {, the we can expand } f(\mathrm{z}) \text { about } \mathrm{z}=\mathrm{a} \text { into laurent series as: }\\
-&\mathrm{f}(\mathrm{z})=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} \frac{b_{n}}{(z-a)^{n}}=\left[a_{0}+a_{1}(z-a)+a_{2}(z-a)^{2}+\ldots . .\right]+\left[\frac{b_{1}}{(z-a)}+\frac{b_{2}}{(z-a)^{2}}+\ldots . .\right]\\
-&\text{Therefore, three types of singularity are as follows.}
-\end{align*}
-\textbf{(1) Removable Singularity :} If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$ contains no term i.e. if $b_{n}=0$ for all ' $n$ ', then $\mathrm{f}(\mathrm{z})$ has a removable singularity at $\mathrm{z}=\mathrm{a}$. In this case, Laurent series expansion is $f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}$
-\begin{exercise}
+Therefore, three types of singularity exists and they are as follows.
+\subsubsection{1.\ Removable Singularity } If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$ contains no term i.e. if $b_{n}=0$ for all ' $n$ ', then $\mathrm{f}(\mathrm{z})$ has a removable singularity at $\mathrm{z}=\mathrm{a}$. In this case, Laurent series expansion is $f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}$
+\begin{example}$\left. \right. $\\
 	Suppose $f(z)=\frac{\sin z}{z}$, then $\lim _{z \rightarrow 0}\left(\frac{\sin z}{z}\right)=1$, therefore, $z=0$ is a removable singularity of $f(z)$.\\
 	Again, $\frac{\sin z}{z}=\frac{1}{z}\left(z-\frac{z^{3}}{3 !}+\ldots \ldots \ldots\right)=1-\frac{z^{2}}{3 !}+\frac{z^{4}}{5 !} \ldots \ldots$\\
 	Since, there is no negative term in the laurent series expansion of $f(z)$ about $z=0$, hence $z=0$ is a removable singularity of $f(z)$.
-\end{exercise}
-\textbf{(2) Non-essential singularity or Pole:} If the principal part of the Laurrent series expansion of $f(z)$ about $z=$ a contains a finite number of terms, saym, i.e. $b_{n}=0$ for all $n>m$, then $f(z)$ has a non-essential singularity or a pole of order ' $m$ ' at $z=a$. A polc of order one is also known as simple pole.\\
+\end{example}
+\subsubsection{2.\ Non-essential singularity or Pole:} If the principal part of the Laurrent series expansion of $f(z)$ about $z=$ a contains a finite number of terms, saym, i.e. $b_{n}=0$ for all $n>m$, then $f(z)$ has a non-essential singularity or a pole of order ' $m$ ' at $z=a$. A polc of order one is also known as simple pole.\\
 Thus if $\mathrm{z}=\mathrm{a}$ is pole of order mof function $\mathrm{f}(\mathrm{z})$, then $\mathrm{f}(\mathrm{z})$ will have the Laurent series expansion of the form
 $$
 f(z)=\sum_{n=0}^{\infty} a_{n}\left(z-z_{0}\right)^{n}+\sum_{n=1}^{m} b_{n}\left(z-z_{0}\right)^{-n}
 $$
-Example : $f(z)=\frac{z}{(z-1)(z+2)^{2}}$ has a simple pole at $z=1$ and a pole of order 2 at $z=-2$.\\
-\textbf{(3) Essential singularity: }If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$, contains infinite number of terms i.e. $b_{n} \neq 0$ for infinitely many values of $n$, then $f(z)$ has an essential singularity at $z=a$.\\
-Example : $f(z)=e^{1 / 2}$ has an essential singularity at $z=0$, since the expansion $e^{\frac{1}{z}}=1+\frac{1}{z}+\frac{1}{z^{2}} 2 !+\ldots . .$ is an infinite series of-ve powers of $\mathrm{z}$.\\
+\begin{example}
+	$f(z)=\frac{z}{(z-1)(z+2)^{2}}$ has a simple pole at $z=1$ and a pole of order 2 at $z=-2$.
+\end{example} 
+\subsubsection{3.\ Essential singularity: }If the principal part of the Laurrent series expansion of $f(z)$ about $z=a$, contains infinite number of terms i.e. $b_{n} \neq 0$ for infinitely many values of $n$, then $f(z)$ has an essential singularity at $z=a$.\\
+\begin{example}
+	$f(z)=e^{1 / 2}$ has an essential singularity at $z=0$, since the expansion $e^{\frac{1}{z}}=1+\frac{1}{z}+\frac{1}{z^{2}} 2 !+\ldots . .$ is an infinite series of-ve powers of $\mathrm{z}$.
+\end{example} 
 \begin{exercise}
 	Examine the nature of singularity of the functions: (a) $\sin \left(\frac{1}{1-z}\right)$, (b) $(z-3) \sin \left(\frac{1}{z+2}\right)$.
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\text{(a) }&\sin \left(\frac{1}{1-z}\right)=\frac{1}{1-z}-\frac{1}{(1-z)^{3} \cdot 3 !}+\frac{1}{(1-z)^{5} \cdot 5 !}-.
-\text{	so, $z=1$ is an isolated essential singular point.}\\
-\text { (b) }&(z-3) \sin \left(\frac{1}{z+2}\right)=(z-3)\left[\frac{1}{z+2}-\frac{1}{(z+2)^{3} \cdot 3 !}+\frac{1}{(z+2)^{5} .5 !}-\ldots \ldots . .\right] \text { so, } \mathrm{z}=-2 \text { is an isolated }\\
-\text{essential point}
+	\text{(a) }&\sin \left(\frac{1}{1-z}\right)=\frac{1}{1-z}-\frac{1}{(1-z)^{3} \cdot 3 !}+\frac{1}{(1-z)^{5} \cdot 5 !}-.\\
+&\text{	so, $z=1$ is an isolated essential singular point.}\\
+\text { (b) }&(z-3) \sin \left(\frac{1}{z+2}\right)=(z-3)\left[\frac{1}{z+2}-\frac{1}{(z+2)^{3} \cdot 3 !}+\frac{1}{(z+2)^{5} .5 !}-\ldots \ldots . .\right] \\ &\text { so, $\mathrm{z}=-2$  is an isolated essential point}
 	\end{align*}
 \end{answer}
-\textbf{Zero of an Analytic Function}\\
-\begin{align*}
-\text{A zero of an analytic}&\text{ function $f(z)$ is a value of $z$ such that $f(z)=0$}\\
-\text{An analytic function $\mathrm{f}(\mathrm{z})$}&\text{ is said to have a zero of order ' $\mathrm{m}$ ' at $\mathrm{z}=\mathrm{z}_{0}$ if $\mathrm{f}(\mathrm{z})$ is expressible as}\\
-f(z)&\left(z-z_{0}\right)^{m} \phi(z)\\
-\text{where $\phi(z)$ is analytic and $\phi\left(z_{0}\right) \neq 0$. }&\text{For $m=1, f(z)$ is said to have a simple zero at $z=z_{0}$}
-\end{align*}
-\textbf{Residue of Complex Fuction}\\
-\textbf{Definition of residue at a pole:}\\
+\section{Zero of an Analytic Function}
+A zero of an analytic function $f(z)$ is a value of $z$ such that $$f(z)=0$$
+An analytic function $\mathrm{f}(\mathrm{z})$ is said to have a zero of order ' $\mathrm{m}$ ' at $\mathrm{z}=\mathrm{z}_{0}$ if $\mathrm{f}(\mathrm{z})$ is expressible as, $$f(z)\left(z-z_{0}\right)^{m} \phi(z)$$
+where $\phi(z)$ is analytic and $\phi\left(z_{0}\right) \neq 0$. For $m=1, f(z)$ is said to have a simple zero at $z=z_{0}$
+
+\section{Residue of Complex Fuction}
+\subsection{Definition of residue at a pole:}
 Let, $\mathrm{z}=$ a be a pole of order ' $m$ ' of $\mathrm{f}(\mathrm{z})$ and $\mathrm{C}_{1}$ is a circle of radius ' $r$ ' with center at $\mathrm{z}=$ a which does not contain singularities except $\mathrm{z}=\mathrm{a}$, then $\mathrm{f}(\mathrm{z})$ is analytic within the annular region $\mathrm{r}<|\mathrm{z}-\mathrm{a}|<\mathrm{R}$ can be expanded into Laurrent series within the annulur region as:
 $$f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n}+\sum_{n=1}^{\infty} b_{n}(z-a)^{-n}$$
-Co-efficient $\mathrm{b}_{1}$ is known as residue of $\mathrm{f}(\mathrm{z})$ at $\mathrm{z}=\mathrm{a}$ i.e. Res. $\mathrm{f}(\mathrm{z}=\mathrm{a})=\mathrm{b}_{1}=\frac{1}{2 \pi i} \oint f(z) d z$
-\textbf{Methods of Finding Residues}\\
-Method 1: Res. $f(z=a)=\underset{z \rightarrow a}{L t}(z-a) f(z)$\\
-Method 2: If $f(z)=\frac{\phi(z)}{\psi(z)}$ where $\psi(a)=0$ but $\phi(a) \neq 0$, then $\operatorname{Res} . f(z=a)=\frac{\phi(a)}{\psi^{\prime}(a)}$\\
-(b) Residue at a pole of order ' $n$ ':\\
-Method 1: Res. $f(z=a)=\frac{1}{(n-1) !}\left\{\frac{d^{n-1}}{d z^{n-1}}\left[(z-a)^{n} f(z)\right]\right\}_{z=a}$\\
-Method 2: First put $z+a=t$ and expand it into series, then Res. $f(z=a)=$ co-efficient of $1 / t$.\\
-(c ) Residue at $\mathrm{z}=\infty$ : Res. $f(z=\infty) \underset{z \rightarrow \infty}{L t}[-z f(z)]$
+Co-efficient $\mathrm{b}_{n}$ is known as residue of $\mathrm{f}(\mathrm{z})$ at $\mathrm{z}=\mathrm{a}$ i.e.
+\begin{equation}
+\text{Res.} \mathrm{f}(\mathrm{z}=\mathrm{a})=\mathrm{b}_{n}=\frac{1}{2 \pi i} \oint f(z) d z
+\end{equation} 
+\subsection{Methods of Finding Residues}
+\begin{enumerate}[label=(\alph*)]
+	\item $\left. \right. $\\
+	\textbf{Method 1:}  Res. $f(z=a)=\underset{z \rightarrow a}{L t}(z-a) f(z)$\\
+	\textbf{Method 2: }If $f(z)=\frac{\phi(z)}{\psi(z)}$ where $\psi(a)=0$ but $\phi(a) \neq 0$, then $$\operatorname{Res} . f(z=a)=\frac{\phi(a)}{\psi^{\prime}(a)}$$
+	\item Residue at a pole of order ' $n$ '\\
+	\textbf{Method 1:} Res. $f(z=a)=\frac{1}{(n-1) !}\left\{\frac{d^{n-1}}{d z^{n-1}}\left[(z-a)^{n} f(z)\right]\right\}_{z=a}$\\
+	\textbf{Method 2:} First put $z+a=t$ and expand it into series, then Res. $f(z=a)=$ co-efficient of $1 / t$
+	\item Residue at $\mathrm{z}=\infty$ : Res. $f(z=\infty) \underset{z \rightarrow \infty}{L t}[-z f(z)]$
+\end{enumerate}
+
+
+
 \begin{exercise}
 	 Find the singular points of the following function and the corresponding residues:\\
 	(a) $f(z)=\frac{1-2 z}{z(z-1)(z-2)}$\quad
@@ -502,8 +523,11 @@ Method 2: First put $z+a=t$ and expand it into series, then Res. $f(z=a)=$ co-ef
 	\text{Res. }f(z=0)&=\text{ Coefficient of }\frac{1}{z}=\frac{1}{3 !}=\frac{1}{6}
 	\end{align*}
 \end{answer}
-\textbf{Cauchy's Residue Theorem :}
-If $\mathrm{f}(\mathrm{z})$ in single-valued and analytic in a closed curve ' $\mathrm{C}$ ', except at a finite number of poles within ' $\mathrm{C}$, then $\oint_{C} \mathrm{f}(\mathrm{z}) \mathrm{dz}=2 \pi \mathrm{i}$ (sum of the residues at poles within ' $\mathrm{C}^{\prime}$ )
+\section{Cauchy's Residue Theorem }
+If $\mathrm{f}(\mathrm{z})$ in single-valued and analytic in a closed curve ' $\mathrm{C}$ ', except at a finite number of poles within ' $\mathrm{C}$, then, 
+\begin{equation}
+\oint_{C} \mathrm{f}(\mathrm{z}) \mathrm{dz}=2 \pi \mathrm{i}\ \text{(Sum of the residues at poles within `$\mathrm{C}$')}
+\end{equation}
 \begin{exercise}
 	Evaluate the integral: $\oint_{C} \frac{4-3 z}{z(z-1)(z-3)} d z$ where $|z|=\frac{3}{2}$
 \end{exercise}
@@ -526,13 +550,13 @@ If $\mathrm{f}(\mathrm{z})$ in single-valued and analytic in a closed curve ' $\
 	\end{aligned}
 	\end{align*}
 \end{answer}
-\textbf{Definite Integrals of Trigonometric Functions of $\cos\theta$ and $\sin\theta$ : (Integration round the unit circle)} :\\
-	Method: Consider the contour to be a circle centered at the origin and having radius one unit i.e. $|\mathrm{z}|=1$
+\subsection{Definite Integrals of Trigonometric Functions of $\cos\theta$ and $\sin\theta$ : (Integration round the unit circle)} 
+	\textbf{Method:} Consider the contour to be a circle centered at the origin and having radius one unit i.e. $|\mathrm{z}|=1$
 \begin{align*}
-	\text{Assume, }z&=e^{i \theta} \Rightarrow d z=i e^{i \theta} d \theta \Rightarrow d \theta=\frac{d z}{i z}\\
+	\text{Assume, }z&=e^{i \theta} \Rightarrow d z=i e^{i \theta} d \theta \\ d \theta&=\frac{d z}{i z}\\
 	\text{Therefore, }\cos \theta&=\frac{e^{i \theta}+e^{-i \theta}}{2}=\frac{1}{2}\left(z+\frac{1}{z}\right)
-	 \text{and }\sin \theta=\frac{e^{i \theta}-e^{-i \theta}}{2 i}=\frac{1}{2 i}\left(z-\frac{1}{z}\right)\\
-	 \text { and the limit will be changed from }& 0 \rightarrow 2 \pi \text { to } \oint_{C}
+	\\ \text{and }\sin \theta&=\frac{e^{i \theta}-e^{-i \theta}}{2 i}=\frac{1}{2 i}\left(z-\frac{1}{z}\right)
+	 \intertext { And the limit will be changed from $ 0 \rightarrow 2 \pi \text { to } \oint_{C}$}
 \end{align*}
 The replacements regarding $\cos \theta$ and $\sin \theta$ is to be done only in the denominator of the given integral.
 \begin{exercise}
@@ -540,23 +564,22 @@ The replacements regarding $\cos \theta$ and $\sin \theta$ is to be done only in
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}&=\int_{0}^{2 \pi} \frac{d z / i z}{a+b\left(\frac{z^{2}+1}{2 z}\right)}=\int_{0}^{2 \pi} \frac{2 d z}{i\left(b z^{2}+2 a z+b\right)}\\
-	\text { The singular points are at } \Rightarrow z&=\alpha=\frac{-a+\sqrt{a^{2}-b^{2}}}{b} \quad \& \quad z=\beta=\frac{-a-\sqrt{a^{2}-b^{2}}}{b}\\
-	\intertext{The singular point $z=\beta$ will lie outside the unit circle as $a>b>0$ while the singular point $z=\alpha$ will lie inside the unit circle which is a simple pole.}\\
-	\text { Res. } f(z=\alpha)=\lim _{z \rightarrow \alpha}(z-\alpha) f(z)&=\lim _{z \rightarrow \alpha} \frac{2}{i b} \frac{(z-\alpha)}{(z-\alpha)(z-\beta)}=\frac{2}{i b(\alpha-\beta)}=\frac{2}{i b} \times \frac{b}{2 \sqrt{a^{2}-b^{2}}}=\frac{1}{i \sqrt{a^{2}-b^{2}}}\\
-\text { Therefore,  }\text{by cauchy Residue theorem.}&\\
-I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{2}-b^{2}}}=\frac{2 \pi}{\sqrt{a^{2}-b^{2}}}
+	\int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}&=\int_{0}^{2 \pi} \frac{d z / i z}{a+b\left(\frac{z^{2}+1}{2 z}\right)}\\&=\int_{0}^{2 \pi} \frac{2 d z}{i\left(b z^{2}+2 a z+b\right)}\\
+	\text { The singular points are at ($z=\alpha$) }  &=\frac{-a+\sqrt{a^{2}-b^{2}}}{b}  \\ 	\text { The singular points are at ($z=\beta$) }&=\frac{-a-\sqrt{a^{2}-b^{2}}}{b}\\
+	\intertext{The singular point $z=\beta$ will lie outside the unit circle as $a>b>0$ while the singular point $z=\alpha$ will lie inside the unit circle which is a simple pole.}
+	\text { Res. } f(z=\alpha)&=\lim _{z \rightarrow \alpha}(z-\alpha) f(z)\\&=\lim _{z \rightarrow \alpha} \frac{2}{i b} \frac{(z-\alpha)}{(z-\alpha)(z-\beta)}=\frac{2}{i b(\alpha-\beta)}\\&=\frac{2}{i b} \times \frac{b}{2 \sqrt{a^{2}-b^{2}}}\\&=\frac{1}{i \sqrt{a^{2}-b^{2}}}\\
+\text { Therefore,by cauchy Residue theorem.}\
+I&=2 \pi i \times \text { Residue }\\&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{2}-b^{2}}}\\&=\frac{2 \pi}{\sqrt{a^{2}-b^{2}}}
 	\end{align*}
 \end{answer}
-
-
-\textbf{ Evaluation of improper integrals between the limit $-\infty$ to $+\infty$ : }\\
-\textbf{Theorem I:}\\
+\subsection{ Evaluation of improper integrals between the limit $-\infty$ to $+\infty$ : }
+$\left. \right. $\\
+\subsubsection{Theorem I:}
 \begin{align*}
-\text{If $f(x)$ contain}&\text{ only polynomial terms}\\
-\text{then }f(x)&=f(x) \\
-\rightarrow&\text{ find singular points}\\
-\rightarrow&\text{ check point lie in upper half}
+\intertext{If $f(x)$ contain  only polynomial terms}
+\text{Then }f(x)&=f(x) 
+\intertext{$\rightarrow$ find singular points}
+\intertext{$\rightarrow$ check point lie in upper half}
 \intertext{\textbf{A.}\quad If singular point lie on imaginary axis}
 \int\limits_{-\infty}^{\infty}f(z)dz&=\int\limits_{-\infty}^{\infty}f(x)dx
 =2\pi i[\Sigma \text{ Res}]-\left( \stackrel{\text{lim}}{z\rightarrow \infty}\quad zf(x)\right) x\pi i
@@ -564,7 +587,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 \int\limits_{-\infty}^{\infty}f(x)dx=&
 \int\limits_{-\infty}^{\infty}f(z)dz=\pi i[\Sigma \text{ Res}]-\pi i \left[\stackrel{\text{lim}}{z\rightarrow \infty}\quad zf(z) \right] 
 \end{align*}
-\textbf{Theorem II:}
+\subsubsection{Theorem II:}
 \begin{align*}
 \intertext{If $f(x)$ contains sine and cosine function along with polynomial function rule is same, except second term which is $0$ in this case.}
 \intertext{\textbf{A.}\quad If singular point lie on imaginary axis}\\
@@ -591,13 +614,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\frac{5}{e}-e$
 		\task[\textbf{D.}] $-\frac{5}{e}-e$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\intertext { If we complete the contour, then by Cauchy integral theorem }
-		\int_{-1}^{1} d z z^{2} e^{z}+\int_{C} d z z^{2} e^{z}&=0 \Rightarrow \int_{C} d z z^{2} e^{z}=-\int_{-1}^{1} d z z^{2} e^{z}\\&=-\left[z^{2} e^{z}-2 z e^{2}+2 e^{2}\right]_{-1}^{1}=\frac{5}{e}-e
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
 	\item Which of the following is an analytic function of the complex variable $z=x+i y$ in the domain $|z|<2 ?$
 	{\exyear{NET/JRF(JUNE-2011)}}
 	\begin{tasks}(2)
@@ -606,10 +623,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $(1-x-i y)^{4}(7-x+i y)^{3}$
 		\task[\textbf{D.}] $(x+i y-1)^{1 / 2}$
 	\end{tasks}
-	\begin{answer}
-		Put $z=x+i y .$ If $\bar{z}=x-i y$ appears in any of the expressions then that expression is non-analytic. For option (D) we have a branch point singularity as the power is $\frac{1}{2}$ which is fractional. Hence only option (B) is analytic.\\\\
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+
 	\item The first few terms in the Laurent series for $\frac{1}{(z-1)(z-2)}$ in the region $1 \leq|z| \leq 2$ and around $z=1$ is
 	{\exyear{NET/JRF(JUNE-2012)}}
 	\begin{tasks}(1)
@@ -618,14 +632,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\frac{1}{\mathrm{z}^{2}}\left[1+\frac{1}{\mathrm{z}}+\frac{1}{\mathrm{z}^{2}}+\ldots .\right]\left[1+\frac{2}{\mathrm{z}}+\frac{4}{\mathrm{z}^{2}}+\ldots . .\right]$
 		\task[\textbf{D.}]  $2(z-1)+5(z-1)^{2}+7(z-1)^{3}+\ldots$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\frac{1}{(z-1)(z-2)}&=\frac{1}{z-2}-\frac{1}{z-1}=\frac{1}{1-z}+\frac{1}{(z-1)-1}\\&=\frac{1}{1-z}-(1+(1-z))^{-1}\\
-		&=\frac{1}{1-z}-\left[1+(1-z)+\frac{(-1)(-2)}{2 !}(1-z)^{2}+\frac{(-1)(-2)(-3)}{3 !}(1-z)^{3} \ldots\right]\\
-		&=\frac{1}{1-z}-\left[z+(1-z)^{2}-(1-z)^{3}+\ldots . .\right]
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+	
 	\item Let $u(x, y)=x+\frac{1}{2}\left(x^{2}-y^{2}\right)$ be the real part of analytic function $f(z)$ of the complex variable $z=x+i y$. The imaginary part of $f(z)$ is
 	{\exyear{NET/JRF(JUNE-2012)}}
 	\begin{tasks}(4)
@@ -634,19 +641,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $y$
 		\task[\textbf{D.}] $y^{2}-x^{2}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		u(x, y)&=x+\frac{1}{2}\left(x^{2}-y^{2}\right), v(x, y)=?\\
-		\text{Check }\frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y}\text{ and } \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\\
-		\Rightarrow \frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y}, \quad \frac{\partial v}{\partial y}=1+x, \\ v&=y+x y+f(x)\\
-		\frac{\partial u}{\partial y}&=-\frac{\partial v}{\partial x} \Rightarrow \frac{\partial v}{\partial x}=+y, \\ v&=y x+f(y)\\
-		y+x y+f(x)&=y x+f(y)\\
-		\text{If }f(x)&=0\quad \quad
-		f(y)=y\\
-		v&=x y+y
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+
 	\item The value of the integral $\int_{C} \frac{z^{3} d z}{\left(z^{2}-5 z+6\right)}$, where $C$ is a closed contour defined by the equation $2|z|-5=0$, traversed in the anti-clockwise direction, is
 	{\exyear{NET/JRF(DEC-2012)}}
 	\begin{tasks}(4)
@@ -655,14 +650,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $8 \pi i$
 		\task[\textbf{D.}] $2 \pi i$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		z^{2}-5 z+6&=0 \Rightarrow z^{2}-2 z-3 z+6\\&=0 \Rightarrow z(z-2)-3(z-2)=0 \Rightarrow z=3,2\\
-		2|z|&=5 \Rightarrow|z|=2.5,\text{ only 2 will be inside.}\\
-		\text{Residue }&=\left.(z-2) \frac{z^{3}}{(z-3)(z-2)}\right|_{z=2}=\frac{8}{2-3}\\&=-8 \Rightarrow \int \frac{z^{3} d z}{z^{2}-5 z+6}=2 \pi i(-8)=-16 \pi i
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+	
 	\item  With $z=x+i y$, which of the following functions $f(x, y)$ is NOT a (complex) analytic function of $z$ ?
 	{\exyear{NET/JRF(JUNE-2013)}}
 	\begin{tasks}(1)
@@ -671,13 +659,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $f(x, y)=\left(x^{2}-y^{2}+2 i x y-3\right)^{5}$
 		\task[\textbf{D.}] $f(x, y)=(1-x+i y)^{4}(2+x+i y)^{6}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(x, y)&=(1-x+i y)^{4}(2+x+i y)^{6}\\&=\{1-(x-i y)\}^{4}(2+x+i y)^{6}\\
-		\text{Due to present of }\bar{z}&=(x-i y)
-		\end{align*}
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
+
 	\item  Which of the following functions cannot be the real part of a complex analytic function of $z=x+i y ?$
 	{\exyear{NET/JRF(DEC-2013)}}
 	\begin{tasks}(4)
@@ -686,15 +668,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $x^{3}-3 x y^{2}$
 		\task[\textbf{D.}] $3 x^{2} y-y-y^{3}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\intertext{ Let $x^{2} y$ be real part of a complex function. Use Milne Thomson's method to write analytic complex function. The real part of that function should be (1) but that is not the case. So this cannot be real part of an analytic function. Also,}
-		z^{2}&=(x+i y)^{2}=x^{2}-y^{2}+2 i x y,\text{ Real part option (2)}\\
-		z^{3}&=(x+i y)^{3}=x^{3}-i y^{3}+3 i x y(x+i y)\\
-		&=x^{3}-i y^{3}+3 i x^{2} y-3 x y^{2},\text{ Real part option (3)}
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+	
 	\item  Given that the integral $\int_{0}^{\infty} \frac{d x}{y^{2}+x^{2}}=\frac{\pi}{2 y}$, the value of $\int_{0}^{\infty} \frac{d x}{\left(y^{2}+x^{2}\right)^{2}}$ is
 	{\exyear{NET/JRF(DEC-2013)}}
 	\begin{tasks}(4)
@@ -703,12 +677,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}]  $\frac{\pi}{8 y^{3}}$
 		\task[\textbf{D.}] $\frac{\pi}{2 y^{3}}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\int_{0}^{\infty} \frac{d x}{\left(y^{2}+x^{2}\right)^{2}}&=\frac{1}{2} \int_{-\infty}^{\infty} \frac{d x}{\left(y^{2}+x^{2}\right)^{2}},\text{ pole is of }2^{\text {nd }}\text{ order at }x=i y,\text{ residue }=1 /\left(4 i y^{3}\right)\\
-		\text{Integral }&=\left(\frac{1}{2}\right)(2 \pi i) \frac{1}{4 i y^{3}}=\frac{\pi}{\left(4 y^{3}\right)}
-		\end{align*}
-	\end{answer}
+
 	\item If $C$ is the contour defined by $|z|=\frac{1}{2}$, the value of the integral
 	$$
 	\oint_{C} \frac{d z}{\sin ^{2} z}
@@ -721,14 +690,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] 0
 		\task[\textbf{D.}] $\pi i$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(z)&=\frac{1}{\sin ^{2} z} \quad\left(|z|=\frac{1}{2}\right)\\
-		\sin z&=z-\frac{z^{3}}{\lfloor 3}+\frac{z^{5}}{\lfloor 5} \ldots . \Rightarrow \frac{1}{\sin ^{2} z}=\frac{1}{\left(z-\frac{z^{3}}{\frac{3}{3}}+\frac{z^{5}}{5} \cdots\right)^{2}}\\
-		\Rightarrow \frac{1}{\sin ^{2} z}&=\frac{1}{z^{2}}\left[1-\frac{z^{2}}{\lfloor 3}+\frac{z^{4}}{\lfloor 5} \ldots .\right]^{-2} \Rightarrow \oint_{C} \frac{d z}{\sin ^{2} z}=0
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+
 	\item The principal value of the integral $\int_{-\infty}^{\infty} \frac{\sin (2 x)}{x^{3}} d x$ is
 	{\exyear{NET/JRF(DEC-2014)}}
 	\begin{tasks}(4)
@@ -737,15 +699,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\pi$
 		\task[\textbf{D.}]  $2 \pi$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\text{Let }f(z)&=\frac{e^{i 2 z}}{z^{3}}\\
-		\lim _{2 \rightarrow 0}(z-0)^{3} f(z)&=\lim _{z \rightarrow 0}(z-0)^{3} \frac{e^{i 2 z}}{z^{3}}\\&=1(\text{ finite and }\neq 0) \Rightarrow z=0 \text{is pole of order 3} .\\
-		\text{Residue }R&=\frac{1}{2 !} \lim _{z \rightarrow 0} \frac{d^{2}}{d z^{2}}\left[(z-0)^{3} \frac{e^{i 2 z}}{z^{3}}\right]=-2\\
-		\Rightarrow \int_{-\infty}^{\infty} f(x) d x&=\pi i \Sigma R=\pi i(-2)=-2 \pi i \Rightarrow \operatorname{Im} .\text{ Part }\\&=-2 \pi \Rightarrow \int_{-\infty}^{\infty} f(x) d x=-2 \pi
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+	
 	\item The Laurent series expansion of the function $f(z)=e^{2}+e^{1 / 2}$ about $z=0$ is given by
 	{\exyear{NET/JRF(DEC-2014)}}
 	\begin{tasks}(2)
@@ -754,13 +708,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\sum_{n=0}^{\infty}\left(z^{n}+\frac{1}{z^{n}}\right) \frac{1}{n !}$ for all $0<|z|<\infty$
 		\task[\textbf{D.}]  $\sum_{n=-\infty}^{\infty} \frac{z^{n}}{n !}$ only if $|z|<1$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		e^{z}&=\left(1+z+\frac{z^{2}}{2 !}+\ldots\right)=\sum_{n=0}^{\infty} \frac{z^{n}}{n !}\text{ and }e^{1 / z}\\&=1+\frac{1}{z}+\frac{1}{2 !} \frac{1}{z^{2}}+\ldots .=\sum_{n=0}^{\infty} \frac{1}{z^{n} n !}\\
-		\Rightarrow f(z)&=\left(e^{z}+e^{1 / 2}\right)=\sum_{n=0}^{\infty}\left(z^{n}+\frac{1}{z^{n}}\right) \frac{1}{n !},\text{ for all }0<|z|<\infty
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
 	\item Consider the function $f(z)=\frac{1}{z} \ln (1-z)$ of a complex variable $z=r e^{i \theta}(r \geq 0, \quad-\infty<\theta<\infty)$. The singularities of $f(z)$ are as follows:
 	{\exyear{NET/JRF(DEC-2014)}}
 	\begin{tasks}(1)
@@ -769,13 +717,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] Branch points at $z=1$ and $z=\infty$; and a pole at $z=0$ for all $\theta$
 		\task[\textbf{D.}] Branch points at $z=0, z=1$ and $z=\infty$.
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\text{For }f(z)&=\frac{1}{z} \ln (1-z)=\frac{1}{z}\left(-z-\frac{z^{2}}{2}-\frac{z^{3}}{3}-\ldots . .\right)\\&=-1-\frac{z}{2}-\frac{z^{2}}{3}-\ldots .
-		\intertext{There is no principal part and when $z \rightarrow 0, f(z)=-1 .$ So there is removable singularity at $z=0$. Also $z=1$ and $z=\infty$ is Branch point.}
-		\end{align*}
-		None of the above is correct
-	\end{answer}
+	
 	\item  The value of integral $\int_{-\infty}^{\infty} \frac{d x}{1+x^{4}}$
 	{\exyear{NET/JRF(JUNE-2015)}}
 	\begin{tasks}(4)
@@ -784,19 +726,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\sqrt{2} \pi$
 		\task[\textbf{D.}] $2 \pi$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\int_{-\infty}^{\infty} \frac{d z}{1+z^{4}} \quad \because|z|=R\\
-		\text{Now, pole }z&=e^{(2 n+1) \frac{\pi}{4}}\\
-		n&=0, \quad \Rightarrow z_{0}=e^{\frac{i \pi}{4}}=\frac{1}{\sqrt{2}}+i \frac{1}{\sqrt{2}}, n\\&=2 \Rightarrow z_{2}=\frac{-1}{\sqrt{2}}-i \frac{1}{\sqrt{2}}\\
-		n&=1 \Rightarrow z_{1}=e^{\frac{i 3 \pi}{4}}=\frac{-1}{\sqrt{2}}+i \frac{1}{\sqrt{2}}, n\\&=3 \Rightarrow z_{3}=+\frac{1}{\sqrt{2}}-i \frac{1}{\sqrt{2}}
-		\intertext{only $z_{0}$ and $z_{1}$ lies in contour}
-		\text{i.e., residue at }\left(z=e^{\frac{i \pi}{4}}\right)&=\frac{1}{4}\left(-\frac{1}{\sqrt{2}}-i \frac{1}{\sqrt{2}}\right)\\
-		\text{residue at }\left(z=e^{\frac{i 3 \pi}{4}}\right)&=\frac{1}{4}\left(\frac{1}{\sqrt{2}}-i \frac{1}{\sqrt{2}}\right)\\
-		\text{now }\int_{-\infty}^{\infty} \frac{d x}{x^{4}+1}&=2 \pi i \Sigma \operatorname{Re} S=\frac{\pi}{\sqrt{2}}
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+
 	\item  The function $\frac{Z}{\sin \pi z^{2}}$ of a complex variable $z$ has
 	{\exyear{NET/JRF(DEC-2015)}}
 	\begin{tasks}(1)
@@ -805,15 +735,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] Poles of order 2 at $\pm \sqrt{n}, n=0,1,2,3 \ldots$
 		\task[\textbf{D.}] Poles of order 2 at $\pm n, n=0,1,2,3 \ldots$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(z)&=\frac{z}{\sin \pi z^{2}}=\frac{z}{\pi z^{2} \frac{\sin \pi z^{2}}{\pi z^{2}}}\\
-		\text{	at }z&=0,\text{ it is a simple pole since,} \lim _{z \rightarrow 0} \frac{\sin \pi z^{2}}{\pi z^{2}}=1\\
-		\text{Also, }\sin \pi z^{2}&=\sin n \pi \Rightarrow \pi \mathrm{z}^{2}\\&=\pm n \pi, z=\pm \sqrt{n}, \pm i \sqrt{n}\\
-		\lim _{z \rightarrow \sqrt{n}}&(z-\sqrt{n})^{2} \cdot \frac{z}{\sin \pi z^{2}}, \text{exists. So its pole of order 2}
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+	
 	\item The value of the contour integral $\frac{1}{2 \pi i} \oint_{C} \frac{e^{4 z}-1}{\cosh (z)-2 \sinh (z)} d z$ around the unit circle $C$ traversed in the anti-clockwise direction, is
 	{\exyear{NET/JRF(JUNE-2016)}}
 	\begin{tasks}(4)
@@ -822,19 +744,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\frac{-8}{\sqrt{3}}$
 		\task[\textbf{D.}] $-\tanh \left(\frac{1}{2}\right)$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(z)&=\frac{e^{4 z}-1}{\cosh z-2 \sinh z}=\frac{e^{4 z}-1}{\frac{e^{2}+e^{-z}}{2}-\left(e^{z}-e^{-z}\right)}\\&=\frac{e^{42}-1}{-\frac{e^{z}}{2}+\frac{3}{2} e^{-z}}\\
-		\Rightarrow f(z)&=\frac{2 e^{2}\left(e^{4 z}-1\right)}{\left(3-e^{2 z}\right)}=\frac{2\left(e^{5 z}-e^{z}\right)}{\left(3-e^{2 z}\right)}\\
-		\text{For pole at }z&=z_{0}, 3-e^{2 \xi_{0}}=0 \Rightarrow e^{2 z_{0}}\\&=3 \Rightarrow z_{0}=\frac{\ln 3}{2}
-		\intertext{It has simple pole at $z_{0}$}
-		\operatorname{Re}\left(z_{0}\right)&=\lim _{z \rightarrow z_{0}}\left(z-z_{0}\right) f(z)=\lim _{2 \rightarrow z_{0}}\left(z-z_{0}\right) \frac{2\left(e^{5 z}-e^{2}\right)}{3-e^{22}}\\
-		&=\lim _{z \rightarrow z_{0}} \frac{\left(z-z_{0}\right) \times 2\left(5 e^{5 z}-e^{z}\right)+2\left(e^{5 z}-e^{z}\right) \times 1}{-2 e^{2 z}}\\&=-\left(\frac{e^{5 z_{0}}-e^{z_{0}}}{e^{2 z_{0}}}\right)\\
-		&=-\left(\frac{(\sqrt{3})^{5}-\sqrt{3}}{3}\right)=-\left(\frac{9 \sqrt{3}-\sqrt{3}}{3}\right)=-\frac{8}{\sqrt{3}}\\
-		\frac{1}{2 \pi i} \oint f(z) d z&=\frac{1}{2 \pi i} \times 2 \pi i \sum\text{ Residue } =-\frac{8}{\sqrt{3}}
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
 	\item  Let $u(x, y)=e^{a x} \cos (b y)$ be the real part of a function $f(z)=u(x, y)+i v(x, y)$ of the complex variable $z=x+i y$, where $a, b$ are real constants and $a \neq 0 .$ The function $f(z)$ is complex analytic everywhere in the complex plane if and only if
 	{\exyear{NET/JRF(JUNE-2017)}}
 	\begin{tasks}(4)
@@ -843,22 +753,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $b=\pm 2 \pi a$
 		\task[\textbf{D.}]  $b=a \pm 2 \pi$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\intertext{The function $f(z)$ will be analytic everywhere in the complex plane if and only if it satisfies the Cauchy Riemann equation in that region.}
-		\Rightarrow \frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y}\text{ and } \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\\
-		\text{Hence }a e^{a x} \cos (b y)&=\frac{\partial v}{\partial y}\hspace{2cm}\text{(i)}\\
-		\text{and }b e^{a x} \sin (b y)&=\frac{\partial v}{\partial x}\hspace{2cm}\text{(ii)}
-		\intertext{From equation (i)}
-		v(x, y)&=\frac{a e^{a x} \sin (b y)}{b}+c(y)\hspace{2cm}\text{(iii)}
-		\intertext{Differentiating partially with $x$ gives}
-		\frac{\partial v}{\partial x}&=\frac{a^{2} e^{a x} \sin (b y)}{b}\hspace{2cm}\text{(iv)}
-		\intertext{From equation (iii) and (iv)}
-		b e^{a x} \sin (b y)&=\frac{a^{2} e^{a x} \sin (b y)}{b}\\
-		\Rightarrow b^{2}&=a^{2} \Rightarrow b=\pm a
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+	
 	\item  The integral $\oint_{\Gamma} \frac{z e^{i \pi z / 2}}{z^{2}-1} d z$ along the closed contour $\Gamma$ shown in the figure is
 	{\exyear{NET/JRF(JUNE-2017)}}
 	\begin{figure}[H]
@@ -871,17 +766,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $-2 \pi$
 		\task[\textbf{D.}] $4 \pi i$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(z)&=\frac{z e^{i z \pi / 2}}{(z+1)(z-1)}\\
-		\text{For }z&=+1\text{ anti-clockwise}\\
-		I&=2 \pi i \lim _{z \rightarrow 1} \frac{z e^{i \pi z / 2}}{(z+1)}=\frac{2 \pi i}{2} e^{i \pi / 2}=\pi i e^{i \pi / 2}\\
-		\text{For }z&=-1\\
-		I&=-2 \pi i \lim _{z \rightarrow-1} \frac{z e^{i \pi z / 2}}{(z-1)}=-2 \pi i \times \frac{(-1) e^{-i \pi / 2}}{(-2)}=-\pi i e^{-i \pi / 2}\\
-		\text{Integral }&=\pi i \frac{\left(e^{i \pi / 2}-e^{-i \pi / 2}\right)}{2 i} \times 2 i=2 \pi i^{2} \sin \frac{\pi}{2}=-2 \pi
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
 	\item What is the value of $a$ for which $f(x, y)=2 x+3\left(x^{2}-y^{2}\right)+2 i(3 x y+a y)$ is an analytic function of complex variable $z=x+i y$
 	{\exyear{NET/JRF(JUNE-2018)}}
 	\begin{tasks}(4)
@@ -890,15 +775,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] 3
 		\task[\textbf{D.}] 2
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		f(x, y)&=2 x+3\left(x^{2}-y^{2}\right)+2 i(3 x y+\alpha y)\\
-		u&=2 x+3\left(x^{2}-y^{2}\right), v=2(3 x y+\alpha y)\\
-		\text{C-R conditions: }u_{x}&=v_{y}, u_{y}=-v_{x}\\
-		2+3(2 x)&=2(3 x+\alpha) \Rightarrow \alpha=1 \Rightarrow-6 y=-6 y
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
+
 	\item  The value of the integral $\oint_{C} \frac{d z}{z} \frac{\tanh 2 z}{\sin \pi z}$, where $C$ is a circle of radius $\frac{\pi}{2}$, traversed counter-clockwise, with centre at $z=0$, is
 	{\exyear{NET/JRF(DEC-2018)}}
 	\begin{tasks}(4)
@@ -907,24 +784,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $2 i$
 		\task[\textbf{D.}] 0
 	\end{tasks}
-	\begin{answer}$\left. \right. $
-		\begin{figure}[H]
-			\centering
-			\includegraphics[height=4.5cm,width=5.5cm]{diagram-20211005(2)-crop}
-		\end{figure}
-		\begin{align*}
-		&\oint_{C} \frac{d z}{z} \frac{\tanh 2 z}{\sin \pi z} d z\\
-		z&=0,1,-1, \frac{\pi i}{4}, \frac{-\pi i}{4}\\
-		f(z)&=\frac{2 z-\frac{1}{3}(2 z)^{3}+\frac{2}{15}(2 z)^{5} \ldots .}{z\left(\pi z-\frac{\pi^{3} z^{3}}{3 !}+\ldots\right)}\\
-		\frac{2}{\pi z}&\left(1-\frac{1}{2} z^{2}+\ldots\right)\left(1-\frac{\pi^{2} z^{2}}{2 !}+\ldots\right)\\
-		b_{1}&=\frac{2}{\pi}\\
-		\text{As Re } z&=1, \frac{\tanh ^{2}}{-\pi}\text{ and }\operatorname{Re} z=-1, \frac{\tanh ^{2}}{-\pi}\\
-		\operatorname{Re} z&=\frac{i \pi}{4}=-\frac{1}{\pi}\left(2 \operatorname{cosec} h \frac{\pi^{2}}{4}\right)\\
-		\operatorname{Re} z&=\frac{-i \pi}{4}=-\frac{1}{\pi}\left(2 \operatorname{cosec} \mathrm{h} \frac{\pi^{2}}{4}\right)
-		\intertext{$I=2 \pi i \Sigma R=4 i$ only when 0 lies inside, otherwise wrong question.}
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+	
 	\item The integral $I=\int_{C} e^{z} d z$ is evaluated from the point $(-1,0)$ to $(1,0)$ along the contour $C$, which is an arc of the parabola $y=x^{2}-1$, as shown in the figure. The value of $I$ is
 	{\exyear{NET/JRF(DEC-2018)}}
 	\begin{figure}[H]
@@ -937,14 +797,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}]  $e^{2 i} \sinh 1$
 		\task[\textbf{D.}] $e+e^{-1}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\int_{C} f(z) d z&=2 \pi i \Sigma R\\
-		\int_{C} f(z) d z+\int_{1}^{-1} e^{x} d x&=0\\
-		\int_{C} f(z) d z&=-\int_{1}^{-1} e^{x} d x=\int_{1}^{-1} e^{x} d x\\&=\frac{\left(e^{1}-e^{-1}\right)}{2} \cdot 2=2 \sinh 1
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
+
 	\item The contour $C$ of the following integral
 	$$
 	\oint_{C} d z \frac{\sqrt{(z-1)(z-3)}}{\left(z^{2}-25\right)^{3}}
@@ -974,12 +827,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 			\includegraphics[height=3cm,width=6.5cm]{diagram-20211005(7)-crop}
 		\end{figure}
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\intertext{$z=1,3$ are branch points $\infty$ is not a branch point 1 branch cut 3}
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+
 	\item  Let $C$ be the circle of radius $\frac{\pi}{4}$ centered at $z=\frac{1}{4}$ in the complex $z$-plane that is traversed counter-clockwise. The value of the contour integral $\oint_{C} \frac{z^{2}}{\sin ^{2} 4 z} d z$ is
 	{\exyear{NET/JRF(DEC-2019)}}
 	\begin{tasks}(4)
@@ -988,30 +836,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}] $\frac{i \pi^{2}}{16}$
 		\task[\textbf{D.}] $\frac{i \pi}{4}$
 	\end{tasks}
-	\begin{answer}$\left. \right. $
-		\begin{figure}[H]
-			\centering
-			\includegraphics[height=3cm,width=3cm]{diagram-20211026(16)-crop}
-		\end{figure}
-		\begin{align*}
-		f(z)&=\left(\frac{\pi}{\sin 4 z}\right)^{2}\\
-		z_{0}&=0, \frac{\pi}{4}\text{ are poles}\\
-		4 z&=n \pi, z=0, \frac{\pi}{4}
-		\intertext{Others are outside the contour.}
-		\text{Residue at }z&=0\text{ is }\left[\frac{\pi}{4 z-\frac{4^{3} z^{3}}{3 !}+\ldots}\right]^{2}\\
-		&=\left[\frac{1}{4-\frac{4^{3} z^{2}}{3 !}+\ldots .}\right]^{2}\qquad \text{ No terms for } \frac{1}{z}, b_{1}=0\\
-		&=\left[4-\frac{4^{3} z^{2}}{3 !}+\ldots .\right]^{-2}\\
-		\text{Residue for }z&=\frac{\pi}{4}\\
-		z-\frac{\pi}{4}&=t
-		\intertext{$\sin (4 t+\pi)=-\sin 4 t \quad$ (But square so no effect)}
-		&\left[\frac{t+\frac{\pi}{4}}{\sin 4\left(t+\frac{\pi}{4}\right)}\right]^{2}\\
-		\left(\frac{t+\frac{\pi}{4}}{\sin 4 t}\right)^{2}&=\frac{t^{2}+\frac{\pi^{2}}{4}+2 t \cdot \frac{\pi}{4}}{\sin ^{2} 4 t}\\
-		\frac{\pi}{2} \frac{t}{16 t^{2}[1-\ldots .]^{2}}&=\frac{\pi}{32 t}[1-\ldots .]^{-2} \text{(from first term)}\\
-		b_{1}&=\frac{\pi}{32}\\
-		\oint_{C} \frac{z^{2}}{\sin ^{2} 4 z} d z&=2 \pi i\left[0+\frac{\pi}{32}\right]=\frac{i \pi^{2}}{16}
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+
 	\item  A function of a complex variable $z$ is defined by the integral $f(z)=\oint_{\Gamma} \frac{w^{2}-2}{w-z} d w$, where $\Gamma$ is a circular contour of radius 3 , centred at origin, running counter-clockwise in the $w$ - plane. The value of the function at $z=(2-i)$ is
 	{\exyear{NET/JRF(JUNE-2020)}}
 	\begin{tasks}(4)
@@ -1020,19 +845,7 @@ I=2 \pi i \times \text { Residue }&=2 \pi \mathrm{i} \times \frac{1}{i \sqrt{a^{
 		\task[\textbf{C.}]  $8 \pi+2 \pi \mathrm{i}$
 		\task[\textbf{D.}] $-\frac{2}{\pi}-\frac{i}{2 \pi}$
 	\end{tasks}
-	\begin{answer}$\left. \right. $
-		\begin{figure}[H]
-			\centering
-			\includegraphics[height=4cm,width=4.6cm]{diagram-20211027-crop}
-		\end{figure}
-		\begin{align*}
-		f(z)&=\oint_{\Gamma} \frac{w^{2}-2}{w-z} d w\\
-		\omega&=z\text{ is a simple pole.}\\
-		\text{Residue }\lim _{\omega \rightarrow z}(\omega-z) \frac{\left(\omega^{2}-2\right)}{(\omega-z)}&=(2-i)^{2}-2 \\&=4-1-4 i-2=(1-4 i)\\
-		f(z)&=\oint_{\Gamma} \frac{w^{2}-2}{w-z} d w=2 \pi i(1-4 i)=2 \pi i+8 \pi
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
+	
 \end{enumerate}
 \colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
@@ -1267,5 +1080,137 @@ $$
 		21&\textbf{A}&22&\textbf{C}\\\hline
 	\end{tabular}
 \end{table}
-
-
+\newpage
+\begin{abox}
+	Practise Set-2
+\end{abox}
+\begin{enumerate}
+	\item The amplitude of $\frac{1+i \sqrt{3}}{\sqrt{3}+i}$ is
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{\pi}{3}$
+		\task[\textbf{b.}]$-\frac{\pi}{3}$
+		\task[\textbf{c.}]$\frac{\pi}{6}$
+		\task[\textbf{d.}]  $-\frac{\pi}{6}$
+	\end{tasks}
+	\begin{answer}
+	\begin{align*}
+	\frac{1+i \sqrt{3}}{\sqrt{3}+i}&=\frac{(1+i \sqrt{3})(\sqrt{3}-i)}{(\sqrt{3}+i)(\sqrt{3}-i)}=\frac{2 \sqrt{3}+2 i}{4}=\frac{\sqrt{3}}{2}+\frac{1}{2} i\\
+	\intertext{	Since both the real and complex parts are greater than zero, hence the argument is the acute angle given by $\tan ^{-1}\left|\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}\right|=\tan ^{-1} \frac{1}{\sqrt{3}}=\frac{\pi}{6}$}
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}	
+	\item If $\frac{1-i x}{1+i x}=a+i b$, then $a^{2}+b^{2}$ is
+	\begin{tasks}(2)
+		\task[\textbf{a.}]1
+		\task[\textbf{b.}]$-1$
+		\task[\textbf{c.}] 0
+		\task[\textbf{d.}] none of these
+	\end{tasks}
+	\begin{answer}
+	\begin{align*}
+	a+i b&=\frac{1-i x}{1+i x} \Rightarrow a-i b=\frac{1+i x}{1-i x}\\
+	\therefore \quad(a+i b)(a-i b)&=\frac{1-i x}{1+i x} \cdot \frac{1+i x}{1-i x} \Rightarrow a^{2}+b^{2}=\frac{1+x^{2}}{1+x^{2}}=1
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item If $z=1-\cos \theta+i \sin \theta$, then $|z|$ equals
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$2 \sin \frac{\theta}{2}$
+		\task[\textbf{b.}]$2 \cos \frac{\theta}{2}$
+		\task[\textbf{c.}]$2\left|\sin \frac{\theta}{2}\right|$
+		\task[\textbf{d.}] $2\left|\cos \frac{\theta}{2}\right|$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	|z|=\sqrt{(1-\cos \theta)^{2}+\sin ^{2} \theta}=\sqrt{2-2 \cos \theta}=\sqrt{4 \sin ^{2} \frac{\theta}{2}}=2\left|\sin \frac{\theta}{2}\right|
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+	\item If $z=\frac{1}{(2+3 i)^{2}}$, then $|z|$ equals
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{13}$
+		\task[\textbf{b.}]$\frac{1}{15}$
+		\task[\textbf{c.}]$\frac{1}{12}$
+		\task[\textbf{d.}] none of these
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		|z|=\frac{1}{|2+3 i|^{2}}=\frac{1}{\left(\sqrt{2^{2}+3^{2}}\right)^{2}} \quad|z|=\frac{1}{13}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item If the number $\frac{z-1}{z+1}$ is purely imaginary, then
+\begin{tasks}(2)
+	\task[\textbf{a.}]$|z|=1$
+	\task[\textbf{b.}]$|z|>1$
+	\task[\textbf{c.}]$|z|<1$
+	\task[\textbf{d.}] $|z|>2$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		&\text{we have: }\frac{z-1}{z+1}\text{ is purely imaginary}\\
+		&\Rightarrow \quad\text{ argument of }\frac{z-1}{z+1}\text{ is }\pm \frac{\pi}{2} \Rightarrow \arg \left(\frac{\mathrm{z}-1}{\mathrm{z}+1}\right)=\pm \frac{\pi}{2}\\
+		&\Rightarrow \quad z\text{ lies on a circle having $(1,0)$ and $(-1,0)$ as the end point of a diameter.}\\
+		&\Rightarrow \quad z\text{ lies on a circle with centre at the origin and radius are unit}\\
+		&\Rightarrow \quad z\text{ lies on }|z|=1 \Rightarrow|z|=1
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The value of integral $I=\int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}$ is given by where $R$ is real constant.
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{-1}{2 \sqrt{R^{2}-1}}$
+	\task[\textbf{b.}]$\frac{2 \pi}{\sqrt{R^{2}-1}}$
+	\task[\textbf{c.}]$\frac{\pi}{\sqrt{1-R^{2}}}$
+	\task[\textbf{d.}] $\frac{\pi}{\sqrt{R^{2}-1}}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		\int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}&=\frac{1}{2} \int_{0}^{2 \pi} \frac{2 d \theta}{R-\cos \theta}=\int_{0}^{2 \pi} \frac{d \theta}{R-\cos \theta}\\
+		z&=e^{i \theta} \Rightarrow d z=i e^{i \theta} d \theta=i z d \theta \Rightarrow d \theta=\frac{d z}{i z} \\
+		\therefore \int_{0}^{\pi} \frac{2 d \theta}{R-\cos \theta}&=\oint_{c} \frac{d z / i z}{R-\frac{1}{2}\left(z+z^{-1}\right)}=\oint_{C} \frac{d z / i z}{R-\frac{1}{2}\left(\frac{z^{2}+1}{z}\right)}=\oint_{C} \frac{d z / i z}{\frac{2 R z-\left(z^{2}+1\right)}{2 z}}\\
+		&=-\frac{2}{i} \oint_{c} \frac{d z}{z^{2}-2 R z+1}\hspace{2cm}
+		\text{	where $C$; unit circle}\\
+		\text{Poles are }&: z^{2}-2 R z+1=0\\
+		\Rightarrow z&=\frac{-(-2 R) \pm \sqrt{4 R^{2}-4 \times 1 \times 1}}{2 \times 1} \quad \Rightarrow z=\frac{2 R \pm \sqrt{4 R^{2}-4}}{2} \quad \Rightarrow z=\frac{2 R \pm 2 \sqrt{R^{2}-1}}{2}\\
+		&=R \pm \sqrt{R^{2}-1}\\
+		z_{1}&=R+\sqrt{R^{2}-1} z_{2}=R-\sqrt{R^{2}-1} \quad(\text{ inside }C)\\
+		\operatorname{Res}\left(z=z_{2}\right)&=\lim _{z \rightarrow z_{2}}\left(z-z_{2}\right) \frac{1}{\left(z-z_{1}\right)\left(z-z_{2}\right)}\\
+		&=\frac{1}{z_{2}-z_{1}}=\frac{1}{R-\sqrt{R^{2}-1-R-\sqrt{R^{2}-1}}}=\frac{-1}{2 \sqrt{R^{2}-1}}\\
+		\therefore \int_{0}^{\pi} \frac{2 d \theta}{(R-\cos \theta)}&=\frac{-2}{i} \times 2 \pi i \times \frac{-1}{2 \sqrt{R^{2}-1}}=\frac{2 \pi}{\sqrt{R^{2}-1}}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+	\item The value of integral $\int_{-\infty}^{+\infty} \frac{d x}{\left(1+x^{2}\right)^{2}}$ is given by
+\begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{\pi}{2}$
+	\task[\textbf{b.}]$\pi$
+	\task[\textbf{c.}] $i \frac{\pi}{2}$
+	\task[\textbf{d.}]  $\frac{1}{4 i}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		\oint_{C} \frac{d z}{\left(1+z^{2}\right)^{2}}&=\int_{-\infty}^{+\infty} \frac{d x}{\left(1+x^{2}\right)^{2}}+\int_{\Gamma} \frac{d z}{\left(1+z^{2}\right)^{2}}\\
+		\text{	poles, }1+z^{2}&=0 \quad z=\pm i\text{ of order $2 \quad z=i$ is inside } c\\
+		\therefore \operatorname{Res}(z=i)&=\lim _{z \rightarrow i} \frac{1}{\lfloor} \frac{d}{d z}\left[(z-i)^{2} \frac{1}{(z-i)^{2}(z+i)^{2}}\right]=\lim _{z \rightarrow i} \frac{-2}{(z+i)^{3}}=\frac{1}{4 i}\\
+		\oint_{C} \frac{d z}{\left(1+z^{2}\right)^{2}}&=2 \pi i \times \frac{1}{4 i}=\frac{\pi}{2}\text{ also }\int_{\Gamma} \frac{d z}{\left(1+z^{2}\right)^{2}}=0\\
+		\therefore \int_{-\infty}^{+\infty} \frac{d x}{\left(1+x^{2}\right)^{2}}&=\frac{\pi}{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item The value of $\oint_{C} \frac{\sin 3 z}{z^{2}} d z$
+$c:|z|=\pi$ is given by
+\begin{tasks}(2)
+	\task[\textbf{a.}]$6 \pi i$
+	\task[\textbf{b.}]$-6 \pi i$
+	\task[\textbf{c.}]0
+	\task[\textbf{d.}]  3
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+		\frac{\sin 3 z}{z^{2}}&=\frac{1}{z^{2}}\left[3 z-\frac{(3 z)^{3}}{\lfloor 3}+\ldots\right]=\frac{3}{z}-\frac{9}{2} z+\ldots\\
+		\text{Residue }&=3\\
+		\therefore \oint_{C} \frac{\sin 3 z}{z^{2}} d z&=2 \pi i \times 3=6 \pi i
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\end{enumerate}
