@@ -304,17 +304,104 @@ allowed vol. of phace space: $\int d^{3} q \int d^{3} p$\\
 $$
 V_{p} \Rightarrow V \times \frac{4}{3} \pi p^{3}\text{( for 3-Dim).}
 $$
-
- 
-
-
-
-
-
-
-
-
-
+\textbf{Non-Relativistic Free Particle: }$E=p^2/2m$\\
+\renewcommand*{\arraystretch}{1.8}
+ \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+ 	\hline
+ 3-Dimensional&2-Dimensional&1-Dimensional\\\hline
+ $d \tau=h^{3}$&$d \tau=h^{2}$&$d \tau=h$\\\hline
+ $V_{p}=V \times \frac{4}{3} \pi p^{3}$&$V_{p}=A \times \pi p^{2}$&$V_p=L\times2p$\\\hline
+ $\Omega=\frac{V \cdot \frac{4}{3} \pi p^{3}}{\hbar^{3}}$&$\Omega(p)=\frac{\pi \times \pi p^{2}}{h^{2}}$&$\Omega(p)=\frac{L \times 2 p}{h}$\\\hline
+ $\Omega(E)=\frac{\mu\pi V(2mE)^3}{3h^3}$&$\Omega(E)=\frac{\pi A(2mE)}{h^2}$&$\Omega(E)=\frac{2L\sqrt{2mE}}{h}$\\\hline
+ $\Omega^{\prime}(E)=\frac{2 \pi V(2 m)^{3 / 2} E^{1 / 2}}{h^2}dE$&$\Omega^{\prime}(E)=\frac{2 \pi mA}{h^3}dE$&$\Omega^{\prime}(E)=\frac{L(2m)^{1/2}E^{-1/2}}{h}dE$\\\hline
+ \end{tabular}
+\begin{figure}[H]
+	\includegraphics[height=5.5cm,width=13cm]{SP-13}
+\end{figure}
+Q.In a classical microcanonical ensemble for a system of $N$ non-interacting particles, the fundamental volume of phase space which is regarded as "equivalent to one-microstate" is 
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $h^{3 N}$
+	\task[\textbf{b.}]$h^{2 N}$
+	\task[\textbf{c.}]$h^{N}$
+	\task[\textbf{d.}]$h$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{For $N$ non-interacting particles }\text { DOF }&=3 N=f\\
+	\text{volume of phase space }&=h^{f}\\
+	&=R^{3 N}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\textbf{Extremely Relativistic Free Particle: }(E=pc)\\
+\renewcommand*{\arraystretch}{1.8}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+	\hline
+	3-Dimensions & 2-Dimensions & 1-Dimensions\\\hline
+	$\Omega(p)=\frac{v \cdot \frac{4}{3} \pi p^{3}}{h^{3}}$&$\Omega(p)=\frac{\pi A p^{2}}{h^{2}}$&$\Omega(p)=\frac{L \times 2 p}{h}$\\
+	$\Omega^{\prime}(p)=\frac{4 \pi V p^{2} d p}{h^{3}}$&$\Omega^{\prime}(p)=\frac{2 \pi A p d p}{h^{2}}$&$\Omega^{\prime}(p)=\frac{2 L d p}{h}$\\\hline
+	$\Omega(E)=\frac{4 \pi V E^{3}}{3 c^{3} h^{3}}$&$\Omega(E)=\frac{A \pi E^{2}}{C^{2} n^{2}}$&$\Omega(E)=\frac{2 L E}{\hbar c}$\\
+	$\Omega(E)=2 \times \frac{4 \pi v\left(E^{2}\right)}{c^{3} h^{3}} d E$&$\Omega^{\prime}(E)=\frac{2 \pi A E}{C^{2} h^{2}}$&$\Omega^{\prime}(E)=\frac{2 L}{R C} d E$\\\hline
+\end{tabular}
+Q. Find density of states at energy $E$ of the quantized radiation (photon) is:
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{8 \pi v}{h^{3} c^{3}} E^{2}$
+	\task[\textbf{b.}]$\frac{8 \pi V}{h^{3} c^{3}} E^{3 / 2}$
+	\task[\textbf{c.}]$\frac{8 \pi V}{h^{3} c^{3}} E$
+	\task[\textbf{d.}] $\frac{8 \pi V}{h^{3} c^{3}} E^{3 / 2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\Omega(p)&=\frac{V \times \frac{4}{3} \pi p^{3}}{h^{3}} \Rightarrow \Omega(E)=\frac{4 \pi V E^{3}}{3 c^{3} h^{3}}\\
+	\Omega^{\prime}(E)&=\left(\frac{4 \pi V E^{2}}{c^{3} h^{3}} d E\right) \times 2\\
+	\Omega^{\prime}(E)&=g(E) d E\\
+	g(E)&=\frac{8 \pi V}{c^{3} h^{3}} E^{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+Q. \textbf{For free particle (with $E=ap^s$) with d-DOF: }\\
+\begin{align*}
+\text{Volume of sphere of radius (R) }V_{d}&=\frac{\pi^{d / 2} R^{d}}{\left(\frac{d}{2}\right) !}\\
+\text{area of sphere of radius (R) }s_{d}&=\frac{2 \pi^{d / 2} R^{d-1}}{\left(\frac{d}{2}-1\right) !}\\
+\text{ volume of single phase cell }d \tau&=h^{d}\\
+g(E)&=\frac{g i V_{d} \pi^{d / 2}\left(\frac{1}{a}\right)^{d / s}\left(\frac{d}{s}\right) E^{(d / s-1)}}{R^{d}(d / 2) !}\\
+&g(E) \propto E^{(d / s-1)}\hspace{3cm}d=DOF\\
+s=1 \text{(marsless)},\quad
+2 \text{(massive)}
+\end{align*}
+Q.For an energy state $E$ of a photon gas, the density of states is proportional to 
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $\sqrt{E}$
+	\task[\textbf{b.}] $E $
+	\task[\textbf{c.}]$E^{3 / 2}$
+	\task[\textbf{d.}] $E^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	D(E) &\propto E^{\left(\frac{d}{s}-1\right)}\\
+	\text { For proton: } d&=3 \text { and } s=1\\
+	D(E) \propto E^{3-1} &\Rightarrow D(E) \alpha E^{2}
+	\end{align*}
+		So the correct answer is \textbf{Option (d)}
+\end{answer}
+Q. The number of states for a system of $N$ indentical free particles in a three dimensional space having total energy between $E$ and $E+\delta E(\delta E<<E),$ is proportional to 
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$E^{\left(\frac{3 N}{2}-1\right)} \delta E$
+	\task[\textbf{b.}]$E^{\frac{N}{2}} \delta E$
+	\task[\textbf{c.}]$N E^{\frac{1}{2}} \delta E$
+	\task[\textbf{d.}]$N^{N} \delta E$ 
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	D(E) &\propto E^{(d / s-1)}\\
+	\text { Here } d&=3 \mathrm{~N} \text { and } s=2 \text { (massive) }\\
+	D(E) &\propto E^{\left(\frac{3 N}{2}-1\right)}
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+Q. Draw phase space trajectory of linear (1-dimension) Harmonic oscillator and calculate number of microstate if particle has:\\
+a). sharp value of energy\\
+b). Energy lies between $E$ to $E+d E$
 
 
 \newpage
