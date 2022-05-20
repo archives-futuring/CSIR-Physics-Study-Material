@@ -228,6 +228,135 @@ Consider an isolated 'many particle system' in equilibrium. We want to know the 
 Assessible microstate: Microstates corresponding to a macrostate.\\
 Thermodynamic Probability: Number of microstates corresponding to a macrostate.\\
 $$\text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}$$
+\textbf{ Probability Distibution: }\\
+\textbf{Coin Related Probelm: }\\
+\textbf{a.\quad  Tossing a coin:}\\
+\begin{align*}
+\text{Total events }&=H+T\\
+\text{Total no of events }&=2\\
+\text{Total number of microstate }&=2\\
+\text{equally likely probability event }&=1 / 2
+\end{align*}
+\textbf{b.\quad  Two coin are tossed together:}\\
+\begin{align*}
+\text{Possible events: }&H H, H T, T H, T T\\
+\text{ equally likely Probability }&=1 / 4\\
+\rightarrow\text{ Total number of microstates }&=(2)^{n}\\
+\rightarrow\text{ equally likely Probability }=(1 / 2)^{n}\\
+\text { Probability of general event }& 
+\Rightarrow{ }^{n} C_{r}(p)^{n-r}(1-p)^{r} \\
+&\Rightarrow{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
+\end{align*}
+Q. If to similar coins are tossed together what is the probability of gerring 3 Head?
+\begin{answer}
+	\begin{align*}
+	P(3 H) &={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10-3}\left(\frac{1}{2}\right)^{3} \\
+	&={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10} \Rightarrow \frac{10 !}{3 ! 7 !}\left(\frac{1}{2}\right)^{10}\\
+	&=\frac{10 \times 9 \times 8}{3 \times 2} \times \frac{1}{1024} \Rightarrow \frac{15}{123}
+	\end{align*}
+\end{answer}
+\textbf{c.\quad  Number of microstates in spin system:}\\
+$\Omega=(2 s+1)^{N}$
+\begin{note}
+	entropy: $S=k \ln \Omega=k \ln(2)^N\Rightarrow Nk\ln 2$
+\end{note}
+Q. A system of 5 identical but distinguishable particles having energy $3\epsilon$. The single particle states are available at energies $0,\epsilon,2\epsilon,3\epsilon$ find the probablity of each macro state?\\\\
+\renewcommand*{\arraystretch}{2}
+\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{3cm}|}
+	\hline
+	0&$\epsilon$&2$\epsilon$&3$\epsilon$&$E_{\text{Total}}$&No.of Microstates\\\hline
+	4&-&-&1&3$\epsilon$&$\Omega$=$\frac{5!}{4!0!0!}=5$\\\hline
+	3&1&1&-&3$\epsilon$&$\Omega$=$\frac{5!}{3!1!0!}=20$\\\hline
+	2&3&-&-&3$\epsilon$&$\Omega$=$\frac{5!}{2!3!0!0!}=10$\\\hline
+\end{tabular}
+\subsection{Random Walk}
+\textbf{1-Dimensional Random Walk:}\\
+\begin{align*}
+\text{let }N &\rightarrow\text{ steps of equal length along a line.}\\
+p &\rightarrow\text{ Probability of taking a step right}\\
+q &\rightarrow\text{ probability of taking a step left}\\
+n_{1} &\rightarrow \text{no. of sleps taken to right }\\
+n_{2} &\rightarrow\text{ no. of steps taken to left.}\\
+&p+q=1\qquad n_{1}+n_{2}=N
+\end{align*}
+Q. A one dimensional random walder takes to steps in left and right with equal probability.  Find our the probability that the random walker starting from origine is back to origine after taking to steps?
+\begin{answer}
+	\begin{align*}
+	P(5,5) &={ }^{10} C_{5}\left(\frac{1}{2}\right)^{10} \\
+	&=\frac{10 !}{5 ! 5 !} \times \frac{1}{1024}
+	\end{align*}
+\end{answer}
+\textbf{Thermodynamic Equilibrium :}\\
+$\rightarrow$ if wall is consucting, non rigid and permeable.\\
+$\bar{T}_{1}=\bar{T}_{2} ; \quad \bar{P}_{1}=\bar{P}_{2} ; \quad \bar{\mu}_{1}=\bar{\mu}_{2}$\\
+\textbf{Postulate:} Equal a priori probability \\
+$\rightarrow$ All microstates corresponding to a given macrostate are equally probable.\\
+$\rightarrow$ \textbf{Ensemble:} collection of large number of systems that are macroscopically identical but microscopically different.\\\\
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+	Microcanonical&canonical&Grand Canonical\\\hline
+	E, V, N&T, V, N&$T, V, \mu \rightarrow$fixed values \\\hline
+	insulating, rigid and impermeable&conducting, rigid and impermeanle&conducting, rigid and permeable \\\hline
+	isolated system &thermal equilibrium &  thermal +chemical equilibrium \\\hline
+	universe, thermal flask etc.&-&-\\\hline
+\end{tabular}\\
+\textbf{Microcanonical Ensemble:}\\
+\textbf{For Classical Ideal Gas }\\
+a). Non Relativistic Case
+\begin{align*}
+E&=\frac{p^{2}}{2 m} \Rightarrow p=\sqrt{2 m E}\\
+\text{For }N-\text{ particle : DOF }&=3 N\\
+\text{volume of position space }&=V^{N}\\
+\text{volume of momentum space }&=\frac{\pi^{3 N / 2} p^{3 N}}{(3 N / 2) !}\\
+\rightarrow \Omega&=\frac{V^{N} \cdot \pi^{3 N / 2}(\sqrt{2 m E})^{3 N}}{h^{3 N}(3 N / 2) !}\\
+\rightarrow E&=U=\frac{3}{2} N K T=\frac{3}{2} n R T \\
+\rightarrow P&=\frac{s}{d}\left(\frac{E}{V}\right)=\frac{2}{3}\left(\frac{E}{V}\right) \\
+\rightarrow P V^{5 / 3}&=\text { constant } \\
+\rightarrow S&=K \ln \Omega\\
+S&=N_{i} k \ln v_{i}+\frac{3}{2} N_{i} k \ln \left(\frac{4 \pi m_{i} E}{3 M_{i} h^{2}}\right)+\frac{3}{2} N_{i} k
+\end{align*}
+\textbf{Mixing of Two Gases: }\\
+Volume ensity (Particle density) may be same but particles on both sides after division not same.\\
+1. Mixing of two different gases will not be reversible.\\
+2. Mixing of two different samples of same gas may be reversible of irreversible.\\
+\textbf{Reversible Mixing (Gibbs Paradox)}\\
+entropy of mixing: $\Delta S=S_{1}+S_{2}+2 N K \ln 2$\\
+\textbf{Removal of Gibbs Paradox }
+\begin{align*}
+\Omega _{indis. }&=\frac{\Omega_{\text {dis. }}}{N !} \\
+S_{indis. }&=S_{\text {dis }}-k \text { ln } N !\\
+S=&N K \ln \left(\frac{V}{N}\right)+\frac{3}{2} N k \ln \left(\frac{2 \pi m K T}{h^{2}}\right)+\frac{5}{2} n K \hspace{3cm}
+\end{align*}
+\text { (Sackur-tetrode equation) }\\
+\textbf{For Extreme Relativistic Classical Gas:}\\
+\begin{minipage}{0.45\textwidth}
+\begin{align*}
+E&=pc\\
+\Omega&=\frac{U^N\pi^\frac{3N}{2}}{\frac{3N}{2}!}\left(\frac{E}{C h}\right)^{3 N}\\
+P&=\frac{1}{3}\left(\frac{U}{V}\right)\\
+P V^{4 / 3}&=\text { constant }
+\end{align*}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\begin{align*}
+C_{v} &; S ; N \propto T d / s\\
+\Omega &\propto E^{d / s}\\
+H&=U+P V\\
+U &; p \alpha + d \mid s\\
+P&=\frac{s}{d}\left(\frac{U}{V}\right)
+\end{align*}
+\end{minipage}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 Boltzman entrophy relation: $S=K \ln \Omega$\\
 striling approximation: $\ln n !=n \ln n-n$\\
 Number of microstates: 
@@ -768,5 +897,180 @@ For step three, only one out of six options will form equilateral\\ triangle Tot
 	S&=k_{B}\left[\frac{3 \ln 2+\ln 2}{6}+\frac{2 \ln 3+\ln 3}{6}\right]=k_{B}\left(\frac{4 \ln 2}{6}+\frac{3 \ln 3}{6}\right)=k_{B}\left[\frac{2}{3} \ln 2+\frac{1}{2} \ln 3\right]
 	\end{align*}
 		So the correct answer is \textbf{Option (c)}
+\end{answer}
+\end{enumerate}
+\newpage
+\begin{abox}
+	Practise set-02
+\end{abox}
+\begin{enumerate}
+	\item The total number of accessible states of $N$ non interacting particles of spin $1/2$ is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$2^{N}$
+		\task[\textbf{b.}]$N^{2}$
+		\task[\textbf{c.}]$2 N^{N / 2}$
+		\task[\textbf{d.}]  $N$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\Omega=\left(2 \times \frac{1}{Q}+1\right)^{N}=2^{N}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item The number of distinct ways of placing four indistinguishable balls into 5 distinguishable boxes is :
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]20
+		\task[\textbf{b.}]40
+		\task[\textbf{c.}]50
+		\task[\textbf{d.}] 70
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		{ }^{n+r-1} C_{r}=\frac{8 !}{4 ! 41}&=\frac{8 \times 7 \times 6 \times 5}{4 \times 3 \times 2 \times 1}\\
+		&\Rightarrow70
+		\end{align*}
+			So the correct answer is \textbf{Option (d)}
+	\end{answer}
+	\item Q.A one dimensional random walker takes steps to left with equal probability.  The probability that the random walker starting from origine is back to origine after $N$ even number of steps:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}\left(\frac{1}{2}\right)^{n}$
+		\task[\textbf{b.}]$\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}$
+		\task[\textbf{c.}] $2N!\left(\frac{1}{2}\right)^{2 \mu}$
+		\task[\textbf{d.}] $N !\left(\frac{1}{2}\right)^{N}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Number of steps }&=N\\
+		P(b)&=P(q)=1/2 \\
+		\Rightarrow n_{1}&=N / 2 \text { and } n_{2}=N / 2\\
+		\text { Probability  }&={ }^{N} C_{N / 2}\left(\frac{1}{2}\right)^{N / 2}\left(\frac{1}{2}\right)^{N / 2}\\
+		&=\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}\left(\frac{1}{2}\right)^{N}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item A random walder takes a step of unit length in +ve direction with probability $2/3$ and a step of unit length in -ve direction with probability $1/3$. The net displacement of random walker after $n$ steps is?
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$n$
+		\task[\textbf{b.}]$(1 / 3)^{n}$
+		\task[\textbf{c.}]$(2 / 3) n$
+		\task[\textbf{d.}]$2 n$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text { Displacement } &=n_{f_{L}}-n_{f_{L}} \\
+		&=\frac{2}{3} n-\frac{1}{3} n \Rightarrow \frac{1}{3} n
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+	\item In a one dimension random walker takes a step with equal probability to the left or right. What is the probability that the walker returns to starting point after four steps?
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$1 / 2$
+		\task[\textbf{b.}]$3 / 4$
+		\task[\textbf{c.}]$3 / 8$
+		\task[\textbf{d.}] $3 / 16$ 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		P(2,2) &={ }^{4} \mathrm{c}_{2}\left(\frac{1}{2}\right)^{2}\left(\frac{1}{2}\right)^{2} \\
+		&=\frac{4 !}{2 ! 2 !}\left(\frac{1}{2}\right)^{4}=\frac{3}{8}
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item Consider a random walker on a squate lattice. At each step the walker moves to a nearest neighbour site with equal probability for each of the four sites.  The walker starts to the origine and takes. The probability that during this walk no site is visited more than once is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]12/27
+		\task[\textbf{b.}]$27 / 64$
+		\task[\textbf{c.}]$3 / 8$
+		\task[\textbf{d.}]$9 / 16$ 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Total ways }&=(4)^{3} \Rightarrow 64\\
+		\text{favourable }&=4 \times 3 \times 3\\
+		&=36\\
+		\text { Prob. }&=\frac{36}{64}=\frac{9}{16}
+		\end{align*}
+		So the correct answer is \textbf{Option (d)}
+	\end{answer}
+	\item A child makes a random walk on a square latiice of lattice costent $a$ taking a step in the north, east, south, or west direction with probabilities $0.255,0.255,0.245$ respectively. After a large number of steps $N$ the expected position of child w.r.t starting point is at a distance
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\sqrt{2} \times 10^{-2} \mathrm{Na}$ in north-east direction.
+		\task[\textbf{b.}]$\sqrt{2 N} \times 10^{-2} a$  in north east direction.
+		\task[\textbf{c.}]$2 \sqrt{2} \times 10^{-2} \mathrm{Na}$ in south east direction
+		\task[\textbf{d.}] 0
+	\end{tasks}
+	\begin{answer}$\left. \right. $
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.4cm,width=6cm]{SP-14}
+		\end{figure}
+		\begin{align*}
+\langle x\rangle_{N}&=0.255 \mathrm{Na}\hat{i}
++0.255 \mathrm{Na} \hat{j}-0.245 \mathrm{Na} \hat{i}
+-0.245 \mathrm{Na\hat{j}}\\
+\langle x\rangle_{N}&=10^{-2}(Na \hat{i}+Na \hat { j })\\
+&=10^{-2} \sqrt{(1)^{2}+(1)^{2}} \mathrm{Na}\\
+\langle x\rangle N&=\sqrt{2} \times 10^{-2} \mathrm{Na} \text { in } N-E
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item The entropy of a system $S$ is related to the accessible phase space volume $\Gamma$ by 
+	$$S=K_{B} \ln \Gamma(E, V, N)$$
+	where $E,N \text{ and }V$ are energy number of particles and volume respectively. From this one can conclude that $\Gamma$.
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]Does not change during evolution to equilibrium.
+		\task[\textbf{b.}]Oscillated during evolution to equilibrium .
+		\task[\textbf{c.}]Is a maximum in equilibrium .
+		\task[\textbf{d.}] Is a minimum in equilibrium .
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		E, U, N \rightarrow& \text{ micro canonical ensemble}\\
+		S&=K \ln T(E, V, N)\\
+		\text{maximum when }&\text{$\Gamma$ is maximum}\\
+		\text{In equilibrium } &s \rightarrow\text{ maximum}\\
+		\Rightarrow &r \rightarrow \text { maximum }
+		\end{align*}
+			So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item In a canonical ensemble description of a system, which of the following quantities remain fixed?
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]Energy of system 
+		\task[\textbf{b.}]Square of energy
+		\task[\textbf{c.}]Volume of system
+		\task[\textbf{d.}] Number of particles
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{Canonical ensemble:
+		fixed values are }T, V, N
+		\end{align*}
+		So the correct answers are \textbf{Option (c) and (d)}
+	\end{answer}
+	\item A microcanonical ensemble represents
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]A system in contact with a heat reservoir.
+		\task[\textbf{b.}]An isolated system in equilibrium.
+		\task[\textbf{c.}]A system can exchange particle with surroundings
+		\task[\textbf{d.}]A system under constant external pressure. 
+	\end{tasks}
+	\begin{answer}
+		microcanonical: $E, V, N$ fixed isolated system in equilibrium\\
+			So the correct answer is \textbf{Option (b)}
+	\end{answer}
+	\item The pressure for a non interacting fermi gas with internal energy V at temperature T is 
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$P=\frac{3}{2}\left(\frac{u}{v}\right)$
+		\task[\textbf{b.}]$p=\frac{2}{3} \frac{u}{V}$
+		\task[\textbf{c.}]$ P=\frac{3}{5} \frac{U}{V}$
+		\task[\textbf{d.}]  none
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{Non interacting fermi gas=}&\text{ ideal classical gas}\\
+	U&=\frac{3}{2} N K+=\frac{3}{2} P V\\
+	P&=\frac{2}{3}\left(\frac{U}{V}\right)
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
 \end{answer}
 \end{enumerate}
