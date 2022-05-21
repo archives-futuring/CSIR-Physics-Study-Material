@@ -344,14 +344,29 @@ H&=U+P V\\
 U &; p \alpha + d \mid s\\
 P&=\frac{s}{d}\left(\frac{U}{V}\right)
 \end{align*}
-\end{minipage}
-
-
-
-
-
-
-
+\end{minipage}\\
+\textbf{Canonical Ensemble:}\\
+$P_{i}=\frac{g_{i} e^{-\beta \varepsilon_{i}}}{\sum g_{i} e^{-\beta E_{i}}}$\hspace{2cm}$(z)=\Sigma g_{i} e^{-\beta \varepsilon_{i}}$\\
+a. For continuous energy:\\
+$Q_{N}(T, V)=\left(Q_{1}(T, V)\right)^{N}$
+b. For discrete energy:\\
+\begin{align*}
+ \theta_{N}(T, V) &=\left[\theta_{1}(T, V)\right]^{N} \rightarrow \text { distinguishable } \\ &=\frac{\left[\theta_{1}(T, V)\right]^{N}}{N !} \rightarrow \text { indistinguishable. } 
+ \end{align*}
+\textbf{Avarage value of Different Quantities}\\
+1. Avarage Energy:\\
+\begin{align*}
+\left\langle E_{i}\right\rangle&=\sum E_{i} P_{i} \Rightarrow \frac{\sum \varepsilon_{i} g_{i} e^{-\beta \xi_{i}}}{\sum g_{i} e^{-\beta \varepsilon_{i}}}\\
+\left\langle E_{i}\right\rangle&=-\frac{\partial}{\partial \beta} \ln z=+k t^{2} \frac{\partial}{\partial T} \ln z
+\end{align*}
+2. Average Pressure\\
+$\langle P\rangle=\sum p \frac{g e^{-\beta \varepsilon}}{z}=\frac{1}{\beta} \frac{\partial}{\partial v} \ln z$\\
+3. Average Chemical Potential\\
+$\langle\mu\rangle=\Sigma \frac{\mu g e^{-\beta \varepsilon_{i}}}{z}=-\frac{1}{\beta} \frac{\partial}{\partial N} \ln z$\\
+4. Average entropy\\
+$\langle S\rangle=K_{B} \ln z+\frac{\langle E\rangle}{T} \Rightarrow K_{B} \ln z-\frac{1}{T} \frac{\partial}{\partial B} \ln z$\\
+5. Average Free Energy\\
+$\langle A\rangle=\langle E\rangle-+\langle S\rangle \Rightarrow-K_{B} T \ln z$
 
 
 
@@ -1073,4 +1088,135 @@ For step three, only one out of six options will form equilateral\\ triangle Tot
 	\end{align*}
 	So the correct answer is \textbf{Option (b)}
 \end{answer}
+\item The partitian function of two base particles each of which can occupy any of the two energy levels of $\epsilon$ is.
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $1+e^{-2 \varepsilon \mid K T}+2 e^{-\varepsilon \mid K T}$
+	\task[\textbf{b.}] $1+e^{-2 \varepsilon \mid k t}+e^{-\varepsilon \mid k-}$
+	\task[\textbf{c.}]$2+e^{-2 \varepsilon \mid k t}+e^{-\varepsilon \mid k f}$
+	\task[\textbf{d.}] $e^{-2 \varepsilon \mid k T}+e^{-\varepsilon \mid k \rho \text {. }}$
+\end{tasks}  
+\begin{answer}$\left. \right. $\\
+\begin{tabular}{|p{1cm}|p{1cm}|p{2cm}|}
+	\hline
+	0 & $\epsilon$ & $E_{Total}$\\\hline
+	aa&-&0\\\hline
+	a&a&$\epsilon$\\\hline
+	-&aa&2$\epsilon$\\\hline
+\end{tabular}\\
+\begin{align*}
+	z&=\sum g_{i} e^{-\beta \varepsilon i} \\
+	z&=1 e^{0}+e^{-\beta \varepsilon}+e^{-2 \beta \varepsilon} \\
+	z&=1+e^{-\beta \varepsilon}+e^{-2 \beta \varepsilon}\\
+	g_{i}&=1
+\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item Consider a system of two non-interacting classical particles which can occupy any of the three energy levels with energy values $E=0,\epsilon \text{ and }2\epsilon$ havinh degeneracies $g(E)=1,2 \text{ and } 4$ respectively. The mean energy of the system is.
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $\varepsilon\left(\frac{4 \exp \left(-\varepsilon \mid k_{B} T\right)+8 \exp \left(-2 \varepsilon \mid K_{B} T\right)}{1+2 \exp \left(-\varepsilon \mid k_{B} T\right)+4 \exp \left(-2 \varepsilon \mid k_{B} T\right)}\right)$
+	\task[\textbf{b.}]$\varepsilon\left[\frac{2 \exp \left(-\varepsilon \mid K_{B} T\right)+8 \exp \left(-2 \varepsilon \mid K_{B} T\right)}{1+2 \exp \left(-\varepsilon \mid K_{B} T\right)+4 \exp \left(-2 \varepsilon||_{B} T\right)}\right)$
+	\task[\textbf{c.}]$\varepsilon\left[\frac{2 \exp \left(-\varepsilon \mid k_{B} T\right)+4 \exp \left(-2 \varepsilon \mid k_{B} T\right)}{1+2 \exp \left(-\varepsilon \mid K_{B} T\right)+4 \exp \left(-2 \varepsilon \mid k_{B} T\right)}\right]^{2}$
+	\task[\textbf{d.}] $\varepsilon\left[\frac{\exp \left(-\varepsilon \mid k_{B} T\right)+2 \exp \left(-2 \varepsilon \mid k_{B} T\right)}{1+\exp \left(-\varepsilon \mid k_{B} T\right)+\exp \left(-2 \varepsilon \mid k_{B} T\right)}\right]^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\left\langle E_{i}\right\rangle&=\sum E_{i} P_{i}\\
+	&=\frac{\sum \varepsilon_{i} g_{i} e^{-\beta \varepsilon_{i}}}{\sum g_{i} e^{-\beta \varepsilon i}} \\
+	&=\frac{0+2 \varepsilon e^{-\beta \varepsilon}+g \varepsilon^{-2 \beta \varepsilon}}{1 e^{0}+2 e^{-\beta \varepsilon}+4 e^{-2 \beta \varepsilon}} \\
+	&=\varepsilon\left(\frac{2 e^{-\beta \varepsilon}+8 e^{-2 \beta \varepsilon}}{1+2 e^{-\beta \varepsilon}+4 e^{-2 \beta \varepsilon}}\right)
+	\end{align*}
+\end{answer}
+\item The free energy of a gas, $N$ particles in a volume $V$ and at a temperature $T$ is
+$$F=N K_{B} T \ln \left(\frac{a_{0} V\left(H_{B} T\right)^{512}}{N}\right)$$
+where $a_0$ is a constant and $k_B$ denotes the Boltzmann constant. The internal energy of a gas is 
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{3}{2} N_{B} T$
+	\task[\textbf{b.}]$\frac{5}{2} N K_{B} T$
+	\task[\textbf{c.}] $N K_{B} T \ln \left[\frac{a_{0} V\left(K_{B} T\right)^{5 / 22}}{N}\right]-\frac{3}{2} N K_{B} T$
+	\task[\textbf{d.}] $N K_{B} T \ln \left[\frac{a_{O} V}{\left(K_{B} T\right)^{5 / 2}}\right]$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	F&=K_{B} T \ln \left[\frac{a_{O} V\left(K_{B} T\right)^{5 / 2}}{N}\right]^{N}\\
+	F&= K_{B}+\ln z
+	\intertext{compare 1 and 2, we get }
+	\ln z&=-\ln \left[\frac{a_{0} V\left(K_{B} T\right)^{5 / 2}}{N}\right]^{N} \\
+	\langle u\rangle&=-\frac{\partial}{\partial \beta} \ln z=+K T^{2} \frac{\partial}{\partial T} \ln z\\
+	\langle u\rangle&=N K_{B} T^{2} \frac{\partial}{\partial T}\left(-\ln \left(\frac{a_{O} V\left(K_{B} T\right)^{5 / 2}}{N}\right)\right)\\
+	&=N K_{B} T^{2} \frac{\partial}{\partial T}\left[-\ln T^{5 / 2}-\ln \left(\frac{a_{0} \cup K_{B}}{N}\right)\right]\\
+	&=-\frac{5}{2} N K_{B} T^{2} \times \frac{1}{T} \\
+	&=-\frac{5}{2} N K_{B} T
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item A system has two energy levels with energies $\epsilon \text{ and }2\epsilon$. The lower level is u-fold generate white the upper level is double degenerate. If there are $N$ non-interacting classical particles in the system, which is in thermodynamic equilibrium at a temperature $T$, the fraction of particles in the upper level is 
+ \begin{tasks}(2)
+	\task[\textbf{a.}] $\frac{1}{1+e^{-\left.\varepsilon\right|_{B} T}}$
+	\task[\textbf{b.}] $\frac{1}{1+2 e^{\varepsilon \mid} k_{B} \mid}$
+	\task[\textbf{c.}]$\frac{1}{2 e^{\varepsilon \mid K_{B} T}+4 e^{2 \varepsilon \mid K_{B} T}}$
+	\task[\textbf{d.}] $\frac{1}{2 e^{\varepsilon \mid \forall_{B} T}-4 e^{2 \varepsilon \mid K_{B} T}}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\begin{array}{ll}
+	E_{1}=\varepsilon & g_{1}=4 \\
+	E_{2}=2 \varepsilon & g_{2}=2
+	\end{array}
+	\text{fraction of }&\text{particles in upper level}\\
+	P_{2}&=\frac{N_{2}}{N}=\frac{2 e^{-2 \beta \varepsilon}}{4 e^{-\beta \varepsilon}+2 e^{-\beta \varepsilon}}\\
+	P_{\theta}&=\frac{1}{2 e^{\beta \varepsilon}+1}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item A one dimension chain consists of a set of $N$ rods each of length $a$. When stretched by a load, each rod can align either parallel of antiparallel to length. The energy of a rod is $-\epsilon$ when aligned parallel to length of the chain is $+\epsilon$ when perpendicular to it. When the chain is in thermal equilibrium at temperature $T$ its average length is,
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{\mathrm{Na}}{2}$
+	\task[\textbf{b.}]$\mathrm{Na}$
+	\task[\textbf{c.}]$\frac{N a}{1+e^{2 \varepsilon} k_{B} T}$
+	\task[\textbf{d.}] $\frac{N_{a}}{1+e^{-\varepsilon \mid K_{B} T}}$
+\end{tasks}
+ \begin{answer}
+ 	\begin{align*}
+ 	\langle L\rangle&=\sum_{i} L_{i} P_{i}\\
+ 	&=\frac{N_{a} P_{11}+0 \cdot P_{\perp a r}}{P_{11}+P_{\perp}}=\frac{N a e^{\beta \varepsilon}}{e^{\beta \varepsilon}+e^{-\beta \varepsilon}}\\
+ 	&=\frac{N a}{1+e^{2 \beta \varepsilon}}
+ 	\end{align*}
+ 	So the correct answer is \textbf{Option (c)}
+ \end{answer}
+\item An atom has a non-degenerate ground state and a double degenerate excited state. The energy difference between the two states is $\epsilon$. The specific heat at very low temperature $(\beta \varepsilon \gg) \mid$ is given by
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$K_{B}(\beta \varepsilon)$
+	\task[\textbf{b.}]$k_{B} e^{-\beta \varepsilon}$
+	\task[\textbf{c.}]$2 k_{B}(\beta \varepsilon)^{2} e^{-\beta \varepsilon}$
+	\task[\textbf{d.}] $K_{B}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	z &=1 e^{o \beta}+2 e^{-\beta \varepsilon} \\
+	&=1+2 e^{-\beta \varepsilon}\\
+	\langle E\rangle&=\frac{0+2 \varepsilon e^{-\beta \varepsilon}}{1+2 e^{-\beta \varepsilon}}=\frac{2 \varepsilon e^{-\beta \varepsilon}}{1+2 e^{-\beta \varepsilon}}\\
+	C_{V}&=\left(\frac{\partial E}{\partial T}\right)_{V}\hspace{7.3cm}\beta=\frac{1}{K_{B} T}\\
+	&=\frac{-1}{K_{B} T^{2}}\left(\frac{\partial E}{\partial \beta}\right)_{V}\hspace{6cm}\partial \beta=-\frac{\partial T}{K_{B} T^{2}}\\
+	C_{V}&=-K_{B} \beta^{2}\left(\frac{\partial E}{\partial \beta}\right)_{V}\hspace{5.7cm}\frac{1}{\partial T}=-\frac{1}{B_{B} T}2\frac{1}{\partial \beta}\\
+	c_{V}&=-k_{B} \beta^{2} \frac{\left(1+2 e^{-\beta \varepsilon}\right)\left(-2 \varepsilon^{2} e^{-\beta \varepsilon}\right)-\left(2 \varepsilon e^{-\beta \varepsilon}\right)\left(-2 \varepsilon e^{-\beta \varepsilon}\right)}{\left(1+2 e^{-\beta \varepsilon}\right)^{2}}\\
+	c_{V}&=-k_{B} \beta^{2}\left(-\frac{2 \varepsilon^{2} e^{-\beta \varepsilon}}{\left(1+2 e^{-\beta \varepsilon}\right)^{2}}\right)\\
+	C_{v}&=2 k_{B}(\beta \varepsilon)^{2} e^{\beta \varepsilon} \qquad(\therefore \beta \varepsilon>>1)
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+\item Consider a system maintained at temperature $T$, with two available energy states $E_1$\&$E_2$ each with degeneracies $g_1$\&$g_2$. If $p_1$\&$p_2$ are probabilities of occupancy of the energy states, what is the entropy of the system.
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$S=-K_{B}\left[P_{1} \ln \left(\frac{P_{1}}{g_{1}}\right)+P_{2} \ln \left(\frac{P_{2}}{g_{2}}\right)\right]$
+	\task[\textbf{b.}]$S=-K_{B}\left[P_{1} \ln \left(P_{1} g_{1}\right)+P_{2} \ln \left(P_{2} g_{2}\right)\right]$
+	\task[\textbf{c.}]$S=-K_{B}\left[P_{1} \ln \left(p_{1}^{g_{1}}\right)+P_{2} \ln (P_2 g_2)\right]$
+	\task[\textbf{d.}] $s=-K_{B}\left[\left(\frac{1}{P_{1}}\right) \ln \left(\frac{P_{1}}{g_{1}}\right)+\left(\frac{1}{P_{2}}\right) \ln \left(\frac{P_{2}}{g_{2}}\right)\right]$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	S&=-K \sum_{i} P_{i} \ln \left(\frac{P_{i}}{g_{i}}\right)\\
+	s&=-k_{B}\left[P_{1} \ln \left(\frac{p_{1}}{g_{1}}\right)+P_{2} \ln \left(\frac{p_{2}}{g_{2}}\right)\right]
+	\end{align*}
+		So the correct answer is \textbf{Option (a)}
+\end{answer}
+
 \end{enumerate}
