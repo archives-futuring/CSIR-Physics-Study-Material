@@ -24,7 +24,7 @@ where $\textbf{r}$ is the radius vector from $O$ to the particle. The moment of 
  $$\frac{d}{dt}(\textbf{r}\times m\textbf{v})\textbf{v}\times m\textbf{v}+=\textbf{r}\times\frac{d}{dt}(m\textbf{v})$$
 $$\textbf{N}=\frac{d}{dt}(\textbf{r}\times m\textbf{v})=\frac{d\textbf{L}}{dt}\equiv \dot{\textbf{L}}$$
 Note that both $\textbf{N}$ and $\textbf{L}$ depend on the point $O$ about which the moments are taken.\\
-\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\textbf{N}$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }\\
+\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\textbf{N}$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }\\\\
 \textbf{Energy}\\
 Next consider the work done by the external force $\textbf{F}$ upon the particle in going from point 1 to point 2. \\
 This work is 
@@ -195,8 +195,8 @@ In case of holonomic constraints the first difficulty is solved by introduction 
 	\end{note}
 	eg: Object rolling on a rough surface without slipping.
 \end{itemize}
-\section{D'Alemnert's Principle and Lagrange's Equations}
-\textit{Virtual Displacement}:A change in the configuration of the system as the result of any arbitrary infinitesimal chabge of the coordinates $\delta \textbf{r}_i$ consistent with the forces and constraints imposed on the system at the given instant $t$.\\\\
+\section{D'Alembert's Principle and Lagrange's Equations}
+\textit{\textbf{Virtual Displacement}}:\\A change in the configuration of the system as the result of any arbitrary infinitesimal chabge of the coordinates $\delta \textbf{r}_i$ consistent with the forces and constraints imposed on the system at the given instant $t$.\\\\
 \textbf{Principle of Virtual Work}\\\\
 For a system in rquilibrium\\
 total fore on each particle $\textbf{F}_i=0$\\
@@ -215,7 +215,7 @@ We now restrict ourselves to systems for which the net virtual work of constrain
 \sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}=0\label{EP-02}
 \end{equation}
 This is often called \textit{principle of virtual work}\\\\
-\textbf{D'Alemnert's Principle}\\
+\textbf{D'Alembert's Principle}\\
 Equation (\ref{EP-02})  only deals with statics. We want a condition involving general motion of the system\\
 The equation of motion 
 $$\textbf{F}_i=\dot{\textbf{P}_i}$$
@@ -350,11 +350,12 @@ If kinetic energy and potential energy is given by $T=\frac{1}{2} m\left(\dot{x}
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-\text{(a)}\quad L=T-V \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)&-(-m g y) \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)+m g y\\
-\text{(b)}\quad \text{ Generalized coordinate }q_{1}&=x, q_{2}=y\text{ generalized velocity} \dot{q}_{1}=\dot{x}, \dot{q}_{2}=\dot{y}
-\intertext{(c) $\left(\frac{\partial L}{\partial q_{1}}\right)=\left(\frac{\partial L}{\partial x}\right)=0$, so it is a cyclic coordinate. Then $\left(\frac{\partial L}{\partial \dot{x}}\right)=p_{x}=m \dot{x}$, identified as linear momentum in $x$ direction is constant of motion.}
+\intertext{(a)} L=T-V \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)&-(-m g y) \Rightarrow \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)+m g y\\
+\intertext{(b)} \text{ Generalized coordinate }q_{1}&=x, q_{2}=y\text{ generalized velocity} \dot{q}_{1}=\dot{x}, \dot{q}_{2}=\dot{y}
+\intertext{(c)} \left(\frac{\partial L}{\partial q_{1}}\right)&=\left(\frac{\partial L}{\partial x}\right)=0, \text{so it is a cyclic coordinate}\\ \text{Then} \left(\frac{\partial L}{\partial \dot{x}}\right)&=p_{x}=m \dot{x}, \intertext{Identified as linear momentum in $x$ direction is constant of motion.}
 \left(\frac{\partial L}{\partial y}\right)&=m g \neq 0,\text{ so it is not cyclic coordinate}
-\intertext{(d) $\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\left(\frac{\partial L}{\partial x}\right)=0 \Rightarrow \frac{d}{d t} m \dot{x}-0=0 \Rightarrow m \dot{x}=c$, which is exactly explained in section (b) $\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{y}}\right)-\left(\frac{\partial L}{\partial y}\right)=0 \Rightarrow \frac{d}{d t} m \dot{y}-m g=0 \Rightarrow m \ddot{y}-m g=0$}
+\intertext{(d)} \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\left(\frac{\partial L}{\partial x}\right)&=0 \\ \frac{d}{d t} m \dot{x}-0&=0 \Rightarrow m \dot{x}=c, \intertext{which is exactly explained in section (b)} 
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{y}}\right)-\left(\frac{\partial L}{\partial y}\right)&=0 \\ \frac{d}{d t} m \dot{y}-m g&=0 \Rightarrow m \ddot{y}-m g=0
 	\end{align*}
 \end{answer}
 \begin{exercise}
