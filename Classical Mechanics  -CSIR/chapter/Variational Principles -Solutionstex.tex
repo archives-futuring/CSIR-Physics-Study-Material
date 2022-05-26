@@ -1,4 +1,7 @@
 \chapter{Variational-Net Solutions}
+\begin{abox}
+	Practise set-01
+\end{abox}
 \begin{enumerate}
 	\item A double pendulum consists of two point masses $m$ attached by strings of length $l$ as shown in the figure: The kinetic energy of the pendulum is
 	{\exyear{NET/JRF(DEC-2011)}}
@@ -341,4 +344,315 @@ L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\left(\frac{2 r \dot{r}
 \end{align*}
 So the correct answer is \textbf{Option (C)}
 \end{answer}	
+\end{enumerate}
+\newpage
+\begin{abox}
+	Practise set-02
+\end{abox}
+\begin{enumerate}
+	\item A particle of mass $m$ slides under the gravity without friction along the parabolic path $y=a x^{2}$, as shown in the figure. Here $a$ is a constant.\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4.5cm,width=5cm]{diagram-20210915(2)-crop}
+	\end{figure}
+	The Lagrangian for this particle is given by
+{	\exyear{GATE 2012}}
+\begin{tasks}(2)
+\task[\textbf{A.}] $L=\frac{1}{2} m \dot{x}^{2}-m g a x^{2}$
+\task[\textbf{B.}] $L=\frac{1}{2} m\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}-m g a x^{2}$
+\task[\textbf{C.}] $L=\frac{1}{2} m \dot{x}^{2}+m g a x^{2}$
+\task[\textbf{D.}] $L=\frac{1}{2} m\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}+m g a x^{2}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\text{	Equation of constrain is given by }y&=a x^{2}, K.E., T=\frac{1}{2}m\left(\dot{x}^{2}+\dot{y}^{2}\right)\\
+\dot{y}&=2 a x \dot{x} \Rightarrow T=\frac{1}{2} m\left(\dot{x}^{2}+4 a^{2} x^{2} \dot{x}^{2}\right)\\&=\frac{1}{2} m \dot{x}^{2}\left(1+4 a x^{2}\right) \\
+V&=m g y=m g a x^{2}\\
+\because L&=T-V \Rightarrow L\\&=\frac{1}{2} m\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}-m g a x^{2}
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}
+\item  The Lagrange's equation of motion of the particle for above question is given by
+{\exyear{GATE 2012}}
+\begin{tasks}(2)
+\task[\textbf{A.}] $\ddot{x}=2 g a x$
+\task[\textbf{B.}] $m\left(1+4 a^{2} x^{2}\right) \ddot{x}=-2 m g a x-4 m a^{2} x \dot{x}^{2}$
+\task[\textbf{C.}] $m\left(1+4 a^{2} x^{2}\right) \ddot{x}=2 m g a x+4 m a^{2} x \dot{x}^{2}$
+\task[\textbf{D.}] $\ddot{x}=-2 g a x$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\frac{d}{d t}\left(\frac{d L}{d \dot{x}}\right)&=\frac{d L}{d x} \Rightarrow m \ddot{x}\left(1+4 a^{2} x^{2}\right)\\&=-4 m a^{2} x \dot{x}^{2}-2 m g a x
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}	
+\item The Lagrangian of a system with one degree of freedom $q$ is given by $L=\alpha \dot{q}^{2}+\beta q^{2}$, where $\alpha$ and $\beta$ are non-zero constants. If $p_{q}$ denotes the canonical momentum conjugate to $q$ then which one of the following statements is CORRECT?
+{\exyear{GATE 2013}}
+\begin{tasks}(1)
+\task[\textbf{A.}] $p_{q}=2 \beta q$ and it is a conserved quantity.
+\task[\textbf{B.}]  $p_{q}=2 \beta q$ and it is not a conserved quantity.
+\task[\textbf{C.}] $p_{q}=2 \alpha \dot{q}$ and it is a conserved quantity.
+\task[\textbf{D.}]  $p_{q}=2 \alpha \dot{q}$ and it is not a conserved quantity.
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\text{	As, }\frac{\partial L}{\partial \dot{q}}=p_{q}\text{ but }\quad \frac{\partial L}{\partial q} \neq 0.\text{ Thus, it is not a conserved quantity.}
+\end{align*}
+So the correct answer is \textbf{Option (D)}
+\end{answer}	
+\item A bead of mass $m$ can slide without friction along a massless rod kept at $45^{\circ}$ with the vertical as shown in the figure. The rod is rotating about the vertical axis with a constant angular speed $\omega$. At any instant $r$ is the distance of the bead from the origin. The momentum conjugate to $r$ is
+{\exyear{GATE 2014}}
+\begin{figure}[H]
+\centering
+\includegraphics[height=5cm,width=7cm]{diagram-20210915(4)-crop}
+\end{figure}
+\begin{tasks}(4)
+\task[\textbf{A.}] $m \dot{r}$
+\task[\textbf{B.}] $\frac{1}{\sqrt{2}} m \dot{r}$
+\task[\textbf{C.}] $\frac{1}{2} m \dot{r}$
+\task[\textbf{D.}] $\sqrt{2} m \dot{r}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+r^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)-m g r \cos \theta\\
+\text{Equation of constrain is }\theta&=\frac{\pi}{4}\text{ and it is given } \dot{\phi}=\omega\\
+L&=\frac{1}{2} m\left(\dot{r}^{2}+\frac{1}{2} r^{2} \omega^{2}\right)-\frac{1}{\sqrt{2}} m g r\\
+\text{	Thus the momentum conjugate to $r$ is }p_{r}&=\frac{\partial L}{\partial \dot{r}} \Rightarrow p_{r}=m \dot{r}
+\end{align*}
+So the correct answer is \textbf{Option (A)}
+\end{answer}	
+\item The Lagrangian of a system is given by
+$L=\frac{1}{2} m l^{2}\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]-m g l \cos \theta$, where $m, l$ and $g$ are constants.
+Which of the following is conserved?
+{\exyear{GATE 2016}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\dot{\varphi} \sin ^{2} \theta$
+\task[\textbf{B.}] $\dot{\varphi} \sin \theta$
+\task[\textbf{C.}] $\frac{\dot{\varphi}}{\sin \theta}$
+\task[\textbf{D.}] $\frac{\dot{\varphi}}{\sin ^{2} \theta}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\intertext{Solution: As $\varphi$ is cyclic coordinate, so $\frac{\partial L}{\partial \dot{\varphi}}=p_{\varphi}=m l^{2} \sin ^{2} \dot{\varphi}$, is a constant since $m, l$ and $g$ are constants. Thus $\dot{\varphi} \sin ^{2} \theta$ is conserved.}
+\end{align*}
+So the correct answer is \textbf{Option (A)}
+\end{answer}	
+\item If the Lagrangian $L_{0}=\frac{1}{2} m\left(\frac{d q}{d t}\right)^{2}-\frac{1}{2} m \omega^{2} q^{2}$ is modified to $L=L_{0}+\alpha q\left(\frac{d q}{d t}\right)$, which one of the following is TRUE?
+{\exyear{GATE 2017}}
+\begin{tasks}(1)
+\task[\textbf{A.}] Both the canonical momentum and equation of motion do not change
+\task[\textbf{B.}] Canonical momentum changes, equation of motion does not change
+\task[\textbf{C.}] Canonical momentum does not change, equation of motion changes
+\task[\textbf{D.}] Both the canonical momentum and equation of motion change
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\text{	For Lagrangian }L_{0}&=\frac{1}{2} m\left(\frac{d q}{d t}\right)^{2}-\frac{1}{2} m \omega^{2} q^{2}\\
+\text{canonical momentum is }p&=m \dot{q}
+\intertext{ and equation of motion is given by }\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}}\right)-\left(\frac{\partial L}{\partial q}\right)&=0 \Rightarrow m \ddot{q}+m \omega^{2} q=0\\
+\text{For Lagrangian }L&=L_{0}+\alpha q\left(\frac{d q}{d t}\right) \Rightarrow L\\&=\frac{1}{2} m\left(\frac{d q}{d t}\right)^{2}-\frac{1}{2} m \omega^{2} q^{2}+\alpha q \dot{q}\\
+\text{Canonical momentum is }p&=m \dot{q}+\alpha q\\
+\text{Equation of motion is,}\\
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}}\right)-\left(\frac{\partial L}{\partial q}\right)&=0 \Rightarrow m \ddot{q}+m \omega^{2} q=0
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}
+\item  A double pendulum consists of two equal masses $m$ suspended by two strings of length $l$. What is the Lagrangian of this system for oscillations in a plane? Assume the angles $\theta_{1}, \theta_{2}$ made by the two strings are small (you can use $\cos \theta=1-\theta^{2} / 2$ ).\\
+Note: $\omega_{0}=\sqrt{g / l}$.
+{\exyear{JEST 2014}}
+\begin{tasks}(1)
+\task[\textbf{A.}] $L \approx m l^{2}\left(\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}-\omega_{0}^{2} \theta_{1}^{2}-\frac{1}{2} \omega_{0}^{2} \theta_{2}^{2}\right)$
+\task[\textbf{B.}]  $L \approx m l^{2}\left(\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}+\dot{\theta}_{1} \dot{\theta}_{2}-\omega_{0}^{2} \theta_{1}^{2}-\frac{1}{2} \omega_{0}^{2} \theta_{2}^{2}\right)$
+\task[\textbf{C.}] $L \approx m l^{2}\left(\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}-\dot{\theta}_{1} \dot{\theta}_{2}-\omega_{0}^{2} \theta_{1}^{2}-\frac{1}{2} \omega_{0}^{2} \theta_{2}^{2}\right)$
+\task[\textbf{D.}]  $L \approx m l^{2}\left(\frac{1}{2} \dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}+\dot{\theta}_{1} \dot{\theta}_{2}-\omega_{0}^{2} \theta_{1}^{2}-\omega_{0}^{2} \theta_{2}^{2}\right)$
+\end{tasks}
+\begin{answer}$\left. \right. $\\
+\begin{minipage}{0.45\textwidth}
+	\begin{align*}
+	x_{1}&=l \sin \theta_{1},\\ y_{1}&=l \cos \theta_{1}\\
+	x_{2}&=x_{1}+l \sin \theta_{2}\\y_{2}&=y_{1}+l \cos \theta_{2}\\
+	\dot{x}_{2}&=l \cos \theta_{1} \dot{\theta}_{1}+l \cos \theta_{2} \dot{\theta}_{2},\\ \dot{y}_{2}&=-l \sin \theta_{1} \dot{\theta}_{1}-l \sin \theta_{2} \dot{\theta}_{2}\\
+	\dot{x}_{2}^{2}+\dot{y}_{2}^{2}&=l^{2} \cos ^{2} \theta_{1} \dot{\theta}_{1}^{2}+l^{2} \cos ^{2} \theta_{2} \dot{\theta}_{2}^{2}\\&+2 l^{2} \cos \theta_{1} \dot{\theta}_{1} \cos \theta_{2} \dot{\theta}_{2}+l^{2} \sin \theta_{1}^{2} \dot{\theta}_{1}^{2}
+	\\&+l^{2} \sin \theta_{2}^{2} \dot{\theta}_{2}^{2}+2 l^{2} \sin \theta_{1} \sin \theta_{2} \dot{\theta}_{1} \dot{\theta}_{2}\\
+	\Rightarrow \dot{x}_{2}^{2}+\dot{y}_{2}^{2}&=l^{2} \dot{\theta}_{1}^{2}+l^{2} \dot{\theta}_{2}^{2}+2 l^{2} \cos \left(\theta_{1}-\theta_{2}\right) \dot{\theta}_{1} \dot{\theta}_{2}\\\text{ also }\dot{x}_{1}^{2}+\dot{y}_{1}^{2}&=l^{2} \dot{\theta}_{1}^{2}\\
+	\end{align*}
+\end{minipage}
+\begin{minipage}{0.35\textwidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=4cm]{diagram-20210807(4)-crop}
+	\end{figure}
+\end{minipage}
+\begin{align*}
+L=T-V&=\frac{1}{2} m\left(\dot{x}_{1}^{2}+\dot{y}_{1}^{2}+\dot{x}_{2}^{2}+\dot{y}_{2}^{2}\right)-m g y_{1}-m g y_{2}\\
+\Rightarrow L&=\frac{1}{2} m\left(l^{2} \dot{\theta}_{1}^{2}+l^{2} \dot{\theta}_{1}^{2}+l^{2} \dot{\theta}_{2}^{2}+2 l^{2} \cos \left(\theta_{1}-\theta_{2}\right) \dot{\theta}_{1} \dot{\theta}_{2}\right)\\&+2 m g l \cos \theta_{1}+m g l \cos \theta_{2}\\
+\Rightarrow L&=m l^{2}\left[\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}+\dot{\theta}_{1} \dot{\theta}_{2}+\frac{2 g}{2 l}\left(1-\frac{\theta_{1}^{2}}{2}\right)+\frac{1}{2} \frac{g}{l}\left(1-\frac{\theta_{2}^{2}}{2}\right)\right]\\&\left[\because \cos \left(\theta_{1}-\theta_{2}\right) \approx 1\right]\\
+\Rightarrow L&=m l^{2}\left[\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}+\dot{\theta}_{1} \dot{\theta}_{2}+\frac{g}{l}-\frac{g}{l} \frac{\theta_{1}^{2}}{2}+\frac{g}{2 l}-\frac{g}{2 l} \frac{\theta_{2}^{2}}{2}\right]
+\intertext{comparing given options, option (B) is correct i.e.}
+L&=m l^{2}\left(\dot{\theta}_{1}^{2}+\frac{1}{2} \dot{\theta}_{2}^{2}+\dot{\theta}_{1} \dot{\theta}_{2}-\frac{\omega_{0}^{2} \dot{\theta}_{1}^{2}}{2}-\frac{1}{4} \omega_{0} \dot{\theta}_{2}^{2}\right)
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}	
+\item A bike stuntman rides inside a well of frictionless surface given by $z=a\left(x^{2}+y^{2}\right)$, under the action of gravity acting in the negative $z$ direction. $\vec{g}=-g \hat{z} .$ What speed should be maintain to be able to ride at a constant height $z_{0}$ without falling down?
+{\exyear{JEST 2015}}
+\begin{tasks}(1)
+\task[\textbf{A.}] $\sqrt{g z_{0}}$
+\task[\textbf{B.}] $\sqrt{3 g z_{0}}$
+\task[\textbf{C.}] $\sqrt{2 g z_{0}}$
+\task[\textbf{D.}] The biker will not be able to maintain a constant height, irrespective of speed.
+\end{tasks}
+\begin{answer}
+\begin{align*}
+z&=a\left(x^{2}+y^{2}\right)
+\intertext{Using equation of constrain, we must solve the given system in cylindrical co-ordinate.}
+z&=a r^{2}, \dot{z}=2 a r \dot{r} \Rightarrow L\\&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}+\dot{z}^{2}\right)-m g z\\
+\Rightarrow L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}+4 a^{2} r^{2} \dot{r}^{2}\right)-m g a r^{2}\\&=\frac{1}{2} m\left[\dot{r}^{2}\left(1+4 a^{2} r^{2}\right)+r^{2} \dot{\theta}^{2}\right]-m g a r^{2}\\
+\text{	Equation of motion}\\
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}&=0\\
+\Rightarrow m \ddot{r}\left(1+4 a^{2} r^{2}\right)+m \dot{r}^{2} 4 a^{2} r-m r \dot{\theta}^{2}+2 m g a r&=0\\
+\text{At }z=z_{0}, \dot{r}=0, \quad r=r_{0},\text{ so,} m r_{0} \dot{\theta}^{2}&=2 m g a r_{0}\\
+\dot{\theta}^{2}&=2 g a \Rightarrow \dot{\theta}=\sqrt{2 g a}, \frac{v}{r_{0}}\\&=\sqrt{2 g a}, v=\sqrt{2 g a} \cdot r_{0}\\
+v&=\sqrt{2 g a} \cdot\left(\frac{z_{0}}{a}\right)^{1 / 2}\\&=\sqrt{2 g z_{0}}\\
+\left(\because z_{0}=a r_{0}^{2}\right)
+\end{align*}
+So the correct answer is \textbf{Option (C)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=4cm]{diagram-20210809(8)-crop}
+\end{figure}
+\end{answer}
+\item The Lagrangian of a particle is given by $L=\dot{q}^{2}-q \dot{q}$. Which of the following statements is true?
+{\exyear{JEST 2015}}
+\begin{tasks}(1)
+\task[\textbf{A.}]  This is a free particle
+\task[\textbf{B.}] The particle is experiencing velocity dependent damping
+\task[\textbf{C.}] The particle is executing simple harmonic motion
+\task[\textbf{D.}] The particle is under constant acceleration.
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\because L&=\dot{q}^{2}-q \dot{q} \Rightarrow \frac{\partial L}{\partial \dot{q}}\\&=2 \dot{q}-q \Rightarrow \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}}\right)\\&=2 \ddot{q}-\dot{q}\\
+\because \frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}}\right)-\frac{\partial L}{\partial q}&=0
+\Rightarrow 2 \ddot{q}-\dot{q}+\dot{q}\\&=0 \Rightarrow 2 \ddot{q}=0 \Rightarrow \frac{d^{2} q}{d t^{2}}\\&=0 \Rightarrow \frac{d q}{d t}=C \Rightarrow q=C t+\alpha
+\end{align*}
+So the correct answer is \textbf{Option (A)}
+\end{answer}	
+\item A hoop of radius a rotates with constant angular velocity $\omega$ about the
+vertical axis as shown in the figure. A bead of mass $m$ can slide on the
+hoop without friction. If $g<\omega^{2} a$ at what angle $\theta$ apart from 0 and $\pi$ is the bead stationary (i.e., $\frac{d \theta}{d t}=\frac{d^{2} \theta}{d t^{2}}=0$ )?
+{\exyear{JEST 2016}}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4.2cm,width=3.5cm]{diagram-20210809(11)-crop}
+\caption{}
+\label{}
+\end{figure}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\tan \theta=\frac{\pi g}{\omega^{2} a}$
+\task[\textbf{B.}] $\sin \theta=\frac{g}{\omega^{2} a}$
+\task[\textbf{C.}] $\cos \theta=\frac{g}{\omega^{2} a}$
+\task[\textbf{D.}] $\tan \theta=\frac{g}{\pi \omega^{2} a}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\text{The Lagrangian of the system is}\\
+L&=\frac{1}{2} m a^{2}\left(\dot{\theta}^{2}+\sin ^{2} \theta \dot{\phi}^{2}\right)+m g a \cos \theta\\
+\text{The equation of motion is,}\\
+&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{\theta}}\right)-\left(\frac{\partial L}{\partial \theta}\right)\\&=0 \Rightarrow m a^{2} \ddot{\theta}-m a^{2}\left(\sin \theta \cos \theta \dot{\phi}^{2}\right)+m g a \sin \theta=0\\
+\text{When bead is stationary, then}\\
+\frac{d \theta}{d t}&=\frac{d^{2} \theta}{d t^{2}}\\&=0 \Rightarrow-m a^{2}\left(\sin \theta \cos \theta \dot{\phi}^{2}\right)+m g a \sin \theta=0\\
+\Rightarrow \dot{\phi}&=\omega\text{ and }g<\omega^{2} a,\text{ then }\cos \theta=\frac{g}{\omega^{2} a}
+\end{align*}
+So the correct answer is \textbf{Option (C)}
+\end{answer}	
+\item A bead of mass $M$ slides along a parabolic wire described by $z=2\left(x^{2}+y^{2}\right)$. The wire rotates with angular velocity $\Omega$ about the $z$ - axis. At what value of $\Omega$ does the bead maintain a constant nonzero height under the action of gravity along $-\hat{z}$ ?
+{\exyear{JEST 2017}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\sqrt{3 g}$
+\task[\textbf{B.}] $\sqrt{g}$
+\task[\textbf{C.}] $\sqrt{2 g}$
+\task[\textbf{D.}] $\sqrt{4 g}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+16 r^{2} \dot{r}^{2}\right)-2 m g r^{2} \Rightarrow L\\&=\frac{1}{2} m\left(\dot{r}^{2}\left(1+16 r^{2}\right)+r^{2} \dot{\theta}^{2}\right)-2 m g r^{2}
+\intertext{The equation of motion is given by}
+&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{r}}\right)-\frac{\partial L}{\partial r}\\&=0 \Rightarrow m \ddot{r}\left(1+16 r^{2}\right)+16 m \dot{r}^{2} r-m r \dot{\theta}^{2}+4 m g r=0\\
+\text{	At equilibrium, }r&=r_{0}, \dot{r}=0, \ddot{r}=0\\
+\text{So, }-m r_{0} \dot{\theta}^{2}+4 m g r_{0}&=0 \Rightarrow \dot{\theta}=\Omega=\sqrt{4 g}
+\end{align*}
+So the correct answer is \textbf{Option (D)}
+\end{answer}	
+\item A possible Lagrangian for a free particle is
+{\exyear{JEST 2017}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $L=\dot{q}^{2}-q^{2}$
+\task[\textbf{B.}] $L=\dot{q}^{2}-q \dot{q}$
+\task[\textbf{C.}] $L=\dot{q}^{2}-q$
+\task[\textbf{D.}] $L=\dot{q}^{2}-\frac{1}{q}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q}}\right)-\left(\frac{\partial L}{\partial q}\right)&=0 \Rightarrow 2 \ddot{q}-\dot{q}+\dot{q}\\&=0 \Rightarrow \ddot{q}=0
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}	
+\item  A rod of mass $m$ and length $l$ is suspended from two massless vertical springs with a spring constants $k_{1}$ and $k_{2} .$ What is the Lagrangian for the system, if $x_{1}$ and $x_{2}$ be the displacements from equilibrium position of the two ends of the rod?
+{\exyear{JEST 2017}}
+\begin{tasks}(2)
+\task[\textbf{A.}] $\frac{m}{8}\left(\dot{x}_{1}^{2}+2 \dot{x}_{1} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{2} k_{1} x_{1}^{2}-\frac{1}{2} k_{2} x_{2}^{2}$
+\task[\textbf{B.}] $\frac{m}{2}\left(\dot{x}_{1}^{2}+\dot{x}_{1} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{4}\left(k_{1}+k_{2}\right)\left(x_{1}^{2}+x_{2}^{2}\right)$
+\task[\textbf{C.}] $\frac{m}{6}\left(\dot{x}_{1}^{2}+x_{1} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{2} k_{1} x_{1}^{2}-\frac{1}{2} k_{2} x_{2}^{2}$
+\task[\textbf{D.}] $\frac{m}{2}\left(\dot{x}_{1}^{2}-2 \dot{x}_{1} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{4}\left(k_{1}-k_{2}\right)\left(x_{1}^{2}+x_{2}^{2}\right)$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+T&=\frac{1}{2} M V_{c, m}^{2}+\frac{1}{2} I_{c . m} \omega^{2}\\&=\frac{1}{2} m\left(\frac{\dot{x}_{1}+\dot{x}_{2}}{2}\right)^{2}+\frac{1}{2} \frac{m l^{2}}{12} \dot{\theta}^{2}\\
+\text{	Potential energy is, }V&=\frac{1}{2} k x_{1}^{2}+\frac{1}{2} k x_{2}^{2}\\
+\sin \theta&=\frac{x_{2}-x_{1}}{l}\text{ for small oscillation} \theta\\&=\frac{x_{2}-x_{1}}{l}=\dot{\theta}\\&=\frac{\dot{x}_{2}-\dot{x}_{1}}{l}\\
+L&=\frac{1}{2} m\left(\frac{\dot{x}_{1}+\dot{x}_{2}}{2}\right)^{2}+\frac{1}{2} \frac{m l^{2}}{12}\left(\frac{\dot{x}_{1}-\dot{x}_{2}}{l}\right)^{2}-\frac{1}{2} k x_{1}^{2}-\frac{1}{2} k x_{2}^{2}\\
+&=\frac{m}{6}\left(\dot{x}_{1}^{2}+x_{1} \dot{x}_{2}+\dot{x}_{2}^{2}\right)-\frac{1}{2} k_{1} x_{1}^{2}-\frac{1}{2} k_{2} x_{2}^{2}
+\end{align*}
+So the correct answer is \textbf{Option (C)}
+\end{answer}	
+\item Consider the Lagrangian
+$$L=1-\sqrt{1-\dot{q}^{2}}-\frac{q^{2}}{2}$$
+of a particle executing oscillations whose amplitude is $A$. If $p$ denotes the momentum of the particle, then $4 p^{2}$ is
+{\exyear{JEST 2015}}
+\begin{tasks}(2)
+\task[\textbf{A.}] (a) $\left(A^{2}-q^{2}\right)\left(4+A^{2}-q^{2}\right)$
+\task[\textbf{B.}] $\left(A^{2}+q^{2}\right)\left(4+A^{2}-q^{2}\right)$
+\task[\textbf{C.}] $\left(A^{2}-q^{2}\right)\left(4+A^{2}+q^{2}\right)$
+\task[\textbf{D.}] $\left(A^{2}+q^{2}\right)\left(4+A^{2}+q^{2}\right)$
+\end{tasks}
+\begin{answer}
+So the correct answer is \textbf{Option (A)}
+\end{answer}	
+\item Consider the motion of a particle in two dimensions given by the Lagrangian $$L=\frac{m}{2}\left(\dot{x}^{2}+\dot{y}^{2}\right)-\frac{\lambda}{4}(x+y)^{2}$$
+where $\lambda>0$. The initial conditions are given as $y(0)=0, x(0)=42$ meters, $\dot{x}(0)=\dot{y}(0)=0$. What is the value of $x(t)-y(t)$ at $t=25$ seconds in meters?
+{\exyear{JEST 2019}}
+\begin{answer}
+\begin{align}
+L&=\frac{m}{2}\left(\dot{x}^{2}+\dot{y}^{2}\right)-\frac{\lambda}{4}(x+y)^{2}\notag
+\intertext{The equation of motion is}
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\left(\frac{\partial L}{\partial x}\right)&=0 \Rightarrow m \ddot{x}+\frac{\lambda}{2} x+\frac{\lambda}{2} y=0\label{72-1}\\
+\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{y}}\right)-\left(\frac{\partial L}{\partial y}\right)&=0 \Rightarrow m \ddot{y}+\frac{\lambda}{2} y+\frac{\lambda}{2} x=0\label{72-2}
+\intertext{Subtracting equation (\ref{72-1}) from (\ref{72-2}) gives $m(\ddot{x}-\ddot{y})=0 \Rightarrow \ddot{x}-\ddot{y}=0$}\notag
+\intertext{Integrating both sides with $t$ gives}\notag
+\dot{x}-\dot{y}&=c_{1}\notag\\
+\text{	From the equation }\dot{x}(0)&=\dot{y}(0)=0,\text{ there }c_{1}=0\notag\\
+\text{Hence, }\dot{x}-\dot{y}&=0\label{jest10}\\
+\intertext{Integrating both sides of this equation with $t$ gives}
+x-y&=c_{2}\notag\\
+\text{Putting }x(0)&=42, y(0)=0\text{ gives}\notag\\
+42-0&=c_{2} \Rightarrow 42\notag\\
+\text{Therefore, }x-y=42\notag\\
+\intertext{The value of $x-y$ is independent of $t$.}\notag
+\text{Therefore, at }t&=25 s\notag\\
+x(t)-y(t)&=42\notag
+\end{align}
+\end{answer}
+	
+	
+	
 \end{enumerate}
