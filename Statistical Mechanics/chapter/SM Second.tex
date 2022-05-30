@@ -1,4 +1,149 @@
 \chapter{SM Second}
+\section{Thermodynamics of Magnetic System}
+We consider a system of N dipoles with $J=\frac{1}{2}, $There is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $E=-\mu_BH \quad \mu_BH=\in$ when placed in magnetic field $H$.
+$$\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \epsilon}+\mathrm{e}^{-\beta \epsilon}\right) \mathrm{N}=\left[ 2\cosh(\beta\in)\right]^N $$
+\textbf{Helmholtz Free Energy }
+\begin{align*}
+A&=-Tk_B \ell nQ_N(V,T)=-k_BT \ell n (2\cosh(\beta\in))^N\\
+\mathrm{A}&=-\mathrm{Nk}_{\mathrm{B}} \mathrm{T} \operatorname{\ell n} 2 \cosh (\beta \hat{\epsilon})
+\intertext{\textbf{Pressure (P):}}
+\mathrm{P}&=\left(\frac{\partial \mathrm{A}}{\partial \mathrm{V}}\right)_{\mathrm{N}, \mathrm{T}}=0
+\intertext{\textbf{Entropy (S):}}
+\mathrm{S}=-\left(\frac{\partial \mathrm{A}}{\partial \mathrm{T}}\right)_{\mathrm{N}, \mathrm{V}}&=\mathrm{Nk}_{\mathrm{B}} \ln 2 \cosh \left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)-\mathrm{Nk} \mathrm{B}_{\mathrm{B}} \mathrm{T} \times \frac{1}{2 \cosh \beta \epsilon} \times \sinh \frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}} \times \frac{\epsilon}{\mathrm{k}_{\mathrm{B}}} \times \frac{-1}{\mathrm{~T}^{2}}\\
+S&=N_{B}\left[\ln \left\{2 \cosh \left(\frac{\epsilon}{k_{B} T}\right)\right\}-\frac{\epsilon}{k_{B} T} \tanh \left(\frac{\epsilon}{k_{B} T}\right)\right]
+\intertext{\textbf{Internal Energy (U):}}
+\mathrm{U}&=-\mathrm{T}^{2} \frac{\partial}{\partial \mathrm{T}}\left(\frac{\mathrm{A}}{\mathrm{T}}\right)=-\mathrm{N} \in \tanh \frac{\in}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}
+\intertext{Magnetisation (m):}
+M&=-\left(\frac{\partial A}{\partial H}\right)_{T}=N \mu_{B} \tanh \frac{\epsilon}{k_{B} T} \\
+\text{So}\quad U&=-M H
+\intertext{Specific heat}
+\mathrm{C}&=\left(\frac{\partial \mathrm{U}}{\partial \mathrm{T}}\right)_{\mathrm{H}}=\mathrm{Nk}_{\mathrm{B}}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)^{2} \sec ^{2} \mathrm{~h}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)
+\end{align*}
+\section{Grand Canonical Ensemble}
+Grand canonical ensemble : An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\\\
+Equilibrium : between a system and a particle energy reservoir :
+We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time bothattain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the no. of particle and energy become variable whose values can lie at any particular time $\mathrm{t}$ any where between o to $\infty$. 
+\subsection{Partition Function (Z)}
+\begin{align*}
+Z(z, V, T)&=\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}} \\
+Z(\mu, V, T)&=\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}}\\
+&=\sum_{\mathrm{r}} \sum_{\mathrm{s}} \mathrm{e}^{-\alpha \mathrm{N}_{\mathrm{r}}} \mathrm{e}^{-\beta \mathrm{EE}_{\mathrm{S}}}=\sum_{\mathrm{N}_{\mathrm{r}}=0}^{\infty} \mathrm{e}^{-\alpha \mathrm{N}_{\mathrm{r}}} \mathrm{Q}_{\mathrm{N}_{\mathrm{r}}}(\mathrm{V}, \mathrm{T})\\
+&=\sum_{\mathrm{N}_{\mathrm{r}}=0}^{\infty}(Z)^{N_r}Q_N(V,T)\\
+Z&=e^{-\alpha}=\text{fugacity of the system }
+\end{align*}
+\section{Harmonic Oscillator :}
+\renewcommand*{\arraystretch}{2}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+	\hline
+	Classical Linear H.O&Quantum Linear H.O\\
+	\hline
+	$z_{1}=\frac{k_{B} T}{\hbar \omega}=\left(\frac{1}{\beta \hbar \omega}\right)$&$z_{1}=e^{-\beta \hbar \omega / 2}\left[\frac{1}{1-e^{-\beta \hbar \omega}}\right]$\\\hline
+	$Z_{N}=\left(\frac{K T}{\hbar \omega}\right)^{N}$&$Z_{N}=\left[\theta \sinh \left(\frac{\beta \hbar \omega l}{2}\right)^{-N}\right.$\\\hline
+	$\langle u\rangle=N K T$&$\langle u\rangle=\frac{\hbar \omega}{2} N \operatorname{coth}\left(\frac{\beta \hbar \omega}{2}\right)$\\\hline
+	$\langle P\rangle=0 \Rightarrow G=A$&$\langle P\rangle=0 \Rightarrow G=A$\\\hline
+\end{tabular}
+\begin{exercise}
+	 If the Partition function of a harmonic oscillator with frequency $w$ at a temperature $T$ is $k T/ \hbar w$, then the free energy of $N$ such independent oscillators is:
+	  \begin{tasks}(2)
+	 	\task[\textbf{a.}]$\frac{3}{2} N K T$
+	 	\task[\textbf{b.}]$k+\ln \frac{\hbar \omega}{k+}$
+	 	\task[\textbf{c.}]NKT $\ln \frac{\mathrm{ke}}{\mathrm{KT}}$
+	 	\task[\textbf{d.}] NKe $\ln \frac{\text { the }}{2 K T}$
+	 \end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	z_{N} &=\left(\frac{K T}{\hbar \omega}\right)^{N} \\
+	\langle A\rangle &=-K T \ln z_{N} \\
+	&=-K T \ln \left(\frac{K T}{\hbar \omega}\right)^{N} \\
+	&=N K+\ln \left(\frac{\hbar \omega}{K T}\right)
+	\end{align*}
+	So the correct answer is \textbf{Option(c)}
+\end{answer}
+\begin{exercise}
+	For a system of independent non-interacting 1-dimemtional oscillators, the valul of the free energy per oscillator, in the limit $T \rightarrow 0$ is:
+	 \begin{tasks}(2)
+		\task[\textbf{a.}] $\frac{1}{2} \hbar \omega$
+		\task[\textbf{b.}]$\hbar\omega$
+		\task[\textbf{c.}]$\frac{3}{2} \hbar \omega$
+		\task[\textbf{d.}] 0
+	\end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	z_{N}&=\left[2 \sinh \left(\frac{\beta \hbar \omega l}{2}\right)\right]^{-N}\\
+	U&=\frac{\hbar \omega}{2} N \cot h\left(\frac{\beta \hbar u}{2}\right)\\
+	\text { as } T \rightarrow 0 &\Rightarrow \beta \rightarrow \infty\\
+	U&=\frac{N \hbar \omega}{2} \Rightarrow \frac{U}{N}=\frac{1}{2} \hbar \omega\\
+	F&=U-T S=U \text { as } T=0\\
+	F&=U\\
+	\frac{F}{N}&=\frac{1}{2} \hbar \omega
+	\end{align*}
+	So the correct answer is \textbf{Option(a)}
+\end{answer}
+\begin{exercise}
+	For a quantum mechanical Harmonic oscillator with energy $E_{n}=\left(n+\frac{1}{2}\right) \hbar \omega$. The Partition $f x^{n}$ is:
+\end{exercise}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$\frac{e^{\hbar\omega/K_BT}}{e^{\hbar\omega/K_BT}-1}$
+	\task[\textbf{b.}]$e^{\hbar \omega / 2 K_{B} T}-1$
+	\task[\textbf{c.}]$e^{\hbar  \omega / 2 K_{B} T}-1$
+	\task[\textbf{d.}] $\frac{e^{\hbar\omega/K_BT}}{e^{\hbar\omega/2K_BT}-1}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	E_{n}&=\left(n+\frac{1}{Q}\right) \text { tue } \rightarrow 1 \rightarrow \operatorname{Dim} \text { Q.H.0 }\\
+	z_{1}&=\sum_{n} e^{\beta E}\\
+	z_1&=e^{-\beta\left(n+\frac{1}{2} \right) }\hbar \omega\\
+	z&=e^{-\beta \hbar \omega / 2}\left[1+e^{-\beta \hbar \omega}+e^{-2 \beta \hbar \omega}+\right]\\
+	z_{1}&=\frac{e^{-\beta \hbar \omega / 2}}{1-e^{-\beta \hbar \omega}}=\left[2 \sinh \left(\frac{\beta \hbar \omega}{2}\right)\right]^{-1}\\
+	z_{1}&=\frac{e^{-\beta \hbar \omega \mid \alpha}}{1-e^{-\beta \hbar \omega}} \times \frac{e^{\beta \hbar \omega}}{e^{\beta \hbar \omega}}\\
+	z_{1}&=\frac{e^{\beta \hbar \omega / 2}}{e^{\beta \hbar \omega}-1}\hspace{1cm} \beta=\frac{1}{K T}\\
+	z_{1}&=\frac{e^{\hbar \omega / 2 K_{B} T}}{e^{\hbar \omega / K_{B} T}-1}
+	\end{align*}
+	So the correct answer is \textbf{Option(d)}
+\end{answer}
+\begin{exercise}
+	The probability of a system to be in a state with energy E at temperature T is proportional to $e^{-E \mid K_{B} T}$. If the system in question is a 1-Dim. quantum H.O of frequency $\omega$ the average energy at temperature T is
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{\hbar\omega}{2}$
+		\task[\textbf{b.}]$\hbar \omega\left(e^{-\hbar \omega K_{B} T}+\frac{1}{2}\right)$
+		\task[\textbf{c.}]$\hbar \omega\left(\frac{1}{e^{\hbar\omega/KT_{-1}}}+\frac{1}{2}\right)$
+		\task[\textbf{d.}] $\hbar \omega\left(\frac{1}{e^{\hbar\omega/KT_{+1}}}+\frac{1}{2}\right)$
+	\end{tasks}
+
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Maxwell-Boltzmann Statistics}
 Consider a system consisting of a large number of particles which are identical and distinguishable. Consider an ideal gas taken in a vessel of volume V. The particles (molecules) in the gas are in random motion, they move in all possible directions with all possible velocities, colliding with each other and with the walls of the vessel. The collisions are considered to be elastic. But during each collision the energy and momentum of each particle change. The change in momentum and energy is continuous, but total energy of the system remains constant.\\
 \par Let $\mathrm{n}_{1}, \mathrm{n}_{2}, \mathrm{n}_{3}, \ldots . \mathrm{n}_{\mathrm{i}} \ldots$ be the number of particles in the energy levels $\epsilon_{1}, \in_{2}, \in_{3} \cdots \epsilon_{i} \cdots$. The total number of particles and total energy of the system are constants.
