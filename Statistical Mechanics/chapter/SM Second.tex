@@ -111,13 +111,65 @@ Z&=e^{-\alpha}=\text{fugacity of the system }
 		\task[\textbf{c.}]$\hbar \omega\left(\frac{1}{e^{\hbar\omega/KT_{-1}}}+\frac{1}{2}\right)$
 		\task[\textbf{d.}] $\hbar \omega\left(\frac{1}{e^{\hbar\omega/KT_{+1}}}+\frac{1}{2}\right)$
 	\end{tasks}
-
 \end{exercise}
-
-
-
-
-
+\begin{answer}
+	\begin{align*}
+	\intertext{for $1-Dim Q \cdot H \cdot 0$ :}
+	z_{1}&=\frac{e^{-\beta \hbar \omega / 2}}{1-e^{-\beta \hbar \omega}}\\
+	u&=-\frac{\partial}{\partial \beta} \ln z_{1}=-\frac{\partial}{\partial \beta}\left[-\frac{\beta \hbar \omega}{2}-\ln \left(1-e^{-\beta \hbar \omega}\right)\right.\\
+	v&=\frac{\hbar \omega}{2}+\frac{e^{-\beta \hbar u}}{1+\left(-e^{-\beta \hbar u e}\right)} \hbar \omega\\
+	u&=\hbar \omega\left(\frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}+\frac{1}{2}}\right)\\
+	\text { also } v&=\frac{\hbar \omega}{2} \cot h\left(\frac{\beta \hbar \omega}{2}\right)
+	\end{align*}
+	So the correct answer is \textbf{Option(c)}
+\end{answer}
+\begin{exercise}
+	 A system has two normal modes of vibration, with frequencies $\omega_{1}\text{ and }\omega_{2}=2\omega_{1}$. What is the probability that at temperature $T$, the system has an energy less than $\mu\hbar\omega_{1}$? (use $x=e^{\beta \hbar \omega}$ and $z$ is as partition $fx^n$)
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$x^{3 / 2}\left(x+2 x^{2}\right) / 2$
+		\task[\textbf{b.}]$x^{3 / 2}\left(1+x+x^{2}\right) / 2$
+		\task[\textbf{c.}] $x^{3 / 2}\left(1+2 x^{2}\right) / 2$
+		\task[\textbf{d.}] $x^{3 / 2}\left(1+x+2 x^{2}\right) / 2$
+	\end{tasks}
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	E&=\left(n+\frac{1}{2}\right) \hbar u_{1}+\left(n+\frac{1}{2}\right) \hbar\left(2 v_{1}\right)\\
+	E&=\left(3 n+\frac{3}{2}\right) \text { hul }\\
+	E_{0,0}&=\frac{3}{2} \hbar u_{1} ; E_{1,0}=\frac{5}{2} \hbar \omega_{1}; \quad E_{2}=\frac{7}{2} \hbar u_{1}\\
+	P_{i}&=\frac{g_{i} e^{-\beta \varepsilon_{i}}}{2}\hspace{3cm}\left(\begin{array}{ll}
+	n_{2}=0, & n_{1}=2 \\
+	n_{2}=1, & n_{1}=0
+	\end{array}\right)\\
+	P_{i}&=\left(e^{-3 / 2 \beta t \omega e}+e^{-\frac{5}{2} \beta \hbar \omega}+2 e^{-\frac{7}{2} \beta \hbar \omega}\right) \mid 2\\
+	\text { Put } x&=e^{-\beta \hbar \omega}\\
+	P_{i}&=\frac{x^{3 / 2}+x^{5 / 2}+2 x^{7 / 2}}{2}=\frac{x^{3 / 2}\left(1+x+2 x^{2}\right)}{2}
+	\end{align*}
+		So the correct answer is \textbf{Option(d)}
+\end{answer}
+\section{Paramagnetic System}
+\begin{tabular}{|p{2cm}|p{3cm}|p{4cm}|}
+	\hline Spin&Energy&Magnetic moment\newline (energy)\\\hline
+	$\frac{1}{2}$&$\varepsilon$&$-\mu_{0}B$\\\hline
+	$\frac{-1}{2}$&$-\varepsilon$&$\mu_{0}B$\\\hline
+\end{tabular}
+\begin{enumerate}
+	\item Partition Function: 
+	\begin{align*}
+	z=e^{\beta \varepsilon}+e^{-\beta \varepsilon} \Rightarrow 2 \cosh \beta \varepsilon
+	\end{align*}
+	\item Free energy: 
+	\begin{align*}
+	\langle A\rangle&=-K T \ln z^{N}\\
+	&=-N K T \ln \left[2 \cos h\left(\frac{M_{0} B}{KT}\right)\right]
+	\end{align*}
+	\item Internal energy:
+	\begin{align*}
+	\langle u\rangle&=-\mu \varepsilon \tan h \beta \varepsilon\\
+	\langle u\rangle&=-N \mu_{0} B \tan h\left(\frac{\mu_{0} B}{k_{B} T}\right)\\
+	\end{align*}
+	
+\end{enumerate}
 
 
 
