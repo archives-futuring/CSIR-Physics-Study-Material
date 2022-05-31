@@ -61,7 +61,25 @@ $\begin{array}{ll}\text{Distribution}&\text{ Probability }\\(4,0) & 1 / 16 \\ (3
 	\label{tab:multicol}
 \end{table}
 \end{answer}
-
+\subsection{Random Walk}
+\textbf{1-Dimensional Random Walk:}\\
+\begin{align*}
+\text{let }N &\rightarrow\text{ steps of equal length along a line.}\\
+p &\rightarrow\text{ Probability of taking a step right}\\
+q &\rightarrow\text{ probability of taking a step left}\\
+n_{1} &\rightarrow \text{no. of sleps taken to right }\\
+n_{2} &\rightarrow\text{ no. of steps taken to left.}\\
+&p+q=1\qquad n_{1}+n_{2}=N
+\end{align*}
+\begin{exercise}
+	A one dimensional random walker takes 10 steps in left and right with equal probability.  Find out the probability that the random walker starting from origine is back to origine after taking 10 steps?
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	P(5,5) &={ }^{10} C_{5}\left(\frac{1}{2}\right)^{10} \\
+	&=\frac{10 !}{5 ! 5 !} \times \frac{1}{1024}
+	\end{align*}
+\end{answer}
 \section{Macroscopic and Microscopic Coordinates}
 A system whose size is of the order of atomic dimensions or smaller $(<10 \AA)$ is called a microscopic system. Example, a molecule, an atom. If the size of the system is very large compared to size of an atom, say greater than one micron it is called a macroscopic system. A macroscopic system contains a large number of particles.\\
 \par Let us consider a system, say a cylinder fitted with a frictionless weightless piston containing a gas at a pressure $\mathrm{P}$ and temperature $\mathrm{T}$. The state of the gas can be specified by $P, T$ and volume $V$ of the gas. These coordinates are called macroscopic coordinates.\\
@@ -135,19 +153,19 @@ $$\text{ So }(d \tau)_{\min }=\mathrm{h} \times \mathrm{h} \times \mathrm{h}=\ma
  
  Consider the distribution of $\mathrm{n}$ similar particles in $\mathrm{k}$ similar boxes such that $n_{1}, n_{2}, n_{3} \ldots . n_{k}$ particles are in the boxes $1,2,3, \ldots . k$ respectively. Then $n_{1}+n_{2}+n_{3}+\ldots \ldots n_{k}=n$.
  
-It can be shown that the number of microstates corresponding to this distribution or its thermodynamic probability $\Omega=\frac{n !}{\pi n_{i} !}$\\
-\textbf{Proof}
+It can be shown that the number of microstates corresponding to this distribution or its thermodynamic probability $\Omega=\frac{n !}{\pi n_{i} !}$
+\subsubsection{Proof}
 \begin{align*}
-\text{The number of ways of chosing }&n_{1} \text{particles for the first box}\\
-&=\frac{n !}{n_{1} !\left(n-n_{1}\right) !}\\
-\text{From the remaining particle }&\left(n-n_{1}\right)\text{ we have to chose $n_{2}$ particles }\\
-\text{for the box 2. This can be done in }&\frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !}\text{ ways. For the box}\\
-\text{$3, \mathrm{n}_{3}$ particles can be chosen in }& \frac{\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}\right) !}{\mathrm{n}_{3} !\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}-\mathrm{n}_{3}\right) !}\text{ ways and so}
-\intertext{So the total number of meaningful ways of arranging $n_{1}, n_{2}, n_{3} \ldots . n_{1}$ particles in boxes $1,2,3 \ldots . \mathrm n{k}$ respectively is,}
-\Omega=\frac{n !}{n_{1} !\left(n-n_{1}\right) !} &\times \frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !} \times \frac{\left(n-n_{1}-n_{2}\right) !}{n_{3} !\left(n-n_{1}-n_{2}-n_{3}\right) !} \times \ldots, k\text{ terms}\\
-\Omega&=\frac{n !}{n_{1} ! n_{2} ! n_{3} ! \ldots \ldots n_{k} !}\\
-\text{For the }i^{\text {th }}\text{ distribution then the probability}\Omega_{\mathbf{i}}&=\frac{\mathbf{n} !}{\pi \mathbf{n}_{\mathbf{i}} !}
-\end{align*}
+   &\text{The number of ways of chosing $n_{1}$ particles for the first box,}\\
+   &=\frac{n !}{n_{1} !\left(n-n_{1}\right) !}\\
+   &\text{From the remaining particle $\left(n-n_{1}\right)$  we have to chose $n_{2}$ particles for the box 2.}\\
+   &\text{ This can be done in $\frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !}$  ways. }\\
+	&\text{ For the box 3, $ \mathrm{n}_{3}$ particles can be chosen in } \frac{\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}\right) !}{\mathrm{n}_{3} !\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}-\mathrm{n}_{3}\right) !}\text{ ways and so}
+	\intertext{So the total number of meaningful ways of arranging $n_{1}, n_{2}, n_{3} \ldots . n_{1}$ particles in boxes $1,2,3 \ldots . \mathrm n{k}$ respectively is,}
+	\Omega&=\frac{n !}{n_{1} !\left(n-n_{1}\right) !} \times \frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !} \times \frac{\left(n-n_{1}-n_{2}\right) !}{n_{3} !\left(n-n_{1}-n_{2}-n_{3}\right) !} \times \ldots, k\text{ terms}\\
+	\Omega&=\frac{n !}{n_{1} ! n_{2} ! n_{3} ! \ldots \ldots n_{k} !}\\
+	&\text{For the }i^{\text {th }}\text{ distribution then the probability }\Omega_{\mathbf{i}}=\frac{\mathbf{n} !}{\pi \mathbf{n}_{\mathbf{i}} !}
+	\end{align*}
 \subsection{Statistical Ensemble}
 A collection of particles is called a system. A number of systems constitute an ensemble. Sometimes it is difficult to study the behaviour of a complex system. But a suitably created ensemble help us to compute the statistical behaviour of the system
 \begin{figure}[H]
@@ -157,7 +175,6 @@ A collection of particles is called a system. A number of systems constitute an 
 	\label{SP-01}
 \end{figure}
 The phase line of a single system is as shown in Fig.\ref{SP-01}  Each phase point on the phase line emerges from the previous point, with passage of time, in accordance with the laws of mechanics. Suppose we want to compute a physical quantity of the system. Usually what we do is we find its time average over a certain interval of time. But Gibbs reduced this time dependent picture by a static picture. According to this model, the entire phase line shown by dotted line, in Fig. exists at one time. Then each phase point represents a separate system, with the same macroscopic properties $(N, V, E)$ but a different microscopic state where $\mathrm{N}$ is the total number of particles in the system, $V$ its volume and $E$ its total energy. i.e., we just imagine a large number, (almost infinity) of systems, which are similar in structure to the system under consideration, but placed at random in the accessible, unobservable microscopic states. Now we don't take the time average but take an average over this artificially created group of systems created simultaneously one time. This collection of replicas of similar, independent noninteracting systems is calle an ensemble. Gibbs assumed that the time average of some property of a system in equilibrium is same as the instantaneous ensemble average. This is called the ergodic hypothesis.
-
 All the members of the ensemble which are identical in $\mathrm{N}, \mathrm{V}, \mathrm{E}$ are called elements.
 \begin{figure}[H]
 	\centering
@@ -167,7 +184,7 @@ In Fig. $\mathrm{~N}, \mathrm{~V}, \mathrm{E}$ represents one system. A collecti
 \subsection{Characteristics of an ensemble}
 \begin{enumerate}
 	\item  The elements of an ensemble are identical in structure. i.e., they have the same macroscopic state.
-\item  The elements differ in their miccroscopic state. i.e., they diffet from each other in the position coordinates and momentum coordinates.
+\item  The elements differ in their miccroscopic state. i.e., they different from each other in the position coordinates and momentum coordinates.
 \item  The various elements do not interact each other.
 \item  Each element of the ensemble behaviour independently obeying the laws of mechanics.
 \item  The elements of the ensemble are the mental copies of the system under consideration. But the system is a physical object, whose properties are to be evaluated. The elements help us to use the probability theory.
@@ -176,27 +193,36 @@ In Fig. $\mathrm{~N}, \mathrm{~V}, \mathrm{E}$ represents one system. A collecti
 The average value found out at a fixed time over all the elements in an ensemble is called an ensemble average. The ensemble average will be equal to the time average when the system contains a large mumber of particles (molecules) and the ensemble contains a large namber systems (both almost infinite in number).
 \subsection{Liouville's Theorem}
 The condition of an ensemble at any time can be specified by the density $\rho$ with which the phase points are distributed over the phase apace.  It is called the density of distribution and is a function of the position coordinates (q) and momentum coordinates (p).
-
 The dynamical state of a system at any instant of time can be represented by a point in the phase space.  This point will not be stationary, but will move along a certain trajectory. The trajectory is determined by the equatio of motion,
-$$\dot{q}_{i}=\frac{\partial \mathrm{H}}{\partial \mathrm{p}_{i}}\text{ and}$$
-$$\dot{p}_{i}=-\frac{\partial H}{\partial \dot{q}_{i}}$$
-where $H=H\left(q_{i}, p_{i}\right)$ is the Hamiltonian of the system. Due to this motion, the density $\rho$ of the system in phase space changes with time.
-
-Lioville's theorem gives the value of $\frac{\partial \rho}{\partial t}$ at a given point in phase space.
+\begin{align}
+\dot{q}_{i}&=\frac{\partial \mathrm{H}}{\partial \mathrm{p}_{i}}\\
+\text{ and } \dot{p}_{i}&=-\frac{\partial H}{\partial \dot{q}_{i}}
+\end{align}
+Where $H=H\left(q_{i}, p_{i}\right)$ is the Hamiltonian of the system. Due to this motion, the density $\rho$ of the system in phase space changes with time.
+Liouville's theorem gives the value of $\frac{\partial \rho}{\partial t}$ at a given point in phase space.
 Liouville's theorem states that the density of systems in the neighbourhood of some given system in phase space remains constant in time.
 \begin{equation}
 \frac{d \rho}{d t}=\frac{\partial \rho}{\partial t}+\sum_{i}\left(\frac{\partial \rho}{\partial q_{i}} \dot{q}_{i}+\frac{\partial \rho}{\partial p_{i}} \dot{p}_{i}\right)=0
 \end{equation}
 The sum of the two terms give the total change in density with time, Liouville's theorem states that the variation of density with time is zero.i.e., the total rate of change of density $d\rho/d\tau$ near any selected phase point of a system, as it moves through the phase space is zero.
-
 This is known as the principle of the conservation of the density in phase.  This implies that the distribution of phase points move in phase space like an incompressible fluid.\\
 \subsection{Different Types of Ensembles}
-Depending on the behaviour of the constituents of an ensemble with respect to the surroundings, ensembles are classified into mainly three types (i) Microcanonical ensemble (ii) Canonical ensemble and (iii) Grand canonical ensemble.\\
-\textbf{Uniform ensemble}\\
-- If the density in phase space is constant it is called uniform ensemble.
+Depending on the behaviour of the constituents of an ensemble with respect to the surroundings, ensembles are classified into mainly three types,
+\begin{enumerate}
+	\item Microcanonical ensemble
+	\item Canonical ensemble
+	\item Grand canonical ensemble
+\end{enumerate} 
+\begin{note}
+	$\left. \right. $ \textbf{Uniform ensemble: }If the density in phase space is constant it is called uniform ensemble.
+\end{note}
+
 \subsection{Microcanonical Ensemble}
-Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system. $V$ and $E$ are the volume and energy of the system [See Fig. \ref{SP-02}] respectively.\\
-Consider a system for which the total energy $H(q, p)=E$ is conserved. i.e., $E\left[q_{1} \ldots \ldots . q_{f}, p_{1} \ldots \ldots p_{f}\right]=a$ constant\\
+Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system. $V$ and $E$ are the volume and energy of the system [See Fig. \ref{SP-02}] respectively.Consider a system for which the total energy is conserved.
+\begin{align*}
+H(q, p)&=E \text{ is conserved.}\\
+E\left[q_{1} \ldots \ldots . q_{f}, p_{1} \ldots \ldots p_{f}\right]&=\text{a constant.}
+\end{align*}
 The locus of all the phase points having the same value for the energies in the phase space is called an energy surface or ergodic surface. A number of such energy surfaces can be constructed in the phase space. Each energy surface divides the phase space into two parts, one of lower energy and the other of higher energy. Since the two are of different energies they do not intersect each other.
 \begin{figure}[H]
 	\centering
@@ -205,14 +231,12 @@ The locus of all the phase points having the same value for the energies in the 
 		\label{SP-02}
 \end{figure}
 Let $\mathrm{E}$ and $\mathrm{E}+\delta \mathrm{E}$ be two neighbouring ergodic surfaces. The phase volume in between the two surfaces encloses a certain number of phase points and will be a constant. Let us assume the density to be zero for all values of energy except in a narrow range of energy between $E$ and $\mathrm{E}+\delta \mathrm{E}$. Then the ensemble specified in terms of $\rho$ as, is called a micro canonical ensemble.
-
 $\rho$ is a function of energy. Here $\rho$ is constant and hence $E$ is also a constant. So the ensemble is in statistical equilibrium. Since $\rho$ is a constant within the energy shell, the distribution of phase points is also uniform, by Lioville's theorem. As the ensemble is in statistical equilibrium, the average properties predicted will not change with time.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.4cm,width=2.7cm]{SP-07}
+	\includegraphics[height=3cm,width=3.2cm]{SP-07}
 \end{figure}
 A microcanonical ensemble can be obtained from a uniform ensemble by neglecting those systems whose phase points do not lie within the phase space corresponding to the energy range between $\mathrm{E}$ and $\mathrm{E}+\delta \mathrm{E}$.
-
 A microcanonical ensemble is an idealised concept and hence cannot exist in practice because the systems which we come across always interact with their surroundings, either thermally or mechanically.
 In microcanonical ensemble there is exchange of neither energy nor particles (molecules) among the systems.
 \section{Canonical Ensemble}
@@ -228,38 +252,55 @@ Grand Canonical ensemble is a collection of independent systems of constant volu
 	\includegraphics[height=3cm,width=4cm]{SP-09}
 \end{figure}
 In grand Canonical ensemble there is exchange of both energy and particles (molecules) among the systems.
+
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand*{\arraystretch}{1.5}
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+	\hline
+	\textbf{Micro Canonical}&\textbf{Canonical}&\textbf{Grand Canonical}\\\hline
+	E, V, N&T, V, N&$T, V, \mu $ \\\hline
+	Insulating, rigid and impermeable&Conducting, rigid and impermeanle&Conducting, rigid and permeable \\\hline
+	Isolated system &Thermal equilibrium &  Thermal +Chemical equilibrium \\\hline
+	Universe, thermal flask etc.&-&-\\\hline
+\end{tabular}
+\caption{Table of Ensembles}
+\end{table}
+
 \subsection{Statistical Equilibrium}
 A system of particles which does not interact with any other system so that its total energy remains constant is called an isolated system. A small part of the isolated system which is still macroscopic is called a subsystem. Subsystem interacts with other parts of the system and hence is not isolated.\\
 If in any macroscopic subsystem of an isolated system, the average number of particles per unit volume and the average energy per particle are equal to their mean values, then the isolated system is said to be in statistical equilibrium i.e, when the mean values of macroscopic parameters like pmessure, volume, ternperature etc. are independent of time, the systern is in equilibrinarn. If the systern is foumd with equal probability in cach of its possible quantum states then the isolated system is in statistical or thenmodynamic equilibrinm. In tenms of density p, the condition for an ensemble to be in statistical equitibrinm is $\left(\frac{\partial \rho}{\partial t}\right)_{q, p}=0$, i.e, $\rho$ is independent of time at all points in the phase space for the ensemble. For this p must be a function of some property\\
 of the ensemble which does not depend on time.
 \subsection{Postulate of Equal a priori probability}
-Consider an isolated 'many particle system' in equilibrium. We want to know the probability for any one particle to be in a given specified state. The answer to this is given by the a priori postulate.\\
-"All accessible microstates corresponding to possible macrostates are equally probable". This is the most fundamental postulate of statistical mechanics. This means that the probability of finding the particle in any one region is identical with that for any other region of equal volume, under similar conditions.
+Consider an isolated `many particle system' in equilibrium. We want to know the probability for any one particle to be in a given specified state. The answer to this is given by the a priori postulate.\\
+"\textbf{All accessible microstates corresponding to possible macrostates are equally probable}". This is the most fundamental postulate of statistical mechanics. This means that the probability of finding the particle in any one region is identical with that for any other region of equal volume, under similar conditions.
 \section{ Classical Distribution Law }
 \textbf{Assessible microstate:}\\ Microstates corresponding to a macrostate.\\
 \textbf{Thermodynamic Probability:} \\Number of microstates corresponding to a macrostate.\\
 $$\text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}$$
 \section{ Probability Distibution: }
-\textbf{Coin Related Probelm: }\\
-\textbf{a.\quad  Tossing a coin:}\\
+\textbf{Coin Related Problem: }\\\\
+\textbf{a.\quad  Tossing a coin:}
 \begin{align*}
-\text{Total events }&=H+T\\
-\text{Total no of events }&=2\\
-\text{Total number of microstate }&=2\\
-\text{equally likely probability event }&=1 / 2
+&\text{Total events }=H+T\\
+&\text{Total no of events }=2\\
+&\text{Total number of microstate }=2\\
+&\text{equally likely probability event }=1 / 2
 \end{align*}
-\textbf{b.\quad  Two coin are tossed together:}\\
+\textbf{b.\quad  Two coin are tossed together:}
 \begin{align*}
-\text{Possible events: }&H H, H T, T H, T T\\
-\text{ equally likely Probability }&=1 / 4\\
-\rightarrow\text{ Total number of microstates }&=(2)^{n}\\
-\rightarrow\text{ equally likely Probability }=(1 / 2)^{n}\\
-\text { Probability of general event }& 
-\Rightarrow{ }^{n} C_{r}(p)^{n-r}(1-p)^{r} \\
-&\Rightarrow{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
+&\text{Possible events: }H H, H T, T H, T T\\
+&\text{ Equally likely Probability }=1 / 4\\
+&\text{ Total number of microstates }=(2)^{n}\\
+&\text{ equally likely Probability }=(1 / 2)^{n}\\
+&\text { Probability of general event } 
+={ }^{n} C_{r}(p)^{n-r}(1-p)^{r} =
+{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
 \end{align*}
 \begin{exercise}
-	If to similar coins are tossed together what is the probability of gerring 3 Head?
+	If two similar coins are tossed together what is the probability of gerring 3 Head?
 \end{exercise}
 
 \begin{answer}
@@ -285,34 +326,8 @@ $\Omega=(2 s+1)^{N}$
 	3&1&1&-&3$\epsilon$&$\Omega$=$\frac{5!}{3!1!0!}=20$\\\hline
 	2&3&-&-&3$\epsilon$&$\Omega$=$\frac{5!}{2!3!0!0!}=10$\\\hline
 \end{tabular}
-\subsection{Random Walk}
-\textbf{1-Dimensional Random Walk:}\\
-\begin{align*}
-\text{let }N &\rightarrow\text{ steps of equal length along a line.}\\
-p &\rightarrow\text{ Probability of taking a step right}\\
-q &\rightarrow\text{ probability of taking a step left}\\
-n_{1} &\rightarrow \text{no. of sleps taken to right }\\
-n_{2} &\rightarrow\text{ no. of steps taken to left.}\\
-&p+q=1\qquad n_{1}+n_{2}=N
-\end{align*}
-\begin{exercise}
-	 A one dimensional random walker takes 10 steps in left and right with equal probability.  Find out the probability that the random walker starting from origine is back to origine after taking 10 steps?
-\end{exercise}
-\begin{answer}
-	\begin{align*}
-	P(5,5) &={ }^{10} C_{5}\left(\frac{1}{2}\right)^{10} \\
-	&=\frac{10 !}{5 ! 5 !} \times \frac{1}{1024}
-	\end{align*}
-\end{answer}
- \section{Ensemble:} collection of large number of systems that are macroscopically identical but microscopically different.\\\\
-\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
-	\hline
-	Microcanonical&canonical&Grand Canonical\\\hline
-	E, V, N&T, V, N&$T, V, \mu \rightarrow$fixed values \\\hline
-	insulating, rigid and impermeable&conducting, rigid and impermeanle&conducting, rigid and permeable \\\hline
-	isolated system &thermal equilibrium &  thermal +chemical equilibrium \\\hline
-	universe, thermal flask etc.&-&-\\\hline
-\end{tabular}\\
+
+
 \subsection{Microcanonical Ensemble:}
 \textbf{For Classical Ideal Gas }\\
 \begin{enumerate}[label=\alph*)]
@@ -772,8 +787,8 @@ If the probabilities of moving to any of the nearest neighbour sites are equal, 
 		\hline
 		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
 		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
-		1&\textbf{C} &2&\textbf{A}\\\hline 
-		3&\textbf{C} &4&\textbf{D} \\\hline
+		1&\textbf{C}&2&\textbf{A}\\ \hline 
+		3&\textbf{C}&4&\textbf{D} \\\hline
 		5&\textbf{B} &6&\textbf{C} \\\hline
 		7&\textbf{D}&8&\textbf{-}\\\hline
 		9&\textbf{A}&10&\textbf{A}\\\hline
@@ -819,7 +834,7 @@ If the probabilities of moving to any of the nearest neighbour sites are equal, 
 		\end{align*}
 		So the correct answer is \textbf{Option (d)}
 	\end{answer}
-	\item Q.A one dimensional random walker takes steps to left with equal probability.  The probability that the random walker starting from origine is back to origine after $N$ even number of steps:
+	\item A one dimensional random walker takes steps to left with equal probability.  The probability that the random walker starting from origine is back to origine after $N$ even number of steps:
 	\begin{tasks}(2)
 		\task[\textbf{a.}]$\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}\left(\frac{1}{2}\right)^{n}$
 		\task[\textbf{b.}]$\frac{N !}{\left(\frac{N}{2}\right) !\left(\frac{N}{2}\right) !}$
