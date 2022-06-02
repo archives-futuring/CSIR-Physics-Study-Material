@@ -345,3 +345,120 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{D.}]$I^{2} r / \pi a$, perpendicular to axis of the wire and pointing outwards
 	\end{tasks}
 \end{enumerate}
+
+
+
+\newpage
+\begin{abox}
+	Practise Set-3
+\end{abox}
+\begin{enumerate}
+	\item The vector potential $\vec{A}=3 k e^{-a t} r \hat{r}$ (where $a$ and $k$ are constants) corresponding to an electromagnetic field is changed to $\vec{A}^{\prime}=-3 k e^{-a t} r \hat{r}$. Under gauge transformation find the corresponding change $\phi^{\prime}-\phi$ in the scalar potential.
+	\begin{answer}
+		\begin{align*}
+		\text { Gauge Transformation } \vec{A}^{\prime}&=\vec{A}+\vec{\nabla} \lambda, \phi^{\prime}=\phi-\frac{\partial \lambda}{\partial t}\\
+		\vec{A}-\vec{A}&=-6 k e^{-a t} r \hat{r}=\vec{\nabla} \lambda=\frac{\partial \lambda}{\partial r} \hat{r} \\
+		\Rightarrow \lambda&=-3 k e^{-a t} r^{2} \Rightarrow \frac{\partial \lambda}{\partial t}=3 k a e^{-a t} r^{2} \Rightarrow \phi^{\prime}-\phi=-\frac{\partial \lambda}{\partial t}=-3 k a e^{-a t} r^{2}
+		\end{align*}
+	\end{answer}
+	\item If the electric and magnetic fields are unchanged when the potential $\vec{A}$ changes (in suitable units) according to $\vec{A} \rightarrow \vec{A}+2 \hat{r}$, then the scalar potential $\Phi$ must simultaneously change to $\Phi^{\prime}$. Then find $\Phi^{\prime}$.
+	\begin{answer}
+		\begin{align*}
+		\overrightarrow{A^{\prime}}&=\vec{A}+\vec{\nabla} \lambda=\vec{A}+\hat{r} \Rightarrow \partial \lambda / \partial r=2 \Rightarrow \lambda=2 r+C\\
+		\Phi^{\prime}&=\Phi-\partial \lambda / \partial t=\Phi-2 \partial r / \partial t
+		\end{align*}
+	\end{answer}
+	\item A dipole is oscillating in z-direction such that the retarded potentials are
+	$$
+	V(r, \theta, t)=\frac{p_{0} \cos \theta}{4 \pi \varepsilon_{0} r}\left\{-\frac{\omega}{c} \sin \omega\left(t-\frac{r}{c}\right)+\frac{1}{r} \cos \omega\left(t-\frac{r}{c}\right)\right\}
+	$$
+	and $\vec{A}(r, \theta, t)=-\frac{\mu_{0} p_{0} \omega}{4 \pi r} \sin \left[\omega\left(t-\frac{r}{c}\right)\right] \hat{z}$
+	where $r$ and $\theta$ are usual spherical polar coordinate.
+	Check that they satisfy the Lorentz gauge condition.
+	\begin{answer}
+		\begin{align*}
+		&\text { Lets check }\text{Lorentz gauge condition } \vec{\nabla} \cdot \vec{A}=-\mu_{0} \varepsilon_{0} \frac{\partial V}{\partial t} \text {. }\\
+		&\text { In spherical}\text{ polar coordinate system }\\
+		&\vec{A}(r, \theta, t)=-\frac{\mu_{0} p_{0} \omega}{4 \pi r} \sin \left[\omega\left(t-\frac{r}{c}\right)\right](\cos \theta \hat{r}-\sin \theta \hat{\theta})\\
+		\vec{\nabla} \cdot \vec{A}&=\frac{1}{r^{2}} \frac{\partial}{\partial r}\left[r^{2} \times-\frac{\mu_{0} p_{0} \omega}{4 \pi r} \sin \omega\left(t-\frac{r}{c}\right) \cos \theta\right]+\frac{1}{r \sin \theta} \frac{\partial}{\partial \theta}\left[\sin \theta \times-\frac{\mu_{0} p_{0} \omega}{4 \pi r} \sin \omega\left(t-\frac{r}{c}\right) \sin \theta\right] \\
+		\vec{\nabla} \cdot \vec{A}&=-\frac{\mu_{0} p_{0} \omega}{4 \pi} \frac{1}{r^{2}}\left[\sin \omega\left(t-\frac{r}{c}\right) \cos \theta-\frac{\omega r}{c} \cos \omega\left(t-\frac{r}{c}\right) \cos \theta\right]-\frac{\mu_{0} p_{0} \omega}{4 \pi} \frac{1}{r^{2}}\left[2 \cos \theta \times \sin \omega\left(t-\frac{r}{c}\right)\right] \\
+		\vec{\nabla} \cdot \vec{A}&=\frac{\mu_{0} p_{0} \omega}{4 \pi} \frac{1}{r^{2}}\left[\sin \omega\left(t-\frac{r}{c}\right) \cos \theta+\frac{\omega r}{c} \cos \omega\left(t-\frac{r}{c}\right) \cos \theta\right] \\
+		&\because V(r, \theta, t)=\frac{p_{0} \cos \theta}{4 \pi \varepsilon_{0} r}\left\{-\frac{\omega}{c} \sin \omega\left(t-\frac{r}{c}\right)+\frac{1}{r} \cos \omega\left(t-\frac{r}{c}\right)\right\}\\
+		&\Rightarrow \frac{\partial V}{\partial t}=\frac{p_{0} \cos \theta}{4 \pi \varepsilon_{0} r}\left\{-\frac{\omega^{2}}{c} \cos \omega\left(t-\frac{r}{c}\right)-\frac{\omega}{r} \sin \omega\left(t-\frac{r}{c}\right)\right\} \\
+		&\Rightarrow-\mu_{0} \varepsilon_{0} \frac{\partial V}{\partial t}=\frac{\mu_{0} p_{0} \omega}{4 \pi \varepsilon_{0} r^{2}}\left\{\sin \omega\left(t-\frac{r}{c}\right) \cos \theta+\frac{\omega r}{c} \cos \omega\left(t-\frac{r}{c}\right) \cos \theta\right\} \\
+		&\Rightarrow \vec{\nabla} \cdot \vec{A}=-\mu_{0} \varepsilon_{0} \frac{\partial V}{\partial t}
+		\end{align*}
+	\end{answer}
+	\item (a) An Infinite straight wire carries a linearly increasing current $I(t)=k t$, for $t>0$.\\
+	Find the electric and magnetic fields generated.
+	(b) An Infinite straight wire carries a current $I(t)=q_{0} \delta(t)$, for $t>0$.
+	Find the scalar and vector potential. In both cases assume wire is electrically neutral.
+	\begin{answer}
+		\begin{align*}
+		\text { (a) For }& t<r / c, \vec{A}=0 \text {; for } t>r / c, \vec{A}(r, t)=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{+\infty} \frac{I\left(t_{r}\right)}{R} d z\\
+		\text { where } R&=\sqrt{r^{2}+z^{2}} \text { and } t_{r}=t-\frac{R}{c}\\
+		\vec{A}(r, t)&=\left(\frac{\mu_{0}}{4 \pi} \hat{z}\right) 2 \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{k\left(t-\sqrt{r^{2}+z^{2}} / c\right)}{\sqrt{r^{2}+z^{2}}} d z=\frac{\mu_{0} k}{2 \pi} \hat{z}\left\{t \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{d z}{\sqrt{r^{2}+z^{2}}}-\frac{1}{c} \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} d z\right\}\\
+		\Rightarrow \vec{A}(r, t)&=\left(\frac{\mu_{0} k}{2 \pi} \hat{z}\right)\left[t \ln \left(\frac{c t+\sqrt{(c t)^{2}-r^{2}}}{r}\right)-\frac{1}{c} \sqrt{(c t)^{2}-r^{2}}\right] \text { and } V(r, t)=0\\
+		\text { (b) For } &t<r / c, \quad \vec{A}=0 \text {; for } t>r / c, \quad \vec{A}(r, t)=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{+\infty} \frac{I\left(t_{r}\right)}{R} d z\\
+		\text { where } R&=\sqrt{r^{2}+z^{2}} \text { and } t_{r}=t-\frac{R}{c} \text {. }\\
+		\vec{A}(r, t)&=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{\infty} \frac{q_{0} \delta(t-R / c)}{R} d z \Rightarrow \vec{A}(r, t)=\left(\frac{\mu_{0} q_{0}}{4 \pi} \hat{z}\right) 2 \int_{0}^{\infty} \frac{\delta(t-R / c)}{R} d z\\
+		\text { Now } z&=\sqrt{R^{2}-r^{2}} \Rightarrow d z=\frac{1}{2} \frac{2 R d R}{\sqrt{R^{2}-r^{2}}}-\frac{R d R}{\sqrt{R^{2}-r^{2}}} \text {, and } z=0 \Rightarrow R=r, z=\infty \Rightarrow R=\infty\\
+		\text { So: } &\quad \vec{A}(r, t)=\frac{\mu_{0} q_{0}}{2 \pi} \hat{z} \int_{r}^{\infty} \frac{1}{R} \delta\left(t-\frac{R}{c}\right) \frac{R d R}{\sqrt{R^{2}-r^{2}}}\\
+		\text { Now }& \delta(t-R / c)=c \delta(R-c t)\\
+		\text { Therefore } \vec{A}&=\frac{\mu_{0} q_{0}}{2 \pi} \hat{z} c \int_{r}^{\infty} \frac{\delta(R-c t)}{\sqrt{R^{2}-r^{2}}} d R \text {, so }\\
+		\vec{A}(r, t)&=\frac{\mu_{0} q_{0} c}{2 \pi} \frac{1}{\sqrt{(c t)^{2}-r^{2}}} \hat{z} \quad(\text { or zero, if } c t<r)
+		\end{align*}
+	\end{answer}
+	\item Find the radiation resistance of the wire joining the two ends of the dipole. (This is the resistance that would give the same average power loss-to-heat-as the oscillating dipole in fact puts out in the form of radiation.) Show that
+	$$
+	R=790(d / \lambda)^{2} \Omega \text {. }
+	$$
+	where $\lambda$ is the wavelength of the radiation and other symbols have their usual meaning.
+	For the wires in an ordinary radio (say, $d=5 \mathrm{~cm}$ ), should you worry about the radiative contribution to the total resistance ?
+	\begin{answer}
+		\begin{align*}
+		\text { Let } q&=q_{0} \cos (\omega t) \Rightarrow \vec{I}(t)=\frac{d q}{d t} \hat{z}=-q_{0} \omega \sin (\omega t) \hat{z}\\
+	\text { Power radiated } P&=I^{2} R=q_{0}^{2} \omega^{2} \sin ^{2}(\omega t) R \Rightarrow\langle P\rangle=I^{2} R=\frac{1}{2} q_{0}^{2} \omega^{2} R\\
+	\text { The total power radiated is }\langle P\rangle&=\frac{\mu_{0} p_{0}^{2} \omega^{4}}{12 \pi c}=\frac{\mu_{0} q_{0}^{2} d^{2} \omega^{4}}{12 \pi c}\\
+	\text { Thus } \frac{1}{2} q_{0}^{2} \omega^{2} R&=\frac{\mu_{0} q_{0}^{2} d^{2} \omega^{4}}{12 \pi c} \Rightarrow R=\frac{\mu_{0} d^{2} \omega^{2}}{6 \pi c}=\frac{\mu_{0} d^{2}}{6 \pi c}\left(\frac{2 \pi c}{\lambda}\right)^{2}=\frac{2}{3} \pi \mu_{0} c\left(\frac{d}{\lambda}\right)^{2}\\
+	\Rightarrow R&=\frac{2}{3} \pi\left(4 \pi \times 10^{-7}\right)\left(3 \times 10^{8}\right)\left(\frac{d}{\lambda}\right)^{2}=80 \pi^{2}\left(\frac{d}{\lambda}\right)^{2} \approx 790\left(\frac{d}{\lambda}\right)^{2} \Omega
+\intertext{For the wires in an ordinary radio with $d=5 \mathrm{~cm}=5 \times 10^{-2} \mathrm{~m}$ and $\lambda=10^{3} \mathrm{~m}$}
+	\Rightarrow R \approx 790\left(\frac{d}{\lambda}\right)^{2} \Omega&=2 \times 10^{-6} \Omega\\
+	\text { which  }&\text{is negligible compared to the ohmic resistance.}
+		\end{align*}
+	\end{answer}
+	\item Find the radiation resistance for the oscillating magnetic dipole. Express your answer in terms of $\lambda$ and $b$, and compare the radiation resistance of the electric dipole (where $\lambda$ is the wavelength of the radiation and other symbols have their usual meaning.)
+	\begin{answer}
+		\begin{align*}
+		\text { Let } \vec{I}(t)&=I_{0} \cos (\omega t) \hat{\phi}\\
+		\text { Power radiated } P&=I^{2} R=I_{0}^{2} \cos ^{2}(\omega t) R \Rightarrow\langle P\rangle=I^{2} R=\frac{1}{2} I_{0}^{2} R\\
+		\text { The total power radiated is }\langle P\rangle&=\frac{\mu_{0} m_{0}^{2} \omega^{4}}{12 \pi c^{3}}=\frac{\mu_{0}\left(I_{0} \times \pi b^{2}\right)^{2} \omega^{4}}{12 \pi c^{3}}=\frac{\mu_{0} \pi^{2} b^{4} I_{0}^{2} \omega^{4}}{12 \pi c^{3}}\\
+		\text { Thus } \frac{1}{2} I_{0}^{2} R&=\frac{\mu_{0} \pi^{2} b^{4} I_{0}^{2} \omega^{4}}{12 \pi c^{3}} \Rightarrow R=\frac{\mu_{0} \pi b^{4} \omega^{4}}{6 c^{3}}=\frac{\mu_{0} \pi b^{4}}{6 c^{3}}\left(\frac{2 \pi c}{\lambda}\right)^{4}=\frac{8}{3} \pi^{5} \mu_{0} c\left(\frac{b}{\lambda}\right)^{4}\\
+		\Rightarrow R&=\frac{8}{3}\left(\pi^{5}\right)\left(4 \pi \times 10^{-7}\right)\left(3 \times 10^{8}\right)\left(\frac{b}{\lambda}\right)^{4}=3.1 \times 10^{5}\left(\frac{b}{\lambda}\right)^{4} \Omega
+		\end{align*}
+		Note: $R$ is typically much smaller than the electric radiative resistance.
+	\end{answer}
+	\item An insulating circular ring (radius $b$ ) lies in the $x y$ plane, centered at the origin. It carries a linear charge density $\lambda=\lambda_{0} \sin \phi$, where $\lambda_{0}$ is constant and $\phi$ is the usual azimuthal angle. The ring is now set spinning at a constant angular velocity $\omega$ about the $z$ axis. Calculate the power radiated.
+	\begin{answer}
+		\begin{align*}
+		\text { At } t&=0 \text { the dipole moment of the ring is }\\
+		\overrightarrow{p_{0}}&=\int \lambda \vec{r} d l=\int\left(\lambda_{0} \sin \phi\right)[(b \cos \phi) \hat{x}+(b \sin \phi) \hat{y}] b d \phi\\
+		\Rightarrow \overrightarrow{p_{0}}&=\lambda_{0} b^{2}\left(\hat{x} \int_{0}^{2 \pi} \sin \phi \cos \phi d \phi+\hat{y} \int_{0}^{2 \pi} \sin ^{2} \phi d \phi\right)=\pi \lambda_{0} b^{2} \hat{y}\\
+		\text { As it rotates; } \vec{p}(t)&=p_{0}[\cos (\omega t) \hat{x}+\sin (\omega t) \hat{y}] \Rightarrow \vec{p}=-\omega^{2} p_{0}[\cos (\omega t) \hat{x}+\sin (\omega t) \hat{y}]\\
+		\Rightarrow|\vec{p}|^{2}&=\omega^{4} p_{0}^{2}\left[\cos ^{2}(\omega t)+\sin ^{2}(\omega t) y\right]=\omega^{4} p_{0}^{2}\\
+		\text { Thus } P&=\frac{\mu_{0} \ddot{p}^{2}}{6 \pi c}=\frac{\mu_{0} p_{0}^{2} \omega^{4}}{6 \pi c}=\frac{\mu_{0}\left(\pi \lambda_{0} b^{2}\right)^{2} \omega^{4}}{6 \pi c}=\frac{\pi \mu_{0} \omega^{4} b^{4} \lambda_{0}^{2}}{6 c}
+		\end{align*}
+	\end{answer}
+	\item An electron is released from from rest and falls under the influence of gravity. In the first centimeter, what fraction of the potential energy lost is radiated away?
+	\begin{answer}
+		\begin{align*}
+		\text { Since dipole moment } \vec{p}=-e y \hat{y} \Rightarrow \vec{p}&=-\frac{1}{2} g e t^{2} \hat{y} \Rightarrow \vec{p}=-g e \hat{y} \quad \because y=\frac{1}{2} g t^{2}\\
+		\text { Thus } P&=\frac{\mu_{0} \ddot{p}^{2}}{6 \pi c}=\frac{\mu_{0} g^{2} e^{2}}{6 \pi c}\\
+		\text { Now, the time it takes to fall a distance } h&=\frac{1}{2} g t^{2} \Rightarrow t=\sqrt{\frac{2 h}{g}} \text {. }\\
+		\text { So energy radiated in falling a distance } h \text { is } U_{r a d}&=P t=\frac{\mu_{0} g^{2} e^{2}}{6 \pi c} \sqrt{\frac{2 h}{g}}\\
+		\text { Meanwhile, the potential energy lost is } U_{p o t}&=m g h \text {. }\\
+		\text { So the fraction is } f=\frac{U_{r a d}}{U_{p o t}}=\frac{\mu_{0} g^{2} e^{2}}{6 \pi c} \sqrt{\frac{2 h}{g}} \times \frac{1}{m g h}&=\frac{\mu_{0} e^{2}}{6 \pi m c} \sqrt{\frac{2 g}{h}}
+		\intertext{Evidently almost all the energy goes into kinetic form (as indeed we assumed $y=\frac{1}{2} g t^{2}$ )}
+		\end{align*}
+	\end{answer}
+\end{enumerate}
