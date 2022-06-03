@@ -183,13 +183,105 @@ Poynting theorem express the conservation of energy for the combined system as
 $$\frac{d E}{d t}=\frac{d}{d t}\left(E_{\text {mech }}+E_{\text {field }}\right)=-\oint_{s} \vec{n} \cdot \vec{s} d a$$
 when the total field energy within $V$ is
 $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left(E^{2}+c^{2} B^{2}\right) d^{3} x$$
+\section{Radiation From Moving Charges}
+An accelerating or de-accelerating charge producess electro magnetic radiation.
+\begin{align*}
+\intertext{Produces $EM$ radiation in all direction. $\vec{E}\vec{B}$ assosiated with it }
+\vec{S}&=\frac{1}{\mu_{0}}(\vec{E} \times \vec{B})\\
+\text{If $\vec{E}$ and $\vec{B}$ }&\text{are function of time then $\langle\vec{S}\rangle_{1}$ is average of $\vec{S}$}
+\end{align*}
+\begin{itemize}
+	\item Total power radiated through it's surface
+	$$P(x)=\oint_{S}\langle\vec{S}\rangle \cdot d \vec{a}$$
+	\item Total power radiated through space
+	$$P=\lim _{r \rightarrow \infty} P(r)$$
+	For $\infty$ radius-we get total power radiated.\\
+	accelerating in $z$ direction
+\end{itemize}
+A charge $q$ with mass $m$ that is accelerating with acceleration $a$ along $z$ direction at point $P$ what will be $E$ and $B$\\
+What will be dependense of $E$ and $B$ at $P$
+\begin{align*}
+|\vec{E}| \propto &\frac{q a \sin \theta}{r}\\
+|\vec{B}| \propto &\frac{q \operatorname{asin} \theta}{r}\\
+I=|\vec{S}| \propto& \frac{q^{2} a^{2} \sin ^{2} \theta}{r^{2}}\text{dependence of intensity}\\
+\text{If average }&\text{pointing vector is given}\\
+\langle\vec{S}\rangle&=\frac{\mu_{0} q^{2} a^{2}}{16 \pi^{2} c}\left(\frac{\sin ^{2} \theta}{r^{2}}\right) \hat{\gamma}
+\end{align*}
+\begin{itemize}
+	\item Along $z$-direction intensity is minimum $\rightarrow 0$ ie there is no electro magnetic radiation in $z$ direction. 
+	\item Maximum radiation will be in $x-y$ plane.
+\end{itemize}
+\section{Toral Power Radiated}
+\begin{align*}
+	P&=\oint_{S}\langle\vec{s}\rangle \cdot d \vec{a}\\
+	&=\int_{\theta=0}^{\pi} \int_{\phi=0}^{2 \pi} \frac{\mu_{0} q^{2} a^{2}}{16 \pi^{2} c}\left(\frac{\sin ^{2} \theta}{x^{2}}\right) \hat{\gamma} \cdot \gamma^{2} \sin \theta d \theta d \phi \hat{\gamma}\\
+	&=\frac{\mu 0 q^{2} a^{2}}{16 \pi^{2} c} \times 2 \pi \int_{0}^{\pi} \sin ^{3} \theta d \theta\\
+	&=\frac{\mu_{0} q^{2} a^{2}}{4 N_{2} \pi C} \times 2 \times \frac{4}{3}\\
+	p&=\frac{\mu_{0} q^{2} a^{2}}{6 \pi c}\\
+	\text{Here $P$}&\text{ is independent of $r$ }
+	\intertext{$\therefore $ total power radiated through surface is the total power radiated in space. }
+\end{align*}
+\subsection{Direction of $\vec{E}$}
+\begin{enumerate}
+	\item $\vec{E}$ is $\perp^{r}$ to $\vec{r}$
+	\item $\vec{a}, \vec{\gamma}$ and $\vec{E}$ lies in oneplanne
+\end{enumerate}
+If we know direction of $\vec{E} \omega$ can find direction of $\vec{B}$ as $\vec{E}\times\vec{B}$ is in the direction of energy flow
+\begin{exercise}
+	A non relativistic particle of mass $m$ and charge moving with velocity $\vec{V}$ and acceleration $\vec{a}$ emits radiation of intensity $I$. Another particle of mass $\frac{m}{2}$ charge $2E$ velocity $\frac{V}{2}$ emits radiation of intensity $16 \ I$. Find the acceleration of second particle 
+\end{exercise}
+\begin{answer}$\left. \right. $\\
+\begin{tabular}{p{2cm}p{1cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.7cm}}
+	Particle 1&m&e&$\vec{V}$&a&I\\\\
+	Particle 2&$\frac{m}{2}$&2e&$\frac{V}{2}$& &10 I\\
+\end{tabular}
+\begin{align*}
+I_{1} \alpha &= \frac{q_{1}^{2} a \sin _{1}^{2} \theta}{\gamma^{2}}\\
+I_{2} \alpha &\frac{a_{2}^{2} a_{2}^{2} \sin ^{2} \theta}{\gamma^{2}}=16 I_{1}\\
+\frac{I_{2}}{I_{1}}&=\frac{q_{2}^{2} a_{2}^{2}}{a_{1} 2 a_{1}^{2}}=\frac{(2 e)^{2} a_{2}^{2}}{(e)^{2} a_{4}^{2}}=16\\
+\frac{4 a_{2}^{2}}{a_{2}^{2}}&=16\\
+a_{2}^{2}&=4 a_{7}{ }^{2}\\
+a_{2}&=2 a_{1}\\
+a_{2}&=2 a
+\end{align*}
+\end{answer}
+\begin{exercise}
+	An electron de-accelerated at a constant rate starting from an initial velocity $u(u<<c)$ to $\frac{u}{2}$ during which it travel a distance $d$. Find the total energy radiated in time $t$.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	p=\frac{\mu_{0}q^2 a^2}{6\pi C}
+	\end{align*}
+\end{answer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \begin{abox}
 	Practise Set-1
 \end{abox}
 \begin{enumerate}
-	\item  For constant uniform electric and magnetic field $\vec{E}=\vec{E}_{0}$ and $\vec{B}=\vec{B}_{0}$, it is possible to choose a gauge such that the scalar potential $\phi$ and vector potential $\vec{A}$ are given by
+	\item  A For constant uniform electric and magnetic field $\vec{E}=\vec{E}_{0}$ and $\vec{B}=\vec{B}_{0}$, it is possible to choose a gauge such that the scalar potential $\phi$ and vector potential $\vec{A}$ are given by
 	{\exyear{NET/JRF(JUNE-2011)}}
 	\begin{tasks}(1)
 		\task[\textbf{A.}] $\phi=0$ and $\vec{A}=\frac{1}{2}\left(\vec{B}_{0} \times \vec{r}\right)$
@@ -198,7 +290,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{D.}] $\phi=0$ and $\vec{A}=-\vec{E}_{0} t$
 	\end{tasks}
 	
-	\item	A constant electric current $I$ in an infinitely long straight wire is suddenly switched on at $t=0$. The vector potential at a perpendicular distance $r$ from the wire is given by $\vec{A}=\frac{\hat{k} \mu_{0} I}{2 \pi} \ln \left[\frac{1}{r}\left(c t+\sqrt{c^{2} t^{2}-r^{2}}\right)\right]$. The electric field at a distance $r(<c t)$ is
+	\item	D A constant electric current $I$ in an infinitely long straight wire is suddenly switched on at $t=0$. The vector potential at a perpendicular distance $r$ from the wire is given by $\vec{A}=\frac{\hat{k} \mu_{0} I}{2 \pi} \ln \left[\frac{1}{r}\left(c t+\sqrt{c^{2} t^{2}-r^{2}}\right)\right]$. The electric field at a distance $r(<c t)$ is
 	{\exyear{NET/JRF(DEC-2011)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] 0
@@ -206,7 +298,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{C.}] $\frac{c \mu_{0} I}{2 \pi \sqrt{c^{2} t^{2}-r^{2}}} \frac{1}{\sqrt{2}}(\hat{i}+\hat{j})$
 		\task[\textbf{D.}] $-\frac{c \mu_{0} I}{2 \pi \sqrt{c^{2} t^{2}-r^{2}}} \hat{k}$
 	\end{tasks}
-	\item Consider an infinite conducting sheet in the $x y$-plane with a time dependent current density $K t \hat{i}$, where $K$ is a constant. The vector potential at $(x, y, z)$ is given by $\vec{A}=\frac{\mu_{0} K}{4 c}(c t-z)^{2} \hat{i}$. The magnetic field $\vec{B}$ is
+	\item D Consider an infinite conducting sheet in the $x y$-plane with a time dependent current density $K t \hat{i}$, where $K$ is a constant. The vector potential at $(x, y, z)$ is given by $\vec{A}=\frac{\mu_{0} K}{4 c}(c t-z)^{2} \hat{i}$. The magnetic field $\vec{B}$ is
 	{	\exyear{NET/JRF(DEC-2012)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] $\frac{\mu_{0} K t}{2} \hat{j}$
@@ -214,7 +306,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{C.}] $-\frac{\mu_{0} K}{2 c}(c t-z) \hat{i}$
 		\task[\textbf{D.}] $-\frac{\mu_{0} K}{2 c}(c t-z) \hat{j}$
 	\end{tasks}
-	\item A current $I$ is created by a narrow beam of protons moving in vacuum with constant velocity $\vec{u}$. The direction and magnitude, respectively of the Poynting vector $\vec{S}$ outside the beam at a radial distance $r$ (much larger than the width of the beam) from the axis, are
+	\item C A current $I$ is created by a narrow beam of protons moving in vacuum with constant velocity $\vec{u}$. The direction and magnitude, respectively of the Poynting vector $\vec{S}$ outside the beam at a radial distance $r$ (much larger than the width of the beam) from the axis, are
 	{	\exyear{NET/JRF(JUNE-2013)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] $\vec{S} \perp \vec{u}$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{2}}$
@@ -223,7 +315,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{D.}] $\vec{S} \| \vec{u}$ and $|\vec{S}|=\frac{I^{2}}{4 \pi^{2} \varepsilon_{0}|\vec{u}| r^{4}}$
 	\end{tasks}
 	\item
-	If the electric and magnetic fields are unchanged when the potential $\vec{A}$ changes (in suitable units) according to $\vec{A} \rightarrow \vec{A}+\hat{r}$, where $\vec{r}=r(t) \hat{r}$, then the scalar potential $\Phi$ must simultaneously change to
+	C If the electric and magnetic fields are unchanged when the potential $\vec{A}$ changes (in suitable units) according to $\vec{A} \rightarrow \vec{A}+\hat{r}$, where $\vec{r}=r(t) \hat{r}$, then the scalar potential $\Phi$ must simultaneously change to
 	{	\exyear{NET/JRF(JUNE-2013)}}
 	\begin{tasks}(4)
 		\task[\textbf{A.}] $\Phi-r$
@@ -232,7 +324,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{D.}] $\Phi+\partial \mathrm{r} / \partial t$
 	\end{tasks}
 	\item
-	Let $(V, \vec{A})$ and $\left(V^{\prime}, \overrightarrow{A^{\prime}}\right)$ denote two sets of scalar and vector potentials, and $\psi$ is a scalar function. Which of the following transformations leave the electric and magnetic fields (and hence Maxwell's equations) unchanged?
+	A Let $(V, \vec{A})$ and $\left(V^{\prime}, \overrightarrow{A^{\prime}}\right)$ denote two sets of scalar and vector potentials, and $\psi$ is a scalar function. Which of the following transformations leave the electric and magnetic fields (and hence Maxwell's equations) unchanged?
 	{\exyear{NET/JRF(DEC-2013)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] $\overrightarrow{A^{\prime}}=\vec{A}+\nabla \psi$ and $V^{\prime}=V-\frac{\partial \psi}{\partial t}$
@@ -241,7 +333,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{D.}] $\overrightarrow{A^{\prime}}=\vec{A}-\nabla \psi$ and $V^{\prime}=V-\frac{\partial \psi}{\partial t}$
 	\end{tasks}
 	\item
-	A time-dependent current $\vec{I}(t)=K t \hat{z}$ (where $K$ is a constant) is switched on at $t=0$ in an infinite current-carrying wire. The magnetic vector potential at a perpendicular distance $a$ from the wire is given (for time $t>a / c$ ) by
+	A A time-dependent current $\vec{I}(t)=K t \hat{z}$ (where $K$ is a constant) is switched on at $t=0$ in an infinite current-carrying wire. The magnetic vector potential at a perpendicular distance $a$ from the wire is given (for time $t>a / c$ ) by
 	{	\exyear{NET/JRF(JUNE-2014)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}]  $\hat{z} \frac{\mu_{0} K}{4 \pi c} \int_{-\sqrt{c^{2} t^{2}-a^{2}}}^{\sqrt{c^{2} t^{2}-a^{2}}} d z \frac{c t-\sqrt{a^{2}+z^{2}}}{\left(a^{2}+z^{2}\right)^{1 / 2}}$
@@ -251,7 +343,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 	\end{tasks}
 	
 	
-	\item The vector potential $\vec{A}=k e^{-a t} r \hat{r}$ (where $a$ and $k$ are constants) corresponding to an electromagnetic field is changed to $\overrightarrow{A^{\prime}}=-k e^{-a t} r \hat{r}$. This will be a gauge transformation if the corresponding change $\phi^{\prime}-\phi$ in the scalar potential is
+	\item C The vector potential $\vec{A}=k e^{-a t} r \hat{r}$ (where $a$ and $k$ are constants) corresponding to an electromagnetic field is changed to $\overrightarrow{A^{\prime}}=-k e^{-a t} r \hat{r}$. This will be a gauge transformation if the corresponding change $\phi^{\prime}-\phi$ in the scalar potential is
 	{\exyear{NET/JRF(JUNE-2017)}}
 	\begin{tasks}(4)
 		\task[\textbf{A.}] $a k r^{2} e^{-a t}$
@@ -259,7 +351,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{C.}] $-a k r^{2} e^{-a t}$
 		\task[\textbf{D.}] $-2 a k r^{2} e^{-a t}$
 	\end{tasks}
-	\item The charge distribution inside a material of conductivity $\sigma$ and permittivity $\in$ at initial time $t=0$ is $\rho(r, 0)=\rho_{0}$, a constant. At subsequent times $\rho(r, t)$ is given by
+	\item A The charge distribution inside a material of conductivity $\sigma$ and permittivity $\in$ at initial time $t=0$ is $\rho(r, 0)=\rho_{0}$, a constant. At subsequent times $\rho(r, t)$ is given by
 	{\exyear{NET/JRF(JUNE-2017)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}]  $\rho_{0} \exp \left(-\frac{\sigma t}{\epsilon}\right)$
@@ -267,7 +359,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{C.}]  $\frac{\rho_{0}}{\left[1-\exp \left(\frac{\sigma t}{\epsilon}\right)\right]}$
 		\task[\textbf{D.}] $\rho_{0} \cosh \frac{\sigma t}{\in}$
 	\end{tasks}
-	\item  The electric field $\vec{E}$ and the magnetic field $\vec{B}$ corresponding to the scalar and vector potentials, $V(x, y, z, t)=0$ and $\vec{A}(x, y, z, t)=\frac{1}{2} \hat{k} \mu_{0} A_{0}(c t-x)$, where $A_{0}$ is a constant, are 
+	\item  B The electric field $\vec{E}$ and the magnetic field $\vec{B}$ corresponding to the scalar and vector potentials, $V(x, y, z, t)=0$ and $\vec{A}(x, y, z, t)=\frac{1}{2} \hat{k} \mu_{0} A_{0}(c t-x)$, where $A_{0}$ is a constant, are 
 	{\exyear{NET/JRF(JUNE-2018)}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] (a) $\vec{E}=0$ and $\vec{B}=\frac{1}{2} \hat{j} \mu_{0} A_{0}$
@@ -275,7 +367,7 @@ $$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left
 		\task[\textbf{C.}]  $\vec{E}=0$ and $\vec{B}=-\frac{1}{2} \hat{i} \mu_{0} A_{0}$
 		\task[\textbf{D.}] $\vec{E}=\frac{1}{2} \hat{k} \mu_{0} A_{0} c$ and $\vec{B}=-\frac{1}{2} \hat{i} \mu_{0} A_{0}$
 	\end{tasks}
-\item Which of the following transformations $(V, \vec{A}) \rightarrow\left(V^{\prime}, \overrightarrow{A^{\prime}}\right)$ of the electrostatic potential $V$ and the vector potential $\vec{A}$ is a gauge transformation?
+\item D Which of the following transformations $(V, \vec{A}) \rightarrow\left(V^{\prime}, \overrightarrow{A^{\prime}}\right)$ of the electrostatic potential $V$ and the vector potential $\vec{A}$ is a gauge transformation?
 {\exyear{ NET/JRF-(JUNE-2015)}}
  \begin{tasks}(2)
 	\task[\textbf{a.}]$\left(V^{\prime}=V+a x, \vec{A}^{\prime}=\vec{A}+a t \hat{k}\right)$
@@ -385,7 +477,29 @@ Which one of the following statements is correct?
 	\task[\textbf{d.}] $d \cos \theta=\left(n+\frac{1}{2}\right) \lambda$
 \end{tasks}
 \end{enumerate}
-
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{a} &2&\textbf{d}\\\hline 
+		3&\textbf{d} &4&\textbf{c} \\\hline
+		5&\textbf{c} &6&\textbf{a} \\\hline
+		7&\textbf{a}&8&\textbf{c}\\\hline
+		9&\textbf{a}&10&\textbf{b}\\\hline
+		11&\textbf{d} &12&\textbf{d}\\\hline
+		13&\textbf{a}&14&\textbf{c}\\\hline
+		15&\textbf{a}&16&\textbf{d} \\\hline
+		17&\textbf{b}&18&\textbf{b}\\\hline
+		19&\textbf{d}&20&\textbf{b}\\\hline
+		21&\textbf{c} &22&\textbf{a}\\\hline
+	\end{tabular}
+\end{table}
 
 
 \newpage
@@ -394,7 +508,7 @@ Which one of the following statements is correct?
 \end{abox}
 \begin{enumerate}
 	\begin{minipage}{\textwidth}
-		\item  The electric and the magnetic field $\vec{E}(z, t)$ and $\vec{B}(z, t)$, respectively corresponding to the scalar potential $\phi(z, t)=0$ and vector potential $\vec{A}(z, t)=\hat{i} t z$ are
+		\item  D The electric and the magnetic field $\vec{E}(z, t)$ and $\vec{B}(z, t)$, respectively corresponding to the scalar potential $\phi(z, t)=0$ and vector potential $\vec{A}(z, t)=\hat{i} t z$ are
 		\exyear{GATE 2012}
 	\end{minipage}
 	\begin{tasks}(2)
@@ -417,28 +531,8 @@ Which one of the following statements is correct?
 		\task[\textbf{C.}]$\frac{1}{2} \frac{\partial \lambda}{\partial t}$
 		\task[\textbf{D.}]$-\frac{1}{2} \frac{\partial \lambda}{\partial t}$
 	\end{tasks}
-	\item A long solenoid is embedded in a conducting medium and is insulated from the medium. If the current through the solenoid is increased at a constant rate, the induced current in the medium as a function of the radial distance $r$ from the axis of the solenoid is proportional to
-	{\exyear{GATE 2015}}
-	\begin{tasks}(1)
-		\task[\textbf{A.}] $r^{2}$ inside the solenoid and $\frac{1}{r}$ outside $\quad$  
-		\task[\textbf{B.}]$r$ inside the solenoid and $\frac{1}{r^{2}}$ outside
-		\task[\textbf{C.}] $r^{2}$ inside the solenoid and $\frac{1}{r^{2}}$ outside
-		\task[\textbf{D.}]$r$ inside the solenoid and $\frac{1}{r}$ outside
-	\end{tasks}
-	\item An infinitely long straight wire is carrying a steady current $I$. The ratio of magnetic energy density at distance $r_{1}$ to that at $r_{2}\left(=2 r_{1}\right)$ from the wire is
-	{	\exyear{GATE 2018}}
-	\item Consider an infinitely long solenoid with $N$ turns per unit length, radius $R$ and carrying a current $I(t)=\alpha \cos \omega t$, where $\alpha$ is a constant and $\omega$ is the angular frequency. The magnitude of electric field at the surface of the solenoid is
-	{	\exyear{GATE 2018}}
-	\begin{tasks}(2)
-		\task[\textbf{A.}] $\frac{1}{2} \mu_{0} N R \omega \alpha \sin \omega t$
-		\task[\textbf{B.}]$\frac{1}{2} \mu_{0} \omega N R \cos \omega t$
-		\task[\textbf{C.}]$\mu_{0} N R \omega \alpha \sin \omega t$
-		\task[\textbf{D.}]$\mu_{0} \omega N R \cos \omega t$
-	\end{tasks}
-	
 	\item A long straight wire, having radius $a$ and resistance per unit length $r$, carries a current $I$. The magnitude and direction of the Poynting vector on the surface of the wire is
 	{\exyear{GATE 2018}}
-	
 	\begin{tasks}(1)
 		\task[\textbf{A.}] $I^{2} r / 2 \pi a$, perpendicular to axis of the wire and pointing inwards
 		\task[\textbf{B.}]$I^{2} r / 2 \pi a$, perpendicular to axis of the wire and pointing outwards
