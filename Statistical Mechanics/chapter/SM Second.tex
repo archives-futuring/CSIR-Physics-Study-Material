@@ -19,18 +19,9 @@ M&=-\left(\frac{\partial A}{\partial H}\right)_{T}=N \mu_{B} \tanh \frac{\epsilo
 \intertext{Specific heat}
 \mathrm{C}&=\left(\frac{\partial \mathrm{U}}{\partial \mathrm{T}}\right)_{\mathrm{H}}=\mathrm{Nk}_{\mathrm{B}}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)^{2} \sec ^{2} \mathrm{~h}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)
 \end{align*}
-\section{Grand Canonical Ensemble}
-Grand canonical ensemble : An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\\\
-Equilibrium : between a system and a particle energy reservoir :
-We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time bothattain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the no. of particle and energy become variable whose values can lie at any particular time $\mathrm{t}$ any where between o to $\infty$. 
-\subsection{Partition Function (Z)}
-\begin{align*}
-Z(z, V, T)&=\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}} \\
-Z(\mu, V, T)&=\sum_{r s} e^{-\alpha N_{r}-\beta E_{S}}\\
-&=\sum_{\mathrm{r}} \sum_{\mathrm{s}} \mathrm{e}^{-\alpha \mathrm{N}_{\mathrm{r}}} \mathrm{e}^{-\beta \mathrm{EE}_{\mathrm{S}}}=\sum_{\mathrm{N}_{\mathrm{r}}=0}^{\infty} \mathrm{e}^{-\alpha \mathrm{N}_{\mathrm{r}}} \mathrm{Q}_{\mathrm{N}_{\mathrm{r}}}(\mathrm{V}, \mathrm{T})\\
-&=\sum_{\mathrm{N}_{\mathrm{r}}=0}^{\infty}(Z)^{N_r}Q_N(V,T)\\
-Z&=e^{-\alpha}=\text{fugacity of the system }
-\end{align*}
+
+
+
 \section{Harmonic Oscillator :}
 \renewcommand*{\arraystretch}{2}
 \begin{tabular}{|p{6cm}|p{6cm}|}
@@ -122,6 +113,10 @@ $\frac{\hbar^{2}}{2 m}\left(\frac{N \pi}{2 L}\right)^{2}$&$\frac{1}{3} E_{F}$& 1
 \end{tabular}\\
 Here $\mathrm{S}=$number density $\left(\frac{N}{V}\right.$ for $3 D \frac{8}{A}$ for $\left.2 D\right)$
 \section{Grand Canonical Ensemble}
+Grand canonical ensemble : An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\
+Equilibrium : between a system and a particle energy reservoir :
+We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time bothattain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the no. of particle and energy become variable whose values can lie at any particular time $\mathrm{t}$ any where between o to $\infty$. 
+
 $P(\Omega, N \Omega) \rightarrow$ probablity to find the system at a microstate $\Omega$, when total number of particles is $N_{\Omega}$, remember here total number of particle is not constant.
 \begin{align*}
 P\left(\Omega, N_{\Omega}\right)&=\frac{\bar{\rho}^{\beta\left[H\left(\Omega_{2}\right)-\mu N \Omega\right]}}{Z(\mu, \Omega, T)}\\
@@ -138,9 +133,9 @@ $Z\rightarrow$canonical partion function\\
 $\sum_{N\omega=O}$ $e^{\beta{\mu} N_{\Omega}}$
 $\rightarrow$ Fugacity
 \begin{align*}
-\sum(\mu,\omega,T)&=Fugacity\times{Z_{canonical}}
+\sum_{(\mu,\Omega,T)}&=Fugacity\times{Z_{canonical}}
 \end{align*}
-\subsection{Some Important relations connecting Grand Canonical Ensemble}
+\textbf{Some Important relations connecting Grand Canonical Ensemble}
 \begin{enumerate}
 \item Average number of particles $<N_\omega>$=$\frac{1}{\beta}\frac{\partial}{\partial\mu}$$\ell n$Z\\
 \item Variance,$<N^{2}>$$\approx$N\\
@@ -210,10 +205,10 @@ Free clectaon gas\\
 \subsection{Important relations}
 \begin{enumerate}
 \item Total number of particlen, $N^{\prime} \alpha T^{d / S}$\\
-\item$V \alpha \frac{1}{T^{d/s+1}}$ \\
+\item$V \propto \frac{1}{T^{d/s+1}}$ \\
 \item $E \propto T^{d / s+1}$\\
 \item $C_{v} \propto T^{d / s}$\\
-\item $S \alpha T^{d / s}$	
+\item $S \propto T^{d / s}$	
 \end{enumerate}
 
 
