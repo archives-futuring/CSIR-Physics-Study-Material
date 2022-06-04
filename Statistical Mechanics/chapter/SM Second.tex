@@ -1,16 +1,11 @@
 \chapter{SM Second}
 \section{Thermodynamics of Magnetic System}
-We consider a system of N dipoles with $J=\frac{1}{2}, $There is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $E=-\mu_BH \quad \mu_BH=\in$ when placed in magnetic field $H$.
-$$\mathrm{Q}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \epsilon}+\mathrm{e}^{-\beta \epsilon}\right) \mathrm{N}=\left[ 2\cosh(\beta\in)\right]^N $$
+We consider a system of N dipoles with $J=\frac{1}{2}, $and suppose there is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $\epsilon_i=-\mu_BH \quad\text{or} \quad\mu H$ when placed in magnetic field $H$.
+$$\mathrm{Z}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \mu H}+\mathrm{e}^{-\beta \epsilon H}\right) ^\mathrm{N}=\left[ 2\cosh(\beta\epsilon)\right]^N $$
 \textbf{Helmholtz Free Energy }
 \begin{align*}
-A&=-Tk_B \ell nQ_N(V,T)=-k_BT \ell n (2\cosh(\beta\in))^N\\
+A&=-Tk_B \ell nQ_N(V,T)=-k_BT \ell n (2\cosh(\beta\epsilon))^N\\
 \mathrm{A}&=-\mathrm{Nk}_{\mathrm{B}} \mathrm{T} \operatorname{\ell n} 2 \cosh (\beta \hat{\epsilon})
-\intertext{\textbf{Pressure (P):}}
-\mathrm{P}&=\left(\frac{\partial \mathrm{A}}{\partial \mathrm{V}}\right)_{\mathrm{N}, \mathrm{T}}=0
-\intertext{\textbf{Entropy (S):}}
-\mathrm{S}=-\left(\frac{\partial \mathrm{A}}{\partial \mathrm{T}}\right)_{\mathrm{N}, \mathrm{V}}&=\mathrm{Nk}_{\mathrm{B}} \ln 2 \cosh \left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)-\mathrm{Nk} \mathrm{B}_{\mathrm{B}} \mathrm{T} \times \frac{1}{2 \cosh \beta \epsilon} \times \sinh \frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}} \times \frac{\epsilon}{\mathrm{k}_{\mathrm{B}}} \times \frac{-1}{\mathrm{~T}^{2}}\\
-S&=N_{B}\left[\ln \left\{2 \cosh \left(\frac{\epsilon}{k_{B} T}\right)\right\}-\frac{\epsilon}{k_{B} T} \tanh \left(\frac{\epsilon}{k_{B} T}\right)\right]
 \intertext{\textbf{Internal Energy (U):}}
 \mathrm{U}&=-\mathrm{T}^{2} \frac{\partial}{\partial \mathrm{T}}\left(\frac{\mathrm{A}}{\mathrm{T}}\right)=-\mathrm{N} \in \tanh \frac{\in}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}
 \intertext{Magnetisation (m):}
@@ -78,7 +73,7 @@ Statistics&$f\left(\varepsilon_{i}\right)$& \\\hline
 Maxwell Boltzman&$\frac{1}{\left(\alpha+\beta \varepsilon_{i}\right)}$& $\frac{1}{e^{-\mu n) / k T}}$\\\hline
 Fermi Dirac&$\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}+1}$&$\frac{1}{e^{(\varepsilon-\mu) / k T}+1}$\\\hline
 Bose Einstien &$\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}$&$\frac{1}{e^{(\varepsilon-\mu) / k T}-1}$\\\hline
-\end{tabular}
+\end{tabular}\\
 Here, $\alpha=-\frac{\mu}{K T}, \quad \beta=\frac{1}{k T}$
 \subsection{Fermi Gas}
 Fermi distribution function, $f\left(\varepsilon_{i}\right)=\frac{1}{1+e^{(\alpha+\beta \varepsilon)}}=\frac{1}{e^{(-\mu) / k T}+1}$ In the case of fermigas, the chemical potential, $\mathcal{M}=E F$
@@ -127,12 +122,10 @@ H(\Omega) \rightarrow &\text { Hamiltonian }\\
 \begin{align*}
 Z(M,\Omega,T)&=\sum_{\omega,N,\omega}\beta[H(\ \Omega)-N_{\omega}M]\\
 &=\sum_{N\omega=O}e^{\beta{\mu} N_{\Omega}}\sum e^{-\beta H(\Omega)}\\
-&=\sum_{N\omega=O}e^{\beta{\mu} N_{\Omega}}Z
-\end{align*}
-$Z\rightarrow$canonical partion function\\
-$\sum_{N\omega=O}$ $e^{\beta{\mu} N_{\Omega}}$
-$\rightarrow$ Fugacity
-\begin{align*}
+&=\sum_{N\omega=O}e^{\beta{\mu} N_{\Omega}}Z\\
+Z\rightarrow &\text{canonical partion function}\\
+&\sum_{N\omega=O} e^{\beta{\mu} N_{\Omega}}\\
+\rightarrow&\text{ Fugacity}\\
 \sum_{(\mu,\Omega,T)}&=Fugacity\times{Z_{canonical}}
 \end{align*}
 \textbf{Some Important relations connecting Grand Canonical Ensemble}
@@ -149,17 +142,15 @@ Distribution function for Base-Eienstien statistisc,
 f(\varepsilon)&=\frac{1}{e^{\beta(\varepsilon-\mu)}-1}\\
 &O\leq f(\varepsilon)\leq1\\
 f(\varepsilon)\text{cannot be negative}\\
-&\therefore e^{\beta(\varepsilon-\mu)}>1\\
-\end{align*}
-Applying logarithm.
-\begin{align*}
-\beta(\varepsilon-\mu)>0\\
-(\varepsilon-\mu)>0\\
-\text{for ground state},\varepsilon_{i}=0\\
-\mu=-ve\\
-\text{for some bosons chemical potential is negative} \\
+\therefore &e^{\beta(\varepsilon-\mu)}>1\\
+\text{Applying logarithm.}\\
+&\beta(\varepsilon-\mu)>0\\
+&(\varepsilon-\mu)>0\\
+\text{for ground state},\varepsilon_{i}&=0\\
+\mu&=-ve\\
+\text{for some bosons}&\text{ chemical potential is negative} \\
 \text{for photons and phonons,}&\mu=0\\
-\mu=0 or -ve\text{ in Bose Particles.}
+\mu&=0 or -ve\text{ in Bose Particles.}
 \end{align*}
 \subsection{Base Eienstien Codensation(v state of matter)}
 Rapid increas in the population of ground state,
@@ -167,17 +158,25 @@ when temparature is lowered below critical temparature is known sa Bose Eienstie
 $N=N_{O}+Ne$\\
 \begin{enumerate}
 	\item At $T=T_{B}$\\
-	Condensation procee is about to start at $T=T_{B}$It is like a tipping point and marimum number of particles are still in hte exited state.\\
-	$N=N_{0}+N_{e}$, here $N_{0}$ is negligible\\
-	$N \approx N e$.\\
+	\begin{align*}
+	\intertext{	Condensation procee is about to start at $T=T_{B}$It is like a tipping point and marimum number of particles are still in hte exited state.}
+   N&=N_{0}+N_{e},\text{ here $N_{0}$ is negligible}\\
+	&N \approx N e.\\
+	\end{align*}
+	
+	
+	
 \textbf{Important points}\\
-	$
-	T_{B}=\left(\frac{N}{V}\right)^{2 / 3} \frac{h^{2}}{(2 \cdot 612)^{2 / 3} \times 2 \pi m k g_{s}}
-	$\\
-	$g_{S} \rightarrow$ degeneracy.\\
-	$\frac{N}{V} \rightarrow$ number density $=S$\\
-	$T_{B} \propto(S)^{2 / 3}$\\
-	$T_{\beta} \propto \frac{1}{m}$\\
+	\begin{align*}
+	T_{B}&=\left(\frac{N}{V}\right)^{2 / 3} \frac{h^{2}}{(2 \cdot 612)^{2 / 3} \times 2 \pi m k g_{s}}\\
+	g_{S} &\rightarrow\text{ degeneracy.}\\
+	\frac{N}{V} &\rightarrow\text{ number density $=S$}\\
+	T_{B} &\propto(S)^{2 / 3}\\
+	T_{\beta} &\propto \frac{1}{m}
+	\end{align*}
+	
+	
+	
 \textbf{Genaral case}\\
 	If $E \propto p^{s}$ $T_{B} \propto(\rho)^{s / d}$\\
 	$d \rightarrow$ dimension.
@@ -204,11 +203,11 @@ Free clectaon gas\\
 \end{enumerate}
 \subsection{Important relations}
 \begin{enumerate}
-\item Total number of particlen, $N^{\prime} \alpha T^{d / S}$\\
-\item$V \propto \frac{1}{T^{d/s+1}}$ \\
-\item $E \propto T^{d / s+1}$\\
-\item $C_{v} \propto T^{d / s}$\\
-\item $S \propto T^{d / s}$	
+\item Total number of particles, $N^{\prime} \alpha T^{d / S}$\\
+\item$V\  \propto\  \frac{1}{T^{d/s+1}}$ \\
+\item\  $E \ \propto \ T^{d / s+1}$\\
+\item\  $C_{v} \ \propto\  T^{d / s}$\\
+\item $S \ \propto\  T^{d / s}$	
 \end{enumerate}
 
 
