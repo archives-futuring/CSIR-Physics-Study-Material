@@ -1,36 +1,46 @@
-\chapter{SM Second}
+\chapter{Statistical Mechanics - II}
 \section{Thermodynamics of Magnetic System}
 We consider a system of N dipoles with $J=\frac{1}{2}, $and suppose there is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $\epsilon_i=-\mu_BH \quad\text{or} \quad\mu H$ when placed in magnetic field $H$.
-$$\mathrm{Z}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \mu H}+\mathrm{e}^{-\beta \epsilon H}\right) ^\mathrm{N}=\left[ 2\cosh(\beta\epsilon)\right]^N $$
+$$\mathrm{Z}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \mu H}+\mathrm{e}^{-\beta \mu H}\right) ^\mathrm{N}=\left[ 2\cosh(\beta\mu H)\right]^N $$
 \textbf{Helmholtz Free Energy }
 \begin{align*}
-A&=-Tk_B \ell nQ_N(V,T)=-k_BT \ell n (2\cosh(\beta\epsilon))^N\\
-\mathrm{A}&=-\mathrm{Nk}_{\mathrm{B}} \mathrm{T} \operatorname{\ell n} 2 \cosh (\beta \hat{\epsilon})
+A&=-k_B T\ell nZ_N(V,T)=-k_BT \ell n (2\cosh(\beta\mu H))^N\\
+\mathrm{A}&=-\mathrm{Nk}_{\mathrm{B}} \mathrm{T} \operatorname{\ell n} 2 \cosh (\beta\mu H)
 \intertext{\textbf{Internal Energy (U):}}
-\mathrm{U}&=-\mathrm{T}^{2} \frac{\partial}{\partial \mathrm{T}}\left(\frac{\mathrm{A}}{\mathrm{T}}\right)=-\mathrm{N} \in \tanh \frac{\in}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}
-\intertext{Magnetisation (m):}
-M&=-\left(\frac{\partial A}{\partial H}\right)_{T}=N \mu_{B} \tanh \frac{\epsilon}{k_{B} T} \\
+\mathrm{U}&=-\mathrm{N} \mu H\tanh \frac{\mu H}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}
+\intertext{\textbf{Magnetisation (m):}}
+M&=-\left(\frac{\partial A}{\partial H}\right)_{T}=N \mu \tanh \frac{\mu H}{k_{B} T} \\
 \text{So}\quad U&=-M H
-\intertext{Specific heat}
-\mathrm{C}&=\left(\frac{\partial \mathrm{U}}{\partial \mathrm{T}}\right)_{\mathrm{H}}=\mathrm{Nk}_{\mathrm{B}}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)^{2} \sec ^{2} \mathrm{~h}\left(\frac{\epsilon}{\mathrm{k}_{\mathrm{B}} \mathrm{T}}\right)
 \end{align*}
 \section{Ising Model}
 Ising model was set up to investigate the bahaviour of substances whose molecules possess a magnetic moment.\\
 eg: Ferromagnetic substances
-$$E=-J \sum \sigma_{i} \sigma_{j}-\mu_{B} B \sum \sigma_{i}$$
+$$E=-J \sum \sigma_{i} \sigma_{j}-\mu_{B}  \sum \sigma_{i}$$
 \begin{align*}
 E&\quad \rightarrow \text{ Total energy} \\
 -J \sum \sigma_{i} \sigma_{j}&\quad \rightarrow  \text{Interaction energy}\\
--\mu_{B} B\sum \sigma_{i}&\quad  \rightarrow \text{Interaction energy}\\
+-\mu_{B} H\sum \sigma_{i}&\quad  \rightarrow \text{Interaction energy energy asosiated with magnetic field H}\\
 \sigma_{i}\text{ and } \sigma_{j} &\text { are ising spins }=\pm 1\\
-\textbf{Partition Function}\\
+\textbf{Partition Function}
+\intertext{Energy due to nearest neighbour interaction,}
 E_{\text {int. }}&=\left\{\begin{array}{l}
--J \quad \text { if } \sigma_{i}=\sigma_{j}=\pm1\operatorname{deg}=2\\
-+J\quad \text { if } \sigma_{i}=1, \quad \sigma_{j}=-1 \sigma_{i}=-1, \sigma_{j}=+1\operatorname{deg}=2
+-J \quad \text { if } \sigma_{i}=\sigma_{j}=\pm1, \operatorname{deg}=2\\
++J\quad \text { if } \sigma_{i}=1 \text{ and }\quad \sigma_{j}=-1 \text{ or } \sigma_{i}=-1,\text{ and }  \sigma_{j}=+1, \operatorname{deg}=2
 \end{array}\right.\\
-z&=\sum g_{i} e^{-\beta \varepsilon_{i}}\\
+Z_{int}=\sum g_{i} e^{-\beta \varepsilon_{i}}\\
 &=2 e^{\beta J}+2 e^{-\beta J}\\
 &=2.2(\cos h \beta J) \Rightarrow 2^{2}(\cosh \beta J)^{\prime}\\
+\intertext{
+Energy due to interaction with magnetic field, H}
+E_{\text {H }}&=\left\{\begin{array}{l}
+-\mu H, \sigma_i=+1\\
+\mu H, \sigma_i=-1
+\end{array}\right.\\
+Z&=e^{-\beta \mu H}+e^{\beta \mu H}\\
+Z_H&=2\cosh(\beta \mu H)\\
+Z_N&=2^N\left[\cosh (\mu \beta H)^N \right] \\
+Z_{Total}&=Z_{int}\times Z_H\\
+&=2^N\cosh  (\beta J)^{N-1}\times2^N\cosh(\beta \mu H)^N
 \end{align*}
 
 
@@ -42,11 +52,23 @@ z&=\sum g_{i} e^{-\beta \varepsilon_{i}}\\
 	Classical Linear H.O&Quantum Linear H.O\\
 	\hline
 	$z_{1}=\frac{k_{B} T}{\hbar \omega}=\left(\frac{1}{\beta \hbar \omega}\right)$&$z_{1}=e^{-\beta \hbar \omega / 2}\left[\frac{1}{1-e^{-\beta \hbar \omega}}\right]$\\\hline
-	$Z_{N}=\left(\frac{K T}{\hbar \omega}\right)^{N}$&$Z_{N}=\left[2 \sinh \left(\frac{\beta \hbar \omega }{2}\right)^{-N}\right.$\\\hline
-	$\langle u\rangle=N K T$&$\langle u\rangle=\frac{\hbar \omega}{2} N \omega th\left(\frac{\beta \hbar \omega}{2}\right)$\\\hline
+	$Z_{N}=\left(\frac{k_{B}}{\hbar \omega}\right)^{N}$&$Z_{N}=\left[2 \sinh \left(\frac{\beta \hbar \omega }{2}\right)^{-N}\right.$\\\hline
+	$\langle u\rangle=N k_{B} T$&$\langle u\rangle=\frac{\hbar \omega}{2} N \coth \left(\frac{\beta \hbar \omega}{2}\right)$\\\hline
 	$\langle P\rangle=0 \Rightarrow G=A$&$\langle P\rangle=0 \Rightarrow G=A$\\\hline
 \end{tabular}
-
+\section{Energy Fluctuation}
+\begin{align*}
+U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
+\frac{\partial U}{\partial \beta}&=\frac{\partial}{\partial \beta}\left\langle E_{i}\right\rangle=\langle E\rangle^{2}-\langle E\rangle^{2}\\
+(\Delta E)^{2}&=-\frac{\partial U}{\partial \beta}=K T^{2} C_{V}
+\end{align*}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{2cm}|p{3cm}|}
+	\hline
+	system&mean square energy&RMS energy&Relative mean square&Relative RMS\\\hline
+	Non-Relative\newline Ideal gas&$\frac{3}{2} N K^{2} T^{2}$&$\sqrt{\frac{3 N}{2}} K T$& $\frac{2}{3 N}$&$\sqrt{\frac{2}{3N}}$\\\hline
+	Classical \newline L.H.O&$N K^{2} T^{2}$&$\sqrt{N} K T$&$\frac{1}{N}$&$\sqrt{\frac{1}{N}}$\\\hline
+	&$(D E)^{2}$&$(\Delta E)$&$\left(\frac{\Delta E}{\langle E i\rangle}\right)^{2}$&$\left(\frac{\Delta E}{\left\langle E_{i}\right\rangle}\right)$\\\hline
+\end{tabular}
 
 
 \section{Maxwell-Boltzmann Statistics}
@@ -419,19 +441,7 @@ What is the number of possible arrangements for the distribution of 7 bosons in 
 	9. Internal energy of an ideal monoatomic gas depends onlu onits temperature. At absalute zero, energy is zero.&9. Due to Pauli's exclusion principle, all the electrons cnnot occupy the lowest energy level. Even at absolute zero temperature, some of the electrons are distrinuted at higher energy levels. Hence, at absolute zero, the energy is not zero. Therefore, at the complete defenerate state, the energy is independent of temperature.&9. The energy at absoute zero is taken to be zero. \\
 	10.$n_{i}=\frac{g_{i}}{e^{\left(\alpha+\beta \epsilon_{i}\right)}}$&10. $n_{i}=\frac{g_{i}}{\left[e^{\left(\alpha+\beta \epsilon_{i}\right)}+1\right]}$&10. $n_{i}=\frac{g_{i}}{\left[e^{\left(\alpha+\beta \epsilon_{i}\right)}-1\right]}$\\\hline
 \end{tabular}
-\section{Energy Fluctuation}
-\begin{align*}
-U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
-\frac{\partial U}{\partial \beta}&=\frac{\partial}{\partial \beta}\left\langle E_{i}\right\rangle=\langle E\rangle^{2}-\langle E\rangle^{2}\\
-(\Delta E)^{2}&=-\frac{\partial U}{\partial \beta}=K T^{2} C_{V}
-\end{align*}
-\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{2cm}|p{3cm}|}
-	\hline
-	system&mean square energy&RMS energy&Relative mean square&Relative RMS\\\hline
-	Non-Relative\newline Ideal gas&$\frac{3}{2} N K^{2} T^{2}$&$\sqrt{\frac{3 N}{2}} K T$& $\frac{2}{3 N}$&$\sqrt{\frac{2}{3N}}$\\\hline
-	Classical \newline L.H.O&$N K^{2} T^{2}$&$\sqrt{N} K T$&$\frac{1}{N}$&$\sqrt{\frac{1}{N}}$\\\hline
-	&$(D E)^{2}$&$(\Delta E)$&$\left(\frac{\Delta E}{\langle E i\rangle}\right)^{2}$&$\left(\frac{\Delta E}{\left\langle E_{i}\right\rangle}\right)$\\\hline
-\end{tabular}
+
 
 
 
@@ -441,22 +451,22 @@ Distribution function $\left(f\left(\varepsilon_{i}\right)\right)$ is the ratio 
 \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|}
 	\hline
 	Statistics&$f\left(\varepsilon_{i}\right)$& \\\hline
-	Maxwell Boltzman&$\frac{1}{\left(\alpha+\beta \varepsilon_{i}\right)}$& $\frac{1}{e^{-\mu n) / k T}}$\\\hline
+	Maxwell Boltzman&$\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}}$& $\frac{1}{e^{(\varepsilon-\mu) / k T}}$\\\hline
 	Fermi Dirac&$\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}+1}$&$\frac{1}{e^{(\varepsilon-\mu) / k T}+1}$\\\hline
 	Bose Einstien &$\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}$&$\frac{1}{e^{(\varepsilon-\mu) / k T}-1}$\\\hline
 \end{tabular}\\
 Here, $\alpha=-\frac{\mu}{K T}, \quad \beta=\frac{1}{k T}$
 \subsection{Fermi Gas}
-Fermi distribution function, $f\left(\varepsilon_{i}\right)=\frac{1}{1+e^{(\alpha+\beta \varepsilon)}}=\frac{1}{e^{(-\mu) / k T}+1}$ In the case of fermigas, the chemical potential, $\mathcal{M}=E F$
+Fermi distribution function, $f\left(\varepsilon_{i}\right)=\frac{1}{1+e^{(\alpha+\beta \varepsilon)}}=\frac{1}{e^{(\varepsilon-\mu) / k T}+1}$ ,In the case of fermigas, the chemical potential, $\mathcal{M}=E_F$
 \begin{enumerate}[label=\roman*)]
-	\item temparature $T$ Kelvin\\
+	\item At temparature $T$ Kelvin\\
 	$\mu=E_{F}(T)$
-	\item (a) temparature O Kelvin\\
+	\item At temparature 'O' Kelvin\\
 	$
 	\mu=E_{F}(0)
 	$
 \end{enumerate}
-$\therefore f\left(\varepsilon_{i}\right)=\frac{1}{e^{\left(k-k_{F}\right) / k T}+1}$, This is fermiddirac distribution\\
+$\therefore f\left(\varepsilon_{i}\right)=\frac{1}{e^{(\varepsilon-\mu) / k T}+1}$ , This is fermi dirac distribution\\
 function at temparature $T$ Kelvin.
 \subsection{Fermi level at $\mathrm{OK}$}
 $f\left(\varepsilon_{i}\right)=\left\{\begin{array}{ll}1, & E<E_{F} \\ 0, & E>E_{F}\end{array}\right\}$
