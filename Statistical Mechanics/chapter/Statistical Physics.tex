@@ -4,62 +4,60 @@
 The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely\\
 For a particle in translatory motion three coordinates $(x, y, z)$ are needed to define its position. To describe energy of the particle three momentum coordinates $\left(p_{x}, p_{y}, p_{z}\right)$ are required. Hence to specify position and energy, 6 -coordinates are needed. We say the particle has 6 degrees of freedom.
 \section{Phase Space}
-To specify the position and energy we require three position (space) coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ and three momentum coordinates $\mathrm{p}_{\mathrm{x}}, \mathrm{p}_{\mathrm{y}}$ and $\mathrm{p}_{\mathrm{z}}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and $\mathrm{p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as plase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
+To specify the position and energy we require three position (space) coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ and three momentum coordinates $\mathrm{p}_{\mathrm{x}}, \mathrm{p}_{\mathrm{y}}$ and $\mathrm{p}_{\mathrm{z}}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and $\mathrm{p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as phase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
 \section{Statistical Probability}
 Probability of a particular event is the ratio of number of cases in which the event occurs to the total number of possible events. The theory of probability is a method for making better guesses. We need this in statistics. Because, you know in statistical mechanics we deal with a very large number of particles. So nothing can be said about a particular particle with definiteness. We can only make a guess about its behaviour.\\
 Let us toss a coin to find whether we get the head or tail. In tossing of a coin, the total number possibilities or total number of events is two. So the chance of getting a head $=1 / 2$. This chance is called probability in statistics. This means you toss a coin 100 times. Then also this chance of getting a head will be 50 out of 100 . i.e., probability is $1 / 2$.\\
 \textbf{The probability of an event is equal to the ratio of the number of favourable events to the total number of equally likely ways of happening of that event.}\\
 $$\text{Probability of an event }=\frac{\text{Number of favourable events}}{\text{Total number of equally likely events}}$$
 \subsection{Probability Theorems}
-\subsection{Additional Theorem}
+
 First let us consider an example. An opaque box contains 3 red balls, 4 blue balls and 6 black balls. If a ball is drawn from the bag what is the probability that it is either blue or black?
 \begin{align*}
-\renewcommand*{\arraystretch}{1.5}
-\begin{tabular}{p{6cm}p{2cm}}
-\text{Total number of balls}&=3+4+6=13\\
-\text{Probability of blue balls $p_1$}&=4/13\\
-\text{Probability of black balls $p_2$}&=6/13\\
-\text{Total probability of white or black ball}&=4/13+6/13\\
- &10/13
-\end{tabular}
+&\text{Total number of balls}=3+4+6=13\\
+&\text{Probability of blue balls $p_1$}=\frac{4}{13}\\
+&\text{Probability of black balls $p_2$}=\frac{6}{13}\\
+&\text{Total probability of white or black ball}=\frac{4}{13}+\frac{6}{13}=\frac{10}{13}
 \end{align*}
-\subsection{Addition law of probability}
-If $P_{1}, P_{2}, \ldots . P_{n}$ be the separate probability of mutually exclusive events, then probability, $P$ that any of these events will happen is $P=$ $P_{1}+P_{2}+\ldots+P_{n}$.\\
-\subsection{Multiplication Law of Probability}
-If the probabilities of occurrence of two independent events are $P_{1}$ and $P_{2}$, the probability of occurrence of the two events simultaneously is the product of $P_{1}$ and $P_{2}$.
-$$\text { i.e. } P=P_{1} \times P_{2}$$
+\begin{theorem}\textbf{Addition law of probability}\\
+	If $P_{1}, P_{2}, \ldots . P_{n}$ be the separate probability of mutually exclusive events, then probability, $P$ that any of these events will happen is , $$P=P_{1}+P_{2}+\ldots+P_{n}$$
+\end{theorem}
+\begin{theorem}\textbf{Multiplication Law of Probability}\\
+If the probabilities of occurrence of two independent events are $P_{1}$ and $P_{2}$, the probability of occurrence of the two events simultaneously is the product of $P_{1}$ and $P_{2}$
+$$ P=P_{1} \times P_{2}$$
+\end{theorem}
+
 \begin{exercise}
 You are given four particles $a, b, c$ and $d$. What are the different ways in which they can be distributed in two identical halves of a box? Also calculate the probabilities of different distributions? What is the frequency with which these distribution occur?
 \end{exercise}
-\begin{answer}
-$\left. \right. $\\	$ \left. \right. $\\
-$\begin{array}{ll}\text{Distribution}&\text{ Probability }\\(4,0) & 1 / 16 \\ (3,1) & 4 / 16 \\ (2,2) & 6 / 16 \\ (1,3) & 4 / 16 \\ (0,4) & 1 / 16\end{array}$\\
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			$\text{Left half}$&$\text{Right half}$&$\text{Distribution}$&$\text{Freq.}$\\\hline
-			a,b,c,d&---&4,0&1\\\hline
-			b,c,d&a&\multirow{4}{*}{(3,1)}&\multirow{4}{*}{4}\\\cline{1-2}
-			a,c,d&b & &\\\cline{1-2}
-			a,b,d&c& &\\\cline{1-2}
-			a,b,c&d& &\\\cline{1-2}\hline
-			a,b&c,d&\multirow{6}{*}{(2,2)}&\multirow{6}{*}{(6)}\\\cline{1-2}
-			a,c&bd& & \\\cline{1-2}
-			a,d& b,c& & \\\cline{1-2}
-			c,d&a,b& & \\\cline{1-2}
-			b,c& a,d& & \\\cline{1-2}
-			b,d&a,c& & \\\cline{1-2}\hline
-			a&b,c,d&\multirow{4}{*}{(1,3)}&\multirow{4}{*}{(4)}\\\cline{1-2} 
-			b&a,c,d& & \\\cline{1-2}
-			c&a,b,d & &\\\cline{1-2}
-			d&a,b,c & &\\\hline
-			---&a,b,c,d &(0,4) &1 \\\hline
-		\end{tabular}
-	\end{center}
-	
-	\label{tab:multicol}
-\end{table}
+\begin{answer}$\left. \right. $\\
+	\begin{minipage}{0.35\textwidth}
+		$\begin{array}{|l|l|}\hline\text{Distribution}&\text{ Probability }\\ \hline(4,0) & 1 / 16 \\ (3,1) & 4 / 16 \\ (2,2) & 6 / 16 \\ (1,3) & 4 / 16 \\ (0,4) & 1 / 16\\ \hline \end{array}$
+	\end{minipage}\hfil
+\begin{minipage}{0.35\textwidth}
+	\begin{table}[H]
+				\begin{tabular}{|c|c|c|c|}
+				\hline
+				$\text{Left half}$&$\text{Right half}$&$\text{Distribution}$&$\text{Freq.}$\\\hline
+				a,b,c,d&---&4,0&1\\\hline
+				b,c,d&a&\multirow{4}{*}{(3,1)}&\multirow{4}{*}{4}\\\cline{1-2}
+				a,c,d&b & &\\\cline{1-2}
+				a,b,d&c& &\\\cline{1-2}
+				a,b,c&d& &\\\cline{1-2}\hline
+				a,b&c,d&\multirow{6}{*}{(2,2)}&\multirow{6}{*}{(6)}\\\cline{1-2}
+				a,c&bd& & \\\cline{1-2}
+				a,d& b,c& & \\\cline{1-2}
+				c,d&a,b& & \\\cline{1-2}
+				b,c& a,d& & \\\cline{1-2}
+				b,d&a,c& & \\\cline{1-2}\hline
+				a&b,c,d&\multirow{4}{*}{(1,3)}&\multirow{4}{*}{(4)}\\\cline{1-2} 
+				b&a,c,d& & \\\cline{1-2}
+				c&a,b,d & &\\\cline{1-2}
+				d&a,b,c & &\\\hline
+				---&a,b,c,d &(0,4) &1 \\\hline
+			\end{tabular}
+		\end{table}
+\end{minipage}
 \end{answer}
 \subsection{Random Walk}
 \textbf{1-Dimensional Random Walk:}\\
@@ -183,8 +181,8 @@ All the members of the ensemble which are identical in $\mathrm{N}, \mathrm{V}, 
 In Fig. $\mathrm{~N}, \mathrm{~V}, \mathrm{E}$ represents one system. A collection of such system constitute an ensemble.
 \subsection{Characteristics of an ensemble}
 \begin{enumerate}
-	\item  The elements of an ensemble are identical in structure. i.e., they have the same macroscopic state.
-\item  The elements differ in their miccroscopic state. i.e., they different from each other in the position coordinates and momentum coordinates.
+\item  The elements of an ensemble are identical in structure. i.e., they have the same macroscopic state.
+\item  The elements differ in their microscopic state. i.e., they different from each other in the position coordinates and momentum coordinates.
 \item  The various elements do not interact each other.
 \item  Each element of the ensemble behaviour independently obeying the laws of mechanics.
 \item  The elements of the ensemble are the mental copies of the system under consideration. But the system is a physical object, whose properties are to be evaluated. The elements help us to use the probability theory.
@@ -277,9 +275,12 @@ of the ensemble which does not depend on time.
 Consider an isolated `many particle system' in equilibrium. We want to know the probability for any one particle to be in a given specified state. The answer to this is given by the a priori postulate.\\
 "\textbf{All accessible microstates corresponding to possible macrostates are equally probable}". This is the most fundamental postulate of statistical mechanics. This means that the probability of finding the particle in any one region is identical with that for any other region of equal volume, under similar conditions.
 \section{ Classical Distribution Law }
-\textbf{Assessible microstate:}\\ Microstates corresponding to a macrostate.\\
-\textbf{Thermodynamic Probability:} \\Number of microstates corresponding to a macrostate.\\
-$$\text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}$$
+\textbf{Accessible microstate\qquad \quad : } Microstates corresponding to a macrostate.\\\\
+\textbf{Thermodynamic Probability: } Number of microstates corresponding to a macrostate.
+\begin{equation}
+\text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}
+\end{equation}
+
 \section{ Probability Distibution: }
 \textbf{Coin Related Problem: }\\\\
 \textbf{a.\quad  Tossing a coin:}
