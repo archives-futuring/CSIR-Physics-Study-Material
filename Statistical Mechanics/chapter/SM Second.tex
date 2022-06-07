@@ -470,15 +470,23 @@ $\therefore f\left(\varepsilon_{i}\right)=\frac{1}{e^{(\varepsilon-\mu) / k T}+1
 function at temparature $T$ Kelvin.
 \subsection{Fermi level at $\mathrm{OK}$}
 $f\left(\varepsilon_{i}\right)=\left\{\begin{array}{ll}1, & E<E_{F} \\ 0, & E>E_{F}\end{array}\right\}$
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5.5cm,width=9cm]{SM-II-01}
+\end{figure}
 \subsection{Fermi level at $T \neq 0 k$}
 As temparature increases, the states below $E_{F}, f(\varepsilon)$ start decreasing and above $E_{F}$ Starts filling.
-\subsection{Fermi Wave Vector($K_t$)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5.5cm,width=9cm]{SM-II-02}
+\end{figure}
+\subsection{Fermi Wave Vector($K_f$)}
 \begin{itemize}
 	\item In 1-D : $K_{f}=\frac{N \pi}{2 L}$
-	\item  In 1-D : $K_{f}=\left(\frac{2 \pi N}{A_{r e a}}\right)^{1 / 2}$
-	\item  In 1-D : $k_{f}=\left(\frac{3 \pi^{2} N}{\text { Volume }}\right)^{1 / 3}$
+	\item  In 2-D : $K_{f}=\left(\frac{2 \pi N}{Are a}\right)^{1 / 2}$
+	\item  In 3-D : $k_{f}=\left(\frac{3 \pi^{2} N}{\text { Volume }}\right)^{1 / 3}$
 \end{itemize}
-Fermi Energg $E_{F}=\frac{\hbar^{2} k_{F}^{2}}{2 m}$\\
+Fermi Energy $E_{F}=\frac{\hbar^{2} k_{F}^{2}}{2 m}$\\
 \renewcommand*{\arraystretch}{2}
 \begin{tabular}{|p{4cm}|p{4cm}|p{3cm}|}
 	\hline
@@ -486,80 +494,76 @@ Fermi Energg $E_{F}=\frac{\hbar^{2} k_{F}^{2}}{2 m}$\\
 	$\frac{\hbar^{2}}{2 m}\left(3 \pi^{2} \rho\right)^{2 / 3}$&$\frac{3}{5} E_{F}$&3\\
 	$\frac{\hbar^{2}}{2 m}(2 \pi \rho)$&$\frac{1}{2} E_{F}$&2\\
 	$\frac{\hbar^{2}}{2 m}\left(\frac{N \pi}{2 L}\right)^{2}$&$\frac{1}{3} E_{F}$& 1\\\hline
-\end{tabular}\\
-Here $\mathrm{S}=$number density $\left(\frac{N}{V}\right.$ for $3 D \frac{8}{A}$ for $\left.2 D\right)$
+\end{tabular}\\\\
+Here $\mathrm{S}=$number density $\left(\frac{N}{V}\right.$ for $3 D ,\ \frac{N}{A}$ for $\left.2 D\right)$
 \section{Grand Canonical Ensemble}
-Grand canonical ensemble : An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\
-Equilibrium : between a system and a particle energy reservoir :
-We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time bothattain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the no. of particle and energy become variable whose values can lie at any particular time $\mathrm{t}$ any where between o to $\infty$. 
+Grand canonical ensemble - An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\
+Equilibrium - between a system and a particle energy reservoir :
+We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time both attain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the number of particle and energy become variable whose values can vary at any time $\mathrm{t}$ any where between 0 to $\infty$. 
 
-$P(\Omega, N \Omega) \rightarrow$ probablity to find the system at a microstate $\Omega$, when total number of particles is $N_{\Omega}$, remember here total number of particle is not constant.
+$P(\Omega, N_{\Omega)} \rightarrow$ probablity to find the system at a microstate $\Omega$, when total number of particles is $N_{\Omega}$, remember here total number of particle is not constant.
 \begin{align*}
-P\left(\Omega, N_{\Omega}\right)&=\frac{\bar{\rho}^{\beta\left[H\left(\Omega_{2}\right)-\mu N \Omega\right]}}{Z(\mu, \Omega, T)}\\
+P\left(\Omega, N_{\Omega}\right)&=\frac{e^{-\beta\left[H\left(\Omega\right)-\mu N _\Omega\right]}}{Z(\mu, \Omega, T)}\\
 H(\Omega) \rightarrow &\text { Hamiltonian }\\
 \mu N_{\Omega} \rightarrow &\text { Chemical work }
-\intertext{Grrand canonical partition function }
+\intertext{Grand canonical partition function }
 \end{align*}
 \begin{align*}
-Z(M,\Omega,T)&=\sum_{\omega,N,\omega}\beta[H(\ \Omega)-N_{\omega}M]\\
-&=\sum_{N\omega=O}e^{\beta{\mu} N_{\Omega}}\sum e^{-\beta H(\Omega)}\\
-&=\sum_{N\omega=O}e^{\beta{\mu} N_{\Omega}}Z\\
+Z(M,\Omega,T)&=\sum_{\Omega,N_\Omega}\beta[H(\ \Omega)-N_{\Omega}M]\\
+&=\sum_{N_\Omega=O}e^{\beta{\mu} N_{\Omega}}\sum e^{-\beta H(\Omega)}\\
+&=\sum_{N_\Omega=O}e^{\beta{\mu} N_{\Omega}}Z\\
 Z\rightarrow &\text{canonical partion function}\\
-&\sum_{N\omega=O} e^{\beta{\mu} N_{\Omega}}\\
+\sum_{N_\Omega=O} e^{\beta{\mu} N_{\Omega}}
 \rightarrow&\text{ Fugacity}\\
-\sum_{(\mu,\Omega,T)}&=Fugacity\times{Z_{canonical}}
+\text{Grand Canonical Ensemble }&=\text{Fugacity}\times{Z_{canonical}}
 \end{align*}
 \textbf{Some Important relations connecting Grand Canonical Ensemble}
 \begin{enumerate}
-	\item Average number of particles $<N_\omega>$=$\frac{1}{\beta}\frac{\partial}{\partial\mu}$$\ell n$Z\\
+	\item Average number of particles $<N_\Omega>$=$\frac{1}{\beta}\frac{\partial}{\partial\mu}$$\ell n$Z\\
 	\item Variance,$<N^{2}>$$\approx$N\\
 	\item Standard deviation$<{N}^{2}>^{1/2}$$\approx$$N^{1/2}$\\
 	\item $\frac{N^{1/2}}{<N>}\approx$$\frac{1}{N^{1/2}}$
 \end{enumerate}
 As $N\rightarrow \infty$, Grand canonical ensenble equivalent to microcanonical ensemble.
-\section{Base GAS}
-Distribution function for Base-Eienstien statistisc,
+\section{Bose GAS}
+Distribution function for Bose-Eienstien statistiss,
 \begin{align*}
-f(\varepsilon)&=\frac{1}{e^{\beta(\varepsilon-\mu)}-1}\\
-&O\leq f(\varepsilon)\leq1\\
-f(\varepsilon)\text{cannot be negative}\\
-\therefore &e^{\beta(\varepsilon-\mu)}>1\\
-\text{Applying logarithm.}\\
-&\beta(\varepsilon-\mu)>0\\
-&(\varepsilon-\mu)>0\\
+f(\varepsilon)&=\frac{1}{e^{\beta(\varepsilon_i-\mu)}-1}\\
+&O\leq f(\varepsilon_i)\leq1\\
+f(\varepsilon)\text{cannot}&\text{ be negative}\\
+\therefore\quad&e^{\beta(\varepsilon_i-\mu)}>1\\
+\text{Applying }&\text{logarithm.}\\
+&\beta(\varepsilon_i-\mu)>0\\
+&(\varepsilon_i-\mu)>0\\
 \text{for ground state},\varepsilon_{i}&=0\\
 \mu&=-ve\\
 \text{for some bosons}&\text{ chemical potential is negative} \\
 \text{for photons and phonons,}&\mu=0\\
-\mu&=0 or -ve\text{ in Bose Particles.}
+\mu&=0\text{ or }-ve\text{ in Bose Particles.}
 \end{align*}
 \subsection{Bose Einstein Condensation(v state of matter)}
 Rapid increas in the population of ground state,
 when temparature is lowered below critical temparature is known sa Bose Eienstien Condenstion.That particular critical temparature is known as Bose temparature,$T_{B}.$\\
 $N=N_{O}+Ne$\\
 \begin{enumerate}
-	\item At $T=T_{B}$\\
+	\item At $T=T_{B}$
 	\begin{align*}
-	\intertext{	Condensation procee is about to start at $T=T_{B}$It is like a tipping point and marimum number of particles are still in hte exited state.}
+	\intertext{	Condensation process is about to start at $T=T_{B}$It is like a tipping point and maximum number of particles are still in the exited state.}
 	N&=N_{0}+N_{e},\text{ here $N_{0}$ is negligible}\\
-	&N \approx N e.\\
+	&N \approx N e.
 	\end{align*}
 	
-	
-	
-	\textbf{Important points}\\
+	\textbf{Important points}
 	\begin{align*}
 	T_{B}&=\left(\frac{N}{V}\right)^{2 / 3} \frac{h^{2}}{(2 \cdot 612)^{2 / 3} \times 2 \pi m k g_{s}}\\
-	g_{S} &\rightarrow\text{ degeneracy.}\\
-	\frac{N}{V} &\rightarrow\text{ number density $=S$}\\
-	T_{B} &\propto(S)^{2 / 3}\\
+	g_{s} &\rightarrow\text{ degeneracy.}\\
+	\frac{N}{V} &\rightarrow\text{ number density $=\rho$}\\
+	T_{B} &\propto(\rho)^{2 / 3}\\
 	T_{\beta} &\propto \frac{1}{m}
 	\end{align*}
 	
-	
-	
 	\textbf{Genaral case}\\
-	If $E \propto p^{s}$ $T_{B} \propto(\rho)^{s / d}$\\
+	If $E \propto p^{s}$ \\$T_{B} \propto(\rho)^{s / d}$\\
 	$d \rightarrow$ dimension.
 	\item  $\quad T<T_{B}$\\
 	Rapid increase in population of ground State when $T<T_{B}$.\\
@@ -572,20 +576,20 @@ $N=N_{O}+Ne$\\
 \end{align*}
 \subsection	{Depandancy, of Various Thermodynamic variables on temparature'T'}
 $\Rightarrow$ Relations are applicable to both FermiDirac 8 Bose Eienstien statistics.\\
-$\Rightarrow$ Important types of Systems in frequently asking Questions.\\
+$\Rightarrow$\textbf{ Important types of Systems }in frequently asking Questions.\\
 \begin{enumerate}
-	\item Bose Eienstien statistics\\
+	\item \textbf{Bose Eienstien statistics}\\
 	Black body radiation\\
-	Photor gas\\
-	Any Bosonic systen.\\
-	\item Fermi-dirac statistic\\
-	Free clectaon gas\\
+	Photon gas\\
+	Any Bosonic system.\\
+	\item\textbf{ Fermi-dirac statistics}\\
+	Free electron gas\\
 	White dwarf
 \end{enumerate}
 \subsection{Important relations}
 \begin{enumerate}
 	\item Total number of particles, $N^{\prime} \alpha T^{d / S}$\\
-	\item$V\  \propto\  \frac{1}{T^{d/s+1}}$ \\
+	\item$V\  \propto\  \frac{1}{T^{d/s-1}}$ \\
 	\item\  $E \ \propto \ T^{d / s+1}$\\
 	\item\  $C_{v} \ \propto\  T^{d / s}$\\
 	\item $S \ \propto\  T^{d / s}$	
