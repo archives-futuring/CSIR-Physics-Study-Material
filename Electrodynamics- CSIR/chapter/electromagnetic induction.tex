@@ -184,15 +184,11 @@ At that point, given the field and current, use the Left Hand Rule to determine 
 \begin{exercise}
 	A conducting rod of length $l$ is rotated with uniform angular velocity $\omega$ about one end in uniform magnetic field $B$. Electric field induced inside the rod at a distance $x$ from fixed end is ?
 \end{exercise}
-\begin{answer}
-	\opencutright
-	\renewcommand\windowpagestuff{
-		\centering\includegraphics[width=3cm]{06-crop}}
-	\begin{cutout}{3}{\dimexpr\linewidth-10cm\relax}{0pt}{2}
+\begin{answer}$\left. \right. $\\
+	\begin{minipage}{0.35\textwidth}
 		\begin{align*}
-		 \ \text{emf at a distance x,}\\
-		\text{From center ,}\  \varepsilon&=\frac{-d \phi}{d t}\\
-		&=-\frac{B \cdot d A}{d t}\\
+		\text{emf at a distance x,}\\
+		\text{From center ,}\  \varepsilon&=\frac{-d \phi}{d t}=-\frac{B \cdot d A}{d t}\\
 		\text{Area} &=\frac{1}{2} x^{2} \theta \\
 		\frac{d A}{d t}&=\frac{1}{2} x^{2} \frac{d \theta}{d t} \hspace{2cm}\frac{d \theta}{d t}=\omega\\
 		&=\frac{1}{2} x^{2}\omega\\
@@ -201,7 +197,13 @@ At that point, given the field and current, use the Left Hand Rule to determine 
 		&=\frac{1}{2} B\omega\frac{d x^{2}}{d x}\\
 		&=B\omega x
 		\end{align*}
-	\end{cutout}
+	\end{minipage}
+	\begin{minipage}{0.35\textwidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=4cm]{06-crop}
+	\end{figure}
+\end{minipage}
 \end{answer}
 \begin{exercise}
 	A uniform magnetic field $\vec{B}(t)$, pointing straight up, fills the shaded circular region. If $B$ is changing with time, what is the induced electric field?\\
@@ -231,14 +233,7 @@ B_1&=\frac{\mu_{0}}{4\pi}I_1\oint \frac{dl \times\hat{r}}{r^2}
 \phi_2&=\oint B_1 \cdot da_2\\
 \text{So,} \ \phi_2 &\propto  I_1\\
 \phi_2&=M_{21}I_1 
-\intertext{$M_{21}$ is constant of proportionality, is called as mutual inductance of the two loops,}
-\phi_2&=\int B_1\cdot da_2\\
-\text{But,} \ B_1&=\nabla\times A_1 \hspace{0.6cm} 
-\text{$A_1$ is the magnetic vector potential.} \\
-\therefore\phi_2&=\int\nabla \times A_1\cdot da_2\\
-\text{By Stoke's theorem,}\ \phi_2&=\oint A_1\cdot dl_2 
 \end{align*}
-	
 \end{minipage}
 \begin{minipage}{0.20\textwidth}
 \begin{figure}[H]
@@ -248,6 +243,15 @@ B_1&=\frac{\mu_{0}}{4\pi}I_1\oint \frac{dl \times\hat{r}}{r^2}
 	\label{mutual inductance}
 \end{figure}
 \end{minipage}
+\begin{align*}
+\intertext{$M_{21}$ is constant of proportionality, is called as mutual inductance of the two loops,}
+\phi_2&=\int B_1\cdot da_2\\
+\text{But,} \ B_1&=\nabla\times A_1 \hspace{0.6cm} 
+\text{$A_1$ is the magnetic vector potential.} \\
+\therefore\phi_2&=\int\nabla \times A_1\cdot da_2\\
+\text{By Stoke's theorem,}\ \phi_2&=\oint A_1\cdot dl_2 
+\end{align*}
+
 \begin{align*}
 \intertext{Magnetic vector potential due to small length element $dl$ can be calculated as,}
 A_1&=\frac{\mu_{0} I_1}{4\pi}\oint \frac{dl_1}{r}\\
@@ -347,7 +351,48 @@ Consider a solenoid has a length $l$, number of turns $N$ and area of cross sect
 \end{enumerate}
 \newpage
 \begin{abox}
-	Practice set 1
+	Practice set-1
+\end{abox}
+\begin{enumerate}
+	\begin{minipage}{\textwidth}
+		\item A uniform magnetic field in the positive $z$-direction passes through a circular wire loop of radius $1 \mathrm{~cm}$ and resistance $1 \Omega$ lying in the $x y$-plane. The field strength is reduced from 10 tesla to 9 tesla in $1 s$. The charge transferred across any point in the wire is approximately
+		\exyear{NET JUNE 2015}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}]$3.1 \times 10^{-4}$ coulomb
+		\task[\textbf{B.}] $3.4 \times 10^{-4}$ coulomb
+		\task[\textbf{C.}] $4.2 \times 10^{-4}$ coulomb
+		\task[\textbf{D.}]$5.2 \times 10^{-4}$ coulomb
+	\end{tasks}
+	\begin{minipage}{\textwidth}
+		\item A magnetic field $B$ is $B \hat{z}$ in the region $x>0$ and zero elsewhere. A rectangular loop, in the $x y$-plane, of sides $l$ (along the $x$-direction) and $h$ (along the $y$ - direction) is inserted into the $x>0$ region from the $x<0$ region at constant velocity $v=v \hat{x}$. Which of the following values of $l$ and $h$ will generate the largest EMF?
+		\exyear{NET JUNE 2016}
+	\end{minipage}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $l=8, h=3$
+		\task[\textbf{B.}]$l=4, h=6$
+		\task[\textbf{C.}]$l=6, h=4$
+		\task[\textbf{D.}]$l=12, h=2$
+	\end{tasks}
+\end{enumerate}
+
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{a}&2&\textbf{b}\\\hline
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practice set-2
 	\end{abox}
 \begin{enumerate}
 	\begin{minipage}{\textwidth}
@@ -387,7 +432,7 @@ Consider a solenoid has a length $l$, number of turns $N$ and area of cross sect
 	\item A circular metal loop of radius $a=1 \mathrm{~m}$ spins with a constant angular velocity $\omega=20 \pi \mathrm{rad} / \mathrm{s}$ in a magnetic field $B=3$ Tesla, as shown in the figure. The resistance of the loop is 10 ohms. Let $P$ be the power dissipated in one complete cycle.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=5cm]{nimi2-crop}
+	\includegraphics[height=4cm,width=3cm]{nimi2-crop}
 \end{figure}
 	 What is the value of $\frac{P}{\pi^{4}}$ in Watts?
 	\exyear{JEST 2019}
@@ -424,47 +469,7 @@ Consider a solenoid has a length $l$, number of turns $N$ and area of cross sect
 
 
 
-\newpage
-\begin{abox}
-	Practice set 2
-	\end{abox}
-\begin{enumerate}
-\begin{minipage}{\textwidth}
-	\item A uniform magnetic field in the positive $z$-direction passes through a circular wire loop of radius $1 \mathrm{~cm}$ and resistance $1 \Omega$ lying in the $x y$-plane. The field strength is reduced from 10 tesla to 9 tesla in $1 s$. The charge transferred across any point in the wire is approximately
-	\exyear{NET JUNE 2015}
-\end{minipage}
-\begin{tasks}(2)
-	\task[\textbf{A.}]$3.1 \times 10^{-4}$ coulomb
-	\task[\textbf{B.}] $3.4 \times 10^{-4}$ coulomb
-	\task[\textbf{C.}] $4.2 \times 10^{-4}$ coulomb
-	\task[\textbf{D.}]$5.2 \times 10^{-4}$ coulomb
-\end{tasks}
-\begin{minipage}{\textwidth}
-	\item A magnetic field $B$ is $B \hat{z}$ in the region $x>0$ and zero elsewhere. A rectangular loop, in the $x y$-plane, of sides $l$ (along the $x$-direction) and $h$ (along the $y$ - direction) is inserted into the $x>0$ region from the $x<0$ region at constant velocity $v=v \hat{x}$. Which of the following values of $l$ and $h$ will generate the largest EMF?
-	\exyear{NET JUNE 2016}
-\end{minipage}
-\begin{tasks}(2)
-	\task[\textbf{A.}] $l=8, h=3$
-	\task[\textbf{B.}]$l=4, h=6$
-	\task[\textbf{C.}]$l=6, h=4$
-	\task[\textbf{D.}]$l=12, h=2$
-\end{tasks}
-\end{enumerate}
 
-\colorlet{ocre1}{ocre!70!}
-\colorlet{ocrel}{ocre!30!}
-\setlength\arrayrulewidth{1pt}
-\begin{table}[H]
-	\centering
-	\arrayrulecolor{ocre}
-	
-	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
-		\hline
-		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
-		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
-		1&\textbf{a}&2&\textbf{b}\\\hline
-	\end{tabular}
-\end{table}
 
 
 
