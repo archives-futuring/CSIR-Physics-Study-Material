@@ -626,17 +626,17 @@ The corresponding charge density $\rho$ and current density $\vec{J}$ are given 
 		&\Rightarrow \vec{\nabla} \cdot \vec{A}=-\mu_{0} \varepsilon_{0} \frac{\partial V}{\partial t}
 		\end{align*}
 	\end{answer}
-	\item (a) An Infinite straight wire carries a linearly increasing current $I(t)=k t$, for $t>0$.\\
-	Find the electric and magnetic fields generated.
-	(b) An Infinite straight wire carries a current $I(t)=q_{0} \delta(t)$, for $t>0$.
+	\item \textbf{(a)} An Infinite straight wire carries a linearly increasing current $I(t)=k t$, for $t>0$.
+	Find the electric and magnetic fields generated.\\
+	\textbf{(b)} An Infinite straight wire carries a current $I(t)=q_{0} \delta(t)$, for $t>0$.
 	Find the scalar and vector potential. In both cases assume wire is electrically neutral.
 	\begin{answer}
 		\begin{align*}
 		\text { (a) For }& t<r / c, \vec{A}=0 \text {; for } t>r / c, \vec{A}(r, t)=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{+\infty} \frac{I\left(t_{r}\right)}{R} d z\\
 		\text { where } R&=\sqrt{r^{2}+z^{2}} \text { and } t_{r}=t-\frac{R}{c}\\
-		\vec{A}(r, t)&=\left(\frac{\mu_{0}}{4 \pi} \hat{z}\right) 2 \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{k\left(t-\sqrt{r^{2}+z^{2}} / c\right)}{\sqrt{r^{2}+z^{2}}} d z=\frac{\mu_{0} k}{2 \pi} \hat{z}\left\{t \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{d z}{\sqrt{r^{2}+z^{2}}}-\frac{1}{c} \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} d z\right\}\\
+		\vec{A}(r, t)&=\left(\frac{\mu_{0}}{4 \pi} \hat{z}\right) 2 \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{k\left(t-\sqrt{r^{2}+z^{2}} / c\right)}{\sqrt{r^{2}+z^{2}}} d z\\&=\frac{\mu_{0} k}{2 \pi} \hat{z}\left\{t \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} \frac{d z}{\sqrt{r^{2}+z^{2}}}-\frac{1}{c} \int_{0}^{\sqrt{(c t)^{2}-r^{2}}} d z\right\}\\
 		\Rightarrow \vec{A}(r, t)&=\left(\frac{\mu_{0} k}{2 \pi} \hat{z}\right)\left[t \ln \left(\frac{c t+\sqrt{(c t)^{2}-r^{2}}}{r}\right)-\frac{1}{c} \sqrt{(c t)^{2}-r^{2}}\right] \text { and } V(r, t)=0\\
-		\text { (b) For } &t<r / c, \quad \vec{A}=0 \text {; for } t>r / c, \quad \vec{A}(r, t)=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{+\infty} \frac{I\left(t_{r}\right)}{R} d z\\
+		\text { (b) For } &t<r / c, \quad \vec{A}\\&=0 \text {; for } t>r / c, \quad \vec{A}(r, t)=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{+\infty} \frac{I\left(t_{r}\right)}{R} d z\\
 		\text { where } R&=\sqrt{r^{2}+z^{2}} \text { and } t_{r}=t-\frac{R}{c} \text {. }\\
 		\vec{A}(r, t)&=\frac{\mu_{0}}{4 \pi} \hat{z} \int_{-\infty}^{\infty} \frac{q_{0} \delta(t-R / c)}{R} d z \Rightarrow \vec{A}(r, t)=\left(\frac{\mu_{0} q_{0}}{4 \pi} \hat{z}\right) 2 \int_{0}^{\infty} \frac{\delta(t-R / c)}{R} d z\\
 		\text { Now } z&=\sqrt{R^{2}-r^{2}} \Rightarrow d z=\frac{1}{2} \frac{2 R d R}{\sqrt{R^{2}-r^{2}}}-\frac{R d R}{\sqrt{R^{2}-r^{2}}} \text {, and } z=0 \Rightarrow R=r, z=\infty \Rightarrow R=\infty\\
