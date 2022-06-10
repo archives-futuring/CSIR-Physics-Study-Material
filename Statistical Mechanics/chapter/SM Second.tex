@@ -1,4 +1,67 @@
 \chapter{Statistical Mechanics - II}
+Boltzman entrophy relation: $S=K \ln \Omega$\\
+striling approximation: $\ln n !=n \ln n-n$\\
+Number of microstates: 
+$\Omega_{M B}=\underset{i}{\pi}\left(g_{i}\right)^{n_{i}}$\\
+$\Omega_{B E}=\underset{i}{\pi}\frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !(g i-1) !}$\\
+${ }^{\Omega_{F D}}=\underset{i}{\pi}{g i }\  C_{n_{i}}$\\
+$g_{i} \rightarrow$ degeneracy\\
+$n_{i} \rightarrow$ identical Particles\\
+Energy distribution function :$f(E)=\frac{n_{i}}{g_{i}}$
+\begin{note}
+	Probability will be maximum for equal distribution.
+\end{note}
+Relative Probability: \\
+$$r=\frac{P_1}{P_2}=\frac{\text{Probability of finding particle in same state}}{\text{Probability of finding particle in different state.}}$$
+$r_{B E}: r_{M B}: r_{F \cdot D}=1: 1 / 2: 0$\\
+$\Rightarrow U_{B E} \leqslant U_{M B} \leqslant U_{F D} \Rightarrow P_{B E} \leqslant P_{M B} \leqslant P_{F D}$ \\
+\textbf{Phase Space}:(Position + momentum) space\\
+volume of single phase cell: $d \tau=h^{f} \quad f \rightarrow D O F$\\
+allowed vol. of phace space: $\int d^{3} q \int d^{3} p$\\
+$$
+V_{p} \Rightarrow V \times \frac{4}{3} \pi p^{3}\text{( for 3-Dim).}
+$$
+\textbf{Non-Relativistic Free Particle: }$E=p^2/2m$\\
+\renewcommand*{\arraystretch}{1.8}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+	\hline
+	3-Dimensional&2-Dimensional&1-Dimensional\\\hline
+	$d \tau=h^{3}$&$d \tau=h^{2}$&$d \tau=h$\\\hline
+	$V_{p}=V \times \frac{4}{3} \pi p^{3}$&$V_{p}=A \times \pi p^{2}$&$V_p=L\times2p$\\\hline
+	$\Omega=\frac{V \cdot \frac{4}{3} \pi p^{3}}{\hbar^{3}}$&$\Omega(p)=\frac{\pi \times \pi p^{2}}{h^{2}}$&$\Omega(p)=\frac{L \times 2 p}{h}$\\\hline
+	$\Omega(E)=\frac{\mu\pi V(2mE)^3}{3h^3}$&$\Omega(E)=\frac{\pi A(2mE)}{h^2}$&$\Omega(E)=\frac{2L\sqrt{2mE}}{h}$\\\hline
+	$\Omega^{\prime}(E)=\frac{2 \pi V(2 m)^{3 / 2} E^{1 / 2}}{h^2}dE$&$\Omega^{\prime}(E)=\frac{2 \pi mA}{h^3}dE$&$\Omega^{\prime}(E)=\frac{L(2m)^{1/2}E^{-1/2}}{h}dE$\\\hline
+\end{tabular}
+\begin{figure}[H]
+	\includegraphics[height=5.5cm,width=13cm]{SP-13}
+\end{figure}
+\textbf{Extremely Relativistic Free Particle: }(E=pc)\\
+\renewcommand*{\arraystretch}{1.8}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+	\hline
+	3-Dimensions & 2-Dimensions & 1-Dimensions\\\hline
+	$\Omega(p)=\frac{v \cdot \frac{4}{3} \pi p^{3}}{h^{3}}$&$\Omega(p)=\frac{\pi A p^{2}}{h^{2}}$&$\Omega(p)=\frac{L \times 2 p}{h}$\\
+	$\Omega^{\prime}(p)=\frac{4 \pi V p^{2} d p}{h^{3}}$&$\Omega^{\prime}(p)=\frac{2 \pi A p d p}{h^{2}}$&$\Omega^{\prime}(p)=\frac{2 L d p}{h}$\\\hline
+	$\Omega(E)=\frac{4 \pi V E^{3}}{3 c^{3} h^{3}}$&$\Omega(E)=\frac{A \pi E^{2}}{C^{2} n^{2}}$&$\Omega(E)=\frac{2 L E}{\hbar c}$\\
+	$\Omega(E)=2 \times \frac{4 \pi v\left(E^{2}\right)}{c^{3} h^{3}} d E$&$\Omega^{\prime}(E)=\frac{2 \pi A E}{C^{2} h^{2}}$&$\Omega^{\prime}(E)=\frac{2 L}{R C} d E$\\\hline
+\end{tabular}\\
+Q. \textbf{For free particle (with $E=ap^s$) with d-DOF: }\\
+\begin{align*}
+\text{Volume of sphere of radius (R) }V_{d}&=\frac{\pi^{d / 2} R^{d}}{\left(\frac{d}{2}\right) !}\\
+\text{area of sphere of radius (R) }s_{d}&=\frac{2 \pi^{d / 2} R^{d-1}}{\left(\frac{d}{2}-1\right) !}\\
+\text{ volume of single phase cell }d \tau&=h^{d}\\
+g(E)&=\frac{g i V_{d} \pi^{d / 2}\left(\frac{1}{a}\right)^{d / s}\left(\frac{d}{s}\right) E^{(d / s-1)}}{R^{d}(d / 2) !}\\
+&g(E) \propto E^{(d / s-1)}\hspace{3cm}d=DOF\\
+s=1 \text{(marsless)},\quad
+2 \text{(massive)}
+\end{align*}
+\begin{note}
+	\begin{align*}
+	\text{	maxinum valle of }&x \\
+	\text{	on }x-\text{axis: }p&=0 \hspace{3cm}x_{0}=\sqrt{\frac{2 E_{0}}{m \omega^{2}}}\\
+	E_{0}&=0+\frac{1}{2} m u^{2} x_{0}^{2}\hspace{2cm}x_{0} \alpha \sqrt{E_{0}}\\
+	\end{align*}
+\end{note}
 \section{Thermodynamics of Magnetic System}
 We consider a system of N dipoles with $J=\frac{1}{2}, $and suppose there is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $\epsilon_i=-\mu_BH \quad\text{or} \quad\mu H$ when placed in magnetic field $H$.
 $$\mathrm{Z}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \mu H}+\mathrm{e}^{-\beta \mu H}\right) ^\mathrm{N}=\left[ 2\cosh(\beta\mu H)\right]^N $$
@@ -42,9 +105,6 @@ Z_N&=2^N\left[\cosh (\mu \beta H)^N \right] \\
 Z_{Total}&=Z_{int}\times Z_H\\
 &=2^N\cosh  (\beta J)^{N-1}\times2^N\cosh(\beta \mu H)^N
 \end{align*}
-
-
-
 \section{Harmonic Oscillator :}
 \renewcommand*{\arraystretch}{2}
 \begin{tabular}{|p{6cm}|p{6cm}|}
@@ -69,8 +129,6 @@ U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
 	Classical \newline L.H.O&$N K^{2} T^{2}$&$\sqrt{N} K T$&$\frac{1}{N}$&$\sqrt{\frac{1}{N}}$\\\hline
 	&$(D E)^{2}$&$(\Delta E)$&$\left(\frac{\Delta E}{\langle E i\rangle}\right)^{2}$&$\left(\frac{\Delta E}{\left\langle E_{i}\right\rangle}\right)$\\\hline
 \end{tabular}
-
-
 \section{Maxwell-Boltzmann Statistics}
 Consider a system consisting of a large number of particles which are identical and distinguishable. Consider an ideal gas taken in a vessel of volume V. The particles (molecules) in the gas are in random motion, they move in all possible directions with all possible velocities, colliding with each other and with the walls of the vessel. The collisions are considered to be elastic. But during each collision the energy and momentum of each particle change. The change in momentum and energy is continuous, but total energy of the system remains constant.\\
 \par Let $\mathrm{n}_{1}, \mathrm{n}_{2}, \mathrm{n}_{3}, \ldots . \mathrm{n}_{\mathrm{i}} \ldots$ be the number of particles in the energy levels $\epsilon_{1}, \epsilon_{2}, \epsilon_{3} \cdots \epsilon_{i} \cdots$. The total number of particles and total energy of the system are constants.
@@ -124,19 +182,6 @@ d\left(\log _{e} \Omega\right)&=0
 \begin{note}
 	Suppose the energy of the system has continuous values, in the range from $\in$ to $\in+\mathrm{d} \in$, the density of states $\mathrm{g}_{\mathrm{i}}$ can be replaced by $g(\in) d \in$ and $\epsilon_{i}$ by $\in$. The distribution law given by equation (\ref{SME-13}) can be written as, $n(\in) d \in=\frac{\operatorname{Ag}(\in) d \in}{e^{\beta \epsilon}}$
 \end{note}
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Maxwell's formula for velocity distribution}
 Maxwell-Boltzmann distribution law is
 \begin{align}
@@ -439,10 +484,6 @@ What is the number of possible arrangements for the distribution of 7 bosons in 
 	9. Internal energy of an ideal monoatomic gas depends onlu onits temperature. At absalute zero, energy is zero.&9. Due to Pauli's exclusion principle, all the electrons cnnot occupy the lowest energy level. Even at absolute zero temperature, some of the electrons are distrinuted at higher energy levels. Hence, at absolute zero, the energy is not zero. Therefore, at the complete defenerate state, the energy is independent of temperature.&9. The energy at absoute zero is taken to be zero. \\
 	10.$n_{i}=\frac{g_{i}}{e^{\left(\alpha+\beta \epsilon_{i}\right)}}$&10. $n_{i}=\frac{g_{i}}{\left[e^{\left(\alpha+\beta \epsilon_{i}\right)}+1\right]}$&10. $n_{i}=\frac{g_{i}}{\left[e^{\left(\alpha+\beta \epsilon_{i}\right)}-1\right]}$\\\hline
 \end{tabular}
-
-
-
-
 \section{Distribution Function}
 Distribution function $\left(f\left(\varepsilon_{i}\right)\right)$ is the ratio of number of Quantum states (ni) of energy $\varepsilon_{i}$ occupied by total number of quantum state available in the energy level.\\
 \renewcommand*{\arraystretch}{2}
@@ -498,7 +539,6 @@ Here $\mathrm{S}=$number density $\left(\frac{N}{V}\right.$ for $3 D ,\ \frac{N}
 Grand canonical ensemble - An ensemble in which system can exchange both energy as well as particles with each other or particle energy reservoir.\\
 Equilibrium - between a system and a particle energy reservoir :
 We consider the given system A as immersed in a large reservoir A with which it can exchange both energy as well as particles. After some time both attain the state of mutual equilibrium. In equilibrium both have the same value of $\mathrm{T}$ and $\mu$, the number of particle and energy become variable whose values can vary at any time $\mathrm{t}$ any where between 0 to $\infty$. 
-
 $P(\Omega, N_{\Omega)} \rightarrow$ probablity to find the system at a microstate $\Omega$, when total number of particles is $N_{\Omega}$, remember here total number of particle is not constant.
 \begin{align*}
 P\left(\Omega, N_{\Omega}\right)&=\frac{e^{-\beta\left[H\left(\Omega\right)-\mu N _\Omega\right]}}{Z(\mu, \Omega, T)}\\
@@ -555,7 +595,6 @@ N\rightarrow &\text{Total number of particles}
 	N&=N_{0}+N_{e},\text{ here $N_{0}$ is negligible}\\
 	&N \approx N e.
 	\end{align*}
-	
 	\textbf{Important points}
 	\begin{align*}
 	T_{B}&=\left(\frac{N}{V}\right)^{2 / 3} \frac{h^{2}}{(2 \cdot 612)^{2 / 3} \times 2 \pi m k g_{s}}\\
@@ -564,7 +603,6 @@ N\rightarrow &\text{Total number of particles}
 	T_{B} &\propto(\rho)^{2 / 3}\\
 	T_{\beta} &\propto \frac{1}{m}
 	\end{align*}
-	
 	\textbf{Genaral case}\\
 	If $E \propto p^{s}$ \\$T_{B} \propto(\rho)^{s / d}$\\
 	$d \rightarrow$ dimension.
@@ -596,6 +634,300 @@ $\Rightarrow$\textbf{ Important types of Systems }in frequently asking Questions
 	\item\  $E \ \propto \ T^{d / s+1}$\\
 	\item\  $C_{v} \ \propto\  T^{d / s}$\\
 	\item $S \ \propto\  T^{d / s}$	
+\end{enumerate}
+\newpage
+\begin{abox}
+	Practise set-1
+\end{abox}
+\begin{enumerate}
+	\item Consider an ideal Bose gas in three dimensions with the energy-momentum relation $\varepsilon \propto p^{s}$ with $s>0$. The range of $s$ for which this system may undergo a Bose-Einstein condensation at a non-zero temperature is
+	{\exyear{NET/JRF(JUNE-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $1<s<3$
+		\task[\textbf{B.}] $0<s<2$
+		\task[\textbf{C.}] $0<s<3$
+		\task[\textbf{D.}] $0<s<\infty$
+	\end{tasks}
+	\item The internal energy $E$ of a system is given by $E=\frac{b S^{3}}{V N}$, where $b$ is a constant and other symbols have their usual meaning. The temperature of this system is equal to
+	{\exyear{NET/JRF(JUNE-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{b S^{2}}{V N}$
+		\task[\textbf{B.}] $\frac{3 b S^{2}}{V N}$
+		\task[\textbf{C.}]  $\frac{b S^{3}}{V^{2} N}$
+		\task[\textbf{D.}] $\left(\frac{S}{N}\right)^{2}$
+	\end{tasks}
+	\item Consider a Maxwellian distribution of the velocity of the molecules of an ideal gas. Let $V_{m p}$ and $V_{r m s}$ denote the most probable velocity and the root mean square velocity, respectively. The magnitude of the ratio $V_{m p} / V_{r m s}$ is
+	{\exyear{NET/JRF(DEC-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] (a) 1
+		\task[\textbf{B.}] $2 / 3$
+		\task[\textbf{C.}] $\sqrt{2 / 3}$
+		\task[\textbf{D.}] $3 / 2$
+	\end{tasks}
+	\item If the number density of a free electron gas in three dimensions is increased eight times, its Fermi temperature will
+	{\exyear{NET/JRF(DEC-2011)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] Increase by a factor of 4
+		\task[\textbf{B.}] Decrease by a factor of 4
+		\task[\textbf{C.}] Increase by a factor of 8
+		\task[\textbf{D.}] Decrease by a factor of 8
+	\end{tasks}
+	\item A one-dimensional chain consists of a set of $N$ rods each of length $a$. When stretched by a load, each rod can align either parallel or perpendicular to the length of the chain. The energy of a rod is $-\varepsilon$ when perpendicular to it. When the chain is in thermal equilibrium at temperature $T$, its average length is
+	{\exyear{NET/JRF(DEC-2011)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\mathrm{Na} / 2$
+		\task[\textbf{B.}] $\mathrm{Na}$
+		\task[\textbf{C.}] $N a /\left(1+e^{-2 \varepsilon / k_{B} T}\right)$
+		\task[\textbf{D.}] $N a\left(1+e^{-2 \varepsilon / k_{B} T}\right)$
+	\end{tasks}
+	\item The excitations of a three-dimensional solid are bosonic in nature with their frequency $\omega$ and wave-number $k$ are related by $\omega \propto k^{2}$ in the large wavelength limit. If the chemical potential is zero, the behavior of the specific heat of the system at low temperature is proportional to
+	{\exyear{NET/JRF(DEC-2011)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $T^{1 / 2}$
+		\task[\textbf{B.}] $T$
+		\task[\textbf{C.}]  $T^{3 / 2}$
+		\task[\textbf{D.}] $T^{3}$
+	\end{tasks}
+	\item Consider a system of non-interacting particles in $d$ dimensional obeying the dispersion relation $\varepsilon=A k^{s}$, where $\varepsilon$ is the energy, $k$ is the wave vector; $s$ is an integer and $A$ is constant. The density of states, $N(\varepsilon)$, is proportional to
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\varepsilon^{\frac{s}{d}-1}$
+		\task[\textbf{B.}] $\varepsilon^{\frac{d}{s}-1}$
+		\task[\textbf{C.}] $\varepsilon^{\frac{d}{s}+1}$
+		\task[\textbf{D.}] $\varepsilon^{\frac{s}{d}+1}$
+	\end{tasks}
+	\item The number of ways in which $\mathrm{N}$ identical bosons can be distributed in two energy levels, is
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $N+1$
+		\task[\textbf{B.}] $\frac{N(N-1)}{2}$
+		\task[\textbf{C.}] $\frac{N(N+1)}{2}$
+		\task[\textbf{D.}] $N$
+	\end{tasks}
+	\item The free energy of the gas of $N$ particles in a volume $V$ and at a temperature $T$ is $F=N k_{B} T \ln \left[a_{0} V\left(k_{B} T\right)^{5 / 2} / N\right]$, where $a_{0}$ is a constant and $k_{B}$ denotes the Boltzmann constant. The internal energy of the gas is
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $\frac{3}{2} N k_{B} T$
+		\task[\textbf{B.}] $\frac{5}{2} N k_{B} T$
+		\task[\textbf{C.}] $N k_{B} T \ln \left[a_{0} V\left(k_{B} T\right)^{5 / 2} / N\right]-\frac{3}{2} N k_{B} T$
+		\task[\textbf{D.}] $N k_{B} T \ln \left[a_{0} V /\left(k_{B} T\right)^{5 / 2}\right]$
+	\end{tasks}
+	\item Bose condensation occurs in liquid $H e^{4}$ kept at ambient pressure at $2.17 K$. At which temperature will Bose condensation occur in $H e^{4}$ in gaseous state, the density of which is 1000 times smaller than that of liquid $H e^{4}$ ? (Assume that it is a perfect Bose gas.)
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $2.17 \mathrm{mK}$
+		\task[\textbf{B.}] $21.7 \mathrm{mK}$
+		\task[\textbf{C.}] $21.7 \mu K$
+		\task[\textbf{D.}] $2.17 \mu K$
+	\end{tasks}
+	\item Consider black body radiation contained in a cavity whose walls are at temperature $T$. The radiation is in equilibrium with the walls of the cavity. If the temperature of the walls is increased to $2 T$ and the radiation is allowed to come to equilibrium at the new temperature, the entropy of the radiation increases by a factor of
+	{\exyear{NET/JRF(JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 2
+		\task[\textbf{B.}] 4
+		\task[\textbf{C.}] 8
+		\task[\textbf{D.}] 16
+	\end{tasks}
+	\newcommand*{\downuparrow}[1]{\ensuremath{\overset{\uparrow}{#1}}}
+	\newcommand*{\downdownarrow}[1]{\ensuremath{\overset{\downarrow}{#1}}}
+	\item A system of non-interacting spin-1/2 charged particles are placed in an extemal magnetic field. At low temperature $T$, the leading behavior of the excess energy above the ground state energy, depends on $T$ as: $(c$ is a constant)
+	{\exyear{NET/JRF(JUNE-2013)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] $c T$
+		\task[\textbf{B.}]  $c T^{3}$
+		\task[\textbf{C.}] $e^{-c / T}$
+		\task[\textbf{D.}] $c$ (is independent of $T$ )
+	\end{tasks}
+	\item Consider two different systems each with three identical non-interacting particles. Both have single particle states with energies $\varepsilon_{0}, 3 \varepsilon_{0}$ and $5 \varepsilon_{0},\left(\varepsilon_{0}>0\right)$. One system is populated by spin $-\frac{1}{2}$ fermions and the other by bosons. What is the value of $E_{F}-E_{B}$ where $E_{F}$ and $E_{B}$ are the ground state energies of the fermionic and bosonic systems respectively?
+	{\exyear{NET/JRF(JUNE-2013)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $6 \varepsilon_{0}$
+		\task[\textbf{B.}] $2 \varepsilon_{0}$
+		\task[\textbf{C.}] $4 \varepsilon_{0}$.
+		\task[\textbf{D.}] $\varepsilon_{0}$
+	\end{tasks}
+	\item Three identical spin- $\frac{1}{2}$ fermions are to be distributed in two non-degenerate distinct energy levels. The number of ways this can be done is
+	{\exyear{NET/JRF(DEC-2013)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] 8
+		\task[\textbf{B.}] 4
+		\task[\textbf{C.}] 3
+		\task[\textbf{D.}] 2
+	\end{tasks}
+	\item Which of the graphs below gives the correct qualitative behaviour of the energy density $E_{r}(\lambda)$ of blackbody radiation of wavelength $\lambda$ at two temperatures $T_{1}$ and $T_{2}\left(T_{1}<T_{2}\right) ?$
+	{\exyear{NET/JRF(JUNE-2014)}}
+	\begin{tasks}(2)
+		\task[\textbf{A.}] \begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=5cm]{diagram-20210924(10)-crop}
+		\end{figure}
+		\task[\textbf{B.}] \begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=5cm]{diagram-20210924(11)-crop}
+		\end{figure}
+		\task[\textbf{C.}] \begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=5cm]{diagram-20210924(12)-crop}
+		\end{figure}
+		\task[\textbf{D.}] \begin{figure}[H]
+			\centering
+			\includegraphics[height=4cm,width=5cm]{diagram-20210924(13)-crop}
+		\end{figure}
+	\end{tasks}
+	\item The pressure of a non-relativistic free Fermi gas in three-dimensions depends, at $T=0$, on the density of fermions $n$ as
+	{\exyear{NET/JRF(JUNE-2014)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $n^{5 / 3}$
+		\task[\textbf{B.}] $n^{1 / 3}$
+		\task[\textbf{C.}]  $n^{2 / 3}$
+		\task[\textbf{D.}] $n^{4 / 3}$
+	\end{tasks}
+	\item An ideal Bose gas in $d$-dimensions obeys the dispersion relation $\in(\vec{k})=A k^{s}$, where $A$ and $s$ are constants. For Bose-Einstein condensation to occur, the occupancy of excited states
+	$$
+	N_{e}=c \int_{0}^{\infty} \frac{\epsilon^{\frac{(d-s)}{s}}}{\left(e^{\beta(\epsilon-\mu)}-1\right)} d \in
+	$$
+	where $c$ is a constant, should remain finite even for $\mu=0$. This can happen if
+	{\exyear{NET/JRF(JUNE-2015)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{d}{s}<\frac{1}{4}$
+		\task[\textbf{B.}] $\frac{1}{4}<\frac{d}{s}<\frac{1}{2}$
+		\task[\textbf{C.}] $\frac{d}{s}>1$
+		\task[\textbf{D.}] $\frac{1}{2}<\frac{d}{s}<1$
+	\end{tasks}
+	\item For a system of independent non interacting one-dimensional oscillators, the value of the free energy per oscillator, in the limit $T \rightarrow 0$, is
+	{\exyear{NET/JRF(DEC-2015)}}
+	\begin{tasks}(4)
+		\task[\textbf{A.}] $\frac{1}{2} \hbar \omega$
+		\task[\textbf{B.}] $\hbar \omega$
+		\task[\textbf{C.}] $\frac{3}{2} \hbar \omega$
+		\task[\textbf{D.}] 0
+	\end{tasks}
+\item The specific heat per molecule of a gas of diatomic molecules at high temperatures is
+{\exyear{NET/JRF(JUNE-2016)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $8 k_{B}$
+\task[\textbf{B.}] $3.5 k_{B}$
+\task[\textbf{C.}] $4.5 k_{B}$
+\task[\textbf{D.}] $3 k_{B}$
+\end{tasks}
+\item A gas of non-relativistic classical particles in one dimension is subjected to a potential $V(x)=\alpha|x|$ (where $\alpha$ is a constant). The partition function is $\left(\beta=\frac{1}{k_{B} T}\right)$
+{\exyear{NET/JRF(JUNE-2016)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\sqrt{\frac{4 m \pi}{\beta^{3} \alpha^{2} h^{2}}}$
+\task[\textbf{B.}] $\sqrt{\frac{2 m \pi}{\beta^{3} \alpha^{2} h^{2}}}$
+\task[\textbf{C.}] $\sqrt{\frac{8 m \pi}{\beta^{3} \alpha^{2} h^{2}}}$
+\task[\textbf{D.}] $\sqrt{\frac{3 m \pi}{\beta^{3} \alpha^{2} h^{2}}}$
+\end{tasks}
+\item An atom has a non-degenerate ground-state and a doubly-degenerate excited state. The energy difference between the two states is $\varepsilon$. The specific heat at very low temperatures $(\beta \varepsilon \gg 1)$ is given by
+{\exyear{NET/JRF(DEC-2016)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $k_{B}(\beta \varepsilon)$
+\task[\textbf{B.}] $k_{B} e^{-\beta \varepsilon}$
+\task[\textbf{C.}] $2 k_{B}(\beta \varepsilon)^{2} e^{-\beta \varepsilon}$
+\task[\textbf{D.}] $k_{B}$
+\end{tasks}
+\item  A gas of photons inside a cavity of volume $V$ is in equilibrium at temperature $T$. If the temperature of the cavity is changed to $2 T$, the radiation pressure will change by a factor of
+{\exyear{NET/JRF(JUNE-2017)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] 2
+\task[\textbf{B.}] 16
+\task[\textbf{C.}] 8
+\task[\textbf{D.}] 4
+\end{tasks}
+\item The single particle energy levels of a non-interacting three-dimensional isotropic system, labelled by momentum $k$, are proportional to $k^{3}$. The ratio $\bar{P} / \in$ of the average pressure $\bar{P}$ to the energy density $\in$ at a fixed temperature, is
+{\exyear{NET/JRF(JUNE-2017)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $1 / 3$
+\task[\textbf{B.}] $2 / 3$
+\task[\textbf{C.}] 1
+\task[\textbf{D.}] 3
+\end{tasks}
+\item The number of ways of distributing 11 indistinguishable bosons in 3 different energy levels is
+{\exyear{NET/JRF(JUNE-2018)}}
+\begin{tasks}(4)
+\task[\textbf{A.}]  $3^{11}$
+\task[\textbf{B.}] $11^{3}$
+\task[\textbf{C.}] $\frac{(13) !}{2 !(11) !}$
+\task[\textbf{D.}]  $\frac{(11) !}{3 ! 8 !}$
+\end{tasks}
+\item The rotational energy levels of a molecule are $E_{\ell}=\frac{\hbar^{2}}{2 I_{0}} \ell(\ell+1)$, where $\ell=0,1,2, \ldots$ and $I_{0}$ is its moment of inertia. The contribution of the rotational motion to the Helmholtz free energy per molecule, at low temperatures in a dilute gas of these molecules, is approximately
+{\exyear{NET/JRF(DEC-2018)}}
+\begin{tasks}(2)
+\task[\textbf{A.}]  $-k_{B} T\left(1+\frac{\hbar^{2}}{I_{0} k_{B} T}\right)$
+\task[\textbf{B.}] $-k_{B} T e^{\frac{\hbar^{2}}{I_{0} k_{B} T}}$
+\task[\textbf{C.}] $-k_{B} T$
+\task[\textbf{D.}] $-3 k_{B} T e^{-\frac{\hbar^{2}}{I_{0} k_{B} T}}$
+\end{tasks}  
+ \item Consider an ideal Fermi gas in a grand canonical ensemble at a constant chemical potential. The variance of the occupation number of the single particle energy level with mean occupation number $\bar{n}$ is
+{ \exyear{NET/JRF(DEC-2018)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\bar{n}(1-\bar{n})$
+\task[\textbf{B.}]  $\sqrt{\bar{n}}$
+\task[\textbf{C.}] $\bar{n}$
+\task[\textbf{D.}] $\frac{1}{\sqrt{\bar{n}}}$
+\end{tasks}
+ \item The Hamiltonian of a one-dimensional Ising model of $N$ spins ( $N$ large) is
+ $$
+ H=-J \sum_{i=1}^{N} \sigma_{i} \sigma_{i+1}
+ $$
+ where the spin $\sigma_{i}=\pm 1$ and $J$ is a positive constant. At inverse temperature $\beta=\frac{1}{k_{B} T}$, the correlation function between the nearest neighbor spins $\left(\sigma_{i} \sigma_{i+1}\right)$ is
+{\exyear{NET/JRF(DEC-2018)}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $\frac{e^{-\beta J}}{\left(e^{\beta J}+e^{-\beta J}\right)}$
+\task[\textbf{B.}] $e^{-2 \beta J}$
+\task[\textbf{C.}] $\tanh (\beta J)$
+\task[\textbf{D.}] $\operatorname{coth}(\beta J)$
+\end{tasks}
+ \item  The Hamiltonian of a system of 3 spins is $H=J\left(S_{1} S_{2}+S_{2} S_{3}\right)$, where $S_{i}=\pm 1$ for $i=1,2,3$. Its canonical partition function, at temperature $T$, is
+{ \exyear{NET/JRF(JUNE-2020)}}
+\begin{tasks}(2)
+\task[\textbf{A.}] $2\left(2 \sinh \frac{J}{k_{B} T}\right)^{2}$
+\task[\textbf{B.}]  $2\left(2 \cosh \frac{J}{k_{B} T}\right)^{2}$
+\task[\textbf{C.}]  $2\left(2 \cosh \frac{J}{k_{B} T}\right)$
+\task[\textbf{D.}] $2\left(2 \cosh \frac{J}{k_{B} T}\right)^{3}$
+\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{A} &2&\textbf{B}\\\hline
+		3&\textbf{C} &4&\textbf{A} \\\hline
+		5&\textbf{C} &6&\textbf{C} \\\hline
+		7&\textbf{B}&8&\textbf{A}\\\hline
+		9&\textbf{B}&10&\textbf{B}\\\hline
+		11&\textbf{C} &12&\textbf{C}\\\hline
+		13&\textbf{B}&14&\textbf{B}\\\hline
+		15&\textbf{C}&16 &\textbf{A}\\\hline
+		17&\textbf{C}&18 &\textbf{A}\\\hline
+		19&\textbf{B}&20&\textbf{C}\\\hline
+		21&\textbf{C} &22&\textbf{B}\\\hline
+		23&\textbf{C}&24&\textbf{C}\\\hline
+		25&\textbf{D}&26 &\textbf{A}\\\hline
+		27&\textbf{C}&28 &\textbf{B}\\\hline
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practise set-2
+\end{abox}
+\begin{enumerate}
+\item A microcanonical ensemble consists of 12 atoms with each taking either energy 0 state, or energy $\in$ state. Both states are non-degenerate. If the total energy of this ensemble is $4 \in$, its entropy will be----------- $k_{B}$ (up to one decimal place), where $k_{B}$ is the Boltzmann constant.
+{\exyear{GATE 2018}}
+\item Consider two system $A$ and $B$ each having two distinguishable particles. In both the systems, each particle can exist in states with energies $0,1,2$ and 3 units with equal probability. The total energy of the combined system is 5 units. Assuming that the system $A$ has energy 3 units and the system $B$ has energy 2 units, the entropy of the system is $k_{B} \ln \lambda$. The value of $\lambda$ is----------
+{\exyear{GATE 2019}}
+\item The partition function of an ensemble at a temperature $T$ is
+$$
+Z=\left(2 \cosh \frac{\varepsilon}{k_{B} T}\right)^{N}
+$$
+where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $T=\frac{\varepsilon}{k_{B}}$ is $X N k_{B}$, where the value of $X$ is (up to two decimal places).
+{\exyear{GATE 2018}}
 \end{enumerate}
 \newpage
 \begin{abox}
@@ -731,18 +1063,106 @@ $\Rightarrow$\textbf{ Important types of Systems }in frequently asking Questions
 	\end{align*}
 	So the correct answer is \textbf{Option(a)}
 \end{answer}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+\item Let $N_{M B}, N_{B E}, N_{F D}$ denote the number of ways in which two particles can be distributed in two energy states according to maxwell-Boltzmann, Bose-Einstein \& fermi-Dirac statistics respectively. Then $N_{M B}: N_{B E}: N_{F D}$ is:
+\begin{tasks}(4)
+	\task[\textbf{a.}]$4: 3: 1$
+	\task[\textbf{b.}] $4: 2: 3$
+	\task[\textbf{c.}]$4: 3: 3$
+	\task[\textbf{d.}] $4: 3: 2$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\Omega_{M B}&=\left(g_{i}\right)^{n_{i}}=(2)^{2} \Rightarrow 4 \\
+	\Omega_{B E}&=\frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !((-i-1) !}=\frac{(2+2-1) !}{2 !(2-1) !}=\frac{3 !}{2 !}=3\\
+	\Omega_{F D}&=g i C_{n_{i}}=\frac{2 !}{2 ! 1 !}=1\\
+	&4:3:1
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item  If $N$ particle are to be distributed into two groups such that group i contain $n_1$ particles and group two contains $n_2$ particles, and $N=n_1+n_2$ Find the number of ways of distribution?
+\begin{answer}
+	\begin{align*}
+	\Omega&={ }^{N} C_{n_{1}} \text { or }{ }^{N} C_{n_{2}} 4 N=n_{1}+n_{2}\\
+	N_{C_{n_{i}}}&=\frac{N !}{n_{1} !(N-n) !}=\frac{N !}{n_{1} ! n_{2} !}\\
+	&\text{similaarly, for $ni$ particles}\\
+	\Omega&=\frac{N!}{n_1!n_2!.......n_i!}
+	\end{align*}
+\end{answer}
+\item  A system has energy levels $E_{0}, 2 E_{0}, 3 E_{0}, \ldots .$ where the excited states are triphy generate four non-interacting bosons are placed in this system. If the total energy og these bosons is $5E_0$ the number of microstates is:
+\begin{tasks}(4)
+	\task[\textbf{a.}]2
+	\task[\textbf{b.}]3
+	\task[\textbf{c.}]4
+	\task[\textbf{d.}] 5
+\end{tasks}
+\begin{answer}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=6cm]{SP-12}
+	\end{figure}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\item  Find density of states at energy $E$ of the quantized radiation (photon) is:
+\begin{tasks}(4)
+	\task[\textbf{a.}]$\frac{8 \pi v}{h^{3} c^{3}} E^{2}$
+	\task[\textbf{b.}]$\frac{8 \pi V}{h^{3} c^{3}} E^{3 / 2}$
+	\task[\textbf{c.}]$\frac{8 \pi V}{h^{3} c^{3}} E$
+	\task[\textbf{d.}] $\frac{8 \pi V}{h^{3} c^{3}} E^{3 / 2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\Omega(p)&=\frac{V \times \frac{4}{3} \pi p^{3}}{h^{3}} \Rightarrow \Omega(E)=\frac{4 \pi V E^{3}}{3 c^{3} h^{3}}\\
+	\Omega^{\prime}(E)&=\left(\frac{4 \pi V E^{2}}{c^{3} h^{3}} d E\right) \times 2\\
+	\Omega^{\prime}(E)&=g(E) d E\\
+	g(E)&=\frac{8 \pi V}{c^{3} h^{3}} E^{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item 
+For an energy state $E$ of a photon gas, the density of states is proportional to 
+\begin{tasks}(4)
+	\task[\textbf{a.}] $\sqrt{E}$
+	\task[\textbf{b.}] $E $
+	\task[\textbf{c.}]$E^{3 / 2}$
+	\task[\textbf{d.}] $E^{2}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	D(E) &\propto E^{\left(\frac{d}{s}-1\right)}\\
+	\text { For proton: } d&=3 \text { and } s=1\\
+	D(E) \propto E^{3-1} &\Rightarrow D(E) \alpha E^{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+\item 
+The number of states for a system of $N$ indentical free particles in a three dimensional space having total energy between $E$ and $E+\delta E(\delta E<<E),$ is proportional to 
+\begin{tasks}(4)
+	\task[\textbf{a.}]$E^{\left(\frac{3 N}{2}-1\right)} \delta E$
+	\task[\textbf{b.}]$E^{\frac{N}{2}} \delta E$
+	\task[\textbf{c.}]$N E^{\frac{1}{2}} \delta E$
+	\task[\textbf{d.}]$N^{N} \delta E$ 
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	D(E) &\propto E^{(d / s-1)}\\
+	\text { Here } d&=3 \mathrm{~N} \text { and } s=2 \text { (massive) }\\
+	D(E) &\propto E^{\left(\frac{3 N}{2}-1\right)}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item 
+Draw phase space trajectory of linear (1-dimension) Harmonic oscillator and calculate number of microstate if particle has:\\
+a). sharp value of energy\\
+b). Energy lies between $E$ to $E+d E$
+\begin{answer}
+	\begin{align*}
+	E&=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^2 x^{2}\\
+	1&=\frac{p^{2}}{\sqrt{2 m E}}+\frac{x^{2}}{\left(\sqrt{\frac{2 E}{m \omega^2}}\right)^{2}}\\
+	\text{area of ellipse }&=\pi a b\\
+	\text{volume of single phase cell }&(1-D)=h\\
+	\Omega(E)=\frac{\pi a b}{h}&=\frac{\pi \times \sqrt{\frac{2 E}{m \omega^2}}  \times \sqrt{2 m E}}{h}\\
+	\Omega(E)&=\frac{2 \pi E}{h \omega}=\frac{E}{h \omega}\\
+	\Omega^{\prime}(E)&=\frac{d E}{\hbar \omega}
+	\end{align*}
+\end{answer}	
 \end{enumerate}
