@@ -1,41 +1,28 @@
 \chapter{Statistical Mechanics - II}
-Boltzman entrophy relation: $S=K \ln \Omega$\\
-striling approximation: $\ln n !=n \ln n-n$\\
-Number of microstates: 
-$\Omega_{M B}=\underset{i}{\pi}\left(g_{i}\right)^{n_{i}}$\\
-$\Omega_{B E}=\underset{i}{\pi}\frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !(g i-1) !}$\\
-${ }^{\Omega_{F D}}=\underset{i}{\pi}{g i }\  C_{n_{i}}$\\
-$g_{i} \rightarrow$ degeneracy\\
-$n_{i} \rightarrow$ identical Particles\\
-Energy distribution function :$f(E)=\frac{n_{i}}{g_{i}}$
-\begin{note}
-	Probability will be maximum for equal distribution.
-\end{note}
-Relative Probability: \\
-$$r=\frac{P_1}{P_2}=\frac{\text{Probability of finding particle in same state}}{\text{Probability of finding particle in different state.}}$$
-$r_{B E}: r_{M B}: r_{F \cdot D}=1: 1 / 2: 0$\\
-$\Rightarrow U_{B E} \leqslant U_{M B} \leqslant U_{F D} \Rightarrow P_{B E} \leqslant P_{M B} \leqslant P_{F D}$ \\
-\textbf{Phase Space}:(Position + momentum) space\\
-volume of single phase cell: $d \tau=h^{f} \quad f \rightarrow D O F$\\
-allowed vol. of phace space: $\int d^{3} q \int d^{3} p$\\
+\section{Density of State  }
+A macroscopic system is one which has very many degrees of freedom (e.g., copper block,bottle of milk, etc.). Denote the energy of the system by $E$. Subdivide the energy scale into equal small ranges of magnitude $\delta E$, the magnitude of $\delta E$ determining the precision within which one chooses to measure the energy of the system. For a macroscopic system, even a physically very small interval $\delta E$ contains many possible states of the system. We shall denote by $\delta n$ the number of states whose energy lies between $E$ and $E+\delta E$.
+The number of states $\delta n$ depends on the magnitude $\delta E$ chosen ss the subdivision interval in a given discussion. Suppose that $\delta E$, while being large compsred to the spacing between the possible energy levels of the system, is macroscopically sufficiently small. Then $\delta n$ must be proportionsl* to $\delta E$, i.e., one can write
 $$
-V_{p} \Rightarrow V \times \frac{4}{3} \pi p^{3}\text{( for 3-Dim).}
+\delta n=g(E) \delta E
 $$
-\textbf{Non-Relativistic Free Particle: }$E=p^2/2m$\\
+where $g(E)$ is independent of the size of $\delta E$. Thus $g(E)$ is a characteristic property of the system which measures the number of states per unit energy range, i.e., the "density of states." Since all statistical calculations involve the counting of states, it is worth examining how sensitively $\delta n$ ) (or equivaently $g(E)$ ) depends on the energy $E$ of a macroscopic system.\\\\
+\textbf{How to find the density of states? }\\
+The density of states g(E) is number of states per unit energy, $g(E) =\frac{\delta n}{\delta E}=\frac{d\Omega}{\delta E}$ \\\\
+\textbf{a)\quad Non relativistic particle :$E=\frac{P^2}{2m}$}\\\\
 \renewcommand*{\arraystretch}{1.8}
-\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
 	\hline
 	3-Dimensional&2-Dimensional&1-Dimensional\\\hline
 	$d \tau=h^{3}$&$d \tau=h^{2}$&$d \tau=h$\\\hline
 	$V_{p}=V \times \frac{4}{3} \pi p^{3}$&$V_{p}=A \times \pi p^{2}$&$V_p=L\times2p$\\\hline
 	$\Omega=\frac{V \cdot \frac{4}{3} \pi p^{3}}{\hbar^{3}}$&$\Omega(p)=\frac{\pi \times \pi p^{2}}{h^{2}}$&$\Omega(p)=\frac{L \times 2 p}{h}$\\\hline
-	$\Omega(E)=\frac{\mu\pi V(2mE)^3}{3h^3}$&$\Omega(E)=\frac{\pi A(2mE)}{h^2}$&$\Omega(E)=\frac{2L\sqrt{2mE}}{h}$\\\hline
-	$\Omega^{\prime}(E)=\frac{2 \pi V(2 m)^{3 / 2} E^{1 / 2}}{h^2}dE$&$\Omega^{\prime}(E)=\frac{2 \pi mA}{h^3}dE$&$\Omega^{\prime}(E)=\frac{L(2m)^{1/2}E^{-1/2}}{h}dE$\\\hline
+	$\Omega(E)=\frac{4\pi V(2mE)^3}{3h^3}$&$\Omega(E)=\frac{\pi A(2mE)}{h^2}$&$\Omega(E)=\frac{2L\sqrt{2mE}}{h}$\\\hline
+	$g(E)=\frac{d\Omega}{\delta E}=\frac{2 \pi V(2 m)^{3 / 2} E^{1 / 2}}{h^3}$&$g(E)=\frac{d\Omega}{\delta E}=\frac{2 \pi mA}{h^2}$&$g(E)=\frac{d\Omega}{\delta E}=\frac{L(2m)^{1/2}E^{-1/2}}{h}$\\\hline
 \end{tabular}
 \begin{figure}[H]
 	\includegraphics[height=5.5cm,width=13cm]{SP-13}
 \end{figure}
-\textbf{Extremely Relativistic Free Particle: }(E=pc)\\
+\textbf{b)\quad For Extremely Relativistic Free Particle: }(E=pc)\\\\
 \renewcommand*{\arraystretch}{1.8}
 \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
 	\hline
@@ -45,23 +32,10 @@ $$
 	$\Omega(E)=\frac{4 \pi V E^{3}}{3 c^{3} h^{3}}$&$\Omega(E)=\frac{A \pi E^{2}}{C^{2} n^{2}}$&$\Omega(E)=\frac{2 L E}{\hbar c}$\\
 	$\Omega(E)=2 \times \frac{4 \pi v\left(E^{2}\right)}{c^{3} h^{3}} d E$&$\Omega^{\prime}(E)=\frac{2 \pi A E}{C^{2} h^{2}}$&$\Omega^{\prime}(E)=\frac{2 L}{R C} d E$\\\hline
 \end{tabular}\\
-Q. \textbf{For free particle (with $E=ap^s$) with d-DOF: }\\
 \begin{align*}
-\text{Volume of sphere of radius (R) }V_{d}&=\frac{\pi^{d / 2} R^{d}}{\left(\frac{d}{2}\right) !}\\
-\text{area of sphere of radius (R) }s_{d}&=\frac{2 \pi^{d / 2} R^{d-1}}{\left(\frac{d}{2}-1\right) !}\\
-\text{ volume of single phase cell }d \tau&=h^{d}\\
-g(E)&=\frac{g i V_{d} \pi^{d / 2}\left(\frac{1}{a}\right)^{d / s}\left(\frac{d}{s}\right) E^{(d / s-1)}}{R^{d}(d / 2) !}\\
-&g(E) \propto E^{(d / s-1)}\hspace{3cm}d=DOF\\
-s=1 \text{(marsless)},\quad
-2 \text{(massive)}
+\intertext{If $E\propto p^s$ and $d\rightarrow$ degrees of freedom,}
+\text{then }g(E) \propto E^{(\frac{d}{s}-1)}
 \end{align*}
-\begin{note}
-	\begin{align*}
-	\text{	maxinum valle of }&x \\
-	\text{	on }x-\text{axis: }p&=0 \hspace{3cm}x_{0}=\sqrt{\frac{2 E_{0}}{m \omega^{2}}}\\
-	E_{0}&=0+\frac{1}{2} m u^{2} x_{0}^{2}\hspace{2cm}x_{0} \alpha \sqrt{E_{0}}\\
-	\end{align*}
-\end{note}
 \section{Thermodynamics of Magnetic System}
 We consider a system of N dipoles with $J=\frac{1}{2}, $and suppose there is no interaction among the dipole. The dipole can be oriented in two direction and the corresponding energies are $\epsilon_i=-\mu_BH \quad\text{or} \quad\mu H$ when placed in magnetic field $H$.
 $$\mathrm{Z}_{\mathrm{N}}(\mathrm{V}, \mathrm{T})=\left(\mathrm{e}^{\beta \mu H}+\mathrm{e}^{-\beta \mu H}\right) ^\mathrm{N}=\left[ 2\cosh(\beta\mu H)\right]^N $$
@@ -118,7 +92,7 @@ Z_{Total}&=Z_{int}\times Z_H\\
 \end{tabular}
 \section{Energy Fluctuation}
 \begin{align*}
-U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
+\text{Average energy},U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
 \frac{\partial U}{\partial \beta}&=\frac{\partial}{\partial \beta}\left\langle E_{i}\right\rangle=\langle E\rangle^{2}-\langle E\rangle^{2}\\
 (\Delta E)^{2}&=-\frac{\partial U}{\partial \beta}=K T^{2} C_{V}
 \end{align*}
@@ -127,7 +101,7 @@ U&=\left\langle E_{i}\right\rangle=\sum E_{i} P_{i}\\
 	system&mean square energy&RMS energy&Relative mean square&Relative RMS\\\hline
 	Non-Relative\newline Ideal gas&$\frac{3}{2} N K^{2} T^{2}$&$\sqrt{\frac{3 N}{2}} K T$& $\frac{2}{3 N}$&$\sqrt{\frac{2}{3N}}$\\\hline
 	Classical \newline L.H.O&$N K^{2} T^{2}$&$\sqrt{N} K T$&$\frac{1}{N}$&$\sqrt{\frac{1}{N}}$\\\hline
-	&$(D E)^{2}$&$(\Delta E)$&$\left(\frac{\Delta E}{\langle E i\rangle}\right)^{2}$&$\left(\frac{\Delta E}{\left\langle E_{i}\right\rangle}\right)$\\\hline
+	&$(\Delta E)^{2}$&$(\Delta E)$&$\left(\frac{\Delta E}{\langle E i\rangle}\right)^{2}$&$\left(\frac{\Delta E}{\left\langle E_{i}\right\rangle}\right)$\\\hline
 \end{tabular}
 \section{Maxwell-Boltzmann Statistics}
 Consider a system consisting of a large number of particles which are identical and distinguishable. Consider an ideal gas taken in a vessel of volume V. The particles (molecules) in the gas are in random motion, they move in all possible directions with all possible velocities, colliding with each other and with the walls of the vessel. The collisions are considered to be elastic. But during each collision the energy and momentum of each particle change. The change in momentum and energy is continuous, but total energy of the system remains constant.\\
