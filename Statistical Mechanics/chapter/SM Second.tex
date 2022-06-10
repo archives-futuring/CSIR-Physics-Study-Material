@@ -308,14 +308,12 @@ In the case of classical mechanics, the particles, say molecules of a gas are di
  \end{align*}
  We have to find how $\mathrm{n}_{\mathrm{i}}$ indistinguishable particles are distributed among $\mathrm{g}_{\mathrm{i}}$ distinguishable levels. (remembering that there is no restriction in the number of particles that can occupy any one level). For this $\left(\mathrm{g}_{\mathrm{i}}-1\right)$ partitions are necessary. Thus $\mathrm{n}_{\mathrm{i}}$ particles are to be arranged in a row and distributed among $g_{i}$ quantum states with $\left(g_{\mathrm{i}}-1\right)$ partitionsin between. Then the total number of possible arrangements of particles and partitions is equal to the total number of permutations of $\left(n_{i}+g_{i}-1\right)$ particles in a row. Hence the total number of possible ways of arranging $\mathrm{n}_{\mathrm{i}}$ particles with $\left(\mathrm{g}_{\mathrm{i}}-1\right)$ partitions $=\left(\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}-1\right)$ !. In each of these arrangements the number of permutations of $n_{i}$ particles among themselves is $n_{i} !$ and that of $\left(g_{i}-1\right)$ partitions among themselves is $\left(g_{i}-1\right) !$. But the particles and partitions are identical and indistinguishable. So these permutations would not give any independent arrangements. Hence the number of independent permutations of $n_{i}$ particles among $g_{i}$ states is given by
  \begin{align}
- \omega_{i}=\frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !\left(g_{i}-1\right) !}\label{SME-25}
+ \omega_{i}&=\frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !\left(g_{i}-1\right) !}\label{SME-25}
 \intertext{We can derive similar equations for other energy groups also. Hence the total number $W$ of independent ways of arranging $n$ particles in various quantum states is given by}
 \mathrm{W} \quad&=\omega_{1} \times \omega_{2} \times \omega_{3} \times \ldots .\notag\\
 &=\frac{\left(n_{1}+g_{1}-1\right) !}{n_{1} !\left(g_{1}-1\right) !} \times \frac{\left(n_{2}+g_{2}-1\right) !}{n_{2} !\left(g_{2}-1\right) !} \times \ldots \ldots\notag\\
 &=\prod_{i} \frac{\left(n_{i}+g_{i}-1\right) !}{n_{i} !\left(g_{i}-1\right) !}\label{SME-26}
-\end{align}
-This equation represents the thermodynamic probability of the given distribution. The most probable distribution can be obtained by finding the maximum value of $\log _{\mathrm{e}} \mathrm{W}$. But $\mathrm{n}_{\mathrm{i}}$ and $\mathrm{g}_{\mathrm{i}}$ are very large and hence one $(1)$ is neglected.
-\begin{align}
+\intertext{This equation represents the thermodynamic probability of the given distribution. The most probable distribution can be obtained by finding the maximum value of $\log _{\mathrm{e}} \mathrm{W}$. But $\mathrm{n}_{\mathrm{i}}$ and $\mathrm{g}_{\mathrm{i}}$ are very large and hence one $(1)$ is neglected.}
 W&=\prod_{i} \frac{\left(n_{i}+g_{i}\right) !}{n_{i} ! g_{i} !}\label{SME-27}\\
 \text { Taking logarithm, }\notag\\
 \log _{\mathrm{e}} \mathrm{W}&=\sum_{i} \log \left(n_{\mathrm{i}}+g_{\mathrm{i}}\right) !-\log n_{\mathrm{i}} !-\log g_{\mathrm{i}} !\notag\\
@@ -331,71 +329,72 @@ d\left(\log _{e} W\right)&=\sum_{i}\left[d n_{i} \times \log \left(n_{i}+g_{i}\r
 \sum_{i} \log _{e}&\left(\frac{n_{i}}{n_{i}+g_{i}}\right) d n_{i}=0\label{SME-28}\\
 \text { The total number }&\text{of particles in the system is a constant. }\notag\\
 \sum_{i} n_{i}&=n=a \text { constant }\notag\\
-\sum_{i} \varepsilon_{i} d n_{i}&=0\label{SME-29}
-\intertext{Equation \ref{SME-28}, \ref{SME-29}, \ref{SME-30} are independent of each other, but in the equilibrium state they must be satisfied simultaneously.
-	Lagrange's method of undetermined multipliers is used to get a common solution. Multiplying equation $(\ref{SME-29})$ by $(\alpha)$, and equation (7) by (B) and adding the result to equation (5) we get.}
-\sum_{i}\left[\log _{e}\left(\frac{n_{i}}{n_{i}+g_{i}}\right)+\alpha+\beta \varepsilon_{i}\right] &d n_{i}=0
-\intertext{But $\mathrm{dn}_{\mathrm{i}}$ is a variable quantity and is not zero. So the coefficient of $\mathrm{dn}_{\mathrm{i}}$ must be zero.}
-\log _{\mathrm{e}}\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)+\alpha+\beta \varepsilon_{\mathrm{i}}&=0 ; \log _{\mathrm{e}}\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)=-\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right) \\
-&\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)=\mathrm{e}^{-\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \\
-&\left(\frac{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}\right)=\mathrm{e}^{+\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \\
-&1+\frac{\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}=\mathrm{e}^{\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \\
-&\frac{\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}=\mathrm{e}^{\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)}-1\\
-n_{i}&=\frac{g_{i}}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}
-\intertext{This equation represents the most probable distribution of the particles among various energy levels of system, which obey BoseEinstein statistics.}
+\sum_{i} dn_{i}&=0\label{SME-29}\\
+\text{The total energy }&\text{of the system is a constant}\notag\\
+\sum_{i} n_{i}\varepsilon_{i}  &=E=a\text { constant }\notag\\
+\sum_{i} \varepsilon_{i} d n_{i}&=0\label{SME-30}
+\intertext{Equation (\ref{SME-28}), (\ref{SME-29}), (\ref{SME-30}) are independent of each other, but in the equilibrium state they must be satisfied simultaneously.
+	Lagrange's method of undetermined multipliers is used to get a common solution. Multiplying equation $(\ref{SME-29})$ by $(\alpha)$, and equation (\ref{SME-30}) by (B) and adding the result to equation (\ref{SME-28}) we get.}
+\sum_{i}\left[\log _{e}\left(\frac{n_{i}}{n_{i}+g_{i}}\right)+\alpha+\beta \varepsilon_{i}\right] &d n_{i}=0\notag
+\intertext{But $\mathrm{dn}_{\mathrm{i}}$ is a variable quantity and is not zero. So the coefficient of $\mathrm{dn}_{\mathrm{i}}$ must be zero.}\notag
+\log _{\mathrm{e}}\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)+\alpha+\beta \varepsilon_{\mathrm{i}}&=0 ; \log _{\mathrm{e}}\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)=-\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right) \notag\\
+&\left(\frac{\mathrm{n}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}\right)=\mathrm{e}^{-\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \notag\\
+&\left(\frac{\mathrm{n}_{\mathrm{i}}+\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}\right)=\mathrm{e}^{+\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \notag\\
+&1+\frac{\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}=\mathrm{e}^{\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)} \notag\\
+&\frac{\mathrm{g}_{\mathrm{i}}}{\mathrm{n}_{\mathrm{i}}}=\mathrm{e}^{\left(\alpha+\beta \varepsilon_{\mathrm{i}}\right)}-1\notag\\
+n_{i}&=\frac{g_{i}}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}\label{SME-31}
+\intertext{This equation represents the most probable distribution of the particles among various energy levels of system, which obey BoseEinstein statistics.}\notag
 \end{align}
 \section{\text { Bose-Einstein Energy distribution function }}
 The energy distribution function $f\left(\varepsilon_{\mathrm{i}}\right)$ is the average number of particles per quantum state in the energy level $\varepsilon_{i}$.
-\begin{align*}
-\frac{n_{i}}{g_{i}}&=\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}\\
-\text { For energy } &E \text {, equation (9) can be written as }\\
-F(E)&=\frac{1}{e^{\left(\alpha+\beta E_{i}\right)}-1}
-\end{align*}
+\begin{align}
+\frac{n_{i}}{g_{i}}&=\frac{1}{e^{\left(\alpha+\beta \varepsilon_{i}\right)}-1}\label{SME-32}\\
+\text { For energy } &E \text {, equation (\ref{SME-32}) can be written as }\notag\\
+F(E)&=\frac{1}{e^{\left(\alpha+\beta E_{i}\right)}-1}\notag
+\end{align}
 \section{Fermi-Dirac Distribution (F-D statistics)}
 In F-D statistics the particles are identical and indistinguishable. The spin angular momentum of these particles is odd half-integral multiple of $h / 2 \pi$ [i.e., $(1 / 2) \mathrm{h} / 2 \pi,(3 / 2) \mathrm{h} / 2 \pi \ldots \ldots]$. These particles are called Fermions. They obey Pauli's exclusion principle. This means only one fermion can occupy a particular quantum state of the system. Hence the degeneracy $g_{j}$ of an energy level must be larger than the number of particles to be distributed (i.e., $g_{i}>n_{i}$ ).\\\\
 Consider an isolated system consisting of weakly interacting particles called fermions. Let the total number of particles in the system be $n$ and has a volume $\mathrm{V}$. The system is assumed to be in equilibrium at a particular temperature $T$ and its total energy $E$, which is a constant. The phase space is divided into a large number of quantum energy states. Let the energies of the states $1,2,3 \ldots .$ be $\in_{1}, \in_{2}, \in_{3} \ldots$. Each energy level consists of a number of phase cells. Let $g_{i}$ be the cells in the $i^{\text {th }}$ quantum state and $g_{i}$ is called the degeneracy of the $i^{\text {th }}$ level. It is assumed that $\mathrm{n}_{\mathrm{i}} \ll \mathrm{g}_{\mathrm{i}}$. This means that the $\mathrm{n}_{\mathrm{i}}$ value for a given distribution cannot be greater than the corresponding value of $g_{i}$.\\\\
 Let the number of particles for the energy level $\epsilon_{\mathrm{i}}$ be $\mathrm{n}_{\mathrm{i}}$. Out of $\mathrm{g}_{\mathrm{i}}$ cells, $n_{i}$ cells will be filled with $n_{i}$ particles and $\left(g_{i}-n_{i}\right)$ cell be unfilled. The first particle can be placed in any one of the available $g_{i}$ states. This means we can distribute the first particle in $\mathrm{g}_{\mathrm{i}}$ different ways. Similarly the second particle can be arranged in $\left(g_{i}-1\right)$ different ways and so on. Hence the total number of different ways of arranging $\mathbf{n}_{i}$ particles among the $g_{\mathrm{i}}$ states with $\epsilon_{\mathrm{i}}$ energy levels,
-\begin{align*}
-=g_{i}\left(g_{i}-1\right)\left(g_{i}-2\right) \ldots \ldots \ldots\left[g_{i}-\left(n_{i}-1\right)\right]\\
-&=\frac{g_{i} !}{\left(g_{i}-n_{i}\right) !}
-\end{align*}
-The particles are indistinguishable. So if $n_{i}$ particles are rearranged into different states occupied by them in the energy level $\epsilon_{i}$ it will not make any difference. So the total number of ways in which $n_{1}$ particles can be arranged in $g_{i}$ cells is,
-$$\omega_{i}=\frac{g_{i} !}{n_{i} !\left(g_{i}-n_{i}\right) !}$$
-We can derive similar equations for other energy states. Hence the total number of different and distinguishable ways $\mathrm{W}$ of distributing $n_{1}, n_{2}, n_{3} \ldots$. among the various energy levels $\epsilon_{1}, \epsilon_{2}, \in_{3} \ldots$ is obtained by multiplying the various expressions.
-\begin{align*}
-\mathrm{W}&=\frac{\mathrm{g}_{1} !}{\mathrm{n}_{1} !\left(\mathrm{g}_{1}-\mathrm{n}_{1}\right) !} \times \frac{\mathrm{g}_{2} !}{\mathrm{n}_{2} !\left(\mathrm{g}_{2}-\mathrm{n}_{2}\right) !} \times \frac{\mathrm{g}_{3} !}{\mathrm{n}_{3} !\left(\mathrm{g}_{3}-\mathrm{n}_{3}\right) !} \times \ldots\\
-\mathrm{W}&=\prod \frac{\mathrm{g}_{\mathrm{i}} !}{\mathrm{n}_{\mathrm{i}} !\left(\mathrm{g}_{\mathrm{i}}-\mathrm{n}_{\mathrm{i}}\right) !}
+\begin{align}
+&=g_{i}\left(g_{i}-1\right)\left(g_{i}-2\right) \ldots \ldots \ldots\left[g_{i}-\left(n_{i}-1\right)\right]\notag\\
+&=\frac{g_{i} !}{\left(g_{i}-n_{i}\right) !}\notag
+\intertext{The particles are indistinguishable. So if $n_{i}$ particles are rearranged into different states occupied by them in the energy level $\epsilon_{i}$ it will not make any difference. So the total number of ways in which $n_{1}$ particles can be arranged in $g_{i}$ cells is,}\label{SME-33}
+\omega_{i}&=\frac{g_{i} !}{n_{i} !\left(g_{i}-n_{i}\right) !}
+\intertext{We can derive similar equations for other energy states. Hence the total number of different and distinguishable ways $\mathrm{W}$ of distributing $n_{1}, n_{2}, n_{3} \ldots$. among the various energy levels $\epsilon_{1}, \epsilon_{2}, \in_{3} \ldots$ is obtained by multiplying the various expressions.}
+\mathrm{W}&=\frac{\mathrm{g}_{1} !}{\mathrm{n}_{1} !\left(\mathrm{g}_{1}-\mathrm{n}_{1}\right) !} \times \frac{\mathrm{g}_{2} !}{\mathrm{n}_{2} !\left(\mathrm{g}_{2}-\mathrm{n}_{2}\right) !} \times \frac{\mathrm{g}_{3} !}{\mathrm{n}_{3} !\left(\mathrm{g}_{3}-\mathrm{n}_{3}\right) !} \times \ldots\notag\\
+\mathrm{W}&=\prod \frac{\mathrm{g}_{\mathrm{i}} !}{\mathrm{n}_{\mathrm{i}} !\left(\mathrm{g}_{\mathrm{i}}-\mathrm{n}_{\mathrm{i}}\right) !}\label{SME-34}
 \intertext{ The most probable distribution can be found out by evaluating the maximum value of $\log _{\mathrm{e}} \mathrm{W}$.}
-\log _{e} W&=\sum_{i}\left[\log _{e} g_{i} !-\log n_{i} !-\log _{e}\left(g_{i}-n_{i}\right) !\right]\\
-\text { Using Stirling's approximation, } &\log _{e} x !=x \log _{e} x-x\\
-\log _{e} W&=\sum_{i}\left[g_{i} \log _{e} g_{i}-g_{i}-n_{i} \log _{e} n_{i}+n_{i}-\left(g_{i}-n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)\right.+g_{i}-n_{i} \mid\\
-\log _{e} w&=\sum_{i}\left[g_{i} \log _{e} g_{i}-n_{i} \log _{e} n_{i}-\left(g_{i}-n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)\right] \ldots
-\intertext{Differentiating equation (3). (remember $g_i$ is a constant)}
-d\left(\log _{e} w\right)&=\sum_{i}-d n_{i} \log _{e} n_{i}-n_{i} \times \frac{1}{n_{i}} d n_{i}-\left(-d n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)-\\
-&-\left(g_{i}-n_{i}\right) \times \frac{1}{\left(g_{i}-n_{i}\right)} \times\left(-d n_{i}\right)\\
-&=\sum_{i}\left[-\log _{e} n_{i}+\log _{e}\left(g_{i}-\dot{n}_{i}\right)\right] d n_{i}\\
-&=-\sum_{i} \log \frac{n_{i}}{\left(g_{i}-n_{i}\right)} d n_{i}\\
-\text { To obtain the maximum value of } &W, d\left(\log _{e} W\right)=0\\
-\sum_{i} &\log \frac{n_{i}}{\left(g_{i}-n_{i}\right)} d n_{i}=0\\
-\text{ The total number of }&\text{particles in the system is a constant. }\\
-\sum_{i} n_{i}&=n=a \text { constant. } \\
-\sum_{i} d n_{i}&=0 \quad \ldots \ldots \ldots \ldots .(5)\\
-\text { The total energy }&\text{of the system is a constant. }\\
-\sum_{i} n_{i} \varepsilon_{i}&=\mathrm{E}=\text { a constant. } \\
-\sum_{i} \varepsilon_{i} \mathrm{dn} n_{\mathrm{i}}&=0 \ldots \ldots \ldots \ldots(6)\\
-\text{Multiplying equation(5)}&\text{ by $\alpha,(6)$ by $\beta$ and adding to equation (4)}\\
-\sum_{i}\left[\log \left(\frac{n_{i}}{g_{i}-n_{i}}\right)+\alpha+\beta \varepsilon_{i}\right]& d n_{i}=0\\
-\log \left(\frac{n_{i}}{g_{i}-n_{i}}\right)&=-\alpha-\beta \varepsilon_{i} \\
-\frac{n_{i}}{g_{i}-n_{i}}&=e^{-\alpha-\beta \varepsilon_{i}} \\
-\frac{g_{i}-n_{i}}{n_{i}}&=e^{+\alpha+\beta \varepsilon_{i}} \\
-\frac{g_{i}}{n_{i}}-\frac{n_{i}}{n_{i}}&=e^{\alpha+\beta \varepsilon_{i}} \\
-\frac{g_{i}}{n_{i}}&=e^{\alpha+\beta \varepsilon_{i}}+1\\
-n_{i}&=\frac{g_{i}}{e^{\alpha+\beta \varepsilon_{i}}+1}
-\intertext{Equation (7) represents the Fermi-Dirac distribution law. For a system consisting of fermions in statistical equilibrium, $\beta=\frac{1}{k T}$}
-n_{i}&=\frac{g_{i}}{e^{\left(\alpha+\varepsilon_{i} / k T\right)}+1}
+\log _{e} W&=\sum_{i}\left[\log _{e} g_{i} !-\log n_{i} !-\log _{e}\left(g_{i}-n_{i}\right) !\right]\notag\\
+\text { Using Stirling's approximation, } &\log _{e} x !=x \log _{e} x-x\notag\\
+\log _{e} W&=\sum_{i}\left[g_{i} \log _{e} g_{i}-g_{i}-n_{i} \log _{e} n_{i}+n_{i}-\left(g_{i}-n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)\right.+g_{i}-n_{i} \mid\notag\\
+\log _{e} w&=\sum_{i}\left[g_{i} \log _{e} g_{i}-n_{i} \log _{e} n_{i}-\left(g_{i}-n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)\right] \ldots\label{SME-35}
+\intertext{Differentiating equation (\ref{SME-35}). (remember $g_i$ is a constant)}
+d\left(\log _{e} w\right)&=\sum_{i}-d n_{i} \log _{e} n_{i}-n_{i} \times \frac{1}{n_{i}} d n_{i}-\left(-d n_{i}\right) \log _{e}\left(g_{i}-n_{i}\right)-\notag\\
+&-\left(g_{i}-n_{i}\right) \times \frac{1}{\left(g_{i}-n_{i}\right)} \times\left(-d n_{i}\right)\notag\\
+&=\sum_{i}\left[-\log _{e} n_{i}+\log _{e}\left(g_{i}-\dot{n}_{i}\right)\right] d n_{i}\notag\\
+&=-\sum_{i} \log \frac{n_{i}}{\left(g_{i}-n_{i}\right)} d n_{i}\notag\\
+\text { To obtain the maximum value of } &W, d\left(\log _{e} W\right)=0\notag\\
+\sum_{i} &\log \frac{n_{i}}{\left(g_{i}-n_{i}\right)} d n_{i}=0\label{SME-36}\\
+\text{ The total number of }&\text{particles in the system is a constant. }\notag\\
+\sum_{i} n_{i}&=n=a \text { constant. } \notag\\
+\sum_{i} d n_{i}&=0 \quad \ldots \ldots \ldots \ldots .\label{SME-37}\\
+\text { The total energy }&\text{of the system is a constant. }\notag\\
+\sum_{i} n_{i} \varepsilon_{i}&=\mathrm{E}=\text { a constant. } \notag\\
+\sum_{i} \varepsilon_{i} \mathrm{dn} n_{\mathrm{i}}&=0 \ldots \ldots \ldots \ldots\label{SME-38}\\
+\text{Multiplying equation(\ref{SME-37})}&\text{ by $\alpha,(\ref{SME-38})$ by $\beta$ and adding to equation (\ref{SME-36})}\\
+\sum_{i}\left[\log \left(\frac{n_{i}}{g_{i}-n_{i}}\right)+\alpha+\beta \varepsilon_{i}\right]& d n_{i}=0\notag\\
+\log \left(\frac{n_{i}}{g_{i}-n_{i}}\right)&=-\alpha-\beta \varepsilon_{i} \notag\\
+\frac{n_{i}}{g_{i}-n_{i}}&=e^{-\alpha-\beta \varepsilon_{i}}\notag \\
+\frac{g_{i}-n_{i}}{n_{i}}&=e^{+\alpha+\beta \varepsilon_{i}} \notag\\
+\frac{g_{i}}{n_{i}}-\frac{n_{i}}{n_{i}}&=e^{\alpha+\beta \varepsilon_{i}} \notag\\
+\frac{g_{i}}{n_{i}}&=e^{\alpha+\beta \varepsilon_{i}}+1\notag\\
+n_{i}&=\frac{g_{i}}{e^{\alpha+\beta \varepsilon_{i}}+1}\label{SME-40}
+\intertext{Equation (\ref{SME-40}) represents the Fermi-Dirac distribution law. For a system consisting of fermions in statistical equilibrium, $\beta=\frac{1}{k T}$}
+n_{i}&=\frac{g_{i}}{e^{\left(\alpha+\varepsilon_{i} / k T\right)}+1}\notag
 \intertext{In most cases $\alpha$ is negative and equal to $-\mathrm{E}_{\mathrm{F}} / \mathrm{kT}$, where $\mathrm{E}_{\mathrm{F}}$ is the fermi energy of the system and $\mathrm{k}$ is the Boltzmann's constant.}
-n_{i}&=\frac{g_{i}}{e^{\left(-E_{F}+\varepsilon_{i}\right) / k T}+1}=\frac{g_{i}}{e^{\left(\varepsilon_{i}-E_{F}\right) / k T}+1}
-\end{align*}
+n_{i}&=\frac{g_{i}}{e^{\left(-E_{F}+\varepsilon_{i}\right) / k T}+1}=\frac{g_{i}}{e^{\left(\varepsilon_{i}-E_{F}\right) / k T}+1}\label{SME-41}
+\end{align}
 \section{Fermi-Dirac Distribution Function}
 The Fermi-Dirac distribution function $f\left(\epsilon_{1}\right)$ is the ratio of the number of quantum state $(n, j)$ of energy $E_{j}$ occupied by the electrons to total number of quantum states avalable in the energy level $E_{i^{*}}$
 $$
@@ -542,8 +541,13 @@ f(\varepsilon)\text{cannot}&\text{ be negative}\\
 \end{align*}
 \subsection{Bose Einstein Condensation(v state of matter)}
 Rapid increas in the population of ground state,
-when temparature is lowered below critical temparature is known sa Bose Eienstien Condenstion.That particular critical temparature is known as Bose temparature,$T_{B}.$\\
-$N=N_{O}+Ne$\\
+when temparature is lowered below critical temparature is known sa Bose Eienstien Condenstion.That particular critical temparature is known as Bose temparature,$T_{B}.$
+\begin{align*}
+N&=N_{0}+Ne\\
+N_{0}\rightarrow &\text{Number of particles in the ground state}\\
+N_{e}\rightarrow &\text{Number of particles in the excited state.}\\
+N\rightarrow &\text{Total number of particles}
+\end{align*}
 \begin{enumerate}
 	\item At $T=T_{B}$
 	\begin{align*}
