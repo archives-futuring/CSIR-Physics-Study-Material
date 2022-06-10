@@ -1,8 +1,8 @@
 \chapter{Statistical Physics}
-\par In statistical mechanics we try to find the answers to questions like how are the molecules distributed in space, how they are distributed in velocity.
+Statistical mechanics is a formalism in the study of physical properties of matter in bulk. It makes an attempt to derive the macroscopic properties of an object from the properties of it's microscopic constituents and the interactions amongst them. In statistical mechanics we try to find the answers to questions like how are the molecules distributed in space, how they are distributed in velocity.
 \section{Degrees of freedom}
-The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely\\
-For a particle in translatory motion three coordinates $(x, y, z)$ are needed to define its position. To describe energy of the particle three momentum coordinates $\left(p_{x}, p_{y}, p_{z}\right)$ are required. Hence to specify position and energy, 6 -coordinates are needed. We say the particle has 6 degrees of freedom.
+The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely.
+For a particle in translatory motion three coordinates $(x, y, z)$ are needed to define its position. To describe energy of the particle three momentum coordinates $\left(p_{x}, p_{y}, p_{z}\right)$ are required. Hence to specify position and energy, 6 - coordinates are needed. We say the particle has 6 degrees of freedom.
 \section{Phase Space}
 To specify the position and energy we require three position (space) coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ and three momentum coordinates $\mathrm{p}_{\mathrm{x}}, \mathrm{p}_{\mathrm{y}}$ and $\mathrm{p}_{\mathrm{z}}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and $\mathrm{p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as phase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
 \section{Statistical Probability}
@@ -60,12 +60,15 @@ You are given four particles $a, b, c$ and $d$. What are the different ways in w
 \end{minipage}
 \end{answer}
 \subsection{Random Walk}
-\textbf{1-Dimensional Random Walk:}\\
+The random walk problem is of considerable interest in statistical physics. We shall discuss this problem as an application of the binomial distribution.
+The original problem solved by Markoff can be formulated in the following way: A drunkard starts from a certain lamp post on a street. Some of the steps he takes are forward and some backward. Each step is of the same length and is completely independent of the preceding step. What is the probability that the drunkard, after taking $N$ steps, will reach his destination, which is at a distance $x$ from the lamp post?
+A particle undergoing random displacements, as in Brownian motion, forms a physical situation similar to a drunkard's totterino.\\
+Consider a particle undergoing successive displacements each of length $l$, in one dimension. What is the probability that the particle, after $N$ such displacements, will be at a distance $x=m l$, where $m$ is an integer?
 \begin{align*}
-\text{let }N &\rightarrow\text{ steps of equal length along a line.}\\
+\text{Let,  }N &\rightarrow\text{ steps of equal length along a line.}\\
 p &\rightarrow\text{ Probability of taking a step right}\\
 q &\rightarrow\text{ probability of taking a step left}\\
-n_{1} &\rightarrow \text{no. of sleps taken to right }\\
+n_{1} &\rightarrow \text{no. of steps taken to right }\\
 n_{2} &\rightarrow\text{ no. of steps taken to left.}\\
 &p+q=1\qquad n_{1}+n_{2}=N
 \end{align*}
