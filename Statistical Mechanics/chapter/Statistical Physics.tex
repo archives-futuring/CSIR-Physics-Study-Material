@@ -4,7 +4,57 @@ Statistical mechanics is a formalism in the study of physical properties of matt
 The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely.
 For a particle in translatory motion three coordinates $(x, y, z)$ are needed to define its position. To describe energy of the particle three momentum coordinates $\left(p_{x}, p_{y}, p_{z}\right)$ are required. Hence to specify position and energy, 6 - coordinates are needed. We say the particle has 6 degrees of freedom.
 \section{Phase Space}
+Phase space is an imaginary space which combines the physical space and the momentum space. It is used to represent the state (phase) of each system.
 To specify the position and energy we require three position (space) coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ and three momentum coordinates $\mathrm{p}_{\mathrm{x}}, \mathrm{p}_{\mathrm{y}}$ and $\mathrm{p}_{\mathrm{z}}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and $\mathrm{p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as phase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
+\subsection{More About Phase Space}
+ A space where the three position coordinates can be represented along three mutually perpendicular axes is called the physical space. Volume of a small element in this space is $d V=d x d y d z$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=8cm]{SP-01}
+\end{figure}
+\par A space where the three momentum coordinates are represented along the three mutually perpendicular directions is called the momentum space. In Fig.(b) the point of a small element in this space $=d p_{x} d p_{y} d p_{z}$\\
+ Fig. (a) gives only the instantaneous position of a particle anc Fig. (b) gives only the instantaneous momentum. Suppose we want to specify both this position and momentum at a particular instant in a single space. Such a space is called phase space. In phase space a point $P$ has 6 coordinates, $\left(x, y, z, p_{x}, p_{y}\right.$ and $\left.p_{z}\right)$. So it is a 6 dimensional space. Any point $\mathrm{P}$ in this space is called a phase point. The phase point gives a complete description of the dynamical state of the particle at any instant.\\
+\par The volume of an infinitesimal element in phase space $=d \tau$
+$$
+d \tau=d x d y d z d p_{x} d p_{y} d p_{z}
+$$
+Let us now consider a system consisting of N-particles. For one particle there are 6 coordinates. So for N-particle there are $6 \mathrm{~N}$ coordinates. This means to specify the state of the system completely we need $3 \mathrm{~N}$ position coordinates and $3 \mathrm{~N}$ momentum coordinates. The instantaneous position of a system(i.e., N-particles) can be represented by a single point in the $6 \mathrm{~N}$-dimensional phase space.
+\subsection{$\mu$.Space and $\Gamma$-space}
+ The 6-dimensional phase space for a single particle is called the h-space. The $6 \mathrm{~N}$-dimensional phase space for $\mathbf{N}$ particles is termed as -space ( $\gamma$-space). Thus gamma space is built up as the product of $N, \mu$ spaces.\\
+\par Suppose a particle has $f$ degrees of freedom. Then to specify its state, f position coordinates and $\mathrm{f}$ momentum coordinates are required.
+If there are $N$ particles in this system then to represent the dynamical state of the system at any instant the total number of coordinates required are $N f$ position coordinates and $N f$ momentum coordinates The phase space of the system will be a $2 \mathrm{~N} f$ dimensional space. We can use generalised coordinates to represent a system. Let $q_{i}$ represent the generalised position coordinate and $\mathrm{p}_{\mathrm{j}}$ represent the generalised momentum coordinates. For $N$ independent particles, in the 6 dimensional phase space, there will be $3 \mathrm{~N}$ position coordinates
+$q_{1}, q_{2}, \ldots \ldots . q_{N}$ and $3 N$ momentum coordinates $p_{1}, p_{2}, \ldots \ldots \ldots \ldots p_{N}$
+\subsection{Phase Cell}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2cm,width=2cm]{SP-02}
+	\caption{}
+	\label{SP-00}
+\end{figure}
+\par Consider a particle in one dimension. Its state can be specified using the position coordinates $p$ and the momentum coordinates $q$ as shown in Fig.$\ref{SP-00}$ The two coordinates change with time and the representative point moves through phase space and the line traced is called phase line or phase trajectory. Each point on the phase line represents one possible microstate.\\
+\textbf{Example}\\
+Consider one dimensional harmonic oscillator of mass $m$ and spring constant $\mathrm{k}$. The total energy of the oscillator is $\mathrm{E}=\frac{\mathrm{p}^{2}}{2 \mathrm{~m}}+\frac{1}{2} \mathrm{kq}^{2}$, where $p$ is its momentum and $q$ its position coordinate. If $E$ is constant then this equation represents an ellipse in the phase space.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=4cm]{SP-03}
+\end{figure}
+$$\frac{q^{2}}{(2 E / k)}+\frac{p^{2}}{2 m E}=1$$
+The semi major axis of the ellipse is $\sqrt{2 \mathrm{E} / \mathrm{k}}$ and the semi minor axis is $\sqrt{2 \mathrm{mE}}$.\\
+\par We can divide the phase space into small volumes called phase cell. In the $\mu$-space of a particle, the volume element $d \tau=d x\  d y \ d z\  p_{x}\  p_y \ p_z$ . $d\tau$  is the volume of a six dimensional cell having sides ${d x, d y, d z}$ $d p_{x}, d p_{y}, d p_{z}$. Such a cell of minimum volume is called a unit cell in the $\mu$-space.
+$$(d \tau)_{\min }=\left(d x d y d z d p_{x} d p_{y} d p_{z}\right)_{\min }$$
+$$=\left(\delta x \delta p_{x}\right)_{\min }\left(\delta y \delta p_{y}\right)_{\min }\left(\delta z \delta p_{z}\right)_{\min }$$
+According to classical mechanics the volume d$\Gamma$
+l can take any minimum value. But in quantum mechanics, according to Heisenberg's uncertainty principle the minimum value of the products is approximately equal to the Planck's constant $h$.\\
+$$\text{ So }(d \tau)_{\min }=\mathrm{h} \times \mathrm{h} \times \mathrm{h}=\mathrm{h}^{3}$$
+The minimum value of volume element of $\mu$-space is $h^{3}$, where 3 is the number of degrees of freedom.\\
+\par Consider a system consisting of $\mathrm{N}$ particles having $f$ degrees of freedom each. Then the phase space will be $2 \mathrm{fN}$ dimensional and the volume of the cell be $\mathrm{h}^{\mathrm{Nf}}$.
+\begin{align*}
+\text{The volume}&\text{ of one element in the $\Gamma$ space}\\
+d\Gamma&=\left(\mathrm{dq}_{1} \mathrm{dq}_{2} \mathrm{dq}_{3} \ldots \ldots . d \mathrm{q}_{\mathrm{fN}}\right)\left(\mathrm{dp}_{1} \mathrm{dp}_{2} \mathrm{dp}_{3} \ldots \ldots \mathrm{dp}_{\mathrm{fN}}\right)\\
+\text{The number }&\text{of cells in this volume element is d $\Omega$.}
+\\
+d \Omega&=\frac{\left(d q_{1} d q_{2} \ldots \ldots . d q_{f N}\right)\left(d p_{1} d p_{2} \ldots . d p_{f N}\right)}{h^{N f}}
+\end{align*}
 \section{Statistical Probability}
 Probability of a particular event is the ratio of number of cases in which the event occurs to the total number of possible events. The theory of probability is a method for making better guesses. We need this in statistics. Because, you know in statistical mechanics we deal with a very large number of particles. So nothing can be said about a particular particle with definiteness. We can only make a guess about its behaviour.\\
 Let us toss a coin to find whether we get the head or tail. In tossing of a coin, the total number possibilities or total number of events is two. So the chance of getting a head $=1 / 2$. This chance is called probability in statistics. This means you toss a coin 100 times. Then also this chance of getting a head will be 50 out of 100 . i.e., probability is $1 / 2$.\\
@@ -26,17 +76,16 @@ First let us consider an example. An opaque box contains 3 red balls, 4 blue bal
 If the probabilities of occurrence of two independent events are $P_{1}$ and $P_{2}$, the probability of occurrence of the two events simultaneously is the product of $P_{1}$ and $P_{2}$
 $$ P=P_{1} \times P_{2}$$
 \end{theorem}
-
 \begin{exercise}
-You are given four particles $a, b, c$ and $d$. What are the different ways in which they can be distributed in two identical halves of a box? Also calculate the probabilities of different distributions? What is the frequency with which these distribution occur?
+	You are given four particles $a, b, c$ and $d$. What are the different ways in which they can be distributed in two identical halves of a box? Also calculate the probabilities of different distributions? What is the frequency with which these distribution occur?
 \end{exercise}
 \begin{answer}$\left. \right. $\\
 	\begin{minipage}{0.35\textwidth}
 		$\begin{array}{|l|l|}\hline\text{Distribution}&\text{ Probability }\\ \hline(4,0) & 1 / 16 \\ (3,1) & 4 / 16 \\ (2,2) & 6 / 16 \\ (1,3) & 4 / 16 \\ (0,4) & 1 / 16\\ \hline \end{array}$
 	\end{minipage}\hfil
-\begin{minipage}{0.35\textwidth}
-	\begin{table}[H]
-				\begin{tabular}{|c|c|c|c|}
+	\begin{minipage}{0.35\textwidth}
+		\begin{table}[H]
+			\begin{tabular}{|c|c|c|c|}
 				\hline
 				$\text{Left half}$&$\text{Right half}$&$\text{Distribution}$&$\text{Freq.}$\\\hline
 				a,b,c,d&---&4,0&1\\\hline
@@ -57,8 +106,88 @@ You are given four particles $a, b, c$ and $d$. What are the different ways in w
 				---&a,b,c,d &(0,4) &1 \\\hline
 			\end{tabular}
 		\end{table}
-\end{minipage}
+	\end{minipage}
 \end{answer}
+\subsection{ Binomial Distibution}
+Suppose we carry out a series of experiments in which each experiment has only two possible outcomes. For example, experiments to evaluate the magnetic moment of a system of electrons which have spins $\frac{1}{2}$ or $-\frac{1}{2}$, or the traditionally known experiment of lossing coins in which either 'heads' or 'tails' appeas. Let the proliabifity of appearance of 'heads' be represented by $p$ and that of 'tail' by $q$, where,
+$$
+p+q=1
+$$
+\begin{align*}
+\text{Total number of microstate }&=\text{No.of elements in the sample space}\\&=\left(\text{Basis} \right)^N\\
+\text { Probability of general event } 
+&={ }^{n} C_{r}(p)^{n-r}(q)^{r} ={ }^{n} C_{r}(p)^{n-r}(1-p)^{r}=
+{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
+\end{align*}
+\subsubsection{ Tossing Coins}
+\begin{enumerate}
+	\item Tossing a coin
+	\begin{align*}
+	&\text{Basis }=\left\lbrace H,T\right\rbrace \\
+	&\text{Total no of events }=2\\
+	&\text{Total number of microstate }=2^N=2^1=2 \\
+	&\text{equally likely probability event }=\frac{1}{2} 
+	\end{align*}
+	\item {Tossing two coins together}
+	\begin{align*}
+	&\text{Basis }=\left\lbrace H H, H T, T H, T T\right\rbrace \\
+	&\text{ Total number of microstates }=(2)^{N}=2^2=4\\
+	&\text{ Equally likely Probability }=\frac{1}{4} \\
+	&\text { Probability of general event } 
+	={ }^{n} C_{r}(p)^{n-r}(1-p)^{r} =
+	{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
+	\end{align*}
+\end{enumerate}
+\subsubsection{ Rolling Dice}
+\begin{enumerate}
+	\item Rolling a Dice
+	\begin{align*}
+	&\text{Basis }=\left\lbrace 1,2,3,4,5,6,\right\rbrace \\
+	&\text{Total no of events }=6\\
+	&\text{Total number of microstate }=6^N=2^1=6 \\
+	&\text{equally likely probability event }=\frac{1}{6} 
+	\end{align*}
+	\item {Rolling two Dice together}
+	\begin{align*}
+	&\text{Basis }=\left\lbrace (1,1), (1,2),(1,3)..., (2,1),(2,2)...(6,6)\right\rbrace \\
+	&\text{ Total number of microstates }=(6)^{N}=6^2=36\\
+	&\text{ Equally likely Probability }=\frac{1}{36} \\
+	&\text { Probability of general event } 
+	={ }^{n} C_{r}(p)^{n-r}(1-p)^{r} =
+	{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
+	\end{align*}
+\end{enumerate}
+\subsubsection{ Number of microstates in spin system}
+\begin{align*}
+&\text{Basis }=(2s+1) \\
+&\text{Total number of microstate }\Omega=(2 s+1)^{N} \\
+\end{align*}
+
+
+\begin{exercise}
+	A system of 5 identical but distinguishable particles having energy $3\epsilon$. The single particle states are available at energies $0,\epsilon,2\epsilon,3\epsilon$ find the probablity of each macro state?
+\end{exercise}
+\renewcommand*{\arraystretch}{2}
+\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{3cm}|}
+	\hline
+	0&$\epsilon$&2$\epsilon$&3$\epsilon$&$E_{\text{Total}}$&No.of Microstates\\\hline
+	4&-&-&1&3$\epsilon$&$\Omega$=$\frac{5!}{4!0!0!}=5$\\\hline
+	3&1&1&-&3$\epsilon$&$\Omega$=$\frac{5!}{3!1!0!}=20$\\\hline
+	2&3&-&-&3$\epsilon$&$\Omega$=$\frac{5!}{2!3!0!0!}=10$\\\hline
+\end{tabular}
+\begin{exercise}
+	If two similar coins are tossed together what is the probability of getting 3 Head?
+\end{exercise}
+
+\begin{answer}
+	\begin{align*}
+	P(3 H) &={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10-3}\left(\frac{1}{2}\right)^{3} \\
+	&={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10} \Rightarrow \frac{10 !}{3 ! 7 !}\left(\frac{1}{2}\right)^{10}\\
+	&=\frac{10 \times 9 \times 8}{3 \times 2} \times \frac{1}{1024} \Rightarrow \frac{15}{123}
+	\end{align*}
+\end{answer}
+
+
 \subsection{Random Walk}
 The random walk problem is of considerable interest in statistical physics. We shall discuss this problem as an application of the binomial distribution.
 The original problem solved by Markoff can be formulated in the following way: A drunkard starts from a certain lamp post on a street. Some of the steps he takes are forward and some backward. Each step is of the same length and is completely independent of the preceding step. What is the probability that the drunkard, after taking $N$ steps, will reach his destination, which is at a distance $x$ from the lamp post?
@@ -101,66 +230,22 @@ Physical laws impose certain restrictions on the distribution of the molecules a
  S=k_{B} \ln {\Omega}(E, V, N)
 \end{equation}
  It was proposed by Boltzmann. $ S$ stands for entropy and belongs to the macro world described by thermodynamics. ${\Omega}$ is the number of micro states of a macroscopic system . $ k_{B}$ is the Boltzmann constant  that establishes correspondence of the statistical entropy of Boltzmann to the thermodynamic entropy of Clausius.
-\subsection{More About Phase Space}
-Phase space is an imaginary space which combines the physical space and the momentum space. It is used to represent the state (phase) of each śystem.\\
-\par To specify the position of one particle in space we need three position coordinates $(x, y, z)$. Suppose the momentum of the particle is $p$. Then it can be resolved into three components along $x, y$ and $z$ axes as $p_{x}, p_{y}$ and $\mathrm{p}_{z}$ respectively. These components are called momentum coordinates. Hence the dynamical state of a particle can be represented by six coordinates - 3 position coordinates and 3 momentum coordinates.\\
-\par A space where the three position coordinates can be represented along three mutually perpendicular axes is called the physical space. Volume of a small element in this space is $d V=d x d y d z$.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.5cm,width=8cm]{SP-01}
-\end{figure}
-\par A space where the three momentum coordinates are represented along the three mutually perpendicular directions is called the momentum space. In Fig.(b) the point of a small element in this space $=d p_{x} d p_{y} d p_{z}$\\
-\par Fig. (a) gives only the instantaneous position of a particle anc Fig. (b) gives only the instantaneous momentum. Suppose we want to specify both this position and momentum at a particular instant in a single space. Such a space is called phase space. In phase space a point $P$ has 6 coordinates, $\left(x, y, z, p_{x}, p_{y}\right.$ and $\left.p_{z}\right)$. So it is a 6 dimensional space. Any point $\mathrm{P}$ in this space is called a phase point. The phase point gives a complete description of the dynamical state of the particle at any instant.\\
-\par The volume of an infinitesimal element in phase space $=d \tau$
-$$
-d \tau=d x d y d z d p_{x} d p_{y} d p_{z}
-$$
-Let us now consider a system consisting of N-particles. For one particle there are 6 coordinates. So for N-particle there are $6 \mathrm{~N}$ coordinates. This means to specify the state of the system completely we need $3 \mathrm{~N}$ position coordinates and $3 \mathrm{~N}$ momentum coordinates. The instantaneous position of a system(i.e., N-particles) can be represented by a single point in the $6 \mathrm{~N}$-dimensional phase space.
-\subsection{$\mu$.Space and $\Gamma$-space}
-\par The 6-dimensional phase space for a single particle is called the h-space. The $6 \mathrm{~N}$-dimensional phase space for $\mathbf{N}$ particles is termed as -space ( $\gamma$-space). Thus gamma space is built up as the product of $N, \mu$ spaces.\\
-\par Suppose a particle has $f$ degrees of freedom. Then to specify its state, f position coordinates and $\mathrm{f}$ momentum coordinates are required.
-If there are $N$ particles in this system then to represent the dynamical state of the system at any instant the total number of coordinates required are $N f$ position coordinates and $N f$ momentum coordinates The phase space of the system will be a $2 \mathrm{~N} f$ dimensional space. We can use generalised coordinates to represent a system. Let $q_{i}$ represent the generalised position coordinate and $\mathrm{p}_{\mathrm{j}}$ represent the generalised momentum coordinates. For $N$ independent particles, in the 6 dimensional phase space, there will be $3 \mathrm{~N}$ position coordinates
-$q_{1}, q_{2}, \ldots \ldots . q_{N}$ and $3 N$ momentum coordinates $p_{1}, p_{2}, \ldots \ldots \ldots \ldots p_{N}$
-\subsection{Phase Cell}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2cm,width=2cm]{SP-02}
-		\caption{}
-		\label{SP-00}
-\end{figure}
-\par Consider a particle in one dimension. Its state can be specified using the position coordinates $p$ and the momentum coordinates $q$ as shown in Fig.$\ref{SP-00}$ The two coordinates change with time and the representative point moves through phase space and the line traced is called phase line or phase trajectory. Each point on the phase line represents one possible microstate.\\
-\textbf{Example}\\
-Consider one dimensional harmonic oscillator of mass $m$ and spring constant $\mathrm{k}$. The total energy of the oscillator is $\mathrm{E}=\frac{\mathrm{p}^{2}}{2 \mathrm{~m}}+\frac{1}{2} \mathrm{kq}^{2}$, where $p$ is its momentum and $q$ its position coordinate. If $E$ is constant then this equation represents an ellipse in the phase space.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.5cm,width=4cm]{SP-03}
-\end{figure}
-$$\frac{q^{2}}{(2 E / k)}+\frac{p^{2}}{2 m E}=1$$
-The semi major axis of the ellipse is $\sqrt{2 \mathrm{E} / \mathrm{k}}$ and the semi minor axis is $\sqrt{2 \mathrm{mE}}$.\\
-\par We can divide the phase space into small volumes called phase cell. In the $\mu$-space of a particle, the volume element $d \tau=d x\  d y \ d z\  p_{x}\  p_y \ p_z$ . $d\tau$  is the volume of a six dimensional cell having sides ${d x, d y, d z}$ $d p_{x}, d p_{y}, d p_{z}$. Such a cell of minimum volume is called a unit cell in the $\mu$-space.
-$$(d \tau)_{\min }=\left(d x d y d z d p_{x} d p_{y} d p_{z}\right)_{\min }$$
-$$=\left(\delta x \delta p_{x}\right)_{\min }\left(\delta y \delta p_{y}\right)_{\min }\left(\delta z \delta p_{z}\right)_{\min }$$
-According to classical mechanics the volume d$\Gamma$
- l can take any minimum value. But in quantum mechanics, according to Heisenberg's uncertainty principle the minimum value of the products is approximately equal to the Planck's constant $h$.\\
-$$\text{ So }(d \tau)_{\min }=\mathrm{h} \times \mathrm{h} \times \mathrm{h}=\mathrm{h}^{3}$$
- The minimum value of volume element of $\mu$-space is $h^{3}$, where 3 is the number of degrees of freedom.\\
- \par Consider a system consisting of $\mathrm{N}$ particles having $f$ degrees of freedom each. Then the phase space will be $2 \mathrm{fN}$ dimensional and the volume of the cell be $\mathrm{h}^{\mathrm{Nf}}$.
- \begin{align*}
-  \text{The volume}&\text{ of one element in the $\Gamma$ space}\\
-  d\Gamma&=\left(\mathrm{dq}_{1} \mathrm{dq}_{2} \mathrm{dq}_{3} \ldots \ldots . d \mathrm{q}_{\mathrm{fN}}\right)\left(\mathrm{dp}_{1} \mathrm{dp}_{2} \mathrm{dp}_{3} \ldots \ldots \mathrm{dp}_{\mathrm{fN}}\right)\\
-  \text{The number }&\text{of cells in this volume element is d $\Omega$.}
- \\
- d \Omega&=\frac{\left(d q_{1} d q_{2} \ldots \ldots . d q_{f N}\right)\left(d p_{1} d p_{2} \ldots . d p_{f N}\right)}{h^{N f}}
- \end{align*}
+ \subsubsection{ Classical Distribution Law }
+ \textbf{Accessible microstate\qquad \quad : } Microstates corresponding to a macrostate.\\\\
+ \textbf{Thermodynamic Probability: } Number of microstates corresponding to a macrostate.
+ \begin{equation}
+ \text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}
+ \end{equation}
+
 \subsection{ Thermodynamic probability}
  The thermodynamic probability is the number of microstates corresponding to the given macrostate of the system.
- 
  As an example consider the distribution of 4 particles in the two halves of a box. There are five macrostates viz., $(4,0),(3,1),(2,2),(1,$, 3) and $(0,4)$ are possible. The thermodynamic probability corresponding to the distribution $(2,2)$ is 6 .\\
- The redistribution or permutation of indistinguishable particles in a cell is meaningless because it does not produce any new microstate and so it is neglected.
- 
- Consider the distribution of $\mathrm{n}$ similar particles in $\mathrm{k}$ similar boxes such that $n_{1}, n_{2}, n_{3} \ldots . n_{k}$ particles are in the boxes $1,2,3, \ldots . k$ respectively. Then $n_{1}+n_{2}+n_{3}+\ldots \ldots n_{k}=n$.
- 
-It can be shown that the number of microstates corresponding to this distribution or its thermodynamic probability $\Omega=\frac{n !}{\pi n_{i} !}$
+ The redistribution or permutation of indistinguishable particles in a cell is meaningless because it does not produce any new microstate and so it is neglected.\\
+ Consider the distribution of $\mathrm{n}$ similar particles in $\mathrm{k}$ similar boxes such that $n_{1}, n_{2}, n_{3} \ldots . n_{k}$ particles are in the boxes $1,2,3, \ldots . k$ respectively. Then $n_{1}+n_{2}+n_{3}+\ldots \ldots n_{k}=n$.\\
+ It can be shown that the number of microstates corresponding to this distribution or its thermodynamic probability 
+ \begin{equation}
+\Omega=\frac{n !}{\Pi\ n_{i} !}
+ \end{equation}
 \subsubsection{Proof}
 \begin{align*}
    &\text{The number of ways of chosing $n_{1}$ particles for the first box,}\\
@@ -283,59 +368,8 @@ of the ensemble which does not depend on time.
 \subsection{Postulate of Equal a priori probability}
 Consider an isolated `many particle system' in equilibrium. We want to know the probability for any one particle to be in a given specified state. The answer to this is given by the a priori postulate.\\
 "\textbf{All accessible microstates corresponding to possible macrostates are equally probable}". This is the most fundamental postulate of statistical mechanics. This means that the probability of finding the particle in any one region is identical with that for any other region of equal volume, under similar conditions.
-\section{ Classical Distribution Law }
-\textbf{Accessible microstate\qquad \quad : } Microstates corresponding to a macrostate.\\\\
-\textbf{Thermodynamic Probability: } Number of microstates corresponding to a macrostate.
-\begin{equation}
-\text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}
-\end{equation}
 
-\section{ Probability Distibution: }
-\textbf{Coin Related Problem: }\\\\
-\textbf{a.\quad  Tossing a coin:}
-\begin{align*}
-&\text{Total events }=H+T\\
-&\text{Total no of events }=2\\
-&\text{Total number of microstate }=2\\
-&\text{equally likely probability event }=1 / 2
-\end{align*}
-\textbf{b.\quad  Two coin are tossed together:}
-\begin{align*}
-&\text{Possible events: }H H, H T, T H, T T\\
-&\text{ Equally likely Probability }=1 / 4\\
-&\text{ Total number of microstates }=(2)^{n}\\
-&\text{ equally likely Probability }=(1 / 2)^{n}\\
-&\text { Probability of general event } 
-={ }^{n} C_{r}(p)^{n-r}(1-p)^{r} =
-{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
-\end{align*}
-\begin{exercise}
-	If two similar coins are tossed together what is the probability of gerring 3 Head?
-\end{exercise}
 
-\begin{answer}
-	\begin{align*}
-	P(3 H) &={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10-3}\left(\frac{1}{2}\right)^{3} \\
-	&={ }^{10} C_{3}\left(\frac{1}{2}\right)^{10} \Rightarrow \frac{10 !}{3 ! 7 !}\left(\frac{1}{2}\right)^{10}\\
-	&=\frac{10 \times 9 \times 8}{3 \times 2} \times \frac{1}{1024} \Rightarrow \frac{15}{123}
-	\end{align*}
-\end{answer}
-\textbf{c.\quad  Number of microstates in spin system:}\\
-$\Omega=(2 s+1)^{N}$
-\begin{note}
-	entropy: $S=k \ln \Omega=k \ln(2)^N\Rightarrow Nk\ln 2$
-\end{note}
-\begin{exercise}
- A system of 5 identical but distinguishable particles having energy $3\epsilon$. The single particle states are available at energies $0,\epsilon,2\epsilon,3\epsilon$ find the probablity of each macro state?
-\end{exercise}
-\renewcommand*{\arraystretch}{2}
-\begin{tabular}{|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{3cm}|}
-	\hline
-	0&$\epsilon$&2$\epsilon$&3$\epsilon$&$E_{\text{Total}}$&No.of Microstates\\\hline
-	4&-&-&1&3$\epsilon$&$\Omega$=$\frac{5!}{4!0!0!}=5$\\\hline
-	3&1&1&-&3$\epsilon$&$\Omega$=$\frac{5!}{3!1!0!}=20$\\\hline
-	2&3&-&-&3$\epsilon$&$\Omega$=$\frac{5!}{2!3!0!0!}=10$\\\hline
-\end{tabular}
 
 
 \subsection{Microcanonical Ensemble:}
