@@ -556,82 +556,6 @@ The independent constants of motion is/are
 	Practise set-3
 \end{abox}
 \begin{enumerate}
-	\item 	A particle of inass $m$ moves inside a bowl under gravity. If the surface of the bowl is given by the equation $z=\frac{1}{2} a\left(x^{2}+y^{2}\right)$, where $a$ is a constant.\\
-	(A) Write down Lagrangian of the system in cylindrical co-ordinate.\\
-	(a) Identified the cyclic coordinate and law of conservation of momentum.\\
-	(b) Write down hamiltonion of the system in cylindrical coordinate system.
-\begin{answer}
-	\begin{align*}
-	\text{(A) }T&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)=\frac{m}{2}\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+a^{2} r^{2} \dot{r}^{2}\right) \quad \because z=\frac{1}{2} a r^{2} \Rightarrow \quad \dot{z}=a r \dot{r}\\
-	V&=m g z=\frac{1}{2} m g a r^{2} \\
-	L&=\frac{m}{2}\left[\dot{r}^{2}\left(1+a^{2} r^{2}\right)+r^{2} \dot{\theta}^{2}-a g r^{2}\right]
-	\intertext{	(a) $\theta$ is cyclic coordinate}
-	\because \frac{\partial L}{\partial \theta}&=0, \Rightarrow \dot{p}_{\theta}=0 \Rightarrow P_{\theta}=\text{ constant}
-	\intertext{(b) Hamiltonian}
-	H&=\frac{p_{r}^{2}}{2 m\left(1+a^{2} r^{2}\right)}+\frac{p_{\theta}^{2}}{2 m r^{2}}+\frac{1}{2} m a g r^{2} \quad \\&\because \frac{\partial L}{\partial \dot{r}}=p_{r}=m\left(1+a^{2} r^{2}\right) \dot{r}\text{ and }\frac{\partial L}{\partial \dot{\theta}}=p_{\theta}=m r^{2} \dot{\theta}
-	\end{align*}
-\end{answer}
-\item 	A particle of mass $m$ is attached to fixed point $O$ by a weightless inextensible string of length $a$. It is rotating under the gravity as shown in the figure.\\
-(a) Write down The Lagrangian of the system in spherical co-ordinate.\\
-(b) write down Hamiltonian of the system.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=4.5cm,width=3.5cm]{Assignment-HE-02}
-\end{figure}
-\begin{answer}
-\begin{align*}
-L&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-[m g(-z)]\\
-L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)+m g a \cos (\pi-\theta)\\
-L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)-m g a \cos (\theta)\\
-H&=\sum \dot{q}_{1} p_{1}-L\\
-H&=\frac{p_{\theta}^{2}}{2 m a^{2}}+\frac{p_{\phi}^{2}}{2 m a^{2} \sin ^{2} \theta}+m a g \cos \theta \because \frac{\partial L}{\partial \dot{\theta}}=p_{\theta}=m a^{2} \dot{\theta}\text{ and } \frac{\partial L}{\partial \dot{\phi}}=p_{\phi}=m a^{2} \sin ^{2} \theta \dot{\phi}
-\end{align*}
-\end{answer}
-\item 	Particle of mass $m$ slides under the gravity without friction along the parabotic path
-$y=a x^{2}$ axis shown in the figure. Here $a$ is a constant\\
-(a) Write down Lagrangian of the system .\\
-(b) Write down Lagranges equation of motion.\\
-(c) write down Hamiltonian of the system.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.5cm,width=4cm]{Assignment-HE-03}
-\end{figure}
-\begin{answer}$\left. \right. $\\
-\begin{align*}
-y&=a x^{2}\\
-\text{(a) }\dot{y}&=2 a x \dot{x}\\
-L&=\frac{m}{2}\left(\dot{x}^{2}+\dot{y}^{2}\right)-m g y=\frac{m}{2}\left(\dot{x}^{2}+4 a^{2} x^{2} \dot{x}^{2}\right)-m g a x^{2}\\
-L&=\frac{m}{2}\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}-m g a x^{2}\\
-\text{	(b) }&\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{x}}\right)-\frac{\partial L}{\partial x}=0\\
-\frac{d}{d t}&\left[m\left(1+4 a^{2} x^{2}\right) \dot{x}\right]-\left[4 m a^{2} \dot{x}^{2} x-2 \mathrm{~m} g\right.\text{ a }\left.x\right]=0\\
-m \ddot{x}&+4 m a^{2} \ddot{x} x^{2}+8 m a^{2} \dot{x} x \dot{x}-4 m a^{2} \dot{x}^{2} x+2 m g a x=0\\
-m \ddot{x}&+4 m a^{2} x^{2} \ddot{x}+4 m a^{2} x \dot{x}^{2}+2 m g a x=0\\
-\text{(c) }H&=\sum \dot{x} p_{x}-L\\
-H&=\frac{p_{x}^{2}}{2 m\left(1+4 a^{2} x^{2}\right)}+m g a x^{2} \quad \because \frac{\partial L}{\partial \dot{x}}=p_{x}=m\left(1+4 a^{2} x^{2}\right) \dot{x}
-\end{align*}
-\end{answer}
-\item The Lagrangian of a particle of mass $m$ moving in one dimension is $L=\exp (\alpha t)\left[\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right]$, where $\alpha$ and $k$ are positive constants.\\
-(a) Find the Lagranges equation of motion of the particle.\\
-(b) Write down Hamiltonian of the system.
-\begin{answer}
-\begin{align*}
-L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
-\text{(a) }\frac{d}{d t}\left(e^{\alpha t} m \dot{x}\right)-e^{\alpha t} k x&=0 \Rightarrow e^{\alpha t} m \ddot{x}+m \dot{x} e^{\alpha t} \cdot \alpha-e^{\alpha t} k x=0 \Rightarrow e^{\alpha t}[m \ddot{x}+\alpha m \dot{x}-k x]=0\\
-\text{(b) }H&=e^{-\alpha t} \frac{p_{x}^{2}}{2 m}+e^{\alpha t} \frac{k x^{2}}{2}
-\because \frac{\partial L}{\partial \dot{x}}=p_{x}=e^{\alpha t} m \dot{x}
-\end{align*}
-\end{answer}
-\item The Lagrangian of a particle of mass $m$ moving in one dimension is $L=\exp (\alpha t)\left[\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right]$, where $\alpha$ and $k$ are positive constants.\\
-(a) Find the Lagranges equation of motion of the particle.\\
-(b) Write down Hamiltonian of the system.\\
-\begin{answer}
-\begin{align*}
-L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
-\text{(a) }\frac{d}{d t}\left(e^{\alpha t} m \dot{x}\right)-e^{\alpha t} k x&=0 \Rightarrow e^{\alpha t} m \ddot{x}+m \dot{x} e^{\alpha t} \cdot \alpha-e^{\alpha t} k x=0 \Rightarrow e^{\alpha t}[m \ddot{x}+\alpha m \dot{x}-k x]=0\\
-\text{(b) }H&=e^{-\alpha t} \frac{p_{x}^{2}}{2 m}+e^{\alpha t} \frac{k x^{2}}{2}
-\because \frac{\partial L}{\partial \dot{x}}=p_{x}=e^{\alpha t} m \dot{x}
-\end{align*}
-\end{answer}
 \item A particle of mass $m$ is attached to fixed point $\mathrm{O}$ by a weightless inextensible string of length $a$. It is rotating under the gravity as shown in the figure.\\
 (a) Write down The Lagrangian of the system in spherical co-ordinate.\\
 (b) write down Hamiltonian of the system.
@@ -639,6 +563,15 @@ L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
 	\centering
 	\includegraphics[height=4cm,width=3.5cm]{H-01}
 \end{figure}
+\begin{answer}
+	\begin{align*}
+	L&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-[m g(-z)]\\
+	L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)+m g a \cos (\pi-\theta)\\
+	L&=\frac{1}{2} m\left(a^{2} \dot{\theta}^{2}+a^{2} \sin ^{2} \theta \dot{\phi}^{2}\right)-m g a \cos (\theta)\\
+	&H=\sum \dot{q}_{1} p_{1}-L \\
+	&H=\frac{p_{\theta}^{2}}{2 m a^{2}}+\frac{p_{\phi}^{2}}{2 m a^{2} \sin ^{2} \theta}+m a g \cos \theta \because \frac{\partial L}{\partial \dot{\theta}}=p_{\theta}=m a^{2} \dot{\theta} \text { and } \frac{\partial L}{\partial \dot{\phi}}=p_{\phi}=m a^{2} \sin ^{2} \theta \dot{\phi}
+	\end{align*}
+\end{answer}
 \item Particle of mass $m$ slides under the gravity without friction along the parabolic path $y=a x^{2}$ axis shown in the figure. Here $a$ is a constant.
 (a) write down Lagrangian of the system .
 (b) write down Hamiltonian of the system .
@@ -646,13 +579,115 @@ L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
 	\centering
 	\includegraphics[height=3.5cm,width=4cm]{H-02}
 \end{figure}
+\begin{answer}
+	\begin{align*}
+	y&=a x^{2}\\
+	\text { (a) } \dot{y}&=2 a x \dot{x}\\
+	L&=\frac{m}{2}\left(\dot{x}^{2}+\dot{y}^{2}\right)-m g y=\frac{m}{2}\left(\dot{x}^{2}+4 a^{2} x^{2} \dot{x}^{2}\right)-m g a x^{2}\\
+	L&=\frac{m}{2}\left(1+4 a^{2} x^{2}\right) \dot{x}^{2}-m g a x^{2}\\
+	\text { (b) } H&=\sum \dot{x} p_{x}-L\\
+	H&=\frac{p_{x}^{2}}{2 m\left(1+4 a^{2} x^{2}\right)}+m g a x^{2} \quad \because \frac{\partial L}{\partial \dot{x}}=p_{x}=m\left(1+4 a^{2} x^{2}\right) \dot{x}
+	\end{align*}
+\end{answer}
 \item The Lagrangian of a particle of mass $m$ moving in one dimension is $L=\exp (\alpha t)\left[\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right]$, where $\alpha$ and $k$ are positive constants.\\
 (a) Write down Hamiltonian of the system.
+\begin{answer}
+	\begin{align*}
+	L&=e^{\alpha t}\left(\frac{m \dot{x}^{2}}{2}-\frac{k x^{2}}{2}\right)\\
+	(b) \quad H&=e^{-\alpha t} \frac{p_{x}^{2}}{2 m}+e^{\alpha t} \frac{k x^{2}}{2}\\
+	\because \frac{\partial L}{\partial \dot{x}}&=p_{x}=e^{\alpha t} m \dot{x}
+	\end{align*}
+\end{answer}
 \item As shown in figure the particle of mass $m_{2}$ moves on a vertical axis and the whole system rotates about this axis with a constant angular velocity $\omega$.\\
 (b) Write down Lagrangian of the system in spherical polar co-ordinate.\\
 (d) Write down Hamiltonian of the system.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=4.5cm,width=3.5cm]{H-03}
+	\includegraphics[height=4.8cm,width=3.5cm]{H-03}
 \end{figure}
+\begin{answer}
+	\begin{align*}
+	\text { (b) } L&=m_{1} a^{2}\left(\dot{\theta}^{2}+\omega^{2} \sin ^{2} \theta\right)+2 m_{2} a^{2} \dot{\theta}^{2} \sin ^{2} \theta+2\left(m_{1}+m_{2}\right) g a \cos \theta\\
+	\text { (d) } H&=\sum \dot{\theta} p_{\theta}-L\\
+	\frac{\partial L}{\partial \dot{\theta}}&=p_{\theta}=2 m_{1} a^{2} \dot{\theta}+4 m_{2} a^{2} \dot{\theta} \sin ^{2} \theta \Rightarrow \dot{\theta}=\frac{p_{\theta}}{2 m_{1} a^{2}+4 m_{2} a^{2} \sin ^{2} \theta}\\
+	H&=\frac{p_{\theta}^{2}}{4 m a^{2}+\theta m_{2} a^{2} \sin ^{2} \theta}-m_{1} a^{2} \omega^{2} \sin ^{2} \theta-2\left(m_{1}+m_{2}\right) g a \cos \theta
+	\end{align*}
+\end{answer}
+\item A system is governed by the Hamiltonian
+$$
+H=\frac{1}{2}\left(p_{x}-a y\right)^{2}+\frac{1}{2}\left(p_{y}-b x\right)^{2}
+$$
+where $a$ and $b$ are constants and $p_{x}, p_{y}$ are momenta conjugate to $x$ and $y$ respectively. For what values of $a$ and $b$ will the quantities $\left(p_{x}-3 y\right)$ and $\left(p_{y}+2 x\right)$ be conserved.
+\begin{answer}
+	\begin{align*}
+	\text { Poisson bracket }\left[p_{x}-3 y, H\right]&=0 \text { and }\left[p_{y}+2 y, H\right]=0\\
+	p_{y}(b-3)+x\left(3 b-b^{2}\right)&=0 \text { and } p_{x}(a+2)-y\left(2 a+a^{2}\right)=0\\
+	\Rightarrow a&=-2, b=3
+	\end{align*}
+\end{answer}
+\item A particle of mass $m$ and coordinate $q$ has the Lagrangian $L=\frac{1}{2} m \dot{q}^{2}-\frac{\lambda}{2} q \dot{q}^{2}$ where $\lambda$ is a constant. Find the Hamiltonian of the system.
+\begin{answer}
+	\begin{align*}
+	H&=\sum \dot{q} p-L \text { where } L=\frac{1}{2} m \dot{q}^{2}-\frac{1}{2} \lambda q \dot{q}^{2}\\
+	\frac{\partial L}{\partial \dot{q}}&=p=m \dot{q}-\lambda q \dot{q} \Rightarrow p=\dot{q}(m-\lambda q) \Rightarrow \dot{q}=\frac{p}{m-\lambda q}\\
+	\Rightarrow H&=\dot{q} p-L=\frac{p^{2}}{(m-\lambda q)}-\frac{1}{2} m \frac{\left(p^{2}\right)}{(m-\lambda q)^{2}}+\frac{\lambda}{2} q \cdot \frac{p^{2}}{(m-\lambda q)^{2}}\\
+	\Rightarrow H&=\frac{p^{2}}{(m-\lambda q)}-\frac{p^{2}}{2(m-\lambda q)^{2}}(m-\lambda q)=\frac{p^{2}}{(m-\lambda q)}-\frac{p^{2}}{2(m-\lambda q)}\\
+	\Rightarrow H&=\frac{p^{2}}{2(m-\lambda q)}
+	\end{align*}
+\end{answer}
+\item The coordinates and momenta $x_{i}, \quad p_{i}(i=1,2,3)$ of a particle satisfy the canonical Poisson bracket relations $\left\{x_{i}, p_{j}\right\}=\delta_{i j} . \quad \operatorname{If} C_{1}=x_{2} p_{3}+x_{3} p_{2}, C_{2}=x_{1} p_{2}-x_{2} p_{1} \quad$ and $C_{3}=x_{1} p_{3}+x_{3} p_{1} .$ Then\\
+(a) Find the value of $\left\{C_{1}, C_{2}\right\}$\\
+(b) Find the relation between $C_{1}, C_{2}$ and $C_{3}$.
+\begin{answer}
+	\begin{align*}
+	\text { (a) }&\left\{C_{1}, C_{2}\right\}=\left\{x_{2} p_{3}+x_{3} p_{2}, x_{1} p_{2}-x_{2} p_{1}\right\}\\
+	\left\{C_{1}, C_{2}\right\}&=\left\{x_{2} p_{3}, x_{1} p_{2}\right\}-\left\{x_{2} p_{3}, x_{2} p_{1}\right\}+\left\{x_{3} p_{2}, x_{1} p_{2}\right\}-\left\{x_{3} p_{2}, x_{2} p_{1}\right\}\\
+	&=x_{1}\left\{x_{2}, p_{2}\right\} p_{3}+0+0-x_{3}\left\{p_{2}, x_{2}\right\} p_{1}\\
+	\Rightarrow\left\{C_{1}, C_{2}\right\}&=x_{1} p_{3}+x_{3} p_{1}\\
+	\text { (b) }&\left\{C_{1}, C_{2}\right\}=C_{3}
+	\end{align*}
+\end{answer}
+\item If Hamiltonian of the Harmonic oscillator is given by $H=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^{2} x^{2}$, the quantity defined $u(x, p, t)=\ln (p+i m \omega x)-i \omega t$ then check whether $u$ is conserve during the motion.
+\begin{answer}
+	\begin{align*}
+	\text { If } u \text { is conserve then } \frac{d u}{d t}=[u, H]+\frac{\partial u}{\partial t}&=0 \Rightarrow \frac{d u}{d t}=\frac{\partial u}{\partial x} \cdot \frac{\partial H}{\partial p}-\frac{\partial u}{\partial p} \cdot \frac{\partial H}{\partial x}+\frac{\partial u}{\partial t}\\
+	\Rightarrow \frac{d u}{d t}&=\frac{i m \omega}{p+i m \omega x} \cdot \frac{p}{m}-\frac{1}{p+i m \omega x} \cdot m \omega^{2} x-i \omega\\
+	&=\frac{i \omega p}{p+i m \omega x}-\frac{m \omega^{2} x}{p+i m \omega x}-i \omega=\frac{i \omega(p+i m \omega x)}{p+i m \omega x}-i \omega=0\\
+	\text { So $u$ }&\text{is conserve during the motion }
+	\end{align*}
+\end{answer}
+\item The Hamiltonian of a particle of unit mass moving in the $x y$-plane is given to be: $H=x p_{x}-y p_{y}-\frac{1}{2} x^{2}+\frac{1}{2} y^{2}$ in suitable units. The initial values are given to be $(x(0), y(0))=(1,1)$ and $\left(p_{x}(0), p_{y}(0)\right)=\left(\frac{1}{2}, \frac{1}{2}\right)$\\
+(a) Discuss equation of motion\\
+(b) Plot the curves traced out by the particles in the $x y$-plane and the $p_{x} p_{y}-$ plane.
+\begin{answer}
+	\begin{align*}
+	&\text { (a) Solving Hamiltonian equation of motion }\\
+	\frac{\partial H}{\partial x}&=-\dot{p}_{x} \Rightarrow p_{x}-x=-\dot{p}_{x} \text { and } \frac{\partial H}{\partial y}=-\dot{p}_{y} \Rightarrow-p_{y}+y=-\dot{p}_{y}\\
+	\frac{\partial H}{\partial p_{x}}&=\dot{x} \Rightarrow x=\dot{x} \text { and } \frac{\partial H}{\partial p_{y}}=\dot{y} \Rightarrow-y=\dot{y}\\
+	\intertext{(b) After solving these four differential equation and eliminating time $t$ and using boundary condition one will get $\Rightarrow x \propto \frac{1}{y}$ and $p_{x} \propto \frac{1}{p_{y}}$}
+	\end{align*}
+\end{answer}
+\item The Hamiltonian of the system is given by $H=\frac{p_{x}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}+\frac{m \omega^{2}\left(x^{2}+y^{2}\right)}{2}$. Check whether the following quantities are conserve during the motion or not.\\
+(a) $S_{1}=\frac{1}{2}\left(x p_{y}-y p_{x}\right)$\\
+(b) $S_{2}=\frac{1}{2 m \omega}\left(p_{x} p_{y}+m^{2} \omega^{2} x y\right)$\\
+(c) $S_{3}=\frac{1}{4 m \omega}\left[p_{x}^{2}-p_{y}^{2}+m^{2} \omega^{2}\left(y^{2}-x^{2}\right)\right]$
+\begin{answer}
+	\begin{align*}
+	H&=\frac{p_{x}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}+\frac{1}{2} m \omega^{2}\left(x^{2}+y^{2}\right) \quad S_{1}=\frac{1}{2}\left(x p_{y}-y p_{x}\right)\\
+	\text { (a) }&\left[S_{1}, H\right]=0\\
+	\Rightarrow &\frac{\partial S_{1}}{\partial x} \frac{\partial H}{\partial p_{x}}-\frac{\partial S_{1}}{\partial p_{x}} \frac{\partial H}{\partial x}+\frac{\partial S_{1}}{\partial y} \frac{\partial H}{\partial p_{y}}-\frac{\partial S_{1}}{\partial p_{y}} \cdot \frac{\partial H}{\partial y}\\
+	\Rightarrow &\frac{p_{y}}{2} \cdot \frac{p_{x}}{m}-\left(-\frac{y}{2}\right) \cdot m \omega^{2} x+\frac{1}{2}\left(-p_{x}\right) \cdot \frac{p_{y}}{m}-\frac{1}{2}(x) \cdot m \omega^{2} y=0\\
+	\text{(b) }&\quad \left[S_{2}, H\right]=0
+	S_{2}=\frac{1}{2 m \omega}\left(p_{x} p_{y}+m^{2} \omega^{2} x y\right)\\
+	\Rightarrow &\quad \frac{\partial S_{2}}{\partial x} \frac{\partial H}{\partial p_{x}}-\frac{\partial S_{2}}{\partial p_{x}} \frac{\partial H}{\partial x}+\frac{\partial S_{2}}{\partial y} \frac{\partial H}{\partial p_{y}}-\frac{\partial S_{2}}{\partial p_{y}} \frac{\partial H}{\partial y}\\
+	\Rightarrow &\quad \frac{1}{2 m \omega}\left(m^{2} \omega^{2} y\right)\left(\frac{p_{x}}{m}\right)-\frac{p_{y}}{2 m \omega} \cdot\left(m \omega^{2} x\right)+\frac{1}{2 m \omega} m^{2} \omega^{2} x \cdot \frac{p_{y}}{m}-\frac{p_{x}}{2 m \omega} \cdot m \omega^{2} y=0\\
+	\text { (c) }&\left[S_{3}, H\right]=0\\
+	&\frac{\partial S_{3}}{\partial x} \frac{\partial H}{\partial p_{x}}-\frac{\partial S_{3}}{\partial p_{x}} \frac{\partial H}{\partial x}+\frac{\partial S_{3}}{\partial y} \frac{\partial H}{\partial p_{y}}-\frac{\partial S_{3}}{\partial p_{y}} \cdot \frac{\partial H}{\partial y}\\
+	\Rightarrow &\frac{1}{4 m \omega} \times m^{2} \omega^{2}(-2 x) \cdot \frac{p_{x}}{m}-\frac{1}{4 m \omega} \times 2 p_{x} \cdot m \omega^{2} x+\frac{m^{2} \omega^{2}}{4 m \omega} \times 2 y \cdot \frac{p_{y}}{m}-\frac{1}{4 m \omega}\left(-2 p_{y} \cdot m \omega^{2} y\right)\\
+	\Rightarrow &\frac{-p_{x} x \omega}{2}-\frac{p_{x} \omega x}{2}+\frac{p_{y} \cdot y \omega}{2}+\frac{p_{y} y \omega}{2} \neq 0
+	\end{align*}
+\end{answer}
+
+
+
 \end{enumerate}
