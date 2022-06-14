@@ -540,9 +540,9 @@ As $N\rightarrow \infty$, Grand canonical ensenble equivalent to microcanonical 
 \section{Bose GAS}
 Distribution function for Bose-Eienstien statistiss,
 \begin{align*}
-f(\varepsilon)&=\frac{1}{e^{\beta(\varepsilon_i-\mu)}-1}\\
+f(\varepsilon_i)&=\frac{1}{e^{\beta(\varepsilon_i-\mu)}-1}\\
 &O\leq f(\varepsilon_i)\leq1\\
-f(\varepsilon)\text{cannot}&\text{ be negative}\\
+f(\varepsilon_i)\text{cannot}&\text{ be negative}\\
 \therefore\quad&e^{\beta(\varepsilon_i-\mu)}>1\\
 \text{Applying }&\text{logarithm.}\\
 &\beta(\varepsilon_i-\mu)>0\\
@@ -604,8 +604,8 @@ $\Rightarrow$\textbf{ Important types of Systems }in frequently asking Questions
 \subsection{Important relations}
 \begin{enumerate}
 	\item Total number of particles, $N^{\prime} \alpha T^{d / S}$\\
-	\item$V\  \propto\  \frac{1}{T^{d/s-1}}$ \\
-	\item\  $E \ \propto \ T^{d / s+1}$\\
+	\item$V\  \propto\  \frac{1}{T^{(d/s)-1}}$ \\
+	\item\  $E \ \propto \ T^{()d /s)+1}$\\
 	\item\  $C_{v} \ \propto\  T^{d / s}$\\
 	\item $S \ \propto\  T^{d / s}$	
 \end{enumerate}
@@ -1089,7 +1089,7 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 		\begin{tasks}(2)
 			\task[\textbf{a.}]$\frac{3}{2} N K T$
 			\task[\textbf{b.}]$k+\ln \frac{\hbar \omega}{k+}$
-			\task[\textbf{c.}]NKT $\ln \frac{\mathrm{ke}}{\mathrm{KT}}$
+			\task[\textbf{c.}]$NKT\ln \left(\frac{\hbar \omega}{K T}\right)$
 			\task[\textbf{d.}] NKe $\ln \frac{\text { the }}{2 K T}$
 		\end{tasks}
 	\begin{answer}
@@ -1097,7 +1097,7 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 		z_{N} &=\left(\frac{K T}{\hbar \omega}\right)^{N} \\
 		\langle A\rangle &=-K T \ln z_{N} \\
 		&=-K T \ln \left(\frac{K T}{\hbar \omega}\right)^{N} \\
-		&=N K+\ln \left(\frac{\hbar \omega}{K T}\right)
+		&=NKT\ln \left(\frac{\hbar \omega}{K T}\right)
 		\end{align*}
 		So the correct answer is \textbf{Option(c)}
 	\end{answer}
@@ -1120,16 +1120,16 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 	\end{align*}
 	So the correct answer is \textbf{Option(a)}
 \end{answer}	
-\item For a quantum mechanical Harmonic oscillator with energy $E_{n}=\left(n+\frac{1}{2}\right) \hbar \omega$. The Partition $f x^{n}$ is:
+\item For a quantum mechanical Harmonic oscillator with energy $E_{n}=\left(n+\frac{1}{2}\right) \hbar \omega$. The Partition function is:
 \begin{tasks}(2)
 	\task[\textbf{a.}]$\frac{e^{\hbar\omega/K_BT}}{e^{\hbar\omega/K_BT}-1}$
 	\task[\textbf{b.}]$e^{\hbar \omega / 2 K_{B} T}-1$
 	\task[\textbf{c.}]$e^{\hbar  \omega / 2 K_{B} T}-1$
-	\task[\textbf{d.}] $\frac{e^{\hbar\omega/K_BT}}{e^{\hbar\omega/2K_BT}-1}$
+	\task[\textbf{d.}] $\frac{e^{\hbar \omega / 2 K_{B} T}}{e^{\hbar \omega / K_{B} T}-1}$
 \end{tasks}
 \begin{answer}
 	\begin{align*}
-	E_{n}&=\left(n+\frac{1}{Q}\right) \text { tue } \rightarrow 1 \rightarrow \operatorname{Dim} \text { Q.H.0 }\\
+	E_{n}&=\left(n+\frac{1}{2}\right) { \hbar\omega } \\
 	z_{1}&=\sum_{n} e^{\beta E}\\
 	z_1&=e^{-\beta\left(n+\frac{1}{2} \right) }\hbar \omega\\
 	z&=e^{-\beta \hbar \omega / 2}\left[1+e^{-\beta \hbar \omega}+e^{-2 \beta \hbar \omega}+\right]\\
@@ -1151,10 +1151,10 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 	\begin{align*}
 	\intertext{for $1-Dim Q \cdot H \cdot 0$ :}
 	z_{1}&=\frac{e^{-\beta \hbar \omega / 2}}{1-e^{-\beta \hbar \omega}}\\
-	u&=-\frac{\partial}{\partial \beta} \ln z_{1}=-\frac{\partial}{\partial \beta}\left[-\frac{\beta \hbar \omega}{2}-\ln \left(1-e^{-\beta \hbar \omega}\right)\right.\\
-	v&=\frac{\hbar \omega}{2}+\frac{e^{-\beta \hbar u}}{1+\left(-e^{-\beta \hbar u e}\right)} \hbar \omega\\
-	u&=\hbar \omega\left(\frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}+\frac{1}{2}}\right)\\
-	\text { also } v&=\frac{\hbar \omega}{2} \cot h\left(\frac{\beta \hbar \omega}{2}\right)
+	U&=-\frac{\partial}{\partial \beta} \ln z_{1}=-\frac{\partial}{\partial \beta}\left[-\frac{\beta \hbar \omega}{2}-\ln \left(1-e^{-\beta \hbar \omega}\right)\right.\\
+	U&=\frac{\hbar \omega}{2}+\frac{e^{-\beta \hbar u}}{1+\left(-e^{-\beta \hbar u e}\right)} \hbar \omega\\
+	U&=\hbar \omega\left(\frac{1}{e^{\hbar\omega/KT_{-1}}}+\frac{1}{2}\right)\\
+	\text { also } U&=\frac{\hbar \omega}{2} \cot h\left(\frac{\beta \hbar \omega}{2}\right)
 	\end{align*}
 	So the correct answer is \textbf{Option(c)}
 \end{answer}	
@@ -1180,10 +1180,10 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 	\end{align*}
 	So the correct answer is \textbf{Option(d)}
 \end{answer}
-	\item Spin $\frac{1}{2}$ ions of magnetic moment $H$ each is kept in an external magnetic field $H$. If the system is in equilibrium at temperature $T$, then Helmholtz free energy of the system is 
+	\item Spin $\frac{1}{2}$ ions of magnetic moment $\mu$ each is kept in an external magnetic field $H$. If the system is in equilibrium at temperature $T$, then Helmholtz free energy of the system is 
 		\begin{tasks}(2)
 			\task[\textbf{a.}]$N K_{B} T \ln \left(\cosh \frac{H H}{K_{B} T}\right)$
-			\task[\textbf{b.}]$-N K_{B} T \ln \left(2 \cosh \frac{4 H}{K_{B} T}\right)$
+			\task[\textbf{b.}]$-N K_{B} T \ln \left(2 \cosh \frac{\mu H}{K_{B} T}\right)$
 			\task[\textbf{c.}]$N K_{B} T \ln \left(2 \cosh \frac{H H}{K_{B} T}\right)$
 			\task[\textbf{d.}] $-N K_{B} T \ln \left(2 \sin R \frac{\mu H}{K_{B} T}\right)$
 		\end{tasks}
@@ -1198,19 +1198,19 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 		\end{align*}
 		So the correct answer is \textbf{Option(b)}
 	\end{answer}
-\item Consider a system of $N$ non-interacting spin $\frac{1}{2}$ particles, each having a magnetic moment $H$ is in a magnetic field $\vec{B}=B \hat{z} $. If $E$ is the total energy then number of accessible microstates $\Omega$ is.
+\item Consider a system of $N$ non-interacting spin $\frac{1}{2}$ particles, each having a magnetic moment $\mu$ is in a magnetic field $\vec{B}=B \hat{z} $. If $E$ is the total energy then number of accessible microstates $\Omega$ is.
 \begin{tasks}(2)
-	\task[\textbf{a.}]$R=\frac{N !}{\frac{1}{Q}\left(N-\frac{E}{H B}\right) ! \frac{1}{Q}\left(N+\frac{E}{H B}\right) !}$
+	\task[\textbf{a.}]$\Omega=\frac{N !}{\frac{1}{2}\left(N-\frac{E}{\mu B}\right) ! \frac{1}{2}\left(N+\frac{E}{\mu B}\right) !}$
 	\task[\textbf{b.}]$\Omega=\frac{\left(N-\frac{E}{H B}\right) !}{\left(N+\frac{E}{H B}\right) !}$
-	\task[\textbf{c.}]$R=\frac{1}{2}\left(N-\frac{E}{H B}\right) ! \frac{1}{2}\left(N+\frac{E}{H B}\right) !$
+	\task[\textbf{c.}]$\Omega=\frac{1}{2}\left(N-\frac{E}{H B}\right) ! \frac{1}{2}\left(N+\frac{E}{H B}\right) !$
 	\task[\textbf{d.}] $\Omega=\frac{N !}{\left.N+\frac{E}{H B}\right) !}$
 \end{tasks}
 \begin{answer}
 	\begin{align*}
 	M&=N_{1}+N_{2}\\
-	E&=-N_{1} H B+N_{2} H B \Rightarrow \frac{E}{H B}=-N_{1}+N_{2}\\
+	E&=-N_{1} \mu B+N_{2} \mu B \Rightarrow \frac{E}{\mu B}=-N_{1}+N_{2}\\
 	N_{2}&=\frac{1}{2}\left[N+\frac{E}{\mu B}\right] \quad 4 N_{1}=\frac{1}{2}\left[N-\frac{E}{\mu B}\right]\\
-	\Omega&=\frac{N !}{\frac{1}{2}\left(N-\frac{E}{H B}\right) ! \frac{1}{2}\left(N+\frac{E}{M B}\right) !}
+	\Omega&=\frac{N !}{\frac{1}{2}\left(N-\frac{E}{\mu B}\right) ! \frac{1}{2}\left(N+\frac{E}{\mu B}\right) !}
 	\end{align*}
 	So the correct answer is \textbf{Option(a)}
 \end{answer}	
@@ -1239,7 +1239,7 @@ where $k_{B}$ is the Boltzmann constant. The heat capacity of this ensemble at $
 	\Omega&=\frac{N!}{n_1!n_2!.......n_i!}
 	\end{align*}
 \end{answer}
-\item  A system has energy levels $E_{0}, 2 E_{0}, 3 E_{0}, \ldots .$ where the excited states are triphy generate four non-interacting bosons are placed in this system. If the total energy og these bosons is $5E_0$ the number of microstates is:
+\item  A system has energy levels $E_{0}, 2 E_{0}, 3 E_{0}, \ldots .$ where the excited states are triply degenerate four non-interacting bosons are placed in this system. If the total energy of these bosons is $5E_0$ the number of microstates is:
 \begin{tasks}(4)
 	\task[\textbf{a.}]2
 	\task[\textbf{b.}]3
