@@ -1,4 +1,4 @@
-\chapter{Statistical Physics}
+\chapter{Statistical Mechanics-I}
 Statistical mechanics is a formalism in the study of physical properties of matter in bulk. It makes an attempt to derive the macroscopic properties of an object from the properties of it's microscopic constituents and the interactions amongst them. In statistical mechanics we try to find the answers to questions like how are the molecules distributed in space, how they are distributed in velocity.
 \section{Degrees of freedom}
 The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely.
@@ -222,7 +222,7 @@ $$\mathrm{n}_{1} \mathrm{E}_{1}+\mathrm{n}_{2} \mathrm{E}_{2}+\ldots \ldots \ldo
 For defining a microstate we should specify to which energy state each particle of the system belongs at a particular instant. For example in solved problem each arrangement like $(a b c, d)$ or (acd, b) is a microstate. There are five macrostates in the example we have solved. The number of microstates corresponding to the given macrostate of the system is called thermodynamic probability or thermodynamic frequency.\\\\
 For indistinguishable particles, each distribution of the particles among the energy levels, corresponding to the same macrostate of the system is called a microstate, or the state of a system represented by the instant positions and momenta of all the particles is called the microstate. The microstate may change continuously with time. So corresponding to a macrostate there will be a large number of microstates.
 \subsection{Constraints and Accessible State}
-Physical laws impose certain restrictions on the distribution of the molecules among various energy states in phase space and are called constraints of the system. The total number of molecules in a system remains a constant. This is a constraint. i.e. $\sum \mathrm{n}_{\mathrm{i}}=\mathrm{N}=\mathrm{a}$ constant. Another constraint is that the total energy of the system is a constant. $\sum n_{i} E_{i}=U=a$ costant\\
+Physical laws impose certain restrictions on the distribution of the molecules among various energy states in phase space and are called constraints of the system. The total number of molecules in a system remains a constant. This is a constraint. i.e. $\sum \mathrm{n}_{\mathrm{i}}=\mathrm{N}=\mathrm{a}$ constant. Another constraint is that the total energy of the system is a constant. $\sum n_{i} \epsilon_{i}=U=a$ costant\\
  Those microstates into which the molecules are permitted to go under the constraints imposed on the system are called accessible microstates. States which are not permitted by constraints are called non-accessible states.
  \subsection{Boltzmann Entropy}
  The most important relation, between the micro(scopic) and the macro(scopic) worlds is given by,
@@ -331,6 +331,39 @@ $\rho$ is a function of energy. Here $\rho$ is constant and hence $E$ is also a 
 A microcanonical ensemble can be obtained from a uniform ensemble by neglecting those systems whose phase points do not lie within the phase space corresponding to the energy range between $\mathrm{E}$ and $\mathrm{E}+\delta \mathrm{E}$.
 A microcanonical ensemble is an idealised concept and hence cannot exist in practice because the systems which we come across always interact with their surroundings, either thermally or mechanically.
 In microcanonical ensemble there is exchange of neither energy nor particles (molecules) among the systems.
+\\\\If $\Omega$ is the number of accessible microstates, the probability that a system chosen at random from the ensemble would be in a given microstate is simply $\frac{1}{\Omega}$.
+No. of accessible microstate in phase space which has energy between $\mathrm{E}$ to $\mathrm{E}+\mathrm{dE}$ is given by ,
+\begin{align*}
+\Omega&=\sum_{\text {sates }}=\int \frac{d p \cdot d r}{h^{3}}
+\intertext{In terms of energy,}
+n(E) d E&=2 g \pi V\left(\frac{2 m}{h^{2}}\right)^{3 / 2} E^{1 / 2} d E
+\intertext{where '$\mathrm{g}$' is degeneracy of the particle.}
+\end{align*} 
+\subsubsection{Classical Ideal Gas }
+\begin{enumerate}[label=\alph*)]
+	\item  Non Relativistic Case
+	\begin{align*}
+	E&=\frac{p^{2}}{2 m} \Rightarrow p=\sqrt{2 m E}\\
+	\text{For }N-\text{ particle : DOF }&=3 N\\
+	\text{volume of position space }&=V^{N}\\
+	\text{volume of momentum space }&=\frac{\pi^{3 N / 2} p^{3 N}}{(3 N / 2) !}\\
+	\rightarrow \Omega&=\frac{V^{N} \cdot \pi^{3 N / 2}(\sqrt{2 m E})^{3 N}}{h^{3 N}(3 N / 2) !}\\
+	\rightarrow E&=U=\frac{3}{2} N K T=\frac{3}{2} n R T \\
+	\text{If }E\propto P^s \text{ and }d \rightarrow\text{dimension}
+	\rightarrow P&=\frac{s}{d}\left(\frac{E}{V}\right)=\frac{2}{3}\left(\frac{E}{V}\right) \\
+	\rightarrow P V^{5 / 3}&=\text { constant } \\
+	\rightarrow S&=K \ln \Omega\\
+	S&=N_{i} k \ln v_{i}+\frac{3}{2} N_{i} k \ln \left(\frac{4 \pi m_{i} E}{3 N_{i} h^{2}}\right)+\frac{3}{2} N_{i} k
+	\end{align*}
+	\item  Relativistic case
+	\begin{align*}
+	E&=pc\\
+	\Omega&=\frac{U^N\pi^\frac{3N}{2}}{\frac{3N}{2}!}\left(\frac{E}{C h}\right)^{3 N}\\
+	P&=\frac{S}{d}\left(\frac{U}{V} \right) \\
+	P&=\frac{1}{3}\left(\frac{U}{V}\right)\\
+	P V^{4 / 3}&=\text { constant }
+	\end{align*}
+\end{enumerate}
 \section{Canonical Ensemble}
 Canonical ensemble is a collection of independent systems of constant volume separated from the neighbours by rigid, impermeable, diathermic walls so that the systems are in thermal equilibrium. The particles can exchange energy and hence all the systems will attain the same temperature. The systems have the same temperature $\mathrm{T}$ and constant volume $\mathrm{V}$. The number of particles $\mathrm{N}$ is also a constant. In canonical ensemble systems can exchange energy and not particles. 
 \begin{figure}[H]
@@ -372,66 +405,78 @@ Consider an isolated `many particle system' in equilibrium. We want to know the 
 
 
 
-\subsection{Microcanonical Ensemble:}
-\textbf{For Classical Ideal Gas }\\
-\begin{enumerate}[label=\alph*)]
-	\item  Non Relativistic Case
-	\begin{align*}
-	E&=\frac{p^{2}}{2 m} \Rightarrow p=\sqrt{2 m E}\\
-	\text{For }N-\text{ particle : DOF }&=3 N\\
-	\text{volume of position space }&=V^{N}\\
-	\text{volume of momentum space }&=\frac{\pi^{3 N / 2} p^{3 N}}{(3 N / 2) !}\\
-	\rightarrow \Omega&=\frac{V^{N} \cdot \pi^{3 N / 2}(\sqrt{2 m E})^{3 N}}{h^{3 N}(3 N / 2) !}\\
-	\rightarrow E&=U=\frac{3}{2} N K T=\frac{3}{2} n R T \\
-	\text{If }E\propto P^s \text{ and }d \rightarrow\text{dimension}
-	\rightarrow P&=\frac{s}{d}\left(\frac{E}{V}\right)=\frac{2}{3}\left(\frac{E}{V}\right) \\
-	\rightarrow P V^{5 / 3}&=\text { constant } \\
-	\rightarrow S&=K \ln \Omega\\
-	S&=N_{i} k \ln v_{i}+\frac{3}{2} N_{i} k \ln \left(\frac{4 \pi m_{i} E}{3 N_{i} h^{2}}\right)+\frac{3}{2} N_{i} k
-	\end{align*}
-	\item  Relativistic case
-	\begin{align*}
-	E&=pc\\
-	\Omega&=\frac{U^N\pi^\frac{3N}{2}}{\frac{3N}{2}!}\left(\frac{E}{C h}\right)^{3 N}\\
-	P&=\frac{S}{d}\left(\frac{U}{V} \right) \\
-	P&=\frac{1}{3}\left(\frac{U}{V}\right)\\
-	P V^{4 / 3}&=\text { constant }
-	\end{align*}
-\end{enumerate}
+
+
 \subsection{Canonical Ensemble}
-Consider a canonical system $A$ in a microcanonical ensemble $A^{\prime}\left(A \ll A^{\prime}\right)$ . The walls of $A$ are such thal $A$ and $A^{\prime}$ free to exchange energy. The microcanonical ensemble is isolated and it's total energy $E_{0}$ is constant. As discussed before, a large number of microscopic states correspond to the macroscopic state of the microcanonical ensemble with energy $E_{0}$. Let $\Omega_{s}$ to the total number of microstates of the microcanonical ensemble with energy $E_{0}$. By the postulate of equal a priori probability, all these microstates are equally probable. \\Therefore, the probability
-microcanonical ensemble $A^{\prime}$ will give rise to different microstates of the small subsystem $A$. Suppose, a certain microstate of $A^{\prime}$ gives rise to a microstate of $A$ with energy $E_{s}\left(E_{s} \ll E_{0}\right)$. Hence, the energy of the remaining pan of the complete system is $E_{0}-E_{s}$. This is one microstate of A with energy $E_{s}$ attained through the other microstates of $A^{\prime}$. Let the number of states of the microcanonical ensemble $A^{\prime}$, through which the states of the small system $A$ corresponding to the cnergy $E_{\alpha}$ are attained, be $\Omega_{s}\left(E_{0}-E_{s}\right)$. Therefore, the probability that the small system A is in a state with energy $E_{a}$ is
-$$
-P_{s}=\frac{\Omega_{s}\left(E_{0}-E_{s}\right)}{\Omega_{0}}
-$$
-$P_{i}=\frac{g_{i} e^{-\beta \varepsilon_{i}}}{\sum g_{i} e^{-\beta E_{i}}}$\hspace{2cm}$Z=\Sigma g_{i} e^{-\beta \varepsilon_{i}}$
-\quad$Q_1 = Z$\\\\
- For N particles:
+Consider a canonical system $A$ in a microcanonical ensemble $A^{\prime}\left(A \ll A^{\prime}\right)$ . The walls of $A$ are such thal $A$ and $A^{\prime}$ free to exchange energy. The microcanonical ensemble is isolated and it's total energy $E$ is constant. As discussed before, a large number of microscopic states correspond to the macroscopic state of the microcanonical ensemble with energy $E$. Let $\Omega_{i}$ to the total number of microstates of the microcanonical ensemble with energy $E$. By the postulate of equal a priori probability, all these microstates are equally probable. \\Therefore, the probability
+microcanonical ensemble $A^{\prime}$ will give rise to different microstates of the small subsystem $A$. Suppose, a certain microstate of $A^{\prime}$ gives rise to a microstate of $A$ with energy $\epsilon_{i}\left(\epsilon_{i} \ll E\right)$. Hence, the energy of the remaining pan of the complete system is $E-\epsilon_{i}$. This is one microstate of A with energy $\epsilon_{i}$ attained through the other microstates of $A^{\prime}$. Let the number of states of the microcanonical ensemble $A^{\prime}$, through which the states of the small system $A$ corresponding to the cnergy $\epsilon_{i}$ are attained, be $\Omega_{i}\left(E-\epsilon_{i}\right)$. Therefore, the probability that the small system A is in a state with energy $\epsilon_{i}$ is
+\begin{equation*}
+P_{i}=\frac{\Omega_{i}\left(E-\epsilon_{i}\right)}{\Omega(E)}
+\end{equation*}
+This is the Gibbs canonical distribution. It gives the probability that the small system $A$ be in a state with energy $\epsilon_{i}$. There may be other microstates of $A$ with the same energy $\epsilon_{i}$.
+According to Gibbs, the probability of finding the system in any of its $i^{\text {th }}$ state at temperature $\mathrm{T}$ where energy of that state is $\epsilon_{\mathrm{i}}$ is given by,
 \begin{align*}
- Q_{N}(T, V) &=\left[Q_{1}(T, V)\right]^{N} \rightarrow \text { distinguishable } \\ &=\frac{\left[Q_{1}(T, V)\right]^{N}}{N !} \rightarrow \text { indistinguishable. } 
- \end{align*}
-\textbf{Avarage value of Different Quantities}\\
+P_{i} &\propto e^{-\epsilon_{i} \beta} \quad \text{where, }\beta=\frac{1}{k_{B} T}\\
+P_{i}&=c e^{-\epsilon_{i} \beta}\quad \text{where, } \mathrm{c } \text{ is proportionality constant.}
+\intertext{Hence $P_{i}$ is probability then}
+\sum_{i} P_{i}&=\sum_{i} c e^{-\epsilon_{i} \beta}=1 \\ \text {So, } c&=\frac{1}{\sum_{i} e^{-\epsilon_{i} \beta}}\\ \Rightarrow c&=\frac{1}{\sum_{i} e^{-\epsilon_{i} \beta}}=\frac{1}{Z}
+\end{align*}   
+The letter $Z$ stands for the German word Zustandssumme, "sum over states" and is  known as \textbf{partition function} for canonical ensemble which is given by, 
+\begin{equation}
+Z=\sum_{i} e^{-\epsilon_{i} \beta}
+\end{equation}
+In systems with multiple quantum, we can write the partition function in terms of the contribution from energy levels ($g_{i}$ degeneracy of states) as follows:
+\begin{equation}
+Z=\sum_{i} g_{i} e^{-\epsilon_{i} \beta}
+\end{equation}
+\begin{center}
+	\framebox{
+		\parbox[t][1.6cm]{6cm}{
+			
+			\addvspace{0.2cm} \centering 
+			
+			Partition Function,\quad $Z=\sum_{i} e^{-\epsilon_{i} \beta}$\\ \vspace{0.3cm}
+		Probability, \quad \qquad $P_{i}=\frac{ e^{-\epsilon_{i} \beta}}{\sum_{i} e^{-\epsilon_{i} \beta}} $} }
+\end{center}
+\subsection{Average value of different thermodynamic quantities}
 \begin{itemize}
-	\item  Avarage Energy:
+	\item  Average Energy:
 	\begin{align*}
-	\left\langle E_{i}\right\rangle&=\sum E_{i} P_{i} \Rightarrow \frac{\sum \varepsilon_{i} g_{i} e^{-\beta \xi_{i}}}{\sum g_{i} e^{-\beta \varepsilon_{i}}}\\
-	\left\langle E_{i}\right\rangle&=-\frac{\partial}{\partial \beta} \ln z=+k t^{2} \frac{\partial}{\partial T} \ln z
+	\left\langle E\right\rangle&=\sum \epsilon_{i} P_{i} \Rightarrow \frac{\sum \epsilon_{i} g_{i} e^{-\beta \xi_{i}}}{\sum g_{i} e^{-\beta \varepsilon_{i}}}\\
+	\left\langle E\right\rangle&=-\frac{\partial}{\partial \beta} \ln z=+k T^{2} \frac{\partial}{\partial T} \ln z
 	\end{align*}
 	\item  Average Pressure\\
-	$\langle P\rangle=\sum p \frac{g e^{-\beta \varepsilon}}{z}=\frac{1}{\beta} \frac{\partial}{\partial v} \ln z$
+	$$\langle P\rangle=\sum p \frac{g_{i} e^{-\beta \varepsilon}}{z}=\frac{1}{\beta} \frac{\partial}{\partial v} \ln z$$
 	\item  Average Chemical Potential\\
-	$\langle\mu\rangle=\Sigma \frac{\mu g e^{-\beta \varepsilon_{i}}}{z}=-\frac{1}{\beta} \frac{\partial}{\partial N} \ln z$
+	$$\langle\mu\rangle=\Sigma\mu \frac{ g_{i} e^{-\beta \varepsilon_{i}}}{z}=-\frac{1}{\beta} \frac{\partial}{\partial N} \ln z$$
 	\item  Average entropy\\
-	$\langle S\rangle=K_{B} \ln z+\frac{\langle E\rangle}{T} \Rightarrow K_{B} \ln z-\frac{1}{T} \frac{\partial}{\partial B} \ln z$
+	$$\langle S\rangle=K_{B} \ln z+\frac{\langle E\rangle}{T} \Rightarrow K_{B} \ln z-\frac{1}{T} \frac{\partial}{\partial B} \ln z$$
 	\item  Average Free Energy\\
-	$\langle A\rangle=\langle E\rangle-\langle TS\rangle \Rightarrow-K_{B} T \ln z$
+	$$\langle A\rangle=\langle E\rangle-\langle TS\rangle \Rightarrow-K_{B} T \ln z$$
 \end{itemize}
+
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{3.5cm}|}
+		\hline
+	$F=-K_{B} T \ln z$\\\hline
+	$U=\sum_{i} \varepsilon_{i} P_{i}-\frac{\partial}{\partial \beta} \ln z$\\\hline
+	$S =\frac{\partial F}{\partial T} =\frac{1}{k B T^{2}} \cdot \frac{\partial F}{\partial \beta}$\\
+	$\frac{\partial}{\partial T}=-\frac{1}{K_{B} T^{2}} \frac{\partial}{\partial \beta}$\\\hline
+	$P=\frac{-\partial F}{\partial V}$	\\\hline
+	$\mu= \frac{\partial F}{\partial N}$\\\hline	
+	$C_{v}=\frac{\partial U}{\partial T}=\frac{-1}{K_{B} T^{2}} \frac{\partial U}{\partial \beta}$	\\\hline
+	\end{tabular}
+\end{table}
+
+
 
 
 
 \newpage
 \begin{abox}
-	Practise set-01
+	Practise set-1
 \end{abox}
 \begin{enumerate}
 	\item A particle is confined to the region $x \geq 0$ by a potential which increases linearly as $u(x)=u_{0} x$. The mean position of the particle at temperature $T$ is
@@ -736,7 +781,7 @@ If the probabilities of moving to any of the nearest neighbour sites are equal, 
 	{\exyear{GATE 2017}}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=4.5cm]{diagram-20210911(13)-crop}
+		\includegraphics[height=2cm,width=2.5cm]{diagram-20210911(13)-crop}
 	\end{figure}
 	\begin{tasks}(4)
 		\task[\textbf{A.}] $\frac{3}{2} k_{B}$
@@ -769,7 +814,7 @@ If the probabilities of moving to any of the nearest neighbour sites are equal, 
 		\task[\textbf{C.}] $\frac{3 N k_{B}}{2}$
 		\task[\textbf{D.}] $\infty$
 	\end{tasks}
-	\item  A monoatomic gas consists of atoms with two internal energy levels, ground state $E_{0}=0$ and an excited state $E_{1}=E$. The specific heat of the gas is given by
+	\item  A monoatomic gas consists of atoms with two internal energy levels, ground state $E=0$ and an excited state $E_{1}=E$. The specific heat of the gas is given by
 	{\exyear{JEST 2014}}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] $\frac{3}{2} k$
@@ -1057,7 +1102,7 @@ If the probabilities of moving to any of the nearest neighbour sites are equal, 
 	\end{tasks}
 	\begin{answer}
 		\begin{align*}
-		\left\langle E_{i}\right\rangle&=\sum E_{i} P_{i}\\
+		\left\langle \epsilon_{i}\right\rangle&=\sum \epsilon_{i} P_{i}\\
 		&=\frac{\sum \varepsilon_{i} g_{i} e^{-\beta \varepsilon_{i}}}{\sum g_{i} e^{-\beta \varepsilon i}} \\
 		&=\frac{0+2 \varepsilon e^{-\beta \varepsilon}+g \varepsilon^{-2 \beta \varepsilon}}{1 e^{0}+2 e^{-\beta \varepsilon}+4 e^{-2 \beta \varepsilon}} \\
 		&=\varepsilon\left(\frac{2 e^{-\beta \varepsilon}+8 e^{-2 \beta \varepsilon}}{1+2 e^{-\beta \varepsilon}+4 e^{-2 \beta \varepsilon}}\right)
