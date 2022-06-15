@@ -1694,7 +1694,7 @@ $=\frac{28}{15} \times \frac{31}{32} \times \frac{6 M}{7 \pi R^{3}} \pi R^{5}=\f
 	So the correct answer is \textbf{option(D)}
 \end{answer}
 \begin{minipage}{\textwidth}
-	\question Consider three straight coplanar, parallel wires of infinite length where the distance between adjacent where is $d$. Each wire carries a current $I$ in the same direction. The perpendicular distance from the middle wire (on either side) where the magnetic field vanishes is
+	\question   Consider three straight coplanar, parallel wires of infinite length where the distance between adjacent where is $d$. Each wire carries a current $I$ in the same direction. The perpendicular distance from the middle wire (on either side) where the magnetic field vanishes is
 	\exyear{TIFR 2019}
 \end{minipage}
 \begin{tasks}(4)
@@ -1704,6 +1704,18 @@ $=\frac{28}{15} \times \frac{31}{32} \times \frac{6 M}{7 \pi R^{3}} \pi R^{5}=\f
 	\task[\textbf{D.}]   $\frac{2 d}{3}$
 \end{tasks}
 \begin{answer}
+	\begin{align*}
+	\text { Magnetic field due to wire } &1 \text { at point } P \text { is }\\
+	B_{1}&=\frac{\mu_{0} I}{2 \pi(d-r)} \text { (pointing inward) }\\
+	\text { Magnetic field due to wire } &2 \text { at point } P \text { is }\\
+	B_{2}&=\frac{\mu_{0} I}{2 \pi r}(\text { pointing outward })\\
+	\text { Magnetic field due to wire } &3 \text { at point } P \text { is }\\
+	B_{3}&=\frac{\mu_{0} I}{2 \pi(d+r)}(\text { pointing outward })
+	\intertext{Magnetic field due to wires at point } P \text { will vanish if }
+	B_{1}&=B_{2}+B_{3} \Rightarrow \frac{\mu_{0} I}{2 \pi(d-r)}=\frac{\mu_{0} I}{2 \pi r}+\frac{\mu_{0} I}{2 \pi(d+r)}\\
+	\Rightarrow \frac{1}{(d-r)}&=\frac{1}{r}+\frac{1}{(d+r)} \Rightarrow \frac{1}{d-r}=\frac{d+2 r}{r(d+r)} \Rightarrow r d+r^{2}=d^{2}+2 r d-r d-2 r^{2}\\
+	\Rightarrow r^{2}&=d^{2}-2 r^{2} \Rightarrow 3 r^{2}=d^{2} \Rightarrow r=\frac{d}{\sqrt{3}}
+	\end{align*}
 	So the correct answer is \textbf{option(A)}
 \end{answer}
 \begin{minipage}{\textwidth}
@@ -1729,6 +1741,7 @@ $=\frac{28}{15} \times \frac{31}{32} \times \frac{6 M}{7 \pi R^{3}} \pi R^{5}=\f
 	\end{figure}
 \end{tasks}
 \begin{answer}
+	There is always a net attraction between a charge and conductor, so charge on conductor will be more towards charge $q$.\\
 	So the correct answer is \textbf{option(B)}
 \end{answer}
 \begin{minipage}{\textwidth}
@@ -1754,7 +1767,7 @@ $=\frac{28}{15} \times \frac{31}{32} \times \frac{6 M}{7 \pi R^{3}} \pi R^{5}=\f
 	\end{figure}
 \end{tasks}
 \begin{answer}
-	The flux will not vary. So, no emf will be induced and hence no current.\\
+The coil is made to undergo simple harmonic oscillations along the direction of the axis uniform magnetic field. So magnetic flux is constant. Thus current is zero.\\
 	So the correct answer is \textbf{option(C)}
 \end{answer}
 \begin{minipage}{\textwidth}
@@ -1867,6 +1880,15 @@ $=\frac{28}{15} \times \frac{31}{32} \times \frac{6 M}{7 \pi R^{3}} \pi R^{5}=\f
 	\task[\textbf{D.}] $\tan h\left(\hbar \omega_{0} / 2 k_{B} T\right)$
 \end{tasks}
 \begin{answer}
+	\begin{align*}
+	\intertext{The magnetic field at a distance $r$ from the nucleus, perpendicular to the orbit is}
+	B&=\frac{\mu_{0} I}{2} \frac{a^{2}}{\left(a^{2}+r^{2}\right)^{3 / 2}} \Rightarrow B=\frac{\mu_{0} I}{2} \frac{1}{a\left(1+\frac{r^{2}}{a^{2}}\right)^{3 / 2}} \quad \text { where } I=\frac{e}{T}=\frac{e}{2 \pi a / v}=\frac{e v}{2 \pi a}\\
+	\because m v_{n} r_{n}&=n \hbar \Rightarrow m v a=\hbar \quad \Rightarrow v=\frac{\hbar}{m a} \quad \because n=1\\
+	\text { Thus } B&=\frac{\mu_{0}}{2}\left(\frac{e v}{2 \pi a}\right) \frac{1}{a}\left(1+\frac{r^{2}}{a^{2}}\right)^{-3 / 2}=\frac{\mu_{0}}{2}\left(\frac{e}{2 \pi a} \times \frac{\hbar}{m a}\right) \frac{1}{a}\left(1+\frac{r^{2}}{a^{2}}\right)^{-3 / 2}\\
+	\because a&=4 \pi \in_{0} \hbar^{2} / Z e^{2} m \Rightarrow \frac{\hbar}{m a}=\frac{Z e^{2}}{4 \pi \in_{0} \hbar}\\
+	\text { Thus } B&=\frac{\mu_{0}}{2}\left(\frac{e}{2 \pi a} \times \frac{Z e^{2}}{4 \pi \in_{0} \hbar}\right) \frac{1}{a}\left(1+\frac{r^{2}}{a^{2}}\right)^{-3 / 2} \Rightarrow B=\frac{Z e^{3} \mu_{0}}{16 \pi^{2} \hbar a^{2} \in_{0}}\left(1+\frac{r^{2}}{a^{2}}\right)^{-3 / 2}
+	\intertext { No answer exactly matches. }
+	\end{align*}
 	So the correct answer is \textbf{option(A)}
 \end{answer}
 \begin{minipage}{\textwidth}
@@ -2256,6 +2278,13 @@ So, $V_{\text {out }}$ will be given by	\\
 	\task[\textbf{D.}] $\csc ^{-1} 3 \sqrt{\frac{4}{19}}$
 \end{tasks}
 \begin{answer}
+	\begin{align*}
+	\vec{E}_{1}&=\hat{i} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \text { and } \hat{n}=\frac{1}{2}(\sqrt{3} \hat{i}+\hat{k}) \text {. }
+	\intertext{Normal component of electric field in medium 1 is $\left|\vec{E}_{1 n}\right|=\left(\vec{E}_{1}\right) \cdot \hat{n}=\frac{\sqrt{3}}{2} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)$}
+	\text { Thus } \vec{E}_{1 n}&=\frac{\sqrt{3}}{2} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \hat{n}=\frac{\sqrt{3}}{2} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \frac{1}{2}(\sqrt{3} \hat{i}+\hat{k})
+	\intertext{Thus normal component of electric field in medium 2 is}
+	\vec{E}_{2 n}&=\frac{\varepsilon_{1} \vec{E}_{1 n}}{\varepsilon_{2}}=\frac{4 / 3 \varepsilon_{0}}{1 \varepsilon_{0}} \vec{E}_{1 n}=\frac{4}{3} \times \frac{\sqrt{3}}{4} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)(\sqrt{3} \hat{i}+\hat{k})\\&=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \frac{1}{\sqrt{3}}(\sqrt{3} \hat{i}+\hat{k})
+	\end{align*}
 		So the correct answer is \textbf{option(C)}
 \end{answer}
 \begin{minipage}{\textwidth}
