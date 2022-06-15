@@ -2284,6 +2284,18 @@ So, $V_{\text {out }}$ will be given by	\\
 	\text { Thus } \vec{E}_{1 n}&=\frac{\sqrt{3}}{2} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \hat{n}=\frac{\sqrt{3}}{2} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \frac{1}{2}(\sqrt{3} \hat{i}+\hat{k})
 	\intertext{Thus normal component of electric field in medium 2 is}
 	\vec{E}_{2 n}&=\frac{\varepsilon_{1} \vec{E}_{1 n}}{\varepsilon_{2}}=\frac{4 / 3 \varepsilon_{0}}{1 \varepsilon_{0}} \vec{E}_{1 n}=\frac{4}{3} \times \frac{\sqrt{3}}{4} E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)(\sqrt{3} \hat{i}+\hat{k})\\&=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right) \frac{1}{\sqrt{3}}(\sqrt{3} \hat{i}+\hat{k})
+	\intertext{Tangential component of electric field in medium 1 is}
+	\vec{E}_{1 t}&=\vec{E}_{1}-\vec{E}_{1 n}=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\left[\hat{i}-\frac{\sqrt{3}}{2} \frac{1}{2}(\sqrt{3} \hat{i}+\hat{k})\right]=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\left[\frac{1}{4} \hat{i}-\frac{\sqrt{3}}{4} \hat{k}\right]
+	\intertext{Thus tangential component of electric field in medium 2 is}
+	\vec{E}_{2 t}&=\vec{E}_{1 t}=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\left[\frac{1}{4} \hat{i}-\frac{\sqrt{3}}{4} \hat{k}\right]
+	\intertext{The electric field in medium 2 is}
+	\vec{E}_{2}&=\vec{E}_{2 t}+\vec{E}_{2 n}=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\left[\left(\frac{1}{4} \hat{i}-\frac{\sqrt{3}}{4} \hat{k}\right)+\frac{1}{\sqrt{3}}(\sqrt{3} \hat{i}+\hat{k})\right]\\
+	\Rightarrow \vec{E}_{2}&=E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\left(\frac{5}{4} \hat{i}+\frac{1}{4 \sqrt{3}} \hat{k}\right)
+	\intertext{Let angle between $\vec{E}_{1}$ and $\vec{E}_{2}$ be $\theta$ then; $\vec{E}_{1} \cdot \vec{E}_{2}=\left|\vec{E}_{1}\right|\left|\vec{E}_{2}\right| \cos \theta$}
+	\Rightarrow\left[E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\right]^{2} \times \frac{5}{4}&=\left[E_{0} \exp i \omega\left(t+\frac{\sqrt{\varepsilon_{1}}}{c} z\right)\right]^{2} \sqrt{\frac{25}{16}+\frac{1}{48}} \cos \theta\\
+	\Rightarrow \frac{5}{4}&=\frac{1}{4} \sqrt{25+\frac{1}{3}} \cos \theta \Rightarrow 5=\sqrt{\frac{76}{3}} \cos \theta \Rightarrow \cos \theta=\frac{5 \sqrt{3}}{\sqrt{76}}\\
+	\Rightarrow \sin \theta&=\sqrt{1-\cos ^{2} \theta}=\sqrt{1-\frac{75}{76}}=\sqrt{\frac{1}{76}}=\frac{1}{2 \sqrt{19}} \\
+	\Rightarrow \theta&=\sin ^{-1}\left(\frac{1}{2 \sqrt{19}}\right)
 	\end{align*}
 		So the correct answer is \textbf{option(C)}
 \end{answer}
@@ -2532,6 +2544,18 @@ So, $V_{\text {out }}$ will be given by	\\
 	\task[\textbf{C.}] Valid in the Weyl gauge
 	\task[\textbf{D.}] Gauge invariant
 \end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text { Let } \vec{B}&=B_{1} \hat{x}+B_{2} \hat{y}+B_{3} \hat{z} \text { and } \vec{x}=x \hat{x}\\
+	\vec{A}=\frac{1}{2} \vec{B} \times \vec{x}=\left|\begin{array}{ccc}
+	\hat{x} & \hat{y} & \hat{z} \\
+	B_{1} & B_{2} & B_{3} \\
+	x & 0 & 0
+	\end{array}\right|&=\frac{1}{2}\left[\hat{x}(0-0)-\hat{y}\left(0-B_{3} x\right)+\hat{z}\left(0-B_{2} x\right)\right] \Rightarrow \vec{A}=\frac{1}{2}\left[B_{3} x \hat{y}-B_{2} x \hat{z}\right]\\
+	\text { Thus } &\vec{\nabla} \cdot \vec{A}=0 \text {. }
+	\end{align*}
+		So the correct answer is \textbf{option(B)}
+\end{answer}
 \begin{minipage}{\textwidth}
 	\question An ideal monatomic gas at chemical potential $\mu=-1 e V$ and a temperature given by $k_{B} T=0.1 \mathrm{eV}$ is in equilibrium with an adsorbing metal surface, i.e., there are isolated sites distributed randomly on the metal surface where the gas atom can get bound. Each such binding site can adsorb 0,1 or 2 atoms with the released energy being $0,-1 \mathrm{eV}$ and $-1.9 \mathrm{eV}$ respectively. The average number of adsorbed molecules at each site would be
 	\exyear{TIFR 2019}
