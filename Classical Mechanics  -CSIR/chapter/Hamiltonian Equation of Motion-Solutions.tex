@@ -1,0 +1,526 @@
+\chapter{Hamiltonian Equation of Motion-Solutions}
+\begin{abox}
+	Practise set-1
+\end{abox}
+\begin{enumerate}
+	\item  The Hamiltonian of a system with $n$ degrees of freedom is given by $H\left(q_{1}, \ldots . . q_{n} ; p_{1}, \ldots \ldots . p_{n} ; t\right)$, with an explicit dependence on the time $t$. Which of the following is correct?
+	{\exyear{	NET/JRF (June-2011) }}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]Different phase trajectories cannot intersect each other.
+		\task[\textbf{b.}]$H$ always represents the total energy of the system and is a constant of the motion.
+		\task[\textbf{c.}]The equations $\dot{q}_{i}=\partial H / \partial p_{i}, \dot{p}_{i}=-\partial H / \partial q_{i}$ are not valid since $H$ has explicit time dependence.
+		\task[\textbf{d.}]  Any initial volume element in phase space remains unchanged in magnitude under time evolution.
+	\end{tasks}
+\begin{answer}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  If the Lagrangian of a particle moving in one dimensions is given by $L=\frac{\dot{x}^{2}}{2 x}-V(x)$ the Hamiltonian is
+	{\exyear{ 	NET/JRF (June-2012)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} x p^{2}+V(x)$
+		\task[\textbf{b.}]$\frac{\dot{x}^{2}}{2 x}+V(x)$
+		\task[\textbf{c.}] $\frac{1}{2} \dot{x}^{2}+V(x)$
+		\task[\textbf{d.}] $\frac{p^{2}}{2 x}+V(x)$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{Since }H&=p_{x} \dot{x}-L\text{ and }\frac{\partial L}{\partial \dot{x}}=p_{x} \Rightarrow \frac{\dot{x}}{x}\\&=p_{x} \Rightarrow \dot{x}=p_{x} x\\
+	\mathrm{H}&=\mathrm{p}_{\mathrm{x}} \dot{\mathrm{x}}-\frac{\dot{\mathrm{x}}^{2}}{2 \mathrm{x}}+\mathrm{V}(\mathrm{x}) \Rightarrow \mathrm{H}\\&=\mathrm{p}_{\mathrm{x}} \times \mathrm{p}_{\mathrm{x}} \mathrm{x}-\frac{\left(\mathrm{p}_{\mathrm{x}} \mathrm{x}\right)^{2}}{2 \mathrm{x}}+\mathrm{V}(\mathrm{x}) \Rightarrow H=\frac{p_{x}^{2} x}{2}+V(x)
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  The Hamiltonian of a relativistic particle of rest mass $m$ and momentum $p$ is given by $H=\sqrt{p^{2}+m^{2}}+V(x)$, in units in which the speed of light $c=1$. The corresponding Lagrangian is
+	{\exyear{	NET/JRF (DEC-2013)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$L=m \sqrt{1+\dot{x}^{2}}-V(x)$
+		\task[\textbf{b.}]$L=-m \sqrt{1-\dot{x}^{2}}-V(x)$
+		\task[\textbf{c.}]$L=\sqrt{1+m \dot{x}^{2}}-V(x)$
+		\task[\textbf{d.}] $L=\frac{1}{2} m \dot{x}^{2}-V(x)$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=\sqrt{p^{2}+m^{2}}+V(x) \Rightarrow \frac{\partial H}{\partial p}=\dot{x}\\&=\frac{1}{2} \frac{2 p}{\left(p^{2}+m^{2}\right)^{\frac{1}{2}}} \Rightarrow \dot{x}\left(p^{2}+m^{2}\right)^{1 / 2}=p\\
+	\Rightarrow p&=\frac{\dot{x} m}{\sqrt{1-\dot{x}^{2}}}\\
+	\text{ Now }L&=\sum \dot{x} p-H=\dot{x} p-H\\&=\dot{x} p-\sqrt{p^{2}+m^{2}}-V(x)\\
+	\text{Put value }p&=\frac{\dot{x} m}{\sqrt{1-\dot{x}^{2}}} \Rightarrow L=-m \sqrt{1-\dot{x}^{2}}-V(x)
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+	\item  A particle of mass $m$ and coordinate $q$ has the Lagrangian $L=\frac{1}{2} m \dot{q}^{2}-\frac{\lambda}{2} q \dot{q}^{2}$, where $\lambda$ is a constant. The Hamiltonian for the system is given by
+	{\exyear{ 	NET/JRF (June-2014)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{p^{2}}{2 m}+\frac{\lambda q p^{2}}{2 m^{2}}$
+		\task[\textbf{b.}]$\frac{p^{2}}{2(m-\lambda q)}$
+		\task[\textbf{c.}] $\frac{p^{2}}{2 m}+\frac{\lambda q p^{2}}{2(m-\lambda q)^{2}}$
+		\task[\textbf{d.}] $\frac{p \dot{q}}{2}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=\sum \dot{q} p-L\text{ where }L=\frac{1}{2} m \dot{q}^{2}-\frac{\lambda}{2} q \dot{q}^{2}\\
+	\frac{\partial L}{\partial \dot{q}}&=p=m \dot{q}-\lambda q \dot{q} \Rightarrow p\\&=\dot{q}(m-\lambda q) \Rightarrow \dot{q}=\frac{p}{m-\lambda q}\\
+	\Rightarrow H&=\dot{q} p-L=\frac{p^{2}}{(m-\lambda q)}-\frac{1}{2} m \frac{\left(p^{2}\right)}{(m-\lambda q)^{2}}+\frac{\lambda}{2} q \cdot \frac{p^{2}}{(m-\lambda q)^{2}}\\
+	\Rightarrow H&=\dot{q} p-L=\frac{p^{2}}{(m-\lambda q)}-\frac{p^{2}}{2(m-\lambda q)^{2}}(m-\lambda q)\\
+	\Rightarrow H&=\dot{q} p-L=\frac{p^{2}}{(m-\lambda q)}-\frac{p^{2}}{2(m-\lambda q)} \Rightarrow H=\frac{p^{2}}{2(m-\lambda q)}
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+	\item  The Hamiltonian of a one-dimensional system is $H=\frac{x p^{2}}{2 m}+\frac{1}{2} k x$, where $m$ and $k$ are positive constants. The corresponding Euler-Lagrange equation for the system is
+	{\exyear{NET/JRF (June-2018)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}] $m \ddot{x}+k=0$
+		\task[\textbf{b.}] $m \ddot{x}+2 \dot{x}+k x^{2}=0$
+		\task[\textbf{c.}]$2 m x \ddot{x}-m \dot{x}^{2}+k x^{2}=0$
+		\task[\textbf{d.}] $m x \ddot{x}+2 m \dot{x}^{2}+k x^{2}=0$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=\frac{x p^{2}}{2 m}+\frac{1}{2} k x\\
+	\frac{\partial H}{\partial p}&=\dot{x} \Rightarrow \frac{x p}{m}=\dot{x} \quad p=\frac{m \dot{x}}{x}\\
+	L&=\dot{x} p-H \Rightarrow L=\dot{x} p-\frac{x p^{2}}{2 m}-\frac{1}{2} k x\\&=\frac{m \dot{x}^{2}}{x}-\frac{m \dot{x}^{2}}{2 x}-\frac{1}{2} k x=\frac{m \dot{x}^{2}}{2 x}-\frac{1}{2} k x
+	\intertext{Eular Lagrangas equation is given by}
+	\frac{d}{d r}\left(\frac{\partial L}{\partial \dot{x}}\right)-\frac{\partial L}{\partial x}&=0\\
+	\frac{m \ddot{x}}{x}-\frac{m \dot{x} \dot{x}}{2 x^{2}}+\frac{1}{2} k&=0\\
+	2 x m \ddot{x}-m \dot{x}^{2}+k x^{2}&=0
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+	\item  The Hamiltonian of a particle of unit mass moving in the $x y$-plane is given to be: $H=x p_{x}-y p_{y}-\frac{1}{2} x^{2}+\frac{1}{2} y^{2}$ in suitable units. The initial values are given to be $(x(0), y(0))=(1,1)$ and $\left(p_{x}(0), p_{y}(0)\right)=\left(\frac{1}{2},-\frac{1}{2}\right)$. During the motion, the curves traced out by the particles in the $x y$-plane and the $p_{x} p_{y}-$ plane are
+	{\exyear{ NET/JRF (June-2011)}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]Both straight lines
+		\task[\textbf{b.}]A straight line and a hyperbola respectively
+		\task[\textbf{c.}]A hyperbola and an ellipse, respectively
+		\task[\textbf{d.}] Both hyperbolas
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=x p_{x}-y p_{y}-\frac{1}{2} x^{2}+\frac{1}{2} y^{2}
+	\intertext{Solving Hamiltonion equation of motion}
+	\frac{\partial H}{\partial x}&=-\dot{p}_{x} \Rightarrow p_{x}-x=-\dot{p}_{x}\text{ and } \frac{\partial H}{\partial y}\\&=-\dot{p}_{y} \Rightarrow-p_{y}+y=-\dot{p}_{y}\\
+	\frac{\partial H}{\partial p_{x}}&=\dot{x} \Rightarrow x=\dot{x}\text{ and }\frac{\partial H}{\partial p_{y}}=\dot{y} \Rightarrow-y=\dot{y}
+	\intertext{After solving these four differential equation and eliminating time $t$ and using boundary condition one will get $\Rightarrow x=\frac{1}{y}$ and $p_{x}=\frac{1}{2} \frac{1}{p_{y}}$}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+	\item  If the Lagrangian of a dynamical system in two dimensions is $L=\frac{1}{2} m \dot{x}^{2}+m \dot{x} \dot{y}$, then its Hamiltonian is
+	{\exyear{ NET/JRF (June-2015)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$H=\frac{1}{m} p_{x} p_{y}+\frac{1}{2 m} p_{y}^{2}$
+		\task[\textbf{b.}] $H=\frac{1}{m} p_{x} p_{y}+\frac{1}{2 m} p_{x}^{2}$
+		\task[\textbf{c.}]$H=\frac{1}{m} p_{x} p_{y}-\frac{1}{2 m} p_{y}^{2}$
+		\task[\textbf{d.}] $H=\frac{1}{m} p_{x} p_{y}-\frac{1}{2 m} p_{x}^{2}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	L&=\frac{1}{2} m \dot{x}^{2}+m \dot{x} \dot{y} \Rightarrow \frac{\partial L}{\partial \dot{x}}=m \dot{x}+m \dot{y}=p_{x}\hspace{2cm}\text{(i)}\\
+	&\Rightarrow \quad \frac{\partial L}{\partial \dot{y}}=m \dot{x}=p_{y} \quad\text{ or }\quad \dot{x}=\frac{p_{y}}{m}\hspace{2cm}\text{(ii)}\\
+	\text{put }\dot{x}&=\frac{p_{y}}{m} \text{ in equation (i) }\Rightarrow p_{y}+m \dot{y}=p_{x} \Rightarrow \dot{y}=\frac{p_{x}-p_{y}}{m}\\
+	H&=p_{x} \dot{x}+p_{y} \dot{y}-L=p_{x} \dot{x}+p_{y} \dot{y}-\frac{1}{2} m \dot{x}^{2}-m \dot{x} \dot{y}\\
+	\text{put value of }\dot{x}\text{ and }\dot{y} \Rightarrow H&=\frac{p_{x} p_{y}}{m}-\frac{p_{y}^{2}}{2 m}
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+	\item  The Hamiltonian of a system with generalized coordinate and momentum $(q, p)$ is $H=p^{2} q^{2} . A$ solution of the Hamiltonian equation of motion is (in the following $A$ and $B$ are constants)
+	{\exyear{ NET/JRF (June-2016)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}] $p=B e^{-2 A t}, \quad q=\frac{A}{B} e^{2 A t}$
+		\task[\textbf{b.}] $p=A e^{-2 A t}, \quad q=\frac{A}{B} e^{-2 A t}$
+		\task[\textbf{c.}]$p=A e^{A t}, \quad q=\frac{A}{B} e^{-A t}$
+		\task[\textbf{d.}] $p=2 A e^{-A^{2} t}, \quad q=\frac{A}{B} e^{A^{2} t}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=p^{2} q^{2}
+	\intertext{From Hamilton's equation}
+	\frac{\partial H}{\partial q}&=-\dot{p} \Rightarrow \frac{d p}{d t}=-2 p^{2} q\hspace{2cm}\text{(i)}\\
+	\frac{\partial H}{\partial p}&=\dot{q} \Rightarrow \frac{d q}{d t}=2 p q^{2}\hspace{2.8cm}\text{(ii)}
+	\intertext{from equations (i) and (ii)}
+	\frac{d p}{p}&=-\frac{d q}{q}
+	\intertext{Integrating both sides, $\ln p=-\ln q+\ln A$}
+	p q&=A\hspace{5cm}\text{(iii)}
+	\intertext{from equation (i)}
+	\frac{d p}{d t}&=-2 p^{2} q=-2 p A\\
+	\Rightarrow \quad \int \frac{d p}{p}&=-\int 2 A d t+\ln B \Rightarrow \ln \frac{p}{B}=-2 A t \Rightarrow p=B e^{-2 A t}
+	\intertext{Putting this value of $p$ in equation (iii) gives $q=\frac{A}{B} e^{2 A t}$}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  The Hamiltonian for a system described by the generalised coordinate $x$ and generalised momentum $p$ is
+	$$
+	H=\alpha x^{2} p+\frac{p^{2}}{2(1+2 \beta x)}+\frac{1}{2} \omega^{2} x^{2}
+	$$
+	where $\alpha, \beta$ and $\omega$ are constants. The corr
+	{\exyear{NET/JRF (JUNE-2017)}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]esponding Lagrangian is
+		$\frac{1}{2}\left(\dot{x}-\alpha x^{2}\right)^{2}(1+2 \beta x)-\frac{1}{2} \omega^{2} x^{2}$
+		\task[\textbf{b.}]$\frac{1}{2(1+2 \beta x)} \dot{x}^{2}-\frac{1}{2} \omega^{2} x^{2}-\alpha x^{2} \dot{x}$
+		\task[\textbf{c.}]$\frac{1}{2}\left(\dot{x}^{2}-\alpha^{2} x\right)^{2}(1+2 \beta x)-\frac{1}{2} \omega^{2} x^{2}$
+		\task[\textbf{d.}] $\frac{1}{2(1+2 \beta x)} \dot{x}^{2}-\frac{1}{2} \omega^{2} x^{2}+\alpha x^{2} \dot{x}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=a x^{2} p+\frac{p^{2}}{2(1+2 \beta x)}+\frac{1}{2} \omega^{2} x^{2}\\
+	\frac{\partial H}{\partial p}&=\dot{x} \Rightarrow a x^{2}+\frac{p}{(1+2 \beta x)} \Rightarrow p\\&=\left(\dot{x}-a x^{2}\right)(1+2 \beta x)\\
+	L&=\dot{x} P-H\\
+	&=\dot{x} P-a x^{2} P-\frac{p^{2}}{(1+2 \beta x)}-\frac{1}{2} \omega^{2} x^{2}\\
+	&=x\left(\dot{x}-\alpha x^{2}\right)(1+2 \beta x)-\alpha x^{2}\left(\dot{x}-\alpha x^{2}\right)(1+2 \beta x)-\frac{\left(\dot{x}-\alpha x^{2}\right)^{2}(1+2 \beta x)^{2}}{2(1+2 \beta x)}\\
+	&=(1+2 \beta x)\left(\dot{x}-\alpha x^{2}\right)\left[x-\alpha x^{2}-\frac{\left(\dot{x}-\alpha x^{2}\right)}{2}\right]-\frac{1}{2} \omega^{2} x^{2}\\
+	&=(1+2 \beta x)\left(\dot{x}-\alpha x^{2}\right) \frac{\left(\dot{x}-\alpha x^{2}\right)^{2}}{2}-\frac{1}{2} \omega^{2} x^{2}=(1+2 \beta x) \frac{\left(\dot{x}-\alpha x^{2}\right)^{2}}{2}-\frac{1}{2} \omega^{2} x^{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  A point mass $m$, is constrained to move on the inner surface of a paraboloid of revolution $x^{2}+y^{2}=a z$ (where $a>0$ is a constant). When it spirals down the surface, under the influence of gravity (along $-z$ direction), the angular speed about the $z$ - axis is proportional to
+	{\exyear{ NET/JRF (JUNE-2020)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]1 (independent of $z$ )
+		\task[\textbf{b.}]$z$
+		\task[\textbf{c.}] $z^{-1}$
+		\task[\textbf{d.}]  $z^{-2}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{Using Lagrangian in cylindrical coordinate}
+	L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\dot{z}^{2}\right)-m g z \\\text{ with constraint }x^{2}+y^{2}&=a z \Rightarrow r^{2}=a z \Rightarrow \dot{z}=\frac{2 r \dot{r}}{a}\\
+	L&=\frac{1}{2} m\left(\dot{r}^{2}+r^{2} \dot{\theta}^{2}+\left(\frac{2 r \dot{r}}{a}\right)^{2}\right)-\frac{m g r^{2}}{a}\\
+	\theta \text{is cyclic coordinate so }\frac{\partial L}{\partial \theta}&=0 \Rightarrow \frac{\partial L}{\partial \dot{\theta}}=J \Rightarrow m r^{2} \dot{\theta}=J \Rightarrow \dot{\theta} \propto \frac{1}{r^{2}} \propto \frac{1}{z}
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+	\item  The Poisson bracket $\{|\vec{r}|,|\vec{p}|\}$ has the value
+	{\exyear{ NET/JRF (June-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$|\vec{r}||\vec{p}|$
+		\task[\textbf{b.}]$\hat{r} \cdot \hat{p}$
+		\task[\textbf{c.}]3
+		\task[\textbf{d.}] 1
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\vec{r}&=x \hat{i}+\hat{y} \hat{j}+z \hat{k},|\vec{r}|=\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}, p=p_{x} \hat{i}+p_{y} \hat{j}+p_{z} \hat{k}\\
+	|\vec{p}|&=\left(p_{x}^{2}+p_{y}^{2}+p_{z}^{2}\right)^{1 / 2}\\
+	\{|\vec{r}|,|\vec{p}|\}&=\left(\frac{\partial|\vec{r}|}{\partial x} \cdot \frac{\partial|\vec{p}|}{\partial p_{x}}-\frac{\partial|\vec{r}|}{\partial p_{x}} \cdot \frac{\partial|\vec{p}|}{\partial x}\right)+\left(\frac{\partial|\vec{r}|}{\partial y} \cdot \frac{\partial|\vec{p}|}{\partial p_{y}}-\frac{\partial|\vec{r}|}{\partial p_{y}} \cdot \frac{\partial|\vec{p}|}{\partial y}\right)+\left(\frac{\partial|\vec{r}|}{\partial z} \cdot \frac{\partial|\vec{p}|}{\partial p_{z}}-\frac{\partial|\vec{r}|}{\partial p_{z}} \cdot \frac{\partial|\vec{p}|}{\partial y}\right)\\
+	&=\frac{x}{|\vec{r}|} \frac{p_{x}}{|\vec{p}|}+\frac{y}{|\vec{r}|} \frac{p_{y}}{|\vec{p}|}+\frac{z}{|\vec{r}|} \frac{p_{z}}{|\vec{p}|}=\frac{\vec{r} \cdot \vec{p}}{|\vec{r} \| \vec{p}|}=(\hat{r} \cdot \hat{p})
+	\end{align*}
+	So the correct answer is \textbf{Option (c)}
+\end{answer}
+	\item  Let $A, B$ and $C$ be functions of phase space variables (coordinates and momenta of a mechanical system). If ${,}$ represents the Poisson bracket, the value of $\{A,\{B, C\}\}-\{\{A, B\}, C$ is given by
+	{\exyear{ NET/JRF (DEC-2013)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}] 0
+		\task[\textbf{b.}]$\{B,\{C, A\}\}$
+		\task[\textbf{c.}]$\{A,\{C, B\}\}$
+		\task[\textbf{d.}] $\{\{C, A\}, B\}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{We know that Jacobi identity equation}
+	\{A,\{B, C\}\}+\{B,\{C, A\}\}+\{C,\{A, B\}\}&=0\\
+	\text{	Now }\{A,\{B, C\}\}-\{\{A, B\}, C\}&=-\{B,\{C, A\}\}=\{\{C, A\}, B\}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+	\item  The coordinates and momenta $x_{i}, p_{i}(i=1,2,3)$ of a particle satisfy the canonical Poisson bracket relations $\left\{x_{i}, p_{j}\right\}=\delta_{i j}$. If $C_{1}=x_{2} p_{3}+x_{3} p_{2}$ and $C_{2}=x_{1} p_{2}-x_{2} p_{1}$ are constants of motion, and if $C_{3}=\left\{C_{1}, C_{2}\right\}=x_{1} p_{3}+x_{3} p_{1}$, then
+	\begin{tasks}(1)
+		\task[\textbf{a.}]$\left\{C_{2}, C_{3}\right\}=C_{1}$ and $\left\{C_{3}, C_{1}\right\}=C_{2}$
+		\task[\textbf{b.}]$\left\{C_{2}, C_{3}\right\}=-C_{1}$ and $\left\{C_{3}, C_{1}\right\}=-C_{2}$
+		\task[\textbf{c.}]$\left\{C_{2}, C_{3}\right\}=-C_{1}$ and $\left\{C_{3}, C_{1}\right\}=C_{2}$
+		\task[\textbf{d.}] $\left\{C_{2}, C_{3}\right\}=C_{1}$ and $\left\{C_{3}, C_{1}\right\}=-C_{2}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	C_{1}&=x_{2} p_{3}+x_{3} p_{2}, C_{2}=x_{1} p_{2}-x_{2} p_{1}, C_{3}=x_{1} p_{3}+x_{3} p_{1}\\
+	\left\{C_{2}, C_{3}\right\}&=\left(\frac{\partial C_{2}}{\partial x_{1}} \frac{\partial C_{3}}{\partial p_{1}}-\frac{\partial C_{2}}{\partial p_{1}} \frac{\partial C_{3}}{\partial x_{1}}\right)+\left(\frac{\partial C_{2}}{\partial x_{2}} \frac{\partial C_{3}}{\partial p_{2}}-\frac{\partial C_{2}}{\partial p_{2}} \frac{\partial C_{3}}{\partial x_{2}}\right)+\left(\frac{\partial C_{2}}{\partial x_{3}} \frac{\partial C_{3}}{\partial p_{3}}-\frac{\partial C_{2}}{\partial p_{3}} \frac{\partial C_{3}}{\partial x_{3}}\right)\\
+	\left\{C_{2}, C_{3}\right\}&=\left(p_{2} x_{3}-\left(-x_{2}\right) p_{3}\right)+\left(0-x_{1} \cdot 0\right)+\left(0 \cdot x_{1}-0 \cdot p_{1}\right)\\&=\left(p_{2} x_{3}+x_{2} p_{3}\right)=C_{1}\\
+	\left\{C_{3}, C_{1}\right\}&=\left(\frac{\partial C_{3}}{\partial x_{1}} \frac{\partial C_{1}}{\partial p_{1}}-\frac{\partial C_{3}}{\partial p_{1}} \frac{\partial C_{1}}{\partial x_{1}}\right)+\left(\frac{\partial C_{3}}{\partial x_{2}} \frac{\partial C_{1}}{\partial p_{2}}-\frac{\partial C_{3}}{\partial p_{2}} \frac{\partial C_{1}}{\partial x_{2}}\right)+\left(\frac{\partial C_{3}}{\partial x_{3}} \frac{\partial C_{1}}{\partial p_{3}}-\frac{\partial C_{3}}{\partial p_{3}} \frac{\partial C_{1}}{\partial x_{3}}\right)\\
+	\left\{C_{3}, C_{1}\right\}&=\left(p_{3} \cdot 0-x_{3} \cdot 0\right)+\left(0 \cdot x_{3}-0 \cdot p_{3}\right)+\left(p_{1} x_{2}-x_{1} p_{2}\right)\\&=-\left(x_{1} p_{2}-x_{2} p_{1}\right)=-C_{2}
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+	\item  The Hamiltonian of a simple pendulum consisting of a mass $m$ attached to a massless string of length $l$ is $H=\frac{p_{\theta}^{2}}{2 m l^{2}}+m g l(1-\cos \theta)$. If $L$ denotes the Lagrangian, the value of $\frac{d L}{d t}$ is:
+	{\exyear{ NET/JRF (DEC-2012)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$-\frac{2 g}{l} p_{\theta} \sin \theta$
+		\task[\textbf{b.}] $-\frac{g}{l} p_{\theta} \sin 2 \theta$
+		\task[\textbf{c.}]$\frac{g}{l} p_{\theta} \cos \theta$
+		\task[\textbf{d.}] $l p_{\theta}^{2} \cos \theta$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\frac{d L}{d t}&=[L, H]+\frac{\partial L}{\partial t}\text{ where }H\\&=\frac{p_{\theta}^{2}}{2 m l^{2}}+m g l(1-\cos \theta)\\
+	L&=\sum_{i} p_{i} \dot{q}_{i}-H=p_{\theta} \dot{\theta}-H, \dot{\theta}=\frac{\partial H}{\partial P_{\theta}}\\&=\frac{p_{\theta}}{m l^{2}}, \Rightarrow L=\frac{m l^{2} \dot{\theta}^{2}}{2}-m g l(1-\cos \theta)
+	\intertext{Hence we have to calculate $[L, H]$ which is only defined into phase space i.e. $p_{\theta}$ and $\theta$.}
+	\text{Then }\Rightarrow L&=\frac{p_{\theta}^{2}}{2 m l^{2}}-\operatorname{mgl}(1-\cos \theta)\\
+	[L, H]&=\frac{\partial L}{\partial \theta} \times \frac{\partial H}{\partial p_{\theta}}-\frac{\partial L}{\partial p_{\theta}} \times \frac{\partial H}{\partial \theta}\\&=-\frac{2 g}{l} p_{\theta} \sin \theta\text{ and }\frac{\partial L}{\partial t}=0 \Rightarrow \frac{d L}{d t}=-\frac{2 g}{l} p_{\theta} \sin \theta
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  A particle moves in one dimension in the potential $V=\frac{1}{2} k(t) x^{2}$, where $k(t)$ is a time dependent parameter. Then $\frac{d}{d t}\langle V\rangle$, the rate of change of the expectation value $\langle V\rangle$ of the potential energy is
+	{\exyear{ NET/JRF (June-2015)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} \frac{d k}{d t}\left\langle x^{2}\right\rangle+\frac{k}{2 m}\langle x p+p x\rangle$
+		\task[\textbf{b.}] $\frac{1}{2} \frac{d k}{d t}\left\langle x^{2}\right\rangle+\frac{1}{2 m}\left\langle p^{2}\right\rangle$
+		\task[\textbf{c.}]$\frac{k}{2 m}\langle x p+p x\rangle$
+		\task[\textbf{d.}]  $\frac{1}{2} \frac{d k}{d t}\left\langle x^{2}\right\rangle$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=\frac{p^{2}}{2 m}+\frac{1}{2} k(t) x^{2}\\
+	\frac{d}{d t}\langle V\rangle&=\langle[V, H]\rangle+\left\langle\frac{\partial V}{\partial t}\right\rangle \\&\Rightarrow\left[\frac{1}{2} k(t) x^{2}, \frac{p^{2}}{2 m}+\frac{1}{2} k(t) x^{2}\right]+\frac{x^{2}}{2} \frac{\partial k}{\partial t}=[V, H]\\
+	\frac{d}{d t}\langle V\rangle&=\frac{1}{2} k(t) \cdot 2\left\langle\frac{x p+p x}{2 m}\right\rangle+\left\langle\frac{x^{2}}{2}\right\rangle \frac{\partial k}{\partial t}\\&=\left\langle\frac{x^{2}}{2}\right\rangle \frac{\partial k}{\partial t}+\frac{1}{2 m} k(t)\langle x p+p x\rangle
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  A particle in two dimensions is in a potential $V(x, y)=x+2 y$. Which of the following (apart from the total energy of the particle) is also a constant of motion?
+	{\exyear{NET/JRF (DEC-2016)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}] $p_{y}-2 p_{x}$
+		\task[\textbf{b.}] $p_{x}-2 p_{y}$
+		\task[\textbf{c.}]$p_{x}+2 p_{y}$
+		\task[\textbf{d.}]  $p_{y}+2 p_{x}$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	V(x, y)&=x+2 y\\
+	H&=\frac{p_{x}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}+x+2 y\\
+	\frac{d\left(p_{y}-2 p_{x}\right)}{d t}&=\left[p_{y}-2 p_{x}, H\right]+\frac{\partial}{\partial t}\left(p_{y}-2 p_{x}\right)\\
+	&=\left[p_{y}-2 p_{x}, H\right]=\left[p_{y}-2 p_{x}, x+2 y\right]\\&=\left[p_{y}, 2 y\right]-\left[2 p_{x}, x\right]=-2+2=0
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  The Hamiltonian of a classical one-dimensional harmonic oscillator is $H=\frac{1}{2}\left(p^{2}+x^{2}\right)$, in suitable units. The total time derivative of the dynamical variable $(p+\sqrt{2} x)$ is
+	{\exyear{ NET/JRF (JUNE-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$\sqrt{2} p-x$
+		\task[\textbf{b.}] $p-\sqrt{2} x$
+		\task[\textbf{c.}]$p+\sqrt{2} x$
+		\task[\textbf{d.}]  $x+\sqrt{2} p$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	H&=\frac{p^{2}}{2}+\frac{x^{2}}{2} \quad\text{ Let say dynamical variable }A=(p+\sqrt{2} x)\\
+	\frac{d A}{d t}&=[A, H]+\frac{\partial A}{\partial t}\\
+	\text{	It is given }\frac{\partial A}{\partial t}&=0 \Rightarrow \frac{d A}{d t}=[A, H]\\
+	\frac{d A}{d t}&=\left[p+\sqrt{2} x, \frac{p^{2}}{2}+\frac{x^{2}}{2}\right]=\left[p, \frac{x^{2}}{2}\right]+\left[\sqrt{2} x, \frac{p^{2}}{2}\right]\\
+	&=\frac{-2 x}{2}+\frac{\sqrt{2} 2 p}{2}=-x+\sqrt{2} p=\sqrt{2} p-x
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  A system is governed by the Hamiltonian
+	$$
+	H=\frac{1}{2}\left(p_{x}-a y\right)^{2}+\frac{1}{2}\left(p_{x}-b x\right)^{2}
+	$$
+	where $a$ and $b$ are constants and $p_{x}, p_{y}$ are momenta conjugate to $x$ and $y$ respectively.
+	For what values of $a$ and $b$ will the quantities $\left(p_{x}-3 y\right)$ and $\left(p_{y}+2 x\right)$ be conserved?
+	{\exyear{NET/JRF (June-2013)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$a=-3, b=2$
+		\task[\textbf{b.}]$a=3, b=-2$
+		\task[\textbf{c.}]$a=2, b=-3$
+		\task[\textbf{d.}] $a=-2, b=3$
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{Poisson bracket }\left[p_{x}-3 y, H\right]&=0 and \left[p_{y}+2 y, H\right]=0\\
+	p_{y}(b-3)+x\left(3 b-b^{2}\right)&=0\text{ and }p_{x}(a+2)-y\left(2 a+a^{2}\right)=0\\
+	\Rightarrow \quad a&=-2, b=3
+	\end{align*}
+	So the correct answer is \textbf{Option (d)}
+\end{answer}
+	\item  The Lagrangian of a system moving in three dimensions is
+	$$
+	L=\frac{1}{2} m \dot{x}_{1}^{2}+m\left(\dot{x}_{2}^{2}+\dot{x}_{3}^{2}\right)-\frac{1}{2} k x_{1}^{2}-\frac{1}{2} k\left(x_{2}+x_{3}\right)^{2}
+	$$
+	The independent constants of motion is/are
+	{\exyear{NET/JRF (June-2016)}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]Energy alone
+		\task[\textbf{b.}] Only energy, one component of the linear momentum and one component of the angular momentum
+		\task[\textbf{c.}] Only energy, one component of the linear momentum
+		\task[\textbf{d.}] Only energy, one component of the angular momentum
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\intertext{The motion is in $3 D$. So don't get confine with $x_{1}, x_{2} x_{3}$ they are actually $x, y, z$ Langrangian is then}
+	L&=\frac{1}{2} m \dot{x}^{2}+m\left(\dot{y}^{2}+\dot{z}^{2}\right)-\frac{1}{2} k x^{2}-\frac{1}{2} k(y+z)^{2},\\\text{ when }\frac{\partial L}{\partial x} &\neq 0, \frac{\partial L}{\partial y} \neq 0, \frac{\partial L}{\partial z} \neq 0
+	\intertext{So, not any component at Linear momentum is conserve.}
+	\intertext{Now transform the Lagrangian to Hamiltonian}
+	H&=\frac{P_{x}^{2}}{2 m}+\frac{P_{y}^{2}}{4 m}+\frac{P_{z}^{2}}{4 m}+\frac{1}{2} k x^{2}+\frac{1}{2} k(y+z)^{2}\\
+	\frac{\partial H}{\partial t}&=0\text{ so energy is conserved}\\
+	\text{Now let us assume }L_{x}&=y P_{z}-z P_{y}\\
+	\frac{d L_{x}}{d t}&=\left[L_{x}, H\right]+\frac{\partial L_{x}}{\partial t}\\
+	\left[L_{x}, H\right]&=\left[y P_{z}-z P_{y}, H\right]\\&=[y, H] P_{z}+y\left[P_{z}, H\right]-[z, H] P_{y}-z\left[P_{y}, H\right]\\
+	\Rightarrow\left[L_{x}, H\right]&=\left[y, \frac{P_{y}^{2}}{4 m}\right] P_{z}+y\left[P_{z}, \frac{1}{2} k(y+z)^{2}\right]-\left[z, \frac{P_{z}^{2}}{4 m}\right] P_{y}-z\left[P_{y}, \frac{1}{2} k(y+z)^{2}\right]\\
+	&=2 P_{y} \frac{P_{z}}{4 m}+y\left[0-\frac{1}{2} k \cdot 2(y+z)\right]-\left[2 P_{y} \frac{P_{z}}{4 m}\right]-z\left[0-\frac{1}{2} k \cdot 2(y+z)\right]\\
+	&=-k\left(y^{2}+y z\right)+k\left(z^{2}+y z\right)=-k\left[y^{2}-z^{2}\right]=k\left[z^{2}-y^{2}\right]\\
+	&\Rightarrow \frac{d L_{x}}{d t} \neq 0 .\text{ Similarly }\frac{d L_{y}}{d t} \neq 0 \text{and }\Rightarrow \frac{d L_{z}}{d t} \neq 0
+	\end{align*}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+	\item  The Hamiltonian of a system with two degrees of freedom is $H=q_{1} p_{1}-q_{2} p_{2}+a q_{1}^{2}$, where $a>0$ is a constant. The function $q_{1} q_{2}+\lambda p_{1} p_{2}$ is a constant of motion only if $\lambda$ is
+	{\exyear{NET/JRF (DEC-2019) }}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]0
+		\task[\textbf{b.}]1
+		\task[\textbf{c.}]$-a$
+		\task[\textbf{d.}]$a$ 
+	\end{tasks}
+\begin{answer}
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{A} &2&\textbf{A}\\\hline 
+		3&\textbf{B} &4&\textbf{B} \\\hline
+		5&\textbf{C} &6&\textbf{D} \\\hline
+		7&\textbf{C}&8&\textbf{A}\\\hline
+		9&\textbf{A}&10&\textbf{C}\\\hline
+		11&\textbf{B}&12&\textbf{D}\\\hline
+		13&\textbf{D}&14&\textbf{A}\\\hline
+		15&\textbf{A}&16&\textbf{A}\\\hline
+		17&\textbf{A} &18&\textbf{D}\\\hline
+		19&\textbf{A}&20&\textbf{A}\\\hline
+		
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practise set-2
+\end{abox}
+\begin{enumerate}
+	\item Consider the Lagrangian $L=a\left(\frac{d x}{d t}\right)^{2}+b\left(\frac{d y}{d t}\right)^{2}+c x y$, where $a, b$ and $c$ are constants. If $p_{x}$ and $p_{y}$ are the momenta conjugate to the coordinates $x$ and $y$ respectively, then the Hamiltonian is
+	{\exyear{ 	GATE- 2020}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{p_{x}^{2}}{4 a}+\frac{p_{y}^{2}}{4 b}-c x y$
+		\task[\textbf{b.}]$\frac{p_{x}^{2}}{2 a}+\frac{p_{y}^{2}}{2 b}-c x y$
+		\task[\textbf{c.}]$\frac{p_{x}^{2}}{2 a}+\frac{p_{y}^{2}}{2 b}+c x y$
+		\task[\textbf{d.}] $\frac{p_{x}^{2}}{a}+\frac{p_{y}^{2}}{b}+c x y$
+	\end{tasks}
+	\item  If Hamiltonion is given by $H=\frac{P_{\theta}^{2}}{2 m l^{2}}+m g l(1-\cos \theta)$ Hamilton's equations are then given by
+	{\exyear{ 	GATE- 2010}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}] $\dot{p}_{\theta}=-m g l \sin \theta ; \quad \dot{\theta}=\frac{p_{\theta}}{m l^{2}}$
+		\task[\textbf{b.}]$\dot{p}_{\theta}=m g l \sin \theta ; \quad \dot{\theta}=\frac{p_{\theta}}{m l^{2}}$
+		\task[\textbf{c.}]$\dot{p}_{\theta}=-m \ddot{\theta} ; \quad \dot{\theta}=\frac{p_{\theta}}{m}$
+		\task[\textbf{d.}] $\dot{p}_{\theta}=-\left(\frac{g}{l}\right) \theta ; \quad \dot{\theta}=\frac{p_{\theta}}{m l}$
+	\end{tasks}
+	\item  A particle of mass $m$ is attached to a fixed point $O$ by a weightless inextensible string of length $a$. It is rotating under the gravity as shown in the figure. The Lagrangian of the particle is
+	$L(\theta, \phi)=\frac{1}{2} m a^{2}\left(\dot{\theta}^{2}+\sin ^{2} \theta \dot{\phi}^{2}\right)-m g a \cos \theta$ where $\theta$ and $\phi$ are the polar angles. The Hamiltonian of the particles is
+	{\exyear{ 	GATE- 2012}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]$H=\frac{1}{2 m a^{2}}\left(p_{\theta}^{2}+\frac{p_{\phi}^{2}}{\sin ^{2} \theta}\right)-m g a \cos \theta$
+		\task[\textbf{b.}]$H=\frac{1}{2 m a^{2}}\left(p_{\theta}^{2}+\frac{p_{\phi}^{2}}{\sin ^{2} \theta}\right)+m g a \cos \theta$
+		\task[\textbf{c.}]$H=\frac{1}{2 m a^{2}}\left(p_{\theta}^{2}+p_{\phi}^{2}\right)-m g a \cos \theta$
+		\task[\textbf{d.}] $H=\frac{1}{2 m a^{2}}\left(p_{\theta}^{2}+p_{\phi}^{2}\right)+m g a \cos \theta$
+	\end{tasks}
+	\item  The Hamiltonian for a particle of mass $m$ is $H=\frac{p^{2}}{2 m}+k q t$ where $q$ and $p$ are the generalized coordinate and momentum, respectively, $t$ is time and $k$ is a constant. For the initial condition, $q=0$ and $p=0$ at $t=0, q(t) \propto t^{\alpha}$. The value of $\alpha$ is -----------
+	{\exyear{	GATE - 2019 }}
+	\item  Consider the Hamiltonian $H(q, p)=\frac{a p^{2} q^{4}}{2}+\frac{\beta}{q^{2}}$, where $\alpha$ and $\beta$ are parameters with appropriate dimensions, and $q$ and $p$ are the generalized coordinate and momentum, respectively. The corresponding Lagrangian $L(q, \dot{q})$ is
+	{\exyear{	GATE - 2019}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}] $\frac{1}{2 \alpha} \frac{\dot{q}^{2}}{q^{4}}-\frac{\beta}{q^{2}}$
+		\task[\textbf{b.}]$\frac{1}{2 \alpha} \frac{\dot{q}^{2}}{q^{4}}+\frac{\beta}{q^{2}}$
+		\task[\textbf{c.}]$\frac{1}{\alpha} \frac{\dot{q}^{2}}{q^{4}}+\frac{\beta}{q^{2}}$
+		\task[\textbf{d.}] $-\frac{1}{2 \alpha} \frac{\dot{q}^{2}}{q^{4}}+\frac{\beta}{q^{2}}$
+	\end{tasks}
+	\item  The Lagrangian for a particle of mass $m$ at a position $\vec{r}$ moving with a velocity $\vec{v}$ is given by $L=\frac{m}{2} \vec{v}^{2}+C \vec{r} \cdot \vec{v}-V(r)$, where $V(r)$ is a potential and $C$ is a constant. If $\vec{p}_{c}$ is the canonical momentum, then its Hamiltonian is given by
+	{\exyear{ 	GATE- 2015}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2 m}\left(\vec{p}_{c}+C \vec{r}\right)^{2}+V(r)$
+		\task[\textbf{b.}]$\frac{1}{2 m}\left(\vec{p}_{c}-C \vec{r}\right)^{2}+V(r)$
+		\task[\textbf{c.}]$\frac{p_{c}^{2}}{2 m}+V(r)$
+		\task[\textbf{d.}]  $\frac{1}{2 m} p_{c}^{2}+C^{2} r^{2}+V(r)$
+	\end{tasks}
+	\item  The Hamiltonian for a system of two particles of masses $m_{1}$ and $m_{2}$ at $\vec{r}_{1}$ and $\vec{r}_{2}$ having velocities $\vec{v}_{1}$ and $\vec{v}_{2}$ is given by $H=\frac{1}{2} m_{1} v_{1}^{2}+\frac{1}{2} m_{2} v_{2}^{2}+\frac{C}{\left(\vec{r}_{1}-\vec{r}_{2}\right)^{2}} \hat{z} \cdot\left(\vec{r}_{1} \times \vec{r}_{2}\right)$, where $C$ is constant. Which one of the following statements is correct?
+	{\exyear{GATE- 2015}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}] The total energy and total momentum are conserved
+		\task[\textbf{b.}]Only the total energy is conserved
+		\task[\textbf{c.}]The total energy and the $z$ - component of the total angular momentum are conserved
+		\task[\textbf{d.}]  The total energy and total angular momentum are conserved
+	\end{tasks}
+	\item  The Hamilton's canonical equation of motion in terms of Poisson Brackets are
+	{\exyear{ 	GATE- 2014}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\dot{q}=\{q, H\} ; \dot{p}=\{p, H\}$
+		\task[\textbf{b.}]$\dot{q}=\{H, q\} ; \dot{p}=\{H, p\}$
+		\task[\textbf{c.}]$\dot{q}=\{H, p\} ; \dot{p}=\{H, p\}$
+		\task[\textbf{d.}] $\dot{q}=\{p, H\} ; \dot{p}=\{q, H\}$
+	\end{tasks}
+	\item  The Poisson bracket $\left[x, x p_{y}+y p_{x}\right]$ is equal to
+	{\exyear{	GATE- 2017}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}] $-x$
+		\task[\textbf{b.}]$y$
+		\task[\textbf{c.}]$2 p_{x}$
+		\task[\textbf{d.}] $p_{y}$
+	\end{tasks}
+	\item  If $H$ is the Hamiltonian for a free particle with mass $m$, the commutator $[x,[x, H]]$ is
+	{\exyear{ GATE - 2018}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$\hbar^{2} / m$
+		\task[\textbf{b.}]$-\hbar^{2} / m$
+		\task[\textbf{c.}]$-\hbar^{2} /(2 m)$
+		\task[\textbf{d.}] $\hbar^{2} /(2 m)$
+	\end{tasks}
+	\item  The Poisson bracket between $\theta$ and $\dot{\theta}$ is
+	{\exyear{	GATE- 2010}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\{\theta, \dot{\theta}\}=1$
+		\task[\textbf{b.}] $\{\theta, \dot{\theta}\}=\frac{1}{m l^{2}}$
+		\task[\textbf{c.}]$\{\theta, \dot{\theta}\}=\frac{1}{m}$
+		\task[\textbf{d.}] $\{\theta, \dot{\theta}\}=\frac{g}{l}$
+	\end{tasks}
+	\item  A dynamical system with two generalized coordinates $q_{1}$ and $q_{2}$ has Lagrangian $L=\dot{q}_{1}^{2}+\dot{q}_{2}^{2}$. If $p_{1}$ and $p_{2}$ are the corresponding generalized momenta, the Hamiltonian is given by
+	{\exyear{ JEST-2014}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\left(p_{1}^{2}+p_{2}^{2}\right) / 4$
+		\task[\textbf{b.}] $\left(\dot{q}_{1}^{2}+\dot{q}_{2}^{2}\right) / 4$
+		\task[\textbf{c.}] $\left(p_{1}^{2}+p_{2}^{2}\right) / 2$
+		\task[\textbf{d.}]  $\left(p_{1} \dot{q}_{1}+p_{2} \dot{q}_{2}\right) / 4$
+	\end{tasks}
+	\item  The Hamiltonian for a particle of mass $m$ is given by $H=\frac{(p-\alpha q)^{2}}{(2 m)}$, where $\alpha$ is a nonzero constant. Which one of the following equations is correct?
+	{\exyear{JEST-2020}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$p=m \dot{q}$
+		\task[\textbf{b.}]$\alpha \dot{p}=\dot{q}$
+		\task[\textbf{c.}] $\ddot{q}=0$
+		\task[\textbf{d.}] $L=\frac{1}{2} m \dot{q}^{2}-\alpha q \dot{q}$
+	\end{tasks}
+	\item  If the Poisson bracket $\{x, p\}=-1$, then the Poisson bracket $\left\{x^{2}+p, p\right\}$ is ?
+	{\exyear{JEST-2013}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}] $-2 x$
+		\task[\textbf{b.}]$2 x$
+		\task[\textbf{c.}]1
+		\task[\textbf{d.}] $-1$
+	\end{tasks}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{A} &2&\textbf{A}\\\hline 
+		3&\textbf{B} &4&\textbf{3} \\\hline
+		5&\textbf{A} &6&\textbf{B} \\\hline
+		7&\textbf{C}&8&\textbf{A}\\\hline
+		9&\textbf{B}&10&\textbf{B}\\\hline
+		11&\textbf{B} &12&\textbf{A}\\\hline
+		13&\textbf{C}&14&\textbf{A}\\\hline
+	\end{tabular}
+\end{table}
