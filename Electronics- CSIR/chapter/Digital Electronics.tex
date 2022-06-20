@@ -1,11 +1,15 @@
 \chapter{Digital Electronics}
 Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\
 \textbf{Sequential Circuit}\\
-\textbf{SR-Latch:}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.8cm,width=4.5cm]{EDE-01}
-\end{figure}
+\begin{minipage}{0.12\textwidth}
+	\textbf{SR-Latch:}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.8cm,width=4.5cm]{EDE-01}
+	\end{figure}
+\end{minipage}\\\\\\
 \textbf{Truth Table:}
 \begin{tabular}{|c|c|c|c|}
 	\hline$C L K$ & $R$ & $S$ & $Q_{n+1}$ \\
@@ -16,11 +20,11 @@ Digital output are required to be generated in accordance with sequence in which
 	\hline 0 & $X$ & $X$ & $Q_{n}$ \\
 	\hline
 \end{tabular}
-$\mathrm{X}$ : Input either 0 or 1\\\\\\
-\textbf { S-R Flip Flop with NAND Gate: }\\
+$\mathrm{X}$ : Input either 0 or 1\\\\
+\textbf { S-R Flip Flop with NAND Gate: }
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.3cm,width=10cm]{EDE-02}
+	\includegraphics[height=2.1cm,width=11cm]{EDE-02}
 \end{figure}
 \textbf {D-Flip Flop (Delay): }\\
 When $\mathrm{S}=\mathrm{D}, \bar{R}=D$, Now SR becomes $\mathrm{D}$ type Flip Flop.
@@ -34,7 +38,9 @@ $S=J\left(\bar{Q}_{n}\right) ; R=K\left(Q_{n}\right)$
 	\centering
 	\includegraphics[height=2.8cm,width=10cm]{EDE-04}
 \end{figure}
-\textbf{Note:} Problem in JK flip flop is race around condition.\\
+\begin{note}
+Problem in JK flip flop is race around condition.
+\end{note}
  \textbf{T-type (Toggle) Flip Flop:} $\mathrm{J}=\mathrm{K}=\mathrm{T}$ then $\mathrm{T}=$ Flip Flop.
  \begin{figure}[H]
  	\centering
@@ -121,12 +127,13 @@ $S=J\left(\bar{Q}_{n}\right) ; R=K\left(Q_{n}\right)$
  	\textbf { Asynchronous Counter: }
  		\begin{figure}[H]
  		\centering
- 		\includegraphics[height=6cm,width=10cm]{EDE-014}
+ 		\includegraphics[height=6cm,width=10cm]{EDE-14}
  	\end{figure}
- \textbf{	Note:}
- 	1. Total number of flip-flop required for Mod-N counter $\mathrm{N}=2^{n}$.\\
+ \begin{note}
+ 		1. Total number of flip-flop required for Mod-N counter $\mathrm{N}=2^{n}$.\\
  	2. 3 bit means MOD-8 counter $\Rightarrow$ MOD $8=2^{3}$ means 3 Flip-Flop required.\\
- 	3. 4 bit $\rightarrow 16 \mathrm{MOD} \rightarrow 2^{4} \rightarrow 4$ Flip Flop required\\
+ 	3. 4 bit $\rightarrow 16 \mathrm{MOD} \rightarrow 2^{4} \rightarrow 4$ Flip Flop required
+ \end{note}
  	\textbf { MOD-8 Asychronous Counter: }
  	\begin{figure}[H]
  		\centering
@@ -297,7 +304,8 @@ $\begin{array}{|c|c|c|c|}
 \end{answer}
 \textbf{SHIFT REGISTER}\\
 Register's are group of flip-flop.\\
-To store $n$-bits $n$-bits $n$-flip-flop are required in register. Depending upon input and output registers can be classified as\\
+To store $n$-bits $n$-bits $n$-flip-flop are required in register. \\
+Depending upon input and output registers can be classified as\\
 (1) SISO [Serial input serial output]\quad
 (3) PISO [Parallel in serial output]\\
 (2) SIPO [Serial input parallel out]\quad
@@ -305,14 +313,14 @@ To store $n$-bits $n$-bits $n$-flip-flop are required in register. Depending upo
 \textbf { 4-Bit SISO }
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.5cm,width=9cm]{EDE-27}
+	\includegraphics[height=2.4cm,width=10cm]{EDE-27}
 \end{figure}
 To provide $n$-bit data in $(n-1)$-clk pulse required, \\
 To store $n$-bit data $n$-click pulse required.\\
 \textbf{SIPO(4-Bit)}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.3cm,width=9cm]{EDE-28}
+	\includegraphics[height=2.2cm,width=10cm]{EDE-28}
 \end{figure}
 To provide $n$-bit data in $n$-clk pulse required, to provide parallel out no circuit pulse required.\\
 \textbf { PISO }
@@ -337,7 +345,7 @@ Control $0 \rightarrow$ Parallel input, Control $1 \rightarrow$ Serial output\\
 \item The frequency of the pulse at $\mathrm{Z}$ in the N/W. Show in figure below is
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=1.1cm,width=13.5cm]{EDE-32}
+	\includegraphics[height=1.1cm,width=14cm]{EDE-32}
 \end{figure}
  \begin{tasks}(2)
 	\task[\textbf{a.}]$10 \mathrm{~Hz}$
@@ -351,9 +359,9 @@ Control $0 \rightarrow$ Parallel input, Control $1 \rightarrow$ Serial output\\
 \item Consider a sequential circuit using three J-K flip-flop and one AND gate shown in figure output of the circuit becomes ' 1 ' after every $N$-clock cycle. The value of $N$ is
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.7cm,width=10cm]{EDE-33}
+	\includegraphics[height=2.7cm,width=11cm]{EDE-33}
 \end{figure}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}]4
 	\task[\textbf{b.}]7
 	\task[\textbf{c.}]8
@@ -377,7 +385,7 @@ Let initially output is 1 , then\\
 Design MOD-5 ring counter. After each 10 steps is reads again 0000.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.5cm,width=10cm]{EDE-34}
+	\includegraphics[height=2.6cm,width=11cm]{EDE-34}
 \end{figure}
 Ring counter is shift register with feedback applied last flip-flop output $Q$ to input of first flip flop.\\
 Ring counter is one bit is logic one and it will rotate with clock.\\
@@ -385,17 +393,17 @@ In $n$-bit ring counter number of use state is $n$.\\
 Number of unused states in $n$-bit ring counter is $2^{n}-n$.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5.5cm,width=7cm]{EDE-39}
+	\includegraphics[height=5.7cm,width=8cm]{EDE-39}
 \end{figure}
 \textbf{Johnson Counter } or (Twisted Ring Counter) or Switch Tail Counter or Creeping Counter or Mobies Counter or Walking Counter.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.4cm,width=8cm]{EDE-35}
+	\includegraphics[height=2.4cm,width=9.5cm]{EDE-35}
 \end{figure}
 \textbf { Equivalent Circuit: }
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.4cm,width=6cm]{EDE-36}
+	\includegraphics[height=2.4cm,width=7cm]{EDE-36}
 \end{figure}
 \textbf { Truth Table : }
 \begin{figure}[H]
