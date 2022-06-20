@@ -382,7 +382,11 @@ Design MOD-5 ring counter. After each 10 steps is reads again 0000.
 Ring counter is shift register with feedback applied last flip-flop output $Q$ to input of first flip flop.\\
 Ring counter is one bit is logic one and it will rotate with clock.\\
 In $n$-bit ring counter number of use state is $n$.\\
-Number of unused states in $n$-bit ring counter is $2^{n}-n$.\\
+Number of unused states in $n$-bit ring counter is $2^{n}-n$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5.5cm,width=7cm]{EDE-39}
+\end{figure}
 \textbf{Johnson Counter } or (Twisted Ring Counter) or Switch Tail Counter or Creeping Counter or Mobies Counter or Walking Counter.
 \begin{figure}[H]
 	\centering
@@ -802,12 +806,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $20 \ \mathrm{mV}$
 		\task[\textbf{D.}] $100 \ \mathrm{mV}$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\text{Voltage resolution }&=\frac{20 \mathrm{~V}}{2^{12}-1}=4.8 \mathrm{mV}
-		\end{align*}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
 	\item For any set of inputs, A and B, the following circuits give the same output, Q, except one. Which one is it?
 	{	\exyear{GATE 2010}}
 	\begin{tasks}(2)
@@ -828,9 +826,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 			\includegraphics[height=1.5cm,width=6cm]{diagram-20210912(16)-crop}
 		\end{figure}
 	\end{tasks}
-	\begin{answer}
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
 	\item The following Boolean expression
 	$$
 	Y=A \cdot \bar{B} \cdot \bar{C} \cdot \bar{D}+\bar{A} \cdot B \cdot \bar{C} \cdot D+\bar{A} \cdot \bar{B} \cdot \bar{C} \cdot D+\bar{A} \cdot \bar{B} \cdot C \cdot D+\bar{A} \cdot B \cdot C \cdot D+A \cdot \bar{B} \cdot \bar{C} \cdot D \quad \text { can }
@@ -843,13 +838,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $A \bullet \bar{B} \bullet \bar{C}+\bar{A} \bullet D$
 		\task[\textbf{D.}]  $A \bullet \bar{B} \bullet C+\bar{A} \bullet D$
 	\end{tasks}
-	\begin{answer}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[height=5cm,width=7.5cm]{diagram-20210913(7)-crop}
-		\end{figure}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
 	\item Which one of the following DOES NOT represent an exclusive OR operation for inputs $A$ and $B ?$
 	{	\exyear{GATE 2015}}
 	\begin{tasks}(4)
@@ -858,15 +846,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $(A+B)(\bar{A}+\bar{B})$
 		\task[\textbf{D.}] $(A+B) A B$
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\text{(a)}& \quad(A+B) \overline{A B}=(A+B)(\bar{A}+\bar{B})=A \bar{B}+\bar{A} B\\
-		\text{(b)}& \quad A \bar{B}+\bar{A} B\\
-		\text{(c)}& \quad A \bar{B}+\bar{A} B\\
-		\text{(d)}& \quad (A+B) A B=A B\\
-		\end{align*}
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
 	\item For the digital circuit given below, the output $X$ is
 	{	\exyear{GATE 2016}}
 	\begin{figure}[H]
@@ -879,9 +858,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $\overline{A \cdot}(B+C)$
 		\task[\textbf{D.}] $A+\overline{(B . C)}$
 	\end{tasks}
-	\begin{answer}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
 	\item The minimum number of NAND gates required to construct an OR gate is:
 	{	\exyear{GATE 2017}}
 	\begin{tasks}(4)
@@ -890,9 +866,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] 5
 		\task[\textbf{D.}] 3
 	\end{tasks}
-	\begin{answer}
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
 	\item The logic expression $\bar{A} B C+\bar{A} \bar{B} C+A B \bar{C}+A \bar{B} \bar{C}$ can be simplified to
 	{	\exyear{GATE 2018}}
 	\begin{tasks}(4)
@@ -901,12 +874,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] 0
 		\task[\textbf{D.}] 1
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		Y&=\bar{A} B C+\bar{A} \bar{B} C+A B \bar{C}+A \bar{B} \bar{C}\\&=\bar{A} C(B+\bar{B})+A \bar{C}(B+\bar{B})\\
-		\Rightarrow Y&=\bar{A} C+A \bar{C}=A\text{ XOR }C
-		\end{align*}
-	\end{answer}
 	\item In a 2-to-1 multiplexer as shown below, the output $X=A_{0}$ if $C=0$ and $X=A_{1}$ if $C=1$.\\
 	\begin{figure}[H]
 		\centering
@@ -932,15 +899,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 			\includegraphics[height=2cm,width=5.5cm]{diagram-20210914(17)-crop}
 		\end{figure}
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		\text{Check option (a),}\\
-		X&=A_{0} \bar{C}+A_{1} C\\
-		\text{	If }C&=0 \Rightarrow X=A_{0}\\
-		\text{If }C&=1 \Rightarrow X=A_{1}
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
-	\end{answer}
 	\item Consider the following Boolean expression:
 	$$
 	(\bar{A}+\bar{B})[\overline{A(B+C)}]+A(\bar{B}+\bar{C})
@@ -953,18 +911,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] XOR
 		\task[\textbf{D.}] NAND
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		Y&=(\bar{A}+\bar{B})[\overline{A(B+C)}]+A(\bar{B}+\bar{C})\\
-		Y&=(\bar{A}+\bar{B})[\bar{A}+\overline{(B+C)}]+A \bar{B}+A \bar{C}\\
-		&=(\bar{A}+\bar{B})[\bar{A}+\bar{B} \bar{C}]+A \bar{B}+A \bar{C}\\
-		&=\bar{A}+\bar{A} \bar{B} \bar{C}+\bar{A} \bar{B}+\bar{B} \bar{C}+A \bar{B}+A \bar{C}\\
-		&=\bar{A}+\bar{A} \bar{B} \bar{C}+\bar{B} \bar{C}+\bar{A} \bar{B}+A \bar{B}+A \bar{C}\\
-		&=\bar{A}+\bar{B} \bar{C}+\bar{B}+A \bar{C}=\bar{A}+\bar{B}+A \bar{C}\\
-		&=(\bar{A}+A \bar{C})+\bar{B}=(A+\bar{A} \bar{C})+\bar{B}=\bar{A}+\bar{C}+\bar{B}\\
-		Y&=\overline{A B C}
-		\end{align*}
-	\end{answer}
 	\item A 3 - bit analog-to-digital converter is designed to digitize analog signals ranging from $0 V$ to $10 V$. For this converter, the binary output corresponding to an input of $6 V$ is
 	{	\exyear{GATE 2019}}
 	\begin{tasks}(4)
@@ -973,19 +919,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] 100
 		\task[\textbf{D.}] 010
 	\end{tasks}
-	\begin{answer}
-		\begin{align*}
-		0& \rightarrow(000) \rightarrow 0 V\\
-		1& \rightarrow(001) \rightarrow \frac{10}{7}=1.42 \mathrm{~V}\\
-		2& \rightarrow(010) \rightarrow \frac{20}{7}=2.8 \mathrm{~V}\\
-		3& \rightarrow(011) \rightarrow \frac{30}{7}=4.28 \mathrm{~V}\\
-		4& \rightarrow(100) \rightarrow \frac{40}{7}=5.71 \mathrm{~V}\\
-		5& \rightarrow(101) \rightarrow \frac{50}{7}=7.14 \mathrm{~V}\\
-		6& \rightarrow(110) \rightarrow \frac{60}{7}=8.57 \mathrm{~V}\\
-		7& \rightarrow(111) \rightarrow \frac{70}{7}=10 \mathrm{~V}
-		\end{align*}
-		So the correct answer is \textbf{Option (C)}
-	\end{answer}
 	\item 	For the following circuit, the correct logic values for the entries $X_{2}$ and $Y_{2}$ in the truth table areFor the following circuit, the correct logic values for the entries $X_{2}$ and $Y_{2}$ in the truth table are
 	{\exyear{GATE 2019}}\\
 	\begin{minipage}{0.45\textwidth}
@@ -1006,22 +939,16 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] 0 and 1
 		\task[\textbf{D.}] 1 and 1
 	\end{tasks}
-	\begin{answer}
-		So the correct answer is \textbf{Option (A)} 
-	\end{answer}
 	\item The net charge of an $n$ -type semiconductor is
-	\exyear{JEST 2012}
+{	\exyear{JEST 2012}}
 	\begin{tasks}(4)
 		\task[\textbf{A.}] Positive
 		\task[\textbf{B.}] Zero
 		\task[\textbf{C.}] Negative
 		\task[\textbf{D.}] Dependent
 	\end{tasks}
-	\begin{answer}
-		So the correct answer is \textbf{Option (B)}
-	\end{answer}
 	\item For the logic circuit shown in figure, the required input condition $(A, B, C)$ to make the output $(X)=1$ is,
-	\exyear{JEST 2015}
+{	\exyear{JEST 2015}}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=4cm,width=8cm]{diagram-20210816(11)-crop.pdf}
@@ -1032,17 +959,11 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $1,1,1$
 		\task[\textbf{D.}] $0,1,1$
 	\end{tasks}
-	\begin{answer}
-		XOR is inequality comparator and XNOR is equality comparator. In AND gate output will be high when all the input is 1 .\\\\
-		So the correct answer is \textbf{Option (D)}
-	\end{answer}
 	\item What is $Y$ for the circuit shown below?
-	\exyear{JEST 2017}
+	{\exyear{JEST 2017}}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=2.5cm,width=7cm]{diagram-20210816(16)-crop}
-		\caption{}
-		\label{}
 	\end{figure}
 	\begin{tasks}(2)
 		\task[\textbf{A.}] $Y=\overline{(A+\bar{B})(\bar{B}+C)}$
@@ -1050,27 +971,243 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 		\task[\textbf{C.}] $Y=\overline{(\bar{A}+B)(\bar{B}+C)}$
 		\task[\textbf{D.}] $Y=\overline{(A+B)(\bar{B}+C)}$
 	\end{tasks}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{B} &2&\textbf{D}\\\hline 
+		3&\textbf{C} &4&\textbf{D} \\\hline
+		5&\textbf{B} &6&\textbf{D} \\\hline
+		7&\textbf{A}&8&\textbf{A}\\\hline
+		9&\textbf{D}&10&\textbf{C}\\\hline
+		11&\textbf{A} &12&\textbf{B}\\\hline
+		13&\textbf{D}&14&\textbf{A}\\\hline
+		
+	\end{tabular}
+\end{table}
+\newpage
+\begin{abox}
+	Practise set-3
+\end{abox}
+\begin{enumerate}
+		\item For negative edge draw the time diagram of D Flip-Flop?
+	\begin{answer}$\left. \right. $\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=1.7cm,width=4cm]{EDE-08}
+		\end{figure}
+		For negative edge draw time diagram of D type flip flop.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.2cm,width=7cm]{EDE-09}
+		\end{figure}
+		If $\mathrm{D}$ is high then output is high. If $\mathrm{D}$ is low output is low.
+	\end{answer}
+		\item For the positive clock pulse find the timing diagram of JK flip flop.
 	\begin{answer}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=7cm,width=10cm]{diagram-20210816(17)}
+			\includegraphics[height=1.7cm,width=4cm]{EDE-10}
 		\end{figure}
-		\begin{align*}
-		Y&=\overline{(\overline{\bar{A}} B) \cdot(\overline{B . \bar{C}})}=\overline{(A+\bar{B})(\bar{B}+C)}
-		\end{align*}
-		So the correct answer is \textbf{Option (A)}
+		Time diagram of above flip flop.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.5cm,width=7cm]{EDE-11}
+		\end{figure}
 	\end{answer}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		\item Consider a latch circuit shown in figure below, which of the following let of input is invalid for circuit.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.2cm,width=3.4cm]{EDE-12}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\mathrm{R}=0, \mathrm{H}=0$
+		\task[\textbf{b.}]$\mathrm{R}=0, \mathrm{H}=1$
+		\task[\textbf{c.}]$\mathrm{R}=1, \mathrm{H}=1$
+		\task[\textbf{d.}] $\mathrm{R}=1, \mathrm{H}=0$
+	\end{tasks}
+	\begin{answer}$\left. \right. $\\
+		$\begin{array}{|c|c|c|c|}
+		\hline R & H & Q & Q \text{ or } Q^{n+1} \\
+		\hline 0 & 0 & 0 & 0 \\
+		\hline 0 & 0 & 1 & 0 \\
+		\hline 0 & 1 & 0 & 0 \\
+		\hline 0 & 1 & 1 & 1 \\
+		\hline 1 & 0 & 0 & X \\
+		\hline 1 & 0 & 1 & X \\
+		\hline 1 & 1 & 0 & 1 \\
+		\hline 1 & 1 & 1 & 1 \\
+		\hline
+		\end{array}$\\
+		\end{answer}
+		\item Design MOD-6 UP Counter:
+	\begin{answer}	$\left. \right. $\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.7cm,width=11cm]{EDE-19}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3.8cm,width=5.5cm]{EDE-20}
+		\end{figure}
+		Design gate in such a manner that 110 goes to 000 we use NAND gate for MOD-6. NAND gate output will clear all flip-flops.\\
+		\textbf{Synchronous Counter:}\\
+		(i) Common clock is there (ii) There are fast\\
+		Widely used If MOD is in form of $2 \mathrm{~N}$ then design is simple. If MOD is not in form of $2 \mathrm{~N}$ then design by use of K-map.
+	\end{answer}
+		\item Find MOD of the counter:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.5cm,width=7cm]{EDE-23}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]1
+		\task[\textbf{b.}]2
+		\task[\textbf{c.}]3
+		\task[\textbf{d.}] 4
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text { Module of counter } \rightarrow 3, J_{0}&=\bar{Q}_{1}, \bar{J}_{1}=Q_{0}, K_{0}=1, K_{1}=1\\
+		\text{	Let initially counter is at}&
+		\begin{array}{cc}Q_{1} & Q_{0} \\ 0 & 0\end{array}\\
+		\text{i.e. }J_{0}=1
+		\qquad\mathrm{J}_{1}=0\\
+		\mathrm{K}_{0}=1
+		\qquad\mathrm{K}_{1}=1\\
+		\text{After one clock pulse}\\
+		Q_{0}=1, Q_{1}=0, J_{0}&=1, J_{1}=1, K_{0}=1, K_{1}=1\\
+		\text{After two clock pulse}\\
+		Q_{0}=0, Q_{1}=1, J_{0}&=0, J_{1}=0, K_{0}=1, K_{1}=1, Q_{0}=0, Q_{1}=1\\
+		\text{So reading}\begin{array}{|ll|ll|}
+		\hline 0 & 0 & 0 & 0 \\
+		1 & 0 & 0 & 1 \\
+		0 & 1 & 1 & 0 \\
+		0 & 0 & 0 & 0 \\
+		\hline
+		\end{array}\text{ MOD-3 Counter}
+		\end{align*}
+	\end{answer}
+		\item The circuit shown in figure below is
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.4cm,width=6.5cm]{EDE-38}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]a MOD-2 counter
+		\task[\textbf{b.}]A MOD- 3 counter
+		\task[\textbf{c.}] Generate sequence $00,10,01,01 \ldots$
+		\task[\textbf{d.}] Generate sequence $00,10,00,00 \ldots$.
+	\end{tasks}
+	\begin{answer}
+		The truth table is shown below:\\\\
+		\begin{tabular}{p{3cm}p{3cm}p{3cm}}
+			Present State&Flip Flop Input&Next State\\
+			$Q_A\quad Q_B$&	$T_A\quad T_B$&	$Q_A^+\quad Q_B^+$\\
+			0\quad 0&0\quad 1&0\quad 1\\
+			0\quad 1&1\quad 1&1\quad 0\\
+			1\quad 0&1\quad 0&0\quad 0\\
+			1\quad 1&1\quad 1&0\quad 0
+		\end{tabular}
+	\end{answer}
+	 \item Consider a sequential circuit shown in figure. Initially all the flip-flop are reset output $Q_{0} Q_{1} Q_{2}$ after $5^{\text {th }}$ clock pulse is
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.7cm,width=8.5cm]{EDE-24}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]100
+		\task[\textbf{b.}]101
+		\task[\textbf{c.}]110
+		\task[\textbf{d.}] 111
+	\end{tasks}
+	\begin{answer}
+		This is a 3 bit counter, so the output sequence is\\
+		$\begin{array}{|llll|}
+		\hline \text { CLK } & \mathrm{Q}_{2} & \mathrm{Q}_{1} & \mathrm{Q}_{0} \\
+		\hline \text { Initially } & 0 & 0 & 0 \\
+		1 & 0 & 0 & 1 \\
+		2 & 0 & 1 & 0 \\
+		3 & 0 & 1 & 1 \\
+		4 & 1 & 0 & 0 \\
+		5 & 1 & 0 & 1 \\
+		6 & 1 & 1 & 0 \\
+		7 & 1 & 1 & 1 \\
+		\hline
+		\end{array}$
+	\end{answer}
+	\item The counter shown in figure below is a
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.7cm,width=8cm]{EDE-26}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}] MOD-8 up counter
+		\task[\textbf{b.}]MOD-8 down counter
+		\task[\textbf{c.}]MOD-6 up counter
+		\task[\textbf{d.}] MOD-6 down counter
+	\end{tasks}
+	\begin{answer}$\left. \right. $\\
+		$\begin{array}{|c|c|c|c|}
+		\hline F F C & F F B & F F A & \\
+		\hline J K \bar{C} & J K \bar{B} & J K \bar{A} & C^{+} B^{+} A^{+} \\
+		\hline 111 & 111 & 111 & 111 \\
+		000 & 000 & 110 & 110 \\
+		000 & 110 & 111 & 101 \\
+		000 & 001 & 110 & 100 \\
+		111 & 111 & 111 & 011 \\
+		001 & 000 & 110 & 010 \\
+		001 & 110 & 111 & 001 \\
+		000 & 001 & 110 & 000 \\
+		\hline
+		\end{array}$
+	\end{answer}
+	\item The frequency of the pulse at $\mathrm{Z}$ in the N/W. Show in figure below is
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=1.1cm,width=13.5cm]{EDE-32}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$10 \mathrm{~Hz}$
+		\task[\textbf{b.}]$160 \mathrm{~Hz}$
+		\task[\textbf{c.}]$40 \mathrm{~Hz}$
+		\task[\textbf{d.}] $5 \mathrm{~Hz}$
+	\end{tasks}
+	\begin{answer}
+		10-bit ring counter is a MOD-10, so it divides the $160 \mathrm{KHz}$ input by 10 . Therefore, $\mathbf{w}=16 \mathrm{KHz}$. The four bit parallel counter is a MOD-16. Thus, the frequency at $x=1 \mathrm{KHz}$, the $\mathrm{MOD}-25$ ripple counter produces a frequency at $y=40 \mathrm{~Hz} .(1 \mathrm{Khz} / 25=40 \mathrm{~Hz})$. The four bit Johnson counter is a MOD-8. This the frequency at $\mathrm{z}=5 \mathrm{~Hz}$.
+	\end{answer}
+	\item Consider a sequential circuit using three J-K flip-flop and one AND gate shown in figure output of the circuit becomes ' 1 ' after every $N$-clock cycle. The value of $N$ is
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.7cm,width=10cm]{EDE-33}
+	\end{figure}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]4
+		\task[\textbf{b.}]7
+		\task[\textbf{c.}]8
+		\task[\textbf{d.}] 6
+	\end{tasks}
+	\begin{answer}
+		Let initially output is 1 , then\\
+		\begin{tabular}{|cllll|}
+			\hline CLK & $\mathrm{Q}$ & $\mathrm{Q}_{1}$ & $\mathrm{Q}_{0}$ & $\mathrm{Z}$ \\
+			\hline Initially & 0 & 0 & 0 & 1 \\
+			\hline 1 & 1 & 1 & 0 & 0 \\
+			2 & 0 & 0 & 1 & 0 \\
+			3 & 1 & 0 & 0 & 0 \\
+			4 & 0 & 1 & 0 & 0 \\
+			5 & 1 & 0 & 1 & 0 \\
+			6 & 0 & 0 & 0 & \\
+			\hline
+		\end{tabular}
+	\end{answer}
 	
 	
 	
