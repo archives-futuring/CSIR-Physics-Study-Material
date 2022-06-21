@@ -200,7 +200,7 @@ Problem in JK flip flop is race around condition.
  		\centering
  		\includegraphics[height=2.5cm,width=7cm]{EDE-23}
  	\end{figure}
- 	 \begin{tasks}(2)
+ 	 \begin{tasks}(4)
  		\task[\textbf{a.}]1
  		\task[\textbf{b.}]2
  		\task[\textbf{c.}]3
@@ -255,7 +255,7 @@ Problem in JK flip flop is race around condition.
  	\centering
  	\includegraphics[height=2.7cm,width=8.5cm]{EDE-24}
  \end{figure}
-  \begin{tasks}(2)
+  \begin{tasks}(4)
  	\task[\textbf{a.}]100
  	\task[\textbf{b.}]101
  	\task[\textbf{c.}]110
@@ -414,6 +414,120 @@ In Johnson counter with $n$-flip-flop maximum possible states are $2 n$ states o
 $50 \%$ duty cycle.\\
 When a Johnson counter is working in uses state the operation frequency $f / 2 n$.\\
  \end{enumerate}
+\section{Multiplexer(MUX)}
+A MUX is represented by many input and single output line.\\
+Internal structure of MUX is represented by a switch.
+\begin{itemize}
+\item 
+\textbf{$2\time 1$ MUX:}\\
+	$2^n=2\Rightarrow n=1$\quad number of select lines.\\
+\end{itemize}
+	\begin{enumerate}
+	\item For a two level AND-OR circuit can be equally represented by
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]AND-AND
+		\task[\textbf{b.}]OR-AND
+		\task[\textbf{c.}]NOR-NOR
+		\task[\textbf{d.}] NAND-NAND
+	\end{tasks}
+\begin{answer}
+	\begin{align*}
+	a
+	\end{align*}
+\end{answer}
+
+\end{enumerate}
+\begin{itemize}
+	\item \textbf{U$\times$ 1 MUX}\\
+	y=$\bar{A}\bar{B}D_0$+$\bar{A}BD_1+A\bar{B}D_2+ABD_3$
+	\item \textbf{8$\times $1 MYX}
+$	2^n=8$\\
+$\Rightarrow n=3$ select line\\
+y=$\bar{A}\bar{B} \bar{C}D_0$+$\bar{A}\bar{B} CD_1$+\\
+$\bar{A}B\bar{C}D_2+\bar{A}BCD_3+$\\
+$A \bar{B}\bar{C}D_4+A\bar{B}CD_5+$\\
+$AB\bar{C}D_5+ABCD_7$
+\end{itemize}
+\section{MUX is a universal circuit}
+Minimization of logical expression of using MUX:\\
+1.\quad  Minimize\\
+2.\quad  Minimize\\
+\subsection{Implementation of higher order MUX by using $2\times 1$MUX:}
+1. $u\times1$ MUX by $2\times 1$ MUX\\
+Alternate\\
+\begin{tabular}{p{0.5cm}|p{0.5cm}}
+2&4\\\hline
+2&2\\\hline
+ &1
+\end{tabular}
+2$\times$ 1=3\\
+2$\times$ 1 MUX
+2. \quad $16\times 1$ MUX by $2\times 1$ MUX\\
+$\begin{array}{c|c}
+	2 & 16 \\
+	\hline 2 & 8 \\
+	2 & 4 \\
+	\hline 2 & 2 \\
+	\hline & 1
+\end{array}$=8+4+2+1$\Rightarrow$ (15) $2 \times 1$ MUX
+Required.\\
+similarly,\\
+3. \quad $256 \times 1$ MUX by $16 \times 1$ MUX\\
+\begin{tabular}{c|c}
+	16 & 256 \\
+	\hline 16 & 16\\
+		\hline  &1
+\end{tabular}$16+1=17 \quad 16 \times 1 \mathrm{MOX} .$
+\textbf{implementation of Logic gates by using $2 \times 1$ MUX and $u X 1$ MUX:}
+1.\quad Not gate:\\
+$\begin{array}{c|c|c}
+	\text { Logic gate } & \text { 2XI MUX } & \text { UXI MUX } \\
+	\hline \text { NOT } & 1 & 1 \\
+	\hline \text { AND } & 1 & 1 \\
+	\hline \text { OR } & 1 & 1 \\
+	\hline \text { NAND } & 2 & 1\\
+	\hline \text { NOR } & 2 & 1\\
+	\hline \text { EX-OR } & 2 & 1\\
+	\hline \text { EX-NOR } & 2 & 1\\
+\end{array}$\\\\
+$\begin{array}{c|c|c}
+	\text { Combinational CKe } & 2 \times 1 \text { Mux } & 4 \times 1 \text { MuX } \\
+	\hline \text { Hald adder } & 2 & \\
+	\hline \text { Half Subbactor } & 2 & \\
+	\hline \text { Full Adder } & 7 & 3\\
+	\hline \text { Full Subbactor } & 7 & 3\\
+		\hline \text { Comparator } & 3 &  \\
+\end{array}$
+2. \quad For the implementation of AND gate and XOR gate the number of MUX required.
+ \begin{tasks}(2)
+	\task[\textbf{a.}] 1,1
+	\task[\textbf{b.}]1,2
+	\task[\textbf{c.}]2,1
+	\task[\textbf{d.}] 2,2
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text { I MUX: AND, 2MUX: XOR }
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\textbf{Demultiplexer:}\\
+A de MUX performs the reverse operation of MUX.\\
+\begin{itemize}
+	\item Number of outputs $=2^{n}$ where $n \rightarrow$ select lines
+	\item  also ctas called as data detector.
+	\item By setting the input to true (1), the demux behaves as decoder.
+\end{itemize}
+\textbf{$1 \times 4$ DEMUX}\\
+
+
+
+
+
+
+
+
+
 \newpage
 \begin{abox}
 	Practise set-1
