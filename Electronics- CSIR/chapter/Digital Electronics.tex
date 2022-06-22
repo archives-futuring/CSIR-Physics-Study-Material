@@ -58,62 +58,11 @@ Problem in JK flip flop is race around condition.
  	\includegraphics[height=3cm,width=5.4cm]{EDE-07}
  \end{figure}
  \begin{enumerate}
- 	\item For negative edge draw the time diagram of D Flip-Flop?
- 	\begin{answer}$\left. \right. $\\
- 			\begin{figure}[H]
- 			\centering
- 			\includegraphics[height=1.7cm,width=4cm]{EDE-08}
- 		\end{figure}
- 		For negative edge draw time diagram of D type flip flop.
- 		\begin{figure}[H]
- 			\centering
- 			\includegraphics[height=3.2cm,width=7cm]{EDE-09}
- 		\end{figure}
- 		If $\mathrm{D}$ is high then output is high. If $\mathrm{D}$ is low output is low.
- 	\end{answer}
- 	\item For the positive clock pulse find the timing diagram of JK flip flop.
- 	\begin{answer}
- 		\begin{figure}[H]
- 			\centering
- 			\includegraphics[height=1.7cm,width=4cm]{EDE-10}
- 		\end{figure}
- 	Time diagram of above flip flop.
- 		\begin{figure}[H]
- 		\centering
- 		\includegraphics[height=3.5cm,width=7cm]{EDE-11}
- 	\end{figure}
- 	\end{answer}
- 	\item Consider a latch circuit shown in figure below, which of the following let of input is invalid for circuit.
- 	\begin{figure}[H]
- 		\centering
- 		\includegraphics[height=2.2cm,width=3.4cm]{EDE-12}
- 	\end{figure}
- 	 \begin{tasks}(2)
- 		\task[\textbf{a.}]$\mathrm{R}=0, \mathrm{H}=0$
- 		\task[\textbf{b.}]$\mathrm{R}=0, \mathrm{H}=1$
- 		\task[\textbf{c.}]$\mathrm{R}=1, \mathrm{H}=1$
- 		\task[\textbf{d.}] $\mathrm{R}=1, \mathrm{H}=0$
- 	\end{tasks}
- 	\begin{answer}$\left. \right. $\\
  $\begin{array}{|c|c|c|c|}
  	\hline R & H & Q & Q \text{ or } Q^{n+1} \\
  	\hline 0 & 0 & 0 & 0 \\
  	\hline 0 & 0 & 1 & 0 \\
  	\hline 0 & 1 & 0 & 0 \\
- 	\hline 0 & 1 & 1 & 1 \\
- 	\hline 1 & 0 & 0 & X \\
- 	\hline 1 & 0 & 1 & X \\
- 	\hline 1 & 1 & 0 & 1 \\
- 	\hline 1 & 1 & 1 & 1 \\
- 	\hline
- \end{array}$\\
-\textbf{ Counters}\\
- 1. Asynchronous or ripple or serial\\
- 2. Synchronous or parallel or fast\\
- 3. (i) Ring counter (ii) Twisted tail or thomson or mobious (Type of shift registers)\\
- 1. \textbf{Asynchronous Counter:} No, common clock-clock is output of previous flip-flop.\\
- 2. In synchronous counter common clock is used.
- 	\end{answer}
 \item  	What is meaning of MOD-12 counter $\Rightarrow$ number of states are 12 .\\
 1. $0-11 \rightarrow 12$ states\qquad
 2. $2-13 \rightarrow 12$ states\\
@@ -171,21 +120,6 @@ Problem in JK flip flop is race around condition.
  	\centering
  	\includegraphics[height=2.6cm,width=9.8cm]{	EDE-18}
  \end{figure}
- 	\item Design MOD-6 UP Counter:
- 	\begin{answer}	$\left. \right. $\\
- 		\begin{figure}[H]
- 			\centering
- 			\includegraphics[height=2.7cm,width=11cm]{EDE-19}
- 		\end{figure}
- 		\begin{figure}[H]
- 		\centering
- 		\includegraphics[height=3.8cm,width=5.5cm]{EDE-20}
- 	\end{figure}
- 		Design gate in such a manner that 110 goes to 000 we use NAND gate for MOD-6. NAND gate output will clear all flip-flops.\\
- 		\textbf{Synchronous Counter:}\\
- 		(i) Common clock is there (ii) There are fast\\
- 		Widely used If MOD is in form of $2 \mathrm{~N}$ then design is simple. If MOD is not in form of $2 \mathrm{~N}$ then design by use of K-map.
- 	\end{answer}
 	Example: MOD-10 UP counter.
 	\begin{figure}[H]
 		\centering
@@ -195,113 +129,6 @@ Problem in JK flip flop is race around condition.
 	\centering
 	\includegraphics[height=5cm,width=4.5cm]{EDE-22}
 \end{figure}
- 	\item Find MOD of the counter:
- 	\begin{figure}[H]
- 		\centering
- 		\includegraphics[height=2.5cm,width=7cm]{EDE-23}
- 	\end{figure}
- 	 \begin{tasks}(4)
- 		\task[\textbf{a.}]1
- 		\task[\textbf{b.}]2
- 		\task[\textbf{c.}]3
- 		\task[\textbf{d.}] 4
- 	\end{tasks}
- 	\begin{answer}
- 		\begin{align*}
- 		\text { Module of counter } \rightarrow 3, J_{0}&=\bar{Q}_{1}, \bar{J}_{1}=Q_{0}, K_{0}=1, K_{1}=1\\
- 	\text{	Let initially counter is at}&
- 		\begin{array}{cc}Q_{1} & Q_{0} \\ 0 & 0\end{array}\\
- 		\text{i.e. }J_{0}=1
- 		\qquad\mathrm{J}_{1}=0\\
- 		\mathrm{K}_{0}=1
- 		\qquad\mathrm{K}_{1}=1\\
- 		\text{After one clock pulse}\\
- 		Q_{0}=1, Q_{1}=0, J_{0}&=1, J_{1}=1, K_{0}=1, K_{1}=1\\
- 		\text{After two clock pulse}\\
- 		Q_{0}=0, Q_{1}=1, J_{0}&=0, J_{1}=0, K_{0}=1, K_{1}=1, Q_{0}=0, Q_{1}=1\\
- 		\text{So reading}\begin{array}{|ll|ll|}
- 		\hline 0 & 0 & 0 & 0 \\
- 		1 & 0 & 0 & 1 \\
- 		0 & 1 & 1 & 0 \\
- 		0 & 0 & 0 & 0 \\
- 		\hline
- 		\end{array}\text{ MOD-3 Counter}
- 		\end{align*}
- 	\end{answer}
- 	\item The circuit shown in figure below is
- 	\begin{figure}[H]
- 		\centering
- 		\includegraphics[height=2.4cm,width=6.5cm]{EDE-38}
- 	\end{figure}
- 	 \begin{tasks}(2)
- 		\task[\textbf{a.}]a MOD-2 counter
- 		\task[\textbf{b.}]A MOD- 3 counter
- 		\task[\textbf{c.}] Generate sequence $00,10,01,01 \ldots$
- 		\task[\textbf{d.}] Generate sequence $00,10,00,00 \ldots$.
- 	\end{tasks}
- 	\begin{answer}
- 		The truth table is shown below:\\\\
-\begin{tabular}{p{3cm}p{3cm}p{3cm}}
-	Present State&Flip Flop Input&Next State\\
-	$Q_A\quad Q_B$&	$T_A\quad T_B$&	$Q_A^+\quad Q_B^+$\\
-	0\quad 0&0\quad 1&0\quad 1\\
-	0\quad 1&1\quad 1&1\quad 0\\
-	1\quad 0&1\quad 0&0\quad 0\\
-	1\quad 1&1\quad 1&0\quad 0
-\end{tabular}
- 	\end{answer}
- \item Consider a sequential circuit shown in figure. Initially all the flip-flop are reset output $Q_{0} Q_{1} Q_{2}$ after $5^{\text {th }}$ clock pulse is
- \begin{figure}[H]
- 	\centering
- 	\includegraphics[height=2.7cm,width=8.5cm]{EDE-24}
- \end{figure}
-  \begin{tasks}(4)
- 	\task[\textbf{a.}]100
- 	\task[\textbf{b.}]101
- 	\task[\textbf{c.}]110
- 	\task[\textbf{d.}] 111
- \end{tasks}
-\begin{answer}
-This is a 3 bit counter, so the output sequence is\\
-$\begin{array}{|llll|}
-	\hline \text { CLK } & \mathrm{Q}_{2} & \mathrm{Q}_{1} & \mathrm{Q}_{0} \\
-	\hline \text { Initially } & 0 & 0 & 0 \\
-	1 & 0 & 0 & 1 \\
-	2 & 0 & 1 & 0 \\
-	3 & 0 & 1 & 1 \\
-	4 & 1 & 0 & 0 \\
-	5 & 1 & 0 & 1 \\
-	6 & 1 & 1 & 0 \\
-	7 & 1 & 1 & 1 \\
-	\hline
-\end{array}$
-\end{answer}
-\item The counter shown in figure below is a
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.7cm,width=8cm]{EDE-26}
-\end{figure}
- \begin{tasks}(2)
-	\task[\textbf{a.}] MOD-8 up counter
-	\task[\textbf{b.}]MOD-8 down counter
-	\task[\textbf{c.}]MOD-6 up counter
-	\task[\textbf{d.}] MOD-6 down counter
-\end{tasks}
-\begin{answer}$\left. \right. $\\
-$\begin{array}{|c|c|c|c|}
-	\hline F F C & F F B & F F A & \\
-	\hline J K \bar{C} & J K \bar{B} & J K \bar{A} & C^{+} B^{+} A^{+} \\
-	\hline 111 & 111 & 111 & 111 \\
-	000 & 000 & 110 & 110 \\
-	000 & 110 & 111 & 101 \\
-	000 & 001 & 110 & 100 \\
-	111 & 111 & 111 & 011 \\
-	001 & 000 & 110 & 010 \\
-	001 & 110 & 111 & 001 \\
-	000 & 001 & 110 & 000 \\
-	\hline
-\end{array}$
-\end{answer}
 \textbf{SHIFT REGISTER}\\
 Register's are group of flip-flop.\\
 To store $n$-bits $n$-bits $n$-flip-flop are required in register. \\
@@ -341,45 +168,6 @@ Control $0 \rightarrow$ Parallel input, Control $1 \rightarrow$ Serial output\\
 \end{figure}
 \begin{answer}
 	After 1 st clock $\rightarrow 1011,2$ nd clock $\rightarrow 0101$, 3rd clock $\rightarrow 1010$. So content are 1010 .
-\end{answer}
-\item The frequency of the pulse at $\mathrm{Z}$ in the N/W. Show in figure below is
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=1.1cm,width=14cm]{EDE-32}
-\end{figure}
- \begin{tasks}(2)
-	\task[\textbf{a.}]$10 \mathrm{~Hz}$
-	\task[\textbf{b.}]$160 \mathrm{~Hz}$
-	\task[\textbf{c.}]$40 \mathrm{~Hz}$
-	\task[\textbf{d.}] $5 \mathrm{~Hz}$
-\end{tasks}
-\begin{answer}
-10-bit ring counter is a MOD-10, so it divides the $160 \mathrm{KHz}$ input by 10 . Therefore, $\mathbf{w}=16 \mathrm{KHz}$. The four bit parallel counter is a MOD-16. Thus, the frequency at $x=1 \mathrm{KHz}$, the $\mathrm{MOD}-25$ ripple counter produces a frequency at $y=40 \mathrm{~Hz} .(1 \mathrm{Khz} / 25=40 \mathrm{~Hz})$. The four bit Johnson counter is a MOD-8. This the frequency at $\mathrm{z}=5 \mathrm{~Hz}$.
-\end{answer}
-\item Consider a sequential circuit using three J-K flip-flop and one AND gate shown in figure output of the circuit becomes ' 1 ' after every $N$-clock cycle. The value of $N$ is
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.7cm,width=11cm]{EDE-33}
-\end{figure}
- \begin{tasks}(4)
-	\task[\textbf{a.}]4
-	\task[\textbf{b.}]7
-	\task[\textbf{c.}]8
-	\task[\textbf{d.}] 6
-\end{tasks}
-\begin{answer}
-Let initially output is 1 , then\\
-\begin{tabular}{|cllll|}
-	\hline CLK & $\mathrm{Q}$ & $\mathrm{Q}_{1}$ & $\mathrm{Q}_{0}$ & $\mathrm{Z}$ \\
-	\hline Initially & 0 & 0 & 0 & 1 \\
-	\hline 1 & 1 & 1 & 0 & 0 \\
-	2 & 0 & 0 & 1 & 0 \\
-	3 & 1 & 0 & 0 & 0 \\
-	4 & 0 & 1 & 0 & 0 \\
-	5 & 1 & 0 & 1 & 0 \\
-	6 & 0 & 0 & 0 & \\
-	\hline
-\end{tabular}
 \end{answer}
 \textbf{Ring Counter:}\\
 Design MOD-5 ring counter. After each 10 steps is reads again 0000.
@@ -465,7 +253,7 @@ Minimization of logical expression of using MUX:\\
 \end{figure}
 \subsection{Implementation of higher order MUX by using $2\times 1$MUX:}
 \begin{enumerate}
-	\item $u\times1$ MUX by $2\times 1$ MUX\\
+	\item $u\times1$ MUX by $2\times 1$ MUX
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3cm,width=5cm]{EDE-45}
