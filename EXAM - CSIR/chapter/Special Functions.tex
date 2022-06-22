@@ -1,0 +1,303 @@
+\begin{abox}
+	EXAM-PHY001\\ \vspace{0.6cm}
+VECTOR CALCULUS
+\end{abox}
+
+\section*{\centering{\color{futuringtheme} \underline{SECTION A (MCQ)}}}
+$\left. \right.$ {\exyear{Q. No. 1-10 (3.5 Marks)}}
+\begin{enumerate}[label=\color{ocre}\textbf{\arabic*.}]
+
+\item The solution of the differential equation for $y(t): \frac{d^{2} y}{d t^{2}}-y=2 \cosh (t)$, subject to the initial conditions $y(0)=0$ and $\left.\frac{d y}{d t}\right|_{t=0}=0$, is
+	{\exyear{GATE 2010}}
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\frac{1}{2} \cosh (t)+t \sinh (t)$
+	\task[\textbf{B.}] $-\sinh (t)+t \cosh (t)$
+	\task[\textbf{C.}] $t \cosh (t)$
+	\task[\textbf{D.}] $t \sinh (t)$
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{	For C.F :} \ \left(D^{2}-1\right) y&=0 \Rightarrow m=\pm 1 \\ \text{C.F }&=C_{1} e^{t}+C_{2} e^{-t}\\
+	P.I. &=\frac{1}{D^{2}-1}(2 \cosh t)\\ \because D^{2}-1&=0,  \text{We differentiate the terms,}\\
+	P.I.&=\frac{t}{2D}(2 \sinh t)\\
+	&=t \sinh t\\
+	y&=C_{1} e^{t}+C_{2} e^{-t}+t \sinh t\\
+	\text{Applying initial conditions, }\ y(0)&=0 \\ C_{1}+C_{2}&=0\\
+	\frac{d y}{d t}&=0\\ C_{1}-C_{2}&=0\\
+	\text{Then,}\ C_{1}&=0, C_{2}=0\\
+	\text{Thus }y&=t \sinh t
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (D)}
+\end{answer}
+\item The solutions to the differential equation $\frac{d y}{d x}=-\frac{x}{y+1}$ are a family of
+{\exyear{GATE 2011}}
+\begin{tasks}(1)
+\task[\textbf{A.}] Circles with different radii
+\task[\textbf{B.}] Circles with different centres
+\task[\textbf{C.}]  Straight lines with different slopes
+\task[\textbf{D.}]  Straight lines with different intercepts on the $y$-axis
+\end{tasks}
+\begin{answer}
+	$$
+\begin{aligned}
+\frac{d y}{d x}&=-\frac{x}{y+1} \\ x d x+y d y+d y&=0 \\ \frac{x^{2}}{2}+\frac{y^{2}}{2}+y&=C_{1}\\ x^{2}+y^{2}+2 y&=2 C_{1}\\
+(x-0)^{2}+(y+1)^{2}&=2 C_{1}+1=C\\
+(x-0)^{2}+(y+1)^{2}&=C\\
+\text{which is a family of }&\text{circles with different radii.}
+\end{aligned}
+$$
+So the correct answer is \textbf{Option (A)}
+\end{answer}
+
+\item Consider the linear differential equation $\frac{d y}{d x}=x y$. If $y=2$ at $x=0$, then the value of $y$ at $x=2$ is given by
+{\exyear{GATE 2016}}
+\begin{tasks}(4)
+\task[\textbf{A.}]  $e^{-2}$
+\task[\textbf{B.}] $2 e^{-2}$
+\task[\textbf{C.}] $e^{2}$
+\task[\textbf{D.}]  $2 e^{2}$
+\end{tasks}
+\begin{answer}
+	$$
+\begin{aligned}
+\frac{d y}{d x}&=x y \\ \frac{1}{y} d y&=x d x \\ \ln y&=\frac{x^{2}}{2}+\ln c \\ y&=c e^{x^{2} / 2}\\
+\text{If }y&=2\text{ at }x=0 \\ c&=2 \Rightarrow y=2 e^{x^{2} / 2}\\
+\text{	The value of $y$ at }x&=2\text{ is given by }y=2 e^{2}
+\end{aligned}
+$$
+So the correct answer is \textbf{Option (D)}
+\end{answer}
+
+\item What are the solutions of $f^{\prime \prime}(x)-2 f^{\prime}(x)+f(x)=0$ ?
+ \begin{tasks}(2)
+	\task[\textbf{A.}]$c_{1} e^{x} / x$
+	\task[\textbf{B.}]$c_{1} x+c_{2} / x$
+	\task[\textbf{C.}] $c_{1} x e^{x}+c_{2}$
+	\task[\textbf{D.}]  $c_{1} e^{x}+c_{2} x e^{x}$
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	 \text{Auxiliary equation is, } D^{2}-2 D+1&=0 \\ (D-1)^{2}&=0 \\ D&=+1, +1\\
+	\because\text{ Roots are equal, then }f(x)&=\left(c_{1}+c_{2} x\right) e^{x} \\ f(x)&=c_{1} e^{x}+c_{2} x e^{x}
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (D)}
+\end{answer}
+
+
+\item The order and degree of the differential equation $y+\frac{d y}{d x}=\frac{1}{4} \int y \cdot d x$ are
+ \begin{tasks}(2)
+	\task[\textbf{a.}]Order $=2$ and degree $=1$
+	\task[\textbf{b.}]Order $=1$ and degree $=2$
+	\task[\textbf{c.}]Order $=1$ and degree $=1$
+	\task[\textbf{d.}]Order $=2$ and degree $=2$ 
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{we have}\\
+	y+\frac{d y}{d x}=\frac{1}{4} \int y \cdot d x \\
+	\Rightarrow \frac{d y}{d x}+\frac{d^{2} y}{d x^{2}}&=\frac{1}{4} y\quad ( \text{on differentiating w.r.t. }x)\\
+	\text{Differential equation }&\text{is of order 2 and degree 1.}
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (A)}
+\end{answer}
+
+
+\item Find the value of $J_{-1}(x)+J_{1}(x)$
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{By using Recurrence }&\text{relation  for $J_{n}(x)$ ,}\\
+		2 n J_{n}&=x \left(J_{n-1}+J_{n+1}\right) \\
+		J_{n-1}(x)+J_{n+1}(x) &=\frac{2 n}{x} J_{n}(x) \\
+		\text { Put } n &=0 \\
+		J_{-1}(x)+J_{1}(x) &=0
+	\end{aligned}
+	$$
+\end{answer}
+
+\item Find the value of $\int_{-\infty}^{\infty} e^{-x^{2}} H_{2}(x) H_{3}(x) d x$
+\begin{answer}
+	$$
+	\begin{aligned}
+\text{	We know that}&\\
+	\int_{-\infty}^{\infty} e^{-x^{2}} H_{m}(x) H_{n}(x)&=0 \text { if } m \neq n\\
+	\text{Here $m=2$ and }n&=3, m \neq n\\
+\text{	Hence,}&
+	\int_{-\infty}^{\infty} e^{-x^{2}} H_{2}(x) H_{3}(x)=0
+	\end{aligned}
+	$$
+\end{answer}
+\item For $P_{n}(x)$, which of the following is true?
+\begin{tasks}(1)
+	\task[\textbf{A.}] $P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}+1\right)^{n}$
+	\task[\textbf{B.}] $P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(1-x^{2}\right)^{n}$
+	\task[\textbf{C.}] $P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}$
+	\task[\textbf{D.}] $P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}(x-1)^{n}$
+\end{tasks}
+\begin{answer}
+	$$\begin{aligned}
+	P_{n}(x)=\frac{1}{2^{n} n !} \frac{d^{n}}{d x^{n}}\left(x^{2}-1\right)^{n}
+	\end{aligned}$$
+\end{answer}
+\item The Legendre series expansion for the function $f(\theta)=\sin ^{2}\left(\frac{\theta}{2}\right)$ can be given as
+
+\begin{tasks}(1)
+	\task[\textbf{A.}] $\frac{1}{2}\left[\mathrm{P}_{0}(\cos \theta)-\mathrm{P}_{1}(\cos \theta)\right]$.
+	\task[\textbf{B.}] $\frac{1}{2}\left[\mathrm{P}_{2}(\cos \theta)-\mathrm{P}_{3}(\cos \theta)\right]$
+	\task[\textbf{C.}] $\left[\mathrm{P}_{1}(\cos \theta)-\mathrm{P}_{2}(\cos \theta)\right]$
+	\task[\textbf{D.}] $\left[\mathrm{P}_{0}(\cos \theta)+\mathrm{P}_{1}(\cos \theta)\right]$
+\end{tasks}
+\begin{answer}
+$$\begin{aligned}
+	f(\theta)&=\sin ^{2}\left(\frac{\theta}{2}\right)\\
+	\sin ^{2}\left(\frac{\theta}{2}\right)&=\frac{1-\cos \theta}{2}\\
+	{P}_{0}(\cos \theta)&=1\\
+	{P}_{1}(\cos \theta)&=\cos \theta\\
+	\text{Then,}\  f(\theta)&=\frac{1}{2}\left[{P}_{0}(\cos \theta)-{P}_{1}(\cos \theta) \right] 
+\end{aligned}$$
+\end{answer}
+
+\item The complete solution of the ordinary differential equation $\frac{d^{2} y}{d x^{2}}+p \frac{d y}{d x}+q y=0$ is $y=c_{1} e^{-x}+c_{2} e^{-3 x}$.
+\begin{tasks}(2)
+	\task[\textbf{a.}] $p=3, q=3 $
+	\task[\textbf{b.}]$p=3, q=4 $
+	\task[\textbf{c.}] $p=4, q=3 $
+	\task[\textbf{d.}] $p=4, q=4 $
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\frac{d^{2} y}{d x^{2}}+p \frac{d y}{d x}+q y&=0\\
+	\left(D^{2}+p D+q\right) y&=0\\
+	\therefore \quad D^{2}+p D+q&=0\\
+	\text{Its solution is}  y&=C_{1} e^{-x}+C_{2} e^{-3 x}\\
+	\text{So the roots of $D^{2}+p D+q=0$ are,}   \alpha&=-1 , \beta=-3 \\
+	\text{Sum of roots} &=-p=-(-1-3) \\p&=4 \\
+	\text{Product of roots} &=q=(-1)(-3) \\ q&=3
+	\end{aligned}$$
+\end{answer}
+\item $H_{n}(x)$ is Hermite polynomials of order $n$ then $H_{n}(x)=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}$, then $f(x)$ and $W(x)$ are respectively
+\begin{tasks}(1)
+	\task[\textbf{a.}]$f(x)=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)$
+	\task[\textbf{b.}]$f(x)=\exp \left(-x^{2}\right), W=\exp \left(x^{2}\right)$
+	\task[\textbf{c.}] $f(x)=W(x)=\exp \left(x^{2}\right)$
+	\task[\textbf{d.}] $f(x)=W(x)=\exp \left(-x^{2}\right)$
+\end{tasks}
+\begin{answer}
+	$$\begin{aligned}
+	H_{n}(x)&=(-1)^{n} \exp \left(x^{2}\right) \frac{d^{n}\left(\exp \left(-x^{2}\right)\right)}{d x^{n}}\\
+	\text{So after comparing }H_{n}(x)&=(-1)^{n} f(x) \frac{d^{n}(W(x))}{d x^{n}}\\
+	f(x)&=\exp \left(x^{2}\right), W(x)=\exp \left(-x^{2}\right)
+	\end{aligned}$$
+	So the correct answer is \textbf{Option (a)}
+\end{answer}
+\item Consider the differential equation $\frac{d y}{d x}+y \tan (x)=\cos (x)$. If $y(0)=0, y\left(\frac{\pi}{3}\right)$ is ............... (up to two decimal places)
+{\exyear{GATE 2017}}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{The given differential }&\text{equation is a linear differential equation of the form}\\
+	\frac{d y}{d x}+p(x) y&=\cos x\\
+	\text{	Integrating factor }&=e^{\int p(x) d x}\\
+	\text{Thus integrating factor }&=e^{\int \tan x d x}\\
+	\Rightarrow I \cdot F&=e^{\ln \sec x}=\sec x\\
+	\text{Thus the general solution}&\text{ of the given differential equation is}\\
+	y \cdot \sec x&=\int \sec x \cdot \cos x d x+c\\
+	\Rightarrow y \sec x&=x+c\\
+	\text{It is given that }y(0)&=0 \Rightarrow 0 \cdot \sec 0=0+c \Rightarrow c=0\\
+	\text{Thus the solution }&\text{satisfying the given condition is}\\
+	y \sec x&=x \Rightarrow y=\frac{x}{\sec x}\\
+	\text{Thus the value of }&y\left(\frac{\pi}{3}\right)\text{ is}\\
+	y&=\frac{\pi / 3}{\sec \pi / 3} \\&=\frac{\pi / 3}{2}\\&=\frac{\pi}{6}
+	\end{aligned}
+	$$
+\end{answer}
+\item The polynomial $f(x)=1+5 x+3 x^{2}$ is written as linear combination of the Legendre polynomials
+$\left(P_{0}(x)=1, P_{1}(x), P_{2}(x)=\frac{1}{2}\left(3 x^{2}-1\right)\right)$ as $f(x)=\sum_{n} c_{n} P_{n}(x)$. The value of $c_{0}$ is
+{\exyear{NET/JRF(DEC-2018)}}
+\begin{tasks}(4)
+	\task[\textbf{A.}] $\frac{1}{4}$
+	\task[\textbf{B.}] $\frac{1}{2}$
+	\task[\textbf{C.}]  2
+	\task[\textbf{D.}]  4
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	f(x)&=1+5 x+3 x^{2}\\
+	1&=P_{0}(x) \quad x=P_{1}(x)\\
+	x^{2}&=\frac{1}{3}\left(2 P_{2}(x)+1\right)\\
+	f(x)&=P_{0}(x)+5 P_{1}(x)+2 P_{2}(x)+P_{0}(x)\\
+	&=2 P_{0}(x)+5 P_{1}(x)+2 P_{2}(x)\\
+	&=c_{0} P_{0}(x)+c_{1} P_{1}(x)+c_{2} P_{2}(x)\\ c_{0}&=2
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (C)}
+\end{answer}
+\item Find the solution to $9 y^{\prime \prime}+6 y^{\prime}+y=0$ for $y(0)=4$ and $y^{\prime}(0)=-1 / 3$.
+\begin{tasks}(2)
+	\task[\textbf{a.}]$y=(4+x) e^{-x / 3}$
+	\task[\textbf{b.}]$y=(4-x) e^{-x / 3}$
+	\task[\textbf{c.}]$y=(8-2 x) e^{x / 3}$
+	\task[\textbf{d.}]$y=(1-x) e^{-x / 3}$ 
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{we have}&\\
+	9 y^{\prime \prime}+6 y^{\prime}+y&=0\\
+	\text{The characteristic }&\text{equation is given by}\\
+	9 m^{2}+6 m+1&=0 \\
+	\Rightarrow \quad m&=\frac{-6 \pm \sqrt{36-36}}{2 \times 9}=\frac{-6}{18} \pm 0 \\
+	&=\frac{-1}{3}, \frac{-1}{3}\\
+	\text{The roots are real and equal.}&\text{ The general solution is given by}\\
+	y=\left(c_{1}+c_{2} x\right) e^{m x} \Rightarrow y&=\left(c_{1}+c_{2} x\right) e^{-x / 3}\\
+	\text{Differentiating Eq. }&(1)\text{ w.r.t. $x$, we get}\\
+	y^{\prime}&=\left[\frac{-1}{3}\right]\left(c_{1}+c_{2} x\right) e^{-x / 3}+c_{2} e^{-x / 3}\\
+	\text{Applying initial conditions, }y(0)&=4  \text{ we get}\\
+	4 &= c_{1}e^{0}\\
+	\Rightarrow c_{1} &=4\\
+	\text{Using }y^{\prime}(0)&=-1 / 3\text{ we get}\\
+	\frac{-1}{3}&=\frac{-1}{3} c_{1}e^{0}+c_{2} e^{0}\\
+	c_{2}&=1\\
+	y&=(4+x) e^{-x / 3}
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (A)}
+\end{answer}
+\item Find the solution to $\frac{d^{2} y}{d x^{2}}+2 \frac{d y}{d x}+y=e^{-4 x}$
+\begin{tasks}(2)
+	\task[\textbf{a.}]$y=(A x+B) e^{-4 x}+e^{-4 x}$
+	\task[\textbf{b.}]$y=(A x+B) e^{-4 x}+\frac{e^{-4 x}}{9}$
+	\task[\textbf{c.}]$y=(A x+B) e^{-2 x}+\frac{e^{-2 x}}{9}$
+	\task[\textbf{d.}]$y=(A x+B) e^{4 x}+e^{4 x}$ 
+\end{tasks}
+\begin{answer}
+	$$
+	\begin{aligned}
+	\text{we have}&\\
+	\frac{d^{2} y}{d x^{2}}+2 \frac{d y}{d x}+y&=e^{-4 x}\\
+	\text{The characteristic }&\text{equation is given by}\\
+	m^{2}+2 m+1&=0 \\ m&=-1,-1\\
+	\text{The complementary }&\text{function is given by}\\
+	\text { C.F. }&=(A x+B) e^{-4 x}\\
+	\text{The particlular }&\text{integral is given by}\\
+	\text { P.I. }&=\frac{1}{D^{2}+2 D+1} e^{-4 x}\\&=\frac{1}{16-8+1} e^{-4 x}\\&=\frac{e^{-4 x}}{9}\\
+	\text{ The complete solution is given by }y&=C.F+P.I.\\
+	y&=(A x+B) e^{-4 x}+\frac{e^{-4 x}}{9}
+	\end{aligned}
+	$$
+	So the correct answer is \textbf{Option (B)}
+\end{answer}
+
+
+$\left. \right.$ \section*{\centering{\color{futuringtheme} \underline{SECTION B (MCQ)}}}
+$\left. \right.$ {\exyear{Q. No. 10-15 (5 Marks)}}
+
+\end{enumerate}
