@@ -1,4 +1,145 @@
 \chapter{Digital Electronics}
+\section{Multiplexer(MUX)}
+A MUX is represented by many input and single output line.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3cm,width=7cm]{EDE-40}
+\end{figure}
+Internal structure of MUX is represented by a switch.
+\subsection{{$2\time 1$ MUX:}}
+$2^n=2\Rightarrow n=1$\quad number of select lines.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm,width=6cm]{EDE-41}
+\end{figure}
+\begin{enumerate}
+	\item For a two level AND-OR circuit can be equally represented by
+	\begin{tasks}(2)
+		\task[\textbf{a.}]AND-AND
+		\task[\textbf{b.}]OR-AND
+		\task[\textbf{c.}]NOR-NOR
+		\task[\textbf{d.}] NAND-NAND
+	\end{tasks}
+	\begin{answer}$\left. \right. $\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=7cm]{EDE-42}
+		\end{figure}
+	\end{answer}
+\end{enumerate}
+\subsection{U$\times$ 1 MUX}
+y=$\bar{A}\bar{B}D_0$+$\bar{A}BD_1+A\bar{B}D_2+ABD_3$
+\subsection{8$\times 1$ MUX}
+$	2^n=8$\\
+$\Rightarrow n=3\quad\rightarrow$ select line\\
+y=$\bar{A}\bar{B} \bar{C}D_0$+$\bar{A}\bar{B} CD_1$+\\
+$\bar{A}B\bar{C}D_2+\bar{A}BCD_3+$\\
+$A \bar{B}\bar{C}D_4+A\bar{B}CD_5+$\\
+$AB\bar{C}D_5+ABCD_7$
+\section{MUX is a universal circuit}
+Minimization of logical expression of using MUX:\\
+1.\quad  Minimize
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.8cm,width=9cm]{EDE-43}
+\end{figure}
+2.\quad  Minimize
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.2cm,width=8.5cm]{EDE-44}
+\end{figure}
+\subsection{Implementation of higher order MUX by using $2\times 1$MUX:}
+\begin{enumerate}
+	\item $u\times1$ MUX by $2\times 1$ MUX
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3cm,width=5cm]{EDE-45}
+	\end{figure}
+	\begin{align*}
+	\text{Alternate}\\
+	\begin{tabular}{p{0.5cm}|p{0.5cm}}
+	2&4\\\hline
+	2&2\\\hline
+	&1
+	\end{tabular}\\
+	2+ 1=3\\
+	2 \times 1\text{ MUX}
+	\end{align*}
+	\item $16\times 1$ MUX by $2\times 1$ MUX
+	\begin{align*}
+	\begin{array}{c|c}
+	2 & 16 \\
+	\hline 2 & 8 \\
+	2 & 4 \\
+	\hline 2 & 2 \\
+	\hline & 1
+	\end{array}=8+4+2+1\Rightarrow 15 \quad 2 \times 1\text{ MUX
+		Required.}
+	\end{align*}
+	similarly,
+	\item $256 \times 1$ MUX by $16 \times 1$ MUX
+	\begin{align*}
+	\begin{tabular}{c|c}
+	16 & 256 \\
+	\hline 16 & 16\\
+	\hline  &1
+	\end{tabular}\quad 16+1=17 \quad 16 \times 1 \text{MUX} .
+	\end{align*}
+\end{enumerate}
+\textbf{Implementation of Logic gates by using $2 \times 1$ MUX and $u \times 1$ MUX:}\\
+1.\quad NOT gate:
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.8cm,width=8cm]{EDE-46}
+\end{figure}
+\renewcommand*{\arraystretch}{1.5}
+$\begin{array}{|c|c|c|}
+\hline\text { Logic gate } & \text { 2XI MUX } & \text { UXI MUX } \\
+\hline \text { NOT } & 1 & 1 \\
+\hline \text { AND } & 1 & 1 \\
+\hline \text { OR } & 1 & 1 \\
+\hline \text { NAND } & 2 & 1\\
+\hline \text { NOR } & 2 & 1\\
+\hline \text { EX-OR } & 2 & 1\\
+\hline \text { EX-NOR } & 2 & 1\\	\hline
+\end{array}$\\\\\\
+$\begin{array}{|c|c|c|}
+\hline\text { Combinational CKe } & 2 \times 1 \text { Mux } & 4 \times 1 \text { MuX } \\
+\hline \text { Half adder } & 2 & \\
+\hline \text { Half Subbactor } & 2 & \\
+\hline \text { Full Adder } & 7 & 3\\
+\hline \text { Full Subbactor } & 7 & 3\\
+\hline \text { Comparator } & 3 &  \\\hline
+\end{array}$\\\\
+2. \quad For the implementation of AND gate and XOR gate the number of MUX required.
+\begin{tasks}(4)
+	\task[\textbf{a.}] 1,1
+	\task[\textbf{b.}]1,2
+	\task[\textbf{c.}]2,1
+	\task[\textbf{d.}] 2,2
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text { I MUX: AND, 2MUX: XOR }
+	\end{align*}
+	So the correct answer is \textbf{Option (b)}
+\end{answer}
+\textbf{Demultiplexer:}\\
+A de MUX performs the reverse operation of MUX.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.3cm,width=4.8cm]{EDE-47}
+\end{figure}
+\begin{itemize}
+	\item Number of outputs $=2^{n}$ where $n \rightarrow$ select lines
+	\item  also ctas called as data detector.
+	\item By setting the input to true (1), the demux behaves as decoder.
+\end{itemize}
+\textbf{$1 \times 4$ DEMUX}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm,width=5.1cm]{EDE-48}
+\end{figure}
 Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\
 \textbf{Sequential Circuit}\\
 \begin{minipage}{0.12\textwidth}
@@ -197,147 +338,7 @@ In Johnson counter with $n$-flip-flop maximum possible states are $2 n$ states o
 $50 \%$ duty cycle.\\
 When a Johnson counter is working in uses state the operation frequency $f / 2 n$.\\
  \end{enumerate}
-\section{Multiplexer(MUX)}
-A MUX is represented by many input and single output line.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3cm,width=7cm]{EDE-40}
-\end{figure}
-Internal structure of MUX is represented by a switch.
-\subsection{{$2\time 1$ MUX:}}
-	$2^n=2\Rightarrow n=1$\quad number of select lines.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[height=3.5cm,width=6cm]{EDE-41}
-	\end{figure}
-	\begin{enumerate}
-	\item For a two level AND-OR circuit can be equally represented by
-	 \begin{tasks}(2)
-		\task[\textbf{a.}]AND-AND
-		\task[\textbf{b.}]OR-AND
-		\task[\textbf{c.}]NOR-NOR
-		\task[\textbf{d.}] NAND-NAND
-	\end{tasks}
-\begin{answer}$\left. \right. $\\
-	\begin{figure}[H]
-		\centering
-		\includegraphics[height=2.5cm,width=7cm]{EDE-42}
-	\end{figure}
-\end{answer}
-\end{enumerate}
-\subsection{U$\times$ 1 MUX}
-	y=$\bar{A}\bar{B}D_0$+$\bar{A}BD_1+A\bar{B}D_2+ABD_3$
-\subsection{8$\times 1$ MUX}
-$	2^n=8$\\
-$\Rightarrow n=3\quad\rightarrow$ select line\\
-y=$\bar{A}\bar{B} \bar{C}D_0$+$\bar{A}\bar{B} CD_1$+\\
-$\bar{A}B\bar{C}D_2+\bar{A}BCD_3+$\\
-$A \bar{B}\bar{C}D_4+A\bar{B}CD_5+$\\
-$AB\bar{C}D_5+ABCD_7$
-\section{MUX is a universal circuit}
-Minimization of logical expression of using MUX:\\
-1.\quad  Minimize
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.8cm,width=9cm]{EDE-43}
-\end{figure}
-2.\quad  Minimize
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.2cm,width=8.5cm]{EDE-44}
-\end{figure}
-\subsection{Implementation of higher order MUX by using $2\times 1$MUX:}
-\begin{enumerate}
-	\item $u\times1$ MUX by $2\times 1$ MUX
-	\begin{figure}[H]
-		\centering
-		\includegraphics[height=3cm,width=5cm]{EDE-45}
-	\end{figure}
-\begin{align*}
-\text{Alternate}\\
-\begin{tabular}{p{0.5cm}|p{0.5cm}}
-2&4\\\hline
-2&2\\\hline
-&1
-\end{tabular}\\
-2+ 1=3\\
-2 \times 1\text{ MUX}
-\end{align*}
-\item $16\times 1$ MUX by $2\times 1$ MUX
-\begin{align*}
-\begin{array}{c|c}
-2 & 16 \\
-\hline 2 & 8 \\
-2 & 4 \\
-\hline 2 & 2 \\
-\hline & 1
-\end{array}=8+4+2+1\Rightarrow 15 \quad 2 \times 1\text{ MUX
-Required.}
-\end{align*}
-similarly,
-\item $256 \times 1$ MUX by $16 \times 1$ MUX
-\begin{align*}
-\begin{tabular}{c|c}
-16 & 256 \\
-\hline 16 & 16\\
-\hline  &1
-\end{tabular}\quad 16+1=17 \quad 16 \times 1 \text{MUX} .
-\end{align*}
-\end{enumerate}
-\textbf{Implementation of Logic gates by using $2 \times 1$ MUX and $u \times 1$ MUX:}\\
-1.\quad NOT gate:
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2.8cm,width=8cm]{EDE-46}
-\end{figure}
-\renewcommand*{\arraystretch}{1.5}
-$\begin{array}{|c|c|c|}
-		\hline\text { Logic gate } & \text { 2XI MUX } & \text { UXI MUX } \\
-	\hline \text { NOT } & 1 & 1 \\
-	\hline \text { AND } & 1 & 1 \\
-	\hline \text { OR } & 1 & 1 \\
-	\hline \text { NAND } & 2 & 1\\
-	\hline \text { NOR } & 2 & 1\\
-	\hline \text { EX-OR } & 2 & 1\\
-	\hline \text { EX-NOR } & 2 & 1\\	\hline
-\end{array}$\\\\\\
-$\begin{array}{|c|c|c|}
-	\hline\text { Combinational CKe } & 2 \times 1 \text { Mux } & 4 \times 1 \text { MuX } \\
-	\hline \text { Half adder } & 2 & \\
-	\hline \text { Half Subbactor } & 2 & \\
-	\hline \text { Full Adder } & 7 & 3\\
-	\hline \text { Full Subbactor } & 7 & 3\\
-		\hline \text { Comparator } & 3 &  \\\hline
-\end{array}$\\\\
-2. \quad For the implementation of AND gate and XOR gate the number of MUX required.
- \begin{tasks}(4)
-	\task[\textbf{a.}] 1,1
-	\task[\textbf{b.}]1,2
-	\task[\textbf{c.}]2,1
-	\task[\textbf{d.}] 2,2
-\end{tasks}
-\begin{answer}
-	\begin{align*}
-	\text { I MUX: AND, 2MUX: XOR }
-	\end{align*}
-	So the correct answer is \textbf{Option (b)}
-\end{answer}
-\textbf{Demultiplexer:}\\
-A de MUX performs the reverse operation of MUX.
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.3cm,width=4.8cm]{EDE-47}
-\end{figure}
-\begin{itemize}
-	\item Number of outputs $=2^{n}$ where $n \rightarrow$ select lines
-	\item  also ctas called as data detector.
-	\item By setting the input to true (1), the demux behaves as decoder.
-\end{itemize}
-\textbf{$1 \times 4$ DEMUX}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3.5cm,width=5.1cm]{EDE-48}
-\end{figure}
+
 
 
 
