@@ -935,7 +935,7 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 \end{note}
 \newpage
 \begin{abox}
-	Practise Set-1
+	Practice Set-1
 	\end{abox}
 \begin{enumerate}
 	\item The transistor in the given circuit has $h_{f e}=35 \Omega$ and $h_{i e}=1000 \Omega$. If the load resistance $R_{L}=1000 \Omega$, the voltage and current gain are, respectively.
@@ -1135,7 +1135,7 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 \end{table}
 \newpage
 \begin{abox}
-	Practise set-2
+	Practice set-2
 \end{abox}
 \begin{enumerate}
 	\item Which of the following statements is CORRECT for a common emitter amplifier circuit?
@@ -1228,6 +1228,35 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 	\centering
 	\includegraphics[height=5.5cm,width=10cm]{BJT-51}
 \end{figure}
+\item A transistor in common base configuration has ratio of collector current to emitter current $\beta$ and ratio of collector to base current $\alpha .$ Which of the following is true?
+{\exyear{JEST 2016}}
+
+\begin{tasks}(2)
+	\task[\textbf{A.}] $\beta=\frac{\alpha}{(\alpha+1)}$
+	\task[\textbf{B.}] $\beta=\frac{(\alpha+1)}{\alpha}$
+	\task[\textbf{C.}] $\beta=\frac{\alpha}{(\alpha-1)}$
+	\task[\textbf{D.}] $\beta=\frac{(\alpha-1)}{\alpha}$
+\end{tasks}
+\item What is the DC base current (approximated to nearest integer value in $\mu A$ ) for the following $n-p-n$ silicon transistor circuit, given $R_{1}=75 \Omega, R_{2}=4.0 k \Omega, R_{3}=2.1 k \Omega$, $R_{4}=2.6 \mathrm{k} \Omega, R_{5}=6.0 \mathrm{k} \Omega, R_{6}=6.8 \mathrm{k} \Omega, C_{1}=1 \mu F, C_{2}=2 \mu F, V_{C}=+15 \mathrm{~V} \beta_{d c}=75 ?$
+{\exyear{JEST 2017}}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4.5cm,width=8.5cm]{diagram-20210816(32)-crop}
+\end{figure}
+\begin{tasks}(4)
+	\task[\textbf{A.}] 20
+	\task[\textbf{B.}] 24
+	\task[\textbf{C.}] 16
+	\task[\textbf{D.}] 32
+\end{tasks}
+	\item Consider the transistor circuit shown in the figure. Assume $V_{B E Q}=0.7 V, V_{B B}=6 V$ and the leakage current is negligible. What is the required value of
+$R_{B}$ in kilo-ohms if the base current is to be $4 \mu A ?$
+{\exyear{JEST 2019}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,width=5.5cm]{diagram-20210817-crop}
+\end{figure}
 \end{enumerate}
  \colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
@@ -1244,6 +1273,8 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 		5&\textbf{1.6} &6&\textbf{5.86} \\\hline
 		7&\textbf{15}&8&\textbf{5.7}\\\hline
 		9&\textbf{4.75}&10&\textbf{0.70}\\\hline
+		11&\textbf{A}&12&\textbf{A}\\\hline
+		13&\textbf{1325}& & \\\hline
 	\end{tabular}
 \end{table}
 \newpage
@@ -1282,11 +1313,24 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 	V_i&=R_BI_B=1\times 10^3 \times 10^{-5}=10mV
 	\end{align*}
 \end{answer}
+\begin{minipage}{\textwidth}
+	\item The input signal given to a a CE amplifier having a voltage gain of 150 is $\mathrm{V}_{\mathrm{i}}=2 \cos \left(15 \mathrm{t}+\frac{\pi}{3}\right)$. The corresponding output signal will be
+\end{minipage}
+\begin{answer}
+	$$V_i=2\cos(15t+\frac{\pi}{3})$$
+	voltage gain $A_v=\frac{V_0}{V_i}$
+	$$V_0=A_v\times V_i$$
+	$$=150\times 2 \cos (15t+\frac{\pi}{3})	$$
+	$$=300\cos (15t+\frac{\pi}{3})$$
+	Input and output are out of phase in CE configuration.So an additional $\pi$ will come in output voltage\\
+	$$V_0=300\cos (15t+\frac{\pi}{3}+\pi)$$
+	$$=300\cos(15t+\frac{4\pi}{3})$$
+\end{answer}	
 		\begin{minipage}{\textwidth}
 		\item In circuit shown, assume that the transistor is in active region. It has a large $\beta$ and its base emitter voltage is $0.7$ volts. The value of $\mathrm{I}_{\mathrm{C}}$ is
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=5cm,width=4cm]{diagram-20211109(19)-crop}
+			\includegraphics[height=4.5cm,width=3cm]{diagram-20211109(19)-crop}
 		\end{figure}
 	\end{minipage}
 	\begin{answer}
@@ -1306,20 +1350,26 @@ At $f_{P}$, the crystal will acts as a parallel resonant circuit.
 		\item Consider the circuits shown in figures (a) and (b) below
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=4cm,width=10cm]{diagram-20211108(13)-crop}
+			\includegraphics[height=3.5cm,width=9cm]{diagram-20211108(13)-crop}
 		\end{figure}
 		If the transistors in Figures (a) and (b) have current gain $\left(\beta_{d c}\right)$ of 100 and 10 respectively, then they operate in the\\
 	\end{minipage}
 	\begin{answer}
-	In both case input section is F.B.\\
-		For figure (a) $I_{B}=\frac{10.7-0.7}{10}=1 \mathrm{~mA} \Rightarrow I_{C}=B I_{B}=100 \mathrm{~mA}$\\
-		Thus $V_{C B}=V_{C}-V_{B}=(10-2 \times 100)-0.7=-v e$\\
-		$\Rightarrow \quad$ output section is F.B.\\
-		since both section are F.B. so it is in saturation region.\\
-		For Figure (b) $I_{B}=\frac{5-0.7}{10}=0.43 \mathrm{~mA} \Rightarrow I_{C}=B I_{B}=4.3 \mathrm{~mA}$\\
-		Thus $\left.V_{C B}=V_{C}-V_{B}=(10-4.3)-0.7\right)=+v e$\\
-		$\Rightarrow \quad$ out put section is R.B.\\
-		Thus it is in active region
+		In both case input section is F.B.\\
+	For figure (a)
+	\begin{align*}
+	I_{B}&=\frac{10.7-0.7}{10}=1 \mathrm{~mA} \\ I_{C}&=B I_{B}=100 \mathrm{~mA}\\
+	\text{Thus } V_{C B}&=V_{C}-V_{B}\\&=(10-2 \times 100)-0.7=-v e\\
+	\Rightarrow \quad &\text{output section is F.B.}
+	\intertext{since both section are F.B. so it is in saturation region.}
+	\end{align*} 
+	For Figure (b)
+	\begin{align*}
+	I_{B}&=\frac{5-0.7}{10}=0.43 \mathrm{~mA} \\ I_{C}&=B I_{B}=4.3 \mathrm{~mA}\\
+	\text{Thus } V_{C B}&=V_{C}-V_{B}\\&=(10-4.3)-0.7=+v e\\
+	\Rightarrow \quad \text{out put section is R.B.}
+	\end{align*}
+	Thus it is in active region
 \end{answer}
 	\begin{minipage}{\textwidth}
 	\item  It is desired to set the operating point at $2 \mathrm{~V}, 1 \mathrm{~mA}$ by biasing a silicon transistor with collector feedback resistor RB. If $\beta=100$, find the value of $R_B$
@@ -1390,7 +1440,7 @@ V_C=V_{CC}-I_CR_C\\
 	\item A transistor having $\alpha=0.99$ and $\mathrm{V}_{\mathrm{BE}}=0.7$ volts, in the circuit shown, then the value of the collector current will be.............
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=6cm,width=4cm]{diagram-20211109(9)-crop}
+		\includegraphics[height=5cm,width=3.5cm]{diagram-20211109(9)-crop}
 	\end{figure}
 \end{minipage}
 \begin{answer}
@@ -1410,18 +1460,6 @@ V_{CC}&=(I_B+I_C)1\times 10^3+I_B\times 10\times 10^3+V_{CE(sat)}+(I_B+I_C)\time
 I_C&=3.725mA
 \end{align*}	
 \end{answer}
-	\begin{minipage}{\textwidth}
-	\item The input signal given to a a CE amplifier having a voltage gain of 150 is $\mathrm{V}_{\mathrm{i}}=2 \cos \left(15 \mathrm{t}+\frac{\pi}{3}\right)$. The corresponding output signal will be
-\end{minipage}
-\begin{answer}
-$$V_i=2\cos(15t+\frac{\pi}{3})$$
-voltage gain $A_v=\frac{V_0}{V_i}$
-$$V_0=A_v\times V_i$$
-$$=150\times 2 \cos (15t+\frac{\pi}{3})	$$
-$$=300\cos (15t+\frac{\pi}{3})$$
-Input and output are out of phase in CE configuration.So an additional $\pi$ will come in output voltage\\
-$$V_0=300\cos (15t+\frac{\pi}{3}+\pi)$$
-$$=300\cos(15t+\frac{4\pi}{3})$$
-\end{answer}	
+
 \end{enumerate}
-\newpage
+
