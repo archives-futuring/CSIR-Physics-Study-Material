@@ -1437,6 +1437,68 @@ V_{02}&=-\frac{35}{10} \times(4 \cdot 5 \times 200 \mathrm{mV}) \sin (400 t) \\
 V_{0}&=-\frac{35}{10} \times\left(\frac{-35}{10}\right)(4 \cdot 5 \times 200 \mathrm{mV}) \sin (400 t) \\
 V_{m}&=(3.5 \times 3.5 \times 4.5 \times 200) \mathrm{mV}\\&=11.03 \text { Volts }
 \end{align*}
-
 \end{answer}
+\item A current feedback to an amplifier is applied in the following circuit 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.3cm,width=5cm]{OP-1}
+\end{figure}
+The voltage gain of the amplifier is $A=200$ and the input impedance is $10^{6} \Omega$. The output current $i_{0}$ and the output voltage $V_{0}$ corresponding to an input current $i_{\text {in }}=10 \mu A$ are
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$i_{0}=-5 \mathrm{~mA}$ and $V_{0}=-0.10 \mathrm{~V}$
+	\task[\textbf{b.}]$i_{0}=-2 m A$ and $V_{0}=-0.55 \mathrm{~V}$
+	\task[\textbf{c.}]$i_{0}=-5 m A$ and $V_{0}=-0.75 \mathrm{~V}$
+	\task[\textbf{d.}] $i_{0}=-2 m A$ and $V_{0}=-0.75 \mathrm{~V}$
+	\task[\textbf{e.}]$i_{0}=-5 \mathrm{~mA}$ and $V_{0}=-0.5 \mathrm{~V}$
+\end{tasks}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3.3cm,width=5cm]{OP-2}
+	\end{figure}
+		Take all currents in $m A$ and resistance in $k \Omega$
+	\begin{align*}
+	V_{P}&=V_{0}-0.05 i_{0}\\
+	i_{1} &=\frac{V_{p}}{0.1}=\frac{V_{0}-0.05 i_{0}}{0.1} \\
+	i &=i_{1}-i_{0}=\frac{V_{0}-0.05 i_{0}}{0.1}-i_{0} \\
+	&=\frac{V_{0}-0.15 i_{0}}{0.1} \\
+	i^{\prime} &=i_{\text {in }}-i \\
+	V_{\text {in }} &=R_{\text {in }} i^{\prime}=10^{1}\left(i_{\mathrm{in}}-i\right) \\
+	&=10^{3}\left(10^{-2}-i\right)=10^{3}\left(10^{-2}-\frac{V_{0}-0.15 i_{0}}{0.1}\right)\\
+	-\frac{V_{0}}{200}=\left(10-\left(V_{0}-0.15 i_{0}\right)\right) 10^{4} \\
+	10^{4} V_{0}-1500 i_{0}-\frac{V_{0}}{200}=10
+	\end{align*}
+	$v_{e}$ and $i_{0}$ given is $(\mathrm{c})$ satisfies above equation.\\
+		So the correct answer is \textbf{option(c)}
+\end{answer}
+\item \text { Consider the voltage regulator circuit shown in the figure below : }
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=5.1cm]{OP-3}
+\end{figure}
+The current in the Zener diode $I_{z}$ and the output voltage $V_{\text {out }}$ are, respectively
+ \begin{tasks}(2)
+	\task[\textbf{a.}]$1.5 \mathrm{~mA}$ and $6.0 \mathrm{~V}$
+	\task[\textbf{b.}]$1.5 \mathrm{~mA}$ and $9.7 \mathrm{~V}$
+	\task[\textbf{c.}] $0.9 \mathrm{~mA}$ and $9.0 \mathrm{~V}$
+	\task[\textbf{d.}] $0.9 \mathrm{~mA}$ and $8.3 \mathrm{~V}$
+	\task[\textbf{e.}]$0.9 \mathrm{~mA}$ and $6.0 \mathrm{~V}$
+\end{tasks}
+\begin{answer}$\left. \right. $
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=5.5cm]{OP-4}
+	\end{figure}
+	\begin{align*}
+	V_{A} &=6 \mathrm{~V} \\
+	I &=\frac{15-6}{10}=0.9 \mathrm{~mA}=I_{z}
+	\text { Using virtual ground. }\\
+	V_{B}&=V_{d}=6 \mathrm{~V}=V_{C}\\
+	I^{\prime} &=\frac{6-0}{4}=1.5 \mathrm{~mA} \\
+	V_{\text {out }} &=V_{C}+I^{\prime} R \\
+	&=6+1.5 \times 2 \\
+	&=9 \mathrm{~V}
+	\end{align*}
+\end{answer}
+
 \end{enumerate}
