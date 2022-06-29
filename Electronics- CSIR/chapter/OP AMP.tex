@@ -1289,20 +1289,20 @@ $\left. \right. $\\
 \end{table}
 \newpage
 \begin{abox}
-	Practice set 3
+	Practice set -3
 \end{abox}
 \begin{enumerate}
 	\begin{minipage}{\textwidth}
 		\item Determine the output voltage for the inverting amplifier for the following figure?
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=5cm,width=11cm]{Inverting Amplifier}
+			\includegraphics[height=5.5cm,width=8cm]{Inverting Amplifier}
 		\end{figure}
 		(a) $V_{in}=20mV dc$\\
 		(b) $V_{in}=-50\mu V$ peak sin wave\\
 		Assume the value of A to be $2\times 10^5$
 	\end{minipage}
-	\begin{answer}
+	\begin{answer}$\left. \right. $\\
 		(a) $$V_o=-AV_{in}=-2\times 10^5\times20 \times 10^{-3}=-400V$$
 		This is theoretical value.The actual value will be ne negative saturation voltage -14.\\
 		(b)$$V_o=-AV_{in}=-2\times 10^5\times -50 \times 10^{-6}=10V$$
@@ -1318,31 +1318,37 @@ $\left. \right. $\\
 		Compute the value of $A_f,R_{if},R_{of},F_f$
 	\end{minipage}
 	\begin{answer}
-		let us calculate the value B first.\\
-		$$B=\frac{R_1}{R_1+R_F}=\frac{1k\Omega}{1k\Omega+10K\Omega}=\frac{1}{11}$$
-		$$1+AB=1+\frac{200000}{11}=18182.8$$
-		$$A_f=\frac{A}{1+AB}=\frac{200000}{18128.8}=10.99$$
-		$$R_{if}=R_i(1+AB)=2M\Omega\times 18182.8=36.4G\Omega$$
-		$$R_{of}=\frac{R_o}{1+AB}=\frac{75}{18182.8}=4.12M\Omega$$
-		$$F_f=f_o(1+AB)=5\times 18182.8=90.9kHz$$	
+		let us calculate the value B first.
+		\begin{align*}
+		B&=\frac{R_1}{R_1+R_F}\\&=\frac{1k\Omega}{1k\Omega+10K\Omega}\\&=\frac{1}{11}\\
+		1+AB&=1+\frac{200000}{11}=18182.8\\
+		A_f&=\frac{A}{1+AB}=\frac{200000}{18128.8}=10.99\\
+		R_{if}&=R_i(1+AB)=2M\Omega\times 18182.8=36.4G\Omega\\
+		R_{of}&=\frac{R_o}{1+AB}=\frac{75}{18182.8}=4.12M\Omega\\
+		F_f&=f_o(1+AB)=5\times 18182.8=90.9kHz
+		\end{align*}
+		
 	\end{answer}
 	\begin{minipage}{\textwidth}
 		\item If the sin wave of 1V peak at 1000Hz is applied to the differentiator Find the output voltage?
 	\end{minipage}
 	\begin{answer}
-		Since $V_p$ =1V and f=1000Hz the input voltage is \\
-		$$V_{in}=V_p\sin \omega t$$
-		$$=\sin (2\pi)(10^3)t$$
-		$$V_o=-R_FC_1\frac{dV_{in}}{dt}$$
-		$$=-(1.5k\Omega)(0.1\mu F)\frac{d}{dt}\left[ \sin (2\pi)(10^3)t\right] $$
-		$$=-(1.5k\Omega)(0.1\mu F)(2\pi)(10^3)\cos \left[ 2\pi 10^3t\right] $$
+		Since $V_p$ =1V and f=1000Hz the input voltage is 
+		\begin{align*}
+		V_{in}&=V_p\sin \omega t\\
+		&=\sin (2\pi)(10^3)t\\
+		V_o&=-R_FC_1\frac{dV_{in}}{dt}\\
+		&=-(1.5k\Omega)(0.1\mu F)\frac{d}{dt}\left[ \sin (2\pi)(10^3)t\right]\\ 
+		&=-(1.5k\Omega)(0.1\mu F)(2\pi)(10^3)\cos \left[ 2\pi 10^3t\right] 
+		\end{align*}
+		
 	\end{answer}
 	
 	\begin{minipage}{\textwidth}
 		\item An input of step dc voltage as shown in the figure is fed to a integrator of $R_1C_F=1 sec$ .Find the output voltage and sketch it?
 		\begin{figure}[H]
 			\centering
-			\includegraphics[height=5cm,width=6cm]{diagram-20211127(17)-crop}
+			\includegraphics[height=4cm,width=5cm]{diagram-20211127(17)-crop}
 		\end{figure}
 	\end{minipage}
 	\begin{answer}
@@ -1359,23 +1365,78 @@ $\left. \right. $\\
 		\end{figure}	
 	\end{answer}
 	\begin{minipage}{\textwidth}
-		\item For inverting amplifier $R_1=470\Omega$ and $R_F=4.7k\Omega$.Assume that the op-amp is a 741 with specification given bellow\\
+		\item For inverting amplifier $R_1=470\Omega$ and $R_F=4.7k\Omega$.Assume that the op-amp is a 741 with specification given below\\
 		$A=200000$\\
 		$R_i=2M\Omega$\\
 		$R_0=75\Omega$\\
 		$f_0=5Hz$\\
-		supply voltage $=\pm15$\\
+		Supply voltage $=\pm15$\\
 		Compute the value of $A_f,R_{if},R_{of},F_f$
 	\end{minipage}
 	\begin{answer}
 		Using the given values of $R_1$ and $R_F$\\
-		$$K=\frac{R_F}{R_1+R_F}=\frac{4700}{470+4700}=\frac{1}{1.1}$$
-		$$B=\frac{R_1}{R_1+R_F}=\frac{470}{470+4700}=\frac{1}{11}$$
-		$$1+AB=\left[ 1+(2\times 10^5)(1/11)\right]=18182.8$$
-		$$A_F=\frac{-AK}{1+AB}=\frac{-200000(1/1.1)}{18182.8}=-10$$
-		$$R_{iF}=R_1+\left( \frac{R_F}{1+A}\parallel R_i\right) $$
-		$$R_{iF}=470\Omega+\left[ \frac{4700}{200000}\parallel 2\times 10^6\right] $$
-		$$R_{oF}=\frac{R_0}{1+AB}=\frac{75}{18182.8}=4.12M\Omega$$
-		$$F_f=f_0(1+AB)=\frac{5 \times 18182.8}{1/1.1}=100kHz$$
+		\begin{align*}
+		K&=\frac{R_F}{R_1+R_F}=\frac{4700}{470+4700}=\frac{1}{1.1}\\
+		B&=\frac{R_1}{R_1+R_F}=\frac{470}{470+4700}=\frac{1}{11}\\
+		1+AB&=\left[ 1+(2\times 10^5)(1/11)\right]=18182.8\\
+		A_F&=\frac{-AK}{1+AB}=\frac{-200000(1/1.1)}{18182.8}=-10\\
+		R_{iF}&=R_1+\left( \frac{R_F}{1+A}\parallel R_i\right) \\
+		R_{iF}&=470\Omega+\left[ \frac{4700}{200000}\parallel 2\times 10^6\right]\\ 
+		R_{oF}&=\frac{R_0}{1+AB}\\&=\frac{75}{18182.8}=4.12M\Omega\\
+		F_f&=f_0(1+AB)\\&=\frac{5 \times 18182.8}{1/1.1}=100kHz
+		\end{align*}
 	\end{answer}
+\item For an ideal op-amp circuit given below, the $d c$ gain and the cut off frequency respectively are?
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=6cm]{sse-23-crop}
+
+\end{figure}
+
+\begin{tasks}(2)
+\task[\textbf{A.}]1 and $1 \mathrm{kHz}$
+\task[\textbf{B.}]1 and $100 \mathrm{~Hz}$
+\task[\textbf{C.}]11 and $1 \mathrm{kHz}$
+\task[\textbf{D.}]11 and $100 \mathrm{~Hz}$
+\end{tasks}
+\begin{answer}
+	\begin{align*}
+	\text{DC Gain}&=1+\frac{R_{F}}{R_{1}}\\&=1+\frac{10}{1}=11 \\ \text { And } f_{H}&=\frac{1}{2 \pi R C}\\&=\frac{1}{2 \pi \times 1 \times \frac{1}{2 \pi}}\\&=1 \mathrm{kHz}	
+	\end{align*}
+
+The correct option is \textbf{(c)}
+\end{answer}
+	\item The output voltage $V_{0}$ of the OPAMP circuit given below is........ $V$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=5cm]{diagram-20210322(17)-crop}
+
+\end{figure}
+
+\begin{answer}
+	\begin{align*}
+	V_{0}&=\left(1+\frac{R_{F}}{R_{1}}\right) V_{1}\\
+	V_{0}&=\left(1+\frac{2 R}{R}\right) V_{1}\\&=3 V_{1}\\
+	\text{Where, } V_{1}&=\frac{R / 2}{R+R / 2} \times 1+\frac{R / 2}{R+R / 2} \times 2+\frac{R / 2}{R+R / 2} \times 3\\
+	V_{1}&=\frac{1}{3} \times 1+\frac{1}{3} \times 2+\frac{1}{3} \times 3\\&=2 V \\
+	 V_{0}&=6 V
+	\end{align*}
+
+\end{answer}
+	\item For the input voltage $V_{1}(200 m V) \sin (400 t)$, the amplitude of the output voltage $\left(V_{0}\right)$ of the given OPAMP circuit is $V$. (Round off to 2 decimal places)
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=8cm]{diagram-20210322(30)-crop}
+\end{figure}
+\begin{answer}
+\begin{align*}
+V_{01}&=\left(1+\frac{35}{10}\right) v_{i}\\&=(4 \cdot 5 \times 200 \mathrm{mV}) \sin (400 t) \\
+V_{02}&=-\frac{35}{10} \times(4 \cdot 5 \times 200 \mathrm{mV}) \sin (400 t) \\
+V_{0}&=-\frac{35}{10} \times\left(\frac{-35}{10}\right)(4 \cdot 5 \times 200 \mathrm{mV}) \sin (400 t) \\
+V_{m}&=(3.5 \times 3.5 \times 4.5 \times 200) \mathrm{mV}\\&=11.03 \text { Volts }
+\end{align*}
+
+\end{answer}
 \end{enumerate}
