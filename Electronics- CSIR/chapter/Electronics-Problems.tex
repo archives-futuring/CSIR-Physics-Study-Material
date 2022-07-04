@@ -253,3 +253,98 @@
 		\end{figure}
 	\end{answer}
 \end{enumerate}
+
+\newpage
+\begin{enumerate}
+	\item Calculate the value of current I in the above circuit. (Assume diode is ideal)
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.3cm,width=5cm]{Ep-34}
+	\end{figure}
+	\begin{answer}
+		\begin{align*}
+		\text { Apply KVL, } 0-1 \mathrm{~K} . \mathrm{I}+5=0, \quad \mathrm{I}=5 \mathrm{~mA}
+		\end{align*}
+	\end{answer}
+	\item The cut in voltage for each diode is $0.6 \mathrm{~V}$ (Si) each diode current is $0.5 \mathrm{~mA}$. Find the value of $\mathrm{R}_{1}, \mathrm{R}_{\text {. }}$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4.6cm,width=5.5cm]{Ep-35}
+	\end{figure}
+	\begin{answer}
+		\begin{align*}
+		\text { Current across } \mathrm{R}_{2}&=0.5+0.5=1 \mathrm{~mA}, \text { Current across } \mathrm{R}_{3}=.5+.5+.5=1.5 \mathrm{~mA}\\
+		\mathrm{V}_{\mathrm{A}}&=5-0.6=4.4 \mathrm{~V}, \mathrm{~V}_{\mathrm{B}}=0-0.6=-0.6 \mathrm{~V}\\
+		\mathrm{R}_{1}&=\frac{10-0.6-4.4}{0.5 \mathrm{~mA}}=10 \mathrm{k} \Omega, \quad \mathrm{R}_{2}=\frac{4.4-(-0.6)}{(0.5+0.5) \mathrm{mA}}=\frac{5}{1 \mathrm{~mA}}=5 \mathrm{k} \Omega\\
+		\mathrm{R}_{3}&=\frac{-0.6-(-5 \mathrm{~V})}{(.5+.5+.5) \mathrm{mA}}=\frac{4.4}{1.5 \mathrm{~mA}}, \mathrm{R}_{3}=2.93 \mathrm{k} \Omega
+		\end{align*}
+	\end{answer}
+	\item Calculate the value of current $\mathrm{I}$. Cut in voltage of $\mathrm{Si}=0.7 \mathrm{~V}$ and $\mathrm{Ge}=0.3 \mathrm{~V}$.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2cm,width=5cm]{Ep-36}
+	\end{figure}
+	\begin{answer}
+		Applying KVL in the given circuit
+		\begin{align*}
+		12&=0.7+0.3+\mathrm{I} \times 5.6 \mathrm{~K}\\
+		12-1&=\mathrm{I} \times 5.6 \mathrm{~K}, \mathrm{I}=\frac{11}{5.6} \mathrm{~K} \quad \mathrm{I}=1.96 \mathrm{~mA}
+		\end{align*}
+	\end{answer}
+	\item Find value of $V_{0}$ in the given circuit.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3.1cm,width=5cm]{Ep-37}
+	\end{figure}
+	\begin{answer}
+		Both Si and Ge are in forward bias but Ge will attain cut off early. So Si will not conduct.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=3cm,width=3.2cm]{Ep-38}
+		\end{figure}
+		\begin{align*}
+		\text { Applying KVL } 10-0.3=\mathrm{V}_{0}, \mathrm{~V}_{0}=9.7 \mathrm{~V}
+		\end{align*}
+	\end{answer}
+	\item 	$\left. \right. $\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.4cm,width=4.7cm]{Ep-39}
+	\end{figure}
+$V_{i}=10 \sin \omega t$\\
+	Sketch the output waveform if the input signal is indicated as:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.5cm,width=4cm]{Ep-40}
+	\end{figure}
+	\begin{answer}
+		\begin{align*}
+		&\text { When } \mathrm{V}_{\mathrm{i}}<0, \quad \mathrm{D}_{1} \rightarrow \mathrm{ON}, \mathrm{D}_{2} \rightarrow \mathrm{OFF}\\
+		&-\mathrm{V}_{\mathrm{i}}-\mathrm{IR}-\mathrm{IR}=0,2 \mathrm{IR}=-\mathrm{V}_{\mathrm{i}}, \mathrm{IR}>0 \quad \mathrm{~V}_{0}=\frac{\mathrm{V}_{\mathrm{i}}}{2}\\
+		&\text { Step-II : For } \mathrm{V}_{\mathrm{i}}>0, \mathrm{~V}_{0}=\frac{\mathrm{V}}{2}=5 \mathrm{~V} \text {, if } \mathrm{V}_{\mathrm{i}}<0, \mathrm{~V}_{0}=\frac{\mathrm{V}}{2}=5 \mathrm{~V}
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=4cm]{Ep-41}
+		\end{figure}
+	\end{answer}
+	\item Find the value of $\mathrm{I}$ in the circuit given below. (where cut in voltage of diode $\mathrm{D}_{1}$ and $\mathrm{D}_{2}=0.7$ ).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.3cm,width=5.5cm]{Ep-42}
+	\end{figure}
+	\begin{answer}
+		$D_{2}$ is in reverse biased so open circuited and no current flow across $D_{2} .$ Only $D_{1}$ is conducting and all to pass the current equivalent circuit is
+		\begin{figure}[H]
+			\centering
+			\includegraphics[height=2.5cm,width=5.5cm]{Ep-43}
+		\end{figure}
+		\begin{align*}
+		\text { Applying KVL } 20-2.2 \mathrm{K.I}-0.7-4&=0, \quad \mathrm{I}=\frac{15.3}{2.2 \mathrm{~K}} \quad \mathrm{I}=6.95 \mathrm{~mA}
+		\end{align*}
+	\end{answer}
+	
+	
+	
+	
+\end{enumerate}
