@@ -1,32 +1,46 @@
 \chapter{Digital Electronics}
 \section{Multiplexer(MUX)}
-Multiplex means many into one. A multiplexer is a circuit with many inputs but only one output. By applying control signals, we can steer any input to the output. Thus it is also called a data selector and control inputs are termed select inputs. A MUX is represented by many input and single output line.
+Multiplex means many into one. A multiplexer is a circuit with many inputs but only one output. By applying control signals, we can steer any input to the output. Thus it is also called a data selector and control inputs are termed select inputs. A MUX is represented by many input and single output line.The internal structure of MUX is a rotatory switch.
+\\ It is used for parellel to series conversion. It's also called as universal combinational circuit.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3cm,width=7cm]{EDE-40}
+	\caption{}
+	\label{}
 \end{figure}
-Internal structure of MUX is represented by a switch.
-\subsection{{$2\time 1$ MUX:}}
-$2^n=2\Rightarrow n=1$\quad number of select lines.
+If the number of input lines in a MUX is $N$, then,
+\begin{align*}
+N&=2^n\\
+\text{Where, } n&=\text{number of select lines.}
+\end{align*}
+\subsection{$2 \times 1$ MUX}
+Here, the number of input lines,N
+\begin{align*}
+N&=2^{n}=2\\
+\text{Then,number of select lines } n&=1
+\end{align*}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.5cm,width=6cm]{EDE-41}
+	\caption{}
+	\label{}
 \end{figure}
-\begin{enumerate}
-	\item For a two level AND-OR circuit can be equally represented by
+\begin{example}
+ For a two level AND-OR circuit can be equally represented by
 	\begin{tasks}(2)
 		\task[\textbf{a.}]AND-AND
 		\task[\textbf{b.}]OR-AND
 		\task[\textbf{c.}]NOR-NOR
 		\task[\textbf{d.}] NAND-NAND
 	\end{tasks}
-	\begin{answer}$\left. \right. $\\
+
 		\begin{figure}[H]
 			\centering
 			\includegraphics[height=2.5cm,width=7cm]{EDE-42}
 		\end{figure}
-	\end{answer}
-\end{enumerate}
+	
+\end{example}
 \subsection{U$\times$ 1 MUX}
 y=$\bar{A}\bar{B}D_0$+$\bar{A}BD_1+A\bar{B}D_2+ABD_3$
 \subsection{8$\times 1$ MUX}
