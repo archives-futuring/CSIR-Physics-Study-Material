@@ -39,7 +39,7 @@ N&=2^{n}=2\\
 \begin{figure}[H]
 	\includegraphics[height=3.5cm,width=4.5cm]{DE-01}
 \end{figure}
-y=$\bar{A}\bar{B}D_0+\bar{A}BD_1+A\bar{B}D_2+ABD_3$
+\text{Output }\quad y=$\bar{A}\bar{B}D_0+\bar{A}BD_1+A\bar{B}D_2+ABD_3$
 \subsection{8$\times 1$ MUX}
 $	2^n=8$\\
 $\Rightarrow \text{ number of select lines, }n=3$\\
@@ -52,7 +52,7 @@ $AB\bar{C}D_5+ABCD_7$
 1.\quad  Minimize
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.8cm,width=9cm]{EDE-43}
+	\includegraphics[height=2.7cm,width=9cm]{EDE-43}
 \end{figure}
 2.\quad  Minimize
 \begin{figure}[H]
@@ -74,7 +74,7 @@ $AB\bar{C}D_5+ABCD_7$
 	&\color{red}{1}
 	\end{tabular}\\
 	2+ 1=3\\
-	2 \times 1\text{ MUX}
+	\text{ three, } 2 \times 1\text{ MUX } \text{is required}
 	\end{align*}
 	\item $16\times 1$ MUX by $2\times 1$ MUX
 	\begin{align*}
@@ -84,8 +84,8 @@ $AB\bar{C}D_5+ABCD_7$
 \hline	2 & \color{red}{4} \\
 	\hline 2 & \color{red}{2} \\
 	\hline & \color{red}{1}
-	\end{array}=8+4+2+1\Rightarrow 15 \quad 2 \times 1\text{ MUX
-		Required.}
+	\end{array}=8+4+2+1\Rightarrow 15, (\text{Fifteen,}\quad 2 \times 1\text{ MUX
+		Required.})
 	\end{align*}
 	similarly,
 	\item $256 \times 1$ MUX by $16 \times 1$ MUX
@@ -94,18 +94,18 @@ $AB\bar{C}D_5+ABCD_7$
 	16 & 256 \\
 	\hline 16 & \color{red}{16}\\
 	\hline  &\color{red}{1}
-	\end{tabular}\quad 16+1=17 \quad 16 \times 1 \text{MUX} .
+	\end{tabular}\quad 16+1=17 (\text{Seventeen, }16 \times 1 \text{MUX is required}) .
 	\end{align*}
 \end{enumerate}
 \textbf{Implementation of Logic gates by using $2 \times 1$ MUX and $u \times 1$ MUX:}\\
 1.\quad NOT gate:
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.8cm,width=8cm]{EDE-46}
+	\includegraphics[height=2.8cm,width=4.5cm]{EDE-46}
 \end{figure}
 \renewcommand*{\arraystretch}{1.5}
 $\begin{array}{|c|c|c|}
-\hline\text { Logic gate } & \text { 2XI MUX } & \text { UXI MUX } \\
+\hline\text { Logic gate } & \text { 2X1 MUX } & \text { 4X1 MUX } \\
 \hline \text { NOT } & 1 & 1 \\
 \hline \text { AND } & 1 & 1 \\
 \hline \text { OR } & 1 & 1 \\
@@ -114,15 +114,7 @@ $\begin{array}{|c|c|c|}
 \hline \text { EX-OR } & 2 & 1\\
 \hline \text { EX-NOR } & 2 & 1\\	\hline
 \end{array}$\\\\\\
-$\begin{array}{|c|c|c|}
-\hline\text { Combinational CKe } & 2 \times 1 \text { Mux } & 4 \times 1 \text { MuX } \\
-\hline \text { Half adder } & 2 & \\
-\hline \text { Half Subbactor } & 2 & \\
-\hline \text { Full Adder } & 7 & 3\\
-\hline \text { Full Subbactor } & 7 & 3\\
-\hline \text { Comparator } & 3 &  \\\hline
-\end{array}$\\\\
-2. \quad For the implementation of AND gate and XOR gate the number of MUX required.
+2. \quad For the implementation of AND gate and XOR gate the number of 2X1 MUX required.
 \begin{tasks}(4)
 	\task[\textbf{a.}] 1,1
 	\task[\textbf{b.}]1,2
@@ -131,7 +123,7 @@ $\begin{array}{|c|c|c|}
 \end{tasks}
 \begin{answer}
 	\begin{align*}
-	\text { I MUX: AND, 2MUX: XOR }
+	\text { I MUX for AND, 2MUX for XOR }
 	\end{align*}
 	So the correct answer is \textbf{Option (b)}
 \end{answer}
@@ -143,7 +135,7 @@ A de MUX performs the reverse operation of MUX.
 \end{figure}
 \begin{itemize}
 	\item Number of outputs $=2^{n}$ where $n \rightarrow$ select lines
-	\item  also ctas called as data detector.
+	\item  De MUX is also called as data detector.
 	\item By setting the input to true (1), the demux behaves as decoder.
 \end{itemize}
 \textbf{$1 \times 4$ DEMUX}
@@ -151,7 +143,8 @@ A de MUX performs the reverse operation of MUX.
 	\centering
 	\includegraphics[height=3.5cm,width=5.1cm]{EDE-48}
 \end{figure}
-Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\
+\section{Flip-Flop}
+Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\\\
 \textbf{Sequential Circuit}\\
 \begin{minipage}{0.12\textwidth}
 	\textbf{SR-Latch:}
@@ -188,7 +181,7 @@ When $\mathrm{S}=\mathrm{D}, \bar{R}=D$, Now SR becomes $\mathrm{D}$ type Flip F
 $S=J\left(\bar{Q}_{n}\right) ; R=K\left(Q_{n}\right)$
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2.8cm,width=10cm]{EDE-04}
+	\includegraphics[height=2.4cm,width=9.5cm]{EDE-04}
 \end{figure}
 \begin{note}
 Problem in JK flip flop is race around condition.
@@ -196,20 +189,30 @@ Problem in JK flip flop is race around condition.
  \textbf{T-type (Toggle) Flip Flop:} $\mathrm{J}=\mathrm{K}=\mathrm{T}$ then $\mathrm{T}=$ Flip Flop.
  \begin{figure}[H]
  	\centering
- 	\includegraphics[height=5.2cm,width=7.5cm]{EDE-05}
+ 	\includegraphics[height=5.4cm,width=7.5cm]{EDE-05}
  \end{figure}
- A clock pulse may be either positive or negative. A positive clock source remains at 0 during the interval between pulses and goes 0 to 1 during the occurrence of a pulse. The pulse goes through two signal transitions; from 0 to 1 and return from 1 to $0.9$ n figure 1 and 2 , positive transition is defined as the positive edge and the negative transition as the negative edge.\\
+ A clock pulse may be either positive or negative. A positive clock source remains at 0 during the interval between pulses and goes 0 to 1 during the occurrence of a pulse. The pulse goes through two signal transitions; from 0 to 1 and return from 1 to 0, positive transition is defined as the positive edge and the negative transition as the negative edge.\\
  \textbf{Time Diagram Representation:}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[height=4.8cm,width=11cm]{EDE-06}
+ 	\includegraphics[height=4.8cm,width=10.5cm]{EDE-06}
  \end{figure}
  \textbf{If we take positive edge:}
  \begin{figure}[H]
  	\centering
  	\includegraphics[height=3cm,width=5.4cm]{EDE-07}
  \end{figure}
+ 	\textbf{Counters}
+ 	\begin{enumerate}
+ 		\item Asynchronous or ripple or serial 
+ 		\item Syncgronous or parallel or fast
+ 		\item (i) Ring counter (ii) Twisted tail or thomson or mobious (Type of shift registers)
+ 	\end{enumerate}
  \begin{enumerate}
+ 	\item \textbf{Asychronous Counter:} No, common clock-clock is output of previous flip-flop.
+ 	\item In syncbronous counter common clock is used.
+ \end{enumerate}
+\begin{enumerate}
 \item  	What is meaning of MOD-12 counter $\Rightarrow$ number of states are 12 .\\
 1. $0-11 \rightarrow 12$ states\qquad
 2. $2-13 \rightarrow 12$ states\\
