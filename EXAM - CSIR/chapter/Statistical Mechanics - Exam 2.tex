@@ -35,7 +35,7 @@ So the correct answer is \textbf{Option (D)}
 	\item Two identical fermions
 \begin{tasks}(1)
 \task[\textbf{A.}] $e^{-2 \beta E}+e^{-4 \beta E}+e^{-6 \beta E}+e^{-8 \beta E}$
-\task[\textbf{B.}] $e^{-3 \beta E}+e^{-4 \beta E}+e^{-5 \beta E}+e^{-6 \beta E}+e^{-7 \beta E}$
+\task[\textbf{B.}] $e^{-3 \beta E}+e^{-4 \beta E}+2e^{-5 \beta E}+e^{-6 \beta E}+e^{-7 \beta E}$
 \task[\textbf{C.}] $\left(e^{-\beta E}+e^{-2 \beta E}+e^{-3 \beta E}+e^{-4 \beta E}\right)^{2}$
 \task[\textbf{D.}] $e^{-2 \beta E}-e^{-4 \beta E}+e^{-6 \beta E}-e^{-8 \beta E}$
 \end{tasks}
@@ -43,7 +43,7 @@ So the correct answer is \textbf{Option (D)}
 \begin{align*}
 \intertext{The possible value of Energy for two Fermions}
 E_{1}&=3 E, E_{2}=4 E, E_{3}=5 E, E_{4}=6 E, E_{5}=7 E
-\intertext{The partition function is $Z=e^{-3 \beta E}+e^{-4 \beta E}+2 e^{-5 \beta E}+e^{-6 \beta E}+e^{-7 \beta E}$, then the answer may be option (B).}
+\intertext{The partition function is $Z=e^{-3 \beta E}+e^{-4 \beta E}+2 e^{-5 \beta E}+e^{-6 \beta E}+e^{-7 \beta E}$, then the answer is option (B).}
 \end{align*}
 So the correct answer is \textbf{Option (B)}
 \end{answer}
@@ -125,8 +125,9 @@ So the correct answer is \textbf{Option (A)}
 \intertext{Number of microstate is ${ }^{N} C_{n_{1}}$, where $n_{1}$ is number of particle in $+\frac{1}{2}$ state and}
 n_{2}&=\left(N-n_{1}\right)\text{ is number of state in }-\frac{1}{2}\text{ state.}\\
 \text{	where }n_{1}&=\frac{1}{2}\left(N-\frac{E}{\mu B}\right), n_{2}=\frac{1}{2}\left(N+\frac{E}{\mu B}\right)\\
-\text{So, number of microstate}=&\frac{\lfloor N}{\frac{1}{2}\left(N-\frac{E}{\mu B}\right) \mid \frac{1}{2}\left(N+\frac{E}{\mu B}\right)}
+\text{So, number of microstate}=&\frac{N !}{\frac{1}{2}\left(N-\frac{E}{\mu B}\right) ! \frac{1}{2}\left(N+\frac{E}{\mu B}\right) !}
 \end{align*}
+So the correct answer is \textbf{Option (A)}
 \end{answer}
 	\item A collection of $N$ two-level systems with energies 0 and $E>0$ is in thermal
 	equilibrium at temperature $T$. For $T \rightarrow \infty$, the specific heat approaches to,
@@ -212,34 +213,50 @@ C_{V}&=\frac{\frac{E^{2}}{k_{B} T^{2}} e^{-\frac{E}{k_{\mathrm{B}} T}}+\frac{E^{
 \end{align*}
 So the correct answer is \textbf{Option (C)}
 \end{answer}
-	\item The number of ways of distributing 11 indistinguishable bosons in 3 different energy levels is
-	\begin{answer}
-		Solution: $n=11 \quad g=3$
-		$$
-		w=\frac{\mid n+g-1}{\lfloor n \mid g-1}=\frac{\mid 11+3-1}{\lfloor 11\lfloor 2}=\frac{\lfloor 13}{\lfloor 11 \lfloor 2}
-		$$
-	\end{answer}
-	\item The Fermi energy in copper is $7.04 \mathrm{eV}$. Compare the approximate average energy of the free electrons in copper at room temperature $(k T=0.025 \mathrm{eV})$ with their average energy if they followed Maxwell-Boltzmann statistics.
-	\begin{answer}
-		\begin{align*}
-		\bar{\epsilon}=\epsilon_{\mathrm{F}}\left[ 1+\frac{5\pi^2}{12}\left( \frac{k_{B}T}{\epsilon_{\mathrm{F}}}\right)^2\right]\\
-		=7.04\left[1+\frac{5\pi^2}{12}(\frac{0.025}{7.04})^2\right]\\ 
-		=7.0403647eV\\
-		\bar{E}=\frac{3}{2}kT\\
-		=\frac{3}{2}\times 0.025ev\\
-		=0.0375eV	
-		\end{align*}
-	\end{answer}
-	\item Consider a linear collection of $N$ independent spin $1 / 2$ particles, each at a fixed location. The entropy of this system is $(k$ is the Boltzmann constant $)$
-	\begin{answer}
-		The number of microstates for a particle with spin $S=2 S+1$\\
-		Therefore, total number of accessible microstates for $N$ independent spins $=(2 S+1)^{N}=\Omega$.\\
-		Now, entropy $\equiv k_{B} \ln \Omega=k_{B} \ln \left[(2 S+1)^{N}\right]$\\
-		Putting $S=1 / 2$, we have\\
-		Entropy $=k_{B} \ln \left[(1+1)^{N}\right]=N k_{B} \ln 2$
-	\end{answer}
-	
-	
+\item 	 Which of the following atoms cannot exhibit Bose-Einstein condensation, even in principle?
+{\exyear{GATE 2010}}
+\begin{tasks}(4)
+\task[\textbf{A.}]  ${ }^{1} \mathrm{H}_{1}$
+\task[\textbf{B.}] ${ }^{4} \mathrm{H}_{2}$
+\task[\textbf{C.}] ${ }^{23} \mathrm{Na}_{11}$
+\task[\textbf{D.}] ${ }^{30} \mathrm{~K}_{19}$
+\end{tasks}
+\begin{answer}
+For Bose-Einstein condensation:\\
+Number of electron + number of proton + number of neutron = Even\\
+For ${ }^{30} \mathrm{~K}_{19}$\\
+Number of proton $=19$, Number of electron $=19$, Number of neutron $=11$\\
+$19+19+11=49$ this is odd. So it will not exhibit Bose-Einstein condensation.\\\\
+So the correct answer is \textbf{Option (D)}
+\end{answer}
+	\item Which among the following sets of Maxwell relations is correct? (U-internal energy, H-enthalpy, A-Helmholtz free energy and G-Gibbs free energy)
+{	\exyear{GATE 2010}}
+\begin{tasks}(2)
+\task[\textbf{A.}] $T=\left(\frac{\partial U}{\partial V}\right)_{S}$ and $P=\left(\frac{\partial U}{\partial S}\right)_{V}$
+\task[\textbf{B.}] $V=\left(\frac{\partial H}{\partial P}\right)_{S}$ and $T=\left(\frac{\partial H}{\partial S}\right)_{P}$
+\task[\textbf{C.}]  $P=-\left(\frac{\partial G}{\partial V}\right)_{T}$ and $V=\left(\frac{\partial G}{\partial P}\right)_{s}$
+\task[\textbf{D.}] $P=-\left(\frac{\partial A}{\partial S}\right)_{T}$ and $S=\left(\frac{\partial A}{\partial P}\right)_{V}$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+d H&=T d S+V d P \Rightarrow\left(\frac{\partial H}{\partial S}\right)_{P}\\&=T,\left(\frac{\partial H}{\partial P}\right)_{S}=V
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}
+	\item Consider a system of 3 fermions which can occupy any of the 4 available energy states with equal probability. The entropy of the system is
+{	\exyear{GATE 2014}}
+\begin{tasks}(4)
+\task[\textbf{A.}] $k_{B} \ln 2$
+\task[\textbf{B.}] $2 k_{B} \ln 2$
+\task[\textbf{C.}]  $2 k_{B} \ln 4$
+\task[\textbf{D.}]  $3 k_{B} \ln 4$
+\end{tasks}
+\begin{answer}
+\begin{align*}
+\intertext{Solution: Number of ways that 3 fermions will adjust in 4 available energy is ${ }^{4} C_{3}=4$ so entropy is $k_{B} \ln 4=2 k_{B} \ln 2$}
+\end{align*}
+So the correct answer is \textbf{Option (B)}
+\end{answer}
 	
 	
 	
