@@ -144,11 +144,9 @@ A de MUX performs the reverse operation of MUX.
 	\includegraphics[height=3.5cm,width=5.1cm]{EDE-48}
 \end{figure}
 \section{Flip-Flop}
-Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\\\
 \textbf{Sequential Circuit}\\
-\begin{minipage}{0.12\textwidth}
+Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\\\
 	\textbf{SR-Latch:}
-\end{minipage}
 \begin{minipage}{0.45\textwidth}
 	\begin{figure}[H]
 		\centering
@@ -205,12 +203,12 @@ Problem in JK flip flop is race around condition.
  	\textbf{Counters}
  	\begin{enumerate}
  		\item Asynchronous or ripple or serial 
- 		\item Syncgronous or parallel or fast
+ 		\item Synchronous or parallel or fast
  		\item (i) Ring counter (ii) Twisted tail or thomson or mobious (Type of shift registers)
  	\end{enumerate}
  \begin{enumerate}
  	\item \textbf{Asychronous Counter:} No, common clock-clock is output of previous flip-flop.
- 	\item In syncbronous counter common clock is used.
+ 	\item In synchronous counter common clock is used.
  \end{enumerate}
 \begin{enumerate}
 \item  	What is meaning of MOD-12 counter $\Rightarrow$ number of states are 12 .\\
@@ -244,7 +242,7 @@ Problem in JK flip flop is race around condition.
  \end{figure}
 \begin{align*}
 	&\text { Truth Tuble }\\
-	&\begin{array}{|cc|c|c|}
+	&\begin{array}{|c|c|c|c|}
 		\hline C L K & Q_{2} & Q_{1} & Q_{0} \\
 		\hline 1 & 0 & 0 & 0 \\
 		\hline 2 & 0 & 0 & 1 \\
@@ -270,6 +268,9 @@ Problem in JK flip flop is race around condition.
  	\centering
  	\includegraphics[height=2.6cm,width=9.8cm]{	EDE-18}
  \end{figure}
+\textbf{Synchronous Counter}\\
+(i) Common clock is there (ii) There are fast \\
+Widely used if MOD is in form of 2N then design is simple. If MOD is not in form of 2N then design by use of K-map.\\
 	Example: MOD-10 UP counter.
 	\begin{figure}[H]
 		\centering
@@ -1009,14 +1010,6 @@ When a Johnson counter is working in uses state the operation frequency $f / 2 n
 			\centering
 			\includegraphics[height=2.7cm,width=11cm]{EDE-19}
 		\end{figure}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[height=3.8cm,width=5.5cm]{EDE-20}
-		\end{figure}
-		Design gate in such a manner that 110 goes to 000 we use NAND gate for MOD-6. NAND gate output will clear all flip-flops.\\
-		\textbf{Synchronous Counter:}\\
-		(i) Common clock is there (ii) There are fast\\
-		Widely used If MOD is in form of $2 \mathrm{~N}$ then design is simple. If MOD is not in form of $2 \mathrm{~N}$ then design by use of K-map.
 	\end{answer}
 		\item Find MOD of the counter:
 	\begin{figure}[H]
