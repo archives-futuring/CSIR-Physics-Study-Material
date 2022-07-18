@@ -41,12 +41,14 @@ N&=2^{n}=2\\
 \end{figure}
 \text{Output }\quad y=$\bar{A}\bar{B}D_0+\bar{A}BD_1+A\bar{B}D_2+ABD_3$
 \subsection{8$\times 1$ MUX}
-$	2^n=8$\\
-$\Rightarrow \text{ number of select lines, }n=3$\\
-y=$\bar{A}\bar{B} \bar{C}D_0$+$\bar{A}\bar{B} CD_1$+
-$\bar{A}B\bar{C}D_2+\bar{A}BCD_3+$
-$A \bar{B}\bar{C}D_4+A\bar{B}CD_5+$
-$AB\bar{C}D_5+ABCD_7$
+\begin{align*}
+	2^n&=8\\
+	\Rightarrow &\text{ number of select lines, }n=3\\
+	y&=\bar{A}\bar{B} \bar{C}D_0+\bar{A}\bar{B} CD_1+
+	\bar{A}B\bar{C}D_2+\bar{A}BCD_3+
+	A \bar{B}\bar{C}D_4+A\bar{B}CD_5+
+	AB\bar{C}D_5+ABCD_7
+\end{align*}
 \section
 {Minimization of logical expression of using MUX:}
 1.\quad  Minimize
@@ -70,20 +72,20 @@ $AB\bar{C}D_5+ABCD_7$
 	\text{Alternate method to find the number of MUX}\\
 	\begin{tabular}{p{0.5cm}|p{0.5cm}}
 	2&4\\\hline
-	2&\color{red}{2}\\\hline
-	&\color{red}{1}
+	2&2\\\hline
+	&1
 	\end{tabular}\\
 	2+ 1=3\\
 	\text{ three, } 2 \times 1\text{ MUX } \text{is required}
 	\end{align*}
-	\item $16\times 1$ MUX by $2\times 1$ MUX
+ $16\times 1$ MUX by $2\times 1$ MUX
 	\begin{align*}
 	\begin{array}{c|c}
 	2 & 16 \\
-	\hline 2 & \color{red}{8} \\
-\hline	2 & \color{red}{4} \\
-	\hline 2 & \color{red}{2} \\
-	\hline & \color{red}{1}
+	\hline 2 & 8\\
+\hline	2 & 4 \\
+	\hline 2 & 2 \\
+	\hline & 1
 	\end{array}=8+4+2+1\Rightarrow 15, (\text{Fifteen,}\quad 2 \times 1\text{ MUX
 		Required.})
 	\end{align*}
@@ -92,12 +94,12 @@ $AB\bar{C}D_5+ABCD_7$
 	\begin{align*}
 	\begin{tabular}{c|c}
 	16 & 256 \\
-	\hline 16 & \color{red}{16}\\
-	\hline  &\color{red}{1}
+	\hline 16 & 16\\
+	\hline  &1
 	\end{tabular}\quad 16+1=17 (\text{Seventeen, }16 \times 1 \text{MUX is required}) .
 	\end{align*}
 \end{enumerate}
-\textbf{Implementation of Logic gates by using $2 \times 1$ MUX and $u \times 1$ MUX:}\\
+\subsubsection{Implementation of Logic gates by using $2 \times 1$ MUX and $u \times 1$ MUX:}
 1.\quad NOT gate:
 \begin{figure}[H]
 	\centering
@@ -105,7 +107,7 @@ $AB\bar{C}D_5+ABCD_7$
 \end{figure}
 \renewcommand*{\arraystretch}{1.5}
 $\begin{array}{|c|c|c|}
-\hline\text { Logic gate } & \text { 2X1 MUX } & \text { 4X1 MUX } \\
+\hline\text { Logic gate } & \text { 2$\times$1 MUX } & \text { 4$\times$1 MUX } \\
 \hline \text { NOT } & 1 & 1 \\
 \hline \text { AND } & 1 & 1 \\
 \hline \text { OR } & 1 & 1 \\
@@ -127,7 +129,7 @@ $\begin{array}{|c|c|c|}
 	\end{align*}
 	So the correct answer is \textbf{Option (b)}
 \end{answer}
-\textbf{Demultiplexer:}\\
+\subsubsection{Demultiplexer:}
 A de MUX performs the reverse operation of MUX.
 \begin{figure}[H]
 	\centering
@@ -138,22 +140,20 @@ A de MUX performs the reverse operation of MUX.
 	\item  De MUX is also called as data detector.
 	\item By setting the input to true (1), the demux behaves as decoder.
 \end{itemize}
-\textbf{$1 \times 4$ DEMUX}
+\subsubsection{$1 \times 4$ DEMUX}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.5cm,width=5.1cm]{EDE-48}
 \end{figure}
 \section{Flip-Flop}
-\textbf{Sequential Circuit}\\
+\subsubsection{Sequential Circuit}
 Digital output are required to be generated in accordance with sequence in which input signals are received, which is not possible with the combinational circuit generated should depend on present and past history of input. Such circuit is called as sequential circuit.\\\\
-	\textbf{SR-Latch:}
-\begin{minipage}{0.45\textwidth}
+	\subsubsection{SR-Latch:}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=2.8cm,width=4.5cm]{EDE-01}
 	\end{figure}
-\end{minipage}\\\\\\
-\textbf{Truth Table:}
+\subsubsection{Truth Table:}
 \begin{tabular}{|c|c|c|c|}
 	\hline$C L K$ & $R$ & $S$ & $Q_{n+1}$ \\
 	\hline 1 & 0 & 0 & $Q_{n}$ \\
@@ -163,19 +163,19 @@ Digital output are required to be generated in accordance with sequence in which
 	\hline 0 & $X$ & $X$ & $Q_{n}$ \\
 	\hline
 \end{tabular}
-$\mathrm{X}$ : Input either 0 or 1\\\\
-\textbf { S-R Flip Flop with NAND Gate: }
+$\mathrm{X}$ : Input either 0 or 1
+\subsubsection{ S-R Flip Flop with NAND Gate: }
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.1cm,width=11cm]{EDE-02}
 \end{figure}
-\textbf {D-Flip Flop (Delay): }\\
+\subsubsection{D-Flip Flop (Delay): }
 When $\mathrm{S}=\mathrm{D}, \bar{R}=D$, Now SR becomes $\mathrm{D}$ type Flip Flop.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.2cm,width=7.7cm]{EDE-03}
 \end{figure}
-\textbf { J-K Flip Flop: }\\
+\subsubsection{ J-K Flip Flop: }
 $S=J\left(\bar{Q}_{n}\right) ; R=K\left(Q_{n}\right)$
 \begin{figure}[H]
 	\centering
@@ -184,18 +184,18 @@ $S=J\left(\bar{Q}_{n}\right) ; R=K\left(Q_{n}\right)$
 \begin{note}
 Problem in JK flip flop is race around condition.
 \end{note}
- \textbf{T-type (Toggle) Flip Flop:} $\mathrm{J}=\mathrm{K}=\mathrm{T}$ then $\mathrm{T}=$ Flip Flop.
+\subsubsection{T-type (Toggle) Flip Flop:} $\mathrm{J}=\mathrm{K}=\mathrm{T}$ then $\mathrm{T}=$ Flip Flop.
  \begin{figure}[H]
  	\centering
  	\includegraphics[height=5.4cm,width=7.5cm]{EDE-05}
  \end{figure}
  A clock pulse may be either positive or negative. A positive clock source remains at 0 during the interval between pulses and goes 0 to 1 during the occurrence of a pulse. The pulse goes through two signal transitions; from 0 to 1 and return from 1 to 0, positive transition is defined as the positive edge and the negative transition as the negative edge.\\
- \textbf{Time Diagram Representation:}
+\subsubsection{Time Diagram Representation:}
  \begin{figure}[H]
  	\centering
  	\includegraphics[height=4.8cm,width=10.5cm]{EDE-06}
  \end{figure}
- \textbf{If we take positive edge:}
+\subsubsection{If we take positive edge:}
  \begin{figure}[H]
  	\centering
  	\includegraphics[height=3cm,width=5.4cm]{EDE-07}
@@ -221,7 +221,7 @@ Problem in JK flip flop is race around condition.
  		\centering
  		\includegraphics[height=1.3cm,width=6cm]{EDE-13}
  	\end{figure}
- 	\textbf { Asynchronous Counter: }
+ \subsubsection{ Asynchronous Counter: }
  		\begin{figure}[H]
  		\centering
  		\includegraphics[height=6cm,width=10cm]{EDE-14}
@@ -231,7 +231,7 @@ Problem in JK flip flop is race around condition.
  	2. 3 bit means MOD-8 counter $\Rightarrow$ MOD $8=2^{3}$ means 3 Flip-Flop required.\\
  	3. 4 bit $\rightarrow 16 \mathrm{MOD} \rightarrow 2^{4} \rightarrow 4$ Flip Flop required
  \end{note}
- 	\textbf { MOD-8 Asychronous Counter: }
+ \subsubsection{ MOD-8 Asychronous Counter: }
  	\begin{figure}[H]
  		\centering
  		\includegraphics[height=2.3cm,width=9cm]{EDE-15}
@@ -268,7 +268,7 @@ Problem in JK flip flop is race around condition.
  	\centering
  	\includegraphics[height=2.6cm,width=9.8cm]{	EDE-18}
  \end{figure}
-\textbf{Synchronous Counter}\\
+\subsubsection{Synchronous Counter}
 (i) Common clock is there (ii) There are fast \\
 Widely used if MOD is in form of 2N then design is simple. If MOD is not in form of 2N then design by use of K-map.\\
 	Example: MOD-10 UP counter.
@@ -280,7 +280,7 @@ Widely used if MOD is in form of 2N then design is simple. If MOD is not in form
 	\centering
 	\includegraphics[height=5cm,width=4.5cm]{EDE-22}
 \end{figure}
-\textbf{SHIFT REGISTER}\\
+\subsubsection{SHIFT REGISTER}
 Register's are group of flip-flop.\\
 To store $n$-bits $n$-bits $n$-flip-flop are required in register. \\
 Depending upon input and output registers can be classified as\\
@@ -288,31 +288,31 @@ Depending upon input and output registers can be classified as\\
 (3) PISO [Parallel in serial output]\\
 (2) SIPO [Serial input parallel out]\quad
 (4) PIPO [Parallel input parallel output]\\
-\textbf { 4-Bit SISO }
+\subsubsection{ 4-Bit SISO}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.4cm,width=10cm]{EDE-27}
 \end{figure}
 To provide $n$-bit data in $(n-1)$-clk pulse required, \\
 To store $n$-bit data $n$-click pulse required.\\
-\textbf{SIPO(4-Bit)}
+S\subsubsection{IPO(4-Bit)}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.2cm,width=10cm]{EDE-28}
 \end{figure}
 To provide $n$-bit data in $n$-clk pulse required, to provide parallel out no circuit pulse required.\\
-\textbf { PISO }
+\subsubsection{ PISO }
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.6cm,width=10cm]{EDE-29}
 \end{figure}
 Control $0 \rightarrow$ Parallel input, Control $1 \rightarrow$ Serial output\\
-\textbf{ PIPO}
+\subsubsection{ PIPO}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2cm,width=10cm]{EDE-30}
 \end{figure}
-\item Initial contents of 4-bit SIPO, ring shift register, shown in figure is 0110 . After 3 clock pulses are applied, what are contents of shift register.
+ Initial contents of 4-bit SIPO, ring shift register, shown in figure is 0110 . After 3 clock pulses are applied, what are contents of shift register.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.4cm,width=6cm]{EDE-31}
@@ -320,7 +320,7 @@ Control $0 \rightarrow$ Parallel input, Control $1 \rightarrow$ Serial output\\
 \begin{answer}
 	After 1 st clock $\rightarrow 1011,2$ nd clock $\rightarrow 0101$, 3rd clock $\rightarrow 1010$. So content are 1010 .
 \end{answer}
-\textbf{Ring Counter:}\\
+\subsubsection{Ring Counter:}
 Design MOD-5 ring counter. After each 10 steps is reads again 0000.
 \begin{figure}[H]
 	\centering
@@ -339,12 +339,12 @@ Number of unused states in $n$-bit ring counter is $2^{n}-n$.
 	\centering
 	\includegraphics[height=2.4cm,width=9.5cm]{EDE-35}
 \end{figure}
-\textbf { Equivalent Circuit: }
+\subsubsection{ Equivalent Circuit: }
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.4cm,width=7cm]{EDE-36}
 \end{figure}
-\textbf { Truth Table : }
+\subsubsection{ Truth Table : }
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=5cm,width=5cm]{EDE-37}
