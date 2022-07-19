@@ -456,6 +456,10 @@ i&=n e A v_{d} \\
 Up to this point, we have only considered contributions to the heat capacity from vibrations within the solid. In metals, the free conduction electrons also contribute to the heat capacity. In the free electron model of metals, the conduction electrons are treated as a perfect gas obeying Fermi-Dirac statistic. Interactions of the electrons with the positively charged atomic ions and with the other electrons are neglected. This is not such a bad approximation as it may appear at first: the ions provide a positively charged background that partly screens the electrons from each other; and the residual collisions are often relatively unimportant - the energetically accessible final states are often already occupied, making any collisional excitation process forbidden by the Pauli exclusion principle. The first step in deriving the heat capacity is to determine the density of states. We will first do this in momentum space, and then transform the result into an expression describing the density of states per unit energy.
 \subsubsection{Free electron gas in one dimensional box:}
 We consider first a free electron gas in one dimension. We assume that an electron of mass $m$ is confined to a length $L$ by infinite potential barriers.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3cm,width=4cm]{CMP-1}
+\end{figure}
 \begin{align*}
 \mathrm{V}(\mathrm{x})=& 0 \text { for } 0<\mathrm{x}<\mathrm{L} \\
 =& \infty \text { for } \mathrm{x} \leq 0 \text { and } \mathrm{x} \geq \mathrm{L}
@@ -479,12 +483,20 @@ D(\in)&=2\left(\frac{d n}{d E}\right) \Rightarrow \frac{d E}{d n}=\frac{\hbar^{2
 \frac{1}{n}&=\left(\frac{h^{2}}{8 m L^{2} E}\right)^{1 / 2}\\
 \text { Hence } D(E)&=\left(\frac{8 m L^{2}}{h^{2} E}\right)^{1 / 2}=\frac{4 L}{h}\left(\frac{m}{2 E}\right)^{1 / 2}
 \end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm,width=3.5cm]{CMP-2}
+\end{figure}
 \begin{note}
 	$\begin{array}{lr}D(E) \propto(E)^{-1 / 2} & \cdots \cdots 1 \mathrm{D} \\ \mathrm{D}(\mathrm{E}) \propto \mathrm{E}^{0} & \cdots2 \mathrm{D} \\ D(E) \propto \sqrt{E} & \cdots3 \mathrm{D}\end{array}$
 \end{note}
 \subsubsection{Filling of Energy level: Fermi-Dirac distribution function}
 The Density of States tells us what states are available. We now wish to know the occupancy of these states. Electrons obey the Pauli exclusion principle. So, we may only have two electrons (one spin-up and one spin-down) in any quantum state. The distribution of electrons in the allowed energy level follows he Pauli's exclusion principle each energy level is doubly degenerate thus a total of $\mathrm{N}$ non-interacting electrons at ok can be filled in $\mathrm{N} / 2$ energy levels, the top most filled level is the $(\mathrm{N} / 2)$ th level and the level lying above it are empty. This level is therefore, the Fermi level as it divides the filled and empty levels at $0 \mathrm{k}$.\\
 These electrons are rather distributed among the discrete energy level having energies ranging from 0 to $\mathrm{E}_{\mathrm{F} 0}$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3cm,width=4.5cm]{CMP-3}
+\end{figure}
 \begin{align*}
 \text{The Fermi distribution function is }&\left.f(E)=\frac{1}{\left[e^{E-E_{F} / k T}+1\right.}\right]\text {for occupied }\text { At absolute zero the Equation }\\
 \mathrm{F}(\mathrm{E})&=1 \quad \text { for } \quad \mathrm{E} \leq \mathrm{E}_{\mathrm{F} 0}\\
@@ -494,6 +506,10 @@ These electrons are rather distributed among the discrete energy level having en
 f\left(E_{F}\right)&=\frac{1}{2}
 \end{align*}
 \subsubsection{Density of State in Three Dimensions:}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.3cm,width=3cm]{CMP-4}
+\end{figure}
 \begin{align*}
 \text { Fermi energy is given as } E_{F}&=\frac{p^{2}}{2 m}=\frac{h^{2} K_{E}^{2}}{2 m}\\
 E_{F}&=\frac{\hbar^{2}}{2 m} K_{F}^{2} \text { where } \mathrm{K}_{\mathrm{F}} \text { is Fermi radius } K_{F}=\left(\frac{3 \pi^{2} N}{V}\right)^{1 / 3}\\
@@ -541,7 +557,125 @@ N&=\int_{0}^{\infty} N(\in) d E=\int_{0}^{\infty} D(\in) f(E) d E \\
 \subsubsection{Electron Specific heat:}
 The Free electron gas model explains the electronic to specific heat of metals by restricting the No of electrons contributing to specific heat to $\mathrm{N}\left(\mathrm{K}_{\mathrm{B}} \mathrm{T} / \mathrm{E}_{\mathrm{F}}\right)$. It yielded the expression for specific heat as
 $$C_{V}=\frac{3}{2} N K_{B}\left(\frac{K_{B} T}{E_{F}}\right) \Rightarrow C_{V} \approx \frac{3}{2} N K_{B}\left(\frac{T}{T_{F}}\right), \quad C_{V} \propto\left(\frac{T}{T_{F}}\right)$$
-
+\section{Superconductivity}
+\subsection{Properties of Superconductors}
+\begin{enumerate}
+	\item At room temperature, the resistivity of $\rho$ of super conducting materials is greater than other element shows as
+	\item All thermoelectric effects disappear in super conducting state.
+	\item  When a sufficient strong magnetic field is applied to super conductor below critical temperature $\mathrm{T}_{\mathrm{C}}$, it super conducting property is destroyed.
+	\item When current is passed through the super conducting materials, the heating loss $\left(I^{2} R\right)$ is zero.
+	\begin{align*}
+		\text{	As resistivity}\quad \rho&=\frac{R A}{l} \quad \rho \rightarrow \text { very small (zero at } \mathrm{T}_{\mathrm{C}} \text { ) }\\
+		\mathrm{R}&=0 \text { Hence no heating loss. }
+	\end{align*}
+	\item Flux quantization due to ring is $\phi=n \frac{h}{2 e}$
+\end{enumerate}
+\section{Meissner Effect}
+Meissner and ochsenfeld found that if a super conductor is cooled in a magnetic field to below the critical temperature (transition temperature) then at the transition, the lines of induction are pushed out. The expulsion of magnetic flux from the interior of a piece of super-conducting material as the material undergoes the transition to the super-conducting phase is known as Meissner effect. Figure show the normal sphere at $\mathrm{T}>\mathrm{T}_{\mathrm{C}}$ and super conducting sphere at $\mathrm{T}<\mathrm{T}_{\mathrm{C}}$ showing the expulsion of magnetic lines of induction. Meissner effect is reversible when the temperature is raised from below $T_{C}$ the flux suddenly penetrates the specimen after it reaches $T_{C}$ and the substance is in the normal state.
+\begin{align*}
+text{As }\quad 
+\vec{B}&=\mu_{0}(\vec{H}+\vec{M})\\
+\vec{B}&=\mu_{0}(1+x) \vec{H}
+\text{where }x=\frac{\vec{M}}{\vec{H}}\\
+Since
+\vec{B}&=0\text{ for super conductor state}\\
+\chi=-1 \text { and also } \chi&=\mu_{\mathrm{r}}-1\quad \text { hence } \mu_{\mathrm{r}}=0
+\end{align*}
+i.e. a super conductor exhibit perfect diamagnetism. Because of diamagnetic nature, superconducting materials strongly repel external magnet, it leads to a levitation effect.
+\subsubsection{Properties of Superconductor}
+\subsubsection{Critical Field}
+The minimum applied magnetic field necessary to destroy super conductivity and restore the normal resistivity is called the critical field $\mathrm{H}_{\mathrm{C}}$, when the magnetic field exceeds the critical value $\mathrm{H}_{\mathrm{C}}$, the super conducting state is destroyed and the material goes into the normal state. Figure shows the critical field $\mathrm{H}_{\mathrm{C}}$ as a function of temperature. A specimen is superconducting below the curve and normal above the curve. \\
+For a given substance, value of $\mathrm{H}_{\mathrm{C}}$ decrease as temperature increases from $\mathrm{T}=0 \mathrm{~K}$ to $\mathrm{T}_{\mathrm{C}}$ (Critical temperature) the curve is nearly parabolic and can be presented as
+\begin{align*}
+H_{C}&=H_{0}\left[1-\left(\frac{T}{T_{C}}\right)^{2}\right]\\
+\text { where } \mathrm{H}_{0} &\text { is the critical field at } 0 \mathrm{~K} \text {. }\\
+\text { thus the field has its maximum value } &\mathrm{H}_{0} \text { at } \mathrm{T}=0 \mathrm{~K}\\
+\text { at } \mathrm{T}=0 \quad H_{C}&=H_{0}\left[1-\frac{0}{T_{C}^{2}}\right]=H_{0}\\
+\text { at } \mathrm{T}=\mathrm{T}_{\mathrm{C}} \quad H_{C}&=H_{0}[1-1]=0
+\intertext { Equation is the phase boundary between the normal and super conducting state. }
+\end{align*}
+\begin{exercise}
+ The critical field for niobium is $1 \times 10^{5} \mathrm{~A} / \mathrm{m}$ at $8 \mathrm{k}$ and $2 \times 10^{5} \mathrm{~A} / \mathrm{m}$ at $0 \mathrm{~K}$. Calculate the critical temperature of the material.
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	T_{C}=\frac{T}{\left[1-\left(\frac{H_{C}}{H}\right)\right]^{1 / 2}}=11.31 \mathrm{~K}
+	\end{align*}
+\end{answer}
+\subsubsection{Critical Current Density}
+The minimum current that can be passed in a sample without destroying its superconductivity is called critical current $\mathrm{I}_{\mathrm{C}}$ and its flux will $\phi=\left(\frac{h}{2 e}\right)$. If a super conducting material carries a current such that the magnetic field which it produce is equal to $\mathrm{H}_{\mathrm{C}}$, the super conductivity disappears. The current density $\mathrm{J}$ at which the super conductivity disappear is called the critical current density $\mathrm{J}_{\mathrm{C}}$ for any value of $\mathrm{J}<\mathrm{J}_{\mathrm{C}}$ the current can sustain itself whereas for values of $\mathrm{J}>$ $\mathrm{J}_{\mathrm{C}}$ the current cannot sustain itself. This effect is known as Silsbee effect.
+A super conducting ring of radius $r$ ceases to be a super conductor when the current is
+\begin{align*}
+\mathrm{I}_{\mathrm{C}}&=2 \pi \mathrm{rH}_{\mathrm{C}}\\
+\text { Critical current density } J_{C}&=\frac{I_{C}}{\text { Area }}=\frac{2 \pi r H_{C}}{\pi r^{2}}\\
+J_{C}&=\frac{2 H_{C}}{r}\\
+\text { Dependence of } \mathrm{J}, \mathrm{H} \text { and } \mathrm{T} &\text { is shown in figure as }
+\end{align*}
+\subsubsection{London Penetration Depth}
+When a magnetic field is applied to a superconductor, the applied field does not suddenly drop to zero at the surface, instead $\mathrm{H}$ decays exponentially according to the formula.
+\begin{align}
+H&=H_{0} e^{-x / \lambda}\label{CMP-1}
+\intertext{Where $\mathrm{H}_{0}$ is the applied field on the surface at $\mathrm{x}=0, \mathrm{x}$ is the distance from the specimen penetration depth $\lambda$ varies from 300 to about $5000 $\AA.}
+\intertext{Penetration depth $\lambda$ is defined as the effective depth to which magnetic field penetrates a super conductor.}
+\intertext{The graphical form of equation (\ref{CMP-1}) shown as Penetration depth $\lambda$ depends strongly on temperature and becomes much larger as $T$ approaches $T_{C}$. It is related to temperature as}\notag\\
+\left[\frac{\lambda(T)}{\lambda(o)}\right]^{2}&=\left[1-\left(\frac{T}{T_{C}}\right)^{4}\right]^{-1}\label{CMP-2}\\
+\text{Where }\lambda(\mathrm{T})\text{ and }\lambda(0)&\text{ are the penetration depth at}\notag\\
+\mathrm{T} \mathrm{K}\text{ and }0 \mathrm{~K }\text{ respectively.
+	}\notag\\
+\text{Equation (\ref{CMP-2}) implies that}&\text{ super conducting electron density is given as}\notag\\
+n_{s}&=n_{0}\left[1-\left(\frac{T}{T_{C}}\right)^{4}\right]\label{CMP-3}
+\intertext{the density of super conducting electron increases from zero to $\mathrm{T}_{\mathrm{C}}$ to $\mathrm{n}_{0}$ at $\mathrm{T}=0 \mathrm{~K}$ as shown in figure}
+\text{from equation
+	(\ref{CMP-2}) }&\text{and (\ref{CMP-3}) we get}\notag\\
+\lambda(T)&=\lambda(0)\left(\frac{n_{0}}{n_{s}}\right)^{1 / 2}\notag\\
+\text { Note: London }&\text{equation is defined as }\notag\\
+\lambda&=\left(\frac{m}{\mu_{0} n_{s} e^{2}}\right)^{1 / 2} \lambda \propto \sqrt{m}\notag\\
+\text { where } &\lambda \text { is London penetration depth. }\notag
+\end{align}
+\subsubsection{Coherence Length}
+The coherence length is measure of the distance within which the gap parameter can not change drastically in a spatially varying magnetic field. It is also a measure of the minimum spatial extent of a transition layer between the normal and super conductor. An intrinsic coherent length $\xi_{0}$ is given as
+$$
+\xi_{0}=\frac{2 \hbar V_{F}}{\pi E g}
+$$
+Where $V_{F}$ is electron velocity at the Fermi surface and Eg is energy gap, $\xi_{0}$ is characteristic of pure super conductor. In impure materials and alloys the coherence length is shorter than $\xi_{0}$.
+\begin{exercise}
+	 Calculate the value of the intrinsic coherence length $\xi_{0}$ for pure mercury whose $\mathrm{T}_{\mathrm{C}}=$ $4.15 \mathrm{~K}$ [Given $\left.\mathrm{V}_{\mathrm{F}}=10^{6} \mathrm{~m} / \mathrm{s}\right]$
+\end{exercise}
+\begin{answer}
+	\begin{align*}
+	\xi_{0}&=\frac{2 \hbar V_{F}}{\pi E g}, \mathrm{Eg}=3.53 \mathrm{~K}_{\mathrm{B}} \mathrm{T}_{\mathrm{C}}\\
+	\xi_{0}&=331.1 \mathrm{~nm}
+	\end{align*}
+\end{answer}
+\subsubsection{Isotop Effect}
+In $1950 \mathrm{C}$ A Reynolds and $\mathrm{E}$. M. Maxwell found that the critical temperature $\mathrm{T}_{\mathrm{C}}$ varies with the atomic mass $\mathrm{M}^{\infty}$ according to the relation
+$$\propto=-\frac{\partial \ln T_{C}}{\partial \ln M}=\frac{1}{2} \quad \Rightarrow \quad T_{C} M^{1 / 2}=\text{ constant}$$
+Thus, the larger the isotropic mass, lower is transition temperature. For example, the transition temperature of mercury changes from $4.185 \mathrm{~K}$ to $4.146 \mathrm{~K}$. When its isotopic mass is change from $199.5$ to $203.4 \mathrm{amu}$. Now it is known that the mean square amplitude of atomic or lattice vibrations at low temperature is proportional to $\frac{1}{\sqrt{M}}$ and Deye temperature $\mathrm{Q}_{\mathrm{D}}$, of the phonon spectrum is related to $M$ as
+\begin{align*}
+Q_{D} \sqrt{M}&=\text { constant }\\
+\text { From equation (i) and (ii) we get } &\frac{T_{C}}{Q_{D}}=\text { constant }\\
+\text { In general, we can write as } &T_{C} \propto Q_{D} \propto \frac{1}{\sqrt{M}}
+\end{align*}
+\subsubsection{Type-I and Type-II Superconductors}
+Superconducting materials can be divided into two types, based on their magnetic response. These two types are designated as type I and II.\\
+Type I or the ideal superconductors state are completely diamagnetic, that is when these superconductors are placed in a magnetic field, then all the lines of induction are pushed out from the specimen. These superconductors show Meissner effect. As Magnetic field is increased, the material remains diamagnetic until the critical value $\mathrm{H}_{\mathrm{C}}$ is reached. At this point conduction becomes normal and complete magnetic flux penetration takes place.\\
+Type II or hard super conductors are those in which the ideal behavior is seen up to a lower critical field $\mathrm{H}_{\mathrm{C}}$, beyond which the magnetization gradually changes and attains zero at an upper critical field designated as $H_{C_{2}}$. The Meissner effect is incomplete in this region between $H_{C_{1}}$ and $H_{C_{2}}$, this region is known as the Vortex region as shown in figure. The Normal behaviour is observed only beyond $H_{C_{2}}$. The lines of induction penetrate gradually from the specimen as the field is increased beyond $H_{C_{1}}$ and the penetration complete at $H_{C_{2}}$. Figures show the behavior of type I and type II super conductor as a function of $\mathrm{M}$ and $\mathrm{H}$. It is clear that for type I super conductor, upto $\mathrm{H}_{\mathrm{C}}$, the magnetization of the material grows in proportion to the external magnetic field and then abruptly drops to zero at the transition to the normally conducting state.\\
+Variation of resistivity of a type I super conductor and type II super conductor as a function of applied magnetic field is shown in figure.
+\subsubsection{BCS Theory}
+John Bardeen, Lean N. Cooper and John R. Schrieffer developed in 1957 the quantum theory of super conductivity. This theory is based on two experimental results, the isotope effect (as explained earlier) and variation of electronic specific heat with temperature. BCS theory is based on interaction of two electrons through the intermediary of phonons. When an electron approaches an ion in the lattice, there is a coulomb attraction between which causes an increase in the density of ions in the region of distortion. The higher density of ions in the distorted region attracts another electron. Thus a free electron exerts a small attractive force on another electron through phonons with are quanta of lattice vibrations, "A pair of free electrons thus coupled through a phonon is called a cooper pair. Energy of cooper pair is lower than the energy of two individual electrons. The electrons in a cooper pair has opposite spins, so that has a total spin of zero. As a result, the electron pairs in a super conductor are bosons and its radius
+\begin{align*}
+r_{0}&=\left(\frac{\hbar V_{F}}{E_{B}}\right)\\
+\Rightarrow \text { total spin }&=0\quad 
+\text{(B.E.Statics)}
+\intertext{When there are non current in super conductor, the linear momentum of the electrons in a cooper pair are equal and opposite for a total of zero. Energy gap $\mathrm{E}_{\mathrm{g}}$ of a super conductor at $0 \mathrm{~K}$ is given by the formula.}
+E_{g}(0)&=3.53 k_{B} T_{C}
+\end{align*}
+where $\mathrm{k}_{\mathrm{B}}$ is Boltzmann's constant and $\mathrm{T}_{\mathrm{C}}$ is the critical temperature of a super conductor.
+At $\mathrm{T}>0 \mathrm{~K}$ some cooper pairs break up. The resulting individual electrons interact with the remaining cooper pair and reduces the energy gap.At critical temperature $\mathrm{TC}$, the energy gap disappears, there are no more cooper pairs, and the material is no longer super conducting. The energy gap Eg can be measured by directly microwave radiation of frequency $\mathrm{v}$ at a super conductor $\mathrm{E}_{\mathrm{g}}$ can also be measured by utilizing the Josephson effect.
+\begin{note}
+	(i) BCS theory valid only for weak coupling superconductor\\
+	(ii) $\mathrm{BCS}$ theory assumed a spherical $\mathrm{FS}$ and isotropic mass.
+\end{note}
 
 
 
