@@ -746,6 +746,118 @@ At $\mathrm{T}>0 \mathrm{~K}$ some cooper pairs break up. The resulting individu
 	(i) BCS theory valid only for weak coupling superconductor\\
 	(ii) $\mathrm{BCS}$ theory assumed a spherical $\mathrm{FS}$ and isotropic mass.
 \end{note}
+\section{Band Theory of Solid}
+The failure of the free electron model is due to the over simplified assumption that a conduction electron in a metal experiences a constant or zero potential due to the ion cores and hence is free to move about crystal. Now the periodic potential described above forms the basis of the band Theory of solids. The behavior of an electron in this potential is describe by constructing the electron wave functions using One-electron approximates. As we shall discuss later, the motion of an electron in a periodic potential yields the following results.
+\begin{enumerate}[label=\alph*)]
+	\item There exists an allowed energy band separated by forbidden region or band gap.
+\item  The electronic energy function $\mathrm{E}(\mathrm{K})$ are periodic in the wave vector $\mathrm{K}$\\
+	In the free electron Theory $\mathrm{E}$ varies with $\mathrm{K}$
+	$$
+	E_{K}=\frac{\hbar^{2} k^{2}}{2 m}
+	$$
+\end{enumerate}
+\subsection{The Bloch Theorem}
+Bloch's theorem is just a way to describe the wavefunction for periodic solids. Bloch's theorem constrains $\psi$ and thus $E$ for periodic solids.
+The 1-D Schrödinger equation for an electron moving in a constant potential $V_{0}$ is $\frac{d^{2} \psi}{d x^{2}}+\frac{2 m}{\hbar^{2}}\left(E-V_{0}\right) \psi=0 . \quad$ The solution $\psi(\mathrm{x})=\mathrm{e}^{\pm i \mathrm{kx}}$
+For periodic potential with period equal to the lattice constant a we have
+$$
+\psi(\mathrm{x})=\mathrm{e}^{\pm \mathrm{ikx}} \mathrm{U}_{\mathrm{k}}(\mathrm{x}) \quad \text { where } \mathrm{U}_{\mathrm{k}}=\mathrm{U}_{\mathrm{k}}(\mathrm{x}+\mathrm{a})
+$$
+Bloch's theorem in 3-dimensions: Bloch's theorem contains two postulates
+\begin{enumerate}
+	\item  Because we have a solid that is periodic at the atomic scale, we get a traveling wave solution $\left(e^{i \vec{k} \cdot \vec{r}}\right)$ for $\psi$ that is modulated by the translational symmetry of the lattice $\left(u_{\vec{k}}\right)$
+	$$
+	\psi_{k}(\vec{r})=u_{k}(\vec{r}) e^{i \vec{k} \cdot \vec{r}} \quad \text { where } \quad u_{k}(\vec{r})=u_{k}(\vec{r}+\vec{T})
+	$$
+	Here, wavefunction reflects the symmetry of the lattice via $u_{k}(\vec{r})$ and Traveling wave solution suggests that we must have invoked periodic boundary conditions for the macroscopic solid.
+	\item Alternatively, we can describe the wavefunction a $\psi_{k}(\vec{r}+\vec{T})=c \psi_{k}(\vec{r})$. Which is to say, in a slightly different way, the wavefunction at $r+T$ is very related to the wavefunction at $\mathrm{r}$. Here, $\mathrm{c}$ is a modulation term, we'll explore in detail below
+\end{enumerate}
+\subsection{The Kronig-Penney Model}
+This model illustrates the behavior of electrons in a periodic potential by assuming a relatively simple one-dimensional model of periodic potential as shown figure.\\
+For this potential write down the Schrödinger wave equation and its general solution with taking potential constant finally. We get
+$$
+P \cdot \frac{\sin \alpha a}{\alpha a}+\cos \alpha a=\cos k a \quad \text { where } P=\frac{m V_{0} b a}{\hbar^{2}}
+$$
+which is a measure of the area $V_{0} b$ of the potential barrier. Thus, increasing $\mathrm{P}$ has the physical meaning of bonding an electron more strongly to a particular potential well
+$$\frac{1}{\alpha a} \sin \alpha a+\cos \alpha a$$
+$$\text { We know that } E=\frac{\alpha^{2} \hbar^{2}}{2 m}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}} n^{2}$$
+It may be noted that since $\alpha^{2}$ is proportional to the energy $E$ the abscissa is a measure of the energy. The following conclusion may be drawn from figure.
+\begin{enumerate}[label=\roman*)]
+	\item The energy spectrum of the electrons consists of alternate regions of allowed energy bands (solid lines on abscissa) and forbidden energy band (broken lines)
+	\item The width of the allowed energy bands increases with $\alpha a$ or the energy
+	\item The width of particular allowed energy band decreases with increase in value of $P$.
+\end{enumerate} 
+Figure- Allowed (shaded) and forbidden (open) energy ranges as a function of $P$\\
+Energy Verses Wave-Vector relationship\\
+The energy $E$ is also an even periodic function of $k$ with period of $2 \pi / a$ i.e $k=\pm n \pi / a$
+\begin{align*}
+d n&=\frac{l}{2 \pi} d k\\
+\text{Velocity is }v&=\frac{1}{\hbar} \frac{d E}{d k}.
+\end{align*}
+\subsection{Concept of effective mass electrons and Holes}
+In one dimension, an electron with wave-vector $k$ has group velocity
+\begin{align*}
+v&=\frac{d \omega}{d k}=\frac{1}{\hbar} \frac{d E}{d k}\\
+\text { If an electric field } \varepsilon &\text { acts on the electron, then in time } \delta t \text {. It will do work }\\
+\delta E&=\text { force times distance }=-e \varepsilon v \delta t \\
+\text{But}\quad \delta E&=\frac{d E}{d k} \delta k=\hbar v \delta t\\
+\text { So, comparing equation  }&\text{(ii) with (iii), we have}\\
+\delta k&=-\frac{e \varepsilon}{\hbar} \delta t, \quad \text { or } \quad \hbar \frac{d k}{d t}=-e \varepsilon\\
+\text { In terms of force } F, \quad \hbar \frac{d k}{d t}&=F\\
+\text { Generalising to three dimensions: } v&=\frac{1}{\hbar} \nabla_{k} E\\
+\text { where } \nabla_{k}=\hat{i} \frac{d}{d k_{x}}+\hat{j} \frac{d}{d k_{y}}+\hat{k} \frac{d}{d k_{z}} \quad &\text { and } \quad \hbar \frac{d k}{d t}=F\\
+\text{From equation }
+(i) v&=\frac{d \omega}{d k}=\frac{1}{\hbar} \frac{d E}{d k},\\
+\text { Differentiating with respect to time } \frac{d v}{d t}&=\frac{1}{\hbar} \frac{d^{2} E}{d k d t}=\frac{1}{\hbar} \frac{d^{2} E}{d k^{2}} \frac{d k}{d t}\\
+\text { But from equation (iv), } \hbar \frac{d k}{d t}&=F\\
+\text{So }
+\frac{d v}{d t}&=\frac{1}{\hbar^{2}} \frac{d^{2} E}{d k^{2}} F\\
+\text { But from Newton's equation we expect } \frac{d v}{d t}&=\frac{1}{m} F\\
+\text{which leads us to define an effective mass }
+\frac{1}{m^{*}}&=\frac{1}{\hbar^{2}} \frac{d^{2} E}{d k^{2}}
+\end{align*}
+That is\\
+The dynamics of electrons is modified by the crystal potential;\\
+The effective mass depends on the curvature of the bands;\\
+Flat bands have large effective masses;\\
+Near the bottom of a band, $m^{*}$ is positive, near the top of a band, $m^{*}$ is negative.\\
+\subsubsection{Hole Concept}
+\textbf{Hole wavevector:} The total $k$ of a full band is zero: if we remove an electron with wavevector $k_{e}$ the total $k$ of the band is $k_{h}+k_{e}=0 \Rightarrow k_{h}=-k_{e}$\\
+\textbf{Hole energy:} Take the energy zero to be the top of the valence band. The lower the electron energy, the more energy it takes to remove it; thus
+\begin{align*}
+E_{h}\left(k_{h}\right)&=-E_{e}\left(k_{e}\right)\\
+\text { But bands are usually symmetric, }& \quad E(k)=E(-k)\\
+\text{So}\quad E_{h}\left(k_{h}\right)&=E_{h}\left(-k_{h}\right)=-E_{e}\left(k_{e}\right)
+\end{align*}
+
+\begin{align*}
+\text{Hole velocity: In three dimensions}\\
+v_{h}&=\frac{1}{h} \nabla_{k_{h}} E_{h}\\
+\text{But}\quad k_{h}&=-k_{e} \quad\text{So}\quad \nabla_{k_{h}}=-\nabla_{k_{e}}\\
+\text{and so}\quad v_{h}&=-\frac{1}{\hbar} \nabla_{k_{e}}\left(-E_{e}\right)=v_{e}
+T\end{align*}
+The group velocity of the hole is the same as that of the electron.\\
+\textbf{Hole effective mass:} The curvature of $E$ is just the negative of the curvature of $-E$,
+So
+$$
+m_{h}^{*}=-m_{e}^{*}
+$$
+Note that this has the pleasant effect that if the electron effective mass is negative, as it is at the top of the band, the equivalent hole has a positive effective mass.
+\subsubsection{Hole dynamics}
+\begin{align*}
+\text{We know that}\quad \hbar \frac{d k_{e}}{d t}&=-e\left(\varepsilon+v_{e} \times B\right)\\
+\text{Substituting}\quad k_{h}&=-k_{e} \text { and } v_{h}=v_{e} \text { gives }\\
+\hbar \frac{d k_{h}}{d t}&=e\left(\varepsilon+v_{h} \times B\right)
+\end{align*}
+Exactly the equation of motion for a particle of positive charge.\\
+Under an electric field, electrons and holes acquire drift velocities in opposite directions, but both give electric current in the direction of the field. 2. Radius of the Fermi sphere in $\mathrm{K}-$ space is given by
+
+
+
+
+
+
+
 
 
 
