@@ -138,17 +138,13 @@ v_{d}&=a \tau=\frac{e E \tau}{m}=\frac{e E}{m} \frac{\lambda}{v_{r}}\\
 \text { Where } v_{r}&=\text { RMS velocity. }\\
 \text { The relation between current and drift velocity is }&\\
 i&=n e A v_{d} \\
-\text{The current density is }\quad j&=n e v_{d} \\
-\text{Substituting the value of $\nu_d$ we get}\quad j&=\frac{n e^{2} E \tau}{m}\\
-\text{Conductivity $\sigma$}\quad \sigma&=\frac{j}{E}=\frac{n e^{2} \tau}{m}\\
+\text{The current density is }\quad J&=n e v_{d} \\
+\text{Substituting the value of $\nu_d$ we get}\quad J&=\frac{n e^{2} E \tau}{m}\\
+\text{Conductivity $\sigma$}\quad \sigma&=\frac{J}{E}=\frac{n e^{2} \tau}{m}\\
 \text{Resistivity $\rho$}\quad\rho&=\frac{1}{\sigma}=\frac{m}{n e^{2} \tau} \\
 \text{Mobility $\mu$}\quad \mu&=\frac{v_{d}}{E}=\frac{e \tau}{m}
 \end{align*}
 \subsection{Success of classical free electron theory}
-1. It verifies ohm's law
-2. It explains electrical conductivity of metals.
-3. It explains thermal conductivity of metals.
-4. It derives Widemann - Franz law. (i.e. the relation between electrical and thermal conductivity.
 \begin{enumerate}
 	\item It verifies ohm's law
 	\item It explains electrical conductivity of metals.
@@ -271,6 +267,12 @@ The Free electron gas model explains the electronic to specific heat of metals b
 $$C_{V}=\frac{3}{2} N K_{B}\left(\frac{K_{B} T}{E_{F}}\right) \Rightarrow C_{V} \approx \frac{3}{2} N K_{B}\left(\frac{T}{T_{F}}\right), \quad C_{V} \propto\left(\frac{T}{T_{F}}\right)$$
 \section{Band Theory of Solid}
 The failure of the free electron model is due to the over simplified assumption that a conduction electron in a metal experiences a constant or zero potential due to the ion cores and hence is free to move about crystal. Now the periodic potential described above forms the basis of the band Theory of solids. The behavior of an electron in this potential is describe by constructing the electron wave functions using One-electron approximates. As we shall discuss later, the motion of an electron in a periodic potential yields the following results.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=5cm]{CMP-245}
+	\caption{}
+	\label{}
+\end{figure}
 \begin{enumerate}[label=\alph*)]
 	\item There exists an allowed energy band separated by forbidden region or band gap.
 	\item  The electronic energy function $\mathrm{E}(\mathrm{K})$ are periodic in the wave vector $\mathrm{K}$\\
@@ -296,12 +298,24 @@ Bloch's theorem in 3-dimensions: Bloch's theorem contains two postulates
 	\item Alternatively, we can describe the wavefunction a $\psi_{k}(\vec{r}+\vec{T})=c \psi_{k}(\vec{r})$. Which is to say, in a slightly different way, the wavefunction at $r+T$ is very related to the wavefunction at $\mathrm{r}$. Here, $\mathrm{c}$ is a modulation term, we'll explore in detail below
 \end{enumerate}
 \subsection{The Kronig-Penney Model}
-This model illustrates the behavior of electrons in a periodic potential by assuming a relatively simple one-dimensional model of periodic potential as shown figure.\\
+This model illustrates the behavior of electrons in a periodic potential by assuming a relatively simple one-dimensional model of periodic potential as shown figure.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=6cm]{CMP-26}
+	\caption{}
+	\label{}
+\end{figure}
 For this potential write down the Schrödinger wave equation and its general solution with taking potential constant finally. We get
 $$
 P \cdot \frac{\sin \alpha a}{\alpha a}+\cos \alpha a=\cos k a \quad \text { where } P=\frac{m V_{0} b a}{\hbar^{2}}
 $$
 which is a measure of the area $V_{0} b$ of the potential barrier. Thus, increasing $\mathrm{P}$ has the physical meaning of bonding an electron more strongly to a particular potential well
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=4cm,width=9.5cm]{CMP-27}
+	\caption{}
+	\label{}
+\end{figure}
 $$\frac{1}{\alpha a} \sin \alpha a+\cos \alpha a$$
 $$\text { We know that } E=\frac{\alpha^{2} \hbar^{2}}{2 m}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}} n^{2}$$
 It may be noted that since $\alpha^{2}$ is proportional to the energy $E$ the abscissa is a measure of the energy. The following conclusion may be drawn from figure.
@@ -309,6 +323,12 @@ It may be noted that since $\alpha^{2}$ is proportional to the energy $E$ the ab
 	\item The energy spectrum of the electrons consists of alternate regions of allowed energy bands (solid lines on abscissa) and forbidden energy band (broken lines)
 	\item The width of the allowed energy bands increases with $\alpha a$ or the energy
 	\item The width of particular allowed energy band decreases with increase in value of $P$.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=4cm,width=3cm]{CMP-28}
+		\caption{}
+		\label{}
+	\end{figure}
 \end{enumerate} 
 Figure- Allowed (shaded) and forbidden (open) energy ranges as a function of $P$\\
 Energy Verses Wave-Vector relationship\\
@@ -318,6 +338,12 @@ d n&=\frac{l}{2 \pi} d k\\
 \text{Velocity is }v&=\frac{1}{\hbar} \frac{d E}{d k}.
 \end{align*}
 \subsection{Concept of effective mass electrons and Holes}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5.5cm,width=3.9cm]{CMP-29}
+	\caption{}
+	\label{}
+\end{figure}
 In one dimension, an electron with wave-vector $k$ has group velocity
 \begin{align*}
 v&=\frac{d \omega}{d k}=\frac{1}{\hbar} \frac{d E}{d k}\\
@@ -366,26 +392,11 @@ $$
 m_{h}^{*}=-m_{e}^{*}
 $$
 Note that this has the pleasant effect that if the electron effective mass is negative, as it is at the top of the band, the equivalent hole has a positive effective mass.
-\subsubsection{Hole dynamics}
-\begin{align*}
-\text{We know that}\quad \hbar \frac{d k_{e}}{d t}&=-e\left(\varepsilon+v_{e} \times B\right)\\
-\text{Substituting}\quad k_{h}&=-k_{e} \text { and } v_{h}=v_{e} \text { gives }\\
-\hbar \frac{d k_{h}}{d t}&=e\left(\varepsilon+v_{h} \times B\right)
-\end{align*}
+
 Exactly the equation of motion for a particle of positive charge.\\
 Under an electric field, electrons and holes acquire drift velocities in opposite directions, but both give electric current in the direction of the field. 2. Radius of the Fermi sphere in $\mathrm{K}-$ space is given by
-
-
 \section{Semiconductor}
-$\left.\begin{array}{l}\mathrm{Eg}\left(s_{i}\right)=1.1 \mathrm{eV} \\ \mathrm{Eg}(\mathrm{he})=0.7 \mathrm{eV}\end{array}\right] \rightarrow$
-elementry semiconductor\\
-$Eg (haAs )=1.43 ev ]\rightarrow$ compound semiconductor.
-\begin{itemize}
-	\item Their conductivity can be modified according to application by changing doping concentration.
-	\item Higher band gap means lower reverse saturation current, therfore thermal stability of $Si$ is better than $Ge$\\
-	Pe ${Si}$ is better than $Ge$.
-\end{itemize}
-\subsubsection{According to Band Gap}
+According to Band Gap, Semiconductors can be classified into\\
 1.\quad \textbf{Direct Band gap semiconductor}
 \begin{figure}[H]
 	\centering
@@ -393,13 +404,13 @@ $Eg (haAs )=1.43 ev ]\rightarrow$ compound semiconductor.
 	\caption{}
 	\label{}
 \end{figure}
-$e^{\ominus}$ directly jump from top of V.B to bottom of C.B
 \begin{itemize}
+	\item electrons directly jump from top of valence band to bottom of conduction band
 	\item No of energy or momentum of incident photon is transferred to the phonon.\\
-	i.e no phonon involvement
+	i.e, no phonon involvement
 	\item Semiconductor entire energy is absorbed or emitted in the form of optical energy.\\
 	$\lambda=\frac{h c}{E g}$ (Used in light-emitting applications)
-	\item example: cdsi, GaAs, Cds ete.
+	\item example: CdSi, GaAs, CdS etc.
 \end{itemize}
 2.\quad \textbf{Indirect Band Gap Semiconductor}
 \begin{figure}[H]
@@ -409,12 +420,12 @@ $e^{\ominus}$ directly jump from top of V.B to bottom of C.B
 	\label{}
 \end{figure}
 \begin{itemize}
-	\item Some energy or momentum of incident photon is transferred to the phonon, to jump $e^\ominus$ From top of $U \cdot B$ to Bottom of $C \cdot B$ i.e phonon involvement.
-	\item Here, some part of energy is converted into heat. Hence, don't used for light emitting applications.
-	\item examples: si, Ge, sic etc.
-	According to Doping Concentration
-	1.Intrinsic Semiconductor (Undoped/Pure)\\
-	Behaves as insulator at $t=$0K
+	\item Some energy or momentum of incident photon is transferred to the phonon, to jump elecrons from top of valence band to bottom of conduction band. i.e, phonon involvement.
+	\item Here, some part of energy is converted into heat. Hence, they are not used for light emitting applications.
+	\item examples: Si, Ge, SiC etc.\\\\
+	According to Doping Concentration Semiconductors can be classified into\\
+	\textbf{1.Intrinsic Semiconductor (Undoped/Pure)}\\
+	
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -422,109 +433,73 @@ $e^{\ominus}$ directly jump from top of V.B to bottom of C.B
 	\caption{}
 	\label{}
 \end{figure}
-\begin{align*}
-E g&=E_{C}-E_{V}\\
-E_{F}&=\frac{E_{C}-E_{v}}{2} \text { at } T=O K
-\end{align*}
-Hole: Vacancy of $e^{\ominus}$, it is a fermion.
-\begin{align*}
-e^{\ominus} \operatorname{conc} \cdot(n)=\frac{\text { no. of } e^{\ominus }\&}{\text { volume }}\\
-\text { hole concentration }(p)&=\frac{\text { no.of holes }}{\text { vol. }}\\
-n_{i}=D_{i}&=\left(N_{c} N_{U}\right)^{1 / 2} e^{-E g\left(2 k_{B} T\right.}\\
-\text { intrinsic carrier conc. }&\\
-N_{C}=2\left(\frac{2 \pi m e^{*} K_{B} t}{R^{2}}\right)^{3 / 2}\qquad& N_{V}=2\left(\frac{2 \pi m_{R}^{*} K_{B} T}{\hbar^{2}}\right)^{3 / 2}\\
-\text { Dos at CB edge }\hspace{2cm}&\text { DOS at } V B \text { edge. }\\
-n_{i}&=c T^{3 / 2} \exp \left(-\frac{E g}{2 K_{B} T}\right)\\
-\ln n_{i}&=\ln (c)+\frac{3}{2} \ln T-\frac{E g}{2 k_{B} T}
-\end{align*}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3cm,width=5cm]{CMP-19}
-	\caption{}
-	\label{}
-\end{figure}
-conductivity:
-\begin{align*}
-\sigma&=n e H_{e}+p e H_{h}\\
-\sigma&=n_{i} e\left(\mu_{e}+\mu_{h}\right)\\
-\sigma_{i}&=\left[c T^{3 / 2} \exp \left(\frac{-E g}{2 K_{B} T}\right)\right]
-\end{align*}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=3cm,width=5cm]{CP-4}
-	\caption{}
-	\label{}
-\end{figure}
-\begin{align*}
-\text { exact position  }&\text{of fermi level at temp. T}\\
-E_{F}&=\left(\frac{E_{C}+E_{v}}{2}\right)+\frac{3}{4} k_{B} T \ln \left(\frac{m_{R}^{*}}{m_{e}^{*}}\right)\\
-\text { Position of  }&\text{fermi level Relative to V.B}
-\end{align*}
-\begin{figure}[H]
-	\centering
-	\includegraphics[height=2cm,width=5cm]{CMP-20}
-	\caption{}
-	\label{}
-\end{figure}
-\begin{align*}
-\text { at } T&=0 K\\
-E_{F}-E_{V}&=\left(\frac{E_{C}-E_{V}}{2}\right)+\frac{3}{4} K_{B} T \ln \left(\frac{m_{R}^{*}}{m_{e}^{*}}\right)
-\end{align*}
-2.\textbf{Extrinsic Semiconductor}\\
-1. $n-$ type:
 \begin{itemize}
-	\item  electrons are majority charge carriers\\
-	\item formed by doping the infrinsic si with pentavalent impurities like $P, A \&$, Sb, Bi etc
+	\item Behaves as insulator at $t=$0K
+	\item Band gap energy,$E_g=E_{C}-E_{V}$
+	\item Fermi energy, $E_{F}=\frac{E_{C}-E_{v}}{2}$  at  $T=O$ K
+	\item Hole is the Vacancy of electrons and it is a fermion.
+	\item electron concentration (n) = $\frac{\text{number of electrons}}{\text{volume}}$
+	\item hole concentration (p) = $\frac{\text{number of holes}}{\text{volume}}$
+	\item Intrinsic carrier concentration, $n_{i}=p_{i}=\left(N_{c} N_{V}\right)^{1 / 2} e^{-E g\left(2 k_{B} T\right)}$
+	\item Here Density of states at conduction band edge, $N_{C}=2\left(\frac{2 \pi m e^{*} K_{B} T}{h^{2}}\right)^{3 / 2}$ and Density of states at valence band edge, $N_{V}=2\left(\frac{2 \pi m_{h}^{*} K_{B} T}{h^{2}}\right)^{3 / 2}$
+	\item exact position of fermi level at temparature, T =
+	$E_{F}=\left(\frac{E_{C}+E_{v}}{2}\right)+\frac{3}{4} k_{B} T \ln \left(\frac{m_{h}^{*}}{m_{e}^{*}}\right)$
+	\end{itemize}
+2.\textbf{Extrinsic Semiconductor}\\
+1. \textbf{$\mathbf{n}$-type}
+\begin{itemize}
+	\item  Electrons are majority charge carriers
+	\item Formed by doping the intrinsic Si with pentavalent impurities like P, A, Sb, Bi etc
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3.5cm,width=4cm]{CMP-21}
 		\caption{}
 		\label{}
 	\end{figure}
-	at $T$ increases $E_F$ will moves towards $E_i$\\
+	\item At $T$ increases $E_F$ will moves towards $E_i$
 	at $T=0K$
-	\item $n$-type semiconductor is electrcally newral i.e net charge $=0$\\
-	\item majority carier conc. $(n)=$ doner density $\left(N_{d}\right)$\\
+	\item $n$-type semiconductor is electrically neutral i.e, net charge $=0$\\
+	\item majority carrier concentration $(n)=$ donor density $\left(N_{d}\right)$\\
 	\item $K_{B T}=25 \mathrm{meV}$ at $T=300 \mathrm{~K}$\\
-	\item as $T$ Tes, Ef will moves touards $E_{i}$\\
-	\item $N_{d}$ remains constant at all temperatures\\
-	\item extrinsic semiconductor will become intrinsic semiconductor by raising the temperature and by doping opposite type of impurity.
+	\item as $T$ increases, $E_F$ will moves towards $E_{i}$\\
+	\item $N_{d}$ remains constant at all temperatures
+	\item Extrinsic semiconductor will become intrinsic semiconductor by raising the temperature and by doping opposite type of impurity.
 \end{itemize}
 \textbf{Law of Mass Action}\\
-By this law we can calculate majosity and minority carrier concentration.
+By this law we can calculate majority and minority carrier concentration.
 \begin{align*}
-\text { majority carrier conc. }(n)&=\text { donor conc. }\left(N_{d}\right)\\
-\text { minority conc.}&= p\\
-n p&=n i p_{i}\\
-n p&=n i^{2}
+\text { majority carrier concentration }(n)&=\text { donor concentration }\left(N_{d}\right)\\
+\text { minority concentration}&= p\\
+n p&=n_i p_{i}\\
+n p&=n_i^{2}
 \end{align*}
 \textbf{Conductivity :}
 \begin{align*}
 \sigma&=n e \mu_{e}+p e \mu_{h} \\
 \sigma &\approx n e \mu_{e}
 \end{align*}
-ii) p-type: 
+\textbf{2. $\mathbf{p}$-type} 
 \begin{itemize}
 	\item holes are majority charge carriers 
-	\item formed by doping the intrinsic si with\\
-	fivalent impurity like $B, h a$, In, Al etc.
+	\item formed by doping the intrinsic Si with\\
+	trivalent impurity like B,Ga,In, Al etc.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{CMP-22}
+		\includegraphics[height=3cm,width=4.8cm]{CMP-22}
 		\caption{}
 		\label{}
 	\end{figure}
-	as teperature increases $E_F$ will moves towards $E_i$\\
-	i.e. extrinsic s/c becomes intrinsic semiconductor\\
+	\item As temperature increases $E_F$ will moves towards $E_i$
+	i.e, extrinsic semiconductor becomes intrinsic semiconductor
 	at $T=0K$
 	\item p-type semiconductor is electrically neutral.
-	\item majority carrier conc.(P)=acceptor conc.(Na)
+	\item majority carrier concentration(P)=acceptor concentration(Na)
 \end{itemize}
 \textbf{law of mass action}
 \begin{align*}
 n p&=n i^{2}=p i^{2}\\
 n_{i}&=\left(N_{C} N_{v}\right)^{1 / 2} e^{-E g \mid 2 K_{B} T}\\
-\sigma &\approx p e H_{h}
+\sigma &\approx p e \mu_{h}
 \end{align*}
 
 \begin{exercise}
@@ -532,13 +507,13 @@ n_{i}&=\left(N_{C} N_{v}\right)^{1 / 2} e^{-E g \mid 2 K_{B} T}\\
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\sigma&=n e \mu_{e}+p e \mu_{R}\\
-	n p&=n i^{2} \Rightarrow p=\frac{n_{i}^{2}}{n}\\
+	\sigma&=n e \mu_{e}+p e \mu_{h}\\
+	n p&=n_i^{2} \Rightarrow p=\frac{n_{i}^{2}}{n}\\
 	\sigma&=n e \mu_{e}+\frac{n_{i}^{2}}{n} e \mu_{h}\\
 	\text{For minimum conductivity }\frac{d \sigma}{d n}=0\\
-	e \mu_{e}&-\frac{n_{i}^{2}}{n^{2}} e H_{h}=0\\
-	n&=n_{i} \frac{F H_{k}}{H_{e}}\text{ similarly }p=n i \sqrt{\frac{H e}{H h}}\\
-	\sigma_{\min }&=n_{i} \sqrt{\frac{\mu_{h}}{H_{e}}} e \mu_{e}+n_{i} \sqrt{\frac{\mu_{e}}{\mu_{h}}} e \mu_{h}\\
+	e \mu_{e}&-\frac{n_{i}^{2}}{n^{2}} e \mu_{h}=0\\
+	n&=n_{i}\sqrt\frac{\mu_h}{\mu_{e}}\quad\text{similarly }p=n_i \sqrt{\frac{\mu _e}{\mu_h}}\\
+	\sigma_{\min }&=n_{i} \sqrt{\frac{\mu_{h}}{\mu_{e}}} e \mu_{e}+n_{i} \sqrt{\frac{\mu_{e}}{\mu_{h}}} e \mu_{h}\\
 	\sigma_{\min }&=2 n_{i} e \sqrt{\mu_{e} \mu_{h}}
 	\end{align*}
 \end{answer}
@@ -546,52 +521,42 @@ n_{i}&=\left(N_{C} N_{v}\right)^{1 / 2} e^{-E g \mid 2 K_{B} T}\\
 The production of voltage difference (Hall voltage) across an electrical conductor, transverse to an electric current in the conductor and to an applied magnetic field perpendiculat to the current.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5.5cm,width=3.5cm]{CMP-24}
+	\includegraphics[height=6.2cm,width=3.5cm]{CMP-24}
 	\caption{}
 	\label{}
 \end{figure}
-\begin{align*}
-\text { magnetic force: } \vec{F}&=q(\vec{v} \times \vec{B})\\
-\overrightarrow{F e}&=-e(\vec{V} \times \vec{B})\\
-\vec{F}_{h}&=e(\vec{V} \times \vec{B})\qquad \mu=\frac{e \tau}{m^{*}}
-\end{align*}
 \textbf{Hall effect in semiconductor}
 \begin{align*}
-R_{H}=\frac{b \mu_{h}^{2}-n \mu_{e}^{2}}{e\left(p \mu_{R}+n \mu_{e}\right)^{2}}
+\text{Hall cofficient, } R_{H}=\frac{p \mu_{h}^{2}-n \mu_{e}^{2}}{e\left(p \mu_{h}+n \mu_{e}\right)^{2}}
 \end{align*}
-1.\quad intrinsic semiconductor
+\textbf{1. Intrinsic semiconductor}
 \begin{align*}
-R_{H}&=\frac{H_{h}=H_{e}}{e n_{i}\left(H_{h}+H_{e}\right)}\\
-\Rightarrow \text {-re }\left(\mu_{h}<\mu_{e}\right)
+R_{H}&=\frac{\mu_{h}-\mu_{e}}{e n_{i}\left(\mu_{h}+\mu_{e}\right)}\\
+R_{H} &\text{ will be negative since } \mu_{h} < \mu_{h}
 \end{align*}
-2.$n$-type semiconductor
+\textbf{2.n-type semiconductor}
 \begin{align*}
-&n \mathrm{He}_{e} \gg p \mathrm{H}_{R}\\
-&R_{n}=-\frac{1}{n e}\\
+&n \mathrm{\mu_e} \gg p \mathrm{\mu}_{h}\\
+&R_{H}=-\frac{1}{ne}\\
 &\left(n=N_{d}\right)
 \end{align*}
-3.p-type semiconductor
+\textbf{3.p-type semiconductor}
 \begin{align*}
 p \mu_{h} &\gg n \mu_{e}\\
 R_{H}&=+\frac{1}{p e}\\
-&(p=N a)
+&(p=N_a)
 \end{align*}
 \textbf{Hall Effect in Metals}
 \begin{align*}
 R_{H}&=-\frac{1}{n e}\\
-\text { Because metals have only } e^{\theta} s&\text { as charge carriers. }\\
-\text { as } E_{F} \alpha n^{2 / 3} &\text { for } 3 \rightarrow\\
-n &\propto E_{f}^{3 / 2}\\
-\Rightarrow R_{H}& \propto \frac{1}{E_{F}^{3 / 2}}=E_{F}^{-3 / 2}
+\text { Because metals have only  electrons} &\text { as charge carriers. }\\
 \end{align*}
 \textbf{Hall Coefficient}
 \begin{align*}
 R_{H}&=\frac{E_{H}}{J_{x} B_{2}}\\
-U_{H}&=-\frac{I_{x} B_{2}}{n e t}\\
-\text { Hall voltage }&\\
-n \rightarrow \operatorname{con} c .&\\
-n_{\text {metal }}>&n_{\text {semicon ductor }}\\
-R_{\text {metal }}&<R_{H} s\mid c
+V_{H}&=-\frac{I_{x} B_{Z}}{n e t}\\
+\text{Here $V_{H}$ is Hall Voltage, }&\text{$E_{H}$ is the Electric field due to Hall effect}
+\\ \text{$J_{x}$ is the current density }&\text{due to the current $I_{x}$ and $B_{Z}$ is the applied magnetic field}
 \end{align*}
 \section{Superconductivity}
 \subsection{Properties of Superconductors}
@@ -621,11 +586,11 @@ Meissner and ochsenfeld found that if a super conductor is cooled in a magnetic 
 	\label{}
 \end{figure}
 \begin{align*}
-text{As }\quad 
+\text{As }\quad 
 \vec{B}&=\mu_{0}(\vec{H}+\vec{M})\\
 \vec{B}&=\mu_{0}(1+x) \vec{H}
-\text{where }x=\frac{\vec{M}}{\vec{H}}\\
-Since
+\text{ where  }x=\frac{\vec{M}}{\vec{H}}\\
+\text{ Since }
 \vec{B}&=0\text{ for super conductor state}\\
 \chi=-1 \text { and also } \chi&=\mu_{\mathrm{r}}-1\quad \text { hence } \mu_{\mathrm{r}}=0
 \end{align*}
