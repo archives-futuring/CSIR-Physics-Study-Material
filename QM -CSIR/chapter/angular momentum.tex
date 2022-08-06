@@ -1,29 +1,25 @@
 \chapter{Angular momentum}
 \section{Angular momentum }
-The angular momentum of a particle about a point is defined in position vector of a particle with the given point as the origin of the co-ordinate system and $p$ is the linear momentum.
-
+The angular momentum of a particle about a point is defined in position vector of a particle with the given point as the origin of the co-ordinate system and $p$ is the linear momentum.\\\\
 Analogically in quantum mechanics there exist quantum mechanically orbital angular momentum is defined as
-$$
-L=L_{x} \hat{i}+L_{y} \hat{j}+L_{z} \hat{k}
-$$
-where
- $$L_{x}=Y P_{z}-Z P_{y}$$
-$$ L_{y}=Z P_{x}-X P_{z}$$
- $$L_{z}=X P_{y}-Y P_{x}$$
-where $X, Y, Z$ are position operator in $x, y, z$ direction \\
-and $p_{1}, p_{y}, p_{z}$ momentum in respective
-$x, y, z$ direction it is given that \\
-$$P_{x}=-i \hbar \frac{\partial}{\partial x},$$
-$$ P_{v}=-i \hbar \frac{\partial}{\partial y}$$
- $$P_{z}=-i \hbar \frac{\partial}{\partial z}$$
-In quantum mechanics one can defined the Hermitian operator
-$$
-L^{2}=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}
-$$
-\textbf{Commutation relation}
+\begin{align*}
+L&=L_{x} \hat{i}+L_{y} \hat{j}+L_{z} \hat{k}\\
+\text{where}&\\
+L_{x}&=Y P_{z}-Z P_{y}\\
+L_{y}&=Z P_{x}-X P_{z}\\
+L_{z}&=X P_{y}-Y P_{x}\\
+\intertext{where $X, Y, Z$ are position operator in $x, y, z$ direction and $p_{1}, p_{y}, p_{z}$ momentum in respective
+	$x, y, z$ direction it is given that }
+P_{x}&=-i \hbar \frac{\partial}{\partial x},\\
+ P_{v}&=-i \hbar \frac{\partial}{\partial y}\\
+P_{z}&=-i \hbar \frac{\partial}{\partial z}\\
+\text{In quantum mechanics one}&\text{ can defined the Hermitian operator}\\
+L^{2}&=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}
+\end{align*}
+\subsubsection{Commutation Relation}
 $$
 \begin{array}{lll}
-{\left[\hat{L}_{x}, \hat{L}_{y}\right]=i \hbar \hat{L}_{z}} & {\left[\hat{L}_{y}, \hat{L}_{z}\right]=i \hbar \hat{L}_{x}} & {\left[\hat{L}_{z}, \hat{L}_{x}\right]=i \hbar \hat{L}_{y}} \\
+{\left[\hat{L}_{x}, \hat{L}_{y}\right]=i \hbar \hat{L}_{z}} & {\left[\hat{L}_{y}, \hat{L}_{z}\right]=i \hbar \hat{L}_{x}} & {\left[\hat{L}_{z}, \hat{L}_{x}\right]=i \hbar \hat{L}_{y}} \\\\
 {\left[\hat{L}_{y}, \hat{L}_{x}\right]=-i \hbar \hat{L}_{z}} & {\left[\hat{L}_{z}, \hat{L}_{y}\right]=-i \hbar \hat{L}_{x}} & {\left[\hat{L}_{x}, \hat{L}_{z}\right]=-i \hbar \hat{L}_{y}}
 \end{array}
 $$
@@ -40,10 +36,10 @@ $$
 $$
 $$
 \left[\hat{L}_{y}, \hat{p}_{y}\right]=0 \quad\left[\hat{L}_{z}, \hat{p}_{z}\right]=0
-$$
+$$\\
 $$\begin{array}{lll}
-	{\left[\hat{L}_{x}, \hat{p}_{y}\right]=i \hbar \hat{p}_{z}} & {\left[\hat{L}_{y}, \hat{p}_{z}\right]=i \hbar \hat{p}_{x}} & {\left[\hat{L}_{z}, \hat{p}_{x}\right]=i \hbar \hat{p}_{y}} \\
-	{\left[\hat{L}_{x}, \hat{x}\right]=0} & {\left[\hat{L}_{y}, \hat{y}\right]=0} & {\left[\hat{L}_{z}, \hat{z}\right]=0} \\
+	{\left[\hat{L}_{x}, \hat{p}_{y}\right]=i \hbar \hat{p}_{z}}  & {\left[\hat{L}_{y}, \hat{p}_{z}\right]=i \hbar \hat{p}_{x}} & {\left[\hat{L}_{z}, \hat{p}_{x}\right]=i \hbar \hat{p}_{y}} \\\\
+	{\left[\hat{L}_{x}, \hat{x}\right]=0} & {\left[\hat{L}_{y}, \hat{y}\right]=0} & {\left[\hat{L}_{z}, \hat{z}\right]=0} \\\\
 	{\left[\hat{L}_{x}, \hat{y}\right]=i \hbar \hat{z}} & {\left[\hat{L}_{y}, \hat{z}\right]=i \hbar \hat{x}} & {\left[\hat{L}_{z}, \hat{x}\right]=i \hbar \hat{y}}
 \end{array}$$
 \subsection{Orbital angular momentum in sperical polar coordinates }
@@ -54,26 +50,24 @@ $$\begin{array}{lll}
 
 \subsection{eigen value and eigen vector of $L^2$ and $L_z$}
 Since,the commutator bracket $\left[ L^2,L_z\right] =0$ therefore $L^2$ and $L_z$ can be measured simultaneously accurately and both have simultaneous eigenfunctions and eigenkets.Denoting the simultaneous eigen kets $|l,m_l\rangle $ (Where l and $m_l$ are the orbital quantum number magnetic quantum number respectevely),the eigen value equation for $L^2$ and $L_z$ can be written as 
-$$\begin{aligned}
-	&\hat{L}^{2}\left|l, m_{l}\right\rangle=l(l+1) \hbar^{2}\left|l, m_{l}\right\rangle \\
-	&\hat{L}_{z}\left|l, m_{l}\right\rangle=m_{l} \hbar\left|l, m_{l}\right\rangle
-\end{aligned}$$
-$\text { Alternate form: Since, } \hat{L}^{2} \text { and } \hat{L}_{z} \text { depends on } \theta, \phi \text { then their eigen function is function of } \theta, \phi \text { i.e. }$
-$$\begin{aligned}
-	&\hat{L}^{2} Y_{\ell, m_{l}}(\theta, \phi)=\ell(\ell+1) \hbar^{2} Y_{\ell, m_{l}}(\theta, \phi) \\
-	&\hat{L}_{z} Y_{\ell, m_{l}}(\theta, \phi)=m_{l} \hbar Y_{\ell, m_{l}}(\theta, \phi)
-\end{aligned}$$
-$\text { where } Y_{\ell, m}(\theta, \phi) \text { is said to be Spherical Harmonics and defined as }$
-$$Y_{l, m_{l}}(\theta, \varphi)=\varepsilon \sqrt{\left(\frac{2 \ell+1}{4 \pi}\right) \frac{\left(\ell-\left|m_{l}\right|\right) !}{\left(\ell+\left|m_{l}\right|\right) !}} P_{\ell}^{\left|m_{l}\right|}(\cos \theta) e^{i m_{l} \phi}$$
-$\text { where } \varepsilon=(-1)^{m_{l}} \text { for } m_{l}>0 \text { and } \varepsilon=1 \text { for } m_{l} \leq 0 \text {. }$\\
-\subsection{Lowering and raising operators}
+\begin{align*}
+\hat{L}^{2}\left|l, m_{l}\right\rangle&=l(l+1) \hbar^{2}\left|l, m_{l}\right\rangle \\
+\hat{L}_{z}\left|l, m_{l}\right\rangle&=m_{l} \hbar\left|l, m_{l}\right\rangle\\
+\text { Alternate form: Since, } \hat{L}^{2} \text { and } \hat{L}_{z} &\text { depends on } \theta, \phi \text { then their eigen function is function of } \theta, \phi \text { i.e. }\\
+\hat{L}^{2} Y_{\ell, m_{l}}(\theta, \phi)&=\ell(\ell+1) \hbar^{2} Y_{\ell, m_{l}}(\theta, \phi) \\
+\hat{L}_{z} Y_{\ell, m_{l}}(\theta, \phi)&=m_{l} \hbar Y_{\ell, m_{l}}(\theta, \phi)\\
+\text { where } Y_{\ell, m}(\theta, \phi) \text{is said to be}&\text {  Spherical Harmonics and defined as }\\
+Y_{l, m_{l}}(\theta, \varphi)&=\varepsilon \sqrt{\left(\frac{2 \ell+1}{4 \pi}\right) \frac{\left(\ell-\left|m_{l}\right|\right) !}{\left(\ell+\left|m_{l}\right|\right) !}} P_{\ell}^{\left|m_{l}\right|}(\cos \theta) e^{i m_{l} \phi}\\
+\text { where } \varepsilon&=(-1)^{m_{l}} \text { for } m_{l}>0 \text { and } \varepsilon=1 \text { for } m_{l} \leq 0 \text {. }
+\end{align*}
+\subsection{Lowering and Raising Operators}
 	$$\text { Raising Operator: }  \hat{L}_{+}=\hat{L}_{x}+i \hat{L}_{y}$$
 	$$\text { Lowering Operator: }  \hat{L}_{-}=\hat{L}_{x}-i \hat{L}_{y}$$
 \textbf{Important relations:}
 $$
 \begin{array}{lll}
-{\left[\hat{L}_{z}, \hat{L}_{+}\right]=\hbar \hat{L}_{+}} & {\left[\hat{L}_{z}, \hat{L}_{-}\right]=-\hbar \hat{L}_{-}} & {\left[\hat{L}_{x}, \hat{L}_{+}\right]=-\hbar \hat{L}_{z} \quad\left[\hat{L}_{x}, \hat{L}_{-}\right]=\hbar \hat{L}_{z}} \\
-{\left[\hat{L}_{y}, \hat{L}_{+}\right]=-i \hbar \hat{L}_{z}} & {\left[\hat{L}_{y}, \hat{L}_{-}\right]=i \hbar \hat{L}_{z}} & {\left[\hat{L}_{+}, \hat{L}_{-}\right]=2 \hbar \hat{L}_{z}} \\
+{\left[\hat{L}_{z}, \hat{L}_{+}\right]=\hbar \hat{L}_{+}} & {\left[\hat{L}_{z}, \hat{L}_{-}\right]=-\hbar \hat{L}_{-}} & {\left[\hat{L}_{x}, \hat{L}_{+}\right]=-\hbar \hat{L}_{z} \quad\left[\hat{L}_{x}, \hat{L}_{-}\right]=\hbar \hat{L}_{z}} \\\\
+{\left[\hat{L}_{y}, \hat{L}_{+}\right]=-i \hbar \hat{L}_{z}} & {\left[\hat{L}_{y}, \hat{L}_{-}\right]=i \hbar \hat{L}_{z}} & {\left[\hat{L}_{+}, \hat{L}_{-}\right]=2 \hbar \hat{L}_{z}} \\\\
 \hat{L}_{+} \hat{L}_{-}=\hat{L}^{2}-\hat{L}_{z}^{2}+\hbar \hat{L}_{z} & \hat{L}_{-} \hat{L}_{+}=\hat{L}^{2}-\hat{L}_{z}^{2}-\hbar \hat{L}_{z}
 \end{array}
 $$
