@@ -1,8 +1,8 @@
-\chapter{Approximation methods}
+\chapter{APPROXIMATION METHODS}
 Perturbation theory is based on the assumption that the problem we wish to solve is, in some sense, only slightly different from a problem that can be solved exactly. In the case where the deviation between the two problems is small, perturbation theory is suitable for calculating the contribution associated with this deviation; this contribution is then added as a correction to the energy and the wave function of the exactly solvable Hamiltonian. So perturbation theory builds on the known exact solutions to obtain approximate solutions.\\
 What about those systems whose Hamiltonians cannot be reduced to an exactly solvable part plus a small correction. For these, we may consider the variational method or the WKB approximation. The variational method is particularly useful in estimating the energy eigenvalues of the ground state and the first few excited states of a system for which one has only a qualitative idea about the form of the wave function.\\
 The WKB method is useful for finding the energy eigenvalues and wave functions of systems for which the classical limit is valid. 
-\section{Time independent perturbation theory}
+\section{Time Independent Perturbation Theory}
 This method is most suitable when $\hat{H}$ is very close to a Hamiltonian $H_{0}$ that can be solved exactly. In this case, $\hat{H}$ can be split into two time-independent parts
 $$
 \hat{H}=\hat{H}_{0}+\hat{H}_{p},
@@ -16,7 +16,7 @@ $$
 \left(\hat{H}_{0}+\lambda \hat{W}\right)\left|\psi_{n}\right\rangle=E_{n}\left|\psi_{n}\right\rangle .
 $$
 In what follows we are going to consider two separate cases depending on whether the exact solutions of $\hat{H}_{0}$ are nondegenerate or degenerate. Each of these two cases requires its own approximation scheme.
-\subsection{Nondegenerate Perturbation theory}
+\subsection{Nondegenerate Perturbation Theory}
 In this section we limit our study to the case where $\hat{H}_{0}$ has no degenerate eigenvalues; that is, for every energy $E_{n}^{(0)}$ there corresponds only one eigenstate $\left|\phi_{n}\right\rangle:$
 $$
 \hat{H}_{0}\left|\phi_{n}\right\rangle=E_{n}^{(0)}\left|\phi_{n}\right\rangle,
@@ -40,47 +40,52 @@ $$
 &\quad=\left(E_{n}^{(0)}+\lambda E_{n}^{(1)}+\lambda^{2} E_{n}^{(2)}+\cdots\right)\left(\left|\phi_{n}\right\rangle+\lambda\left|\psi_{n}^{(1)}\right\rangle+\lambda^{2}\left|\psi_{n}^{(2)}\right\rangle+\cdots\right)
 \end{aligned}
 $$
-The coefficients of successive powers of $\lambda$ on both sides of this equation must be equal. Equating the coefficients of the first three powers of $\lambda$, we obtain these results:\\
-- Zero order in $\lambda$ :
+The coefficients of successive powers of $\lambda$ on both sides of this equation must be equal. Equating the coefficients of the first three powers of $\lambda$, we obtain these results:
+	$$
+	\begin{aligned}
+	\text{- Zero order in $\lambda$ :}&\\
+	&\hat{H}_{0}\left|\phi_{n}\right\rangle=E_{n}^{(0)}\left|\phi_{n}\right\rangle\\
+	\text{- First order in $\lambda:$}&\\
+	&\hat{H}_{0}\left|\psi_{n}^{(1)}\right\rangle+\hat{W}\left|\phi_{n}\right\rangle=E_{n}^{(0)}\left|\psi_{n}^{(1)}\right\rangle+E_{n}^{(1)}\left|\phi_{n}\right\rangle\\
+	\text{- Second order in $\lambda$ :}&\\
+&\hat{H}_{0}\left|\psi_{n}^{(2)}\right\rangle+\hat{W}\left|\psi_{n}^{(1)}\right\rangle=E_{n}^{(0)}\left|\psi_{n}^{(2)}\right\rangle+E_{n}^{(1)}\left|\psi_{n}^{(1)}\right\rangle+E_{n}^{(2)}\left|\phi_{n}\right\rangle
+\end{aligned}
 $$
-\hat{H}_{0}\left|\phi_{n}\right\rangle=E_{n}^{(0)}\left|\phi_{n}\right\rangle
-$$
-- First order in $\lambda:$
-$$
-\hat{H}_{0}\left|\psi_{n}^{(1)}\right\rangle+\hat{W}\left|\phi_{n}\right\rangle=E_{n}^{(0)}\left|\psi_{n}^{(1)}\right\rangle+E_{n}^{(1)}\left|\phi_{n}\right\rangle
-$$
-- Second order in $\lambda$ :
-$$
-\hat{H}_{0}\left|\psi_{n}^{(2)}\right\rangle+\hat{W}\left|\psi_{n}^{(1)}\right\rangle=E_{n}^{(0)}\left|\psi_{n}^{(2)}\right\rangle+E_{n}^{(1)}\left|\psi_{n}^{(1)}\right\rangle+E_{n}^{(2)}\left|\phi_{n}\right\rangle
-$$
-We now proceed to determine the eigenvalues $E_{n}^{(1)}, E_{n}^{(2)}$ and the eigenvector $\left|\psi_{n}^{(1)}\right\rangle$  For this, we need to specify how the states $\left|\phi_{n}\right\rangle$ and $\left|\psi_{n}\right\rangle$ overlap. Since $\left|\psi_{n}\right\rangle$ is considered not to be very different from $\left|\phi_{n}\right\rangle$, we have $\left\langle\phi_{n} \mid \psi_{n}\right\rangle \simeq 1 .$ We can, however. normalize $\left|\psi_{n}\right\rangle$ so that its overlap with $\left|\phi_{n}\right\rangle$ is exactly equal to one:\\
-$$\left\langle\phi_{n} \mid \psi_{n}\right\rangle=1 .$$\\
-Substituting power series expansion of $\left|\psi_{n}\right\rangle $ ine above equation we get\\
-$$
-\lambda\left\langle\phi_{n} \mid \psi_{n}^{(1)}\right\rangle+\lambda^{2}\left\langle\phi_{n} \mid \psi_{n}^{(2)}\right\rangle+\cdots=0
-$$
-hence the coefficients of the various powers of $\lambda$ must vanish separately:
-$$
-\left\langle\phi_{n} \mid \psi_{n}^{(1)}\right\rangle=\left\langle\phi_{n} \mid \psi_{n}^{(2)}\right\rangle=\cdots=0 .
-$$
-\subsubsection{First order correction}
-$$E_{n}^{(1)}=\left\langle\phi_{n}|\hat{W}| \phi_{n}\right\rangle$$
-Energy of first order pertubration
-$$E_{n}=E_{n}^{(0)}+\left\langle\phi_{n}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle$$
-First order correction of eigen vector\\
-$$\left|\psi_{n}^{(1)}\right\rangle=\sum_{m \neq n} \frac{\left\langle\phi_{m}|\hat{W}| \phi_{n}\right\rangle}{E_{n}^{(0)}-E_{m}^{(0)}}\left|\phi_{m}\right\rangle$$
-The eigenfunction $\left|\psi_{n}\right\rangle$ of $\hat{H}$ to first order in $\lambda \hat{W}$ can then be obtained as
-$$
-\left|\psi_{n}\right\rangle=\left|\phi_{n}\right\rangle+\sum_{m \neq n} \frac{\left\langle\phi_{m}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle}{E_{n}^{(0)}-E_{m}^{(0)}}\left|\phi_{m}\right\rangle
-$$
-\subsubsection{second order correction}
-$$E_{n}^{(2)}=\left\langle\phi_{n}|\hat{W}| \psi_{n}^{(1)}\right\rangle$$
-which can be written as \\
-$$E_{n}^{(2)}=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|\hat{W}| \phi_{n}\right\rangle\right|^{2}}{E_{n}^{(0)}-E_{m}^{(0)}}$$\\
-$\text { The eigenenergy to second order in } \hat{H}_{p}$ is obtained as 
-$$E_{n}=E_{n}^{(0)}+\left\langle\phi_{n}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle+\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle\right|^{2}}{E_{n}^{(0)}-E_{m}^{(0)}}+\cdots .$$
+
+We now proceed to determine the eigenvalues $E_{n}^{(1)}, E_{n}^{(2)}$ and the eigenvector $\left|\psi_{n}^{(1)}\right\rangle$  For this, we need to specify how the states $\left|\phi_{n}\right\rangle$ and $\left|\psi_{n}\right\rangle$ overlap. Since $\left|\psi_{n}\right\rangle$ is considered not to be very different from $\left|\phi_{n}\right\rangle$, we have $\left\langle\phi_{n} \mid \psi_{n}\right\rangle \simeq 1 .$ We can, however. normalize $\left|\psi_{n}\right\rangle$ so that its overlap with $\left|\phi_{n}\right\rangle$ is exactly equal to one:
+\begin{align*}
+\left\langle\phi_{n} \mid \psi_{n}\right\rangle&=1 .\\
+\text{Substituting power series expansion of }&\text{$\left|\psi_{n}\right\rangle $ ine above equation we get}\\
+\lambda\left\langle\phi_{n} \mid \psi_{n}^{(1)}\right\rangle+\lambda^{2}\left\langle\phi_{n} \mid \psi_{n}^{(2)}\right\rangle+\cdots&=0\\
+\text{hence the coefficients of the various powers of }&\text{$\lambda$ must vanish separately:}\\
+\left\langle\phi_{n} \mid \psi_{n}^{(1)}\right\rangle=\left\langle\phi_{n} \mid \psi_{n}^{(2)}\right\rangle=\cdots&=0 
+\end{align*}
+\subsubsection{First Order Correction}
+\begin{align*}
+E_{n}^{(1)}&=\left\langle\phi_{n}|\hat{W}| \phi_{n}\right\rangle\\
+\text{Energy of first}&\text{ order pertubration}\\
+E_{n}&=E_{n}^{(0)}+\left\langle\phi_{n}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle\\
+\text{First order correction }&\text{of eigen vector}\\
+\left|\psi_{n}^{(1)}\right\rangle&=\sum_{m \neq n} \frac{\left\langle\phi_{m}|\hat{W}| \phi_{n}\right\rangle}{E_{n}^{(0)}-E_{m}^{(0)}}\left|\phi_{m}\right\rangle\\
+\text{The eigenfunction $\left|\psi_{n}\right\rangle$ of $\hat{H}$ to}&\text{ first order in $\lambda \hat{W}$ can then be obtained as}\\
+\left|\psi_{n}\right\rangle&=\left|\phi_{n}\right\rangle+\sum_{m \neq n} \frac{\left\langle\phi_{m}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle}{E_{n}^{(0)}-E_{m}^{(0)}}\left|\phi_{m}\right\rangle
+\end{align*}
+\subsubsection{Second Order Correction}
+\begin{align*}
+E_{n}^{(2)}&=\left\langle\phi_{n}|\hat{W}| \psi_{n}^{(1)}\right\rangle\\
+\text{which can  be}&\text{ written as}\\
+E_{n}^{(2)}&=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|\hat{W}| \phi_{n}\right\rangle\right|^{2}}{E_{n}^{(0)}-E_{m}^{(0)}}\\
+\text{ The eigenenergy}&\text{ to second order in $ \hat{H}_{p}$ is obtained as }\\
+E_{n}&=E_{n}^{(0)}+\left\langle\phi_{n}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle+\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}\left|\hat{H}_{p}\right| \phi_{n}\right\rangle\right|^{2}}{E_{n}^{(0)}-E_{m}^{(0)}}+\cdots .
+\end{align*}
+
+
+
+
+
+
 \subsubsection{Application}
-\subsubsection{Stark effect(n=1-non degenerate case)}
+\subsubsection{Stark Effect(n=1-Non Degenerate Case)}
 
  The effect that an external electric field has on the energy levels of an atom is called the Stark effect. In the absence of an electric field, the (unperturbed) Hamiltonian of the hydrogen atom (in CGS units) is:
 $$
@@ -93,18 +98,18 @@ $$
 When the electric field is turned on, the interaction between the atom and the field generates a term $\hat{H}_{p}=e \overrightarrow{\mathcal{E}} \cdot \vec{r}=e \mathcal{E} \hat{Z}$ that needs to be added to $\hat{H}_{0}$.
 
 Since the excited states of the hydrogen atom are degenerate while the ground state is not, nondegenerate perturbation theory applies only to the ground state, $\psi_{100}(\vec{r})$. Ignoring the spin degrees of freedom, the energy of this system to second-order perturbation is given as follows
-$$
-E_{100}=E_{100}^{(0)}+e \mathcal{E}\langle 100|\hat{Z}| 100\rangle+e^{2} \mathcal{E}^{2} \sum_{n l m \neq 100} \frac{|\langle n l m|\hat{Z}| 100\rangle|^{2}}{E_{100}^{(0)}-E_{n l m}^{(0)}}
-$$
-The term
-$$
-\langle 100|\hat{Z}| 100\rangle=\int\left|\psi_{100}(\vec{r})\right|^{2} z d^{3} r
+	$$
+	\begin{aligned}
+	&E_{100}=E_{100}^{(0)}+e \mathcal{E}\langle 100|\hat{Z}| 100\rangle+e^{2} \mathcal{E}^{2} \sum_{n l m \neq 100} \frac{|\langle n l m|\hat{Z}| 100\rangle|^{2}}{E_{100}^{(0)}-E_{n l m}^{(0)}}\\
+	\text{The term}&\\
+	&\langle 100|\hat{Z}| 100\rangle=\int\left|\psi_{100}(\vec{r})\right|^{2} z d^{3} r
+\end{aligned}
 $$
 is zero, since $\hat{Z}$ is odd under parity and $\psi_{100}(\vec{r})$ has a definite parity. This means that there can be no correction term to the energy which is proportional to the electric field and hence there is no linear Stark effect. The underlying physics behind this is that when the hydrogen atom is in its ground state, it has no permanent electric dipole moment. We are left then with only a quadratic dependence of the energy  on the electric field. This is called the quadratic Stark effect. This correction, which is known as the energy shift $\Delta E$, is given by
 $$
 \Delta E=e^{2} \mathcal{E}^{2} \sum_{n l m \neq 100} \frac{|\langle n l m|\hat{Z}| 100\rangle|^{2}}{E_{100}^{(0)}-E_{n l m}^{(0)}}
 $$
-\subsection{Degenerate perturbation theory}
+\subsection{Degenerate Perturbation Theory}
  We now apply perturbation theory to determine the energy spectrum and the states of a system whose unperturbed Hamiltonian $\hat{H}_{0}$ is degenerate:
 $$
 \hat{H}\left|\psi_{n}\right\rangle=\left(\hat{H}_{0}+\hat{H}_{p}\right)\left|\psi_{n}\right\rangle=E_{n}\left|\psi_{n}\right\rangle .
@@ -177,7 +182,7 @@ $$\left|\begin{array}{ccccc}
  \end{itemize}
 
 \subsubsection{Application}
-\textbf{Stark effect n=2 degenerate states}\\
+\textbf{Stark Effect N=2 Degenerate States}\\
 In the absence of any external electric field, the first excited state (i.e., $n=2$ ) is fourfold degenerate: the states $|n l m\rangle=|200\rangle,|210\rangle,|211\rangle$, and $|21-1\rangle$ have the same energy $E_{2}=-R_{y} / 4$, where $R_{y}=\mu e^{4} /\left(2 \hbar^{2}\right)=13.6 \mathrm{eV}$ is the Rydberg constant.
 
 When the external electric field is turned on, some energy levels will split. The energy due to the interaction between the dipole moment of the electron $(\vec{d}=-e \vec{r})$ and the external electric field $(\overrightarrow{\mathcal{E}}=\overrightarrow{\mathcal{E}} \vec{k})$ is given by
@@ -223,57 +228,58 @@ $$
 $$
 This perturbation has only partially removed the degeneracy of the $n=2$ level; the states $|211\rangle$ and $|21-1\rangle$ still have the same energy $E_{3}=E_{4}=-R_{y} / 4$.
 
-\subsection{spin orbit coupling}
+\subsection{Spin Orbit Coupling}
 One of the most useful applications of perturbation theory is to calculate the energy corrections for the hydrogen atom, notably the corrections due to the fine structure. The fine structure is in turn due to two effects: spin-orbit coupling and the relativistic correction. Let us look at these corrections separately.\\
 \par The spin-orbit coupling in hydrogen arises from the interaction between the electron's spin magnetic moment, $\vec{\mu}_{S}=-e \vec{S} /\left(m_{e} c\right)$, and the proton's orbital magnetic field $\vec{B}$.
 
 The origin of the magnetic field experienced by the electron moving at $\vec{v}$ in a circular orbit around the proton can be explained classically as follows. The electron, within its rest frame. sees the proton moving at $-\vec{v}$ in a circular orbit around it . From classical electrodynamics, the magnetic field experienced by the electron is
+	$$
+	\begin{aligned}
+	\vec{B}&=-\frac{1}{c} \vec{v} \times \vec{E}=-\frac{1}{m_{e} c} \vec{p} \times \vec{E}=\frac{1}{m_{e} c} \vec{E} \times \vec{p},\\
+	\text{But }\quad\vec{E}(\vec{r})&=-\vec{\nabla} \phi(r)=\frac{1}{e} \vec{\nabla} V(r)=\frac{1}{e} \frac{\vec{r}}{r} \frac{d V}{d r} \\
+	\text{Then B is }\quad\vec{B}&=\frac{1}{m_{e} c} \vec{E} \times \vec{p}=\frac{1}{e m_{e} c} \frac{1}{r} \frac{d V}{d r} \vec{r} \times \vec{p}=\frac{1}{e m_{e} c} \frac{1}{r} \frac{d V}{d r} \vec{L}\\
+\text{	where }\quad\vec{L}&=\vec{r} \times \vec{p}\text{ is the orbital angular momentum of the electron.}
+\end{aligned}
 $$
-\vec{B}=-\frac{1}{c} \vec{v} \times \vec{E}=-\frac{1}{m_{e} c} \vec{p} \times \vec{E}=\frac{1}{m_{e} c} \vec{E} \times \vec{p},
-$$
-But $$\vec{E}(\vec{r})=-\vec{\nabla} \phi(r)=\frac{1}{e} \vec{\nabla} V(r)=\frac{1}{e} \frac{\vec{r}}{r} \frac{d V}{d r} $$
-Then B is $$\vec{B}=\frac{1}{m_{e} c} \vec{E} \times \vec{p}=\frac{1}{e m_{e} c} \frac{1}{r} \frac{d V}{d r} \vec{r} \times \vec{p}=\frac{1}{e m_{e} c} \frac{1}{r} \frac{d V}{d r} \vec{L}$$
 where $\vec{L}=\vec{r} \times \vec{p}$ is the orbital angular momentum of the electron.
 The interaction of the electron's spin dipole moment $\vec{\mu}_{S}$ with the orbital magnetic field $\vec{B}$ of the nucleus gives rise to the following interaction energy:
-$$
-\hat{H}_{S O}=-\vec{\mu}_{S} \cdot \vec{B}=\frac{e}{m_{e} c} \vec{S} \cdot \vec{B}=\frac{1}{m_{e}^{2} c^{2}} \frac{1}{r} \frac{d V}{d r} \vec{S} \cdot \vec{L} .
-$$
- This energy turns out to be twice the observed spin-orbit interaction.Therefore \\
- $$\hat{H}_{S O}=\frac{1}{2 m_{e}^{2} c^{2}} \frac{1}{r} \frac{d V}{d r} \vec{S} \cdot \vec{L}$$
- The corresponding quantum mechanical expression \\
- $$\hat{H}_{S O}=\frac{1}{2 m_{e}^{2} c^{2}} \frac{1}{r} \frac{d \hat{V}}{d r} \hat{S} \cdot \hat{\vec{L}}$$
-For a hydrogen's electron, $V(r)=-e^{2} / r$ and $d V / d r=e^{2} / r^{2}$.
-$$
-\hat{H}_{S O}=\frac{e^{2}}{2 m_{e}^{2} c^{2}} \frac{1}{r^{3}} \hat{S} \cdot \hat{L}
-$$
-We can now use perturbation theory to calculate the contribution of the spin-orbit interaction in a hydrogen atom:
-$$
-\hat{H}=\frac{\hat{\vec{p}}^{2}}{2 m_{e}}-\frac{e^{2}}{r}+\frac{e^{2}}{2 m_{e}^{2} c^{2} r^{3}} \hat{\vec{S}} \cdot \hat{\vec{L}}=\hat{H}_{0}+\hat{H}_{S O}
+	$$
+	\begin{aligned}
+	\hat{H}_{S O}&=-\vec{\mu}_{S} \cdot \vec{B}=\frac{e}{m_{e} c} \vec{S} \cdot \vec{B}=\frac{1}{m_{e}^{2} c^{2}} \frac{1}{r} \frac{d V}{d r} \vec{S} \cdot \vec{L}\\
+	\text{ This energy turns out }&\text{to be twice the observed spin-orbit interaction.Therefore}\\
+	\hat{H}_{S O}&=\frac{1}{2 m_{e}^{2} c^{2}} \frac{1}{r} \frac{d V}{d r} \vec{S} \cdot \vec{L}\\
+	\text{ The corresponding }&\text{quantum mechanical expression}\\
+\hat{H}_{S O}&=\frac{1}{2 m_{e}^{2} c^{2}} \frac{1}{r} \frac{d \hat{V}}{d r} \hat{S} \cdot \hat{\vec{L}}\\
+\text{	For a hydrogen's electron, $V(r)$}&=\text{	$-e^{2} / r$ and $d V / d r=e^{2} / r^{2}$.}\\
+	\hat{H}_{S O}&=\frac{e^{2}}{2 m_{e}^{2} c^{2}} \frac{1}{r^{3}} \hat{S} \cdot \hat{L}\\
+\text{	We can now use perturbation theory }&\text{to calculate the contribution of the spin-orbit interaction in a hydrogen atom:}\\
+	\hat{H}&=\frac{\hat{\vec{p}}^{2}}{2 m_{e}}-\frac{e^{2}}{r}+\frac{e^{2}}{2 m_{e}^{2} c^{2} r^{3}} \hat{\vec{S}} \cdot \hat{\vec{L}}=\hat{H}_{0}+\hat{H}_{S O}
+\end{aligned}
 $$
 where $\hat{H}_{0}$ is the unperturbed Hamiltonian and $\hat{H}_{S O}$ is the perturbation. To apply perturbation theory, we need to specify the unperturbed states-the eigenstates of $\hat{H}_{0 .}$ Since the spin of the hydrogen's electron is taken into account, the total wave function of $\hat{H}_{0}$ consists of a direct product of two parts: a spatial part and a spin part. \\
 The eigen state is 
-$$\Psi_{n, l, j=l \pm \frac{1}{2}, m}=R_{n l}(r)\left[\sqrt{\frac{l \mp m+\frac{1}{2}}{2 l+1}} Y_{l, m+\frac{1}{2}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle \pm \sqrt{\frac{l \pm m+\frac{1}{2}}{2 l+1}} Y_{l, m-\frac{1}{2}}\left|\frac{1}{2}, \frac{1}{2}\right\rangle\right]$$
- the corresponding eigenvalues are given by
- $$\langle n l j m|\hat{\vec{L}} \cdot \hat{\vec{S}}| n l j m\rangle=\frac{\hbar^{2}}{2}\left[j(j+1)-l(l+1)-\frac{3}{4}\right]$$
-$\text { since } \hat{\vec{S}} \cdot \hat{\vec{L}}=\frac{1}{2}\left[\hat{J}^{2}-\hat{L}^{2}-\hat{S}^{2}\right]$
-
-The eigenvalues of total Hamiltonian H are then given to first-order correction by
+	$$
+	\begin{aligned}
+	\Psi_{n, l, j=l \pm \frac{1}{2}, m}&=R_{n l}(r)\left[\sqrt{\frac{l \mp m+\frac{1}{2}}{2 l+1}} Y_{l, m+\frac{1}{2}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle \pm \sqrt{\frac{l \pm m+\frac{1}{2}}{2 l+1}} Y_{l, m-\frac{1}{2}}\left|\frac{1}{2}, \frac{1}{2}\right\rangle\right]\\
+\text{	The corresponding }&\text{eigenvalues are given by}\\
+	\langle n l j m|\hat{\vec{L}} \cdot \hat{\vec{S}}| n l j m\rangle&=\frac{\hbar^{2}}{2}\left[j(j+1)-l(l+1)-\frac{3}{4}\right]\\
+	\text { since } \hat{\vec{S}} \cdot \hat{\vec{L}}&=\frac{1}{2}\left[\hat{J}^{2}-\hat{L}^{2}-\hat{S}^{2}\right]\\
+	\text{The eigenvalues of total }&\text{Hamiltonian H are then given to first-order correction by}
+\end{aligned}
+$$
 $$
 E_{n l j}=E_{n}^{(0)}+\left\langle n l j m_{j}\left|\hat{H}_{S O}\right| n l j m_{j}\right\rangle=-\frac{e^{2}}{2 a_{0}} \frac{1}{n^{2}}+E_{S O}^{(1)}
 $$
 where $E_{n}^{(0)}=-e^{2} /\left(2 a_{0} n^{2}\right)=-\left(13.6 / n^{2}\right) \mathrm{eV}$ are the energy levels of hydrogen and $E_{S O}^{(1)}$ is the energy due to spin-orbit interaction:
+	$$
+	\begin{aligned}
+	E_{S O}^{(1)}=\left\langle n l j m_{j}\left|\hat{H}_{S O}\right| n l j m_{j}\right\rangle&=\frac{e^{2} \hbar^{2}}{4 m_{e}^{2} c^{2}}\left[j(j+1)-l(l+1)-\frac{3}{4}\right]\left\langle n l\left|\frac{1}{r^{3}}\right| n l\right\rangle\\
+	\left\langle n l\left|\frac{1}{r^{3}}\right| n l\right\rangle&=\frac{2}{n^{3} l(l+1)(2 l+1) a_{0}^{3}}\\
+	E_{S O}^{(1)}&=\frac{e^{2} \hbar^{2}}{2 m_{e}^{2} c^{2}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{n^{3} l(l+1)(2 l+1) a_{0}^{3}}\right]\\
+		&=\left(\frac{e^{2}}{2 a_{0}} \frac{1}{n^{2}}\right)\left(\frac{\hbar}{m_{e} c a_{0}}\right)^{2} \frac{1}{n}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right] \\
+	E_{S O}^{(1)}&=\frac{\left|E_{n}^{(0)}\right| \alpha^{2}}{n}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right],
+\end{aligned}
 $$
-E_{S O}^{(1)}=\left\langle n l j m_{j}\left|\hat{H}_{S O}\right| n l j m_{j}\right\rangle=\frac{e^{2} \hbar^{2}}{4 m_{e}^{2} c^{2}}\left[j(j+1)-l(l+1)-\frac{3}{4}\right]\left\langle n l\left|\frac{1}{r^{3}}\right| n l\right\rangle
-$$
-$$\left\langle n l\left|\frac{1}{r^{3}}\right| n l\right\rangle=\frac{2}{n^{3} l(l+1)(2 l+1) a_{0}^{3}}$$
-
-$$E_{S O}^{(1)}=\frac{e^{2} \hbar^{2}}{2 m_{e}^{2} c^{2}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{n^{3} l(l+1)(2 l+1) a_{0}^{3}}\right]$$
-
-$$\begin{aligned}
-	&=\left(\frac{e^{2}}{2 a_{0}} \frac{1}{n^{2}}\right)\left(\frac{\hbar}{m_{e} c a_{0}}\right)^{2} \frac{1}{n}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right] \\
-	&E_{S O}^{(1)}=\frac{\left|E_{n}^{(0)}\right| \alpha^{2}}{n}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right],
-\end{aligned}$$
-
 where $\alpha$ is a dimensionless constant called the fine structure constant:
 $$
 \alpha=\frac{\hbar}{m_{e} c a_{0}}=\frac{e^{2}}{\hbar c} \simeq \frac{1}{137} .
@@ -282,25 +288,20 @@ Since $a_{0}=\hbar^{2} /\left(m_{e} e^{2}\right)$ and hence $E_{n}^{(0)}=-e^{2} 
 $$
 E_{S O}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{2 n^{3}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right] .
 $$
-\subsubsection{Relativistic correction}
+\subsubsection{Relativistic Correction}
 Although the relativistic effect in hydrogen due to the motion of the electron is small, it can still be detected by spectroscopic techniques. The relativistic kinetic energy of the electron is given by $\hat{T}=\sqrt{\hat{p}^{2} c^{2}+m_{e}^{2} c^{4}}-m_{e} c^{2}$, where $m_{e} c^{2}$ is the rest mass energy of the electron; an expansion of this relation to $\hat{p}^{4}$ yields
-$$
-\sqrt{\hat{p}^{2} c^{2}+m_{e}^{2} c^{4}}-m_{e} c^{2} \simeq \frac{\hat{p}^{2}}{2 m_{e}}-\frac{\hat{p}^{4}}{8 m_{e}^{3} c^{2}}+\cdots
-$$
-When this term is included, the hydrogen's Hamiltonian becomes
-$$
-\hat{H}=\frac{\hat{p}^{2}}{2 m_{e}}-\frac{e^{2}}{r}-\frac{\hat{p}^{4}}{8 m^{3} c^{2}}=\hat{H}_{0}+\hat{H}_{R},
-$$
-where $\hat{H}_{0}=\hat{p}^{2} /\left(2 m_{e}\right)-e^{2} / r$ is the unperturbed Hamiltonian and $\hat{H}_{R}=-\hat{p}^{4} /\left(8 m_{e}^{3} c^{2}\right)$ is the relativistic mass correction which can be treated by first-order perturbation theory:
-$$
-E_{R}^{(1)}=\left\langle n l j m_{j}\left|\hat{H}_{R}\right| n l j m_{j}\right\rangle=-\frac{1}{8 m_{c}^{3} c^{2}}\left\langle n l j m_{j}\left|\hat{p}^{4}\right| n l j m_{j}\right\rangle .
-$$
-$$
-\left\langle n l j m,\left|\hat{p}^{4}\right| n l j m_{j}\right\rangle=\frac{m_{e}^{4} e^{8}}{\hbar^{4} n^{4}}\left(\frac{8 n}{2 l+1}-3\right)=\frac{\alpha^{4} m_{e}^{4} c^{4}}{n^{4}}\left(\frac{8 n}{2 l+1}-3\right)
-$$
-An insertion of this value in last equation leads to
-$$
-E_{R}^{(1)}=-\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left(\frac{8 n}{2 l+1}-3\right)=-\frac{\alpha^{2}\left|E_{n}^{(0)}\right|}{4 n^{2}}\left(\frac{8 n}{2 l+1}-3\right)
+	$$
+	\begin{aligned}
+	\sqrt{\hat{p}^{2} c^{2}+m_{e}^{2} c^{4}}-m_{e} c^{2} &\simeq \frac{\hat{p}^{2}}{2 m_{e}}-\frac{\hat{p}^{4}}{8 m_{e}^{3} c^{2}}+\cdots\\
+\text{	When this term is included, the } &\text{hydrogen's Hamiltonian becomes}\\
+	\hat{H}&=\frac{\hat{p}^{2}}{2 m_{e}}-\frac{e^{2}}{r}-\frac{\hat{p}^{4}}{8 m^{3} c^{2}}=\hat{H}_{0}+\hat{H}_{R},\\
+\text{	where $\hat{H}_{0}=\hat{p}^{2} /\left(2 m_{e}\right)-e^{2} / r$ is the unperturbed  }&\text{Hamiltonian and $\hat{H}_{R}=-\hat{p}^{4} /\left(8 m_{e}^{3} c^{2}\right)$ is the relativistic mass }\\
+\text{correction which can be treated by first-order per}&\text{turbation theory:}\\
+	E_{R}^{(1)}&=\left\langle n l j m_{j}\left|\hat{H}_{R}\right| n l j m_{j}\right\rangle=-\frac{1}{8 m_{c}^{3} c^{2}}\left\langle n l j m_{j}\left|\hat{p}^{4}\right| n l j m_{j}\right\rangle .\\
+	\left\langle n l j m,\left|\hat{p}^{4}\right| n l j m_{j}\right\rangle&=\frac{m_{e}^{4} e^{8}}{\hbar^{4} n^{4}}\left(\frac{8 n}{2 l+1}-3\right)=\frac{\alpha^{4} m_{e}^{4} c^{4}}{n^{4}}\left(\frac{8 n}{2 l+1}-3\right)\\
+\text{	An insertion of this value in }&\text{last equation leads to}\\
+	E_{R}^{(1)}&=-\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left(\frac{8 n}{2 l+1}-3\right)=-\frac{\alpha^{2}\left|E_{n}^{(0)}\right|}{4 n^{2}}\left(\frac{8 n}{2 l+1}-3\right)
+\end{aligned}
 $$
 \textbf{Remark}\\
 For a hydrogenlike atom having $Z$ electrons, and if we neglect the spin-orbit interaction,
@@ -308,7 +309,7 @@ $$
 E_{n}=Z^{2}\left(E_{n}^{(0)}+E_{R}^{(1)}\right)=Z^{2} E_{n}^{(0)}\left[1+\frac{\alpha^{2}}{n}\left(\frac{2}{2 l+1}-\frac{3}{4 n}\right)\right]
 $$
 where $E_{n}^{(0)}=-e^{4} m_{e} /\left(2 \hbar^{2} n^{2}\right)=-\alpha^{2} m_{e} c^{2} /\left(2 n^{2}\right)=-13.6 \mathrm{eV} / n^{2}$ is the Bohr energy.
-\subsubsection{Fine structure of hydrogen atom}
+\subsubsection{Fine Structure of Hydrogen Atom}
 The fine structure correction is obtained by adding the expressions for the spin-orbit and relativistic corrections
 $$
 E_{F S}^{(1)}=E_{S O}^{(1)}+E_{R}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{2 n^{3}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right]-\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{8 n}{2 l+1}-3\right]
@@ -327,53 +328,49 @@ $$\begin{aligned}
 	&=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[3-\frac{4 n}{j+\frac{1}{2}}\right]
 \end{aligned}$$
 As equations show, the expressions for the fine structure correction corresponding to $j=l+\frac{1}{2}$ and $j=l-\frac{1}{2}$ are the same:
-$$
-E_{F S}^{(1)}=E_{S O}^{(1)}+E_{R}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left(3-\frac{4 n}{j+\frac{1}{2}}\right)=\frac{\alpha^{2} E_{n}^{(0)}}{4 n^{2}}\left(\frac{4 n}{j+\frac{1}{2}}-3\right)
-$$
-where $E_{n}^{(0)}=-\alpha^{2} m_{e} c^{2} /\left(2 n^{2}\right)$ and $j=l \pm \frac{1}{2}$.
-
-$$\frac{E_{S O}^{(1)}}{\left|E_{n}^{(0)}\right|} \simeq \alpha^{2}, \quad\left|\frac{E_{R}^{(1)}}{E_{n}^{(0)}}\right| \simeq \alpha^{2}, \quad \frac{E_{F S}^{(1)}}{\left|E_{n}^{(0)}\right|} \simeq \alpha^{2}$$
-
-All these terms are of the order of $10^{-4}$ since $\alpha^{2}=(1 / 137)^{2} \simeq 10^{-4}$\\
-In sum, the hydrogen's Hamiltonian, when including the fine structure, is given by
-$$\hat{H}=\hat{H}_{0}+\hat{H}_{F S}=\hat{H}_{0}+\left(\hat{H}_{S O}+\hat{H}_{R}\right)=\frac{\hat{p}^{2}}{2 m_{e}}-\frac{e^{2}}{r}+\left(\frac{e^{2}}{2 m_{e}^{2} c^{2} r^{3}} \hat{\hat{S}} \cdot \hat{\vec{L}}-\frac{\hat{p}^{4}}{8 m_{e}^{3} c^{2}}\right)$$
-A first-order perturbation calculation of the energy levels of hydrogen, when including the fine structure, yields
-$$
-E_{n j}=E_{n}^{(0)}+E_{F S}^{(1)}=E_{n}^{(0)}\left[1+\frac{\alpha^{2}}{4 n^{2}}\left(\frac{4 n}{j+\frac{1}{2}}-3\right)\right]
+	$$
+	\begin{aligned}
+	E_{F S}^{(1)}&=E_{S O}^{(1)}+E_{R}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left(3-\frac{4 n}{j+\frac{1}{2}}\right)=\frac{\alpha^{2} E_{n}^{(0)}}{4 n^{2}}\left(\frac{4 n}{j+\frac{1}{2}}-3\right)\\
+\text{	where }E_{n}^{(0)}&=-\alpha^{2} m_{e} c^{2} /\left(2 n^{2}\right)\text{ and $j=l \pm \frac{1}{2}$.}\\
+	\frac{E_{S O}^{(1)}}{\left|E_{n}^{(0)}\right|}& \simeq \alpha^{2}, \quad\left|\frac{E_{R}^{(1)}}{E_{n}^{(0)}}\right| \simeq \alpha^{2}, \quad \frac{E_{F S}^{(1)}}{\left|E_{n}^{(0)}\right|} \simeq \alpha^{2}\\
+\text{	All these terms are of }&\text{the order of $10^{-4}$ since $\alpha^{2}=(1 / 137)^{2} \simeq 10^{-4}$}\\
+\text{	In sum, the hydrogen's }&\text{Hamiltonian, when including the fine structure, is given by}\\
+	\hat{H}&=\hat{H}_{0}+\hat{H}_{F S}=\hat{H}_{0}+\left(\hat{H}_{S O}+\hat{H}_{R}\right)=\frac{\hat{p}^{2}}{2 m_{e}}-\frac{e^{2}}{r}+\left(\frac{e^{2}}{2 m_{e}^{2} c^{2} r^{3}} \hat{\hat{S}} \cdot \hat{\vec{L}}-\frac{\hat{p}^{4}}{8 m_{e}^{3} c^{2}}\right)\\
+\text{	A first-order perturbation }&\text{calculation of the energy levels of hydrogen, when including the fine structure, yields}\\
+	E_{n j}&=E_{n}^{(0)}+E_{F S}^{(1)}=E_{n}^{(0)}\left[1+\frac{\alpha^{2}}{4 n^{2}}\left(\frac{4 n}{j+\frac{1}{2}}-3\right)\right]
+\end{aligned}
 $$
 \begin{exercise}
  A particle of mass $\mathrm{m}_{0}$ and charge ' $e$ ' oscillates along the the $\mathrm{x}$-axis in a one-dimensional harmonic potential with an angular frequency $\omega$. If an electric field $\varepsilon$ is applied along the $x$-axis, evaluate the first and second order corrections to the energy of the $\mathrm{n}^{\text {th }}$ state.
 \end{exercise}
 \begin{answer}
-The potential energy due to the field $\varepsilon=-\vec{p} \cdot \vec{E}=-e \varepsilon x$\\
-The perturbation $$H^{\prime}=-e \varepsilon x=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left(\hat{a}+\hat{a}^{\dagger}\right)$$
-First order correction to energy $$=E_{n}^{(1)}=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left\langle n\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| n\right\rangle=0$$
-$$\text { second order correction to energy }=E_{n}^{(2)}=\sum_{m \neq n} \frac{\left|\left\langle n\left|H^{\prime}\right| m\right\rangle\right|^{2}}{E_{n}^{0}-E_{m}^{0}}$$
-$$\text { Now, }\left\langle n\left|H^{\prime}\right| m\right\rangle=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left\langle n\left|a+a^{\dagger}\right| m\right\rangle$$
-Here, $m$ can take all integral values except $n$.\\
- The non-vanishing elements corresponds to $m=(n+1)$ and $(n-1)$.\\
- Hence,
-Therefore, $$E_{n}^{(2)}=e^{2} \varepsilon^{2} \frac{\hbar}{2 m_{0} \omega}\left[\frac{(\sqrt{n+1})^{2}}{-\hbar \omega}+\frac{(\sqrt{n})^{2}}{\hbar \omega}\right]=-\frac{e^{2} \varepsilon^{2}}{2 m_{0} \omega^{2}}$$	
+	\begin{align*}
+	\text{The potential energy due to the field $\varepsilon$}&\text{$=-\vec{p} \cdot \vec{E}=-e \varepsilon x$}\\
+\text{	The perturbation }&\\
+H^{\prime}&=-e \varepsilon x=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left(\hat{a}+\hat{a}^{\dagger}\right)\\
+	\text{First order correction to energy}
+	&=E_{n}^{(1)}=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left\langle n\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| n\right\rangle=0\\
+	\text { second order correction to energy }&=E_{n}^{(2)}=\sum_{m \neq n} \frac{\left|\left\langle n\left|H^{\prime}\right| m\right\rangle\right|^{2}}{E_{n}^{0}-E_{m}^{0}}\\
+	\text { Now, }\left\langle n\left|H^{\prime}\right| m\right\rangle&=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\left\langle n\left|a+a^{\dagger}\right| m\right\rangle\\
+\text{	Here, $m$ can take all }&\text{integral values except $n$.}\\
+	\text{The non-vanishing }&\text{elements corresponds to $m=(n+1)$ and $(n-1)$.}\\
+\text{	Hence,$\quad$
+	Therefore,} E_{n}^{(2)}&=e^{2} \varepsilon^{2} \frac{\hbar}{2 m_{0} \omega}\left[\frac{(\sqrt{n+1})^{2}}{-\hbar \omega}+\frac{(\sqrt{n})^{2}}{\hbar \omega}\right]=-\frac{e^{2} \varepsilon^{2}}{2 m_{0} \omega^{2}}
+	\end{align*}
 \end{answer}
 \begin{exercise}
 	 Evaluate the first and second order correction to the energy of the $n=1$ state of an oscillator of mass 'm' and angular frequency ' $\omega$ ' subjected to a potential.
 \end{exercise}
 \begin{answer}
-	$$
-	V(x)=\frac{1}{2} m \omega^{2} x^{2}+b x, \quad b x<<\frac{1}{2} m \omega^{2} x^{2}
-	$$
-	The first order correction to energy for the $n=1$ state is given by
-	$$
-	E_{1}^{(1)}=\langle 1|b x| 1\rangle=b \sqrt{\frac{\hbar}{2 m \omega}}\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| 1\right\rangle=0
-	$$
-	Using, $a|n\rangle=\sqrt{n}|n-1\rangle$ and $a^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle$
-	The second order correction to energy for the $n=1$ state is given by
-	$$
-	\begin{aligned}
-	E_{1}^{(2)} &=b^{2}\left(\frac{\hbar}{2 m \omega}\right) \sum_{k \neq 1} \frac{\left|\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| k_{k}\right\rangle\right|^{2}}{E_{1}^{0}-E_{k}^{0}}=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left[\frac{1}{E_{1}^{0}-E_{0}^{0}}+\frac{2}{E_{1}^{0}-E_{2}^{0}}\right] \\
+	\begin{align*}
+	V(x)&=\frac{1}{2} m \omega^{2} x^{2}+b x, \quad b x<<\frac{1}{2} m \omega^{2} x^{2}\\
+\text{	The first order }&\text{correction to energy for the $n=1$ state is given by}\\
+	E_{1}^{(1)}&=\langle 1|b x| 1\rangle=b \sqrt{\frac{\hbar}{2 m \omega}}\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| 1\right\rangle=0\\
+	\text{Using, }a|n\rangle&=\sqrt{n}|n-1\rangle\text{ and} a^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle\\
+	\text{The second order correction}&\text{ to energy for the $n=1$ state is given by}\\
+	E_{1}^{(2)} &=b^{2}\left(\frac{\hbar}{2 m \omega}\right) \sum_{k \neq 1} \frac{\left|\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| k_{k}\right\rangle\right|^{2}}{E_{1}^{0}-E_{k}^{0}}\\&=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left[\frac{1}{E_{1}^{0}-E_{0}^{0}}+\frac{2}{E_{1}^{0}-E_{2}^{0}}\right] \\
 	&=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left(\frac{1}{\hbar \omega}-\frac{2}{\hbar \omega}\right)=-\frac{b^{2}}{2 m \omega^{2}}
-	\end{aligned}
-	$$
+	\end{align*}
 \end{answer}
 \begin{exercise}
 	Example 4. Consider the infinite square well defined by
@@ -386,33 +383,27 @@ Therefore, $$E_{n}^{(2)}=e^{2} \varepsilon^{2} \frac{\hbar}{2 m_{0} \omega}\left
 	Using the first order perturbation theory, calculate the energy of the first two states of the potential wellifa portion defined by $V(x)=V_{0} x / a$, where $\mathrm{V}_{0}$ is a small constant, with $0 \leq x \leq a$ being sliced off.
 \end{exercise}
 \begin{answer}
-	The energy eigenvalues and normalized eigenfunctions of the $\mathrm{n}^{\text {th }}$ state of unperturbed Hamiltonian are
-	$$
-	E_{n}^{0}=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}, \psi_{n}^{0}=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}, \quad n=1,2,3, \ldots
-	$$
-	The perturbation $H^{\prime}=V_{0} x / a$ which is depicted in figure below.\\
+\begin{align*}
+\intertext{	The energy eigenvalues and normalized eigenfunctions of the $\mathrm{n}^{\text {th }}$ state of unperturbed Hamiltonian are}
+	E_{n}^{0}&=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}, \psi_{n}^{0}=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}, \quad n=1,2,3, \ldots\\
+\text{	The perturbation }H^{\prime}&=V_{0} x / a\text{ which is depicted in figure below.}
+\end{align*}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{pert-crop}
+		\includegraphics[height=3.3cm,width=4cm]{pert-crop}
 		\caption{sliced infinite potential well}
 		\label{}
 	\end{figure}
-	The first order correction to the energy for the $\mathrm{n}=1$ state is
-	$$
-	E_{1}^{(1)}=\left\langle\psi_{1}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{1}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int_{0}^{a} x \sin ^{2} \frac{\pi x}{a} d x
-	$$
-	$$\begin{aligned}
-		&=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2}\left(1-\cos \frac{2 \pi x}{a}\right) d x=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} d x-\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} \cos \frac{2 \pi x}{a} d x \\
-		&=\frac{V_{0}}{2}+0=\frac{V_{0}}{2}
-	\end{aligned}$$
-	The first order correction to the enegry for the $n=2$ state is
-	$$
-	E_{2}^{(1)}=\left\langle\psi_{2}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{2}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int x \sin ^{2} \frac{2 \pi x}{a} d x=\frac{V_{0}}{2}
-	$$
-	The ground state and first excited energies corrected upto first order are
-	$$
-	\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}+\frac{V_{0}}{2} \text { and } \frac{2 \pi^{2} \hbar^{2}}{m a^{2}}+\frac{V_{0}}{2}
-	$$
+	\begin{align*}
+	\text{The first order }&\text{correction to the energy for the $\mathrm{n}=1$ state is}\\
+	E_{1}^{(1)}&=\left\langle\psi_{1}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{1}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int_{0}^{a} x \sin ^{2} \frac{\pi x}{a} d x\\
+	&=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2}\left(1-\cos \frac{2 \pi x}{a}\right) d x=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} d x-\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} \cos \frac{2 \pi x}{a} d x \\
+	&=\frac{V_{0}}{2}+0=\frac{V_{0}}{2}\\
+\text{	The first order correction }&\text{to the enegry for the $n=2$ state is}\\
+	E_{2}^{(1)}&=\left\langle\psi_{2}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{2}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int x \sin ^{2} \frac{2 \pi x}{a} d x=\frac{V_{0}}{2}\\
+	\text{The ground state and }&\text{first excited energies corrected upto first order are}\\
+	\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}&+\frac{V_{0}}{2} \text { and } \frac{2 \pi^{2} \hbar^{2}}{m a^{2}}+\frac{V_{0}}{2}
+	\end{align*}
 \end{answer}
 \begin{exercise}
 . A particle of mass ' $m$ ' moves in an infinite one-dimensional box of bottom ' $a$ ' with a potential dip as defined by
@@ -449,13 +440,13 @@ $$
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=3cm,width=5cm]{pert2}
+	\includegraphics[height=3cm,width=4.5cm]{pert2}
 	\caption{}
 	\label{}
 \end{figure}
 \end{minipage}
 \end{answer}
-\section{The variational method}
+\section{The Variational Method}
 
 There exist systems whose Hamiltonians are known, but they cannot be solved exactly or by a perturbative treatment. That is, there is no closely related Hamiltonian that can be solved exactly or approximately by perturbation theory because the first order is not sufficiently accurate. One of the approximation methods that is suitable for solving such problems is the variational method, which is also called the Rayleigh-Ritz method.  The variational method is useful for determining upper bound values for the eigenenergies of a system whose Hamiltonian is known whereas its eigenvalues and eigenstates are not known. It is particularly useful for determining the ground state. It becomes quite difficult to determine the energy levels of the excited states.\\\\
 In the context of the variational method, one does not attempt to solve the eigenvalue problem
@@ -506,52 +497,50 @@ $$
  For the harmonic oscillator $V(x)=\frac{1}{2} m \omega^{2} x^{2}$, then choose a trial wave function $\psi(x, \alpha)=A e^{-\alpha x^{2}}$. Find the energy of ground state with the method of variational principle.
 \end{exercise}
 \begin{answer}
-	Solution: From normalization condition $\int_{-\infty}^{+\infty} \psi^{2} \psi d x=1$, the value of $A=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{4}}$\\
-	 The expectation value of kinetic energy for given wavefunction is $\langle T\rangle=\frac{\hbar^{2} \alpha}{2 m}$\\
-	The expectation value of potential energy
-	$$
-	\langle V\rangle=\left(\frac{2 \alpha}{\pi}\right)^{2} \int_{-1}^{+1} \frac{1}{2} m \omega^{2} x^{2} e^{-2 \alpha x^{2}} d x=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{2}} \times \frac{1}{2} m \omega^{2} \int_{\infty}^{\infty} x^{2} e^{-2 \alpha x^{2}} d x=\frac{m \omega^{2}}{8 \alpha}
-	$$
-	Then the expectation value of total energy is $\langle E\rangle=\frac{\hbar^{2} \alpha}{2 m}+\frac{m \omega^{2}}{8 \alpha}$\\
-	 $\frac{d E}{d \alpha}=0, \frac{\hbar^{2}}{2 m}-\frac{m \omega^{2}}{8 \alpha^{2}}=0, \alpha_{0}=\frac{m \omega}{2 \hbar}$\\
-	  putting the value of $\alpha_{0} \quad \alpha_{0}=\frac{m \omega}{2 \hbar} \Rightarrow\langle E\rangle=\frac{\hbar \omega}{2}$
+	\begin{align*}
+		\text{From normalization condition }&\int_{-\infty}^{+\infty} \psi^{2} \psi d x=1,\text{ the value of }A=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{4}}\\
+	\text{The expectation value of kinetic energy for  }&\text{given wavefunction is}\langle T\rangle=\frac{\hbar^{2} \alpha}{2 m}\\
+	\text{The expectation value of potential energy}\\
+	\langle V\rangle&=\left(\frac{2 \alpha}{\pi}\right)^{2} \int_{-1}^{+1} \frac{1}{2} m \omega^{2} x^{2} e^{-2 \alpha x^{2}} d x\\
+	&=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{2}} \times \frac{1}{2} m \omega^{2} \int_{\infty}^{\infty} x^{2} e^{-2 \alpha x^{2}} d x
+	=\frac{m \omega^{2}}{8 \alpha}\\
+\text{	Then the expectation value of total energy is }\langle E\rangle&=\frac{\hbar^{2} \alpha}{2 m}+\frac{m \omega^{2}}{8 \alpha}\\
+	\frac{d E}{d \alpha}&=0, \frac{\hbar^{2}}{2 m}-\frac{m \omega^{2}}{8 \alpha^{2}}=0, \alpha_{0}=\frac{m \omega}{2 \hbar}\\
+	\text{putting the value of }&\alpha_{0} \quad \alpha_{0}=\frac{m \omega}{2 \hbar} \Rightarrow\langle E\rangle=\frac{\hbar \omega}{2}
+	\end{align*}
 \end{answer}
 \begin{exercise}
  Find the energy eigen value for the ground state if particle is confined into $1-D$ infinite potential box of width ' $a$ ' centered at $\frac{a}{2}$ by taking trial wavefunction. $\psi=A x(a-x)$.
 \end{exercise}
 \begin{answer}$\left. \right. $\\
 	\begin{minipage}{0.5\textwidth}
-	For normalization $|A|^{2} \int_{0}^{a} x^{2}(a-x)^{2} d x=1 \Rightarrow A=\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}}$\\
-	The expectation value of kinetic energy
-	$$
-	\begin{aligned}
-	&\langle T\rangle=\int_{0}^{a}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) \frac{-\hbar}{2 m} \frac{\partial^{2}}{\partial x^{2}}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) d x \\
-	&=\frac{\hbar^{2}}{m}\left(\frac{30}{a^{5}}\right) \frac{a^{3}}{6}=\frac{5 \hbar^{2}}{m a^{2}}
-	\end{aligned}
-	$$
-	The expectation value of potential energy is $\langle V\rangle=0$
-	$$
-	\langle E\rangle=\langle T\rangle+\langle V\rangle=\frac{5 \hbar^{2}}{m a^{2}}
-	$$
-	(constant value)
+		\begin{align*}	
+		\text{For normal}&\text{ization }|A|^{2} \int_{0}^{a} x^{2}(a-x)^{2} d x=1 \Rightarrow A=\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}}\\
+		\text{The expectation }&\text{value of kinetic energy}\\
+		\langle T\rangle&=\int_{0}^{a}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) \frac{-\hbar}{2 m} \frac{\partial^{2}}{\partial x^{2}}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) d x \\
+		&=\frac{\hbar^{2}}{m}\left(\frac{30}{a^{5}}\right) \frac{a^{3}}{6}=\frac{5 \hbar^{2}}{m a^{2}}\\
+	\text{	The expectation }&\text {value of potential energy is $\langle V\rangle=0$}\\
+		\langle E\rangle&=\langle T\rangle+\langle V\rangle=\frac{5 \hbar^{2}}{m a^{2}}\\
+	\text{	(constant value)}
+		\end{align*}
 	\end{minipage}
- \begin{minipage}{0.5\textwidth}
+ \begin{minipage}{0.4\textwidth}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[height=3cm,width=5cm]{var-crop}
+ 	\includegraphics[height=3cm,width=4cm]{var-crop}
  \end{figure}	
  \end{minipage}
 \end{answer}
-\section{The WKB appoximation method}
+\section{The WKB Appoximation Method}
 The Wentzel-Kramers-Brillouin (WKB) method is useful for approximate treatments of systems with slowly varying potentials; that is, potentials which remain almost constant over a region of the order of the de Broglie wavelength. In the case of classical systems, this property is always satisfied since the wavelength of a classical system approaches zero. The WKB method can thus be viewed as a semiclassical approximation.\\
-\textbf{General formalism}\\
+\textbf{General Formalism}\\
 Consider the motion of a particle in a time-independent potential $V(\vec{r}) ;$ the Schrödinger equation for the corresponding stationary state is
-$$
--\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(\vec{r})+V(\vec{r}) \psi(\vec{r})=E \psi(\vec{r})
-$$
-or
-$$
-\nabla^{2} \psi(\vec{r})+\frac{1}{\hbar^{2}} p^{2}(\vec{r}) \psi(\vec{r})=0
+	$$
+	\begin{aligned}
+	-\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(\vec{r})+V(\vec{r}) \psi(\vec{r})&=E \psi(\vec{r})\\
+\text{	or}\qquad
+	\nabla^{2} \psi(\vec{r})+\frac{1}{\hbar^{2}} p^{2}(\vec{r}) \psi(\vec{r})&=0
+\end{aligned}
 $$
 where $p(\vec{r})$ is the classical momentum at $\vec{r}: p(\vec{r})=\sqrt{2 m(E-V(\vec{r}))}$. If the particle is moving in a region where $V(\vec{r})$ is constant, the solution of schrodinger equation is of the form $\psi(\vec{r})=A e^{\pm i \vec{p} \cdot \vec{r} / \hbar} .$ But how does one deal with those cases where $V(\vec{r})$ is not constant? The WKB method provides an approximate treatment for systems whose potentials, while not constant, are slowly varying functions of $\vec{r}$. That is, $V(\vec{r})$ is almost constant in a region which extends over several de Broglie wavelengths; we may recall that the de Broglie wavelength of a particle of mass $m$ and energy $E$ that is moving in a potential $V(\vec{r})$ is given by $\lambda=h / p=h / \sqrt{2 m(E-V(\vec{r}))}$.\\
 In essence, the WKB method consists of trying a solution to schrodinger rquation
@@ -571,24 +560,19 @@ $$
 \end{gathered}
 $$
 To illustrate the various aspects of the WKB method, let us consider the simple case of the one-dimensional motion of a single particle. We can thus reduce the above two equations, respectively, to
-$$
-\begin{aligned}
-&\frac{d S}{d x}=\pm \sqrt{2 m(E-V)}=\pm p(x) \\
-&2\left(\frac{d}{d x} \ln A\right) p(x)+\frac{d}{d x} p(x)=0
+	$$
+	\begin{aligned}
+		\frac{d S}{d x}&=\pm \sqrt{2 m(E-V)}=\pm p(x) \\
+		2\left(\frac{d}{d x} \ln A\right) p(x)&+\frac{d}{d x} p(x)=0\\
+	\text{From these two equations }&\text{$A(\vec{r})$ ,$S(\vec{r})$ can be found.}\\
+	S(x)&=\pm \int d x \sqrt{2 m(E-V(x))}=\pm \int p(x) d x\\
+	\frac{d}{d x}[2 \ln A+\ln p(x)]=0\\
+\text{	which in turn leads to}\qquad
+	A(x)&=\frac{C}{\sqrt{|p(x)|}}\\
+\text{	we will get the solution by }&\text{substituting the values of $A(\vec{r})$ ,$S(\vec{r})$ in to }	\psi(\vec{r})\\
+	\psi_{\pm}(x)&=\frac{C_{\pm}}{\sqrt{|p(x)|}} \exp \left[\pm \frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right] 
 \end{aligned}
 $$
-From these two equations $A(\vec{r})$ ,$S(\vec{r})$ can be found.
-$$S(x)=\pm \int d x \sqrt{2 m(E-V(x))}=\pm \int p(x) d x$$
-$$
-\frac{d}{d x}[2 \ln A+\ln p(x)]=0
-$$
-which in turn leads to
-$$
-A(x)=\frac{C}{\sqrt{|p(x)|}}
-$$
-we will get the solution by substituting the values of $A(\vec{r})$ ,$S(\vec{r})$ in to 
-$\psi(\vec{r})$\\
-$$\psi_{\pm}(x)=\frac{C_{\pm}}{\sqrt{|p(x)|}} \exp \left[\pm \frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right] $$
 The amplitude of this wave function is proportional to $1 / \sqrt{p(x)}$; hence the probability of finding the particle between $x$ and $x+d x$ is proportional to $1 / p(x)$. This is what we expect for a "classical" particle because the time it will take to travel a distance $d x$ is proportional to the inverse of its speed (or its momentum).
 \par We can now examine two separate cases corresponding to $E>V(x)$ and $E<V(x)$. First, let us consider the case $E>V(x)$, which is called the classically allowed region. Here $p(x)$ is a real function; the most general solution  is a combination of $\psi_{+}(x)$ and $\psi_{-}(x)$ :
 $$
@@ -605,11 +589,15 @@ But what about the structure of the wave function near the regions $E \simeq$ $V
 	$$
 	2 \int_{x_{1}}^{x_{2}} p_{x} d x=\left(n+\frac{1}{2}\right) h \text { where } x_{1} \text { and } x_{2} \text { are turning point. }
 	$$
-	\item If one wall is smooth \& one wall is rigid \\
-	$\int_{x_{1}}^{x_{2}} p_{x} d x=\left(n+\frac{\dot{3}}{4}\right) \pi \hbar \quad$\\
-	 where $x_{1}$ and $x_{2}$ are turning point\\
-	  $n=0,1,2,3 \ldots .$ \\
-	  $=\left(n+1+\frac{3}{4}-1\right) \pi \hbar=\left(n-\frac{1}{4}\right) \pi \hbar, \quad n=1,2,3 \ldots .$
+	\item If one wall is smooth \& one wall is rigid 
+	$$
+	\begin{aligned}
+			\int_{x_{1}}^{x_{2}} p_{x} d x&=\left(n+\frac{\dot{3}}{4}\right) \pi \hbar \quad\\
+		\text{where }x_{1}&\text{ and }x_{2}\text{ are turning point}\\
+		n&=0,1,2,3 \ldots . \\
+		&=\left(n+1+\frac{3}{4}-1\right) \pi \hbar=\left(n-\frac{1}{4}\right) \pi \hbar, \quad n=1,2,3 \ldots .
+	\end{aligned}
+	$$
 	  \item When both walls are rigid:
 	  $\int_{x_{1}}^{x_{2}} p_{x} d x=(n+1) \pi \hbar \quad$ \\
 	  where $x_{1}$ and $x_{2}$ are turning point $n=0,1,2, \ldots . .$
@@ -619,7 +607,7 @@ But what about the structure of the wave function near the regions $E \simeq$ $V
 \end{enumerate}
 
 
-\section{Time dependent perturbation theory}
+\section{Time Dependent Perturbation Theory}
 To study the structure of molecular and atomic systems, we need to know how electromagnetic radiation interacts with these systems. Molecular and atomic spectroscopy deals in essence with the absorption and emission of electromagnetic radiation by molecules and atoms. As a system absorbs or emits radiation, it undergoes transitions from one state to another.\\
 Time-dependent perturbation theory is most useful for studying processes of absorption and emission of radiation by atoms or, more generally, for treating the transitions of quantum systems from one energy level to another.\\\\
 \par Time evolution problem uses pertubration method to find the solution. If the hamiltonian is time dependent we can write, the totl H
@@ -629,10 +617,18 @@ Its eigen values and ortho normalized eigen function are known.
 $$\therefore H_0u_n=E_n u_n\quad \int u_m u_n d\tau=\delta_{mn}$$
 Since it is a time evolution problem we use time dependent schoodinger equation \\
 So,
-$$H\psi=E\psi$$
-$$H=H_0+H^\prime\quad E=-i\hbar\frac{ d}{dt}$$
+	$$
+	\begin{aligned}
+	H\psi&=E\psi\\
+	H&=H_0+H^\prime\quad E=-i\hbar\frac{ d}{dt}\\
+	\therefore\quad \frac{i\hbar d \psi}{dt}&=H_0\psi+H^\prime\psi
+\end{aligned}
+$$
 
-$$\therefore\frac{i\hbar d \psi}{dt}=H_0\psi+H^\prime\psi$$
+
+
+
+
 Which has the solution of the form.
 $$\psi(x,t)=\sum_{n}a_n(t)u_n(x)e^{\frac{-i}{\hbar }E_nt}$$
 Where $|a_n(t)|^2$ is the probability with which the system described by $\psi(x,t)$ in an energy eigen state $u_n(x)$\\\\
@@ -659,13 +655,13 @@ In many cases\\
 $$H^\prime _{fi}(t)=H_{fi}^{\prime 0}f(t)$$
 Where $H^{\prime 0}$ is time independent\\
 $$\therefore a_f^{(1)}(t)=(i\hbar)^{-1}H^{10}_{fi}\int_{0}^{t}f(t^\prime)e^{i\omega_{fi}t^{\prime}}dt^\prime$$
-\subsection{First order transition: constant perturbation }
+\subsection{First Order Transition: Constant Perturbation }
 Probability of transition from $i $ to all states $f\neq i$ is much less than unit
 $$ \sum^\prime|a^\prime_f(t)|^2<<1$$
 \textbf{(a)\quad Transition Probability }\\
 We now consider the specific case of a perturbation $H^\prime$ which lasts from time $0  $ to $t$ and is constant during this period.\\
-$$\therefore a_f(t)=(ih)^{-1}\int H^\prime _{fi}e^{i\omega_{fi}t}dt $$ 
-$\therefore H^\prime_{fi}$ is constant\\
+$$\therefore \quad  a_f(t)=(ih)^{-1}\int H^\prime _{fi}e^{i\omega_{fi}t}dt $$ 
+$\therefore \quad H^\prime_{fi}$ is constant\\
 $$a_f(t)=(i\hbar)^{-1}H^\prime_{fi}\int e^{i\omega_{fi}t}dt$$
 $$=(i\hbar)^{-1}H^\prime_{fi}\frac{e^{i\omega_{fi}t}-1}{i\omega_{fi}}=-H^\prime_{fi}\frac{e^{i\omega_{fi}t}-1}{\hbar\omega_{fi}}$$
 $$|a_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{\omega_{fi}^2}$$
@@ -678,9 +674,16 @@ The behaviour of the factor $\frac{4}{(\omega_{fi})^2}\sin^2\frac{1}{2}\omega_{f
 \end{figure}
 The main peak of the curve occurs at $\omega_{fi}=0$ is of height $t^2$\\
 $\therefore$ We see that the transition from $i$ take place with appreciable probability only to those level $f$ such that $\omega_{fi}$ falls under the main peak: $|\omega_{fi}|\leq \frac{2\pi}{t}$.In other words the magnitude of the energy difference
-$|\hbar\omega_{fi}|$ between the initial and final states is very unlikely to be significally higher than $\hbar(\frac{2\pi}{t})=\frac{h}{t}$.This result is  generally considered as an expression of an energy time uncertainity relation .\\
-$$\hbar\omega_{fi}\leq\frac{\hbar2\pi}{\tau}\quad\hbar=\frac{\hbar}{2\pi}$$
-$$\Delta E\leq \frac{\hbar}{\Delta t}\quad \Delta E\Delta t\approx h$$
+$|\hbar\omega_{fi}|$ between the initial and final states is very unlikely to be significally higher than $\hbar(\frac{2\pi}{t})=\frac{h}{t}$.This result is  generally considered as an expression of an energy time uncertainity relation .
+	$$
+	\begin{aligned}
+	\hbar\omega_{fi}\leq\frac{\hbar2\pi}{\tau}\quad\hbar&=\frac{\hbar}{2\pi}\\
+	\Delta E\leq \frac{\hbar}{\Delta t}\quad \Delta E\Delta t&\approx h
+\end{aligned}
+$$
+
+
+
 Energy time uncertainity relation\\
 \textbf{(b)\quad Closely Packed Levels}\\
 Suppose there are many $f$ levels within the energy level $\Delta E$ Covered by the main peak, then,\\
@@ -690,18 +693,22 @@ If spacing are very close summation can be changed in to integration such as,
 $$\sum_{f}.....\implies \int(E_f)dE_f\rightarrow\rho(E_f)\int dE_f$$
 Where $\rho(E_f)$ is the density of states that is the number of state around the energy. 
 Number of state with energy with in $d(E_f)=d_{nf}=\rho(E_f)dE_f \rho(f)$ is constant.
-$$\therefore \sum_{f}|a^{(1)}_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}dE_f$$
-$$\hbar\omega_{fi}=E_f-E_i$$
-$$\hbar d\omega_{fi}=dE_f$$
-$$ d\omega_{fi}=\frac{dE_f}{\hbar}$$
-$$\therefore\sum_{f}|a^{1}_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}d\omega_{fi}$$
-$$\text{Since} \quad 2t\int_{-\infty}^{\infty}x^{-2}\sin^2xdx=2\pi t$$
-$$\sum_{f}|a^{1}_f(t)|^2=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)$$
-$\therefore$ Transition probability /unit time
-$$\frac{1}{t}\sum_{f}a^{(1)}_f(t)|^2=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)$$
-This formula is called \textcolor{red}{'Fermi Golden rule'}
+	$$
+	\begin{aligned}
+	\therefore \sum_{f}|a^{(1)}_f(t)|^2&=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}dE_f\\
+	\hbar\omega_{fi}&=E_f-E_i\\
+	\hbar d\omega_{fi}&=dE_f\\
+	 d\omega_{fi}&=\frac{dE_f}{\hbar}\\
+	\therefore\sum_{f}|a^{1}_f(t)|^2&=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}d\omega_{fi}\\
+	\text{Since} \quad 2t\int_{-\infty}^{\infty}x^{-2}\sin^2xdx&=2\pi t\\
+	\sum_{f}|a^{1}_f(t)|^2&=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)\\
+	\therefore \text{Transition probability /unit time}\\
+	\frac{1}{t}\sum_{f}a^{(1)}_f(t)|^2&=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)\\
+	\text{This formula is called }&\textcolor{red}{\text{'Fermi Golden rule'}}
+\end{aligned}
+$$
 \subsection{Harmonic Perturbation}
-\textbf{(a)Amplitude for transition with change of energy}\\
+\textbf{(a)Amplitude for Transition With Change of Energy}\\
 We shall now consider a harmonic perturbation .
 consider a perturbation of the type
 \begin{align*}
@@ -723,17 +730,19 @@ $$\omega_{fi}+\omega=0\quad \text{or }E_f-E_i=-\hbar\omega $$
 In this case $E_f$ is lower and that is energy $\hbar\omega$ is given away by the system to the purturbing agency. ie emission.\\
 The actual perturbation can be written as 
 $$ H^\prime=H^{\prime o}e^{-i \omega t}+(H^{\prime o})^\dagger e^{+\omega t}$$
-\textbf{(b) Transition induced by incoherent spectrum of perturbing frequencies}\\
+\textbf{(b) Transition Induced by Incoherent Spectrum of Perturbing Frequencies}\\
 As long as the perturbation contains only single frequency ,the transition probability oscillates with time as ($\omega_{fi}\mp\omega$) instead of $\omega_{fi}$.\\
 However the transition probability preportional to time can arise under the following conditions\\
 (i)The perturbation involves a whole spectrum of frequencies $\omega$ which are so closely spaced that very many such frequencies are contained with in the intervel (1/t).\\
 (ii)These are incoherent in the sense that the phase of the different frequency componets are unrelated to each other.\\
 (iii)The magnitude of these perturbations and the spacing of the frequencies are smooth function of $\omega$.\\\\
 Consider the second situation of incoherent frequency.To determine the total transition probability induced by the whole spectrum of frequencies one simply add up the probabilities arising from the different frequency components.Condition (i) then enables this sum to be replaced by an integral.Thus the total transition probability will be 
-\begin{align*}
+$$
+\begin{aligned}
 \sum_{\omega} |a_f(t,\omega)|^2 &= \sum_{\omega}  \frac{|H^{\prime o}_{fi}(\omega)|^2}{\hbar^2}\ \frac{4 \sin^2\frac{1}{2}(\omega_{fi}+\omega)t}{(\omega_{fi}-\omega)^2}\\
 &=\int \frac{|H^{\prime o}_{fi}(\omega)|^2}{\hbar^2}\frac{4 \sin^2\frac{1}{2}(\omega_{fi}+\omega)t}{(\omega_{fi}-\omega)^2}\rho (\omega)\ d\omega
-\end{align*}
+\end{aligned}
+$$
 $|H_{fi}(\omega)|^2$ and $\rho(\omega)$ Varies smothly with $\omega$ and almost constant in the intervel $\frac{1}{t}$ around $\omega=\omega_{fi}$ both can be taken out integral and after integrating we get,\\
 Transition probability per unit time
 $$  = \frac{2\pi}{\hbar^2}|H^{\prime o}_{fi}(\omega_{fi})|^2 \rho (\omega_{fi})$$
@@ -755,9 +764,9 @@ $\therefore$ Probabilities for upward and downward transition between a given pa
 
 
 
-\section{Pictures of quantum mechanics}
+\section{Pictures of Quantum Mechanics}
 Each class of representation also called a picture differs from others in the way it treats the time evolution of the system.Schrodinger picture is useful when describing phenomena with time independent Hamiltonians,whereas the interaction and heisenberg pictures are useful when describing phenomena with time dependent Hamiltonians.
-\subsection{The Schrodinger picture}
+\subsection{The Schrodinger Picture}
 In describing quantum dynamics, we have been using so far the Schrödinger picture in which state vectors depend explicitly on time, but operators do not:
 $$
 i \hbar \frac{d}{d t}|\psi(t)\rangle=\hat{H}|\psi(t)\rangle,
@@ -796,11 +805,11 @@ $$
 where $\hat{A}_{H}(t)$ is given by\\
 $$\hat{A}_{H}(t)=\hat{U}^{\dagger}(t) \hat{A} \hat{U}(t)=e^{i t \hat{H} / \hbar} \hat{A} e^{-i t \hat{H} / \hbar}$$
 Schrödinger and the Heisenberg pictures coincide at $t=0,5$ \\
-\textbf{Heisenberg equation of motion}\\
+\textbf{Heisenberg Equation of Motion}\\
 $$\frac{d\hat{A}_H}{dt}=\frac{1}{i\hbar}\left[\hat{A}_H,\hat{H}\right] $$ 
-\subsection{The interaction picture}
+\subsection{The Interaction Picture}
 The interaction picture, also called the Dirac picture, is useful to describe quantum phenomena with Hamiltonians that depend explicitly on time. In this picture both state vectors and operators evolve in time. We need, therefore, to find the equation of motion for the state vectors and for the operators.\\
-\textbf{Equation of motion of state vectors}\\
+\textbf{Equation of Motion of State Vectors}\\
 State vectors in the interaction picture are defined in terms of the Schrödinger states | $\psi(t)\}$ by
 $$
 |\psi(t)\rangle_{I}=e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle .
@@ -824,7 +833,7 @@ i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}=-\hat{H}_{0}|\psi(t)\rangle_{I}+\hat{H}
 i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}=\hat{V}_{I}(t)|\psi(t)\rangle_{I} .
 \end{gathered}$$
 This is the Schrödinger equation in the interaction picture. It shows that the time evolution of the state vector is governed by the interaction $\hat{V}_{I}(t)$.\\
-\textbf{Equation of motion for the operators}\\
+\textbf{Equation of Motion for the Operators}\\
 The interaction representation of an operator $\hat{A}_{J}(t)$ is given, in terms of its Schrödinger representation by
 $$
 \hat{A}_{I}(t)=e^{i \hat{H}_{0} t / \hbar} \hat{A} e^{-i \hat{H}_{0} t / \hbar}
@@ -834,7 +843,7 @@ $$
 \frac{d \hat{A}_{I}(t)}{d t}=\frac{1}{i \hbar}\left[\hat{A}_{I}(t), \hat{H}_{0}\right]
 $$
 This equation is similar to the Heisenberg equation of motion except that $\hat{H}$ is replaced by $\hat{H}_{0}$. The basic difference between the Heisenberg and interaction pictures:In the Heisenberg picture it is $\hat{H}$ that appears in the exponents,whereas in the interaction picture it is $\hat{H}_0$ that appears.\\
-\textbf{conclusion}\\
+\textbf{Conclusion}\\
  we have seen that with in the schrodinger picture ,the states depends on time but not operators;In the Heisenberg picture only operators depends explicitly on time,state vectors are frozen in time.The interaction picture however is intermediate between the Schrodinger and the Heisenberg pictures ,since both state vectors and operators evolve with time.\\
  \newpage
  \begin{abox}
@@ -852,7 +861,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
  	The correction to the ground state energy, to first order in $a$, is
  	\exyear{NET JUNE 2011}
  \end{minipage}
- \begin{tasks}(2)
+ \begin{tasks}(4)
  	\task[\textbf{A.}] $\frac{a \pi}{2}$
  	\task[\textbf{B.}]$a \pi$
  	\task[\textbf{C.}]$\frac{a \pi}{4}$
@@ -888,7 +897,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	$\text { The first-order correction to the ground state energy of the particle is }$
 	\exyear{NET DEC 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{V_{0}}{2}$
 	\task[\textbf{B.}]$\frac{3 V_{0}}{4}$
 	\task[\textbf{C.}]$\frac{V_{0}}{4}$
@@ -947,7 +956,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item The ground state eigenfunction for the potential $V(x)=-\delta(x)$ where $\delta(x)$ is the delta function, is given by $\psi(x)=A e^{-\alpha|x|}$, where $A$ and $\alpha>0$ are constants. If a perturbation $H^{\prime}=b x^{2}$ is applied, the first order correction to the energy of the ground state will be
 	\exyear{NET JUNE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{b}{\sqrt{2} \alpha^{2}}$ 
 	\task[\textbf{B.}]$\frac{b}{\alpha^{2}}$
 	\task[\textbf{C.}]$\frac{2 b}{\alpha^{2}}$
@@ -987,7 +996,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item The Hamiltonian $H_{0}$ for a three-state quantum system is given by the matrix $H_{0}=\left(\begin{array}{lll}1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2\end{array}\right) .$ When perturbed by $H^{\prime}=\in\left(\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right)$ where $\in<<1$, the resulting shift in the energy eigenvalue $E_{0}=2$ is
 	\exyear{NET DEC 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\in,-2 \in$
 	\task[\textbf{B.}] $-\in, 2 \in$
 	\task[\textbf{C.}]$\pm \in$
@@ -997,7 +1006,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item A particle of mass $m$ is in a potential $V=\frac{1}{2} m \omega^{2} x^{2}$, where $\omega$ is a constant. Let $\hat{a}=\sqrt{\frac{m \omega}{2 \hbar}}\left(\hat{x}+\frac{i \hat{p}}{m \omega}\right) .$ In the Heisenberg picture $\frac{d \hat{a}}{d t}$ is given by
 	\exyear{NET JUNE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\omega \hat{a}$
 	\task[\textbf{B.}]$-i \omega \hat{a}$
 	\task[\textbf{C.}]$\omega \hat{a}^{\dagger}$
@@ -1011,7 +1020,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	where $a_{0}$ is the Bohr radius. The change in the ground state energy to first order in $\in$
 	\exyear{NET DEC 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{\in}{4}$
 	\task[\textbf{B.}] $\frac{\in}{2}$
 	\task[\textbf{C.}]$\frac{-\epsilon}{2}$
@@ -1056,17 +1065,17 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\exyear{NET JUNE 2017}
 \end{minipage}
 \begin{tasks}(2)
-	\task[\textbf{A.}] unchanged
-	\task[\textbf{B.}]doubled
-	\task[\textbf{C.}]quadrupled
-	\task[\textbf{D.}]halved
+	\task[\textbf{A.}] Unchanged
+	\task[\textbf{B.}]Doubled
+	\task[\textbf{C.}]Quadrupled
+	\task[\textbf{D.}]Halved
 \end{tasks}
 \begin{minipage}{\textwidth}
 	\item The Coulomb potential $V(r)=-e^{2} / r$ of a hydrogen atom is perturbed by adding $H^{\prime}=b x^{2}$ (where $b$ is a constant) to the Hamiltonian. The first order correction to the ground state energy is
 	(The ground state wavefunction is $\psi_{0}=\frac{1}{\sqrt{\pi a_{0}^{3}}} e^{-r / a_{0}}$ )
 	\exyear{NET JUNE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $2 b a_{0}^{2}$
 	\task[\textbf{B.}]$b a_{0}^{2}$
 	\task[\textbf{C.}]$b a_{0}^{2} / 2$
@@ -1090,7 +1099,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	is applied, then the correction to the energy of the first excited state, to first order in $\Delta V$, is nearest to
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $V_{0}$
 	\task[\textbf{B.}]$0.16 V_{0}$
 	\task[\textbf{C.}]$0.2 V_{0}$
@@ -1161,7 +1170,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	The shift in the ground state energy due to the perturbation, in the first order perturbation theory,
 	\exyear{GATE 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{2 V_{o}}{3 \pi}$
 	\task[\textbf{B.}]$\frac{V_{o}}{3 \pi}$
 	\task[\textbf{C.}]$-\frac{V_{o}}{3 \pi}$
@@ -1218,7 +1227,7 @@ $\begin{aligned}
 	If particle is subjected to a perturbation within the box. $W=\beta x$. Where $\beta$ is small constant, the first order correction to the ground state energy is
 	\exyear{GATE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] 0
 	\task[\textbf{B.}]$a \beta / 4$
 	\task[\textbf{C.}]$a \beta / 2$
@@ -1229,7 +1238,7 @@ $\begin{aligned}
 	\exyear{GATE 2015}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=4cm]{diagram-20210824(7)-crop}
+		\includegraphics[height=3cm,width=3cm]{diagram-20210824(7)-crop}
 	\end{figure}
 \end{minipage}
 \begin{tasks}(2)
@@ -1242,7 +1251,7 @@ $\begin{aligned}
 	\item A one dimensional simple harmonic oscillator with Hamiltonian $H_{0}=\frac{p^{2}}{2 m}+\frac{1}{2} k x^{2}$ is subjected to a small perturbation, $H_{1}=\alpha x+\beta x^{3}+\gamma x^{4}$. The first order correction to the ground state energy is dependent on
 	\exyear{GATE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] only $\beta$
 	\task[\textbf{B.}]$\alpha$ and $\gamma$
 	\task[\textbf{C.}]$\alpha$ and $\beta$
