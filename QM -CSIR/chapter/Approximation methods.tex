@@ -1,4 +1,4 @@
-\chapter{Approximation methods}
+\chapter{APPROXIMATION METHODS}
 Perturbation theory is based on the assumption that the problem we wish to solve is, in some sense, only slightly different from a problem that can be solved exactly. In the case where the deviation between the two problems is small, perturbation theory is suitable for calculating the contribution associated with this deviation; this contribution is then added as a correction to the energy and the wave function of the exactly solvable Hamiltonian. So perturbation theory builds on the known exact solutions to obtain approximate solutions.\\
 What about those systems whose Hamiltonians cannot be reduced to an exactly solvable part plus a small correction. For these, we may consider the variational method or the WKB approximation. The variational method is particularly useful in estimating the energy eigenvalues of the ground state and the first few excited states of a system for which one has only a qualitative idea about the form of the wave function.\\
 The WKB method is useful for finding the energy eigenvalues and wave functions of systems for which the classical limit is valid. 
@@ -362,21 +362,15 @@ H^{\prime}&=-e \varepsilon x=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\
 	 Evaluate the first and second order correction to the energy of the $n=1$ state of an oscillator of mass 'm' and angular frequency ' $\omega$ ' subjected to a potential.
 \end{exercise}
 \begin{answer}
-	$$
-	V(x)=\frac{1}{2} m \omega^{2} x^{2}+b x, \quad b x<<\frac{1}{2} m \omega^{2} x^{2}
-	$$
-	The first order correction to energy for the $n=1$ state is given by
-	$$
-	E_{1}^{(1)}=\langle 1|b x| 1\rangle=b \sqrt{\frac{\hbar}{2 m \omega}}\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| 1\right\rangle=0
-	$$
-	Using, $a|n\rangle=\sqrt{n}|n-1\rangle$ and $a^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle$\\
-	The second order correction to energy for the $n=1$ state is given by
-	$$
-	\begin{aligned}
-	E_{1}^{(2)} &=b^{2}\left(\frac{\hbar}{2 m \omega}\right) \sum_{k \neq 1} \frac{\left|\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| k_{k}\right\rangle\right|^{2}}{E_{1}^{0}-E_{k}^{0}}=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left[\frac{1}{E_{1}^{0}-E_{0}^{0}}+\frac{2}{E_{1}^{0}-E_{2}^{0}}\right] \\
+	\begin{align*}
+	V(x)&=\frac{1}{2} m \omega^{2} x^{2}+b x, \quad b x<<\frac{1}{2} m \omega^{2} x^{2}\\
+\text{	The first order }&\text{correction to energy for the $n=1$ state is given by}\\
+	E_{1}^{(1)}&=\langle 1|b x| 1\rangle=b \sqrt{\frac{\hbar}{2 m \omega}}\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| 1\right\rangle=0\\
+	\text{Using, }a|n\rangle&=\sqrt{n}|n-1\rangle\text{ and} a^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle\\
+	\text{The second order correction}&\text{ to energy for the $n=1$ state is given by}\\
+	E_{1}^{(2)} &=b^{2}\left(\frac{\hbar}{2 m \omega}\right) \sum_{k \neq 1} \frac{\left|\left\langle 1\left|\left(\hat{a}+\hat{a}^{\dagger}\right)\right| k_{k}\right\rangle\right|^{2}}{E_{1}^{0}-E_{k}^{0}}\\&=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left[\frac{1}{E_{1}^{0}-E_{0}^{0}}+\frac{2}{E_{1}^{0}-E_{2}^{0}}\right] \\
 	&=b^{2}\left(\frac{\hbar}{2 m \omega}\right)\left(\frac{1}{\hbar \omega}-\frac{2}{\hbar \omega}\right)=-\frac{b^{2}}{2 m \omega^{2}}
-	\end{aligned}
-	$$
+	\end{align*}
 \end{answer}
 \begin{exercise}
 	Example 4. Consider the infinite square well defined by
@@ -389,33 +383,27 @@ H^{\prime}&=-e \varepsilon x=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\
 	Using the first order perturbation theory, calculate the energy of the first two states of the potential wellifa portion defined by $V(x)=V_{0} x / a$, where $\mathrm{V}_{0}$ is a small constant, with $0 \leq x \leq a$ being sliced off.
 \end{exercise}
 \begin{answer}
-	The energy eigenvalues and normalized eigenfunctions of the $\mathrm{n}^{\text {th }}$ state of unperturbed Hamiltonian are
-	$$
-	E_{n}^{0}=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}, \psi_{n}^{0}=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}, \quad n=1,2,3, \ldots
-	$$
-	The perturbation $H^{\prime}=V_{0} x / a$ which is depicted in figure below.\\
+\begin{align*}
+\intertext{	The energy eigenvalues and normalized eigenfunctions of the $\mathrm{n}^{\text {th }}$ state of unperturbed Hamiltonian are}
+	E_{n}^{0}&=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}, \psi_{n}^{0}=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}, \quad n=1,2,3, \ldots\\
+\text{	The perturbation }H^{\prime}&=V_{0} x / a\text{ which is depicted in figure below.}
+\end{align*}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=4cm]{pert-crop}
+		\includegraphics[height=3.3cm,width=4cm]{pert-crop}
 		\caption{sliced infinite potential well}
 		\label{}
 	\end{figure}
-	The first order correction to the energy for the $\mathrm{n}=1$ state is
-	$$
-	E_{1}^{(1)}=\left\langle\psi_{1}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{1}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int_{0}^{a} x \sin ^{2} \frac{\pi x}{a} d x
-	$$
-	$$\begin{aligned}
-		&=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2}\left(1-\cos \frac{2 \pi x}{a}\right) d x=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} d x-\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} \cos \frac{2 \pi x}{a} d x \\
-		&=\frac{V_{0}}{2}+0=\frac{V_{0}}{2}
-	\end{aligned}$$
-	The first order correction to the enegry for the $n=2$ state is
-	$$
-	E_{2}^{(1)}=\left\langle\psi_{2}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{2}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int x \sin ^{2} \frac{2 \pi x}{a} d x=\frac{V_{0}}{2}
-	$$
-	The ground state and first excited energies corrected upto first order are
-	$$
-	\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}+\frac{V_{0}}{2} \text { and } \frac{2 \pi^{2} \hbar^{2}}{m a^{2}}+\frac{V_{0}}{2}
-	$$
+	\begin{align*}
+	\text{The first order }&\text{correction to the energy for the $\mathrm{n}=1$ state is}\\
+	E_{1}^{(1)}&=\left\langle\psi_{1}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{1}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int_{0}^{a} x \sin ^{2} \frac{\pi x}{a} d x\\
+	&=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2}\left(1-\cos \frac{2 \pi x}{a}\right) d x=\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} d x-\frac{2 V_{0}}{a^{2}} \int_{0}^{a} \frac{x}{2} \cos \frac{2 \pi x}{a} d x \\
+	&=\frac{V_{0}}{2}+0=\frac{V_{0}}{2}\\
+\text{	The first order correction }&\text{to the enegry for the $n=2$ state is}\\
+	E_{2}^{(1)}&=\left\langle\psi_{2}^{0}\left|\frac{V_{0} x}{a}\right| \psi_{2}^{0}\right\rangle=\frac{V_{0}}{a} \frac{2}{a} \int x \sin ^{2} \frac{2 \pi x}{a} d x=\frac{V_{0}}{2}\\
+	\text{The ground state and }&\text{first excited energies corrected upto first order are}\\
+	\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}&+\frac{V_{0}}{2} \text { and } \frac{2 \pi^{2} \hbar^{2}}{m a^{2}}+\frac{V_{0}}{2}
+	\end{align*}
 \end{answer}
 \begin{exercise}
 . A particle of mass ' $m$ ' moves in an infinite one-dimensional box of bottom ' $a$ ' with a potential dip as defined by
@@ -509,39 +497,37 @@ $$
  For the harmonic oscillator $V(x)=\frac{1}{2} m \omega^{2} x^{2}$, then choose a trial wave function $\psi(x, \alpha)=A e^{-\alpha x^{2}}$. Find the energy of ground state with the method of variational principle.
 \end{exercise}
 \begin{answer}
-	Solution: From normalization condition $\int_{-\infty}^{+\infty} \psi^{2} \psi d x=1$, the value of $A=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{4}}$\\
-	 The expectation value of kinetic energy for given wavefunction is $\langle T\rangle=\frac{\hbar^{2} \alpha}{2 m}$\\
-	The expectation value of potential energy
-	$$
-	\langle V\rangle=\left(\frac{2 \alpha}{\pi}\right)^{2} \int_{-1}^{+1} \frac{1}{2} m \omega^{2} x^{2} e^{-2 \alpha x^{2}} d x=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{2}} \times \frac{1}{2} m \omega^{2} \int_{\infty}^{\infty} x^{2} e^{-2 \alpha x^{2}} d x=\frac{m \omega^{2}}{8 \alpha}
-	$$
-	Then the expectation value of total energy is $\langle E\rangle=\frac{\hbar^{2} \alpha}{2 m}+\frac{m \omega^{2}}{8 \alpha}$\\
-	 $\frac{d E}{d \alpha}=0, \frac{\hbar^{2}}{2 m}-\frac{m \omega^{2}}{8 \alpha^{2}}=0, \alpha_{0}=\frac{m \omega}{2 \hbar}$\\
-	  putting the value of $\alpha_{0} \quad \alpha_{0}=\frac{m \omega}{2 \hbar} \Rightarrow\langle E\rangle=\frac{\hbar \omega}{2}$
+	\begin{align*}
+		\text{From normalization condition }&\int_{-\infty}^{+\infty} \psi^{2} \psi d x=1,\text{ the value of }A=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{4}}\\
+	\text{The expectation value of kinetic energy for  }&\text{given wavefunction is}\langle T\rangle=\frac{\hbar^{2} \alpha}{2 m}\\
+	\text{The expectation value of potential energy}\\
+	\langle V\rangle&=\left(\frac{2 \alpha}{\pi}\right)^{2} \int_{-1}^{+1} \frac{1}{2} m \omega^{2} x^{2} e^{-2 \alpha x^{2}} d x\\
+	&=\left(\frac{2 \alpha}{\pi}\right)^{\frac{1}{2}} \times \frac{1}{2} m \omega^{2} \int_{\infty}^{\infty} x^{2} e^{-2 \alpha x^{2}} d x
+	=\frac{m \omega^{2}}{8 \alpha}\\
+\text{	Then the expectation value of total energy is }\langle E\rangle&=\frac{\hbar^{2} \alpha}{2 m}+\frac{m \omega^{2}}{8 \alpha}\\
+	\frac{d E}{d \alpha}&=0, \frac{\hbar^{2}}{2 m}-\frac{m \omega^{2}}{8 \alpha^{2}}=0, \alpha_{0}=\frac{m \omega}{2 \hbar}\\
+	\text{putting the value of }&\alpha_{0} \quad \alpha_{0}=\frac{m \omega}{2 \hbar} \Rightarrow\langle E\rangle=\frac{\hbar \omega}{2}
+	\end{align*}
 \end{answer}
 \begin{exercise}
  Find the energy eigen value for the ground state if particle is confined into $1-D$ infinite potential box of width ' $a$ ' centered at $\frac{a}{2}$ by taking trial wavefunction. $\psi=A x(a-x)$.
 \end{exercise}
 \begin{answer}$\left. \right. $\\
 	\begin{minipage}{0.5\textwidth}
-	For normalization $|A|^{2} \int_{0}^{a} x^{2}(a-x)^{2} d x=1 \Rightarrow A=\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}}$\\
-	The expectation value of kinetic energy
-	$$
-	\begin{aligned}
-	&\langle T\rangle=\int_{0}^{a}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) \frac{-\hbar}{2 m} \frac{\partial^{2}}{\partial x^{2}}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) d x \\
-	&=\frac{\hbar^{2}}{m}\left(\frac{30}{a^{5}}\right) \frac{a^{3}}{6}=\frac{5 \hbar^{2}}{m a^{2}}
-	\end{aligned}
-	$$
-	The expectation value of potential energy is $\langle V\rangle=0$
-	$$
-	\langle E\rangle=\langle T\rangle+\langle V\rangle=\frac{5 \hbar^{2}}{m a^{2}}
-	$$
-	(constant value)
+		\begin{align*}	
+		\text{For normal}&\text{ization }|A|^{2} \int_{0}^{a} x^{2}(a-x)^{2} d x=1 \Rightarrow A=\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}}\\
+		\text{The expectation }&\text{value of kinetic energy}\\
+		\langle T\rangle&=\int_{0}^{a}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) \frac{-\hbar}{2 m} \frac{\partial^{2}}{\partial x^{2}}\left(\frac{30}{a^{5}}\right)^{\frac{1}{2}} x(a-x) d x \\
+		&=\frac{\hbar^{2}}{m}\left(\frac{30}{a^{5}}\right) \frac{a^{3}}{6}=\frac{5 \hbar^{2}}{m a^{2}}\\
+	\text{	The expectation }&\text {value of potential energy is $\langle V\rangle=0$}\\
+		\langle E\rangle&=\langle T\rangle+\langle V\rangle=\frac{5 \hbar^{2}}{m a^{2}}\\
+	\text{	(constant value)}
+		\end{align*}
 	\end{minipage}
- \begin{minipage}{0.5\textwidth}
+ \begin{minipage}{0.4\textwidth}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[height=3cm,width=5cm]{var-crop}
+ 	\includegraphics[height=3cm,width=4cm]{var-crop}
  \end{figure}	
  \end{minipage}
 \end{answer}
@@ -549,12 +535,12 @@ $$
 The Wentzel-Kramers-Brillouin (WKB) method is useful for approximate treatments of systems with slowly varying potentials; that is, potentials which remain almost constant over a region of the order of the de Broglie wavelength. In the case of classical systems, this property is always satisfied since the wavelength of a classical system approaches zero. The WKB method can thus be viewed as a semiclassical approximation.\\
 \textbf{General Formalism}\\
 Consider the motion of a particle in a time-independent potential $V(\vec{r}) ;$ the Schrödinger equation for the corresponding stationary state is
-$$
--\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(\vec{r})+V(\vec{r}) \psi(\vec{r})=E \psi(\vec{r})
-$$
-or
-$$
-\nabla^{2} \psi(\vec{r})+\frac{1}{\hbar^{2}} p^{2}(\vec{r}) \psi(\vec{r})=0
+	$$
+	\begin{aligned}
+	-\frac{\hbar^{2}}{2 m} \nabla^{2} \psi(\vec{r})+V(\vec{r}) \psi(\vec{r})&=E \psi(\vec{r})\\
+\text{	or}\qquad
+	\nabla^{2} \psi(\vec{r})+\frac{1}{\hbar^{2}} p^{2}(\vec{r}) \psi(\vec{r})&=0
+\end{aligned}
 $$
 where $p(\vec{r})$ is the classical momentum at $\vec{r}: p(\vec{r})=\sqrt{2 m(E-V(\vec{r}))}$. If the particle is moving in a region where $V(\vec{r})$ is constant, the solution of schrodinger equation is of the form $\psi(\vec{r})=A e^{\pm i \vec{p} \cdot \vec{r} / \hbar} .$ But how does one deal with those cases where $V(\vec{r})$ is not constant? The WKB method provides an approximate treatment for systems whose potentials, while not constant, are slowly varying functions of $\vec{r}$. That is, $V(\vec{r})$ is almost constant in a region which extends over several de Broglie wavelengths; we may recall that the de Broglie wavelength of a particle of mass $m$ and energy $E$ that is moving in a potential $V(\vec{r})$ is given by $\lambda=h / p=h / \sqrt{2 m(E-V(\vec{r}))}$.\\
 In essence, the WKB method consists of trying a solution to schrodinger rquation
@@ -574,24 +560,19 @@ $$
 \end{gathered}
 $$
 To illustrate the various aspects of the WKB method, let us consider the simple case of the one-dimensional motion of a single particle. We can thus reduce the above two equations, respectively, to
-$$
-\begin{aligned}
-&\frac{d S}{d x}=\pm \sqrt{2 m(E-V)}=\pm p(x) \\
-&2\left(\frac{d}{d x} \ln A\right) p(x)+\frac{d}{d x} p(x)=0
+	$$
+	\begin{aligned}
+		\frac{d S}{d x}&=\pm \sqrt{2 m(E-V)}=\pm p(x) \\
+		2\left(\frac{d}{d x} \ln A\right) p(x)&+\frac{d}{d x} p(x)=0\\
+	\text{From these two equations }&\text{$A(\vec{r})$ ,$S(\vec{r})$ can be found.}\\
+	S(x)&=\pm \int d x \sqrt{2 m(E-V(x))}=\pm \int p(x) d x\\
+	\frac{d}{d x}[2 \ln A+\ln p(x)]=0\\
+\text{	which in turn leads to}\qquad
+	A(x)&=\frac{C}{\sqrt{|p(x)|}}\\
+\text{	we will get the solution by }&\text{substituting the values of $A(\vec{r})$ ,$S(\vec{r})$ in to }	\psi(\vec{r})\\
+	\psi_{\pm}(x)&=\frac{C_{\pm}}{\sqrt{|p(x)|}} \exp \left[\pm \frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right] 
 \end{aligned}
 $$
-From these two equations $A(\vec{r})$ ,$S(\vec{r})$ can be found.
-$$S(x)=\pm \int d x \sqrt{2 m(E-V(x))}=\pm \int p(x) d x$$
-$$
-\frac{d}{d x}[2 \ln A+\ln p(x)]=0
-$$
-which in turn leads to
-$$
-A(x)=\frac{C}{\sqrt{|p(x)|}}
-$$
-we will get the solution by substituting the values of $A(\vec{r})$ ,$S(\vec{r})$ in to 
-$\psi(\vec{r})$\\
-$$\psi_{\pm}(x)=\frac{C_{\pm}}{\sqrt{|p(x)|}} \exp \left[\pm \frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right] $$
 The amplitude of this wave function is proportional to $1 / \sqrt{p(x)}$; hence the probability of finding the particle between $x$ and $x+d x$ is proportional to $1 / p(x)$. This is what we expect for a "classical" particle because the time it will take to travel a distance $d x$ is proportional to the inverse of its speed (or its momentum).
 \par We can now examine two separate cases corresponding to $E>V(x)$ and $E<V(x)$. First, let us consider the case $E>V(x)$, which is called the classically allowed region. Here $p(x)$ is a real function; the most general solution  is a combination of $\psi_{+}(x)$ and $\psi_{-}(x)$ :
 $$
@@ -608,11 +589,15 @@ But what about the structure of the wave function near the regions $E \simeq$ $V
 	$$
 	2 \int_{x_{1}}^{x_{2}} p_{x} d x=\left(n+\frac{1}{2}\right) h \text { where } x_{1} \text { and } x_{2} \text { are turning point. }
 	$$
-	\item If one wall is smooth \& one wall is rigid \\
-	$\int_{x_{1}}^{x_{2}} p_{x} d x=\left(n+\frac{\dot{3}}{4}\right) \pi \hbar \quad$\\
-	 where $x_{1}$ and $x_{2}$ are turning point\\
-	  $n=0,1,2,3 \ldots .$ \\
-	  $=\left(n+1+\frac{3}{4}-1\right) \pi \hbar=\left(n-\frac{1}{4}\right) \pi \hbar, \quad n=1,2,3 \ldots .$
+	\item If one wall is smooth \& one wall is rigid 
+	$$
+	\begin{aligned}
+			\int_{x_{1}}^{x_{2}} p_{x} d x&=\left(n+\frac{\dot{3}}{4}\right) \pi \hbar \quad\\
+		\text{where }x_{1}&\text{ and }x_{2}\text{ are turning point}\\
+		n&=0,1,2,3 \ldots . \\
+		&=\left(n+1+\frac{3}{4}-1\right) \pi \hbar=\left(n-\frac{1}{4}\right) \pi \hbar, \quad n=1,2,3 \ldots .
+	\end{aligned}
+	$$
 	  \item When both walls are rigid:
 	  $\int_{x_{1}}^{x_{2}} p_{x} d x=(n+1) \pi \hbar \quad$ \\
 	  where $x_{1}$ and $x_{2}$ are turning point $n=0,1,2, \ldots . .$
@@ -632,10 +617,18 @@ Its eigen values and ortho normalized eigen function are known.
 $$\therefore H_0u_n=E_n u_n\quad \int u_m u_n d\tau=\delta_{mn}$$
 Since it is a time evolution problem we use time dependent schoodinger equation \\
 So,
-$$H\psi=E\psi$$
-$$H=H_0+H^\prime\quad E=-i\hbar\frac{ d}{dt}$$
+	$$
+	\begin{aligned}
+	H\psi&=E\psi\\
+	H&=H_0+H^\prime\quad E=-i\hbar\frac{ d}{dt}\\
+	\therefore\quad \frac{i\hbar d \psi}{dt}&=H_0\psi+H^\prime\psi
+\end{aligned}
+$$
 
-$$\therefore\frac{i\hbar d \psi}{dt}=H_0\psi+H^\prime\psi$$
+
+
+
+
 Which has the solution of the form.
 $$\psi(x,t)=\sum_{n}a_n(t)u_n(x)e^{\frac{-i}{\hbar }E_nt}$$
 Where $|a_n(t)|^2$ is the probability with which the system described by $\psi(x,t)$ in an energy eigen state $u_n(x)$\\\\
@@ -667,8 +660,8 @@ Probability of transition from $i $ to all states $f\neq i$ is much less than un
 $$ \sum^\prime|a^\prime_f(t)|^2<<1$$
 \textbf{(a)\quad Transition Probability }\\
 We now consider the specific case of a perturbation $H^\prime$ which lasts from time $0  $ to $t$ and is constant during this period.\\
-$$\therefore a_f(t)=(ih)^{-1}\int H^\prime _{fi}e^{i\omega_{fi}t}dt $$ 
-$\therefore H^\prime_{fi}$ is constant\\
+$$\therefore \quad  a_f(t)=(ih)^{-1}\int H^\prime _{fi}e^{i\omega_{fi}t}dt $$ 
+$\therefore \quad H^\prime_{fi}$ is constant\\
 $$a_f(t)=(i\hbar)^{-1}H^\prime_{fi}\int e^{i\omega_{fi}t}dt$$
 $$=(i\hbar)^{-1}H^\prime_{fi}\frac{e^{i\omega_{fi}t}-1}{i\omega_{fi}}=-H^\prime_{fi}\frac{e^{i\omega_{fi}t}-1}{\hbar\omega_{fi}}$$
 $$|a_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{\omega_{fi}^2}$$
@@ -681,9 +674,16 @@ The behaviour of the factor $\frac{4}{(\omega_{fi})^2}\sin^2\frac{1}{2}\omega_{f
 \end{figure}
 The main peak of the curve occurs at $\omega_{fi}=0$ is of height $t^2$\\
 $\therefore$ We see that the transition from $i$ take place with appreciable probability only to those level $f$ such that $\omega_{fi}$ falls under the main peak: $|\omega_{fi}|\leq \frac{2\pi}{t}$.In other words the magnitude of the energy difference
-$|\hbar\omega_{fi}|$ between the initial and final states is very unlikely to be significally higher than $\hbar(\frac{2\pi}{t})=\frac{h}{t}$.This result is  generally considered as an expression of an energy time uncertainity relation .\\
-$$\hbar\omega_{fi}\leq\frac{\hbar2\pi}{\tau}\quad\hbar=\frac{\hbar}{2\pi}$$
-$$\Delta E\leq \frac{\hbar}{\Delta t}\quad \Delta E\Delta t\approx h$$
+$|\hbar\omega_{fi}|$ between the initial and final states is very unlikely to be significally higher than $\hbar(\frac{2\pi}{t})=\frac{h}{t}$.This result is  generally considered as an expression of an energy time uncertainity relation .
+	$$
+	\begin{aligned}
+	\hbar\omega_{fi}\leq\frac{\hbar2\pi}{\tau}\quad\hbar&=\frac{\hbar}{2\pi}\\
+	\Delta E\leq \frac{\hbar}{\Delta t}\quad \Delta E\Delta t&\approx h
+\end{aligned}
+$$
+
+
+
 Energy time uncertainity relation\\
 \textbf{(b)\quad Closely Packed Levels}\\
 Suppose there are many $f$ levels within the energy level $\Delta E$ Covered by the main peak, then,\\
@@ -693,16 +693,20 @@ If spacing are very close summation can be changed in to integration such as,
 $$\sum_{f}.....\implies \int(E_f)dE_f\rightarrow\rho(E_f)\int dE_f$$
 Where $\rho(E_f)$ is the density of states that is the number of state around the energy. 
 Number of state with energy with in $d(E_f)=d_{nf}=\rho(E_f)dE_f \rho(f)$ is constant.
-$$\therefore \sum_{f}|a^{(1)}_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}dE_f$$
-$$\hbar\omega_{fi}=E_f-E_i$$
-$$\hbar d\omega_{fi}=dE_f$$
-$$ d\omega_{fi}=\frac{dE_f}{\hbar}$$
-$$\therefore\sum_{f}|a^{1}_f(t)|^2=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}d\omega_{fi}$$
-$$\text{Since} \quad 2t\int_{-\infty}^{\infty}x^{-2}\sin^2xdx=2\pi t$$
-$$\sum_{f}|a^{1}_f(t)|^2=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)$$
-$\therefore$ Transition probability /unit time
-$$\frac{1}{t}\sum_{f}a^{(1)}_f(t)|^2=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)$$
-This formula is called \textcolor{red}{'Fermi Golden rule'}
+	$$
+	\begin{aligned}
+	\therefore \sum_{f}|a^{(1)}_f(t)|^2&=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}dE_f\\
+	\hbar\omega_{fi}&=E_f-E_i\\
+	\hbar d\omega_{fi}&=dE_f\\
+	 d\omega_{fi}&=\frac{dE_f}{\hbar}\\
+	\therefore\sum_{f}|a^{1}_f(t)|^2&=\frac{|H_{fi}|^2}{\hbar^2}\rho(E_f)\int\frac{4\sin^2\frac{1}{2}\omega_{fi}t}{(\omega_{fi})^2}d\omega_{fi}\\
+	\text{Since} \quad 2t\int_{-\infty}^{\infty}x^{-2}\sin^2xdx&=2\pi t\\
+	\sum_{f}|a^{1}_f(t)|^2&=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)\\
+	\therefore \text{Transition probability /unit time}\\
+	\frac{1}{t}\sum_{f}a^{(1)}_f(t)|^2&=\frac{2\pi}{\hbar}t|H_{fi}|^2\rho(E_f)\\
+	\text{This formula is called }&\textcolor{red}{\text{'Fermi Golden rule'}}
+\end{aligned}
+$$
 \subsection{Harmonic Perturbation}
 \textbf{(a)Amplitude for Transition With Change of Energy}\\
 We shall now consider a harmonic perturbation .
@@ -733,10 +737,12 @@ However the transition probability preportional to time can arise under the foll
 (ii)These are incoherent in the sense that the phase of the different frequency componets are unrelated to each other.\\
 (iii)The magnitude of these perturbations and the spacing of the frequencies are smooth function of $\omega$.\\\\
 Consider the second situation of incoherent frequency.To determine the total transition probability induced by the whole spectrum of frequencies one simply add up the probabilities arising from the different frequency components.Condition (i) then enables this sum to be replaced by an integral.Thus the total transition probability will be 
-\begin{align*}
+$$
+\begin{aligned}
 \sum_{\omega} |a_f(t,\omega)|^2 &= \sum_{\omega}  \frac{|H^{\prime o}_{fi}(\omega)|^2}{\hbar^2}\ \frac{4 \sin^2\frac{1}{2}(\omega_{fi}+\omega)t}{(\omega_{fi}-\omega)^2}\\
 &=\int \frac{|H^{\prime o}_{fi}(\omega)|^2}{\hbar^2}\frac{4 \sin^2\frac{1}{2}(\omega_{fi}+\omega)t}{(\omega_{fi}-\omega)^2}\rho (\omega)\ d\omega
-\end{align*}
+\end{aligned}
+$$
 $|H_{fi}(\omega)|^2$ and $\rho(\omega)$ Varies smothly with $\omega$ and almost constant in the intervel $\frac{1}{t}$ around $\omega=\omega_{fi}$ both can be taken out integral and after integrating we get,\\
 Transition probability per unit time
 $$  = \frac{2\pi}{\hbar^2}|H^{\prime o}_{fi}(\omega_{fi})|^2 \rho (\omega_{fi})$$
@@ -855,7 +861,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
  	The correction to the ground state energy, to first order in $a$, is
  	\exyear{NET JUNE 2011}
  \end{minipage}
- \begin{tasks}(2)
+ \begin{tasks}(4)
  	\task[\textbf{A.}] $\frac{a \pi}{2}$
  	\task[\textbf{B.}]$a \pi$
  	\task[\textbf{C.}]$\frac{a \pi}{4}$
@@ -891,7 +897,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	$\text { The first-order correction to the ground state energy of the particle is }$
 	\exyear{NET DEC 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{V_{0}}{2}$
 	\task[\textbf{B.}]$\frac{3 V_{0}}{4}$
 	\task[\textbf{C.}]$\frac{V_{0}}{4}$
@@ -950,7 +956,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item The ground state eigenfunction for the potential $V(x)=-\delta(x)$ where $\delta(x)$ is the delta function, is given by $\psi(x)=A e^{-\alpha|x|}$, where $A$ and $\alpha>0$ are constants. If a perturbation $H^{\prime}=b x^{2}$ is applied, the first order correction to the energy of the ground state will be
 	\exyear{NET JUNE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{b}{\sqrt{2} \alpha^{2}}$ 
 	\task[\textbf{B.}]$\frac{b}{\alpha^{2}}$
 	\task[\textbf{C.}]$\frac{2 b}{\alpha^{2}}$
@@ -990,7 +996,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item The Hamiltonian $H_{0}$ for a three-state quantum system is given by the matrix $H_{0}=\left(\begin{array}{lll}1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2\end{array}\right) .$ When perturbed by $H^{\prime}=\in\left(\begin{array}{lll}0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{array}\right)$ where $\in<<1$, the resulting shift in the energy eigenvalue $E_{0}=2$ is
 	\exyear{NET DEC 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\in,-2 \in$
 	\task[\textbf{B.}] $-\in, 2 \in$
 	\task[\textbf{C.}]$\pm \in$
@@ -1000,7 +1006,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item A particle of mass $m$ is in a potential $V=\frac{1}{2} m \omega^{2} x^{2}$, where $\omega$ is a constant. Let $\hat{a}=\sqrt{\frac{m \omega}{2 \hbar}}\left(\hat{x}+\frac{i \hat{p}}{m \omega}\right) .$ In the Heisenberg picture $\frac{d \hat{a}}{d t}$ is given by
 	\exyear{NET JUNE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\omega \hat{a}$
 	\task[\textbf{B.}]$-i \omega \hat{a}$
 	\task[\textbf{C.}]$\omega \hat{a}^{\dagger}$
@@ -1014,7 +1020,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	where $a_{0}$ is the Bohr radius. The change in the ground state energy to first order in $\in$
 	\exyear{NET DEC 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{\in}{4}$
 	\task[\textbf{B.}] $\frac{\in}{2}$
 	\task[\textbf{C.}]$\frac{-\epsilon}{2}$
@@ -1059,17 +1065,17 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\exyear{NET JUNE 2017}
 \end{minipage}
 \begin{tasks}(2)
-	\task[\textbf{A.}] unchanged
-	\task[\textbf{B.}]doubled
-	\task[\textbf{C.}]quadrupled
-	\task[\textbf{D.}]halved
+	\task[\textbf{A.}] Unchanged
+	\task[\textbf{B.}]Doubled
+	\task[\textbf{C.}]Quadrupled
+	\task[\textbf{D.}]Halved
 \end{tasks}
 \begin{minipage}{\textwidth}
 	\item The Coulomb potential $V(r)=-e^{2} / r$ of a hydrogen atom is perturbed by adding $H^{\prime}=b x^{2}$ (where $b$ is a constant) to the Hamiltonian. The first order correction to the ground state energy is
 	(The ground state wavefunction is $\psi_{0}=\frac{1}{\sqrt{\pi a_{0}^{3}}} e^{-r / a_{0}}$ )
 	\exyear{NET JUNE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $2 b a_{0}^{2}$
 	\task[\textbf{B.}]$b a_{0}^{2}$
 	\task[\textbf{C.}]$b a_{0}^{2} / 2$
@@ -1093,7 +1099,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	is applied, then the correction to the energy of the first excited state, to first order in $\Delta V$, is nearest to
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $V_{0}$
 	\task[\textbf{B.}]$0.16 V_{0}$
 	\task[\textbf{C.}]$0.2 V_{0}$
@@ -1164,7 +1170,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	The shift in the ground state energy due to the perturbation, in the first order perturbation theory,
 	\exyear{GATE 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{2 V_{o}}{3 \pi}$
 	\task[\textbf{B.}]$\frac{V_{o}}{3 \pi}$
 	\task[\textbf{C.}]$-\frac{V_{o}}{3 \pi}$
@@ -1221,7 +1227,7 @@ $\begin{aligned}
 	If particle is subjected to a perturbation within the box. $W=\beta x$. Where $\beta$ is small constant, the first order correction to the ground state energy is
 	\exyear{GATE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] 0
 	\task[\textbf{B.}]$a \beta / 4$
 	\task[\textbf{C.}]$a \beta / 2$
@@ -1232,7 +1238,7 @@ $\begin{aligned}
 	\exyear{GATE 2015}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=4cm]{diagram-20210824(7)-crop}
+		\includegraphics[height=3cm,width=3cm]{diagram-20210824(7)-crop}
 	\end{figure}
 \end{minipage}
 \begin{tasks}(2)
@@ -1245,7 +1251,7 @@ $\begin{aligned}
 	\item A one dimensional simple harmonic oscillator with Hamiltonian $H_{0}=\frac{p^{2}}{2 m}+\frac{1}{2} k x^{2}$ is subjected to a small perturbation, $H_{1}=\alpha x+\beta x^{3}+\gamma x^{4}$. The first order correction to the ground state energy is dependent on
 	\exyear{GATE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] only $\beta$
 	\task[\textbf{B.}]$\alpha$ and $\gamma$
 	\task[\textbf{C.}]$\alpha$ and $\beta$
