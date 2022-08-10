@@ -1,9 +1,9 @@
-\chapter{Eigen value problems}
-\section{Eigen values and eigen function}
+\chapter{EIGEN VALUE PROBLEMS}
+\section{Eigen Values and Eigen Function}
  The values of energy $E_n$ for which Schrodinger steady state equation can be solved are called eigen values and the corresponding wavefunctions $\psi_{n}$ are called eigen functions.\\
   The condition that a certain dynamical variable G be restricted to the descrete values $G_n$- in other words, that G be quandized-is that the wavefunction $\psi_{n}$ of the system be such that \\
   Eigen value equation $\implies \hat{G}\psi_{n}=G_n \psi_{n}$
-  \section{Particle in a one dimensional box}
+  \section{Particle in a One Dimensional Box}
   \begin{figure}[H]
   	\centering
   	\includegraphics[height=4cm,width=5.5cm]{particle in abox}
@@ -28,7 +28,7 @@
   \psi(x)&=A \sin k x+B \cos k x\\
   \psi&=A \sin \frac{\sqrt{2 m E}}{\hbar} x+B \cos \frac{\sqrt{2 m E}}{\hbar} x
   \end{align}
-  \subsubsection{Boundary conditions}
+  \subsubsection{Boundary Conditions}
   $\psi(x)$ will be continuous at $x=0$ and $x=a$.
   \begin{enumerate}
   	\item Applying $\left.\psi(x)\right|_{x=0}=0 \quad \Rightarrow B=0$
@@ -47,7 +47,7 @@
   			
   	} }
   \end{center}
-  \subsection{Normalisation of the wavefunction of a particle in a box}
+  \subsection{Normalisation of the Wavefunction of a Particle in a Box}
   The wave function $\psi_{n}$ corresponding to $\mathrm{n}^{\text {th }}$ quantum state is,
   \begin{equation}
   \psi(x) = \begin{cases} 
@@ -73,7 +73,7 @@
   			\textbf{Wavefunction of a particle in a box} \\ \vspace{0.3cm}
   			$\psi_{n}(x)=\sqrt{\frac{2}{L}} \sin \left(\frac{n \pi x}{L}\right)$} }
   \end{center}
-  \subsection{Energy of a particle in a box}
+  \subsection{Energy of a Particle in a Box}
   We have found that the solution is subject to the boundary condition.  The sine term always yields $\psi=0$ at $x=0$, as required, but $\psi$ will be 0 at $x=L$ only when
   \begin{align}
   \frac{\sqrt{2 m E}}{\hbar} L&=n \pi \quad n=1,2,3, \ldots \label{particle2}
@@ -131,15 +131,15 @@
   	\caption{Variation of probability density with eigen states.}
   	\label{Variation of probability density with eigen states.}
   \end{figure}
-  \section{Expectation values of \Large{ $\hat{x}, \hat{p}_{x}, \hat{x}^{2}, \hat{p}_{x}^{2}$}}
-  \subsection{Expectation values of  position \Large{ $\hat{x}$}}
+  \section{Expectation Values of \Large{ $\hat{x}, \hat{p}_{x}, \hat{x}^{2}, \hat{p}_{x}^{2}$}}
+  \subsection{Expectation Values of  Position \Large{ $\hat{x}$}}
   \begin{align*}
   \langle x\rangle &=\int_{-\infty}^{\infty} \psi^{*} x \psi =\int_{-\infty}^{\infty} x|\psi|^{2} d x=\frac{2}{L} \int_{0}^{L} x \sin ^{2} \frac{n \pi x}{L} d x \\
   &=\frac{2}{L}\left[\frac{x^{2}}{4}-\frac{x \sin (2 n \pi x / L)}{4 n \pi / L}-\frac{\cos (2 n \pi x / L)}{8(n \pi / L)^{2}}\right]_{0}^{L}
   \intertext{Since $\sin n \pi=0, \cos 2 n \pi=1$, and $\cos 0=1$, for all the values of $n$ the expectation value of $x$ is}
   \langle x\rangle&=\frac{2}{L}\left(\frac{L^{2}}{4}\right)\\&=\frac{L}{2}
   \end{align*}
-  \subsection{Expectation values of  momentum \Large{$\hat{p_{x}}$}}
+  \subsection{Expectation Values of  Momentum \Large{$\hat{p_{x}}$}}
   \begin{align*}
   \langle p\rangle&=\int_{-\infty}^{\infty} \psi^{*} \hat{p} \psi d x\\&=\int_{-\infty}^{\infty} \psi^{*}\left(\frac{\hbar}{i} \frac{d}{d x}\right) \psi d x
   \intertext{Then we have to find the derivative of the wavefunction $\psi$}
@@ -153,14 +153,14 @@
   p_{n}&=\pm \sqrt{2 m E_{n}}=\pm \frac{n \pi \hbar}{L} \quad (\text{Which is not equal to zero.})\\
   p_{\mathrm{av}}&=\frac{(+n \pi \hbar / L)+(-n \pi \hbar / \mathrm{L})}{2}\\&=0
   \end{align*}
-  \subsection{Expectation values of    \Large{$\hat{{x}}^{2}$}}
+  \subsection{Expectation Values of    \Large{$\hat{{x}}^{2}$}}
   \begin{align*}
   \left\langle x^{2}\right\rangle&=\int_{0}^{L} \psi^{*} x^{2} \psi d x\\&=\frac{2}{L} \int_{0}^{L} x^{2} \sin ^{2} \frac{n \pi x}{L} d x
   \\&=\frac{2}{L} \int_{0}^{L} x^{2}\left[ 1- \cos 2 \frac{n \pi x}{L}\right]  d x
   \\&=\frac{1}{L}\left[\left(\frac{x^{3}}{3}\right)_{0}^{L}-\left(x^{2} \frac{(\sin 2 n \pi x / L)}{(2 n \pi / L)}\right)_{0}^{L}+\int_{0}^{L} 2 x \cdot \sin \frac{(2 n \pi x / L)}{(2 n \pi / L)} d x\right]\\
   &=\frac{1}{L}\left[\frac{L ^{3}}{3}-0+2\left\{-x \frac{\cos \frac{2 n \pi x}{L}}{\left(\frac{2 n \pi}{L}\right)^{2}}+\frac{\sin \frac{2 n \pi x}{L}}{\left(\frac{2 n \pi}{L}\right)^{2}}\right\}_{0}^{L}\right]\\&=\frac{1}{L}\left[\frac{L^{3}}{3}-\frac{L^{3}}{2(n \pi)^{2}}\right]\\&=\frac{L^{2}}{3}-\frac{L^{2}}{2 n^{2} \pi^{2}}
   \end{align*}
-  \subsection{Expectation values of \Large{$\hat{{p_{x}}}^{2}$}}
+  \subsection{Expectation Values of \Large{$\hat{{p_{x}}}^{2}$}}
   \begin{align*}
   \left\langle p^{2}\right\rangle&=\frac{2}{L} \int_{0}^{a} \sin \left(\frac{n \pi x}{a}\right)\left(-\hbar^{2} \frac{\partial^{2}}{\partial x^{2}}\right) \sin \left(\frac{n \pi x}{L}\right) d x\\&=\frac{2}{L}\left(-\hbar^{2}\right)\left(\frac{n \pi}{L}\right)^{2}(-1) \int_{0}^{L} \sin ^{2}\left(\frac{n \pi x}{L}\right) d x\\
   &=\frac{2}{L}\left(-\hbar^{2}\right)\left(\frac{n \pi}{L}\right)^{2}(-1) \int_{0}^{L} \sin ^{2}\left(\frac{n \pi x}{a}\right) d x\\
@@ -208,7 +208,7 @@
   \text{Where, }\quad k_{x}=\frac{n_{x}\pi }{L_{x}} \quad &\text{And } \quad  k_{y}=\frac{n_{y}\pi}{L_{y}}\\
   \psi(x,y)&=\sqrt{\frac{2}{L_{x}}} \sqrt{\frac{2}{L_{y}}} \sin{\frac{n_{x}\pi x}{L_{x}}}\sin{\frac{n_{y}\pi y}{L_{y}}}
   \end{align}
-  \subsection{Energy of a particle in a 2D Box}
+  \subsection{Energy of a Particle in a 2D Box}
   \begin{alignat*}{2}
   \intertext{We know that the total kinetic  energy of the particle can be written as,}
   &\left. \right. &&E=E_{x}+E_{y}\\
@@ -226,7 +226,7 @@
   			\textbf{Energy of a particle in 2-D box}\\ \vspace{0.2cm}
   			$E= \frac{\hbar^{2} \pi^{2}}{2m}\left(  \frac{n_{x}^{2}}{L_{x}^{2}}+ \frac{n_{y}^{2}}{L_{y}^{2}}\right)$} }
   \end{center}
-  \subsubsection{Degeneracy of 2D box}
+  \subsubsection{Degeneracy of 2D Box}
   \begin{align*}
   \intertext{Energy of a particle in 2-D box,}
   E&= \frac{\hbar^{2} \pi^{2}}{2m}\left(  \frac{n_{x}^{2}}{L_{x}^{2}}+ \frac{n_{y}^{2}}{L_{y}^{2}}\right)\\
@@ -292,7 +292,7 @@
   \intertext{Then the solution of the Schrodinger equation for the wavefunction becomes,}
   \psi(x,y,z)&=\sqrt{\frac{2}{L_{x}}} \sqrt{\frac{2}{L_{z}}} \sqrt{\frac{2}{L_{x}}}\sin{\frac{n_{x}\pi x}{L_{x}}}\sin{\frac{n_{y}\pi y}{L_{y}}}\sin{\frac{n_{z}\pi z}{L_{z}}}
   \end{align}
-  \subsection{Energy of a particle in a 3D Box}
+  \subsection{Energy of a Particle in a 3D Box}
   \begin{alignat*}{2}
   \intertext{We know that the total kinetic  energy of the particle can be written as,}
   &\left. \right. &&E=E_{x}+E_{y}+E_{z}\\
@@ -310,7 +310,7 @@
   			\textbf{Energy of a particle in 3-D box}\\ \vspace{0.2cm}
   			$E= \frac{\hbar^{2} \pi^{2}}{2m}\left(  \frac{n_{x}^{2}}{L_{x}^{2}}+ \frac{n_{y}^{2}}{L_{y}^{2}} + \frac{n_{z}^{2}}{L_{z}^{2}}\right)$} }
   \end{center}
-  \subsubsection{Degeneracy of 3-D box}
+  \subsubsection{Degeneracy of 3-D Box}
   \begin{align*}
   \intertext{Energy of a particle in 3-D box,}
   E&= \frac{\hbar^{2} \pi^{2}}{2m}\left(  \frac{n_{x}^{2}}{L_{x}^{2}}+ \frac{n_{y}^{2}}{L_{y}^{2}}+\frac{n_{z}^{2}}{L_{z}^{2}}\right)\\
@@ -362,7 +362,7 @@
   	\caption{Energy levels of 3D box}
   	\label{Energy levels of 3D box.}
   \end{figure}
-\section{Finite potential well}
+\section{Finite Potential Well}
 
 We have discussed potential wells with infinite potentials but in our real physical world 
 Potential energies are never infinite , and the box with infinitely hard
@@ -419,7 +419,7 @@ K_{1}=K_{2} \tan (K_{2} L)
 \intertext{This is a formula for the allowed energies, since $K_{1}$ and $K_{2}$ are both functions of $E$. To solve for $E$, we first adopt some nicer notation: Let}
 z \equiv K_{2} L, \quad \text { and } \quad z_{0} \equiv \frac{L}{\hbar} \sqrt{2 m V_{0}}
 \end{align}
-\section{Step potential}
+\section{Step Potential}
 represent a particle undergoing scattering in some potential. Here we examine the step potential  defined by,
 $$
 V(x)=\left\{\begin{array}{ll}
@@ -433,7 +433,7 @@ Our solutions to the Schrödinger equation with this potential will be scatterin
 	\item $E<V_{0}$.
 \end{enumerate}
 In both cases the wavefunction extends infinitely to the left and is non-normalizable.
-\subsection{Step Potential with $E>V_{0}$.}
+\subsection{Step Potential With $E>V_{0}$.}
 Let us begin with the case $E>V_{0}$.
 \begin{align*}
 \intertext{The potential in the region I ,\ $ V=0 $ ,}
@@ -452,7 +452,7 @@ D&=\pm iK_{2}\\
 \end{align*}
 \subsection{Tunnel Effect}
 Although the walls of the potential well were of finite height, they were assumed to be infinitely thick. As a result the particle was trapped forever even though it could penetrate the walls. We next look at the situation of a particle that strikes a potential barrier of height $U$, again with $E<\mathrm{U}$, but here the barrier has a finite width. What we will find is that the particle has a certain probability not necessarily great, but not zero either of passing through the barrier and emerging on the other side.
-\section{The potential barrier}
+\section{The Potential Barrier}
 Consider a beam of particle of mass m that are sent from the left on the potential barrier\\
 $V(x)= \begin{cases}0, & x<0 \\ V_{0}, & 0 \leq x \leq a \\ 0, & x>a\end{cases}$
 This potential, which is repulsive, supports no bound states. We are dealing here, as in the case of the potential step, with a one-dimensional scattering problem.
@@ -464,7 +464,7 @@ Again, let us consider the following two cases which correspond to the particle 
 	\caption{}
 	\label{}
 \end{figure}
-\subsection{The case $E>V_0$}
+\subsection{The Case $E>V_0$}
 Classically ,the particle that approach the barrier from the left at constant momentum,$p_1=\sqrt{2mE}$,as they enter the region $0\leq x \leq a$ will slow down to a momentum $p_2=\sqrt{2m(E-V_0)}$.They will maintain the momentum $p_2$ until they reach the point $x=a$.Then as soon as they pass beyond the point $x=a$ they will accelerate to the momentum $p_3=\sqrt{2mE}$ and maintain this value in the entire region $x>a$.Since the particles have enough energy to cross the barrier none of the particle will be reflected back;all the particles will emerge on the right side of $x=a$:\textit{total transmission}\\
 The wavefunction in three region can be written as 
 $$\psi(x)= \begin{cases}\psi_{1}(x)=A e^{i k_{1} x}+B e^{-i k_{1} x}, & x \leq 0, \\ \psi_{2}(x)=C e^{i k_{2} x}+D e^{-i k_{2} x}, & 0<x<a, \\ \psi_{3}(x)=E e^{i k_{1} x}, & x \geq a,\end{cases}$$
@@ -526,7 +526,7 @@ Similarly, we can show that reflection coefficient R
 			\end{array}
 			\end{align*}} }
 \end{center}
-\subsection{The case $E<V_0$:Tunneling}
+\subsection{The Case $E<V_0$:Tunneling}
 We are now going to show that the quantum mechanical predictions differ sharply from their classical counterparts, for the wave function is not zero beyond the barrier. The solutions of the Schrödinger equation in the three regions yield expressions that are similar to (4.36) except that $\psi_{2}(x)=C e^{i k_{2} x}+D e^{-i k_{2} x}$ should be replaced with $\psi_{2}(x)=C e^{k_{2} x}+D e^{-k_{2} x}:$\\
 $$\psi(x)= \begin{cases}\psi_{1}(x)=A e^{i k_{1} x}+B e^{-i k_{1} x}, & x \leq 0 \\ \psi_{2}(x)=C e^{k_{2} x}+D e^{-k_{2} x}, & 0<x<a \\ \psi_{3}(x)=E e^{i k_{1} x}, & x \geq a\end{cases}$$
 where $k_{1}^{2}=2 m E / \hbar^{2}$ and $k_{2}^{2}=2 m\left(V_{0}-E\right) / \hbar^{2}$. The behavior of the probability density corresponding to this wave function is expected, as displayed in Figure, to be oscillatory in the regions $x<0$ and $x>a$, and exponentially decaying for $0 \leq x \leq a$.\\
@@ -575,7 +575,7 @@ $$\begin{aligned}
 			\end{align*}} }
 \end{center}
 $\text { where } \lambda=a \sqrt{2 m V_{0} / \hbar^{2}} \text { and } \varepsilon=E / V_{0} \text {. }$\\
-\textbf{Special cases}
+\textbf{Special Cases}
 \begin{enumerate}
 	\item  If $E \ll V_{0}$, hence $\varepsilon \ll 1$ or $\lambda \sqrt{1-\varepsilon} \gg 1$, we may approximate $\sinh (\lambda \sqrt{1-\varepsilon}) \simeq$ $\frac{1}{2} \exp (\lambda \sqrt{1-\varepsilon})$. We can thus show that the transmission coefficient becomes asymptotically equal to
 	$$
@@ -639,7 +639,7 @@ $$
 V(x)=\frac{1}{2} kx^{2}=\frac{1}{2} km\omega^{2}x^{2}
 $$
 because so many of the systems encountered in nuclear physics, condensed matter physics, and elementary particle physics can be treated, to a first approximation, as a set of coupled harmonic oscillators. As we know harmonic motion takes place when a system of some kind vibrates about an equilibrium configuration.
-\subsection{Harmonic Oscillator-Classical treatement}
+\subsection{Harmonic Oscillator-Classical Treatement}
 In the special case of simple harmonic motion, the restoring force $F$ on a particle of mass $m$ is linear; that is, $F$ is proportional to the particle's displacement $x$ from its equilibrium position and in the opposite direction.
 Newton's law of motion $F=m a$ is generally non-linear, since $F(x)$ is usually a nonlinear function of $x$. However, if $F$ depends linearly on $x$, it follows that the potential depends quadratically on $x$, which implies a harmonic oscillator. We can write the equation of motion as,
 \begin{align}
@@ -658,7 +658,7 @@ x(t)&=A \cos (\omega t)+A \sin (\omega t)
 x(t)&=A \cos (\omega t+\phi) \text{Where $A$ is the amplitude  of the wave}
 \end{align}
 The value of $\phi$, the phase angle, depends upon what $x$ is at the time $t=0$ and on the direction of motion then. The importance of the simple harmonic oscillator in both classical and modern physics lies not in the strict adherence of actual restoring forces to Hooke's law, which is seldom true, but in the fact that these restoring forces reduce to Hooke's law for small displacements $x$. As a result, any system in which something executes small vibrations about an equilibrium position behaves very much like a simple harmonic oscillator.
-\subsubsection{Total energy of the system}
+\subsubsection{Total Energy of the System}
 \begin{align}
 \intertext{The kinetic energy of the system can be written as,}T&=\frac{1}{2} m\left(\frac{d x}{d t}\right)^{2}\\&=\frac{1}{2} m a^{2} \omega^{2} \cos ^{2}(\omega t+\phi)\\&=\frac{1}{2} m \omega^{2} a^{2}\left[1-\sin ^{2}(\omega t+\phi)\right]\\&=\frac{1}{2} m \omega^{2}\left(a^{2}-x^{2}\right)
 \intertext{Therefore, the total energy of the particle at $x$ is,}
@@ -673,12 +673,12 @@ E&=K.E+P.E\\
 	\label{}
 \end{figure}
 
-\section{Harmonic oscillator-Quantum mechanical treatment}
+\section{Harmonic Oscillator-Quantum Mechanical Treatment}
 There are only a very few potentials for which the Schrodinger equation can be solved analytically. The most important of these is the potential of the harmonic oscillator.\\
 The Hamiltonian of a particle of mass $m$ which oscillates with an angular frequency $\omega$ under the influence of a one-dimensional harmonic potential is\\
 $$\hat{H}=\frac{\hat{P}^{2}}{2 m}+\frac{1}{2} m \omega^{2} \hat{X}^{2} $$
 The problem is how to find the energy eigenvalues and eigenstates of this Hamiltonian. This problem can be studied by means of two separate methods. The first method, called the analytic method, consists in solving the time-independent Schrödinger equation (TISE) for the Hamiltonian. The second method, called the ladder or algebraic method, does not deal with solving the Schrödinger equation, but deals instead with operator algebra involving operators known as the creation and annihilation or ladder operators; this method is in essence a matrix formulation, because it expresses the various quantities in terms of matrices.
-\subsection{Analytical method}
+\subsection{Analytical Method}
 \begin{align}
 \intertext{The Schrodinger equation is given  by,}
 \frac{d^{2} \psi}{d x^{2}}+\frac{2 m}{\hbar^{2}}\left(E-U\right) \psi&=0
@@ -706,7 +706,7 @@ The problem is how to find the energy eigenvalues and eigenstates of this Hamilt
 	\label{ Harmonic wavefunction}
 \end{figure}
 \begin{note}
-	\textbf{Hermite Polynomial values}
+	\textbf{Hermite Polynomial Values}
 	\begin{align*}
 	H_{0}(x)&=1 \\
 	H_{1}(x)&=2 x \\
