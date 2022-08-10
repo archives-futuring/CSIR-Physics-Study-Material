@@ -460,7 +460,7 @@ This potential, which is repulsive, supports no bound states. We are dealing her
 Again, let us consider the following two cases which correspond to the particle energies being respectively larger and smaller than the potential barrier.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=9cm,width=15cm]{diagram-20220112-crop}
+	\includegraphics[height=7cm,width=10cm]{diagram-20220112-crop}
 	\caption{}
 	\label{}
 \end{figure}
@@ -668,7 +668,7 @@ E&=K.E+P.E\\
 \end{align}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm,width=5cm]{SHMclassical}
+	\includegraphics[height=4cm,width=3.5cm]{SHMclassical}
 	\caption{The potential energy curve of Simple harmonic oscillator}
 	\label{}
 \end{figure}
@@ -701,7 +701,7 @@ The problem is how to find the energy eigenvalues and eigenstates of this Hamilt
 \end{center}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=7cm,width=10cm]{SHM1}
+	\includegraphics[height=6cm,width=8cm]{SHM1}
 	\caption{Wavefunctions and Probability densities of Harmonic wavefunction}
 	\label{ Harmonic wavefunction}
 \end{figure}
@@ -730,11 +730,11 @@ E_{n}&=(n+\frac{1}{2})\hbar \omega
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=8cm,width=9cm]{shm energy level}
+	\includegraphics[height=7.5cm,width=8.5cm]{shm energy level}
 	\caption{Energy levels of Harmonic Oscillator}
 	\label{Energy levels of Harmonic Oscillator}
 \end{figure}
-\subsection{Algebraic method(ladder method)}
+\subsection{Algebraic Method(ladder Method)}
    Let us now show how to solve the harmonic oscillator eigen value problem using the algebraic method.For this we need to rewrite the hamiltonian interms of two hermitian dimensionless operators $\hat{p}=\hat{P}/\sqrt{m\hbar \omega}$ and $\hat{q}=\hat{X}\sqrt{m\omega/\hbar}$\\
    $$\hat{H}=\frac{\hbar \omega}{2}\left( \hat{p}^2+\hat{q}^2\right) $$
    And then introduce two non hermitian dimensioless operators:
@@ -751,18 +751,21 @@ E_{n}&=(n+\frac{1}{2})\hbar \omega
    where $\hat{N}$ is known as the number operator or occupation number operator, which is clearly Hermitian.\\
    Let us now derive the commutator $\left[\hat{a}, \hat{a}^{\dagger}\right]$. Since $[\hat{X}, \hat{P}]=i \hbar$ we have $[\hat{q}, \hat{p}]=\frac{1}{\hbar}[\hat{X}, \hat{P}]=$ $i$; hence
    $$
-   \left[\hat{a}, \hat{a}^{\dagger}\right]=\frac{1}{2}[\hat{q}+i \hat{p}, \hat{q}-i \hat{p}]=-i[\hat{q}, \hat{p}]=1
+   \begin{aligned}
+    \left[\hat{a}, \hat{a}^{\dagger}\right]&=\frac{1}{2}[\hat{q}+i \hat{p}, \hat{q}-i \hat{p}]=-i[\hat{q}, \hat{p}]=1\\
+   \text{or}\quad\left[\hat{a}, \hat{a}^{\dagger}\right]&=1
+   \end{aligned}
    $$
-   or $$ \left[\hat{a}, \hat{a}^{\dagger}\right]=1$$
-   \paragraph{Energy eigen values}
+   \paragraph{Energy Eigen Values}
    Note that $\hat{H}$  commutes with $\hat{N}$, since $\hat{H}$ is linear in $\hat{N}$. Thus, $\hat{H}$ and $\hat{N}$ can have a set of joint eigenstates, to be denoted by $|n\rangle$ :
+   	$$
+   	\begin{aligned}
+   	 \hat{N}|n\rangle&=n|n\rangle\\
+   	  \text{and}\qquad
+   	  \hat{H}|n\rangle&=E_{n}|n\rangle
+   \end{aligned}
    $$
-   \hat{N}|n\rangle=n|n\rangle
-   $$
-   and
-   $$
-   \hat{H}|n\rangle=E_{n}|n\rangle
-   $$
+ 
    Now we need the following commutators\\
 $$[\hat{a}, \hat{H}]=\hbar \omega \hat{a}, \quad\left[\hat{a}^{\dagger}, \hat{H}\right]=-\hbar \omega \hat{a}^{\dagger}$$
 These commutation relation along with  $\hat{H}|n\rangle=E_{n}|n\rangle$ lead to
@@ -798,14 +801,14 @@ These relations reveal that $\hat{a}|n\rangle$ and $\hat{a}^{\dagger}|n\rangle$ 
  $$\hat{a}^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle$$
  This implies that repeated applications of $\hat{a}^{\dagger}$ on $|n\rangle$ generate an infinite sequence of eigenvectors $|n+1\rangle,|n+2\rangle,|n+3\rangle, \ldots$ Since $n$ is a positive integer, the energy spectrum of a harmonic oscillator  is therefore discrete:
 $$ E_{n}=\left(n+\frac{1}{2}\right) \hbar \omega \quad(n=0,1,2,3, \ldots)$$
-\paragraph{Energy eigenstate}
+\paragraph{Energy Eigenstate}
 The algebraic or operator method can also be used to determine the energy eigenvectors.  we see that the various eigenvectors can be written in terms of the ground state | 0) as follows:\\
 |1) $=\hat{a}^{\dagger}|0\rangle$,\\
 $|2\rangle=\frac{1}{\sqrt{2}} \hat{a}^{\dagger}|1\rangle=\frac{1}{\sqrt{2 !}}\left(\hat{a}^{\dagger}\right)^{2}|0\rangle$,\\
 $|3\rangle=\frac{1}{\sqrt{3}} \hat{a}^{\dagger}|2\rangle=\frac{1}{\sqrt{3 !}}\left(\hat{a}^{\dagger}\right)^{3}|0\rangle$,\\
 $|n\rangle=\frac{1}{\sqrt{n}} \hat{a}^{\dagger}|n-1\rangle=\frac{1}{\sqrt{n !}}\left(\hat{a}^{\dagger}\right)^{n}|0\rangle .$\\
 $\text { So, to find any excited eigenstate }|n\rangle, \text { we need simply to operate } \hat{a}^{\dagger} \text { on }|0\rangle n \text { successive times. }$
- \paragraph{Energy eigen state in position space}
+ \paragraph{Energy Eigen State in Position Space}
  $\text { Iet us now determine the harmonic oscillator wave function in the position representation. }$ \\
  Starting with The operator $\hat{p}$, defined by $\hat{p}=\hat{P} / \sqrt{m \hbar \omega}$, is given in the position space by
  $$
@@ -819,7 +822,7 @@ $\text { So, to find any excited eigenstate }|n\rangle, \text { we need simply t
  With these equations and after completing few more steps we will get energy eigen function as \\
  $$\psi_{n}(x)=\frac{1}{\sqrt{\sqrt{2}2^{n}n!x_{0}}}e^{-\frac{x^2}{2x_0^2}}H_n\left( \frac{x}{x_0}\right) $$
  This wavefunction is identical with the one obtained from the first method.\\
- \paragraph{The matrix representation of various operators}
+ \paragraph{The Matrix Representation of Various Operators}
  \begin{enumerate}
  	\item N $\implies$
  		$\left\langle n^{\prime}|\hat{N}| n\right\rangle=n \delta_{n^{\prime}, n}$ \\
@@ -885,7 +888,7 @@ $\text { So, to find any excited eigenstate }|n\rangle, \text { we need simply t
  	\langle n|\hat{X}| n\rangle=\langle n|\hat{P}| n\rangle=0 .
  	$$
  \end{enumerate}
-\paragraph{Expectation values of various operator}
+\paragraph{Expectation Values of Various Operator}
 Let us evaluate the expectation values for $\hat{X}^{2}$ and $\hat{P}^{2}$ in the $N$-representation:
 $$
 \begin{aligned}
@@ -905,36 +908,24 @@ $$\begin{aligned}
 	(b)Use the result of (a) to calculate the energy $E_n$ for a particle whose Hamiltonian is $\hat{H}=\hat{P}^2/2m+\frac{1}{2}m\omega^2\hat{X}^2-\lambda\hat{X}^4$
 \end{exercise}
 \begin{answer}
-	(a) Since $\sum_{m=0}^{\infty}|m\rangle\langle m|=1$ we can write the expectation value of $\hat{X}^{4}$ as
-	$$
-	\left\langle n\left|\hat{X}^{4}\right| n\right\rangle=\sum_{m=0}^{\infty}\left\langle n\left|\hat{X}^{2}\right| m\right\rangle\left\langle m\left|\hat{X}^{2}\right| n\right\rangle=\sum_{m=0}^{\infty}\left|\left\langle m\left|\hat{X}^{2}\right| n\right\rangle\right|^{2} .
-	$$
-	Now since
-	$$
-	\hat{X}^{2}=\frac{\hbar}{2 m \omega}\left(\hat{a}^{2}+\hat{a}^{\dagger 2}+\hat{a} \hat{a}^{\dagger}+\hat{a}^{\dagger} \hat{a}\right)=\frac{\hbar}{2 m \omega}\left(\hat{a}^{2}+\hat{a}^{\dagger 2}+2 \hat{a}^{\dagger} \hat{a}+1\right) .
-	$$
-	the only terms $\left\langle m\left|\hat{X}^{2}\right| n\right\rangle$ that survive are
-	$$
-	\begin{aligned}
+	\begin{align*}
+		\text{(a) Since }\sum_{m=0}^{\infty}|m\rangle\langle m|&=1 \text{we can write the expectation value of $\hat{X}^{4}$ as}\\
+	\left\langle n\left|\hat{X}^{4}\right| n\right\rangle&=\sum_{m=0}^{\infty}\left\langle n\left|\hat{X}^{2}\right| m\right\rangle\left\langle m\left|\hat{X}^{2}\right| n\right\rangle=\sum_{m=0}^{\infty}\left|\left\langle m\left|\hat{X}^{2}\right| n\right\rangle\right|^{2} .\\
+\text{	Now since }\\
+	\hat{X}^{2}&=\frac{\hbar}{2 m \omega}\left(\hat{a}^{2}+\hat{a}^{\dagger 2}+\hat{a} \hat{a}^{\dagger}+\hat{a}^{\dagger} \hat{a}\right)=\frac{\hbar}{2 m \omega}\left(\hat{a}^{2}+\hat{a}^{\dagger 2}+2 \hat{a}^{\dagger} \hat{a}+1\right) .\\
+	\text{the only terms }&\left\langle m\left|\hat{X}^{2}\right| n\right\rangle \text{that survive are}\\
 	\left\langle n\left|\hat{X}^{2}\right| n\right\rangle &=\frac{\hbar}{2 m \omega}\left\langle n\left|2 \hat{a}^{\dagger} \hat{a}+1\right| n\right\rangle=\frac{\hbar}{2 m \omega}(2 n+1), \\
 	\left\langle n-2\left|\hat{X}^{2}\right| n\right\rangle &=\frac{\hbar}{2 m \omega}\left\langle n-2\left|\hat{a}^{2}\right| n\right\rangle=\frac{\hbar}{2 m \omega} \sqrt{n(n-1)}, \\
-	\left\langle n+2\left|\hat{X}^{2}\right| n\right\rangle &=\frac{\hbar}{2 m \omega}\left\langle n+2\left|\hat{a}^{\dagger 2}\right| n\right\rangle=\frac{\hbar}{2 m \omega} \sqrt{(n+1)(n+2)} .
-	\end{aligned}
-	$$
-	Thus
-	$$
-	\begin{aligned}
+	\left\langle n+2\left|\hat{X}^{2}\right| n\right\rangle &=\frac{\hbar}{2 m \omega}\left\langle n+2\left|\hat{a}^{\dagger 2}\right| n\right\rangle=\frac{\hbar}{2 m \omega} \sqrt{(n+1)(n+2)} .\\
+\text{	Thus}\\
 	\left\langle n\left|\hat{X}^{4}\right| n\right\rangle &=\left|\left\langle n\left|\hat{X}^{2}\right| n\right\rangle\right|^{2}+\left|\left\langle n-2\left|\hat{X}^{2}\right| n\right\rangle\right|^{2}+\left|\left\langle n+2\left|\hat{X}^{2}\right| n\right\rangle\right|^{2} \\
 	&=\frac{\hbar^{2}}{4 m^{2} \omega^{2}}\left[(2 n+1)^{2}+n(n-1)+(n+1)(n+2)\right] \\
 	&=\frac{\hbar^{2}}{4 m^{2} \omega^{2}}\left(6 n^{2}+6 n+3\right) .
-	\end{aligned}
-	$$
-	(b) Using the above equation and since the Hamiltonian can be expressed in terms of the harmonic oscillator, $\hat{H}=\hat{H}_{H O}-\lambda \hat{X}^{4}$, we immediately obtain the particle energy:
-	$$
-	E_{n}=\left\langle n\left|\hat{H}_{H O}\right| n\right\rangle-\lambda\left\langle n\left|\hat{X}^{4}\right| n\right\rangle=\hbar \omega\left(n+\frac{1}{2}\right)-\frac{\lambda \hbar^{2}}{4 m^{2} \omega^{2}}\left(6 n^{2}+6 n+3\right) .
-	$$
+\intertext{	(b) Using the above equation and since the Hamiltonian can be expressed in terms of the harmonic oscillator, }\hat{H}&=\hat{H}_{H O}-\lambda \hat{X}^{4},\text{ we immediately obtain the particle energy:}\\
+	E_{n}&=\left\langle n\left|\hat{H}_{H O}\right| n\right\rangle-\lambda\left\langle n\left|\hat{X}^{4}\right| n\right\rangle=\hbar \omega\left(n+\frac{1}{2}\right)-\frac{\lambda \hbar^{2}}{4 m^{2} \omega^{2}}\left(6 n^{2}+6 n+3\right) .
+	\end{align*}
 \end{answer}
-\subsection{3-D Harmonic oscillator}
+\subsection{3-D Harmonic Oscillator}
 We are going to begin with the anisotropic oscillator, which displays no symmetry, and then consider the isotropic oscillator where the $x y z$ axes are all equivalent.\\
 \textbf{ The Anisotropic Oscillator}\\
 Consider a particle of mass $m$ moving in a three-dimensional anisotropic oscillator potential
@@ -993,7 +984,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	\item The energy of the first excited quantum state of a particle in the two-dimensional potential $V(x, y)=\frac{1}{2} m \omega^{2}\left(x^{2}+4 y^{2}\right)$ is
 	\exyear{NET DEC 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $2 \hbar \omega$
 	\task[\textbf{B.}]$3 \hbar \omega$
 	\task[\textbf{C.}]$\frac{3}{2} \hbar \omega$
@@ -1135,7 +1126,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	\item The ratio of the energy of the first excited state $E_{1}$, to that of the ground state $E_{0}$, to that of a particle in a three-dimensional rectangular box of side $L, L$ and $\frac{L}{2}$, is
 	\exyear{NET JUNE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $3: 2$
 	\task[\textbf{B.}]$2: 1$
 	\task[\textbf{C.}]$4: 1$
@@ -1192,7 +1183,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	the ground state energy of a one-dimensional harmonic oscillator is 
 	\exyear{NET JUNE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\hbar \omega$
 	\task[\textbf{B.}] $\sqrt{\frac{5}{14}} \hbar \omega$
 	\task[\textbf{C.}]$\frac{1}{2} \hbar \omega$
@@ -1209,7 +1200,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	The number of eigenstates of Hamiltonian with energy $\frac{9 \hbar^{2} \pi^{2}}{2 m a^{2}}$ is
 	\exyear{NET JUNE 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}]1
 	\task[\textbf{B.}]6
 	\task[\textbf{C.}]3
@@ -1229,7 +1220,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	\item The ground state energy of an anisotropic harmonic oscillator described by the potential $V(x, y, z)=\frac{1}{2} m \omega^{2} x^{2}+2 m \omega^{2} y^{2}+8 m \omega^{2} z^{2}$ (in units of $\hbar \omega$ ) is
 	\exyear{NET DEC 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{5}{2}$
 	\task[\textbf{B.}]$\frac{7}{2}$
 	\task[\textbf{C.}]$\frac{3}{2}$
@@ -1307,7 +1298,7 @@ $$\begin{tabular}{|c|c|c|c|}
 		\includegraphics[height=3cm,width=5cm]{diagram-20210824(6)-crop}
 	\end{figure}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $e^{a x}$
 	\task[\textbf{B.}] $e^{-a x}$
 	\task[\textbf{C.}] $e^{i a x}$
@@ -1324,7 +1315,7 @@ $$\begin{tabular}{|c|c|c|c|}
 	The energy of the first excited state for this particle is given by,
 	\exyear{GATE 2012}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}]$\frac{\pi^{2} \hbar^{2}}{m a^{2}}$
 	\task[\textbf{B.}] $\frac{2 \pi^{2} \hbar^{2}}{m a^{2}}$
 	\task[\textbf{C.}]$\frac{5 \pi^{2} \hbar^{2}}{8 m a^{2}}$
@@ -1356,7 +1347,7 @@ $$\begin{tabular}{|c|c|c|c|}
 		\includegraphics[height=3cm,width=5cm]{gate 5-crop}
 	\end{figure}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{2}{\alpha}$
 	\task[\textbf{B.}] $\frac{1}{\alpha}$
 	\task[\textbf{C.}]$\frac{1}{2 \alpha}$
