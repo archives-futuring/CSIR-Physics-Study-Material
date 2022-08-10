@@ -1,5 +1,5 @@
-\chapter{Scattering theory}
-\section{The scattering cross section}
+\chapter{SCATTERING THEORY}
+\section{The Scattering Cross Section}
 A parallel beam of particle of given momentum is directed towards a target which deflects or scatters the particle in various directions.The scattered particles diverge. Eventually at large distance from the target, their motion is directed radially outwards.It is convenient to choose a system with the origin at the position of the target or scattering center. and with Z-axis in the direction of the incident beam .The direction of any scattered particle is indicated by polar angles ($\theta, \phi$) with the z-axis taken as the polar axis.Then $\theta$ is the angle of scattering ie the angle between the scattered and the incident direction .These two directions together define the plane of scattering .The azimuthal angle $\phi$ specifies the orientation of the this plane with respect to some reference plane containing z-axis.\\
 \begin{figure}[H]
 	\centering
@@ -15,7 +15,7 @@ The total scattering crosssection $\sigma$ may be obtained from it by integratio
 $$\sigma=\int (\frac{d\sigma}{d\Omega})d\Omega=\int_{0}^{2\pi}\int_{0}^{\pi}(\frac{d\sigma}{d\Omega})\sin \theta d\theta d\phi$$
 In most cases we consider ($\frac{d\sigma}{d\Omega}$) is independent of $\phi$\\
 Then $$\sigma=\int (\frac{d\sigma}{d\Omega}) 2\pi \sin \theta d \theta$$
-\subsection{The scattering amplitude}
+\subsection{The Scattering Amplitude}
 When the particle involved in the scattering process are quantum mechanical objects ,we must describe them by a wave function.At large distance from the scattering centre ($r\rightarrow \infty$) the form of the wavefunction must consist of a part $u_{inc}$ corresponding to the parallel beam of incident particles and the other part $u_{sc}$ representing the scattered particle moving radially outwards from the center.\\
 $$u(\mathbf{x}) \underset{r \rightarrow \infty}{\longrightarrow} u_{i n c}+u_{s c}$$
 The beam of incident particles with momentum $p=\hbar k$ along the $z$-axis must evidently be described by the plane wave (momentum eigenfunction) $u_{i n c}=e^{i k z}$.\\
@@ -44,12 +44,12 @@ $$
 -\frac{\hbar^{2}}{2 m} \nabla^{2} u(\mathbf{x})+V(\mathbf{x}) u(\mathbf{x})=E u(\mathbf{x}), \quad E=\frac{\hbar^{2} k^{2}}{2 m}
 $$
 Here $V(\mathbf{x})$ is the potential energy function for the projectile particle in the force field of the scattering centre. \\
-\textbf{Formal expression for scattering amplitude}
+\textbf{Formal Expression for Scattering Amplitude}
 $$\begin{aligned}
 	f(\theta, \varphi) &=-\frac{1}{4 \pi} \int e^{-i \mathbf{k} \cdot \mathbf{x}} U(\mathbf{x}) u(\mathbf{x}) d \tau, \\
 	&=-\frac{m}{2 \pi \hbar^{2}} \int e^{-i \mathbf{k} \cdot \mathbf{x}} V(\mathbf{x}) u(\mathbf{x}) d \tau
 \end{aligned}$$
-\subsection{First Born approximation}
+\subsection{First Born Approximation}
 $$f(\theta, \varphi)=-\frac{1}{4 \pi} \int e^{-i \mathbf{k} \cdot \mathbf{x}} U(\mathbf{x}) u(\mathbf{x}) d \tau$$
 Suppose that $\left|u(\mathbf{x})-e^{i k z}\right|<\left|e^{i k z}\right|=1$\\
 Then we can replace the unknown $u(\mathbf{x})$ in $f(\theta, \varphi)$ to a good approximation, by $e^{i k z} \equiv e^{t \mathbf{k}_{0} \cdot \mathbf{x}}$ where $k_{0}$ is the vector of magnitude $k$ in the incident direction. The resulting expression is called the \textbf{first Born approximation} to $f(\theta, \varphi)$ and is given by
@@ -74,7 +74,7 @@ f_{\mathrm{H}}(\theta, \varphi)$ to an integral over $r$ alone, by going over to
 $$
 f_{B}(\theta)=-K^{-1} \int_{0}^{\infty} r \sin K r U(r) d r
 $$
-\subsection{Partial wave analysis}
+\subsection{Partial Wave Analysis}
 While the Born approximation is basically a truncation of a perturbation expansion of $u(x)$, the method of partial waves is based upon an expansion of $u(\mathbf{x})$ in terms of angular momentum eigenfunctions. It is applicable if the potential is spherically symmetric. one gets a fornial expression for the scattering amplitude as an infinite scries; cach term of the series is the contribution to $f(\theta, \varphi)$ from a partial wave characterized by a particular angular momentum. We shall see that the first few terms in the series approximate $f(\theta, \varphi)$ if the incident particle is of low energy. Thus the partial wave method leads to a low energy approximation which complements the Born approximation (good at high energies).
 \subsubsection{Partial waves}
 If the potential has sphencal symmetry we can separate the Schrödinger equation into radial and angular parts, and obtain solutions in the form $R_{l}(r) Y_{l m}{(\theta, \varphi)}$, where the radial wave functions $R_{l}(r)$ satisfy the equation
@@ -86,7 +86,7 @@ $$
 u(\mathbf{x})=\sum_{l=0}^{\infty} R_{l}(r) P_{l}(\cos \theta)
 $$
 The term corresponding to a particular $l$ in this series is called the lth partial wave.\\
-\textbf{Asymptotic form of radial function}\\
+\textbf{Asymptotic Form of Radial Function}\\
  We must now require that $u(\mathbf{x})$ should have the asymptotic form of$u(\mathbf{x}) \underset{r \rightarrow \infty}{\longrightarrow} e^{i k z}+f(\theta, \varphi) \frac{e^{i k r}}{r}$ \\
   This condition places constraints on the radial wave functions $R l(r)$. To see what they are, we need to have the asymptotic $(r \rightarrow \infty)$ form of $R_{l}(r)$. We can infer it from the radial wave equation  which we rewrite as
 $$
@@ -106,7 +106,7 @@ $$\ln v_{l} \approx \mp \frac{i}{2 k} \int^{r}\left[U+\frac{l(l+1)}{r^{2}}\right
 \textcolor{red}{some text missing} if $1/r$ is large enough the value of the integral is effectively independent of $r$ and hence $v_{l}(r)$ is a constant in the asymptotic region. In the following, we will confine our attention to such potentials, leaving the Coulomb case to be dealt with later. Then the asymptotic form of $\chi_{l}(r)$ is, in general, some linear combination of the two solutions with $v_{l}$ constant, i.e. of $e^{i k r}$ and $e^{-ikr}$. Without loss of generality, we can write any such combination in the form\\
 $${\chi}_{l} \rightarrow C_{l} \sin \left(k r+\Delta_{l}\right)$$
 $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
-\textbf{Phase shift}\\
+\textbf{Phase Shift}\\
  Let us compare the above asymptotic behaviour with that of the partial waves for a free particle $\left(V^{\prime}(r)=0\right)$. We have already seen  that in any range of $r$ over which $V(r)$ is constant, the solutions of the radial wave equation are the spherical Bessel functions $j_{l}$ or $n_{l}$. In particular, if $V=0$ everywhere, the only admissible solution is $j_{l}(k r) ; n_{l}$ is ruled out because it becomes infinite at $r=0$. Thus $R_{l}(r)=$ const. $j_{l}(k r)$ in the free-particle case. Since the asymptotic forms of the spherical Bessel functions are known to be given by
  $$\begin{aligned}
  	&j_{l}(k r) \rightarrow(k r)^{-1} \sin \left(k r-\frac{1}{2} l \pi\right) \\
@@ -131,11 +131,11 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
  	If $V_{0}$ is changed to $2 V_{0}$, keeping $R$ fixed, then the differential scattering cross-section, in the Born approximation.
  	\exyear{NET JUNE 2012}
  \end{minipage}
- \begin{tasks}(2)
- 	\task[\textbf{A.}]increases to four times the original value
- 	\task[\textbf{B.}]increases to twice the original value
- 	\task[\textbf{C.}]decreases to half the original value
- 	\task[\textbf{D.}]decreases to one fourth the original value
+ \begin{tasks}(1)
+ 	\task[\textbf{A.}]Increases to four times the original value
+ 	\task[\textbf{B.}]Increases to twice the original value
+ 	\task[\textbf{C.}]Decreases to half the original value
+ 	\task[\textbf{D.}]Decreases to one fourth the original value
  \end{tasks}
 \begin{minipage}{\textwidth}
 	\item The differential cross-section for scattering by a target is given by
@@ -162,7 +162,7 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	where $V_{0}$ and $a$ are positive constants. In the low energy limit, the total scattering crosssection is $\sigma=4 \pi a^{2}\left(\frac{1}{k a} \tanh k a-1\right)^{2}$, where $k^{2}=\frac{2 m}{h^{2}}\left(V_{0}-E\right)>0$. In the limit $V_{0} \rightarrow \infty$ the ratio of $\sigma$ to the classical scattering cross-section off a sphere of radius $a$ is
 	\exyear{NET JUNE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] 4
 	\task[\textbf{B.}]3
 	\task[\textbf{C.}]1
@@ -173,7 +173,7 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	[You may use $\left.\int x^{n} e^{a x} d x=\frac{d^{n}}{d a^{n}} \int e^{a x} d x\right]$
 	\exyear{NET DEC 2016}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}]$q^{-8}$
 	\task[\textbf{B.}]$q^{-2}$
 	\task[\textbf{C.}]$q^{2}$
@@ -197,7 +197,7 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	\item A phase shift of $30^{\circ}$ is observed when a beam of particles of energy $0.1 \mathrm{MeV}$ is scattered by a target. When the beam energy is changed, the observed phase shift is $60^{\circ}$. Assuming that only $s$-wave scattering is relevant and that the cross-section does not change with energy, the beam energy is
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $0.4 \mathrm{MeV}$
 	\task[\textbf{B.}]$0.3 \mathrm{MeV}$
 	\task[\textbf{C.}]$0.2 \mathrm{MeV}$
@@ -240,7 +240,7 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 		\item Find the angular distribution and total cross section for the scattering of small marbles of mass $m$ and radius $r$ from a massive billiard ball of mass $M$ and radius $R(m<<M)$.
 		You should treat the scattering as elastic involving no frictional forces.
 	\end{minipage}
-	\begin{answer}
+	\begin{answer}$\left. \right. $\\
 		\begin{minipage}{0.5\textwidth}
 		 As $m \ll M$, the massive billiard ball will remain stationary during scattering. As the scattering is elastic (see figure), the scattering angle $\Theta$ is related to the angle of incidence by\\
 		$
@@ -250,7 +250,7 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	\begin{minipage}{0.5\textwidth}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20220213-20220213123239-crop}
+		\includegraphics[height=3cm,width=4cm]{diagram-20220213-20220213123239-crop}
 	\end{figure}
 	\end{minipage}
 
