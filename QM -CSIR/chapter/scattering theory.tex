@@ -3,7 +3,7 @@
 A parallel beam of particle of given momentum is directed towards a target which deflects or scatters the particle in various directions.The scattered particles diverge. Eventually at large distance from the target, their motion is directed radially outwards.It is convenient to choose a system with the origin at the position of the target or scattering center. and with Z-axis in the direction of the incident beam .The direction of any scattered particle is indicated by polar angles ($\theta, \phi$) with the z-axis taken as the polar axis.Then $\theta$ is the angle of scattering ie the angle between the scattered and the incident direction .These two directions together define the plane of scattering .The azimuthal angle $\phi$ specifies the orientation of the this plane with respect to some reference plane containing z-axis.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=8cm]{diagram-20220131-crop}
+	\includegraphics[height=4.8cm,width=8cm]{diagram-20220131-crop}
 	\caption{}
 	\label{}
 \end{figure}
@@ -35,7 +35,7 @@ $$
 \end{aligned}
 $$
 On substituting this together with $F=\frac{\hbar k}{m}$ in $ \Delta N=\frac{d\sigma(\theta,\phi)}{d\Omega}\Delta t \Delta \Omega F$, we obtain\\
-$$\frac{d \sigma(\theta, \varphi)}{d \Omega}=|f(\theta, \varphi)|^{2}$$
+$$\frac{d \sigma(\theta, \varphi)}{d \Omega}=|f(\theta, \varphi)|^{2}$$\\
 \textbf{$f(\theta, \varphi) \text { is called the scattering amplitude. }$}\\
 The particular stationary  wavefunction can be written as \\
 $$u(\mathbf{x}) \underset{r \rightarrow \infty}{\longrightarrow} e^{i k z}+f(\theta, \varphi) \frac{e^{i k r}}{r}$$
@@ -43,7 +43,7 @@ Since any stationary wave function must satisfy the time independent Schrcdinger
 $$
 -\frac{\hbar^{2}}{2 m} \nabla^{2} u(\mathbf{x})+V(\mathbf{x}) u(\mathbf{x})=E u(\mathbf{x}), \quad E=\frac{\hbar^{2} k^{2}}{2 m}
 $$
-Here $V(\mathbf{x})$ is the potential energy function for the projectile particle in the force field of the scattering centre. \\
+Here $V(\mathbf{x})$ is the potential energy function for the projectile particle in the force field of the scattering centre. \\\\
 \textbf{Formal Expression for Scattering Amplitude}
 $$\begin{aligned}
 	f(\theta, \varphi) &=-\frac{1}{4 \pi} \int e^{-i \mathbf{k} \cdot \mathbf{x}} U(\mathbf{x}) u(\mathbf{x}) d \tau, \\
@@ -64,7 +64,7 @@ In equation $f_{\mathrm{H}}(\theta, \varphi)$  $\mathbf{K}=\mathbf{k}- \mathbf{k
 $$K \equiv|\mathbf{K}|=2 k \sin \frac{1}{2} \theta$$
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=4cm,width=5cm]{nimi1-crop}
+	\includegraphics[height=2.7cm,width=3.5cm]{nimi1-crop}
 	\caption{}
 	\label{}
 \end{figure}
@@ -76,7 +76,7 @@ f_{B}(\theta)=-K^{-1} \int_{0}^{\infty} r \sin K r U(r) d r
 $$
 \subsection{Partial Wave Analysis}
 While the Born approximation is basically a truncation of a perturbation expansion of $u(x)$, the method of partial waves is based upon an expansion of $u(\mathbf{x})$ in terms of angular momentum eigenfunctions. It is applicable if the potential is spherically symmetric. one gets a fornial expression for the scattering amplitude as an infinite scries; cach term of the series is the contribution to $f(\theta, \varphi)$ from a partial wave characterized by a particular angular momentum. We shall see that the first few terms in the series approximate $f(\theta, \varphi)$ if the incident particle is of low energy. Thus the partial wave method leads to a low energy approximation which complements the Born approximation (good at high energies).
-\subsubsection{Partial waves}
+\subsubsection{Partial Waves}
 If the potential has sphencal symmetry we can separate the Schrödinger equation into radial and angular parts, and obtain solutions in the form $R_{l}(r) Y_{l m}{(\theta, \varphi)}$, where the radial wave functions $R_{l}(r)$ satisfy the equation
 $$
 1/r^2 \frac{d}{dr}\left(r^{2} \frac{d R_l}{d r}\right)+\frac{2 \mu}{\hbar^{2}}\left[E-V-\frac{l(l+1) \hbar^{2}}{2 \mu r^{2}}\right] R_l=0
@@ -85,7 +85,7 @@ The general solution of the Schrödinger equation can be written as a linear com
 $$
 u(\mathbf{x})=\sum_{l=0}^{\infty} R_{l}(r) P_{l}(\cos \theta)
 $$
-The term corresponding to a particular $l$ in this series is called the lth partial wave.\\
+The term corresponding to a particular $l$ in this series is called the lth partial wave.\\\\
 \textbf{Asymptotic Form of Radial Function}\\
  We must now require that $u(\mathbf{x})$ should have the asymptotic form of$u(\mathbf{x}) \underset{r \rightarrow \infty}{\longrightarrow} e^{i k z}+f(\theta, \varphi) \frac{e^{i k r}}{r}$ \\
   This condition places constraints on the radial wave functions $R l(r)$. To see what they are, we need to have the asymptotic $(r \rightarrow \infty)$ form of $R_{l}(r)$. We can infer it from the radial wave equation  which we rewrite as
@@ -105,7 +105,7 @@ on solving this we will get\\
 $$\ln v_{l} \approx \mp \frac{i}{2 k} \int^{r}\left[U+\frac{l(l+1)}{r^{2}}\right] d r$$
 \textcolor{red}{some text missing} if $1/r$ is large enough the value of the integral is effectively independent of $r$ and hence $v_{l}(r)$ is a constant in the asymptotic region. In the following, we will confine our attention to such potentials, leaving the Coulomb case to be dealt with later. Then the asymptotic form of $\chi_{l}(r)$ is, in general, some linear combination of the two solutions with $v_{l}$ constant, i.e. of $e^{i k r}$ and $e^{-ikr}$. Without loss of generality, we can write any such combination in the form\\
 $${\chi}_{l} \rightarrow C_{l} \sin \left(k r+\Delta_{l}\right)$$
-$\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
+$\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\\\
 \textbf{Phase Shift}\\
  Let us compare the above asymptotic behaviour with that of the partial waves for a free particle $\left(V^{\prime}(r)=0\right)$. We have already seen  that in any range of $r$ over which $V(r)$ is constant, the solutions of the radial wave equation are the spherical Bessel functions $j_{l}$ or $n_{l}$. In particular, if $V=0$ everywhere, the only admissible solution is $j_{l}(k r) ; n_{l}$ is ruled out because it becomes infinite at $r=0$. Thus $R_{l}(r)=$ const. $j_{l}(k r)$ in the free-particle case. Since the asymptotic forms of the spherical Bessel functions are known to be given by
  $$\begin{aligned}
@@ -280,10 +280,11 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	(b) Discuss the differential scattering cross section for case $q \gg \mu$
 \end{minipage}
 \begin{answer}
-	$\text { (a) } f(\theta)=-\frac{2 m}{\hbar^{2} q} \int_{0}^{\infty} r V(r) \sin (q r) d r$
 	\begin{align*}
-		&=\frac{-2 m \beta}{\hbar^{2} q} \int_{0}^{\infty} e^{-\mu r} \sin (q r) d r=\frac{-2 m \beta}{\hbar^{2} q} \frac{1}{2 i} \int_{0}^{\infty} e^{-\mu r} \exp i q r-\exp (-i q r) d r \\
-		&\frac{-2 m \beta}{\hbar^{2} q} \frac{1}{2 i}\left(\int_{0}^{\infty} \exp -r(\mu-i q) d r-\int_{0}^{\infty} \exp -r(\mu+i q) d r\right)=-\frac{m \beta}{i \hbar^{2} q}\left(\frac{1}{\mu-i q}-\frac{1}{\mu+i q}\right) \\
+		\text { (a) } f(\theta)&=-\frac{2 m}{\hbar^{2} q} \int_{0}^{\infty} r V(r) \sin (q r) d r\\
+		&=\frac{-2 m \beta}{\hbar^{2} q} \int_{0}^{\infty} e^{-\mu r} \sin (q r) d r\\&=\frac{-2 m \beta}{\hbar^{2} q} \frac{1}{2 i} \int_{0}^{\infty} e^{-\mu r} \exp i q r-\exp (-i q r) d r \\
+		&\frac{-2 m \beta}{\hbar^{2} q} \frac{1}{2 i}\left(\int_{0}^{\infty} \exp -r(\mu-i q) d r-\int_{0}^{\infty} \exp -r(\mu+i q) d r\right)\\
+		&=-\frac{m \beta}{i \hbar^{2} q}\left(\frac{1}{\mu-i q}-\frac{1}{\mu+i q}\right) \\
 		&=-\frac{m \beta}{i \hbar^{2} q}\left(\frac{(\mu+i q)-(\mu-i q)}{\mu^{2}+q^{2}}\right)=-\frac{2 m \beta q}{\hbar^{2} q} \cdot \frac{1}{\mu^{2}+q^{2}}=-\frac{2 m \beta}{\hbar^{2}} \cdot \frac{1}{\mu^{2}+q^{2}} \\
 		&D(\theta)=|f(\theta)|^{2}=\left|-\frac{2 m \beta}{\hbar^{2}} \cdot \frac{1}{\mu^{2}+q^{2}}\right|^{2}=\frac{4 m^{2} \beta^{2}}{\hbar^{4}} \cdot\left(\frac{1}{\mu^{2}+q^{2}}\right)^{2}
 	\end{align*}
@@ -305,18 +306,22 @@ $\text { where } C_{l}, \Delta_{l} \text { are constants. }$\\
 	(b) Compare the total scattering cross section from (a) to classical scattering cross section Consider the notentiol
 \end{minipage}
 \begin{answer}
-	$\text { (a) } \sigma=4 \pi a^{2}\left[\frac{1}{k a} \tanh k a-1\right]^{2}$\\
-	$V_{0} \rightarrow \infty, k a \rightarrow \infty, \tanh k a \rightarrow 1 \Rightarrow \sigma=4 \pi a^{2}\left(\frac{1}{k a}-1\right)^{2} \text { and } k a \rightarrow \infty, \lim _{k a \rightarrow \infty} \sigma=4 \pi a^{2}$\\
-	$\text { (b) Classically } \sigma_{c}=\pi a^{2}, \frac{\sigma}{\sigma_{c}}=4$
+	\begin{align*}
+		\text { (a) } \sigma&=4 \pi a^{2}\left[\frac{1}{k a} \tanh k a-1\right]^{2}\\
+	V_{0} \rightarrow \infty, k a \rightarrow \infty, \tanh k a \rightarrow 1 \Rightarrow \sigma&=4 \pi a^{2}\left(\frac{1}{k a}-1\right)^{2} \text { and } k a \rightarrow \infty, \lim _{k a \rightarrow \infty} \sigma=4 \pi a^{2}\\
+	\text { (b) Classically } \sigma_{c}&=\pi a^{2}, \frac{\sigma}{\sigma_{c}}=4
+	\end{align*}
 \end{answer}
 	\begin{minipage}{\textwidth}
 	\item Consider the potential
 	$$
 	V(x, y, z)=\sum_{i} V_{0} a^{3} \delta\left(x-x_{i}\right) \delta\left(y-y_{i}\right) \delta\left(z-z_{i}\right)
 	$$
-	where $x_{i}, y_{i}, z_{i}$ are the position vectors of the vertices of a cube of length $a$ centered at the origin and $V_{0}$ is a constant. If $V_{0} a^{2}<<\frac{\hbar^{2}}{m}$ for low energy limit\\
-	(a) Find differential cross section .\\
-	(b) The total scattering cross-section
+	where $x_{i}, y_{i}, z_{i}$ are the position vectors of the vertices of a cube of length $a$ centered at the origin and $V_{0}$ is a constant. If $V_{0} a^{2}<<\frac{\hbar^{2}}{m}$ for low energy limit
+	 \begin{tasks}(1)
+		\task[\text{a)}] Find differential cross section .
+		\task[\text{b)}]The total scattering cross-section
+	\end{tasks}
 \end{minipage}
 \begin{answer}
 	 $\sum_{i} V_{0} a^{3} \delta\left(x-x_{i}\right) \delta\left(y-y_{i}\right) \delta\left(z-z_{i}\right)$, where $x_{i}, y_{i}, z_{i}$ are co-ordinate at 8 corner cube whose center is at origin.\\
