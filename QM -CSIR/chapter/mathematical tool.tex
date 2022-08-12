@@ -6,7 +6,7 @@ A linear vector space consisits of two set of elements and two algebraic rules :
 	\item A set of vectors $\psi,\phi,\chi, \cdots $ and a set of scalars a,b,c....;
 	\item a rule of vector addition and a rule of scalar multiplication
 \end{itemize}
-\textbf{(a)Addition Rule}\\
+\textbf{(a) Addition Rule}\\
 The addition rule has the properties and the structure of an abelian group:
 \begin{itemize}
 	\item If $\psi$ and $\phi$ are vectors of a space,their sum $\psi+\phi$ is also a vector of the same space.
@@ -15,7 +15,7 @@ The addition rule has the properties and the structure of an abelian group:
 	\item The existance of a zero or neutral vector:for each vector $\psi$, there must be zero vector 0 such that : 0+$\psi=\psi+0=\psi$
 	\item Existance of a symmetric or inverse vector :each vector $\psi$ must have a symmetric vector (-$\psi$) such that ($\psi$)+(-$\psi$)=(-$\psi$)+$\psi$=0.
 \end{itemize}
-\textbf{(b)Multiplication Rule}
+\textbf{(b) Multiplication Rule}\\
 The multiplication of a vectot by scalars (scalars can be real or complex numbers) has these properties:
 \begin{itemize}
 	\item The product of a scalar with vector gives another vector.In general if $\psi$ and $\phi$ are the two vectors of the space,any linear combination $a\psi+b\phi$ is also a vector of the space. a and b being scalars.
@@ -91,11 +91,11 @@ $$
 $$
 \textbf{Basis:} The basis of a vector space consists of a set of the maximum possible number of linearly independent vectors belonging to that space. This set of vectors, $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$, to be denoted in short by $\left\{\phi_{1}\right\}$, is called the basis of the vector space, while the vectors $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$ are called the base vectors.
 \section{Dirac Notation}
-The physical state of a sysytem is represented in quantum mechanics by elements of a Hilbert space;These elments are called state vectors.We can represents the state vectors in different bases by means of function expansions.\\
+The physical state of a sysytem is represented in quantum mechanics by elements of a Hilbert space;These elments are called state vectors.We can represents the state vectors in different bases by means of function expansions.\\\\
 \textbf{Kets: Elements of a Vector Space}\\
-Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he called a ket vector, or simply a ket. Kets belong to the Hilbert (vector) space $\mathcal{H}$, or, in short, to the ket-space.\\
+Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he called a ket vector, or simply a ket. Kets belong to the Hilbert (vector) space $\mathcal{H}$, or, in short, to the ket-space.\\\\
 \textbf{Bras: Elements of a Dual Space}\\
- we know from linear algebra that a dual space can be associated with every vector space. Dirac denoted the elements of a dual space by the symbol $\langle 1$, which he called a bra vector, or simply a bra; for instance, the element $\langle\psi /$ represents a bra. Note: For every ket $|\psi\rangle$ there exists a unique bra $\langle\psi|$ and vice versa. Again, while kets belong to the Hilbert space $\mathcal{H}$, the corresponding bras belong to its dual (Hilbert) space $\mathcal{H}_{d}$.\\
+ we know from linear algebra that a dual space can be associated with every vector space. Dirac denoted the elements of a dual space by the symbol $\langle 1$, which he called a bra vector, or simply a bra; for instance, the element $\langle\psi /$ represents a bra. Note: For every ket $|\psi\rangle$ there exists a unique bra $\langle\psi|$ and vice versa. Again, while kets belong to the Hilbert space $\mathcal{H}$, the corresponding bras belong to its dual (Hilbert) space $\mathcal{H}_{d}$.\\\\
  \textbf{Bra-Ket: Dirac Notation for the Scalar Product}\\
  Dirac denoted the scalar (inner) product by the symbol $\langle\mid\rangle$, which he called a a bra-ket. For instance, the scalar product $(\phi, \psi)$ is denoted by the bra-ket $\langle\phi \mid \psi\rangle$ :
  $$
@@ -122,12 +122,14 @@ Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he ca
 	$$
 	|a \psi\rangle=a|\psi\rangle, \quad\langle a \psi|=a^{*}\langle\psi| .
 	$$
-	\item \textbf{Properties of the Scalar Product}\\
-	(1)$\langle\phi \mid \psi\rangle^{*}=\langle\psi \mid \phi\rangle $ .\\
-	(2)$\left\langle\psi \mid a_{1} \psi_{1}+a_{2} \psi_{2}\right\rangle= a_{1}\left\langle\psi \mid \psi_{1}\right\rangle+a_{2}\left\langle\psi \mid \psi_{2}\right\rangle $\\
-	(3)$\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid \psi\right\rangle= a_{1}^{*}\left\langle\phi_{1} \mid \psi\right\rangle+a_{2}^{*}\left\langle\phi_{2} \mid \psi\right\rangle $\\
-		(4)$\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid b_{1} \psi_{1}+b_{2} \psi_{2}\right\rangle= a_{1}^{*} b_{1}\left\langle\phi_{1} \mid \psi_{1}\right\rangle+a_{1}^{*} b_{2}\left\langle\phi_{1} \mid \psi_{2}\right\rangle 
-		+a_{2}^{*} b_{1}\left\langle\phi_{2} \mid \psi_{1}\right\rangle+a_{2}^{*} b_{2}\left\langle\phi_{2} \mid \psi_{2}\right\rangle$ .
+	\item \textbf{Properties of the Scalar Product}
+	\begin{enumerate}
+		\item $\langle\phi \mid \psi\rangle^{*}=\langle\psi \mid \phi\rangle $ .
+		\item $\left\langle\psi \mid a_{1} \psi_{1}+a_{2} \psi_{2}\right\rangle= a_{1}\left\langle\psi \mid \psi_{1}\right\rangle+a_{2}\left\langle\psi \mid \psi_{2}\right\rangle $
+		\item $\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid \psi\right\rangle= a_{1}^{*}\left\langle\phi_{1} \mid \psi\right\rangle+a_{2}^{*}\left\langle\phi_{2} \mid \psi\right\rangle $
+		\item $\left\langle a_{1} \phi_{1}+a_{2} \phi_{2} \mid b_{1} \psi_{1}+b_{2} \psi_{2}\right\rangle= a_{1}^{*} b_{1}\left\langle\phi_{1} \mid \psi_{1}\right\rangle+a_{1}^{*} b_{2}\left\langle\phi_{1} \mid \psi_{2}\right\rangle 
+		+a_{2}^{*} b_{1}\left\langle\phi_{2} \mid \psi_{1}\right\rangle+a_{2}^{*} b_{2}\left\langle\phi_{2} \mid \psi_{2}\right\rangle$ 
+	\end{enumerate}
 \item \textbf{ The Norm Is Real and Positive}\\
 For any state vector $|\psi\rangle$ of the Hilbert space $\mathcal{H}$, the norm $\langle\psi \mid \psi\rangle$ is real and positive; $\langle\psi \mid \psi\rangle$ is equal to zero only for the case where $|\psi\rangle=O$, where $O$ is the zero vector. If the state $|\psi\rangle$ is normalized then $\langle\psi \mid \psi\rangle=1$.
 \item \textbf{Schwarz Inequality}
@@ -290,15 +292,13 @@ Anti Hermitian:$i(\hat{A}+\hat{A}^{\dagger})$
 	$\text { Prove that the operators } i(d / d x) \text { and } d^{2} / d x^{2} \text { are Hermitian. }$
 \end{exercise}
 \begin{answer}
-$$
-\int_{-\infty}^{\infty} \psi_{m}^{*}\left(i \frac{d}{d x}\right) \psi_{n} d x=i\left[\psi_{m}^{*} \psi_{n}\right]_{-\infty}^{\infty}-i \int_{-\infty}^{\infty} \psi_{n} \frac{d}{d x} \psi_{m}^{*} d x=\int_{-\infty}^{\infty}\left(i \frac{d}{d x} \psi_{m}\right)^{*} \psi_{n} d x
-$$
-Therefore, $i d / d x$ is Hermitian.\\
-$$\int_{-\infty}^{\infty} \psi_{m}^{*} \frac{d^{2} \psi_{n}}{d x^{2}} d x=\left[\psi_{m}^{*} \frac{d \psi_{n}}{d x}\right]_{-m}^{\infty}-\int_{-}^{\infty} \frac{d \psi_{n}}{d x} \frac{d \psi_{m}^{*}}{d x} d x$$
-$$
-=\left[\frac{d \psi_{m}^{*}}{d x} \psi_{n}\right]_{-\infty}^{\infty}+\int_{-\infty}^{\infty} \psi_{n} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} d x=\int_{-\infty}^{\infty} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} \psi_{n} d x
-$$
-Thus, $d^{2} / d x^{2}$ is Hermitian.	
+	\begin{align*}
+	\int_{-\infty}^{\infty} \psi_{m}^{*}\left(i \frac{d}{d x}\right) \psi_{n} d x&=i\left[\psi_{m}^{*} \psi_{n}\right]_{-\infty}^{\infty}-i \int_{-\infty}^{\infty} \psi_{n} \frac{d}{d x} \psi_{m}^{*} d x=\int_{-\infty}^{\infty}\left(i \frac{d}{d x} \psi_{m}\right)^{*} \psi_{n} d x\\
+	\therefore \quad &i d / d x\text{ is Hermitian.}\\
+	\int_{-\infty}^{\infty} \psi_{m}^{*} \frac{d^{2} \psi_{n}}{d x^{2}} d x&=\left[\psi_{m}^{*} \frac{d \psi_{n}}{d x}\right]_{-m}^{\infty}-\int_{-}^{\infty} \frac{d \psi_{n}}{d x} \frac{d \psi_{m}^{*}}{d x} d x\\
+	&=\left[\frac{d \psi_{m}^{*}}{d x} \psi_{n}\right]_{-\infty}^{\infty}+\int_{-\infty}^{\infty} \psi_{n} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} d x=\int_{-\infty}^{\infty} \frac{d^{2} \psi_{m}^{*}}{d x^{2}} \psi_{n} d x\\
+	\text{Thus, }&d^{2} / d x^{2}\text{ is Hermitian.	}
+	\end{align*}	
 \end{answer}
 \begin{exercise}
 $\text { Prove that operator } P_{x}=-i \hbar \frac{d}{d x} \text { is Hermitian but } D_{x}=\frac{d}{d x} \text { is not Hermitian. }$
@@ -318,21 +318,23 @@ $$
 For the wave function to be square integrable, it must go to zero as $x$ goes to $-\infty$ or $+\infty$.
 Thus, the first term in the square bracket is zero. So,
 $$
-\left\langle\psi_{1}\left|P_{x}\right| \psi_{2}\right\rangle=i \hbar \int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
-$$
-$$
-\text { Also, } \begin{aligned}
+\begin{aligned}
+\left\langle\psi_{1}\left|P_{x}\right| \psi_{2}\right\rangle&=i \hbar \int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x\\
+\text { Also, } 
 \left\langle P_{x} \psi_{1} \mid \psi_{2}\right\rangle &=\int_{-\infty}^{\infty}\left[P_{x} \psi_{1}(x)\right]^{*} \psi_{2}(x) d x \\
 &=\int_{-\infty}^{\infty}\left[-i \hbar \frac{d \psi_{1}(x)}{d x}\right]^{*} \psi_{2}(x) d x=i \hbar \int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
 \end{aligned}
 $$
 From (i) and (ii), $\left\langle\psi_{1} \mid P_{x} \psi_{2}\right\rangle=\left\langle P_{x} \psi_{1} \mid \psi_{2}\right\rangle$\\
 Hence $P_{x}=-i \hbar \frac{d}{d x}$ is Hermitian. Similar calculation with $A=\frac{d}{d x}$ will give,
-$$
-\left\langle\psi_{1} \mid A \psi_{2}\right\rangle=-\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x
-$$
-And, $\quad\left\langle A \psi_{1} \mid \psi_{2}\right\rangle=\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x$\\
-Hence, $\left\langle\psi_{1} \mid A \psi_{2}\right\rangle \neq\left\langle A \psi_{1} \mid \psi_{2}\right\rangle$ and so, $A=\frac{d}{d x}$ is not Hermitian.	
+\begin{align*}
+\left\langle\psi_{1} \mid A \psi_{2}\right\rangle&=-\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x\\
+\text{And, }\quad\left\langle A \psi_{1} \mid \psi_{2}\right\rangle&=\int_{-\infty}^{\infty} \frac{d \psi_{1}^{*}(x)}{d x} \psi_{2}(x) d x\\
+\text{Hence, }\left\langle\psi_{1} \mid A \psi_{2}\right\rangle &\neq\left\langle A \psi_{1} \mid \psi_{2}\right\rangle\text{ and so, }A=\frac{d}{d x}\text{ is not Hermitian.	}
+\end{align*}
+
+
+
 \end{answer}
 \begin{exercise}
 	$\text { Show that operator } O=(1+i) A B+(1-i) B A \text { is Hermitian if } A \text { and } B \text { is Hermitian. }$
@@ -396,18 +398,18 @@ Where $\hat{P_x}=-i\hbar \frac{\partial}{\partial x}$, $\hat{P_y}=-i\hbar \frac{
 \end{note}
 \textbf{Properties}\\
 \begin{itemize}
-	\item Antisymmetry:\\
+	\item Antisymmetry:
 	$$[\hat{A}, \hat{B}]=-[\hat{B}, \hat{A}]$$
-	\item Linearity:\\
+	\item Linearity:
 	 $$[\hat{A}, \hat{B}+\hat{C}+\hat{D}+\cdots]=[\hat{A}, \hat{B}]+[\hat{A}, \hat{C}]+[\hat{A}, \hat{D}]+\cdots$$
-	 \item  Hermitian conjugate of a commutator: \\
+	 \item  Hermitian conjugate of a commutator: 
 	 $$[\hat{A}, \hat{B}]^{\dagger}=\left[\hat{B}^{\dagger}, \hat{A}^{\dagger}\right]$$
-	 \item  Distributivity: \\
+	 \item  Distributivity: 
 	 $$\begin{aligned}
 	 	&{[\hat{A}, \hat{B} \hat{C}]=[\hat{A}, \hat{B}] \hat{C}+\hat{B}[\hat{A}, \hat{C}]} \\
 	 	&{[\hat{A} \hat{B}, \hat{C}]=\hat{A}[\hat{B}, \hat{C}]+[\hat{A}, \hat{C}] \hat{B}}
 	 \end{aligned}$$
-	 \item jacobi identity:\\
+	 \item jacobi identity:
 	 $$[\hat{A},[\hat{B}, \hat{C}]]+[\hat{B},[\hat{C}, \hat{A}]]+[\hat{C},[\hat{A}, \hat{B}]]=0$$
 	 \item Operators commute with scalars: an operator $\hat{A}$ commutes with any scalar $b$ :
 	 $$
@@ -443,18 +445,22 @@ Where $\hat{P_x}=-i\hbar \frac{\partial}{\partial x}$, $\hat{P_y}=-i\hbar \frac{
 	(ii) $\left[\frac{\partial}{\partial x}, F(x)\right]$
 \end{exercise}
 \begin{answer}
-(i) $\left[\frac{\partial}{\partial x}, \frac{\partial^{2}}{\partial x^{2}}\right] \psi=\left(\frac{\partial}{\partial x} \frac{\partial^{2}}{\partial x^{2}}-\frac{\partial^{2}}{\partial x^{2}} \frac{\partial}{\partial x}\right) \psi=\left(\frac{\partial^{3}}{\partial x^{3}}-\frac{\partial^{3}}{\partial x^{3}}\right) \psi=0$\\
-(ii) $\left[\frac{\partial}{\partial x}, F(x)\right] \psi=\frac{\partial}{\partial x}(F \psi)-F \frac{\partial}{\partial x} \psi=\frac{\partial F}{\partial x} \psi+F \frac{\partial \psi}{\partial x}-F \frac{\partial \psi}{\partial x}=\frac{\partial F}{\partial x} \psi$\\
-Thus, $\left[\frac{\partial}{\partial x}, F(x)\right]=\frac{\partial F}{\partial x}$	
+	\begin{align*}
+	\text{(i) }\left[\frac{\partial}{\partial x}, \frac{\partial^{2}}{\partial x^{2}}\right] \psi&=\left(\frac{\partial}{\partial x} \frac{\partial^{2}}{\partial x^{2}}-\frac{\partial^{2}}{\partial x^{2}} \frac{\partial}{\partial x}\right) \psi=\left(\frac{\partial^{3}}{\partial x^{3}}-\frac{\partial^{3}}{\partial x^{3}}\right) \psi=0\\
+	\text{(ii)} \left[\frac{\partial}{\partial x}, F(x)\right] \psi&=\frac{\partial}{\partial x}(F \psi)-F \frac{\partial}{\partial x} \psi=\frac{\partial F}{\partial x} \psi+F \frac{\partial \psi}{\partial x}-F \frac{\partial \psi}{\partial x}=\frac{\partial F}{\partial x} \psi\\
+	\text{Thus, }\left[\frac{\partial}{\partial x}, F(x)\right]&=\frac{\partial F}{\partial x}
+	\end{align*}
 \end{answer}
 \begin{exercise}
 	If Hamiltonian of system is $H=\frac{p_{x}^{2}}{2 m}+V(x)$ then Find commutation $[H, x]$ and $[[H, x], x]$
 \end{exercise}
 \begin{answer}
- As, $H=p^{2} / 2 m+V(x)$\\
-We have, $[H, x]=\frac{1}{2 m}\left[p^{2}, x\right]=-i \hbar p / m$ \\
-and so, $[[H, x], x]=\frac{i \hbar}{m}[p, x]=-\hbar^{2} / m$\\
- Hence, $\langle m|[[H, x] x]| m\rangle=-\frac{\hbar^{2}}{m}$	
+	\begin{align*}
+	\text{ As, }H&=p^{2} / 2 m+V(x)\\
+	\text{We have, }[H, x]&=\frac{1}{2 m}\left[p^{2}, x\right]=-i \hbar p / m \\
+\text{	and so, }[[H, x], x]&=\frac{i \hbar}{m}[p, x]=-\hbar^{2} / m\\
+	\text{Hence, }\langle m|[[H, x] x]| m\rangle&=-\frac{\hbar^{2}}{m}
+	\end{align*}
 \end{answer}
 \subsection{Functions of Operators}
 \textbf{Commutators Involving Function Operators}\\
@@ -500,33 +506,27 @@ where $a$ is a complex number, called an eigenvalue of $\hat{A}$. This equation 
 	$\text { Show that if } \hat{A}^{-1} \text { exists, the eigenvalues of } \hat{A}^{-1} \text { are just the inverses of those of } \hat{A} \text {. }$
 \end{exercise}
 \begin{answer}
-Since $\hat{A}^{-1} \hat{A}=\hat{I}$ we have on the one hand
-$$
-\hat{A}^{-1} \hat{A}|\psi\rangle=|\psi\rangle,
-$$
-and on the other hand
-$$
-\hat{A}^{-1} \hat{A}|\psi\rangle=\hat{A}^{-1}(\hat{A}|\psi\rangle)=a \hat{A}^{-1}|\psi\rangle .
-$$
-Combining the previous two equations, we obtain
-$$
-a \hat{A}^{-1}|\psi\rangle=|\psi\rangle,
-$$	
-hence
-$$
-\hat{A}^{-1}|\psi\rangle=\frac{1}{a}|\psi\rangle
-$$
-This means that $|\psi\rangle$ is also an eigenvector of $\hat{A}^{-1}$ with eigenvalue $1 / a$. That is, if $\hat{A}^{-1}$ exists, then
-$$
-\hat{A}|\psi\rangle=a|\psi\rangle \quad \Longrightarrow \quad \hat{A}^{-1}|\psi\rangle=\frac{1}{a}|\psi\rangle .
-$$
+	\begin{align*}
+	\text{Since }\hat{A}^{-1} \hat{A}=\hat{I}\text{ we have on the one hand}\\
+	\hat{A}^{-1} \hat{A}|\psi\rangle&=|\psi\rangle,\\
+\text{	and on the other hand}\\
+	\hat{A}^{-1} \hat{A}|\psi\rangle&=\hat{A}^{-1}(\hat{A}|\psi\rangle)=a \hat{A}^{-1}|\psi\rangle .\\
+\text{	Combining the previous two equations, we obtain}\\
+	a \hat{A}^{-1}|\psi\rangle&=|\psi\rangle,\\
+\text{	hence}\quad
+	\hat{A}^{-1}|\psi\rangle&=\frac{1}{a}|\psi\rangle
+\intertext{	This means that $|\psi\rangle$ is also an eigenvector of $\hat{A}^{-1}$ with eigenvalue $1 / a$. That is, if $\hat{A}^{-1}$ exists, then}
+	\hat{A}|\psi\rangle&=a|\psi\rangle \quad \Longrightarrow \quad \hat{A}^{-1}|\psi\rangle=\frac{1}{a}|\psi\rangle .
+	\end{align*}
 \end{answer}
 \section{Theorems} 
 \begin{theorem}
-For an Hermitian operator ,all of its eigen values are real and the eigen vectors corresponding to different eigen values are orthogonal.	\\
-If $\hat{A}^{\dagger}=\hat{A}, \hat{A}|\phi_{n}\rangle =a_n |\phi_{n}\rangle \implies a_n=\text{real number }$\\
-and\\
-$\langle \phi_{m}\mid \phi_{n}\rangle=\delta_{mn}$
+	\begin{align*}
+\intertext{	For an Hermitian operator ,all of its eigen values are real and the eigen vectors corresponding to different eigen values are orthogonal.}	
+\text{	If }\hat{A}^{\dagger}&=\hat{A}, \hat{A}|\phi_{n}\rangle =a_n |\phi_{n}\rangle \implies a_n=\text{real number }\\
+\text{	and}\quad 
+	\langle \phi_{m}\mid \phi_{n}\rangle&=\delta_{mn}
+	\end{align*}
 \end{theorem}
 \begin{theorem}
 If two Hermitian operators, $\hat{A}$ and $\hat{B}$, commute and if $\hat{A}$ has no degenerate eigenvalue, then each eigenvector of $\hat{A}$ is also an eigenvector of $\hat{B}$. In addition, we can construct a common orthonormal basis that is made of the joint eigenvectors of $\hat{A}$ and $\hat{B}$.
@@ -553,24 +553,26 @@ $$\langle p|xp-px|p^{\prime}\rangle =i\hbar \delta (p-p^{\prime})$$
 $$p|px-xp|p^{\prime}\rangle =-i\hbar \delta(p-p^{\prime})$$\\
 $$p\langle p|x|p^{\prime}\rangle -\langle p|x|p^{\prime}\rangle p^{\prime}=-i\hbar\delta(p-p^{\prime})$$
 $$\langle p|x|p^{\prime}\rangle=+i\hbar\frac{\partial}{\partial x}\delta(p-p^{\prime})$$
-So $$\langle p|x|\psi(t)\rangle =i\hbar\frac{\partial}{\partial p} \langle p|\psi(t)\rangle=i\hbar\frac{\partial}{\partial p}\psi (p,t)$$\\
-ie $\hat{x}=i\hbar\frac{\partial}{\partial p}$ in momentum space\\
-So in three dimension \\
-position space\\
-$\hat{p}=-i\hbar \nabla_{r}$\\
-$\hat{x}=x$
-Momentum space\\
-$\hat{p}=p$\\
-$\hat{x}=i\hbar \nabla_{p}$\\
-Now let us check whether momentum is self adjoint\\
-$\int_{-\infty}^{+\infty} f^*(x)\left( -i\hbar \frac{\partial}{\partial x}g(x)\right)dx=-i\hbar\left\lbrace  \left[ f^{*}(x)g(x) \right]_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} g(x)\frac{\partial}{\partial x}f^*(x)dx\right\rbrace $\\
-$=i\hbar \int \frac{\partial}{\partial x} f^*(x) g(x)dx$
-$=\int\left( -i\hbar \frac{\partial}{\partial x}f(x)\right) ^{\dagger}g(x)dx$
-$=\int(pf)^{\dagger}g dx$
-So momentum is hermitian .\\
-Since -i$\hbar\implies i\hbar;\frac{\partial}{\partial x} \implies -\frac{\partial}{\partial x}$ to keep momentum operator hermitian,so $ \frac{\partial}{\partial x}$ is anti hermitian.\\
-So $\left( \frac{d^n}{dx^n}\right) ^{\dagger}=(-1)^n \left( \frac{d^n}{dx^n}\right)$\\
-Its a good position to discuss the time evolution of a state vector .The time evolution of the state vector is prescribed by the rule called schrodinger equation which is given as \\
+So $$\langle p|x|\psi(t)\rangle =i\hbar\frac{\partial}{\partial p} \langle p|\psi(t)\rangle=i\hbar\frac{\partial}{\partial p}\psi (p,t)$$
+	$$
+	\begin{aligned}
+	\text{ie }\hat{x}=i\hbar\frac{\partial}{\partial p}&\text{ in momentum space}\\
+	\text{So in three dimension position space}
+	\hat{p}&=-i\hbar \nabla_{r}, 
+	\hat{x}=x\\
+\text{	Momentum space}
+	\hat{p}&=p, 
+	\hat{x}=i\hbar \nabla_{p}\\
+\text{	Now let us check whether momentum }&\text{is self adjoint}\\
+	\int_{-\infty}^{+\infty} f^*(x)\left( -i\hbar \frac{\partial}{\partial x}g(x)\right)dx&=-i\hbar\left\lbrace  \left[ f^{*}(x)g(x) \right]_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} g(x)\frac{\partial}{\partial x}f^*(x)dx\right\rbrace 
+	=i\hbar \int \frac{\partial}{\partial x} f^*(x) g(x)dx\\
+	\\&=\int\left( -i\hbar \frac{\partial}{\partial x}f(x)\right) ^{\dagger}g(x)dx\\
+	&=\int(pf)^{\dagger}g dx,\text{  So momentum is hermitian .}\\
+\text{	Since -i}\hbar\implies i\hbar;\frac{\partial}{\partial x} \implies -\frac{\partial}{\partial x}&\text{ to keep momentum operator hermitian,so } \frac{\partial}{\partial x} \text{is anti hermitian.}\\
+	\text{So }\left( \frac{d^n}{dx^n}\right) ^{\dagger}&=(-1)^n \left( \frac{d^n}{dx^n}\right)\\
+\end{aligned}
+$$
+	Its a good position to discuss the time evolution of a state vector .The time evolution of the state vector is prescribed by the rule called schrodinger equation which is given as\\
 $$i\hbar \frac{d}{dt}|\psi(t)\rangle =\hat{H}|\psi(t)\rangle $$
 This is not an eigen value equation since $\hat{H}$ is an operator.\\
 Since we are only dealing with autonomous system $\hat{H}$ is explicitly time independant.So we can write the formal solution \\
@@ -583,47 +585,59 @@ It is interesting thing is that even in non-automonous system time evolution ope
 If the system changes from $t_O t0 t_2$\\
 Then $$U(t_2,t_0)=U(t_2,t_1)U(t_1,t_0)$$
 Product of unitary operator is unitary \\
-If we normalized $|\psi(0)\rangle$ would it be preserved in time evolution.\\
-$$|\psi(t) \rangle =e^{-\frac{i}{\hbar}\hat{H(t)}} |\psi(o)\rangle $$
-So $$\langle \psi(t)|=\langle \psi(0)|e^{\frac{i}{\hbar}
-H^{\dagger}t}$$
-So $$\langle \psi(t)\mid \psi(t)\rangle=\langle \psi(o)|e^{\frac{i}{\hbar}H^{\dagger}t}e^{\frac{-i}{\hbar}H^{\dagger}t}\mid \psi(o)\rangle$$ 
-Remember $$e^{\hat{A}}e^{\hat{B}}=e^{\hat{A}+\hat{B}}$$
- Iff $$\left[ A,B\right] =0$$
-$ \left[ H^{\dagger},H\right] =0$ Since H is hermitian.\\
-So $$\langle \psi(t)\mid \psi(t)\rangle=\langle \psi_{0}|\psi_{0}\rangle$$
+If we normalized $|\psi(0)\rangle$ would it be preserved in time evolution.
+$$
+\begin{aligned}
+	|\psi(t) \rangle &=e^{-\frac{i}{\hbar}\hat{H(t)}} |\psi(o)\rangle \\
+	\text{So }\langle \psi(t)|&=\langle \psi(0)|e^{\frac{i}{\hbar}
+		H^{\dagger}t}\\
+\text{	So }\langle \psi(t)\mid \psi(t)\rangle&=\langle \psi(o)|e^{\frac{i}{\hbar}H^{\dagger}t}e^{\frac{-i}{\hbar}H^{\dagger}t}\mid \psi(o)\rangle\\
+\text{	Remember }\quad e^{\hat{A}}e^{\hat{B}}&=e^{\hat{A}+\hat{B}}
+\text{	If }\left[ A,B\right] =0\\
+	 \left[ H^{\dagger},H\right] &=0 \quad\text{ Since H is hermitian.}\\
+\text{	So }\langle \psi(t)\mid \psi(t)\rangle&=\langle \psi_{0}|\psi_{0}\rangle
+\end{aligned}
+$$
 Ie probability is conserved in time evolution as in classical mechanics.(liouville's thoerem).The preservation of probality follows from the unitary of the time evolution operator.\\
 Now we have studied the schrodinger equation in the abstract basis .Then how does it look like in position basis.\\
 we have \\
-\begin{align*}
-i\hbar \frac{d}{dt}|\psi(t)\rangle &=\hat{H}|\psi(t)\rangle \\
-\intertext{with} \hat{H}&=\frac{p^2}{2m}+V(r)\\
-\intertext{in position basis (3-D)}\\
+$$
+\begin{aligned}
+i\hbar \frac{d}{dt}|\psi(t)\rangle &=\hat{H}|\psi(t)\rangle 
+\text{with} \hat{H}=\frac{p^2}{2m}+V(r)\\
+\text{in position basis (3-D)}\\
 \langle r|i\hbar \frac{d}{dt}|\psi(t)\rangle&=\langle r|\hat{H}|\psi(t)\rangle\\
 i\hbar \frac{d}{dt}\langle |\psi(t)\rangle&=\langle r|\frac{p^2}{2m}+V(r)|\psi(t)\rangle\\
 i\hbar\frac{\partial}{\partial t}\psi(r,t)&=-\frac{\hbar^2}{2m} \nabla^2\langle r|\psi(t)\rangle+\langle r|v(r)|\psi(t)\rangle\\
 &=-\frac{\hbar^2}{2m}\nabla^2\psi(r,t)+v(r)\psi(r,t)\\
 i\hbar \frac{\partial}{\partial t}\psi(r,t)&=-\frac{\hbar^2}{2m} \nabla^2 \psi(r,t)+v(r)\psi(r,t)\\
-\intertext{This is partial differential equation,first order in time.}
-\end{align*}
+\text{This is partial differential }&\text{equation,first order in time.}
+\end{aligned}
+$$
 Let's calculate
-\begin{align*}
+$$
+\begin{aligned}
 \langle x|\hat{P}|x^{\prime}&=\langle x|-i\hbar \frac{\partial}{\partial x}|x^{\prime}\\
 &=-i\hbar \frac{\partial}{\partial x} \langle x|x^{\prime} \rangle\\
-\intertext{similarly}\\
+\text{similarly}\\
 \langle x|\hat{P}|\hat{P}\rangle&=-i\hbar \frac{\partial}{\partial x}\langle x|p\rangle\\
 p\langle x|\hat{P}\rangle&=-i\hbar\frac{\partial}{\partial x} \langle x|p\rangle\\
 \frac{\partial \langle x|p\rangle}{\langle x|\hat{p}\rangle}&=\frac{p}{-i\hbar}\partial x\\
 \langle x|p\rangle &\propto e^{\frac{ipx}{\hbar}}\\
 \langle p|x\rangle &\propto e^{\frac{-ipx}{\hbar}}\\
-\intertext{so we get}
+\text{so we get}
 \psi(x,t)&=\int_{-\infty}^{+\infty} dp\langle x|p\rangle \hat{\psi}(p,t)\\
 \psi(x,t)&=\frac{1}{\sqrt{2\pi \hbar}}\int_{-\infty}^{+\infty} dp e^{ipx} \vec{\psi}(p,t)\\
 \vec{\psi}(p,t)&=\frac{1}{\sqrt{2\pi \hbar}} \int_{-\infty}^{+\infty}dxe^{-ipx} \psi(x,t)\\
-\end{align*}
-In 3-D\\
-$$\psi(r,t)=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3r e^{\frac{i\vec{p}\cdot \vec{r}}{\hbar}} \vec{\psi}(p,t)$$
-$$\vec{\psi}(p,t)=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3p e^{\frac{-i\vec{p}\cdot \vec{r}}{\hbar}} \psi(x,t)$$
+\end{aligned}
+$$
+In 3-D
+$$
+\begin{aligned}
+\psi(r,t)&=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3r e^{\frac{i\vec{p}\cdot \vec{r}}{\hbar}} \vec{\psi}(p,t)\\
+\vec{\psi}(p,t)&=\frac{1}{(2\pi \hbar)^{3/2}}\int_{-\infty}^{+\infty}d^3p e^{\frac{-i\vec{p}\cdot \vec{r}}{\hbar}} \psi(x,t)
+\end{aligned}
+$$
 Turns out that momentum space wave function is the fourier transform of the position space wave function.\\
 Parsevals theorem guarantee that\\
 $$\int_{-\infty}^{+\infty} d^3p |\psi(p,t)|^2=\int_{-\infty}^{+\infty} d^3r |\psi(r,t)|^2$$
@@ -646,7 +660,7 @@ such that
  		$$
  		\hat{P} \psi_{+}(\vec{r})=\psi_{+}(-\vec{r})=\psi_{+}(\vec{r}), \quad \hat{P} \psi_{-}(\vec{r})=\psi_{-}(-\vec{r})=-\psi_{-}(\vec{r}) .
  		$$
- 		The eigenstate $\left|\psi_{+}\right\rangle$is said to be even and $\left|\psi_{-}\right\rangle$is odd. Therefore, the eigenfunctions of the parity operator have definite parity: they are either even or odd.
+ 		The eigenstate $\left|\psi_{+}\right\rangle$is said to be even and $\left|\psi_{-}\right\rangle$is odd. Therefore, the eigenfunctions of the parity operator have definite parity: they are either even or odd.\\
  		\item \textbf{Even and Odd Operators}\\
  		An operator $\hat{A}$ is said to be $e v e n$ if it obeys the condition
  		$$
@@ -966,7 +980,7 @@ where $\alpha$ is a constant\\
 	\item Let $\vec{L}$ and $\vec{p}$ be the angular and linear momentum operators, respectively, for a a particle. The commutator $\left\lfloor L_{x}, p_{y}\right\rfloor$ gives
 	\exyear{GATE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $-i \hbar p_{z}$
 	\task[\textbf{B.}]0
 	\task[\textbf{C.}]$i \hbar p_{x}$
@@ -976,7 +990,7 @@ where $\alpha$ is a constant\\
 	\item $\text { Which of the following operators is Hermitian? }$
 	\exyear{GATE 2016}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{d}{d x}$
 	\task[\textbf{B.}]$\frac{d^{2}}{d x^{2}}$
 	\task[\textbf{C.}]$i \frac{d^{2}}{d x^{2}}$
@@ -1141,7 +1155,7 @@ where $\alpha$ is a constant\\
 	$\text { As, } H=p^{2} / 2 m+V(x)$\\\\
 	We have, $[H, x]=\frac{1}{2 m}\left[p^{2}, x\right]=-i \hbar p / m$\\\\
 	 and so, $[[H, x], x]=\frac{i \hbar}{m}[p, x]=-\hbar^{2} / m$\\\\
-	  Hence, $\langle m|[[H, x] x]| m\rangle=-\frac{\hbar^{2}}{m}$.
+	  Hence, $\langle m|[[H, x], x]| m\rangle=-\frac{\hbar^{2}}{m}$.
 \end{answer}
 \end{enumerate}
 
