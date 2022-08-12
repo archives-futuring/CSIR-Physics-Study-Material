@@ -210,27 +210,20 @@ $$H_{p}=-3 e \mathcal{E} a_{0}\left(\begin{array}{cccc}
 	1 & 0 & 0 & 0 \\
 	0 & 0 & 0 & 0
 \end{array}\right)$$
-
-The diagonalization of this matrix leads to the following eigenvalues:
-$$
-E_{2}^{(1)},=-3 e \mathcal{E} a_{0}, \quad E_{2}^{(1)}{ }_{2}=E_{2}^{(1)}{ }_{3}=0, \quad E_{2{ }^{(1)}}{ }_{4}=3 e \mathcal{E} a_{0} .
-$$
-Thus, the energy levels of the $n=2$ states are given to first order by
-$$
-E_{2_{1}}=-\frac{R_{y}}{4}-3 e \mathcal{E} a_{0}, \quad E_{2_{2}}=E_{2_{3}}=-\frac{R_{y}}{4}, \quad E_{2_{4}}=-\frac{R_{y}}{4}+3 e \mathcal{E} a_{0} .
-$$
-The corresponding eigenvectors to zeroth order are
-$$
-\begin{aligned}
-&\left|\psi_{2}\right\rangle_{1}=\frac{1}{\sqrt{2}}(|200\rangle+|210\rangle), \quad\left|\psi_{2}\right\rangle_{2}=|211\rangle, \\
-&\left|\psi_{2}\right\rangle_{3}=|21-1\rangle, \quad\left|\psi_{2}\right\rangle_{4}=\frac{1}{\sqrt{2}}(|200\rangle-|210\rangle) .
-\end{aligned}
-$$
+\begin{align*}
+\text{The diagonalization }&\text{of this matrix leads to the following eigenvalues:}\\
+E_{2}^{(1)},&=-3 e \mathcal{E} a_{0}, \quad E_{2}^{(1)}{ }_{2}=E_{2}^{(1)}{ }_{3}=0, \quad E_{2{ }^{(1)}}{ }_{4}=3 e \mathcal{E} a_{0} .\\
+\text{Thus, the energy levels }&\text{of the $n=2$ states are given to first order by}\\
+E_{2_{1}}&=-\frac{R_{y}}{4}-3 e \mathcal{E} a_{0}, \quad E_{2_{2}}=E_{2_{3}}=-\frac{R_{y}}{4}, \quad E_{2_{4}}=-\frac{R_{y}}{4}+3 e \mathcal{E} a_{0} .\\
+\text{The corresponding }&\text{eigenvectors to zeroth order are}\\
+\left|\psi_{2}\right\rangle_{1}&=\frac{1}{\sqrt{2}}(|200\rangle+|210\rangle), \quad\left|\psi_{2}\right\rangle_{2}=|211\rangle, \\
+\left|\psi_{2}\right\rangle_{3}&=|21-1\rangle, \quad\left|\psi_{2}\right\rangle_{4}=\frac{1}{\sqrt{2}}(|200\rangle-|210\rangle) .
+\end{align*}
 This perturbation has only partially removed the degeneracy of the $n=2$ level; the states $|211\rangle$ and $|21-1\rangle$ still have the same energy $E_{3}=E_{4}=-R_{y} / 4$.
 
 \subsection{Spin Orbit Coupling}
 One of the most useful applications of perturbation theory is to calculate the energy corrections for the hydrogen atom, notably the corrections due to the fine structure. The fine structure is in turn due to two effects: spin-orbit coupling and the relativistic correction. Let us look at these corrections separately.\\
-\par The spin-orbit coupling in hydrogen arises from the interaction between the electron's spin magnetic moment, $\vec{\mu}_{S}=-e \vec{S} /\left(m_{e} c\right)$, and the proton's orbital magnetic field $\vec{B}$.
+The spin-orbit coupling in hydrogen arises from the interaction between the electron's spin magnetic moment, $\vec{\mu}_{S}=-e \vec{S} /\left(m_{e} c\right)$, and the proton's orbital magnetic field $\vec{B}$.
 
 The origin of the magnetic field experienced by the electron moving at $\vec{v}$ in a circular orbit around the proton can be explained classically as follows. The electron, within its rest frame. sees the proton moving at $-\vec{v}$ in a circular orbit around it . From classical electrodynamics, the magnetic field experienced by the electron is
 	$$
@@ -312,9 +305,11 @@ where $E_{n}^{(0)}=-e^{4} m_{e} /\left(2 \hbar^{2} n^{2}\right)=-\alpha^{2} m_{e
 \subsubsection{Fine Structure of Hydrogen Atom}
 The fine structure correction is obtained by adding the expressions for the spin-orbit and relativistic corrections
 $$
-E_{F S}^{(1)}=E_{S O}^{(1)}+E_{R}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{2 n^{3}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right]-\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{8 n}{2 l+1}-3\right]
+\begin{aligned}
+E_{F S}^{(1)}&=E_{S O}^{(1)}+E_{R}^{(1)}=\frac{\alpha^{4} m_{e} c^{2}}{2 n^{3}}\left[\frac{j(j+1)-l(l+1)-\frac{3}{4}}{l(l+1)(2 l+1)}\right]-\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{8 n}{2 l+1}-3\right]\\
+\text{where }j&=l \pm \frac{1}{2} .\text{ If }j=l+\frac{1}{2} \text{a substitution of }l=j-\frac{1}{2}\text{  leads to}
+\end{aligned}
 $$
-where $j=l \pm \frac{1}{2} .$ If $j=l+\frac{1}{2}$ a substitution of $l=j-\frac{1}{2}$  leads to
 $$\begin{aligned}
 	E_{F S}^{(1)} &=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{4 n j(j+1)-4 n\left(j-\frac{1}{2}\right)\left(j+\frac{1}{2}\right)-3 n}{\left(j-\frac{1}{2}\right)\left(j+\frac{1}{2}\right)(2 j-1+1)}-\frac{8 n}{2 j-1+1}+3\right] \\
 	&=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{4 n j-2 n}{2 j\left(j-\frac{1}{2}\right)\left(j+\frac{1}{2}\right)}-\frac{4 n}{j}+3\right]=\frac{\alpha^{4} m_{e} c^{2}}{8 n^{4}}\left[\frac{2 n}{j\left(j+\frac{1}{2}\right)}-\frac{4 n}{j}+3\right] \\
@@ -376,8 +371,8 @@ H^{\prime}&=-e \varepsilon x=-e \varepsilon \sqrt{\frac{\hbar}{2 m_{0} \omega}}\
 	Example 4. Consider the infinite square well defined by
 	$$
 	\begin{aligned}
-	&V(x)=0 \text { for } 0 \leq x<a \\
-	&V(x)=\infty \text { otherwise }
+	V(x)&=0 \text { for } 0 \leq x<a \\
+	V(x)&=\infty \text { otherwise }
 	\end{aligned}
 	$$
 	Using the first order perturbation theory, calculate the energy of the first two states of the potential wellifa portion defined by $V(x)=V_{0} x / a$, where $\mathrm{V}_{0}$ is a small constant, with $0 \leq x \leq a$ being sliced off.
@@ -566,15 +561,15 @@ To illustrate the various aspects of the WKB method, let us consider the simple 
 		2\left(\frac{d}{d x} \ln A\right) p(x)&+\frac{d}{d x} p(x)=0\\
 	\text{From these two equations }&\text{$A(\vec{r})$ ,$S(\vec{r})$ can be found.}\\
 	S(x)&=\pm \int d x \sqrt{2 m(E-V(x))}=\pm \int p(x) d x\\
-	\frac{d}{d x}[2 \ln A+\ln p(x)]=0\\
+	\frac{d}{d x}[2 \ln A+\ln p(x)]&=0\\
 \text{	which in turn leads to}\qquad
 	A(x)&=\frac{C}{\sqrt{|p(x)|}}\\
 \text{	we will get the solution by }&\text{substituting the values of $A(\vec{r})$ ,$S(\vec{r})$ in to }	\psi(\vec{r})\\
 	\psi_{\pm}(x)&=\frac{C_{\pm}}{\sqrt{|p(x)|}} \exp \left[\pm \frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right] 
 \end{aligned}
 $$
-The amplitude of this wave function is proportional to $1 / \sqrt{p(x)}$; hence the probability of finding the particle between $x$ and $x+d x$ is proportional to $1 / p(x)$. This is what we expect for a "classical" particle because the time it will take to travel a distance $d x$ is proportional to the inverse of its speed (or its momentum).
-\par We can now examine two separate cases corresponding to $E>V(x)$ and $E<V(x)$. First, let us consider the case $E>V(x)$, which is called the classically allowed region. Here $p(x)$ is a real function; the most general solution  is a combination of $\psi_{+}(x)$ and $\psi_{-}(x)$ :
+The amplitude of this wave function is proportional to $1 / \sqrt{p(x)}$; hence the probability of finding the particle between $x$ and $x+d x$ is proportional to $1 / p(x)$. This is what we expect for a "classical" particle because the time it will take to travel a distance $d x$ is proportional to the inverse of its speed (or its momentum).\\
+ We can now examine two separate cases corresponding to $E>V(x)$ and $E<V(x)$. First, let us consider the case $E>V(x)$, which is called the classically allowed region. Here $p(x)$ is a real function; the most general solution  is a combination of $\psi_{+}(x)$ and $\psi_{-}(x)$ :
 $$
 \psi(x)=\frac{C_{+}}{\sqrt{p(x)}} \exp \left[\frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right]+\frac{C_{-}}{\sqrt{p(x)}} \exp \left[-\frac{i}{\hbar} \int^{x} p\left(x^{\prime}\right) d x^{\prime}\right]
 $$
@@ -772,18 +767,16 @@ $$
 i \hbar \frac{d}{d t}|\psi(t)\rangle=\hat{H}|\psi(t)\rangle,
 $$
 where $|\psi(t)\rangle$ denotes the state of the system in the Schrödinger picture.The  time evolution of a state $|\psi(t)\rangle$ can be expressed by means of the propagator, or time-evolution operator, $\hat{U}\left(t, t_{0}\right)$, as follows:
+	$$
+	\begin{aligned}
+	|\psi(t)\rangle&=\hat{U}\left(t, t_{0}\right)\left|\psi\left(t_{0}\right)\right\rangle,\\
+\text{	with}\hspace{1cm}\\
+	\hat{U}\left(t, t_{0}\right)&=e^{-i\left(t-t_{0}\right) \hat{H} / \hbar}\\
+\text{	The operator }&\hat{U}\left(t, t_{0}\right)\text{ is unitary,}\\
+	\hat{U}^{\dagger}\left(t, t_{0}\right) \hat{U}\left(t, t_{0}\right)&=I\\
+\text{	and satisfies }&\text{these properties:}
+\end{aligned}
 $$
-|\psi(t)\rangle=\hat{U}\left(t, t_{0}\right)\left|\psi\left(t_{0}\right)\right\rangle,
-$$
-with
-$$
-\hat{U}\left(t, t_{0}\right)=e^{-i\left(t-t_{0}\right) \hat{H} / \hbar}
-$$
-The operator $\hat{U}\left(t, t_{0}\right)$ is unitary,
-$$
-\hat{U}^{\dagger}\left(t, t_{0}\right) \hat{U}\left(t, t_{0}\right)=I
-$$
-and satisfies these properties:
 $$
 \begin{gathered}
 \hat{U}(t, t)=I \\
@@ -819,20 +812,16 @@ To find the time evolution of $|\psi(t)\rangle_{I}$, we need the time derivative
 $$
 \begin{aligned}
 i \hbar \frac{d|\psi(t)\rangle_{I}}{d t} &=-\hat{H}_{0} e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle+e^{i t \hat{H}_{0} / \hbar}\left(i \hbar \frac{d|\psi(t)\rangle}{d t}\right) \\
-&=-\hat{H}_{0}|\psi(t)\rangle_{I}+e^{i t \hat{H}_{0} / \hbar} \hat{H}|\psi(t)\rangle
+&=-\hat{H}_{0}|\psi(t)\rangle_{I}+e^{i t \hat{H}_{0} / \hbar} \hat{H}|\psi(t)\rangle\\
+\text { Since } \hat{H}&=\hat{H}_{0}+\hat{V} \text { and }\\
+e^{i H_{0} t / \hbar} \hat{V}&=\left(e^{i t \hat{H}_{0} / \hbar} \hat{V} e^{-i t \hat{H}_{0} / \hbar}\right) e^{i t \hat{H}_{0} / \hbar}=\hat{V}_{I}(t) e^{i t \hat{H}_{0} / \hbar}, \\
+\hat{V}_{I}(t)&=e^{i t \hat{H}_{0} / \hbar} \hat{V} e^{-i t \hat{H}_{0} / \hbar},\\
+\text{we can rewrite}&\\
+i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}&=-\hat{H}_{0}|\psi(t)\rangle_{I}+\hat{H}_{0} e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle+\hat{V}_{I}(t) e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle, \\
+i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}&=\hat{V}_{I}(t)|\psi(t)\rangle_{I} .
 \end{aligned}
 $$
-$\text { Since } \hat{H}=\hat{H}_{0}+\hat{V} \text { and }$
-$$\begin{gathered}
-e^{i H_{0} t / \hbar} \hat{V}=\left(e^{i t \hat{H}_{0} / \hbar} \hat{V} e^{-i t \hat{H}_{0} / \hbar}\right) e^{i t \hat{H}_{0} / \hbar}=\hat{V}_{I}(t) e^{i t \hat{H}_{0} / \hbar}, \\
-\hat{V}_{I}(t)=e^{i t \hat{H}_{0} / \hbar} \hat{V} e^{-i t \hat{H}_{0} / \hbar},
-\end{gathered}$$
-we can rewrite\\
-$$\begin{gathered}
-i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}=-\hat{H}_{0}|\psi(t)\rangle_{I}+\hat{H}_{0} e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle+\hat{V}_{I}(t) e^{i t \hat{H}_{0} / \hbar}|\psi(t)\rangle, \\
-i \hbar \frac{d|\psi(t)\rangle_{I}}{d t}=\hat{V}_{I}(t)|\psi(t)\rangle_{I} .
-\end{gathered}$$
-This is the Schrödinger equation in the interaction picture. It shows that the time evolution of the state vector is governed by the interaction $\hat{V}_{I}(t)$.\\
+This is the Schrödinger equation in the interaction picture. It shows that the time evolution of the state vector is governed by the interaction $\hat{V}_{I}(t)$.\\\\
 \textbf{Equation of Motion for the Operators}\\
 The interaction representation of an operator $\hat{A}_{J}(t)$ is given, in terms of its Schrödinger representation by
 $$
@@ -842,7 +831,7 @@ Calculating the time derivative of $\hat{A}_{I}(t)$ and since $\partial \hat{A} 
 $$
 \frac{d \hat{A}_{I}(t)}{d t}=\frac{1}{i \hbar}\left[\hat{A}_{I}(t), \hat{H}_{0}\right]
 $$
-This equation is similar to the Heisenberg equation of motion except that $\hat{H}$ is replaced by $\hat{H}_{0}$. The basic difference between the Heisenberg and interaction pictures:In the Heisenberg picture it is $\hat{H}$ that appears in the exponents,whereas in the interaction picture it is $\hat{H}_0$ that appears.\\
+This equation is similar to the Heisenberg equation of motion except that $\hat{H}$ is replaced by $\hat{H}_{0}$. The basic difference between the Heisenberg and interaction pictures:In the Heisenberg picture it is $\hat{H}$ that appears in the exponents,whereas in the interaction picture it is $\hat{H}_0$ that appears.\\\\
 \textbf{Conclusion}\\
  we have seen that with in the schrodinger picture ,the states depends on time but not operators;In the Heisenberg picture only operators depends explicitly on time,state vectors are frozen in time.The interaction picture however is intermediate between the Schrodinger and the Heisenberg pictures ,since both state vectors and operators evolve with time.\\
  \newpage
@@ -892,7 +881,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item A constant perturbation as shown in the figure below acts on a particle of mass $m$ confined in an infinite potential well between 0 and $L$.\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210921(2)-crop(2)}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210921(2)-crop(2)}
 	\end{figure}
 	$\text { The first-order correction to the ground state energy of the particle is }$
 	\exyear{NET DEC 2011}
@@ -1054,7 +1043,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
 	\item A particle of charge $q$ in one dimension is in a simple harmonic potential with angular frequency $\omega$. It is subjected to a time- dependent electric field $E(t)=A e^{-\left(\frac{t}{\tau}\right)^{2}}$, where $A$ and $\tau$ are positive constants and $\omega \tau \gg 1$. If in the distant past $t \rightarrow-\infty$ the particle was in its ground state, the probability that it will be in the first excited state as $t \rightarrow+\infty$ is proportional to
 	\exyear{NET DEC 2016}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $e^{-\frac{1}{2}(\omega \tau)^{2}}$
 	\task[\textbf{B.}]$e^{\frac{1}{2}(\omega \tau)^{2}}$
 	\task[\textbf{C.}] 0
@@ -1148,7 +1137,7 @@ This equation is similar to the Heisenberg equation of motion except that $\hat{
   	\exyear{GATE 2010}
   	\begin{figure}[H]
   		\centering
-  		\includegraphics[height=4cm,width=5cm]{gate 2010}
+  		\includegraphics[height=4cm,width=4cm]{gate 2010}
   	\end{figure}
   \end{minipage}
   \begin{tasks}(2)
@@ -1238,7 +1227,7 @@ $\begin{aligned}
 	\exyear{GATE 2015}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=3cm]{diagram-20210824(7)-crop}
+		\includegraphics[height=3cm,width=2.7cm]{diagram-20210824(7)-crop}
 	\end{figure}
 \end{minipage}
 \begin{tasks}(2)
@@ -1284,8 +1273,8 @@ $\begin{aligned}
  		\item A one dimensional infinite potential box is defined by, $V(x)=\left\{\begin{array}{ll}0, & 0<x<a \\ \infty, & \text { otherwise }\end{array}\right.$. It is perturbed by potential $\frac{\alpha V_{0} x^{2}}{a^{2}}$, then find the first order energy correction in $n^{t h}$ state of the system.
  	\end{minipage}
  	\begin{answer}
- 	$$E_{n}^{1}=\left\langle\phi_{n}|W| \phi_{n}\right\rangle, \text { where }\left|\phi_{n}\right\rangle=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}$$
- 	\begin{align*}
+ 		\begin{align*}
+ 		 	E_{n}^{1}&=\left\langle\phi_{n}|W| \phi_{n}\right\rangle, \text { where }\left|\phi_{n}\right\rangle=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}\\
  		&E_{n}^{1}=V_{0} \frac{2}{a} \int_{0}^{a} \frac{x^{2}}{a^{2}} \sin ^{2} \frac{n \pi x}{a} d x=V_{0} \frac{1}{a} \int_{0}^{a} \frac{x^{2}}{a^{2}}\left(1-\cos \frac{2 n \pi x}{a}\right) d x=V_{0}\left(\frac{1}{3}-\frac{1}{2 n^{2} \pi^{2}}\right) \\
  		&E_{n}=\frac{n^{2} \pi^{2}}{2 m a^{2}}+\alpha V_{0}\left(\frac{1}{3}-\frac{1}{2 n^{2} \pi^{2}}\right)
  	\end{align*}	
@@ -1304,13 +1293,18 @@ $\begin{aligned}
 	\item A one dimensional infinite potential box is defined as, $V(x)= \begin{cases}0, & -\frac{a}{2}<x<\frac{a}{2} . \text { It is } \\ \infty, & \text { otherwise }\end{cases}$ perturbed with potential $H_{p}=V_{0} a \delta(x)$. Find the $E_{n}^{2}$.i.e., second order correction in ground state.
 \end{minipage}
 \begin{answer}
-	$E_{n}^{2}=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}$\\
-	If $n$ is even, then $\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0$\\
-	If $m$ is even, then $\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0$\\
-	If $m$ and $n$ odd, then $\left\langle\phi_{m}|W| \phi_{n}\right\rangle=V_{0} a\left(\frac{2}{a}\right)\int_{-a / 2}^{a / 2} \cos \frac{m \pi x}{a} \cos \frac{n \pi x}{a} \delta(x) d x=2 V_{0}$
-	$$
-	E_{n}^{2}=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}=\sum_{m=1,3,5} \frac{4 V_{0}^{2}}{\left(n^{2}-m^{2}\right) E_{0}}, \text { where } E_{0}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}
-	$$
+	\begin{align*}
+		E_{n}^{2}&=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}\\
+	\text{If $n$ is even, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0\\
+	\text{If $m$ is even, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0\\
+\text{	If $m$ and $n$ odd, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=V_{0} a\left(\frac{2}{a}\right)\int_{-a / 2}^{a / 2} \cos \frac{m \pi x}{a} \cos \frac{n \pi x}{a} \delta(x) d x=2 V_{0}\\
+	E_{n}^{2}&=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}=\sum_{m=1,3,5} \frac{4 V_{0}^{2}}{\left(n^{2}-m^{2}\right) E_{0}}, \text { where } E_{0}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}\\
+		E_{n}^{2}&=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}\\
+	\text{If $n$ is even, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0\\
+\text{	If $m$ is even, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=0\\
+	\text{If $m$ and $n$ odd, then }&\left\langle\phi_{m}|W| \phi_{n}\right\rangle=V_{0} a\left(\frac{2}{a}\right)\int_{-a / 2}^{a / 2} \cos \frac{m \pi x}{a} \cos \frac{n \pi x}{a} \delta(x) d x=2 V_{0}\\
+	E_{n}^{2}&=\sum_{m \neq n} \frac{\left|\left\langle\phi_{m}|W| \phi_{n}\right\rangle\right|^{2}}{E_{n}-E_{m}}=\sum_{m=1,3,5} \frac{4 V_{0}^{2}}{\left(n^{2}-m^{2}\right) E_{0}}, \text { where } E_{0}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}\\
+	\end{align*}
 \end{answer}
 	\begin{minipage}{\textwidth}
 	\item A one dimensional harmonic oscillator with potential, $V(x)=\frac{1}{2} m \omega^{2} x^{2}$ is given, then\\
@@ -1330,11 +1324,13 @@ $\begin{aligned}
 \end{answer}
 	\begin{minipage}{\textwidth}
 	\item
-	One dimensional potential is given by, $V(x)=\left\{\begin{array}{ll}\infty, & x<0 \\ \frac{1}{2} m \omega^{2} x^{2}, & x \geq 0\end{array} .\right.$ It is perturbed by potential\\
-	(a) $H_{p}=\lambda V_{0}$, then find the first order correction in energy for ground state .\\
-	(b) $H_{p}=\lambda V_{0} \delta\left(x-\sqrt{\frac{\hbar}{m \omega}}\right)$, find the first order correction in energy for ground state .\\
-	(c) $H_{p}=\lambda X$\\
-	(d) $H_{p}=\lambda X^{2}$\\
+	One dimensional potential is given by, $V(x)=\left\{\begin{array}{ll}\infty, & x<0 \\ \frac{1}{2} m \omega^{2} x^{2}, & x \geq 0\end{array} .\right.$ It is perturbed by potential
+	 \begin{tasks}(1)
+		\task[\text{a.}] $H_{p}=\lambda V_{0}$, then find the first order correction in energy for ground state .
+		\task[\text{b.}]$H_{p}=\lambda V_{0} \delta\left(x-\sqrt{\frac{\hbar}{m \omega}}\right)$, find the first order correction in energy for ground state .
+		\task[\text{c.}] $H_{p}=\lambda X$
+		\task[\text{d.}] $H_{p}=\lambda X^{2}$
+	\end{tasks}
 \end{minipage}
 \begin{answer}
 	$\text { For given system first excited state } n=1$\\
@@ -1420,8 +1416,8 @@ And also, average kinetic energy, $\langle T\rangle=\frac{\pi^{2} \hbar^{2}}{2 m
 	 \end{minipage}
 	 $$\text { 4. } \int_{0}^{\left(\frac{E}{a}\right)} \sqrt{2 m\left(E-a x^{6}\right)} d x=n h \Rightarrow 4 \sqrt{2 m E} \int_{0}^{\frac{E}{a}} \int_{1 / 6}^{1 / 6} \sqrt{\left(1-\frac{a x^{6}}{E}\right)} d x=n h, n=1,2 \ldots$$
 	 \begin{align*}
-	 	&\text { Put }\left(\frac{a}{E}\right)^{1 / 6} x=t \text { then } d x=d t\left(\frac{E}{a}\right)^{\frac{1}{6}} \Rightarrow 4 \sqrt{2 m E} \cdot\left(\frac{E}{a}\right)^{1 / 6} \int_{0}^{1} \sqrt{\left(1-t^{6}\right)} d t=n h \\
-	 	&\Rightarrow E^{\frac{1}{2}+\frac{1}{6}} \propto n \Rightarrow E^{\frac{4}{6}} \propto n \Rightarrow E \propto n^{\frac{3}{2}} \text { so value of } \alpha=\frac{3}{2}
+	 	\text { Put }\left(\frac{a}{E}\right)^{1 / 6} x=t \text { then } d x&=d t\left(\frac{E}{a}\right)^{\frac{1}{6}} \Rightarrow 4 \sqrt{2 m E} \cdot\left(\frac{E}{a}\right)^{1 / 6} \int_{0}^{1} \sqrt{\left(1-t^{6}\right)} d t=n h \\
+	 	\Rightarrow E^{\frac{1}{2}+\frac{1}{6}} \propto n &\Rightarrow E^{\frac{4}{6}} \propto n \Rightarrow E \propto n^{\frac{3}{2}} \text { so value of } \alpha=\frac{3}{2}
 	 \end{align*}
 \end{answer}
 	\begin{minipage}{\textwidth}
@@ -1439,7 +1435,7 @@ $\frac{\lambda}{E} x=t \Rightarrow d x=\frac{E}{\lambda} d t$\\
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=3cm,width=5cm]{diagram-20220205(1)-20220205162522-crop}
+	\includegraphics[height=3cm,width=4.5cm]{diagram-20220205(1)-20220205162522-crop}
 \end{figure}
 \end{minipage}
 So the integration is given by $\sqrt{2 m E} \cdot \frac{E}{\lambda} \int_{0}^{1} \sqrt{1-t} d t=(n+3 / 4) \pi \hbar, n=0 ; 1,2 \ldots$ To find $I=\int_{0}^{1} \sqrt{1-t} d t$\\
