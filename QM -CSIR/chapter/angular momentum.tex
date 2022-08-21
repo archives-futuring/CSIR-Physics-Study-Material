@@ -43,16 +43,16 @@ L_{y}&=i \hbar\left(-\cos \phi \frac{\partial}{\partial \theta}+\sin \phi \cot \
 L_{z}&=-i \hbar \frac{\partial}{\partial \phi}
 \end{align*}
 \subsection{Eigen Value and Eigen Vector of $L^2$ and $L_z$}
-Since,the commutator bracket $\left[ L^2,L_z\right] =0$ therefore $L^2$ and $L_z$ can be measured simultaneously accurately and both have simultaneous eigenfunctions and eigenkets.Denoting the simultaneous eigen kets $|l,m_l\rangle $ (Where l and $m_l$ are the orbital quantum number magnetic quantum number respectevely),the eigen value equation for $L^2$ and $L_z$ can be written as 
+Since,the commutator bracket $\left[ L^2,L_z\right] =0$ therefore $L^2$ and $L_z$ can be measured simultaneously accurately and both have simultaneous eigenfunctions and eigenkets.Denoting the simultaneous eigen kets $|\ell,m_\ell\rangle $ (Where l and $m_\ell$ are the orbital quantum number magnetic quantum number respectevely),the eigen value equation for $L^2$ and $L_z$ can be written as 
 \begin{align*}
-\hat{L}^{2}\left|l, m_{l}\right\rangle&=l(l+1) \hbar^{2}\left|l, m_{l}\right\rangle \\
-\hat{L}_{z}\left|l, m_{l}\right\rangle&=m_{l} \hbar\left|l, m_{l}\right\rangle\\
+\hat{L}^{2}\left|\ell, m_{\ell}\right\rangle&=l(\ell+1) \hbar^{2}\left|\ell, m_{\ell}\right\rangle \\
+\hat{L}_{z}\left|\ell, m_{\ell}\right\rangle&=m_{\ell} \hbar\left|\ell, m_{\ell}\right\rangle\\
 \text { Alternate form: Since, } \hat{L}^{2} \text { and } \hat{L}_{z} &\text { depends on } \theta, \phi \text { then their eigen function is function of } \theta, \phi \text { i.e. }\\
-\hat{L}^{2} Y_{\ell, m_{l}}(\theta, \phi)&=\ell(\ell+1) \hbar^{2} Y_{\ell, m_{l}}(\theta, \phi) \\
-\hat{L}_{z} Y_{\ell, m_{l}}(\theta, \phi)&=m_{l} \hbar Y_{\ell, m_{l}}(\theta, \phi)\\
+\hat{L}^{2} Y_{\ell, m_{\ell}}(\theta, \phi)&=\ell(\ell+1) \hbar^{2} Y_{\ell, m_{\ell}}(\theta, \phi) \\
+\hat{L}_{z} Y_{\ell, m_{\ell}}(\theta, \phi)&=m_{\ell} \hbar Y_{\ell, m_{\ell}}(\theta, \phi)\\
 \text { where } Y_{\ell, m}(\theta, \phi) \text{is said to be}&\text {  Spherical Harmonics and defined as }\\
-Y_{l, m_{l}}(\theta, \varphi)&=\varepsilon \sqrt{\left(\frac{2 \ell+1}{4 \pi}\right) \frac{\left(\ell-\left|m_{l}\right|\right) !}{\left(\ell+\left|m_{l}\right|\right) !}} P_{\ell}^{\left|m_{l}\right|}(\cos \theta) e^{i m_{l} \phi}\\
-\text { where } \varepsilon&=(-1)^{m_{l}} \text { for } m_{l}>0 \text { and } \varepsilon=1 \text { for } m_{l} \leq 0 \text {. }
+Y_{\ell, m_{\ell}}(\theta, \varphi)&=\varepsilon \sqrt{\left(\frac{2 \ell+1}{4 \pi}\right) \frac{\left(\ell-\left|m_{\ell}\right|\right) !}{\left(\ell+\left|m_{\ell}\right|\right) !}} P_{\ell}^{\left|m_{\ell}\right|}(\cos \theta) e^{i m_{\ell} \phi}\\
+\text { where } \varepsilon&=(-1)^{m_{\ell}} \text { for } m_{\ell}>0 \text { and } \varepsilon=1 \text { for } m_{\ell} \leq 0 \text {. }
 \end{align*}
 \subsection{Lowering and Raising Operators}
 \begin{align*}
@@ -70,50 +70,52 @@ $$
 $$
 $\text { Action of } \hat{L}_{+} \text {and } \hat{L}_{-}:$
 \begin{align*}	
-\hat{L}_{+}\left|l, m_{l}\right\rangle&=\sqrt{\left(\ell-m_{l}\right)\left(l+m_{l}+1\right)} \hbar\left|l, m_{l}+1\right\rangle \\
-\hat{L}_{+} Y_{\ell, m_{l}}(\theta, \phi)&=\sqrt{\left(\ell-m_{l}\right)\left(l+m_{l}+1\right)} \hbar Y_{i, m_{i}+1}(\theta, \phi)\\
-\hat{L}_{-}\left|l, m_{l}\right\rangle&=\sqrt{\left(\ell+m_{l}\right)\left(l-m_{l}+1\right)} \hbar\left|l, m_{l}-1\right\rangle \\
-\hat{L}_{-} Y_{\left(, m_{l}\right.}(\theta, \phi)&=\sqrt{\left(\ell+m_{l}\right)\left(l-m_{l}+1\right)} \hbar Y_{\ell, m_{l}-1}(\theta, \phi)
+\hat{L}_{+}\left|\ell, m_{\ell}\right\rangle&=\sqrt{\left(\ell-m_{\ell}\right)\left(\ell+m_{\ell}+1\right)} \hbar\left|\ell, m_{\ell}+1\right\rangle \\
+\hat{L}_{+} Y_{\ell, m_{\ell}}(\theta, \phi)&=\sqrt{\left(\ell-m_{\ell}\right)\left(\ell+m_{\ell}+1\right)} \hbar Y_{\ell, m_{\ell}+1}(\theta, \phi)\\
+\hat{L}_{-}\left|\ell, m_{\ell}\right\rangle&=\sqrt{\left(\ell+m_{\ell}\right)\left(\ell-m_{\ell}+1\right)} \hbar\left|\ell, m_{\ell}-1\right\rangle \\
+\hat{L}_{-} Y_{\left(, m_{\ell}\right.}(\theta, \phi)&=\sqrt{\left(\ell+m_{\ell}\right)\left(\ell-m_{\ell}+1\right)} \hbar Y_{\ell, m_{\ell}-1}(\theta, \phi)
 \end{align*}
 \subsection{ Matrix Representation of the Operators:}
-\begin{align*}
-\intertext{Elements of $\hat{L}^{2}=\left\langle\ell^{\prime}, m_{l}^{\prime}\left|\hat{L}^{2}\right| \ell, m_{l}\right\rangle=\ell(\ell+1) \hbar^{2} \delta_{\ell \ell^{\prime}} \delta_{m_{l} m_{l}^{\prime}}$, will be non-zero for $l=l^{\prime}$ and $m_{l}=m_{l^{\prime}}$ is}
-\hat{L}^{2}&=\left[\begin{array}{lll}
-2 \hbar^{2} & 0 & 0 \\
-0 & 2 \hbar^{2} & 0 \\
-0 & 0 & 2 \hbar^{2}
-\end{array}\right]=2 \hbar^{2}\left[\begin{array}{lll}
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 1
-\end{array}\right](\text { for } l=1)
-\intertext{Elements of $\hat{L}_{z}=\left\langle\ell^{\prime}, m_{l}^{\prime}\left|\hat{L}_{z}\right| \ell, m_{l}\right\rangle=m_{l} \hbar \delta_{\ell \ell^{\prime}} \delta_{m_{l} m_{l}^{\prime}}$, will be non-zero for $l=l^{\prime}$ and $m_{l}=m_{l}^{\prime}$ i.e.}
-\hat{L}_{z}&=\left[\begin{array}{ccc}
-\hbar & 0 & 0 \\
-0 & 0 & 0 \\
-0 & 0 & -\hbar
-\end{array}\right]=\hbar\left[\begin{array}{ccc}
-1 & 0 & 0 \\
-0 & 0 & 0 \\
-0 & 0 & -1
-\end{array}\right](\text { for } l=1)
-\intertext{Elements of $\hat{L}_{+}=\left\langle\ell^{\prime}, m_{l}^{\prime}\left|\hat{L}_{+}\right| \ell, m_{l}\right\rangle=\hbar \sqrt{\left(\ell-m_{l}\right)\left(\ell+m_{l}+1\right)} \delta_{\ell \ell^{\prime}} \delta_{m_{l}^{\prime}, m_{l}+1}$, will be non-zero for $l=l^{\prime}$ and $m_{l}=m_{l}^{\prime}+1$ i.e.}
-\hat{L}_{+}&=\left[\begin{array}{lll}
-0 & \sqrt{2} \hbar & 0 \\
-0 & 0 & \sqrt{2} \hbar \\
-0 & 0 & 0
-\end{array}\right]=\sqrt{2} \hbar\left[\begin{array}{lll}
-0 & 1 & 0 \\
-0 & 0 & 1 \\
-0 & 0 & 0
-\end{array}\right] \quad(\text { for } \ell=1)
-\intertext{Elements of $\hat{L}_{-}=\left\langle\ell^{\prime}, m_{\ell}^{\prime}\left|\hat{L}_{-}\right| \ell, m_{\ell}\right\rangle=\hbar \sqrt{\left(\ell+m_{\ell}\right)\left(\ell-m_{\ell}+1\right)} \delta_{\ell \ell^\prime}, \delta_{m_{\ell} m_{\ell}^{\prime}-1}$, will be non-zero for $\ell=\ell^{\prime}$ and $m_{\ell}=m_{\ell}^{\prime}-1$ i.e.}
-\hat{L}_{-}&=\sqrt{2} \hbar\left[\begin{array}{lll}
-0 & 0 & 0 \\
-1 & 0 & 0 \\
-0 & 1 & 0
-\end{array}\right] \quad(\text { for } \ell=1)
-\end{align*}
+	$$
+	\begin{aligned}
+	\text{Elements of }\hat{L}^{2}&=\left\langle\ell^{\prime}, m_{\ell}^{\prime}\left|\hat{L}^{2}\right| \ell, m_{\ell}\right\rangle=\ell(\ell+1) \hbar^{2} \delta_{\ell \ell^{\prime}} \delta_{m_{\ell} m_{\ell}^{\prime}},\text{ will be non-zero for }\ell=\ell^{\prime}\text{ and }m_{\ell}=m_{\ell^{\prime}}\text{ is}\\
+	\hat{L}^{2}&=\left[\begin{array}{lll}
+	2 \hbar^{2} & 0 & 0 \\
+	0 & 2 \hbar^{2} & 0 \\
+	0 & 0 & 2 \hbar^{2}
+	\end{array}\right]=2 \hbar^{2}\left[\begin{array}{lll}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1
+	\end{array}\right](\text { for } \ell=1)\\
+	\text{Elements of }\hat{L}_{z}&=\left\langle\ell^{\prime}, m_{\ell}^{\prime}\left|\hat{L}_{z}\right| \ell, m_{\ell}\right\rangle=m_{\ell} \hbar \delta_{\ell \ell^{\prime}} \delta_{m_{\ell} m_{\ell}^{\prime}}\text{, will be non-zero for } \ell=\ell^{\prime}\text{ and }m_{\ell}=m_{\ell}^{\prime}\text{ i.e.}\\
+	\hat{L}_{z}&=\left[\begin{array}{ccc}
+	\hbar & 0 & 0 \\
+	0 & 0 & 0 \\
+	0 & 0 & -\hbar
+	\end{array}\right]=\hbar\left[\begin{array}{ccc}
+	1 & 0 & 0 \\
+	0 & 0 & 0 \\
+	0 & 0 & -1
+	\end{array}\right](\text { for } \ell=1)\\
+	\text{Elements of }\hat{L}_{+}&=\left\langle\ell^{\prime}, m_{\ell}^{\prime}\left|\hat{L}_{+}\right| \ell, m_{\ell}\right\rangle=\hbar \sqrt{\left(\ell-m_{\ell}\right)\left(\ell+m_{\ell}+1\right)} \delta_{\ell \ell^{\prime}} \delta_{m_{\ell}^{\prime}, m_{\ell}+1}\text{, will be non-zero for }\ell\\&=\ell^{\prime}\text{ and } m_{\ell}=m_{\ell}^{\prime}+1\text{ i.e.}\\
+	\hat{L}_{+}&=\left[\begin{array}{lll}
+	0 & \sqrt{2} \hbar & 0 \\
+	0 & 0 & \sqrt{2} \hbar \\
+	0 & 0 & 0
+	\end{array}\right]=\sqrt{2} \hbar\left[\begin{array}{lll}
+	0 & 1 & 0 \\
+	0 & 0 & 1 \\
+	0 & 0 & 0
+	\end{array}\right] \quad(\text { for } \ell=1)\\
+	\text{Elements of }\hat{L}_{-}&=\left\langle\ell^{\prime}, m_{\ell}^{\prime}\left|\hat{L}_{-}\right| \ell, m_{\ell}\right\rangle=\hbar \sqrt{\left(\ell+m_{\ell}\right)\left(\ell-m_{\ell}+1\right)} \delta_{\ell \ell^\prime}, \delta_{m_{\ell} m_{\ell}^{\prime}-1}\text{, will be non-zero for } \ell\\&=\ell^{\prime}\text{ and }m_{\ell}=m_{\ell}^{\prime}-1 \text{i.e.}\\
+	\hat{L}_{-}&=\sqrt{2} \hbar\left[\begin{array}{lll}
+	0 & 0 & 0 \\
+	1 & 0 & 0 \\
+	0 & 1 & 0
+	\end{array}\right] \quad(\text { for } \ell=1)
+\end{aligned}
+$$
 \textbf{Expectation Values in the State $\left|\ell, \mathbf{m}_{\ell}\right\rangle$ :}
 \begin{align*}
 \left\langle\hat{L}_{x}\right\rangle&=0,\left\langle\hat{L}_{y}\right\rangle=0,\left\langle\hat{L}_{z}\right\rangle=m_{\ell} \hbar \\
@@ -279,7 +281,7 @@ The existance of spin is first confirmed experimentally by stern and Gerlack in 
 \end{figure}
 If a beam of silver atoms passes through an in homogeneous (non-uniform) magnetic field (along z-direction), we would expect the following results:\\\\
 (i) Classically, there will be a continuous band on the screen and the band will be symmetric about theundeflected direction $\mathrm{z}=0$.\\\\
-(ii) Accordinh to Schrodinger's wave theory, if the atom has an orbital angular momentum ' $l$ ' then the beam will split into discrete $(2 l+1)$ components. Since, the silver atom is in ground state $(l=0)$, there will be only spot on the screen.
+(ii) Accordinh to Schrodinger's wave theory, if the atom has an orbital angular momentum ' $\ell$ ' then the beam will split into discrete $(2 \ell+1)$ components. Since, the silver atom is in ground state $(\ell=0)$, there will be only spot on the screen.
 But, in experiments the beam splits into two distinct components.\\\\
 To solve this problem, Goudsmith and Unlenbeck postulated that in addition to its orbital angular momentum the electron possesses an intrinsic angular momentum. This angular momentum has no connection with the spaial degrees of freedom but it can be related with the internal rotational or spinning mation of the electron about its own axis. This is known as spin angular momentum which is connected with an intrinsic degree of freedom i.e. spin. Spin is a purely quantum mechanical concept with classical analog. Unlike orbital angular momentum, the spin cannot be described by a differential operator.
 Consider a particle of mass 'm' and charge ' $q$ ' is moving in a circle of radius ' $r$ '. The magnetic dipole moment due to the orbital motion of the particle will be
@@ -308,9 +310,9 @@ Fermions: Particle having half-integer spins. Examples: quarks, electrons, proto
  (i) Orbital angular momentum $(\vec{L})$ due to particle's orbital motion and it is characterized by two quantro numbers i.e. $\ell$ and its projection of z-axis ' $m_{\ell}$ ' which can take values from $-\ell$ to $+\ell$.\\
  (ii) Spin angular momentum $(\vec{S})$ due to some intrinsic motion of the particle and it is characterised by two quantum numbers i.e. $s$ and its projection on z-axis $m_{s}$ ' which can take values from $-s$ to $+s$. Thus, the total angular momentum can be written as
  $$ \vec{J}=\vec{L}+\vec{S} $$ and it is characterised by two quantum numbers i.e. $j$ and its projection on z-axis i.e. ' $m_{j}$ ' which can take values from $-j$ to $+j$.\\
- In the Stern-Gerlach experiment, the silver atom has orbital angular momentum to be zero i.e $l=0$ but spin angular momentum to be $1 / 2$ i.e. $s=1 / 2$. Therefore, total angular momentum will be
+ In the Stern-Gerlach experiment, the silver atom has orbital angular momentum to be zero i.e $\ell=0$ but spin angular momentum to be $1 / 2$ i.e. $s=1 / 2$. Therefore, total angular momentum will be
  $$
- j=|l-s| \text { to }|l+s|=-\frac{1}{2}, \frac{1}{2}
+ j=|\ell-s| \text { to }|\ell+s|=-\frac{1}{2}, \frac{1}{2}
  $$
  For thiis, we are getting two spots on the screen.\\
  \subsection{ Spin Angular Momentum}
@@ -334,84 +336,61 @@ Fermions: Particle having half-integer spins. Examples: quarks, electrons, proto
  	&\hat{S}_{-}\left|s, m_{s}\right\rangle=\hbar \sqrt{\left(s+m_{s}\right)\left(s-m_{s}+1\right)}\left|s, m_{s}-1\right\rangle
  	\end{aligned}
  	$$
- 	\item - For a spin $\frac{1}{2}$ particles like electrons, $m_{s}$ can take values $\frac{1}{2}$ and $-\frac{1}{2}$, so the possible spin states are\\
- 	Spin-up state: $\chi_{1 / 2}=|\uparrow\rangle=\left|\frac{1}{2}, \frac{1}{2}\right\rangle$\\
- 	Spin-down state: $\chi_{-1 / 2}=|\downarrow\rangle=\left|\frac{1}{2},-\frac{1}{2}\right\rangle$
- 	such that
+ 	\item - For a spin $\frac{1}{2}$ particles like electrons, $m_{s}$ can take values $\frac{1}{2}$ and $-\frac{1}{2}$, so the possible spin states are
+ 	\begin{align*}
+ 		\text{Spin-up state: }& \chi_{1 / 2}=|\uparrow\rangle=\left|\frac{1}{2}, \frac{1}{2}\right\rangle\\
+ 	\text{Spin-down state: }& \chi_{-1 / 2}=|\downarrow\rangle=\left|\frac{1}{2},-\frac{1}{2}\right\rangle
+ \text{	such that}
+ 	\end{align*}
  	$$\begin{aligned}
- 		&\hat{S}^{2} \chi_{1 / 2}=\frac{3}{4} \hbar^{2} \chi_{1 / 2}, \quad \hat{S}^{2} \chi_{-1 / 2}=\frac{3}{4} \hbar^{2} \chi_{-1 / 2} \\
- 		&\hat{S}_{z} \chi_{1 / 2}=\frac{\hbar}{2} \chi_{1 / 2}, \quad \hat{S}_{z} \chi_{-1 / 2}=\frac{\hbar}{2} \chi_{-1 / 2} \\
- 		&\hat{S}_{+} \chi_{1 / 2}=0, \quad \hat{S}_{+} \chi_{-1 / 2}=\hbar \chi_{1 / 2} \\
- 		&\hat{S}_{-} \chi_{1 / 2}=\hbar \chi_{-1 / 2}, \quad \hat{S}_{-} \chi_{-1 / 2}=0
+ 		&\hat{S}^{2} \chi_{1 / 2}=\frac{3}{4} \hbar^{2} \chi_{1 / 2}, \hspace{1cm} \hat{S}^{2} \chi_{-1 / 2}=\frac{3}{4} \hbar^{2} \chi_{-1 / 2} \\
+ 		&\hat{S}_{z} \chi_{1 / 2}=\frac{\hbar}{2} \chi_{1 / 2}, \hspace{1.3cm} \hat{S}_{z} \chi_{-1 / 2}=\frac{\hbar}{2} \chi_{-1 / 2} \\
+ 		&\hat{S}_{+} \chi_{1 / 2}=0,\hspace{1.9cm} \hat{S}_{+} \chi_{-1 / 2}=\hbar \chi_{1 / 2} \\
+ 		&\hat{S}_{-} \chi_{1 / 2}=\hbar \chi_{-1 / 2}, \hspace{1cm} \hat{S}_{-} \chi_{-1 / 2}=0
  	\end{aligned}$$
  \end{itemize}
-\textbf{ Matrix Representation of the Various Spin Operators for a Spin-1/2 Particle:}\\\\
-$\hat{S}^{2}=\left[\begin{array}{ll}
-	\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\
-	\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
+\textbf{ Matrix Representation of the Various Spin Operators for a Spin-1/2 Particle:}
+\begin{align*}
+\hat{S}^{2}&=\left[\begin{array}{ll}
+\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\\\
+\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}^{2}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
 \end{array}\right]=\frac{3}{4} \hbar^{2}\left[\begin{array}{ll}
-	1 & 0 \\
-	0 & 1
-\end{array}\right]$\\\\
-
-$\hat{S}_{z}=\left[\begin{array}{ll}
-	\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\
-	\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
+1 & 0 \\\\
+0 & 1
+\end{array}\right]\\\\
+\hat{S}_{z}&=\left[\begin{array}{ll}
+\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\\\
+\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{z}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
 \end{array}\right]=\frac{\hbar}{2}\left[\begin{array}{cc}
-	1 & 0 \\
-	0 & -1
-\end{array}\right]$\\\\
-
-$\hat{S}_{+}=\left[\begin{array}{cc}
-	\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\
-	\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
+1 & 0 \\\\
+0 & -1
+\end{array}\right]\\\\
+\hat{S}_{+}&=\left[\begin{array}{cc}
+\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\\\
+\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{+}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
 \end{array}\right]=\left[\begin{array}{ll}
-	0 & \hbar \\
-	0 & 0
+0 & \hbar \\\\
+0 & 0
 \end{array}\right]=\hbar\left[\begin{array}{ll}
-	0 & 1 \\
-	0 & 0
-\end{array}\right]$\\\\
-
-$\hat{S}_{-}=\left[\begin{array}{lll}
-	\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\
-	\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
+0 & 1 \\\\
+0 & 0
+\end{array}\right]\\\\
+\hat{S}_{-}&=\left[\begin{array}{lll}
+\left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2},-\frac{1}{2}\right\rangle \\\\
+\left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2}, \frac{1}{2}\right\rangle & \left\langle\frac{1}{2},-\frac{1}{2}\left|\hat{S}_{-}\right| \frac{1}{2},-\frac{1}{2}\right\rangle
 \end{array}\right]=\hbar\left[\begin{array}{ll}
-	0 & 0 \\
-	1 & 0
-\end{array}\right]$\\\\
-
-$$\begin{aligned}
-	&\hat{S}_{x}=\frac{1}{2}\left[\hat{S}_{+}+\hat{S}_{-}\right]=\frac{\hbar}{2}\left[\begin{array}{ll}
-		0 & 1 \\
-		1 & 0
-	\end{array}\right] \\
-	&\hat{S}_{y}=\frac{1}{2 i}\left[\hat{S}_{+}-\hat{S}_{-}\right]=\frac{\hbar}{2}\left[\begin{array}{ll}
-		0 & -i \\
-		i & 0
-	\end{array}\right]
-\end{aligned}$$
-\textbf{ Eigenvalues and Eigenvectors of  $\hat{S}_{z}$:}
-\begin{align*}
-\text{Eigenvalues: }\lambda&=\pm \frac{\hbar}{2}\\
-\text{Eigenvectors: }\chi_{1 / 2}&=\left[\begin{array}{l}1 \\ 0\end{array}\right]\text{ for } \lambda=\frac{\hbar}{2}\text{ and }\chi_{-1 / 2}=\left[\begin{array}{c}0 \\ 1\end{array}\right]\text{ for }\lambda=-\frac{\hbar}{2}
+0 & 0 \\\\
+1 & 0
+\end{array}\right]\\\\
+\hat{S}_{x}&=\frac{1}{2}\left[\hat{S}_{+}+\hat{S}_{-}\right]=\frac{\hbar}{2}\left[\begin{array}{ll}
+0 & 1 \\
+1 & 0
+\end{array}\right] \\
+\hat{S}_{y}&=\frac{1}{2 i}\left[\hat{S}_{+}-\hat{S}_{-}\right]=\frac{\hbar}{2}\left[\begin{array}{ll}
+0 & -i \\
+i & 0
+\end{array}\right]
 \end{align*}
-\textbf{$\text { Eigenvalues and Eigenvectors Of } \hat{S}_{x}$:}
-\begin{align*}
-\text{Eigenvalues: }\lambda&=\pm \frac{\hbar}{2}\\
-\text{Eigenvectors: }\frac{1}{\sqrt{2}}\left[\begin{array}{l}1 \\ 1\end{array}\right]&=\frac{1}{\sqrt{2}}\left[\chi_{1 / 2}+\chi_{-1 / 2}\right]\text{ for } \lambda=\frac{\hbar}{2}\\
-\text{ and }\frac{1}{\sqrt{2}}\left[\begin{array}{l}1  -1\end{array}\right]&=\frac{1}{\sqrt{2}}\left[\chi_{1 / 2}-\chi_{-1 / 2}\right]\text{ for } \lambda=-\frac{\hbar}{2}
-\end{align*}
-\textbf{$\text { Eigenvalues and Eigenvectors Of } \hat{S}_{y}$:}
-\begin{align*}
-\text{Eigenvalues: }\lambda&=\pm \frac{\hbar}{2}\\
-\text{Eigenvectors: }\frac{1}{\sqrt{2}}\left[\begin{array}{l}1 \\ i\end{array}\right]&=\frac{1}{\sqrt{2}}\left[\chi_{1 / 2}+i \chi_{-1 / 2}\right] \text{ for }\lambda=\frac{\hbar}{2}\\
-\text{ and }\frac{1}{\sqrt{2}}\left[\begin{array}{l}1 \\ -i\end{array}\right]&=\frac{1}{\sqrt{2}}\left[\chi_{1 / 2}-i \chi_{-1 / 2}\right] \text{for }\lambda=-\frac{\hbar}{2}
-\end{align*}
-
-
-
-
 \subsection{Pauli Spin Matrices}
 Spin angular momentum can be related with Pauli spin vector as follows:
 $$
