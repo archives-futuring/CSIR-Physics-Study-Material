@@ -61,57 +61,43 @@ Suppose we have a piece of polarized material that is, an object cotaining a lot
 	\centering
 	\includegraphics[height=4cm,width=4cm]{diagram-20220208(11)-crop}
 \end{figure}
-To find the field produced by this polarized object chop the material into infinitesimal dipoles and integrate to get the total. Since it's easier to deal with potential.\\
-For a single dipole $P$\\
-$$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{\mathbf{p} \cdot \hat{\imath}}{\imath^{2}}$$
-Dipole mom                                                                                                                                                                                                                                                                                                                                                                                                                                  ent $\mathbf{p}=\mathbf{P} d \tau^{\prime}$ in each volume element $d \tau^{\prime}$, so the total potential is
-$$
-V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{\mathbf{P}\left(\mathbf{r}^{\prime}\right) \cdot \hat{\imath}}{r^{2}} d \tau^{\prime}
-$$
-Observing that,
-$$\nabla^{\prime}\left(\frac{1}{r}\right)=\frac{\hat{\imath}}{r^{2}}$$
-where  the differentiation is with respect to the source coordinates $\left(\mathbf{r}^{\prime}\right)$, we have
-$$
-V=\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \mathbf{P} \cdot \nabla^{\prime}\left(\frac{1}{r}\right) d \tau^{\prime}
-$$
-Integrating by parts,  gives
-$$
-V=\frac{1}{4 \pi \epsilon_{0}}\left[\int_{\mathcal{V}} \nabla^{\prime} \cdot\left(\frac{\mathbf{P}}{r}\right) d \tau^{\prime}-\int_{\mathcal{V}} \frac{1}{r}\left(\nabla^{\prime} \cdot \mathbf{P}\right) d \tau^{\prime}\right]
-$$
-or, invoking the divergence theorem,
-$$
-V=\frac{1}{4 \pi \epsilon_{0}} \oint_{\mathcal{S}} \frac{1}{r} \mathbf{P} \cdot d \mathbf{a}^{\prime}-\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{1}{r}\left(\nabla^{\prime} \cdot \mathbf{P}\right) d \tau^{\prime}
-$$
-The first term looks like the potential of a surface charge
-$$
-\sigma_{b} \equiv \mathbf{P} \cdot \hat{\mathbf{n}}
-$$
-(where $\hat{\mathbf{n}}$ is the normal unit vector), while the second term looks like the potential of a volume charge
-$$
-\rho_{b} \equiv-\nabla \cdot \mathbf{P}
-$$
-$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \oint_{\mathcal{S}} \frac{\sigma_{b}}{r} d a^{\prime}+\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{\rho_{b}}{r} d \tau^{\prime}$
-What this means is that the potential (and hence also the field) of a polarized object is the same as that produced by a volume charge density $\rho_{b}=-\boldsymbol{\nabla} \cdot \mathbf{P}$ plus a surface charge density $\sigma_{b}=\mathbf{P} \cdot \hat{\mathbf{n}}$. 
+To find the field produced by this polarized object chop the material into infinitesimal dipoles and integrate to get the total. Since it's easier to deal with potential.
+\begin{align*}
+\text{For a single dipole $P$}\\
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \frac{\mathbf{p} \cdot \hat{\imath}}{\imath^{2}}\\                                                         \text{Dipole moment }\mathbf{p}&=\mathbf{P} d \tau^{\prime}\text{ in each volume element }d \tau^{\prime}\text{, so the total potential is}\\
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{\mathbf{P}\left(\mathbf{r}^{\prime}\right) \cdot \hat{\imath}}{r^{2}} d \tau^{\prime}\\
+\text{Observing that,}\\
+\nabla^{\prime}\left(\frac{1}{r}\right)&=\frac{\hat{\imath}}{r^{2}}\\
+\text{where  the differentiation is }&\text{with respect  to the source coordinates $\left(\mathbf{r}^{\prime}\right)$, we have}\\
+V&=\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \mathbf{P} \cdot \nabla^{\prime}\left(\frac{1}{r}\right) d \tau^{\prime}\\
+\text{Integrating by parts,  gives}\\
+V&=\frac{1}{4 \pi \epsilon_{0}}\left[\int_{\mathcal{V}} \nabla^{\prime} \cdot\left(\frac{\mathbf{P}}{r}\right) d \tau^{\prime}-\int_{\mathcal{V}} \frac{1}{r}\left(\nabla^{\prime} \cdot \mathbf{P}\right) d \tau^{\prime}\right]\\
+\text{or, invoking the }&\text{divergence theorem,}\\
+V&=\frac{1}{4 \pi \epsilon_{0}} \oint_{\mathcal{S}} \frac{1}{r} \mathbf{P} \cdot d \mathbf{a}^{\prime}-\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{1}{r}\left(\nabla^{\prime} \cdot \mathbf{P}\right) d \tau^{\prime}\\
+\text{The first term looks like the potential}&\text{ of a surface charge}\\
+\sigma_{b} &\equiv \mathbf{P} \cdot \hat{\mathbf{n}}\\
+\text{(where $\hat{\mathbf{n}}$ is the normal unit vector), }&\text{while the second term looks like the potential of a volume charge}\\
+\rho_{b} &\equiv-\nabla \cdot \mathbf{P}\\
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \oint_{\mathcal{S}} \frac{\sigma_{b}}{r} d a^{\prime}+\frac{1}{4 \pi \epsilon_{0}} \int_{\mathcal{V}} \frac{\rho_{b}}{r} d \tau^{\prime}
+\intertext{What this means is that the potential (and hence also the field) of a polarized object is the same as that produced by a volume charge density $\rho_{b}=-\boldsymbol{\nabla} \cdot \mathbf{P}$ plus a surface charge density $\sigma_{b}=\mathbf{P} \cdot \hat{\mathbf{n}}$. }
+\end{align*}
 \section{The Electric Displacement}
 
 \subsection{Gauss law in the presence of Dielectrics}
 Effect of polarization is to produce accumulations of (bound) charge, $\rho_{b}=-\nabla\cdot P$ within the dielectric and $\sigma_{b}=P\cdot \hat{n}$ on the surface. The field due to polarization of the medium is just the field of this bound charge.  The total field will be the field attributable to bound charge plus the field due to free charge.\\
 Free charge: any charge, that is not a result of polarization.\\
 eg: electrons on a conductor\\
-ions embedded in the dielectric material.
-
- Within the dielectric, then, the total charge density can be written:
+ions embedded in the dielectric material.\\
+Within the dielectric, then, the total charge density can be written:
  \begin{align*}
 \rho&=\rho_{b}+\rho_{f} \\
-\rho_{b}&=\text{Bound charge} \ \text{And}\ \rho_{f}= \text{Free charge} 
+\rho_{b}&=\text{Bound charge} \ \text{And}\ \rho_{f}= \text{Free charge} \\
+\text{ By Gauss law,}\\
+\boldsymbol{\nabla} \cdot \vec{E}&=\frac{\rho}{\epsilon_{0} }\Longrightarrow  \epsilon_{0}\boldsymbol{\nabla} \cdot \vec{E} =\rho_{b}+\rho_{f}=-\boldsymbol{\nabla} \cdot {P}+\rho_{f}
+\intertext{Where $\vec{E}$ is now the total field, not just that portion generated by polarization. It is convenient to combine the two divergence terms,}
+ \boldsymbol{\nabla} \cdot\left(\epsilon_{0} \vec{E}+\vec{P}\right)&=\rho_{f}\\
+ \text{ The expression in }&\text{parentheses, designated by the letter ${D}$,}
  \end{align*}
- By Gauss law,
- $\boldsymbol{\nabla} \cdot \vec{E}=\frac{\rho}{\epsilon_{0} }\Longrightarrow  \epsilon_{0}\boldsymbol{\nabla} \cdot \vec{E} =\rho_{b}+\rho_{f}=-\boldsymbol{\nabla} \cdot {P}+\rho_{f}$
- \\\\Where $\vec{E}$ is now the total field, not just that portion generated by polarization. It is convenient to combine the two divergence terms,
- $$
- \boldsymbol{\nabla} \cdot\left(\epsilon_{0} \vec{E}+\vec{P}\right)=\rho_{f}
- $$
- The expression in parentheses, designated by the letter ${D}$,
  \begin{center}
  	\framebox{
  		\parbox[t][1cm]{4cm}{
@@ -120,15 +106,12 @@ ions embedded in the dielectric material.
  			
  			$\vec{D} \equiv \epsilon_{0} \vec{E}+\vec{P}$} }
  \end{center}
-  
- Is known as the \textbf{electric displacement}. In terms of ${D}$, Gauss's law becomes,
- $$
-{\boldsymbol{\nabla} \cdot\vec{D}=\rho_{f}}
- $$
-In integral form,
- $$
- \oint \vec{D} \cdot d{a}=Q_{f_{\mathrm{enc}}}
- $$
+\begin{align*}
+\text{ Is known as the \textbf{electric displacement}}&\text{ In terms of ${D}$, Gauss's law becomes,}\\
+\boldsymbol{\nabla} \cdot\vec{D}&=\rho_{f}\\
+\text{In integral form,}\\
+\oint \vec{D} \cdot d{a}&=Q_{f_{\mathrm{enc}}}
+\end{align*}
  \subsection{Linear Dielectrics}
  We define a linear dielectric as one where the polarization at a point in the dielectric  is proportional to the  electric field at the point. Provided ${\vec{E}}$ is not too strong: $$\vec{P} \propto \vec{E} \Rightarrow \vec{P}=\varepsilon_{0} \chi_{e} \vec{E}$$
  Materials that obey this relation are called linear dielectrics.\ $\chi_{e}$ is called the \textbf{electric susceptibility of the medium}.\\
@@ -136,14 +119,18 @@ In integral form,
  \begin{align*}
 \vec{D}&=\varepsilon_{0} \vec{E}+\vec{P}=\varepsilon_{0} \vec{E}+\varepsilon_{0} \chi_{e} \vec{E}\\&=\varepsilon_{0} \vec{E}\left(1+\chi_{e}\right)=\varepsilon \vec{E} \\\text { Where ,}\  \varepsilon&=\varepsilon_{0}\left(1+\chi_{e}\right)
  \end{align*}
- This new constant $\varepsilon$ is called the \textbf{permittivity of the material}.\\
- $\varepsilon_{0}$ is permittivity of free space
- $$\varepsilon_r=1+\chi_{e}=\frac{\varepsilon}{\varepsilon_{0}}$$
+ This new constant $\varepsilon$ is called the \textbf{permittivity of the material}.
+ \begin{align*}
+  \varepsilon_{0}&\text{ is permittivity of free space}\\
+ \varepsilon_r&=1+\chi_{e}=\frac{\varepsilon}{\varepsilon_{0}}
+ \end{align*}
  $\varepsilon_r$ \textbf{relative permittivity} or dielectric constant.\\
  Linear dielectric escape the defect in the parallel between $\vec{E}$ and $\vec{D}$ Since 
- $$ \vec{ P}\propto \vec{E} \quad\text{and}\quad\vec{ D}\propto \vec{E} ,$$
- It does not mean that 
- $$\vec{\nabla}\times \vec{P}=0 \text{ or }\vec{\nabla}\times \vec{ D}=0 \text{ when }\vec{ \nabla}\times \vec{E}=0$$\\
+ \begin{align*}
+   \vec{ P}\propto \vec{E} &\quad\text{and}\quad\vec{ D}\propto \vec{E} ,\\
+ \text{It does not  }&\text{mean that}\\
+ \vec{\nabla}\times \vec{P}&=0 \text{ or }\vec{\nabla}\times \vec{ D}=0 \text{ when }\vec{ \nabla}\times \vec{E}=0\\
+ \end{align*}
  The line integral of $\vec{P}$ around a closed path that straddles the boundary between one type of material and another need not be zero, even though the integral of $\vec{E}$ around the same loop must be.The reason is that the proportionality factor $\in_{0}\chi_{e}$ is different on on the two sides.\\\\
  \begin{itemize}
  	\item The space is entirely filled with a \textbf{homogeneous linear dielectric},
@@ -180,47 +167,40 @@ $$
  \end{center}
 \textbf{Boundary conditions for Linear Dielectrics}\\\\
 In a (homogeneous isotropic) linear dielectric, the bound charge density $\left(\rho_{b}\right)$ is proportional to the free charge density $\left(\rho_{f}\right)$
-$$
-\rho_{b}=-\nabla \cdot \mathbf{P}=-\nabla \cdot\left(\epsilon_{0} \frac{\chi_{e}}{\epsilon} \mathbf{D}\right)=-\left(\frac{\chi_{e}}{1+\chi_{e}}\right) \rho_{f} .
-$$
-\textit{Unless free charge is actually embedded in the material, $\rho=0$, and any net charge must reside at the surface.Here potential obeys Laplace's equation.}\\\\$\therefore$  boundary conditions will be
-$$
-\epsilon_{\text {above }} E_{\text {above }}^{\perp}-\epsilon_{\text {below }} E_{\text {below }}^{\perp}=\sigma_{f},
-$$
-in terms of the potential,
-$$
-\epsilon_{\text {above }} \frac{\partial V_{\text {above }}}{\partial n}-\epsilon_{\text {below }} \frac{\partial V_{\text {below }}}{\partial n}=-\sigma_{f},
-$$
-whereas the potential itself is continuous
-$$
-V_{\text {above }}=V_{\text {below }}
-$$
+\begin{align*}
+\rho_{b}=-\nabla \cdot \mathbf{P}&=-\nabla \cdot\left(\epsilon_{0} \frac{\chi_{e}}{\epsilon} \mathbf{D}\right)=-\left(\frac{\chi_{e}}{1+\chi_{e}}\right) \rho_{f} .
+\intertext{\textit{Unless free charge is actually embedded in the material, $\rho=0$, and any net charge must reside at the surface.Here potential obeys Laplace's equation.}}
+\therefore \quad \text{ boundary conditions will be}\\
+\epsilon_{\text {above }} E_{\text {above }}^{\perp}&-\epsilon_{\text {below }} E_{\text {below }}^{\perp}=\sigma_{f},\\
+\text{in terms of the potential,}\\
+\epsilon_{\text {above }} \frac{\partial V_{\text {above }}}{\partial n}&-\epsilon_{\text {below }} \frac{\partial V_{\text {below }}}{\partial n}=-\sigma_{f},\\
+\text{whereas the potential itself is continuous}\\
+V_{\text {above }}&=V_{\text {below }}
+\end{align*}
 \subsection{Electrostatic energy in dielectric}
-
-$$
-U=\frac{1}{2} \int(\vec{E} \cdot \vec{D}) d V
-$$
-Therefore, the energy density in dielectric, $$U=\frac{1}{2}(\vec{E} \cdot \vec{D})$$ 
+\begin{align*}
+U&=\frac{1}{2} \int(\vec{E} \cdot \vec{D}) d V\\
+\text{Therefore, }&\text{the energy density in dielectric,} \\
+U&=\frac{1}{2}(\vec{E} \cdot \vec{D})
+\end{align*}
 \begin{exercise}
 	 A metal sphere of radius $a$ carries a charge $Q .$ It is surrounded, out to radius $b$, by
 	linear dielectric material of permittivity $\varepsilon$. Find the potential at the center.
 \end{exercise} 
 \begin{answer}
-	 $\oint \vec{D} \cdot d \vec{a}=Q_{f_{e n c}} \Rightarrow \vec{D}=\frac{Q}{4 \pi r^{2}} \hat{r} ;$ for all points $r>a$\\
-	(Inside the metal sphere, $\vec{E}=\vec{P}=\vec{D}=0$) . \\Once we know $\vec{D}$, it is a trivial matter to obtain
-	$\vec{E}$ by $\vec{D}=\varepsilon \vec{E}) .$
-	$$
-	\vec{E}=\left\{\begin{array}{ll}
+	\begin{align*}
+	 \oint \vec{D} \cdot d \vec{a}&=Q_{f_{e n c}} \Rightarrow \vec{D}=\frac{Q}{4 \pi r^{2}} \hat{r} ;\text{ for all points $r>a$}\\
+	\text{Inside the metal sphere, }\vec{E}&=\vec{P}=\vec{D}=0 . \\
+	\text{Once we know }\vec{D}\text{ it is a}&\text{ trivial matter to obtain }
+	\vec{E}\text{ by }\vec{D}=\varepsilon \vec{E}) .\\
+	\vec{E}&=\left\{\begin{array}{ll}
 	\frac{Q}{4 \pi \varepsilon r^{2}} \hat{r} & \text { for } a<r<b \\
 	\frac{Q}{4 \pi \varepsilon_{0} r^{2}} \hat{r} & \text { for } r>b \\
 	0 & \text { for } r<a
-	\end{array}\right.
-	$$
-	Potential at the center is therefore,
-	\begin{align*}
+	\end{array}\right.\\
+	\text{Potential at the }&\text{center is therefore,}\\
 	V&=-\int_{\infty}^{0} \vec{E} \cdot d \vec{l}\\&=-\int_{\infty}^{b}\left(\frac{Q}{4 \pi \varepsilon_{0} r^{2}}\right) d r-\int_{b}^{a}\left(\frac{Q}{4 \pi \varepsilon r^{2}}\right) d r-\int_{a}^{0}(0) d r \\\Rightarrow V&=\frac{Q}{4 \pi}\left(\frac{1}{\varepsilon_{0} b}+\frac{1}{\varepsilon a}-\frac{1}{\varepsilon b}\right)
 	\end{align*}
-	
 \end{answer}
 \newpage
 \begin{abox}
@@ -425,7 +405,7 @@ by
 	\includegraphics[height=1cm,width=4cm]{capcitor 2 pset-2}
 	\label{capcitor 2 pset-2}
 \end{figure}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{a.}]  $\frac{Q}{2 k A \varepsilon_{0}}$
 	\task[\textbf{b.}]  $\frac{Q^{2}}{k A \varepsilon_{0}}$
 	\task[\textbf{c.}]  $\frac{Q^{2}}{2 k A \varepsilon_{0}}$
@@ -459,45 +439,37 @@ by
 \begin{enumerate} [label=\color{ocre}\textbf{\arabic*.}]
 		\item  Two capacitors of capacitances $C_{1}$ and $C_{2}$ carrying charges $q_{1}$ and $q_{2}$, respectively, are connected in parallel. A spark appears when the connection is made. Find the energy dissipated by this spark if no other energy dissipation is taking place.
 	\begin{answer}
-		The total electrostatic energy of the two capacitors before connection is.
-		$$
-		U_{\text {before }}=\frac{1}{2} \frac{q_{1}^{2}}{C_{1}}+\frac{1}{2} \frac{q_{2}^{2}}{C_{2}}
-		$$
-		hence the total capacitance of the two capacitors connected in parallel is equal to to the sum of the individua capacitances and since the total charge are connection is equal to the sum of the original charges, the electrostatic energy after connection is
-		$$
-		U_{\text {after }}=\frac{1}{2} \frac{\left(q_{1}+q_{2}\right)^{2}}{C_{1}+C_{2}}
-		$$
-		the principle of the conservation of energy, the energy lost in the spark is then
-		$$
-		U_{\text {spark }}=U_{b}-U_{a}=\frac{1}{2} \frac{q_{1}^{2}}{C_{1}}+\frac{1}{2} \frac{q_{2}^{2}}{C_{2}}-\frac{1}{2} \frac{\left(q_{1}+q_{2}\right)^{2}}{C_{1}+C_{2}}
-		$$
-		which after simplification becomes,
-		$$
-		U_{s p a r k}=\frac{1}{2} \frac{\left(C_{1} q_{2}-C_{2} q_{1}\right)^{2}}{2 C_{1} C_{2}\left(C_{1}+C_{2}\right)}
-		$$
+		\begin{align*}
+		\text{The total electrostatic energy }&\text{of the two capacitors before connection is.}\\
+		U_{\text {before }}&=\frac{1}{2} \frac{q_{1}^{2}}{C_{1}}+\frac{1}{2} \frac{q_{2}^{2}}{C_{2}}
+	\intertext{	hence the total capacitance of the two capacitors connected in parallel is equal to to the sum of the individua capacitances and since the total charge are connection is equal to the sum of the original charges, the electrostatic energy after connection is}
+		U_{\text {after }}&=\frac{1}{2} \frac{\left(q_{1}+q_{2}\right)^{2}}{C_{1}+C_{2}}\\
+	\text{	the principle of the conservation of }&\text{energy, the energy lost in the spark is then}\\
+		U_{\text {spark }}&=U_{b}-U_{a}=\frac{1}{2} \frac{q_{1}^{2}}{C_{1}}+\frac{1}{2} \frac{q_{2}^{2}}{C_{2}}-\frac{1}{2} \frac{\left(q_{1}+q_{2}\right)^{2}}{C_{1}+C_{2}}\\
+	\text{	which after simplification becomes,}\\
+		U_{s p a r k}&=\frac{1}{2} \frac{\left(C_{1} q_{2}-C_{2} q_{1}\right)^{2}}{2 C_{1} C_{2}\left(C_{1}+C_{2}\right)}
+		\end{align*}
 	\end{answer}
 	\item A parallel plate capacitor consist of two plates of area $A$ and plates separated by distance $d$. If space between the plate is filled with a non-uniform dielectric whose dielectric constant varies linearly from value $k_{1}$ at one plate to the value $k_{2}$ at other plate. Then find the capacitance of capacitor.
 	\begin{answer}
-		Let the dielectric constant at $P$ at a distance $x$ from the plate 1 be $k$ and $\alpha$
-		
 		\begin{align*}
-		\frac{d k}{d x}=\alpha \\
-		d k=\alpha d x \\
-		k=\alpha x+\beta
-		\end{align*}
-		Now, at $x=0, k=k_{1}$ and at $x={d}, k=k_{2}$
-		\\$k=\frac{\left(k_{2}-k_{1}\right) x}{d}+k_{1}$
-		Now the the field at $P$ is
-		\begin{align*}
+		\text{Let the dielectric constant }&\text{at $P$ at a distance $x$ from the plate 1 be $k$ and $\alpha$}\\
+		\frac{d k}{d x}&=\alpha \\
+		d k&=\alpha d x \\
+		k&=\alpha x+\beta\\
+		\text{Now, at }x&=0, k=k_{1}\text{ and at $x={d}, k=k_{2}$}\\
+		k&=\frac{\left(k_{2}-k_{1}\right) x}{d}+k_{1}\\
+		\text{Now the the field}&\text{ at $P$ is}\\
 		E &=\frac{\sigma}{\varepsilon}=\frac{\sigma}{\varepsilon_{0} k}=\frac{\sigma}{\varepsilon_{0}\left[\frac{\left(k_{2}-k_{1}\right) x}{d}+k_{1}\right]} \\
 		V &=-\int_{d}^{0} E d x=\frac{\sigma}{\varepsilon_{0}} \int_{0}^{d} \frac{d x}{\left.\left(k_{2}-k_{1}\right) x_{1}\right)_{1}} \frac{\sigma_{1}}{d} \\
 		&=\left.\frac{\sigma d}{\varepsilon_{0}\left(k_{2}-k_{1}\right)} \ln \left(\frac{k_{2}-k_{1}}{d} x+k_{1}\right)\right|_{0} ^{d}\\
-		&=\frac{\sigma d}{\varepsilon_{0}\left(k_{2}-k_{1}\right)} \ln \left(\frac{k_{2}-k_{1}+k_{1}}{k_{1}}\right)\\&=\frac{Q d}{\varepsilon_{0} A\left(k_{2}-k_{1}\right)} \ln \left(\frac{k_{2}}{k_{1}}\right) \\
+		&=\frac{\sigma d}{\varepsilon_{0}\left(k_{2}-k_{1}\right)} \ln \left(\frac{k_{2}-k_{1}+k_{1}}{k_{1}}\right)\\
+		&=\frac{Q d}{\varepsilon_{0} A\left(k_{2}-k_{1}\right)} \ln \left(\frac{k_{2}}{k_{1}}\right) \\
 		c&=\frac{Q}{V}=\frac{\varepsilon_{0} A}{d} \frac{\left(k_{2}-k_{1}\right)}{\ln \left(k_{2} / k_{1}\right)}
 		\end{align*}
 	\end{answer}
 	\item The conductors in a $0.75 \mathrm{~km}$ long two-wire transmission line are separated by a centre-to-centre distance of $0.2 \mathrm{~m}$. If each conductor has a diameter of $4 \mathrm{~cm}$, then the capacitance of the line is
-	\begin{tasks}(2)
+	\begin{tasks}(4)
 		\task[\textbf{a.}]$8.85 \mu \mathrm{F}$  
 		\task[\textbf{b.}]$88.5 \mathrm{nF}$
 		\task[\textbf{c.}]$8.85 \mathrm{pF}$ 
@@ -511,14 +483,12 @@ by
 	The system may be considered as the parallel combination of two capacitors $\mathrm{C}_{1}$ and $\mathrm{C}_{2}$, where, The total capacitance is then
 	The electrostatic energy of the system is
 	\begin{answer}
-		$$
-		U=\frac{1}{2} C V^{2}=\frac{a}{2 d}\left[\left(\in-\epsilon_{0}\right) x+\epsilon_{0} \ell\right] V^{2}
-		$$
-		As $V$ is constant the force experienced by the slab will be
-		$$
-		\vec{F}=\left.\frac{\partial U}{\partial x}\right|_{V} \hat{x}=\frac{a}{2 d}\left(\epsilon-\epsilon_{0}\right) V^{2} \hat{x}
-		$$
-		where $\hat{x}$ is a unit vector in the direction of increasing $x .$ This means that the force is attractive.
+		\begin{align*}
+		U&=\frac{1}{2} C V^{2}=\frac{a}{2 d}\left[\left(\in-\epsilon_{0}\right) x+\epsilon_{0} \ell\right] V^{2}\\
+		\text{As $V$ is constant}&\text{ the force experienced by the slab will be}\\
+		\vec{F}&=\left.\frac{\partial U}{\partial x}\right|_{V} \hat{x}=\frac{a}{2 d}\left(\epsilon-\epsilon_{0}\right) V^{2} \hat{x}\\
+	\text{	where $\hat{x}$ is a unit }&\text{vector in the direction of increasing $x .$ This means that the force is attractive.}
+		\end{align*}
 	\end{answer}
 	
 	\item 	 A "pure" dipole $\vec{p}$ is situated at the origin, pointing in the $z$ -direction
@@ -559,9 +529,10 @@ is $\tan ^{-1}(\beta)$. Then the value of $\beta$ is $\ldots \ldots$.
 side $a$. Let another point charge $-q$ be placed at the cnetre of the square (see the figure).
 Let $V(r)$ be the electrostatic potential at a point $P$ at a distance $r \gg a$ from the centre of
 the square. Then $V(3 r) / V(r)$ is.....................
-\begin{answer} the monopole moment,\\
-	  $Q_{\text {mono }}=-\frac{q}{2}+q-\frac{q}{2}+q-q=0$
+\begin{answer} 
    \begin{align*}
+   	\text{The }&\text{monopole moment,}\\
+   Q_{\text {mono }}&=-\frac{q}{2}+q-\frac{q}{2}+q-q=0\\
 	\vec{p}&=q(a \hat{x}+a \hat{y})-\frac{q}{2}(a \hat{x}+a \hat{y})-q(a \hat{x}-a \hat{y})+q(-a \hat{x}-a \hat{y})-\frac{q}{2}(-a \hat{x}+a \hat{y})+0=0 \\
 	\text { Thus } V &\propto \frac{1}{r^{3}} \Rightarrow \frac{V(3 r)}{V(r)}=\frac{1}{27}=0.037
 	\end{align*}
