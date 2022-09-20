@@ -235,18 +235,19 @@ The Maxwell's equation inside matter where there is no free charge or free curre
 \end{align*}
 The electromagnetic waves propgates through a linear homogeneous medium at a speed,
 \begin{align*}
-V&=\frac{1}{\sqrt{\varepsilon\mu}}\\&=\frac{c}{n}\hspace{2cm} \text{Where,}\ n= \sqrt{\frac{\mu \varepsilon}{\mu_0 \varepsilon_0}} \qquad \Rightarrow \text{refractive index of the substance.}
-\intertext{Since, for most materials  \ $\mu$ is very close to  $\mu_{0}$ }
+V&=\frac{1}{\sqrt{\varepsilon\mu}}\\
+&=\frac{c}{n}\quad\text{Where,}\quad n= \sqrt{\frac{\mu \varepsilon}{\mu_0 \varepsilon_0}} \quad \Rightarrow \text{refractive index of the substance.}\\
+\text{Since, for most   }&\text{ materials \ $\mu$ is very close to  $\mu_{0}$} \\
 n& \approxeq \sqrt{\varepsilon_r}\qquad \Rightarrow \varepsilon_r= \ \sqrt{\frac{\epsilon}{\epsilon_{0}}}
 \end{align*}
 $\varepsilon_r$ is dielectric constant which almost always greater than $1$. So speed of light in matter $(V=\frac{c}{n})$ should always be less than $C$.\\
 \subsection{Boundary condition}\label{boundary condition1}
-\begin{alignat*}{2}
+\begin{align*}
 \intertext{The boundary conditions at the interface can be written as,}
-&\textbf{(i)}\quad\varepsilon_1E^\perp_1=  \varepsilon_2E^\perp_2 \hspace{4cm}  &&\textbf{(iii)}\quad E^\parallel_1= E^\parallel_2\\
+&\textbf{(i)}\quad\varepsilon_1E^\perp_1=  \varepsilon_2E^\perp_2 \hspace{2cm}  &&\textbf{(iii)}\quad E^\parallel_1= E^\parallel_2\\
 &\textbf{(ii)}\quad B^\perp_1= B^\perp_2
-\hspace{4cm}  &&\textbf{(iv)}\quad \frac{B^\parallel_1}{\mu_{1}}=  \frac{1}{\mu_{2}}B^\parallel_2
-\end{alignat*}
+\hspace{2cm}  &&\textbf{(iv)}\quad \frac{B^\parallel_1}{\mu_{1}}=  \frac{1}{\mu_{2}}B^\parallel_2
+\end{align*}
 \subsection{Reflection and Transmission at Normal incidence}
 \begin{figure}[H]
 	\centering
@@ -276,40 +277,36 @@ Suppose the $xy$ plane forms the boundary between two linear media. A plane wave
 \intertext{At $z=0$, the combined field on the left $\vec{E}_{I}+\vec{E}_{R}$ and $\tilde{B}_{I}+\vec{B}_{R}$, must join the fields on the
 	right $\vec{E}_{T} \& \vec{B}_{T}$, in accordance with the boundary conditions in section \ref{boundary condition1}.}
 \intertext{There are no electric components in perpendicular direction,Then the third boundary condition $E^\parallel_1= E^\parallel_2$ \ gives,}
-\vec{E_0}_1+\vec{E_0}_R&=\vec{E_0}_T \label{waves2}
-\intertext{Then the fourth boundary condition $ \frac{1}{\mu_{1}}B^\parallel_1=  \frac{1}{\mu_{2}}B^\parallel_2$ \ gives,}
-\frac{1}{\mu_{1}}\left( \frac{1}{v_1}\vec{E_0}_I-\frac{1}{v_1}\vec{E_0}_R\right) &=\frac{1}{\mu_{2}}\left( \frac{1}{v_1}\vec{E_0}_I-\frac{1}{v_2}\vec{E_0}_T\right)\label{waves1}
-\end{align}
-\begin{align}
+\vec{E_0}_1+\vec{E_0}_R&=\vec{E_0}_T \label{waves2}\\
+\text{Then the fourth boundary }&\text{condition $ \frac{1}{\mu_{1}}B^\parallel_1=  \frac{1}{\mu_{2}}B^\parallel_2$ \ gives,}\\
+\frac{1}{\mu_{1}}\left( \frac{1}{v_1}\vec{E_0}_I-\frac{1}{v_1}\vec{E_0}_R\right) &=\frac{1}{\mu_{2}}\left( \frac{1}{v_1}\vec{E_0}_I-\frac{1}{v_2}\vec{E_0}_T\right)\label{waves1}\\
 \notag \text{Since}\quad\vec{B_0}_I&=\frac{1}{v_1}\vec{E_0}_I\quad :\quad
 \vec{B_0}_R=\frac{1}{v_1}\vec{E_0}_R\quad :\quad
 \vec{B_0}_T=\frac{1}{v_2}\vec{E_0}_T\\\notag
 n_2&=\frac{c}{v_2}\qquad \text{and }\qquad
-n_1=\frac{c}{v_1}
-\intertext{Then the equation.\ref{waves1} \ becomes,}
+n_1=\frac{c}{v_1}\\
+\text{Then the equation.}&\text{\ref{waves1} \ becomes,}\\
 \vec{E_0}_1-\vec{E_0}_R&=\beta\vec{E_0}_T \label{waves3}\\
-\notag \text{Where, }\qquad \beta&\equiv\frac{\mu_{1}v_1}{\mu_{2}v_2}=\frac{\mu_{1}n_2}{\mu_{2}n_1}
-\intertext{By solving equation.\ref{waves2} and equation. \ref{waves3} we will get,}\notag
+\notag \text{Where, }\quad \beta&\equiv\frac{\mu_{1}v_1}{\mu_{2}v_2}=\frac{\mu_{1}n_2}{\mu_{2}n_1}\\
+\text{By solving equation.\ref{waves2} }&\text{and equation. \ref{waves3} we will get,}\notag\\
 \vec{E_0}_R&=\left( \frac{1-\beta}{1+\beta}\right) \vec{E_0}_I \quad:\quad
-\vec{E_0}_T=\left( \frac{2}{1+\beta}\right) \vec{E_0}_I
-\intertext{If $\mu_{1}=\mu_{2}=\mu_{0} \Rightarrow \quad \beta=\frac{v_{1}}{v_{2}}=\frac{n_{2}}{n_{1}}$ (For non-magnetic medium). Then,}
+\vec{E_0}_T=\left( \frac{2}{1+\beta}\right) \vec{E_0}_I\\
+\text{If $\mu_{1}=\mu_{2}=\mu_{0} \Rightarrow \quad \beta=\frac{v_{1}}{v_{2}}=\frac{n_{2}}{n_{1}}$ }&\text{(For non-magnetic medium). Then,}\\
 \vec{E_0}_R&=\left( \frac{v_2-v_1}{v_1+v_2}\right) \vec{E_0}_I \quad:\quad
-\vec{E_0}_T=\left( \frac{2v_2}{v_1+v_2}\right) \vec{E_0}_I
-\end{align}
-\begin{align}
-\intertext{The reflected wave $\tilde{E_0}_R$ are in phase with incident wave if $v_2>v_1$ and out of phase if $v_2<v_1$},
-\therefore {E_0}_R&=\left| \frac{v_2-v_1}{v_1+v_2}\right| {E_0}_I\quad:\quad {E_0}_T=\left(\frac{2v_2}{v_1+v_2} \right) {E_0}_I
-\intertext{In terms of reflective indices $n_1$and $n_2$}
-{E_0}_R&=\left| \frac{n_1-n_2}{n_1+n_2}\right| {E_0}_I\quad:\quad {E_0}_T=\left(\frac{2n_1}{n_1+n_2} \right) {E_0}_I
-\intertext{Reflection coefficient,the function of incident is reflected can be find out,}
-R&=\frac{I_R}{I_I}
-\intertext{The intensity in general can be written as}
-I&=\frac{1}{2}\varepsilon v E_0^2
-\intertext{if \ $ \mu_{1}=\mu_{2}=\mu_{0} $ the \textbf{Reflection coefficient},}
-R&=\frac{({E_0}_R)^2}{({E_0}_I)^2}=\left(\frac{n_1-n_2}{n_1+n_2} \right)^2  
-\intertext{And \textbf{Transmission coefficient},}
-T&=\frac{I_I}{I_I}=\frac{\varepsilon_2v_2}{\varepsilon_1v_1}\frac{({E_0}_I)^2}{({E_0}_I)^2}=\frac{4n_1n_2}{(n_1+n_2)^2}
-\intertext{And from these equations we can show that $R+T=1$ ie. energy is conserved.}\notag
+\vec{E_0}_T=\left( \frac{2v_2}{v_1+v_2}\right) \vec{E_0}_I\\
+\text{The reflected wave $\tilde{E_0}_R$ are in }&\text{phase with incident wave if $v_2>v_1$ and out of phase if $v_2<v_1$}\\
+\therefore {E_0}_R&=\left| \frac{v_2-v_1}{v_1+v_2}\right| {E_0}_I\quad:\quad {E_0}_T=\left(\frac{2v_2}{v_1+v_2} \right) {E_0}_I\\
+\text{In terms of reflective indices}&\text{ $n_1$and $n_2$}\\
+{E_0}_R&=\left| \frac{n_1-n_2}{n_1+n_2}\right| {E_0}_I\quad:\quad {E_0}_T=\left(\frac{2n_1}{n_1+n_2} \right) {E_0}_I\\
+\text{Reflection coefficient,the function }&\text{ of incident is reflected can be find out,}\\
+R&=\frac{I_R}{I_I}\\
+\text{The intensity in general can}&\text{ be written as}\\
+I&=\frac{1}{2}\varepsilon v E_0^2\\
+\text{if \ $ \mu_{1}=\mu_{2}=\mu_{0} $ the \textbf{Reflection }}&\textbf{coefficient},\\
+R&=\frac{({E_0}_R)^2}{({E_0}_I)^2}=\left(\frac{n_1-n_2}{n_1+n_2} \right)^2 \\ 
+\text{And \textbf{Transmission coefficient},}\\
+T&=\frac{I_I}{I_I}=\frac{\varepsilon_2v_2}{\varepsilon_1v_1}\frac{({E_0}_I)^2}{({E_0}_I)^2}=\frac{4n_1n_2}{(n_1+n_2)^2}\\
+\text{And from these equations we can}&\text{ show that $R+T=1$ ie. energy is conserved.}\notag
 \end{align}
 \hspace{5.10cm}\framebox{
 	
@@ -328,14 +325,14 @@ T&=\frac{I_I}{I_I}=\frac{\varepsilon_2v_2}{\varepsilon_1v_1}\frac{({E_0}_I)^2}{(
 	When light passes from air $(n_1=1)$ and to glass$(n_2=1.5)$
 	\begin{align*}
 	R&=0.04,\quad4\%\\
-	T&=0.96, \quad96\%
-	\intertext{Most of the light are transmitted.}
+	T&=0.96, \quad96\%\\
+	\text{Most of the }&\text{light  are transmitted.}
 	\end{align*}
 \end{note}
 \subsection{Reflection and transmission at oblique incidence}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=4cm,width=6cm]{diagram-20211230-crop}
+	\includegraphics[height=4.2cm,width=5.5cm]{diagram-20211230-crop}
 	\caption{}
 	\label{}
 \end{figure}
@@ -356,65 +353,84 @@ $$k_Iv_1=k_Rv_1=k_Tv_2$$
 $$\implies k_I=k_R$$
 $$\implies k_I=k_R=\frac{v_2}{v_1}k_T=\frac{n_1}{n_2}k_T$$
 Where $n_1$ and $n_2$ are the refractive index of the first and second medium.\\
-At $z=0$ the combined field of electric and magnetic components  are equal\\
-ie $$E_I+E_R=E_T$$ and 
-$$B_I+B_R=B_T$$
-Which give rise to\\
-$$E_I(r,t)=E_{0I}e^{(k_I.r-\omega t)}+E_R(r,t)=E_{0R}e^{(k_R.r-\omega t)}=E_T(r,t)=E_{0T}e^{(k_T.r-\omega t)}$$
-Because the boundary conditions must hold at all points on the plane and for all time ,these exponential factors must be equal at z=0.Which implies\\
-$$k_I\cdot r=k_R\cdot r=k_T\cdot r \quad at z=0$$
-after taking the dot product\\
-$$x(k_I)_x+y(k_I)_y=x(k_R)_x+y(k_R)_y=x(k_T)_x+y(k_T)_y$$
+At $z=0$ the combined field of electric and magnetic components  are equal
+\begin{align*}
+\text{ie }\quad E_I+E_R&=E_T\quad\text{ and }\\
+B_I+B_R&=B_T\\
+\text{Which give rise to}\\
+E_I(r,t)&=E_{0I}e^{(k_I.r-\omega t)}+E_R(r,t)=E_{0R}e^{(k_R.r-\omega t)}=E_T(r,t)=E_{0T}e^{(k_T.r-\omega t)}
+\intertext{Because the boundary conditions must hold at all points on the plane and for all time ,these exponential factors must be equal at z=0.Which implies}
+k_I\cdot r&=k_R\cdot r=k_T\cdot r \quad at z=0\\
+\text{after taking the dot}&\text{ product}\\
+x(k_I)_x+y(k_I)_y&=x(k_R)_x+y(k_R)_y=x(k_T)_x+y(k_T)_y
+\end{align*}
 \textbf{if x=0}
-$$(k_I)_y=(k_R)_y=(k_T)_y$$
-suppose the incident ray lies in the xz plane then $(k_I)_y=0$\\
-Then$$(k_R)_y=(k_T)_y=0$$
-There will be no ray along y axis.
-Which means that all the rays lies in the same plane.\\
-conclusion\\
+\begin{align*}
+(k_I)_y&=(k_R)_y=(k_T)_y\\
+\text{suppose the incident ray }&\text{lies in the xz plane then $(k_I)_y=0$}\\
+\text{Then}\quad(k_R)_y&=(k_T)_y=0\\
+\text{There will be no ray   }&\text{along y axis.
+	Which means that all the ray lies in the same plane.}\\
+\text{conclusion}
+\end{align*}
 \textbf{First law}:The incident ,reflected, and transmitted wavevectors form a plane.(called plane of incidence),which also include the normal to the surface(z axix)\\
 Here the common plane is xz plane\\
 \textbf{if y=o}\\
-$$(k_I)_x=(k_R)_x=(k_T)_x$$
-Which implies that 
-$$k_I\sin \theta_I=k_R\sin\theta_R=k_T\sin \theta_T$$
-Where $\theta_I$ is the angle of incidence,$\theta_R$ is the angle of reflection,and $\theta_T$ is called angle of transmission also known as angle of refraction.\\
+\begin{align*}
+(k_I)_x&=(k_R)_x=(k_T)_x\\
+\text{Which  }&\text{implies that}\\
+k_I\sin \theta_I&=k_R\sin\theta_R=k_T\sin \theta_T
+\intertext{Where $\theta_I$ is the angle of incidence,$\theta_R$ is the angle of reflection,and $\theta_T$ is called angle of transmission also known as angle of refraction.}
+\end{align*}
 \textbf{Second law}
-$$k_I\sin \theta_I=k_R\sin\theta_R$$
-$$k_I=k_R$$
-Then $$\theta_I=\theta_R$$
-The angle of incidence is the angle of reflection
-$$k_I=k_R\neq k_T$$
-Then  $$\frac{\sin \theta_I}{\sin \theta_T}=\frac{k_T}{k_R}$$
+\begin{align*}
+k_I\sin \theta_I&=k_R\sin\theta_R\\
+k_I&=k_R\\
+\text{Then }\theta_I&=\theta_R\\
+\text{The angle of incidence is the angle of reflection}
+k_I&=k_R\neq k_T\\
+\text{Then  }\frac{\sin \theta_I}{\sin \theta_T}&=\frac{k_T}{k_R}
+\end{align*}
 \paragraph{Third law}
 $$\frac{\sin \theta_I}{\sin \theta_T}=\frac{n_1}{n_2}$$
 This is the \textbf{law of refraction or Snell's law.}
 \subsection{Polarization}
-Consider the boundary conditions at the surface\\
-$$(i)\quad \epsilon_{1}(E_{0_I}+E_{0_R})_z=\epsilon_{2}(E_{0_T})_z$$
-$$ (ii) \quad (B_{O_I}+B_{0_R})_z=(B_{0_T})_z$$
-$$(iii) \quad (E_{0_I}+E_{0_R})_{x,y}=(E_{0_T})_{x,y}$$
-$$(iv) \quad \frac{1}{\mu_{1}}(B_{0_I}+B_{0_R})_{x,y}=\frac{1}{\mu_{2}}(B_{0_T})_{x,y}$$
-Suppose the polarization of the incident wave is parallel to the plane of incidenceie in the xz plane.\\
-Consider the first boundary condition\\
-$$\epsilon_{1}(-E_{0_I}\sin \theta_I+E_{0_R}\sin \theta_R)=\epsilon_{2}(-E_{0_T}\sin \theta_T)$$
-Since magnetic field has no z components (ii) add nothing.\\
-(iii)equation become\\
-$$E_{0_I}\cos \theta_I+E_{0_R}\cos \theta_R=E_{0_T}\cos \theta_T$$\\
-(iv) Become\\
-$$\frac{1}{\mu_{1} v_1}(E_{0_I}-E_{0_R})=\frac{1}{\mu_{2} v_2}E_{0_T}$$
-Combining with $\epsilon_{1}(-E_{0_I}\sin \theta_I+E_{0_R}\sin \theta_R)=\epsilon_{2}(-E_{0_T}\sin \theta_T)$ and using laws of reflection and refraction,we will get
-$$E_{0_I}-E_{0_R}=\beta E_{0_T}$$
-Where $$\beta= \frac{\mu_{1} v_1}{\mu_{2} v_2}=\frac{\mu_{1} n_2}{\mu_{2}n_1}$$
-Equation $$E_{0_I}\cos \theta_I+E_{0_R}\cos \theta_R=E_{0_T}\cos \theta_T$$
-$$E_{0_I}+E_{0_R}=\alpha E_{0_T}$$
-Where $$\alpha=\frac{\cos \theta_T}{\cos \theta_I}$$\\
-solving $E_{0_I}+E_{0_R}=\alpha E_{0_T}$, \quad $E_{0_I}-E_{0_R}=\beta E_{0_T}$ this equation for reflected and transmitted amplitude we obtain\\
-Amplitude of reflected wave is\\
-$$E_{0_R}=\frac{\alpha-\beta}{\alpha+\beta}E_{0_I}$$
-Amplitude of the transmitted wave is\\
-$$E_{0_T}=\left( \frac{2}{\alpha+\beta}\right)E_{0_I} $$
-These are known as \textbf{Fresnel's equations}\\
+Consider the boundary conditions at the surface
+\begin{align*}
+\text{(i)}\quad \epsilon_{1}(E_{0_I}+E_{0_R})_z&=\epsilon_{2}(E_{0_T})_z\\
+ \text{(ii)} \quad (B_{O_I}+B_{0_R})_z&=(B_{0_T})_z\\
+\text{(iii)} \quad (E_{0_I}+E_{0_R})_{x,y}&=(E_{0_T})_{x,y}\\
+\text{(iv)} \quad \frac{1}{\mu_{1}}(B_{0_I}+B_{0_R})_{x,y}&=\frac{1}{\mu_{2}}(B_{0_T})_{x,y}
+\intertext{Suppose the polarization of the incident wave is parallel to the plane of incidenceie in the xz plane.}
+\text{Consider the first boundary condition}\\
+\epsilon_{1}(-E_{0_I}\sin \theta_I+E_{0_R}\sin \theta_R)&=\epsilon_{2}(-E_{0_T}\sin \theta_T)\\
+\text{Since magnetic field has no z }&\text{components (ii) add nothing.}\\
+\text{(iii)equation become}\\
+E_{0_I}\cos \theta_I+E_{0_R}\cos \theta_R&=E_{0_T}\cos \theta_T\\
+\text{(iv) Become}\\
+\frac{1}{\mu_{1} v_1}(E_{0_I}-E_{0_R})&=\frac{1}{\mu_{2} v_2}E_{0_T}
+\intertext{Combining with $\epsilon_{1}(-E_{0_I}\sin \theta_I+E_{0_R}\sin \theta_R)=\epsilon_{2}(-E_{0_T}\sin \theta_T)$ and using laws of reflection and refraction,we will get}
+E_{0_I}-E_{0_R}&=\beta E_{0_T}\\
+\text{Where }\quad\beta&= \frac{\mu_{1} v_1}{\mu_{2} v_2}=\frac{\mu_{1} n_2}{\mu_{2}n_1}\\
+\text{Equation }E_{0_I}\cos \theta_I+E_{0_R}\cos \theta_R&=E_{0_T}\cos \theta_T\\
+E_{0_I}+E_{0_R}=\alpha E_{0_T}\\
+\text{Where }\alpha&=\frac{\cos \theta_T}{\cos \theta_I}\\
+\intertext{solving $E_{0_I}+E_{0_R}=\alpha E_{0_T}$, \quad $E_{0_I}-E_{0_R}=\beta E_{0_T}$ this equation for reflected and transmitted amplitude we obtain}
+\text{Amplitude of reflected wave is}&\\
+E_{0_R}&=\frac{\alpha-\beta}{\alpha+\beta}E_{0_I}\\
+\text{Amplitude of the transmitted wave is}\\
+E_{0_T}&=\left( \frac{2}{\alpha+\beta}\right)E_{0_I} \\
+\text{These are known as \textbf{Fresnel's equations}}\\
+\end{align*}
+
+
+
+
+
+
+
+
+
 \begin{note}
 	The transmitted wave is always in phase with the incident one;reflected wave is either in phase if $\alpha>\beta$ or 180 out of phase if $\alpha< \beta$
 \end{note}
@@ -428,10 +444,12 @@ At normal incidenace most of the light are transmitted.At $\theta_I=90^{\circ}$ 
 	\caption{}
 	\label{}
 \end{figure}
-This occurs when $\alpha=\beta$\\
-$$\sin ^{2} \theta_{B}=\frac{1-\beta^{2}}{\left(n_{1} / n_{2}\right)^{2}-\beta^{2}}$$
-For the typical case $\mu_{1}\approx\mu_{2}$ so $\beta \approx n_2, \sin^2 \theta_{B}\approx \frac{\beta^2}{1+\beta^2}$ and hence\\
-$$\tan \theta_{B} \approx \frac{n_2}{n_1}$$
+\begin{align*}
+\text{This occurs when }\alpha&=\beta\\
+\sin ^{2} \theta_{B}&=\frac{1-\beta^{2}}{\left(n_{1} / n_{2}\right)^{2}-\beta^{2}}\\
+\text{For the typical case }\mu_{1}\approx\mu_{2}\text{ so }\beta \approx n_2, \sin^2 \theta_{B}&\approx \frac{\beta^2}{1+\beta^2}\text{ and hence}\\
+\tan \theta_{B} &\approx \frac{n_2}{n_1}
+\end{align*}
 \begin{note}
 	If the incident light is unpolarized the reflected ray will be totally polarized parallel to the interface at Brewster's angle.In the above condition we use plane polarized light as incident light,that is why there is no reflected rays.
 \end{note}
@@ -448,45 +466,52 @@ $$\tan \theta_{B} \approx \frac{n_2}{n_1}$$
 	\end{enumerate}
 \end{note}
 \textbf{Reflection and transmission coefficient}
-$$R=\frac{I_R}{I_I}=\left( \frac{E_{0_R}}{E_{O_I}}\right) =\left( \frac{\alpha-\beta}{\alpha+\beta}\right) ^2$$
-$$T=\frac{I_T}{I_I}=\frac{\epsilon_{2}v_2}{\epsilon_{1}v_1}\left( \frac{E_{0_T}}{E_{0I}}\right) \frac{\cos \theta_{T}}{\cos \theta_{I}}=\alpha \beta\left( \frac{2}{\alpha+\beta} \right) ^2$$
+\begin{align*}
+R&=\frac{I_R}{I_I}=\left( \frac{E_{0_R}}{E_{O_I}}\right) =\left( \frac{\alpha-\beta}{\alpha+\beta}\right) ^2\\
+T&=\frac{I_T}{I_I}=\frac{\epsilon_{2}v_2}{\epsilon_{1}v_1}\left( \frac{E_{0_T}}{E_{0I}}\right) \frac{\cos \theta_{T}}{\cos \theta_{I}}=\alpha \beta\left( \frac{2}{\alpha+\beta} \right) ^2
+\end{align*}
 \section{Elctromagnetic waves in conductors}
 When we are talking about wave propagation through a vacuum or through a dielctric mterial we restricted our assumption that $J_f$ and $\rho_f$ are zeros.But in the case of conductors we donnot independently control the flow of charge, and in general $J_f$ is not certainly zero.\\
-According to ohm's law the current density in a conductor is proportional to the electric field.\\
-$$J_f=\sigma E$$
-Maxwell' equation for a linear media.\\
-(i)\quad $\nabla$ $\cdot$ E=$\frac{\rho_f}{\epsilon}$\\
-(ii) \quad $\nabla \cdot B=0$\\
-(iii)\quad $\nabla$ $\times$ =-$\frac{\partial B}{\partial t}$\\
-(iv) \quad $\nabla \times B=\mu \sigma E+\mu \epsilon \frac{\partial E}{\partial t}$\\
-Continuity equation ($\nabla \cdot J_f=\frac{\partial \rho_f}{\partial t}$) with Ohm's law The gauss's law become\\
-$$\frac{\partial \rho_f}{\partial t}=-\sigma (\nabla \cdot E)=-\frac{\sigma}{\epsilon}\rho_f$$
-$$\rho_f(t)=e^{\frac{-\sigma}{\epsilon}t} \rho_f(0)$$
+According to ohm's law the current density in a conductor is proportional to the electric field.
+\begin{align*}
+J_f&=\sigma E\\
+\text{Maxwell' equation for }&\text{a linear media.}\\
+\text{(i)\quad $\nabla$ $\cdot$ E}&=\frac{\rho_f}{\epsilon}\\
+\text{(ii) \quad $\nabla \cdot $B}&=0\\
+\text{(iii)\quad $\nabla$ $\times$ }&=-\frac{\partial B}{\partial t}\\
+\text{(iv) \quad $\nabla \times$ B}&=\mu \sigma E+\mu \epsilon \frac{\partial E}{\partial t}\\
+\text{Continuity equation ($\nabla \cdot J_f=\frac{\partial \rho_f}{\partial t}$)}& \text{with Ohm's law The gauss's law become}\\
+\frac{\partial \rho_f}{\partial t}&=-\sigma (\nabla \cdot E)=-\frac{\sigma}{\epsilon}\rho_f\\
+\rho_f(t)&=e^{\frac{-\sigma}{\epsilon}t} \rho_f(0)
+\end{align*}
 which means that if you put some charges on a conductor,it will flow out of the edges.Donot mind this transient behaviour.consider the time up to which the accumulated free charges to disappear.From then $\rho_f=0$\\
-Now maxwell's quations become\\
-(i)\quad $\nabla$ $\cdot$ E=0\\
-(ii) \quad $\nabla \cdot B=0$\\
-(iii)\quad $\nabla$ $\times$ =-$\frac{\partial B}{\partial t}$\\
-(iv) \quad $\nabla \times B=\mu \sigma E+\mu \epsilon \frac{\partial E}{\partial t}$\\
-Applying curl to (iii) and (iv) we will get modified wave equation for E and B.\\
-$$\nabla^{2} \mathbf{E}=\mu \epsilon \frac{\partial^{2} \mathbf{E}}{\partial t^{2}}+\mu \sigma \frac{\partial \mathbf{E}}{\partial t}, \quad \nabla^{2} \mathbf{B}=\mu \epsilon \frac{\partial^{2} \mathbf{B}}{\partial t^{2}}+\mu \sigma \frac{\partial \mathbf{B}}{\partial t}$$
-These equations still admit plane-wave solutions,
-$$
-\tilde{\mathbf{E}}(z, t)=\tilde{\mathbf{E}}_{0} e^{i(k z-\omega t)}, \quad \tilde{\mathbf{B}}(z, t)=\tilde{\mathbf{B}}_{0} e^{i(\tilde{k} z-\omega t)},
-$$
-but this time the "wave number" $\tilde{k}$ is complex:
-$$
-\tilde{k}^{2}=\mu \epsilon \omega^{2}+i \mu \sigma \omega,
-$$
-$$\bar{k}=k_{real}+ik_{img}$$
-where
-$$
-k_{real} \equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}+1\right]^{1 / 2}
-$$
-and 
-$$k_{img} \equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}-1\right]^{1 / 2}$$
-Now\\
-$$\tilde{\mathbf{E}}(z, t)=\tilde{\mathbf{E}}_{0} e^{-k_{real} z} e^{i(k_{img} z-\omega t)}, \quad \tilde{\mathbf{B}}(z, t)=\tilde{\mathbf{B}}_{0} e^{-k_{real}z} e^{i(k_{imag} z-\omega t)}$$
+Now maxwell's quations become
+\begin{align*}
+\text{(i)\quad $\nabla$ $\cdot$} E&=0\\
+\text{(ii) \quad $\nabla \cdot$} B&=0\\
+\text{(iii)\quad $\nabla$ $\times$} &=-\frac{\partial B}{\partial t}\\
+\text{(iv) \quad $\nabla \times$} B&=\mu \sigma E+\mu \epsilon \frac{\partial E}{\partial t}\\
+\text{Applying curl to (iii) and (iv)}&\\
+\text{ we will get modified wave equation}&\text{ for E and B.}\\
+\nabla^{2} \mathbf{E}=\mu \epsilon \frac{\partial^{2} \mathbf{E}}{\partial t^{2}}+\mu \sigma \frac{\partial \mathbf{E}}{\partial t}, \quad \nabla^{2} \mathbf{B}&=\mu \epsilon \frac{\partial^{2} \mathbf{B}}{\partial t^{2}}+\mu \sigma \frac{\partial \mathbf{B}}{\partial t}\\
+\text{These equations still admit}&\text{ plane-wave solutions,}\\
+\tilde{\mathbf{E}}(z, t)=\tilde{\mathbf{E}}_{0} e^{i(k z-\omega t)}, \quad \tilde{\mathbf{B}}(z, t)&=\tilde{\mathbf{B}}_{0} e^{i(\tilde{k} z-\omega t)},\\
+\text{but this time the "wave number" }&\text{ $\tilde{k}$ is complex:}\\
+\tilde{k}^{2}&=\mu \epsilon \omega^{2}+i \mu \sigma \omega,\\
+\bar{k}&=k_{real}+ik_{img}\\
+\text{where }
+k_{real} &\equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}+1\right]^{1 / 2}\\
+\text{and }
+k_{img} &\equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}-1\right]^{1 / 2}\\
+\text{Now }\quad
+\tilde{\mathbf{E}}(z, t)&=\tilde{\mathbf{E}}_{0} e^{-k_{real} z} e^{i(k_{img} z-\omega t)}, \quad \tilde{\mathbf{B}}(z, t)=\tilde{\mathbf{B}}_{0} e^{-k_{real}z} e^{i(k_{imag} z-\omega t)}
+\end{align*}
+
+
+
+
+
+
 \paragraph{Skin depth}
 The distance it takes to reduce the amplitude by a factor of $1 / e$ (about a third) is called the skin depth:
 $$
