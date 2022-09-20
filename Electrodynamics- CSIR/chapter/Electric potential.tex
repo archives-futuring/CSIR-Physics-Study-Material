@@ -10,9 +10,7 @@
 Consider a point charge situated at the origin, then electric field at a distance $r$ is given by,
 \begin{align*}
 \vec{E}=\frac{1}{4 \pi \varepsilon_{0}} \frac{q}{r^{2}} \hat{r}
-\end{align*}
-Now we will calculate the line integral of this field from  $a$ to $b$ as shown in the figure.
-\begin{align*}
+\intertext{Now we will calculate the line integral of this field from  $a$ to $b$ as shown in the figure.}
 \int_{{a}}^{{b}} \vec{E}& \cdot \vec{d {l}} \\
 \text{In spherical coordinates,} \quad \vec{d {l}}&=d r \hat{{r}}+r d \theta \hat{{\theta}}+r \sin \theta d \phi \hat{{\phi}}\\ 
 \text{So}\quad
@@ -20,10 +18,10 @@ Now we will calculate the line integral of this field from  $a$ to $b$ as shown 
 \therefore \int_{{a}}^{{b}} \vec{E} \cdot \vec{d {l}}&=\frac{1}{4 \pi \epsilon_{0}} \int_{{a}}^{{b}} \frac{q}{r^{2}} d r\\&=\left.\frac{-1}{4 \pi \epsilon_{0}} \frac{q}{r}\right|_{r_{a}} ^{r_{b}}\\&=\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q}{r_{a}}-\frac{q}{r_{b}}\right)
 \end{align*}
 Where $r_{a}$ is the distance from the origin to the point ${a}$ and $r_{b}$ is the distance to ${b}$. The integral around a closed path is evidently zero (for then $r_{a}=r_{b}$ ):
-$$
-\oint \vec{E} \cdot \vec{d {l}}=0
-$$
-On applying Stokes theorem, we get, 
+\begin{align*}
+\oint \vec{E} \cdot \vec{d {l}}&=0\\
+\text{On applying Stokes} &\text{ theorem, we get,}
+\end{align*}
 \begin{center}
 	\framebox{
 		\parbox[t][0.75cm]{4cm}{
@@ -88,10 +86,8 @@ V(r)&=-\int_{\infty}^{r} \vec{E} d \vec{r}\\
 \text{then,}\quad  V(r)&=- \frac{q}{4\pi \epsilon_{0}}\int_{\infty}^{r} 
 \frac{ d \vec{r}}{r^{2}}\\
 &=\frac{1}{4\pi \epsilon_{0}}\left[ \frac{q}{r} \right]_{\infty}^{r}\\
-&=\frac{1}{4\pi \epsilon_{0}} \frac{q}{r} 
-\end{align*}
-For continuous charge distribution,
-\begin{align*}
+&=\frac{1}{4\pi \epsilon_{0}} \frac{q}{r} \\
+\text{For continuous }&\text{charge distribution,}\\
 {V}({r})&=\frac{1}{4 \pi \epsilon_{0}} \int_{{P}} \frac{\lambda\left({r}\right)}{r} \hat{{r}} d l\quad\rightarrow \text{Linear charge distribution.}\\
 {V}({r})&=\frac{1}{4 \pi \epsilon_{0}} \int_{{S}} \frac{\sigma\left({r}\right)}{r} \hat{{r}} d a\quad\rightarrow \text{Surface charge distribution.}\\
 {V}({r})&=\frac{1}{4 \pi \epsilon_{0}} \int_{{V}} \frac{\rho\left({r}\right)}{r} \hat{r} d \tau\quad \rightarrow \text{Volume charge distribution.}
@@ -102,16 +98,13 @@ For continuous charge distribution,
 \subsection{Electric potential calculation}
 
 \subsubsection{Uniformely charged spherical shell}
-Consider a uniformly charged spherical shell having radius $\mathrm{R}$ and charge density$\rho$. Then,\\
+Consider a uniformly charged spherical shell having radius $\mathrm{R}$ and charge density$\rho$. Then,
 \begin{align*}
 \text{Charge density}&:\rho=\frac{Q}{\frac{4}{3} \pi R^{3}}\\
 \text{Electric field}&:\text { For } r>R , \quad E_{out}=\frac{Q}{4 \pi \varepsilon_{0} r^{2}}
 \\&\text {For}\quad r<R, \quad E_{in}=0
-\\&\text {For}\quad r=R, \quad E_{on}=\frac{Q}{4 \pi \varepsilon_{0} R^{2}}
-\end{align*}
-Then the potentials are,
-
-	  \begin{align*}
+\\&\text {For}\quad r=R, \quad E_{on}=\frac{Q}{4 \pi \varepsilon_{0} R^{2}}\\
+\text{Then the potentials are,}\\
 	\bullet\text { For } r>R:\\
 	V_{out}&=-\int_{\infty}^{r} \vec{E}\cdot d \vec{r}\\
 	&=-\int_{\infty}^{r} \frac{Q}{4 \pi \varepsilon_{0} r^{2}}\cdot d {r}\\
@@ -151,7 +144,7 @@ For a uniformely charged solid sphere of radius $R$ the elctric fields are,
 	V_{in}&=-\int_{\infty}^{r} \vec{E}\cdot d \vec{r}\\
 	&=-\int_{\infty}^{r} \frac{Q}{4 \pi \varepsilon_{0} r^{2}}\cdot d {r}\\
 	&=\frac{Q}{4 \pi \varepsilon_{0} r}\\
-	\text{In terms of charge density,}\\
+	\text{In terms }&\text{of charge density,}\\
 	V_{in}&=\frac{\rho R^{3}}{3\epsilon_{0} r}
 \end{align*}
  \begin{align*}
@@ -162,7 +155,7 @@ For a uniformely charged solid sphere of radius $R$ the elctric fields are,
 		&=\frac{Q}{4 \pi \varepsilon_{0} R}-\left[\frac{Q }{4 \pi \varepsilon_{0} R^{3}} \frac{r^{2}}{2} \right]+\left[\frac{Q }{4 \pi \varepsilon_{0} R^{3}} \frac{R^{2}}{2} \right]\\ 
 		&=\frac{Q }{4 \pi \varepsilon_{0}}\left[\frac{3}{2R}-\frac{r^{2}}{2R^{3}} \right]\\ 
 		&=\frac{Q }{8 \pi \varepsilon_{0}R^{3}}\left[3R^{2}-r^{2} \right]\\
-	\text{In terms of charge density,}\\
+	\text{In terms of}&\text{ charge density,}\\
 	V_{out}&=\frac{\rho }{6  \varepsilon_{0}}\left[3R^{2}-r^{2} \right]
 \end{align*}
 \begin{note}
@@ -206,7 +199,7 @@ V&=\frac{1}{4 \pi \varepsilon_{0}} 2 \pi \sigma \int_{0}^{R} \frac{2 r d r}{\sqr
 	\begin{align*}
 	\text{Potential of } A =&(\text{Potential of } A \text{ due to }+\sigma \text{ on }A)+(\text{Potential of } A \text{ due to }-\sigma \text{ on }B)\\&+(\text{Potential of } A \text{ due to }+\sigma \text{ on }C)\\
 	=&\frac{1}{4 \pi \varepsilon_{0}}\left[\frac{4 \pi a^{2} \sigma}{a}-\frac{4 \pi b^{2} \sigma}{b}+\frac{4 \pi c^{2} \sigma}{c}\right]\\
-	=&\frac{\sigma}{\varepsilon_{0}}[a-b+c]\\
+	=&\frac{\sigma}{\varepsilon_{0}}[a-b+c]
 	\end{align*}
 	\begin{align*}
 \text{Potential of } B =&( \text{Potential due to} +\sigma \text{on} A)+( \text{Potential due to} -\sigma \text{on} B)\\&+( \text{Potential due to} +\sigma \text{on} C)\\
@@ -240,6 +233,7 @@ Then putting, \ eq.\ref{electric field} in eq.\ref{gauss law} we get,
 $$-\vec{\nabla} \cdot \vec{\nabla} \phi=\frac{\rho}{\varepsilon_{0}}\quad \Longrightarrow \quad \nabla^{2} \phi=-\frac{\rho}{\varepsilon_{0}}\label{poissons} $$
 \end{equation}
 The eq \ref{poissons} is known as the Poisson's equation. 
+
 \begin{center}
 \framebox{
 	\parbox[t][0.75cm]{4cm}{
@@ -264,13 +258,11 @@ This mathematical operation,$ \nabla^{2}$, the divergence of the gradient of a f
 \section{Laplace equation in different co-ordinate systems}
 \subsection{Laplace's Equation in One Dimension}
 Suppose $V$ depends on only one variable, $x$. Then Laplace's equation becomes
-$$
-\frac{d^{2} V}{d x^{2}}=0
-$$
-The general solution is
-$$
-V(x)=m x+b,
-$$
+\begin{align*}
+\frac{d^{2} V}{d x^{2}}&=0\\
+\text{The general }&\text{solution is}\\
+V(x)&=m x+b,
+\end{align*}
 the equation for a straight line. It contains two undetermined constants $(m$ and $b)$, as is appropriate for a second-order (ordinary) differential equation. They are fixed, in any particular case, by the boundary conditions of that problem.\\
 I want to call your attention to two features of this result; they may seem silly and obvious in one dimension, where I can write down the general solution explicitly, but the analogs in two and three dimensions are powerful and by no means obvious:
 1. $V(x)$ is the average of $V(x+a)$ and $V(x-a)$, for any $a$ :
@@ -298,21 +290,15 @@ V(\mathbf{r})=\frac{1}{4 \pi R^{2}} \oint_{\text {sphere }} V d a .
 $$
 2. As a consequence, $V$ can have no local maxima or minima; the extreme values of $V$ must occur at the boundaries. (For if $V$ had a local maximum at $\mathbf{r}$, then by the very nature of maximum I could draw a sphere around $\mathbf{r}$ over which all values of $V$-and a fortiori the average-would be less than at $\mathbf{r}$.)\\\\
 Proof: Let's begin by calculating the average potential over a spherical surface of radius $R$ due to a single point charge $q$ located outside the sphere. We may as well center the sphere at the origin and choose coordinates so that $q$ lies on the $z$-axis . The potential at a point on the surface is
-$$
-V=\frac{1}{4 \pi \epsilon_{0}} \frac{q}{r}
-$$
-where
-$$
-r^{2}=z^{2}+R^{2}-2 z R \cos \theta,
-$$
-so
-$$
-\begin{aligned}
+\begin{align*}
+V&=\frac{1}{4 \pi \epsilon_{0}} \frac{q}{r}\\
+\text{ where }\quad
+r^{2}&=z^{2}+R^{2}-2 z R \cos \theta,\\
+\text{ so }\quad
 V_{\text {ave }} &=\frac{1}{4 \pi R^{2}} \frac{q}{4 \pi \epsilon_{0}} \int\left[z^{2}+R^{2}-2 z R \cos \theta\right]^{-1 / 2} R^{2} \sin \theta d \theta d \phi \\
 &=\left.\frac{q}{4 \pi \epsilon_{0}} \frac{1}{2 z R} \sqrt{z^{2}+R^{2}-2 z R \cos \theta}\right|_{0} ^{\pi} \\
 &=\frac{q}{4 \pi \epsilon_{0}} \frac{1}{2 z R}[(z+R)-(z-R)]=\frac{1}{4 \pi \epsilon_{0}} \frac{q}{z}
-\end{aligned}
-$$
+\end{align*}
 But this is precisely the potential due to $q$ at the center of the sphere! By the superposition principle, the same goes for any collection of charges outside the sphere: their average potential over the sphere is equal to the net potential they produce at the center. 
 \begin{figure}[H]
 	\centering
@@ -322,26 +308,26 @@ But this is precisely the potential due to $q$ at the center of the sphere! By t
 \end{figure}
 \section{Laplace equation in Spherical polar coordinates}
 \begin{align}
-\intertext{In  the spherical polar coordinate system, The Laplace equation is,}
+\text{In  the spherical polar coordinate system, }&\text{The Laplace equation is,}\\
 \frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial V}{\partial r}\right)+\frac{1}{r^{2} \sin \theta} \frac{\partial}{\partial \theta}\left(\sin \theta \frac{\partial V}{\partial \theta}\right)&+\frac{1}{r^{2} \sin ^{2} \theta} \frac{\partial^{2} V}{\partial \phi^{2}}=0 \label{Laplace in spc 1}
 \intertext{Let us assume the system has an azimuthal symmetry such that \ $V$\ is independent of  $\phi$.Then the solution of the above equation can be written as,}
-V(r, \theta)&=R(r) \Theta(\theta)\label{Laplace in spc 2}
-\intertext{Dividing equation \ref{Laplace in spc 1} by \  $V$\ ,\ i.e \ref{Laplace in spc 2} , \ we get,}
-\frac{1}{R} \frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)+\frac{1}{\Theta \sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)&=0
-\intertext{The above equation can be written as, }
+V(r, \theta)&=R(r) \Theta(\theta)\label{Laplace in spc 2}\\
+\text{Dividing equation \ref{Laplace in spc 1} by \  $V$\ ,\ i.e \ref{Laplace in spc 2} , \ we get,}\\
+\frac{1}{R} \frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)+\frac{1}{\Theta \sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)&=0\\
+\text{The above equation can be written as, }\\
 \frac{1}{R} \frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)&=l(l+1)\\ \text{And,}\quad \frac{1}{\Theta \sin \theta} \frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)&=-l(l+1)
 \intertext{Here $l(l+1)$ is just a  way of writing the separation constant. By the method of separation of variables, the equation can be  converted into ordinary differential equations. The radial equation is,}
-\frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)&=l(l+1) R
-\intertext{It has the general solution,}
+\frac{d}{d r}\left(r^{2} \frac{d R}{d r}\right)&=l(l+1) R\\
+\text{It has the general solution,}\\
 R(r)&=A r^{l}+\frac{B}{r^{l+1}}
 \intertext{	Where $A$ and $B$ are  two arbitrary constants  in the solution of a second-order differential equation. Then the  angular equation,}
-\frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)&=-l(l+1) \sin \theta \Theta
-\intertext{The solutions are Legendre polynomials in the variable $\cos \theta$ :}
-\Theta(\theta)&=P_{l}(\cos \theta)
-\intertext{$P_{l}(x)$ is most conveniently defined by the Rodrigues formula:}
+\frac{d}{d \theta}\left(\sin \theta \frac{d \Theta}{d \theta}\right)&=-l(l+1) \sin \theta \Theta\\
+\text{The solutions are Legendre polynomials in the }&\text{variable $\cos \theta$ :}\\
+\Theta(\theta)&=P_{l}(\cos \theta)\\
+\text{$P_{l}(x)$ is most conveniently defined by the Rodrigues }&\text{ formula:}\\
 P_{l}(x)&=\frac{1}{2^{l} l !}\left(\frac{d}{d x}\right)^{l}\left(x^{2}-1\right)^{l}\\
-\Theta(\theta)&=\ln \left(\tan \frac{\theta}{2}\right)
-\intertext{In the case of azimuthal symmetry, the most general separable solution to Laplace's equation is,}
+\Theta(\theta)&=\ln \left(\tan \frac{\theta}{2}\right)\\
+\text{In the case of azimuthal symmetry, the most general}&\text{ separable solution to Laplace's equation is,}\\
 V(r, \theta)&=\left(A r^{l}+\frac{B}{r^{l+1}}\right) P_{l}(\cos \theta)
 \intertext{As before, separation of variables yields an infinite set of solutions,
 	one for each $l$. The general solution is the linear combination of separable solutions,}
@@ -361,14 +347,14 @@ V(r, \theta)&=\sum_{l=0}^{\infty}\left(A_{l} r^{l}+\frac{B_{l}}{r^{l+1}}\right) 
 \end{note}
 \begin{note}\textbf{Spherical Polar Coordinate System.}
 	\begin{align*}
-	\intertext{If $V$ is only a function of $r$ then,}
-	\frac{\partial V}{\partial \theta}&=0 \quad	\text{And} \quad
-	\frac{\partial V}{\partial \phi}=0
-	\intertext{Therefore, Laplace's equation can be rewritten as}
+	\text{If $V$ is only a function}&\text{ of $r$ then,}\\
+	\frac{\partial V}{\partial \theta}=0 \quad	\text{And} \quad
+	\frac{\partial V}{\partial \phi}&=0\\
+	\text{Therefore, Laplace's }&\text{equation can be rewritten as}\\
 	\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial V}{\partial r}\right)&=0\\
 	r^{2} \frac{\partial V}{\partial r}&=A=\text { constant }\\
-	\frac{\partial V}{\partial r}&=\frac{A}{r^{2}}
-	\intertext{The general solution of this first-order differential equation is,}
+	\frac{\partial V}{\partial r}&=\frac{A}{r^{2}}\\
+	\text{The general solution}&\text{ of this first-order differential equation is}\\
 	V(r)&=-\frac{A}{r}+B
 	\intertext{Where $B$ is a constant. If $V=0$ at infinity then $B$ must be equal to zero, and consequently}
 	V(r)&=-\frac{A}{r}
@@ -385,17 +371,17 @@ V(r, \theta)&=\sum_{l=0}^{\infty}\left(A_{l} r^{l}+\frac{B_{l}}{r^{l+1}}\right) 
 \begin{note}
 	\textbf{Laplace's equation in cylindrical coordinates is}
 	\begin{align*}
-	\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial V}{\partial r}\right)+\frac{1}{r^{2}} \frac{\partial^{2} V}{\partial \phi^{2}}&+\frac{\partial^{2} V}{\partial z^{2}}=0
-	\intertext{If $V$ is only a function of $r$ then,}
+	\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial V}{\partial r}\right)+\frac{1}{r^{2}} \frac{\partial^{2} V}{\partial \phi^{2}}&+\frac{\partial^{2} V}{\partial z^{2}}=0\\
+	\text{If $V$ is only a function  }&\text{of $r$ then,}\\
 	\frac{\partial V}{\partial \phi}&=0 \\
-	\frac{\partial V}{\partial z}&=0
-	\intertext{Therefore, Laplace's equation can be rewritten as,}
-	\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial V}{\partial r}\right)&=0
-	\intertext{This differential equation can be rewritten as,}
-	\frac{\partial V}{\partial r}&=\frac{A}{r}
-	\intertext{The general solution of this first-order differential equation is,}
+	\frac{\partial V}{\partial z}&=0\\
+	\text{Therefore, Laplace's equation}&\text{ can be rewritten as,}\\
+	\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial V}{\partial r}\right)&=0\\
+	\text{This differential equation }&\text{can be rewritten as,}\\
+	\frac{\partial V}{\partial r}&=\frac{A}{r}\\
+	\text{The general solution of this first-order}&\text{ differential equation is,}\\
 	V(r)&=A \ln (r)+B\\
-	\intertext{Where $b$ is a constant. The constants $A$ and $B$ are determined by the boundary conditions.}
+	\text{Where $b$ is a constant. The constants $A$ and $B$ }&\text{are determined by the boundary conditions. }
 	\end{align*}
 	\begin{center}
 		\framebox{
@@ -405,8 +391,6 @@ V(r, \theta)&=\sum_{l=0}^{\infty}\left(A_{l} r^{l}+\frac{B_{l}}{r^{l+1}}\right) 
 				
 				$V(r)=A \ln (r)+B $} }
 	\end{center}	
-	
-	
 \end{note}
 \begin{exercise}
 	Potential in a region of space is given by, $\phi=\phi_{0} e^{-a x^{2}}$ where $\phi_{0}$ and $a$ is constant. Then
@@ -414,7 +398,8 @@ V(r, \theta)&=\sum_{l=0}^{\infty}\left(A_{l} r^{l}+\frac{B_{l}}{r^{l+1}}\right) 
 \end{exercise}
 \begin{answer}
 	\begin{align*}
-	\nabla^{2} \phi&=-\frac{\rho}{\varepsilon_{0}} \\ \rho&=-\varepsilon_{0}\left(\nabla^{2} \phi\right)\\&=2 a \varepsilon_{0} \phi\left(1-2 a x^{2}\right)
+	\nabla^{2} \phi&=-\frac{\rho}{\varepsilon_{0}} \\ \rho&=-\varepsilon_{0}\left(\nabla^{2} \phi\right)\\
+	&=2 a \varepsilon_{0} \phi\left(1-2 a x^{2}\right)
 	\end{align*}
 \end{answer}
 
@@ -425,27 +410,24 @@ V(r, \theta)&=\sum_{l=0}^{\infty}\left(A_{l} r^{l}+\frac{B_{l}}{r^{l+1}}\right) 
 	region $r_{a}<r<r_{b}$.
 \end{exercise}
 \begin{answer}
-	\begin{alignat*}{2}
-	&\text {Here voltage is varying only with } r \text { , then the  Laplace's equation is, }\\
-	&\nabla^{2} V=\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d V}{d r}\right)=0\\
-	&\text{Integrate twice to get the solution }V(r)=- \frac{A}{r}+B\\
-	&\text{The boundary conditions are}\\
-	&(1) V=0 \text{ at } r=r_{a}\\
-	&(2) V=V_{0} \text{ at  }r=r_{b}
-	\end{alignat*}
 	\begin{align*}
-	&\text { Substituting these boundary conditions, we get }\\
-	&\text { At } r=r_{a}, 0=- \frac{A}{r_{a}}+B \Rightarrow B= \frac{A}{r_{a}}\\
-	&\text { At } r=r_{b}, V_{0}=- \frac{A}{r_{b}}+ \frac{A}{r_{a}}=A\left[ \frac{1}{r_{a}}- \frac{1}{r_{b}}\right]\\
+	\text {Here voltage is varying only with }& r \text { , then the  Laplace's equation is, }\\
+	\nabla^{2} V&=\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d V}{d r}\right)=0\\
+	\text{Integrate twice to get  }&\text{the solution}V(r)=- \frac{A}{r}+B\\
+	\text{The boundary conditions}&\text{ are}\\
+	(1) V&=0 \text{ at } r=r_{a}\\
+	(2) V&=V_{0} \text{ at  }r=r_{b}\\
+	\text { Substituting these boundary }&\text{ conditions, we get}\\
+	\text { At } r=r_{a}, 0&=- \frac{A}{r_{a}}+B \Rightarrow B= \frac{A}{r_{a}}\\
+	\text { At } r&=r_{b}, V_{0}=- \frac{A}{r_{b}}+ \frac{A}{r_{a}}=A\left[ \frac{1}{r_{a}}- \frac{1}{r_{b}}\right]\\
 	V_{0}&=A \frac{r_{b}-r_{a}}{r_{a} r_{b}}\\
-	A&= V_{0}\frac{r_{a} r_{b}}{r_{b}-r_{a}}
-	\intertext{Then, the constant B,}
+	A&= V_{0}\frac{r_{a} r_{b}}{r_{b}-r_{a}}\\
+	\text{Then, the constant B,}\\
 	B&=\frac{A}{r_{a}}=V_{0}\frac{ r_{b}}{r_{b}-r_{a}}\\
 	\text{Then,}\ V&=-  V_{0}\frac{r_{a} r_{b}}{r_{b}-r_{a}}\frac{1}{r}+V_{0}\frac{ r_{b}}{r_{b}-r_{a}}\\
 	&=V_{0}\frac{ r_{b}}{r_{b}-r_{a}}\left[- \frac{r_{a}}{r}+1\right]\\
 	V&=V_{0}\frac{ r_{b}}{r_{b}-r_{a}}\left[1- \frac{r_{a}}{r}\right] 
 	\end{align*}
-	
 \end{answer}
 \subsection{Summary of Electrostatics}
 In an Electrostatics  there are  three fundamental quantities : $\rho$, $\vec{E}$, and $V$. And we have six formulas interrelating them. These equations are  summarized below.
@@ -480,22 +462,15 @@ According to Gauss law,
 	\caption{Electrostatics}
 	\label{Electrostatics boundary 2}
 \end{wrapfigure}
-
-The tangential component of $E$, by contrast, is always continuous.
-$$
-\oint \vec{E} \cdot d \vec{l}=0
-$$
-to the thin rectangular loop of Fig.\ref{Electrostatic boundary1}, the ends give nothing $($ as $\epsilon \rightarrow 0)$, and the sides give $\left(E_{\text {above }}^{\|} l-E_{\text {below }}^{\|} l\right)$, so
-$$
-{E}_{\text {above }}^{\|}={E}_{\text {below }}^{\|}
-$$
-Then boundary conditions fo $E$ can be combined into a single formula:
-\begin{equation}
-$$
-{E}_{\text {above }}-{E}_{\text {below }}=\frac{\sigma}{\epsilon_{0}} \hat{{n}}
-$$
-\end{equation}
-where $\hat{n}$ is unit vector perpendicular to the surface, pointing upward.\\
+\begin{align*}
+\text{The tangential component of $E$,}&\text{ by contrast, is always continuous.}\\
+\oint \vec{E} \cdot d \vec{l}&=0\\
+\intertext{to the thin rectangular loop of Fig.\ref{Electrostatic boundary1}, the ends give nothing $($ as $\epsilon \rightarrow 0)$, and the sides give $\left(E_{\text {above }}^{\|} l-E_{\text {below }}^{\|} l\right)$, so}
+{E}_{\text {above }}^{\|}&={E}_{\text {below }}^{\|}\\
+\text{Then boundary conditions fo}&\text{ $E$ can be combined into a single formula:}\\
+{E}_{\text {above }}-{E}_{\text {below }}&=\frac{\sigma}{\epsilon_{0}} \hat{{n}}\\
+\text{where $\hat{n}$ is unit vector }&\text{perpendicular to the surface, pointing upward.}
+\end{align*}
 \textbf{Conclusions:} 
 \begin{itemize}
 	\item The normal component of $\vec{E}$ is discontinuous by an amount $\frac{\sigma}{\varepsilon_{0}}$ at any boundary. If there is no surface charge, $E^{\perp}$ is continuous.
@@ -509,7 +484,7 @@ where $\hat{n}$ is unit vector perpendicular to the surface, pointing upward.\\
 	\textbf{Potential:}
 	
 	\begin{align}
-	\text{The potential is continuous across any boundary, }\notag\\
+	\text{The potential is continuous }&\text{across any boundary, }\notag\\
 	\text{Since }\ V_{\text {above }}-V_{\text {below }}&=-\int_{a}^{b} \vec{E} \cdot d \vec{l}\notag\\
 	\text{As the path shrinks to zero}\notag\\
 	V_{\text {above }}&=V_{\text {below }} \notag\\
@@ -612,18 +587,19 @@ The work necessary to assemble a system of charges against coulomb forces is sto
 \subsection{Electrostatic energy of system of point charges}
 Let us consider bringing point charges one by one, from far away.The first charge, $q_{1}$, takes no work, since there is no field yet to fight against. Bringing next charge $q_{2}$ cost a workdone. 
 \begin{align}
-\intertext{When $q_{2}$ is placed work done}
-W_{2}&=q_{2} V_{1}
-\intertext{where $V_{1}$ is the potential due to $q_{1}$ so,}
+\text{When $q_{2}$ }&\text{is placed work done}\\
+W_{2}&=q_{2} V_{1}\\
+\text{where $V_{1}$ }&\text{is the potential due to $q_{1}$ so,}\\
 W_{2}&=\frac{1}{4 \pi \varepsilon_{0}} q_{2}\left(\frac{q_{1}}{R_{12}}\right)
-\intertext{Similiarly,}
-W_{3}&=\frac{1}{4 \pi \epsilon_{0}} q_{3}\left(\frac{q_{1}}{r_{13}}+\frac{q_{2}}{r_{23}}\right)
-\intertext{Similarly, the extra work to bring in $q_{4}$ will be}
-W_{4}&=\frac{1}{4 \pi \epsilon_{0}} q_{4}\left(\frac{q_{1}}{r_{14}}+\frac{q_{2}}{r_{24}}+\frac{q_{3}}{r_{34}}\right) .
-\intertext{The total work necessary to assemble the first four charges, then, is}
-W&=\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q_{1} q_{2}}{r_{12}}+\frac{q_{1} q_{3}}{r_{13}}+\frac{q_{1} q_{4}}{r_{14}}+\frac{q_{2} q_{3}}{r_{23}}+\frac{q_{2} q_{4}}{r_{24}}+\frac{q_{3} q_{4}}{r_{34}}\right) .
-\intertext{In general,}
-W&=\frac{1}{4 \pi \varepsilon_{0}} \sum_{i=1}^{n} \sum_{j=1 \atop j>i}^{n} \frac{q_{i} q_{j}}{R_{i j}}=\frac{1}{8 \pi \varepsilon_{0}} \sum_{i=1}^{n} \sum_{j=1 \atop j \neq i}^{n} \frac{q_{i} q_{j}}{R_{i j}}\\&=\frac{1}{2} \sum_{i=1}^{n} q_{i} V\left(r_{i}\right)\label{electrostatics energy
+\text{Similiarly,}\\
+W_{3}&=\frac{1}{4 \pi \epsilon_{0}} q_{3}\left(\frac{q_{1}}{r_{13}}+\frac{q_{2}}{r_{23}}\right)\\
+\text{Similarly, }&\text{the extra work to bring in $q_{4}$ will be}\\
+W_{4}&=\frac{1}{4 \pi \epsilon_{0}} q_{4}\left(\frac{q_{1}}{r_{14}}+\frac{q_{2}}{r_{24}}+\frac{q_{3}}{r_{34}}\right) .\\
+\text{The total work }&\text{necessary to assemble the first four charges, then, is}\\
+W&=\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q_{1} q_{2}}{r_{12}}+\frac{q_{1} q_{3}}{r_{13}}+\frac{q_{1} q_{4}}{r_{14}}+\frac{q_{2} q_{3}}{r_{23}}+\frac{q_{2} q_{4}}{r_{24}}+\frac{q_{3} q_{4}}{r_{34}}\right) .\\
+\text{In general,}\\
+W&=\frac{1}{4 \pi \varepsilon_{0}} \sum_{i=1}^{n} \sum_{j=1 \atop j>i}^{n} \frac{q_{i} q_{j}}{R_{i j}}=\frac{1}{8 \pi \varepsilon_{0}} \sum_{i=1}^{n} \sum_{j=1 \atop j \neq i}^{n} \frac{q_{i} q_{j}}{R_{i j}}\\
+&=\frac{1}{2} \sum_{i=1}^{n} q_{i} V\left(r_{i}\right)\label{electrostatics energy
 }
 \end{align}
 \begin{center}
@@ -677,14 +653,15 @@ $$
 \subsubsection{Energy of uniformly charged spherical shell}
 Consider a uniformly charged spherical shell of total charge $q$ and radius $R$.
 \begin{align*}
-\intertext{We know that,}\vec{E}_{\text {inside }}&=0, \quad \vec{E}_{\text {outside }}=\frac{1}{4 \pi \varepsilon_{0}} \frac{q}{r^{2}} \hat{r}\\
+\text{We know }&\text{that,}\\
+\vec{E}_{\text {inside }}&=0, \quad \vec{E}_{\text {outside }}=\frac{1}{4 \pi \varepsilon_{0}} \frac{q}{r^{2}} \hat{r}\\
 W&=\frac{\varepsilon_{0}}{2} \int_{\text {all space }} E^{2} d \tau\\&=\frac{\varepsilon_{0}}{2} \int_{0}^{R} E_{i n}^{2} d \tau+\frac{\varepsilon_{0}}{2} \int_{R}^{\infty} E_{\text {out }}^{2} d \tau\\&=\frac{\varepsilon_{0}}{2\left(4 \pi \varepsilon_{0}\right)^{2}} \int_{\text {outside }}\left(\frac{q^{2}}{r^{4}}\right)\left(r^{2} \sin \theta d r d \theta d \phi\right) \\
 W&=\frac{1}{32 \pi^{2} \varepsilon_{0}} q^{2} 4 \pi \int_{R}^{\infty} \frac{1}{r^{2}} d r\\ W&=\frac{q^{2}}{8 \pi \varepsilon_{0} R}
 \end{align*}
 \subsubsection{Energy of uniformly charged solid sphere}
 Consider a uniformly charged solid sphere of radius $R$ and charge $q$.
 \begin{align*}
-\intertext{We know that,}
+\text{We know}&\text{ that,}\\
 \vec{E}&=\frac{1}{4 \pi \varepsilon_{0}} \frac{q r}{R^{3}} \hat{r}\quad ; \quad r>R \text {  and  } \vec{E}=\frac{1}{4 \pi \varepsilon_{0}} \frac{q}{r^{2}} \hat{r}\quad ; \quad r<R \\
 W&=\frac{\varepsilon_{0}}{2} \frac{q^{2}}{\left(4 \pi \varepsilon_{0}\right)^{2}}\left\{\int_{R}^{\infty} \frac{1}{r^{4}}\left(r^{2} 4 \pi d r\right)+\int_{0}^{R}\left(\frac{r}{R^{3}}\right)^{2}\left(4 \pi r^{2} d r\right)\right\}\\&=\frac{1}{4 \pi \varepsilon_{0}} \frac{q^{2}}{2}\left\{\frac{1}{R}+\frac{1}{5 R}\right\} \\
 W&=\frac{1}{20\pi \varepsilon_{0}} \frac{3 q^{2}}{ R}
@@ -719,47 +696,42 @@ V(x, y, z)=\frac{1}{4 \pi \epsilon_{0}}\left[\frac{q}{\sqrt{x^{2}+y^{2}+(z-d)^{2
 2. $V \rightarrow 0$ for $x^{2}+y^{2}+z^{2} \gg d^{2}$,\\
 and the only charge in the region $z>0$ is the point charge $+q$ at $(0,0, d)$. But these are precisely the conditions of the original problem! Evidently the second configuration happens to produce exactly the same potential as the first configuration, in the "upper" region $z \geq 0 .$
 \subsection{Induced Surface Charge}
-The surface charge $\sigma$ induced on the conductor.
-$$\sigma=-\in_{0}\frac{\partial V}{\partial n}$$
-where $\partial V / \partial n$ is the normal derivative of $V$ at the surface. In this case the normal direction is the $z$ direction, so
-$$
-\sigma=-\left.\epsilon_{0} \frac{\partial V}{\partial z}\right|_{z=0} .
-$$
-From Eq. \ref{image charge 1} ,
 \begin{align*}
+\text{The surface charge $\sigma$ induced}&\text{ on the conductor.}\\
+\sigma&=-\in_{0}\frac{\partial V}{\partial n}
+\intertext{where $\partial V / \partial n$ is the normal derivative of $V$ at the surface. In this case the normal direction is the $z$ direction, so}
+\sigma&=-\left.\epsilon_{0} \frac{\partial V}{\partial z}\right|_{z=0} .\\
+\text{From Eq. \ref{image charge 1} ,}\\
 \frac{\partial V}{\partial z}&=\frac{1}{4 \pi \epsilon_{0}}\left\{\frac{-q(z-d)}{\left[x^{2}+y^{2}+(z-d)^{2}\right]^{3 / 2}}+\frac{q(z+d)}{\left[x^{2}+y^{2}+(z+d)^{2}\right]^{3 / 2}}\right\}\\
 \mathrm{so}\\
-\sigma(x, y)&=\frac{-q d}{2 \pi\left(x^{2}+y^{2}+d^{2}\right)^{3 / 2}} .
+\sigma(x, y)&=\frac{-q d}{2 \pi\left(x^{2}+y^{2}+d^{2}\right)^{3 / 2}} .\\
+\text{As expected, the induced }&\text{charge is negative (assuming $q$ is positive) and greatest at $x=y=0$.)}\\
+\text{The total induced charge}\\
+Q&=\int \sigma d a .
+\intertext{This integral, over the $x y$ plane, could be done in Cartesian coordinates, with $d a=d x d y$, but it's a little easier to use polar coordinates $(r, \phi)$, with $r^{2}=x^{2}+y^{2}$ and $d a=r d r d \phi$. Then}
+\sigma(r)&=\frac{-q d}{2 \pi\left(r^{2}+d^{2}\right)^{3 / 2}}\\
+\text{ and }\quad
+Q&=\int_{0}^{2 \pi} \int_{0}^{\infty} \frac{-q d}{2 \pi\left(r^{2}+d^{2}\right)^{3 / 2}} r d r d \phi=\left.\frac{q d}{\sqrt{r^{2}+d^{2}}}\right|_{0} ^{\infty}=-q .\\
+\text{The total charge  }&\text{induced on the plane is $-q$}
 \end{align*}
-As expected, the induced charge is negative (assuming $q$ is positive) and greatest at $x=y=0$.)\\
-The total induced charge
-$$
-Q=\int \sigma d a .
-$$
-This integral, over the $x y$ plane, could be done in Cartesian coordinates, with $d a=d x d y$, but it's a little easier to use polar coordinates $(r, \phi)$, with $r^{2}=x^{2}+y^{2}$ and $d a=r d r d \phi$. Then
-$$
-\sigma(r)=\frac{-q d}{2 \pi\left(r^{2}+d^{2}\right)^{3 / 2}}
-$$
-and
-$$
-Q=\int_{0}^{2 \pi} \int_{0}^{\infty} \frac{-q d}{2 \pi\left(r^{2}+d^{2}\right)^{3 / 2}} r d r d \phi=\left.\frac{q d}{\sqrt{r^{2}+d^{2}}}\right|_{0} ^{\infty}=-q .
-$$
-The total charge induced on the plane is $-q$ 
+
+
+
+
+
 \subsection{Force and Energy}
 The charge $q$ is attracted toward the plane, because of the negative induced charge. Let's calculate the force of attraction. Since the potential in the vicinity of $q$ is the same as in the analog problem (the one with $+q$ and $-q$ but no conductor), so also is the field and, therefore, the force:
-$$
-\mathbf{F}=-\frac{1}{4 \pi \epsilon_{0}} \frac{q^{2}}{(2 d)^{2}} \hat{\mathbf{z}} 
-$$
-Think of the energy stored in the fields:
-$$
-W=\frac{\epsilon_{0}}{2} \int E^{2} d \tau .
-$$
+\begin{align*}
+\mathbf{F}&=-\frac{1}{4 \pi \epsilon_{0}} \frac{q^{2}}{(2 d)^{2}} \hat{\mathbf{z}} \\
+\text{Think of the energy }&\text{stored in the fields:}\\
+W&=\frac{\epsilon_{0}}{2} \int E^{2} d \tau .
+\end{align*}
 In the first case, both the upper region $(z>0)$ and the lower region $(z<0)$ contribute-and by symmetry they contribute equally. But in the second case, only the upper region contains a nonzero field, and hence the energy is half as great.\\
 For a single charge and conducting plane, the energy is half of energy due to two point charges
-$$W=-\frac{1}{4 \pi \epsilon_{0}} \frac{q^{2}}{4 d}$$
-work required to bring $g$ in from infinity
 \begin{align*}
- W &=\int_{\infty}^{d} \mathbf{F} \cdot d \mathbf{l}=\frac{1}{4 \pi \epsilon_{0}} \int_{\infty}^{d} \frac{q^{2}}{4 z^{2}} d z \\
+W&=-\frac{1}{4 \pi \epsilon_{0}} \frac{q^{2}}{4 d}\\
+\text{work }&\text{required to bring $g$ in from infinity}\\
+W &=\int_{\infty}^{d} \mathbf{F} \cdot d \mathbf{l}=\frac{1}{4 \pi \epsilon_{0}} \int_{\infty}^{d} \frac{q^{2}}{4 z^{2}} d z \\
 &=\left.\frac{1}{4 \pi \epsilon_{0}}\left(-\frac{q^{2}}{4 z}\right)\right|_{\infty} ^{d}=-\frac{1}{4 \pi \epsilon_{0}} \frac{q^{2}}{4 d} .
 \end{align*}
 \newpage 
@@ -779,24 +751,18 @@ But what if $Q$ is zero?
 	\caption{}
 	\label{}
 \end{figure}
-Let $r_{-}$be the distance from $-q$ and $r_{+}$the distance from $+q$ (Fig. 26). Then
-$$
-V(\mathbf{r})\approx\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q}{r_{+}}-\frac{q}{r_{-}}\right),
-$$
-and (from the law of cosines)
-$$
-r_{\pm}^{2}=r^{2}+(d / 2)^{2} \mp r d \cos \theta=r^{2}\left(1 \mp \frac{d}{r} \cos \theta+\frac{d^{2}}{4 r^{2}}\right) .
-$$
-We're interested in the régime $r \gg d$, so the third term is negligible, and the binomial expansion yields
-$$
-\frac{1}{r_{\pm}} \cong \frac{1}{r}\left(1 \mp \frac{d}{r} \cos \theta\right)^{-1 / 2} \cong \frac{1}{r}\left(1 \pm \frac{d}{2 r} \cos \theta\right) \text {. }
-$$
-Thus
-$$
-\frac{1}{r_{+}}-\frac{1}{r_{-}} \cong \frac{d}{r^{2}} \cos \theta,
-$$
-and hence
-$$V(\mathbf{r}) \cong \frac{1}{4 \pi \epsilon_{0}} \frac{q d \cos \theta}{r^{2}}$$
+\begin{align*}
+\text{Let $r_{-}$be the distance from $-q$}&\text{  and $r_{+}$the distance from $+q$ (Fig. 26). Then}\\
+V(\mathbf{r})&\approx\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q}{r_{+}}-\frac{q}{r_{-}}\right),\\
+\text{and (from the law of cosines)}\\
+r_{\pm}^{2}&=r^{2}+(d / 2)^{2} \mp r d \cos \theta=r^{2}\left(1 \mp \frac{d}{r} \cos \theta+\frac{d^{2}}{4 r^{2}}\right) .\\
+\text{We're interested in the régime}&\text{ $r \gg d$, so the third term is negligible, and the binomial expansion yields}\\
+\frac{1}{r_{\pm}} &\cong \frac{1}{r}\left(1 \mp \frac{d}{r} \cos \theta\right)^{-1 / 2} \cong \frac{1}{r}\left(1 \pm \frac{d}{2 r} \cos \theta\right) \text {. }\\
+\text{Thus}\quad
+\frac{1}{r_{+}}-\frac{1}{r_{-}} &\cong \frac{d}{r^{2}} \cos \theta,\\
+\text{and hence}\quad
+V(\mathbf{r}) &\cong \frac{1}{4 \pi \epsilon_{0}} \frac{q d \cos \theta}{r^{2}}
+\end{align*}
 The potential of a dipole goes like $1 / r^{2}$ at large $r$; as we might have anticipated, it falls off more rapidly than the potential of a point charge. If we put together a pair of equal and opposite dipoles to make a quadrupole, the potential goes like $1 / r^{3}$; for back-to-back quadrupoles (an octopole), it goes like $1 / r^{4}$; and so on. Figure 27 summarizes this hierarchy; for completeness I have included the electric monopole (point charge), whose potential, of course, goes like $1 / r$.
 \begin{figure}[H]
 	\begin{minipage}{0.24\textwidth}
@@ -826,30 +792,32 @@ To develop a systematic expansion for the potential of any localized charge dist
 \begin{equation}
 V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{1}{r_0} \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}\label{EP1}
 \end{equation}
-Using the law of cosines,
 \begin{align*}
-r_0^{2}&=r^{2}+\left(r^{\prime}\right)^{2}-2 r r^{\prime} \cos \alpha\\&=r^{2}\left[1+\left(\frac{r^{\prime}}{r}\right)^{2}-2\left(\frac{r^{\prime}}{r}\right) \cos \alpha\right]
-\intertext{where $\alpha$ is the angle between $\mathbf{r}$ and $\mathbf{r}^{\prime}$. Thus}
-r_0&=r \sqrt{1+\epsilon}
-\intertext{with, $\varepsilon \equiv\left(\frac{r^{\prime}}{r}\right)\left(\frac{r^{\prime}}{r}-2 \cos \alpha\right)$}
-\intertext{For points well outside the charge distribution, $\epsilon$ is much less than 1 , and this invites a binomial expansion:}
-\frac{1}{r_0}&=\frac{1}{r}(1+\epsilon)^{-1 / 2}\\&=\frac{1}{r}\left(1-\frac{1}{2} \epsilon+\frac{3}{8} \epsilon^{2}-\frac{5}{16} \epsilon^{3}+\ldots\right)
-\intertext{or, in terms of $r, r^{\prime}$, and $\alpha$ :}
+\text{Using the law of }&\text{cosines,}\\
+r_0^{2}&=r^{2}+\left(r^{\prime}\right)^{2}-2 r r^{\prime} \cos \alpha\\
+&=r^{2}\left[1+\left(\frac{r^{\prime}}{r}\right)^{2}-2\left(\frac{r^{\prime}}{r}\right) \cos \alpha\right]\\
+\text{where $\alpha$ is the angle}&\text{ between $\mathbf{r}$ and $\mathbf{r}^{\prime}$. Thus}\\
+r_0&=r \sqrt{1+\epsilon}\\
+\text{with, }&\varepsilon \equiv\left(\frac{r^{\prime}}{r}\right)\left(\frac{r^{\prime}}{r}-2 \cos \alpha\right)\\
+\text{For points well outside the charge }&\text{distribution, $\epsilon$ is much less than 1 , and this invites a binomial expansion:}\\
+\frac{1}{r_0}&=\frac{1}{r}(1+\epsilon)^{-1 / 2}\\
+&=\frac{1}{r}\left(1-\frac{1}{2} \epsilon+\frac{3}{8} \epsilon^{2}-\frac{5}{16} \epsilon^{3}+\ldots\right)\\
+\text{or, in terms of }&\text{$r, r^{\prime}$, and $\alpha$ :}\\
 \frac{1}{r_0}&=\frac{1}{r}\left[1-\frac{1}{2}\left(\frac{r^{\prime}}{r}\right)\left(\frac{r^{\prime}}{r}-2 \cos \alpha\right)+\frac{3}{8}\left(\frac{r^{\prime}}{r}\right)^{2}\left(\frac{r^{\prime}}{r}-2 \cos \alpha\right)^{2}\right. \\
 & \left. \right.  \quad \left.-\frac{5}{16}\left(\frac{r^{\prime}}{r}\right)^{3}\left(\frac{r^{\prime}}{r}-2 \cos \alpha\right)^{3}+\ldots\right] \\
 &=\frac{1}{r}\left[1+\left(\frac{r^{\prime}}{r}\right)(\cos \alpha)+\left(\frac{r^{\prime}}{r}\right)^{2}\left(\frac{3 \cos ^{2} \alpha-1}{2}\right)\right. \\
 \left. \right.  \quad &\left.+\left(\frac{r^{\prime}}{r}\right)^{3}\left(\frac{5 \cos ^{3} \alpha-3 \cos \alpha}{2}\right)+\ldots\right]
 \end{align*}
 \begin{align*}
-\intertext{Here it is collected together like powers of $(r^\prime/r)$ and their coefficients are Legendre polynomials.So, }
-\frac{1}{r}&=\frac{1}{r} \sum_{n=0}^{\infty}\left(\frac{r^{\prime}}{r}\right)^{n} P_{n}(\cos \alpha) 
-\intertext{Substituting this back into Eq. \ref{EP1} , and noting that $r$ is a constant, as far as the integration is concerned, We get}
-V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \int\left(r^{\prime}\right)^{n} P_{n}(\cos \alpha) \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}
-\intertext{or, more explicitly,}
+\text{Here it is collected together like powers}&\text{  of $(r^\prime/r)$ and their coefficients are Legendre polynomials.So, }\\
+\frac{1}{r}&=\frac{1}{r} \sum_{n=0}^{\infty}\left(\frac{r^{\prime}}{r}\right)^{n} P_{n}(\cos \alpha) \\
+\text{Substituting this back into Eq. \ref{EP1} , and   }&\text{noting that $r$ is a constant, as far as the integration is concerned, We get}\\
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \int\left(r^{\prime}\right)^{n} P_{n}(\cos \alpha) \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}\\
+\text{or, more explicitly,}\\
 V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}}\left[  \frac{1}{r} \int \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}+\frac{1}{r^{2}} \int r^{\prime} \cos \alpha \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}\right.  \\
-&\left.+\frac{1}{r^{3}} \int\left(r^{\prime}\right)^{2}\left(\frac{3}{2} \cos ^{2} \alpha-\frac{1}{2}\right) \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}+\ldots\right] 
+&\left.+\frac{1}{r^{3}} \int\left(r^{\prime}\right)^{2}\left(\frac{3}{2} \cos ^{2} \alpha-\frac{1}{2}\right) \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}+\ldots\right] \\
+\text{This is the desired result}&\text{-the multipole expansion of $V$ in powers of $1/r$.}
 \end{align*}
-This is the desired result-the multipole expansion of $V$ in powers of $1/r$.\\\\
 \textbf{Monopole Term}
 \begin{itemize}
 	\item The first term $(n=0)$ is the monopole contribution (it goes like $1 / r)$
@@ -864,29 +832,20 @@ This is the desired result-the multipole expansion of $V$ in powers of $1/r$.\\\
 	\item The second $(n=1)$ is the dipole (it goes like $\left.1 / r^{2}\right)$
 \end{itemize}
 If the total charge is zero, the dominant term in the potential will be the dipole (unless it also vanishes):
-$$
-V_{\mathrm{dip}}(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{1}{r^{2}} \int r^{\prime} \cos \alpha \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime} .
-$$
-Since $\alpha$ is the angle between $\mathbf{r}^{\prime}$ and $\mathbf{r}$ ,
-$$
-r^{\prime} \cos \alpha=\hat{\mathbf{r}} \cdot \mathbf{r}^{\prime},
-$$
-and the dipole potential can be written as:
-$$
-V_{\text {dip }}(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{1}{r^{2}} \hat{\mathbf{r}} \cdot \int \mathbf{r}^{\prime} \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime} .
-$$
-This integral (which does not depend on $\mathbf{r}$ ) is called the dipole moment of the distribution:
-$$
-\mathbf{p} \equiv \int \mathbf{r}^{\prime} \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}
-$$
-and the dipole contribution to the potential simplifies to
-$$
-V_{\text {dip }}(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \frac{\mathbf{p} \cdot \hat{\mathbf{r}}}{r^{2}}
-$$
-The dipole moment is determined by the geometry of the charge distribution.\\ Dipole moment of a collection of point charges is
-$$
-\mathbf{p}=\sum_{i=1}^{n} q_{i} \mathbf{r}_{i}^{\prime} .
-$$
+\begin{align*}
+V_{\mathrm{dip}}(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \frac{1}{r^{2}} \int r^{\prime} \cos \alpha \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime} .\\
+\text{Since $\alpha$ is the angle between }&\text{$\mathbf{r}^{\prime}$ and $\mathbf{r}$ ,}\\
+r^{\prime} \cos \alpha&=\hat{\mathbf{r}} \cdot \mathbf{r}^{\prime},\\
+\text{and the dipole potential can}&\text{ be written as:}\\
+V_{\text {dip }}(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \frac{1}{r^{2}} \hat{\mathbf{r}} \cdot \int \mathbf{r}^{\prime} \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime} .\\
+\text{This integral (which does not depend on}&\text{ $\mathbf{r}$ ) is called the dipole moment of the distribution:}\\
+\mathbf{p} &\equiv \int \mathbf{r}^{\prime} \rho\left(\mathbf{r}^{\prime}\right) d \tau^{\prime}\\
+\text{and the dipole contribution }&\text{to the potential simplifies to}\\
+V_{\text {dip }}(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \frac{\mathbf{p} \cdot \hat{\mathbf{r}}}{r^{2}}\\
+\text{The dipole moment is determined }&\text{by the geometry of the charge distribution.}\\
+\text{ Dipole moment of a collection }&\text{of point charges is}\\
+\mathbf{p}&=\sum_{i=1}^{n} q_{i} \mathbf{r}_{i}^{\prime} .
+\end{align*}
 \begin{note}
 	The third is quadrupole,the fourth octopole and so on. Remember that $\alpha$ is the angle between $\mathbf{r}$ and $\mathbf{r}^{\prime}$, so the integrals depend on the direction to the field point.
 \end{note}
@@ -902,12 +861,12 @@ U&=-\vec{p} \cdot \vec{E}(r) \quad(\because E(r)=-\nabla V(r))
 \end{align*}
 \subsection{Force and torque on a dipole placed in an electric field:}
 \subsubsection{Force }
-We know that,
 \begin{align*}
+\text{We  }&\text{know that,}\\
 \vec{F} &=-\vec{\nabla} U=\nabla(\vec{p} \cdot \vec{E}) \\
 &=(\vec{p} \cdot \vec{\nabla}) \vec{E}+(\vec{E} \cdot \vec{\nabla}) \vec{p}+\vec{p} \times(\vec{\nabla} \times \vec{E})+\vec{E} \times(\vec{\nabla} \times \vec{p}) \\
 &=(\vec{p} \cdot \vec{\nabla}) \bar{E}+0+0+0\\
-\text{For uniform } \vec{E},\\
+\text{For } &\text{uniform }\vec{E},\\
 \vec{F}&=(\vec{p} \cdot \vec{\nabla}) \vec{E}=0
 \end{align*}
 
@@ -917,9 +876,9 @@ We know the potential energy of the dipole due external electrie field is $u=\ve
 Therefore, the torque about its own centre is
 $$
 \begin{aligned}
-&\tau=-\frac{d u}{d \theta}=p E \sin \theta\\
+\tau&=-\frac{d u}{d \theta}=p E \sin \theta\\
 &\text { Or, }\\
-&\vec{\tau}=\vec{p} \times \vec{E}
+\vec{\tau}&=\vec{p} \times \vec{E}
 \end{aligned}
 $$
 \textbf{Torque on the dipole in non-uniform electric field :}\\
@@ -933,11 +892,9 @@ Therefore, totaltorque about any other point is $\vec{\tau}=\vec{p} \times \vec{
 \textbf{Mutual potential energy between two coplanar dipoles:}\\
 Let consider two diple of dipole moment $\vec{p}_{1}$ and $\vec{p}_{2}$ lying on a single plane, $\vec{r}_{21}$ is the position vector of dipole
 2 with respect to 1 . The electric field at the centre of dipole 2 is,
-
-
 \begin{align*}
-\vec{E}_{1}&=\frac{1}{4 \pi \varepsilon_{0}}\left[\frac{3\left(\vec{p}_{1} \cdot \vec{r}_{21}\right) \vec{r}_{21}}{r_{21}^{5}}-\frac{\vec{p}_{1}}{r_{21}^{3}}\right]
-\intertext{The mutual potential energy,}
+\vec{E}_{1}&=\frac{1}{4 \pi \varepsilon_{0}}\left[\frac{3\left(\vec{p}_{1} \cdot \vec{r}_{21}\right) \vec{r}_{21}}{r_{21}^{5}}-\frac{\vec{p}_{1}}{r_{21}^{3}}\right]\\
+\text{The mutual}&\text{ potential energy,}\\
 U_{21}&=-\vec{p}_{2} \cdot \vec{E}_{1}=-\vec{p}_{1} \cdot \vec{E}_{2}\\&=\frac{1}{4 \pi \varepsilon_{0}}\left[\frac{\vec{p}_{1} \cdot \vec{p}_{2}}{r_{21}^{3}}-\frac{3\left(\vec{p}_{1} \cdot \vec{r}_{21}\right)\left(\vec{p}_{2} \cdot \vec{r}_{21}\right)}{r_{21}^{5}}\right]
 \end{align*}
 
@@ -1204,7 +1161,7 @@ The leading order term for the electric field at a distance $d$, far away from t
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=4cm,width=7.5cm]{diagram-20210817(15)-crop}
+\includegraphics[height=3.5cm,width=6cm]{diagram-20210817(15)-crop}
 \end{figure}
 \begin{tasks}(4)
 \task[\textbf{A.}] $\frac{1}{4 \pi \varepsilon_{0}} \frac{7 q^{2}}{2}$
@@ -1221,7 +1178,7 @@ where $r$ is the distance of $P$ from the centre $\mathrm{O}$ of the sphere and 
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=4.2cm,width=5cm]{diagram-20210817(17)-crop}
+\includegraphics[height=3.5cm,width=4.3cm]{diagram-20210817(17)-crop}
 \end{figure}
 \begin{tasks}(4)
 \task[\textbf{A.}] $3 \sqrt{3} \varepsilon_{0} E_{0} / 2$
@@ -1253,7 +1210,7 @@ this charge distribution the electric field at $\left(2 x_{0}, 0,0\right)$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=10cm]{diagram-20210818(7)-crop}
+	\includegraphics[height=2.5cm,width=6cm]{diagram-20210818(7)-crop}
 \end{figure}
 \begin{tasks}(1)
 	\task[\textbf{A.}] The dipole moment is zero in both (i) and (ii)
@@ -1275,7 +1232,7 @@ this charge distribution the electric field at $\left(2 x_{0}, 0,0\right)$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=4.5cm,width=6cm]{diagram-20210818(11)-crop}
+	\includegraphics[height=3.5cm,width=5cm]{diagram-20210818(11)-crop}
 \end{figure}
 	\question Consider a system of three charges as shown in the figure below:\\
 \begin{figure}[H]
@@ -1376,12 +1333,14 @@ For $r=10 \mathrm{~m} ; \theta=60$ degrees; $q=10^{-6}$ Coulomb, and $d=10^{-3} 
 	\end{answer}
 	\item  Find the potential a distance $r$ from an infinitely long straight wire that carries a uniform line charge $\lambda$.
 	\begin{answer}
-		Here, $\vec{E}=\frac{\lambda}{2 \pi \varepsilon_{0} r} \hat{r} .$ \\In this case we cannot set the reference point at $\infty$, since the charge
-		itself extends to $\infty$. \\Let's set it at $r=a$
-		\\Then $V(r)=-\int_{a}^{r}\left(\frac{1}{2 \pi \varepsilon_{0}} \frac{\lambda}{r}\right) d r=-\frac{\lambda}{2 \pi \varepsilon_{0}} \ln \left(\frac{r}{a}\right)$
+		\begin{align*}
+		\text{Here, }\vec{E}&=\frac{\lambda}{2 \pi \varepsilon_{0} r} \hat{r} . \\\text{In this case we cannot set}&\text{ the reference point at $\infty$, since the charge itself extends to $\infty$. }
+		\\\text{Let's set it at }r&=a\\
+		\\\text{Then }V(r)&=-\int_{a}^{r}\left(\frac{1}{2 \pi \varepsilon_{0}} \frac{\lambda}{r}\right) d r=-\frac{\lambda}{2 \pi \varepsilon_{0}} \ln \left(\frac{r}{a}\right)
+		\end{align*}
 	\end{answer}
 	\item The electrostatic potential due to a charge distribution is given by $V(r)=A \frac{e^{-\lambda r}}{r}$, where $A$ and $\lambda$ are constants. The total charge enclosed within a sphere of radius $1 / \lambda$, with its origin at $r=0$ is given by,
-	\begin{tasks}(2)
+	\begin{tasks}(4)
 		\task[\textbf{a.}]$\frac{8 \pi \varepsilon_{0} A}{e}$  
 		\task[\textbf{b.}] $\frac{4 \pi \varepsilon_{0} A}{e}$
 		\task[\textbf{c.}]$\frac{\pi \varepsilon_{0} A}{e}$ 
@@ -1420,16 +1379,16 @@ For $r=10 \mathrm{~m} ; \theta=60$ degrees; $q=10^{-6}$ Coulomb, and $d=10^{-3} 
 	\begin{answer}
 		
 		\begin{align*}
-		\intertext{ The Laplace's equation in Cartesian coordinates system is}
-		\nabla^{2} V&=\frac{\partial^{2} V}{\partial x^{2}}=\frac{\partial^{2} V}{\partial y^{2}}+\frac{\partial^{2} V}{\partial z^{2}}=-\frac{\rho}{\varepsilon_{0}}
-		\intertext{As $V$ is only function of $x$, we have the differential equation,} 
-		\frac{d^{2} V}{d x^{2}}&=-\frac{\rho}{\varepsilon_{0}}
-		\intertext{By integrating we have the solution of this equation as}
-		\frac{d V}{d x}&=-\frac{\rho}{\varepsilon_{0}} x+A \Rightarrow V(x)=-\frac{\rho}{2 \varepsilon_{0}} x^{2}+A x+B \quad \text{Where $A$ and $B$ are constants.}
-		\intertext{The two equations need to be solved for the following boundary conditions:}
-		\intertext{(i) $x=0 ; V=0$
-			(ii) $x=L ; V=V_{0}$}
-		\intertext{Substituting these boundary conditions, we get,}
+		\text{ The Laplace's }&\text{equation in Cartesian coordinates system is}\\
+		\nabla^{2} V&=\frac{\partial^{2} V}{\partial x^{2}}=\frac{\partial^{2} V}{\partial y^{2}}+\frac{\partial^{2} V}{\partial z^{2}}=-\frac{\rho}{\varepsilon_{0}}\\
+		\text{As $V$ is only } &\text{function of $x$, we have the differential equation,}\\
+		\frac{d^{2} V}{d x^{2}}&=-\frac{\rho}{\varepsilon_{0}}\\
+		\text{By integrating we }&\text{have the solution of this equation as}\\
+		\frac{d V}{d x}&=-\frac{\rho}{\varepsilon_{0}} x+A \Rightarrow V(x)=-\frac{\rho}{2 \varepsilon_{0}} x^{2}+A x+B \quad \text{Where $A$ and $B$ are constants.}\\
+		\text{The two equations need }&\text{to be solved for the following boundary conditions:}\\
+		\text{(i) }&x=0 ; V=0\\
+		\text{	(ii)} &x=L ; V=V_{0}\\
+		\text{Substituting these boundary }&\text{ conditions, we get,}\\
 		\text { At } x&=0, V(0)=0=0+0+B \Rightarrow B=0 \\
 		\text { At } x&=L, V(L)=V_{0}=-\frac{\rho}{2 \varepsilon_{0}} L^{2}+A L \Rightarrow A=\frac{V_{0}}{L}+\frac{\rho L}{2 \varepsilon_{0}}\\ \Rightarrow V(x)&=-\frac{\rho}{2 \varepsilon_{0}} x^{2}+\left(\frac{V_{0}}{L}+\frac{\rho L}{2 \varepsilon_{0}}\right) x
 		\end{align*}
@@ -1506,9 +1465,10 @@ is $\tan ^{-1}(\beta)$. Then the value of $\beta$ is $\ldots \ldots$.
 side $a$. Let another point charge $-q$ be placed at the cnetre of the square (see the figure).
 Let $V(r)$ be the electrostatic potential at a point $P$ at a distance $r \gg a$ from the centre of
 the square. Then $V(3 r) / V(r)$ is.....................
-\begin{answer} the monopole moment,\\
-	$Q_{\text {mono }}=-\frac{q}{2}+q-\frac{q}{2}+q-q=0$
+\begin{answer} 
 	\begin{align*}
+	\text{The }&\text{monopole moment,}\\
+	Q_{\text {mono }}&=-\frac{q}{2}+q-\frac{q}{2}+q-q=0\\
 	\vec{p}&=q(a \hat{x}+a \hat{y})-\frac{q}{2}(a \hat{x}+a \hat{y})-q(a \hat{x}-a \hat{y})+q(-a \hat{x}-a \hat{y})-\frac{q}{2}(-a \hat{x}+a \hat{y})+0=0 \\
 	\text { Thus } V &\propto \frac{1}{r^{3}} \Rightarrow \frac{V(3 r)}{V(r)}=\frac{1}{27}=0.037
 	\end{align*}
