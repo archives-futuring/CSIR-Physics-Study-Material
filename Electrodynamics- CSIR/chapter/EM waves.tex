@@ -226,11 +226,11 @@ for perfect reflector pressure is twice as great because momentum switches direc
 The Maxwell's equation inside matter where there is no free charge or free current are given by,
 
 \begin{align*}
-\textbf{(i)}\quad \nabla\cdot \vec{D}=0&\hspace{4cm}\textbf{(iii)} \quad\nabla\times \vec{E}=\frac{-\partial \vec{B}}{\partial t}\\\\
+\textbf{(i)}\quad \nabla\cdot \vec{D}=0&\hspace{4cm}\textbf{(iii)} \quad\nabla\times \vec{E}=\frac{-\partial \vec{B}}{\partial t}\\
 \textbf{(ii)}\quad\nabla\cdot \vec{B}=0&\hspace{4cm}\textbf{(iv)}\quad\nabla\times \vec{H}=\frac{\partial \vec{D}}{\partial t}\\
 \intertext{If the medium is linear,\quad $ D=\varepsilon E,\qquad H=\frac{B}{\mu} $}
 \intertext{If the medium is homogeneous so that $ \varepsilon $\ and \ $ \mu$\ do not vary point to point. The Maxwell's equations becomes, }
-\textbf{(i)}\quad \nabla\cdot \vec{E}=0&\hspace{4cm}\textbf{(iii)} \quad\nabla\times \vec{E}=\frac{-\partial \vec{B}}{\partial t}\\\\
+\textbf{(i)}\quad \nabla\cdot \vec{E}=0&\hspace{4cm}\textbf{(iii)} \quad\nabla\times \vec{E}=\frac{-\partial \vec{B}}{\partial t}\\
 \textbf{(ii)}\quad\nabla\cdot \vec{B}=0&\hspace{4cm}\textbf{(iv)}\quad\nabla\times \vec{B}= \mu \varepsilon\frac{\partial \vec{E}}{\partial t}
 \end{align*}
 The electromagnetic waves propgates through a linear homogeneous medium at a speed,
@@ -522,90 +522,66 @@ $$
 \lambda=\frac{2 \pi}{k}, \quad v=\frac{\omega}{k}, \quad n=\frac{c k}{\omega} .
 $$
 \subsection{ Skin depth in a poor conductor:}
-For poor conductor
-$$
-\begin{gathered}
-\sigma \ll \omega \epsilon \\
-\kappa \equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}-1\right]^{1 / 2} \\
-\approx \omega \sqrt{\frac{\epsilon \mu}{2}}\left[1+\frac{1}{2}\left(\frac{\sigma}{\epsilon \omega}\right)^{2}-1\right]^{1 / 2}
-\end{gathered}
-$$
-Then
-$$
-\kappa \approx \omega \sqrt{\frac{\epsilon \mu}{2} \frac{1}{\sqrt{2}} \frac{\sigma}{\epsilon \omega}}=\frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}}
-$$
-So
-$$
-d=\frac{1}{\kappa} \cong \frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}}
-$$
+\begin{align*}
+\text{For poor }&\text{conductor}\\
+&\sigma \ll \omega \epsilon \\
+\kappa &\equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}-1\right]^{1 / 2} \\
+&\approx \omega \sqrt{\frac{\epsilon \mu}{2}}\left[1+\frac{1}{2}\left(\frac{\sigma}{\epsilon \omega}\right)^{2}-1\right]^{1 / 2}\\
+\text{ Then }\quad
+\kappa &\approx \omega \sqrt{\frac{\epsilon \mu}{2} \frac{1}{\sqrt{2}} \frac{\sigma}{\epsilon \omega}}=\frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}}\\
+\text{ So }\quad
+d&=\frac{1}{\kappa} \cong \frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}}
+\end{align*}
 \subsection{ Skin depth in a good conductor:}
-For good conductor
-$$
-\sigma \gg \omega \epsilon
-$$
-$$
-\begin{aligned}
+\begin{align*}
+\text{For good }&\text{conductor}\\
+&\sigma \gg \omega \epsilon\\
 \kappa & \equiv \omega \sqrt{\frac{\epsilon \mu}{2}}\left[\sqrt{\left.1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}-1\right]^{1 / 2}}\right.\\
-& \approx \omega \sqrt{\frac{\epsilon \mu}{2}\left(\frac{\sigma}{\epsilon \omega}\right)^{1 / 2}} \approx \sqrt{\frac{\mu \sigma \omega}{2}}
-\end{aligned}
-$$
-So for a good conductor
-$$
-d \cong \sqrt{\frac{2}{\mu \sigma \omega}}
-$$
-For good conductor as $\sigma \gg \omega \epsilon$ so, you can see
-$$
-k \cong \kappa
-$$
-or
-$$
-\lambda=\frac{2 \pi}{k} \cong \frac{2 \pi}{\kappa}=2 \pi d, \text { or } d=\frac{\lambda}{2 \pi}
-$$
-\textbf{Phase shift}\\
-Like any complex number, $\tilde{k}$ can be expressed in terms of its modulus and phase:
-$$
-\tilde{k}=K e^{i \phi},
-$$
-$$\begin{gathered}
-K \equiv|\tilde{k}|=\sqrt{k_{real}^{2}+k_{img}^{2}}=\omega \sqrt{\epsilon \mu \sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}} \\
-\phi \equiv \tan ^{-1}(k_{img} / k_{real})
-\end{gathered}$$
- The complex amplitudes $\tilde{E}_{0}=E_{0} e^{i \delta_{E}}$ and $\tilde{B}_{0}=B_{0} e^{i \delta_{B}}$ are related by
-$$
-B_{0} e^{i \delta_{B}}=\frac{K e^{i \phi}}{\omega} E_{0} e^{i \delta_{E}}
-$$
-Evidently the electric and magnetic fields are no longer in phase; in fact,
-$$
-\delta_{B}-\delta_{E}=\phi
-$$
-the magnetic field lags behind the electric fleld. Meanwhile, the (real) amplitudes of $\mathbf{E}$ and B are related by
-$$
-\frac{B_{0}}{E_{0}}=\frac{K}{\omega}=\sqrt{\epsilon \mu \sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}} .
-$$
-The (real) electric and magnetic fields are, finally,
-$$
-\left.\frac{\mathbf{E}(z, t)=E_{0} e^{-\kappa z} \cos \left(k z-\omega t+\delta_{E}\right) \hat{\mathbf{x}},}{\mathbf{B}(z, t)=B_{0} e^{-\kappa z} \cos \left(k z-\omega t+\delta_{E}+\phi\right) \hat{\mathbf{y}}}\right\}$$
+& \approx \omega \sqrt{\frac{\epsilon \mu}{2}\left(\frac{\sigma}{\epsilon \omega}\right)^{1 / 2}} \approx \sqrt{\frac{\mu \sigma \omega}{2}}\\
+\text{ So for a good  }&\text{conductor}\\
+d \cong \sqrt{\frac{2}{\mu \sigma \omega}}\\
+\text{For good conductor as }&\text{$\sigma \gg \omega \epsilon$ so, you can see}\\
+k \cong \kappa\\
+\text{ or }
+\lambda&=\frac{2 \pi}{k} \cong \frac{2 \pi}{\kappa}=2 \pi d, \text { or } d=\frac{\lambda}{2 \pi}
+\end{align*}
+\textbf{Phase shift}
+\begin{align*}
+\text{Like any complex number, $\tilde{k}$ }&\text{can be expressed in terms of its modulus and phase:}\\
+\tilde{k}&=K e^{i \phi},\\
+K \equiv|\tilde{k}|&=\sqrt{k_{real}^{2}+k_{img}^{2}}=\omega \sqrt{\epsilon \mu \sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}} \\
+\phi &\equiv \tan ^{-1}(k_{img} / k_{real})\\
+\text{The complex amplitudes }\tilde{E}_{0}&=E_{0} e^{i \delta_{E}}\text{ and} \tilde{B}_{0}=B_{0} e^{i \delta_{B}}\text{ are related by }\\
+B_{0} e^{i \delta_{B}}&=\frac{K e^{i \phi}}{\omega} E_{0} e^{i \delta_{E}}\\
+\text{Evidently the electric and }&\text{magnetic fields are no longer in phase; in fact,}\\
+\delta_{B}-\delta_{E}&=\phi\\
+\text{the magnetic field lags behind }&\text{the electric fleld. Meanwhile, the (real) amplitudes of $\mathbf{E}$ and B are related by}\\
+\frac{B_{0}}{E_{0}}&=\frac{K}{\omega}=\sqrt{\epsilon \mu \sqrt{1+\left(\frac{\sigma}{\epsilon \omega}\right)^{2}}} .\\
+\text{The (real) electric and }&\text{magnetic fields are, finally,}\\
+&\left.\frac{\mathbf{E}(z, t)=E_{0} e^{-\kappa z} \cos \left(k z-\omega t+\delta_{E}\right) \hat{\mathbf{x}},}{\mathbf{B}(z, t)=B_{0} e^{-\kappa z} \cos \left(k z-\omega t+\delta_{E}+\phi\right) \hat{\mathbf{y}}}\right\}
+\end{align*}
 \begin{exercise}
  (a) Find the skin depth of pure water. You are given that for pure water conductivity $\sigma=1 /\left(2.5 \times 10^{5}\right)$, dielectric constant $k=80.1$ and $\mu \approx \mu_{0}$.\\
  (b) Find the skin depth (in nanometers) for a typical metal whose conductivity $\sigma \approx 10^{7}$, the frequency $\omega \approx 10^{15}$ with $\epsilon \approx \epsilon_{0}$ and $\mu \approx \mu_{0}$.
 \end{exercise}
 \begin{answer}
- (a) Conductivity shows that the water is a poor conductor. Hence we will take approximation $d=\frac{1}{\kappa} \cong$ $\frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}} .$
-$$
-d=(2)\left(2.5 \times 10^{5}\right) \sqrt{\frac{(80.1)\left(8.85 \times 10^{-12}\right)}{4 \pi \times 10^{-7}}}=1.19 \times 10^{4} \mathrm{~m}
-$$
-(b) We have proved that for good conductor $d \approx \sqrt{\frac{2}{\mu \sigma \omega}}$. Put the values to get
-$$
-d=\frac{1}{8 \times 10^{7}}=1.3 \times 10^{-8}=13 \mathrm{~nm}
-$$
-So the fields do not penetrate far into a metal	
+	\begin{align*}
+\text{	 (a) Conductivity shows that the water}&\text{ is a poor conductor. Hence we will take approximation }\\
+	 &=\frac{1}{\kappa} \cong \frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}} .\\
+	d&=(2)\left(2.5 \times 10^{5}\right) \sqrt{\frac{(80.1)\left(8.85 \times 10^{-12}\right)}{4 \pi \times 10^{-7}}}=1.19 \times 10^{4} \mathrm{~m}\\
+\text{	(b) We have proved that for good }&\text{conductor $d \approx \sqrt{\frac{2}{\mu \sigma \omega}}$. Put the values to get}\\
+	d&=\frac{1}{8 \times 10^{7}}=1.3 \times 10^{-8}=13 \mathrm{~nm}\\
+\text{	So the fields do not}&\text{ penetrate far into a metal}	
+	\end{align*}
 \end{answer}
 \subsection{Reflection at a conducting surface}
-Boundary conditions used to solve em waves at the conductor involves $\rho_f$ and $K_f$\\
-(i) $\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=\sigma_{f}$,\\
-(iii) $\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0$,\\
-(ii) $B_{1}^{\perp}-B_{2}^{\perp}=0$,\\
-(iv) $\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=\mathbf{K}_{f} \times \hat{\mathbf{n}}$,\\
+Boundary conditions used to solve em waves at the conductor involves $\rho_f$ and $K_f$
+\begin{align*}
+\text{(i)}\quad&\epsilon_{1} E_{1}^{\perp}-\epsilon_{2} E_{2}^{\perp}=\sigma_{f},\\
+\text{(ii)}\quad&\mathbf{E}_{1}^{\|}-\mathbf{E}_{2}^{\|}=0,\\
+\text{(iii)}\quad&B_{1}^{\perp}-B_{2}^{\perp}=0,\\
+\text{(iv)}\quad&\frac{1}{\mu_{1}} \mathbf{B}_{1}^{\|}-\frac{1}{\mu_{2}} \mathbf{B}_{2}^{\|}=\mathbf{K}_{f} \times \hat{\mathbf{n}},
+\end{align*}
 Suppose that xy plane forms a boundary between a non conducting non linear medium 1 and a conductor 2.A monochromatic plane wave travelling in the z direction and polarized in the x direction ,approches from the left as shown in figure.\\
 \begin{figure}[H]
 	\centering
@@ -623,126 +599,118 @@ $$ \quad \tilde{\mathbf{B}}_{R}(z, t)=-\frac{1}{v_{1}} \tilde{E}_{0_{R}} e^{i\le
 $$\tilde{\mathbf{E}}_{T}(z, t)=\tilde{E}_{0_{T}} e^{i\left(\tilde{k}_{2} z-\omega t\right)} \hat{\mathbf{x}}$$
 $$ \quad \tilde{\mathbf{B}}_{T}(z, t)=\frac{\tilde{k}_{2}}{\omega} \tilde{E}_{0_{T}} e^{i\left(\tilde{k}_{2} z-\omega t\right)} \hat{\mathbf{y}}$$
 Transmitted wave will get attinuated while entering the conducting material.\\
-Now consider the boundary conditions one by one.\\
-(i) Gives $\sigma_{f}=0$ because there will be no perpendicular component of elctric field in two media($E^{\perp}$)=0\\
-(ii)yields $B^{\perp}=0$\\
-(iii) gives $$\tilde{E}_{0_{1}}+\tilde{E}_{0_{R}}=\tilde{E}_{0_{\tau}}$$
-(iv) gives $$\begin{gathered}
-\frac{1}{\mu_{1} v_{1}}\left(\tilde{E}_{0_{l}}-\tilde{E}_{0_{R}}\right)-\frac{\tilde{k}_{2}}{\mu_{2} \omega} \tilde{E}_{0_{T}}=0, \\
-\tilde{E}_{0_{I}}-\tilde{E}_{0_{R}}=\tilde{\beta} \tilde{E}_{0_{T}}, \\
-\tilde{\beta} \equiv \frac{\mu_{1} v_{1}}{\mu_{2} \omega} \tilde{k}_{2} .
-\end{gathered}$$
-It follows that
-$$
-\tilde{E}_{0_{R}}=\left(\frac{1-\tilde{\beta}}{1+\tilde{\beta}}\right) \tilde{E}_{0_{l}}, \quad \tilde{E}_{0_{T}}=\left(\frac{2}{1+\tilde{\beta}}\right) \tilde{E}_{0_{l}} .
-$$
-For a perfect conductor ($\sigma=\inf$),$k_2=\infty$ so $\beta$ is finite and \\
-$$E_{0_R}=-E_{0_I}, \quad E_{0_T}=0$$
-In this case the wave is totally reflected with a $180^{\circ}$ phase shift.That is why excellent conductors make good mirrors.
+Now consider the boundary conditions one by one.
+\begin{align*}
+\text{(i) Gives $\sigma_{f}=0$}&\text{ because there will be no perpendicular component of elctric field in two media($E^{\perp}$)=0}\\
+\text{(ii)yields }B^{\perp}&=0\\
+\text{(iii) gives }\tilde{E}_{0_{1}}+\tilde{E}_{0_{R}}&=\tilde{E}_{0_{\tau}}\\
+\text{(iv) gives }\frac{1}{\mu_{1} v_{1}}\left(\tilde{E}_{0_{l}}-\tilde{E}_{0_{R}}\right)&-\frac{\tilde{k}_{2}}{\mu_{2} \omega} \tilde{E}_{0_{T}}=0, \\
+\tilde{E}_{0_{I}}-\tilde{E}_{0_{R}}&=\tilde{\beta} \tilde{E}_{0_{T}}, \\
+\tilde{\beta} &\equiv \frac{\mu_{1} v_{1}}{\mu_{2} \omega} \tilde{k}_{2} .\\
+\text{It follows that }
+\tilde{E}_{0_{R}}&=\left(\frac{1-\tilde{\beta}}{1+\tilde{\beta}}\right) \tilde{E}_{0_{l}}, \quad \tilde{E}_{0_{T}}=\left(\frac{2}{1+\tilde{\beta}}\right) \tilde{E}_{0_{l}} .\\
+\text{For a perfect }&\text{conductor ($\sigma=\inf$), $k_2=\infty$ so $\beta$ is finite and }\\
+E_{0_R}&=-E_{0_I}, \quad E_{0_T}=0\\
+\intertext{In this case the wave is totally reflected with a $180^{\circ}$ phase shift.That is why excellent conductors make good mirrors.}
+\end{align*}
 \section{Guided waves}
 Untill now we have dealt with plane wave of infinite extent;Now we consider the em waves confines to the interior of a hollow pipe or wave guide.We will assume the wave guide is perfect conductor. so that E=0 and B=0 inside the material itself.Hence the boundary conditions at the boundary wall are\\
 $$ (i) \quad  E^{\parallel}=0$$ 
 $$ (ii) \quad B^{\perp}=0$$
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=8cm]{wave guide 2-crop}
+	\includegraphics[height=5cm,width=6.5cm]{wave guide 2-crop}
 	\caption{}
 	\label{}
 \end{figure}
-Let us take the medium is restricted by $x$ and $y$ and the wave is propagating along $z$ direction.So E and B has the generic form.\\
-$$(i) \tilde{\mathbf{E}}(x, y, z, t)=\tilde{\mathbf{E}}_{0}(x, y) e^{i(k z-\omega t)}$$
-$$(ii) \tilde{\mathbf{B}}(x, y, z, t)=\tilde{\mathbf{B}}_{0}(x, y) e^{i(k z-\omega t)}$$
-The maxwell's equation in the interior of the waveguide\\
-$$(i) \boldsymbol{\nabla} \cdot \mathbf{E}=0$$
-$$(ii)\boldsymbol{\nabla} \cdot \mathbf{B}=0$$
-$$(iii) \nabla \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$$
-$$(iv) \boldsymbol{\nabla} \times \mathbf{B}=\frac{1}{c^{2}} \frac{\partial \mathbf{E}}{\partial t}$$
- Boundary conditions and the Maxwell's equations gives \\
-$$ (i) \left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] E_{z}=0$$ and\\
-$$ (ii) \left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] B_{z}=0$$
-If $E_{z}=0$, we call these TE (transverse electric") waves; if $B_{z}=0$, they are called TM ("transverse magnetic") waves; if both $\mathrm{E}_{\mathrm{z}}=0$ and $\mathrm{B}_{\mathrm{z}}=0$, we call them TEM waves. You can prove that TEM waves can't occur in hollow rectangular wave guide.\\
-\begin{center}
- TE, mode $\Rightarrow F_{z}=0 \quad B_{z}=$ exist\\
-$\mathrm{TM}$ mode $\Rightarrow E_{z}=$ exist $B_{z}=0$\\
-TEM mode $\Rightarrow E_{z}=B_{z}=0$\\	
-\end{center}
+Let us take the medium is restricted by $x$ and $y$ and the wave is propagating along $z$ direction.So E and B has the generic form.
+\begin{align*}
+(i) \tilde{\mathbf{E}}(x, y, z, t)&=\tilde{\mathbf{E}}_{0}(x, y) e^{i(k z-\omega t)}\\
+(ii) \tilde{\mathbf{B}}(x, y, z, t)&=\tilde{\mathbf{B}}_{0}(x, y) e^{i(k z-\omega t)}\\
+\text{The maxwell's equation}&\text{ in the interior of the waveguide}\\
+(i) \boldsymbol{\nabla} \cdot \mathbf{E}&=0\\
+(ii)\boldsymbol{\nabla} \cdot \mathbf{B}&=0\\
+(iii) \nabla \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}\\
+(iv) \boldsymbol{\nabla} \times \mathbf{B}&=\frac{1}{c^{2}} \frac{\partial \mathbf{E}}{\partial t}\\
+\text{Boundary conditions }&\text{and the Maxwell's equations gives }\\
+ (i) \left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] E_{z}&=0\text{ and}\\
+(ii) \left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] B_{z}&=0
+\end{align*}
+If $E_{z}=0$, we call these TE (transverse electric") waves; if $B_{z}=0$, they are called TM ("transverse magnetic") waves; if both $\mathrm{E}_{\mathrm{z}}=0$ and $\mathrm{B}_{\mathrm{z}}=0$, we call them TEM waves. You can prove that TEM waves can't occur in hollow rectangular wave guide.
+\begin{align*}
+\text{ TE, mode }\Rightarrow F_{z}&=0 \quad B_{z}=\text{ exist}\\
+\mathrm{TM}\text{ mode }\Rightarrow E_{z}&=\text{ exist }B_{z}=0\\
+\text{TEM mode }\Rightarrow E_{z}&=B_{z}=0
+\end{align*}
 \subsection{ TE Waves in a Rectangular Wave Guide}
-We need the solution of
-$$\text { (ii) }\left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] B_{z}=0$$
-Take $$
-B_{z}(x, y)=X(x) Y(y)
-$$
-and do the separation of variable. You get the solution
-$$
-B_{z}=B_{0} \cos (m \pi x / a) \cos (n \pi y / b)
-$$
-with the dispersion relation
-$$k=\sqrt{(\omega / c)^{2}-\pi^{2}\left[(m / a)^{2}+(n / b)^{2}\right]}$$
-Define
-$$
-\omega_{m n}=c \pi \sqrt{(m / a)^{2}+(n / b)^{2}}
-$$
-Now you see if
-$$
+\begin{align*}
+\text{We need the }&\text{solution of}\\
+\text { (ii) }&\left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] B_{z}=0\\
+\text{Take }
+B_{z}(x, y)&=X(x) Y(y)\\
+\text{and do the separation of variable. }&\text{You get the solution}\\
+B_{z}&=B_{0} \cos (m \pi x / a) \cos (n \pi y / b)\\
+\text{with the dispersion}&\text{ relation }\\
+k&=\sqrt{(\omega / c)^{2}-\pi^{2}\left[(m / a)^{2}+(n / b)^{2}\right]}\\
+\text{Define }
+\omega_{m n}&=c \pi \sqrt{(m / a)^{2}+(n / b)^{2}}\\
+\text{Now you see if }\\
 \omega<\omega_{m n}
-$$
-the wave number is imaginary, and instead of a traveling wave we have exponentially attenuated wave which will rapidly absorbed in the medium. $\omega_{m n}$ is called the cut off frequency for a particular mode $T E_{m n}$. You should remember that $\omega$ is angular frequency, not frequency.\\
-In terms of frequency
-$$
-\nu_{m n}=\frac{c}{2} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}}
-$$
-The lowest mode is TE $_{10}$ (usually among $a$ and $b$ the larger is taken to be $a$.
-$$\omega_{10}=c \pi / a$$
-\textbf{Group and phase velocity}\\
-Phase velocity is greater than C.\\
-$$v_{p}=\frac{\omega}{k}=\frac{c}{\sqrt{1-\left(\omega_{m n} / \omega\right)^{2}}}$$
-The group velocity
-$$
-v_{g}=\frac{1}{d k / d \omega}=c \sqrt{1-\left(\omega_{m n} / \omega\right)^{2}}<c
-$$
+\intertext{the wave number is imaginary, and instead of a traveling wave we have exponentially attenuated wave which will rapidly absorbed in the medium. $\omega_{m n}$ is called the cut off frequency for a particular mode $T E_{m n}$. You should remember that $\omega$ is angular frequency, not frequency.}
+\text{ In terms of  }&\text{frequency}\\
+\nu_{m n}&=\frac{c}{2} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}}\\
+\text{The lowest mode is TE $_{10}$ }&\text{(usually among $a$ and $b$ the larger is taken to be $a$.}\\
+\omega_{10}&=c \pi / a
+\end{align*}
+\textbf{Group and phase velocity}
+\begin{align*}
+\text{Phase velocity is}&\text{ greater than C.}\\
+v_{p}&=\frac{\omega}{k}=\frac{c}{\sqrt{1-\left(\omega_{m n} / \omega\right)^{2}}}\\
+\text{The group  }&\text{velocity}\\
+v_{g}&=\frac{1}{d k / d \omega}=c \sqrt{1-\left(\omega_{m n} / \omega\right)^{2}}<c
+\end{align*}
 \subsection{ TM Waves in a Rectangular Wave Guide}
-$$\left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] E_{z}=0$$
-Has the soltion of the form.
-$$E_{z}=E_{0} \sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)$$
+\begin{align*}
+\left[\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+(\omega / c)^{2}-k^{2}\right] E_{z}&=0\\
+\text{Has the soltion of the form.}&\\
+E_{z}=E_{0} \sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)&
+\end{align*}
 if either of the $m$ and $n$ is zero the solution itself is zero. So the lowest frequency mode is for TM wave in rectangular wave guide is $T E_{11}$.\\
 \section{Resonant cavity}
 Resonant cavity produced by closing off the two ends of a rectangular wave guide, at $z=0$ and at $z=d$, making a perfectly conducting empty box.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=8cm]{resonant-crop}
+	\includegraphics[height=5cm,width=7cm]{resonant-crop}
 	\caption{}
 	\label{}
 \end{figure}
 We can prove that the cut off frequencies for both $\mathrm{TE}$ and TM modes in a resonance cavity are given by
-$$\begin{gathered}
-\omega_{l m n}=c \pi \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}} \\
-\nu_{l m n}=\frac{c}{2} \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}}
-\end{gathered}$$
+\begin{align*}
+\omega_{l m n}&=c \pi \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}} \\
+\nu_{l m n}&=\frac{c}{2} \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}}
+\end{align*}
 \begin{exercise}
 	 What should be the 3rd dimension of a cavity of cross section $1 \mathrm{~cm} \times 1 \mathrm{~cm}$ which operates at $T E_{103}$ mode at $24 \mathrm{GHz} ? ?$
 \end{exercise}
 \begin{answer}
-Solution: $l=1, m=0, n=3$. use
-$$
-\nu_{103}=24 \times 10^{9} ; \quad a=0.01, b=0.01, c=?
-$$
-use the formula of $\nu_{l m n}$ to get
-$$\nu_{l m n}=\frac{c}{2} \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}}$$
-$$
-\left(\frac{24 \times 2 \times 10^{9}}{3 \times 10^{8}}\right)^{2}=\left(\frac{1}{0.01}\right)^{2}+0+\left(\frac{3}{c}\right)^{2}
-$$
-$$c=0.02$$	
+	\begin{align*}
+ l&=1, m=0, n=3\text{. use}\\
+	\nu_{103}&=24 \times 10^{9} ; \quad a=0.01, b=0.01, c=?\\
+\text{	use the formula }&\text{of $\nu_{l m n}$ to get}\\
+	\nu_{l m n}&=\frac{c}{2} \sqrt{(l / d)^{2}+(m / a)^{2}+(n / b)^{2}}\\
+	\left(\frac{24 \times 2 \times 10^{9}}{3 \times 10^{8}}\right)^{2}&=\left(\frac{1}{0.01}\right)^{2}+0+\left(\frac{3}{c}\right)^{2}\\
+	c&=0.02	
+	\end{align*}
 \end{answer}
 \section{ Dielectric inserted into waveguide}
 When there is a dielectric / magnetic medium inside of a dielectric instead of vacuum, just replace $c$ by $\frac{1}{\sqrt{\epsilon \mu}}$
-$$\nu_{m n}=\frac{1}{2 \sqrt{\epsilon \mu}} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}}$$
-For most of the material $\mu \approx \mu_{0}$, so then
-$$
-\begin{aligned}
+\begin{align*}
+\nu_{m n}&=\frac{1}{2 \sqrt{\epsilon \mu}} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}}\\
+\text{For most of the }&\text{material }\mu \approx \mu_{0}\text{, so then}\\
 \nu_{m n} &=\frac{1}{2 \sqrt{\epsilon_{r}} \epsilon_{0} \mu_{0}} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}} \\
 &=\frac{c}{2 \sqrt{\epsilon_{r}}} \sqrt{\left(\frac{m}{a}\right)^{2}+\left(\frac{n}{b}\right)^{2}}
-\end{aligned}
-$$
+\end{align*}
+
 \begin{exercise}
  For a air filled wave guide. the cut off frequency $T E_{0}=1.8756 \mathrm{GHz}$. What will be the cut off frequency if one dielectric of relative permeability $\epsilon=9 \epsilon_{0}$ is inserted in the dielectric?
 \end{exercise}
@@ -776,7 +744,7 @@ $$
 	\exyear{NET JUNE 2011}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20211011(7)-crop}
+		\includegraphics[height=2cm,width=3.5cm]{diagram-20211011(7)-crop}
 	\end{figure}
 \end{minipage}
 $\text { A. The dimensions of the waveguide are }$
@@ -792,10 +760,10 @@ $\text { A. The dimensions of the waveguide are }$
 	\exyear{NET JUNE 2012}
 \end{minipage}
 \begin{tasks}(2)
-	\task[\textbf{A.}]does not change
-	\task[\textbf{B.}]changes by $3 \pi / 2$
-	\task[\textbf{C.}]changes by $\pi / 2$
-	\task[\textbf{D.}]changes by $\pi$
+	\task[\textbf{A.}]Does not change
+	\task[\textbf{B.}]Changes by $3 \pi / 2$
+	\task[\textbf{C.}]Changes by $\pi / 2$
+	\task[\textbf{D.}]Changes by $\pi$
 \end{tasks}
 
 \begin{minipage}{\textwidth}
@@ -826,7 +794,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item A beam of light of frequency $\omega$ is reflected from a dielectric-metal interface at normal incidence. The refractive index of the dielectric medium is $n$ and that of the metal is $n_{2}=n(1+i \rho)$. If the beam is polarised parallel to the interface, then the phase change experienced by the light upon reflection is
 	\exyear{NET JUNE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\tan (2 / \rho)$ 
 	\task[\textbf{B.}]$\tan ^{-1}(1 / \rho)$
 	\task[\textbf{C.}]$\tan ^{-1}(2 / \rho)$
@@ -836,7 +804,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item An electromagnetically-shielded room is designed so that at a frequency $\omega=10^{7} \mathrm{rad} / \mathrm{s}$ the intensity of the external radiation that penetrates the room is $1 \%$ of the incident radiation. If $\sigma=\frac{1}{2 \pi} \times 10^{6}(\Omega m)^{-1}$ is the conductivity of the shielding material, its minimum thickness should be (given that $\ln 10=2.3$ )
 	\exyear{NET JUNE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $4.60 \mathrm{~mm}$
 	\task[\textbf{B.}]$2.30 \mathrm{~mm}$
 	\task[\textbf{C.}] $0.23 \mathrm{~mm}$
@@ -846,7 +814,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item A plane electromagnetic wave incident normally on the surface of a material is partially reflected. Measurements on the standing wave in the region in front of the interface such that the ratio of the electric field amplitude at the maxima and the minima is 5 . The ratio of the reflected intensity to the incident intensity is
 	\exyear{NET JUNE 2014}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $4 / 9$
 	\task[\textbf{B.}] $2 / 3$
 	\task[\textbf{C.}]$2 / 5$
@@ -883,7 +851,7 @@ $\text { A. The dimensions of the waveguide are }$
 	where $\omega, k_{1}$ and $k_{2}$ are positive constants. The average energy flow in the $x$-direction is
 	\exyear{NET JUNE 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{E_{0}^{2} k_{2}}{2 \mu_{0} \omega} e^{-2 k_{1} z}$
 	\task[\textbf{B.}]$\frac{E_{0}^{2} k_{2}}{\mu_{0} \omega} e^{-2 k_{1} z}$
 	\task[\textbf{C.}]$\frac{E_{0}^{2} k_{1}}{2 \mu_{0} \omega} e^{-2 k_{1} z}$
@@ -898,7 +866,7 @@ $\text { A. The dimensions of the waveguide are }$
 	with the boundary condition $\psi(\pm a, y)=\psi(x, \pm a)=0$. The frequency $\omega$ of the lowest mode is given by
 	\exyear{NET JUNE 2016}
 \end{minipage}
-\begin{tasks}(1)
+\begin{tasks}(2)
 	\task[\textbf{A.}] $\omega^{2}=c^{2}\left(k^{2}+\frac{4 \pi^{2}}{a^{2}}\right)$
 	\task[\textbf{B.}]$\omega^{2}=c^{2}\left(k^{2}+\frac{\pi^{2}}{a^{2}}\right)$
 	\task[\textbf{C.}]$\omega^{2}=c^{2}\left(k^{2}+\frac{\pi^{2}}{2 a^{2}}\right)$
@@ -908,7 +876,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item An electromagnetic wave (of wavelength $\lambda_{0}$ in free space) travels through an absorbing medium with dielectric permittivity given by $\varepsilon=\varepsilon_{R}+i \varepsilon_{I}$ where $\frac{\varepsilon_{I}}{\varepsilon_{R}}=\sqrt{3}$. If the skin depth is $\frac{\lambda_{0}}{4 \pi}$, the ratio of the amplitude of electric field $E$ to that of the magnetic field $B$, in the medium (in ohms) is
 	\exyear{NET JUNE 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $120 \pi$
 	\task[\textbf{B.}]377
 	\task[\textbf{C.}]$30 \sqrt{2} \pi$
@@ -922,7 +890,7 @@ $\text { A. The dimensions of the waveguide are }$
 	The average power (per unit area) crossing planes parallel to $4 x+3 y=0$ will be
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{4}{5} \varepsilon_{0} c E_{0}^{2}$
 	\task[\textbf{B.}]$\varepsilon_{0} c E_{0}^{2}$
 	\task[\textbf{C.}]$\frac{1}{2} \varepsilon_{0} c E_{0}^{2}$
@@ -934,7 +902,7 @@ $\text { A. The dimensions of the waveguide are }$
 	The angles of reflection and refraction are, respectively,
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $45^{\circ}$ and $60^{\circ}$
 	\task[\textbf{B.}]$30^{\circ}$ and $90^{\circ}$
 	\task[\textbf{C.}]$30^{\circ}$ and $60^{\circ}$
@@ -959,7 +927,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item A hollow waveguide supports transverse electric $(T E)$ modes with the dispersion relation $k=\frac{1}{c} \sqrt{\omega^{2}-\omega_{m n}^{2}}$, where $\omega_{m n}$ is the mode frequency. The speed of flow of electromagnetic energy at the mode frequency is
 	\exyear{NET JUNE 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $c$
 	\task[\textbf{B.}] $\omega_{m n} / k$
 	\task[\textbf{C.}]0
@@ -973,7 +941,7 @@ $\text { A. The dimensions of the waveguide are }$
 	where $\omega$ is angular frequency of the source. The total power radiated (averaged over a cycle) is
 	\exyear{NET JUNE 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{2 \pi}{3} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
 	\task[\textbf{B.}]$\frac{4 \pi}{3} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
 	\task[\textbf{C.}]$\frac{4}{3 \pi} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
@@ -997,7 +965,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item Electromagnetic wave of angular frequency $\omega$ is propagating in a medium in which, over a band of frequencies the refractive index is $n(\omega) \approx 1-\left(\frac{\omega}{\omega_{0}}\right)^{2}$, where $\omega_{0}$ is a constant. The ratio $\frac{v_{g}}{v_{p}}$ of the group velocity to the phase velocity at $\omega=\frac{\omega_{0}}{2}$ is
 	\exyear{NET DEC 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] 3
 	\task[\textbf{B.}]$\frac{1}{4}$
 	\task[\textbf{C.}]$\frac{2}{3}$
@@ -1080,7 +1048,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item The space-time dependence of the electric field of a linearly polarized light in free space is given by $\hat{x} E_{0} \cos (\omega t-k z)$ where $E_{0}, \omega$ and $k$ are the amplitude, the angular frequency and the wavevector, respectively. The time average energy density associated with the electric field is
 	\exyear{GATE 2012}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{1}{4} \varepsilon_{0} E_{0}^{2}$
 	\task[\textbf{B.}]$\frac{1}{2} \varepsilon_{0} E_{0}^{2}$
 	\task[\textbf{C.}]$\varepsilon_{0} E_{0}^{2}$
@@ -1090,8 +1058,8 @@ $\text { A. The dimensions of the waveguide are }$
 	\item A plane electromagnetic wave traveling in free space is incident normally on a glass plate of refractive index $3 / 2 .$ If there is no absorption by the glass, its reflectivity is
 	\exyear{GATE 2012}
 \end{minipage}
-\begin{tasks}(2)
-	\task[\textbf{A.}](a) $4 \%$
+\begin{tasks}(4)
+	\task[\textbf{A.}] $4 \%$
 	\task[\textbf{B.}] $16 \%$
 	\task[\textbf{C.}]$20 \%$
 	\task[\textbf{D.}]$50 \%$
@@ -1110,7 +1078,7 @@ $\text { A. The dimensions of the waveguide are }$
 	\item A monochromatic plane wave at oblique incidence undergoes reflection at a dielectric interface. If $\hat{k}_{i}, \hat{k}_{r}$ and $\hat{n}$ are the unit vectors in the directions of incident wave, reflected wave and the normal to the surface respectively, which one of the following expressions is correct?
 	\exyear{GATE 2013}
 \end{minipage}
-\begin{tasks}(1)
+\begin{tasks}(2)
 	\task[\textbf{A.}] $\left(\hat{k}_{i}-\hat{k}_{r}\right) \times \hat{n} \neq 0$
 	\task[\textbf{B.}]$\left(\hat{k}_{i}-\hat{k}_{r}\right) \cdot \hat{n}=0$
 	\task[\textbf{C.}]$\left(\hat{k}_{i} \times \hat{n}\right) \cdot \hat{k}_{r}=0$
