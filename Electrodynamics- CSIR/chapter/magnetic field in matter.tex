@@ -2,7 +2,7 @@
 \section{Magnetization}
 \begin{wrapfigure}{r}{0.3\textwidth}
 	\begin{center}
-		\includegraphics[width=0.28\textwidth]{magnetic moment}
+		\includegraphics[width=0.26\textwidth]{magnetic moment}
 	\end{center}
 	\caption{magnetic dipole moment}
 \end{wrapfigure}
@@ -18,47 +18,45 @@ The magnetization  plays a role analogous to the polarization ${P}$ in electrost
 \subsection{Surface and Volume current}
 Suppose we have a piece of magnetized material the magnetic dipole moment per unit volume, ${M}$, is given.The vector potential of a single dipole ${m}$ is given by, (We don't do derivation here).
 \begin{align*}
-\vec{\mathrm{A}}(\mathrm{r})&=\frac{\mu_{0}}{4 \pi} \int \frac{1}{r}\left[\nabla^{\prime} \times \mathrm{M}\left(\mathrm{r}^{\prime}\right)\right] \mathrm{d} \tau^{\prime}+\frac{\mu_{0}}{4 \pi} \oint \frac{1}{\mathrm{r}}\left[\vec{\mathrm{M}}\left(\mathrm{r}^{\prime}\right) \times \vec{\mathrm{d}} \mathrm{a}^{\prime}\right]
-\intertext{The first term looks like the potential of a volume current density,}
-{J}_{M}&=\nabla \times {M},
-\intertext{While the second term looks like the potential of a surface current density,}
-{K}_{M}&={M} \times \hat{n}
-\intertext{Where $\hat{n}$ is the normal unit vector. With these definitions,}
+\vec{\mathrm{A}}(\mathrm{r})&=\frac{\mu_{0}}{4 \pi} \int \frac{1}{r}\left[\nabla^{\prime} \times \mathrm{M}\left(\mathrm{r}^{\prime}\right)\right] \mathrm{d} \tau^{\prime}+\frac{\mu_{0}}{4 \pi} \oint \frac{1}{\mathrm{r}}\left[\vec{\mathrm{M}}\left(\mathrm{r}^{\prime}\right) \times \vec{\mathrm{d}} \mathrm{a}^{\prime}\right]\\
+\text{The first term }&\text{looks like the potential of a volume current density,}\\
+{J}_{M}&=\nabla \times {M},\\
+\text{While the second }&\text{term looks like the potential of a surface current density,}\\
+{K}_{M}&={M} \times \hat{n}\\
+\text{Where $\hat{n}$ is }&\text{the normal unit vector. With these definitions,}\\
 \vec{A}({r})&=\frac{\mu_{0}}{4 \pi}\left\{\int \frac{{J}_{M}\left({r}^{\prime}\right)}{r} d\tau^{\prime}+\oint \frac{{K}_{M}\left({r}^{\prime}\right)}{r} \vec{d a^{\prime}}\right\}
 \end{align*}
 \subsection{Auxiliary Field}
 There are both free and bound current in a magnetic material. So the total current ${J}$ could be written as
 \begin{align*}
-\vec{J}&=\mathrm{J}_{\mathrm{b}}+\mathrm{J}_{\mathrm{f}}
-\intertext{Where ${J}_{b}$ is bound and ${J}_{f}$ is the free current.}
-\intertext{According to Ampere's law,}
+\vec{J}&=\mathrm{J}_{\mathrm{b}}+\mathrm{J}_{\mathrm{f}}\\
+\text{Where ${J}_{b}$ is bound and }&\text{${J}_{f}$ is the free current.}\\
+\text{According to Ampere's }&\text{law,}\\
 \oint \vec{\mathrm{B}} \cdot \mathrm{d} \vec{l}&=\mu_{0} \mathrm{I}_{\mathrm{enc}} \\
-\vec{\nabla} \times \vec{\mathrm{B}}&=\mu_{0} \vec{\mathrm{J}}
-\intertext{ Let us substitute the value of $J_b$}
+\vec{\nabla} \times \vec{\mathrm{B}}&=\mu_{0} \vec{\mathrm{J}}\\
+\text{ Let us substitute the }&\text{value of $J_b$}\\
 \vec{\mathrm{J}}_{\mathrm{b}}&=\vec{\nabla} \times \vec{\mathrm{M}} \\
 \frac{1}{\mu_{0}}(\vec{\nabla} \times \vec{\mathrm{B}})&=\vec{\mathrm{J}}\\&=\vec{\mathrm{J}}_{\mathrm{f}}+\vec{\mathrm{J}}_{\mathrm{b}}\\&=\vec{\mathrm{J}}_{\mathrm{f}}+(\vec{\nabla} \times \vec{\mathrm{M}}) \\
-\vec{\nabla} \times\left(\frac{1}{\mu_{0}} \vec{\mathrm{B}}-\vec{\mathrm{M}}\right)&=\vec{\mathrm{J}_{\mathrm{f}}}
-\intertext{Now, define the quantity inside the curl as ${H}$}
-\vec{\mathrm{H}} &\equiv \frac{1}{\mu_{0}} \vec{\mathrm{B}}-\vec{\mathrm{M}}
-\intertext{So now the equation becomes}
-\vec{\nabla} \times \overrightarrow{\mathrm{H}}&=\overrightarrow{\mathrm{J}}_{\mathrm{f}}
-\intertext{Or in integral terms,}
+\vec{\nabla} \times\left(\frac{1}{\mu_{0}} \vec{\mathrm{B}}-\vec{\mathrm{M}}\right)&=\vec{\mathrm{J}_{\mathrm{f}}}\\
+\text{Now, define the quantity}&\text{ inside the curl as ${H}$}\\
+\vec{\mathrm{H}} &\equiv \frac{1}{\mu_{0}} \vec{\mathrm{B}}-\vec{\mathrm{M}}\\
+\text{So now the equation }&\text{becomes}\\
+\vec{\nabla} \times \overrightarrow{\mathrm{H}}&=\overrightarrow{\mathrm{J}}_{\mathrm{f}}\\
+\text{Or in integral terms,}\\
 \phi \overrightarrow{\mathrm{H}} \cdot \mathrm{d} \vec{l}&=\mathrm{I}_{\mathrm{fenc}}
 \intertext{Where $I_{\text {fenc }}$ is the total free current passing through the Amperian loop. These are the forms of Ampere's law inside matter. $  H $ plays a role in magnetostatics analogous to $D$ in electrostatics:}
 \end{align*}
 \section{Linear and Non linear medium}
 To complete the description of macroscopic magnetostatics, there must be a constitutive relation between ${H}$ and ${B}$.
-\begin{align}
+\begin{align*}
 \notag {M}&\propto{H}\\
 {M}&=\chi_{m} {H}\label{magnetic susceptibility}
-\end{align}
- The constant $\chi_{m}$ is called the magnetic susceptibility. It is dimensionless quantity it's typical values are around $10^{-5}$.
- Materials that obey equation.\ref{magnetic susceptibility} are called linear media. For linear media
- \begin{align*}
- {B}&=\mu_{0}({H}+{M})=\mu_{0}\left(1+\chi_{m}\right) {H}
- \intertext{ Thus ${B}$ is also proportional to ${H}$ :}
- {B}&=\mu {H}
-  \intertext{Where $\mu=\mu_{0}\left(1+\chi_{m}\right)$ is the permeability of the material.}
+\intertext{ The constant $\chi_{m}$ is called the magnetic susceptibility. It is dimensionless quantity it's typical values are around $10^{-5}$.
+	Materials that obey equation.\ref{magnetic susceptibility} are called linear media. For linear media}
+ {B}=\mu_{0}({H}+{M})&=\mu_{0}\left(1+\chi_{m}\right) {H}\\
+ \text{ Thus ${B}$ is also proportional to ${H}$ :}
+ {B}&=\mu {H}\\
+  \text{Where $\mu=\mu_{0}\left(1+\chi_{m}\right)$ is the}&\text{ permeability of the material.}
 \end{align*}
  \section{Diamagnetism, Paramagnetism, Ferromagnetism}
 Based on the magnetic response, materials can be classified into the following three major groups:  Diamagnetism,  Paramagnetism,  and Ferromagnetism.
@@ -110,7 +108,7 @@ The atomic moments in these materials exhibit very strong interactions. These in
 Just as the electric field suffers a discontinuity at a surface charge, so the magnetic field is discontinuous at a surface current. Only this time it is the tangential component that changes.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=4cm,width=6.5cm]{3-crop}
+	\includegraphics[height=3.5cm,width=6.5cm]{3-crop}
 	\caption{Wafer thin pillbox}
 	\label{Wafer thin pillbox}
 \end{figure}
