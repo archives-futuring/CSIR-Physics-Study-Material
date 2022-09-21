@@ -43,7 +43,7 @@ If A and V are known we can find electric and magnetic field with these two equa
 \left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) &=-\mu_{0} J
 \end{align*}
 These two equations contain all information in the Maxwell's equations.\\
-However we have succeeded in reducing six problems to find E and B ,down to four(V one component,A three component.),these equations are lengthy and difficult to find solution we have to abandon this potential formulation altogether.\\
+However we have succeeded in reducing six problems to find E and B ,down to four(V one component,A three component.),these equations are lengthy and difficult to find solution we have to abandon this potential formulation altogether.
 \paragraph{Gauge transformation}
 To avoid this problem we are transforming the potential equations by adding one extra term to A and V.This is called gauge tranformation.Consider the transformation occuring in the same fields E and B.Then
 \begin{align*}
@@ -80,7 +80,7 @@ V^{\prime}&=V+\beta\\
 \paragraph{Coluomb gauge}
 \begin{align*}
 \nabla \cdot A&=0\\
-\text{is called }&\text{Coulomb gauge.}\\
+\text{is called }&\text{Coulomb gauge.}
 \end{align*}
 \paragraph{importance}
 \begin{align*}
@@ -130,7 +130,7 @@ V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\pr
 \intertext{Imagine a electromagnetic news travels at the speed of light. In non-static case therefore, it's not the status of source right now that matters but rather its condition at some earlier time $t_r$ (retarded time) when the message left.}
 \text{Since the message must}&\text{ travel a distance $r$ the delay is $r/c$}\\
 t_{r}&=t-r / c\\
-\therefore\text{ Potentials become}\\
+\therefore\quad \text{ Potentials become}\\
 V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}
 \end{align*}
 $P(r^\prime,t_r)$: charge density prevailed at point $r^\prime$ at the retarded time $t_r$. Because the integrants are evaluated at the retarded time these are called retarded potentials.\\
@@ -141,15 +141,15 @@ The integrand depends on $\vec{r}$ in two places explicitly, in the denomenator 
 \nabla V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[(\nabla \rho) \frac{1}{r}+\rho \nabla\left(\frac{1}{2}\right)\right] d \tau^{\prime}\\
 \nabla \rho&=\dot{\rho} \nabla t_{r}=-\frac{1}{c} \dot{\rho} \nabla r\\
 \nabla r&=\hat{r} \text{ and } \nabla \left( \frac{1}{r}\right) =\frac{-\hat{r}}{r^2}\\
-\nabla V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[-\frac{\rho}{c} \frac{\hat{r}}{r}-\rho \frac{\hat{\varepsilon}}{r^{2}}\right] d \tau^{\prime}
-\intertext{Taking the divergence}
+\nabla V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[-\frac{\rho}{c} \frac{\hat{r}}{r}-\rho \frac{\hat{\varepsilon}}{r^{2}}\right] d \tau^{\prime}\\
+\text{Taking the }&\text{divergence}\\
 \nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left\{-\frac{1}{c}\left[\frac{\hat{\imath}}{r} \cdot(\nabla \dot{\rho})+\dot{\rho} \nabla \cdot\left(\frac{\hat{r}}{r}\right)\right]\right.
 -\left.-\left[\frac{\hat{z}}{r^{2}} \cdot(\nabla \rho)+\rho \nabla \cdot\left(\frac{\hat{\varepsilon}}{r^{2}}\right)\right]\right\} d \tau^{\prime} .\\
 \nabla \dot{\rho}&=-\frac{1}{c} \ddot{\rho} \nabla r=-\frac{1}{c} \ddot{\rho} \hat{r},\quad 
 \nabla \cdot\left(\frac{\hat{r}}{r}\right)=\frac{1}{r^{2}} \\
 \text{whereas}\\
-\nabla \cdot\left(\frac{\hat{r}}{r^{2}}\right)&=4 \pi \delta^{3}(r)
-\intertext{So}
+\nabla \cdot\left(\frac{\hat{r}}{r^{2}}\right)&=4 \pi \delta^{3}(r)\\
+\text{So}\quad\\
 \nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[\frac{1}{c^{2}} \frac{\ddot{\rho}}{r}-4 \pi \rho \delta^{3}(r)\right] d \tau^{\prime}=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)\\
 \nabla^{2} V&=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)\\
 \text{retarded potential }&\text{satisfies the inhomogeneous wave equation}
@@ -161,8 +161,8 @@ V(r, t)&=\frac{1}{4 \pi \varepsilon_{0}} \int \frac{f\left(r^{\prime}, t_{1}\rig
 E&=-\nabla V-\frac{\partial A}{\partial t}, B=\nabla \times A \\\\
 E(r, t)&=\frac{1}{4 \pi \varepsilon_{0}} \int\left[\frac{\rho\left(r^{\prime}, t_{1}\right)}{x^{2}} \hat{x}+\right.\left.\frac{\dot{p}\left(r^{\prime}, t_{1}\right)}{c r} \hat{x}-\frac{\ddot{j}\left(r^{\prime}, t_{1}\right)}{c^{2} r}\right] d \tau^{\prime}
 \intertext{This is the time dependent generalization of couloumb's law. In static case the second term and third term drops out and the first term losed its dependence on $t_r$}
-B(r, t)&=\frac{\mu_{0}}{4 \pi}\int\left[\frac{J\left(r^{\prime}, f_{r}\right)}{\lambda^{2}}+\frac{J\left(r^{\prime}, t_{r}\right)}{c \lambda}\right]x r^2d z
-\intertext{This is the time-denpendent generalzation of the Biot-savart law, to which it reduces in the static case.}
+B(r, t)&=\frac{\mu_{0}}{4 \pi}\int\left[\frac{J\left(r^{\prime}, f_{r}\right)}{\lambda^{2}}+\frac{J\left(r^{\prime}, t_{r}\right)}{c \lambda}\right]x r^2d z\\
+\text{This is the time-}&\text{denpendent generalzation of the Biot-savart law, to which it reduces in the static case.}
 \end{align*}
 \section{Poynting Theorem}
 If there exist a continuous distribution of charge and current, the total rate of doing work by the fields in a finite volume $v$ is
@@ -170,7 +170,7 @@ $$\frac{d w}{d t}=\int_{v} \vec{\j} \cdot \vec{E} d^{3} x$$
 This power represent a convertion of electromagnetic energy to mechanical or thermal energy. It must be balanced by corresponding rate  of decrease of energy in the electromagnetic field within the volume $V$. We can use maxwell equations to express the above equation in other terms.
 \begin{align*}
 \int_{V} J \cdot E d ^3 x&=\int_{V}\left[E \cdot(\nabla x H)-E \cdot \frac{\partial D}{\partial F}\right] d{ }^{3} x\\
-\text{using the vector identity}&\\
+\text{using the vector}&\text{ identity}\\
 \nabla \cdot(E \times H)&=H \cdot(\nabla \times \mathbf{E})-E \cdot(\nabla \times H)\\
 \because \quad \int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V} \bar{V} \cdot(E \times M)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t} \\
 \int_{V} \vec{J} \cdot \vec{E} d^{3} x&=-\int_{V}\left[\nabla \cdot(E \times H)+E \cdot \frac{\partial D}{\partial t}+H \cdot \frac{\partial B}{\partial t}\right] d^{3} x
@@ -197,7 +197,7 @@ Let $E_{mech}$ be the total energy of the particles within the volume $V$ assume
 \frac{d E_{\text {mech }}}{d t}&=\int_{v} \vec{J} \cdot \vec{E} d^{3} x\\
 \text{Poynting theorem express the conservation of }&\text{energy for the combined system as}\\
 \frac{d E}{d t}=\frac{d}{d t}\left(E_{\text {mech }}+E_{\text {field }}\right)&=-\oint_{s} \vec{n} \cdot \vec{s} d a\\
-\text{when the total field energy within $V$ is }\\
+\text{when the total field  }&\text{energy within $V$ is}\\
 E_{\text {field } }=\int_{V} u d^{3} x&=\frac{\varepsilon_{0}}{2} \int_{V}\left(E^{2}+c^{2} B^{2}\right) d^{3} x
 \end{align*}
 \section{Radiation From Moving Charges}
@@ -235,8 +235,8 @@ I=|\vec{S}| \propto& \frac{q^{2} a^{2} \sin ^{2} \theta}{r^{2}}\text{dependence 
 	&=\frac{\mu 0 q^{2} a^{2}}{16 \pi^{2} c} \times 2 \pi \int_{0}^{\pi} \sin ^{3} \theta d \theta\\
 	&=\frac{\mu_{0} q^{2} a^{2}}{4 N_{2} \pi C} \times 2 \times \frac{4}{3}\\
 	p&=\frac{\mu_{0} q^{2} a^{2}}{6 \pi c}\\
-	\text{Here $P$}&\text{ is independent of $r$ }
-	\intertext{$\therefore $ total power radiated through surface is the total power radiated in space. }
+	\text{Here $P$}&\text{ is independent of $r$ }\\
+	\text{$\therefore $\quad  total power }&\text{ radiated through surface is the total power radiated in space.}
 \end{align*}
 \subsection{Direction of $\vec{E}$}
 \begin{enumerate}
@@ -375,7 +375,7 @@ a_{2}&=2 a
 	\end{tasks}
 	\item A The charge distribution inside a material of conductivity $\sigma$ and permittivity $\in$ at initial time $t=0$ is $\rho(r, 0)=\rho_{0}$, a constant. At subsequent times $\rho(r, t)$ is given by
 	{\exyear{NET/JRF(JUNE-2017)}}
-	\begin{tasks}(2)
+	\begin{tasks}(4)
 		\task[\textbf{A.}]  $\rho_{0} \exp \left(-\frac{\sigma t}{\epsilon}\right)$
 		\task[\textbf{B.}] $\frac{1}{2} \rho_{0}\left[1+\exp \left(\frac{\sigma t}{\in}\right)\right]$
 		\task[\textbf{C.}]  $\frac{\rho_{0}}{\left[1-\exp \left(\frac{\sigma t}{\epsilon}\right)\right]}$
@@ -472,7 +472,7 @@ To order $\left(\frac{1}{r}\right)$ the magnetic field $\vec{B}$ at a point $\ve
 \item B An alternating current $I(t)=I_{0} \cos (\omega t)$ flows through a circular wire loop of radius $R$, lying in the $x y$-plane, and centered at the origin. The electric field $\vec{E}(\vec{r}, t)$ and the magnetic field $\vec{B}(\vec{r}, t)$ are measured at a point $\vec{r}$ such that $r \gg \frac{c}{\omega} \gg R$, where $\vec{r}=|\vec{r}|$.
 Which one of the following statements is correct?
 {\exyear{ NET/JRF-(DEC-2019)}}
- \begin{tasks}(2)
+ \begin{tasks}(1)
 	\task[\textbf{a.}] The time-averaged $|\vec{E}(\vec{r}, t)| \propto \frac{1}{r^{2}}$
 	\task[\textbf{b.}]The time-averaged $|\vec{E}(\vec{r}, t)| \propto \omega^{2}$
 	\task[\textbf{c.}]The time-averaged $|\vec{B}(\vec{r}, t)|$ as a function of the polar angle $\theta$ has a minimum at $\theta=\frac{\pi}{2}$
@@ -675,8 +675,8 @@ The corresponding charge density $\rho$ and current density $\vec{J}$ are given 
 	\text { Power radiated } P&=I^{2} R=q_{0}^{2} \omega^{2} \sin ^{2}(\omega t) R \Rightarrow\langle P\rangle=I^{2} R=\frac{1}{2} q_{0}^{2} \omega^{2} R\\
 	\text { The total power radiated is }\langle P\rangle&=\frac{\mu_{0} p_{0}^{2} \omega^{4}}{12 \pi c}=\frac{\mu_{0} q_{0}^{2} d^{2} \omega^{4}}{12 \pi c}\\
 	\text { Thus } \frac{1}{2} q_{0}^{2} \omega^{2} R&=\frac{\mu_{0} q_{0}^{2} d^{2} \omega^{4}}{12 \pi c} \Rightarrow R=\frac{\mu_{0} d^{2} \omega^{2}}{6 \pi c}=\frac{\mu_{0} d^{2}}{6 \pi c}\left(\frac{2 \pi c}{\lambda}\right)^{2}=\frac{2}{3} \pi \mu_{0} c\left(\frac{d}{\lambda}\right)^{2}\\
-	\Rightarrow R&=\frac{2}{3} \pi\left(4 \pi \times 10^{-7}\right)\left(3 \times 10^{8}\right)\left(\frac{d}{\lambda}\right)^{2}=80 \pi^{2}\left(\frac{d}{\lambda}\right)^{2} \approx 790\left(\frac{d}{\lambda}\right)^{2} \Omega
-\intertext{For the wires in an ordinary radio with $d=5 \mathrm{~cm}=5 \times 10^{-2} \mathrm{~m}$ and $\lambda=10^{3} \mathrm{~m}$}
+	\Rightarrow R&=\frac{2}{3} \pi\left(4 \pi \times 10^{-7}\right)\left(3 \times 10^{8}\right)\left(\frac{d}{\lambda}\right)^{2}=80 \pi^{2}\left(\frac{d}{\lambda}\right)^{2} \approx 790\left(\frac{d}{\lambda}\right)^{2} \Omega\\
+\text{For the wires in an ordinary radio }&\text{with $d=5 \mathrm{~cm}=5 \times 10^{-2} \mathrm{~m}$ and $\lambda=10^{3} \mathrm{~m}$}\\
 	\Rightarrow R \approx 790\left(\frac{d}{\lambda}\right)^{2} \Omega&=2 \times 10^{-6} \Omega\\
 	\text { which  }&\text{is negligible compared to the ohmic resistance.}
 		\end{align*}
