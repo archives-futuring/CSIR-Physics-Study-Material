@@ -8,18 +8,20 @@ Maxwell's equations are
 	\item $\boldsymbol{\nabla} \times \mathbf{B}=\mu_{0} \mathbf{J}+\mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}$
 \end{enumerate}
 If $\rho(r,t)$ and $J(r,t)$ are bnown electric and magnetic field can be find out using Gauss's law and Bio-savart law.It is difficult to find E ans B if they are time dependant.To solve this problem first we are going to represents the fields in terms of potentials electric potential V and magnetic potential B.\\
-In the static case $\nabla \times \mathbf{E}=0$ So electric field cane written as a negative gradient of some scalar quandity called electric potential V\\
-$$E=-\nabla V$$(not possible in elctrodynamics)\\
-But $\nabla \cdot B=0$ always.Which gives \\
-$$B=\nabla\times A$$
- Where A is the magnetic vector potential.Putting this value in 
-$$\boldsymbol{\nabla} \times \mathbf{E}=-\frac{\partial \mathbf{B}}{\partial t}$$
-We will get \\
-$$\nabla \times \mathbf{E}=\frac{-\partial }{\partial t}(\nabla \times A)$$
-$$\nabla \times \left( \mathbf{E}+\frac{\partial A}{\partial t}\right) =0$$
-Again the curl of something become zero. so it can be written as negative gradient of potential
-$$\mathbf{E}+\frac{\partial A}{\partial t}=-\nabla V$$
-$$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$
+In the static case $\nabla \times \mathbf{E}=0$ So electric field cane written as a negative gradient of some scalar quandity called electric potential V
+\begin{align*}
+E&=-\nabla V\text{ (not possible in elctrodynamics)}\\
+\text{But }\nabla \cdot B&=0\text{ always.Which gives }\\
+B&=\nabla\times A\\
+\text{Where A is the magnetic}&\text{ vector potential.Putting this value in }\\
+\boldsymbol{\nabla} \times \mathbf{E}&=-\frac{\partial \mathbf{B}}{\partial t}\\
+\text{We will get }&\\
+\nabla \times \mathbf{E}&=\frac{-\partial }{\partial t}(\nabla \times A)\\
+\nabla \times \left( \mathbf{E}+\frac{\partial A}{\partial t}\right) &=0\\
+\text{Again the curl of something become zero.}&\text{ so it can be written as negative gradient of potential}\\
+\mathbf{E}+\frac{\partial A}{\partial t}&=-\nabla V\\
+\mathbf{E}&=-\nabla V-\frac{\partial A}{\partial t}
+\end{align*}
 \begin{center}
 	\framebox{
 		\parbox[t][3cm]{3cm}{
@@ -34,32 +36,33 @@ $$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$
 			\end{align*}} }
 \end{center}
 If A and V are known we can find electric and magnetic field with these two equations.
-
-Putting this equation $$\mathbf{E}=-\nabla V-\frac{\partial A}{\partial t}$$  in Gauss's law
-we will get,\\
-$$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$$
-Putting $\mathbf{B}=\nabla\times A$  equation in Ampere/Maxwell's law and rearranging we will get,\\
-$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$ 
-
+\begin{align*}
+\text{Putting this equation }\mathbf{E}&=-\nabla V-\frac{\partial A}{\partial t}\\  \text{in Gauss's law we will get,}\\
+\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)&=\frac{-\rho}{\epsilon_{0}}\\
+\text{Putting }\mathbf{B}=\nabla\times A\text{equation in Ampere/Maxwell's }&\text{  law and rearranging we will get,}\\
+\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) &=-\mu_{0} J
+\end{align*}
 These two equations contain all information in the Maxwell's equations.\\
 However we have succeeded in reducing six problems to find E and B ,down to four(V one component,A three component.),these equations are lengthy and difficult to find solution we have to abandon this potential formulation altogether.\\
 \paragraph{Gauge transformation}
-To avoid this problem we are transforming the potential equations by adding one extra term to A and V.This is called gauge tranformation.Consider the transformation occuring in the same fields E and B.Then\\
-$$A^{\prime}=A+\alpha$$ and
-$$V^{\prime}=V+\beta$$
-Taking curl on each side of $A^{\prime}=A+\alpha$
-we will get 
-$$\nabla \times A^{\prime}=\nabla \times A+\nabla \times \alpha$$
-Since B's are same we can written as($\nabla \times B=0,A^{\prime}=A$) \\
-$$\nabla \times \alpha =0$$
-Again curl of $\alpha$ is zero.then\\
-$$\alpha=\nabla \lambda$$\\
-The two potentials also gives the same E.so,\\
-$$\nabla \beta +\frac{\partial \alpha }{\partial t}=0$$
-$$\nabla\left( \beta+\frac{\partial \lambda}{\partial t}\right) =0$$
-$$\beta= -\frac{\partial \lambda}{\partial t}$$
-Now transformations become,\\
-
+To avoid this problem we are transforming the potential equations by adding one extra term to A and V.This is called gauge tranformation.Consider the transformation occuring in the same fields E and B.Then
+\begin{align*}
+A^{\prime}&=A+\alpha\\
+\text{ and }
+V^{\prime}&=V+\beta\\
+\text{Taking curl on each side of } &\text{$A^{\prime}=A+\alpha$
+	we will get}\\
+\nabla \times A^{\prime}&=\nabla \times A+\nabla \times \alpha\\
+\text{Since B's are same we can written as }&\text{ ($\nabla \times B=0,A^{\prime}=A$)} \\
+\nabla \times \alpha &=0\\
+\text{Again curl of $\alpha$ is }&\text{zero.then}\\
+\alpha&=\nabla \lambda\\
+\text{The two potentials also gives the}&\text{ same E.so,}\\
+\nabla \beta +\frac{\partial \alpha }{\partial t}&=0\\
+\nabla\left( \beta+\frac{\partial \lambda}{\partial t}\right) &=0\\
+\beta&= -\frac{\partial \lambda}{\partial t}\\
+\text{Now transformations}&\text{ become,}
+\end{align*}
 \begin{center}
 	\framebox{
 		\parbox[t][3cm]{3cm}{
@@ -75,49 +78,61 @@ Now transformations become,\\
 \end{center}
 \subsection{Coulomb Gauge and Lorentz gauge}
 \paragraph{Coluomb gauge}
-$$\nabla \cdot A=0$$ is called Coulomb gauge.\\
+\begin{align*}
+\nabla \cdot A&=0\\
+\text{is called }&\text{Coulomb gauge.}\\
+\end{align*}
 \paragraph{importance}
-$$\nabla \cdot A=0$$ Then the equation 
-$$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$$ become,\\
-$$\nabla^2 V=\frac{-\rho}{\epsilon_{0}}$$
-This is poisson's equation.From this equation V can be findout by using the formula\\
-$$V(r,t)=\frac{1}{4 \pi \epsilon_0}\int \frac{\rho(r^{\prime},t)}{r}d\tau^{\prime}$$
-V is easy to get but to find E we need  A also($E=-\nabla V-\frac{\partial A}{\partial t}$) which is difficult.
+\begin{align*}
+\nabla \cdot A&=0\\
+\text{ Then the equation }\\
+\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)&=\frac{-\rho}{\epsilon_{0}}\\
+\text{ become,}\\
+\nabla^2 V&=\frac{-\rho}{\epsilon_{0}}\\
+\text{This is poisson's  }&\text{equation.From this equation V can be findout by using the formula}\\
+V(r,t)&=\frac{1}{4 \pi \epsilon_0}\int \frac{\rho(r^{\prime},t)}{r}d\tau^{\prime}\\
+\text{V is easy to get  }&\text{but to find E we need A also($E=-\nabla V-\frac{\partial A}{\partial t}$) which is difficult.}
+\end{align*}
 \paragraph{Advantage of the coulomb gauge is that the scalar potential is simply to calculate .The disadvatage is that  A is particularly difficult to calculate. }
 After applying coulomb gauge to the equation 
-$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$ 
-we get\\
-$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right)=-\mu_{0}J+\mu_{0} \epsilon_{0}\nabla \left( \frac{\partial V}{\partial t}\right) $$
+\begin{align*}
+\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) &=-\mu_{0} J\\
+\text{we get }\quad
+\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right)&=-\mu_{0}J+\mu_{0} \epsilon_{0}\nabla \left( \frac{\partial V}{\partial t}\right) 
+\end{align*}
 \paragraph{Lorentz gauge}
-$$\nabla \cdot A =-\mu_{0} \epsilon_{0} \frac{\partial}{\partial t}V$$
-
- is called the lorentz gauge.\\
- This designes to eliminate the middle term of the equation
-$$\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) =-\mu_{0} J$$
-With lorentz gauge this equation become
-$$\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}=-\mu_{0} J$$
-With lorentz gauge this equation 
-$\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)=\frac{-\rho}{\epsilon_{0}}$
-becomes
-$$\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}=\frac{-\rho}{\epsilon_{0}}$$
-The virtue of the lorentz gauge is that it treats V and A on the same differential operator
-$$\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}\equiv \square^2  $$
- is called d'Alembertian\\
-Then both equation become\\
-$$\square^2V=\frac{-\rho}{\epsilon_{0}}$$
-$$\square^2A=-\mu_{0} J$$
+\begin{align*}
+\nabla \cdot A &=-\mu_{0} \epsilon_{0} \frac{\partial}{\partial t}V\\
+\text{is called the lorentz}&\text{ gauge.}\\
+\text{This designes to eliminate the middle }&\text{term of the equation}\\
+\left( \nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}\right) -\nabla\left( \nabla \cdot A+\mu_{0}\epsilon_{0}\frac{\partial V}{\partial t}\right) &=-\mu_{0} J\\
+\text{With lorentz gauge this }&\text{equation become}\\
+\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}&=-\mu_{0} J\\
+\text{With lorentz gauge  }&\text{this equation}\\
+\nabla ^2V+\frac{\partial }{\partial t}(\nabla \cdot A)&=\frac{-\rho}{\epsilon_{0}}
+\text{ becomes }\\
+\nabla^2A-\mu_{0}\epsilon_{0}\frac{\partial^2 A}{\partial t^2}&=\frac{-\rho}{\epsilon_{0}}\\
+\text{The virtue of the lorentz gauge is that it treats }&\text{V and A on the same differential operator}\\
+\nabla^2-\mu_{0} \epsilon_{0}\frac{\partial ^2}{\partial t^2}&\equiv \square^2  \\
+\text{ is called d'}&\text{Alembertian}\\
+\text{Then both equation }&\text{become}\\
+\square^2V&=\frac{-\rho}{\epsilon_{0}}\\
+\square^2A&=-\mu_{0} J
+\end{align*}
 \section{Retarded Potentials}
-$$\square^{2} V=-\frac{1}{\epsilon_{0}} \rho, \quad \square^{2} \mathbf{A}=-\mu_{0} \mathbf{J}$$
-In static case these equation reduces to poisson's equations
-$$\nabla^{2} V=-\frac{1}{\epsilon_{0}} \rho, \quad \nabla^{2} \mathbf{A}=-\mu_{0} \mathbf{J}$$
-with solutions
-$$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}$$
-$r \rightarrow$ distance from source point $\vec{r}$ to the field point $r$.\\
-Imagine a electromagnetic news travels at the speed of light. In non-static case therefore, it's not the status of source right now that matters but rather its condition at some earlier time $t_r$ (retarded time) when the message left.\\
-Since the message must travel a distance $r$ the delay is $r/c$
-$$t_{r}=t-r / c$$
-$\therefore$ Potentials become
-$$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}$$
+\begin{align*}
+\square^{2} V&=-\frac{1}{\epsilon_{0}} \rho, \quad \square^{2} \mathbf{A}=-\mu_{0} \mathbf{J}\\
+\text{In static case these}&\text{ equation reduces to poisson's equations }\\
+\nabla^{2} V&=-\frac{1}{\epsilon_{0}} \rho, \quad \nabla^{2} \mathbf{A}=-\mu_{0} \mathbf{J}\\
+\text{with solutions }
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}\\
+\text{$r \rightarrow$ distance}&\text{ from source point $\vec{r}$ to the field point $r$.}
+\intertext{Imagine a electromagnetic news travels at the speed of light. In non-static case therefore, it's not the status of source right now that matters but rather its condition at some earlier time $t_r$ (retarded time) when the message left.}
+\text{Since the message must}&\text{ travel a distance $r$ the delay is $r/c$}\\
+t_{r}&=t-r / c\\
+\therefore\text{ Potentials become}\\
+V(\mathbf{r})&=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}, \quad \mathbf{A}(\mathbf{r})=\frac{\mu_{0}}{4 \pi} \int \frac{\mathbf{J}\left(\mathbf{r}^{\prime}\right)}{r} d \tau^{\prime}
+\end{align*}
 $P(r^\prime,t_r)$: charge density prevailed at point $r^\prime$ at the retarded time $t_r$. Because the integrants are evaluated at the retarded time these are called retarded potentials.\\
 The more distant parts of the charge distribution have earlier retarded times than nearby ones.\\
 In calculating the Laplacian of $V(r,t)$\\
@@ -131,13 +146,13 @@ The integrand depends on $\vec{r}$ in two places explicitly, in the denomenator 
 \nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left\{-\frac{1}{c}\left[\frac{\hat{\imath}}{r} \cdot(\nabla \dot{\rho})+\dot{\rho} \nabla \cdot\left(\frac{\hat{r}}{r}\right)\right]\right.
 -\left.-\left[\frac{\hat{z}}{r^{2}} \cdot(\nabla \rho)+\rho \nabla \cdot\left(\frac{\hat{\varepsilon}}{r^{2}}\right)\right]\right\} d \tau^{\prime} .\\
 \nabla \dot{\rho}&=-\frac{1}{c} \ddot{\rho} \nabla r=-\frac{1}{c} \ddot{\rho} \hat{r},\quad 
-\nabla \cdot\left(\frac{\hat{r}}{r}\right)=\frac{1}{r^{2}} 
-\intertext{whereas}
-&\nabla \cdot\left(\frac{\hat{r}}{r^{2}}\right)=4 \pi \delta^{3}(r)
+\nabla \cdot\left(\frac{\hat{r}}{r}\right)=\frac{1}{r^{2}} \\
+\text{whereas}\\
+\nabla \cdot\left(\frac{\hat{r}}{r^{2}}\right)&=4 \pi \delta^{3}(r)
 \intertext{So}
 \nabla^{2} V&=\frac{1}{4 \pi \epsilon_{0}} \int\left[\frac{1}{c^{2}} \frac{\ddot{\rho}}{r}-4 \pi \rho \delta^{3}(r)\right] d \tau^{\prime}=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)\\
-\nabla^{2} V&=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)
-\intertext{retarded potential satisfies the inhomogeneous wave equation}
+\nabla^{2} V&=\frac{1}{c^{2}} \frac{\partial^{2} V}{\partial t^{2}}-\frac{1}{\epsilon_{0}} \rho(\mathbf{r}, t)\\
+\text{retarded potential }&\text{satisfies the inhomogeneous wave equation}
 \end{align*}
 \section{Jefimentro's Equations}
 \begin{align*}
@@ -178,11 +193,13 @@ S&=E \times H\\
 Matter is ultimately composed of charged particles, we can think of this rate of conversion of electromagnetic energy to machanical energy as the rate of increase of energy of charged particles per unit volume\\
 We can interpret pointing's theorem for the microscopic fields (E.B) as a statement of conservation of energy of the combined system of particles and fields.\\
 Let $E_{mech}$ be the total energy of the particles within the volume $V$ assume no particles move out of the volume.
-$$\frac{d E_{\text {mech }}}{d t}=\int_{v} \vec{J} \cdot \vec{E} d^{3} x$$
-Poynting theorem express the conservation of energy for the combined system as
-$$\frac{d E}{d t}=\frac{d}{d t}\left(E_{\text {mech }}+E_{\text {field }}\right)=-\oint_{s} \vec{n} \cdot \vec{s} d a$$
-when the total field energy within $V$ is
-$$E_{\text {field } }=\int_{V} u d^{3} x=\frac{\varepsilon_{0}}{2} \int_{V}\left(E^{2}+c^{2} B^{2}\right) d^{3} x$$
+\begin{align*}
+\frac{d E_{\text {mech }}}{d t}&=\int_{v} \vec{J} \cdot \vec{E} d^{3} x\\
+\text{Poynting theorem express the conservation of }&\text{energy for the combined system as}\\
+\frac{d E}{d t}=\frac{d}{d t}\left(E_{\text {mech }}+E_{\text {field }}\right)&=-\oint_{s} \vec{n} \cdot \vec{s} d a\\
+\text{when the total field energy within $V$ is }\\
+E_{\text {field } }=\int_{V} u d^{3} x&=\frac{\varepsilon_{0}}{2} \int_{V}\left(E^{2}+c^{2} B^{2}\right) d^{3} x
+\end{align*}
 \section{Radiation From Moving Charges}
 An accelerating or de-accelerating charge producess electro magnetic radiation.
 \begin{align*}
@@ -406,7 +423,7 @@ a_{2}&=2 a
 \end{tasks}
 \item A A non-relativistic particle of mass $m$ and charge $e$, moving with a velocity $\vec{v}$ and acceleration $\vec{a}$, emits radiation of intensity $I$. What is the intensity of the radiation emitted by a particle of mass $m / 2$, charge $2 e$, velocity $\vec{v} / 2$ and acceleration $2 \vec{a}$ ?
 {\exyear{NET/JRF-(DEC-2014)}}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}] $16 I$
 	\task[\textbf{b.}]$8 I$
 	\task[\textbf{c.}]$4 I$
@@ -414,7 +431,7 @@ a_{2}&=2 a
 \end{tasks}
 \item D An electron is decelerated at a constant rate starting from an initial velocity $u$ (where $u<<c$ ) to $u / 2$ during which it travels a distance $s$. The amount of energy lost to radiation is
 {\exyear{ NET/JRF-(JUNE-2017)}}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}]$\frac{\mu_{0} e^{2} u^{2}}{3 \pi m c^{2} s}$
 	\task[\textbf{b.}]$\frac{\mu_{0} e^{2} u^{2}}{6 \pi m c^{2} s}$
 	\task[\textbf{c.}]$\frac{\mu_{0} e^{2} u}{8 \pi m c s}$
@@ -426,7 +443,7 @@ $$
 $$
 where $\omega$ is angular frequency of the source. The total power radiated (averaged over a cycle) is
 {\exyear{ NET/JRF-(JUNE-2018)}}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}]$\frac{2 \pi}{3} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
 	\task[\textbf{b.}]$\frac{4 \pi}{3} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
 	\task[\textbf{c.}] $\frac{4}{3 \pi} \frac{E_{0}^{2} \omega^{4}}{\mu_{0} c}$
@@ -463,7 +480,7 @@ Which one of the following statements is correct?
 \end{tasks}
 \item  C A particle with charge $-q$ moves with a uniform angular velocity $\omega$ in a circular orbit of radius $a$ in the $x y$ - plane, around a fixed charge $+q$, which is at the centre of the orbit at $(0,0,0)$. Let the intensity of radiation at the point $(0,0, R)$ be $I_{1}$ and at $(2 R, 0,0)$ be ' $I_{2}$ The ratio $\frac{I_{2}}{I_{1}}$ for $R \gg a$, is
 {\exyear{NET/JRF-(DEC-2016)}}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}]4
 	\task[\textbf{b.}]$\frac{1}{4}$
 	\task[\textbf{c.}]$\frac{1}{8}$
@@ -530,7 +547,7 @@ Which one of the following statements is correct?
 		\item Consider magnetic vector potential $\tilde{A}$ and scalar potential $\Phi$ which define the magnetic field $\vec{B}$ and electric field $\vec{E}$. If one adds $\vec{\nabla} \lambda$ to $\vec{A}$ for a well-defined $\lambda$, then what should be added to $\Phi$ so that $\vec{E}$ remains unchanged up to an arbitrary function of time, $f(t)$ ?
 		\exyear{JEST 2017}
 	\end{minipage}
-	\begin{tasks}(2)
+	\begin{tasks}(4)
 		\task[\textbf{A.}] $\frac{\partial \lambda}{\partial t}$
 		\task[\textbf{B.}]$-\frac{\partial \lambda}{\partial t}$
 		\task[\textbf{C.}]$\frac{1}{2} \frac{\partial \lambda}{\partial t}$
@@ -551,7 +568,7 @@ $$
 where $\theta(x)= \begin{cases}1 & \text { for } x>0 \\ 0 & \text { for } x \leq 0\end{cases}$
 The corresponding charge density $\rho$ and current density $\vec{J}$ are given by
 {\exyear{ JEST-2020}}
- \begin{tasks}(2)
+ \begin{tasks}(1)
 	\task[\textbf{a.}]$\rho=-q \delta^{3}(\vec{r}) \theta(v t-r)+\frac{q}{4 \pi r^{2}} \theta(v t-r) ; \vec{J}=0$
 	\task[\textbf{b.}]$\rho=-q \delta^{3}(\vec{r}) \theta(v t-r) ; \vec{J}=0$
 	\task[\textbf{c.}]$\rho=\frac{q}{4 \pi r^{2}} \delta(v t-r) ; \vec{J}=\frac{q v}{4 \pi r^{2}} \delta(v t-r) \hat{r}$
@@ -559,7 +576,7 @@ The corresponding charge density $\rho$ and current density $\vec{J}$ are given 
 \end{tasks}
 \item A Consider magnetic vector potential $\vec{A}$ and scalar potential $\Phi$ which define the magnetic field $\vec{B}$ and electric field $\vec{E}$. If one adds $-\vec{\nabla} \lambda$ to $\vec{A}$ for a well-defined $\lambda$, then what should be added to $\Phi$ so that $\vec{E}$ remains unchanged up to an arbitrary function of time, $f(t)$ ?
 {\exyear{ JEST-2017}}
- \begin{tasks}(2)
+ \begin{tasks}(4)
 	\task[\textbf{a.}]$\frac{\partial \lambda}{\partial t}$
 	\task[\textbf{b.}]$-\frac{\partial \lambda}{\partial t}$
 	\task[\textbf{c.}] $\frac{1}{2} \frac{\partial \lambda}{\partial t}$
@@ -575,7 +592,7 @@ The corresponding charge density $\rho$ and current density $\vec{J}$ are given 
 \end{tasks}
 \item A An electron is executing simple harmonic motion along the $y$-axis in right handed coordinate system. Which of the following statements is true for emitted radiation?
 {\exyear{ JEST-2014}}
- \begin{tasks}(2)
+ \begin{tasks}(1)
 	\task[\textbf{a.}]The radiation will be most intense in $x z$ plane
 	\task[\textbf{b.}] The radiation will be most intense in $x y$ plane
 	\task[\textbf{c.}]The radiation will violate causality
