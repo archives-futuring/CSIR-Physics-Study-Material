@@ -19,24 +19,19 @@ For the bound deuteron state $l=0$ and $\hat{\vec{I}}=\hat{\vec{S}}_{p}+\hat{\ve
 There are experimental signatures that the nuclear force depends on the spin. In fact the deuteron is only found with $\hat{\vec{S}}=1$ (meaning that this configuration has a lower energy).\\
 \par The simplest form that a spin-dependent potential could assume is $V_{\text {spin }} \propto \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}$ (since we want the potential to be a scalar). The coefficient of proportionality $V_{1}(r) / \hbar^{2}$ can have a spatial dependence. Then, we guess the form for the spin-dependent potential to be $V_{\text {spin }}=V_{1}(r) / \hbar^{2} \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}$. What is the potential for the two possible configurations of the neutron and proton spins?
 The configuration are either $\hat{\vec{S}}=1$ or $\hat{\vec{S}}=0$. Let us write $\hat{\vec{S}}^{2}=\hbar S(S+1)$ in terms of the two spins:
-$$
-\hat{\vec{S}}^{2}=\hat{\vec{S}}_{p}^{2}+\hat{\vec{S}}_{n}^{2}+2 \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}
-$$
-The last term is the one we are looking for:
-$$
-\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}=\frac{1}{2}\left(\hat{\vec{S}}^{2}-\hat{\vec{S}}_{p}^{2}-\hat{\vec{S}}_{n}^{2}\right)
-$$
-Because $\hat{S}^{2}$ and $\hat{\vec{S}}_{p}^{2}, \hat{\vec{S}}_{n}^{2}$ commute, we can write an equation for the expectation values wrt eigenfunctions of these operators 10 :
-$$
-\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle=\left\langle S, S_{p}, S_{n}, S_{z}\left|\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right| S, S_{p}, S_{n}, S_{z}\right\rangle=\frac{\hbar^{2}}{2}\left(S(S+1)-S_{p}\left(S_{p}+1\right)-S_{n}\left(S_{n}+1\right)\right)
-$$
-since $S_{p, n}=\frac{1}{2}$, we obtain
-$$
-\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle=\frac{\hbar^{2}}{2}\left(S(S+1)-\frac{3}{2}\right)=\begin{array}{ll}
+\begin{align*}
+\hat{\vec{S}}^{2}&=\hat{\vec{S}}_{p}^{2}+\hat{\vec{S}}_{n}^{2}+2 \hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\\
+\text{The last term }&\text{is the one we are looking for:}\\
+\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}&=\frac{1}{2}\left(\hat{\vec{S}}^{2}-\hat{\vec{S}}_{p}^{2}-\hat{\vec{S}}_{n}^{2}\right)
+\intertext{Because $\hat{S}^{2}$ and $\hat{\vec{S}}_{p}^{2}, \hat{\vec{S}}_{n}^{2}$ commute, we can write an equation for the expectation values wrt eigenfunctions of these operators 10 :}
+\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle&=\left\langle S, S_{p}, S_{n}, S_{z}\left|\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right| S, S_{p}, S_{n}, S_{z}\right\rangle\\
+&=\frac{\hbar^{2}}{2}\left(S(S+1)-S_{p}\left(S_{p}+1\right)-S_{n}\left(S_{n}+1\right)\right)\\
+\text{since }S_{p, n}&=\frac{1}{2},\text{ we obtain}\\
+\left\langle\hat{\vec{S}}_{p} \cdot \hat{\vec{S}}_{n}\right\rangle&=\frac{\hbar^{2}}{2}\left(S(S+1)-\frac{3}{2}\right)=\begin{array}{ll}
 +\frac{\hbar^{2}}{4} & \text { Triplet State, }\left|S=1, \frac{1}{2} \frac{1}{2}, m_{z}\right\rangle \\
 -\frac{3 \hbar^{2}}{4} & \text { Singlet State, }\left|S=0, \frac{1}{2}, \frac{1}{2}, 0\right\rangle
 \end{array}
-$$
+\end{align*}
 If $V_{1}(r)$ is an attractive potential $(<0)$, the total potential is $\left.V_{n u c}\right|_{S=1}=V_{T}=V_{0}+\frac{1}{4} V_{1}$ for a triplet state, while its strength is reduced to $\left.V_{n u c}\right|_{S=0}=V_{S}=V_{0}-\frac{3}{4} V_{1}$ for a singlet state. How large is $V_{1}$ ?
 We can compute $V_{0}$ and $V_{1}$ from knowing the binding energy of the triplet state and the energy of the unbound virtual state of the singlet (since this is very close to zero, it can still be obtained experimentally). We have $E_{T}=-2.2 \mathrm{MeV}$ (as before, since this is the experimental data) and $E_{S}=77 \mathrm{keV}$. Solving the eigenvalue problem for a square well, knowing the binding energy $E_{T}$ and setting $E_{S} \approx 0$, we obtain $V_{T}=-35 \mathrm{MeV}$ and $V_{S}=-25 \mathrm{MeV}(\mathrm{Notice}$ that of course $V_{T}$ is equal to the value we had previously set for the deuteron potential in order to find the correct binding energy of $2.2 \mathrm{MeV}$, we just -wrongly- neglected the spin earlier on). From these values by solving a system of two equations in two variables:
 $$
@@ -54,8 +49,8 @@ which gives the force its proper tensor character and also averages to zero over
 \subsection{ The Nucleon - Nucleon Force Is Charge Symmetric}
 This means that the proton-proton interaction is identical to the neutron-neutron interaction, after we correct for the Coulomb force in the proton-proton system. Here "charge" refers to the character of the nucleon (proton or neutron) and not to electric charge. Evidence in support of this assertion comes from the equality of the pp and nn scattering lengths and effective ranges. Of course. the pp parameters must first be corrected for the Coulomb interaction. When this is done, the resulting singlet pp parameters are
  \begin{align*}
-	&a=-17.1 \pm 0.2 \mathrm{fm} \\
-	&r_{0}=2.84 \pm 0.03 \mathrm{fm}
+	a&=-17.1 \pm 0.2 \mathrm{fm} \\
+	r_{0}&=2.84 \pm 0.03 \mathrm{fm}
 \end{align*}
 These are in very good agreement with the measured nn parameters ( $a=-16.6$ $\pm 0.5 \mathrm{fm}, r_{0}=2.66 \pm 0.15 \mathrm{fm}$ ). which strongly supports the notion of charge symmetry.
 \subsection{The Nucleon - Nucleon Force Is Nearly Charge Independent}
@@ -74,22 +69,16 @@ A deuteron ( ${ }^{2} \mathrm{H}$ nucleus) consists of a neutron and a proton. (
 The binding energy of the deuteron is a very precisely measured quantity. which can be determined in three different ways.\\
 \textbf{First method}\\
 The following determinations have been made (we use the symbol $\mathrm{D}$ for ${ }^{2} \mathrm{H}$ ):
-$$
-m\left(\mathrm{C}_{6} \mathrm{H}_{12}\right)-m\left(\mathrm{C}_{6} \mathrm{D}_{6}\right)=(9.289710 \pm 0.000024) \times 10^{-3} \mathrm{u}
-$$
-and
-$$
-m\left(C_{5} D_{12}\right)-m\left(C_{6} D_{6}\right)=(84.610626 \pm 0.000090) \times 10^{-3} \mathrm{u}
-$$
-From the first difierence we find. using $1.007825037 \mathrm{u}$ for the ${ }^{1} \mathrm{H}$ mass.
-$$
-m\left({ }^{2} \mathrm{H}\right)=2.014101789 \pm 0.000000021 \mathrm{u}
-$$
-and from the second.
-$$
-m\left({ }^{2} \mathrm{H}\right)=2.014101771 \pm 0.000000015 \mathrm{u}
-$$
-These precise values are in very good agreement.\\
+\begin{align*}
+m\left(\mathrm{C}_{6} \mathrm{H}_{12}\right)-m\left(\mathrm{C}_{6} \mathrm{D}_{6}\right)&=(9.289710 \pm 0.000024) \times 10^{-3} \mathrm{u}\\
+\text{ and }\quad
+m\left(C_{5} D_{12}\right)-m\left(C_{6} D_{6}\right)&=(84.610626 \pm 0.000090) \times 10^{-3} \mathrm{u}\\
+\text{From the first difierence we find.}&\text{ using $1.007825037 \mathrm{u}$ for the ${ }^{1} \mathrm{H}$ mass.}\\
+m\left({ }^{2} \mathrm{H}\right)&=2.014101789 \pm 0.000000021 \mathrm{u}\\
+\text{and from the second.}\\
+m\left({ }^{2} \mathrm{H}\right)&=2.014101771 \pm 0.000000015 \mathrm{u}\\
+\text{These precise }&\text{values are in very good agreement.}
+\end{align*}
 \textbf{second method}\\
  And using the measured ${ }^{1} \mathrm{H}$ and neutron masses we can find the binding energy
  $$
@@ -110,7 +99,7 @@ These precise values are in very good agreement.\\
  (a) $s_{n}$ and $s_{p}$ parallel with $\ell=0$.\\
  (b) $s_{n}$ and $s_{p}$ antiparallel with $l=1$.\\
  (c) $s_{\mathrm{n}}$ and $s_{\mathrm{p}}$ parallel with $l=1$.\\
- (d) $s_{n}$ and $s_{p}$ parallel with $l=2$.\\
+ (d) $s_{n}$ and $s_{p}$ parallel with $l=2$.\\\\
  Another property of the deuteron that we can determine is its parity (even or odd). the behavior of its wave function when $r \rightarrow-r$. By studving the reactions involving deuterons and the property of the photon emitted during the formation of deuterons. we know that its parity is even. The observed even parity allows us to eliminate the combinations of spins that include $t=1$. leaving $\ell=0$ and $t=2$ as possibilities. The spin and parity of the deuteron are therefore consistent with $t=0$ as we assumed. but of course we cannot vet exclude the possibility of $t=2$.
  \subsection{Magnetic dipole moment}
  We knoe that the spin and orbital contributions to the magnetic dipole moment. If the $t=0$ assumption is correct. there should be no orbital contribution to the magnetic moment. and we can assume the total magnetic moment to be simply the combination of the neutron and proton magnetic moments:
@@ -124,18 +113,18 @@ These precise values are in very good agreement.\\
  &=0.879804 \mu_{N}
  \end{align*}
  The observed value is $0.8574376 \pm 0.0000004 \mu_{\mathrm{N}}$, in good but not quite exact agreement with the calculated value. The small discrepancy can be ascribed to any of a number of factors, such as contributions from the mesons exchanged between the neutron and proton; in the context of the present discussion, we can assume the discrepancy to arise from a small mixture of $\mathrm{d}$ state $(\ell=2)$ in the deuteron wave function:
- $$\psi=a_{\mathrm{s}} \psi(\ell=0)+a_{\mathrm{d}} \psi(\ell=2)$$
-Calculating the magnetic moment from this wave function gives
-$$
-\mu=a_{\mathrm{s}}^{2} \mu(\ell=0)+a_{\mathrm{d}}^{2} \mu(\ell=2)
-$$
+ \begin{align*}
+  \psi&=a_{\mathrm{s}} \psi(\ell=0)+a_{\mathrm{d}} \psi(\ell=2)\\
+\text{ Calculating }&\text{the magnetic moment from this wave function gives}\\
+ \mu&=a_{\mathrm{s}}^{2} \mu(\ell=0)+a_{\mathrm{d}}^{2} \mu(\ell=2)
+ \end{align*}
 where $\mu(\ell=0)$ is the value calculated above and $\mu(\ell=2)=\frac{1}{4}\left(3-g_{s \mathrm{p}}\right.$ $\left.-g_{s \mathrm{n}}\right) \mu_{\mathrm{N}}$ is the value calculated for a d state. The observed value is consistent with $a_{\mathrm{s}}^{2}=0.96, a_{\mathrm{d}}^{2}=0.04$; that is, the deuteron is $96 \% \ell=0$ and only $4 \% \quad \ell=2$. The assumption of the pure $t=0$ state, which we made in calculating the well depth, is thus pretty good but not quite exact.
 \subsection{Electric Quadrupole Moment}
 The bare neutron and proton have no electric quadrupole moment. and so any measured nonzero value for the quadrupole moment must be due to the orbital motion. Thus the pure $t=0$ wave function would have a vanishing quadrupole moment. The observed quadrupole moment is
-$$
-Q=0.00288 \pm 0.00002 \mathrm{~b}
-$$
-which. while small by comparison with many other nuclei. is certainly not zero.
+\begin{align*}
+Q&=0.00288 \pm 0.00002 \mathrm{~b}\\
+\text{which. while small by }&\text{comparison with many other nuclei. is certainly not zero.}
+\end{align*}
 \section{Nucleon Nucleon potential}
 The exact mathematical form of the interaction potential is not known.One approximate such a strong short range spherically symmetric potential by one of the following expressions.
 \begin{enumerate}
@@ -191,8 +180,8 @@ The exact mathematical form of the interaction potential is not known.One approx
 \begin{enumerate}
 	\item The range of the nuclear force between two nucleons due to the exchange of pions is $1.40 \mathrm{fm}$. If the mass of pion is $140 \mathrm{MeV} / \mathrm{c}^{2}$ and the mass of the rho-meson is $770 \mathrm{MeV} / \mathrm{c}^{2}$, then the range of the force due to exchange of rho-mesons is
 {\exyear{NET JUNE 2017}}
-\begin{tasks}(2)
-	\task[\textbf{A.}](a) $1.40 \mathrm{fm}$
+\begin{tasks}(4)
+	\task[\textbf{A.}] $1.40 \mathrm{fm}$
 	\task[\textbf{B.}]$7.70 \mathrm{fm}$
 	\task[\textbf{C.}]$0.25 \mathrm{fm}$
 	\task[\textbf{D.}]$0.18 \mathrm{fm}$
@@ -205,7 +194,7 @@ The exact mathematical form of the interaction potential is not known.One approx
 \begin{enumerate}
 \item The ground state wavefunction of deuteron is in a superposition of $s$ and $d$ states. Which of the following is NOT true as a consequence?
 {\exyear{GATE 2010}}
-\begin{tasks}(2)
+\begin{tasks}(1)
 	\task[\textbf{A.}] It has a non-zero quadruple moment 
 	\task[\textbf{B.}]The neutron-proton potential is non-central
 	\task[\textbf{C.}] The orbital wavefunction is not spherically symmetric
@@ -213,15 +202,15 @@ The exact mathematical form of the interaction potential is not known.One approx
 \end{tasks}
 \item Deuteron has only one bound state with spin parity $1^{+}$, isospin 0 and electric quadrupole moment $0.286 \mathrm{efm}^{2}$. These data suggest that the nuclear forces are having
 {\exyear{GATE 2012}}
-\begin{tasks}(2)
-	\task[\textbf{A.}] only spin and isospin dependence
-	\task[\textbf{B.}] no spin dependence and no tensor components
-	\task[\textbf{C.}]spin dependence but no tensor components
-	\task[\textbf{D.}]spin dependence along with tensor components
+\begin{tasks}(1)
+	\task[\textbf{A.}] Only spin and isospin dependence
+	\task[\textbf{B.}] No spin dependence and no tensor components
+	\task[\textbf{C.}]Spin dependence but no tensor components
+	\task[\textbf{D.}]Spin dependence along with tensor components
 \end{tasks}
 \item Which of the following statements is NOT correct?
 {\exyear{GATE 2016}}
-\begin{tasks}(2)
+\begin{tasks}(1)
 	\task[\textbf{A.}] A deuteron can be disintegrated by irradiating it with gamma rays of energy $4 \mathrm{MeV}$.
 	\task[\textbf{B.}] A deuteron has no excited states.
 	\task[\textbf{C.}] A deuteron has no electric quadrupole moment.
