@@ -1,21 +1,24 @@
 \chapter{CANONICAL TRANSFORMATION}
 For each problem there may be one particular choice for which all coordinates $q_i$ are cyclic. Then the conjugate momenta $p_i$ are all constant:
-$$p_i=\alpha_i$$
-Consider a situation in which Hamiltonian is a constant of motion,
-then 
-$$H=H(\alpha_1,.......\alpha_n)$$
-so the Hamiltonian equations for $\dot{q}_i$ are 
-$$\dot{q}_i=\frac{\partial H}{\partial \alpha_i}=\omega_i$$
-Where $\omega_i$'s are functions of $\omega_i$'s only 
-$\therefore $ solutions are
-$$ q_i=\omega_i t+\beta_i$$
-where $\beta_i$'s are constants of integration.\\
+\begin{align*}
+p_i&=\alpha_i\\
+\text{Consider a situation in which }&\text{Hamiltonian is a constant of motion,
+	then }\\
+H&=H(\alpha_1,.......\alpha_n)\\
+\text{so the Hamiltonian equations}&\text{ for $\dot{q}_i$ are }\\
+\dot{q}_i&=\frac{\partial H}{\partial \alpha_i}=\omega_i\\
+\text{Where $\omega_i$'s are functions of  }&\text{$\omega_i$'s only	$\therefore $ solutions are}\\
+ q_i&=\omega_i t+\beta_i\\
+ \text{where $\beta_i$'s are constants }&\text{of integration.}
+\end{align*}
 \par Since the obivious generalized coordinates suggested by the problem will
-not normally be cyclic, we must have a specific proceedure for transforming from one set of variables to some other set that may be more suitable.\\
-\par In the Hameltonian formulation the momenta are also independent variable on the same level as the generalized coordinates. The similtaneous transformation of the independent coordinates and momenta $q_i,p_i$ to a new se t  $Q_i,P_i$ with (invertible) equation of transformation:
-$$Q_i=Q_i (q,p,t)$$
-$$P_i=P_i (q,p,t)$$
-Which define a point transformation in phase space.
+not normally be cyclic, we must have a specific proceedure for transforming from one set of variables to some other set that may be more suitable.\\\\
+ In the Hameltonian formulation the momenta are also independent variable on the same level as the generalized coordinates. The similtaneous transformation of the independent coordinates and momenta $q_i,p_i$ to a new se t  $Q_i,P_i$ with (invertible) equation of transformation:
+ \begin{align*}
+ Q_i&=Q_i (q,p,t)\\
+ P_i&=P_i (q,p,t)\\
+ \text{Which define a point transfo}&\text{rmation in phase space.}
+ \end{align*}
 \section{Jacobian}
 If $u$ and $v$ are two function of two independent variables $x$ and $y$ then the determinant $J=\left|\begin{array}{ll}\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}\end{array}\right|$ is called the Jacobian of $u$ and $v$ with respect to of $x$ and $y$ which is written as $\frac{\partial(u, v)}{\partial(x, y)}$ or $J\left(\frac{u, v}{x, y}\right)$\\
 If $u, v$ and $w$ are three functions of three independent variables $x, y$ and $z$ then the determinant\\
@@ -57,13 +60,20 @@ as of old canonical variables
 \begin{equation}
 \delta\int\limits_{t_1}^{t_2}(p_i\dot{q_i}-H(Q,P,t))dt=0
 \end{equation}
-$\therefore$ we can say
-$$\lambda (p_i\dot{q_i}-H)=P_i\dot{Q_i}-K+\frac{\partial F}{\partial t}$$
-$F$ is a function of phase space coordinates with continuous second derivatives \\
-$\lambda$ is a constant independent of canonical coordinates and the time and it is related to scale transformation. \\\\
-For $\lambda=1$ we have
-$$p_i\dot{q_i}-H=P_i\dot{Q_i}-K+\frac{dF}{dt}$$
-Which is simply called canonical transformation 
+\begin{align*}
+\therefore\quad \text{ we can say}\\
+\lambda (p_i\dot{q_i}-H)&=P_i\dot{Q_i}-K+\frac{\partial F}{\partial t}\\
+\text{$F$ is a function }&\text{of phase space coordinates with continuous second derivatives}\\
+\intertext{$\lambda$ is a constant independent of canonical coordinates and the time and it is related to scale transformation. }
+\text{For }\lambda&=1\text{ we have}\\
+p_i\dot{q_i}-H&=P_i\dot{Q_i}-K+\frac{dF}{dt}\\
+\text{Which is simply}&\text{ called canonical transformation }
+\end{align*}
+
+
+
+
+
 \begin{note}
 	A transformation of canonical coordinates for which is called extended canonical transformation
 \end{note}
@@ -154,7 +164,7 @@ There are four types of generating function:
 	$$
 	where $\beta$ and $\gamma$ are constants, is zero if
 	{\exyear{ NET-JRF (Dec-2017)}}
-	 \begin{tasks}(2)
+	 \begin{tasks}(4)
 		\task[\textbf{a.}]$\gamma=\beta$
 		\task[\textbf{b.}]$\gamma=2 \beta$
 		\task[\textbf{c.}]$\gamma=\sqrt{2} \beta$
@@ -170,7 +180,7 @@ There are four types of generating function:
 	\end{tasks}
 	\item  Let $(x, p)$ be the generalized coordinate and momentum of a Hamiltonian system. If new variables $(X, P)$ are defined by $X=x^{\alpha} \sinh (\beta p)$ and $P=x^{\gamma} \cosh (\beta p)$, where $\alpha, \beta$ and $\gamma$ are constants, then the conditions for it to be a canonical transformation, are
 	NET/JRF (DEC-2017)
-	 \begin{tasks}(1)
+	 \begin{tasks}(2)
 		\task[\textbf{a.}]$\alpha=\frac{1}{2 \beta}(\beta+1)$ and $\gamma=\frac{1}{2 \beta}(\beta-1)$
 		\task[\textbf{b.}]$\beta=\frac{1}{2 \gamma}(\alpha+1)$ and $\gamma=\frac{1}{2 \alpha}(\alpha-1)$
 		\task[\textbf{c.}]$\alpha=\frac{1}{2 \beta}(\beta-1)$ and $\gamma=\frac{1}{2 \beta}(\beta+1)$
@@ -227,7 +237,7 @@ There are four types of generating function:
 	\end{tasks}
 	\item  The generator of the infinitesimal canonical transformation $q \rightarrow q^{\prime}=(1+\epsilon) q$ and $p \rightarrow p^{\prime}=(1-\in) p$ is
 {\exyear{ 	NET/JRF (DEC-2019)}}
-	 \begin{tasks}(2)
+	 \begin{tasks}(4)
 		\task[\textbf{a.}] $q+p$
 		\task[\textbf{b.}]$q p$
 		\task[\textbf{c.}]$\frac{1}{2}\left(q^{2}-p^{2}\right)$
@@ -275,7 +285,7 @@ There are four types of generating function:
 	$$
 	is canonical for
 {\exyear{ 	GATE- 2011}}
-	 \begin{tasks}(2)
+	 \begin{tasks}(4)
 		\task[\textbf{a.}]$\alpha=2, \beta=\frac{1}{2}$
 		\task[\textbf{b.}]$\alpha=2, \beta=2$
 		\task[\textbf{c.}]$\alpha=1, \beta=1$
@@ -377,7 +387,7 @@ $$
 		\begin{align*}
 		H&=\frac{p^{2}}{2 m}+\frac{1}{2} m \omega^{2} q^{2}, \quad F=F_{1}(q, Q)=-\frac{Q}{q}\\
 		\Rightarrow \frac{\partial F_{1}}{\partial q}&=p \Rightarrow \frac{Q}{q^{2}}=p\\
-		\Rightarrow \frac{\partial F_{1}}{\partial Q}&=-P \Rightarrow-\frac{1}{q}=-P \Rightarrow q=\frac{1}{P}\\
+		\Rightarrow \frac{\partial F_{1}}{\partial Q}&=-P \Rightarrow-\frac{1}{q}=-P \Rightarrow q=\frac{1}{P}
 		\intertext{From equation (a) and (b) $\Rightarrow p=Q P^{2}\quad 
 			\because q=\frac{1}{P}
 			$}
@@ -397,7 +407,7 @@ $$
 		\begin{align*}
 		Q&=\log \left(1+q^{\frac{1}{2}} \cos p\right)\\
 		P&=2\left(1+q^{\frac{1}{2}} \cos p\right) q^{\frac{1}{2}} \sin p \Rightarrow 2 q^{\frac{1}{2}} \sin p+q \sin 2 p\\
-	\text{	(a) For canonical transformation:}&
+	\text{	(a) For canonical }&\text{transformation:}
 		\frac{\partial Q}{\partial q} \cdot \frac{\partial P}{\partial p}-\frac{\partial Q}{\partial p} \cdot \frac{\partial P}{\partial q}=1\\
 		\Rightarrow \frac{\partial Q}{\partial q}&=\frac{1}{\left(1+q^{\frac{1}{2}} \cos p\right)} \times \frac{1}{2} q^{-\frac{1}{2}} \cos p, \frac{\partial Q}{\partial p}=\frac{q^{\frac{1}{2}}(-\sin p)}{\left(1+q^{\frac{1}{2}} \cos p\right)}\\
 		\frac{\partial P}{\partial p}&=2 q^{\frac{1}{2}} \cos p+2 q \cos 2 p, \frac{\partial P}{\partial q}=2 \times \frac{1}{2} q^{-\frac{1}{2}} \sin p+\sin 2 p\\
@@ -410,7 +420,7 @@ $$
 		\frac{\partial F_{3}}{\partial p}&=-q=-\frac{\left(e^{Q}-1\right)^{2}}{\cos ^{2} p} \Rightarrow F_{3}=-\int\left(e^{Q}-1\right)^{2} \sec ^{2} p d p\\
 		F_{3}&=-\left(e^{Q}-1\right)^{2} \tan p+f_{1}(Q)........(A)\\
 		\frac{\partial F_{3}}{\partial Q}&=-P=-2\left(e^{2 Q}-e^{Q}\right) \tan p......(B)\\
-		\text { Equating A and B }\\
+		\text { Equating A }&\text{ and B}\\
 		f_{1}(Q)&=0, \quad f_{2}(p)=-\tan p\\
 		\text { So } F_{3}&=-\left(e^{Q}-1\right)^{2} \tan p
 		\end{align*}
@@ -457,7 +467,7 @@ $$
 	\centering
 	\includegraphics[height=2cm,width=3cm]{CT-02}
 \end{figure}
-where $P=\frac{E}{\omega}$\\
+$\hspace{2.5cm}$where $P=\frac{E}{\omega}$\\
 (e)
 	\begin{figure}[H]
 	\centering
