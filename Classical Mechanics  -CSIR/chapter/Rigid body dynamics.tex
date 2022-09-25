@@ -19,16 +19,16 @@ The simplest motion of a rigid body  is the rotation of a rigid body about an ax
 The rigid body pivoted at the origin and rotates with angular speed $\omega$ around the $z$ axis, in the counterclockwise direction (as viewed from above). Consider a little piece of the body, with mass $d m$ and position $(x, y)$. This little piece travels in a circle around the origin with speed
 \begin{align*}
 v&=\omega r\\
-\text{Where,}\ r&=\sqrt{x^{2}+y^{2}} \qquad \because x=r\cos\theta \ ;\  y=r\sin\theta
-\intertext{Then, the angular momentum of this piece (relative to the origin) equals}
-\mathrm{J}&=\mathrm{r} \times \mathrm{p}\\&=r(v d m) \hat{\mathrm{z}}\\&=d m r^{2} \omega \hat{\mathrm{z}}
-\intertext{Then the angular momentum of the entire body is therefore}
+\text{Where,}\ r&=\sqrt{x^{2}+y^{2}} \qquad \because x=r\cos\theta \ ;\  y=r\sin\theta\\
+\text{Then, the angular momentum }&\text{of this piece (relative to the origin) equals}\\
+\mathrm{J}&=\mathrm{r} \times \mathrm{p}\\&=r(v d m) \hat{\mathrm{z}}\\&=d m r^{2} \omega \hat{\mathrm{z}}\\
+\text{Then the angular momentum}&\text{ of the entire body is therefore}\\
 \mathrm{J}&=\int r^{2} \omega \hat{\mathrm{z}} d m\\&=\int\left(x^{2}+y^{2}\right) \omega \hat{\mathrm{z}} d m
 \intertext{Where the integration runs over the area of the body. If the density of the object is constant, as is usually the case, then we have,}
-d m&=\rho d x d y
-\intertext{If we define the moment of inertia around the $z$ axis to be}
-I_{z} &= \int r^{2} d m\\&=\int\left(x^{2}+y^{2}\right) d m
-\intertext{Then the $z$ component of the angular momentum}
+d m&=\rho d x d y\\
+\text{If we define the moment}&\text{ of inertia around the $z$ axis to be}\\
+I_{z} &= \int r^{2} d m\\&=\int\left(x^{2}+y^{2}\right) d m\\
+\text{Then the $z$ component}&\text{ of the angular momentum}\\
 J_{z}&=I_{z} \omega\\
 \text{And in general, the moment of inertia,}\quad I_{z}&= \sum_{i} m_{i} r_{i}^{2}
 \end{align*}
@@ -47,10 +47,10 @@ J_{z}&=I_{z} \omega\\
 \subsection{Torque}
 Torque about a point is defined as the rate of change of angular momentum about the same point.
 \begin{align*}
-\tau&=\frac{dJ}{dt}
-\intertext{For a rigid body rotating about it's axis of symmetry}
-\tau&=\frac{d (I\omega)}{dt}\\&=I \frac{d \omega}{dt}
-\intertext{$\frac{d \omega}{dt}$\ is the angular acceleration.}
+\tau&=\frac{dJ}{dt}\\
+\text{For a rigid body rotating}&\text{ about it's axis of symmetry}\\
+\tau&=\frac{d (I\omega)}{dt}\\&=I \frac{d \omega}{dt}\\
+\text{$\frac{d \omega}{dt}$\ is the }&\text{angular acceleration.}\\
 \intertext{\textbf{Case-1: } If the axis of rotation and axis of symmetry of the bbody are not one. $J$ and $\omega $ may not along the same direction. Then,}
 \tau_{0}&=\frac{d (I\omega)}{dt}
 \intertext{\textbf{Case-2: } If the axis of rotation fixed relative to the body . $I$ will be constant. Then,}
@@ -61,44 +61,44 @@ I\omega&= \text{Constant.}
 \section{Moment of Inertia tensor}
 particle $P$ of the body, having the position vector $r_{i}$ with respect to $O$, has an instantaneous velocity $v_{i}$ relative to $O$, given by
 \begin{align}
-\mathbf{v}_{i}&=\omega \times \mathbf{r}_{i}
-\intertext{The angular velocity $\omega$ has components $\omega_{x}, \omega_{y}, \omega_{z}$ along $x$, $y$ and  $z$ axes . }
-\omega&=\omega_{x} \hat{\mathrm{i}}+\omega_{y} \hat{\mathrm{j}}+\omega_{z} \hat{\mathrm{k}}
-\intertext{Then the angular momentum is given by,}
-\mathrm{J}_{p}&=\mathrm{r}_{i} \times m_{i} \mathrm{v}_{i} \quad \text{$\mathrm{m}_{i}$ is the  mass of the particle.}
-\intertext{Then the angular momentum ,}
+\mathbf{v}_{i}&=\omega \times \mathbf{r}_{i}\\
+\text{The angular velocity $\omega$ has }&\text{components $\omega_{x}, \omega_{y}, \omega_{z}$ along $x$, $y$ and  $z$ axes . }\\
+\omega&=\omega_{x} \hat{\mathrm{i}}+\omega_{y} \hat{\mathrm{j}}+\omega_{z} \hat{\mathrm{k}}\\
+\text{Then the angular momentum}&\text{ is given by,}\\
+\mathrm{J}_{p}&=\mathrm{r}_{i} \times m_{i} \mathrm{v}_{i} \quad \text{$\mathrm{m}_{i}$ is the  mass of the particle.}\\
+\text{Then the angular momentum ,}&\\
 \mathrm{J}&=\sum_{i=1}^{N} \mathrm{r}_{i} \times m_{i} \mathrm{v}_{i}\\&=\sum_{i} m_{i} \mathrm{r}_{i} \times\left({\omega} \times \mathrm{r}_{i}\right)\\
 &=\sum_{i} m_{i}\left[\left(\mathrm{r}_{i} \cdot \mathrm{r}_{i}\right) \omega-\left(\mathrm{r}_{i} \cdot \omega\right) \mathrm{r}_{i}\right] \\
 &=\sum_{i} m_{i}\left[\mathrm{r}_{i}^{2} \omega-\left(\mathrm{r}_{i} \cdot \omega\right) \mathrm{r}_{i}\right]
 \intertext{Whose direction is not along that of angular velocity If $J_{x}, J_{y}, J_{z}$ are the components of angular momentum along $X, Y, Z$ axes respectively, then}
-J_{x}&=\sum_{i} m_{i}\left[r_{i}^{2} \omega_{x}-\left(x_{i} \omega_{x}+y_{i} \omega_{y}+z_{i} \omega_{z}\right) x_{i}\right]
-\intertext{It can be written as,}
+J_{x}&=\sum_{i} m_{i}\left[r_{i}^{2} \omega_{x}-\left(x_{i} \omega_{x}+y_{i} \omega_{y}+z_{i} \omega_{z}\right) x_{i}\right]\\
+\text{It can be written}&\text{ as,}\\
 \begin{split}
 J_{x}&=\omega_{x} \sum_{i} m_{i}\left(r_{i}^{2}-x_{i}^{2}\right)-\omega_{y} \sum_{i} m_{i} x_{i} y_{i}-\omega_{z} \sum_{i} m_{i} x_{i} z_{i} \\
 J_{y}&=-\omega_{x} \sum_{i} m_{i} x_{i} y_{i}+\omega_{y} \sum_{i} m_{i}\left(r_{i}^{2}-y_{i}^{2}\right)-\omega_{z} \sum m_{i} y_{i} z_{i} \\
 J_{z}&=-\omega_{x} \sum_{i} m_{i} x_{i} z_{i}-\omega_{y} \sum_{i} m_{i} y_{i} z_{i}+\omega_{z} \sum_{i} m_{i}\left(r_{i}^{2}-z_{i}^{2}\right)
-\end{split}\\\\
+\end{split}\\
 \begin{split}
 J_{x}&=I_{x x} \omega_{x}+I_{x y} \omega_{y}+I_{x z} \omega_{z} \\
 J_{y}&=I_{y x} \omega_{x}+I_{y y} \omega_{y}+I_{y z} \omega_{z} \\
 J_{z}&=I_{z x} \omega_{x}+I_{z y} \omega_{y}+I_{z z} \omega_{z}
-\end{split}
-\intertext{Where,}
+\end{split}\\
+\text{Where,}\quad\\
 \begin{split}
 I_{x x}&=\sum_{i} m_{i}\left(r_{i}^{2}-x_{i}^{2}\right)=\sum_{i} m_{i}\left(y_{i}^{2}+z_{i}^{2}\right) \\
 I_{y y}&=\sum_{i} m_{i}\left(r_{i}^{2}-y_{i}^{2}\right)=\sum_{i} m_{i}\left(\dot{x}_{i}^{2}+z_{i}^{2}\right)\\
 I_{z z}&=\sum_{i} m_{i}\left(r_{i}^{2}-z_{i}^{2}\right)=\sum_{i} m_{i}\left(x_{i}^{2}+y_{i}^{2}\right)
-\end{split}
-\intertext{And,}\
+\end{split}\\
+\text{And,}\quad
 \begin{split}
 I_{x y}&=-\sum_{i} m_{i} x_{i} y_{i}=I_{y x} \\
 I_{x z}&=-\sum_{i} m_{i} x_{i} z_{i}=I_{z x} \\
 I_{y z}&=-\sum_{i} m_{i} y_{i} z_{i}=I_{z y}
-\end{split}
-\intertext{Then any component of the angular momentum vector can be written as,}
+\end{split}\\
+\text{Then any component}&\text{ of the angular momentum vector can be written as,}\\
 J_{\alpha}&=\sum_{\beta} I_{\alpha \beta} \omega_{\beta} \quad \text { Where } \alpha, \beta=x, y, z\\
-\text{Or }\ J&= I\omega
-\intertext{In matrix notation,}
+\text{Or }\ J&= I\omega\\
+\text{In matrix notation,}\\
 \left[\begin{array}{c}
 J_{x} \\
 J_{y} \\
@@ -107,7 +107,7 @@ J_{z}
 I_{x x} & I_{x y} & I_{x z} \\
 I_{y x} & I_{y y} & I_{y z} \\
 I_{z x} & I_{z y} & I_{x z}
-\end{array}\right] \left[\begin{array}{l}
+\end{array}\right] \left[\begin{array}{l}\\
 \omega_{x} \\
 \omega_{y} \\
 \omega_{z}
@@ -118,7 +118,7 @@ I_{x x} & I_{x y} & I_{x z} \\
 I_{y x} & I_{y y} & I_{y z} \\
 I_{z x} & I_{z y} & I_{x z}
 \end{array}\right] 
-\end{align}
+\end{align}\\
 \section{Principle axes and Principle moment of inertia}
 If  a body  has  symmetries  with  respect  to  some  of  the  axis,  then  some  of  the  products  of  inertia  become  zero  and  we  can  identify  the  principal  axes.   If  a  body  is  symmetric  with  respect  to  the plane $x^{\prime}=0$ then, we will have $I_{x^{\prime} y^{\prime}}=I_{y^{\prime} x^{\prime}}=I_{x^{\prime} z^{\prime}}=I_{z^{\prime} x^{\prime}}=0$ and $x^{\prime}$ will be a principal axis. 
 \\If we choose the axes of the coordinate system fixed in the body with respect to which \textbf{off-diagonal elements disappear and only the diagonal elements remain in the inertia tensor, then such axes are called the principal axes} of the body and the corresponding moments of inertia as the principal moments of inertia. In general the directions of the principal axes are different to those of arbitrary axes fixed in the body. If $x^{\prime}$ , $y^{\prime}$ and $z^{\prime}$ are the principle axes then the principle moment of inertia can be written as, 
@@ -182,10 +182,10 @@ Consider a thin uniform rod of length $L$ and mass $m$ and uniform mass density 
 	\caption{Uniform rod with an axis passing through the center.}
 	\label{Uniform rod}
 \end{figure}
+Consider an infinitesimal mass element  $dm$ ,located at a displacement  $x$  from the center  of  the  rod,, 
 \begin{align*}
-\intertext{Consider an infinitesimal mass element  $dm$ ,located at a displacement  $x$  from the 
-	center  of  the  rod,, } \ dm&= \lambda dx \qquad \text{Where,}\ \lambda=\frac{m}{L}
-\intertext{The moment of inertia of a continuos mass distribution is given by,}\ I&= \int r^{2} d m\\
+dm&= \lambda dx \qquad \text{Where,}\ \lambda=\frac{m}{L}\\
+\text{The moment of inertia of}&\text{ a continuos mass distribution is given by,}\\ I&= \int r^{2} d m\\
 \text{Then,}\ I&=\int_{-L/2}^{L/2} x^{2} \frac{m}{L}dx\\&= \frac{m}{L} \int_{-L/2}^{L/2} x^{2} dx\\&=
 \frac{m}{L} \left[\frac{x^{3}}{3} \right]_{-L/2}^{L/2} =\frac{m}{3L} \frac{2L^{3}}{8} \\&=\frac{1}{12}mL^{2}
 \end{align*}
@@ -220,10 +220,11 @@ I&=\frac{1}{12} m L^{2}+\frac{1}{4} m L^{2}\\&=\frac{1}{3} m L^{2}
 Choose cylindrical coordinates with the coordinates $(r, \theta)$ in the plane and the $z$-axis perpendicular to the plane. The area element,
 \begin{align*}
 d a&=\rho d \rho d \theta\\
-\sigma &= \frac{M}{A}=\frac{M}{\pi R^{2}}
-\intertext{ The infinitesimal mass }\ 
-d m &= \frac{M}{A} d a\\&=\frac{M}{\pi R^{2}} \rho d \rho d \theta 
-\intertext{Then the moment of inertia ,} \ I &=\int \rho^{2} \sigma d a \\
+\sigma &= \frac{M}{A}=\frac{M}{\pi R^{2}}\\
+\text{ The infinitesimal }&\text{ mass}\\
+d m &= \frac{M}{A} d a\\&=\frac{M}{\pi R^{2}} \rho d \rho d \theta \\
+\text{Then the moment of}&\text{ inertia ,} \\
+ I &=\int \rho^{2} \sigma d a \\
 &=\left(\frac{M}{\pi R^{2}}\right) \int \rho^{2} d a \\
 &=\left(\frac{M}{\pi R^{2}}\right) \int_{0}^{R} \int_{0}^{2 \pi} \rho^{2} \rho d \rho d \theta \\
 &=\left(\frac{2 M}{R^{2}}\right) \int_{0}^{R} \rho^{3} d \rho \\
@@ -240,8 +241,8 @@ By the theorem of perpendicular axis,
 \begin{align*}
 I_{z}&=I_{x}+I_{y}
 \intertext{The moment of inertia of the disc is the same about any diameter. Let I be the moment of inertia about any diameter $xx^{\prime}$. Then it will be the moment of inertia  about a perpendicular diameter  $yy^{\prime}$}
-\text{Here,}\ I_{z}&=\frac{M R^{2}}{2}\\
-\text{And ,}\ I_{x}&=I_{y}=I\\
+\text{Here, }\ I_{z}&=\frac{M R^{2}}{2}\\
+\text{And , }\ I_{x}&=I_{y}=I\\
 \frac{M R^{2}}{2}&= 2I\\
  I&= \frac{M R^{2}}{4}
 \end{align*}
@@ -271,9 +272,9 @@ I&=\int r_{\perp}^{2}+d m\\&=\iiint r^{2} \sin ^{2} \theta \cdot \frac{M}{\frac{
 		\label{About an axis passing through it's diameter.}
 	\end{figure}
 \end{minipage}\\\\
-Any tangent to the sphere at any point is parallel to one of it's diameter and is at  a distance equal to $R$ from the centre.  Now by the application of the theorem of parallel axis  the moment of inertia becomes,
+Any tangent to the sphere at any point is parallel to one of it's diameter and is at  a distance equal to $R$ from the centre.  Now by the application of the theorem of parallel axis  the moment of inertia becomes,\\\\
+According to the theorem of parallel axis, the moment of inertia about any axis is given by,
 \begin{align*}
-\intertext{According to the theorem of parallel axis, the moment of inertia about any axis is given by,}
 I&= I_{cm}+M d^{2}\quad  \text{Where $d$ is the distance from the axis to center of mass .}\\
 \text{Here,}\quad d&=R\\
 I&=\frac{2}{5} m R^{2}+m R^{2}\\&=\frac{7}{5} m R^{2} 
@@ -286,8 +287,10 @@ da&= R^{2} \sin \theta d\theta d \phi\\
 \sigma&= \frac{M}{a}\\
 d m&=\sigma R \sin \theta d \theta R d \phi
 \intertext{where $\sigma=M / 4 \pi R^{2}$ is the surface mass density, and the distance from the rotational axis is $r=R \sin \theta$. Hence the moment of inertia to be calculated is}
-I&=\int r_{\perp}^{2}+d m\\&=\iint R^{2} \sin ^{2} \theta \cdot \frac{M}{{4}\pi R^{2}} R^{2}  \sin \theta d \theta d \phi\\&=\frac{M R^{2}}{4 \pi }  \int_{0}^{\pi} \sin ^{3} \theta d \theta \int_{0}^{2 \pi} d \phi\\
-&=\frac{ M R^{2}}{4 \pi} \cdot  \frac{4}{3} \cdot 2 \pi\\&=\frac{2}{3} M R^{2}
+I&=\int r_{\perp}^{2}+d m\\
+&=\iint R^{2} \sin ^{2} \theta \cdot \frac{M}{{4}\pi R^{2}} R^{2}  \sin \theta d \theta d \phi\\&=\frac{M R^{2}}{4 \pi }  \int_{0}^{\pi} \sin ^{3} \theta d \theta \int_{0}^{2 \pi} d \phi\\
+&=\frac{ M R^{2}}{4 \pi} \cdot  \frac{4}{3} \cdot 2 \pi\\
+&=\frac{2}{3} M R^{2}
 \end{align*}
 \begin{minipage}{0.45\textwidth}
 \begin{figure}[H]
@@ -315,17 +318,18 @@ I&=\frac{2}{3} m R^{2}+m R^{2}\\&=\frac{5}{3} m R^{2}
 \end{align*}
 \section{Kinetic energy of a rotating body}
 The kinetic energy of a rotating body about an axis depends not only upon it's mass and angular velocity but also depends upon the position of the axis and the distribution of mass about that axis.
-Suppose a body of mass $M$ is rotating about an axis . Assume that the body is a system of small particles . 
+Suppose a body of mass $M$ is rotating about an axis . Assume that the body is a system of small particles . \\\\
+Let us consider a particle $P$ of elementary mass $m$ at a distance $r$ from the axis.
 \begin{align*}
-\intertext{Let us consider a particle $P$ of elementary mass $m$ at a distance $r$ from the axis.}
 \text{The angular velocity}&=\omega\\
-\text{The linear velocity }&=r \omega
-\intertext{Then the kinetic energy of rotation,}
-\text{K.E}&=\frac{1}{2} m r^{2} \omega^{2} 
-\intertext{Hence the kinetic energy (K.E.) of rotation of the whole body is given by,}
+\text{The linear velocity }&=r \omega\\
+\text{Then the kinetic energy}&\text{ of rotation,}\\
+\text{K.E}&=\frac{1}{2} m r^{2} \omega^{2} \\
+\text{Hence the kinetic energy (K.E.) of }&\text{rotation of the whole body is given by,}\\
 E&=\Sigma \frac{1}{2} m r^{2} \omega^{2}\\&=\frac{1}{2} \omega^{2} \Sigma m r^{2}\\
-\text{Now,} \  \Sigma m r^{2}&=I \quad \text{ The moment of inertia about the  given axis}
-\intertext{Then the kinetic energy of rotation,} E&=\frac{1}{2} I \omega^{2}\\
+\text{Now,} \  \Sigma m r^{2}&=I \quad \text{ The moment of inertia about the  given axis}\\
+\text{Then the kinetic energy}&\text{ of rotation,} \\
+E&=\frac{1}{2} I \omega^{2}\\
 \text{If} \ \omega&=1, \text{Obviously}\ I=2  E
 \intertext{Hence the moment of inertia of a body may also be defined as twice its kinetic energy of rotation,}
 \text{But angular momentum} J&=I \omega \quad \text{where $J$ is along the axis of rotation}\\
@@ -376,7 +380,7 @@ Practice set 1
 	\item Two bodies of equal mass $m$ are connected by a massless rigid rod of length $l$ lying in the $x y$-plane with the centre of the rod at the origin. If this system is rotating about the $z$-axis with a frequency $\omega$, its angular momentum is
 	\exyear{NET DEC 2012}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $m l^{2} \omega / 4$
 	\task[\textbf{B.}]$m l^{2} \omega / 2$
 	\task[\textbf{C.}]$m l^{2} \omega$
@@ -386,7 +390,7 @@ Practice set 1
 	\item Two masses $m$ each, are placed at the points $(x, y)=(a, a)$ and $(-a,-a)$ and two masses, $2 m$ each, are placed at the points $(a,-a)$ and $(-a, a)$. The principal moments of inertia of the system are
 	\exyear{NET DEC 2015}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $2 m^{2}, 4 m a^{2}$
 	\task[\textbf{B.}]$4 m a^{2}, 8 m a^{2}$
 	\task[\textbf{C.}] $4 m a^{2}, 4 m a^{2}$
@@ -396,16 +400,16 @@ Practice set 1
 	\item A disc of mass $m$ is free to rotate in a plane parallel to the $x y$ plane with an angular velocity $-\omega \hat{z}$ about a massless rigid rod suspended from the roof of a stationary car (as shown in the figure below). The rod is free to orient itself along any direction.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=4cm,width=5cm]{diagram-20210926(37)-crop}
+		\includegraphics[height=4cm,width=4.5cm]{diagram-20210926(37)-crop}
 	\end{figure}
 	The car accelerates in the positive $x$-direction with an acceleration $a>0 .$ Which of the following statements is true for the coordinates of the centre of mass of the disc in the reference frame of the car?
 	\exyear{NET DEC 2017}
 \end{minipage}
-\begin{tasks}(2)
-	\task[\textbf{A.}] only the $x$ and the $z$ coordinates change
-	\task[\textbf{B.}]only the $y$ and the $z$ coordinates change
-	\task[\textbf{C.}]only the $x$ and the $y$ coordinates change
-	\task[\textbf{D.}]all the three coordinates change
+\begin{tasks}(1)
+	\task[\textbf{A.}]Only the $x$ and the $z$ coordinates change
+	\task[\textbf{B.}]Only the $y$ and the $z$ coordinates change
+	\task[\textbf{C.}]Only the $x$ and the $y$ coordinates change
+	\task[\textbf{D.}]All the three coordinates change
 \end{tasks}
 \end{enumerate}
 
@@ -472,15 +476,15 @@ Practice set 1
 	\text{We know that, }g&=\frac{G M}{R^{2}}\\
 	\text{Differentiating, }\frac{\mathrm{dg}}{\mathrm{g}}&=-\left(\frac{2 \mathrm{dR}}{\mathrm{R}}\right)\\
 	\text{Further, }\mathrm{K}&=\frac{1}{2} \mathrm{I} \omega^{2}=\frac{1}{2}\left[\frac{3}{5} \mathrm{M} \mathrm{R}^{2}\right] \omega^{2}\\
-	\text{	or }\frac{\mathrm{dK}}{\mathrm{K}}&=\frac{3}{10} \mathrm{M} \omega^{2} \times\left(\frac{2 \mathrm{dR}}{\mathrm{R}}\right)
-	\intertext{When radius decreases by $2 \%$, then $\mathrm{g}$ increases by $4 \%$ and K decreases by $4 \%$.}
+	\text{	or }\frac{\mathrm{dK}}{\mathrm{K}}&=\frac{3}{10} \mathrm{M} \omega^{2} \times\left(\frac{2 \mathrm{dR}}{\mathrm{R}}\right)\\
+	\text{When radius decreases by $2 \%$,}&\text{ then $\mathrm{g}$ increases by $4 \%$ and K decreases by $4 \%$.}
 	\end{align*}
 	So the correct answer is \textbf{Option (C)}
 \end{answer}
 	\item A cubical block of side $a$ is moving with velocity $v$ on a horizontal smooth plane as shown in fig. It hits a ridge at point $O$. The angular speed of the block after it hits $O$ is\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=1.5cm,width=5cm]{fm16}
+	\includegraphics[height=1.3cm,width=5cm]{fm16}
 \end{figure}
 \begin{tasks}(4)
 	\task[\textbf{A.}] $3 \mathrm{v} /(4 \mathrm{a})$
@@ -491,7 +495,7 @@ Practice set 1
 \begin{answer}$\left. \right. $\\
 	\begin{minipage}{0.65\textwidth}
 		\begin{align*}
-		\intertext{By conservation of angular momentum, we have}
+		\text{By conservation of }&\text{angular momentum, we have}\\
 		I \omega&=M \vee(a / 2)\\
 		\text{	Here, }I&=\frac{M a^{2}}{6}+M\left(\frac{a}{\sqrt{2}}\right)^{2}\\&=\frac{2 M a^{2}}{3} \\
 		\therefore \frac{2 \mathrm{Ma}^{2}}{3} \omega&=\frac{\mathrm{Mva}}{2} \\ \omega&=\frac{3 \mathrm{v}}{4 \mathrm{a}}
@@ -511,31 +515,31 @@ Practice set 1
 \end{figure}
 \begin{answer}
 	\begin{align}
-	\mathbf{N}&=\mathrm{mg}\notag
-	\intertext{$\mathrm{f}=\mu \mathrm{mg}$ (friction opposes relative motion, so it is in forward direction)}\notag\\
+	\mathbf{N}&=\mathrm{mg}\notag\\
+	\text{$\mathrm{f}=\mu \mathrm{mg}$ (friction }&\text{opposes relative motion, so it is in forward direction)}\notag\\
 	a_{c m}&=\frac{f}{m}=\mu g\label{fm01}\\
 	\text{Also }\mathrm{f} \times \mathrm{R}&=\mathrm{I} \alpha\notag\\
 	\Rightarrow \mu \mathrm{mgR}&=\mathrm{I} \alpha \Rightarrow \alpha=\frac{\mu \mathrm{mgR}}{\mathrm{I}}=\frac{\mu \mathrm{mgR}}{2 / 5 \mathrm{mR}^{2}}=\frac{5}{2} \frac{\mu \mathrm{g}}{\mathrm{R}}\notag\\
-	\omega&=\omega_{\mathrm{o}}-\alpha \mathrm{t}=\omega_{\mathrm{o}}-\frac{5}{2} \frac{\mu \mathrm{gt}}{\mathrm{R}}\label{fm02}
-	\intertext{At the instant, $\mathrm{m}$ starts pure rolling}\notag
+	\omega&=\omega_{\mathrm{o}}-\alpha \mathrm{t}=\omega_{\mathrm{o}}-\frac{5}{2} \frac{\mu \mathrm{gt}}{\mathrm{R}}\label{fm02}\\
+	\text{At the instant, $\mathrm{m}$}&\text{ starts pure rolling}\notag\\
 	\omega R&=v\text{ (lowest point is at rest)}\notag\\
-	v_{c m}&=0+\mu g t\label{fm03}
-	\intertext{$[$ from eqns. $(\ref{fm02})$ and $(\ref{fm03})$ and $\omega R=v]$}\notag
+	v_{c m}&=0+\mu g t\label{fm03}\\
+	\text{$[$ from eqns. $(\ref{fm02})$ and }&\text{$(\ref{fm03})$ and $\omega R=v]$}\notag\\
 	\Rightarrow \omega \mathrm{R}&=\frac{7}{2} \mu \mathrm{gt} \Rightarrow \mathrm{t}=\frac{2}{7} \frac{\omega \mathrm{R}}{\mu \mathrm{g}}\notag
 	\end{align}
 \end{answer}
 \item  A uniform solid cube has mass $M$ and side ' $a$ '. Calculate moment of inertia of the cube about an axis which coincides with one of it's sides
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=3cm,width=3cm]{Rigid body pset-3}
+	\includegraphics[height=4.2cm,width=4cm]{Rigid body pset-3}
 \end{figure}
 \begin{answer}
 	\begin{align*}
-	\intertext{Moment of inertia of a cube about an axis passing through it's  centre}
-	I_{c}&=\frac{Ma^{2}}{6}
-	\intertext{Seperation between two axes}
-	d&=\frac{a}{\sqrt{2}}
-	\intertext{Then according to the parellel axis theorem}
+	\text{Moment of inertia of}&\text{ a cube about an axis passing through it's  centre}\\
+	I_{c}&=\frac{Ma^{2}}{6}\\
+	\text{Seperation between}&\text{ two axes}\\
+	d&=\frac{a}{\sqrt{2}}\\
+	\text{Then according to }&\text{the parellel axis theorem}\\
 	I&=I_{c}+Md^{2}\\
 		&=\frac{Ma^{2}}{6}+M\left( {\frac{a}{\sqrt{2}}}\right) ^{2}\\
 		&=\frac{2 Ma^{2}}{3}
@@ -544,11 +548,11 @@ Practice set 1
  \item A $1 \mathrm{~kg}$ mass of clay, moving with a velocity of 10 $\mathrm{m} / \mathrm{s}$, strikes a stationary wheel and sticks to it. The solid wheel has a mass of $20 \mathrm{~kg}$ and a radius of $1 \mathrm{~m}$.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=2cm,width=5cm]{mi 1}
+	\includegraphics[height=2.5cm,width=6.2cm]{mi 1}
 	
 \end{figure}
  Assuming that the wheel and the ground are both rigid and that the wheel is set into pure rolling motion, the angular velocity of the wheel immediately after the impact is, approximately,
- \begin{tasks}(2)
+ \begin{tasks}(4)
  	\task[\textbf{a.}]Zero. 
  	\task[\textbf{b.}]$1 / 3 \ \mathrm{rad} / \mathrm{s}$
  	\task[\textbf{c.}]$\sqrt{10 / 3}\  \mathrm{rad} / \mathrm{s}$ 
