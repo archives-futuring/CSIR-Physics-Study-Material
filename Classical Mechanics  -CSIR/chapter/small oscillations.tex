@@ -23,7 +23,7 @@ Small displacement of the system from the equilibrium position results in an unb
  \begin{minipage}{0.5\textwidth}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[height=4cm,width=5cm]{stable}
+ 	\includegraphics[height=3cm,width=4cm]{stable}
  	\caption{}
  	\label{fig1}
  \end{figure}
@@ -31,7 +31,7 @@ Small displacement of the system from the equilibrium position results in an unb
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=3cm,width=5cm]{unstable}
+	\includegraphics[height=2cm,width=3.5cm]{unstable}
 	\caption{}
 	\label{fig2}
 \end{figure}
@@ -49,21 +49,17 @@ and these may be taken as the new generalized coordinates of the motion
 	\caption{}
 	\label{}
 \end{figure}
-One can expand potential energy by Taylor series expansion
-$$V\left(q_{i} \ldots \ldots q_{n}\right)=V\left(q_{00} \ldots \ldots q_{0 n}\right)+\left.\frac{\partial V}{\partial q_{i}}\right|_{q_{i 0}}\left(q_{i}-q_{0 i}\right)+\frac{1}{2} \frac{\partial^{2} V}{\partial q_{i} \partial q_{j}}\left(q_{i}-q_{0 i}\right)\left(q_{j}-q_{0 j}\right)+\ldots .$$
-The 0 in subscript means $q_{i}=q_{0 i}$\\
-So,
-\begin{equation}
-\quad V(q)=V_{0}+0+\frac{1}{2}\left(\frac{\partial^{2} V}{\partial q_{i} \partial q_{j}}\right)_{0} \eta_{i} \eta_{j}+\ldots \ldots \label{ref1}
-\end{equation}
-because at equilibrium,
-$$
-\left(\frac{\partial V}{\partial q_{i}}\right)_{q_{i}=q_{0 i}} \equiv\left(\frac{\partial V}{\partial q_{i}}\right)_{0}=-Q_{i}=0
-$$
-where $Q_{i}$ is the generalized force. Now,
-\begin{equation}
-V_{0} \equiv V\left(q_{01}, q_{02}, \ldots \ldots, q_{0 n}\right) \label{ref2}
-\end{equation}
+\begin{align}
+\text{One can expand potential}&\text{ energy by Taylor series expansion}\notag\\
+V\left(q_{i} \ldots \ldots q_{n}\right)&=V\left(q_{00} \ldots \ldots q_{0 n}\right)+\left.\frac{\partial V}{\partial q_{i}}\right|_{q_{i 0}}\notag\\
+&\left(q_{i}-q_{0 i}\right)+\frac{1}{2} \frac{\partial^{2} V}{\partial q_{i} \partial q_{j}}\left(q_{i}-q_{0 i}\right)\left(q_{j}-q_{0 j}\right)+\ldots .\notag\\
+\text{The 0 in subscript }&\text{means }q_{i}=q_{0 i}\notag\\
+\text{So, }\quad V(q)&=V_{0}+0+\frac{1}{2}\left(\frac{\partial^{2} V}{\partial q_{i} \partial q_{j}}\right)_{0} \eta_{i} \eta_{j}+\ldots \ldots \label{ref1}\\
+\text{because at }&\text{equilibrium,}\notag\\
+&\left(\frac{\partial V}{\partial q_{i}}\right)_{q_{i}=q_{0 i}} \equiv\left(\frac{\partial V}{\partial q_{i}}\right)_{0}=-Q_{i}=0\notag\\
+\text{where $Q_{i}$ is the }&\text{generalized force. Now,}\\
+V_{0} &\equiv V\left(q_{01}, q_{02}, \ldots \ldots, q_{0 n}\right) \label{ref2}
+\end{align}
  is the potential energy of eqilibrium configuration whis is constant.So we set $V_0$ is equal to zero because in equations of motions only derivative of V occur.\\
  Neglecting higher order terms (because $\eta_{i}^{\prime} s$ are very small)
  \begin{equation}
