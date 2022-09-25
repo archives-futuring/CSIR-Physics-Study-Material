@@ -14,14 +14,13 @@ $\text { A dynamical system of order } n \text { is defined as follows: }$
 	\frac{d x_{2}}{d t} &=v_{2}\left(x_{1}, x_{2}, \ldots, x_{n}, t\right) \\
 	\frac{d x_{n}}{d t} &=v_{n}\left(x_{1}, x_{2}, \ldots, x_{n}, t\right)
 	\end{align}
-	or simply
-	$$
-	\frac{d \vec{r}}{d t}=\vec{v}(\vec{r}, t)
-	$$
-	where
-	$$
-	\vec{v} \Rightarrow\left\{v_{1}, v_{2}, \ldots, v_{n}\right\}
-	$$
+	\begin{align*}
+	\text{or simply}\\
+	\frac{d \vec{r}}{d t}&=\vec{v}(\vec{r}, t)\\
+\text{	where}\\
+	\vec{v} &\Rightarrow\left\{v_{1}, v_{2}, \ldots, v_{n}\right\}
+	\end{align*}
+
 	is called the velocity function. While we use the notation $x$ and $v$ in analogy with mechanics, they do not always have the usual meaning of position and velocity.
 \end{enumerate}
 The statements 1 and 2 together define  $\textbf{a dynamical system of order n}$.\\
@@ -70,41 +69,44 @@ Let us look at the properties of the velocity function:\\
 Often the motion may be terminating. The terminating motion happens when at some time $t$ the solution of the differential equation is undefined.
 \section{ Second order systems}
 If the nonlinear differential equation under investigation is of second order and does not contain the independent variable time $t$ explicitly, then it is possible to extract some information regarding the properties of the solution by a geometrical method without actually going into tedious solution of the equation. The dynamical systems whose equations of motion do not involve time $t$ explicitly are called 'autonomous systems'. The equations of motion of second order autonomous systems have the general form
-$$
-\ddot{x}+g(\dot{x})+f(x)=0
-$$
-If the velocity $(\dot{x})$ of system is treated as other independent variable and denoted by $y(=\dot{x})$. then equation (1) may be reduced to two first order differential equations as\\
-$$\begin{aligned}
-	&\frac{d x}{d t}=y \\
-	&\frac{d y}{d t}=-[g(y)+f(x)]
-\end{aligned}$$
- Equations represent special case of more general system \\
- $$\begin{aligned}
- 	&\frac{d x}{d t}=P(x, y) \\
- 	&\frac{d y}{d t}=Q(x, y)
- \end{aligned}$$
- $\text { where } P(x, y) \text { and } Q(x, y) \text { are the functions of variables } x \text { and } y \text {. }$\\
-Thus Phase space is the superposition of position and momentum space and in phase space the position and velocity coordinated are treated on equal footings.\\
-$$\frac{dy}{dx}=-\frac{g(y)+f(x)}{y},y\neq0$$
+\begin{align*}
+\ddot{x}+g(\dot{x})+f(x)&=0
+\intertext{If the velocity $(\dot{x})$ of system is treated as other independent variable and denoted by $y(=\dot{x})$. then equation (1) may be reduced to two first order differential equations as}
+\frac{d x}{d t}&=y \\
+\frac{d y}{d t}&=-[g(y)+f(x)]\\
+\text{ Equations represent special}&\text{ case of more general system }\\
+\frac{d x}{d t}&=P(x, y) \\
+\frac{d y}{d t}&=Q(x, y)\\
+\text { where } P(x, y) &\text { and } Q(x, y) \text { are the functions of variables } x \text { and } y \text {. }
+\intertext{Thus Phase space is the superposition of position and momentum space and in phase space the position and velocity coordinated are treated on equal footings.}
+\frac{dy}{dx}&=-\frac{g(y)+f(x)}{y},y\neq0
+\end{align*}
+
+
 This differential equation defines a definite curve in the phase space.This curve is called phase tajectory or simply trajectory of the system in the phase space.The phase trajectory is defined by general equations\\
-$$\frac{dy}{dx}=\frac{Q(x,y)}{P(x,y)}$$
+$$\frac{dy}{dx}=\frac{Q(x,y)}{P(x,y)}\hspace{5cm}$$
 \section{Illustration of phase trajectories}
-\textbf{1-Linear harmonic oscillator}\\
-The differential equation of linear harmonic oscillator is\\
-$$m\frac{d^2x}{dt^2}+kx=0,\frac{dx}{dt}=y$$
-These equations may be expressed as \\
-$$\frac{dy}{dt}+\frac{k}{m}=0, \frac{dx}{dt}=y$$
-Then $$\frac{dy}{dx}=-\frac{kx}{my}$$
-or $$mydy+kxdx=0$$
-Integrating\\
-$$\frac{my^2}{2}+\frac{kx^2}{2}=C$$
-The arbitrary constant C is determining by requiring that $x=x_0$ at y=0;This fixes the total energy of the oscillator and C is given by\\
-$$ C=0+\frac{kx_0^2}{2}=E$$
-Now the equation become 
-$$my^2+kx^2=2E$$
-$$\implies \frac{x^2}{2E/k}+\frac{y^2}{2E/m}=1$$
-This equation has the form 
-$$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$$
+\textbf{1-Linear harmonic oscillator}
+\begin{align*}
+\text{The differential equation}&\text{ of linear harmonic oscillator is}\\
+m\frac{d^2x}{dt^2}+kx&=0,\frac{dx}{dt}=y\\
+\text{These equations may be }&\text{ expressed as}\\
+\frac{dy}{dt}+\frac{k}{m}&=0, \frac{dx}{dt}=y\\
+\text{Then }\frac{dy}{dx}&=-\frac{kx}{my}\\
+\text{or }mydy+kxdx&=0\\
+\text{ Integrating }\quad\\
+\frac{my^2}{2}+\frac{kx^2}{2}&=C
+\intertext{The arbitrary constant C is determining by requiring that $x=x_0$ at y=0;This fixes the total energy of the oscillator and C is given by}
+ C&=0+\frac{kx_0^2}{2}=E\\
+\text{Now the  }&\text{equation become}\\
+my^2+kx^2&=2E\\
+\implies \frac{x^2}{2E/k}+\frac{y^2}{2E/m}&=1\\
+\text{This equation }&\text{has the form }\\
+\frac{x^2}{a^2}+\frac{y^2}{b^2}&=1
+\end{align*}
+
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=5cm,width=8cm]{diagram-20220215-20220215103508-crop-crop}
@@ -120,30 +122,27 @@ With $ \omega=\sqrt{\frac{k}{m}}$.These are parametric equation of the ellipse.\
 The period of revolution of representative point \\
 $$T=\frac{2 \pi }{\omega}=2\pi \sqrt{\frac{m}{k}}$$
 \textbf{2-A Periodic Motion}\\
-Consider a particle of mass $m$ being repulsed from the origin along $X$ axis by a force proportional to its distance from the origin.\\
-$F \infty x$ or $F=k x$, where $k$ is a constant.\\
-From Newton's second law $F=m \frac{d^{2} x}{d t^{2}}$, therefore equation of motlon becomes\\
-$\therefore \qquad m \frac{d^{2} x}{d t^{2}}=k x $\\
-\begin{equation}
-\text { or }  \frac{d^{2} x}{d t^{2}}=\frac{k}{m} x \text { or } \frac{d^{2} x}{d t^{2}}=a^{2} x\label{psd01}
-\end{equation}
-where \qquad
-$a^{2}=\frac{k}{m}$\\
-Equation (\ref{psd01}) is equivalent to two differential equations of first order as
-$$
-y=\frac{d x}{d t}, \quad \frac{d y}{d t}=a^{2} x
-$$
-Dividing these equations the phase trajectories are given by the equations
-$$
-\begin{aligned}
-\frac{d y}{d x} &=\frac{a^{2} x}{y} \\
-\Rightarrow \quad y d y &-a^{2} x d x=0
-\end{aligned}
-$$
-Integrating we get
-\begin{equation}
+Consider a particle of mass $m$ being repulsed from the origin along $X$ axis by a force proportional to its distance from the origin.
+\begin{align}
+\text{$F \infty x$ or $F=k x$,}&\text{ where $k$ is a constant.}\notag\\
+\text{From Newton's second law }&\text{$F=m \frac{d^{2} x}{d t^{2}}$, therefore equation of motlon becomes}\notag\\
+\therefore \qquad &m \frac{d^{2} x}{d t^{2}}=k x \notag\\
+\text { or } \quad \frac{d^{2} x}{d t^{2}}&=\frac{k}{m} x \text { or } \frac{d^{2} x}{d t^{2}}=a^{2} x\label{psd01}\\
+\text{where }\qquad a^{2}&=\frac{k}{m}\notag\\
+\text{Equation (\ref{psd01}) is equivalent }&\text{to two differential equations of first order as}\notag\\
+y=\frac{d x}{d t}, &\quad \frac{d y}{d t}=a^{2} x\notag\\
+\text{Dividing these equations the }&\text{phase trajectories are given by the equations}\notag\\
+\frac{d y}{d x} &=\frac{a^{2} x}{y} \notag\\
+\Rightarrow \quad y d y &-a^{2} x d x=0\notag\\
+\text{Integrating we get}\notag\\
 y^{2}-a^{2} x^{2}=C
-\end{equation}
+\end{align}
+
+
+
+
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm,width=5cm]{diagram-20220215-crop}
@@ -155,37 +154,27 @@ $$
 The origin $O$ is a singular point of a special type called the saddle point. In this case, there are two special trajectories that pass through the singular point (for which $C=0$ ). The motion of the representative point $P(x, y)$ along the trajectories that approach the saddle point is asymptotic with time $t$. The trajectories in the neighbourhood of a saddle point represent the possible motions that occur in the neighbourhood of a point of unstable equilibrium.\\
 \textbf{3-Motion of a Damped Oscillator}\\
 The differential equation of a damped harmonic oscillator with coefficient of damping ' $b$ ' is" given by
-$$
-\frac{m d^{2} x}{d t^{2}}=-b \frac{d x}{d t}-k x
-$$
-where $k$ is spring factor. This equation may be written as
-$$
-\begin{array}{l}
-\frac{d^{2} x}{d t^{2}}+\frac{b}{m} \frac{d x}{d t}+\frac{k}{m} x=0 \\
-\frac{d^{2} x}{d t^{2}}+2 r \frac{d x}{d t}+\omega_{0}^{2} x=0
-\end{array}
-$$
-or\\
-\begin{equation}
-\text{where }\quad 2 r=\frac{b}{m}\text{ and }\omega_{0}^{2}=\frac{k}{m} \label{psd02}\\
-\end{equation}
-This equation is equivalent to two differential equations of first order given by
-and
-$$
-\left.\begin{array}{l}
-y=\frac{d x}{d t} \\
-\frac{d y}{d t}=-\left(2 r y+\omega_{0}^{2} x\right)
-\end{array}\right\}
-$$
-Dividing these equations, we get the equation of phase trajectory as
-$$
-\frac{d y}{d x}=-\frac{2 r y+\omega_{0}{ }^{2} x}{y}
-$$
+\begin{align}
+\frac{m d^{2} x}{d t^{2}}&=-b \frac{d x}{d t}-k x\notag\\
+\text{where $k$ is spring factor.}&\text{ This equation may be written as}\notag\\
+\frac{d^{2} x}{d t^{2}}&+\frac{b}{m} \frac{d x}{d t}+\frac{k}{m} x=0 \notag\\
+\frac{d^{2} x}{d t^{2}}&+2 r \frac{d x}{d t}+\omega_{0}^{2} x=0\notag\\
+\text{ or }\notag\\
+\text{where }\quad 2 r&=\frac{b}{m}\text{ and }\omega_{0}^{2}=\frac{k}{m} \label{psd02}\\
+\text{This equation is equivalent }&\text{to two differential equations of first order given by and}\notag\\
+y&=\frac{d x}{d t} \notag\\
+\frac{d y}{d t}&=-\left(2 r y+\omega_{0}^{2} x\right)\notag\\
+\text{Dividing these equations, }&\text{we get the equation of phase trajectory as}\notag\\
+\frac{d y}{d x}&=-\frac{2 r y+\omega_{0}{ }^{2} x}{y}\notag
+\end{align}
 \textbf{Case (i) Underdamped case}\\
 If $r^{2}<\omega_{0}{ }^{2}$, the motion of particle is damped oscillatory motion. Substituting $\omega=\sqrt{\omega_{0}{ }^{2}-r^{2}}$\\
 The general solution of equation (\ref{psd02}) is 
-$$x=A e^{-r t} \cos (\omega t+\phi)$$
-$$y=\dot{x}=-A e^{-r t}[r \cos (\omega t+\phi)+\omega \sin (\omega t+\phi)\}$$where $A$ and $\phi$ are arbitrary constants.
+\begin{align*}
+x&=A e^{-r t} \cos (\omega t+\phi)\\
+y&=\dot{x}=-A e^{-r t}[r \cos (\omega t+\phi)+\omega \sin (\omega t+\phi)\}\\
+\text{where $A$ and }&\text{$\phi$ are arbitrary constants.}
+\end{align*}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm,width=4cm]{diagram-20220215(2)-crop}
@@ -195,19 +184,20 @@ $$y=\dot{x}=-A e^{-r t}[r \cos (\omega t+\phi)+\omega \sin (\omega t+\phi)\}$$wh
 These equations represent family of spirals; one spiral is shown in Figure . The origin $O$ is a singular point called the focal point. The representative point $P(x, y)$ spirals to approach the focal point at origin in an asymptotic manner. In this case the focal point at origin is a point of stable cquilibrium.\\
 The representative point spirals to approach the focal point in an infinite number of times about it, so we may conclude that it does not approach $O$ with a definite direction.\\
 \textbf{Case (ii) Overdamped Motion. }\\
-If damping is large, then $r^{2}>\omega_{0}^{2}$ and motion is not oscillatory and is called overdamped motion.\\
-Let
-$$
-\omega=\sqrt{r^{2}-\omega_{0}^{2}}
-$$
-In this case the general solution of equation $(\ref{psd02})$ is expressed as \\
-\begin{equation}
+If damping is large, then $r^{2}>\omega_{0}^{2}$ and motion is not oscillatory and is called overdamped motion.
+\begin{align}
+\text{Let}\quad \omega&=\sqrt{r^{2}-\omega_{0}^{2}}\notag\\
+\text{In this case the general  }&\text{solution of equation $(\ref{psd02})$ is expressed as}\notag\\
 \text{and}\qquad
-\left.\begin{array}{l}
+&\left.\begin{array}{l}
 \quad x(t)=A e^{-\pi} \cosh (\omega t+\phi) \\
 y(t)=\hat{x}(t)=A e^{-r t}[\omega \sinh (\omega t+\phi)-r \cosh (\omega t+\phi)]
 \end{array}\right\}\label{psd03}
-\end{equation}
+\end{align}
+
+
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3cm,width=5cm]{diagram-20220215(1)-crop}
@@ -215,6 +205,7 @@ y(t)=\hat{x}(t)=A e^{-r t}[\omega \sinh (\omega t+\phi)-r \cosh (\omega t+\phi)]
 	\label{}
 \end{figure}
 where $A$ and $\phi$ are constants. Equations (\ref{psd03}) represents the phase trajectories of overdamped oscillator. A typical trajectory is shown in Figure  the origin $O$ is a singular point. The phase trajectories are such that the representative point $P(x, y)$ approaches towards the singular point with a definite direction; such a singular point is called a node or nodal point. The nodal point $O$ is the position of stable equilibrium. The four types of singular points are listed in the following table :\\\\
+\renewcommand*{\arraystretch}{1.5}
 \begin{tabular}{|l|l|l|l|}
 	\hline Name of singular point & \multicolumn{1}{|c|}{ Type of motion } & \multicolumn{1}{|c|}{ Type of equilibrium } & Approach \\
 	\hline 1. Vortex point & Oscillatory & Stable & none \\
@@ -222,24 +213,18 @@ where $A$ and $\phi$ are constants. Equations (\ref{psd03}) represents the phase
 	\hline 3. Focal point & Damped oscillatory & Stable & with no definite direction \\
 	\hline 4. Nodal point & Aperiodic & Stable & with a definite direction \\
 	\hline
-\end{tabular}
+\end{tabular}\\
 \begin{example}\textbf{Falling body in a gravitational field}\\
 Let $x$ denote the height at some time $t$. The force equation may be written as two first order equations:
-$$
-\begin{gathered}
-\frac{d x}{d t}=v_{x}(x, y)=y \\
-\frac{d y}{d t}=v_{y}(x, y)=-g
-\end{gathered}
-$$
-where $g$ is the acceleration due to gravity. Thus the velocity field is given by,
-$$
-\vec{v}=(y,-g)
-$$
-Since $g$ is never zero there are no fixed points in this system. The equation of the phase curve and its solution is	\\
-$$
-\frac{d y}{d x}=-\frac{g}{y} \Rightarrow x=x_{0}-y^{2} / 2 g
-$$
-where $x_{0}$ is the height at $t=0$. The phase curves are therefore parabolas as shown in the figure below.\\
+\begin{align*}
+\frac{d x}{d t}&=v_{x}(x, y)=y \\
+\frac{d y}{d t}&=v_{y}(x, y)=-g\\
+\text{where $g$ is the acceleration }&\text{due to gravity. Thus the velocity field is given by,}\\
+\vec{v}&=(y,-g)\\
+\text{Since $g$ is never zero there }&\text{are no fixed points in this system. The equation of the phase curve and its solution is	}\\
+\frac{d y}{d x}&=-\frac{g}{y} \Rightarrow x=x_{0}-y^{2} / 2 g\\
+\text{where $x_{0}$ is the height at }&\text{$t=0$. The phase curves are therefore parabolas as shown in the figure below.}
+\end{align*}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm,width=5cm]{diagram-20220215(6)-crop}
@@ -269,22 +254,18 @@ Consider one such fixed point $\left(x_{0}, y_{0}\right)$. The stability around 
 $$
 \begin{aligned}
 &x(t)=x_{0}+\delta x(t) \\
-&y(t)=y_{0}+\delta y(t)
-\end{aligned}
-$$
-Now Taylor expand the velocity function $\vec{v}$ around the fixed point.
-$$
-\begin{aligned}
+&y(t)=y_{0}+\delta y(t)\\
+\text{Now Taylor expand the }&\text{velocity function $\vec{v}$ around the fixed point.}\\
 &v_{x}(x, y)=v_{x}\left(x_{0}, y_{0}\right)+\left.\frac{\partial v_{x}}{\partial x}\right|_{x_{0}, y_{0}} \delta x+\left.\frac{\partial v_{x}}{\partial y}\right|_{x_{0}, y_{0}} \delta y+\ldots \\
 &v_{y}(x, y)=v_{y}\left(x_{0}, y_{0}\right)+\left.\frac{\partial v_{y}}{\partial x}\right|_{x_{0}, y_{0}} \delta x+\left.\frac{\partial v_{y}}{\partial y}\right|_{x_{0}, y_{0}} \delta y+\ldots
 \end{aligned}
 $$
-By definition the first term is zero since $\left(x_{0}, y_{0}\right)$ is a fixed point. For an infinitesimal variation in $(\delta x, \delta y)$ we may linearise the equations of motion-
-$$
+\begin{align*}
+\intertext{By definition the first term is zero since $\left(x_{0}, y_{0}\right)$ is a fixed point. For an infinitesimal variation in $(\delta x, \delta y)$ we may linearise the equations of motion-}
 \left(\begin{array}{c}
 d x / d t \\
 d y / d t
-\end{array}\right)=\left(\begin{array}{c}
+\end{array}\right)&=\left(\begin{array}{c}
 d \delta x / d t \\
 d \delta y / d t
 \end{array}\right)=\left(\begin{array}{ll}
@@ -293,101 +274,70 @@ V_{y x} & V_{y y}
 \end{array}\right)\left(\begin{array}{l}
 \delta x \\
 \delta y
-\end{array}\right)
-$$
-or in a short form, and shifting the origin to $\left(x_{0}, y_{0}\right)$,
-$$
-\frac{d \delta \vec{r}}{d t}=A \delta \vec{r}
-$$
-where $A$ is a $2 \times 2$ matrix given by,
-$$
-A=\left(\begin{array}{ll}
+\end{array}\right)\\
+\text{or in a short  }&\text{form, and shifting the origin to $\left(x_{0}, y_{0}\right)$,}\\
+\frac{d \delta \vec{r}}{d t}&=A \delta \vec{r}\\
+\text{where $A$ is a }&\text{$2 \times 2$ matrix given by,}\\
+A&=\left(\begin{array}{ll}
 \frac{\partial v_{x}}{\partial x} & \frac{\partial v_{x}}{\partial y} \\
 \frac{\partial v_{y}}{\partial x} & \frac{\partial v_{y}}{\partial y}
 \end{array}\right)_{x_{0}, y_{0}}
-$$
-The local stability analysis is best done in the eigenbasis or in some other convenient basis which we shall call the Standard Basis.
-
-If the system is already linear the above analysis is globally, not just locally, valid since
-$$
-\begin{aligned}
-&\frac{d x}{d t}=v_{x}(x, y)=a x+b y \\
-&\frac{d y}{d t}=v_{y}(x, y)=c x+d y
-\end{aligned}
-$$
-and the matrix $A$ is given by,
-$$
-A=\left(\begin{array}{ll}
+\intertext{The local stability analysis is best done in the eigenbasis or in some other convenient basis which we shall call the Standard Basis.}
+\text{If the system is already linear}&\text{ the above analysis is globally, not just locally, valid since}\\
+\frac{d x}{d t}&=v_{x}(x, y)=a x+b y \\
+\frac{d y}{d t}&=v_{y}(x, y)=c x+d y\\
+\text{and the matrix $A$ is }&\text{given by,}\\
+A&=\left(\begin{array}{ll}
 a & b \\
 c & d
-\end{array}\right)
-$$
-However, we need not restrict the analysis only to linear systems. Consider the change of basis
-$$
+\end{array}\right)\\
+\text{However, we need not restrict the }&\text{analysis only to linear systems. Consider the change of basis}\\
 M\left(\begin{array}{l}
 \delta x \\
 \delta y
-\end{array}\right)=\left(\begin{array}{l}
+\end{array}\right)&=\left(\begin{array}{l}
 \delta X \\
 \delta Y
-\end{array}\right)
-$$
-such that
-$$
-B=M A M^{-1}=\left(\begin{array}{cc}
+\end{array}\right)\\
+\text{such that }B&=M A M^{-1}=\left(\begin{array}{cc}
 \lambda_{1} & 0 \\
 0 & \lambda_{2}
-\end{array}\right)
-$$
-where $\lambda_{i}$ are the eigenvalues of the stability matrix given by
-$$
-\begin{aligned}
-&\lambda_{1}=\frac{1}{2}\left(\tau-\sqrt{\tau^{2}-4 \delta}\right) \\
-&\lambda_{2}=\frac{1}{2}\left(\tau+\sqrt{\tau^{2}-4 \delta}\right)
-\end{aligned}
-$$
-where
-$$
-\begin{gathered}
-\tau=V_{x x}+V_{y y} \\
-\delta=V_{x x} V_{y y}-V_{x y} V_{y x}
-\end{gathered}
-$$
-are respectively the trace and the determinant of the stability matrix. The eigenvalues are real or complex depending on whether $\tau^{2} \geq 4 \delta$ or $\tau^{2}<4 \delta .$ We shall consider these cases separately.
-
+\end{array}\right)\\
+\text{where $\lambda_{i}$ are the eigenvalues }&\text{of the stability matrix given by}\\
+\lambda_{1}&=\frac{1}{2}\left(\tau-\sqrt{\tau^{2}-4 \delta}\right) \\
+\lambda_{2}&=\frac{1}{2}\left(\tau+\sqrt{\tau^{2}-4 \delta}\right)\\
+\text{where}\quad\tau&=V_{x x}+V_{y y} \\
+\delta&=V_{x x} V_{y y}-V_{x y} V_{y x}
+\end{align*}
+are respectively the trace and the determinant of the stability matrix. The eigenvalues are real or complex depending on whether $\tau^{2} \geq 4 \delta$ or $\tau^{2}<4 \delta .$ We shall consider these cases separately.\\\\
 In the transformed coordinates the linearised equations of motion and their solutions in the neighbourhood of the fixed point are given by
 $$
 \begin{aligned}
-\delta \dot{X} &=\lambda_{1} \delta X \Rightarrow \delta X(t)=C_{1} \exp \left(\lambda_{1} t\right) \\
-\delta \dot{Y} &=\lambda_{2} \delta Y \Rightarrow \delta Y(t)=C_{2} \exp \left(\lambda_{2} t\right)
+\delta \dot{X} &=\lambda_{1} \delta X \Rightarrow \delta X(t)=C_{1} \exp \left(\lambda_{1} t\right) \hspace{3cm}\\
+\delta \dot{Y} &=\lambda_{2} \delta Y \Rightarrow \delta Y(t)=C_{2} \exp \left(\lambda_{2} t\right)\\
+\text{The equation  }&\text{for the phase curve is}\\
+\left(\delta X / C_{1}\right)^{\lambda_{2}}&=\left(\delta Y / C_{2}\right)^{\lambda_{1}}
 \end{aligned}
-$$
-The equation for the phase curve is
-$$
-\left(\delta X / C_{1}\right)^{\lambda_{2}}=\left(\delta Y / C_{2}\right)^{\lambda_{1}}
 $$
 \subsection{ Classification of the fixed points}
 We use the properties of the eigenvalues to classify the fixed points. While in the first order systems motion either moves towards or away from the fixed point, the second order systems are richer in the sense there is much more variety in the nature of fixed points.\\
 \begin{enumerate}
 	\item \textbf{$\text { Stable Node, } \lambda_{1}, \lambda_{2}<0$}
-	$$
-	\delta X, \delta Y \rightarrow 0
-	$$
-	as $t \rightarrow \infty$\\
-	If in particular $\lambda_{1}=\lambda_{2}<0$ and the equation is separable, $A=\lambda I$, it is called a stable star. (See Figure). If not a change of basis may be induced such that the matrix
-	$$
-	B=\left(\begin{array}{ll}
+	\begin{align*}
+		\delta X, \delta Y &\rightarrow 0\\
+	\text{	as }t &\rightarrow \infty
+	\intertext{If in particular $\lambda_{1}=\lambda_{2}<0$ and the equation is separable, $A=\lambda I$, it is called a stable star. (See Figure). If not a change of basis may be induced such that the matrix}
+	B&=\left(\begin{array}{ll}
 	\lambda & 0 \\
 	c & \lambda
-	\end{array}\right)
-	$$
-	or equivalently $c=0$ and $b \neq 0$. In this case
-	$$
-	\begin{gathered}
-	\delta \dot{X}=\lambda \delta X \Rightarrow \delta X(t)=C_{1} \exp (\lambda t) \\
-	\delta \dot{Y}=c \delta X+\lambda \delta Y \Rightarrow \delta Y(t)=\left(C_{2}+C_{1} c t\right) \exp (\lambda t)
-	\end{gathered}
-	$$
+	\end{array}\right)\\
+	\text{or equivalently }&\text{$c=0$ and $b \neq 0$. In this case}\\
+	\delta \dot{X}&=\lambda \delta X \Rightarrow \delta X(t)=C_{1} \exp (\lambda t) \\
+	\delta \dot{Y}&=c \delta X+\lambda \delta Y \Rightarrow \delta Y(t)=\left(C_{2}+C_{1} c t\right) \exp (\lambda t)
+	\end{align*}
+
+	
+
 	For $\lambda<0$ this is called an improper node.
 	\item \textbf{$\text { Unstable Node, } \lambda_{1}, \lambda_{2}>0 \text {. }$}
 	$$\delta X, \delta Y \rightarrow \infty$$
@@ -395,7 +345,7 @@ We use the properties of the eigenvalues to classify the fixed points. While in 
 	(See Figure).\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=7cm,width=8cm]{diagram-20220215(3)-crop}
+		\includegraphics[height=7.5cm,width=8cm]{diagram-20220215(3)-crop}
 		\caption{}
 		\label{}
 	\end{figure}
@@ -465,7 +415,7 @@ The phase-space trajectory that represents the motion of the pendulum at the lim
 	$\text { Driven, damped SHO at resonance. }$\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=6cm,width=10cm]{diagram-20220215(11)-crop}
+		\includegraphics[height=5.5cm,width=10cm]{diagram-20220215(11)-crop}
 		\caption{}
 		\label{}
 	\end{figure}
@@ -525,14 +475,14 @@ For example in the given potential, there are three range of energy.\\
 	To plot phase curve first one should plot potential $(V$ vs $x)$, then on the same axis one should plot momentum with common $x$ axis .
 	
 	We can check how momentum is changing with position keeping in mind how potential is changing for a given value of energy. For given value of potential the phase curve is hyperbolic as shown in equation $E=\frac{p_{x}^{2}}{2 m}-k x^{2} \Rightarrow \frac{p_{x}^{2}}{2 m E}-\frac{x^{2}}{E / k}=1$\\
-	One will plot the phase curve by assuming that if the potential is increasing, then kinetic energy will be decreasing and if potential is decreasing then kinetic energy will be increasing, because total energy will always remain constant. One should plot the phase curve for different range of energy. For example in this potential there are three range of energy\\
+	One will plot the phase curve by assuming that if the potential is increasing, then kinetic energy will be decreasing and if potential is decreasing then kinetic energy will be increasing, because total energy will always remain constant. One should plot the phase curve for different range of energy. For example in this potential there are three range of energy\\\\
 	\textbf{Case 1:} $E<0$, the particle will come from $-\infty .$ As it is approaches the potential its kinetic energy as well as momentum decreases finally became zero at turning point $A$ and turn back towards $-\infty$ with increasing kinetic energy and momentum.\\
 	Same trend will also follow when particle approaching the potential from $x=\infty$, for turning point $A^{\prime}$.\\
-	\textbf{Case 2:} $E>0$, the particle will come from $x=-\infty$. As it approaches the potential. its kinetic energy as well as momentum decreases till $x=0$. As it crosses $x=0$ and move towards $x=\infty$, again kinetic energy as well as momentum increases and same trend will be followed, when particle approaches the potential to $x=\infty$.\\
+	\textbf{Case 2:} $E>0$, the particle will come from $x=-\infty$. As it approaches the potential. its kinetic energy as well as momentum decreases till $x=0$. As it crosses $x=0$ and move towards $x=\infty$, again kinetic energy as well as momentum increases and same trend will be followed, when particle approaches the potential to $x=\infty$.\\\\
 	\textbf{Case 3:} $E=0$, the particle can reach at $x=0$, which is unstable equilibrium point and the phase curve will also be separated between $E<0$ and $E>0$, identified as separatix. $E=\frac{p_{x}^{2}}{2 m}-k x^{2}$ for $E=0 \Rightarrow p_{x} \propto \pm x$ which is straight line.\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=5cm,width=7cm]{diagram-20220222(1)-crop}
+		\includegraphics[height=5cm,width=6.5cm]{diagram-20220222(1)-crop}
 	\end{figure}
 \end{answer}
 \begin{example}
@@ -540,9 +490,9 @@ For example in the given potential, there are three range of energy.\\
 \end{example}
 \begin{answer}
 	One will plot the phase curve by assuming that if the potential energy is increasing, then kinetic energy will be decreasing and if the potential energy is decreasing then kinetic energy will be increasing, because total energy will always remain constant. One should plot the phase curve for different range of energy. For example in this potential there are three range of energy.
-	The stable equilibrium point is $\theta=0$. $\theta=-\pi$ and $\theta=\pi$ are unstable equilibrium points.\\
-	\textbf{Case 1:}$\text { For energy }-m g a<E<m g a$  particle is bounded about stable equilibrium point .so phase curve is periodic.\\
-	\textbf{Case 2:} For energy $E>m g a$ motion will become unbounded and phase curve will be a periodic. Liberation will take place.\\
+	The stable equilibrium point is $\theta=0$. $\theta=-\pi$ and $\theta=\pi$ are unstable equilibrium points.\\\\
+	\textbf{Case 1:}$\text { For energy }-m g a<E<m g a$  particle is bounded about stable equilibrium point .so phase curve is periodic.\\\\
+	\textbf{Case 2:} For energy $E>m g a$ motion will become unbounded and phase curve will be a periodic. Liberation will take place.\\\\
 	\textbf{Case 3:} For energy $E=m g a$ particle will reach at unstable equilibrium point it also separate two type of motion (mention in case 1 and case 2 ) identified as separatix.
 	\begin{figure}[H]
 		\centering
@@ -552,10 +502,10 @@ For example in the given potential, there are three range of energy.\\
 \begin{example}
 	Phase curves for the Kepler effective potential $U(x)=-x^{-1}+\frac{1}{2}x^{-2}$
 \end{example}
-\begin{answer}
+\begin{answer}$\left. \right. $\\
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=5cm,width=7cm]{diagram-20220225(2)-crop}
+		\includegraphics[height=8cm,width=8cm]{diagram-20220225(2)-crop}
 	\end{figure}
 \end{answer}
 \begin{example}
@@ -564,7 +514,7 @@ For example in the given potential, there are three range of energy.\\
 \begin{answer}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{phase 2}
+	\includegraphics[height=8cm,width=8cm]{phase 2}
 \end{figure}	
 \end{answer}
 \begin{example}
@@ -573,7 +523,7 @@ For example in the given potential, there are three range of energy.\\
 \begin{answer}
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{phase 3}
+	\includegraphics[height=8cm,width=8cm]{phase 3}
 \end{figure}	
 \end{answer}
 
@@ -597,19 +547,19 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(3)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(3)-crop}
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(4)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(4)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(5)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(5)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(6)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(6)-crop}
 	\end{figure}
 \end{tasks}
 	\item The bob of a simple pendulum, which undergoes small oscillations, is immersed in water. Which of the following figures best represents the phase space diagram for the pendulum?
@@ -617,19 +567,19 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(7)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(7)-crop}
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(8)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(8)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(9)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(9)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(10)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(10)-crop}
 	\end{figure}
 \end{tasks}
 	\item Which of the following set of phase-space trajectories is not possible for a particle obeying Hamilton's equations of motion?
@@ -637,47 +587,47 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(13)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(13)-crop}
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(14)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(14)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(15)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(15)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(16)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210926(16)-crop}
 	\end{figure}
 \end{tasks}
 	\item The Hamiltonian of a classical particle moving in one dimension is $H=\frac{p^{2}}{2 m}+\alpha q^{4}$ where $\alpha$ is a positive constant and $p$ and $q$ are its momentum and position respectively. Given that its total energy $E \leq E_{0}$ the available volume of phase space depends on $E_{0}$ as
 	{\exyear{NET DEC 2014}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $E_{0}^{3 / 4}$
 	\task[\textbf{B.}]$E_{0}$
 	\task[\textbf{C.}]$\sqrt{E_{0}}$
-	\task[\textbf{D.}]is independent of $E_{0}$
+	\task[\textbf{D.}]Is independent of $E_{0}$
 \end{tasks}
 	\item Which of the following figures is a schematic representation of the phase space trajectories (i.e., contours of constant energy) of a particle moving in a one-dimensional potential $V(x)=\frac{-1}{2} x^{2}+\frac{1}{4} x^{4}$
 	{\exyear{NET JUNE 2015}}
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(24)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(24)-crop}
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(25)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(25)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(26)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(26)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(27)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(27)-crop}
 	\end{figure}
 \end{tasks}
 	\item A particle moves in one dimension in a potential $V(x)=-k^{2} x^{4}+\omega^{2} x^{2}$ where $k$ and $\omega$ are constants. Which of the following curves best describes the trajectories of this system in phase space?
@@ -685,19 +635,19 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(42)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(42)-crop}
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(43)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(43)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(44)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(44)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210926(45)-crop}
+		\includegraphics[height=3.5cm,width=5cm]{diagram-20210926(45)-crop}
 	\end{figure}
 \end{tasks}
 \end{enumerate}
@@ -749,20 +699,20 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(11)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(11)-crop}
 		
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(12)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(12)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(13)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(13)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(14)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(14)-crop}
 	\end{figure}
 \end{tasks}	
 	\item A particle moves in one dimension under a potential $V(x)=\alpha|x|$ with some non-zero total energy. Which one of the following best describes the particle trajectory in the phase space?
@@ -770,20 +720,20 @@ For example in the given potential, there are three range of energy.\\
 \begin{tasks}(2)
 	\task[\textbf{A.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(11)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(11)-crop}
 		
 	\end{figure}
 	\task[\textbf{B.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(12)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(12)-crop}
 	\end{figure}
 	\task[\textbf{C.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(13)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(13)-crop}
 	\end{figure}
 	\task[\textbf{D.}]\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=5cm]{diagram-20210915(14)-crop}
+		\includegraphics[height=3cm,width=4.5cm]{diagram-20210915(14)-crop}
 	\end{figure}
 \end{tasks}
 \end{enumerate}
@@ -846,26 +796,27 @@ For example in the given potential, there are three range of energy.\\
 	\end{figure}
 	\begin{answer}
 		\begin{align}
-		\intertext{Since $\mathrm{m}$ does not slip on M' (relative velocity of $\mathrm{m}$ w.r.t. M' is zero)}\notag
-		\intertext{$\therefore \mathrm{M}^{\prime}, \mathrm{m}$ will move with same acceleration as that of $\mathrm{M}$, Since surfaces are smooth}\notag
-		\text{$\therefore$ frictional force is zero}\notag\\
+		\text{Since $\mathrm{m}$ does not slip on M' }&\text{(relative velocity of $\mathrm{m}$ w.r.t. M' is zero)}\notag\\
+		\text{$\therefore \quad \mathrm{M}^{\prime}, \mathrm{m}$  will move with same}&\text{  acceleration as that of $\mathrm{M}$, Since surfaces are smooth}\notag\\
+		\text{$\therefore$ \quad frictional force is zero}\notag\\
 		\text{Net force }&=\mathrm{Mg}=\left(\mathrm{M}+\mathrm{M}^{\prime}+\mathrm{m}\right) \mathrm{a}\notag\\
-		\therefore \mathrm{a}&=\frac{\mathrm{Mg}}{\mathrm{M}+\mathrm{M}^{\prime}+\mathrm{m}}\label{pq01}
-		\intertext{Now let us see m, w.r.t. M'}\notag
+		\therefore \mathrm{a}&=\frac{\mathrm{Mg}}{\mathrm{M}+\mathrm{M}^{\prime}+\mathrm{m}}\label{pq01}\\
+		\text{Now let us see m, w.r.t. M'}\notag
 		\end{align}
 		\begin{figure}[H]
 			\centering
 			\includegraphics[height=2.5cm,width=4cm]{pq09(2)}
 		\end{figure}
 		\begin{align}
-		\intertext{Downward acceleration of $\mathrm{m}$ on slope $=0$}
-		\therefore \mathrm{N}-\mathrm{ma} \sin \theta+\mathrm{mg} \cos \theta&=0\\
-		(\text{net }&\perp\text{ force }=0)\notag\\
+		\text{Downward acceleration of $\mathrm{m}$ on slope }&=0\notag\\
+		\therefore \quad \mathrm{N}-\mathrm{ma} \sin \theta+\mathrm{mg} \cos \theta&=0\\
+		(\text{net }\perp\text{ force }&=0)\notag\\
 		\text{and }m g \sin \theta-\operatorname{ma} \cos \theta&=0\label{pq03}\\
-		[\because&\text{ net force along slope }=0]\notag\\
-		\text{From eq }^{n} \cdot(\ref{pq03}) g \sin \theta=a \cos \theta\text{ or }a&=g \tan \theta\label{pq04}
-		\intertext{From eq $^{\mathrm{n}}$. (\ref{pq04}) and (\ref{pq01}),}\notag\\
-		\text{we have }\tan \theta&=\frac{M}{M+M^{\prime}+m} \notag\\\Rightarrow M \cot \theta&=M+M^{\prime}+m\notag\\
+		[\because\text{ net force along slope }]&=0\notag\\
+		\text{From eq }^{n} \cdot(\ref{pq03}) g \sin \theta=a \cos \theta\text{ or }a&=g \tan \theta\label{pq04}\\
+		\text{From eq $^{\mathrm{n}}$.} &\text{(\ref{pq04}) and (\ref{pq01}),}\notag\\
+		\text{we have }\tan \theta&=\frac{M}{M+M^{\prime}+m} \notag\\
+		\Rightarrow M \cot \theta&=M+M^{\prime}+m\notag\\
 		\Rightarrow \mathrm{M}&=\frac{\mathrm{M}^{\prime}+\mathrm{m}}{\cot \theta-1}\notag
 		\end{align}
 	\end{answer}
@@ -881,10 +832,10 @@ For example in the given potential, there are three range of energy.\\
 			\includegraphics[height=6cm,width=4cm]{pq13(2)}
 		\end{figure}
 		\begin{align*}
-		\intertext{Now,}
+		\text{Now,}\hspace{2cm}\\
 		\mathrm{M}_{1} \mathrm{~g}-2 \mathrm{~T}&=\mathrm{M}_{1} \mathrm{a}\\
-		\mathrm{T}-\mathrm{M}_{2} \mathrm{~g}&=\mathrm{M}_{2} \cdot 2 \mathrm{a}
-		\intertext{or}
+		\mathrm{T}-\mathrm{M}_{2} \mathrm{~g}&=\mathrm{M}_{2} \cdot 2 \mathrm{a}\\
+		\text{or}\hspace{2cm}\\
 		\mathrm{M}_{1} \mathrm{~g}-2 \mathrm{M}_{2} \mathrm{~g}&=\mathrm{a}\left(\mathrm{M}_{1}+4 \mathrm{M}_{2}\right)\\
 		\Rightarrow a&=\frac{M_{1}-2 M_{2}}{M_{1}+4 M_{2}} g=\frac{15-12}{15-24} g=\frac{3}{39} g\\
 		\therefore \mathrm{a}&=\frac{\mathrm{g}}{13}\\
@@ -894,11 +845,11 @@ For example in the given potential, there are three range of energy.\\
 	\item A mass $m$ is revolving in a vertical circle at the end of a string of length $20 \mathrm{~cm}$. By how much does the tension of the string at the lowest point exceed the tension at the topmost point?
 	\begin{answer}
 		\begin{align*}
-		\intertext{The tension $T_{1}$ at the topmost point is given by,}
-		\mathrm{T}_{1}=\frac{\mathrm{m} \mathrm{v}_{1}^{2}}{20}-\mathrm{mg}
-		\intertext{Centrifugal force acting outward while weight acting downward}
-		\text{The tension $T_{2}$ at the lowest point, }T_{2}&=\frac{m v_{2}^{2}}{20}+m g
-		\intertext{Centrifugal force and weight (both) acting downward}
+		\text{The tension $T_{1}$ }&\text{at the topmost point is given by,}\\
+		\mathrm{T}_{1}&=\frac{\mathrm{m} \mathrm{v}_{1}^{2}}{20}-\mathrm{mg}\\
+		\text{Centrifugal force acting }&\text{outward while weight acting downward}\\
+		\text{The tension $T_{2}$ at the }&\text{lowest point, }T_{2}=\frac{m v_{2}^{2}}{20}+m g\\
+		\text{Centrifugal force and }&\text{weight (both) acting downward}\\
 		\mathrm{T}_{2}-\mathrm{T}_{1}&=\frac{\mathrm{m} \mathrm{v}_{2}{ }^{2}-\mathrm{m} \mathrm{v}_{1}^{2}}{20}+2 \mathrm{mg} ; \\ \mathrm{v}_{1}^{2}&=\mathrm{v}_{2}^{2}-2 \mathrm{~g} \mathrm{~h}\text{ or}\\
 		\mathrm{v}_{2}^{2}-\mathrm{v}_{1}^{2}&=2 \mathrm{~g}(40)=80 \mathrm{~g}\\
 		\therefore \quad T_{2}-T_{1}&=\frac{80 \mathrm{mg}}{20}+2 \mathrm{~m} \mathrm{~g}=6 \mathrm{mg}
@@ -958,8 +909,8 @@ For example in the given potential, there are three range of energy.\\
 			\includegraphics[height=3cm,width=4cm]{pq06(s)}
 		\end{figure}
 		\begin{align*}
-		\text{	Total mass }&=(60+940) \mathrm{kg}=1000 \mathrm{~kg}
-		\intertext{Let $\mathrm{T}$ be the tension in the supporting cable, then}
+		\text{	Total mass }&=(60+940) \mathrm{kg}=1000 \mathrm{~kg}\\
+		\text{Let $\mathrm{T}$ be }&\text{the tension in the supporting cable, then}\\
 		\mathrm{T}-1000 \mathrm{~g}&=1000 \times 1\\
 		\Rightarrow \mathrm{T}&=1000 \times 11=11000 \mathrm{~N}
 		\end{align*}
@@ -986,14 +937,15 @@ For example in the given potential, there are three range of energy.\\
 		\includegraphics[height=3cm,width=5.5cm]{pq091}
 	\end{figure}
 	
-	\begin{answer}
+	\begin{answer}$\left. \right. $
 		\begin{align*}
 		m g \sin \theta&=m a\\
-		\therefore a&=g \sin \theta\\
+		\therefore \quad a&=g \sin \theta\\
 		&\text{where a is along the inclined plane}\\
-		\therefore&\text{vertical component of acceleration is $g \sin ^{2} \theta$}\\
-		\intertext{Then the  relative vertical acceleration of $\mathrm{A}$ with respect to $\mathrm{B}$ is}
-		g\left(\sin ^{2} 60-\sin ^{2} 30\right]&=\frac{g}{2}\\&=4.9 \mathrm{~m} / \mathrm{s}^{2}\quad
+		\therefore\quad&\text{vertical component of acceleration is $g \sin ^{2} \theta$}\\
+		\text{Then the  relative }&\text{vertical acceleration of $\mathrm{A}$ with respect to $\mathrm{B}$ is}\\
+		&g\left(\sin ^{2} 60-\sin ^{2} 30\right]=\frac{g}{2}\\
+		&=4.9 \mathrm{~m} / \mathrm{s}^{2}\quad
 		(\text{in vertical direction})
 		\end{align*}
 	\end{answer}
