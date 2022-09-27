@@ -97,8 +97,8 @@ ordinate systems , this problem is solved by means of the equations:
 Thr transformation equations for velocity in Lorentz transformation can be written as,
 \begin{align*}
 u_{x}^{\prime}&=\frac{u_{x}-v}{1-u_{x} v / c^{2}}\\u_{y}^{\prime}&=\frac{u_{y} \sqrt{1-v^{2} / c^{2}}}{1-u_{x} v / c^{2}}\\
-u_{z}^{\prime}&=\frac{u_{z} \sqrt{1-v^{2} / c^{2}}}{1-{u_{x} v / c^{2}}}
-\intertext{And the inverse transformations are,}
+u_{z}^{\prime}&=\frac{u_{z} \sqrt{1-v^{2} / c^{2}}}{1-{u_{x} v / c^{2}}}\\
+\text{And the }&\text{inverse transformations are,}\\
 u_{x}&=\frac{u_{x}^{\prime}+v}{1+u_{x}^{\prime} v / c^{2}}\\
 u_{y}&=\frac{u_{y}^{\prime} \sqrt{1-v^{2} / c^{2}}}{1+u_{x}^{\prime} v / c^{2}}\\
 u_{z}&=\frac{u_{z}^{\prime} \sqrt{1-v^{2} / c^{2}}}{1+u_{x}^{\prime} v / c^{2}}
@@ -203,7 +203,7 @@ u_{z}&=\frac{d z}{d t}=\frac{d z^{\prime}}{\gamma\left(d t^{\prime}+\frac{v d x^
 	The observed frequency $\nu$ is lower than the source frequency $\nu_{0}$. Unlike the case of sound waves, which propagate relative to a material medium it makes no difference whether the observer is moving away from the source or the source is moving away from the observer.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3cm,width=13cm]{Doppler}
+		\includegraphics[height=2.5cm,width=12cm]{Doppler}
 		\caption{ The frequency of the light seen by an observer depends on the direction and speed of the observer's motion relative to its source.}
 		\label{}
 	\end{figure}
@@ -263,7 +263,9 @@ E&=E_{0}+\mathrm{KE}\notag\\
 \text{ where}\notag\\
  \text{Rest energy} \quad
 E_{0}&=m c^{2} \label{ref3.2}\\
-\text{If the object is moving,}&\text{ its total energy is }\notag
+\text{If the object is moving,}&\text{ its total energy is }\notag\\
+\text{ Total energy} \quad
+E=\gamma m c^{2}&=\frac{m c^{2}}{\sqrt{1-v^{2} / c^{2}}}
 \end{align}
 
 
@@ -271,10 +273,7 @@ E_{0}&=m c^{2} \label{ref3.2}\\
    
 
  
- \begin{equation}
-\text{ Total energy} \quad
- E=\gamma m c^{2}=\frac{m c^{2}}{\sqrt{1-v^{2} / c^{2}}}
- \end{equation}
+
  \begin{figure}[H]
  	\centering
  	\includegraphics[height=5cm,width=5cm]{str-crop}
@@ -468,32 +467,30 @@ a_{\mu} b^{\mu}&=a^{\mu} b_{\mu}=-a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3
 	\item \textbf { Four-force or Minkowski force } $F_{\mu}$
 	\begin{align}
 	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=\frac{d}{d \tau}\left(m_{0} u_{\mu}\right)=m_{0} \frac{d u_{\mu}}{d \tau}=m_{0} \frac{d^{2} x_{\mu}}{d \tau^{2}} \notag\\
-	\text{This equation is }&\text{called the Minkowski force equation}\notag\\
+	\text{This equation  }&\text{is called the Minkowski force equation}\notag\\
 	\text{The components  }&\text{of four-force $F_{\mu}$ are}\notag\\
 	F_{1}&=\frac{d p_{1}}{d \tau}=\frac{d p_{1}}{d t} \frac{d t}{d \tau}=\frac{d p_{x}}{d t} \frac{1}{\sqrt{1-u^{2} / c^{2}}}=\frac{F_{x}}{\sqrt{1-u^{2} / c^{2}}}\notag \\
 	F_{2}&=\frac{F_{y}}{\sqrt{1-u^{2} / c^{2}}} \notag\\
 	F_{3}&=\frac{F_{z}}{\sqrt{1-u^{2} / c^{2}}} \notag\\
 	F_{4}&=\frac{d p_{4}}{d \tau}=\frac{d p_{4}}{d t} \frac{d t}{d \tau}=\gamma \frac{d}{d t}\left(\frac{i E}{c}\right)=\frac{i \gamma}{c} \frac{d E}{d t} \notag\\
 	F_{\mu}&=\left(\frac{\mathbf{F}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i \gamma}{c} \frac{d E}{d t}\right) \label{ref.str1}\\
-	\text{The four-force may be }&\text{expressed in terms of four-acceleration vector as}\notag\\
+	\text{The four-force }&\text{may be  expressed in terms of four-acceleration vector as}\notag\\
 	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=\frac{d}{d \tau}\left(m_{0} u_{\mu}\right)=m_{0} \frac{d u_{\mu}}{d \tau}=m_{0} a_{\mu}\notag\\
 	F_{\mu}&=\left(\frac{m_{0} \mathbf{a}}{1-u^{2} / c^{2}}+\frac{m_{0} \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{2}}, \frac{i m_{0}(\mathbf{u} \cdot \mathbf{a})}{c\left(1-u^{2} / c^{2}\right)^{2}}\right)\label{ref.str2}\\
-	\text {Since both equation  }&\text{$\ref{ref.str1}$ and $\ref{ref.str2}$ are the same, equating the space part of $F_{\mu}$,}  \notag\\
+	\text {Since both equation }&\text{$\ref{ref.str1}$ and $\ref{ref.str2}$ are the same, equating the space part of $F_{\mu}$,}  \notag\\
 	\text { we obtain }
 	\mathbf{F}&=\frac{m_{0} \mathbf{a}}{\left(1-u^{2} / c^{2}\right)^{1 / 2}}+\frac{m_{0} \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{3 / 2}} \label{ref.str3}\\
 	\mathbf{F}&=m \mathbf{a}+\frac{-m \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}-u^{2}} \notag\\
 	\text { where $\mathbf{F}=d \mathbf{p} / d t$  is the}&\text{ three-dimensional force vector and in general is not equal to $ m \mathbf{a}$} \notag\\
-	\text { The fourth component of } &F_{\mu} in \ref{ref.str2} \text { can be written as }\notag \\
+	\text { The fourth component  } & \text{of }F_{\mu} in \ref{ref.str2} \text { can be written as }\notag \\
 	\frac{i m_{0}(\mathbf{u} \cdot \mathbf{a})}{c\left(1-u^{2} / c^{2}\right)^{2}}&=\frac{i \gamma}{c}(\mathbf{F} \cdot \mathbf{u})\label{ref.str4} \\
-	\text { because using ($\ref{ref.str3}$) } \notag \\
+	\text { because using  } &\text{($\ref{ref.str3}$)}\notag \\
 	\mathbf{F} \cdot \mathbf{u}&=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}}+\frac{m_{0}(\mathbf{u} \cdot \mathbf{u})(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{3 / 2}}=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}}\left[1+\frac{u^{2}}{c^{2}-u^{2}}\right] \label{str4}\\
 	&=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}} \frac{1}{1-u^{2} / c^{2}}=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\left(1-u^{2} / c^{2}\right)^{3 / 2}} \notag\\
 	\text { Thus the fourth  }&\text{component of $F_{\mu}$ from ($\ref{ref.str1}$)  and ($\ref{ref.str4}$) is }\notag\\
 	\frac{i \gamma}{c} \frac{d E}{d t}&=\frac{i \gamma}{c}(\mathbf{F} \cdot \mathbf{u}) \text { or } \frac{d E}{d t}=\mathbf{F} \cdot \mathbf{u} \label{str5}		
-	\end{align}
-	The right hand side of eq. ($\ref{str5}$) represents the power and the left hand side for a single particle $d E / d t=d\left(m c^{2}\right) / d t$ represents the rate of change of energy. This is in accordance with the conservation of energy.
-	\begin{align}
-	\hspace{2cm}\text{Thus the four-}&\text{force $F_{\mu}$ is represented as}\notag\\
+\intertext{	The right hand side of eq. ($\ref{str5}$) represents the power and the left hand side for a single particle $d E / d t=d\left(m c^{2}\right) / d t$ represents the rate of change of energy. This is in accordance with the conservation of energy.}
+	\hspace{2cm}\text{Thus the }&\text{ four-force $F_{\mu}$ is represented as}\notag\\
 	F_{\mu}&=\left(\frac{\mathbf{F}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i(\mathbf{F} \cdot \mathbf{u})}{c \sqrt{1-u^{2} / c^{2}}}\right)\\
 	\text{	The Minkowski}&\text{ force equation is }\notag\\
 	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=m_{0} \frac{d u_{\mu}}{d \tau}\notag
@@ -567,14 +564,14 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Consider the decay process $\tau^{-} \rightarrow \pi^{-}+v_{\tau}$ in the rest frame of the $\tau^{-} .$The masses of the $\tau^{-}, \pi^{-}$and $v_{\tau}$ are $M_{\tau}, M_{\pi}$ and zero respectively.\\
 	\textbf{A} The energy of $\pi^{-}$is
 	{\exyear{NET JUNE 2011}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{\left(M_{\tau}^{2}-M_{\pi}^{2}\right) c^{2}}{2 M_{\tau}}$
 	\task[\textbf{B.}]$\frac{\left(M_{\tau}^{2}+M_{\pi}^{2}\right) c^{2}}{2 M_{\tau}}$
 	\task[\textbf{C.}]$\left(M_{\tau}-M_{\pi}\right) c^{2}$
 	\task[\textbf{D.}]$\sqrt{M_{\tau} M_{\pi}} c^{2}$
 \end{tasks}
 \textbf{B} The velocity of  $\pi^{-} \text {is }$
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{\left(M_{\tau}^{2}-M_{\pi}^{2}\right) c}{M_{\tau}^{2}+M_{\pi}^{2}}$
 	\task[\textbf{B.}]$\frac{\left(M_{\tau}^{2}+M_{\pi}^{2}\right) c}{M_{\tau}^{2}-M_{\pi}^{2}}$ 
 	\task[\textbf{C.}] $\frac{M_{\pi} c}{M_{\tau}}$
@@ -592,7 +589,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Two events separated by a (spatial) distance $9 \times 10^{9} \mathrm{~m}$, are simultaneous in one inertial frame. The time interval between these two events in a frame moving with a constant speed $0.8 c$ (where the speed of light $c=3 \times 10^{8} \mathrm{~m} / \mathrm{s}$ ) is
 	{\exyear{NET JUNE 2012}}
 
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $60 \mathrm{~s}$
 	\task[\textbf{B.}]$40 \mathrm{~s}$
 	\task[\textbf{C.}]$20 s$
@@ -600,7 +597,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item What is proper time interval between the occurrence of two events if in one inertial frame events are separated by $7.5 \times 10^{8} \mathrm{~m}$ and occur $6.5 \mathrm{~s}$ apart?
 	{\exyear{NET JUNE 2012}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $6.50 \mathrm{~s}$
 	\task[\textbf{B.}]$6.00 \mathrm{~s}$
 	\task[\textbf{C.}]$5.75 \mathrm{~s}$
@@ -609,7 +606,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item The muon has mass $105 \mathrm{MeV} / \mathrm{c}^{2}$ and mean life time $2.2 \mu \mathrm{s}$ in its rest frame. The mean distance traversed by a muon of energy $315 \mathrm{MeV}$ before decaying is approximately,
 {	\exyear{NET DEC 2012}}
 
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $3 \times 10^{5} \mathrm{~km}$ 
 	\task[\textbf{B.}]$2.2 \mathrm{~cm}$
 	\task[\textbf{C.}]$6.6 \mu \mathrm{m}$
@@ -619,7 +616,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item The area of a disc in its rest frame $S$ is equal to 1 (in some units). The disc will appear distorted to an observer $O$ moving with a speed $u$ with respect to $S$ along the plane of the disc. The area of the disc measured in the rest frame of the observer $O$ is $(c$ is the speed of light in vacuum)
 	{\exyear{NET JUNE 2013}}
 
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\left(1-\frac{u^{2}}{c^{2}}\right)^{1 / 2}$
 	\task[\textbf{B.}]$\left(1-\frac{u^{2}}{c^{2}}\right)^{-1 / 2}$
 	\task[\textbf{C.}]$\left(1-\frac{u^{2}}{c^{2}}\right)$
@@ -629,7 +626,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item The recently-discovered Higgs boson at the LHC experiment has a decay mode into a photon and a $Z$ boson. If the rest masses of the Higgs and $Z$ boson are $125 \mathrm{GeV} / \mathrm{c}^{2}$ and $90 \mathrm{GeV} / \mathrm{c}^{2}$ respectively, and the decaying Higgs particle is at rest, the energy of the photon will approximately be
 	{\exyear{NET JUNE 2014}}
 
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $35 \sqrt{3} \mathrm{GeV}$
 	\task[\textbf{B.}]$35 \mathrm{GeV}$
 	\task[\textbf{C.}]$30 \mathrm{GeV}$
@@ -638,7 +635,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Consider three inertial frames of reference $A, B$ and $C$. the frame $B$ moves with a velocity $\frac{c}{2}$ with respect to $A$, and $C$ moves with a velocity $\frac{c}{10}$ with respect to $B$ in the same direction. The velocity of $C$ as measured in $A$ is
 	{\exyear{NET JUNE 2015}}
 
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{3 c}{7}$
 	\task[\textbf{B.}]$\frac{4 c}{7}$
 	\task[\textbf{C.}]$\frac{c}{7}$
@@ -646,7 +643,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item Consider a particle of mass $m$ moving with a speed $v$. If $T_{R}$ denotes the relativistic kinetic energy and $T_{N}$ its non-relativistic approximation, then the value of $\frac{\left(T_{R}-T_{N}\right)}{T_{R}}$ for $v=0.01 c$, is
 	{\exyear{NET DEC 2015}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $1.25 \times 10^{-5}$
 	\task[\textbf{B.}]$5.0 \times 10^{-5}$
 	\task[\textbf{C.}]$7.5 \times 10^{-5}$
@@ -670,7 +667,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item A relativistic particle moves with a constant velocity $v$ with respect to the laboratory frame. In time $\tau$, measured in the rest frame of the particle, the distance that it travels in the laboratory frame is
 	{\exyear{NET DEC 2016}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $v \tau$
 	\task[\textbf{B.}]$\frac{c \tau}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$
 	\task[\textbf{C.}]$v \tau \sqrt{1-\frac{v^{2}}{c^{2}}}$
@@ -678,7 +675,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item Consider a radioactive nucleus that is travelling at a speed $\frac{c}{2}$ with respect to the lab frame. It emits $\gamma$-rays of frequency $v_{0}$ in its rest frame. There is a stationary detector, (which is not on the path of the nucleus) in the lab. If a $\gamma$-ray photon is emitted when the nucleus is closest to the detector, its observed frequency at the detector is
 	{\exyear{NET DEC 2016}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{\sqrt{3}}{2} v_{0}$
 	\task[\textbf{B.}]$\frac{1}{\sqrt{3}} v_{0}$
 	\task[\textbf{C.}]$\frac{1}{\sqrt{2}} v_{0}$
@@ -686,7 +683,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item An inertial observer sees two events $E_{1}$ and $E_{2}$ happening at the same location but $6 \mu s$ apart in time. Another observer moving with a constant velocity $v$ (with respect to the first one) sees the same events to be $9 \mu s$ apart. The spatial distance between the events, as measured by the second observer, is approximately
 {	\exyear{NET JUNE 2017}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $300 m$
 	\task[\textbf{B.}]$1000 m$
 	\task[\textbf{C.}]$2000 m$
@@ -694,7 +691,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item A light signal travels from a point $A$ to a point $B$, both within a glass slab that is moving with uniform velocity (in the same direction as the light) with speed $0.3 c$ with respect to an external observer. If the refractive index of the slab is $1.5$, then the observer will measure the speed of the signal as
 	{\exyear{NET DEC 2017}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $0.67 c$
 	\task[\textbf{B.}]$0.81 c$
 	\task[\textbf{C.}]$0.97 c$
@@ -704,7 +701,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Two particles $A$ and $B$ move with relativistic velocities of equal magnitude $v$, but in opposite directions, along the $x$-axis of an inertial frame of reference. The magnitude of the velocity of $A$, as seen from the rest frame of $B$, is
 	\exyear{NET JUNE 2018}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{2 v}{\left(1-\frac{v^{2}}{c^{2}}\right)}$ 
 	\task[\textbf{B.}]$\frac{2 v}{\left(1+\frac{v^{2}}{c^{2}}\right)}$
 	\task[\textbf{C.}] $2 v \sqrt{\frac{c-v}{c+v}}$ 
@@ -712,7 +709,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item The energy of a free relativistic particle is $E=\sqrt{|\vec{p}|^{2} c^{2}+m^{2} c^{4}}$, where $m$ is its rest mass, $\vec{p}$ is its momentum and $c$ is the speed of light in vacuum. The ratio $v_{g} / v_{p}$ of the group velocity $v_{g}$ of a quantum mechanical wave packet (describing this particle) to the phase velocity $v_{p}$ is
 	{\exyear{NET JUNE 2018}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $|\vec{p}| c / E$
 	\task[\textbf{B.}]$|\vec{p}| m c^{3} / E^{2}$
 	\task[\textbf{C.}] $|\vec{p}|^{2} c^{3} / E^{2}$
@@ -740,7 +737,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item A relativistic particle of mass $m$ and charge $e$ is moving in a uniform electric field of strength $\varepsilon$. Starting from rest at $t=0$, how much time will it take to reach the speed $\frac{c}{2}$ ?
 	{\exyear{NET DEC 2018}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $\frac{1}{\sqrt{3}} \frac{m c}{e \varepsilon}$
 	\task[\textbf{B.}]$\frac{m c}{e \varepsilon}$
 	\task[\textbf{C.}]$\sqrt{2} \frac{m c}{e \varepsilon}$
@@ -788,7 +785,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item A $\pi^{0}$ meson at rest decays into two photons, which moves along the $x$-axis. They are both detected simultaneously after a time, $t=10 \mathrm{~s} .$ In an inertial frame moving with a velocity $v=0.6 c$ in the direction of one of the photons, the time interval between the two detections is
 	{\exyear{GATE 2010}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $15 c$
 	\task[\textbf{B.}]$0 \mathrm{~s}$
 	\task[\textbf{C.}] $10 \mathrm{~s}$
@@ -798,7 +795,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Two particles each of rest mass $m$ collide head-on and stick together. Before collision, the speed of each mass was $0.6$ times the speed of light in free space. The mass of the final entity is
 	\exyear{GATE 2011}
 \end{minipage}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $5 m / 4$
 	\task[\textbf{B.}]$2 m$
 	\task[\textbf{C.}]$5 \mathrm{~m} / 2$
@@ -806,7 +803,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item A rod of proper length $l_{0}$ oriented parallel to the $x$-axis moves with speed $2 c / 3$ along the $x$-axis in the $S$-frame, where $c$ is the speed of light in free space. The observer is also moving along the $x$-axis with speed $c / 2$ with respect to the $S$-frame. The length of the rod as measured by the observer is
 	{\exyear{GATE 2012}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $0.35 l_{0}$
 	\task[\textbf{B.}]$0.48 l_{0}$
 	\task[\textbf{C.}]$0.87 l_{0}$
@@ -814,7 +811,7 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 \end{tasks}
 	\item An electron is moving with a velocity of $0.85 c$ in the same direction as that of a moving photon. The relative velocity of the electron with respect to photon is
 	{\exyear{GATE 2013}}
-\begin{tasks}(2)
+\begin{tasks}(4)
 	\task[\textbf{A.}] $c$
 	\task[\textbf{B.}]$-c$
 	\task[\textbf{C.}] $0.15 c$
@@ -925,20 +922,26 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item Suppose you are driving your car on a business trip and are traveling at $30 \mathrm{~m} / \mathrm{s}$. Your boss, who is waiting at your destination, expects the trip to take $5.0 \mathrm{~h}$. When you arrive late, your excuse is that your car clock registered the passage of $5.0 $ \ but that you were driving fast and so your clock ran more slowly than your boss's clock. If your car clock actually did indicate a $5.0-\mathrm{h}$ trip, how much time passed on your boss's clock, which was at rest on the Earth?
 	\begin{answer}
 		\begin{align*}
-		\text{	Here, }\quad \gamma&=\frac{1}{\sqrt{1-v^{2} / c^{2}}}=\frac{1}{\sqrt{1-\frac{\left(3 \times 10\  \text{m}/\text{s}^{2}\right)}{\left(3 \times 10^{8} \mathrm{~m} / \mathrm{s}^2\right)}}}\\&=\frac{1}{\sqrt{1-10^{-14}}}
-		\intertext{Perform binomial expansion, we get}
-		\gamma&=\left(1-10^{-14}\right)^{-1 / 2} \approx 1+\frac{1}{2}\left(10^{-14}\right)=1+\frac{1}{2}\left(10\times 10^{-15}\right) \\&=1+5 \times 10^{-15}
-		\intertext{In daily life, $\gamma$ is not much different from $1$.}
-		\Delta t&=\gamma \Delta t_{p}\\&=\left(1+5 \times 10^{-15}\right)(5.0 \text{h})=5.0 \text{h}+2.5 \times 10^{-14} \text{h}\\&=5\text{h}+0.09 \mathrm{ns}
-		\intertext{Your boss's clock would be only $0.09 \mathrm{~ns}$ ahead of your car clock. }
+		\text{	Here, }\quad \gamma&=\frac{1}{\sqrt{1-v^{2} / c^{2}}}=\frac{1}{\sqrt{1-\frac{\left(3 \times 10\  \text{m}/\text{s}^{2}\right)}{\left(3 \times 10^{8} \mathrm{~m} / \mathrm{s}^2\right)}}}\\&=\frac{1}{\sqrt{1-10^{-14}}}\\
+		\text{Perform binomial }&\text{expansion, we get}\\
+		\gamma&=\left(1-10^{-14}\right)^{-1 / 2} \approx 1+\frac{1}{2}\left(10^{-14}\right)=1+\frac{1}{2}\left(10\times 10^{-15}\right) \\&=1+5 \times 10^{-15}\\
+		\text{In daily life, $\gamma$ is not}&\text{ much different from $1$.}\\
+		\Delta t&=\gamma \Delta t_{p}\\&=\left(1+5 \times 10^{-15}\right)(5.0 \text{h})=5.0 \text{h}+2.5 \times 10^{-14} \text{h}\\&=5\text{h}+0.09 \mathrm{ns}\\
+		\text{Your boss's clock would be}&\text{ only $0.09 \mathrm{~ns}$ ahead of your car clock. }
 		\end{align*}
 	\end{answer}
 	
 	\item Imagine a motorcycle moving with a speed $0.80 \mathrm{c}$ past a stationary observer. If the rider tosses a ball in the forward direction with a speed of $0.70 \mathrm{c}$ relative to himself, what is the speed of the ball relativeto the stationary observer?
 	\begin{answer}
 		\begin{align*}
-		\intertext{	The speed of the motorcycle relative to the stationary observer is,} v&=0.8 \mathrm{c}\intertext{The speed of the ball in the frame of reference of the motorcyclist is,}  u_{x}^{\prime}&=0.7 \mathrm{c} . \intertext{Therefore, the speed,$\mathrm{u}_{x}$ of the ball relative to the stationary observer is,}
-		u_{x}&=\frac{u_{x}^{\prime}+v}{1+\frac{u_{x}^{\prime} v}{c^{2}}}\\&=\frac{0.70 c+0.80 c}{1+\frac{(0.70  c)(0.80 c)}{c^{2}}}\\&=0.96 c
+		\text{	The speed of the }&\text{motorcycle relative to the stationary observer is,} \\
+		v&=0.8 \mathrm{c}\\
+		\text{The speed of the ball}&\text{ in the frame of reference of the motorcyclist is,} \\
+		 u_{x}^{\prime}&=0.7 \mathrm{c} . \\
+		 \text{Therefore, the speed,}&\text{$\mathrm{u}_{x}$ of the ball relative to the stationary observer is,}\\
+		u_{x}&=\frac{u_{x}^{\prime}+v}{1+\frac{u_{x}^{\prime} v}{c^{2}}}\\
+		&=\frac{0.70 c+0.80 c}{1+\frac{(0.70  c)(0.80 c)}{c^{2}}}\\
+		&=0.96 c
 		\end{align*}
 	\end{answer}
 	\item An electron, which has a mass of $9.11 \times 10^{31} \mathrm{~kg}$, moves with a speed of $0.750 \mathrm{c}$. Find its relativistic momentum.
@@ -951,11 +954,12 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\item An electron in a television picture tube typically moves with a speed $u=0.25 c$.  Find its total energy and kinetic energy in electron volts.
 	\begin{answer}
 		\begin{align*}
-		\intertext{	Rest energy of electron is $0.511 \mathrm{MeV}$}
-		E&=\frac{m_{e} c^{2}}{\sqrt{1-\frac{u^{2}}{c^{2}}}}\\&=\frac{0.511 \mathrm{MeV}}{\sqrt{1-\frac{(0.250 c)^{2}}{c^{2}}}}\\
-		&=0.528 \mathrm{MeV}
-		\intertext{This is $3 \%$ greater than the rest energy.}
-		\intertext{We obtain the kinetic energy by subtracting the rest energy from the total energy:}
+		\text{	Rest energy }&\text{of electron is $0.511 \mathrm{MeV}$}\\
+		E&=\frac{m_{e} c^{2}}{\sqrt{1-\frac{u^{2}}{c^{2}}}}\\
+		&=\frac{0.511 \mathrm{MeV}}{\sqrt{1-\frac{(0.250 c)^{2}}{c^{2}}}}\\
+		&=0.528 \mathrm{MeV}\\
+		\text{This is $3 \%$ greater}&\text{ than the rest energy.}\\
+		\text{We obtain the kinetic }&\text{energy by subtracting the rest energy from the total energy:}\\
 		K&=E-m_{e} c^{2}\\&=0.528 \mathrm{MeV}-0.511 \mathrm{MeV}\\&=0.017 \mathrm{MeV}
 		\end{align*}
 	\end{answer}
@@ -966,10 +970,10 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 	\begin{answer}
 		\begin{align*}
 		\text{(a)}\quad E_{R}&=m_{p} c^{2}\\&=\left(1.67 \times 10^{-27} \mathrm{~kg}\right)\left(3.00 \times 10^{8} \mathrm{~m} / \mathrm{s}\right)^{2}\\
-		&=\left(1.50 \times 10^{-10} J\right)\left(1.00 \mathrm{eV} / 1.60 \times 10^{-19} J\right)\\&=938 \mathrm{MeV}\\\\
+		&=\left(1.50 \times 10^{-10} J\right)\left(1.00 \mathrm{eV} / 1.60 \times 10^{-19} J\right)\\&=938 \mathrm{MeV}\\
 		\text{(b)}\quad E&=3 m_{p} c^{2}=\frac{m_{p} c^{2}}{\sqrt{1-\frac{u^{2}}{c^{2}}}} \quad \\3&=\frac{1}{\sqrt{1-\frac{u^{2}}{c^{2}}}}\\
 		\text{Solving }&\text{for $'u'$ gives}\\
-		1-\frac{u^{2}}{c^{2}}&=\frac{1}{9} \quad \\ \frac{u^{2}}{c^{2}}&=\frac{8}{9}  \\ u&=\frac{\sqrt{3}}{8} c\\&=2.83 \times 10^{8} \mathrm{~m} / \mathrm{s}\\\\
+		1-\frac{u^{2}}{c^{2}}&=\frac{1}{9} \quad \\ \frac{u^{2}}{c^{2}}&=\frac{8}{9}  \\ u&=\frac{\sqrt{3}}{8} c\\&=2.83 \times 10^{8} \mathrm{~m} / \mathrm{s}\\
 		\text{(c)}\quad K&=E-m_{p} c^{2}\\&=3 m_{p} c^{2}-m_{p} c^{2}=2 m_{p} c^{2}\\
 		\text{Because,}\ m_{p} c^{2}&=938 \mathrm{MeV},\\ K&=1.880 \mathrm{MeV}
 		\end{align*}
@@ -981,22 +985,23 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 		L_{x}^{\prime}&=L^{\prime} \cos \alpha^{\prime}=1.5 \times 1 / \sqrt{2}=1.06m;\\L_{y}^{\prime}&=L^{\prime}\sin \alpha^\prime-1.5\times1/\sqrt{2}=1.06m
 		\intertext{The vertical components would show no contraction, when viewed from $S$ Horizontal component, being parallel to $v$, would}
 		\therefore \quad L_{y}&=L_{y}^{\prime}=1.06 m\\
-		L_{x}&=L_{x}^{\prime} \sqrt{1-v^{2} / c^{2}}=1.06 \sqrt{1-0.95^{2}}-0.331 m
-		\intertext{Therefore, length of the relative $S$ is:}
+		L_{x}&=L_{x}^{\prime} \sqrt{1-v^{2} / c^{2}}=1.06 \sqrt{1-0.95^{2}}-0.331 m\\
+		\text{Therefore, length }&\text{of the relative $S$ is:}\\
 		L_{1}&=\sqrt{L_{x}^{2}+L_{y}^{2}}=\sqrt{(1.06)+(0.331)}=1.11 \mathrm{~m}\\
-		\intertext{	Orientation of the bar relative to $S$ is}
+		\text{	Orientation of}&\text{ the bar relative to $S$ is}\\
 		\tan \alpha&=\frac{L_{y}}{L_{x}}=\frac{1.06}{0.331}=3.20 \quad \\\therefore \alpha&=72^{\circ} 40^{\prime}
 		\end{align*}
 	\end{answer}
 	\item An experimental intends to study a beam of $\pi$ -mesôns of velocity $0.9 c$. How far can he place his apparatus from the target where $\pi$ -measons are produced and still expect to get-sufficient number of $\pi$ -mesons.
 	\begin{answer}
 		\begin{align*}
-		\intertext{ With relativistic time dilation,}
+		\text{ With relativistic}&\text{ time dilation,}\\
 		\Delta t&=\Delta t^{\prime} / \sqrt{1-0.9^{2}}=2.3 \Delta t^{\prime}
-		\intertext{Since $\Delta t^{\prime}$ is the time-interval measured by an observer moving with $\pi$ -mesons, it is the real life-time, so that}
-		\intertext{$\Delta t^{\prime}=2 \times 10^{-8} s .$ So, in the lab-frame, the mean life is}
-		\Delta t&=2.3 \times \Delta t^{\prime}=2.3 \times 2 \times 10^{-8} s\\&=4.6 \times 10^{-8} s
-		\intertext{Therefore, average distance travelled by $\pi$ -mesons }&=v . \Delta t=0.9 \times 3 \times 10^{8} \times 4.6 \times 10^{-8} \\\mathrm{~m}&=12.42 \mathrm{~m}
+		\intertext{Since $\Delta t^{\prime}$ is the time-interval measured by an observer moving with $\pi$ -mesons, it is the real life-time, so that}\\
+		\text{$\Delta t^{\prime}=2 \times 10^{-8} s .$ }&\text{So, in the lab-frame, the mean life is}\\
+		\Delta t&=2.3 \times \Delta t^{\prime}=2.3 \times 2 \times 10^{-8} s\\&=4.6 \times 10^{-8} s\\
+		\text{Therefore, average }&\text{distance travelled by $\pi$ -mesons }\\
+		&=v . \Delta t=0.9 \times 3 \times 10^{8} \times 4.6 \times 10^{-8} \\\mathrm{~m}&=12.42 \mathrm{~m}
 		\end{align*}
 	\end{answer}
 	\item The half-life of a particular particle as measured in the lab is $4.0 \times 10^{-8} s$ whęn its speed is $0.80 \mathrm{c}$ and $3 \times 10^{-8} s$ when its speed is $0.60 \mathrm{c}$. Find its actual life time.
@@ -1004,16 +1009,16 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 		\begin{align*}
 		\intertext{Due to time-dilation, the half-life of a moving particle appears lengthened. Let $\Delta t_{0}$ be the actual half-life, i.e.,in the frame of reference of the particle, and $\Delta t$ that measured by a stationary observer.}
 		\therefore \quad \Delta t&=\Delta t_{0} / \sqrt{1-v^{2} / c^{2}}\\
-		\intertext{Therefore, by the problem}
-		4.0 \times 10^{-8}&=\frac{\Delta t}{\sqrt{1-0.8^{2}}} ; 3.0 \times 10^{-8}=\frac{\Delta t_{0}}{\sqrt{1-0.6^{2}}}
-		\intertext{Either relation gives, $\Delta t_{0}=2.4 \times 10^{-8} s$, the actual life-time.}
+		\text{Therefore, by}&\text{ the problem}\\
+		4.0 \times 10^{-8}&=\frac{\Delta t}{\sqrt{1-0.8^{2}}} ; 3.0 \times 10^{-8}=\frac{\Delta t_{0}}{\sqrt{1-0.6^{2}}}\\
+		\text{Either relation }&\text{gives, $\Delta t_{0}=2.4 \times 10^{-8} s$, the actual life-time.}
 		\end{align*}
 	\end{answer}
 	\item What will be the period of the 'seconds' pendulum measured by an observer moving with a speed of $0.8 \mathrm{c}$ ?
 	\begin{answer}
 		\begin{align*}
 		\intertext{If $T_{0}(=2 s)$ be the period of a seconds pendulum asmeasured by an observer at rest, the same would be, say To the moving observer}
-		\intertext{Therefore, from the time-dilation relation,}
+		\text{Therefore, }&\text{from the time-dilation relation,}\\
 		T&=\frac{T_{0}}{\sqrt{1-v^{2} / c^{2}}}=\frac{2}{\sqrt{1-0.8^{2}}}=3.33 s
 		\end{align*}
 	\end{answer}
@@ -1023,10 +1028,10 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 		\intertext{Let $v$ be the required velocity of the neutron. The time $t_{1}$ for neutron to reach the earth from the sun before decay is}
 		t_{1}&=\frac{11 \times 10^{10} m}{v}\\
 		\intertext{If $t_{0}$ be the life-time of neutron at rest, then the average life-time $t$ of the 'moving' neutro, as measured by an observer on earth, is}
-		t&=\frac{t_{0}}{\sqrt{1-v^{2} / c^{2}}}=\frac{15 \times 60 s}{\sqrt{1-v^{2} / c^{2}}}
-		\intertext{Plainly, this $t$ and previous $t_{1}$ must be equal,}
-		\therefore \quad \frac{11 \times 10^{10}}{v}&=\frac{15 \times 60}{\sqrt{1-v^{2} /\left(3 \times 10^{8}\right)^{2}}}
-		\intertext{Simplifying, we obtain,}
+		t&=\frac{t_{0}}{\sqrt{1-v^{2} / c^{2}}}=\frac{15 \times 60 s}{\sqrt{1-v^{2} / c^{2}}}\\
+		\text{Plainly, this $t$ and }&\text{previous $t_{1}$ must be equal,}\\
+		\therefore \quad \frac{11 \times 10^{10}}{v}&=\frac{15 \times 60}{\sqrt{1-v^{2} /\left(3 \times 10^{8}\right)^{2}}}\\
+		\text{Simplifying, we }&\text{obtain,}\\
 		v&=1.132 \times 10^{8} \mathrm{~ms}^{-1}
 		\end{align*}
 	\end{answer}
@@ -1035,8 +1040,8 @@ The path of a particle in spacetime is called its world line fig. ($\ref{ref3.6}
 		\begin{align*}
 		\intertext{The velocity of the message rocket relative to a terrestrial observer is, by velocity addition theorem,}
 		v&=\frac{(0.6-0.8) c}{1-0.8 \times 0.6}=\frac{-0.2 c}{1-0.48}\\
-		&=-\frac{0.2 c}{0.52}\\&=-0.385 c
-		\intertext{The negative sign indicates that the rocket is moving towards the earth.}
+		&=-\frac{0.2 c}{0.52}\\&=-0.385 c\\
+		\text{The negative }&\text{sign indicates that the rocket is moving towards the earth.}
 		\end{align*}
 	\end{answer}
 
