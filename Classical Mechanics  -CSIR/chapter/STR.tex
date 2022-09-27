@@ -368,7 +368,10 @@ Because $s^{2}$ is invariant, we can think of a Lorentz transformation merely as
   x^{1} \\
   x^{2} \\
   x^{3}
-  \end{array}\right)
+  \end{array}\right)\\
+  \text{Letting Greek indices }&\text{run from 0 to 3 , this can be distilled into a single equation:}\\
+  \bar{x}^{\mu}&=\sum_{\nu=0}^{3}\left(\Lambda_{\nu}^{\mu}\right) x^{\nu}\\
+  \text { where } \Lambda &\text { is the Lorentz transformation matrix }
  \end{align*}
 
 
@@ -376,55 +379,49 @@ Because $s^{2}$ is invariant, we can think of a Lorentz transformation merely as
 
 
 
- Letting Greek indices run from 0 to 3 , this can be distilled into a single equation:
- $$
- \bar{x}^{\mu}=\sum_{\nu=0}^{3}\left(\Lambda_{\nu}^{\mu}\right) x^{\nu}
- $$
-$\text { where } \Lambda \text { is the Lorentz transformation matrix }$\\
+ 
+
 \subsection{Four vectors}
- we defined a (3-)vector as any set of three components that transform under rotations the same way $(x, y, z)$ do; by extension, we now define a 4-vector as any set of four components that transform in the same manner as $\left(x^{0}, x^{1}, x^{2}, x^{3}\right)$ under Lorentz transformations:\\
- $$\bar{a}^{\mu}=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} a^{\nu}$$
- For the particular case of a transformation along the x axis, 
-$$\begin{aligned}
-	&\bar{a}^{0}=\gamma\left(a^{0}-\beta a^{1}\right) \\
-	&\bar{a}^{1}=\gamma\left(a^{1}-\beta a^{0}\right) \\
-	&\bar{a}^{2}=a^{2} \\
-	&\bar{a}^{3}=a^{3}
-\end{aligned}$$
+ we defined a (3-)vector as any set of three components that transform under rotations the same way $(x, y, z)$ do; by extension, we now define a 4-vector as any set of four components that transform in the same manner as $\left(x^{0}, x^{1}, x^{2}, x^{3}\right)$ under Lorentz transformations:
+\begin{align*}
+ \bar{a}^{\mu}&=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} a^{\nu}\\
+\text{For the particular  }&\text{case of a transformation along the x axis,}\\
+	\bar{a}^{0}&=\gamma\left(a^{0}-\beta a^{1}\right) \\
+	\bar{a}^{1}&=\gamma\left(a^{1}-\beta a^{0}\right) \\
+	\bar{a}^{2}&=a^{2} \\
+	\bar{a}^{3}&=a^{3}
+\end{align*}
 \textbf{Scalar product of four vectors}\\
 There is a 4-vector analog to the dot product $\left(\mathbf{A} \cdot \mathbf{B} \equiv A_{x} B_{x}+A_{y} B_{y}+A_{z} B_{z}\right)$, but it's not just the sum of the products of like components; rather, the zeroth components have a minus sign:
-$$
--a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3} .
-$$
- This is the four-dimensional scalar product;\\
- $$
- -\bar{a}^{0} \bar{b}^{0}+\bar{a}^{1} \bar{b}^{1}+\bar{a}^{2} \bar{b}^{2}+\bar{a}^{3} \bar{b}^{3}=-a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3}
- $$
- just as the ordinary dot product is invariant (unchanged) under rotations, this combination is invariant under Lorentz transformations.
-To keep track of the minus sign, it is convenient to introduce the covariant vector $a_{\mu}$, which differs from the contravariant $a^{\mu}$ only in the sign of the zeroth component:
-$$
-a_{\mu}=\left(a_{0}, a_{1}, a_{2}, a_{3}\right) \equiv\left(-a^{0}, a^{1}, a^{2}, a^{3}\right)
-$$
- Formally,
- $a_{\mu}=\sum_{\nu=0}^{3} g_{\mu \nu} a^{\nu}, \quad \text { where } \quad g_{\mu \nu} \equiv\left(\begin{array}{rrrr}
- 	-1 & 0 & 0 & 0 \\
- 	0 & 1 & 0 & 0 \\
- 	0 & 0 & 1 & 0 \\
- 	0 & 0 & 0 & 1
- \end{array}\right)$
- is the (Minkowski) metric.
-The scalar product can now be written with the summation symbol,
-$$
-\sum_{\mu=0}^{3} a^{\mu} b_{\mu}
-$$
-or, more compactly still,
-$$
-a^{\mu} b_{\mu} \text {. }
-$$
- Of course, we could just as well take care of the minus sign by switching to covariant $b$ :
-$$
-a_{\mu} b^{\mu}=a^{\mu} b_{\mu}=-a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3} .
-$$
+\begin{align*}
+-a^{0} b^{0}&+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3} .\\
+\text{This is the four-}&\text{dimensional scalar product;}\\
+ -\bar{a}^{0} \bar{b}^{0}&+\bar{a}^{1} \bar{b}^{1}+\bar{a}^{2} \bar{b}^{2}+\bar{a}^{3} \bar{b}^{3}=-a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3}
+ \intertext{ just as the ordinary dot product is invariant (unchanged) under rotations, this combination is invariant under Lorentz transformations.
+ 	To keep track of the minus sign, it is convenient to introduce the covariant vector $a_{\mu}$, which differs from the contravariant $a^{\mu}$ only in the sign of the zeroth component:}
+ a_{\mu}&=\left(a_{0}, a_{1}, a_{2}, a_{3}\right) \equiv\left(-a^{0}, a^{1}, a^{2}, a^{3}\right)\\
+ \text{Formally, }
+ a_{\mu}&=\sum_{\nu=0}^{3} g_{\mu \nu} a^{\nu}, \text { where }  g_{\mu \nu} \equiv\left(\begin{array}{rrrr}
+ -1 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 0 \\
+ 0 & 0 & 1 & 0 \\
+ 0 & 0 & 0 & 1
+ \end{array}\right)
+\text{ is the (Minkowski) metric.}\\
+\text{The scalar product }&\text{ can now be written with the summation symbol,}\\
+&\sum_{\mu=0}^{3} a^{\mu} b_{\mu}\\
+\text{or, more compactly}&\text{ still,}\\
+&a^{\mu} b_{\mu} \text {. }\\
+\text{ Of course, we could }&\text{just as well take care of the minus sign by switching to covariant $b$ :}\\
+a_{\mu} b^{\mu}&=a^{\mu} b_{\mu}=-a^{0} b^{0}+a^{1} b^{1}+a^{2} b^{2}+a^{3} b^{3} .
+\end{align*}
+
+
+
+
+
+
+
 \subsection{Examples of four vectors}
 \begin{enumerate}
 	\item \textbf{ Position four-vector $ x_{\mu}$}\\
@@ -439,30 +436,24 @@ $$
 		\text{Hence} \quad u_{\mu}&=\left(u_{1}, u_{2}, u_{3}, u_{4}\right)\\
 		or \quad u_{\mu}&=\left(\frac{u_{x}}{\sqrt{1-u^{2} / c^{2}}}, \frac{u_{y}}{\sqrt{1-u^{2} / c^{2}}}, \frac{u_{z}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i c}{\sqrt{1-u^{2} / c^{2}}}\right)\\
 		i.e., \quad u_{\mu}&=\left(\frac{\mathbf{u}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i c}{\sqrt{1-u^{2} / c^{2}}}\right)
+		\intertext{	where $\mathbf{u}=d \mathbf{r} / d t$ is the three dimensional velocity vector.The square of the magnitude of the velocity four vector is given by}
+		u_{\mu} u_{\mu}&=\frac{u^{2}}{1-u^{2} / c^{2}}-\frac{c^{2}}{1-u^{2} / c^{2}}=-c^{2}
 	\end{align*}
-	where $\mathbf{u}=d \mathbf{r} / d t$ is the three dimensional velocity vector.
-	The square of the magnitude of the velocity four vector is given by
-	$$
-	u_{\mu} u_{\mu}=\frac{u^{2}}{1-u^{2} / c^{2}}-\frac{c^{2}}{1-u^{2} / c^{2}}=-c^{2}
-	$$
+
 	which is Lorentz invariant.
 	\item \textbf{ Momentum four vector $p_{\mu}$}
 	\begin{align*}
-		&p_{1}=m_{0} u_{1}=\frac{m_{0} u_{x}}{\sqrt{1-u^{2} / c^{2}}}=m u_{x}=p_{x} \\
-		&p_{2}=m_{0} u_{2}=\frac{m_{0} u_{y}}{\sqrt{1-u^{2} / c^{2}}}=m u_{y}=p_{y} \\
-		&p_{3}=m_{0} u_{3}=\frac{m_{0} u_{z}}{\sqrt{1-u^{2} / c^{2}}}=m u_{z}=p_{z} \\
-		&p_{4}=m_{0} u_{4}=\frac{m_{0} i c}{\sqrt{1-u^{2} / c^{2}}}=i m c=i \frac{E}{c}
+		p_{1}&=m_{0} u_{1}=\frac{m_{0} u_{x}}{\sqrt{1-u^{2} / c^{2}}}=m u_{x}=p_{x} \\
+		p_{2}&=m_{0} u_{2}=\frac{m_{0} u_{y}}{\sqrt{1-u^{2} / c^{2}}}=m u_{y}=p_{y} \\
+		p_{3}&=m_{0} u_{3}=\frac{m_{0} u_{z}}{\sqrt{1-u^{2} / c^{2}}}=m u_{z}=p_{z} \\
+		p_{4}&=m_{0} u_{4}=\frac{m_{0} i c}{\sqrt{1-u^{2} / c^{2}}}=i m c=i \frac{E}{c}\\
+		\text{	Hence,}\\
+		p_{\mu}&=\left(p_{1}, p_{2}, p_{3}, p_{4}\right)=\left(p_{x}, p_{y}, p_{z}, i m c\right)=(\mathbf{p}, i E / c) \text { with } \mathbf{p}=m \mathbf{u}\\
+		\text{	The square of }&\text{the magnitude of the four-momentum is given by}\\
+		p_{\mu} p_{\mu}&=p^{2}-\frac{E^{2}}{c^{2}}=-\left(E^{2}-p^{2} c^{2}\right) / c^{2} \quad \text { or } \quad p_{\mu} p_{\mu}=-m_{0}^{2} c^{2}\\
+		\text{This $p_{\mu}$ is}&\text{ also called energy-momentum four-vector.}
 	\end{align*}
-	Hence,
-	$$
-	p_{\mu}=\left(p_{1}, p_{2}, p_{3}, p_{4}\right)=\left(p_{x}, p_{y}, p_{z}, i m c\right)=(\mathbf{p}, i E / c) \text { with } \mathbf{p}=m \mathbf{u}
-	$$
-	The square of the magnitude of the four-momentum is given by
-	$$
-	p_{\mu} p_{\mu}=p^{2}-\frac{E^{2}}{c^{2}}=-\left(E^{2}-p^{2} c^{2}\right) / c^{2} \quad \text { or } \quad p_{\mu} p_{\mu}=-m_{0}^{2} c^{2}
-	$$
-	This $p_{\mu}$ is also called energy-momentum four-vector.
-	\item \textbf{ Acceleration four-vector $a_{\mu}$}\\
+	\item \textbf{ Acceleration four-vector $a_{\mu}$}
 	\begin{align*}
 	a_{1}&=\frac{d u_{1}}{d \tau}=\frac{d u_{1}}{d t} \frac{d t}{d \tau}=\frac{d}{d t}\left(\frac{u_{x}}{\sqrt{1-u^{2} / c^{2}}}\right) \frac{1}{\sqrt{1-u^{2} / c^{2}}}\\
 	&=\frac{1}{\sqrt{1-u^{2} / c^{2}}} \cdot\left(\frac{u_{x}}{\sqrt{1-u^{2} / c^{2}}}+\frac{u_{x} u \dot{u}}{c^{2}\left(1-u^{2} / c^{2}\right)^{3 / 2}}\right)\\
@@ -472,41 +463,41 @@ $$
 	a_{3}&=\frac{\dot{u}_{z}}{1-u^{2} / c^{2}}+\frac{u_{z}(\mathbf{u} \cdot \dot{\mathbf{u}})}{c^{2}\left(1-u^{2} / c^{2}\right)^{2}}\\
 	a_{4}&=\frac{d u_{4}}{d \tau}=\frac{d u_{4}}{d t} \frac{d t}{d \tau}=\frac{d}{d t}\left(\frac{i c}{\sqrt{1-u^{2} / c^{2}}}\right) \frac{1}{\sqrt{1-u^{2} / c^{2}}}=\frac{i(\mathbf{u} \cdot \mathbf{u})}{c\left(1-u^{2} / c^{2}\right)^{2}}\\
 	\text { Thus, } \quad a_{\mu}&=\left(\frac{\mathbf{a}}{1-u^{2} / c^{2}}+\frac{\mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{2}}, \frac{i(\mathbf{u} \cdot \mathbf{a})}{c\left(1-u^{2} / c^{2}\right)^{2}}\right)\\
-\text{where} \mathbf{a}&=\dot{\mathbf{u}}=\dot{u}_{x} \hat{\mathbf{i}}+\dot{u}_{y} \hat{\mathbf{j}}+\dot{u}_{z} \hat{\mathbf{k}}
+\text{where } \mathbf{a}&=\dot{\mathbf{u}}=\dot{u}_{x} \hat{\mathbf{i}}+\dot{u}_{y} \hat{\mathbf{j}}+\dot{u}_{z} \hat{\mathbf{k}}
 	\end{align*}
-	\item \textbf { Four-force or Minkowski force } $F_{\mu}$\\
+	\item \textbf { Four-force or Minkowski force } $F_{\mu}$
 	\begin{align}
 	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=\frac{d}{d \tau}\left(m_{0} u_{\mu}\right)=m_{0} \frac{d u_{\mu}}{d \tau}=m_{0} \frac{d^{2} x_{\mu}}{d \tau^{2}} \notag\\
-	\intertext{This equation is called the Minkowski force equation}
-	\intertext{The components of four-force $F_{\mu}$ are}
+	\text{This equation is }&\text{called the Minkowski force equation}\notag\\
+	\text{The components  }&\text{of four-force $F_{\mu}$ are}\notag\\
 	F_{1}&=\frac{d p_{1}}{d \tau}=\frac{d p_{1}}{d t} \frac{d t}{d \tau}=\frac{d p_{x}}{d t} \frac{1}{\sqrt{1-u^{2} / c^{2}}}=\frac{F_{x}}{\sqrt{1-u^{2} / c^{2}}}\notag \\
 	F_{2}&=\frac{F_{y}}{\sqrt{1-u^{2} / c^{2}}} \notag\\
 	F_{3}&=\frac{F_{z}}{\sqrt{1-u^{2} / c^{2}}} \notag\\
 	F_{4}&=\frac{d p_{4}}{d \tau}=\frac{d p_{4}}{d t} \frac{d t}{d \tau}=\gamma \frac{d}{d t}\left(\frac{i E}{c}\right)=\frac{i \gamma}{c} \frac{d E}{d t} \notag\\
 	F_{\mu}&=\left(\frac{\mathbf{F}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i \gamma}{c} \frac{d E}{d t}\right) \label{ref.str1}\\
-	\intertext{The four-force may be expressed in terms of four-acceleration vector as}
+	\text{The four-force may be }&\text{expressed in terms of four-acceleration vector as}\notag\\
 	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=\frac{d}{d \tau}\left(m_{0} u_{\mu}\right)=m_{0} \frac{d u_{\mu}}{d \tau}=m_{0} a_{\mu}\notag\\
 	F_{\mu}&=\left(\frac{m_{0} \mathbf{a}}{1-u^{2} / c^{2}}+\frac{m_{0} \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{2}}, \frac{i m_{0}(\mathbf{u} \cdot \mathbf{a})}{c\left(1-u^{2} / c^{2}\right)^{2}}\right)\label{ref.str2}\\
-	\intertext {Since both equation $\ref{ref.str1}$ and $\ref{ref.str2}$ are the same, equating the space part of $F_{\mu}$,}  \text { we obtain }
+	\text {Since both equation  }&\text{$\ref{ref.str1}$ and $\ref{ref.str2}$ are the same, equating the space part of $F_{\mu}$,}  \notag\\
+	\text { we obtain }
 	\mathbf{F}&=\frac{m_{0} \mathbf{a}}{\left(1-u^{2} / c^{2}\right)^{1 / 2}}+\frac{m_{0} \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{3 / 2}} \label{ref.str3}\\
 	\mathbf{F}&=m \mathbf{a}+\frac{-m \mathbf{u}(\mathbf{u} \cdot \mathbf{a})}{c^{2}-u^{2}} \notag\\
-	\intertext { where $\mathbf{F}=d \mathbf{p} / d t$  is the three-dimensional force vector and in general is not equal to $ m \mathbf{a}$} \notag\\
+	\text { where $\mathbf{F}=d \mathbf{p} / d t$  is the}&\text{ three-dimensional force vector and in general is not equal to $ m \mathbf{a}$} \notag\\
 	\text { The fourth component of } &F_{\mu} in \ref{ref.str2} \text { can be written as }\notag \\
 	\frac{i m_{0}(\mathbf{u} \cdot \mathbf{a})}{c\left(1-u^{2} / c^{2}\right)^{2}}&=\frac{i \gamma}{c}(\mathbf{F} \cdot \mathbf{u})\label{ref.str4} \\
 	\text { because using ($\ref{ref.str3}$) } \notag \\
 	\mathbf{F} \cdot \mathbf{u}&=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}}+\frac{m_{0}(\mathbf{u} \cdot \mathbf{u})(\mathbf{u} \cdot \mathbf{a})}{c^{2}\left(1-u^{2} / c^{2}\right)^{3 / 2}}=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}}\left[1+\frac{u^{2}}{c^{2}-u^{2}}\right] \label{str4}\\
 	&=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\sqrt{1-u^{2} / c^{2}}} \frac{1}{1-u^{2} / c^{2}}=\frac{m_{0}(\mathbf{u} \cdot \mathbf{a})}{\left(1-u^{2} / c^{2}\right)^{3 / 2}} \notag\\
-	\intertext { Thus the fourth component of $F_{\mu}$ from ($\ref{ref.str1}$)  and ($\ref{ref.str4}$) is }\\
+	\text { Thus the fourth  }&\text{component of $F_{\mu}$ from ($\ref{ref.str1}$)  and ($\ref{ref.str4}$) is }\notag\\
 	\frac{i \gamma}{c} \frac{d E}{d t}&=\frac{i \gamma}{c}(\mathbf{F} \cdot \mathbf{u}) \text { or } \frac{d E}{d t}=\mathbf{F} \cdot \mathbf{u} \label{str5}		
 	\end{align}
-	The right hand side of eq. ($\ref{str5}$) represents the power and the left hand side for a single particle $d E / d t=d\left(m c^{2}\right) / d t$ represents the rate of change of energy. This is in accordance with the conservation of energy.\\
-	Thus the four-force
-	$F_{\mu}$ is represented as\\
-	\begin{equation}
-	F_{\mu}=\left(\frac{\mathbf{F}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i(\mathbf{F} \cdot \mathbf{u})}{c \sqrt{1-u^{2} / c^{2}}}\right)
-	\end{equation}
-	The Minkowski force equation is
-	$F_{\mu}=\frac{d p_{\mu}}{d \tau}=m_{0} \frac{d u_{\mu}}{d \tau}$
+	The right hand side of eq. ($\ref{str5}$) represents the power and the left hand side for a single particle $d E / d t=d\left(m c^{2}\right) / d t$ represents the rate of change of energy. This is in accordance with the conservation of energy.
+	\begin{align}
+	\hspace{2cm}\text{Thus the four-}&\text{force $F_{\mu}$ is represented as}\notag\\
+	F_{\mu}&=\left(\frac{\mathbf{F}}{\sqrt{1-u^{2} / c^{2}}}, \frac{i(\mathbf{F} \cdot \mathbf{u})}{c \sqrt{1-u^{2} / c^{2}}}\right)\\
+	\text{	The Minkowski}&\text{ force equation is }\notag\\
+	F_{\mu}&=\frac{d p_{\mu}}{d \tau}=m_{0} \frac{d u_{\mu}}{d \tau}\notag
+	\end{align}
 \end{enumerate}
 \subsection{The space time interval} The scalar product of a 4-vector with itself, $a^{\mu} a_{\mu}=-\left(a^{0}\right)^{2}+\left(a^{1}\right)^{2}+\left(a^{2}\right)^{2}+\left(a^{3}\right)^{2}$, can be positive (if the "spatial" terms dominate) or negative (if the "temporal" term dominates) or zero:\\
 If $a^{\mu} a_{\mu}>0, a^{\mu}$ is called spacelike.\\
@@ -527,24 +518,23 @@ Now let us look into the possible relationships between events 1 and 2 . Event 2
 $$
 c \Delta t>|\Delta x|
 $$
-or
-Timelike interval
+\hspace{ 5cm} or Timelike interval
 $$(\Delta s)^{2}>0$$
 An interval in which $(\Delta s)^{2}>0$ is said to be timelike. Every timelike interval that connects event 1 with another event lies within the light cones bounded by $x=\pm c t$. All events that could have affected event 1 lie in the past light cone; all events that event 1 is able to affect lie in the future light cone. (Events connected by timelike intervals need not necessarily be related, of course, but it is possible for them to be related.)
 Conversely, the criterion for there being no causal relationship between events 1 and 2 is that
 $$
 c \Delta t<|\Delta x|
 $$
-or
-Spacelike interval
+
+\hspace{ 5cm}  or Spacelike interval
 $$(\Delta s)^{2}<0$$
 An interval in which $(\Delta s)^{2}<0$ is said to be spacelike. Every event that is connected with event 1 by a spacelike interval lies outside the light cones of event 1 and neither has interacted with event 1 in the past nor is capable of interacting with it in the future; the two events must be entirely unrelated.
 When events 1 and 2 can be connected with a light signal only,
 $$
 c \Delta t=|\Delta x|
 $$
-or
-Lightlike interval
+
+\hspace{ 5cm} or Lightlike interval
 $$
 \Delta s=0
 $$
