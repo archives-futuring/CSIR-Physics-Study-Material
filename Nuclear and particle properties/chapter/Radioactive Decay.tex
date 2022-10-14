@@ -128,3 +128,41 @@ $\begin{array}{llll}
 &A\quad \longrightarrow & B\quad  \longrightarrow C  \\ 
 t=0 & N_0 & O & O  \\ 
 t=t & N_1 & N_2 & N_3\end{array}$
+\begin{align*}
+&\text{Now calculate $N_1, N_2$ and $N_3$ at any time $t$.}\\
+&\text{Rate equation for $A, \quad \frac{d N_1}{d t}=-\lambda_1 N_1$}\\
+&\text{Rate equation for $B, \quad \frac{d N_2}{d t}=-\lambda_2 N_2+\lambda_1 N_1$}\\
+&\text{Rate equation for $C, \quad \frac{d N_3}{d t}=\lambda_2 N_2$}\\
+&\text{Now, we will solve these equations to find the expressions of $N_I, N_2$ and $N_3$}
+\end{align*}
+\begin{align*}
+\text{(I) }\frac{d N_1}{d t}&=-\lambda_1 N_1 \Rightarrow \frac{d N_1}{N_1}=-\lambda_1 d t \Rightarrow \int_{N_0}^{N_1} \frac{d N_1}{N_1}=-\int_0^t \lambda_1 d t\\
+\Rightarrow \ln \frac{N_1}{N_0}&=-\lambda_1 t \Rightarrow \frac{N_1}{N_0}=e^{-\lambda_1 t} \Rightarrow N_1=N_0 e^{-\lambda_1 t}
+\\
+\text{(II) }\frac{d N_2}{d t}+\lambda_2 N_2&=\lambda_1 N_1\\
+\frac{d N_2}{d t} e^{\lambda_2 t}+\lambda_2 e^{\lambda_2 t} N_2&=\lambda_1 N_0 e^{\left(\lambda_2-\lambda_1\right) t} \\
+\frac{d}{d t}\left(N_2 e^{\lambda_2 t}\right)&=\lambda_1 N_0 e^{\left(\lambda_2-\lambda_1\right) t}\\
+\text{On integrating}&\\
+N_2 e^{\lambda_2 t}&=\frac{\lambda_1 N_0}{\lambda_2-\lambda_1} e^{\left(\lambda_2-\lambda_1\right) t}+c_1\\
+\text{Apply initial condition }t&=0, \quad N_2=0\\
+0&=\frac{\lambda_1 N_0}{\lambda_2-\lambda_1}+c_1 \quad \Rightarrow c_1=-\frac{\lambda_1 N_0}{\lambda_2-\lambda_1}\\
+N_2 e^{\lambda_2 t}&=\frac{\lambda_1 N_0}{\lambda_2-\lambda_1}\left[e^{\left(\lambda_2-\lambda_1\right) t}-1\right] \Rightarrow N_2=\frac{\lambda_1 N_0}{\lambda_2-\lambda_1}\left[e^{-\lambda_1 t}-e^{-\lambda_2 t}\right]\\
+\text{Now, there}&\text{ is no need to solve Eq. (3), as}\\
+N_3&=N_0-N_1-N_2=N_0-N_0 e^{-\lambda_1 t}-\frac{\lambda_1 N_0}{\lambda_2-\lambda_1}\left[e^{-\lambda_1 t}-e^{-\lambda_2 t}\right] \\
+\Rightarrow N_3&=N_0\left[1-\frac{\lambda_2-\lambda_1+\lambda_1}{\lambda_2-\lambda_1} e^{-\lambda_1 t}+\frac{\lambda_1}{\lambda_2-\lambda_1} e^{-\lambda_2 t}\right] \\
+\Rightarrow N_3&=N_0\left[1-\frac{\lambda_2 e^{-\lambda_1 t}}{\lambda_2-\lambda_1}+\frac{\lambda_1 e^{-\lambda_2 t}}{\lambda_2-\lambda_1}\right]
+\end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{NP-8}
+	\caption{}
+	\label{}
+\end{figure}
+(a) When activity of the intermediate member B reaches a maximum, $t=t^{\prime}$
+\begin{align*}
+\left(\frac{d N_2}{d t}\right)_{t=t^{\prime}}&=0 \Rightarrow-\lambda_1 e^{-\lambda_1 t^{\prime}}+\lambda_2 e^{-\lambda_2 t^{\prime}}=0 \Rightarrow \lambda_1 e^{-\lambda_1 t^{\prime}}=\lambda_2 e^{-\lambda_2 t^{\prime}} \\
+\Rightarrow t^{\prime}&=\frac{\ln \left(\lambda_2 / \lambda_1\right)}{\lambda_2-\lambda_1}
+\end{align*}
+\textbf{(b) Radioactive Equilibrium}\\
+Any member in a radioactive chain is said to be in radioactive equilibrium with its parent when the net number of atoms of such a member does not change with time.\\
+There are two type of equilibrium:
