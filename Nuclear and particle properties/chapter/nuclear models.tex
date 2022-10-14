@@ -36,7 +36,7 @@ m(A,Z)&=ZM_H+NM_n-E_b\\
 \text{Where}\\
 M_H&=\text{Mass of Hydrogen}\\
 M_n&=\text{Mass of Neutron}\\
-N=A-Z&=\text{ Number of Neutrons}\\
+N&=A-Z=\text{ Number of Neutrons}\\
 E_b&=\text{Binding energy}\\
 \text{One can express the binding }&\text{energy $E_b$ as the sum of no of terms as bellow.}\\
 \end{align*}
@@ -1240,9 +1240,81 @@ T_\frac{1}{2}&=\frac{\ln 2}{\lambda}=\frac{0.693}{\lambda}\\
 (b) ${ }_4 B e^9$ or ${ }_4 B e^{10}$ 
 \begin{answer}
 	\begin{align*}
-	 \text{(a) $E^{\prime} Q \mathrm{n} A=7, Z=\frac{7}{2+0 .015(7)^{2/3}}=3.4$ }\\
-	 \text{and for $A=8_c z=\frac{8}{2+(0.015)(8 )^{2/3}}=3.88$}\\
-\text{	$3.4$ is more closer to 3 . So, ${ }_3 L i^7$ is more stable.}
+	 \text{(a) for $ A=7, Z=\frac{7}{2+0 .015(7)^{2/3}}=3.4$ }\\
+	 \text{and for $A=8, Z=\frac{8}{2+(0.015)(8 )^{2/3}}=3.88$}\\
+\text{	$3.4$ is more closer to 3 . So, ${ }_3 L i^7$ is more stable.}\\
+\text{(b) For $A=9, Z=\frac{9}{2+(0.015)^2(9)^{2/3}}=4.36$}\\
+\text{and $A=10, Z=\frac{10}{2+(0.015)(10) ^{2/3}}=4.80$}\\
+4.36 \text { is more close to } 3 \text {, so }{ }_4 \text { Be }^9 \text { is more stable. }
+	\end{align*}
+\end{answer}
+\item Q4. Using the semi- empirical binding energy formula, calculate the binding energy of ${ }_{20} \mathrm{Ca}^{40}$.\\
+
+Here $a_v=15.75 \mathrm{MeV}, a_s=17.80 \mathrm{MeV}, a_c=\mathbf{0 . 7 1} \mathrm{MeV}, a_n=22.7 \mathrm{MeV}$ and delta $=34 \mathrm{MeV}$.
+\begin{answer}
+	\begin{align*}
+	B E&=a_v A-a_s A^{\frac{2}{3}}-a_{c} \frac{z(z-1)}{A^{1/3}}-a_n \frac{(4-2 z)^2}{A}+\frac{\delta}{A^{3 / 4}}\\
+	&=680-208.2-84.3-0+2.14 \\
+	&=339.64 \mathrm{MeV}
+	\end{align*}
+\end{answer}
+\item Q5. Establish the relation $\mathbf{A}=\mathbf{2} \mathbf{Z}$ for light nuclei using the semi-empirical mass formula, given $\boldsymbol{a}_{\boldsymbol{c}}=\mathbf{0 . 7 1} \mathrm{MeV}, \boldsymbol{a}_{\boldsymbol{n}}=\mathbf{2 2 . 7} \mathrm{MeV}$, mass of ${ }_1 \mathrm{H}^1=1.0078$ units and mass of neutron $=$ $1.0086$ units.
+\begin{answer}
+	\begin{align*}
+	&M=Z M_H+(A-Z) M_n-\frac{1}{c^2}\left[a_v A-a_s A^{\frac{2}{3}}-a_{c} \frac{Z^2}{A^{1/3}}-a_n \frac{(A-2 Z)^2}{A} \pm \frac{\delta}{A^{3/4}}\right]\\
+&\text{	The most stable nuclei for a given $A$ (Isobars)}\\
+	&\left(\frac{\partial M}{\partial Z}\right)_A=0\\
+	&\left(M_H-M_n\right) c^2+2 a_{c} \frac{Z}{A^{1/3}}-4 a_n \frac{\left(A-2 Z\right)}{A}=0\\
+	&\frac{2 Z}{A}\left[a_{c} A^{2/a}+4 a_n\right]=\left(M_n-M_H\right) c^2+4 a_n\\
+	&\frac{2 Z}{A}\left[\frac{a_c A^{\frac{2}{3}}}{4 a_n}+1\right]=\frac{\left(M_n-M_H\right) c^2}{4 a_n}+1\\
+	&Z-\frac{A}{2}\left[\frac{1+\frac{\left.M_n-M_H\right) c^2}{4 a_n}}{1+\frac{a_cA^{2/3}}{4 a_n}}\right]\\
+	&Z=\frac{A}{2}\left[\frac{1+0.0086}{1+(0.0078) A^{2 / 3}}\right]=\frac{A}{1.98+0.0156 A^{2 / 3}} \sim \frac{A}{2}
+	\end{align*}
+\end{answer}
+\item Q6. Using the semi- empirical mass formula, show that the neutron excess is approximately proportional to $\mathbf{A}^{5 / 3}$ for the families of isobars having odd $\mathbf{A}$ nuclei. Given $\boldsymbol{a}_c=\mathbf{0 . 7 1} \mathbf{M e V}, \boldsymbol{a}_{\boldsymbol{n}}$ $=22.7 \mathrm{MeV}$, mass of ${ }_1 \mathrm{H}^1=1.0078$ units and mass of neutron $=1.0086$ units.
+\begin{answer}
+	\begin{align*}
+&	M=Z M_H+(A-Z) M_n-\frac{1}{c^2}\left[a_v A-a_s A^{\frac{2}{3}}-a_c \frac{Z^2}{A^{\frac{1}{3}}}-a_n \frac{(A-2 Z)^2}{A} \pm E_\delta\right]\\
+&\text{	For odd $A$ nuclei, $E_\delta=0$}\\
+&\text{	For most stable nucleus in a family of isobars}\\
+&\left(\frac{\partial M}{\partial Z}\right)_A=0\\
+&\left(\frac{\partial M}{\partial Z}\right)_A=\left(M_H-M_n\right) c^2+2 a_{c} \frac{Z}{A^{1/3}}-4 a_n \frac{\left(A-2 Z\right)}{A}=0\\
+&\text { Adding and subtracting } {a}_{\mathrm{c}} \mathrm{A}^{2 / 3}\\
+&\left(M_H-M_n\right) c^2+a_{c} A^{2 / 3}-a_c \frac{A}{A^{1/3}}+2 a_{c} \frac{Z}{A^{1/3}}-\frac{4 a_n(A-2 Z)}{A}=0\\
+&(A-2 Z)\left[\frac{a_c A^{\frac{2}{3}}}{A}+\frac{4 a_n}{A}\right]=a_c A^{2 / 3}-\left(M_n-M_H\right) c^2\\
+&=\frac{A\left[\frac{a_c}{4 a_n} A^{2 / 3}-\frac{\left(M_n-M_H\right) c^2}{4 a_n}\right]}{1+\frac{a_c}{4 a_n} A^{2 / 3}}\\
+&=\frac{\left.A 0.0078 A^{2 / 3}-0.0086\right]}{1+0.0078 A^{2 / 3}}\\
+&\frac{A^{5 / 3} \times 00078\left[1+\frac{1.1}{A^{2 / 3}}\right]}{1+0.0078 A^{2 / 3}}\\
+&\text{For $A$ varying from 60 to 210}\\
+&(A-2 Z) \sim 0.006 A^{5 / 3}
+	\end{align*}
+\end{answer}
+\item Q8. (a). For mirror nuclei which have $\mathrm{N}$ and $\mathrm{Z}$ differing by one unit, determine the mass difference. Consider A to be odd.\\
+(b). The masses of ${ }_7 N^{15}$ and ${ }_8 O^{15}$ are $15.000108 u$ and $15.003070 u$ respectively. Using this data, determine the Coulomb coefficient $a_c$ in the semi-empirical mass formula. Here $\mathbf{M}_{\mathrm{n}}-\mathbf{M}_{\mathrm{p}}=0.000844 \mathrm{u}$
+\begin{answer}
+	\begin{align*}
+	\text{(a)}\quad M_{Z+1}-M_Z&=\left(M_p-M_n\right)[(Z+1)-2]\\
+	&+\frac{a_c}{A^{1 / 3}}\left[(Z+1)^2-Z^2\right)\\
+	&=\left(M_p-M_n\right)+a_c \frac{(2Z+1)}{A^{1 / 3}}\\
+	&=M_p-M_n+a_c \frac{A}{A^{2 / 3}}\\
+	&M_{Z+1}-M_2=\left(M_p-M_n\right)+a_C A^{2 / 3}\\
+	\text{(b)}\quad M_{Z+1}-M_Z &=(15.003070-15.000108) u \\
+	&=2.962 \times 10^{-3} u \\
+	M_p-M_n &=-0.000844 u \\
+	\left(2.962 \times 10^{-3}\right) u &=(-0.000844) u+a_c(15)^{2 / 3} \\
+	a_c(6.08) &=(2.962+0.844) \times 10^{-3} u \\
+	&=3.806 \times 10^{-3} \times 931 \mathrm{MeV} \\
+	a_c &=\frac{3.542}{6.08}=0.58 \mathrm{MeV}
+	\end{align*}
+\end{answer}
+\item Q9. Deduce that with $\boldsymbol{a}_c=\mathbf{0 . 7 2} \mathrm{MeV}$ and $\boldsymbol{a}_s=23 \mathrm{MeV}$ the ratio $\mathbf{Z}_{\min } / \mathbf{A}$ is approximately $0.5$ for light nuclei and $0.4$ for heavy nuclei.
+\begin{answer}
+	\begin{align*}
+	 &\text{Using the mass formula one can deduce the atomic number of the most stable isobar. It is given by}\\
+	&Z_{m i n}=\frac{A}{2+\left(\frac{a_c}{2a_s}\right) A^{2 / 3}} \\
+	&\frac{Z_{m i n}}{A}=\frac{1}{2+0.0156 A^{2/3}}\\
+&\text{	For light nuclei, say $A=10$, the second term in the denominators is small, and $Z_{\min } / A=0.48$.}\\
+&\text{	For heavy nuclei, say $A=200, Z_{\min } / A=0.4$}
 	\end{align*}
 \end{answer}
 \end{enumerate}
