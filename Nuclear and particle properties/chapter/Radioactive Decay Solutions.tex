@@ -1,0 +1,275 @@
+\chapter{Radioactive Decay Solutions}
+\begin{abox}
+	Practise set-1
+\end{abox}
+\begin{enumerate}
+	\item  A radioactive element $X$ decays to $Y$, which in turn decays to a stable element $Z$. The decay constant from $X$ to $Y$ is $\lambda_1$, and that from $Y$ to $Z$ is $\lambda_2$. If, to begin with, there are only $N_0$ atoms of $X$, at short times $\left(t \ll \frac{1}{\lambda_1}\right.$ as well as $\left.\frac{1}{\lambda_2}\right)$ the number of atoms of $Z$ will be
+	{\exyear{ 	NET/JRF (JUNE-2016)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} \lambda_1 \lambda_2 N_0 t^2$
+		\task[\textbf{b.}]$\frac{\lambda_1 \lambda_2}{2\left(\lambda_1+\lambda_2\right)} N_0 t$
+		\task[\textbf{c.}]$\left(\lambda_1+\lambda_2\right)^2 N_0 t^2$
+		\task[\textbf{d.}]$\left(\lambda_1+\lambda_2\right) N_0 t$
+	\end{tasks}
+	\begin{answer}$\left. \right. $
+		$\begin{array}{llll}  
+		&X \stackrel{\lambda_1}{\longrightarrow}  & Y \stackrel{\lambda_2}{\longrightarrow}&Z  \\ 
+		t=0 & N_0 & O & O  \\ 
+		t & N_1 & N_2 & N_3\end{array}$
+		\begin{align*}
+		&\text{Rate equations }N_1=N_0 e^{-\lambda_1 t}, \frac{d N_2}{d t}=\lambda_1 N_1-\lambda_2 N_2, \frac{d N_3}{d t}=\lambda_2 N_2\\
+		N_3&=N_0\left[1+\frac{\lambda_1 e^{-\lambda_2 t}}{\left(\lambda_2-\lambda_1\right)}-\frac{\lambda_2 e^{-\lambda_1 t}}{\left(\lambda_2-\lambda_1\right)}\right] \\
+		&=N_0\left[1+\frac{\lambda_1}{\left(\lambda_2-\lambda_1\right)}\left(1-\lambda_2 t+\frac{\lambda_2^2 t^2}{2}\right)-\frac{\lambda_2}{\left(\lambda_2-\lambda_1\right)}\left(1-\lambda_1 t+\frac{\lambda_1^2 t^2}{2}\right)\right] \\
+		&=N_0\left[1+\frac{\lambda_1}{\left(\lambda_2-\lambda_1\right)}-\frac{\lambda_1 \lambda_2 t}{\left(\lambda_2-\lambda_1\right)}+\frac{\lambda_1}{\left(\lambda_2-\lambda_1\right)} \frac{\lambda_2^2 t^2}{2}-\frac{\lambda_2}{\left(\lambda_2-\lambda_1\right)}+\frac{\lambda_2 \lambda_1 t}{\left(\lambda_2-\lambda_1\right)}-\frac{\lambda_2}{\left(\lambda_2-\lambda_1\right)} \frac{\lambda_1^2 t^2}{2}\right] \\
+		&=N_0\left[\frac{\lambda_1}{\left(\lambda_2-\lambda_1\right)} \times \frac{\lambda_2^2 t^2}{2}-\frac{\lambda_2}{\left(\lambda_2-\lambda_1\right)} \times \frac{\lambda_1^2 t^2}{2}\right]=\frac{\lambda_1 \lambda_2 t^2}{2} N_0\left[\frac{\lambda_2}{\lambda_2-\lambda_1}-\frac{\lambda_1}{\lambda_2-\lambda_1}\right]=\frac{1}{2} \lambda_1 \lambda_2 N_0 t^2
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item What should be the minimum energy of a photon for it to split an $\alpha$-particle at rest into a tritium and a proton?
+	(The masses of ${ }_2^4 \mathrm{He},{ }_1^3 \mathrm{H}$ and ${ }_1^1 \mathrm{H}$ are $4.0026 \mathrm{amu}, 3.0161 \mathrm{amu}$ and $1.0073 \mathrm{amu}$ respectively, and $1 \mathrm{amu} \approx 938 \mathrm{MeV}$ )
+	{\exyear{ NET/JRF (DEC-2016)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$32.2 \mathrm{MeV}$
+		\task[\textbf{b.}]$3 \mathrm{MeV}$
+		\task[\textbf{c.}]$19.3 \mathrm{MeV}$
+		\task[\textbf{d.}] $931.5 \mathrm{MeV}$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{ From }&\text{conservation of energy}\\
+		E_\alpha+m_\alpha c^2&=m_{1 H^3} c^2+m_{1 H^1} c^2 \\
+		\text { or } E_\alpha&=\left[m_{1 H^3}+m_{1 H^1}-m_\alpha\right] \times 938 \mathrm{MeV}=19.5 \mathrm{MeV}
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item If in a spontaneous $\alpha$-decay of ${ }_{92}^{232} U$ at rest, the total energy released in the reaction is $Q$, then the energy carried by the $\alpha$-particle is
+	{\exyear{ NET/JRF (JUNE-2017)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$57 Q / 58$
+		\task[\textbf{b.}]$Q / 57$
+		\task[\textbf{c.}]$Q / 58$
+		\task[\textbf{d.}] $23 Q / 58$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		&\text{Energy carried by the $\propto-$ particle is}\\
+		&K E_{\propto c}=\left(\frac{A-4}{A}\right) Q=\frac{228}{232} Q=\frac{57}{58} Q
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item The reaction ${ }^{63} \mathrm{Cu}_{29}+p \rightarrow{ }^{63} \mathrm{Zn}_{30}+n$ is followed by a prompt $\beta$-decay of zinc ${ }^{63} \mathrm{Zn}_{30} \rightarrow{ }^{63} \mathrm{Cu}_{29}+e^{+}+v_e$. If the maximum energy of the position is $2.4 \mathrm{MeV}$, the $Q$ value of the original reaction in $\mathrm{MeV}$ is nearest to
+	[Take the masses of electron, proton and neutron to be $0.5 \mathrm{MeV} / \mathrm{c}^2, 938 \mathrm{MeV} / \mathrm{c}^2$ and $939.5 \mathrm{MeV} / \mathrm{c}^2$,respectively.]
+	{\exyear{ 	NET/JRF (JUNE-2018)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$-4.4$
+		\task[\textbf{b.}]$-2.4$
+		\task[\textbf{c.}]$-4.8$
+		\task[\textbf{d.}]$-3.4$
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text{ For }&{ }^{63} \mathrm{Zn}_{30} \rightarrow{ }^{63} C u_{29}+e^{+}+v_e\\
+		Q_1&=(Z n-30 e)-[C u-29 e+e]=Z n-C u-2 e=2.4 \mathrm{MeV} \\
+		\text { For }&{ }^{63} C u_{29}+p \rightarrow{ }^{63} Z n_{30}+n \\
+		Q_0&=[(C u-29 e)+p]-[(Z n-30 e)+n] \\
+		&=C u-Z n+e+p-n=\left(-Q_1-2 e\right)+e+p-n=-Q_1[e-p+n] \\
+		&=-2.4-(0.5-938+939.5)=-4.4 . \mathrm{MeV}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item A nucleus decays by the emission of a gamma ray from an excited state of spin parity $2^{+}$ to the ground state with spin-parity $0^{+}$what is the type of the corresponding radiation?
+	{\exyear{ NET/JRF (DEC-2018)}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]Magnetic dipole
+		\task[\textbf{b.}]Electric quadrupole
+		\task[\textbf{c.}]Electric dipole
+		\task[\textbf{d.}]Magnetic quadrupole 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		& \text{$I_i=2, \quad I_{+}=0$}\\
+		&\text{	$\Rightarrow L=2$ and parity change}\\
+		&\text{	$\therefore$ The transition is of electric quadrupole $\left(E_2\right)$ nature.}
+		\end{align*}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+	\item The ground state of ${ }_{12}^{207} \mathrm{~Pb}$ nucleus has spin-parity $J^p=\frac{1^{-}}{2}$, while the first excited state has $J^p=\frac{5^{-}}{2}$. The electromagnetic radiation emitted when the nucleus makes a transition from the first excited state to ground state are
+	{\exyear{ NET/JRF (JUNE-2012)}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]E2 and E3
+		\task[\textbf{b.}]M2 or E3
+		\task[\textbf{c.}]E2 or M3
+		\task[\textbf{d.}]M2 or M3 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		&\text{ No parity change; }\Delta J=2,3\\
+		&\text{For $E_l$ type, $\Delta \pi=(-1)^l$, (for no parity change $l=2$ )}\\
+		&\text{For $M_l$ type, $\Delta \pi=(-1)^{l+1}$, (for no parity change $l=3$ )}\\
+		&\text{$\Delta J=2$, No parity change $\rightarrow E 2 ; \Delta J=3$, No parity change $\rightarrow M 3$}
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{a} &2&\textbf{c}\\\hline 
+		3&\textbf{a} &4&\textbf{a} \\\hline
+		5&\textbf{b} &6&\textbf{c} \\\hline
+		7&\textbf{}&8&\textbf{}\\\hline
+		9&\textbf{}&10&\textbf{}\\\hline
+		11&\textbf{} &12&\textbf{}\\\hline
+		13&\textbf{}&14&\textbf{}\\\hline
+		15&\textbf{}& &\\\hline
+		
+	\end{tabular}
+\end{table}
+
+
+\newpage
+\begin{abox}
+	Practise set-2
+\end{abox}
+\begin{enumerate}
+	\item A radioactive element $X$ has a half-life of 30 hours. It decays via alpha, beta and gamma emissions with the branching ratio for beta decay being $0.75$. The partial half-life for beta decay in unit of hours is---------
+	{\exyear{ GATE-2019}}
+	\begin{answer}
+		Branching ratio is the fraction of particles (here $\beta$ ) which decays by an individual decay mode with respect to the total number of particles which decays
+		\begin{align*}
+		B R=\frac{\left(\frac{d N}{d t}\right)_x}{\left(\frac{d t}{d t}\right)_\beta}=\frac{\left(T_{1 / 2}\right)_x}{\left(T_{1 / 2}\right)_\beta} \Rightarrow\left(T_{1 / 2}\right)_\beta=\frac{\left(T_{1 / 2}\right)_x}{B R}=\frac{30}{0.75}=40 \text { hours }
+		\end{align*}
+		So the correct answer is \textbf{40}
+	\end{answer}
+	\item An $\alpha$ particle is emitted by a ${ }_{90}^{230} \mathrm{Th}$ nucleus. Assuming the potential to be purely Coulombic beyond the point of separation, the height of the Coulomb barrier is
+	$\mathrm{MeV}$ ( up to two decimal places). $\quad\left(\frac{e^2}{4 \pi \epsilon_0}=1.44 \mathrm{MeV}-\mathrm{fm}, r_0=1.30 \mathrm{fm}\right.$ )
+	{\exyear{ GATE-2018}}
+	\begin{answer}
+		\begin{align*}
+		&\text{The height of coulomb barrier for $\alpha$ particle from}\\
+		&{ }_{90} T h^{230} \rightarrow_{88} X^{226}+2 H e^4(\alpha \text {-particle }) \\
+		V_C&=\frac{1}{4 \pi \in_0}\left(\frac{2 z e^2}{R}\right)\\
+		\text{Here, }R_0&=1.3 \mathrm{fm}, \frac{e^2}{4 \pi \epsilon_0}=1.44 \mathrm{MeV} \mathrm{fm}\\
+		\text{	And }R&=R_0 A^{1 / 3}\\
+		&\text{Here, we consider pure Columbic interaction}\\
+		A_{T h}^{1 / 3}&=A_X^{1 / 3}+A_\alpha^{1 / 3}=(226)^{1 / 3}+(4)^{1 / 3}=(6.09+1.58)=7.67, \quad R=R_0 A_{T h}^{1 / 3}=1.3(7.67)\\
+		\text{Hence, }V_C&=\left(\frac{e^2}{4 \pi \in_0}\right) \frac{2 \times 90}{1.3(7.67)}=\frac{180 \times 1.44}{1.3 \times 7.67} \frac{\mathrm{MeV}}{\mathrm{fm}}\\
+		V_C&=25.995 \mathrm{MeV}
+		\end{align*}
+		So the correct answer is \textbf{25.995}
+	\end{answer}
+	\item Consider the reaction ${ }_{25}^{54} \mathrm{Mn}+e^{-} \rightarrow_{24}^{54} \mathrm{Cr}+\mathrm{X}$. The particle $X$ is
+	{\exyear{ 	GATE-2016}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$\gamma$
+		\task[\textbf{b.}]$v_e$
+		\task[\textbf{c.}]$n$
+		\task[\textbf{d.}]$\pi^0$ 
+	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (b)}
+	\end{answer}
+	\item In the nuclear reaction ${ }^{13} C_6+v_e \rightarrow{ }^{13} N_7+X$, the particle $X$ is
+	{\exyear{ 	GATE-2017}}
+	\begin{tasks}(2)
+		\task[\textbf{a.}]An electron
+		\task[\textbf{b.}]An anti-electron
+		\task[\textbf{c.}]A muon
+		\task[\textbf{d.}]A pion 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		&{ }^{13} C_6+v_e \rightarrow{ }^{13} N_7+X \Rightarrow{ }^{13} C_6 \rightarrow{ }^{13} N_7+X+\bar{v}_e\\
+		& L_e=0 \quad 0+1-1\\
+		&\text { To conserve the Lepton number } L_e, X \text { should be } e^{-}
+		\end{align*}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item In the $\beta$-decay of neutron $n \rightarrow p+e-\bar{v}_e$, the anti-neutrino $\bar{v}_e$, escapes detection. Its existence is inferred from the measurement of
+	{\exyear{ GATE-2011}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]Energy distribution of electrons
+		\task[\textbf{b.}]Angular distribution of electrons
+		\task[\textbf{c.}]Helicity distribution of electrons
+		\task[\textbf{d.}]Forward-backward asymmetry of electrons 
+	\end{tasks}
+	\begin{answer}
+		So the correct answer is \textbf{Option (a)}
+	\end{answer}
+	\item In the $\beta$ decay process, the transition $2^{+} \rightarrow 3^{+}$, is
+	{\exyear{ 	GATE-2013}}
+	\begin{tasks}(1)
+		\task[\textbf{a.}]Allowed both by Fermi and Gamow-Teller selection rule
+		\task[\textbf{b.}] Allowed by Fermi and but not by Gamow-Teller selection rule
+		\task[\textbf{c.}]Not allowed by Fermi but allowed by Gamow-Teller selection rule
+		\task[\textbf{d.}] Not allowed both by Fermi and Gamow-Teller selection rule
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		&\text{ According to Fermi Selection Rule:}\\
+		&\text{$\Delta I=0,$ \quad \text { Parity }=\text { No Change }}\\
+		&\text{	According to Gammow-Teller Selection Rule: $\Delta I=0, \pm 1, \quad$ Parity $=$ No Change}\\
+		&\text{In the $\beta$ decay process, the transition $2^{+} \rightarrow 3^{+}$, $\Delta I=\pm 1, \quad$ Parity $=$ No Change.}
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item  A nucleus $X$ undergoes a first forbidden $\beta$-decay to nucleus $Y$. If the angular momentum $(I)$ and parity $(P)$, denoted by $I^P$ as $\frac{7^{-}}{2}$ for $X$, which of the following is a possible $I^P$ value for $Y$ ?
+	{\exyear{ GATE-2014}}
+	\begin{tasks}(4)
+		\task[\textbf{a.}]$\frac{1^{+}}{2}$
+		\task[\textbf{b.}]$\frac{1^{-}}{2}$
+		\task[\textbf{c.}]$\frac{3^{+}}{2}$
+		\task[\textbf{d.}]$\frac{3^{-}}{2}$ 
+	\end{tasks}
+	\begin{answer}
+		\begin{align*}
+		\text { For first forbidden } \beta \text {-decay; } \Delta I=0,1 \text { or } 2 \text { and Parity does change. }
+		\end{align*}
+		So the correct answer is \textbf{Option (c)}
+	\end{answer}
+	\item A beam of $X$ - ray of intensity $I_0$ is incident normally on a metal sheet of thickness $2 \mathrm{~mm}$. The intensity of the transmitted beam is $0.025 I_0$. The linear absorption coefficient of the metal sheet $\left(\right.$ in $\left.\mathrm{m}^{-1}\right)$ is---------- (upto one decimal place)
+	{\exyear{ GATE-2015}}
+	\begin{answer}
+		\begin{align*}
+		I&=I_0 e^{-\mu x} \Rightarrow \mu=\frac{1}{x} \ln \left(\frac{I_0}{I}\right)=\frac{1}{2 \times 10^{-3}} \ln \left(\frac{I_0}{0.025 I_0}\right)=\frac{1}{2 \times 10^{-3}} \ln (40)\\
+		\Rightarrow \mu&=\frac{2.303}{2 \times 10^{-3}}\left[\log _{10} 40\right]=1.151 \times 10^3[2 \times 0.3010+1]=1844.4 \mathrm{~m}^{-1}
+		\end{align*}
+		So the correct answer is \textbf{1844.4}
+	\end{answer}
+	\item The atomic masses of ${ }_{63}^{152} \mathrm{Eu},{ }_{62}^{152} \mathrm{Sm},{ }_1^1 \mathrm{H}$ and neutron are $151.921749,151.919756$, $1.007825$ and $1.008665$ in atomic mass units $(\mathrm{amu})$, respectively. Using the above information, the $Q$-value of the reaction ${ }_{63}^{152} E u+n \rightarrow{ }_{62}^{152} S m+p$ is ---------$\times 10^{-3}$ amu (upto three decimal places)
+	{\exyear{ 	GATE-2015}}
+	\begin{answer}
+		\begin{align*}
+		Q=152.930414-(152.927581)=2.833 \times 10^{-3} \text { a.m.u. }
+		\end{align*}
+		So the correct answer is \textbf{2.833}
+	\end{answer}
+\end{enumerate}
+\colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{40} &2&\textbf{25.995}\\\hline 
+		3&\textbf{b} &4&\textbf{a} \\\hline
+		5&\textbf{a} &6&\textbf{c} \\\hline
+		7&\textbf{c}&8&\textbf{1844.4}\\\hline
+		9&\textbf{2.833}&10&\textbf{}\\\hline
+		11&\textbf{} &12&\textbf{}\\\hline
+		13&\textbf{}&14&\textbf{}\\\hline
+		15&\textbf{}& &\\\hline
+		
+	\end{tabular}
+\end{table}

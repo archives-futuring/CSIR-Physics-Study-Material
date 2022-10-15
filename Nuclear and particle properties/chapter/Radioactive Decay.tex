@@ -64,7 +64,7 @@ The mathematical representation of the law of radioactive decay is
 \text{A is the constant}&\text{ of integration.}\\
 \text{at $t=0 \quad N=N_{0}$}&\text{ the initial number of unclides.}\\
 A&=\ln N_{0}\\
-\therefore \ln N&=-\lambda t+\ln N _0\\
+\therefore \quad \ln N&=-\lambda t+\ln N _0\\
 \ln \frac{N }{ N_{0}}&=-\lambda t\\
 \frac{N}{N_0}&=e^{-\lambda t}\\
 \text{$\mathrm{N}=\mathrm{N}_{0} \mathrm{e}^{-\lambda \mathrm{t}}$ which is the }&\text{  equation form of the law of radioactive decay}\\
@@ -136,10 +136,10 @@ t=t & N_1 & N_2 & N_3\end{array}$
 &\text{Now, we will solve these equations to find the expressions of $N_I, N_2$ and $N_3$}
 \end{align*}
 \begin{align*}
-\text{(I) }\frac{d N_1}{d t}&=-\lambda_1 N_1 \Rightarrow \frac{d N_1}{N_1}=-\lambda_1 d t \Rightarrow \int_{N_0}^{N_1} \frac{d N_1}{N_1}=-\int_0^t \lambda_1 d t\\
+\text{(I) }\ \ \frac{d N_1}{d t}=-\lambda_1 N_1 \Rightarrow \frac{d N_1}{N_1}&=-\lambda_1 d t \Rightarrow \int_{N_0}^{N_1} \frac{d N_1}{N_1}=-\int_0^t \lambda_1 d t\\
 \Rightarrow \ln \frac{N_1}{N_0}&=-\lambda_1 t \Rightarrow \frac{N_1}{N_0}=e^{-\lambda_1 t} \Rightarrow N_1=N_0 e^{-\lambda_1 t}
 \\
-\text{(II) }\frac{d N_2}{d t}+\lambda_2 N_2&=\lambda_1 N_1\\
+\text{(II) }\qquad \quad \frac{d N_2}{d t}+\lambda_2 N_2&=\lambda_1 N_1\\
 \frac{d N_2}{d t} e^{\lambda_2 t}+\lambda_2 e^{\lambda_2 t} N_2&=\lambda_1 N_0 e^{\left(\lambda_2-\lambda_1\right) t} \\
 \frac{d}{d t}\left(N_2 e^{\lambda_2 t}\right)&=\lambda_1 N_0 e^{\left(\lambda_2-\lambda_1\right) t}\\
 \text{On integrating}&\\
@@ -158,7 +158,7 @@ N_3&=N_0-N_1-N_2=N_0-N_0 e^{-\lambda_1 t}-\frac{\lambda_1 N_0}{\lambda_2-\lambda
 	\caption{}
 	\label{}
 \end{figure}
-(a) When activity of the intermediate member B reaches a maximum, $t=t^{\prime}$
+\textbf{(a) }When activity of the intermediate member B reaches a maximum, $t=t^{\prime}$
 \begin{align*}
 \left(\frac{d N_2}{d t}\right)_{t=t^{\prime}}&=0 \Rightarrow-\lambda_1 e^{-\lambda_1 t^{\prime}}+\lambda_2 e^{-\lambda_2 t^{\prime}}=0 \Rightarrow \lambda_1 e^{-\lambda_1 t^{\prime}}=\lambda_2 e^{-\lambda_2 t^{\prime}} \\
 \Rightarrow t^{\prime}&=\frac{\ln \left(\lambda_2 / \lambda_1\right)}{\lambda_2-\lambda_1}
@@ -166,3 +166,314 @@ N_3&=N_0-N_1-N_2=N_0-N_0 e^{-\lambda_1 t}-\frac{\lambda_1 N_0}{\lambda_2-\lambda
 \textbf{(b) Radioactive Equilibrium}\\
 Any member in a radioactive chain is said to be in radioactive equilibrium with its parent when the net number of atoms of such a member does not change with time.\\
 There are two type of equilibrium:
+\begin{enumerate}
+	\item Secular Equilibrium
+$\lambda_2 \gg \lambda_1$ i.e. a long lived parent attains a state of secular equilibrium with a short lived daughter.	
+	\begin{align*}
+	N_2&=\frac{N_0 \lambda_1}{\lambda_2-\lambda_1}\left[e^{-\lambda_1 t}-e^{-\lambda_2 t}\right]\\
+	\lambda_2-\lambda_1 &\simeq \lambda_1 \quad\text{ and after a large time has elapsed} e^{-\lambda_1 t} \gg e^{-\lambda_2 t}\\
+	N_2&=\frac{N_0 \lambda_1}{\lambda_2} e^{-\lambda_1 t}=\frac{N_1 \lambda_1}{\lambda_2}, N_1 \lambda_1=N_2 \lambda_2\\
+	\text{In general }&\lambda_1 N_1=\lambda_2 N_2=\lambda_3 N_3 \ldots \ldots \ldots=\lambda_n N_n\\
+	\frac{N_1}{T_1}&=\frac{N_2}{T_2}=\frac{N_3}{T_3} \ldots \ldots \ldots \ldots=\frac{N_n}{T_n}
+	\end{align*}
+	\item Transient Equilibrium
+\begin{align*}
+&\text{$\lambda_2>\lambda_1$, When the parent has got a longer life time than daughter,}\\
+&\text{As $e^{-\lambda_2 t}$ approaches zero; $N_2=\frac{N_0 \lambda_1}{\lambda_2-\lambda_1} e^{-\lambda_1 t} \Rightarrow N_2=\frac{N_1 \lambda_1}{\lambda_2-\lambda_1}$}\\
+&\hspace{3cm} \frac{N_1}{N_2}=\frac{\lambda_2-\lambda_1}{\lambda_1}
+\end{align*}
+	It shows that the ratio of parent to daughter activities is a constant; such type of equilibrium is called as transient equilibrium.
+	
+	When the parent has got a half-life shorter than that of the daughter nucleus i.e. $\lambda_1>\lambda_2$, the state equilibrium is never achieved.
+\end{enumerate}
+\subsection{Alpha Decay}
+Nuclei which contain 210 or more nucleons are so large that the short range nuclear forces that hold them together are barely able to counterbalance the mutual repulsion of their protons. Alpha decay occurs in such nuclei as a means of increasing their stability by reducing their size
+$$
+{ }_Z^A X \rightarrow{ }_{Z-2}^{A-4} Y+{ }_2^4 \mathrm{He}
+$$
+To escape from nucleus, a particle must have K.E., and only the alpha particle mass is sufficiently smaller than that of its constituent nucleons for such energy to be available $(\alpha$ particle have high B.E. as compared to proton or ${ }_2^3 \mathrm{He}$ nuclei).\\
+The energy $Q$-released when various particles are emitted by a heavy nucleus is,\\
+i.e.\\
+Disintegration energy $Q=\left(m_i-m_f-m_x\right) c^2$ where \\
+$m_i=$ Mass of initial nuclei,\\
+$m_f=$ mass of final nuclei,\\
+$m_x=\alpha$-particle mass\\
+The $K E_\alpha$ of the emitted $\alpha$-particle is never quite equal to $Q$, since momentum must be conserved, the nucleus recoils with a small amount of kinetic energy when the $\alpha$-particle emerges. Thus
+$$
+K E_\alpha \approx\left(\frac{A-4}{A}\right) Q
+$$
+since $A \geq 210$, most of the disintegration energy appears as the K.E. of the $\alpha$-particle.\\\\
+\textbf{Tunnel Theory of $\alpha$-decay}(How $\alpha$ particle can actually escape the nucleus)\\\\
+The height of the potential barrier is $\approx 25 \mathrm{MeV}$, which is equal to the work that must be done against the repulsive electric force to bring an $\alpha$-particle from infinity to a position adjacent to the nucleus but just outside the range of its attractive forces.\\
+We may therefore regard an $\alpha$-particle in such a nucleus as being inside a box whose box requires energy of $25 \mathrm{MeV}$ to be surmounted. However, decay $\alpha$-particles have energies that range from 4 to $9 \mathrm{MeV}$, depending on the particular nuclide involved, 16 to 21 $\mathrm{MeV}$ short of the energy needed for escape.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,width=6.5cm]{NP-9}
+	\caption{}
+	\label{}
+\end{figure}
+Although $\alpha$-decay is inexplicable classically,
+quantum mechanics provides a straight forward explanation. The basic notions of this theory are:\\
+An $\alpha$-particle may exist as an entity within a heavy nucleus. Such a particle is in constant motion and is held in the nucleus by potential barrier. There is a small but definite-likelihood that the particle may tunnel through the barrier (despite its height) each time a collision with it occurs.
+\begin{align*}
+&\text{The decay probability per unit time, i.e decay constant $\lambda=v T$}
+\intertext{Where $v=$ number of times per second an $\alpha$-particle within a nucleus strikes the potential barrier around it and}
+&\text{$T=e^{-2 k_2 L}=$ Probability that the particle will be transmitted through the barrier.}
+\intertext{$L$ is the width of the barrier, wave number inside the barrier $k_2=\frac{\sqrt{2 m(U-E)}}{\hbar}$, where $E$ is the K.E., $U$ is height of the barrier and $m$ is the mass of $\alpha$-particle.}
+\end{align*}
+\subsection{Beta Decay}
+It is a means whereby a nucleus can alter its composition to become more stable. The conservation principles of energy, linear momentum and angular momentum are all apparently violated in beta decay: $\quad n \rightarrow p+e^{-}$\\
+\begin{enumerate}[label=\roman*)]
+	\item  The electron energies observed in the $\beta^{-}$- decay of a particular nuclide are found to vary continuously from 0 to maximum value $K E_{\max }$ characteristic of the nuclide. The maximum energy $E_{\max }=\left(m_0 c^2+K E_{\max }\right)$ carried by the decay electron is equal to the energy equivalent of the mass difference between the parent and daughter nuclei. However an emitted electron is rarely found with energy of $K E_{\max }$.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=6cm,width=6cm]{NP-10}
+		\caption{}
+		\label{}
+	\end{figure}
+\item  When the directions of emitted electron and of the recoiling nuclei are observed, they are almost never exactly opposite as required for linear momentum to be conserved.
+\item (iii) The spins of the neutron, proton and electron are all $1 / 2$. If beta decay involved just a neutron becoming a proton and an electron, spin (and hence angular momentum) is not conserved.\\
+In 1930 Pauli proposed a "desperate remedy": If an uncharged particle of small or zero rest mass and spin $1 / 2$ is emitted in $\beta^{-}$-decay together with the electron, the above discrepancies would not occur. This particle is called neutrino which would carry off energy equal to the difference between $K E_{\max }$ and actual $K . E$ of the electron (the recoiling nucleus carry away negligible $K . E$ ). The neutrino's linear momentum also exactly balances those of the electron and the recoiling daughter nucleus.\\
+Thus in ordinary $\beta^{-}$-decay $n \rightarrow p+e^{-}+\bar{v}$ (also possible outside the nucleus)\\
+The interaction of neutrinos with matter is extremely feeble. The only interaction with matter a neutrino can experience is through a process called inverse beta decay with extremely low probability $p+\bar{v} \rightarrow n+e^{+}$and $n+v \rightarrow p+e^{-}$.
+\end{enumerate}
+\begin{note}
+	Parity violates in $\beta^{-}$- decay.
+\end{note}
+\subsubsection{Positron Emission}
+It is the conversion of a nuclear proton into a neutron, a positron and a neutrino:
+$$
+p \rightarrow n+e^{+}+v \quad \text { (Possible only within a nucleus) }
+$$
+\subsubsection{Electron Capture}
+It is closely connected with positron emission. In electron capture a nucleus absorbs one of its inner atomic electron, with the result that a nuclear proton becomes a neutron and neutrino is emitted:
+$$
+p+e^{-} \rightarrow n+v .
+$$
+Usually the absorbed electron comes from the $K$-shell, and an $X$-ray photon is emitted when one of the atoms outer electrons falls into the resulting vacant state. The wavelength of the photon will be one of those characteristic of daughter element, not of the original one, and the process can be recognized on that basis.
+\begin{note}
+	\begin{enumerate}
+		\item Electron capture is competitive with positron emission since both processes lead to the same nuclear transformation.
+		\item Electron capture occurs more often than positron emission in heavy nuclides because the electrons in such nuclides are relatively close to the nucleus, which promotes their interaction with it.
+	\end{enumerate}
+\end{note}
+\subsubsection{Gamma Decay}
+Nuclei can exist in definite energy levels just as an atom can. Due to $\alpha$ or $\beta$-emission, nuclei get into an excited state. These excited nuclei return to their ground state by emitting photons whose energies correspond to energy difference between the various initial and final states in the transition involved called $\gamma$-ray.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3cm,width=9cm]{NP-11}
+	\caption{}
+	\label{}
+\end{figure}
+\subsubsection{$\gamma$-rays characteristics}
+\begin{enumerate}
+	\item It is an electromagnetic wave.
+	\item Very short wavelength $\left(\approx 400 \mathrm{~A}^{\circ}\right.$ to $\left.0.4 \mathrm{~A}^{\circ}\right)$.
+	\item No electric charge and so not detected by magnetic and electric field.
+	When a beam of $\gamma$-rays photons passes through matter, the intensity of beam decreases exponentially i.e. $I=I_0 e^{-\mu x}$ where $I_0$ : Initial Intensity, $\mu$ : absorption coefficient of substance, $x$ : thickness of absorber.
+\end{enumerate}
+\subsubsection{Internal Conversion}
+"Process of Internal Conversion is an alternative to $\gamma$-decay". Internal conversion is a process which enables an excited nuclear state to come down to some lower state without the emission of $\gamma$-photon. The energy $\Delta E$ involved in this nuclear transition gets transferred directly to a bound electron of the atom. Such an electron gets knocked out of the atom. Electrons like this are called "internal conversion" electrons.\\
+This probability is highest for the $K$-shell electrons which are closest to the nucleus. For such a case, the nucleus may not de-excite by $\gamma$-emission but by giving the excitation energy $\Delta E$ directly to a $K$-shell electron. Internal conversion is also possible (though less, as compared to $K$ shell) for higher atomic shells $L, M$ etc.\\
+The kinetic energy of the converted electron is $K_e=\Delta E-B_e$,\\
+where $\Delta E=E_i-E_f=$ Nuclear excitation energy between initial state $i$ (higher) and final state $f$ (lower) and $B_e=$ atomic binding energy of electron.\\
+We know that the $\beta$-spectrum is continuous; usually this continuous $\beta$ - spectra are superimposed by discrete lines due to conversion electrons. These lines are called 'internal conversion' lines.\\
+$\gamma$-ray emission and internal conversion are competing process for de-excitation of nucleus.\\
+If we neglect the small recoil energy of the $\gamma$-emitter nucleus, the energy of the $\gamma$-ray is given by $h v=\Delta E=E_i-E_f ;$ where $v$ is the frequency of the $\gamma$-photon.
+\subsubsection{Pair Production (Energy into matter)}
+In a collision a photon can give an electron all of its energy (the photoelectric effect) or only part (the Compton Effect). It is also possible for a photon to materialize into an electron and a positron. In this process, electromagnetic energy is converted into matter. This process is called pair production.\\
+No conservation principles are violated when an electron-positron pair is created near an atomic nucleus.\\
+The rest energy $m_0 c^2$ of an electron or positron is $0.51 \mathrm{MeV}$, hence pair production requires photon energy of at least $1.02 \mathrm{MeV}$. Any additional photon energy becomes $K . E$. of the electron and positron.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=2.5cm,width=6cm]{NP-12}
+	\caption{}
+	\label{}
+\end{figure}
+\subsubsection{Pair Annihilation}
+The inverse of pair production occurs when a positron is near an electron and the two come together under the influence of their opposite electric charges. Both particles vanish simultaneously with the lost mass becoming energy in the form of two gamma ray photon.
+$$
+e^{+}+e^{-} \rightarrow \gamma+\gamma
+$$
+The total mass of the positron and electron is equivalent to $1.02 \mathrm{MeV}$, and each photon has energy $h v$ of $0.51 \mathrm{MeV}$ plus half the $K . E$. of the particles relative to their center of mass.
+\begin{note}
+	\begin{enumerate}
+		\item The directions of the photons are such as to conserve both energy and linear momentum.
+		\item No nucleus or other particles is needed for this pair annihilation to take place.
+	\end{enumerate}
+\end{note}
+\newpage
+\begin{abox}
+	Practise set-1
+\end{abox}
+\begin{enumerate}
+	\item  A radioactive element $X$ decays to $Y$, which in turn decays to a stable element $Z$. The decay constant from $X$ to $Y$ is $\lambda_1$, and that from $Y$ to $Z$ is $\lambda_2$. If, to begin with, there are only $N_0$ atoms of $X$, at short times $\left(t \ll \frac{1}{\lambda_1}\right.$ as well as $\left.\frac{1}{\lambda_2}\right)$ the number of atoms of $Z$ will be
+	{\exyear{ 	NET/JRF (JUNE-2016)}}
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]$\frac{1}{2} \lambda_1 \lambda_2 N_0 t^2$
+		\task[\textbf{b.}]$\frac{\lambda_1 \lambda_2}{2\left(\lambda_1+\lambda_2\right)} N_0 t$
+		\task[\textbf{c.}]$\left(\lambda_1+\lambda_2\right)^2 N_0 t^2$
+		\task[\textbf{d.}]$\left(\lambda_1+\lambda_2\right) N_0 t$
+	\end{tasks}
+	\item What should be the minimum energy of a photon for it to split an $\alpha$-particle at rest into a tritium and a proton?
+	(The masses of ${ }_2^4 \mathrm{He},{ }_1^3 \mathrm{H}$ and ${ }_1^1 \mathrm{H}$ are $4.0026 \mathrm{amu}, 3.0161 \mathrm{amu}$ and $1.0073 \mathrm{amu}$ respectively, and $1 \mathrm{amu} \approx 938 \mathrm{MeV}$ )
+	{\exyear{ NET/JRF (DEC-2016)}}
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]$32.2 \mathrm{MeV}$
+		\task[\textbf{b.}]$3 \mathrm{MeV}$
+		\task[\textbf{c.}]$19.3 \mathrm{MeV}$
+		\task[\textbf{d.}] $931.5 \mathrm{MeV}$
+	\end{tasks}
+	\item If in a spontaneous $\alpha$-decay of ${ }_{92}^{232} U$ at rest, the total energy released in the reaction is $Q$, then the energy carried by the $\alpha$-particle is
+	{\exyear{ NET/JRF (JUNE-2017)}}
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]$57 Q / 58$
+		\task[\textbf{b.}]$Q / 57$
+		\task[\textbf{c.}]$Q / 58$
+		\task[\textbf{d.}] $23 Q / 58$
+	\end{tasks}
+	\item The reaction ${ }^{63} \mathrm{Cu}_{29}+p \rightarrow{ }^{63} \mathrm{Zn}_{30}+n$ is followed by a prompt $\beta$-decay of zinc ${ }^{63} \mathrm{Zn}_{30} \rightarrow{ }^{63} \mathrm{Cu}_{29}+e^{+}+v_e$. If the maximum energy of the position is $2.4 \mathrm{MeV}$, the $Q$ value of the original reaction in $\mathrm{MeV}$ is nearest to
+	[Take the masses of electron, proton and neutron to be $0.5 \mathrm{MeV} / \mathrm{c}^2, 938 \mathrm{MeV} / \mathrm{c}^2$ and $939.5 \mathrm{MeV} / \mathrm{c}^2$,respectively.]
+	{\exyear{ 	NET/JRF (JUNE-2018)}}
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]$-4.4$
+		\task[\textbf{b.}]$-2.4$
+		\task[\textbf{c.}]$-4.8$
+		\task[\textbf{d.}]$-3.4$
+	\end{tasks}
+\item A nucleus decays by the emission of a gamma ray from an excited state of spin parity $2^{+}$ to the ground state with spin-parity $0^{+}$what is the type of the corresponding radiation?
+{\exyear{ NET/JRF (DEC-2018)}}
+ \begin{tasks}(2)
+	\task[\textbf{a.}]Magnetic dipole
+	\task[\textbf{b.}]Electric quadrupole
+	\task[\textbf{c.}]Electric dipole
+	\task[\textbf{d.}]Magnetic quadrupole 
+\end{tasks}
+\item The ground state of ${ }_{12}^{207} \mathrm{~Pb}$ nucleus has spin-parity $J^p=\frac{1^{-}}{2}$, while the first excited state has $J^p=\frac{5^{-}}{2}$. The electromagnetic radiation emitted when the nucleus makes a transition from the first excited state to ground state are
+{\exyear{ NET/JRF (JUNE-2012)}}
+ \begin{tasks}(4)
+	\task[\textbf{a.}]E2 and E3
+	\task[\textbf{b.}]M2 or E3
+	\task[\textbf{c.}]E2 or M3
+	\task[\textbf{d.}]M2 or M3 
+\end{tasks}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{a} &2&\textbf{c}\\\hline 
+		3&\textbf{a} &4&\textbf{a} \\\hline
+		5&\textbf{b} &6&\textbf{c} \\\hline
+		7&\textbf{}&8&\textbf{}\\\hline
+		9&\textbf{}&10&\textbf{}\\\hline
+		11&\textbf{} &12&\textbf{}\\\hline
+		13&\textbf{}&14&\textbf{}\\\hline
+		15&\textbf{}& &\\\hline
+		
+	\end{tabular}
+\end{table}
+
+
+\newpage
+\begin{abox}
+	Practise set-2
+\end{abox}
+\begin{enumerate}
+	\item A radioactive element $X$ has a half-life of 30 hours. It decays via alpha, beta and gamma emissions with the branching ratio for beta decay being $0.75$. The partial half-life for beta decay in unit of hours is---------
+	{\exyear{ GATE-2019}}
+	\item An $\alpha$ particle is emitted by a ${ }_{90}^{230} \mathrm{Th}$ nucleus. Assuming the potential to be purely Coulombic beyond the point of separation, the height of the Coulomb barrier is
+	$\mathrm{MeV}$ ( up to two decimal places). $\quad\left(\frac{e^2}{4 \pi \epsilon_0}=1.44 \mathrm{MeV}-\mathrm{fm}, r_0=1.30 \mathrm{fm}\right.$ )
+	{\exyear{ GATE-2018}}
+	\item Consider the reaction ${ }_{25}^{54} \mathrm{Mn}+e^{-} \rightarrow_{24}^{54} \mathrm{Cr}+\mathrm{X}$. The particle $X$ is
+	{\exyear{ 	GATE-2016}}
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]$\gamma$
+		\task[\textbf{b.}]$v_e$
+		\task[\textbf{c.}]$n$
+		\task[\textbf{d.}]$\pi^0$ 
+	\end{tasks}
+	\item In the nuclear reaction ${ }^{13} C_6+v_e \rightarrow{ }^{13} N_7+X$, the particle $X$ is
+	{\exyear{ 	GATE-2017}}
+	 \begin{tasks}(2)
+		\task[\textbf{a.}]An electron
+		\task[\textbf{b.}]An anti-electron
+		\task[\textbf{c.}]A muon
+		\task[\textbf{d.}]A pion 
+	\end{tasks}
+	\item In the $\beta$-decay of neutron $n \rightarrow p+e-\bar{v}_e$, the anti-neutrino $\bar{v}_e$, escapes detection. Its existence is inferred from the measurement of
+	{\exyear{ GATE-2011}}
+	 \begin{tasks}(1)
+		\task[\textbf{a.}]Energy distribution of electrons
+		\task[\textbf{b.}]Angular distribution of electrons
+		\task[\textbf{c.}]Helicity distribution of electrons
+		\task[\textbf{d.}]Forward-backward asymmetry of electrons 
+	\end{tasks}
+	\item In the $\beta$ decay process, the transition $2^{+} \rightarrow 3^{+}$, is
+	{\exyear{ 	GATE-2013}}
+	 \begin{tasks}(1)
+		\task[\textbf{a.}]Allowed both by Fermi and Gamow-Teller selection rule
+		\task[\textbf{b.}] Allowed by Fermi and but not by Gamow-Teller selection rule
+		\task[\textbf{c.}]Not allowed by Fermi but allowed by Gamow-Teller selection rule
+		\task[\textbf{d.}] Not allowed both by Fermi and Gamow-Teller selection rule
+	\end{tasks}
+\item  A nucleus $X$ undergoes a first forbidden $\beta$-decay to nucleus $Y$. If the angular momentum $(I)$ and parity $(P)$, denoted by $I^P$ as $\frac{7^{-}}{2}$ for $X$, which of the following is a possible $I^P$ value for $Y$ ?
+{\exyear{ GATE-2014}}
+	 \begin{tasks}(4)
+		\task[\textbf{a.}]$\frac{1^{+}}{2}$
+		\task[\textbf{b.}]$\frac{1^{-}}{2}$
+		\task[\textbf{c.}]$\frac{3^{+}}{2}$
+		\task[\textbf{d.}]$\frac{3^{-}}{2}$ 
+	\end{tasks}
+	\item A beam of $X$ - ray of intensity $I_0$ is incident normally on a metal sheet of thickness $2 \mathrm{~mm}$. The intensity of the transmitted beam is $0.025 I_0$. The linear absorption coefficient of the metal sheet $\left(\right.$ in $\left.\mathrm{m}^{-1}\right)$ is---------- (upto one decimal place)
+	{\exyear{ GATE-2015}}
+	\item The atomic masses of ${ }_{63}^{152} \mathrm{Eu},{ }_{62}^{152} \mathrm{Sm},{ }_1^1 \mathrm{H}$ and neutron are $151.921749,151.919756$, $1.007825$ and $1.008665$ in atomic mass units $(\mathrm{amu})$, respectively. Using the above information, the $Q$-value of the reaction ${ }_{63}^{152} E u+n \rightarrow{ }_{62}^{152} S m+p$ is ---------$\times 10^{-3}$ amu (upto three decimal places)
+	{\exyear{ 	GATE-2015}}
+\end{enumerate}
+ \colorlet{ocre1}{ocre!70!}
+\colorlet{ocrel}{ocre!30!}
+\setlength\arrayrulewidth{1pt}
+\begin{table}[H]
+	\centering
+	\arrayrulecolor{ocre}
+	\begin{tabular}{|p{1.5cm}|p{1.5cm}||p{1.5cm}|p{1.5cm}|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Answer key}}\\\hline\hline
+		\rowcolor{ocrel}Q.No.&Answer&Q.No.&Answer\\\hline
+		1&\textbf{40} &2&\textbf{25.995}\\\hline 
+		3&\textbf{b} &4&\textbf{a} \\\hline
+		5&\textbf{a} &6&\textbf{c} \\\hline
+		7&\textbf{c}&8&\textbf{1844.4}\\\hline
+		9&\textbf{2.833}&10&\textbf{}\\\hline
+		11&\textbf{} &12&\textbf{}\\\hline
+		13&\textbf{}&14&\textbf{}\\\hline
+		15&\textbf{}& &\\\hline
+	
+	\end{tabular}
+\end{table}
+
+\newpage
+\begin{abox}
+	Practise set-3
+	\end{abox}
+\begin{enumerate}
+	\item a
+	
+	
+	
+	
+	
+\end{enumerate}
+
+
+
+
+
+
+
