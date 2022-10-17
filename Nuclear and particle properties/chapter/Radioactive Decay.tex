@@ -435,6 +435,8 @@ The total mass of the positron and electron is equivalent to $1.02 \mathrm{MeV}$
 	{\exyear{ GATE-2015}}
 	\item The atomic masses of ${ }_{63}^{152} \mathrm{Eu},{ }_{62}^{152} \mathrm{Sm},{ }_1^1 \mathrm{H}$ and neutron are $151.921749,151.919756$, $1.007825$ and $1.008665$ in atomic mass units $(\mathrm{amu})$, respectively. Using the above information, the $Q$-value of the reaction ${ }_{63}^{152} E u+n \rightarrow{ }_{62}^{152} S m+p$ is ---------$\times 10^{-3}$ amu (upto three decimal places)
 	{\exyear{ 	GATE-2015}}
+	\item The atomic masses of ${ }_{63}^{152} \mathrm{Eu},{ }_{62}^{152} \mathrm{Sm},{ }_1^1 H$ and neutron are $151.921749,151.919756$, $1.007825$ and $1.008665$ in atomic mass units $(\mathrm{amu})$, respectively. Using the above information, the $Q$-value of the reaction ${ }_{63}^{152} E u+n \rightarrow{ }_{62}^{152} S m+p$ is ------------$\times 10^{-3}$ amu (upto three decimal places)
+	{\exyear{ GATE-2015}}
 \end{enumerate}
  \colorlet{ocre1}{ocre!70!}
 \colorlet{ocrel}{ocre!30!}
@@ -463,12 +465,152 @@ The total mass of the positron and electron is equivalent to $1.02 \mathrm{MeV}$
 	Practise set-3
 	\end{abox}
 \begin{enumerate}
-	\item a
-	
-	
-	
-	
-	
+	\item  The half life of radioactive radon is $3.8$ day. Find the time at the end of which $(1 / 20)^{\text {th }}$ of the radon sample, will remain undecayed. (Given $\log _{10} e=0.4343$ )
+	\begin{answer}
+		\begin{align*}
+		N&=N_0e^{-\lambda t}\text { where } \lambda=\frac{0.693}{3.8}=0.18\\
+		\frac{N_0}{20}&=N_0 e^{-018 t}\text{ or }\log _{10} 20=0.18 \times t \times \log _{10} e\\
+		or 1.3&=0.18 \times 0.4343 \times t\text{ or }t=\frac{1.3}{0.18 \times 0.4343} \text{or }t=16.5\text{ day}
+		\end{align*}
+		So the correct answer is \textbf{16.5}
+	\end{answer}
+		\item  A radioactive material decays by simultaneous emission of two particles with respective half-lives 1620 and 810 year. Find the time, in year, after which one-fourth of the material remains.
+	\begin{answer}
+		\begin{align*}
+		\because \quad\frac{N}{N_0}&=e^{-\lambda t}\\
+	\text{	There is a}&\text{ simultaneous emission of two particles}\\
+		\therefore \quad\frac{N}{N_0}&=e^{-\left(\lambda_1+\lambda_2\right) t} \Rightarrow \frac{N_0}{4 N_0}=e^{-\left(\lambda_1+\lambda_2\right) t} \text { or } \log 4=\left(\lambda_1+\lambda_2\right) t \log e\\
+		\text{Now }\lambda_1&=\frac{0.693}{1620} \lambda_2=\frac{0.693}{810}\\
+		\therefore \quad2.303[2 \times 0.3]&=0.693\left[\frac{1}{1620}+\frac{1}{810}\right] t \text { or } t=\frac{2.303 \times 0.6 \times 1620}{0.693 \times 3} \text { or } t=1080 \text { year }
+		\end{align*}
+			So the correct answer is \textbf{1080}
+	\end{answer}
+		\item  A 280 day old radioactive substance shows an activity of $6000 \mathrm{dps}, 140$ day later its activity becomes 3000 dps. What was its initial activity?
+	\begin{answer}
+		\begin{align*}
+		\text{For radioactive disintegration, }\lambda&=\frac{1}{t} \ln \frac{N_0}{N}=\frac{1}{t} \ln \left(\frac{A_0}{A}\right)\text{ or } \lambda=\frac{1}{280} \ln \left(\frac{A_0}{6000}\right)\\
+		\text{also }\lambda&=\frac{1}{(280+140)} \ln \left(\frac{A_0}{3000}\right)\\
+		\therefore \quad\frac{1}{280} \ln \left(\frac{A_0}{6000}\right)&=\frac{1}{420} \ln \left(\frac{A_0}{3000}\right) \text { or } 3 \ln \left(\frac{A_0}{6000}\right)=2 \ln \left(\frac{A_0}{3000}\right)\\
+		\therefore\quad\left(\frac{A_0}{6000}\right)^3&=\left(\frac{A_0}{3000}\right)^2 \quad \text { or } \frac{A_0^3}{A_0^2}=\frac{(6000)^3}{(3000)^2}\\
+		\text{or }A_0&=\frac{6 \times 6 \times 6 \times 10^9}{3 \times 3 \times 10^6} \quad\text{ or }A_0=24 \times 10^3 \quad\text{ or }A_0=24000\\
+		\therefore\quad\text{ Initial activity }&=24000 \mathrm{dps}
+		\end{align*}
+			So the correct answer is \textbf{24000}
+	\end{answer}
+		\item Q4. A small quantity of containing $\mathrm{Na}^{24}$ radio nuclide (half life $=15$ hour) of activity $1.0$ micro curie is injected into the blood of a person $A$ sample of the blood of volume $1 \mathrm{~cm}^3$ taken after 5 hour shows an activity of 296 disintegration per minute. Determine the total volume blood in the body of the person. Assume that radioactive solution mixes uniformly in the blood of the person. ( 1 curie $=3.7 \times 10^{10}$ disintegrations per second)
+	\begin{answer}
+		\begin{align*}
+		\text{For radioactive decay, }R&=R_0 e^{-\lambda t}\text{ or }(-\lambda t)=\ln \frac{R}{R_0}\\
+		\text{or }t&=\frac{2.303}{\lambda} \log _{10}\left(\frac{R_0}{R}\right), \text{where }\lambda=\frac{0.693}{15}\text{ per hour}\\
+	\text{	Half life $(T)$ }&\text{of the radio nuclide }\mathrm{Na}^{24}=15 hour\\
+	\text{	Volume of blood }&=1 \mathrm{~cm}^3\text{ taken as a sample
+		After 5 hour, } R=296 d p m\text{ in the blood sample.}\\
+		\therefore t&=\frac{2.303}{\frac{0.693}{15}} \log _{10}\left(\frac{R_0}{296}\right) \text { or } \log _{10}\left(\frac{R_0}{296}\right)=\frac{5 \times 0.693}{2.303 \times 15} \quad \text { or } \frac{R_0}{296}=0.10033\\
+		\text{or }R_0&=296 \times 1.26=373 \mathrm{dpm}\text{ or }R_0=\frac{373}{60} \mathrm{dps}\\
+		\text{Activity of one micro curie }&10^{-6}\text{ curie }=3.7 \times 10^4 \mathrm{dps}\\
+		\text{If activity is }&\left(\frac{373}{60}\right),\text{ volume of blood }1 \mathrm{~cm}^3\\
+		\text{If activity is }&3.7 \times 10^4 \mathrm{dps}\text{ volume }=\frac{3.7 \times 10^4 \times 60}{373} \mathrm{~cm}^3\\
+		\therefore\quad&\text{ Volume of blood }=5951.7 \mathrm{~cm}^3\text{ or Volume of blood }=5.95\text{ litre}\\
+		\therefore \quad&\text { Total volume of blood in the body of person is } 5.95 \text { litre. }
+		\end{align*}
+			So the correct answer is \textbf{5.95}
+	\end{answer}
+		\item  A radioactive sample emits $n \beta$-particles in $2 \mathrm{sec}$ it emits $0.75 n \beta$-particles. What is the mean life of the sample? (Given $\ln 2=0.6931$ and $\ln 3=1.0986$ )
+	\begin{answer}
+		Let $N_0$ be the initial number of nuclei. So, after 2 seconds amount remaining $=N_0 e^{-2 \lambda}$
+		\begin{align*}
+		\therefore\quad &\text{ Amount dissociated, }n=N_0\left(1-e^{-2 \lambda}\right)\\
+		\text{Again after 2 }&\text{ seconds amount remaining}=N_0 e^{-2 \lambda} e^{-2 \lambda}\\
+		\therefore \quad &\text{Amount dissociated, }0.75 n=N_0 e^{-2 \lambda}-N_0 e^{-2 \lambda} e^{-2 \lambda}\\
+		\Rightarrow 0.75&=N_0 e^{-2 \lambda}\left(1-e^{-2 \lambda}\right)\\
+		\text{Solving }&\text{equations (i) and (ii)}\\
+		\frac{0.75 n}{n}&=\frac{N_0 e^{-2 \lambda}\left(1-e^{-2 \lambda}\right)}{N_0\left(1-e^{-2 \lambda}\right)} \text { or, } e^{-2 \lambda}=\frac{3}{4} \Rightarrow e^{2 \lambda} \frac{4}{3} \text { or, } \ln \left(e^{2 \lambda}\right)=\ln 4-\ln 3\\
+	\text{	or, }2 \lambda&=2 \ln 2-\ln 3\text{ or, }2 \lambda=2 \times 0.6931-1.0986\text{ or, }\lambda=0.1438 \sec ^{-1}\\
+		\therefore\quad \text{ Mean life }&=\frac{1}{\lambda}=6.954\text{ second or mean life} =7\text{ second}
+		\end{align*}
+		So the correct answer is \textbf{7}
+	\end{answer}
+	\item  Is the $\alpha$-decay of $1^{+}$level in ${ }_{10}^{20} \mathrm{Ne}$ to $0^{+}{ }_8^{16} \mathrm{O}$ ground state possible?
+	\begin{answer}
+		\begin{align*}
+		&\text{The decay will proceed via $l=1$ change.}\\
+		&\text{From the parity selection rule, we have}\\
+		&(+) \neq(+)(+)(-1)^1 \\
+		&{\left[\pi_i=\pi_{\mathrm{f}} \pi_\alpha \pi_\alpha^l\right]}
+	\intertext{	So the parity is not conserved. Hence, the transition is forbidden because of the nonconservation of parity.}
+		\end{align*}
+	\end{answer}
+	\item  What is the width of the ${ }_{92}^{238} U$ coulomb barrier seen by the $\alpha$-particle. If $Q_\alpha$ of the process is $4 \cdot 27 \mathrm{MeV}$. Here coulomb barrier height $B=27 \cdot 87 \mathrm{MeV}$ ?
+	\begin{answer}
+		\begin{align*}
+		Q_\alpha&=4 \cdot 27 \mathrm{MeV}, \quad B=27 \cdot 87 \mathrm{MeV}\\
+		R&=1 \cdot 2\left(234^{1 / 3}+4^{1 / 3}\right)=9 \cdot 3 \mathrm{fm} \\
+		Q_\alpha&=\frac{(Z-2) 2 e^2}{4 \pi \in_0 b}, \quad B=\frac{(Z-2) 2 e^2}{4 \pi \epsilon_0 R} \\
+		\frac{Q_\alpha}{B}&=\frac{R}{b} \rightarrow b=\frac{B R}{Q_\alpha}=\frac{27 \cdot 87 \times 9 \cdot 3}{4 \cdot 27}=60 \cdot 7 \mathrm{fm}\\
+		\text{The width}&\text{ of coulomb's barrier}\\
+		&=b-R=60 \cdot 7-9 \cdot 3=51 \cdot 4 \mathrm{fm}
+		\end{align*}
+	\end{answer}
+	\item  (i) Determine the number of attempts of $\alpha$ - particle per unit time trying to come out of the potential barrier for ${ }_{92}^{238} U$ nuclei. Here $Q_\alpha=4 \cdot 27 \mathrm{MeV}$,
+	$$
+	V_0=36 \mathrm{MeV}, m_\alpha c^2=3727 \mathrm{MeV}
+	$$
+	 (ii) Estimate the half life of $\alpha$-decay. If $P=2 \cdot 86 \times 10^{-39}$
+	\begin{answer}
+		\begin{align*}
+		\text { (i):- } \frac{1}{2} m v_0^2&=Q_\alpha+V_0\\
+		v_0&=\sqrt{\frac{2\left(Q_\alpha+V_0\right)}{m}}=\sqrt{\frac{2\left(Q_\alpha+V_0\right)}{m c^2}} c \\
+		v_0&=\sqrt{\frac{2(4 \cdot 27+36) \mathrm{MeV}}{3727 \mathrm{MeV}}} \times 3 \times 10^8 \mathrm{~m} / \mathrm{s} \\
+		&=4 \cdot 41 \times 10^7 \mathrm{~m} / \mathrm{s} \\
+		f&=\frac{v_0}{2 R}=\frac{4 \cdot 41 \times 10^7}{2 \times 9 \cdot 3 \times 10^{-15}}=2 \cdot 37 \times 10^{21} \mathrm{~s}^{-1} \\
+		R&=r_0\left(A_d^{1 / 3}+A_\alpha^{1 / 3}\right)=1 \cdot 2\left(234^{1 / 3}+4^{1 / 3}\right)=9.3 \mathrm{fm}\\
+		\text { (ii): } T_{1 / 2}&=\frac{\ln 2}{f P}\\
+		&=\frac{0 \cdot 693}{2 \cdot 37 \times 10^{21} \times 2 \cdot 86 \times 10^{-39}}\\
+		&=1 \cdot 02 \times 10^{17} \mathrm{~s} \\
+		&=\frac{1.02 \times 10^{17}}{365 \times 24 \times 3600} \\
+		&=3 \cdot 23 \times 10^9 \mathrm{yrs}
+		\end{align*}
+	\end{answer}
+		\item  Calculate the energy of the $\alpha$-particle emitted by ${ }_{92}^{238} U$ if $Q$. Value of the reaction is $4 \cdot 27 \mathrm{MeV}$.
+		\begin{answer}
+			\begin{align*}
+			E_\alpha&=Q_\alpha \frac{M_d}{M_d+M_\alpha} \\
+			&=4 \cdot 27 \frac{234}{234+4} \\
+			E_\alpha&=4 \cdot 198 \mathrm{MeV}
+			\end{align*}
+		\end{answer}
+	\item  What should be the pre-formation probability of the $\alpha$-cluster inside the nucleus for which the half-life of $\alpha$-decay for ${ }_{92} U^{238}$ nuclei is $4 \cdot 5 \times 10^9 y r s$. Here collision frequency $f$ and tunneling probability are $2 \cdot 37 \times 10^{21} s^{-1}$ and $2 \cdot 86 \times 10^{-39}$ respectively.
+	\begin{answer}
+		\begin{align*}
+		\lambda&=p_\alpha f P\\
+		p_\alpha&=\frac{\ln 2}{f P T_{1 / 2}}=\frac{0.693}{\left(2.37 \times 10^{21}\right)\left(2 \cdot 86 \times 10^{-39}\right)} \times 4 \cdot 5 \times 10^9 \times 365 \times 24 \times 60 \times 60 \\
+		&=0.7
+		\end{align*}
+	\end{answer}
+	\item  A nucleus with mass number 220 initially at rest emits an $\alpha$-particle. If the $Q$ value of the reaction is $5.5 \mathrm{MeV}$, calculate the kinetic energy of the $\alpha$-particle.
+	\begin{answer}
+		\begin{align*}
+		\text{ Linear }&\text{momentum is conserved.}\\
+		&X^{220} \rightarrow Y^{216}+\alpha \\
+		p^y&=p^\alpha \quad p=\sqrt{2 m K} \\
+		\sqrt{2(216 m) K_y}&=\sqrt{2(4 m) K_\alpha} \\
+		216 K_y&=4 K_\alpha \\
+		K_\alpha&=54 K_y\\
+		\text{Given: }K_y+K_\alpha&=5 \cdot 5 \mathrm{MeV} \rightarrow K_y=\frac{5 \cdot 5}{55}=\frac{1}{10}=0 \cdot 1 \mathrm{MeV}\\
+		K_\alpha&=54 \times 0 \cdot 1=5 \cdot 4 \mathrm{MeV}\\
+	\text{	Kinetic energy}&\text{ of $\alpha$ particle }=5.4 \mathrm{MeV}\\
+		\text{Binding Energy}&
+		\end{align*}
+	\end{answer}
+	\item  If a star can convert all the He nuclei completely into oxygen nuclei, then find the energy released per oxygen nuclei. [Mass of He nucleus is $4.0026 \mathrm{amu}$ and mass of oxygen nucleus is $15.9994 \mathrm{amu}$ ].
+	\begin{answer}
+		\begin{align*}
+		4_2 \mathrm{He}^4 \longrightarrow{ }_8 \mathrm{O}^{16}\\
+	\text{	Binding energy }\Delta E&=\Delta m \times 931.5 \mathrm{MeV}\\
+		&=(4 \times 4.0026-15 \cdot 9994) \times 931.5 \\
+		&=10.24 \mathrm{MeV}
+		\end{align*}
+	\end{answer}
 \end{enumerate}
 
 
