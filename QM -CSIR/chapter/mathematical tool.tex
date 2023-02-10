@@ -1,10 +1,11 @@
 \chapter{MATHEMATICAL TOOLS FOR QUANTUM MECHANICS}
 \section{The Linear Vector Space and Hilbert Space}
+In quantum mechanics the state of a physical system is a vector in a complex vector space. Observables(eg: position, velocity, momentum,..etc.)are linear operators, in fact, Hermitian operators acting on this complex vector space
 \subsection{The Linear Vector Space}
-A linear vector space consisits of two set of elements and two algebraic rules :
+A linear vector space consists of two set of elements and two algebraic rules :
 \begin{itemize}
 	\item A set of vectors $\psi,\phi,\chi, \cdots $ and a set of scalars a,b,c....;
-	\item a rule of vector addition and a rule of scalar multiplication
+	\item A rule of vector addition and a rule of scalar multiplication
 \end{itemize}
 \textbf{(a) Addition Rule}\\
 The addition rule has the properties and the structure of an abelian group:
@@ -12,11 +13,11 @@ The addition rule has the properties and the structure of an abelian group:
 	\item If $\psi$ and $\phi$ are vectors of a space,their sum $\psi+\phi$ is also a vector of the same space.
 	\item Commutativity :$\psi+\phi=\phi+\psi$
 	\item Associativity:$(\psi+\phi)+\chi=\psi+(\phi+\chi)$
-	\item The existance of a zero or neutral vector:for each vector $\psi$, there must be zero vector 0 such that : 0+$\psi=\psi+0=\psi$
-	\item Existance of a symmetric or inverse vector :each vector $\psi$ must have a symmetric vector (-$\psi$) such that ($\psi$)+(-$\psi$)=(-$\psi$)+$\psi$=0.
+	\item The existance of a zero or neutral vector: for each vector $\psi$, there must be zero vector 0 such that : 0+$\psi=\psi+0=\psi$
+	\item Existance of a symmetric or inverse vector : each vector $\psi$ must have a symmetric vector (-$\psi$) such that ($\psi$)+(-$\psi$)=(-$\psi$)+$\psi$=0.
 \end{itemize}
 \textbf{(b) Multiplication Rule}\\
-The multiplication of a vectot by scalars (scalars can be real or complex numbers) has these properties:
+The multiplication of a vector by scalars (scalars can be real or complex numbers) has these properties:
 \begin{itemize}
 	\item The product of a scalar with vector gives another vector.In general if $\psi$ and $\phi$ are the two vectors of the space,any linear combination $a\psi+b\phi$ is also a vector of the space. a and b being scalars.
 	\item Distributivity with respect to addition\\
@@ -91,11 +92,11 @@ $$
 $$
 \textbf{Basis:} The basis of a vector space consists of a set of the maximum possible number of linearly independent vectors belonging to that space. This set of vectors, $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$, to be denoted in short by $\left\{\phi_{1}\right\}$, is called the basis of the vector space, while the vectors $\phi_{1}, \phi_{2}, \ldots, \phi_{N}$ are called the base vectors.
 \section{Dirac Notation}
-The physical state of a sysytem is represented in quantum mechanics by elements of a Hilbert space;These elments are called state vectors.We can represents the state vectors in different bases by means of function expansions.\\\\
+The physical state of a sysytem is represented in quantum mechanics by elements of a Hilbert space; These elments are called state vectors.We can represents the state vectors in different bases by means of function expansions.\\\\
 \textbf{Kets: Elements of a Vector Space}\\
 Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he called a ket vector, or simply a ket. Kets belong to the Hilbert (vector) space $\mathcal{H}$, or, in short, to the ket-space.\\\\
 \textbf{Bras: Elements of a Dual Space}\\
- we know from linear algebra that a dual space can be associated with every vector space. Dirac denoted the elements of a dual space by the symbol $\langle 1$, which he called a bra vector, or simply a bra; for instance, the element $\langle\psi /$ represents a bra. Note: For every ket $|\psi\rangle$ there exists a unique bra $\langle\psi|$ and vice versa. Again, while kets belong to the Hilbert space $\mathcal{H}$, the corresponding bras belong to its dual (Hilbert) space $\mathcal{H}_{d}$.\\\\
+We know from linear algebra that a dual space can be associated with every vector space. Dirac denoted the elements of a dual space by the symbol $\langle 1 \mid$, which he called a bra vector, or simply a bra; for instance, the element $\langle\psi \mid$ represents a bra. Note: For every ket $|\psi\rangle$ there exists a unique bra $\langle\psi|$ and vice versa. Again, while kets belong to the Hilbert space $\mathcal{H}$, the corresponding bras belong to its dual (Hilbert) space $\mathcal{H}_{d}$.\\\\
  \textbf{Bra-Ket: Dirac Notation for the Scalar Product}\\
  Dirac denoted the scalar (inner) product by the symbol $\langle\mid\rangle$, which he called a a bra-ket. For instance, the scalar product $(\phi, \psi)$ is denoted by the bra-ket $\langle\phi \mid \psi\rangle$ :
  $$
@@ -120,7 +121,7 @@ Dirac denoted the state vector $\psi $ by the symbol $|\psi\rangle$, which he ca
 	$$
 	where $a$ and $b$ are complex numbers. The following is a common notation:
 	$$
-	|a \psi\rangle=a|\psi\rangle, \quad\langle a \psi|=a^{*}\langle\psi| .
+	|a \psi\rangle=a|\psi\rangle, \quad\langle a \psi|=a^{*}\langle\psi| 
 	$$
 	\item \textbf{Properties of the Scalar Product}
 	\begin{enumerate}
@@ -219,7 +220,7 @@ $$ \langle \phi \mid \phi \rangle =1$$
 		&=(-1)(3 i)\left\langle\phi_{1} \mid \phi_{1}\right\rangle+(-2 i)(-7 i)\left\langle\phi_{2} \mid \phi_{2}\right\rangle \\
 		&=-14-3 i .
 	\end{aligned}$$
-	$\text { We see that }\langle\psi \mid \chi\rangle \text { is equal to the complex conjugate of }\langle\chi \mid \psi\rangle\rangle \text {. }$
+	$\text { We see that }\langle\psi \mid \chi\rangle \text { is equal to the complex conjugate of }\langle\chi \mid \psi\rangle \text {. }$
 \end{answer}
 \section{Operators}
 \subsection{General Definitions}
@@ -427,15 +428,15 @@ Where $\hat{P_x}=-i\hbar \frac{\partial}{\partial x}$, $\hat{P_y}=-i\hbar \frac{
 \begin{answer}
 	(a) If $\hat{A}$ and $\hat{B}$ are Hermitian, we can write
 	$$
-	[\hat{A}, \hat{B}]^{\dagger}=(\hat{A} \hat{B}-\hat{B} \hat{A})^{\dagger}=\hat{B}^{\dagger} \hat{A}^{\dagger}-\hat{A}^{\dagger} \hat{B}^{\dagger}=\hat{B} \hat{A}-\hat{A} \hat{B}=-[\hat{A}, \hat{B}] ;
+	[\hat{A}, \hat{B}]^{\dagger}=(\hat{A} \hat{B}-\hat{B} \hat{A})^{\dagger}=\hat{B}^{\dagger} \hat{A}^{\dagger}-\hat{A}^{\dagger} \hat{B}^{\dagger}=\hat{B} \hat{A}-\hat{A} \hat{B}=-[\hat{A}, \hat{B}] 
 	$$
 	that is, the commutator of $\hat{A}$ and $\hat{B}$ is anti-Hermitian: $[\hat{A}, \hat{B}]^{\dagger}=-[\hat{A}, \hat{B}]$.\\
 	(b) Using the distributivity relation we have
 	$$
 	\begin{aligned}
-	[\hat{A},[\hat{B}, \hat{C}] \hat{D}] &=[\hat{B}, \hat{C}][\hat{A}, \hat{D}]+[\hat{A},[\hat{B}, \hat{C}]] \hat{D} \\
-	&=(\hat{B} \hat{C}-\hat{C} \hat{B})(\hat{A} \hat{D}-\hat{D} \hat{A})+\hat{A}(\hat{B} \hat{C}-\hat{C} \hat{B}) \hat{D}-(\hat{B} \hat{C}-\hat{C} \hat{B}) \hat{A} \hat{D} \\
-	&=\hat{C} \hat{B} \hat{D} \hat{A}-\hat{B} \hat{C} \hat{D} \hat{A}+\hat{A} \hat{B} \hat{C} \hat{D}-\hat{A} \hat{C} \hat{B} \hat{D} .
+	{[\hat{A},{[\hat{B},\hat{C}]}\hat{D}]} &=\hat{A}[\hat{B},\hat{C}]\hat{D}-[\hat{B},\hat{C}]\hat{D}\hat{A} \\
+	&=\hat{A}(\hat{B} \hat{C}-\hat{C} \hat{B})\hat{D}-(\hat{B} \hat{C}-\hat{C} \hat{B})\hat{D} \hat{A}  \\
+	&=\hat{A} \hat{B} \hat{C} \hat{D}-\hat{A} \hat{C} \hat{B} \hat{D}-\hat{B} \hat{C} \hat{D} \hat{A}+\hat{C} \hat{B} \hat{D} \hat{A}
 	\end{aligned}
 	$$
 \end{answer}
@@ -566,7 +567,7 @@ So $$\langle p|x|\psi(t)\rangle =i\hbar\frac{\partial}{\partial p} \langle p|\ps
 \text{	Now let us check whether momentum }&\text{is self adjoint}\\
 	\int_{-\infty}^{+\infty} f^*(x)\left( -i\hbar \frac{\partial}{\partial x}g(x)\right)dx&=-i\hbar\left\lbrace  \left[ f^{*}(x)g(x) \right]_{-\infty}^{+\infty}-\int_{-\infty}^{+\infty} g(x)\frac{\partial}{\partial x}f^*(x)dx\right\rbrace 
 	=i\hbar \int \frac{\partial}{\partial x} f^*(x) g(x)dx\\
-	\\&=\int\left( -i\hbar \frac{\partial}{\partial x}f(x)\right) ^{\dagger}g(x)dx\\
+	&=\int\left( -i\hbar \frac{\partial}{\partial x}f(x)\right) ^{\dagger}g(x)dx\\
 	&=\int(pf)^{\dagger}g dx,\text{  So momentum is hermitian .}\\
 \text{	Since -i}\hbar\implies i\hbar;\frac{\partial}{\partial x} \implies -\frac{\partial}{\partial x}&\text{ to keep momentum operator hermitian,so } \frac{\partial}{\partial x} \text{is anti hermitian.}\\
 	\text{So }\left( \frac{d^n}{dx^n}\right) ^{\dagger}&=(-1)^n \left( \frac{d^n}{dx^n}\right)\\
@@ -582,8 +583,8 @@ Let's denote $e^{\frac{-i}{\hbar}\hat{H}(t-t_0)}$ as U.
 Now $$(U^{\dagger})=e^{\frac{i}{\hbar}\hat{H}(t-t_0)}=U^{-1}$$
 ie $$U^{\dagger}U^{-1}=U^{-1}U=I\implies \text{ unitary operator }$$
 It is interesting thing is that even in non-automonous system time evolution operator is unitary operator.,but formal solution went be this \\
-If the system changes from $t_O t0 t_2$\\
-Then $$U(t_2,t_0)=U(t_2,t_1)U(t_1,t_0)$$
+If the system changes from $t_0$ to $  t_2$\\
+Then, $$U(t_2,t_0)=U(t_2,t_1)U(t_1,t_0)$$
 Product of unitary operator is unitary \\
 If we normalized $|\psi(0)\rangle$ would it be preserved in time evolution.
 $$
@@ -643,7 +644,7 @@ Parsevals theorem guarantee that\\
 $$\int_{-\infty}^{+\infty} d^3p |\psi(p,t)|^2=\int_{-\infty}^{+\infty} d^3r |\psi(r,t)|^2$$
 ie if wavefunction is normalized in position space it will be normalized in momentum space.
 \section{Parity Operator}
-The space reflection about the origin of the coordinate system is called inversion or a parity operation.This transformation is descrete.The parity operator $\hat{P}$ is defined by its action on the ket $|\vec{r}\rangle$ of the position space:
+The space reflection about the origin of the coordinate system is called inversion or a parity operation.This transformation is descrete. The parity operator $\hat{P}$ is defined by its action on the $|\vec{r}\rangle$ of the position space:
 $$\hat{P}|\vec{r}\rangle =|\vec{-r}\rangle$$
 such that 
  $$\hat{P}\psi(\vec{r})=\psi(-\vec{r})$$
@@ -652,8 +653,8 @@ such that
  		\item Parity operator is Hermitian $\vec{P}^{\dagger}=\vec{P}$
  		\item From the definition we have\\
  		$$\vec{P}^2 \psi(\vec{r})=\vec{P}\psi(-\vec{r})=\psi(\vec{r})$$
- 		Hence $\vec{P}^2$ is equal to the unity operator
- 		$$\vec{P}^2=I or \vec{P}=\vec{P}^{-1}$$
+ 		Hence $\vec{P}^2$ is equal to the unity operator\\\\
+ 		$\vec{P}^2=I$ or $\vec{P}=\vec{P}^{-1}$\\
  		\item The parity operator is therefore unitary, since its Hermitian adjoint is equal to its inverse.\\
  		$$\vec{P}^{\dagger}=\vec{P}^{-1}$$ 
  		\item Now, since $\hat{P}^{2}=\hat{I}$, the eigenvalues of $\hat{P}$ are $+1$ or $-I$ with the corresponding eigenstates
