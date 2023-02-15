@@ -251,7 +251,7 @@ Which is called \textit{D'Alembert's principle}\\\\
 \begin{align}
 \text{The translation from }&\text{$r_i$ to $q_j$ language starts from the transformation equations}\notag\\
 \textbf{r}_i&=\textbf{r}_i(q_1,q_2,...q_n,t)\label{EP-07}\\
-\text{velocity $V_i$ in terms }&\text{of $\dot{q}_k$}\notag\\
+\text{velocity $\textbf{v}_i$ in terms }&\text{of $\dot{q}_k$}\notag\\
 \mathbf{v}_{i} &\equiv \frac{d \mathbf{r}_{i}}{d t}=\sum_{k} \frac{\partial \mathbf{r}_{i}}{\partial q_{k}} \dot{q}_{k}+\frac{\partial \mathbf{r}_{i}}{\partial t}\label{EP-08}\\
 \text{similarly, the arbitrary virtual}&\text{ displacement $\delta r_i$ can be connected with the virtual displacement $\delta q_1$ by}\notag\\
 \delta \mathbf{r}_{i}&=\sum_{j} \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}\\
@@ -260,33 +260,33 @@ Which is called \textit{D'Alembert's principle}\\\\
 \text{Where $Q_j$ are called the } &\text{component of the }\textit{generalized force}\notag \\
 Q_{j}&=\sum_{i} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\label{EP-11}
 \end{align}
-\textit{Just as $q$'s need not have the diamensions of length, so the $Q$'s do not necessarily have the diamensions of force, but $Q_j\delta q_j$ must always have the diamensions of work.}
+\textit{Just as $q$'s need not have the dimensions of length, so the $Q$'s do not necessarily have the dimensions of force, but $Q_j\delta q_j$ must always have the dimensions of work.}
 \begin{note}
 	No variation of time, $\delta t$ is involved here since a virtual displacement by definition considers only displacements of the coordinates.
 \end{note}
-\textbf{D'Alembert's Principle in generalized Coordinates}
+\subsection{D'Alembert's Principle in Generalized Coordinates}
 \begin{align}
-\sum\limits_{i}(r_i^{(a)}-\dot{P_1}_i)\cdot\delta r_i&=0\text{ \quad is the D'Alembert's Principle}\notag\\
+\sum\limits_{i}(r_i^{(a)}-\dot{P}_i)\cdot\delta r_i&=0\text{ \quad is the D'Alembert's Principle.}\notag\\
 \sum_{i} \dot{\mathbf{p}}_{i} \cdot \delta \mathbf{r}_{i}&=\sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \delta \mathbf{r}_{i}\notag\\
 &=\sum_{i, j} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}\notag\\
-\text{Now consider the}&\text{ relation}\notag\\
+\text{Now consider the}&\text{ relation,}\notag\\
 \sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}&=\sum_{i}\left[\frac{d}{d t}\left(m_{i} \dot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right)-m_{i} \dot{\mathbf{r}}_{i} \cdot \frac{d}{d t}\left(\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right)\right]\label{EP-12}\\
-\text{interchanging differ}&\text{entiation with respect to $t$ and $q_j$}\notag\\
+\text{interchanging differ}&\text{entiation with respect to $t$ and $q_j$,}\notag\\
  \frac{d}{d t}\left(\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) &=\frac{\partial \dot{\mathbf{r}}_{i}}{\partial q_{j}}=\sum_{k} \frac{\partial^{2} \mathbf{r}_{i}}{\partial q_{j} \partial q_{k}} \dot{q}_{k}+\frac{\partial^{2} \mathbf{r}_{i}}{\partial q_{j} \partial t}, \notag\\
 &=\frac{\partial \mathbf{v}_{i}}{\partial q_{j}}
 \text{ we have from equation }(\ref{EP-08})\notag\\
 \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}&=\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\label{EP-13}\\
 \text{substitution of these in}&\text{ equation (\ref{EP-12})}\notag\\
 \sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}&=\sum_{i}\left[\frac{d}{d t}\left(m_{i} \mathbf{v}_{i} \cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}\right)-m_{i} \mathbf{v}_{i} \cdot \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}\right]\notag\\
-\text{second term on the LHS of }&\text{equation (\ref{EP-06}) can be explanded into}\notag\\
+\text{second term on the LHS of }&\text{equation (\ref{EP-06}) can be explanded into,}\notag\\
 \sum_{j}\left\{\frac{d}{d t}\left[\frac{\partial}{\partial \dot{q} j}\left(\sum_{i} \frac{1}{2} m_{i} v_{i}^{2}\right)\right]\right. &\left. -\frac{\partial}{\partial q_{j}}\left(\sum_{i} \frac{1}{2} m_{i} v_{i}^{2}\right)-Q_{j}\right\} \delta q_{j}\notag\\
 \sum_{i} \frac{1}{2} m_{i} v_{i}^{2}&=T\quad \text{ie. system kinetic energy}\notag\\
-\text{$\therefore$ D'Alembert's principle}&\text{ becomes }\notag\\
+\text{$\therefore$ D'Alembert's principle}&\text{ becomes ,}\notag\\
 \sum_{j}\left\{\left[\frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial T}{\partial q_{j}}\right]\right.& \left. -Q_{j}\right\} \delta q_{j}=0\label{EP-14}
 \end{align}
-\textbf{Lagrange's Equation}\\
+\subsection{Lagrange's Equation}
 Any virtual displacement $\delta q_j$ is independent of $\delta q_k.$\\
-$\therefore$ \quad only way to hold equation \ref{EP-14} is for the individual coeffitients to vanish.
+$\therefore$ \quad only way to hold equation \ref{EP-14} is for the individual coefficients to vanish.
 \begin{align}
 \frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial T}{\partial q_{j}}=Q_{j}\label{EP-15}\\
 \text{There are $n$ such equations in all,}&\text{ When forces are derivable from scalar potential $V$}\notag\\
