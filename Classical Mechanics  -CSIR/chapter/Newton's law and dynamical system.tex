@@ -1,13 +1,13 @@
-\chapter{Dynamical systems}
+\chapter{DYNAMICAL SYSTEMS}
 We start with a very broad definition of a dynamical system and introduce the key theoretical concepts of phase space and fixed points (or limit cycles). While the definition may not cover all dynamical systems, it does cover a whole variety systems of interest to us. We give examples of systems with very simple dynamics to begin with and prepare ground for the treatment of more complicated systems which may not be analytically solvable.
-\section{ Dynamical systems of order n}
+\section{ Dynamical Systems of Order `n'}
 $\text { A dynamical system of order } n \text { is defined as follows: }$
 \begin{enumerate}
 	\item The state of the system at any time $t$ is represented by $n$-real variables
 	$$
 	\left\{x_{1}, x_{2}, x_{3}, \ldots, x_{n}\right\} \Rightarrow \vec{r}
 	$$
-	as coordinates of a vector $\vec{r}$ in an abstract $n-$ dimensional space. We refer to this space as the state space of simply phase space ${ }^{1}$ in keeping with its usage in Hamiltonian dynamics. Thus the state of the system at any given time is a point in this phase space.
+	as coordinates of a vector $\vec{r}$ in an abstract $n-$ dimensional space. We refer to this space as the state space of simply phase space in keeping with its usage in Hamiltonian dynamics. Thus the state of the system at any given time is a point in this phase space.
 	\item The time evolution of the system, motion is represented by a set of first order equations- the so called "equations of motion":
 	\begin{align}
 	\frac{d x_{1}}{d t} &=v_{1}\left(x_{1}, x_{2}, \ldots, x_{n}, t\right) \\
@@ -24,29 +24,29 @@ $\text { A dynamical system of order } n \text { is defined as follows: }$
 	is called the velocity function. While we use the notation $x$ and $v$ in analogy with mechanics, they do not always have the usual meaning of position and velocity.
 \end{enumerate}
 The statements 1 and 2 together define  $\textbf{a dynamical system of order n}$.\\
- If the velocity function does not depend on time explicitly, then the system is timeindependent or autonomous. The set of all possible motions in called \textbf{phase flow}.\\
-We also require that the solution to be unique which requires $\vec{v}$ to obey certain conditions. Without going to mathematical details, it suffices to say that the solution of the differential equations in (1.5) are unique if the velocity vector $\vec{v}$ is a continuous function of its arguments and at least once differentiable. With the time evolution, the initial state of the system (denoted by a point in the phase space) evolves and follows a continuous trajectory which we shall call a \textbf{phase curve} which may be closed or open. Distinct phase curves are obtained when the initial state of the system is specified by a point which is not one of the points on the other trajectory. This leads to an important fact that two distinct trajectories can not intersect in a finite time period. The no intersection of phase space trajectories has to do with the fact that the evolution is deterministic. This is an important concept to which we shall return later.
-\section{ First order systems}
-This is the simplest case of a dynamical system. The equation of motion $^{2}$ is given by
+ If the velocity function does not depend on time explicitly, then the system is time independent or autonomous. The set of all possible motions is called \textbf{phase flow}.\\
+We also require that the solution to be unique which requires $\vec{v}$ to obey certain conditions. Without going to mathematical details, it suffices to say that the solution of the differential equations  are unique if the velocity vector $\vec{v}$ is a continuous function of it's arguments and at least once differentiable. With the time evolution, the initial state of the system (denoted by a point in the phase space) evolves and follows a continuous trajectory which we shall call a \textbf{phase curve} which may be closed or open. Distinct phase curves are obtained when the initial state of the system is specified by a point which is not one of the points on the other trajectory. This leads to an important fact that two distinct trajectories can not intersect in a finite time period. The no intersection of phase space trajectories has to do with the fact that the evolution is deterministic. This is an important concept to which we shall return later.
+\section{ First Order Systems}
+This is the simplest case of a dynamical system. The equation of motion is given by,
 $$
 \frac{d x}{d t}=v(x, t)
 $$
-where $v$ is the velocity function. For any given $v(x, t), x(t)$ is completely determined given $x(t)$ at some $t=t_{0} .$ If, in particular, the system is autonomous, or $v$ is not explicitly dependent on time then the solution can be written as,
+where $v$ is the velocity function. For any given $v(x, t) , x(t)$ is completely determined given $x(t)$ at some $t=t_{0} .$ If, in particular, the system is autonomous, or $v$ is not explicitly dependent on time then the solution can be written as,
 $$
 t-t_{0}=\int_{x\left(t_{0}\right)}^{x(t)} \frac{d x^{\prime}}{v\left(x^{\prime}\right)}
 $$
-Thus the solution $x(t)$ depends only on the difference $\left(t-t_{0}\right)$. Thus the time evolution of the system depends entirely on the time elapsed no matter where the origin of time is fixed.\\\\
-\textbf{ A Non-linear Equation}\\
+Thus the solution $x(t)$ depends only on the difference $\left(t-t_{0}\right)$. Thus the time evolution of the system depends entirely on the time elapsed no matter where the origin of time is fixed.
+\subsection{ A Non-Linear Equation}
 	The equations of motion can, except in simple situations, get extremely complicated and the solutions are often not easy to obtain. However many qualitative features of a dynamical system may be obtained without actually solving the equations of motion. We will illustrate this with an example below- Consider the equation
 	$$
 	\frac{d x}{d t}=v(x)=-x\left(1-x^{2}\right)
 	$$
 	which is similar to the radioactive decay problem with a nonlinear term added. 
 
-Let us look at the properties of the velocity function:\\
+Let us look at the properties of the velocity function:
 \begin{itemize}
 	\item The system is autonomous- no explicit time dependence.
-	\item The velocity function has zeros at $x_{k}=0, \pm 1-x_{k}$ are the roots of $v(x)$. If the system is at $x_{k}$ at any time, it will continue to remain there for all times. $x_{k}$ are therefore called \textbf{fixed points}. The system is said to be in \textbf{equilibrium} when it is at a fixed point.
+	\item The velocity function has zeros at $x_{k}=0, \pm 1$ . If the system is at $x_{k}$ at any time, it will continue to remain there for all times. $x_{k}$ are therefore called \textbf{fixed points}. The system is said to be in \textbf{equilibrium} when it is at a fixed point.
 	\item The phase space is one dimensional. The phase flows may be indicated by a set of arrows, for example, pointing left(right) if the sign of $v(x)$ is positive(negative) and whose length is proportional to the magnitude of $v(x)$ as shown in figure below. For reference we have also shown $v(x)$ as a function of $x$. The $\mathrm{x}$-axis is the one dimensional phase space of the system.\\
 	\begin{figure}[H]
 		\centering
@@ -67,7 +67,7 @@ Let us look at the properties of the velocity function:\\
 	\item The system can not cross a fixed point, by definition. The motion is therefore bounded by the fixed point or fixed points. A system which starts out in the open interval between fixed points remains there for arbitrarily long periods of time. These intervals are therefore called invariant sets. In the example- 4 above the invariant sets are $(-\infty,-1) ;(-1,0) ;(0,1) ;(1, \infty)$
 \end{itemize}
 Often the motion may be terminating. The terminating motion happens when at some time $t$ the solution of the differential equation is undefined.
-\section{ Second order systems}
+\section{ Second Order Systems}
 If the nonlinear differential equation under investigation is of second order and does not contain the independent variable time $t$ explicitly, then it is possible to extract some information regarding the properties of the solution by a geometrical method without actually going into tedious solution of the equation. The dynamical systems whose equations of motion do not involve time $t$ explicitly are called 'autonomous systems'. The equations of motion of second order autonomous systems have the general form
 \begin{align*}
 \ddot{x}+g(\dot{x})+f(x)&=0
@@ -85,7 +85,7 @@ If the nonlinear differential equation under investigation is of second order an
 
 This differential equation defines a definite curve in the phase space.This curve is called phase tajectory or simply trajectory of the system in the phase space.The phase trajectory is defined by general equations\\
 $$\frac{dy}{dx}=\frac{Q(x,y)}{P(x,y)}\hspace{5cm}$$
-\section{Illustration of phase trajectories}
+\section{Illustration of Phase Trajectories}
 \textbf{1-Linear harmonic oscillator}
 \begin{align*}
 \text{The differential equation}&\text{ of linear harmonic oscillator is}\\
@@ -238,7 +238,7 @@ $$
 \end{example}
 
 
-\section{Linear stability analysis}
+\section{Linear Stability Analysis}
 We shall confine our analysis to 2 nd order autonomous systems, for example, motion of a particle in one dimension or systems with one degree of freedom (dof). The motivation, as we shall see below, for a general stability analysis is to derive the local and where possible global properties of a dynamical system qualitatively, that is, without actually solving the evolution equations.
 For an autonomous system of order 2 we have\\
 $$\begin{aligned}
@@ -319,7 +319,7 @@ $$
 \left(\delta X / C_{1}\right)^{\lambda_{2}}&=\left(\delta Y / C_{2}\right)^{\lambda_{1}}
 \end{aligned}
 $$
-\subsection{ Classification of the fixed points}
+\subsection{ Classification of the Fixed Points}
 We use the properties of the eigenvalues to classify the fixed points. While in the first order systems motion either moves towards or away from the fixed point, the second order systems are richer in the sense there is much more variety in the nature of fixed points.\\
 \begin{enumerate}
 	\item \textbf{$\text { Stable Node, } \lambda_{1}, \lambda_{2}<0$}
@@ -383,7 +383,7 @@ We use the properties of the eigenvalues to classify the fixed points. While in 
  	\label{}
  \end{figure}
 \end{enumerate}
-\subsection{Limit cycle}
+\subsection{Limit Cycle}
 In first-order systems all motions tend to fixed points or to infinity. In second order systems, in addition to fixed points, the system may also exhibit \textbf{a limit cycle} which is a closed trajectory encircling the fixed point. The trajectories within and outside tend towards the limiting trajectory as time $t \rightarrow \infty .$ Such a behaviour occurs typically in systems that are oscillatory. A rigorous analysis of limit cycles, their occurrence and stability is beyond the scope of these lectures.\\
 \begin{figure}[H]
 	\centering
@@ -443,7 +443,7 @@ Solving the differential equation for the damped motion to find $\boldsymbol{q}$
 \end{figure}
 The phase plot clearly shows how the momentum and displacement diminish with time resulting in a dramatic spiral trajectory. Without the damping force, the trajectory would be a closed ovoid similar to that for the simple pendulum with small oscillations. Figure 5 also shows how the damping force is reduced with diminishing momentum, a fact that is easily implied from the velocity term of the differential equation $\gamma \frac{d x}{d t}$.
 
-\section{How to draw a phase curve:}
+\section{How to Draw a Phase Curve:}
 Step 1: Draw a curve of potential $U(x)\quad V_{S} \quad x$, where $U(x)$ as vertical axis and $x$ as horizontal axis.\\
 Step 2: Just below of potential $U(x)$ vs $x$ curve, draw momentum $P(x)$ as vertical axis and $x$ as horizontal axis.\\
 Step 3: For different values of constant energy in $U(x) V s x$ draw the trend of $P(x)$ vs $x$ in all classical allowed region.\\
