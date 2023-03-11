@@ -1,6 +1,6 @@
 \chapter{ELEMENTARY PRINCIPLES}
 \section{Mechanics of a Particle}
-\textbf{Linear Momentum}
+\subsubsection{Linear Momentum}
 \begin{align*}
 \text{Let $\textbf{r}$ be the radius vector of }&\text{a particle from some given origin and $\textbf{v}$ its vector velocity.}\\
 \textbf{v}&=\frac{d\textbf{r}}{dt}\\
@@ -11,12 +11,11 @@
 \textbf{F}&=\frac{d}{dt}(m\textbf{v})\\
 \text{If the mass of particle}&\text{ is constant}\\
 \textbf{F}&=m\frac{d\textbf{v}}{dt}=m\textbf{a}
-\intertext{Where $\textbf{a}$ is the vector acceleration of the particle
-The equation of motion is thus a differential equation of second order, assuming $\textbf{F}$ does not depend on higher-order derivatives.}
 \end{align*}
-\textbf{\textit{Conservation theorem for the Linear Momentum of a Particle: If the total force $\vec{F}$ is zero, then $\dot{\vec{p}}$, is conserved.}}\vspace{0.5cm}
-\\
-\textbf{Angular Momentum}\vspace{0.2cm}\\
+Where $\textbf{a}$ is the vector acceleration of the particle
+The equation of motion is thus a differential equation of second order, assuming $\textbf{F}$ does not depend on higher-order derivatives.
+\textbf{\textit{Conservation theorem for the Linear Momentum of a Particle: If the total force $\vec{F}$ is zero, then $\dot{\vec{p}}$, is conserved.}}
+\subsubsection{Angular Momentum}
 \begin{align*}
 \text{The angular momentum }&\text{of the particle about point $O$, denoted by $\textbf{L}$, is defined as}\\
 \textbf{L}&=\textbf{r}\times\textbf{p}\\
@@ -28,8 +27,8 @@ The equation of motion is thus a differential equation of second order, assuming
 \textbf{N}&=\frac{d}{dt}(\textbf{r}\times m\textbf{v})=\frac{d\textbf{L}}{dt}\equiv \dot{\textbf{L}}\\
 \text{Note that both $\textbf{N}$ and }&\text{ $\textbf{L}$ depend on the point $O$ about which the moments are taken.}\\
 \end{align*}
-\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\textbf{N}$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }\\\\
-\textbf{Energy}\\
+\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\textbf{N}$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }
+\subsubsection{Energy}
 Next consider the work done by the external force $\textbf{F}$ upon the particle in going from point 1 to point 2. \\
 This work is 
 \begin{align*}
@@ -44,7 +43,7 @@ W_{12} =T_2-T_1\label{EP-01}
 if the force field is such that the work $W_{12}$ is the same for any physically possible path between points 1 and 2, then the force (and the system) is said to be conservative.
 \begin{align*}
 \text{ or }\quad
-\oint\textbf{F}\cdot\textbf{s}&=0 d\\
+\oint\textbf{F}\cdot\textbf{s}&=0\\
 \text{$\textbf{F}$ be the gradient }&\text{of some scalar function of position}\\
 \textbf{F}&=-\nabla V(\textbf{r})\\
 \text{where $V$ is called}&\text{ the potential energy.}\\
@@ -52,25 +51,25 @@ if the force field is such that the work $W_{12}$ is the same for any physically
 \text{or}\quad
 F_s&=-\frac{\partial V}{\partial s}
 \end{align*}
-We can add to $V$ any quantity constant in space, without affecting  the results. Hence the zero level of $V$ is arnitrary.\\
+We can add to $V$ any quantity constant in space, without affecting  the results. Hence the zero level of $V$ is arbitrary.\\
 For a consetvative system, the work done by the forces is 
 \begin{equation}
-\hspace{2cm}W_{12}=V_1-V_2\label{EP-02}
+W_{12}=V_1-V_2\label{EP-02}
 \end{equation}
-Combining Eq.(\ref{EP-01}) with Eq.(\ref{EP-02}),we have the result \\\\
-$\hspace{2cm}T_1+V_1=T_2+V_2$
-\textbf{\textit{Energy Conservation Theorem for a Particle: If the forces acting on a particle are consetvative, then the total energy of the particle, $T+V$,is conserved}}\\
+Combining Eq.(\ref{EP-01}) with Eq.(\ref{EP-02}),we have the result 
+$$T_1+V_1=T_2+V_2$$
+\textbf{\textit{Energy Conservation Theorem for a Particle: If the forces acting on a particle are consetvative, then the total energy of the particle, $T+V$,is conserved.}}\\
 \begin{note}
 	The force applied to to a particle may in some circumstances be given by the gradient of a scalar function that depends explicity on both the position of the particle and the time. However, the work done on the particle when it travels a distance $ds$.
 	$$\textbf{F}\cdot{d\textbf{s}=\frac{\partial V}{\partial s}ds}$$
-	is then no longer the total change in $-V$ during the displacement, since $V$ also changes explicitly with time as the particle moves. Hence, the work done as the particle goes from point 1 to point 2 is no longer the difference in the function $V$ between those points. While a total  energy $T+V$ may still be defined, it is not consetved during the course of the particle's motion.
+	is then no longer the total change in $-V$ during the displacement, since $V$ also changes explicitly with time as the particle moves. Hence, the work done as the particle goes from point 1 to point 2 is no longer the difference in the function $V$ between those points. While a total  energy $T+V$ may still be defined, it is not conserved during the course of the particle's motion.
 \end{note}
 \section{Mechanics of a System of Particle}
-When considering a system of particles, we must distinguish between the external forces acting on the particles due to source outside the system and internal forces on some particle $i$ due to all other particles in the system.\\\\
-\textbf{Linear Momentum}
+When considering a system of particles, we must distinguish between the external forces acting on the particles due to source outside the system and internal forces on some particle $i$ due to all other particles in the system.
+\subsubsection{Linear Momentum}
 \begin{align*}
 \text{Equation of motion}&\text{ for the $i^{th}$ particle}\\
-\vec{F}_i^{(e)}+\sum\limits_{j}\vec{F}_{ji}=\vec{\dot{p}_i}\\
+\vec{F}_i^{(e)}+\sum\limits_{j}\vec{F}_{ji}=\vec{\dot{p_i}}\\
 \vec{F}_i^{(e)}\text{- external force}\\
 \vec{F}_{ji}-\text{ internal force on  }&\text{the $i^{th}$ particle due to the $j^{th}$ particle.}\\
 \text{Assume $\vec{F}_{ij}$ , like ${F}_i^{(e)}$}&\text{ obey Newton's third law  ie. $\vec{F}_{ij}= - \vec{F}_{ji}$,}\\
@@ -85,14 +84,14 @@ M\frac{d^2 R}{dt^2}&=\sum\limits_{i}\vec{F}_i^{(e)}\equiv \vec{F}^{(e)}
 \vec{P}&=\sum m_1\frac{d\vec{r_i}}{dt}=M\frac{d\vec{R}}{dt}
 \end{align*}
 ie. total mass of the system times the velocity of the center of mass.\\
-Conservation for linear momentum of a system of particles: If the total external force is zero, the total linear momentum is conserved.\\\\
-\textbf{Angular Momentum}
+Conservation for linear momentum of a system of particles: If the total external force is zero, the total linear momentum is conserved.
+\subsubsection{Angular Momentum}
 \begin{align*}
 \sum\limits_{i}(\vec{r_i}\times\dot{P_1})&=\sum\limits_{i}\frac{d}{dt}(\vec{r_i}\times\vec{P_i})=\dot{L}\\
 &=\sum\limits_{i}\vec{r_i}\times\vec{F}_i^{(e)}+\sum\limits_{i,j}\vec{r_i}\times\vec{F}_{ji}\\
 \vec{r_i}-\vec{r_j}&=\vec{r_{ij}}\\
 \therefore \quad \text{ RHS of equation becomes },&\quad\vec{r_{ij}}\times \vec{F_{ji}}
-\intertext{The internal forces between two particles. in addition to being equal and opposite, also lie along the line going the particles (This condition known as the strong law of action and reaction.)}
+\intertext{The internal forces between two particles, in addition to being equal and opposite, also lie along the line going the particles (This condition known as the strong law of action and reaction.)}
 \text{Then all cross products vanish,}\\
 \frac{d\vec{L}}{dt}&=\vec{N}^{(e)}
 \end{align*}
@@ -160,9 +159,9 @@ v&=\sum\limits_{i}v_i+\frac{1}{2}\sum\limits_{i,j ,i+j}v_{ij}
 	\item  In rigid body internal forces do no work.
 \end{itemize}
 \section{Constraints}
-We have
+We have,
 $$ m_i\ddot{\mathbf{r}}_1=\textbf{F}_1^{(e)}+\sum\limits_{j}\textbf{F}_{ji}$$
-All problems in mechanics be reduced to solving a set of differential equation. But this view is over simplified even from a purely physicals standpoint \\
+All problems in mechanics be reduced to solving a set of differential equation. But this view is over simplified even from a purely physical's standpoint \\
 eg:it is necessary to take constraints\\\\
 While solving a problem along with this we have to take consideration of constraints that limits the motion of the system.\\
 Constraints are classified in various ways.\\\\
