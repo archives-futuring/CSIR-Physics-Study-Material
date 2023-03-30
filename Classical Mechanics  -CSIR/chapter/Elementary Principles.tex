@@ -12,22 +12,21 @@
 \text{If the mass of particle}&\text{ is constant}\\
 \textbf{F}&=m\frac{d\textbf{v}}{dt}=m\textbf{a}
 \end{align*}
-Where $\textbf{a}$ is the vector acceleration of the particle
-The equation of motion is thus a differential equation of second order, assuming $\textbf{F}$ does not depend on higher-order derivatives.
-\textbf{\textit{Conservation theorem for the Linear Momentum of a Particle: If the total force $\vec{F}$ is zero, then $\dot{\vec{p}}$, is conserved.}}
+Where $\textbf{a}$ is the vector acceleration of the particle. The equation of motion is thus a differential equation of second order, assuming $\textbf{F}$ does not depend on higher-order derivatives.\\
+\textbf{\textit{Conservation theorem for the Linear Momentum of a Particle: If the total force $\vec{F}$ is zero, then $\vec{\dot{p}}$, is conserved.}}
 \subsubsection{Angular Momentum}
 \begin{align*}
-\text{The angular momentum }&\text{of the particle about point $O$, denoted by $\textbf{L}$, is defined as}\\
-\textbf{L}&=\textbf{r}\times\textbf{p}\\
-\text{where $\textbf{r}$ is the radius vector}&\text{ from $O$ to the particle. The moment of force or torque about $O$}\\
-\textbf{N}&=\textbf{r}\times\textbf{F}\\
-\textbf{r}\times\textbf{F}&=\textbf{N}=\textbf{r}\times\frac{d}{dt}(mv)\\
-\text{ using the vector }&\text{identity}\\
+\intertext{The angular momentumof the particle about point $O$, denoted by $\textbf{L}$, is defined as,}
+\textbf{L}&=\textbf{r}\times\textbf{p}
+\intertext{where $\textbf{r}$ is the radius vector from $O$ to the particle. The moment of force or torque about $O$}
+\tau&=\textbf{r}\times\textbf{F}\\
+\textbf{r}\times\textbf{F}&=\tau=\textbf{r}\times\frac{d}{dt}(mv)
+\intertext{ using the vector identity,}
 \frac{d}{dt}(\textbf{r}\times m\textbf{v})\textbf{v}\times m\textbf{v}&=\textbf{r}\times\frac{d}{dt}(m\textbf{v})\\
-\textbf{N}&=\frac{d}{dt}(\textbf{r}\times m\textbf{v})=\frac{d\textbf{L}}{dt}\equiv \dot{\textbf{L}}\\
-\text{Note that both $\textbf{N}$ and }&\text{ $\textbf{L}$ depend on the point $O$ about which the moments are taken.}\\
+\tau&=\frac{d}{dt}(\textbf{r}\times m\textbf{v})=\frac{d\textbf{L}}{dt}\equiv \dot{\textbf{L}}
+\intertext{Note that both $\tau$ and  $\textbf{L}$ depend on the point $O$ about which the moments are taken.}
 \end{align*}
-\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\textbf{N}$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }
+\textit{Conservation Theorem for the Angular Momentum of a Particle: If the total torque, $\tau$,is zero then $\dot{\textbf{L}}=0$, and the angular momentum $\textbf{L}$ is conserved. }
 \subsubsection{Energy}
 Next consider the work done by the external force $\textbf{F}$ upon the particle in going from point 1 to point 2. \\
 This work is 
@@ -36,15 +35,15 @@ W_{12}&=\int\limits_{1}^{2}\textbf{F}\cdot d\textbf{s}\\
 \int\textbf{F}\cdot d\textbf{s}&=m\int\frac{d\textbf{v}}{dt}\cdot\textbf{v}dt=\frac{m}{2}\int\frac{d}{dt}(v^2)dt\\
 W_{12}&=\frac{m}{2}(v_2^2-v_1^2)
 \end{align*}
-The scalar quantity $mv^2/2$ is called the kinetic energy of the particle and is denoted by $T$. so that the work done is equal to the change in the kinetic energy.
+The scalar quantity $\frac{mv^2}{2}$ is called the kinetic energy of the particle and is denoted by $T$. so that the work done is equal to the change in the kinetic energy.
 \begin{equation}
 W_{12} =T_2-T_1\label{EP-01}
 \end{equation}
 if the force field is such that the work $W_{12}$ is the same for any physically possible path between points 1 and 2, then the force (and the system) is said to be conservative.
 \begin{align*}
 \text{ or }\quad
-\oint\textbf{F}\cdot\textbf{s}&=0\\
-\text{$\textbf{F}$ be the gradient }&\text{of some scalar function of position}\\
+\oint\textbf{F}\cdot\textbf{s}&=0
+\intertext{$\textbf{F}$ be the gradient of some scalar function of position.}
 \textbf{F}&=-\nabla V(\textbf{r})\\
 \text{where $V$ is called}&\text{ the potential energy.}\\
 \textbf{F}\cdot d\textbf{s}&=-dV\\
@@ -93,13 +92,13 @@ Conservation for linear momentum of a system of particles: If the total external
 \therefore \quad \text{ RHS of equation becomes },&\quad\vec{r_{ij}}\times \vec{F_{ji}}
 \intertext{The internal forces between two particles, in addition to being equal and opposite, also lie along the line going the particles (This condition known as the strong law of action and reaction.)}
 \text{Then all cross products vanish,}\\
-\frac{d\vec{L}}{dt}&=\vec{N}^{(e)}
+\frac{d\vec{L}}{dt}&=\vec{\tau}^{(e)}
 \end{align*}
 The time derivative of angular momentum thus equal to the moment of the external force about the given point.\\
 Conservation of total angular momentum: $L$ \textit{is constant in time if the applied (external) torque is zero.} 
 \begin{note}
 	This is a vector theorem,
-	$\therefore$ $L_z$ will be conserved if $N_z^{(e)}$ is zero, even if $N_x^{(e)}$ and $N_y^{(e)}$ are not zero.\\
+	$\therefore$ $L_z$ will be conserved if $\tau_z^{(e)}$ is zero, even if $\tau_x^{(e)}$ and $\tau_y^{(e)}$ are not zero.\\
 \end{note} 
 \textbf{To represent $\vec{L}$ in terms of centre of mass,}\\
 \begin{figure}[H]
@@ -147,7 +146,7 @@ T&=\frac{1}{2} Mv^2+\frac{1}{2}\sum m_i {v^\prime}_i^2
   \text{ Then}{ \nabla_i} v_{ij}&={\nabla_{i j}} v_{ij} =-\nabla_j v_{ij}\\
  ds_i-ds_i&=dr_i-dr_i=dr_{ij}\\
 \text{$\therefore $\quad total work arising}&\text{ from internal force}\\
-&=\frac{-1}{2}\sum\limits_{i,j ,i+j}\ \int\limits_{1}^{2}\nabla_{i j} \nabla_{i j}\cdot d\vec{r}_{ij}\\
+&=\frac{-1}{2}\sum\limits_{i,j ,i+j}\ \int\limits_{1}^{2}\nabla_{i j} v_{i j}\cdot d\vec{r}_{ij}\\
 &=\frac{-1}{2}\sum\limits_{i,j ,i+j} v_{ij}\Bigr |_{1}^{2}
 \intertext{ $\therefore$ \quad The external and internal force are both derivable from potentials so it is possible to define a total potential energy $v$ of the system.}
 v&=\sum\limits_{i}v_i+\frac{1}{2}\sum\limits_{i,j ,i+j}v_{ij}
@@ -158,13 +157,21 @@ v&=\sum\limits_{i}v_i+\frac{1}{2}\sum\limits_{i,j ,i+j}v_{ij}
 	\item For rigid body internal potential is constant
 	\item  In rigid body internal forces do no work.
 \end{itemize}
+\section{Degrees of Freedom}
+The degrees of freedom of a dynamical system is defined as the minimum number of independant coordinates or variables required to specifythe system compatible with the constraints. 
+ If there are $n$ independent variables, say $q_1, q_2, \ldots, q_n$ and $n$ constants $C_1, C_2, \ldots, C_n$ such that,
+ 
+$$
+\sum_{i=1}^n C_i d q_i=0
+$$
+at any position of the system, then we must have
+$$
+C_1=C_2=\ldots .=C_n=0
+$$
 \section{Constraints}
-We have,
+All problems in mechanics be reduced to solving a set of differential equation. But this view is over simplified even from a purely physical's standpoint .
 $$ m_i\ddot{\mathbf{r}}_1=\textbf{F}_1^{(e)}+\sum\limits_{j}\textbf{F}_{ji}$$
-All problems in mechanics be reduced to solving a set of differential equation. But this view is over simplified even from a purely physical's standpoint \\
-eg:it is necessary to take constraints\\\\
-While solving a problem along with this we have to take consideration of constraints that limits the motion of the system.\\
-Constraints are classified in various ways.\\\\
+ While solving a problem along with this we have to take consideration of constraints that limits the motion of the system. Constraints are classified in various ways.
 \begin{itemize}
 \item \textbf{Holonomic Constraints}:  If the conditions of constraint can be expressed as equations connecting the coordinates of the particles (and possibly the time) having the form,
 	$$ f(\textbf{r}_1,\textbf{r}_2, \textbf{r}_3,.....t)=0$$
@@ -184,10 +191,13 @@ Rheonomous constraints are which the constraint equation contain time as an expl
 \item \textbf{Scleronomous}: 
 Constraints which the constraint equations are not ecplicity dependent on time.\\
 \end{itemize}
-\textbf{Because of Constraints}:\\\\
-1) The coordinates $r_i$ are no longer independent, since they are connected by the equation of constraint hence equation of motion are not independent.\\\\
-2)The forces of constraint are unknown and must be obtained from solution.\\
-In case of holonomic constraints the first difficulty is solved by introduction of generalized coordinates.\\\\
+\textbf{Because of Constraints}:
+\begin{enumerate}
+	\item The coordinates $r_i$ are no longer independent, since they are connected by the equation of constraint hence equation of motion are not independent.
+	\item The forces of constraint are unknown and must be obtained from solution.
+	In case of holonomic constraints the first difficulty is solved by introduction of generalized coordinates.
+\end{enumerate}
+
 \section{Generalized Coordinates}
 \begin{itemize}
 	\item A system of N-particles, free from constraints has $3N$ independent coordinates or degree of freedom. 
@@ -211,29 +221,28 @@ In case of holonomic constraints the first difficulty is solved by introduction 
 \subsubsection{Virtual Displacement}
 A change in the configuration of the system as the result of any arbitrary infinitesimal change of the coordinates $\delta \textbf{r}_i$ consistent with the forces and constraints imposed on the system at the given instant $t$. The change is called virtual to distinguish it from the actual displacement of the system occurring in a time interval `dt' , during which the forces and constraints may be changing.
 \subsection{Principle of Virtual Work}
-For a system in equilibrium, total force on each particle  $\textbf{F}_i=0$\\
-Then virtual work of $\textbf{F}_i$ in displacement $\delta \textbf{F}_i$
+For a system in equilibrium, total force on each particle  $\textbf{F}_i=0$. Then virtual work of $\textbf{F}_i$ in displacement $\delta \textbf{r}_i$,
 \begin{equation}
 \sum\limits_{i}\textbf{F}_i\cdot\delta \textbf{r}_i=0\label{EP-01}
 \end{equation}
 \begin{align*}
 \text{Let, } \textbf{F}_i&=\textbf{F}_i^{(a)}+\textbf{f}_i\hspace{2cm}\textbf{F}_i^{(a)}- \text{applied force}\\
 &\hspace{3.7cm}\textbf{f}_i - \text{force of constraint}\\
-\therefore \text{Eq.(\ref{EP-01}) becomes, } \sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}+\sum_{i} \mathbf{f}_{i} \cdot \delta \mathbf{r}_{i}&=0 \\
+\therefore \text{Eq.(\ref{EP-01}) becomes, } \sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}+\sum_{i} \mathbf{f}_{i} \cdot \delta \mathbf{r}_{i}&=0 
 \end{align*}
  We now restrict ourselves to systems for which the net virtual work of constraints is zero. We therefore have as the condition for equilibrium of a system that the virtual work of the applied forces vanishes.
 \begin{equation}
 \qquad\sum_{i} \mathbf{F}_{i}^{(a)} \cdot \delta \mathbf{r}_{i}=0\label{EP-02}
 \end{equation}
-This is often called \textit{principle of virtual work.}
+This is often called \textbf{principle of virtual work.}
 \subsection{D'Alembert's Principle}
 Equation (\ref{EP-02})  only deals with statics. We want a condition involving general motion of the system\\
 The equation of motion 
 \begin{align*}
 \textbf{F}_i&=\dot{\textbf{P}_i}\\
-\implies \textbf{F}_i-\dot{\textbf{P}_i}&=0
+ \textbf{F}_i-\dot{\textbf{P}_i}&=0
 \end{align*}
-\textit{The particle in the system will be in equilibrium under a force equal to actual force plus a "reversed effective force" , $-\dot{\textbf{P}_i}$.}\\
+\textit{The particle in the system will be in equilibrium under a force equal to actual force plus a "reversed effective force" , $- \dot{\textbf{P}_i}$.}\\
 $\therefore$  equation (\ref{EP-01}) becomes
 
 
@@ -265,7 +274,7 @@ Q_{j}&=\sum_{i} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{
 \end{note}
 \subsection{D'Alembert's Principle in Generalized Coordinates}
 \begin{align}
-\sum\limits_{i}(r_i^{(a)}-\dot{P}_i)\cdot\delta r_i&=0\text{ \quad is the D'Alembert's Principle.}\notag\\
+\sum\limits_{i}(F_i^{(a)}-\dot{P}_i)\cdot\delta r_i&=0\text{ \quad is the D'Alembert's Principle.}\notag\\
 \sum_{i} \dot{\mathbf{p}}_{i} \cdot \delta \mathbf{r}_{i}&=\sum_{i} m_{i} \ddot{\mathbf{r}}_{i} \cdot \delta \mathbf{r}_{i}\notag\\
 &=\sum_{i, j} m_{i} \ddot{\mathbf{r}}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \delta q_{j}\notag\\
 \text{Now consider the}&\text{ relation,}\notag\\
@@ -283,6 +292,30 @@ Q_{j}&=\sum_{i} \mathbf{F}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{
 \text{$\therefore$ D'Alembert's principle}&\text{ becomes ,}\notag\\
 \sum_{j}\left\{\left[\frac{d}{d t}\left(\frac{\partial T}{\partial \dot{q}_{j}}\right)-\frac{\partial T}{\partial q_{j}}\right]\right.& \left. -Q_{j}\right\} \delta q_{j}=0\label{EP-14}
 \end{align}
+\begin{exercise}
+	Two heavy particles of weights $W_1$ and $W_2$ are connected by a light inextensible string and hang over a fixed smooth circular cylinder of radius $R$, the axis of which is horizontal . Find the $\because$ condition of equilibrium of the system by applying the principle of virtual work.
+\end{exercise}
+\begin{answer}
+		According to the principle of virtual work,
+		
+			\begin{center}
+				\includegraphics[totalheight=0.13\textheight]{Dalemberts eg}
+				\label{fig:ex1}
+			\end{center}
+		\begin{align*}
+		\sum_{i=1}^N \mathrm{~F}_i \cdot \delta \mathbf{r}_i&=0
+		\intertext{Here, $i=1,2$ and therefore}
+		W_1 \sin \theta \delta r_1+W_2 \sin \phi \delta r_2&=0\\
+		\text{But, } \delta r_1=R d \theta, \delta r_2&=R d \phi\\
+		\therefore \quad W_1 \sin \theta \delta \theta+W_2 \sin \phi \delta \phi&=0\\
+		\text{But, } \theta +\phi&= \text{constant}\\
+		\text{Therefore, } \delta \theta+\delta \phi=0 \text{or } \delta \phi&=-\delta \theta\\
+		\text{Thus, } \quad\left(W_1 \sin \theta-W_2 \sin \phi\right) \delta \theta&=0
+		\intertext{The system is in equilibrium, hence the following condition is to be satisfied $(\delta \theta \neq 0)$}
+	    W_1 \sin \theta-\dot{W}_2 \sin \phi&=0  
+	    \text { or } \frac{W_1}{W_2}=\frac{\sin \phi}{\sin \theta}
+		\end{align*}
+\end{answer}
 \subsection{Lagrange's Equation}
 Any virtual displacement $\delta q_j$ is independent of $\delta q_k.$\\
 $\therefore$ \quad only way to hold equation \ref{EP-14} is for the individual coefficients to vanish.
@@ -309,26 +342,48 @@ Q_{j}&=-\frac{\partial V}{\partial q_{j}} .\label{EP-16}\\
 	$$L^{\prime}(q, \dot{q}, t)=L(q, \dot{q}, t)+\frac{d F}{d t}$$
 	is a Lagrangian also resulting in the same equation of motion.
 \end{note}
+\subsection{ Cyclic Coordinates}
+If the Lagrangian of a system does not contain a given coordinate $q_j$ (although it may contain the corresponding velocity $\dot{q}_j$ ), then the coordinate is said to be cyclic or ignorable. This definition is not universal, but it is the customary one and will be used here. The Lagrange equation of motion,
+$$
+\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_j}-\frac{\partial L}{\partial q_j}=0
+$$
+reduces, for a cyclic coordinate, to
+$$
+\frac{d}{d t} \frac{\partial L}{\partial \dot{q}_j}=0
+$$
+or
+$$
+\frac{d p_j}{d t}=0
+$$
+which mean that
+$$
+p_j=\text { constant. }
+$$
+Hence, \textbf{we can state as a general conservation theorem that the generalized momentum conjugate to a cyclic coordinate is conserved}.
 \section{Formulation of Lagrangian}
-Lagrangian in different coordinate system:
-Lagrangian of a system is defined as $L=T\left(q_{i}, \dot{q}_{i}, t\right)-V\left(q_{i}, \dot{q}_{i}, t\right)$, where $T$ and $V$ are functions of generalized coordinates, generalized velocities and time $t$.\\
-\textbf{How to write a Lagrangian}\\\\
-\textbf{Step 1:}\\
-(a) Draw a Cartesian coordinate system with a suitable origin.
-(b) Then disturb the system arbitrarily and fix the coordinates of individual particle with respect to origin.
-(c) Write down kinetic energy and potential energy as discussed below.
-If a system constitutes $p$ number of particle and position vector of the $p^{\text {th }}$ particle is given by $\vec{r}_{p}=x_{p} \hat{i}+y_{p} \hat{j}+z_{p} \hat{k}$, then kinetic energy of the system is given by
+Lagrangian of a system is defined as $L=T\left(q_{i}, \dot{q}_{i}, t\right)-V\left(q_{i}, \dot{q}_{i}, t\right)$, where $T$ and $V$ are functions of generalized coordinates, generalized velocities and time $t$.
+\subsection{How to write a Lagrangian}
+\textbf{Step 1:}
+\begin{enumerate}[label=(\alph*)]
+	\item  Draw a Cartesian coordinate system with a suitable origin.
+	\item  Then disturb the system arbitrarily and fix the coordinates of individual particle with respect to origin.
+	\item  Write down kinetic energy and potential energy as discussed below.
+	If a system constitutes $p$ number of particle and position vector of the $p^{\text {th }}$ particle is given by $\vec{r}_{p}=x_{p} \hat{i}+y_{p} \hat{j}+z_{p} \hat{k}$, then kinetic energy of the system is given by,
+\end{enumerate}
+
 \begin{align*}
 T&=\frac{1}{2} \sum_{P} m_{p}\left[\left(\dot{x}_{p}\right)^{2}+\left(\dot{y}_{p}\right)^{2}+\left(\dot{z}_{p}\right)^{2}\right] \text { and }\\
 \text{potential }&\text{energy is given by}\\
 V&=\sum_{p} V_{p}\left(x_{p}, y_{p}, z_{p}, \dot{x}_{p}, \dot{y}_{p}, \dot{z}_{p}\right)\\
 \text{Lagrangian of the  }&\text{system is given by }L=T-V
 \end{align*}
-\textbf{Step 2:}\\
-(a) Find the degree of freedom with the formula $\mathrm{DOF}=3 N-k$ as discussed in previous chapter.\\
-(b) Number of degree of freedom is equivalent to minimum number of independent motion.\\
-(c) Identify the independent motion with the help of symmetry of problem.\\
-(d) Transform the Lagrangian of the system in suitable symmetry.\\
+\textbf{Step 2:}
+\begin{enumerate}[label=(\alph*)]
+\item Find the degree of freedom with the formula $\mathrm{DOF}=3 N-k$ as discussed in previous chapter.
+\item Number of degree of freedom is equivalent to minimum number of independent motion.
+\item Identify the independent motion with the help of symmetry of problem.
+\item Transform the Lagrangian of the system in suitable symmetry.
+\end{enumerate}
 \begin{exercise}
 If kinetic energy and potential energy is given by $T=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)$ and $V=-m g y$ respectively.
 	 \begin{tasks}(1)
@@ -373,7 +428,7 @@ If kinetic energy and potential energy is given by $T=\frac{1}{2} m\left(\dot{x}
 	\text{The kinetic energy }T&=\frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}\right)\text{ then reduces formally to}\\
 	T&=\frac{1}{2} m\left[\dot{r}^{2}+(r \dot{\theta})^{2}\right]
 	\intertext{ the plane polar components of the velocity are $\dot{r}$ along $\mathbf{r}$, and $r \dot{\theta}$ along the direction perpendicular to $r$, denoted by the unit vector $\hat{\theta}$. Hence, the square of the velocity expressed in polar coordinates is simply $\dot{r}^{2}+(r \dot{\theta})^{2}$.}\\
-	\text{the components of }&\text{the gencralized force are}\\
+	\text{the components of }&\text{the generalized force are}\\
 	Q_{r}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial r}=\mathbf{F} \cdot \hat{\mathbf{r}}=F_{r}\\
 	Q_{\theta}&=\mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial \theta}=\mathbf{F} \cdot r \hat{\mathbf{\theta}}=r {F}_{\theta} .
 	\intertext{ There are two generalized coordinates, and therefore two Lagrange equations. The derivatives occurring in the $r$ equation are}
@@ -381,7 +436,7 @@ If kinetic energy and potential energy is given by $T=\frac{1}{2} m\left(\dot{x}
 	m \ddot{r}-m r \dot{\theta}^{2}&=F_{r},\\
 	\frac{\partial T}{\partial \theta}&=0, \quad \frac{\partial T}{\partial \dot{\theta}}=m r^{2} \dot{\theta}, \quad \frac{d}{d t}\left(m r^{2} \dot{\theta}\right)=m r^{2} \ddot{\theta}+2 m r \dot{r} \dot{\theta}.\\
 	\frac{d}{d t}\left(m r^{2} \dot{\theta}\right)&=m r^{2} \ddot{\theta}+2 m r \dot{\theta} \dot{\theta}=r F_{\theta} .\\
-	\text{where angular momentum }L&=m r^{2} \theta\text{ and torque }N^{(e)}=r F_{\theta}.
+	\text{where angular momentum }L&=m r^{2} \theta\text{ and torque }\tau^{(e)}=r F_{\theta}.
 	\end{align*}
 \end{answer}
 \begin{exercise}
