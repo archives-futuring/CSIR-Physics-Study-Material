@@ -1,29 +1,30 @@
 \chapter{Statistical Mechanics-I}
 Statistical mechanics is a formalism in the study of physical properties of matter in bulk. It makes an attempt to derive the macroscopic properties of an object from the properties of it's microscopic constituents and the interactions amongst them. In statistical mechanics we try to find the answers to questions like how are the molecules distributed in space, how they are distributed in velocity.
-\section{Degrees of freedom}
+\section{Degrees of Freedom}
 The degrees of freedom of any dynamical system is defined as the total number of independent coordinates necessary to specify the position and configuration of the system completely.
 For a particle in translatory motion three coordinates $(x, y, z)$ are needed to define its position. To describe energy of the particle three momentum coordinates $\left(p_{x}, p_{y}, p_{z}\right)$ are required. Hence to specify position and energy, 6 - coordinates are needed. We say the particle has 6 degrees of freedom.
 \section{Phase Space}
 Phase space is an imaginary space which combines the physical space and the momentum space. It is used to represent the state (phase) of each system.
-To specify the position and energy we require three position (space) coordinates $\mathrm{x}, \mathrm{y}, \mathrm{z}$ and three momentum coordinates $\mathrm{p}_{\mathrm{x}}, \mathrm{p}_{\mathrm{y}}$ and $\mathrm{p}_{\mathrm{z}}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and $\mathrm{p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as phase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
+To specify the position and energy we require three position (space) coordinates ${x}, {y}, {z}$ and three momentum coordinates ${p}_{{x}}, {p}_{y}$ and ${p}_{z}$. We imagine a six dimensional space in which coordinates are $x, y, z, p_{x}, p_{y}$ and ${p}_{z}$. It is an imaginary space and is a combination of physical space and momentum space. This six dimensional space for a single particle is called phase space or $\mu$-space. The instantaneous state of a particle in the phase space is denoted by a point known as phase point. An element of volume $d x d y d z d p_{x} d p_{y} d p_{z}$ in six dimensional space is called a cell. A phase space can be divided into a large number of cells. A cell contains a large number of phase points. The dimensions of phase space depend upon the degrees of freedom.
 \subsection{More About Phase Space}
  A space where the three position coordinates can be represented along three mutually perpendicular axes is called the physical space. Volume of a small element in this space is $d V=d x d y d z$.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm,width=8cm]{SP-01}
+	\caption{Phase Space} 
+	\label{1}
 \end{figure}
-\par A space where the three momentum coordinates are represented along the three mutually perpendicular directions is called the momentum space. In Fig.(b) the point of a small element in this space $=d p_{x} d p_{y} d p_{z}$\\
- Fig. (a) gives only the instantaneous position of a particle anc Fig. (b) gives only the instantaneous momentum. Suppose we want to specify both this position and momentum at a particular instant in a single space. Such a space is called phase space. In phase space a point $P$ has 6 coordinates, $\left(x, y, z, p_{x}, p_{y}\right.$ and $\left.p_{z}\right)$. So it is a 6 dimensional space. Any point $\mathrm{P}$ in this space is called a phase point. The phase point gives a complete description of the dynamical state of the particle at any instant.
- \begin{align*}
- \text{The volume of an }&\text{infinitesimal element in phase space $=d \tau$}\\
- d \tau&=d x d y d z d p_{x} d p_{y} d p_{z}
- \end{align*}
-Let us now consider a system consisting of N-particles. For one particle there are 6 coordinates. So for N-particle there are $6 \mathrm{~N}$ coordinates. This means to specify the state of the system completely we need $3 \mathrm{~N}$ position coordinates and $3 \mathrm{~N}$ momentum coordinates. The instantaneous position of a system(i.e., N-particles) can be represented by a single point in the $6 \mathrm{~N}$-dimensional phase space.
-\subsection{$\mu$.Space and $\Gamma$-space}
- The 6-dimensional phase space for a single particle is called the h-space. The $6 \mathrm{~N}$-dimensional phase space for $\mathbf{N}$ particles is termed as -space ( $\gamma$-space). Thus gamma space is built up as the product of $N, \mu$ spaces.\\
-\par Suppose a particle has $f$ degrees of freedom. Then to specify its state, f position coordinates and $\mathrm{f}$ momentum coordinates are required.
-If there are $N$ particles in this system then to represent the dynamical state of the system at any instant the total number of coordinates required are $N f$ position coordinates and $N f$ momentum coordinates The phase space of the system will be a $2 \mathrm{~N} f$ dimensional space. We can use generalised coordinates to represent a system. Let $q_{i}$ represent the generalised position coordinate and $\mathrm{p}_{\mathrm{j}}$ represent the generalised momentum coordinates. For $N$ independent particles, in the 6 dimensional phase space, there will be $3 \mathrm{~N}$ position coordinates
-$q_{1}, q_{2}, \ldots \ldots . q_{N}$ and $3 N$ momentum coordinates $p_{1}, p_{2}, \ldots \ldots \ldots \ldots p_{N}$
+ A space where the three momentum coordinates are represented along the three mutually perpendicular directions is called the momentum space. In fig\ref{1}(b) the point of a small element in this space $=d p_{x} d p_{y} d p_{z}$. fig\ref{1}(a) gives only the instantaneous position of a particle and fig\ref{1}
+ (b) gives only the instantaneous momentum. Suppose we want to specify both this position and momentum at a particular instant in a single space, such a space is called phase space. In phase space a point $P$ has 6 coordinates, $\left(x, y, z, p_{x}, p_{y}\right.$ and $\left.p_{z}\right)$. So it is a 6 dimensional space. Any point ${P}$ in this space is called a phase point. The phase point gives a complete description of the dynamical state of the particle at any instant.
+ \begin{equation}
+ \text{The volume of an }\text{infinitesimal element in phase space , }
+ d \tau=d x d y d z d p_{x} d p_{y} d p_{z}
+ \end{equation}
+Let us now consider a system consisting of N-particles, for one particle there are 6 coordinates. So for N-particle there are $6 {~N}$ coordinates. This means to specify the state of the system completely we need $3 {~N}$ position coordinates and $3 {~N}$ momentum coordinates. The instantaneous position of a system (i.e., N-particles) can be represented by a single point in the $6 {~N}$-dimensional phase space.
+\subsection{$\mu$- Space and $\Gamma$- Space}
+ The 6-dimensional phase space for a single particle is called the hyperphase-space. The $6 \mathrm{~N}$-dimensional phase space for $\mathbf{N}$ particles is termed as $\Gamma$ space ( gamma- space). Thus gamma space is built up as the product of $N, \mu$ spaces.\\\\
+ Suppose a particle has $f$ degrees of freedom. Then to specify it's state, $f$ position coordinates and ${f}$ momentum coordinates are required.
+If there are $N$ particles in this system then to represent the dynamical state of the system at any instant the total number of coordinates required are $N f$ position coordinates and $N f$ momentum coordinates.  The phase space of the system will be a $2 {~N} f$ dimensional space. We can use generalised coordinates to represent a system. Let $q_{i}$ represent the generalised position coordinate and ${p}_{{j}}$ represent the generalised momentum coordinates. For $N$ independent particles, in the 6 dimensional phase space, there will be $3 {~N}$ position coordinates, $q_{1}, q_{2}, \ldots \ldots . q_{N}$ and $3 N$ momentum coordinates $p_{1}, p_{2}, \ldots \ldots \ldots \ldots p_{N}$.
 \subsection{Phase Cell}
 \begin{figure}[H]
 	\centering
@@ -31,31 +32,31 @@ $q_{1}, q_{2}, \ldots \ldots . q_{N}$ and $3 N$ momentum coordinates $p_{1}, p_{
 	\caption{}
 	\label{SP-00}
 \end{figure}
-\par Consider a particle in one dimension. Its state can be specified using the position coordinates $p$ and the momentum coordinates $q$ as shown in Fig.$\ref{SP-00}$ The two coordinates change with time and the representative point moves through phase space and the line traced is called phase line or phase trajectory. Each point on the phase line represents one possible microstate.\\
-\textbf{Example}\\
-Consider one dimensional harmonic oscillator of mass $m$ and spring constant $\mathrm{k}$. The total energy of the oscillator is $\mathrm{E}=\frac{\mathrm{p}^{2}}{2 \mathrm{~m}}+\frac{1}{2} \mathrm{kq}^{2}$, where $p$ is its momentum and $q$ its position coordinate. If $E$ is constant then this equation represents an ellipse in the phase space.
+\par Consider a particle in one dimension, it's state can be specified using the position coordinates $q$ and the momentum coordinates $p$ as shown in fig$\ref{SP-00}$ . The two coordinates change with time and the representative point moves through phase space and the line traced is called phase line or phase trajectory. Each point on the phase line represents one possible microstate.
+\subsubsection{Example:}
+Consider one dimensional harmonic oscillator of mass $m$ and spring constant $\mathrm{k}$. The total energy of the oscillator is ,
+$$\mathrm{E}=\frac{\mathrm{p}^{2}}{2 \mathrm{~m}}+\frac{1}{2} \mathrm{kq}^{2}$$
+where $p$ is its momentum and $q$ its position coordinate. If $E$ is constant then this equation represents an ellipse in the phase space, with a semi major axis, $\sqrt{2 \mathrm{E} / \mathrm{k}}$ and the semi minor axis , $\sqrt{2 \mathrm{mE}}$.
+\begin{align*}
+\frac{q^{2}}{(2 E / k)}+\frac{p^{2}}{2 m E}&=1
+\end{align*}
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=2.5cm,width=4cm]{SP-03}
 \end{figure}
-\begin{align*}
-\frac{q^{2}}{(2 E / k)}+\frac{p^{2}}{2 m E}&=1\\
-\text{The semi major axis of the ellipse is }&\text{$\sqrt{2 \mathrm{E} / \mathrm{k}}$ and the semi minor axis is $\sqrt{2 \mathrm{mE}}$.}
-\end{align*}
-\par We can divide the phase space into small volumes called phase cell. In the $\mu$-space of a particle, the volume element $d \tau=d x\  d y \ d z\  p_{x}\  p_y \ p_z$ . $d\tau$  is the volume of a six dimensional cell having sides ${d x, d y, d z}$ $d p_{x}, d p_{y}, d p_{z}$. Such a cell of minimum volume is called a unit cell in the $\mu$-space.
+We can divide the phase space into small volumes called phase cell. In the $\mu$-space of a particle, the volume element $d \tau=d x\  d y \ d z\  p_{x}\  p_y \ p_z$ . $d\tau$  is the volume of a six dimensional cell having sides ${d x, d y, d z}$ $d p_{x}, d p_{y}, d p_{z}$. Such a cell of minimum volume is called a unit cell in the $\mu$-space.
 \begin{align*}
 (d \tau)_{\min }&=\left(d x d y d z d p_{x} d p_{y} d p_{z}\right)_{\min }\\
 &=\left(\delta x \delta p_{x}\right)_{\min }\left(\delta y \delta p_{y}\right)_{\min }\left(\delta z \delta p_{z}\right)_{\min }
 \end{align*}
-According to classical mechanics the volume d$\Gamma$
-l can take any minimum value. But in quantum mechanics, according to Heisenberg's uncertainty principle the minimum value of the products is approximately equal to the Planck's constant $h$.
-$$\text{ So }(d \tau)_{\min }=\mathrm{h} \times \mathrm{h} \times \mathrm{h}=\mathrm{h}^{3}$$
+According to classical mechanics the volume d$\tau$ can take any minimum value. But in quantum mechanics, according to Heisenberg's uncertainty principle the minimum value of the products is approximately equal to the Planck's constant $h$.
+$$\text{ So,  }(d \tau)_{\min }={h} \times {h} \times {h}={h}^{3}$$
 The minimum value of volume element of $\mu$-space is $h^{3}$, where 3 is the number of degrees of freedom.\\
-\par Consider a system consisting of $\mathrm{N}$ particles having $f$ degrees of freedom each. Then the phase space will be $2 \mathrm{fN}$ dimensional and the volume of the cell be $\mathrm{h}^{\mathrm{Nf}}$.
+ Consider a system consisting of ${N}$ particles having $f$ degrees of freedom each. Then the volume of the cell be ${h}^{{Nf}}$.
 \begin{align*}
-\text{The volume}&\text{ of one element in the $\Gamma$ space}\\
-d\Gamma&=\left(\mathrm{dq}_{1} \mathrm{dq}_{2} \mathrm{dq}_{3} \ldots \ldots . d \mathrm{q}_{\mathrm{fN}}\right)\left(\mathrm{dp}_{1} \mathrm{dp}_{2} \mathrm{dp}_{3} \ldots \ldots \mathrm{dp}_{\mathrm{fN}}\right)\\
-\text{The number }&\text{of cells in this volume element is d $\Omega$.}
+\text{The volume}&\text{ of one element in the $\Gamma$ space,}\\
+d\tau&=\left({dq}_{1} {dq}_{2} {dq}_{3} \ldots \ldots . d {q}_{{fN}}\right)\left({dp}_{1} {dp}_{2} {dp}_{3} \ldots \ldots {dp}_{{fN}}\right)\\
+\text{The number }&\text{of cells in this volume element is  $d \Omega$,}
 \\
 d \Omega&=\frac{\left(d q_{1} d q_{2} \ldots \ldots . d q_{f N}\right)\left(d p_{1} d p_{2} \ldots . d p_{f N}\right)}{h^{N f}}
 \end{align*}
@@ -113,7 +114,7 @@ $$ P=P_{1} \times P_{2}$$
 	\end{minipage}
 \end{answer}
 \subsection{ Binomial Distibution}
-Suppose we carry out a series of experiments in which each experiment has only two possible outcomes. For example, experiments to evaluate the magnetic moment of a system of electrons which have spins $\frac{1}{2}$ or $-\frac{1}{2}$, or the traditionally known experiment of lossing coins in which either 'heads' or 'tails' appeas. Let the proliabifity of appearance of 'heads' be represented by $p$ and that of 'tail' by $q$, where,
+Suppose we carry out a series of experiments in which each experiment has only two possible outcomes. For example, experiments to evaluate the magnetic moment of a system of electrons which have spins $\frac{1}{2}$ or $-\frac{1}{2}$, or the traditionally known experiment of lossing coins in which either 'heads' or 'tails' appears. Let the probability of appearance of 'heads' be represented by $p$ and that of 'tail' by $q$, where,
 \begin{align*}
 p+q&=1\\
 \text{Total number of microstate }&=\text{No.of elements in the sample space}\\&=\left(\text{Basis} \right)^N\\
@@ -159,14 +160,14 @@ p+q&=1\\
 	{ }^{n} C_{r}\left(\frac{1}{2}\right)^{n}
 	\end{align*}
 \end{enumerate}
-\subsubsection{ Number of microstates in spin system}
+\subsubsection{ Number of Microstates in Spin System}
 \begin{align*}
 \text{Basis }&=(2s+1) \\
 \text{Total number of microstate }\Omega&=(2 s+1)^{N} \\
 \end{align*}
 
 
-\begin{exercise}
+\begin{exercise}\label{exercise1}
 	A system of 5 identical but distinguishable particles having energy $3\epsilon$. The single particle states are available at energies $0,\epsilon,2\epsilon,3\epsilon$ find the probablity of each macro state?
 \end{exercise}
 \renewcommand*{\arraystretch}{2}
@@ -213,17 +214,17 @@ n_{2} &\rightarrow\text{ no. of steps taken to left.}\\
 	\end{align*}
 \end{answer}
 \section{Macroscopic and Microscopic Coordinates}
-A system whose size is of the order of atomic dimensions or smaller $(<10 \AA)$ is called a microscopic system. Example, a molecule, an atom. If the size of the system is very large compared to size of an atom, say greater than one micron it is called a macroscopic system. A macroscopic system contains a large number of particles.\\
-\par Let us consider a system, say a cylinder fitted with a frictionless weightless piston containing a gas at a pressure $\mathrm{P}$ and temperature $\mathrm{T}$. The state of the gas can be specified by $P, T$ and volume $V$ of the gas. These coordinates are called macroscopic coordinates.\\
-\par For the microscopic desvription of the state of the gas we need the position and momentum coordinates of all the $N$ coordinates say $\left(x_{1}, y_{1}, z_{1}\right), \quad\left(x_{2}, y_{2}, z_{2}\right) \ldots \ldots .\left(x_{n}, y_{n}, z_{n}\right)$ and $\left(p_{x 1}, p_{y 1}, p_{z 1}\right),\left(p_{x 2}, p_{y 2}, p_{y 3}\right) \ldots \ldots \ldots$\\$\left(p_{x N}, \bar{p}_{y N}, p_{x N}\right)$ are called micro-coordinates.
+A system whose size is of the order of atomic dimensions or smaller $(<10 \AA)$ is called a microscopic system. A molecule or an atom can be considered as microscopic system. If the size of the system is very large compared to size of an atom, say greater than one micron it is called a macroscopic system. A macroscopic system contains a large number of particles.
+\par Let us consider a system, say a cylinder fitted with a frictionless weightless piston containing a gas at a pressure $\mathrm{P}$ and temperature $\mathrm{T}$. This state of the gas, characterized by the parameters, $P, T$ and $V$, is called it's macroscopic state. These coordinates are called macroscopic coordinates.
+\par The state of the gas described in terms of the properties of it's constituent particles is called its microscopic state. For the microscopic description of the state of the gas we need the position and momentum coordinates of all the $N$ coordinates say $\left(x_{1}, y_{1}, z_{1}\right), \quad\left(x_{2}, y_{2}, z_{2}\right) \ldots \ldots .\left(x_{n}, y_{n}, z_{n}\right)$ and $\left(p_{x 1}, p_{y 1}, p_{z 1}\right),\left(p_{x 2}, p_{y 2}, p_{y 3}\right) \ldots \ldots \ldots$\\$\left(p_{x N}, \bar{p}_{y N}, p_{x N}\right)$ are called micro-coordinates.
 \subsection{Macrostates and Microstates}
-\par Consider a system consisting of $\mathrm{N}$ structureless identical weakly interacting particles, occupying, a fixed volume $V$. Let the internal energy of the system be U. The state of the system is completely determined by $6 \mathrm{~N}$ coordinates; $3 \mathrm{~N}$ position coordinates and $3 \mathrm{~N}$ momentum coordinates. Since there are $6 \mathrm{~N}$ coordinates this phase space is $6 \mathrm{~N}$ dimensional. Let the phase space be divided into allowed discrete energy levels and all the $\mathrm{N}$ particles be distributed among these energy levels. Let there be $n_{1}$ particles in the energy state $E_{1}, n_{2}$ in $E_{2}$ and so on. Then
+\par Consider a system consisting of $\mathrm{N}$ structureless identical weakly interacting particles, occupying, a fixed volume $V$. Let the internal energy of the system be U. The state of the system is completely determined by $6 \mathrm{~N}$ coordinates, $3 \mathrm{~N}$ position coordinates and $3 \mathrm{~N}$ momentum coordinates. Since there are $6 \mathrm{~N}$ coordinates this phase space is $6 \mathrm{~N}$ dimensional. Let the phase space be divided into allowed discrete energy levels and all the $\mathrm{N}$ particles be distributed among these energy levels. Let there be $n_{1}$ particles in the energy state $E_{1}, n_{2}$ in $E_{2}$ and so on. Then
 \begin{align*}
 n_{1}+n_{2}+n_{3} \ldots \ldots&=\sum_{i} n_{i}=N\\
 \mathrm{n}_{1} \mathrm{E}_{1}+\mathrm{n}_{2} \mathrm{E}_{2}+\ldots \ldots \ldots&=\sum_{\mathrm{i}} \mathrm{n}_{\mathrm{i}} \mathrm{E}_{\mathrm{i}}=\mathrm{U}
 \end{align*}
- The set of numbers, $\mathrm{n}_{1}, \mathrm{n}_{2}, \mathrm{n}_{3}$ of the particles represent one set of distribution of $\mathrm{N}$ particles corresponding to the same macrostate of the system. We can have different sets of numbers of particles in the energy levels satisfying equations above. These different sets of number of particles give different distributions corresponding to the same macrostate. Thus a macrostate is specifled by just giving the number of particles in each energy state. Macrostate is a state of a system which is represented by the macro properties like pressure, volume, temperature, density etc. in the equilibrium state.\\\\
-For defining a microstate we should specify to which energy state each particle of the system belongs at a particular instant. For example in solved problem each arrangement like $(a b c, d)$ or (acd, b) is a microstate. There are five macrostates in the example we have solved. The number of microstates corresponding to the given macrostate of the system is called thermodynamic probability or thermodynamic frequency.\\\\
+ The set of numbers, $\mathrm{n}_{1}, \mathrm{n}_{2}, \mathrm{n}_{3}$ of the particles represent one set of distribution of $\mathrm{N}$ particles corresponding to the same macrostate of the system. We can have different sets of numbers of particles in the energy levels satisfying equations above. These different sets of number of particles give different distributions corresponding to the same macrostate. Thus a macrostate is specified by just giving the number of particles in each energy state. Macrostate is a state of a system which is represented by the macro properties like pressure, volume, temperature, density etc. in the equilibrium state.\\\\
+For defining a microstate we should specify to which energy state each particle of the system belongs at a particular instant. For example, in exercise \ref{exercise1} each arrangement like $(a b c, d)$ or (acd, b) is a microstate, there are five macrostates . The number of microstates corresponding to the given macrostate of the system is called thermodynamic probability or thermodynamic frequency.\\\\
 For indistinguishable particles, each distribution of the particles among the energy levels, corresponding to the same macrostate of the system is called a microstate, or the state of a system represented by the instant positions and momenta of all the particles is called the microstate. The microstate may change continuously with time. So corresponding to a macrostate there will be a large number of microstates.
 \subsection{Constraints and Accessible State}
 Physical laws impose certain restrictions on the distribution of the molecules among various energy states in phase space and are called constraints of the system. The total number of molecules in a system remains a constant. This is a constraint. i.e. $\sum \mathrm{n}_{\mathrm{i}}=\mathrm{N}=\mathrm{a}$ constant. Another constraint is that the total energy of the system is a constant. $\sum n_{i} \epsilon_{i}=U=a$ costant\\
@@ -234,14 +235,14 @@ Physical laws impose certain restrictions on the distribution of the molecules a
  S=k_{B} \ln {\Omega}(E, V, N)
 \end{equation}
  It was proposed by Boltzmann. $ S$ stands for entropy and belongs to the macro world described by thermodynamics. ${\Omega}$ is the number of micro states of a macroscopic system . $ k_{B}$ is the Boltzmann constant  that establishes correspondence of the statistical entropy of Boltzmann to the thermodynamic entropy of Clausius.
- \subsubsection{ Classical Distribution Law }
- \textbf{Accessible microstate\qquad \quad : } Microstates corresponding to a macrostate.\\\\
- \textbf{Thermodynamic Probability: } Number of microstates corresponding to a macrostate.
+ \subsubsection{Classical Distribution Law }
+ \textbf{Accessible microstate\qquad \quad: } Microstates corresponding to a macrostate.\\\\
+ \textbf{Thermodynamic Probability : } Number of microstates corresponding to a macrostate.
  \begin{equation}
  \text{Probability }=\frac{\text{Number of microstates for accessible macrostate}}{\text{Total number of microstates}}
  \end{equation}
 
-\subsection{ Thermodynamic probability}
+\subsection{Thermodynamic Probability}
  The thermodynamic probability is the number of microstates corresponding to the given macrostate of the system.
  As an example consider the distribution of 4 particles in the two halves of a box. There are five macrostates viz., $(4,0),(3,1),(2,2),(1,$, 3) and $(0,4)$ are possible. The thermodynamic probability corresponding to the distribution $(2,2)$ is 6 .\\
  The redistribution or permutation of indistinguishable particles in a cell is meaningless because it does not produce any new microstate and so it is neglected.\\
@@ -252,17 +253,20 @@ Physical laws impose certain restrictions on the distribution of the molecules a
  \end{equation}
 \subsubsection{Proof}
 \begin{align*}
-   &\text{The number of ways of chosing $n_{1}$ particles for the first box,}\\
-   &=\frac{n !}{n_{1} !\left(n-n_{1}\right) !}\\
+   &\text{The number of ways of chosing $n_{1}$ particles for the first box}=\frac{n !}{n_{1} !\left(n-n_{1}\right) !}\\
    &\text{From the remaining particle $\left(n-n_{1}\right)$  we have to chose $n_{2}$ particles for the box 2.}\\
    &\text{ This can be done in $\frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !}$  ways. }\\
 	&\text{ For the box 3, $ \mathrm{n}_{3}$ particles can be chosen in } \frac{\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}\right) !}{\mathrm{n}_{3} !\left(\mathrm{n}-\mathrm{n}_{1}-\mathrm{n}_{2}-\mathrm{n}_{3}\right) !}\text{ ways and so}
 	\intertext{So the total number of meaningful ways of arranging $n_{1}, n_{2}, n_{3} \ldots . n_{1}$ particles in boxes $1,2,3 \ldots . \mathrm n{k}$ respectively is,}
-	\Omega&=\frac{n !}{n_{1} !\left(n-n_{1}\right) !} \times \frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !} \times \frac{\left(n-n_{1}-n_{2}\right) !}{n_{3} !\left(n-n_{1}-n_{2}-n_{3}\right) !} \times \ldots, k\text{ terms}\\
-	\Omega&=\frac{n !}{n_{1} ! n_{2} ! n_{3} ! \ldots \ldots n_{k} !}\\
+	&\Omega=\frac{n !}{n_{1} !\left(n-n_{1}\right) !} \times \frac{\left(n-n_{1}\right) !}{n_{2} !\left(n-n_{1}-n_{2}\right) !} \times \frac{\left(n-n_{1}-n_{2}\right) !}{n_{3} !\left(n-n_{1}-n_{2}-n_{3}\right) !} \times \ldots, k\text{ terms}\\
+	&\Omega=\frac{n !}{n_{1} ! n_{2} ! n_{3} ! \ldots \ldots n_{k} !}\\
 	&\text{For the }i^{\text {th }}\text{ distribution then the probability }\Omega_{\mathbf{i}}=\frac{\mathbf{n} !}{\pi \mathbf{n}_{\mathbf{i}} !}
 	\end{align*}
-\subsection{Statistical Ensemble}
+	\newpage 
+	\begin{abox}
+		Statistical Ensemble
+		\end{abox}
+\section{Statistical Ensemble}
 A collection of particles is called a system. A number of systems constitute an ensemble. Sometimes it is difficult to study the behaviour of a complex system. But a suitably created ensemble help us to compute the statistical behaviour of the system
 \begin{figure}[H]
 	\centering
@@ -270,26 +274,28 @@ A collection of particles is called a system. A number of systems constitute an 
 		\caption{}
 	\label{SP-01}
 \end{figure}
-The phase line of a single system is as shown in Fig.\ref{SP-01}  Each phase point on the phase line emerges from the previous point, with passage of time, in accordance with the laws of mechanics. Suppose we want to compute a physical quantity of the system. Usually what we do is we find its time average over a certain interval of time. But Gibbs reduced this time dependent picture by a static picture. According to this model, the entire phase line shown by dotted line, in Fig. exists at one time. Then each phase point represents a separate system, with the same macroscopic properties $(N, V, E)$ but a different microscopic state where $\mathrm{N}$ is the total number of particles in the system, $V$ its volume and $E$ its total energy. i.e., we just imagine a large number, (almost infinity) of systems, which are similar in structure to the system under consideration, but placed at random in the accessible, unobservable microscopic states. Now we don't take the time average but take an average over this artificially created group of systems created simultaneously one time. This collection of replicas of similar, independent noninteracting systems is calle an ensemble. Gibbs assumed that the time average of some property of a system in equilibrium is same as the instantaneous ensemble average. This is called the ergodic hypothesis.
+The phase line of a single system is as shown in fig.\ref{SP-01}  Each phase point on the phase line emerges from the previous point, with passage of time, in accordance with the laws of mechanics. Suppose we want to compute a physical quantity of the system. Usually what we do is we find its time average over a certain interval of time. But Gibbs reduced this time dependent picture by a static picture. According to his model, the entire phase line shown by dotted line, in fig\ref{SP-01} exists at one time. Then each phase point represents a separate system, with the same macroscopic properties $(N, V, E)$ but a different microscopic state where $\mathrm{N}$ is the total number of particles in the system, $V$ its volume and $E$ its total energy. i.e., we just imagine a large number, (almost infinity) of systems, which are similar in structure to the system under consideration, but placed at random in the accessible, unobservable microscopic states. Now we don't take the time average but take an average over this artificially created group of systems created simultaneously one time. This collection of replicas of similar, independent noninteracting systems is called an ensemble. Gibbs assumed that the time average of some property of a system in equilibrium is same as the instantaneous ensemble average. This is called the ergodic hypothesis.
 All the members of the ensemble which are identical in $\mathrm{N}, \mathrm{V}, \mathrm{E}$ are called elements.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.3cm,width=4cm]{SP-05}
+	\caption{}
+	\label{Ensemble}
 \end{figure}
-In Fig. $\mathrm{~N}, \mathrm{~V}, \mathrm{E}$ represents one system. A collection of such system constitute an ensemble.
-\subsection{Characteristics of an ensemble}
+In fig.\ref{Ensemble} $\mathrm{~N}, \mathrm{~V}, \mathrm{E}$ represents one system. A collection of such system constitute an ensemble.
+\subsection{Characteristics of an Ensemble}
 \begin{enumerate}
 \item  The elements of an ensemble are identical in structure. i.e., they have the same macroscopic state.
-\item  The elements differ in their microscopic state. i.e., they different from each other in the position coordinates and momentum coordinates.
+\item  The elements differ in their microscopic state. i.e., they differ from each other in the position coordinates and momentum coordinates.
 \item  The various elements do not interact each other.
 \item  Each element of the ensemble behaviour independently obeying the laws of mechanics.
 \item  The elements of the ensemble are the mental copies of the system under consideration. But the system is a physical object, whose properties are to be evaluated. The elements help us to use the probability theory.
 \end{enumerate}
-\subsection{Ensemble average}
-The average value found out at a fixed time over all the elements in an ensemble is called an ensemble average. The ensemble average will be equal to the time average when the system contains a large mumber of particles (molecules) and the ensemble contains a large namber systems (both almost infinite in number).
-\subsection{Liouville's Theorem}
+\subsection{Ensemble Average}
+The average value found out at a fixed time over all the elements in an ensemble is called an ensemble average. The ensemble average will be equal to the time average when the system contains a large mumber of particles (molecules) and the ensemble contains a large number systems (both almost infinite in number).
+\section{Liouville's Theorem}
 The condition of an ensemble at any time can be specified by the density $\rho$ with which the phase points are distributed over the phase apace.  It is called the density of distribution and is a function of the position coordinates (q) and momentum coordinates (p).
-The dynamical state of a system at any instant of time can be represented by a point in the phase space.  This point will not be stationary, but will move along a certain trajectory. The trajectory is determined by the equatio of motion,
+The dynamical state of a system at any instant of time can be represented by a point in the phase space.  This point will not be stationary, but will move along a certain trajectory. The trajectory is determined by the equation of motion,
 \begin{align}
 \dot{q}_{i}&=\frac{\partial \mathrm{H}}{\partial \mathrm{p}_{i}}\\
 \text{ and } \dot{p}_{i}&=-\frac{\partial H}{\partial \dot{q}_{i}}
@@ -314,7 +320,7 @@ Depending on the behaviour of the constituents of an ensemble with respect to th
 \end{note}
 
 \subsection{Microcanonical Ensemble}
-Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system. $V$ and $E$ are the volume and energy of the system [See Fig. \ref{SP-02}] respectively.Consider a system for which the total energy is conserved.
+Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system. $V$ and $E$ are the volume and energy of the system [See fig \ref{SP-02}] respectively.Consider a system for which the total energy is conserved.
 \begin{align*}
 H(q, p)&=E \text{ is conserved.}\\
 E\left[q_{1} \ldots \ldots . q_{f}, p_{1} \ldots \ldots p_{f}\right]&=\text{a constant.}
