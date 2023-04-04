@@ -301,14 +301,14 @@ The dynamical state of a system at any instant of time can be represented by a p
 \text{ and } \dot{p}_{i}&=-\frac{\partial H}{\partial \dot{q}_{i}}
 \end{align}
 Where $H=H\left(q_{i}, p_{i}\right)$ is the Hamiltonian of the system. Due to this motion, the density $\rho$ of the system in phase space changes with time.
-Liouville's theorem gives the value of $\frac{\partial \rho}{\partial t}$ at a given point in phase space.
-Liouville's theorem states that the density of systems in the neighbourhood of some given system in phase space remains constant in time.
+Liouville's theorem gives the value of $\frac{\partial \rho}{\partial t}$ at a given point in phase space.\\
+\textbf{``The local density of the representative points, as viewed by an observer moving with a representative point, stays constant in time.''}
 \begin{equation}
 \frac{d \rho}{d t}=\frac{\partial \rho}{\partial t}+\sum_{i}\left(\frac{\partial \rho}{\partial q_{i}} \dot{q}_{i}+\frac{\partial \rho}{\partial p_{i}} \dot{p}_{i}\right)=0
 \end{equation}
-The sum of the two terms give the total change in density with time, Liouville's theorem states that the variation of density with time is zero.i.e., the total rate of change of density $d\rho/d\tau$ near any selected phase point of a system, as it moves through the phase space is zero.
+The sum of the two terms give the total change in density with time, Liouville's theorem states that the variation of density with time is zero.i.e., the total rate of change of density $d\rho/dt$ near any selected phase point of a system, as it moves through the phase space is zero.
 This is known as the principle of the conservation of the density in phase.  This implies that the distribution of phase points move in phase space like an incompressible fluid.\\
-\subsection{Different Types of Ensembles}
+\section{Different Types of Ensembles}
 Depending on the behaviour of the constituents of an ensemble with respect to the surroundings, ensembles are classified into mainly three types,
 \begin{enumerate}
 	\item Microcanonical ensemble
@@ -319,8 +319,8 @@ Depending on the behaviour of the constituents of an ensemble with respect to th
 	$\left. \right. $ \textbf{Uniform ensemble: }If the density in phase space is constant it is called uniform ensemble.
 \end{note}
 
-\subsection{Microcanonical Ensemble}
-Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system. $V$ and $E$ are the volume and energy of the system [See fig \ref{SP-02}] respectively.Consider a system for which the total energy is conserved.
+\section{Microcanonical Ensemble}
+Microcanonical ensemble is a collection of independent systems of constant volume separated from the neighbours with rigid impermeable adiabatic walls. $N, V$ and $E$ remains constant, $N$ is the total number of particles in the system, $V$ and $E$ are the volume and energy of the system [See fig \ref{SP-02}] respectively. Consider a system for which the total energy is conserved.
 \begin{align*}
 H(q, p)&=E \text{ is conserved.}\\
 E\left[q_{1} \ldots \ldots . q_{f}, p_{1} \ldots \ldots p_{f}\right]&=\text{a constant.}
@@ -333,7 +333,7 @@ The locus of all the phase points having the same value for the energies in the 
 		\label{SP-02}
 \end{figure}
 Let $\mathrm{E}$ and $\mathrm{E}+\delta \mathrm{E}$ be two neighbouring ergodic surfaces. The phase volume in between the two surfaces encloses a certain number of phase points and will be a constant. Let us assume the density to be zero for all values of energy except in a narrow range of energy between $E$ and $\mathrm{E}+\delta \mathrm{E}$. Then the ensemble specified in terms of $\rho$ as, is called a micro canonical ensemble.
-$\rho$ is a function of energy. Here $\rho$ is constant and hence $E$ is also a constant. So the ensemble is in statistical equilibrium. Since $\rho$ is a constant within the energy shell, the distribution of phase points is also uniform, by Lioville's theorem. As the ensemble is in statistical equilibrium, the average properties predicted will not change with time.\\
+$\rho$ is a function of energy. Here $\rho$ is constant and hence $E$ is also a constant. So the ensemble is in statistical equilibrium. Since $\rho$ is a constant within the energy shell, the distribution of phase points is also uniform, by Liouville's theorem. As the ensemble is in statistical equilibrium, the average properties predicted will not change with time.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3cm,width=3.2cm]{SP-07}
@@ -342,14 +342,14 @@ A microcanonical ensemble can be obtained from a uniform ensemble by neglecting 
 A microcanonical ensemble is an idealised concept and hence cannot exist in practice because the systems which we come across always interact with their surroundings, either thermally or mechanically.
 In microcanonical ensemble there is exchange of neither energy nor particles (molecules) among the systems.
 \\\\If $\Omega$ is the number of accessible microstates, the probability that a system chosen at random from the ensemble would be in a given microstate is simply $\frac{1}{\Omega}$.
-No. of accessible microstate in phase space which has energy between $\mathrm{E}$ to $\mathrm{E}+\mathrm{dE}$ is given by ,
+No.of accessible microstate in phase space which has energy between $\mathrm{E}$ to $\mathrm{E}+\mathrm{dE}$ is given by ,
 \begin{align*}
-\Omega&=\sum_{\text {sates }}=\int \frac{d p \cdot d r}{h^{3}}\\
+\Omega&=\sum_{\text {states }}=\int \frac{d p \cdot d r}{h^{3}}\\
 \text{In terms of }&\text{energy,}\\
 n(E) d E&=2 g \pi V\left(\frac{2 m}{h^{2}}\right)^{3 / 2} E^{1 / 2} d E\\
 \text{where '$\mathrm{g}$' }&\text{is degeneracy of the particle.}
 \end{align*} 
-\subsubsection{Classical Ideal Gas }
+\subsection{Classical Ideal Gas }
 \begin{enumerate}[label=\alph*)]
 	\item  Non Relativistic Case
 	\begin{align*}
@@ -380,7 +380,7 @@ Canonical ensemble is a collection of independent systems of constant volume sep
 	\centering
 	\includegraphics[height=3cm,width=3.5cm]{SP-08}
 \end{figure}
-\subsection{Grand Canonical Ensemble}
+\section{Grand Canonical Ensemble}
 Grand Canonical ensemble is a collection of independent systems of constant volume but open and separated from its neighbours by diathermic permeable membrane so that both material and energy can be exchanged between the neighbours. Since there is exchange of energy, the energy of each system $E$ is not a constant. Also there is exchange of particles, so the total number of particles in each system do not remain constant. The temperature T, volume $\mathrm{V}$ and chemical potential $\mu$ of each system remain constant. 
 \begin{figure}[H]
 	\centering
@@ -404,21 +404,15 @@ In grand Canonical ensemble there is exchange of both energy and particles (mole
 \caption{Table of Ensembles}
 \end{table}
 
-\subsection{Statistical Equilibrium}
+\section{Statistical Equilibrium}
 A system of particles which does not interact with any other system so that its total energy remains constant is called an isolated system. A small part of the isolated system which is still macroscopic is called a subsystem. Subsystem interacts with other parts of the system and hence is not isolated.\\
-If in any macroscopic subsystem of an isolated system, the average number of particles per unit volume and the average energy per particle are equal to their mean values, then the isolated system is said to be in statistical equilibrium i.e, when the mean values of macroscopic parameters like pmessure, volume, ternperature etc. are independent of time, the systern is in equilibrinarn. If the systern is foumd with equal probability in cach of its possible quantum states then the isolated system is in statistical or thenmodynamic equilibrinm. In tenms of density p, the condition for an ensemble to be in statistical equitibrinm is $\left(\frac{\partial \rho}{\partial t}\right)_{q, p}=0$, i.e, $\rho$ is independent of time at all points in the phase space for the ensemble. For this p must be a function of some property\\
-of the ensemble which does not depend on time.
-\subsection{Postulate of Equal a priori probability}
+If in any macroscopic subsystem of an isolated system, the average number of particles per unit volume and the average energy per particle are equal to their mean values, then the isolated system is said to be in statistical equilibrium i.e, when the mean values of macroscopic parameters like pressure, volume, temperature etc. are independent of time, the system is in equilibrium. If the systern is found with equal probability in each of it's possible quantum states then the isolated system is in statistical or thermodynamic equilibrium. In terms of density $\rho$, the condition for an ensemble to be in statistical equilibrium is $\left(\frac{\partial \rho}{\partial t}\right)_{q, p}=0$, i.e, $\rho$ is independent of time at all points in the phase space for the ensemble. For this $\rho$ must be a function of some property of the ensemble which does not depend on time.
+\subsection{Postulate of Equal a Priori Probability}
 Consider an isolated `many particle system' in equilibrium. We want to know the probability for any one particle to be in a given specified state. The answer to this is given by the a priori postulate.\\
 "\textbf{All accessible microstates corresponding to possible macrostates are equally probable}". This is the most fundamental postulate of statistical mechanics. This means that the probability of finding the particle in any one region is identical with that for any other region of equal volume, under similar conditions.
 
-
-
-
-
-
 \subsection{Canonical Ensemble}
-Consider a canonical system $A$ in a microcanonical ensemble $A^{\prime}\left(A \ll A^{\prime}\right)$ . The walls of $A$ are such thal $A$ and $A^{\prime}$ free to exchange energy. The microcanonical ensemble is isolated and it's total energy $E$ is constant. As discussed before, a large number of microscopic states correspond to the macroscopic state of the microcanonical ensemble with energy $E$. Let $\Omega_{i}$ to the total number of microstates of the microcanonical ensemble with energy $E$. By the postulate of equal a priori probability, all these microstates are equally probable. \\Therefore, the probability
+Consider a canonical system $A$ in a microcanonical ensemble , $A^{\prime}\left(A \ll A^{\prime}\right)$ . The walls of $A$ are such thal $A$ and $A^{\prime}$ free to exchange energy. The microcanonical ensemble is isolated and it's total energy $E$ is constant. As discussed before, a large number of microscopic states correspond to the macroscopic state of the microcanonical ensemble with energy $E$. Let $\Omega_{i}$ to the total number of microstates of the microcanonical ensemble with energy $E$. By the postulate of equal a priori probability, all these microstates are equally probable. \\Therefore, the probability
 microcanonical ensemble $A^{\prime}$ will give rise to different microstates of the small subsystem $A$. Suppose, a certain microstate of $A^{\prime}$ gives rise to a microstate of $A$ with energy $\epsilon_{i}\left(\epsilon_{i} \ll E\right)$. Hence, the energy of the remaining pan of the complete system is $E-\epsilon_{i}$. This is one microstate of A with energy $\epsilon_{i}$ attained through the other microstates of $A^{\prime}$. Let the number of states of the microcanonical ensemble $A^{\prime}$, through which the states of the small system $A$ corresponding to the cnergy $\epsilon_{i}$ are attained, be $\Omega_{i}\left(E-\epsilon_{i}\right)$. Therefore, the probability that the small system A is in a state with energy $\epsilon_{i}$ is
 \begin{equation*}
 P_{i}=\frac{\Omega_{i}\left(E-\epsilon_{i}\right)}{\Omega(E)}
